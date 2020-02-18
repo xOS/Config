@@ -1,0 +1,12 @@
+# 爱奇艺
+USER-AGENT,QIYI*
+USER-AGENT,iQiYi*
+USER-AGENT,PPStream*
+USER-AGENT,QYPlayer*
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,iqiyipic.com
+DOMAIN-SUFFIX,qy.net
+DOMAIN-SUFFIX,71.am
+# > bilibili
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN,upos-hz-mirrorakam.akamaized.net
