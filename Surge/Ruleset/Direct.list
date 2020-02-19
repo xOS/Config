@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,baidu.com
 
 
 # 微信
+USER-AGENT,MicroMessenger Client
 USER-AGENT,WeChat*
 USER-AGENT,MicroMessenger20%Client*
 DOMAIN-SUFFIX,weixin.qq.com
