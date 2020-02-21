@@ -1,0 +1,7 @@
+# Speedtest
+USER-AGENT,SpeedTest*
+DOMAIN-KEYWORD,speedtest
+DOMAIN-SUFFIX,ooklaserver.net
+
+# Fast
+DOMAIN-SUFFIX,fast.com
