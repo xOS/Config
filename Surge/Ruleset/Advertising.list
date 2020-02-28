@@ -4,6 +4,18 @@ DOMAIN-KEYWORD,adservice
 # DOMAIN-KEYWORD,analytics
 # DOMAIN-KEYWORD,analysis
 
+# Custom
+DOMAIN-SUFFIX,adtidy.org
+DOMAIN-SUFFIX,webtest.net
+DOMAIN-SUFFIX,playcvn.com
+DOMAIN-SUFFIX,askysolution.com
+DOMAIN-SUFFIX,69668dwj150.com
+DOMAIN-SUFFIX,0urp51.cn
+DOMAIN-SUFFIX,openinstall.io
+DOMAIN-SUFFIX,suggestion.baidu.com
+DOMAIN-SUFFIX,yunaq.com
+
+# > General
 DOMAIN-SUFFIX,42trck.com
 DOMAIN-SUFFIX,51.la
 DOMAIN-SUFFIX,adcolony.com
