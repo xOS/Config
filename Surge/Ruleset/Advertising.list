@@ -1885,7 +1885,7 @@ DOMAIN-SUFFIX,c.dokrmob.com
 DOMAIN-SUFFIX,c.dzytjqcc.com
 DOMAIN-SUFFIX,c.effectivemeasure.net
 DOMAIN-SUFFIX,c.f1zd.com
-DOMAIN-SUFFIX,c.gdt.qq.com
+# DOMAIN-SUFFIX,c.gdt.qq.com
 DOMAIN-SUFFIX,c.gj.qq.com
 DOMAIN-SUFFIX,c.guangtui1999.com
 DOMAIN-SUFFIX,c.gzsanxiaomingshi.cn
@@ -3808,7 +3808,7 @@ DOMAIN-SUFFIX,i.bigmir.net
 DOMAIN-SUFFIX,i.clkservice.youdao.com
 DOMAIN-SUFFIX,i.dreamfull.cn
 DOMAIN-SUFFIX,i.flow.browser.oppomobile.com
-DOMAIN-SUFFIX,i.gdt.qq.com
+# DOMAIN-SUFFIX,i.gdt.qq.com
 DOMAIN-SUFFIX,i.go.sohu.com
 DOMAIN-SUFFIX,i.haloapps.com
 DOMAIN-SUFFIX,i.hao61.net
@@ -4599,9 +4599,9 @@ DOMAIN-SUFFIX,listlog.baofeng.net
 DOMAIN-SUFFIX,liuliguo.com
 DOMAIN-SUFFIX,live.tvpot.daum.net
 DOMAIN-SUFFIX,livehapp.com
-DOMAIN-SUFFIX,livep.l.ott.video.qq.com
+DOMAIN-SUFFIX,livep.l.ott.video.🛫 起飞
 DOMAIN-SUFFIX,lives.l.cp81.ott.cibntv.net
-DOMAIN-SUFFIX,lives.l.ott.video.qq.com
+DOMAIN-SUFFIX,lives.l.ott.video.🛫 起飞
 DOMAIN-SUFFIX,liveupdate.mac.sandai.net
 DOMAIN-SUFFIX,lixiangmo.com
 DOMAIN-SUFFIX,ljrtb.cn
@@ -4861,7 +4861,7 @@ DOMAIN-SUFFIX,m.kjfhe.com
 DOMAIN-SUFFIX,m.kjhfy.com
 DOMAIN-SUFFIX,m.kl6636.net
 DOMAIN-SUFFIX,m.ksttwz.com
-DOMAIN-SUFFIX,m.kubiqq.com
+DOMAIN-SUFFIX,m.kubi🛫 起飞
 DOMAIN-SUFFIX,m.kwjkd.com
 DOMAIN-SUFFIX,m.kxhie.com
 DOMAIN-SUFFIX,m.laigame7.net
@@ -5085,7 +5085,7 @@ DOMAIN-SUFFIX,marketing.etouch.cn
 DOMAIN-SUFFIX,marketingsolutions.yahoo.com
 DOMAIN-SUFFIX,marketo.com
 DOMAIN-SUFFIX,marketo.net
-DOMAIN-SUFFIX,masdk.3g.qq.com
+DOMAIN-SUFFIX,masdk.3g.🛫 起飞
 DOMAIN-SUFFIX,maskbaby.com.cn
 DOMAIN-SUFFIX,mass.mall044.com
 DOMAIN-SUFFIX,master.wap.dphub.sandai.net
@@ -5929,7 +5929,7 @@ DOMAIN-SUFFIX,py.wikigifth.com
 DOMAIN-SUFFIX,py2.qlogo.cn
 DOMAIN-SUFFIX,pyerc.com
 DOMAIN-SUFFIX,pyzkk.com
-DOMAIN-SUFFIX,q.i.gdt.qq.com
+# DOMAIN-SUFFIX,q.i.gdt.qq.com
 DOMAIN-SUFFIX,q.ox11.com
 DOMAIN-SUFFIX,q.s.cr-nielsen.com
 DOMAIN-SUFFIX,q1scv.vov0.com
@@ -8236,9 +8236,9 @@ DOMAIN,v2.reachmax.cn
 DOMAIN,track.sohu.com
 DOMAIN,hui.sohu.com
 DOMAIN-SUFFIX,bugly.qq.com
-DOMAIN-SUFFIX,e.qq.com
-DOMAIN-SUFFIX,gdt.qq.com
-DOMAIN-SUFFIX,rqd.qq.com
+# DOMAIN-SUFFIX,e.qq.com
+# DOMAIN-SUFFIX,gdt.qq.com
+# DOMAIN-SUFFIX,rqd.qq.com
 DOMAIN,adsmind.tc.qq.com
 DOMAIN,btrace.qq.com
 DOMAIN,mtrace.qq.com
