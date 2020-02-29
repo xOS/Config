@@ -2,6 +2,8 @@
 DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,baidu.com
 
+# Apple
+DOMAIN-SUFFIX,icloud.com.cn
 
 # 微信
 USER-AGENT,MicroMessenger*
