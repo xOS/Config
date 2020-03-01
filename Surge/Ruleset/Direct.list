@@ -2,6 +2,15 @@
 DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,baidu.com
 
+# Apple
+DOMAIN-SUFFIX,icloud.com.cn
+
+# 微信
+USER-AGENT,MicroMessenger*
+USER-AGENT,WeChat*
+USER-AGENT,MicroMessenger20%Client*
+DOMAIN-SUFFIX,weixin.qq.com
+
 # Client
 USER-AGENT,RRShare*
 USER-AGENT,p4pclient*
