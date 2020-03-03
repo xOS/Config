@@ -1,4 +1,9 @@
 # Client
+# 百度网盘
+DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,baidu.com
+
+# 人人影视
 USER-AGENT,RRShare*
 USER-AGENT,p4pclient*
 
