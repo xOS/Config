@@ -2,6 +2,15 @@
 DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,baidu.com
 
+# 网易云音乐
+URL-REGEX,^https:\/\/music\.163\.com\/weapi\/user\/profile$ // Added for webpage: https://music.163.com/weapi/user/profile/362561843
+URL-REGEX,^http:\/\/223\.252\.199\.66\/eapi\/song\/like\/change\?_nmclfl=1$ // Added for webpage: http://223.252.199.66/eapi/song/like/change?_nmclfl=1
+URL-REGEX,^https:\/\/music\.163\.com\/weapi\/user\/level$ // Added for webpage: https://music.163.com/weapi/user/level
+URL-REGEX,^https:\/\/music\.163\.com\/api\/feedback\/weblog$ // Added for webpage: https://music.163.com/api/feedback/weblog
+URL-REGEX,^https:\/\/music\.163\.com\/api\/music-vip-membership\/front\/vip\/info$ // Added for webpage: https://music.163.com/api/music-vip-membership/front/vip/info
+URL-REGEX,^https:\/\/music\.163\.com\/weapi\/user\/level$ // Added for webpage: https://music.163.com/weapi/user/level
+URL-REGEX,^https:\/\/music\.163\.com\/store\/m\/gain\/mylevel$ // Added for webpage: https://music.163.com/store/m/gain/mylevel
+
 # Apple
 DOMAIN-SUFFIX,icloud.com.cn
 
