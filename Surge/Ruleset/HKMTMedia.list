@@ -1,4 +1,4 @@
-# 爱奇艺
+# > 爱奇艺
 USER-AGENT,QIYI*
 USER-AGENT,iQiYi*
 USER-AGENT,PPStream*
@@ -11,7 +11,7 @@ IP-CIDR,101.227.0.0/16,no-resolve
 IP-CIDR,101.224.0.0/13,no-resolve
 IP-CIDR,119.176.0.0/12,no-resolve
 
-# 哔哩哔哩
+# > 哔哩哔哩
 USER-AGENT,*bili*
 DOMAIN-KEYWORD,bilibili
 DOMAIN-SUFFIX,acg.tv
@@ -25,3 +25,10 @@ DOMAIN-SUFFIX,biligame.net
 DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,im9.com
+
+# > Bahamut
+USER-AGENT,Anime*
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN,gamer-cds.cdn.hinet.net
+DOMAIN,gamer2-cds.cdn.hinet.net
