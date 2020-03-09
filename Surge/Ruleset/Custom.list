@@ -20,7 +20,10 @@ URL-REGEX,^https:\/\/music\.163\.com\/api\/pccache\/patch\/get  //https://music.
 
 # > Apple
 DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,apple.com
 DOMAIN,p14-buy.itunes.apple.com
+DOMAIN-SUFFIX,ocsp.int-x3.letsencrypt.org
+DOMAIN,world-gen.g.aaplimg.com
 
 # > 头条系
 # DOMAIN-SUFFIX,snssdk.com
