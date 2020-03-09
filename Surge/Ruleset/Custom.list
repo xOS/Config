@@ -21,6 +21,9 @@ URL-REGEX,^https:\/\/music\.163\.com\/api\/pccache\/patch\/get  //https://music.
 # > Apple
 DOMAIN-SUFFIX,icloud.com.cn
 
+# > 头条系
+DOMAIN-SUFFIX,snssdk.com
+
 # > 微信
 USER-AGENT,MicroMessenger*
 USER-AGENT,WeChat*
