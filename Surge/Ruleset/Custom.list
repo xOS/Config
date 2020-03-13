@@ -17,6 +17,7 @@ URL-REGEX,^https:\/\/music\.163\.com\/favicon.ico$
 URL-REGEX,^https:\/\/music\.163\.com\/#\/user\/level$
 URL-REGEX,^https:\/\/music\.163\.com
 URL-REGEX,^https:\/\/music\.163\.com\/api\/pccache\/patch\/get  //https://music.163.com/api/pccache/patch/get
+URL-REGEX,^https:\/\/interface\.163\.com\/eapi\/usertool //https://interface.music.163.com/eapi/usertool/
 
 # > Apple
 DOMAIN-SUFFIX,icloud.com.cn
