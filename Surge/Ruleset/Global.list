@@ -71,7 +71,7 @@ IP-CIDR,147.92.128.0/17,no-resolve
 IP-CIDR,203.104.144.0/21,no-resolve
 
 # > Other
-DOMAIN-SUFFIX,alibabacloud.com
+#DOMAIN-SUFFIX,alibabacloud.com
 DOMAIN-SUFFIX,keycdn.com
 DOMAIN-SUFFIX,4shared.com
 DOMAIN-SUFFIX,520cc.cc
