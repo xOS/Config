@@ -1,0 +1,6 @@
+#!name=MitM
+#!desc=Perform MitM on all hostnames with port 443, except those to Apple and other common sites which can‘t be inspected. You still need configure CA certificate and enable the main switch of MitM.
+#!system=mac
+
+[MITM]
+hostname = %APPEND% education.github.com, *.bilibili.com, api.bilibili.com, weibo.com, music.163.com, music.126.net, interfac*.music.163.com, *.googlevideo.com, *.v2ex.com, *.video.qq.com, v.qq.com, *.bilibili.com, api.bilibili.com, p1.music.126.net, -CustomMitM
