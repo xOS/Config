@@ -2,6 +2,9 @@
 #!desc=签到脚本 Cookie 获取，请在使用后将其禁用，以免产生不必要的 MITM.
 #!system=mac
 
+[MITM]
+hostname = %APPEND% weibo.com, music.163.com, *.bilibili.com, tieba.baidu.com
+
 [Script]
 
 # > 微博超话获取Cookie
@@ -18,6 +21,3 @@
 # > 百度贴吧
 # 先登录,浏览器访问一下: https://tieba.baidu.com 或者 https://tieba.baidu.com/index/
 百度贴吧 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js,type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?
-
-[MITM]
-hostname = %APPEND% weibo.com, music.163.com, *.bilibili.com, tieba.baidu.com
