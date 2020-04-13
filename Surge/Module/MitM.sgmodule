@@ -1,4 +1,4 @@
-#!name=MITM
+#!name=MitM
 #!desc=Perform MitM on all hostnames with port 443, except those to Apple and other common sites which can‘t be inspected. You still need configure CA certificate and enable the main switch of MitM.
 #!system=ios
 
