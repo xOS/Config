@@ -1,1 +1,51 @@
+#!name=URL Rewrite
+#!desc=302 Redirect & Advertising Block
+#!system=Mac
 
+[URL Rewrite]
+
+# 其它
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+^https?:\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
+^https?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
+^https?:\/\/(www.)?mi\.com\/ https://www.mi.com/ 302
+^https?:\/\/(www.)?suning\.com/ https://suning.com/ 302
+^https?:\/\/(www.)?yhd\.com https://yhd.com/ 302
+^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
+^https?:\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
+^https?:\/\/api\.21jingji\.com\/ad\/ - reject
+^https?:\/\/mobi\.360doc\.com\/v\d{2}\/Ajax\/festival\.ashx\?op=getfestivaltheme - reject
+^https?:\/\/a\.apicloud\.com\/start_page\/ - reject
+^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adx - reject
+^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry - reject
+^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ - reject
+^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule - reject
+^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo - reject
+^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog) - reject
+^https?:\/\/ss0\.bdstatic\.com/.+_\d{3}_\d{4}\.jpg - reject
+^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad\/ - reject
+^https?:\/\/api\.zhihu\.com\/(launch|real_time) - reject
+^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time) - reject
+^https?:\/\/api\.zhihu\.com\/fringe\/ad - reject
+^https?:\/\/api\.zhihu\.com\/ad- - reject
+^https?://.+.googlevideo.com/.+&oad - reject
+^https?://.+.googlevideo.com/.+ctier - reject
+^https?://.+.googlevideo.com/ptracking\?pltype=adhost - reject
+^https?://.+.youtube.com/api/stats/.+adformat - reject
+^https?://.+.youtube.com/api/stats/ads - reject
+^https?://.+.youtube.com/get_midroll_ - reject
+^https?://.+.youtube.com/pagead/ - reject
+^https?://.+.youtube.com/ptracking\? - reject
+^https?://m.youtube.com/_get_ads - reject
+^https?://pagead2.googlesyndication.com/pagead/ - reject
+^https?://premiumyva.appspot.com/vmclickstoadvertisersite - reject
+^https?://s0.2mdn.net/ads/ - reject
+^https?://stats.tubemogul.com/stats/ - reject
+^https?://youtubei.googleapis.com/.+ad_break - reject
+^https?://youtubei.googleapis.com/youtubei/.+(ad|log)_ - reject
+^https?://api.catch.gift/api/v3/pagead/ - reject
+^https?://www.iqshw.com/d/js/m http://burpsuite.applinzi.com/Interface header
+^https?://www.iqshw.com/d/js/m http://rewrite.websocket.site:10/Other/Static/JS/Package.js? header
+
+[MITM]
+hostname = %APPEND% tieba.baidu.com, www.zhihu.com, ww.iqshw.com
