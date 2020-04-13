@@ -7,11 +7,6 @@
 # 哔哩哔哩大会员
 https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl http://api.bili.best:22333/geturl/ 302
 https:\/\/api.bilibili.com\/pgc\/view\/app\/season http://api.bili.best:22333/season/ 302
-# TikTok解锁
-# (.*video_id=\w{32})(.*watermark=)(.*) $1 302
-# (?<=version_code=)\d{1,}.\d{1}\.\d{1} 14.0.0 307
-# (?<=(carrier|account|sys|sim)_region=)CN KR 307
-# (?<=(carrier|account|sys|sim)_region=)cn in 307
 
 # 其它
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
