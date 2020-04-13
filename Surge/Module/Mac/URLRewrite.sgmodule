@@ -1,6 +1,6 @@
 #!name=URL Rewrite
 #!desc=302 Redirect & Advertising Block
-#!system=mac
+#!system=Mac
 
 [URL Rewrite]
 
@@ -46,6 +46,3 @@
 ^https?://api.catch.gift/api/v3/pagead/ - reject
 ^https?://www.iqshw.com/d/js/m http://burpsuite.applinzi.com/Interface header
 ^https?://www.iqshw.com/d/js/m http://rewrite.websocket.site:10/Other/Static/JS/Package.js? header
-
-[MITM]
-hostname = %APPEND% tieba.baidu.com, www.zhihu.com, ww.iqshw.com
