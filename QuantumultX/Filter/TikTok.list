@@ -1,0 +1,7 @@
+# > TikTok
+USER-AGENT,TikTok*,TikTok
+HOST-SUFFIX,muscdn.com,TikTok
+HOST-SUFFIX,musical.ly,TikTok
+HOST-SUFFIX,tiktokv.com,TikTok
+HOST-SUFFIX,tiktokcdn.com,TikTok
+HOST-KEYWORD,-tiktokcdn-com,TikTok
