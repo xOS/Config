@@ -1,4 +1,5 @@
-# General
+# > AppleProxy
+# > General
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
@@ -20,9 +21,11 @@ IP-CIDR,192.35.50.0/24,no-resolve
 IP-CIDR,198.183.17.0/24,no-resolve
 IP-CIDR,205.180.175.0/24,no-resolve
 
-# Apple News
+# > Apple News and Apple Map TOMTOM Version
+DOMAIN,gspe1-ssl.ls.apple.com
+PROCESS-NAME,News
 USER-AGENT,AppleNews*
-DOMAIN,gateway.icloud.com
+USER-AGENT,com.apple.news*
 DOMAIN-SUFFIX,apple.news
 DOMAIN,news-client.apple.com
 DOMAIN,news-edge.apple.com
