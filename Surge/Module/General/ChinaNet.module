@@ -1,0 +1,6 @@
+#!name= 电信营业厅签到
+#!desc= 电信营业厅定时签到脚本
+
+[Script]
+# > 电信营业厅签到
+电信营业厅签到 = type=cron,cronexp="0 5 0,2,4 * * * ",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js,script-update-interval=0

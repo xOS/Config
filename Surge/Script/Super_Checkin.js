@@ -11,11 +11,8 @@ MITM = weibo.com
 const accounts = [
     ["少女", "100808795c6eb3ae066542f2c1d9f91b567d61"],
     ["唯美女生", "100808d1da2444fcb47c2e7969a261e1cfa34f"],
-    ["徐佩楠", "1008082c12b69cf4eb13fce7410919a819c825"]
-    // ["泰妍", "100808377e60b6bf5ffc9cdc603cc93b75c663"],
-    // ["Apple", "1008089f6290f4436e5a2351f12e03b6433c3c"]
-    
-
+    ["徐佩楠", "1008082c12b69cf4eb13fce7410919a819c825"],
+    ["青春风", "100808ea828a619c7842a7d194207c8da5068f"]
 ]
 async function launch() {
     for (var i in accounts) {
