@@ -19,7 +19,6 @@ DOMAIN,analytics.strava.com
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
 
-
 # > Apple
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,apple.com
@@ -29,8 +28,6 @@ DOMAIN,world-gen.g.aaplimg.com
 
 # > 头条系
 DOMAIN-SUFFIX,snssdk.com
-DOMAIN,mon.snssdk.com
-DOMAIN,is.snssdk.com
 
 # > 腾讯游戏
 DOMAIN,cloudctrl.gcloud.qq.com
