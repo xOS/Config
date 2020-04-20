@@ -1,0 +1,9 @@
+#!name= 微博启动页广告
+#!desc= 去除微博官方版 App 开屏广告
+#!system=ios
+
+[Script]
+http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
+
+[MITM]
+hostname = %APPEND% *.uve.weibo.com
