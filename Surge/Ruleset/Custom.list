@@ -28,6 +28,7 @@ DOMAIN,world-gen.g.aaplimg.com
 
 # > 头条系
 # DOMAIN-SUFFIX,snssdk.com
+DOMAIN,mon.snssdk.com
 
 # > 腾讯游戏
 DOMAIN,cloudctrl.gcloud.qq.com
