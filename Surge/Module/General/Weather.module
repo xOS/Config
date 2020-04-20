@@ -1,0 +1,7 @@
+#!name= 每日天气提示
+#!desc= 每小时天气提示。
+
+[Script]
+
+# > 每日天气提示
+天气提醒 = debug=1,script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/Weather.js,cronexp=*/60 * * * *,type=cron
