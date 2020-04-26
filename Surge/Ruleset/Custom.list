@@ -1,3 +1,44 @@
+# > General
+USER-AGENT,coffeecorp*
+USER-AGENT,restaurant-mobile*
+DOMAIN,app.adjust.com
+
+# > Google
+DOMAIN-SUFFIX,googletraveladservices.com
+DOMAIN,dl.google.com
+DOMAIN,mtalk.google.com
+
+# > Tencent
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+
+# > Strava
+DOMAIN,analytics.strava.com
+
+# > Umeng
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
+
+# > Apple
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,apple.com
+DOMAIN,p14-buy.itunes.apple.com
+DOMAIN-SUFFIX,ocsp.int-x3.letsencrypt.org
+DOMAIN,world-gen.g.aaplimg.com
+
+# > 头条系
+DOMAIN-SUFFIX,snssdk.com
+
+# > 腾讯游戏
+DOMAIN,cloudctrl.gcloud.qq.com
+USER-AGENT,smoba*
+
+# > 微信
+USER-AGENT,MicroMessenger*
+USER-AGENT,WeChat*
+USER-AGENT,MicroMessenger20%Client*
+DOMAIN-SUFFIX,weixin.qq.com
+
 # 网易云音乐
 # > 移动端
 URL-REGEX,^https:\/\/music\.163\.com\/weapi\/user\/profile // Added for webpage: https://music.163.com/weapi/user/profile/362561843
@@ -19,24 +60,3 @@ URL-REGEX,^https:\/\/music\.163\.com
 URL-REGEX,^https:\/\/music\.163\.com\/api\/pccache\/patch\/get  //https://music.163.com/api/pccache/patch/get
 URL-REGEX,^https:\/\/interface\.163\.com\/eapi\/usertool //https://interface.music.163.com/eapi/usertool/
 
-# > Apple
-DOMAIN-SUFFIX,icloud.com.cn
-DOMAIN-SUFFIX,apple.com
-DOMAIN,p14-buy.itunes.apple.com
-DOMAIN-SUFFIX,ocsp.int-x3.letsencrypt.org
-DOMAIN,world-gen.g.aaplimg.com
-
-# > 头条系
-DOMAIN-SUFFIX,snssdk.com
-DOMAIN,mon.snssdk.com
-DOMAIN,is.snssdk.com
-
-# > 腾讯游戏
-DOMAIN,cloudctrl.gcloud.qq.com
-USER-AGENT,smoba*
-
-# > 微信
-USER-AGENT,MicroMessenger*
-USER-AGENT,WeChat*
-USER-AGENT,MicroMessenger20%Client*
-DOMAIN-SUFFIX,weixin.qq.com
