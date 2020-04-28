@@ -1,9 +1,9 @@
-# Client
-# 百度网盘
+# > Client
+# > 百度网盘
 DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,baidu.com
 
-# 人人影视
+# > 人人影视
 USER-AGENT,RRShare*
 USER-AGENT,p4pclient*
 
@@ -11,7 +11,7 @@ USER-AGENT,p4pclient*
 PROCESS-NAME,v2ray
 PROCESS-NAME,ss-local
 
-# Mac Download
+# > Mac Download
 PROCESS-NAME,aria2c
 PROCESS-NAME,fdm
 PROCESS-NAME,Folx
@@ -21,17 +21,12 @@ PROCESS-NAME,Transmission
 PROCESS-NAME,uTorrent
 PROCESS-NAME,WebTorrent
 PROCESS-NAME,WebTorrent Helper
-# bt
+PROCESS-NAME,DownloadService
+
+# > BT
 DOMAIN-SUFFIX,smtp
 DOMAIN-KEYWORD,aria2
-#URL-REGEX,(Subject|HELO|SMTP)
-#URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
-#URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
-#URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
-# XunLei
-#URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
-PROCESS-NAME,DownloadService
-# 360
-#URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
-# Tencent Weiyun
+URL-REGEX,(Subject|HELO|SMTP)
+
+# > Tencent Weiyun
 PROCESS-NAME,Weiyun
