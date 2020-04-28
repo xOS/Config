@@ -5,6 +5,7 @@ DOMAIN,app.adjust.com
 
 # > Google
 DOMAIN-SUFFIX,googletraveladservices.com
+DOMAIN,safebrowsing.googleapis.com
 DOMAIN,dl.google.com
 DOMAIN,mtalk.google.com
 
