@@ -1,3 +1,4 @@
+# > Microsoft
 USER-AGENT,Microsoft*,Microsoft
 HOST-KEYWORD,microsoft,Microsoft
 HOST-SUFFIX,ms,Microsoft
@@ -23,3 +24,15 @@ HOST-SUFFIX,windows.com,Microsoft
 HOST-SUFFIX,windows.net,Microsoft
 HOST-SUFFIX,xbox.com,Microsoft
 HOST-SUFFIX,xboxlive.com,Microsoft
+
+# > OneDrive
+USER-AGENT,OneDrive*,Microsoft
+USER-AGENT,OneDriveiOSApp*,Microsoft
+DOMAIN-SUFFIX,1drv.com,Microsoft
+DOMAIN-SUFFIX,1drv.ms,Microsoft
+DOMAIN-SUFFIX,blob.core.windows.net,Microsoft
+DOMAIN-SUFFIX,livefilestore.com,Microsoft
+DOMAIN-SUFFIX,onedrive.com,Microsoft
+DOMAIN-SUFFIX,storage.live.com,Microsoft
+DOMAIN-SUFFIX,storage.msn.com,Microsoft
+DOMAIN,oneclient.sfx.ms,Microsoft
