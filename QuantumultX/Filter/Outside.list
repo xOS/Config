@@ -15,14 +15,23 @@ HOST-SUFFIX,line-cdn.net,Outside
 HOST-SUFFIX,line-scdn.net,Outside
 HOST-SUFFIX,nhncorp.jp,Outside
 
-# > OneDrive
+# > Microsoft Proxy
 USER-AGENT,OneDrive*,Outside
+HOST-KEYWORD,onedrive,Outside
 HOST-SUFFIX,onedrive.com,Outside
+HOST-SUFFIX,skype.com,Outside
+HOST-SUFFIX,storage.live.com,Outside
 
 # > PayPal
 USER-AGENT,PayPal*,Outside
 HOST-SUFFIX,paypal.com,Outside
 HOST-SUFFIX,paypalobjects.com,Outside
+
+# > Pornhub
+HOST-SUFFIX,phncdn.com,Outside
+HOST-SUFFIX,phprcdn.com,Outside
+HOST-SUFFIX,pornhub.com,Outside
+HOST-SUFFIX,pornhubpremium.com,Outside
 
 # > Spark
 HOST-SUFFIX,api.amplitude.com,Outside
@@ -44,14 +53,51 @@ DOMAIN-SUFFIX,tdesktop.com,Outside
 DOMAIN-SUFFIX,telegra.ph,Outside
 DOMAIN-SUFFIX,telegram.me,Outside
 DOMAIN-SUFFIX,telegram.org,Outside
-IP-CIDR,91.108.4.0/22,Outside
-IP-CIDR,91.108.56.0/22,Outside
-IP-CIDR,91.108.56.0/23,Outside
-IP-CIDR,109.239.140.0/24,Outside
+IP-CIDR,149.154.167.99/32,Outside
+IP-CIDR,149.154.175.10/32,Outside
+IP-CIDR,149.154.167.40/32,Outside
+IP-CIDR,149.154.167.42/32,Outside
+IP-CIDR,149.154.175.117/32,Outside
+IP-CIDR,149.154.175.50/32,Outside
+IP-CIDR,149.154.167.50/32,Outside
+IP-CIDR,149.154.167.51/32,Outside
+IP-CIDR,149.154.175.100/32,Outside
+IP-CIDR,149.154.167.91/32,Outside
+IP-CIDR,149.154.167.90/32,Outside
+IP-CIDR,149.154.165.120/32,Outside
+IP-CIDR,149.154.166.120/32,Outside
+IP-CIDR,149.154.164.250/32,Outside
+IP-CIDR,149.154.167.117/32,Outside
+IP-CIDR,149.154.167.118/32,Outside
+IP-CIDR,149.154.167.192/27,Outside
+IP-CIDR,149.154.164.8/29,Outside
+IP-CIDR,91.108.8.0/27,Outside
+IP-CIDR,91.108.12.0/27,Outside
+IP-CIDR,91.108.16.0/27,Outside
+IP-CIDR,91.108.56.0/24,Outside
+IP-CIDR,91.108.4.0/24,Outside
 IP-CIDR,149.154.160.0/22,Outside
 IP-CIDR,149.154.164.0/22,Outside
 IP-CIDR,149.154.168.0/22,Outside
 IP-CIDR,149.154.172.0/22,Outside
+IP-CIDR,91.108.56.0/22,Outside
+IP-CIDR,91.108.4.0/22,Outside
+IP-CIDR,91.108.8.0/22,Outside
+IP-CIDR,91.108.16.0/22,Outside
+IP-CIDR,91.108.12.0/22,Outside
+IP-CIDR,149.154.160.0/20,Outside
+IP6-CIDR,2001:b28:f23d:f001::e/128,Outside
+IP6-CIDR,2001:67c:4e8:f002::e/128,Outside
+IP6-CIDR,2001:b28:f23d:f003::e/128,Outside
+IP6-CIDR,2001:b28:f23d:f001::a/128,Outside
+IP6-CIDR,2001:67c:4e8:f002::a/128,Outside
+IP6-CIDR,2001:b28:f23d:f003::a/128,Outside
+IP6-CIDR,2001:67c:4e8:f004::a/128,Outside
+IP6-CIDR,2001:b28:f23f:f005::a/128,Outside
+IP6-CIDR,2001:67c:4e8:fa60::/64,Outside
+IP6-CIDR,2001:b28:f23d::/48,Outside
+IP6-CIDR,2001:b28:f23f::/48,Outside
+IP6-CIDR,2001:67c:4e8::/48,Outside
 
 # > TikTok
 USER-AGENT,TikTok*,Outside
@@ -69,6 +115,7 @@ HOST-SUFFIX,2o7.net,Outside
 HOST-SUFFIX,4everProxy.com,Outside
 HOST-SUFFIX,4shared.com,Outside
 HOST-SUFFIX,4sqi.net,Outside
+HOST-SUFFIX,91porn.com,Outside
 HOST-SUFFIX,9to5mac.com,Outside
 HOST-SUFFIX,abpchina.org,Outside
 HOST-SUFFIX,accountkit.com,Outside
@@ -79,6 +126,7 @@ HOST-SUFFIX,aerisapi.com,Outside
 HOST-SUFFIX,airtable.com,Outside
 HOST-SUFFIX,alfredapp.com,Outside
 HOST-SUFFIX,allconnected.co,Outside
+HOST-SUFFIX,amazon.co,Outside
 HOST-SUFFIX,amazon.com,Outside
 HOST-SUFFIX,amazonaws.com,Outside
 HOST-SUFFIX,ampproject.com,Outside
@@ -94,6 +142,7 @@ HOST-SUFFIX,anthonycalzadilla.com,Outside
 HOST-SUFFIX,aol.com,Outside
 HOST-SUFFIX,aolcdn.com,Outside
 HOST-SUFFIX,api.mixpanel.com,Outside
+HOST-SUFFIX,api.termius.com,Outside
 HOST-SUFFIX,api.tiktokv.com,Outside
 HOST-SUFFIX,api.urbandictionary.com,Outside
 HOST-SUFFIX,apigee.com,Outside
@@ -145,6 +194,7 @@ HOST-SUFFIX,box.net,Outside
 HOST-SUFFIX,boxun.com,Outside
 HOST-SUFFIX,cachefly.net,Outside
 HOST-SUFFIX,cbc.ca,Outside
+HOST-SUFFIX,cdn.angruo.com,Outside
 HOST-SUFFIX,cdn.segment.com,Outside
 HOST-SUFFIX,cdnst.net,Outside
 HOST-SUFFIX,celestrak.com,Outside
@@ -215,6 +265,7 @@ HOST-SUFFIX,feedburner.com,Outside
 HOST-SUFFIX,feedly.com,Outside
 HOST-SUFFIX,feedsportal.com,Outside
 HOST-SUFFIX,fiftythree.com,Outside
+HOST-SUFFIX,figma.com,Outside
 HOST-SUFFIX,firebaseio.com,Outside
 HOST-SUFFIX,flexibits.com,Outside
 HOST-SUFFIX,flickr.com,Outside
@@ -428,7 +479,6 @@ HOST-SUFFIX,sidelinesnews.com,Outside
 HOST-SUFFIX,simp.ly,Outside
 HOST-SUFFIX,simplenote.com,Outside
 HOST-SUFFIX,sketchappsources.com,Outside
-HOST-SUFFIX,skype.com,Outside
 HOST-SUFFIX,slack.com,Outside
 HOST-SUFFIX,slack-edge.com,Outside
 HOST-SUFFIX,slack-msgs.com,Outside
@@ -604,6 +654,7 @@ HOST-SUFFIX,wikipedia.org,Outside
 HOST-SUFFIX,wn.com,Outside
 HOST-SUFFIX,wordpress.com,Outside
 HOST-SUFFIX,workflow.is,Outside
+HOST-SUFFIX,workflowy.com,Outside
 HOST-SUFFIX,worldcat.org,Outside
 HOST-SUFFIX,wow.com,Outside
 HOST-SUFFIX,wp.com,Outside
@@ -647,7 +698,6 @@ HOST-KEYWORD,dropbox,Outside
 HOST-KEYWORD,facebook,Outside
 HOST-KEYWORD,github,Outside
 HOST-KEYWORD,instagram,Outside
-HOST-KEYWORD,porn,Outside
 HOST-KEYWORD,twitter,Outside
 HOST-KEYWORD,whatsapp,Outside
 HOST-KEYWORD,google,Outside
@@ -697,7 +747,6 @@ HOST-SUFFIX,waveprotocol.org,Outside
 HOST-SUFFIX,webmproject.org,Outside
 HOST-SUFFIX,webrtc.org,Outside
 HOST-KEYWORD,dlercloud,Outside
-HOST-SUFFIX,dler.cloud,Outside
 
 # > Amazon
 IP-CIDR,13.32.0.0/16,Outside

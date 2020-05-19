@@ -45,6 +45,8 @@ HOST-SUFFIX,pingan.com.cn,Mainland
 HOST-KEYWORD,beplay,Mainland
 
 # > Blizzard
+USER-AGENT,hearthstone*,Mainland
+HOST,cdp.cloud.unity3d.com,Mainland
 HOST-SUFFIX,battle.net,Mainland
 HOST-SUFFIX,battlenet.com,Mainland
 HOST-SUFFIX,blizzard.com,Mainland
@@ -112,6 +114,8 @@ HOST-SUFFIX,air-matters.io,Mainland
 HOST-SUFFIX,airhotels.cn,Mainland
 HOST-SUFFIX,akadns.net,Mainland
 HOST-SUFFIX,aliapp.org,Mainland
+HOST-SUFFIX,alibaba.com,Mainland
+HOST-SUFFIX,alibabacloud.com,Mainland
 HOST-SUFFIX,alicdn.com,Mainland
 HOST-SUFFIX,alipay.com,Mainland
 HOST-SUFFIX,alipayobjects.com,Mainland
@@ -119,7 +123,6 @@ HOST-SUFFIX,aliyun.com,Mainland
 HOST-SUFFIX,amap.com,Mainland
 HOST-SUFFIX,apache.org,Mainland
 HOST-SUFFIX,api.crisp.chat,Mainland
-HOST-SUFFIX,api.termius.com,Mainland
 HOST-SUFFIX,appshike.com,Mainland
 HOST-SUFFIX,autohome.com.cn,Mainland
 HOST-SUFFIX,autonavi.com,Mainland
@@ -136,6 +139,7 @@ HOST-SUFFIX,bthhotels.com,Mainland
 HOST-SUFFIX,caiyunapp.com,Mainland
 HOST-SUFFIX,ccgslb.com,Mainland
 HOST-SUFFIX,ccgslb.net,Mainland
+HOST-SUFFIX,chaoxing.com,Mainland
 HOST-SUFFIX,chinacache.net,Mainland
 HOST-SUFFIX,chinaz.com,Mainland
 HOST-SUFFIX,chunbo.com,Mainland
@@ -173,6 +177,7 @@ HOST-SUFFIX,feng.com,Mainland
 HOST-SUFFIX,fir.im,Mainland
 HOST-SUFFIX,frdic.com,Mainland
 HOST-SUFFIX,fresh-ideas.cc,Mainland
+HOST-SUFFIX,gcores.com,Mainland
 HOST-SUFFIX,geetest.com,Mainland
 HOST-SUFFIX,godic.net,Mainland
 HOST-SUFFIX,goodread.com,Mainland
@@ -191,7 +196,6 @@ HOST-SUFFIX,ibeta.me,Mainland
 HOST-SUFFIX,iciba.com,Mainland
 HOST-SUFFIX,ifeng.com,Mainland
 HOST-SUFFIX,ifengimg.com,Mainland
-HOST-SUFFIX,images.unsplash.com,Mainland
 HOST-SUFFIX,images-amazon.com,Mainland
 HOST-SUFFIX,img4me.com,Mainland
 HOST-SUFFIX,ipify.org,Mainland
@@ -242,6 +246,7 @@ HOST-SUFFIX,pgyer.com,Mainland
 HOST-SUFFIX,pniao.com,Mainland
 HOST-SUFFIX,privatehd.to,Mainland
 HOST-SUFFIX,pstatp.com,Mainland
+HOST-SUFFIX,pt.m-team.cc,Mainland
 HOST-SUFFIX,qbox.me,Mainland
 HOST-SUFFIX,qcloud.com,Mainland
 HOST-SUFFIX,qdaily.com,Mainland
@@ -295,7 +300,6 @@ HOST-SUFFIX,tmzvps.com,Mainland
 HOST-SUFFIX,trello.com,Mainland
 HOST-SUFFIX,trellocdn.com,Mainland
 HOST-SUFFIX,totheglory.im,Mainland
-HOST-SUFFIX,tp.m-team.cc,Mainland
 HOST-SUFFIX,ttmeiju.com,Mainland
 HOST-SUFFIX,tudou.com,Mainland
 HOST-SUFFIX,udache.com,Mainland
@@ -315,7 +319,6 @@ HOST-SUFFIX,weiphone.net,Mainland
 HOST-SUFFIX,wenku8.net,Mainland
 HOST-SUFFIX,werewolf.53site.com,Mainland
 HOST-SUFFIX,wkcdn.com,Mainland
-HOST-SUFFIX,workflowy.com,Mainland
 HOST-SUFFIX,xdrig.com,Mainland
 HOST-SUFFIX,xhostfire.com,Mainland
 HOST-SUFFIX,xiaojukeji.com,Mainland
