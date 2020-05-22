@@ -41,7 +41,7 @@ USER-AGENT,MicroMessenger20%Client*
 DOMAIN-SUFFIX,weixin.qq.com
 
 # > 唯美女生
-DOMAIN-SUFFIX,vmgirls.com
+# DOMAIN-SUFFIX,vmgirls.com
 
 # 网易云音乐
 # > 移动端
