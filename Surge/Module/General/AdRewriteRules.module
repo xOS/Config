@@ -1,4 +1,4 @@
-#!name=广告重写规则
+#!name=广告重写
 #!desc=This module integrate lhie1 and ConnersHua, and some self use rules
 
 [URL Rewrite]
