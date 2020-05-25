@@ -1,5 +1,5 @@
 #!name=基本配置
-#!desc=Surge的 [General] 字段基本配置。
+#!desc=General字段基本配置。
 
 [General]
 # > 日志等级
@@ -38,7 +38,7 @@ doh-follow-outbound-mode = false
 
 # > 启用 Network.framework
 network-framework = false
-# 外部控制器
+# > 外部控制器
 external-controller-access = 1111@0.0.0.0:6170
 # > 兼容模式（默认为"禁用"）
 // compatibility-mode = 0
