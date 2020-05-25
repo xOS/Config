@@ -2,7 +2,7 @@
 #!desc=General字段基本配置。
 
 [General]
-# > 日志等级
+# > 日志等级 warning, notify, info, verbose (默认值: notify)
 loglevel = warning
 
 # > TLS Provider: default, secure-transport, network-framework, openssl (默认值: default)
@@ -16,7 +16,7 @@ ipv6 = true
 
 # > Wi-Fi Assist 开启时，支持使用数据网络进行后备 DNS 查询
 wifi-assist = true
-# > 允许 Wi-Fi 访问
+# > 允许 Wi-Fi 网络下其它设备访问
 allow-wifi-access = true
 # > HTTP 代理服务端口（默认为"6152"）
 wifi-access-http-port = 6152
