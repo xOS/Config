@@ -1,0 +1,7 @@
+#!name=DNSPod
+#!desc=Apple下载解析加速。
+
+[Host]
+*.itunes.apple.com = script:Dnspod
+[Script]
+Dnspod = type=dns,script-path=https://raw.githubusercontent.com/maicoo-l/Surge/master/Script/dnspod.js,script-update-interval=-1
