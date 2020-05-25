@@ -1,0 +1,76 @@
+# > 日志等级
+loglevel = warning
+
+# > TLS Provider: default, secure-transport, network-framework, openssl (默认值: default)
+tls-provider = openssl
+
+# > 当开启时，如果在 [Host] 段有为某主机名指定 IP，在使用代理访问该主机名时，将使用该 IP 地址进行代理请求，不再依赖远端解析。
+use-local-host-item-for-proxy = true
+
+# IPv6 支持
+ipv6 = true
+
+# > Wi-Fi Assist 开启时，支持使用数据网络进行后备 DNS 查询
+wifi-assist = true
+# > 允许 Wi-Fi 访问
+allow-wifi-access = true
+# > HTTP 代理服务端口（默认为"6152"）
+wifi-access-http-port = 6152
+# > SOCKS5 代理服务端口（默认为"6153"）
+wifi-access-socks5-port = 6153
+# > HTTP 代理监听地址
+http-listen = 0.0.0.0
+# > HTTP 代理监听地址
+socks5-listen = 0.0.0.0
+
+# > DNS 服务地址，只用于解析 DoH 服务地址
+dns-server = 8.8.8.8, system
+# > DoH 服务地址
+doh-server = https://223.5.5.5/dns-query
+# https://doh.nange.cn/
+# https://223.5.5.5/dns-query, https://223.6.6.6/dns-query
+# , https://doh.nange.cn, https://doh.social
+# > DoH 解析格式（json 或 wireformat）
+doh-format = wireformat
+# > 使 DoH 请求通过代理策略执行
+doh-follow-outbound-mode = false
+
+# > 启用 Network.framework
+network-framework = false
+# 外部控制器
+external-controller-access = 1111@0.0.0.0:6170
+# > 兼容模式（默认为"禁用"）
+# compatibility-mode = 0
+# > 错误警告显示页
+show-error-page-for-reject = true
+# > 共享 JS 上下文
+shared-jsvm-context = false
+
+# > 测速超时（秒）
+test-timeout = 5
+# > Internet 测试 URL
+proxy-test-url = http://www.gstatic.com/generate_204
+# > 代理测速 URL
+internet-test-url = http://www.gstatic.com/generate_204
+# > Always Real IP Hosts
+always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
+# > Hijack DNS
+hijack-dns = 8.8.8.8:53,8.8.4.4:53
+
+# > 公共Wi-Fi下的默认策略启用
+use-default-policy-if-wifi-not-primary = false
+# > 规则均衡模式， macOS Only
+enhanced-mode-by-rule = false
+
+# > 代理跳过系统
+bypass-system = true
+# > 排除主机名
+exclude-simple-hostnames = true
+# > 跳过代理
+skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
+# > TCP Force HTTP Hosts
+force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
+# > VIF Included Routes
+tun-included-routes = 192.168.1.12/32
+# > VIF Excluded Routes
+tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
