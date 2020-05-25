@@ -1,3 +1,7 @@
+#!name=Surge 主配置
+#!desc=Surge [General] 字段配置。
+
+[General]
 # > 日志等级
 loglevel = warning
 
