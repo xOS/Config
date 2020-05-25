@@ -1,5 +1,5 @@
-#!name=Surge 主配置
-#!desc=Surge [General] 字段配置。
+#!name=基本配置
+#!desc=Surge的 [General] 字段基本配置。
 
 [General]
 # > 日志等级
