@@ -3,13 +3,10 @@ USER-AGENT,coffeecorp*
 USER-AGENT,restaurant-mobile*
 DOMAIN,app.adjust.com
 
-# > Akamai
-DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,akamai.net
-DOMAIN-SUFFIX,akamaiedge.net
-DOMAIN-SUFFIX,akamaihd.net
-DOMAIN-SUFFIX,akamaistream.net
-DOMAIN-SUFFIX,akamaized.net
+# > Client
+PROCESS-NAME,/Applications/WeChat.app/Contents/MacOS/WeChat,DIRECT
+PROCESS-NAME,/Applications/Termius.app/Contents/MacOS/Termius,DIRECT
+PROCESS-NAME,/Applications/Termius.app/Contents/Frameworks/Termius Helper (Renderer).app/Contents/MacOS/Termius Helper (Renderer),DIRECT
 
 # > Google
 DOMAIN-SUFFIX,googletraveladservices.com
