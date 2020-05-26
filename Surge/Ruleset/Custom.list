@@ -3,6 +3,14 @@ USER-AGENT,coffeecorp*
 USER-AGENT,restaurant-mobile*
 DOMAIN,app.adjust.com
 
+# > Akamai
+DOMAIN-SUFFIX,akadns.net
+DOMAIN-SUFFIX,akamai.net
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,akamaistream.net
+DOMAIN-SUFFIX,akamaized.net
+
 # > Google
 DOMAIN-SUFFIX,googletraveladservices.com
 DOMAIN,safebrowsing.googleapis.com
