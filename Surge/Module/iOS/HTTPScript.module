@@ -3,8 +3,24 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% *.amemv.com, *.musical.ly, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, api.intsig.net, api.gotokeep.com, vip1.kuwo.cn, p.du.163.com, vsco.co, api.picsart.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, note.youdao.com, u.kanghuayun.com, api.rr.tv
+hostname = %APPEND% *.amemv.com, *.musical.ly, api*.tiktokv.com, aweme*.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, api.intsig.net, api.gotokeep.com, vip1.kuwo.cn, p.du.163.com, vsco.co, api.picsart.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, note.youdao.com, u.kanghuayun.com, api.rr.tv, sk.ulysses.app, *.xiangxiangapps.com, *.lagoapps.com, ios.xiangjiaoapps.com, apple.fuliapps.com, ios.fuliapps.com, api.m.jd.com, api.gao1gps.cn, avoscloud.com, www.xmind.cn, app.bilibili.com
 # api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, api.termius.com, pan.baidu.com, 
+
+[Rule]
+# > 京东  去启动广告
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
+# > 哔哩哔哩 去广告
+URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
+URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
+
+# > 抖音 去广告&水印
+^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/feed\/ https://aweme.snssdk.com/aweme/v1/feed/ header
+^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/aweme\/post\/ https://aweme.snssdk.com/aweme/v1/aweme/post/ header
+^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/follow\/feed\/ https://aweme.snssdk.com/aweme/v1/follow/feed/ header
+^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/nearby\/feed\/ https://aweme.snssdk.com/aweme/v1/nearby/feed/ header
+^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/search\/item\/ https://aweme.snssdk.com/aweme/v1/search/item/ header
+^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/general\/search\/single\/ https://aweme.snssdk.com/aweme/v1/general/search/single/ header
+^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/hot/search\/video\/list\/ https://aweme.snssdk.com/aweme/v1/hot/search/video/list/ header
 
 [Script]
 # Remove Ads + Unlock Premium.
@@ -18,6 +34,15 @@ YouTube = type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|c
 # > 抖音 & TikTok (By Choler)
 抖音 & TikTok = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js,script-update-interval=0
 抖音 & TikTok = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js,script-update-interval=0
+
+# > 抖音 & TikTok Remove Ad & Logo
+douyin_post = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme/v1/aweme\/post\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
+douyin_feed = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/feed\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
+douyin_follow = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/follow\/feed\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
+douyin_naerby = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/nearby\/feed\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
+douyin_item = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/search\/item\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
+douyin_search = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/general\/search\/single\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
+douyin_hot = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/hot\/search\/video\/list\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
 
 # > Display netflix ratings（IMDb、douaban）
 Netflix IMDb Ratings = type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,script-update-interval=0
@@ -89,3 +114,12 @@ Youdao Note = type=http-response,pattern=https://note.youdao.com/yws/(mapi/payme
 # > rrTV (by george Jiang)
 rrTV = type=http-response,pattern=^https?:\/\/api\.rr\.tv(\/user\/profile|\/ad\/getAll),script-path=https://raw.githubusercontent.com/popeyelau/Surge/master/rrtv.js,script-update-interval=0,script-update-interval=0
 
+# > 香蕉视频VIP
+xjsp.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js,type=http-response,pattern=^https?:\/\/.*\.(lago|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/)
+
+# > XMind思维导图
+XMind.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/XMind.js,type=http-response,pattern=https:\/\/www\.xmind\.cn\/\_res\/devices
+
+# > Ulysses
+http-request ^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/cleancacheulysses.js
+http-response ^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/ulysses.js
