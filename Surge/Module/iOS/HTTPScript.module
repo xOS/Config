@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% *.amemv.com, *.musical.ly, api*.tiktokv.com, aweme*.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, mp.weixin.qq.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, api.intsig.net, vip1.kuwo.cn, vsco.co, api.picsart.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, api.rr.tv, sk.ulysses.app, *.xiangxiangapps.com, *.lagoapps.com, ios.xiangjiaoapps.com, apple.fuliapps.com, ios.fuliapps.com, api.m.jd.com, api.gao1gps.cn, avoscloud.com, www.xmind.cn, app.bilibili.com
+hostname = %APPEND% *.googlevideo.com, *.amemv.com, *.musical.ly, api*.tiktokv.com, aweme*.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, mp.weixin.qq.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, api.intsig.net, vip1.kuwo.cn, vsco.co, api.picsart.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, api.rr.tv, sk.ulysses.app, *.xiangxiangapps.com, *.lagoapps.com, ios.xiangjiaoapps.com, apple.fuliapps.com, ios.fuliapps.com, api.m.jd.com, www.xmind.cn, app.bilibili.com
 # api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, api.termius.com, pan.baidu.com, 
 
 [Rule]
