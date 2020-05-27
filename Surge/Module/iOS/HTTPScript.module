@@ -1,9 +1,9 @@
 #!name=HTTP Script
-#!desc=修改 HTTP 请求或响应类脚本。
+#!desc=一些脚本。
 #!system=ios
 
 [MITM]
-hostname = %APPEND% *.amemv.com, *.musical.ly, api*.tiktokv.com, aweme*.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, r.inews.qq.com, mp.weixin.qq.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, api.intsig.net, api.gotokeep.com, vip1.kuwo.cn, p.du.163.com, vsco.co, api.picsart.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, note.youdao.com, u.kanghuayun.com, api.rr.tv, sk.ulysses.app, *.xiangxiangapps.com, *.lagoapps.com, ios.xiangjiaoapps.com, apple.fuliapps.com, ios.fuliapps.com, api.m.jd.com, api.gao1gps.cn, avoscloud.com, www.xmind.cn, app.bilibili.com
+hostname = %APPEND% *.amemv.com, *.musical.ly, api*.tiktokv.com, aweme*.snssdk.com, ios.prod.ftl.netflix.com, api.zhihu.com, mp.weixin.qq.com, trade-acs.m.taobao.com, api.gamer.com.tw, account.wps.cn, api.intsig.net, vip1.kuwo.cn, vsco.co, api.picsart.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, viva.v21xy.com, api.vuevideo.net, api.rr.tv, sk.ulysses.app, *.xiangxiangapps.com, *.lagoapps.com, ios.xiangjiaoapps.com, apple.fuliapps.com, ios.fuliapps.com, api.m.jd.com, api.gao1gps.cn, avoscloud.com, www.xmind.cn, app.bilibili.com
 # api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, api.termius.com, pan.baidu.com, 
 
 [Rule]
@@ -52,12 +52,6 @@ Netflix IMDb Ratings = type=http-response,pattern=^https?://ios\.prod\.ftl\.netf
 # > 知乎 (By Primovist)
 Zhihu = type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/questions|market\/header),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/Surge/resources/script/zhihu.js,script-update-interval=0
 
-# > QQ News
-QQ News = type=http-response,pattern=https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList),requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/QQNews.js,script-update-interval=0
-
-# > 微信阅读 （By HoGer）
-Weixin Read = type=http-response,pattern=^https?:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/imxh/js/master/weixinyuedu.js,script-update-interval=0
-
 # > 微信公众号 (By Choler)
 WeChat = type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,script-path=https://Choler.github.io/Surge/Script/WeChat.js,script-update-interval=0
 
@@ -78,13 +72,6 @@ WPS = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requir
 # > CamScanner unlocks pro, Cloud scanning is not available.
 CamScanner = type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,script-update-interval=0
 
-# > Keep app unlock private lessons and action libraries.
-Keep = type=http-response,pattern=https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Keep.js,script-update-interval=0
-
-# > KuWo music unlock vip
-KuWo Music = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,script-update-interval=0
-KuWo Music = type=hhttp-request,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js,script-update-interval=0
-
 # > VSCO
 VSCO = type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,script-update-interval=0
 
@@ -103,8 +90,6 @@ VivaVideo = type=http-response,pattern=^https:\/\/viva\.v21xy\.com\/api\/rest\/u
 # > VUE video
 VUE = type=http-response,pattern=https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,script-update-interval=0
 
-# > Youdao note unlock vip (By Alex0510)
-Youdao Note = type=http-response,pattern=https://note.youdao.com/yws/(mapi/payment|api/self),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/ydybj.js,script-update-interval=0
 
 # > Termius
 // Termius = type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Termius.js,script-update-interval=0
