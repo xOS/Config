@@ -60,7 +60,7 @@ hijack-dns = 8.8.8.8:53,8.8.4.4:53
 
 # > 公共Wi-Fi下的默认策略启用
 use-default-policy-if-wifi-not-primary = false
-# > 规则均衡模式， macOS Only
+# > TUN规则匹配模式 (默认值: false)， macOS Only
 enhanced-mode-by-rule = false
 
 # > 代理跳过系统
