@@ -3,11 +3,19 @@ USER-AGENT,coffeecorp*
 USER-AGENT,restaurant-mobile*
 DOMAIN,app.adjust.com
 
-# > Client
+# Client
+# > WeChat
 PROCESS-NAME,/Applications/WeChat.app/Contents/MacOS/WeChat
+
+# > Termius
 PROCESS-NAME,/Applications/Termius.app/Contents/MacOS/Termius
 PROCESS-NAME,/Applications/Termius.app/Contents/Frameworks/Termius Helper (Renderer).app/Contents/MacOS/Termius Helper (Renderer)
+
+# > BestTrace
 PROCESS-NAME,/Applications/BestTrace.app/Contents/MacOS/BestTrace
+
+# > Spark
+PROCESS-NAME,/Applications/Spark.app/Contents/MacOS/Spark
 
 # > Google
 DOMAIN-SUFFIX,googletraveladservices.com
