@@ -9,6 +9,7 @@ http-request https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/
 MITM = weibo.com
 */
 const accounts = [
+    ["楠佩", "10080882d0855239a80bf9e4c18a7282e6b5b9"],
     ["少女", "100808795c6eb3ae066542f2c1d9f91b567d61"],
     ["唯美女生", "100808d1da2444fcb47c2e7969a261e1cfa34f"],
     ["徐佩楠", "1008082c12b69cf4eb13fce7410919a819c825"],
