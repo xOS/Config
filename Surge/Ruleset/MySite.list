@@ -20,6 +20,7 @@ DOMAIN-SUFFIX, two.cm
 DOMAIN-SUFFIX, nangle.com.cn
 
 # > 其它
+DOMAIN-SUFFIX, static.today
 DOMAIN-SUFFIX, free.ac.cn
 DOMAIN-SUFFIX, doh.show
 DOMAIN-SUFFIX, doh.social
