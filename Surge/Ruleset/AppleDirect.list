@@ -17,6 +17,7 @@ PROCESS-NAME,storedownloadd
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN,iosapps.itunes.apple.com
 DOMAIN,osxapps.itunes.apple.com
+USER-AGENT,com.apple.appstored*
 
 # > Update
 DOMAIN,supportdownload.apple.com
