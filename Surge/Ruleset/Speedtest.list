@@ -2,11 +2,13 @@
 USER-AGENT,SpeedTest*
 DOMAIN-KEYWORD,speedtest
 DOMAIN-SUFFIX,ooklaserver.net
+URL-REGEX,speedtest\d.macau.ctm.net:8080
+DOMAIN-SUFFIX,88-f.net
+DOMAIN,st.pautina-telecom.ru
+DOMAIN-SUFFIX,goodnet.su
+DOMAIN-SUFFIX,a-mo.net
 
 # Fast
 DOMAIN-SUFFIX,fast.com
 DOMAIN,api.fast.com
-DOMAIN-SUFFIX,1.oca.nflxvideo.net
-DOMAIN-SUFFIX,1.oca.nflxvideo.net
-DOMAIN-SUFFIX,1.oca.nflxvideo.net
 DOMAIN-SUFFIX,1.oca.nflxvideo.net
