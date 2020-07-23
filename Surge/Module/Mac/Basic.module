@@ -24,9 +24,9 @@ wifi-access-http-port = 6152
 # > SOCKS5 代理服务端口（默认为"6153"）
 wifi-access-socks5-port = 6153
 # > HTTP 代理监听地址
-http-listen = 0.0.0.0
+http-listen = 0.0.0.0:6152
 # > HTTP 代理监听地址
-socks5-listen = 0.0.0.0
+socks5-listen = 0.0.0.0:6153
 
 # > DNS 服务地址，只用于解析 DoH 服务地址
 dns-server = 8.8.8.8, system
