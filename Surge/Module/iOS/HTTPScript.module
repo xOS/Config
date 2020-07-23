@@ -36,6 +36,7 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 # > 优酷 去广告
 URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
+[URL Rewrite]
 # > TikTok 解锁
 (?<=_region=)CN(?=&) KR 307
 (?<=&app_version=)16..(?=.?.?&) 1 307
