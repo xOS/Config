@@ -38,9 +38,9 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
 [URL Rewrite]
 # > TikTok 解锁
-(?<=_region=)CN(?=&) KR 307
+((?<=_region=)CN(?=&) JP 307
 (?<=&app_version=)16..(?=.?.?&) 1 307
-(?<=\?version_code=)16..(?=.?.?&) 1 307 
+(?<=\?version_code=)16..(?=.?.?&) 1 307
 
 # > 抖音 去广告&水印
 ^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/feed\/ https://aweme.snssdk.com/aweme/v1/feed/ header
