@@ -6,7 +6,7 @@
 (?<=_region=)CN(?=&) KR 307
 (?<=&app_version=)17..(?=.?.?&) 1 307
 (?<=\?version_code=)17..(?=.?.?&) 1 307
-(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
+#(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
 
 [MITM]
 hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
