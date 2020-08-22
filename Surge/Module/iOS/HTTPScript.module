@@ -38,10 +38,9 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
 [URL Rewrite]
 # > TikTok 解锁
-((?<=_region=)CN(?=&) KR 307
+(?<=_region=)CN(?=&) KR 307
 (?<=&app_version=)17..(?=.?.?&) 1 307
 (?<=\?version_code=)17..(?=.?.?&) 1 307
-#(.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
 
 [Script]
 # > 京东比价
