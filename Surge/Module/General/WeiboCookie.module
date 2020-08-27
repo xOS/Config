@@ -1,0 +1,10 @@
+#!name= 微博超话Cookie获取
+#!desc= 微博超话Cookie获取。
+
+[script]
+
+微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.cookie.js,requires-body=false
+
+
+[MITM]
+hostname = api.weibo.cn
