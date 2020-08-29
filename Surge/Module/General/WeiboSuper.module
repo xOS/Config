@@ -3,4 +3,7 @@
 
 [script]
 
-微博超话 = type=cron,cronexp="0 55 0,21,4 * * * ",wake-system=1,script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.js,script-update-interval=0
+微博超话 = type=cron,cronexp="0 58 0,21,4 * * * ",wake-system=1,script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% api.weibo.cn
