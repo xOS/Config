@@ -28,23 +28,23 @@ box订阅链接：https://raw.githubusercontent.com/toulanboy/scripts/master/tou
 *************************
 【Surge 4.2+ 脚本配置】
 *************************
-微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.cookie.js,requires-body=false
-微博超话 = type=cron,cronexp="5 0  * * *",script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.js,wake-system=true,timeout=600
+微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false
+微博超话 = type=cron,cronexp="5 0  * * *",script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.js,wake-system=true,timeout=600
 
 *************************
 【Loon 2.1+ 脚本配置】
 *************************
 [script]
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.js, timeout=600, tag=微博超话
-http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.cookie.js,requires-body=false, tag=微博超话cookie获取
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.js, timeout=600, tag=微博超话
+http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false, tag=微博超话cookie获取
 
 *************************
 【 QX 1.0.10+ 脚本配置 】 
 *************************
 [rewrite_local]
-^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) url script-request-header https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.cookie.js
+^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) url script-request-header https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js
 [task]
-5 0 * * * https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.js, tag=微博超话
+5 0 * * * https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.js, tag=微博超话
 
 
 [MITM]

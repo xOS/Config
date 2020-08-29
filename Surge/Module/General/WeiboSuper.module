@@ -1,5 +1,0 @@
-#!name= 微博超话签到
-#!desc= 微博超话定时签到脚本。
-
-[Script]
-微博超话 = type=cron,cronexp="0 0 0,2,4 * * * ",wake-system=1,script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/weibotalk.js,script-update-interval=0
