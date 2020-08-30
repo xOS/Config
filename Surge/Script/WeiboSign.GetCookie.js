@@ -28,7 +28,7 @@ box订阅链接：https://raw.githubusercontent.com/toulanboy/scripts/master/tou
 *************************
 【Surge 4.2+ 脚本配置】
 *************************
-微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false
+微博cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false
 微博超话 = type=cron,cronexp="5 0  * * *",script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.js,wake-system=true,timeout=600
 
 *************************
@@ -36,7 +36,7 @@ box订阅链接：https://raw.githubusercontent.com/toulanboy/scripts/master/tou
 *************************
 [script]
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.js, timeout=600, tag=微博超话
-http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false, tag=微博超话cookie获取
+http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false, tag=微博cookie获取
 
 *************************
 【 QX 1.0.10+ 脚本配置 】 
@@ -71,14 +71,14 @@ if ($request && $request.method != 'OPTIONS' && $request.url.match(/\_\-\_myfoll
     console.log(listurl)
     $.setdata(listurl, tokenurl)
     $.setdata(listheaders, tokenheaders)
-    $.msg("微博超话 [账号一]", "✅获取已关注超话列表成功", "✨接下来，请点进一个超话进行签到\n如果没有签到的超话，请关注新的进行签到。")
+    $.msg("微博超话 [账号一]", "✅获取已关注超话列表成功！", "✨接下来，请点进一个超话进行签到\n如果没有签到的超话，请关注新的进行签到。")
   }
   else {
     if (!($.getdata(tokencheckinurl) == undefined || $.getdata(tokencheckinurl) == "") && listurl != $.getdata(tokenurl)) {
       console.log(listurl)
       $.setdata(listurl, tokenurl2)
       $.setdata(listheaders, tokenheaders2)
-      $.msg("微博超话 [账号二]", "✅获取已关注超话列表成功", "✨接下来，请点进一个超话进行签到\n如果没有签到的超话，请关注新的进行签到。")
+      $.msg("微博超话 [账号二]", "✅获取已关注超话列表成功！", "✨接下来，请点进一个超话进行签到\n如果没有签到的超话，请关注新的进行签到。")
     }
   }
 } else if ($request && $request.method != 'OPTIONS' && $request.url.match(/active\_checkin/) && $request.url.match(/page\/button/)){
@@ -89,7 +89,7 @@ if ($request && $request.method != 'OPTIONS' && $request.url.match(/\_\-\_myfoll
     console.log(checkinurl)
     $.setdata(checkinurl, tokencheckinurl)
     $.setdata(checkinheaders, tokencheckinheaders)
-    $.msg("微博超话 [账号一]", "🎉获取超话签到链接成功", `若之前已弹出【获取已关注列表成功】的通知，那么已完成当前账号cookie获取。\n🚨若你只需要签到1个账号，请现在去关闭获取cookie的脚本或重写。`)
+    $.msg("微博超话 [账号一]", "🎉获取超话签到链接成功！", `若之前已弹出【获取已关注列表成功】的通知，那么已完成当前账号cookie获取。\n🚨若你只需要签到一个账号，那么请现在就去关闭获取cookie的脚本或重写。`)
 
   }
   else {
@@ -97,7 +97,7 @@ if ($request && $request.method != 'OPTIONS' && $request.url.match(/\_\-\_myfoll
       console.log(checkinurl)
       $.setdata(checkinurl, tokencheckinurl2)
       $.setdata(checkinheaders, tokencheckinheaders2)
-      $.msg("微博超话 [账号二]", "🎉获取超话签到链接成功", `若之前已弹出【获取已关注列表成功】的通知，那么已完成当前账号cookie获取。\n🚨请关闭获取cookie的脚本或重写，然后可以愉快使用了。`)
+      $.msg("微博超话 [账号二]", "🎉获取超话签到链接成功！", `若之前已弹出【获取已关注列表成功】的通知，那么已完成当前账号cookie获取。\n🚨请关闭获取cookie的脚本或重写，然后可以愉快德使用了。`)
     }
   }
 }

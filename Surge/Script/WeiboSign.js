@@ -28,7 +28,7 @@ box订阅链接：https://raw.githubusercontent.com/toulanboy/scripts/master/tou
 *************************
 【Surge 4.2+ 脚本配置】
 *************************
-微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false
+微博cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false
 微博超话 = type=cron,cronexp="5 0  * * *",script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.js,wake-system=true,timeout=600
 
 *************************
@@ -36,7 +36,7 @@ box订阅链接：https://raw.githubusercontent.com/toulanboy/scripts/master/tou
 *************************
 [script]
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.js, timeout=600, tag=微博超话
-http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false, tag=微博超话cookie获取
+http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/WeiboSign.GetCookie.js,requires-body=false, tag=微博cookie获取
 
 *************************
 【 QX 1.0.10+ 脚本配置 】 
@@ -128,7 +128,7 @@ function get_counts() {
         $.listheaders == undefined || $.listheaders == "" ||
         $.checkinurl == undefined || $.checkinurl == "" ||
         $.checkinheaders == undefined || $.checkinheaders == "") {
-        $.msg($.name, "🚫cookie不完整 或 没有cookie", "🚫请认真阅读配置，按流程获取cookie。\n🔍若仍无法解决，请先清空cookie再获取。\n🔍如何清空？\n1️⃣本地文件：将文件内delete_cookie置为true。\n2️⃣远程文件：使用boxjs，在box内打开清空cookie开关")
+        $.msg($.name, "🚫cookie不完整 或 没有cookie", "🚫请认真阅读配置，按流程获取cookie。\n🔍若仍无法解决，请先清空cookie再获取。\n🔍如何清空？\n1️⃣本地文件：将文件内delete_cookie置为true。\n2️⃣远程文件：使用BoxJS，在box内打开清空cookie开关")
         return false;
     } else {
         $.count_num = 1
@@ -165,13 +165,13 @@ function output(current) {
     $.this_msg = ""
     for (var i = 1; i <= $.message.length; ++i) {
         if (i % ($.msg_max_num) == 0) {
-            $.msg(`${$.name}${$.count_num==1?"":(current==1?"[账号一]":"[账号二]")}:  成功${$.successNum}个，失败${$.failNum}`, `当前第${Math.ceil(i/$.msg_max_num)}页 ，共${Math.ceil($.message.length/$.msg_max_num)}页`, $.this_msg)
+            $.msg(`${$.name}${$.count_num==1?"":(current==1?"[账号一]":"[账号二]")}:  成功${$.successNum}个，失败${$.failNum}个。`, `当前第${Math.ceil(i/$.msg_max_num)}页 ，共${Math.ceil($.message.length/$.msg_max_num)}页。`, $.this_msg)
             $.this_msg = ""
         }
         $.this_msg += `${$.message[i-1]}\n`
     }
     if ($.message.length % $.msg_max_num != 0) {
-        $.msg(`${$.name}${$.count_num==1?"":(current==1?"[账号一]":"[账号二]")}:  成功${$.successNum}个，失败${$.failNum}`, `当前第${Math.ceil((i-1)/$.msg_max_num)}页 ，共${Math.ceil($.message.length/$.msg_max_num)}页`, $.this_msg)
+        $.msg(`${$.name}${$.count_num==1?"":(current==1?"[账号一]":"[账号二]")}:  成功${$.successNum}个，失败${$.failNum}个。`, `当前第${Math.ceil((i-1)/$.msg_max_num)}页 ，共${Math.ceil($.message.length/$.msg_max_num)}页。`, $.this_msg)
     }
 }
 
@@ -268,13 +268,13 @@ function checkin(id, name) {
             name = name.replace(/超话/, "")
             if ((response.statusCode == 418)) {
                 $.failNum += 1
-                $.message.push(`【${name}】："签到太频繁啦，请稍后再试"`);
-                console.log(`【${name}】："签到太频繁啦，请稍后再试"`);
+                $.message.push(`【${name}】："签到太频繁啦，请稍后再试！"`);
+                console.log(`【${name}】："签到太频繁啦，请稍后再试！"`);
                 if (debug) console.log(response)
             } else if (response.statusCode == 511) {
                 $.failNum += 1;
-                $.message.push(`【${name}】："需要身份验证，请稍后再试"`);
-                console.log(`【${name}】："需要身份验证，请稍后再试"`);
+                $.message.push(`【${name}】："需要身份验证，请稍后再试！"`);
+                console.log(`【${name}】："需要身份验证，请稍后再试！"`);
             } else {
                 var body = response.body;
                 var obj = JSON.parse(body);
@@ -287,14 +287,14 @@ function checkin(id, name) {
                     $.failNum += 1;
                 }
                 if (result == 1) {
-                    $.message.push(`【${name}】：✅${obj.button.name}`)
+                    $.message.push(`【${name}】：✅已${obj.button.name}`)
                     console.log(`【${name}】：${obj.button.name}`);
                 } else if (result == 382004) {
-                    $.message.push(`【${name}】：✨今天已签到`);
+                    $.message.push(`【${name}】：✨今天已签过了。`);
                     console.log(`【${name}】：${obj.error_msg}`);
                 } else if (result == 388000) {
-                    $.message.push(`【${name}】："需要拼图验证⚠️请加大签到间隔"`);
-                    console.log(`【${name}】："需要拼图验证⚠️请加大签到间隔"`);
+                    $.message.push(`【${name}】："需要拼图验证⚠️请加大签到间隔！"`);
+                    console.log(`【${name}】："需要拼图验证⚠️请加大签到间隔！"`);
                     if (debug) console.log(response)
                 } else if (result == 382010) {
                     $.message.push(`\n【${name}】："超话不存在⚠️"`);
