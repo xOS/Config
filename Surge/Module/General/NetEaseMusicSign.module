@@ -1,0 +1,5 @@
+#!name=云村签到
+#!desc=网易云音乐签到
+
+[Script]
+云村签到 = type=cron,cronexp="0 1 0,2,4 * * * ",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,wake-system=true
