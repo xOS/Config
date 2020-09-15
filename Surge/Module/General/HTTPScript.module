@@ -37,11 +37,14 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
 [URL Rewrite]
 # > TikTok 解锁
-(?<=_region=)CN(?=&) UK 307
+(?<=_region=)CN(?=&) KR 307
 (?<=&app_version=)1[6-9]..(?=.?.?&) 1 307
 (?<=\?version_code=)1[6-9]..(?=.?.?&) 1 307
 
 [Script]
+# < 订阅管理
+订阅管理 = type=http-request,pattern=^https?:\/\/sub\.io,script-path=https://raw.githubusercontent.com/XOS/Sub_Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
+
 # > BoxJS
 //http://boxjs.com, https://6.6.6.6, https://2.2.2.2
 Rewrite: BoxJs = type=http-request,pattern=^https://6.6.6.6(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js,requires-body=true,max-size=0,timeout=120
@@ -105,4 +108,4 @@ Wps.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.co
 //workingcopy.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/workingcopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
 
 [MITM]
-hostname = %APPEND% 6.6.6.6, 2.2.2.2, *.googlevideo.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com
+hostname = %APPEND% sub.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com
