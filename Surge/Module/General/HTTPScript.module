@@ -42,7 +42,7 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 (?<=\?version_code=)1[6-9]..(?=.?.?&) 1 307
 
 [Script]
-# < 订阅管理
+# > 订阅管理
 订阅管理 = type=http-request,pattern=^https?:\/\/sub\.io,script-path=https://raw.githubusercontent.com/XOS/Sub_Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
 
 # > BoxJS
