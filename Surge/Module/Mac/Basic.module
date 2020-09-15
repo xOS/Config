@@ -6,6 +6,9 @@
 # > 日志等级 warning, notify, info, verbose (默认值: notify)
 loglevel = warning
 
+# > HTTP-API
+http-api = Her@0.0.0.0:2222
+
 # > TLS Provider: default, secure-transport, network-framework, openssl (默认值: default)
 tls-provider = openssl
 
