@@ -107,5 +107,18 @@ Wps.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.co
 # > workingcopy.js
 //workingcopy.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/workingcopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
 
+# > PicsArt
+PicsArt = type=http-response,pattern=https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,script-update-interval=0
+
+# > Lightroom
+Adobe Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/Lightroom.js,script-update-interval=0
+
+# > Photoshop Express
+PS Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/PS%20Express.js,script-update-interval=0
+
+# > CamScanner unlocks pro, Cloud scanning is not available.
+CamScanner = type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,script-update-interval=0
+
 [MITM]
 hostname = %APPEND% sub.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com
+, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com
