@@ -15,6 +15,17 @@ URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 
 # > YouTube 去片头广告
 URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier),REJECT-TINYGIF
+URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/pagead\/,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/ptracking\?,REJECT
+URL-REGEX,https?:\/\/m.youtube.com\/_get_ads,REJECT
+URL-REGEX,https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
+URL-REGEX,https?:\/\/s0.2mdn.net\/ads\/,REJECT
+URL-REGEX,https?:\/\/stats.tubemogul.com\/stats\/,REJECT
+URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
+URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
 
 # > 知乎 去广告
 //SOME MCN INFO MAY BE USEFUL
@@ -69,10 +80,10 @@ Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/
 时间轴 = type=http-response,requires-body=1,max-size=-1,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list),script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 
 # > 微信公众号
-WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
+WeChat = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
 
 # > YouTube
-YouTube.js = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
+YouTube = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
 
 # > 人人视频 去广告
 rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://Choler.github.io/Surge/Script/rrsp.js
@@ -120,4 +131,4 @@ PS Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/m
 CamScanner = type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% sub.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com
+hostname = %APPEND% sub.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com
