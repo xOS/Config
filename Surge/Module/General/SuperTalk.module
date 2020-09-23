@@ -3,5 +3,5 @@
 
 [Script]
 # > 微博超话签到
-微博超话签到 = type=cron,cronexp="0 0 0,2,4 * * * ",debug=1,script-path=https://raw.githubusercontent.com/XOS/Profiles/Her/Surge/Script/Super_Checkin.js
+微博超话签到 = type=cron,cronexp="0 0 0,2,4 * * * ",debug=1,script-path=https://raw.githubusercontent.com/XOS/Config/Her/Surge/Script/Super_Checkin.js
 
