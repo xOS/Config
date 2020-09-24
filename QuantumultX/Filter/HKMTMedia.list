@@ -1,0 +1,34 @@
+# > 爱奇艺
+USER-AGENT,QIYI*,direct
+USER-AGENT,iQiYi*,direct
+USER-AGENT,PPStream*,direct
+USER-AGENT,QYPlayer*,direct
+HOST-SUFFIX,iqiyi.com,direct
+HOST-SUFFIX,iqiyipic.com,direct
+HOST-SUFFIX,qy.net,direct
+HOST-SUFFIX,71.am,direct
+IP-CIDR,101.227.0.0/16,no-resolve,direct
+IP-CIDR,101.224.0.0/13,no-resolve,direct
+IP-CIDR,119.176.0.0/12,no-resolve,direct
+
+# > 哔哩哔哩
+USER-AGENT,*bili*,direct
+HOST-KEYWORD,bilibili,direct
+HOST-SUFFIX,acg.tv,direct
+HOST-SUFFIX,acgvideo.com,direct
+HOST-SUFFIX,b23.tv,direct
+HOST-SUFFIX,biliapi.com,direct
+HOST-SUFFIX,biliapi.net,direct
+HOST-SUFFIX,bilibili.com,direct
+HOST-SUFFIX,biligame.com,direct
+HOST-SUFFIX,biligame.net,direct
+HOST-SUFFIX,bilivideo.com,direct
+HOST-SUFFIX,hdslb.com,direct
+HOST-SUFFIX,im9.com,direct
+
+# > Bahamut
+USER-AGENT,Anime*,direct
+HOST-SUFFIX,bahamut.com.tw,direct
+HOST-SUFFIX,gamer.com.tw,direct
+HOST,gamer-cds.cdn.hinet.net,direct
+HOST,gamer2-cds.cdn.hinet.net,direct
