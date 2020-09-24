@@ -7,6 +7,8 @@ HOST-SUFFIX,fbcdn.net,PROXY
 HOST-SUFFIX,fbsbx.com,PROXY
 HOST-SUFFIX,fbworkmail.com,PROXY
 HOST-SUFFIX,instagram.com,PROXY
+HOST-SUFFIX,facebook.com,PROXY
+HOST-SUFFIX,facebook.net,PROXY
 HOST-SUFFIX,m.me,PROXY
 HOST-SUFFIX,messenger.com,PROXY
 HOST-SUFFIX,oculus.com,PROXY
