@@ -19,6 +19,10 @@ DOMAIN-SUFFIX, two.cm
 # > 楠歌
 DOMAIN-SUFFIX, nangle.com.cn
 
+# > API服务
+DOMAIN-SUFFIX, api.srl
+DOMAIN-SUFFIX, sub.click
+
 # > 其它
 DOMAIN-SUFFIX, static.today
 DOMAIN-SUFFIX, free.ac.cn
