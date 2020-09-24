@@ -5,11 +5,12 @@ USER-AGENT,PPStream*,direct
 USER-AGENT,QYPlayer*,direct
 HOST-SUFFIX,iqiyi.com,direct
 HOST-SUFFIX,iqiyipic.com,direct
+HOST,cache.video.iqiyi.com,direct
 HOST-SUFFIX,qy.net,direct
 HOST-SUFFIX,71.am,direct
-IP-CIDR,101.227.0.0/16,no-resolve,direct
-IP-CIDR,101.224.0.0/13,no-resolve,direct
-IP-CIDR,119.176.0.0/12,no-resolve,direct
+IP-CIDR,101.227.0.0/16,direct
+IP-CIDR,101.224.0.0/13,direct
+IP-CIDR,119.176.0.0/12,,direct
 
 # > 哔哩哔哩
 USER-AGENT,*bili*,direct
@@ -25,6 +26,15 @@ HOST-SUFFIX,biligame.net,direct
 HOST-SUFFIX,bilivideo.com,direct
 HOST-SUFFIX,hdslb.com,direct
 HOST-SUFFIX,im9.com,direct
+HOST,api.bilibili.com,,direct
+HOST,upos-hz-mirrorakam.akamaized.net,direct
+
+# > 芒果TV国际
+HOST-SUFFIX,api.mgtv.com,direct
+
+# > WeTV
+HOST-SUFFIX,wetv.vip,direct
+HOST-SUFFIX,wetvinfo.com,direct
 
 # > Bahamut
 USER-AGENT,Anime*,direct
