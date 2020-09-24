@@ -1,35 +1,35 @@
 # 我自己的站点
 
 # > 唯美女生
-HOST-SUFFIX,vmgirls.com
+HOST-SUFFIX,vmgirls.com,direct
 
 # > 楠格
-HOST-SUFFIX,nange.cn
+HOST-SUFFIX,nange.cn,direct
 
 # > 楠格主页
-HOST-SUFFIX,nange.org
-HOST-SUFFIX,nan.ge
+HOST-SUFFIX,nange.org,direct
+HOST-SUFFIX,nan.ge,direct
 
 # > 主机测评
-HOST-SUFFIX,vpsce.com
+HOST-SUFFIX,vpsce.com,direct
 
 # > 短网址
-HOST-SUFFIX,two.cm
+HOST-SUFFIX,two.cm,direct
 
 # > 楠歌
-HOST-SUFFIX,nangle.com.cn
+HOST-SUFFIX,nangle.com.cn,direct
 
 # > API服务
-HOST-SUFFIX,api.srl
-HOST-SUFFIX,sub.click
+HOST-SUFFIX,api.srl,direct
+HOST-SUFFIX,sub.click,direct
 
 # > 其它
-HOST-SUFFIX,static.today
-HOST-SUFFIX,free.ac.cn
-HOST-SUFFIX,doh.show
-HOST-SUFFIX,doh.social
-HOST-SUFFIX,applecache.com
-HOST-SUFFIX,xupeinan.com
-HOST-SUFFIX,imxpn.com
-HOST-SUFFIX,xu.wtf
-HOST-SUFFIX,xmac.app
+HOST-SUFFIX,static.today,direct
+HOST-SUFFIX,free.ac.cn,direct
+HOST-SUFFIX,doh.show,direct
+HOST-SUFFIX,doh.social,direct
+HOST-SUFFIX,applecache.com,direct
+HOST-SUFFIX,xupeinan.com,direct
+HOST-SUFFIX,imxpn.com,direct
+HOST-SUFFIX,xu.wtf,direct
+HOST-SUFFIX,xmac.app,direct
