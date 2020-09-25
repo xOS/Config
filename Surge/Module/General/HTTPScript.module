@@ -143,6 +143,50 @@ Bear熊掌记 = requires-body=1,max-size=0,script-path=https://raw.githubusercon
 # > XMind思维导图
 XMind = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/XMind.js,type=http-response,pattern=https:\/\/www\.xmind\.cn\/\_res\/devices
 
+# 智能证件照相机 (by @superuv)
+证件照相机 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/znzj.js,type=http-response,pattern=^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister
+
+# gk扫描仪(by @superuv)
+扫描仪 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/smy.js,type=http-response,pattern=^https:\/\/api\.gkocr\.com\/api\/userlogin1.php
+
+# > Buyhack
+verify_receipt = requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
+
+# > productive&sleepzy
+Productive = type=http-response,pattern=^https:\/\/subs\.platforms\.team\/.+\/apple\/verify$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/productive.js,script-update-interval=0
+
+# > musixmatch
+musixmatch.miao = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/musixmatch.miao.js,script-update-interval=0,type=http-response,pattern=^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get
+
+# > speak&translate
+speak&translate = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/speak&translate.js,script-update-interval=0,type=http-response,pattern=^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransaction$
+
+# > draft
+draft = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
+
+# > itranslate
+itranslate = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/itranslate.js,script-update-interval=0,type=http-response,pattern=^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$
+
+# > Dayone
+# 1.启用本脚本与 pre 脚本
+# 2.重启 Day One，稍等片刻等待高级版出现
+# 3.禁用掉 pre 脚本，重启 Day One，确认高级版状况不变
+# pre_dayone
+// dayone-pre = debug=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/dayone-pre.js,type=http-request,pattern=^https:\/\/dayone\.me\/api\/users$
+dayone.surge = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/dayone.surge.js,script-update-interval=0,type=http-response,pattern=^https:\/\/dayone\.me\/api\/(users|v2\/users\/(account-status|receipt))$
+
+# > all apps monkey
+monkey = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/monkey.js,script-update-interval=0,type=http-response,pattern=^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update
+
+# > Peak 解锁Pro
+peak = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/peak.js,type=http-response,pattern=^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
+
+# > 菜谱大全解锁vip (By @photonmang)
+菜谱大全 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/cpdq.js,type=http-response,pattern=https?:\/\/api\.jiaonizuocai\.com
+
+# > Gyroscope 解锁 pro (By Maasea)
+gyroscope = requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/gyroscope.js,type=http-response,pattern=^https:\/\/api\.gyrosco\.pe\/v1\/account\/$
+
 
 [MITM]
-hostname = %APPEND% sub.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, sk.ulysses.app, www.xmind.cn
+hostname = %APPEND% sub.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, sk.ulysses.app, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, receipt-validator.herewetest.com, api.jiaonizuocai.com, apic.musixmatch.com, subs.platforms.team, api.gyrosco.pe, backend.getdrafts.com, dayone.me, ssl-api.itranslateapp.com, www.api.monkeyuni.net, billing.peakcloud.org
