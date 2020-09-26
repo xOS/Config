@@ -187,11 +187,14 @@ peak = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/
 # > Gyroscope 解锁 pro (By Maasea)
 gyroscope = requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/gyroscope.js,type=http-response,pattern=^https:\/\/api\.gyrosco\.pe\/v1\/account\/$
 
-#Textnow
-//Textnow = requires-body=1,debug=1,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Textnow.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.*
-
+# > Textnow
 Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Textnow.js,script-update-interval=0
+
+# > 禁止网页跳转简书
+Jianshu = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/noredirect.js
+# > 禁止网页跳转知乎
+Zhihu = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/noredirect.js
 
 
 [MITM]
-hostname = %APPEND% sub.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, sk.ulysses.app, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, receipt-validator.herewetest.com, api.jiaonizuocai.com, apic.musixmatch.com, subs.platforms.team, api.gyrosco.pe, backend.getdrafts.com, dayone.me, ssl-api.itranslateapp.com, www.api.monkeyuni.net, billing.peakcloud.org, api.textnow.me
+hostname = %APPEND% sub.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, api.termius.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, education.github.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, sk.ulysses.app, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, receipt-validator.herewetest.com, api.jiaonizuocai.com, apic.musixmatch.com, subs.platforms.team, api.gyrosco.pe, backend.getdrafts.com, dayone.me, ssl-api.itranslateapp.com, www.api.monkeyuni.net, billing.peakcloud.org, api.textnow.me, links.jianshu.com, link.zhihu.com
