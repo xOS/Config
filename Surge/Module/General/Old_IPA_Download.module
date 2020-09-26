@@ -1,4 +1,4 @@
-#!name=Old_iPA_Downloader
+#!name=旧版App抓包
 #!desc=Requires: Computers need to trust  root Surge certificate and set proxy rule domain-keyword: -buy.itunes.apple.com. (iOS. Open AppleStore search app. Share app into shortcut Old_iPA_Downloader, choose version app. PC: Open iTunes search and click Get). Done (Check \Music\iTunes\iTunes Media\Mobile Applications)
 #!system=ios
 //Link shortcut: https://www.icloud.com/shortcuts/bdbba3de9c8d42fe858bf210d20e5603
