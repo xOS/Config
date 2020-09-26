@@ -188,7 +188,7 @@ peak = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/
 gyroscope = requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/gyroscope.js,type=http-response,pattern=^https:\/\/api\.gyrosco\.pe\/v1\/account\/$
 
 #Textnow
-Textnow = requires-body=1,debug=1,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Textnow.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.*
+Textnow = requires-body=1,debug=1,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Textnow.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.*\/$
 
 
 [MITM]
