@@ -1,9 +1,13 @@
 #!name= 自用脚本
-#!desc= 一些自用脚本，收集自网络。
+#!desc= 一些自用脚本，多合一。收集自网络。
 
 [General]
 # > 优酷 去广告
 force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
+
+[Host]
+# > Apple下载解析加速
+*.itunes.apple.com = script:DNSPod
 
 [Rule]
 # > 京东，去启动广告
@@ -56,6 +60,9 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 ^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
 
 [Script]
+# > Apple下载解析加速
+DNSPod = type=dns,script-path=https://raw.githubusercontent.com/XOS/Config/Her/Surge/Script/DNSPod.js,script-update-interval=-1
+
 # > 订阅管理
 订阅管理 = type=http-request,pattern=^https?:\/\/sub\.io,script-path=https://raw.githubusercontent.com/XOS/Sub_Store/master/backend/SubStore.min.js,requires-body=true,timeout=120,max-size=131072
 
