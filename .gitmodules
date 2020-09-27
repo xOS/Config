@@ -1,0 +1,48 @@
+[submodule "Scripting"]
+	path = Scripting
+	url = https://github.com/langkhach270389/Scripting
+[submodule "Quantumult-X-LK"]
+	path = Quantumult-X-LK
+	url = https://github.com/langkhach270389/Quantumult-X-LK
+[submodule "NobyDa_Script"]
+	path = NobyDa_Script
+	url = https://github.com/NobyDa/Script
+[submodule "NobyDa_ND-AD"]
+	path = NobyDa_ND-AD
+	url = https://github.com/NobyDa/ND-AD
+[submodule "Qure"]
+	path = Qure
+	url = https://github.com/Koolson/Qure
+[submodule "chavyleung"]
+	path = chavyleung
+	url = https://github.com/chavyleung/scripts
+[submodule "QuantumultX-Surge-API"]
+	path = QuantumultX-Surge-API
+	url = https://github.com/KOP-XIAO/QuantumultX
+[submodule "lhie1"]
+	path = lhie1
+	url = https://github.com/lhie1/Rules
+[submodule "Sub-Store"]
+	path = Sub-Store
+	url = https://github.com/Peng-YM/Sub-Store
+[submodule "ScriptConverter"]
+	path = ScriptConverter
+	url = https://github.com/Peng-YM/ScriptConverter
+[submodule "DivineEngine"]
+	path = DivineEngine
+	url = https://github.com/DivineEngine/Profiles
+[submodule "ACL4SSR"]
+	path = ACL4SSR
+	url = https://github.com/ACL4SSR/ACL4SSR
+[submodule "Antirevoke-OTABlocked-Adsblock"]
+	path = Antirevoke-OTABlocked-Adsblock
+	url = https://github.com/langkhach270389/Antirevoke-OTABlocked-Adsblock
+[submodule "maicoo-l"]
+	path = maicoo-l
+	url = https://github.com/maicoo-l/Surge
+[submodule "Choler"]
+	path = Choler
+	url = https://github.com/Choler/Surge
+[submodule "Hackl0us"]
+	path = Hackl0us
+	url = https://github.com/Hackl0us/SS-Rule-Snippet
