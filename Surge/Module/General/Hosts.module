@@ -2,6 +2,7 @@
 #!desc=本地 DNS 映射，以及广告站点重定向至 localhost 以拦截广告。
 
 [Host]
+testflight.apple.com = 104.111.197.139
 *.nextdns.io = server:8.8.8.8
 ip6-localhost = ::1
 ip6-loopback = ::1
