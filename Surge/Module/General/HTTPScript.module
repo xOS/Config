@@ -64,7 +64,7 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 DNSPod = type=dns,script-path=https://raw.githubusercontent.com/XOS/Config/Her/Surge/Script/DNSPod.js,script-update-interval=-1
 
 # > 订阅管理
-订阅管理 = type=http-request,pattern=^https?:\/\/sub\.io,script-path=https://raw.githubusercontent.com/XOS/Sub_Store/master/backend/SubStore.min.js,requires-body=true,timeout=120,max-size=131072
+订阅管理 = type=http-request,pattern=^https?:\/\/sub\.io,script-path=https://raw.githubusercontent.com/XOS/Sub_Store/master/backend/SubStore.js,requires-body=true,timeout=120,max-size=131072
 
 # > BoxJS
 //http://boxjs.com, https://6.6.6.6, https://2.2.2.2
