@@ -36,3 +36,9 @@ DOMAIN,gamer2-cds.cdn.hinet.net
 # > 支付宝
 DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,alipay.hk
+
+# > 八达通
+USER-AGENT,OctopusQuickBuild*
+DOMAIN-SUFFIX,octopus.com.hk
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,octopus-cards.com
