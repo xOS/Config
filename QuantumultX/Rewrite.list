@@ -59,13 +59,6 @@ hostname = *.amemv.com,*.iydsj.com,*.k.sohu.com,*.tv.sohu.com,*.kakamobi.cn,*.ki
 ^https?:\/\/(www.)?yuanchengxiezuo\.com\/ url 302 https://www.teamviewer.com/
 ^https?:\/\/(www.)?zbrushcn.com/ url 302 https://pixologic.com/
 
-# TikTok
-(?<=(carrier|account|sys)_region=)CN url 307 JP
-#解锁港区请取消下条注释
-#(?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 8.4.0
-# Resso
-(?<=(carrier|account|sys|sim)_region=)cn url 307 in
-
 # Advertising Block
 # 0~9
 # > 21经济

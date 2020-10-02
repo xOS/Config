@@ -53,7 +53,6 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 [URL Rewrite]
 # > TikTok 解锁
 ^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? - reject
-
 (?<=_region=)CN(?=&) KR 307
 (?<=&app_version=)1[6-9]..(?=.?.?&) 100. 307
 (?<=\?version_code=)1[6-9]..(?=.?.?&) 100. 307
