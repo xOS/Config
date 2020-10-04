@@ -42,3 +42,13 @@ HOST-SUFFIX,bahamut.com.tw,direct
 HOST-SUFFIX,gamer.com.tw,direct
 HOST,gamer-cds.cdn.hinet.net,direct
 HOST,gamer2-cds.cdn.hinet.net,direct
+
+# > 支付宝
+DOMAIN-SUFFIX,alipay.com,direct
+DOMAIN-SUFFIX,alipay.hk,direct
+
+# > 八达通
+USER-AGENT,OctopusQuickBuild*,direct
+DOMAIN-SUFFIX,octopus.com.hk,direct
+DOMAIN-SUFFIX,octopuscards.com,direct
+DOMAIN-SUFFIX,octopus-cards.com,direct
