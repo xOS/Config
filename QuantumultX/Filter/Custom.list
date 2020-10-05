@@ -1,0 +1,46 @@
+# > General
+USER-AGENT,coffeecorp*,direct
+USER-AGENT,restaurant-mobile*,direct
+DOMAIN,app.adjust.com,direct
+
+# Client
+# > iTerm2
+USER-AGENT,iTerm2*,direct
+DOMAIN-SUFFIX,iterm2.com,direct
+
+# > Spark
+USER-AGENT,Spark*,direct
+DOMAIN-SUFFIX,sparkmailapp.com,direct
+DOMAIN,in.appcenter.ms,direct
+DOMAIN,app-beta.smartmailcloud.com,direct
+
+# > Google
+DOMAIN-SUFFIX,googletraveladservices.com,direct
+DOMAIN,safebrowsing.googleapis.com,direct
+DOMAIN,dl.google.com,direct
+DOMAIN,mtalk.google.com,direct
+
+# > Tencent
+DOMAIN,livew.l.qq.com,direct
+DOMAIN,vd.l.qq.com,direct
+
+# > Strava
+DOMAIN,analytics.strava.com,direct
+
+# > Umeng
+DOMAIN,msg.umeng.com,direct
+DOMAIN,msg.umengcloud.com,direct
+
+# > 头条系
+DOMAIN-SUFFIX,snssdk.com,direct
+
+# > 腾讯游戏
+DOMAIN,cloudctrl.gcloud.qq.com,direct
+USER-AGENT,smoba*,direct
+
+# > 微信
+USER-AGENT,MicroMessenger*,direct
+USER-AGENT,WeChat*,direct
+USER-AGENT,MicroMessenger20%Client*,direct
+DOMAIN-SUFFIX,weixin.qq.com,direct
+
