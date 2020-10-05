@@ -11,10 +11,19 @@ PROCESS-NAME,/Applications/WeChat.app/Contents/MacOS/WeChat
 PROCESS-NAME,/Applications/Termius.app/Contents/MacOS/Termius
 PROCESS-NAME,/Applications/Termius.app/Contents/Frameworks/Termius Helper (Renderer).app/Contents/MacOS/Termius Helper (Renderer)
 
+# > iTerm2
+USER-AGENT,iTerm2*
+DOMAIN-SUFFIX,iterm2.com
+PROCESS-NAME,/Applications/iTerm2.app/Contents/MacOS/iTerm2
+
 # > BestTrace
 PROCESS-NAME,/Applications/BestTrace.app/Contents/MacOS/BestTrace
 
 # > Spark
+USER-AGENT,Spark*
+DOMAIN-SUFFIX,sparkmailapp.com
+DOMAIN,in.appcenter.ms
+DOMAIN,app-beta.smartmailcloud.com
 PROCESS-NAME,/Applications/Spark.app/Contents/MacOS/Spark
 
 # > Apple CDN
