@@ -57,6 +57,9 @@ DOMAIN,vd.l.qq.com
 # > Strava
 DOMAIN,analytics.strava.com
 
+# > 网站
+DOMAIN-SUFFIX,wzfou.com
+
 # > Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
