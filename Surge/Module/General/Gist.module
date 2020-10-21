@@ -5,4 +5,4 @@
 hostname = %APPEND% raw.githubusercontent.com, gist.githubusercontent.com
 
 [Script]
-Github Private = type=http-request, requires-body=0, pattern=^https?:\/\/(raw|gist)\.githubusercontent.com, script-path=https://raw.githubusercontent.com/XOS/Config/Her/Surge/Script/Gist.js
+Github Private = type=http-request, requires-body=0, pattern=^https?:\/\/(raw|gist)\.githubusercontent.com, script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Surge/Script/Gist.js

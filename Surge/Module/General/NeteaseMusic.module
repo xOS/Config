@@ -3,4 +3,4 @@
 
 [Script]
 # > 网易云音乐签到
-网易云音乐签到 = type=cron,cronexp="0 1 0,2,4 * * * ",debug=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,script-update-interval=0
+网易云音乐签到 = type=cron,cronexp="0 1 0,2,4 * * * ",debug=1,script-path=https://cdn.jsdelivr.net/gh/chavyleung/scripts@master/neteasemusic/neteasemusic.js,script-update-interval=0

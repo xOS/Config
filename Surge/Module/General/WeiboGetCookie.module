@@ -2,7 +2,7 @@
 #!desc= 微博Cookie获取。
 
 [Script]
-微博cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/XOS/Config/Her/Surge/Script/WeiboSign.GetCookie.js,script-update-interval=0
+微博cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Surge/Script/WeiboSign.GetCookie.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% api.weibo.cn
