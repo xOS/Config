@@ -93,7 +93,7 @@ WeChat = script-path=https://cdn.jsdelivr.net/gh/Choler/Surge@master/Script/WeCh
 YouTube = script-path=https://cdn.jsdelivr.net/gh/Choler/Surge@master/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
 
 # > 人人视频 去广告
-rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://Choler.github.io/Surge/Script/rrsp.js
+rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://cdn.jsdelivr.net/gh/Choler/Surge@master/Script/rrsp.js
 rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel$,script-path=https://cdn.jsdelivr.net/gh/Choler/Surge@master/Script/rrsp.js
 
 # > 知乎 去广告
