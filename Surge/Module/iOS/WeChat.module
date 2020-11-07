@@ -3,7 +3,7 @@
 #!system=ios
 
 [Script]
-微信公众号 = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
+微信公众号 = script-path=https://cdn.jsdelivr.net/gh/Choler/Surge@master/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
 
 [MITM]
 hostname = %APPEND% mp.weixin.qq.com
