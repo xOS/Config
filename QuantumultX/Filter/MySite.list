@@ -23,12 +23,15 @@ HOST-SUFFIX,nangle.com.cn,direct
 HOST-SUFFIX,api.srl,direct
 HOST-SUFFIX,sub.click,direct
 
+# > CDN域名
+DOMAIN-SUFFIX, applecache.com,direct
+DOMAIN-SUFFIX, somecache.com,direct
+
 # > 其它
 HOST-SUFFIX,static.today,direct
 HOST-SUFFIX,free.ac.cn,direct
 HOST-SUFFIX,doh.show,direct
 HOST-SUFFIX,doh.social,direct
-HOST-SUFFIX,applecache.com,direct
 HOST-SUFFIX,xupeinan.com,direct
 HOST-SUFFIX,imxpn.com,direct
 HOST-SUFFIX,xu.wtf,direct

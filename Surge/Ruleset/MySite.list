@@ -23,12 +23,15 @@ DOMAIN-SUFFIX, nangle.com.cn
 DOMAIN-SUFFIX, api.srl
 DOMAIN-SUFFIX, sub.click
 
+# > CDN域名
+DOMAIN-SUFFIX, applecache.com
+DOMAIN-SUFFIX, somecache.com
+
 # > 其它
 DOMAIN-SUFFIX, static.today
 DOMAIN-SUFFIX, free.ac.cn
 DOMAIN-SUFFIX, doh.show
 DOMAIN-SUFFIX, doh.social
-DOMAIN-SUFFIX, applecache.com
 DOMAIN-SUFFIX, xupeinan.com
 DOMAIN-SUFFIX, imxpn.com
 DOMAIN-SUFFIX, xu.wtf
