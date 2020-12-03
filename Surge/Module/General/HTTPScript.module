@@ -65,7 +65,7 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 DNSPod = type=dns,script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/DNSPod.js,script-update-interval=-1
 
 # > 订阅管理
-订阅管理 = type=http-request,pattern=^https?:\/\/sub\.io,script-path=https://cdn.jsdelivr.net/gh/XOS/Sub_Store@master/backend/SubStore.js,requires-body=true,timeout=120,max-size=131072
+订阅管理 = type=http-request,pattern=^https?:\/\/sub\.io,script-path=https://cdn.jsdelivr.net/gh/XOS/Sub_Store@master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
 
 # > 私库
 Github Private = type=http-request, requires-body=0, pattern=^https?:\/\/(raw|gist)\.githubusercontent.com, script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/Gist.js
