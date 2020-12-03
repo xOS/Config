@@ -5,3 +5,6 @@ HOST-SUFFIX,ooklaserver.net,Speedtest
 
 # Fast
 HOST-SUFFIX,fast.com,Speedtest
+
+# > Speed Test by Cloudflare
+DOMAIN-SUFFIX,speed.cloudflare.com,Speedtest
