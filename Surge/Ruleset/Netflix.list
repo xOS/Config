@@ -1,5 +1,6 @@
 # > Netflix
 USER-AGENT,Argo*
+USER-AGENT,Argo/3370 CFNetwork/1209 Darwin/20.2.0
 DOMAIN-KEYWORD,netflix
 DOMAIN,netflix.com.edgesuite.net
 DOMAIN-SUFFIX,netflix.com
