@@ -13,9 +13,6 @@ HOST-SUFFIX,nan.ge,direct
 # > 主机测评
 HOST-SUFFIX,vpsce.com,direct
 
-# > 短网址
-HOST-SUFFIX,two.cm,direct
-
 # > 楠歌
 HOST-SUFFIX,nangle.com.cn,direct
 
