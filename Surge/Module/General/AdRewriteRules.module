@@ -4,7 +4,7 @@
 [URL Rewrite]
 # Update time: 2020.12.16
 ^https?:\/\/mail\.yandex\.ru\/u2709\/? - reject
-^https?:\/\/an\.yandex\.ru\/count\/? - reject
+^https?:\/\/an\.yandex\.ru\/? - reject
 ^https?:\/\/avatars\.mds\.yandex\.net\/get-direct-picture\/? - reject
 ^https?:\/\/interface\.music\.163\.com\/eapi\/ad - reject
 ^https?:\/\/iadmusicmat\.music.126.net\/.*jpg$ - reject
