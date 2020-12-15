@@ -2,6 +2,8 @@
 USER-AGENT,Argo*
 USER-AGENT,Argo/3370 CFNetwork/1209 Darwin/20.2.0
 DOMAIN-KEYWORD,netflix
+DOMAIN,www.netflix.com
+DOMAIN,ichnaea-web.netflix.com
 DOMAIN,netflix.com.edgesuite.net
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.com.edgesuite.net
