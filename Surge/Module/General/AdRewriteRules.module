@@ -3,7 +3,6 @@
 
 [URL Rewrite]
 # Update time: 2020.12.16
-# This rewrite rule does not decrypt Youtube ads. if you need to, please add the host name：*.googlevideo.com
 ^https?:\/\/mail\.yandex\.ru\/u2709\/? - reject
 ^https?:\/\/an\.yandex\.ru\/count\/? - reject
 ^https?:\/\/avatars\.mds\.yandex\.net\/get-direct-picture\/? - reject
