@@ -1358,7 +1358,7 @@ HOST-SUFFIX,aercxy.com,AdBlock
 HOST-SUFFIX,aerserv.com,AdBlock
 HOST-SUFFIX,aes01.com,AdBlock
 HOST-SUFFIX,afd.baidu.com,AdBlock
-HOST-SUFFIX,afd.l.google.com,AdBlock
+#HOST-SUFFIX,afd.l.google.com,AdBlock
 HOST-SUFFIX,aff.eteachergroup.com,AdBlock
 HOST-SUFFIX,aff.lmgtfy.com,AdBlock
 HOST-SUFFIX,aff.marathonbet.com,AdBlock
@@ -3724,10 +3724,10 @@ HOST-SUFFIX,godloveme.cn,AdBlock
 HOST-SUFFIX,gog9.qzdfc.com,AdBlock
 HOST-SUFFIX,go-mpulse.net,AdBlock
 HOST-SUFFIX,good.ta80.com,AdBlock
-HOST-SUFFIX,googlecommerce.com,AdBlock
-HOST-SUFFIX,googlesyndication.com,AdBlock
-HOST-SUFFIX,googletagmanager.com,AdBlock
-HOST-SUFFIX,googletagservices.com,AdBlock
+#HOST-SUFFIX,googlecommerce.com,AdBlock
+#HOST-SUFFIX,googlesyndication.com,AdBlock
+#HOST-SUFFIX,googletagmanager.com,AdBlock
+#HOST-SUFFIX,googletagservices.com,AdBlock
 HOST-SUFFIX,goolpter.com,AdBlock
 HOST-SUFFIX,gopig.io,AdBlock
 HOST-SUFFIX,gorgon.youdao.com,AdBlock
@@ -5443,7 +5443,7 @@ HOST-SUFFIX,mobclix.com,AdBlock
 HOST-SUFFIX,mobfox.com,AdBlock
 HOST-SUFFIX,mobgi.com,AdBlock
 HOST-SUFFIX,mobilead.kuwo.cn,AdBlock
-HOST-SUFFIX,mobileads.google.com,AdBlock
+#HOST-SUFFIX,mobileads.google.com,AdBlock
 HOST-SUFFIX,mobileads.msn.com,AdBlock
 HOST-SUFFIX,mobileapptracking.com,AdBlock
 HOST-SUFFIX,mobiledissector.com,AdBlock
@@ -5826,9 +5826,9 @@ HOST-SUFFIX,pad.zhywyl.cn,AdBlock
 HOST-SUFFIX,padsdel2.cdnads.com,AdBlock
 HOST-SUFFIX,page.acm.dzwww.com,AdBlock
 HOST-SUFFIX,page.xywy.com,AdBlock
-HOST-SUFFIX,pagead.google.com,AdBlock
-HOST-SUFFIX,pagead.l.google.com,AdBlock
-HOST-SUFFIX,pagead-tpc.l.google.com,AdBlock
+#HOST-SUFFIX,pagead.google.com,AdBlock
+#HOST-SUFFIX,pagead.l.google.com,AdBlock
+#HOST-SUFFIX,pagead-tpc.l.google.com,AdBlock
 HOST-SUFFIX,pagechoice.com,AdBlock
 HOST-SUFFIX,pagechoice.net,AdBlock
 HOST-SUFFIX,pagechoicemotu.gentags.net,AdBlock
@@ -6849,7 +6849,7 @@ HOST-SUFFIX,ssh.szxiuchang.com,AdBlock
 HOST-SUFFIX,ssh.yezijizhang.com,AdBlock
 HOST-SUFFIX,ssjpx.com,AdBlock
 HOST-SUFFIX,ssjy168.com,AdBlock
-HOST-SUFFIX,ssl.google-analytics.com,AdBlock
+#HOST-SUFFIX,ssl.google-analytics.com,AdBlock
 HOST-SUFFIX,ssl.hyhzy.cn,AdBlock
 HOST-SUFFIX,ssl.ymapp.com,AdBlock
 HOST-SUFFIX,ssl-cdn.media.innity.net,AdBlock
