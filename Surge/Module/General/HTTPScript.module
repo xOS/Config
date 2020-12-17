@@ -198,9 +198,9 @@ gyroscope = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/nzw9314/Quan
 Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/langkhach270389/Scripting@master/Textnow.js,script-update-interval=0
 
 # > 禁止网页跳转简书
-Jianshu = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://cdn.jsdelivr.net/gh/zZPiglet/Task@master/noredirect.js
+Jianshu = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://cdn.jsdelivr.net/gh/zZPiglet/Task@master/asset/noredirect.js
 # > 禁止网页跳转知乎
-Zhihu = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://cdn.jsdelivr.net/gh/zZPiglet/Task@master/noredirect.js
+Zhihu = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://cdn.jsdelivr.net/gh/zZPiglet/Task@master/asset/noredirect.js
 
 
 [MITM]
