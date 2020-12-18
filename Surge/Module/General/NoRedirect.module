@@ -12,6 +12,9 @@
 ^https?:\/\/[\w-]+\.xmpush\.xiaomi\.com header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87 Version/11.1.1 Safari/605.1.15
 
 [URL Rewrite]
+# 颇可
+^https?:\/\/(wap.)?(poco|pocoimg)\.cn https://www.poco.cn 302
+
 # > 知乎
 ^https:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
 # > 115
