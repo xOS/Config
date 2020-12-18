@@ -13,7 +13,7 @@
 
 [URL Rewrite]
 # 颇可
-^https?:\/\/(wap.)?(poco|pocoimg)\.cn https://www.poco.cn 302
+#^https?:\/\/(wap.)?(poco|pocoimg)\.cn https://www.poco.cn 302
 
 # > 知乎
 ^https:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
