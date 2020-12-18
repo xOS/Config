@@ -27,4 +27,4 @@ Weibonoredircet2 = type=http-request,pattern=^https:\/\/shop\.sc\.weibo\.com\/h5
 Weibonoredirect3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://cdn.jsdelivr.net/gh/zZPiglet/Task@master/asset/noredirect.js
 
 [MITM]
-hostname = %APPEND% links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *.poco.cn, *.pocoimg.cn, l.gm.mob.com, api.share.mob.com
+hostname = %APPEND% links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *.poco.cn, *.pocoimg.cn, *.gm.mob.com, api.share.mob.com
