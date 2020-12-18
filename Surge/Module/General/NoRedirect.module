@@ -1,6 +1,10 @@
 #!name= 禁止跳转 APP
 #!desc= 禁止网页跳转 APP
 
+[Header Rewrite]
+# > 颇可
+^https?:\/\/(www|m)\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87 Version/11.1.1 Safari/605.1.15
+
 [URL Rewrite]
 # > 知乎
 ^https:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
@@ -19,4 +23,4 @@ Weibonoredircet2 = type=http-request,pattern=^https:\/\/shop\.sc\.weibo\.com\/h5
 Weibonoredirect3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://cdn.jsdelivr.net/gh/zZPiglet/Task@master/asset/noredirect.js
 
 [MITM]
-hostname = %APPEND% links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com
+hostname = %APPEND% links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *.poco.cn
