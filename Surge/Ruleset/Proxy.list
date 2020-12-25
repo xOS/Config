@@ -8,6 +8,3 @@ DOMAIN-SUFFIX,virmach.com
 
 # > Google Voice
 DOMAIN,voice.google.com
-
-# > API
-DOMAIN,api.nan.ge
