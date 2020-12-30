@@ -277,7 +277,12 @@ DOMAIN,mobileads.msn.com,REJECT
 DOMAIN,mopnativeadv.037201.com,REJECT
 DOMAIN,nativeadv.dftoutiao.com,REJECT
 DOMAIN,toots-a.akamaihd.net,REJECT
-DOMAIN-SUFFIX,hitikapi.info
+DOMAIN-SUFFIX,hitikapi.info,REJECT
+DOMAIN-SUFFIX,pinwu123.com,REJECT
+DOMAIN-SUFFIX,shidaikongcheng.cn,REJECT
+DOMAIN-SUFFIX,fj81.cc,REJECT
+DOMAIN-SUFFIX,hyjzsj.cn,REJECT
+DOMAIN-SUFFIX,zzyanhushi.com,REJECT
 
 # (0~9)
 # > 51wnl
