@@ -1,5 +1,5 @@
 #!name=广告重写
-#!desc= 屏蔽广告规则。
+#!desc=屏蔽广告规则。
 
 [URL Rewrite]
 # Update time: 2020.12.16
