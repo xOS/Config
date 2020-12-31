@@ -13,6 +13,8 @@ DOMAIN,netflix.com.edgesuite.net
 DOMAIN,ios.prod.cloud.netflix.com
 DOMAIN,prod.cloud.netflix.com
 DOMAIN,cloud.netflix.com
+DOMAIN-SUFFIX,r.nflxso.net
+DOMAIN,ios.prod.ftl.netflix.com
 DOMAIN-SUFFIX,cloud.netflix.com
 DOMAIN-SUFFIX,ftl.netflix.com
 DOMAIN-SUFFIX,prod.ftl.netflix.com
