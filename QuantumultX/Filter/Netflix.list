@@ -6,6 +6,10 @@ HOST-SUFFIX,nflximg.com,Netflix
 HOST-SUFFIX,nflximg.net,Netflix
 HOST-SUFFIX,nflxso.net,Netflix
 HOST-SUFFIX,nflxvideo.net,Netflix
+DOMAIN,ios.prod.cloud.netflix.com,Netflix
+DOMAIN,prod.cloud.netflix.com,Netflix
+DOMAIN,cloud.netflix.com,Netflix
+DOMAIN-SUFFIX,cloud.netflix.com,Netflix
 IP-CIDR,23.246.0.0/18,Netflix
 IP-CIDR,37.77.184.0/21,Netflix
 IP-CIDR,45.57.0.0/17,Netflix

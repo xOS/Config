@@ -10,6 +10,10 @@ DOMAIN,probe.prod.ftl.netflix.com
 DOMAIN,push.prod.netflix.com
 DOMAIN,ichnaea-web.netflix.com
 DOMAIN,netflix.com.edgesuite.net
+DOMAIN,ios.prod.cloud.netflix.com
+DOMAIN,prod.cloud.netflix.com
+DOMAIN,cloud.netflix.com
+DOMAIN-SUFFIX,cloud.netflix.com
 DOMAIN-SUFFIX,ftl.netflix.com
 DOMAIN-SUFFIX,prod.ftl.netflix.com
 DOMAIN-SUFFIX,prod.netflix.com
