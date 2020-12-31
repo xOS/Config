@@ -287,6 +287,12 @@ DOMAIN-SUFFIX,kpirog.com,REJECT
 DOMAIN-SUFFIX,dnfkong.com,REJECT
 DOMAIN-SUFFIX,sirwin.club,REJECT
 DOMAIN-SUFFIX,xmmnsl.com,REJECT
+DOMAIN-SUFFIX,58sheng.cn,REJECT
+DOMAIN-SUFFIX,worldwealth.com.cn,REJECT
+DOMAIN-SUFFIX,2021blr.com,REJECT
+DOMAIN-SUFFIX,txwl-888.com,REJECT
+DOMAIN,jiaoluo.oss-cn-hongkong.aliyuncs.com,REJECT
+DOMAIN-SUFFIX,qdyfsd.com,REJECT
 
 # (0~9)
 # > 51wnl
