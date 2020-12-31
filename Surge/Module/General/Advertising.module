@@ -6,6 +6,7 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net,123.59.31.1,119.18.193.135,1
 
 [Rule]
 URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
+URL-REGEX,^https:\/\/cbu01\.alicdn\.com\/img\/ibank\/?,REJECT
 
 [URL Rewrite]
 # 0~9
