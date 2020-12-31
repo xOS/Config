@@ -286,7 +286,7 @@ DOMAIN-SUFFIX,zzyanhushi.com,REJECT
 DOMAIN-SUFFIX,kpirog.com,REJECT
 DOMAIN-SUFFIX,dnfkong.com,REJECT
 DOMAIN-SUFFIX,sirwin.club,REJECT
-DOMAIN-SUFFIX,ad.xmmnsl.com,REJECT
+DOMAIN-SUFFIX,xmmnsl.com,REJECT
 
 # (0~9)
 # > 51wnl
