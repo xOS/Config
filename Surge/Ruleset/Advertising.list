@@ -287,9 +287,6 @@ DOMAIN-SUFFIX,kpirog.com
 DOMAIN-SUFFIX,dnfkong.com
 DOMAIN-SUFFIX,sirwin.club
 DOMAIN-SUFFIX,xmmnsl.com
-URL-REGEX,^https:\/\/cbu01\.alicdn\.com\/img\/ibank\/?
-URL-REGEX,^https:\/\/kuaim99\.com\/api\/boot\/bootUp$
-URL-REGEX,^https:\/\/kuaim99\.com\/api\/system\/getInfo$
 DOMAIN-SUFFIX,58sheng.cn
 DOMAIN-SUFFIX,worldwealth.com.cn
 DOMAIN-SUFFIX,2021blr.com
