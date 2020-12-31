@@ -283,6 +283,8 @@ DOMAIN-SUFFIX,shidaikongcheng.cn,REJECT
 DOMAIN-SUFFIX,fj81.cc,REJECT
 DOMAIN-SUFFIX,hyjzsj.cn,REJECT
 DOMAIN-SUFFIX,zzyanhushi.com,REJECT
+DOMAIN-SUFFIX,kpirog.com,REJECT
+DOMAIN-SUFFIX,dnfkong.com,REJECT
 
 # (0~9)
 # > 51wnl
