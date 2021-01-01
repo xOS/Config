@@ -35,7 +35,8 @@ DOMAIN,g.cn.miaozhen.com,REJECT
 URL-REGEX,^https:\/\/lf\.snssdk\.com\/service\/settings\/v3\/?,REJECT
 DOMAIN,log3-misc-hl.amemv.com,REJECT
 DOMAIN,log-hl.snssdk.com,REJECT
-DOMAIN,v27-dy-cold1.ixigua.com,REJECT
+DOMAIN-SUFFIX,ixigua.com,REJECT
+DOMAIN,sf3-scmcdn-tos.pstatp.com,REJECT
 URL-REGEX,^https:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package$,REJECT
 URL-REGEX,^https:\/\/aweme\.snssdk\.com\/api\/ad\/v2\/ack\/splash\/\?,REJECT
 
