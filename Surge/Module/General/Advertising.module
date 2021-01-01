@@ -31,6 +31,7 @@ DOMAIN,tnc3-bjlgy.snssdk.com,REJECT
 DOMAIN,security-hl.snssdk.com,REJECT
 DOMAIN,tnc3-alisc1.snssdk.com,REJECT
 DOMAIN,abtest-ch.snssdk.com,REJECT
+DOMAIN,g.cn.miaozhen.com,REJECT
 URL-REGEX,^https:\/\/lf\.snssdk\.com\/service\/settings\/v3\/?,REJECT
 DOMAIN,log3-misc-hl.amemv.com,REJECT
 DOMAIN,log-hl.snssdk.com,REJECT
