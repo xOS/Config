@@ -52,10 +52,10 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
 [URL Rewrite]
 # > TikTok 解锁
-^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? - reject
 (?<=_region=)CN(?=&) KR 307
-(?<=&app_version=)1[6-9]..(?=.?.?&) 100. 307
-(?<=\?version_code=)1[6-9]..(?=.?.?&) 100. 307
+(?<=&mcc_mnc=)4 2 307
+^(https?:\/\/dm[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 
 # > 抖音去广告和水印
 ^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
