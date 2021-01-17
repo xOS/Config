@@ -64,6 +64,9 @@ DOMAIN-SUFFIX,wzfou.com
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
 
+# > VirMach
+DOMAIN-SUFFIX,virmach.com
+
 # > Apple
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,apple.com

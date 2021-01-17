@@ -34,6 +34,9 @@ DOMAIN-SUFFIX,wzfou.com
 DOMAIN,msg.umeng.com,direct
 DOMAIN,msg.umengcloud.com,direct
 
+# > VirMach
+DOMAIN-SUFFIX,virmach.com,direct
+
 # > 头条系
 DOMAIN-SUFFIX,snssdk.com,direct
 
