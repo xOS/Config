@@ -10,6 +10,8 @@ DOMAIN,ios.prod.cloud.netflix.com,Netflix
 DOMAIN,prod.cloud.netflix.com,Netflix
 DOMAIN,cloud.netflix.com,Netflix
 DOMAIN-SUFFIX,cloud.netflix.com,Netflix
+DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-,Netflix
+DOMAIN-KEYWORD,dualstack.ichnaea-web-,Netflix
 IP-CIDR,23.246.0.0/18,Netflix
 IP-CIDR,37.77.184.0/21,Netflix
 IP-CIDR,45.57.0.0/17,Netflix
