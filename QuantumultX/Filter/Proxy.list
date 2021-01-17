@@ -4,7 +4,7 @@ DOMAIN-SUFFIX,onedrive.live.com,Proxy
 DOMAIN-SUFFIX,fabric.io,Proxy
 
 # > VirMach
-DOMAIN-SUFFIX,virmach.com,Proxy
+#DOMAIN-SUFFIX,virmach.com,Proxy
 
 # > Google Voice
 DOMAIN,voice.google.com,Proxy
