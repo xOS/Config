@@ -2,6 +2,7 @@
 USER-AGENT,Argo*
 USER-AGENT,Argo/3370 CFNetwork/1209 Darwin/20.2.0
 DOMAIN-KEYWORD,netflix
+DOMAIN-KEYWORD,nflx
 DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
 DOMAIN,www.netflix.com
