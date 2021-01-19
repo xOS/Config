@@ -18,18 +18,7 @@ URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJ
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 
 # > YouTube 去片头广告
-URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier),REJECT-TINYGIF
-URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/pagead\/,REJECT
-URL-REGEX,https?:\/\/.+.youtube.com\/ptracking\?,REJECT
-URL-REGEX,https?:\/\/m.youtube.com\/_get_ads,REJECT
-URL-REGEX,https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
-URL-REGEX,https?:\/\/s0.2mdn.net\/ads\/,REJECT
-URL-REGEX,https?:\/\/stats.tubemogul.com\/stats\/,REJECT
-URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
-URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
+URL-REGEX,^https:\/\/.+\.googlevideo\.com\/.+&oad,REJECT
 
 # > 知乎 去广告
 //SOME MCN INFO MAY BE USEFUL
@@ -43,10 +32,6 @@ USER-AGENT,AVOS*,REJECT
 URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
 AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
 
-# > 人人视频 去广告
-AND,((USER-AGENT,PUClient*), (NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
-URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
-
 # > 优酷 去广告
 URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
@@ -56,6 +41,9 @@ URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 (?<=&mcc_mnc=)4 2 307
 ^(https?:\/\/dm[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 (^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
+
+# > YouTube
+ctier=[A-Z] citer=A 302
 
 # > 抖音去广告和水印
 ^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
@@ -89,13 +77,6 @@ BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/
 # > 微信公众号
 WeChat = script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
 
-# > YouTube
-YouTube = script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
-
-# > 人人视频 去广告
-rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/rrsp.js
-rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel$,script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/rrsp.js
-
 # > 知乎 去广告
 zhihu people = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/people/,script-path=https://cdn.jsdelivr.net/gh/onewayticket255/Surge-Script@master/surge%20zhihu%20people.js
 zhihu feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://cdn.jsdelivr.net/gh/onewayticket255/Surge-Script@master/surge%20zhihu%20feed.js
@@ -115,9 +96,6 @@ xjsp.js = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/NobyDa/Script@
 
 # Termius 解锁本地pro  (By Maasea)
 // Termius.js = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/nzw9314/QuantumultX@master/NobyDa/Surge/JS/Termius.js,type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/
-
-# > 人人视频 解锁AI原画 (by@george Jiang & R)
-人人影视 = requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/nzw9314/QuantumultX@master/Script/rrtv.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
 # > WPS (By eHpo1)
 WPS = requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/NobyDa/Script@master/Surge/JS/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
@@ -204,4 +182,4 @@ Zhihu = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-
 
 
 [MITM]
-hostname = %APPEND% api.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, ios.prod.ftl.netflix.com, api.rr.tv, ctrl.playcvn.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, sk.ulysses.app, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, receipt-validator.herewetest.com, api.jiaonizuocai.com, apic.musixmatch.com, subs.platforms.team, api.gyrosco.pe, backend.getdrafts.com, dayone.me, ssl-api.itranslateapp.com, www.api.monkeyuni.net, billing.peakcloud.org, api.textnow.me, links.jianshu.com, raw.githubusercontent.com, gist.githubusercontent.com
+hostname = %APPEND% api.io, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, api.picsart.c*, api.meiease.c*, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, sk.ulysses.app, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, receipt-validator.herewetest.com, api.jiaonizuocai.com, apic.musixmatch.com, subs.platforms.team, api.gyrosco.pe, backend.getdrafts.com, dayone.me, ssl-api.itranslateapp.com, www.api.monkeyuni.net, billing.peakcloud.org, api.textnow.me, links.jianshu.com, raw.githubusercontent.com, gist.githubusercontent.com
