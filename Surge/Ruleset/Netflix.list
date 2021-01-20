@@ -1,4 +1,5 @@
 # > Netflix
+USER-AGENT,Argo
 USER-AGENT,Argo*
 USER-AGENT,Argo/3374 CFNetwork/1220.1 Darwin/20.3.0
 USER-AGENT,Argo/*
