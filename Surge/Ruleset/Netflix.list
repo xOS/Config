@@ -6,6 +6,7 @@ USER-AGENT,Clicker%20for%20Netflix/2.11.0 CFNetwork/1220.1 Darwin/20.3.0
 USER-AGENT,*Netflix*
 DOMAIN-KEYWORD,netflix
 DOMAIN-KEYWORD,nflx
+DOMAIN-KEYWORD,ichnaea-web
 DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
 DOMAIN,www.netflix.com
@@ -14,6 +15,8 @@ DOMAIN,probe-ixunicast.prod.ftl.netflix.com
 DOMAIN,probe-ixanycast-isp.prod.ftl.netflix.com
 DOMAIN,probe.prod.ftl.netflix.com
 DOMAIN,push.prod.netflix.com
+DOMAIN-SUFFIX,prod.netflix.com
+DOMAIN-SUFFIX,prod.cloud.netflix.com
 DOMAIN,ichnaea-web.netflix.com
 DOMAIN,netflix.com.edgesuite.net
 DOMAIN,ios.prod.cloud.netflix.com
