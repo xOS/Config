@@ -1,8 +1,8 @@
 # > Netflix
 USER-AGENT,Argo*
-USER-AGENT,Argo/3370 CFNetwork/1209 Darwin/20.2.0
-USER-AGENT,Argo/
-USER-AGENT,Clicker for Netflix/
+USER-AGENT,Argo/3374 CFNetwork/1220.1 Darwin/20.3.0
+USER-AGENT,Argo/*
+USER-AGENT,Clicker for Netflix/*
 USER-AGENT,Clicker for Netflix/2.11.0 CFNetwork/1220.1 Darwin/20.3.0
 USER-AGENT,Clicker%20for%20Netflix/2.11.0 CFNetwork/1220.1 Darwin/20.3.0
 USER-AGENT,*Netflix*
