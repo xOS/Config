@@ -1,4 +1,5 @@
 # > iCloudSpecial
-DOMAIN,gateway.icloud.com,💌 常用服务 // Added for webpage: gateway.icloud.com:443
-DOMAIN,p46-fmf.icloud.com,💌 常用服务 // Added for webpage: p46-fmf.icloud.com:443
-DOMAIN,p46-keyvalueservice.icloud.com,💌 常用服务 // Added for webpage: p46-keyvalueservice.icloud.com:443
+DOMAIN,gateway.icloud.com,Proxy
+DOMAIN,p46-fmf.icloud.com,Proxy
+DOMAIN,p46-keyvalueservice.icloud.com,Proxy
+DOMAIN-SUFFIX,blobstore.apple.com,Proxy
