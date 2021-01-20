@@ -9,6 +9,12 @@ DOMAIN-KEYWORD,nflx
 DOMAIN-KEYWORD,ichnaea-web
 DOMAIN-KEYWORD,dualstack.apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
+DOMAIN-SUFFIX,r.nflxso.net
+DOMAIN-SUFFIX,oca-api.netflix.com
+DOMAIN-SUFFIX,ios.prod.cloud.netflix.com
+DOMAIN-SUFFIX,ios.prod.ftl.netflix.com
+DOMAIN-SUFFIX,ichnaea-web.netflix.com
+DOMAIN-SUFFIX,www.netflix.com
 DOMAIN,www.netflix.com
 DOMAIN,oca-api.netflix.com
 DOMAIN,probe-ixunicast.prod.ftl.netflix.com
