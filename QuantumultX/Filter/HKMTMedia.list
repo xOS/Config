@@ -8,6 +8,7 @@ HOST-SUFFIX,iqiyipic.com,direct
 HOST,cache.video.iqiyi.com,direct
 HOST-SUFFIX,qy.net,direct
 HOST-SUFFIX,71.am,direct
+DOMAIN-SUFFIX,iq.com
 IP-CIDR,101.227.0.0/16,direct
 IP-CIDR,101.224.0.0/13,direct
 IP-CIDR,119.176.0.0/12,direct
