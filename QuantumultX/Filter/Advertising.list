@@ -293,6 +293,7 @@ DOMAIN-SUFFIX,2021blr.com,REJECT
 DOMAIN-SUFFIX,txwl-888.com,REJECT
 DOMAIN,jiaoluo.oss-cn-hongkong.aliyuncs.com,REJECT
 DOMAIN-SUFFIX,qdyfsd.com,REJECT
+DOMAIN-SUFFIX,ic86doc.com,REJECT
 
 # (0~9)
 # > 51wnl
