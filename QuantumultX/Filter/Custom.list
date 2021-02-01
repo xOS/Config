@@ -29,6 +29,7 @@ DOMAIN,analytics.strava.com,direct
 
 # > 网站
 DOMAIN-SUFFIX,wzfou.com
+DOMAIN-SUFFIX,bwl87.com
 
 # > Umeng
 DOMAIN,msg.umeng.com,direct
