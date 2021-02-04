@@ -1,4 +1,4 @@
-# Speedtest
+# SpeedTest
 USER-AGENT,SpeedTest*,Speedtest
 HOST-KEYWORD,speedtest,Speedtest
 HOST-SUFFIX,ooklaserver.net,Speedtest
@@ -6,5 +6,5 @@ HOST-SUFFIX,ooklaserver.net,Speedtest
 # Fast
 HOST-SUFFIX,fast.com,Speedtest
 
-# > Speed Test by Cloudflare
+# Speed Test by Cloudflare
 DOMAIN-SUFFIX,speed.cloudflare.com,Speedtest
