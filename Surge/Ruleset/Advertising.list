@@ -234,11 +234,9 @@ DOMAIN-SUFFIX,zu08e.cn
 DOMAIN-SUFFIX,zucks.co.jp
 DOMAIN-SUFFIX,zucks.net
 DOMAIN-SUFFIX,zumobi.com
-
 DOMAIN-SUFFIX,ad.cmvideo.cn
 DOMAIN-SUFFIX,ad.daum.net
 DOMAIN-SUFFIX,aiseet.atianqi.com
-
 DOMAIN,abema-adx.ameba.jp
 DOMAIN,ad.12306.cn
 DOMAIN,ad.caiyunapp.com
@@ -294,6 +292,40 @@ DOMAIN-SUFFIX,txwl-888.com
 DOMAIN,jiaoluo.oss-cn-hongkong.aliyuncs.com
 DOMAIN-SUFFIX,qdyfsd.com
 DOMAIN-SUFFIX,ic86doc.com
+
+# > 腾讯视频
+DOMAIN-SUFFIX,aegis.qq.com
+DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,l.qq.com
+DOMAIN-SUFFIX,dp3.qq.com
+DOMAIN-SUFFIX,x.research.qq.com
+DOMAIN-SUFFIX,iacc.qq.com
+DOMAIN-SUFFIX,sngapm.qq.com
+DOMAIN-SUFFIX,tetrack.qq.com
+DOMAIN-SUFFIX,mcgi.v.qq.com
+DOMAIN-SUFFIX,ott.video.qq.com
+DOMAIN-SUFFIX,stun.qqlive.qq.com
+DOMAIN-SUFFIX,p2p.qq.com
+DOMAIN-SUFFIX,apponline.research.qq.com
+DOMAIN-SUFFIX,voreader.reader.qq.com
+DOMAIN-SUFFIX,eve.mdt.qq.com
+DOMAIN-SUFFIX,mtrace.qq.com
+
+# > 爱奇艺
+DOMAIN-SUFFIX,opportunarch.iqiyi.com
+DOMAIN-SUFFIX,ssports.com
+DOMAIN-SUFFIX,static-d.iqiyi.com
+DOMAIN-SUFFIX,msg.qy.net
+DOMAIN-SUFFIX,du-feige.iqiyi.com
+DOMAIN-SUFFIX,api-yuedu.iqiyi.com
+DOMAIN-SUFFIX,hcdn.ppstream.com
+DOMAIN-SUFFIX,msg.qy.net
+DOMAIN-SUFFIX,ccrgt.com
+DOMAIN-SUFFIX,scs-hcdn.iqiyi.com
+DOMAIN-SUFFIX,inter.iqiyi.com
+DOMAIN-SUFFIX,cupid.iqiyi.com
+DOMAIN-SUFFIX,data.video.iqiyi.com
+DOMAIN-SUFFIX,iface2.iqiyi.com
 
 # (0~9)
 # > 51wnl

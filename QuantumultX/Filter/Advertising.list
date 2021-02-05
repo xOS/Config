@@ -295,6 +295,40 @@ DOMAIN,jiaoluo.oss-cn-hongkong.aliyuncs.com,REJECT
 DOMAIN-SUFFIX,qdyfsd.com,REJECT
 DOMAIN-SUFFIX,ic86doc.com,REJECT
 
+# > 腾讯视频
+DOMAIN-SUFFIX,aegis.qq.com,REJECT
+DOMAIN-SUFFIX,beacon.qq.com,REJECT
+DOMAIN-SUFFIX,l.qq.com,REJECT
+DOMAIN-SUFFIX,dp3.qq.com,REJECT
+DOMAIN-SUFFIX,x.research.qq.com,REJECT
+DOMAIN-SUFFIX,iacc.qq.com,REJECT
+DOMAIN-SUFFIX,sngapm.qq.com,REJECT
+DOMAIN-SUFFIX,tetrack.qq.com,REJECT
+DOMAIN-SUFFIX,mcgi.v.qq.com,REJECT
+DOMAIN-SUFFIX,ott.video.qq.com,REJECT
+DOMAIN-SUFFIX,stun.qqlive.qq.com,REJECT
+DOMAIN-SUFFIX,p2p.qq.com,REJECT
+DOMAIN-SUFFIX,apponline.research.qq.com,REJECT
+DOMAIN-SUFFIX,voreader.reader.qq.com,REJECT
+DOMAIN-SUFFIX,eve.mdt.qq.com,REJECT
+DOMAIN-SUFFIX,mtrace.qq.com,REJECT
+
+# > 爱奇艺
+DOMAIN-SUFFIX,opportunarch.iqiyi.com,REJECT
+DOMAIN-SUFFIX,ssports.com,REJECT
+DOMAIN-SUFFIX,static-d.iqiyi.com,REJECT
+DOMAIN-SUFFIX,msg.qy.net,REJECT
+DOMAIN-SUFFIX,du-feige.iqiyi.com,REJECT
+DOMAIN-SUFFIX,api-yuedu.iqiyi.com,REJECT
+DOMAIN-SUFFIX,hcdn.ppstream.com,REJECT
+DOMAIN-SUFFIX,msg.qy.net,REJECT
+DOMAIN-SUFFIX,ccrgt.com,REJECT
+DOMAIN-SUFFIX,scs-hcdn.iqiyi.com,REJECT
+DOMAIN-SUFFIX,inter.iqiyi.com,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+DOMAIN-SUFFIX,data.video.iqiyi.com,REJECT
+DOMAIN-SUFFIX,iface2.iqiyi.com,REJECT
+
 # (0~9)
 # > 51wnl
 DOMAIN,ad.51wnl-cq.com,REJECT
