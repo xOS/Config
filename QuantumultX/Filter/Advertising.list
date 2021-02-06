@@ -296,8 +296,12 @@ DOMAIN-SUFFIX,qdyfsd.com,REJECT
 DOMAIN-SUFFIX,ic86doc.com,REJECT
 
 # > 腾讯视频
+DOMAIN-SUFFIX,video.mpush.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,vfiles.gtimg.cn,REJECT
+DOMAIN-SUFFIX,miwifi.com,REJECT
+DOMAIN-SUFFIX,inews.gtimg.com,REJECT
 DOMAIN-SUFFIX,aegis.qq.com,REJECT
-DOMAIN-SUFFIX,beacon.qq.com,REJECT
 DOMAIN-SUFFIX,l.qq.com,REJECT
 DOMAIN-SUFFIX,dp3.qq.com,REJECT
 DOMAIN-SUFFIX,x.research.qq.com,REJECT
@@ -310,7 +314,6 @@ DOMAIN-SUFFIX,stun.qqlive.qq.com,REJECT
 DOMAIN-SUFFIX,p2p.qq.com,REJECT
 DOMAIN-SUFFIX,apponline.research.qq.com,REJECT
 DOMAIN-SUFFIX,voreader.reader.qq.com,REJECT
-DOMAIN-SUFFIX,eve.mdt.qq.com,REJECT
 DOMAIN-SUFFIX,mtrace.qq.com,REJECT
 
 # > 爱奇艺

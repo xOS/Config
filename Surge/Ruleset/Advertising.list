@@ -294,8 +294,12 @@ DOMAIN-SUFFIX,qdyfsd.com
 DOMAIN-SUFFIX,ic86doc.com
 
 # > 腾讯视频
+DOMAIN-SUFFIX,video.mpush.qq.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,vfiles.gtimg.cn
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN-SUFFIX,inews.gtimg.com
 DOMAIN-SUFFIX,aegis.qq.com
-DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,l.qq.com
 DOMAIN-SUFFIX,dp3.qq.com
 DOMAIN-SUFFIX,x.research.qq.com
@@ -308,7 +312,6 @@ DOMAIN-SUFFIX,stun.qqlive.qq.com
 DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,apponline.research.qq.com
 DOMAIN-SUFFIX,voreader.reader.qq.com
-DOMAIN-SUFFIX,eve.mdt.qq.com
 DOMAIN-SUFFIX,mtrace.qq.com
 
 # > 爱奇艺
