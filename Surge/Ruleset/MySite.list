@@ -25,6 +25,8 @@ DOMAIN-SUFFIX, applecache.com
 DOMAIN-SUFFIX, somecache.com
 
 # > 其它
+DOMAIN-SUFFIX, xg4.net
+DOMAIN-SUFFIX, cloudimg.net
 DOMAIN-SUFFIX, static.today
 DOMAIN-SUFFIX, free.ac.cn
 DOMAIN-SUFFIX, doh.show
@@ -32,4 +34,3 @@ DOMAIN-SUFFIX, doh.social
 DOMAIN-SUFFIX, xupeinan.com
 DOMAIN-SUFFIX, imxpn.com
 DOMAIN-SUFFIX, xu.wtf
-DOMAIN-SUFFIX, xmac.app

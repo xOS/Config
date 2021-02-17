@@ -25,6 +25,8 @@ DOMAIN-SUFFIX, applecache.com,direct
 DOMAIN-SUFFIX, somecache.com,direct
 
 # > 其它
+HOST-SUFFIX,xg4.net,direct
+HOST-SUFFIX,cloudimg.net,direct
 HOST-SUFFIX,static.today,direct
 HOST-SUFFIX,free.ac.cn,direct
 HOST-SUFFIX,doh.show,direct
@@ -32,4 +34,3 @@ HOST-SUFFIX,doh.social,direct
 HOST-SUFFIX,xupeinan.com,direct
 HOST-SUFFIX,imxpn.com,direct
 HOST-SUFFIX,xu.wtf,direct
-HOST-SUFFIX,xmac.app,direct
