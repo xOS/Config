@@ -338,7 +338,7 @@ DOMAIN-SUFFIX,ccrgt.com
 DOMAIN-SUFFIX,scs-hcdn.iqiyi.com
 DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,cupid.iqiyi.com
-DOMAIN-SUFFIX,data.video.iqiyi.com
+#DOMAIN-SUFFIX,data.video.iqiyi.com
 DOMAIN-SUFFIX,iface2.iqiyi.com
 
 # (0~9)
