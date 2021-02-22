@@ -3,3 +3,5 @@ USER-AGENT,Google%20%E7%9B%B8%E5%86%8C*
 DOMAIN,photos.googleapis.com
 DOMAIN,photos.google.com
 DOMAIN,photo.google.com
+DOMAIN,photosdata-pa.googleapis.com
+DOMAIN,people-pa.googleapis.com
