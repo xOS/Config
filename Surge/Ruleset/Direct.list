@@ -14,10 +14,6 @@ PROCESS-NAME,ss-local
 # > Microsoft
 DOMAIN-SUFFIX,msftconnecttest.com
 
-# > Proxy plugin
-PROCESS-NAME,v2ray
-PROCESS-NAME,ss-local
-
 # > Steam
 USER-AGENT,Steam*
 DOMAIN-SUFFIX,pinyuncloud.com
