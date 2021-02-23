@@ -26,12 +26,6 @@ DOMAIN,in.appcenter.ms
 DOMAIN,app-beta.smartmailcloud.com
 PROCESS-NAME,/Applications/Spark.app/Contents/MacOS/Spark
 
-# > Google
-DOMAIN-SUFFIX,googletraveladservices.com
-DOMAIN,safebrowsing.googleapis.com
-DOMAIN,dl.google.com
-DOMAIN,mtalk.google.com
-
 # > Tencent
 DOMAIN,livew.l.qq.com
 DOMAIN,vd.l.qq.com
