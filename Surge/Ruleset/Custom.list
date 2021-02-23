@@ -45,7 +45,7 @@ DOMAIN,msg.umengcloud.com
 DOMAIN-SUFFIX,virmach.com
 
 # > 头条系
-DOMAIN-SUFFIX,snssdk.com
+#DOMAIN-SUFFIX,snssdk.com
 
 # > 腾讯游戏
 DOMAIN,cloudctrl.gcloud.qq.com
