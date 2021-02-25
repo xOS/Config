@@ -16,6 +16,7 @@ URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/ttab,REJECT
 URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/KM,REJECT
 URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/collectdesktop,REJECT
 URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/message,REJECT
+DOMAIN-SUFFIX,pv.sohu.com,REJECT
 DOMAIN-SUFFIX,hitikapi.info,REJECT
 DOMAIN-SUFFIX,pinwu123.com,REJECT
 DOMAIN-SUFFIX,shidaikongcheng.cn,REJECT
