@@ -333,6 +333,10 @@ DOMAIN-SUFFIX,imapi2.snssdk.com
 DOMAIN-SUFFIX,ic.snssdk.com
 DOMAIN-SUFFIX,isub.snssdk.com
 DOMAIN-SUFFIX,mon.snssdk.com
+DOMAIN-SUFFIX,gurd.snssdk.com,REJECT
+DOMAIN-SUFFIX,security.snssdk.com,REJECT
+DOMAIN-SUFFIX,mon.toutiaocloud.com,REJECT
+DOMAIN-SUFFIX,mon.toutiaocloud.net,REJECT
 DOMAIN-SUFFIX,portal.fb.com
 DOMAIN-SUFFIX,edge-mqtt.facebook.com
 DOMAIN-SUFFIX,graph.facebook.com
