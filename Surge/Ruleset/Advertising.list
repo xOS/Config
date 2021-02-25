@@ -303,6 +303,8 @@ DOMAIN-SUFFIX,jiq339.com
 DOMAIN-SUFFIX,xunleiff.com
 DOMAIN-SUFFIX,xunleiii.com
 DOMAIN-SUFFIX,yumi08.com
+DOMAIN-SUFFIX,he3kz8.com
+DOMAIN-SUFFIX,k42jvw.com
 
 # > 腾讯视频
 DOMAIN-SUFFIX,video.mpush.qq.com
@@ -333,10 +335,12 @@ DOMAIN-SUFFIX,imapi2.snssdk.com
 DOMAIN-SUFFIX,ic.snssdk.com
 DOMAIN-SUFFIX,isub.snssdk.com
 DOMAIN-SUFFIX,mon.snssdk.com
-DOMAIN-SUFFIX,gurd.snssdk.com,REJECT
-DOMAIN-SUFFIX,security.snssdk.com,REJECT
-DOMAIN-SUFFIX,mon.toutiaocloud.com,REJECT
-DOMAIN-SUFFIX,mon.toutiaocloud.net,REJECT
+DOMAIN-SUFFIX,gurd.snssdk.com
+DOMAIN-SUFFIX,security.snssdk.com
+DOMAIN-SUFFIX,mon.toutiaocloud.com
+DOMAIN-SUFFIX,mon.toutiaocloud.net
+
+# > Instagram
 DOMAIN-SUFFIX,portal.fb.com
 DOMAIN-SUFFIX,edge-mqtt.facebook.com
 DOMAIN-SUFFIX,graph.facebook.com
