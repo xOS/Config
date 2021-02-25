@@ -11,7 +11,7 @@ loglevel = warning
 # > TLS Provider: default, secure-transport, network-framework, openssl (默认值: default)
 tls-provider = openssl
 
-# GeoIP 数据库
+# > GeoIP 数据库
 geoip-maxmind-url = https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb
 
 # > 当开启时，如果在 [Host] 段有为某主机名指定 IP，在使用代理访问该主机名时，将使用该 IP 地址进行代理请求，不再依赖远端解析。
@@ -41,14 +41,14 @@ socks5-listen = 0.0.0.0:6153
 # > DNS 服务地址，只用于解析 DoH 服务地址
 dns-server = 119.29.29.29
 
+# > 使 DoH 请求通过代理策略执行
+doh-follow-outbound-mode = true
+
 # > DoH 服务地址
-doh-server = https://223.6.6.6/dns-query
+doh-server = https://doh.pub/dns-query
 
 # > DoH 解析格式（json 或 wireformat）
 doh-format = wireformat
-
-# > 使 DoH 请求通过代理策略执行
-doh-follow-outbound-mode = false
 
 # > 启用 Network.framework
 network-framework = false
