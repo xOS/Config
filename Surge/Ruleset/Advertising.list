@@ -325,6 +325,19 @@ DOMAIN-SUFFIX,apponline.research.qq.com
 DOMAIN-SUFFIX,voreader.reader.qq.com
 DOMAIN-SUFFIX,mtrace.qq.com
 
+# > 头条          
+DOMAIN-SUFFIX,mon.toutiao.com
+DOMAIN-SUFFIX,toutiao-frontier.snssdk.com
+DOMAIN-SUFFIX,log.snssdk.com
+DOMAIN-SUFFIX,imapi2.snssdk.com
+DOMAIN-SUFFIX,ic.snssdk.com
+DOMAIN-SUFFIX,isub.snssdk.com
+DOMAIN-SUFFIX,mon.snssdk.com
+DOMAIN-SUFFIX,portal.fb.com
+DOMAIN-SUFFIX,edge-mqtt.facebook.com
+DOMAIN-SUFFIX,graph.facebook.com
+DOMAIN-SUFFIX,graph.instagram.com
+                            
 # > 爱奇艺
 DOMAIN-SUFFIX,opportunarch.iqiyi.com
 DOMAIN-SUFFIX,ssports.com
