@@ -1,5 +1,5 @@
-#!name=自用脚本
-#!desc=一些自用脚本，多合一。
+#!name=常用规则
+#!desc=一些自用脚本。
 
 [General]
 # > 优酷 去广告
@@ -7,7 +7,7 @@ force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net
 
 [Host]
 # > Apple下载解析加速
-*.itunes.apple.com = script:DNSPod
+#*.itunes.apple.com = script:DNSPod
 
 [Rule]
 # > 网易云音乐
