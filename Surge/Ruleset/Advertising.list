@@ -309,7 +309,7 @@ DOMAIN-SUFFIX,k42jvw.com
 # > 腾讯视频
 DOMAIN-SUFFIX,video.mpush.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
-DOMAIN-SUFFIX,vfiles.gtimg.cn
+#DOMAIN-SUFFIX,vfiles.gtimg.cn
 DOMAIN-SUFFIX,miwifi.com
 DOMAIN-SUFFIX,inews.gtimg.com
 DOMAIN-SUFFIX,aegis.qq.com
@@ -327,8 +327,6 @@ DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,apponline.research.qq.com
 DOMAIN-SUFFIX,voreader.reader.qq.com
 DOMAIN-SUFFIX,mtrace.qq.com
-DOMAIN-SUFFIX,aegis.qq.com
-DOMAIN-SUFFIX,*gdt.qq.com
 DOMAIN-SUFFIX,str.mdt.qq.com
 DOMAIN-SUFFIX,pgdt.gtimg.cn
 
