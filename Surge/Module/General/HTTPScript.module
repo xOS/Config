@@ -53,8 +53,7 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 # > TikTok 解锁
 (?<=_region=)CN(?=&) KR 307
 (?<=&mcc_mnc=)4 2 307
-^(https?:\/\/dm[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
-^(https?:\/\/tnc[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 (^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 
 # > YouTube
