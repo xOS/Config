@@ -321,6 +321,7 @@ DOMAIN-SUFFIX,sngapm.qq.com
 DOMAIN-SUFFIX,tetrack.qq.com
 DOMAIN-SUFFIX,mcgi.v.qq.com
 DOMAIN-SUFFIX,ott.video.qq.com
+DOMAIN-SUFFIX,eve.mdt.qq.com
 DOMAIN-SUFFIX,stun.qqlive.qq.com
 DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,apponline.research.qq.com
@@ -347,20 +348,24 @@ DOMAIN-SUFFIX,graph.facebook.com
 DOMAIN-SUFFIX,graph.instagram.com
                             
 # > 爱奇艺
+DOMAIN-SUFFIX,cmonitor.iqiyi.com
 DOMAIN-SUFFIX,opportunarch.iqiyi.com
-DOMAIN-SUFFIX,ssports.com
+#DOMAIN-SUFFIX,ssports.com
 DOMAIN-SUFFIX,static-d.iqiyi.com
 DOMAIN-SUFFIX,msg.qy.net
-DOMAIN-SUFFIX,du-feige.iqiyi.com
-DOMAIN-SUFFIX,api-yuedu.iqiyi.com
-DOMAIN-SUFFIX,hcdn.ppstream.com
+#DOMAIN-SUFFIX,du-feige.iqiyi.com
+#DOMAIN-SUFFIX,api-yuedu.iqiyi.com
+#DOMAIN-SUFFIX,hcdn.ppstream.com
 DOMAIN-SUFFIX,msg.qy.net
 DOMAIN-SUFFIX,ccrgt.com
-DOMAIN-SUFFIX,scs-hcdn.iqiyi.com
+#DOMAIN-SUFFIX,scs-hcdn.iqiyi.com
 #DOMAIN-SUFFIX,inter.iqiyi.com
 DOMAIN-SUFFIX,cupid.iqiyi.com
-#DOMAIN-SUFFIX,data.video.iqiyi.com
-DOMAIN-SUFFIX,iface2.iqiyi.com
+DOMAIN-SUFFIX,data.video.iqiyi.com
+#DOMAIN-SUFFIX,iface2.iqiyi.com
+DOMAIN-SUFFIX,adtrack.enlightent.cn
+DOMAIN-SUFFIX,pangolin-dsp-toutiao.com
+DOMAIN-SUFFIX,collect.ux.21cn.com
 
 # (0~9)
 # > 51wnl
