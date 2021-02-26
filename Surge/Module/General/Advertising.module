@@ -74,7 +74,8 @@ URL-REGEX,^https?:\/\/aweme\.snssdk\.com\/api\/ad\/v2\/ack\/splash\/\?,REJECT
 ^https?:\/\/mail\.yandex\.ru\/u2709\/? - reject
 ^https?:\/\/an\.yandex\.ru\/? - reject
 ^https?:\/\/avatars\.mds\.yandex\.net\/get-direct-picture\/? - reject
-
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/variety\/.tc\.qq\.com\/.+?\/.+?\.mp4\? - reject
+^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\? - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/monitor\/receive\.action$ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\.mp4 - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/videos\/? - reject 

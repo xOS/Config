@@ -327,6 +327,10 @@ DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,apponline.research.qq.com
 DOMAIN-SUFFIX,voreader.reader.qq.com
 DOMAIN-SUFFIX,mtrace.qq.com
+DOMAIN-SUFFIX,aegis.qq.com
+DOMAIN-SUFFIX,*gdt.qq.com
+DOMAIN-SUFFIX,str.mdt.qq.com
+DOMAIN-SUFFIX,pgdt.gtimg.cn
 
 # > 头条          
 DOMAIN-SUFFIX,mon.toutiao.com
