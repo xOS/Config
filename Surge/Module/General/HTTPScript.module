@@ -71,7 +71,7 @@ rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\
 
 [Script]
 # > Apple下载解析加速
-DNSPod = type=dns,script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/DNSPod.js,script-update-interval=-1
+#DNSPod = type=dns,script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/DNSPod.js,script-update-interval=-1
 
 # > TestFlight解除下载限制
 TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://gitee.com/ten/Config/raw/Her/Surge/Script/TestFlight.js
