@@ -6,19 +6,19 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net,123.59.31.1,119.18.193.135,1
 
 [Rule]
 URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
-URL-REGEX,^https:\/\/cbu01\.alicdn\.com\/img\/ibank\/?,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/api\/boot\/bootUp$,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/api\/system\/getInfo$,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/api\/notice\/listCenter,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/api\/ads\/index,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/defaultimg,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/ttab,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/KM,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/collectdesktop,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/km\/static\/img\/message,REJECT
-URL-REGEX,^https:\/\/zhujiwiki\.com\/ad,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/pc\/static\/img\/ic_launcher,REJECT
-URL-REGEX,^https:\/\/kuaim99\.com\/pc\/static\/img\/getvip,REJECT
+URL-REGEX,^https?:\/\/cbu01\.alicdn\.com\/img\/ibank\/?,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/api\/boot\/bootUp$,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/api\/system\/getInfo$,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/api\/notice\/listCenter,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/api\/ads\/index,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/defaultimg,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/ttab,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/KM,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/collectdesktop,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/message,REJECT
+URL-REGEX,^https?:\/\/zhujiwiki\.com\/ad,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/pc\/static\/img\/ic_launcher,REJECT
+URL-REGEX,^https?:\/\/kuaim99\.com\/pc\/static\/img\/getvip,REJECT
 DOMAIN-SUFFIX,pv.sohu.com,REJECT
 DOMAIN-SUFFIX,hitikapi.info,REJECT
 DOMAIN-SUFFIX,pinwu123.com,REJECT
@@ -39,18 +39,18 @@ DOMAIN-SUFFIX,qdyfsd.com,REJECT
 DOMAIN-SUFFIX,13hangpifa.com,REJECT
 DOMAIN-SUFFIX,cnzz.mmstat.com,REJECT
 DOMAIN-SUFFIX,js.handanxinkai.com,REJECT
-URL-REGEX,^https:\/\/www\.rtmma\.com\/Data\/yk\/css\/showfloatdiv\.css$,REJECT
-URL-REGEX,^https:\/\/www\.rtmma\.com\/Data\/yk\/js\/showfloatdiv\.js$,REJECT
+URL-REGEX,^https?:\/\/www\.rtmma\.com\/Data\/yk\/css\/showfloatdiv\.css$,REJECT
+URL-REGEX,^https?:\/\/www\.rtmma\.com\/Data\/yk\/js\/showfloatdiv\.js$,REJECT
 DOMAIN-SUFFIX,tp.vinuxhome.com,REJECT
 
 # > POCO
 DOMAIN-SUFFIX,hmma.baidu.com,REJECT
-URL-REGEX,^https:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_wap_works_info_banner$,REJECT
-URL-REGEX,^https:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_floating_layer_ad$,REJECT
+URL-REGEX,^https?:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_wap_works_info_banner$,REJECT
+URL-REGEX,^https?:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_floating_layer_ad$,REJECT
 DOMAIN-SUFFIX,adnonstop.com,REJECT
 DOMAIN-SUFFIX,gm.mob.com,REJECT
 DOMAIN-SUFFIX,share.mob.com,REJECT
-URL-REGEX,^https:\/\/app-api\.poco\.cn\/v1_1\/rank\/get_app_start_screen_ad,REJECT
+URL-REGEX,^https?:\/\/app-api\.poco\.cn\/v1_1\/rank\/get_app_start_screen_ad,REJECT
 DOMAIN-SUFFIX,xmpush.xiaomi.com,REJECT
 
 # > 抖音
@@ -59,14 +59,14 @@ DOMAIN-SUFFIX,xmpush.xiaomi.com,REJECT
 #DOMAIN,tnc3-alisc1.snssdk.com,REJECT
 #DOMAIN,abtest-ch.snssdk.com,REJECT
 #DOMAIN,g.cn.miaozhen.com,REJECT
-#URL-REGEX,^https:\/\/lf\.snssdk\.com\/service\/settings\/v3\/?,REJECT
+#URL-REGEX,^https?:\/\/lf\.snssdk\.com\/service\/settings\/v3\/?,REJECT
 #DOMAIN,log3-misc-hl.amemv.com,REJECT
 #DOMAIN,log-hl.snssdk.com,REJECT
 #DOMAIN-SUFFIX,ixigua.com,REJECT
 #DOMAIN,sf3-scmcdn-tos.pstatp.com,REJECT
 #DOMAIN,frontier-aweme.snssdk.com,REJECT
-#URL-REGEX,^https:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package$,REJECT
-#URL-REGEX,^https:\/\/aweme\.snssdk\.com\/api\/ad\/v2\/ack\/splash\/\?,REJECT
+#URL-REGEX,^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package$,REJECT
+#URL-REGEX,^https?:\/\/aweme\.snssdk\.com\/api\/ad\/v2\/ack\/splash\/\?,REJECT
 
 [URL Rewrite]
 # 0~9

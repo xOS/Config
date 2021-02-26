@@ -54,6 +54,7 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 (?<=_region=)CN(?=&) KR 307
 (?<=&mcc_mnc=)4 2 307
 ^(https?:\/\/dm[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+^(https?:\/\/tnc[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 (^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 
 # > YouTube
@@ -187,4 +188,4 @@ Zhihu = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-
 
 
 [MITM]
-hostname = %APPEND% api.io, x.io, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *byteoversea.com:443, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, raw.githubusercontent.com, gist.githubusercontent.com, testflight.apple.com, *music.163.com
+hostname = %APPEND% api.io, x.io, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, raw.githubusercontent.com, gist.githubusercontent.com, testflight.apple.com, *music.163.com
