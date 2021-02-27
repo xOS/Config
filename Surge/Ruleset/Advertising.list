@@ -409,6 +409,19 @@ DOMAIN-SUFFIX,data.video.iqiyi.com
 DOMAIN-SUFFIX,adtrack.enlightent.cn
 DOMAIN-SUFFIX,pangolin-dsp-toutiao.com
 DOMAIN-SUFFIX,collect.ux.21cn.com
+DOMAIN-SUFFIX,cr-status.iqiyi.com
+#DOMAIN-SUFFIX,static.iqiyi.com
+DOMAIN-SUFFIX,u2.iqiyipic.com
+DOMAIN-SUFFIX,cmts.iqiyi.com
+DOMAIN-SUFFIX,muses-ugc.iqiyi.com
+DOMAIN-SUFFIX,tuiguang.iqiyi.com
+DOMAIN-SUFFIX,cook.iqiyi.com
+DOMAIN-SUFFIX,cmtw.pinduoduo.com
+DOMAIN-SUFFIX,otk.pinduoduo.com
+DOMAIN-SUFFIX,lpcdn.pinduoduo.com
+DOMAIN-SUFFIX,at.pinduoduo.com
+DOMAIN-SUFFIX,lp.pinduoduo.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
 
 # (0~9)
 # > 51wnl
