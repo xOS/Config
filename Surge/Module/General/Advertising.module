@@ -1,278 +1,37 @@
 #!name=广告屏蔽
-#!desc=最后更新时间 2021-02-27 04:48
+#!desc=最后更新时间 2021-02-28 00:50
 
 [General]
 force-http-engine-hosts = %APPEND% *.ott.cibntv.net,123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
 
-[Rule]
-# > Others
-URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/cbu01\.alicdn\.com\/img\/ibank\/?,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/api\/boot\/bootUp$,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/api\/system\/getInfo$,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/api\/notice\/listCenter,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/api\/ads\/index,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/defaultimg,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/ttab,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/KM,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/collectdesktop,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/km\/static\/img\/message,REJECT
-URL-REGEX,^https?:\/\/zhujiwiki\.com\/ad,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/pc\/static\/img\/ic_launcher,REJECT
-URL-REGEX,^https?:\/\/kuaim99\.com\/pc\/static\/img\/getvip,REJECT
-DOMAIN-SUFFIX,pv.sohu.com,REJECT
-DOMAIN-SUFFIX,hitikapi.info,REJECT
-DOMAIN-SUFFIX,pinwu123.com,REJECT
-DOMAIN-SUFFIX,shidaikongcheng.cn,REJECT
-DOMAIN-SUFFIX,fj81.cc,REJECT
-DOMAIN-SUFFIX,hyjzsj.cn,REJECT
-DOMAIN-SUFFIX,zzyanhushi.com,REJECT
-DOMAIN-SUFFIX,kpirog.com,REJECT
-DOMAIN-SUFFIX,dnfkong.com,REJECT
-DOMAIN-SUFFIX,sirwin.club,REJECT
-DOMAIN-SUFFIX,xmmnsl.com,REJECT
-DOMAIN-SUFFIX,58sheng.cn,REJECT
-DOMAIN-SUFFIX,worldwealth.com.cn,REJECT
-DOMAIN-SUFFIX,2021blr.com,REJECT
-DOMAIN-SUFFIX,txwl-888.com,REJECT
-DOMAIN,jiaoluo.oss-cn-hongkong.aliyuncs.com,REJECT
-DOMAIN-SUFFIX,qdyfsd.com,REJECT
-DOMAIN-SUFFIX,13hangpifa.com,REJECT
-DOMAIN-SUFFIX,cnzz.mmstat.com,REJECT
-DOMAIN-SUFFIX,js.handanxinkai.com,REJECT
-URL-REGEX,^https?:\/\/www\.rtmma\.com\/Data\/yk\/css\/showfloatdiv\.css$,REJECT
-URL-REGEX,^https?:\/\/www\.rtmma\.com\/Data\/yk\/js\/showfloatdiv\.js$,REJECT
-DOMAIN-SUFFIX,tp.vinuxhome.com,REJECT
-DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com,REJECT
-DOMAIN-SUFFIX,apoll.m.taobao.com,REJECT
-DOMAIN-SUFFIX,comet.yahoo.com,REJECT
-DOMAIN-SUFFIX,gemini.yahoo.com,REJECT
-DOMAIN-SUFFIX,a.ckm.iqiyi.com,REJECT
-DOMAIN-SUFFIX,ad.m.iqiyi.com,REJECT
-DOMAIN-SUFFIX,afp.iqiyi.com,REJECT
-DOMAIN-SUFFIX,androidgo.duapp.com,REJECT
-DOMAIN-SUFFIX,api.cupid.iqiyi.com,REJECT
-DOMAIN-SUFFIX,api.cupid.qiyi.com,REJECT
-DOMAIN-SUFFIX,c.uaa.iqiyi.com,REJECT
-DOMAIN-SUFFIX,cloudpush.iqiyi.com,REJECT
-DOMAIN-SUFFIX,cm.passport.iqiyi.com,REJECT
-DOMAIN-SUFFIX,count.game.pps.tv,REJECT
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
-DOMAIN-SUFFIX,emoticon.sns.iqiyi.com,REJECT
-DOMAIN-SUFFIX,game.pps.tv,REJECT
-DOMAIN-SUFFIX,gamecenter.iqiyi.com,REJECT
-DOMAIN-SUFFIX,mbdlog.iqiyi.com,REJECT
-DOMAIN-SUFFIX,msg.iqiyi.com,REJECT
-DOMAIN-SUFFIX,msg.video.qiyi.com,REJECT
-DOMAIN-SUFFIX,msg2.video.qiyi.com,REJECT
-DOMAIN-SUFFIX,msga.71.am,REJECT
-DOMAIN-SUFFIX,msga.cupid.iqiyi.com,REJECT
-DOMAIN-SUFFIX,nl.notice.iqiyi.com,REJECT
-DOMAIN-SUFFIX,nl.rcd.iqiyi.com,REJECT
-DOMAIN-SUFFIX,notice.iqiyi.com,REJECT
-DOMAIN-SUFFIX,noxagile.duapp.com,REJECT
-DOMAIN-SUFFIX,paopao.iqiyi.com,REJECT
-DOMAIN-SUFFIX,policy.video.iqiyi.com,REJECT
-DOMAIN-SUFFIX,qosp.msg.71.am,REJECT
-DOMAIN-SUFFIX,static.g.iqiyi.com,REJECT
-DOMAIN-SUFFIX,static.g.ppstream.com,REJECT
-DOMAIN-SUFFIX,store.iqiyi.com,REJECT
-DOMAIN-SUFFIX,tracker.sns.iqiyi.com,REJECT
-DOMAIN-SUFFIX,yuedu.iqiyi.com,REJECT
-DOMAIN-SUFFIX,actives.youku.com,REJECT
-DOMAIN-SUFFIX,ad.api.3g.tudou.com,REJECT
-DOMAIN-SUFFIX,ad.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,ad.api.mobile.youku.com,REJECT
-DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,b.smartvideo.youku.com,REJECT
-DOMAIN-SUFFIX,c.yes.youku.com,REJECT
-DOMAIN-SUFFIX,das.api.youku.com,REJECT
-DOMAIN-SUFFIX,das.mobile.youku.com,REJECT
-DOMAIN-SUFFIX,dev-push.m.youku.com,REJECT
-DOMAIN-SUFFIX,dl.g.youku.com,REJECT
-DOMAIN-SUFFIX,dmapp.youku.com,REJECT
-DOMAIN-SUFFIX,gamex.mobile.youku.com,REJECT
-DOMAIN-SUFFIX,hudong.pl.youku.com,REJECT
-DOMAIN-SUFFIX,huodong.pl.youku.com,REJECT
-DOMAIN-SUFFIX,huodong.vip.youku.com,REJECT
-DOMAIN-SUFFIX,hz.youku.com,REJECT
-DOMAIN-SUFFIX,l.ykimg.com,REJECT
-DOMAIN-SUFFIX,lstat.youku.com,REJECT
-DOMAIN-SUFFIX,m.yes.youku.com,REJECT
-DOMAIN-SUFFIX,mobilemsg.youku.com,REJECT
-DOMAIN-SUFFIX,msg.youku.com,REJECT
-DOMAIN-SUFFIX,myes.youku.com,REJECT
-DOMAIN-SUFFIX,p.l.youku.com,REJECT
-DOMAIN-SUFFIX,passport-log.youku.com,REJECT
-DOMAIN-SUFFIX,p-log.ykimg.com,REJECT
-DOMAIN-SUFFIX,push.m.youku.com,REJECT
-DOMAIN-SUFFIX,r.l.youku.com,REJECT
-DOMAIN-SUFFIX,s.p.youku.com,REJECT
-DOMAIN-SUFFIX,sdk.api.gamex.mobile.youku.com,REJECT
-DOMAIN-SUFFIX,sdk.m.youku.com,REJECT
-DOMAIN-SUFFIX,stat.youku.com,REJECT
-DOMAIN-SUFFIX,store.tv.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,store.xl.api.3g.youku.com,REJECT
-DOMAIN-SUFFIX,tdrec.youku.com,REJECT
-DOMAIN-SUFFIX,test.ott.youku.com,REJECT
-DOMAIN-SUFFIX,urchin.lstat.youku.com,REJECT
-DOMAIN-SUFFIX,v.l.youku.com,REJECT
-DOMAIN-SUFFIX,val.api.youku.com,REJECT
-DOMAIN-SUFFIX,wan.youku.com,REJECT
-DOMAIN-SUFFIX,ykatr.youku.com,REJECT
-DOMAIN-SUFFIX,ykrec.youku.com,REJECT
-DOMAIN-SUFFIX,ads-api.videojj.com,REJECT
-DOMAIN-SUFFIX,cdn.cmop.mgtv.com,REJECT
-DOMAIN-SUFFIX,click.hunantv.com,REJECT
-DOMAIN-SUFFIX,cmop.mgtv.com,REJECT
-DOMAIN-SUFFIX,cytron.videojj.com,REJECT
-DOMAIN-SUFFIX,cytroncdn.videojj.com,REJECT
-DOMAIN-SUFFIX,imgaliyun.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,imgaliyun.res.mgtv.com,REJECT
-DOMAIN-SUFFIX,m2.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,me.videojj.com,REJECT
-DOMAIN-SUFFIX,mobaliyun.res.mgtv.com,REJECT
-DOMAIN-SUFFIX,mobile.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,mobile2.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,mp4.res.hunantv.com,REJECT
-DOMAIN-SUFFIX,pc.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,pc1.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,pcvideoaliyun.titan.mgtv.com,REJECT
-DOMAIN-SUFFIX,pcvideoyd.titan.mgtv.com,REJECT
-DOMAIN-SUFFIX,pcweb.v1.mgtv.com,REJECT
-DOMAIN-SUFFIX,plat.videojj.com,REJECT
-DOMAIN-SUFFIX,py.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,res.hunantv.com,REJECT
-DOMAIN-SUFFIX,store.videojj.com,REJECT
-DOMAIN-SUFFIX,v2.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,va.videojj.com,REJECT
-DOMAIN-SUFFIX,videojj.com,REJECT
-DOMAIN-SUFFIX,web.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,x.da.hunantv.com,REJECT
-DOMAIN-SUFFIX,x.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,x1.da.hunantv.com,REJECT
-DOMAIN-SUFFIX,y.da.hunantv.com,REJECT
-DOMAIN-SUFFIX,y.da.mgtv.com,REJECT
-DOMAIN-SUFFIX,1.letvlive.com,REJECT
-DOMAIN-SUFFIX,2.letvlive.com,REJECT
-DOMAIN-SUFFIX,ads1.lfengmobile.com,REJECT
-DOMAIN-SUFFIX,api.game.letvstore.com,REJECT
-DOMAIN-SUFFIX,api.push.le.com,REJECT
-DOMAIN-SUFFIX,cdn.zampdsp.com,REJECT
-DOMAIN-SUFFIX,cm.fancyapi.com,REJECT
-DOMAIN-SUFFIX,cn.api.push.le.com,REJECT
-DOMAIN-SUFFIX,dc.letv.com,REJECT
-DOMAIN-SUFFIX,fz.letv.com,REJECT
-DOMAIN-SUFFIX,minisite.letv.com,REJECT
-DOMAIN-SUFFIX,msg.m.letv.com,REJECT
-DOMAIN-SUFFIX,pro.hoye.letv.com,REJECT
-DOMAIN-SUFFIX,pro.letv.com,REJECT
-DOMAIN-SUFFIX,s.zampdsp.com,REJECT
-DOMAIN-SUFFIX,stat.letv.com,REJECT
-DOMAIN-SUFFIX,static.app.m.letv.com,REJECT
-DOMAIN-SUFFIX,zamplus.com,REJECT
-DOMAIN-SUFFIX,azabu-u.ac.jp,REJECT
-DOMAIN-SUFFIX,couchcoaster.jp,REJECT
-DOMAIN-SUFFIX,delivery.dmkt-sp.jp,REJECT
-DOMAIN-SUFFIX,ehg-youtube.hitbox.com,REJECT
-DOMAIN-SUFFIX,m-78.jp,REJECT
-DOMAIN-SUFFIX,nichibenren.or.jp,REJECT
-DOMAIN-SUFFIX,nicorette.co.kr,REJECT
-DOMAIN-SUFFIX,adnet.sohu.com,REJECT
-DOMAIN-SUFFIX,data.vod.itc.cn,REJECT
-DOMAIN-SUFFIX,epro.sogou.com,REJECT
-DOMAIN-SUFFIX,go.sohu.com,REJECT
-DOMAIN-SUFFIX,golden1.sogou.com,REJECT
-DOMAIN-SUFFIX,inte.sogou.com,REJECT
-DOMAIN-SUFFIX,inte.sogoucdn.com,REJECT
-DOMAIN-SUFFIX,lu.sogoucdn.com,REJECT
-DOMAIN-SUFFIX,theta.sogoucdn.com,REJECT
-DOMAIN-SUFFIX,uranus.sogou.com,REJECT
-DOMAIN-SUFFIX,afp.pplive.com,REJECT
-DOMAIN-SUFFIX,app.aplus.pptv.com,REJECT
-DOMAIN-SUFFIX,as.aplus.pptv.com,REJECT
-DOMAIN-SUFFIX,jp.as.pptv.com,REJECT
-DOMAIN-SUFFIX,pp2.pptv.com,REJECT
-DOMAIN-SUFFIX,stat.pptv.com,REJECT
-DOMAIN-SUFFIX,static.g.pptv.com,REJECT
-DOMAIN-SUFFIX,hxjs.tool.hexun.com,REJECT
-DOMAIN-SUFFIX,hxsame.hexun.com,REJECT
-DOMAIN-SUFFIX,itv.hexun.com,REJECT
-DOMAIN-SUFFIX,utrack.hexun.com,REJECT
-DOMAIN-SUFFIX,ad.cmvideo.cn,REJECT
-DOMAIN-SUFFIX,atm.cp31.ott.cibntv.net,REJECT
-DOMAIN-SUFFIX,aty.cp45.ott.cibntv.net,REJECT
-DOMAIN-SUFFIX,cpm.cm.kankan.com,REJECT
-DOMAIN-SUFFIX,float.kankan.com,REJECT
-DOMAIN-SUFFIX,houyi.baofeng.net,REJECT
-DOMAIN-SUFFIX,iadctest.qwapi.com,REJECT
-DOMAIN-SUFFIX,logger.baofeng.com,REJECT
-DOMAIN-SUFFIX,ad.video.51togic.com,REJECT
-DOMAIN-SUFFIX,biz5.kankan.com,REJECT
-DOMAIN-SUFFIX,c.algovid.com,REJECT
-DOMAIN-SUFFIX,cms.laifeng.com,REJECT
-DOMAIN-SUFFIX,da.mmarket.com,REJECT
-DOMAIN-SUFFIX,dotcounter.douyutv.com,REJECT
-DOMAIN-SUFFIX,g.uusee.com,REJECT
-DOMAIN-SUFFIX,gcdn.2mdn.net,REJECT
-DOMAIN-SUFFIX,gentags.net,REJECT
-DOMAIN-SUFFIX,gg.jtertp.com,REJECT
-DOMAIN-SUFFIX,gug.ku6cdn.com,REJECT
-DOMAIN-SUFFIX,hp.smiler-ad.com,REJECT
-DOMAIN-SUFFIX,kooyum.com,REJECT
-DOMAIN-SUFFIX,ld.kuaigames.com,REJECT
-DOMAIN-SUFFIX,logstat.t.sfht.com,REJECT
-DOMAIN-SUFFIX,match.rtbidder.net,REJECT
-DOMAIN-SUFFIX,mixer.cupid.ptqy.gitv.tv,REJECT
-DOMAIN-SUFFIX,msg.c002.ottcn.com,REJECT
-DOMAIN-SUFFIX,msga.ptqy.gitv.tv,REJECT
-DOMAIN-SUFFIX,njwxh.com,REJECT
-DOMAIN-SUFFIX,nl.rcd.ptqy.gitv.tv,REJECT
-DOMAIN-SUFFIX,n-st.vip.com,REJECT
-DOMAIN-SUFFIX,pb.bi.gitv.tv,REJECT
-DOMAIN-SUFFIX,pop.uusee.com,REJECT
-DOMAIN-SUFFIX,rd.kuaigames.com,REJECT
-DOMAIN-SUFFIX,shizen-no-megumi.com,REJECT
-DOMAIN-SUFFIX,shrek.6.cn,REJECT
-DOMAIN-SUFFIX,simba.6.cn,REJECT
-DOMAIN-SUFFIX,st.vq.ku6.cn,REJECT
-DOMAIN-SUFFIX,statcounter.com,REJECT
-DOMAIN-SUFFIX,static.duoshuo.com,REJECT
-DOMAIN-SUFFIX,static.ku6.com,REJECT
-DOMAIN-SUFFIX,static8.pmadx.com,REJECT
-DOMAIN-SUFFIX,store.ptqy.gitv.tv,REJECT
-DOMAIN-SUFFIX,t7z.cupid.ptqy.gitv.tv,REJECT
-DOMAIN-SUFFIX,traffic.uusee.com,REJECT
-DOMAIN-SUFFIX,union.6.cn,REJECT
-DOMAIN-SUFFIX,wa.gtimg.com,REJECT
-DOMAIN-SUFFIX,bfshan.cn,REJECT
+[URL Rewrite]
+# > 抖音
+^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package$ - reject
+^https?:\/\/aweme\.snssdk\.com\/api\/ad\/v2\/ack\/splash\/\? - reject
 
 # > POCO
-DOMAIN-SUFFIX,hmma.baidu.com,REJECT
-URL-REGEX,^https?:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_wap_works_info_banner$,REJECT
-URL-REGEX,^https?:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_floating_layer_ad$,REJECT
-DOMAIN-SUFFIX,adnonstop.com,REJECT
-DOMAIN-SUFFIX,gm.mob.com,REJECT
-DOMAIN-SUFFIX,share.mob.com,REJECT
-URL-REGEX,^https?:\/\/app-api\.poco\.cn\/v1_1\/rank\/get_app_start_screen_ad,REJECT
-DOMAIN-SUFFIX,xmpush.xiaomi.com,REJECT
+^https?:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_wap_works_info_banner$ - reject
+^https?:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_floating_layer_ad$ - reject
+^https?:\/\/app-api\.poco\.cn\/v1_1\/rank\/get_app_start_screen_ad - reject
 
-# > 抖音
-#DOMAIN,tnc3-bjlgy.snssdk.com,REJECT
-#DOMAIN,security-hl.snssdk.com,REJECT
-#DOMAIN,tnc3-alisc1.snssdk.com,REJECT
-#DOMAIN,abtest-ch.snssdk.com,REJECT
-#DOMAIN,g.cn.miaozhen.com,REJECT
-#URL-REGEX,^https?:\/\/lf\.snssdk\.com\/service\/settings\/v3\/?,REJECT
-#DOMAIN,log3-misc-hl.amemv.com,REJECT
-#DOMAIN,log-hl.snssdk.com,REJECT
-#DOMAIN-SUFFIX,ixigua.com,REJECT
-#DOMAIN,sf3-scmcdn-tos.pstatp.com,REJECT
-#DOMAIN,frontier-aweme.snssdk.com,REJECT
-URL-REGEX,^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package$,REJECT
-URL-REGEX,^https?:\/\/aweme\.snssdk\.com\/api\/ad\/v2\/ack\/splash\/\?,REJECT
+# > 其它
+^https?:\/\/www\.rtmma\.com\/Data\/yk\/css\/showfloatdiv\.css$ - reject
+^https?:\/\/www\.rtmma\.com\/Data\/yk\/js\/showfloatdiv\.js$ - reject
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject-TINYGIF
+^https?:\/\/cbu01\.alicdn\.com\/img\/ibank\/? - reject
+^https?:\/\/kuaim99\.com\/api\/boot\/bootUp$ - reject
+^https?:\/\/kuaim99\.com\/api\/system\/getInfo$ - reject
+^https?:\/\/kuaim99\.com\/api\/notice\/listCenter - reject
+^https?:\/\/kuaim99\.com\/api\/ads\/index - reject
+^https?:\/\/kuaim99\.com\/km\/static\/img\/defaultimg - reject
+^https?:\/\/kuaim99\.com\/km\/static\/img\/ttab - reject
+^https?:\/\/kuaim99\.com\/km\/static\/img\/KM - reject
+^https?:\/\/kuaim99\.com\/km\/static\/img\/collectdesktop - reject
+^https?:\/\/kuaim99\.com\/km\/static\/img\/message - reject
+^https?:\/\/zhujiwiki\.com\/ad - reject
+^https?:\/\/kuaim99\.com\/pc\/static\/img\/ic_launcher - reject
+^https?:\/\/kuaim99\.com\/pc\/static\/img\/getvip - reject
 
-[URL Rewrite]
 # > Yandex Mail
 ^https?:\/\/mail\.yandex\.ru\/u2709\/? - reject
 ^https?:\/\/an\.yandex\.ru\/? - reject
