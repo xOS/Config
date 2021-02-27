@@ -332,6 +332,9 @@ DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,omgid.qq.com
 DOMAIN-SUFFIX,str.mdt.qq.com
 DOMAIN-SUFFIX,ios.rqd.qq.com
+DOMAIN-SUFFIX,beaconcdn.qq.com
+DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,cdn-go.cn
 
 # > 头条          
 DOMAIN-SUFFIX,mon.toutiao.com
