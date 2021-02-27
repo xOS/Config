@@ -31,7 +31,7 @@ URL-REGEX,^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=,REJEC
 
 # > 1688
 URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv,REJECT
-,REJECT
+
 # > 飞猪
 URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/,REJECT
 
