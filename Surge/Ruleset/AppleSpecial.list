@@ -1,4 +1,5 @@
 # > iCloudSpecial
+USER-AGENT,TestFlight*
 #DOMAIN,gateway.icloud.com
 DOMAIN,testflight.apple.com
 #DOMAIN,p46-fmf.icloud.com
