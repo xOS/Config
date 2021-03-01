@@ -49,6 +49,19 @@ URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 AND,((USER-AGENT,PUClient*), (NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
 URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
 
+[Header Rewrite]
+# > 访问标记
+^https://www.vmgirls.com header-add Visitor Surge
+^https://static.vmgirls.com header-add Visitor Surge
+^https://www.nange.cn header-add Visitor Surge
+^https://static.nange.cn header-add Visitor Surge
+^https://status.nange.cn header-add Visitor Surge
+^https://server.nange.cn header-add Visitor Surge
+^https://nan.ge header-add Visitor Surge
+^https://api.nan.ge header-add Visitor Surge
+^https://hub.nan.ge header-add Visitor Surge
+^https://static.nangle.com.cn header-add Visitor Surge
+
 [URL Rewrite]
 # > TikTok 解锁
 (?<=_region=)CN(?=&) KR 307
