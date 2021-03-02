@@ -53,7 +53,7 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 # > 访问标记
 ^https?:\/\/.*\.vmgirls\.com header-add Visitor Surge
 ^https?:\/\/.*\.nange\.cn header-add Visitor Surge
-^https?:\/\/.*\nan\.ge header-add Visitor Surge
+^https?:\/\/.*\.nan\.ge header-add Visitor Surge
 ^https?:\/\/.*\.nangle\.com\.cn header-add Visitor Surge
 ^https?:\/\/.*\.cloudimg\.net header-add Visitor Surge
 
