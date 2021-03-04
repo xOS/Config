@@ -1,7 +1,7 @@
 # > Akamai
-DOMAIN-SUFFIX,akadns.net,direct
-DOMAIN-SUFFIX,akamai.net,direct
-DOMAIN-SUFFIX,akamaiedge.net,direct
-DOMAIN-SUFFIX,akamaihd.net,direct
-DOMAIN-SUFFIX,akamaistream.net,direct
-DOMAIN-SUFFIX,akamaized.net,direct
+HOST-SUFFIX,akadns.net,DIRECT
+HOST-SUFFIX,akamai.net,DIRECT
+HOST-SUFFIX,akamaiedge.net,DIRECT
+HOST-SUFFIX,akamaihd.net,DIRECT
+HOST-SUFFIX,akamaistream.net,DIRECT
+HOST-SUFFIX,akamaized.net,DIRECT
