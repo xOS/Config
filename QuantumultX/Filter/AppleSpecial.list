@@ -1,5 +1,5 @@
 # > iCloudSpecial
-DOMAIN,gateway.icloud.com,Proxy
-DOMAIN,p46-fmf.icloud.com,Proxy
-DOMAIN,p46-keyvalueservice.icloud.com,Proxy
-DOMAIN-SUFFIX,blobstore.apple.com,Proxy
+HOST,gateway.icloud.com,Proxy
+HOST,p46-fmf.icloud.com,Proxy
+HOST,p46-keyvalueservice.icloud.com,Proxy
+HOST-SUFFIX,blobstore.apple.com,Proxy
