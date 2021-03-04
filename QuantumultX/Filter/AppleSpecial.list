@@ -1,5 +1,7 @@
 # > iCloudSpecial
+USER-AGENT,TestFlight*,Proxy
 HOST,gateway.icloud.com,Proxy
+HOST,testflight.apple.com,Proxy
 HOST,p46-fmf.icloud.com,Proxy
 HOST,p46-keyvalueservice.icloud.com,Proxy
 HOST-SUFFIX,blobstore.apple.com,Proxy
