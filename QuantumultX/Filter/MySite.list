@@ -1,36 +1,36 @@
-# 我自己的站点
+# 我的站点
 
 # > 唯美女生
-HOST-SUFFIX,vmgirls.com,direct
+HOST-SUFFIX, vmgirls.com,DIRECT
 
 # > 楠格
-HOST-SUFFIX,nange.cn,direct
+HOST-SUFFIX, nange.cn,DIRECT
 
 # > 楠格主页
-HOST-SUFFIX,nange.org,direct
-HOST-SUFFIX,nan.ge,direct
+HOST-SUFFIX, nange.org,DIRECT
+HOST-SUFFIX, nan.ge,DIRECT
 
 # > 主机测评
-HOST-SUFFIX,vpsce.com,direct
+HOST-SUFFIX, vpsce.com,DIRECT
 
 # > 楠歌
-HOST-SUFFIX,nangle.com.cn,direct
+HOST-SUFFIX, nangle.com.cn,DIRECT
 
 # > API服务
-HOST-SUFFIX,api.srl,direct
-HOST-SUFFIX,sub.click,direct
+HOST-SUFFIX, api.srl,DIRECT
+HOST-SUFFIX, sub.click,DIRECT
 
 # > CDN域名
-DOMAIN-SUFFIX, applecache.com,direct
-DOMAIN-SUFFIX, somecache.com,direct
+HOST-SUFFIX, applecache.com,DIRECT
+HOST-SUFFIX, somecache.com,DIRECT
 
 # > 其它
-HOST-SUFFIX,xg4.net,direct
-HOST-SUFFIX,cloudimg.net,direct
-HOST-SUFFIX,static.today,direct
-HOST-SUFFIX,free.ac.cn,direct
-HOST-SUFFIX,doh.show,direct
-HOST-SUFFIX,doh.social,direct
-HOST-SUFFIX,xupeinan.com,direct
-HOST-SUFFIX,imxpn.com,direct
-HOST-SUFFIX,xu.wtf,direct
+HOST-SUFFIX, xg4.net,DIRECT
+HOST-SUFFIX, cloudimg.net,DIRECT
+HOST-SUFFIX, static.today,DIRECT
+HOST-SUFFIX, free.ac.cn,DIRECT
+HOST-SUFFIX, doh.show,DIRECT
+HOST-SUFFIX, doh.social,DIRECT
+HOST-SUFFIX, xupeinan.com,DIRECT
+HOST-SUFFIX, imxpn.com,DIRECT
+HOST-SUFFIX, xu.wtf,DIRECT
