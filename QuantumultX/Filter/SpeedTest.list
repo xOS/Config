@@ -1,10 +1,15 @@
-# SpeedTest
-USER-AGENT,SpeedTest*,Speedtest
-HOST-KEYWORD,speedtest,Speedtest
-HOST-SUFFIX,ooklaserver.net,Speedtest
+# > SpeedTest
+USER-AGENT,SpeedTest*,SpeedTest
+HOST-KEYWORD,speedtest,SpeedTest
+HOST-SUFFIX,ooklaserver.net,SpeedTest
+HOST-SUFFIX,88-f.net,SpeedTest
+HOST,st.pautina-telecom.ru,SpeedTest
+HOST-SUFFIX,goodnet.su,SpeedTest
+HOST-SUFFIX,a-mo.net,SpeedTest
 
-# Fast
-HOST-SUFFIX,fast.com,Speedtest
+# > Fast,SpeedTest
+HOST-SUFFIX,fast.com,SpeedTest
+HOST,api.fast.com,SpeedTest
 
-# Speed Test by Cloudflare
-DOMAIN-SUFFIX,speed.cloudflare.com,Speedtest
+# > Speed Test by Cloudflare,SpeedTest
+HOST-SUFFIX,speed.cloudflare.com,SpeedTest
