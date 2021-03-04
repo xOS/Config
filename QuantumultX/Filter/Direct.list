@@ -1,0 +1,55 @@
+# > Client
+# > 百度网盘
+HOST-SUFFIX,bdstatic.com,DIRECT
+HOST-SUFFIX,baidu.com,DIRECT
+
+# > 人人影视
+USER-AGENT,RRShare*,DIRECT
+USER-AGENT,p4pclient*,DIRECT
+
+# > Microsoft
+HOST-SUFFIX,msftconnecttest.com,DIRECT
+
+# > Steam
+USER-AGENT,Steam*,DIRECT
+HOST-SUFFIX,pinyuncloud.com,DIRECT
+HOST-SUFFIX,steamcontent.com,DIRECT
+
+# > Windows
+#HOST-SUFFIX,windows.com,DIRECT
+#HOST-SUFFIX,windows.net,DIRECT
+#HOST-SUFFIX,windowsupdate.com,DIRECT
+
+# > Xunlei
+USER-AGENT,%E8%BF%85%E9%9B%B7,DIRECT
+HOST-SUFFIX,xunlei.com,DIRECT
+
+# > Private Tracker
+HOST-SUFFIX,awesome-hd.me,DIRECT
+HOST-SUFFIX,broadcasthe.net,DIRECT
+HOST-SUFFIX,chdbits.co,DIRECT
+HOST-SUFFIX,classix-unlimited.co.uk,DIRECT
+HOST-SUFFIX,empornium.me,DIRECT
+HOST-SUFFIX,gazellegames.net,DIRECT
+HOST-SUFFIX,hdchina.org,DIRECT
+HOST-SUFFIX,hdsky.me,DIRECT
+HOST-SUFFIX,icetorrent.org,DIRECT
+HOST-SUFFIX,jpopsuki.eu,DIRECT
+HOST-SUFFIX,keepfrds.com,DIRECT
+HOST-SUFFIX,madsrevolution.net,DIRECT
+HOST-SUFFIX,m-team.cc,DIRECT
+HOST-SUFFIX,nanyangpt.com,DIRECT
+HOST-SUFFIX,ncore.cc,DIRECT
+HOST-SUFFIX,open.cd,DIRECT
+HOST-SUFFIX,ourbits.club,DIRECT
+HOST-SUFFIX,passthepopcorn.me,DIRECT
+HOST-SUFFIX,privatehd.to,DIRECT
+HOST-SUFFIX,redacted.ch,DIRECT
+HOST-SUFFIX,springsunday.net,DIRECT
+HOST-SUFFIX,tjupt.org,DIRECT
+HOST-SUFFIX,totheglory.im,DIRECT
+HOST-KEYWORD,aria2,DIRECT
+HOST-KEYWORD,announce,DIRECT
+HOST-KEYWORD,torrent,DIRECT
+HOST-KEYWORD,tracker,DIRECT
+HOST-SUFFIX,smtp,DIRECT
