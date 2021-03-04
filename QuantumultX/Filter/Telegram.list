@@ -1,3 +1,6 @@
+# > Telegram
+# https://core.telegram.org/resources/cidr.txt,Telegram
+HOST-KEYWORD,telegram,Telegram
 HOST-SUFFIX,t.me,Telegram
 HOST-SUFFIX,tdesktop.com,Telegram
 HOST-SUFFIX,telegra.ph,Telegram
@@ -5,7 +8,6 @@ HOST-SUFFIX,telegram.me,Telegram
 HOST-SUFFIX,telegram.org,Telegram
 HOST-SUFFIX,telesco.pe,Telegram
 HOST-SUFFIX,tx.me,Telegram
-HOST-KEYWORD,telegram,Telegram
 IP-CIDR,109.239.140.0/24,Telegram
 IP-CIDR,149.154.160.0/20,Telegram
 IP-CIDR,205.172.60.0/22,Telegram
