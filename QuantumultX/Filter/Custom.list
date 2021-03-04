@@ -1,53 +1,37 @@
 # > General
-USER-AGENT,coffeecorp*,direct
-USER-AGENT,restaurant-mobile*,direct
-DOMAIN,app.adjust.com,direct
+USER-AGENT,coffeecorp*,DIRECT
+USER-AGENT,restaurant-mobile*,DIRECT
+HOST,app.adjust.com,DIRECT
 
 # Client
+
 # > iTerm2
-USER-AGENT,iTerm2*,direct
-DOMAIN-SUFFIX,iterm2.com,direct
-
-# > Spark
-USER-AGENT,Spark*,direct
-DOMAIN-SUFFIX,sparkmailapp.com,direct
-DOMAIN,in.appcenter.ms,direct
-DOMAIN,app-beta.smartmailcloud.com,direct
-
-# > Google
-DOMAIN-SUFFIX,googletraveladservices.com,direct
-DOMAIN,safebrowsing.googleapis.com,direct
-DOMAIN,dl.google.com,direct
-DOMAIN,mtalk.google.com,direct
+USER-AGENT,iTerm2*,DIRECT
+HOST-SUFFIX,iterm2.com,DIRECT
 
 # > Tencent
-DOMAIN,livew.l.qq.com,direct
-DOMAIN,vd.l.qq.com,direct
+HOST,livew.l.qq.com,DIRECT
+HOST,vd.l.qq.com,DIRECT
 
 # > Strava
-DOMAIN,analytics.strava.com,direct
+HOST,analytics.strava.com,DIRECT
 
 # > 网站
-DOMAIN-SUFFIX,wzfou.com
-DOMAIN-SUFFIX,bwl87.com
-
-# > Umeng
-DOMAIN,msg.umeng.com,direct
-DOMAIN,msg.umengcloud.com,direct
+HOST-SUFFIX,wzfou.com,DIRECT
+HOST-SUFFIX,bwl87.com,DIRECT
 
 # > VirMach
-DOMAIN-SUFFIX,virmach.com,direct
+HOST-SUFFIX,virmach.com,DIRECT
 
 # > 头条系
-DOMAIN-SUFFIX,snssdk.com,direct
+#HOST-SUFFIX,snssdk.com,DIRECT
 
 # > 腾讯游戏
-DOMAIN,cloudctrl.gcloud.qq.com,direct
-USER-AGENT,smoba*,direct
+HOST,cloudctrl.gcloud.qq.com,DIRECT
+USER-AGENT,smoba*,DIRECT
 
 # > 微信
-USER-AGENT,MicroMessenger*,direct
-USER-AGENT,WeChat*,direct
-USER-AGENT,MicroMessenger20%Client*,direct
-DOMAIN-SUFFIX,weixin.qq.com,direct
-
+USER-AGENT,MicroMessenger*,DIRECT
+USER-AGENT,WeChat*,DIRECT
+USER-AGENT,MicroMessenger20%Client*,DIRECT
+HOST-SUFFIX,weixin.qq.com,DIRECT
