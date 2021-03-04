@@ -19,13 +19,6 @@ PROCESS-NAME,/Applications/iTerm2.app/Contents/MacOS/iTerm2
 # > BestTrace
 PROCESS-NAME,/Applications/BestTrace.app/Contents/MacOS/BestTrace
 
-# > Spark
-USER-AGENT,Spark*
-DOMAIN-SUFFIX,sparkmailapp.com
-DOMAIN,in.appcenter.ms
-DOMAIN,app-beta.smartmailcloud.com
-PROCESS-NAME,/Applications/Spark.app/Contents/MacOS/Spark
-
 # > Tencent
 DOMAIN,livew.l.qq.com
 DOMAIN,vd.l.qq.com
@@ -36,10 +29,6 @@ DOMAIN,analytics.strava.com
 # > 网站
 DOMAIN-SUFFIX,wzfou.com
 DOMAIN-SUFFIX,bwl87.com
-
-# > Umeng
-DOMAIN,msg.umeng.com
-DOMAIN,msg.umengcloud.com
 
 # > VirMach
 DOMAIN-SUFFIX,virmach.com
