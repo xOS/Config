@@ -26,6 +26,7 @@ HOST-SUFFIX, somecache.com,DIRECT
 
 # > 其它
 HOST-SUFFIX, xg4.net,DIRECT
+HOST-SUFFIX, bk9.net,DIRECT
 HOST-SUFFIX, cloudimg.net,DIRECT
 HOST-SUFFIX, static.today,DIRECT
 HOST-SUFFIX, free.ac.cn,DIRECT
