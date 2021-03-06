@@ -51,7 +51,7 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 
 [Header Rewrite]
 # > 访问标记
-^https?://(?:\w+\.)*?((nan|nange|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ge|com|net))[\\\/]* header-add Visitor Surge
+^https?://(?:\w+\.)*?((nan|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ge|com|net))[\\\/]* header-add Visitor Surge
 
 [URL Rewrite]
 # > TikTok 解锁
