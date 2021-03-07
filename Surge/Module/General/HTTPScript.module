@@ -50,8 +50,10 @@ AND,((USER-AGENT,PUClient*), (NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
 URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
 
 [Header Rewrite]
-# > 访问标记
+# > 添加标记
 ^https?://(?:\w+\.)*?((nan|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ge|com|net))[\\\/]* header-add Visitor Surge
+# > 更改UA
+^https?://(?:\w+\.)*?((nan|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ge|com|net))[\\\/]* header-replace User-Agent Surge
 
 [URL Rewrite]
 # > TikTok 解锁
