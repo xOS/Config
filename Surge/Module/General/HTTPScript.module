@@ -92,12 +92,6 @@ TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/IPA_Install.js
 
-# > 订阅管理
-订阅管理 = type=http-request,pattern=^https?:\/\/api\.io,script-path=https://cdn.jsdelivr.net/gh/XOS/NodeCustom@master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
-
-# > 私库
-Github Private = type=http-request, requires-body=0, pattern=^https?:\/\/(raw|gist)\.githubusercontent.com, script-path=https://hub.nan.ge/Surge/Script/Gist.js
-
 # > BoxJS
 BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, requires-body=true, timeout=120
 
@@ -201,4 +195,4 @@ Zhihu = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-
 
 
 [MITM]
-hostname = %APPEND% api.io, x.io, *vmgirls.com, *nange.cn, *nan.ge, *bk9.net, *nangle.com.cn, *cloudimg.net, *somecache.com, *applecache.com, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, raw.githubusercontent.com, gist.githubusercontent.com, testflight.apple.com, *music.163.com
+hostname = %APPEND% x.io, *vmgirls.com, *nange.cn, *nan.ge, *bk9.net, *nangle.com.cn, *cloudimg.net, *somecache.com, *applecache.com, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, testflight.apple.com, *music.163.com
