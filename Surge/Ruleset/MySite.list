@@ -23,6 +23,7 @@ DOMAIN-SUFFIX, sub.click
 # > CDN域名
 DOMAIN-SUFFIX, applecache.com
 DOMAIN-SUFFIX, somecache.com
+DOMAIN-SUFFIX, cdn.ink
 
 # > IP段
 # >> Oracle 首尔
