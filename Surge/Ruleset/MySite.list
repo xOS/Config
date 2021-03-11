@@ -33,6 +33,7 @@ IP-CIDR,193.123.224.0/19
 # > 其它
 DOMAIN-SUFFIX, xg4.net
 DOMAIN-SUFFIX, bk9.net
+DOMAIN-SUFFIX, v6h.net
 DOMAIN-SUFFIX, cloudimg.net
 DOMAIN-SUFFIX, static.today
 DOMAIN-SUFFIX, free.ac.cn
