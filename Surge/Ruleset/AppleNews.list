@@ -4,7 +4,7 @@ USER-AGENT,com.apple.news*
 PROCESS-NAME,news
 DOMAIN-SUFFIX,apple.news
 DOMAIN,apple.comscoreresearch.com
-#DOMAIN,gateway.icloud.com
+DOMAIN,gateway.icloud.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,news-assets.apple.com
 DOMAIN,news-client.apple.com
