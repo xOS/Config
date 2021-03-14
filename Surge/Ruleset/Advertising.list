@@ -528,9 +528,9 @@ URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4}
 
 # > 字节跳动
 DOMAIN-SUFFIX,mon.toutiao.com
-DOMAIN-SUFFIX,toutiao-frontier.snssdk.com
+#DOMAIN-SUFFIX,toutiao-frontier.snssdk.com
 DOMAIN-SUFFIX,log.snssdk.com
-DOMAIN-SUFFIX,imapi2.snssdk.com
+#DOMAIN-SUFFIX,imapi2.snssdk.com
 DOMAIN-SUFFIX,ic.snssdk.com
 DOMAIN-SUFFIX,isub.snssdk.com
 DOMAIN-SUFFIX,mon.snssdk.com
