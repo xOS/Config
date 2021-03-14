@@ -532,10 +532,10 @@ DOMAIN-SUFFIX,mon.toutiao.com
 DOMAIN-SUFFIX,log.snssdk.com
 #DOMAIN-SUFFIX,imapi2.snssdk.com
 #DOMAIN-SUFFIX,ic.snssdk.com
-DOMAIN-SUFFIX,isub.snssdk.com
+#DOMAIN-SUFFIX,isub.snssdk.com
 DOMAIN-SUFFIX,mon.snssdk.com
-DOMAIN-SUFFIX,gurd.snssdk.com
-DOMAIN-SUFFIX,security.snssdk.com
+#DOMAIN-SUFFIX,gurd.snssdk.com
+#DOMAIN-SUFFIX,security.snssdk.com
 DOMAIN-SUFFIX,mon.toutiaocloud.com
 DOMAIN-SUFFIX,mon.toutiaocloud.net
 URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad
