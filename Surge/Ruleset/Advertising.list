@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,xmpush.xiaomi.com
 #DOMAIN,security-hl.snssdk.com
 #DOMAIN,tnc3-alisc1.snssdk.com
 #DOMAIN,abtest-ch.snssdk.com
-#DOMAIN,g.cn.miaozhen.com
+DOMAIN,g.cn.miaozhen.com
 #DOMAIN,log3-misc-hl.amemv.com
 #DOMAIN,log-hl.snssdk.com
 #DOMAIN-SUFFIX,ixigua.com
@@ -531,8 +531,8 @@ DOMAIN-SUFFIX,mon.toutiao.com
 DOMAIN-SUFFIX,toutiao-frontier.snssdk.com
 DOMAIN-SUFFIX,log.snssdk.com
 DOMAIN-SUFFIX,imapi2.snssdk.com
-DOMAIN-SUFFIX,ic.snssdk.com
-DOMAIN-SUFFIX,isub.snssdk.com
+#DOMAIN-SUFFIX,ic.snssdk.com
+#DOMAIN-SUFFIX,isub.snssdk.com
 DOMAIN-SUFFIX,mon.snssdk.com
 DOMAIN-SUFFIX,gurd.snssdk.com
 DOMAIN-SUFFIX,security.snssdk.com
