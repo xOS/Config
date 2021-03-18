@@ -139,7 +139,7 @@ WPS = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Wor
 ;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Dev/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
 
 # > Lightroom
-Adobe Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Lightroom.js,script-update-interval=0
+Adobe Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Adobe/Lightroom.js,script-update-interval=0
 
 # > Photoshop Express
 Photoshop Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
