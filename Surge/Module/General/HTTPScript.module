@@ -186,7 +186,7 @@ Peak = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Wo
 GyroScope = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Work/GyroScope.js,type=http-response,pattern=^https:\/\/api\.gyrosco\.pe\/v1\/account\/$
 
 # > Textnow
-Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/TextNow/Textnow.js,script-update-interval=0
+Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/TextNow/TextNow.js,script-update-interval=0
 
 # > 禁止网页跳转简书
 简书 = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
