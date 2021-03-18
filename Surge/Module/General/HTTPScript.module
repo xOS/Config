@@ -185,7 +185,7 @@ Peak = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Wo
 # > Gyroscope 解锁 pro (By Maasea)
 GyroScope = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Work/GyroScope.js,type=http-response,pattern=^https:\/\/api\.gyrosco\.pe\/v1\/account\/$
 
-# > Textnow
+# > TextNow
 Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/TextNow/TextNow.js,script-update-interval=0
 
 # > 禁止网页跳转简书
