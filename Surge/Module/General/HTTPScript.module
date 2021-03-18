@@ -31,11 +31,11 @@ URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 URL-REGEX,^https:\/\/.+\.googlevideo\.com\/.+&oad,REJECT
 
 # > 知乎 去广告
-//SOME MCN INFO MAY BE USEFUL
-//URL-REGEX,https://www.zhihu.com/api/v4/mcn/,REJECT
+# >> SOME MCN INFO MAY BE USEFUL
+# URL-REGEX,https://www.zhihu.com/api/v4/mcn/,REJECT
 DOMAIN,appcloud2.zhihu.com,REJECT
 
-//DO NOT GET CDN-BASED IP
+# >> DO NOT GET CDN-BASED IP
 DOMAIN,118.89.204.198,REJECT
 
 USER-AGENT,AVOS*,REJECT
@@ -52,7 +52,7 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 [Header Rewrite]
 # > 添加标记
 ^https?://(?:\w+\.)*?((nan|cdn|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
-# > 更改UA
+# > 更改 UA
 ^https?://(?:\w+\.)*?((nan|cdn|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-replace User-Agent Surge
 
 [URL Rewrite]
@@ -66,11 +66,11 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 ctier=[A-Z] citer=A 302
 
 # > 人人视频 去广告
-rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://hub.nan.ge/Surge/Script/rrsp.js
-rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel,script-path=https://hub.nan.ge/Surge/Script/rrsp.js
+rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://hub.nan.ge/Surge/Script/Live/RRTVAds.js
+rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel,script-path=https://hub.nan.ge/Surge/Script/Live/RRTVAds.js
 
 # > 人人视频 解锁AI原画 (by@george Jiang & R)
-人人影视 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/rrtv.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
+人人影视 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Live/RRTV.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
 # > 抖音去广告和水印
 ^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
@@ -84,114 +84,114 @@ rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\
 
 [Script]
 # > Apple下载解析加速
-DNSPod = type=dns,script-path=https://hub.nan.ge/Surge/Script/DNSPod.js,script-update-interval=-1
+DNSPod = type=dns,script-path=https://hub.nan.ge/Surge/Script/DNS/DNSPod.js,script-update-interval=-1
 
 # > TestFlight解除下载限制
-TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/TestFlight.js
+TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Apple/TestFlight.js
 
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
-IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/IPA_Install.js
+IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Apple/iPA_Install.js
 
 # > BoxJS
-BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, requires-body=true, timeout=120
+BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://hub.nan.ge/Surge/Script/Others/BoxJS.js, requires-body=true, timeout=120
 
 # > 奈飞评分
-奈飞评分 = script-path=https://cdn.jsdelivr.net/gh/yichahucha/surge@master/nf_rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-奈飞评分 = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/yichahucha/surge@master/nf_rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
-单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/yichahucha/surge@master/nf_rating_season.js
+奈飞评分 = script-path=https://hub.nan.ge/Surge/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+奈飞评分 = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Netflix/Rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Netflix/RatingSeason.js
 
 # > 抖音去广告和水印
-抖音 & TikTok = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Aweme.js
-抖音 & TikTok = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Aweme.js
-;抖音 = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=https://hub.nan.ge/Surge/Script/DouYin.js
+抖音 & TikTok = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/ByteDance/Aweme.js
+抖音 & TikTok = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/ByteDance/Aweme.js
+;抖音 = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=https://hub.nan.ge/Surge/Script/ByteDance/DouYin.js
 
 # > 微博去广告
-开屏 = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Weibo_Launch.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
-时间轴 = type=http-response,requires-body=1,max-size=-1,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list),script-path=https://hub.nan.ge/Surge/Script/Weibo_Timeline.js
+开屏 = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Weibo/LaunchAds.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
+时间轴 = type=http-response,requires-body=1,max-size=-1,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list),script-path=https://hub.nan.ge/Surge/Script/Weibo/Timeline.js
 
 # > 微信公众号
-WeChat = script-path=https://hub.nan.ge/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
+WeChat = script-path=https://hub.nan.ge/Surge/Script/WeChat/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
 
 # > 知乎 去广告
-zhihu people = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/people/,script-path=https://cdn.jsdelivr.net/gh/onewayticket255/Surge-Script@master/surge%20zhihu%20people.js
-zhihu feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://cdn.jsdelivr.net/gh/onewayticket255/Surge-Script@master/surge%20zhihu%20feed.js
-zhihu recommend = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend,script-path=https://cdn.jsdelivr.net/gh/onewayticket255/Surge-Script@master/surge%20zhihu%20recommend.js
-zhihu answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://cdn.jsdelivr.net/gh/onewayticket255/Surge-Script@master/surge%20zhihu%20answer.js
+People = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/people/,script-path=https://hub.nan.ge/Surge/Script/Zhihu/People.js
+Feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://hub.nan.ge/Surge/Script/Zhihu/Feed.js
+Recommend = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend,script-path=https://hub.nan.ge/Surge/Script/Zhihu/Recommend.js
+Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://hub.nan.ge/Surge/Script/Zhihu/Answer.js
 
 # > VSCO滤镜VIP
-VSCO = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/nzw9314/QuantumultX@master/NobyDa/QuantumultX/File/vsco.js,type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/
+VSCO = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Photo/VSCO.js,type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/
 
 # > 91短视频
-91.js = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/91.js,type=http-response,pattern="^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$"
+ 91短视频 = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Live/MicroVideo.js,type=http-response,pattern="^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$"
 
-http-response ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/NobyDa/Script@master/Surge/JS/91ShortVideo.js
+http-response ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Live/ShortVideo.js
 
 # > 香蕉视频VIP
-xjsp.js = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/NobyDa/Script@master/QuantumultX/File/xjsp.js,type=http-response,pattern=^https?:\/\/.*\.(lago|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/)
+BananaVideo = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Live/BananaVideo.js,type=http-response,pattern=^https?:\/\/.*\.(lago|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/)
 
 # Termius 解锁本地pro  (By Maasea)
-// Termius.js = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/nzw9314/QuantumultX@master/NobyDa/Surge/JS/Termius.js,type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/
+;Termius = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Dev/Termius.js,type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/
 
 # > WPS (By eHpo1)
-WPS = requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/NobyDa/Script@master/Surge/JS/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
+WPS = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/WPS.js,type=http-response,pattern=^https://account.wps.*/api/users/
 
-# > workingcopy.js
-// workingcopy.js = requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/langkhach270389/Scripting@master/workingcopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
+# > WorkingCopy.js
+;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Dev/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
 
 # > Lightroom
 Adobe Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Lightroom.js,script-update-interval=0
 
 # > Photoshop Express
-PS Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/PS%20Express.js,script-update-interval=0
+Photoshop Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
 
 # > CamScanner unlocks pro, Cloud scanning is not available.
-CamScanner = type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/NobyDa/Script@master/Surge/JS/CamScanner.js,script-update-interval=0
+CamScanner = type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/CamScanner.js,script-update-interval=0
 
 # > Fantastical 内购解锁 (By @sunshy)
-fantastical = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$
+Fantastical = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/Fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$
 
 # > Bear熊掌记 (By Miao Miao)
-Bear熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/bear.js,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/Bear.js,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
 
 # > XMind思维导图
-XMind = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/XMind.js,type=http-response,pattern=https:\/\/www\.xmind\.cn\/\_res\/devices
+XMind = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/XMind.js,type=http-response,pattern=https:\/\/www\.xmind\.cn\/\_res\/devices
 
-# 智能证件照相机 (by @superuv)
-证件照相机 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/znzj.js,type=http-response,pattern=^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister
+# > 智能证件照相机 (by @superuv)
+证件照相机 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/TakeIDPhoto.js,type=http-response,pattern=^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister
 
-# gk扫描仪(by @superuv)
-扫描仪 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/smy.js,type=http-response,pattern=^https:\/\/api\.gkocr\.com\/api\/userlogin1.php
+# > GK扫描仪(by @superuv)
+扫描仪 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/GKScaner.js,type=http-response,pattern=^https:\/\/api\.gkocr\.com\/api\/userlogin1.php
 
 # > Buyhack
-verify_receipt = requires-body=1,max-size=262144,script-path=https://cdn.jsdelivr.net/gh/langkhach270389/Scripting@master/verify_receipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
+VerifyReceipt = requires-body=1,max-size=262144,script-path=https://hub.nan.ge/Surge/Script/Live/VerifyReceipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
 
-# > draft
-draft = requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/langkhach270389/Scripting@master/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
+# > Draft
+Draft = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/Draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
 
-# > Dayone
-# 1.启用本脚本与 pre 脚本
-# 2.重启 Day One，稍等片刻等待高级版出现
-# 3.禁用掉 pre 脚本，重启 Day One，确认高级版状况不变
-# pre_dayone
-// dayone-pre = debug=1,script-path=https://hub.nan.ge/Surge/Script/dayone-pre.js,type=http-request,pattern=^https:\/\/dayone\.me\/api\/users$
-dayone.surge = requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/langkhach270389/Scripting@master/dayone.surge.js,script-update-interval=0,type=http-response,pattern=^https:\/\/dayone\.me\/api\/(users|v2\/users\/(account-status|receipt))$
+# > DayOne
+# >> 1.启用本脚本与 Pre 脚本
+# >> 2.重启 DayOne，稍等片刻等待高级版出现
+# >> 3.禁用掉 Pre 脚本，重启 DayOne，确认高级版状况不变
+# >> Pre_DayOne
+; DayOnePre = debug=1,script-path=https://hub.nan.ge/Surge/Script/DayOne/DayOnePre.js,type=http-request,pattern=^https:\/\/dayone\.me\/api\/users$
+dayone.surge = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/DayOne/DayOne.js,script-update-interval=0,type=http-response,pattern=^https:\/\/dayone\.me\/api\/(users|v2\/users\/(account-status|receipt))$
 
 # > Peak 解锁Pro
-peak = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/peak.js,type=http-response,pattern=^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
+Peak = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Work/Peak.js,type=http-response,pattern=^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
 
 # > 菜谱大全解锁vip (By @photonmang)
-菜谱大全 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/cpdq.js,type=http-response,pattern=https?:\/\/api\.jiaonizuocai\.com
+菜谱大全 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Live/CookBook.js,type=http-response,pattern=https?:\/\/api\.jiaonizuocai\.com
 
 # > Gyroscope 解锁 pro (By Maasea)
-gyroscope = requires-body=1,script-path=https://cdn.jsdelivr.net/gh/nzw9314/QuantumultX@master/NobyDa/Surge/JS/gyroscope.js,type=http-response,pattern=^https:\/\/api\.gyrosco\.pe\/v1\/account\/$
+GyroScope = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Work/GyroScope.js,type=http-response,pattern=^https:\/\/api\.gyrosco\.pe\/v1\/account\/$
 
 # > Textnow
-Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/langkhach270389/Scripting@master/Textnow.js,script-update-interval=0
+Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/TextNow/Textnow.js,script-update-interval=0
 
 # > 禁止网页跳转简书
-Jianshu = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://cdn.jsdelivr.net/gh/zZPiglet/Task@master/asset/noredirect.js
+简书 = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
 # > 禁止网页跳转知乎
-Zhihu = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://cdn.jsdelivr.net/gh/zZPiglet/Task@master/asset/noredirect.js
+知乎 = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
 
 
 [MITM]
