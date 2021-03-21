@@ -1,5 +1,9 @@
 # Advertising
 
+# > Apple
+# >> Apple Store 搜索页推荐app
+DOMAIN,amp-api.apps.apple.com
+
 # > POCO
 DOMAIN-SUFFIX,hmma.baidu.com
 DOMAIN-SUFFIX,adnonstop.com
