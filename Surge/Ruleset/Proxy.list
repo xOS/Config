@@ -6,3 +6,6 @@ DOMAIN-SUFFIX,fabric.io
 
 # > Google Voice
 DOMAIN,voice.google.com
+
+# > OVH新加坡
+IP-CIDR,51.79.128.0/17
