@@ -59,7 +59,7 @@ DOMAIN-SUFFIX,str.mdt.qq.com
 DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,omgid.qq.com
 DOMAIN-SUFFIX,ios.rqd.qq.com
-DOMAIN-SUFFIX,beaconcdn.qq.com
+#DOMAIN-SUFFIX,beaconcdn.qq.com
 DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,cdn-go.cn
 DOMAIN-SUFFIX,btrace.video.qq.com
@@ -176,7 +176,7 @@ DOMAIN-SUFFIX,p3.l.qq.com
 DOMAIN-SUFFIX,pagespeed.report.qq.com
 DOMAIN-SUFFIX,pcbrowser.dd.qq.com
 DOMAIN-SUFFIX,pinghot.qq.com
-#DOMAIN-SUFFIX,pingjs.qq.com
+DOMAIN-SUFFIX,pingjs.qq.com
 DOMAIN-SUFFIX,pingma.qq.com
 DOMAIN-SUFFIX,pingtcss.qq.com
 DOMAIN-SUFFIX,pmir.3g.qq.com
