@@ -50,8 +50,12 @@ AND,((USER-AGENT,PUClient*), (NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
 URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
 
 [Header Rewrite]
+# > 颇可
+^https?:\/\/[\w-]+\.(poco|pocoimg)\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87 Version/11.1.1 Safari/605.1.15
+
 # > 添加标记
 ;^https?://(?:\w+\.)*?((nan|cdn|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
+
 # > 更改 UA
 ;^https?://(?:\w+\.)*?((nan|cdn|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-replace User-Agent Surge
 
@@ -62,12 +66,13 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
     ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 (^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 
+# > 知乎
+^https:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
+# > 115
+^https?:\/\/home\.115\.com\/go\?(https?:\/\/)?(.*) http://$2 302
+
 # > YouTube
 ctier=[A-Z] citer=A 302
-
-# > 人人视频 去广告
-rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://hub.nan.ge/Surge/Script/Live/RRTVAds.js
-rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel,script-path=https://hub.nan.ge/Surge/Script/Live/RRTVAds.js
 
 # > 人人视频 解锁AI原画 (by@george Jiang & R)
 人人影视 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Live/RRTV.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
@@ -94,6 +99,10 @@ IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\
 
 # > BoxJS
 BoxJs = type=http-request,pattern=^https?://boxjs.com(/api|/home|/sub|/my|/app|/log|/revert)?($|\/),script-path=https://hub.nan.ge/Surge/Script/Others/BoxJS.js, requires-body=true, timeout=120
+
+# > 人人视频 去广告
+rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://hub.nan.ge/Surge/Script/Live/RRTVAds.js
+rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel,script-path=https://hub.nan.ge/Surge/Script/Live/RRTVAds.js
 
 # > 奈飞评分
 奈飞评分 = script-path=https://hub.nan.ge/Surge/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
@@ -188,14 +197,18 @@ GyroScope = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Work/Gyr
 # > TextNow
 Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/TextNow/TextNow.js,script-update-interval=0
 
-# > 禁止网页跳转简书
-简书 = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
-# > 禁止网页跳转知乎
+# > 简书
+简书1 = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
+简书2 = type=http-request,pattern=^https:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
+
+# > 知乎
 知乎 = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
 
-# > 微信 App 内被屏蔽链接快捷跳转
-BlockLink = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,script-path=https://hub.nan.ge/Surge/Script/WeChat/BlockLink.js
+# > 微博
+微博1 = type=http-request,pattern=^https?:\/\/weibo\.cn\/sinaurl\?(.*&)?(u|toasturl|goto)=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
+微博2 = type=http-request,pattern=^https:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
+微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
 
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, -*applecache.com, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, testflight.apple.com, *music.163.com, weixin110.qq.com
+hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, -*applecache.com, *poco.cn, *pocoimg.cn, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, testflight.apple.com, *music.163.com
