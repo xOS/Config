@@ -51,7 +51,7 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 
 [Header Rewrite]
 # > 颇可
-^https?:\/\/[\w-]+\.(poco|pocoimg)\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87 Version/11.1.1 Safari/605.1.15
+^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87 Version/11.1.1 Safari/605.1.15
 
 # > 添加标记
 ;^https?://(?:\w+\.)*?((nan|cdn|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
@@ -211,4 +211,4 @@ Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\
 
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, -*applecache.com, *poco.cn, *pocoimg.cn, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, testflight.apple.com, *music.163.com
+hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, -*applecache.com, *poco.cn, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, testflight.apple.com, *music.163.com
