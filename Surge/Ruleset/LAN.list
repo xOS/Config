@@ -1,4 +1,5 @@
 # > Local Area Network
+DOMAIN-KEYWORD,.lan
 DOMAIN-SUFFIX,local
 DOMAIN-SUFFIX,localhost
 DOMAIN-SUFFIX,ip6-localhost
