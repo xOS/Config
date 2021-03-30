@@ -27,8 +27,20 @@ URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 
-# > YouTube 去片头广告
-URL-REGEX,^https:\/\/.+\.googlevideo\.com\/.+&oad,REJECT
+# > 移除 YouTube 页面广告和视频贴片广告
+URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/pagead\/,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/ptracking\?,REJECT
+URL-REGEX,https?:\/\/.+.youtube.com\/_get_ads,REJECT
+URL-REGEX,https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
+URL-REGEX,https?:\/\/s0.2mdn.net\/ads\/,REJECT
+URL-REGEX,https?:\/\/stats.tubemogul.com\/stats\/,REJECT
+URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
+URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
+URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
+URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
 
 # > 知乎 去广告
 # >> SOME MCN INFO MAY BE USEFUL
@@ -211,4 +223,4 @@ Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\
 
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, -*applecache.com, *poco.cn, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, testflight.apple.com, *music.163.com
+hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, -*applecache.com, *poco.cn, api.rr.tv, 6.6.6.6, 2.2.2.2, *.googlevideo.com, *.youtube.com, youtubei.googleapis.com, ios.prod.ftl.netflix.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, account.wps.*, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, www.xmind.cn, app.xunjiepdf.com, api.gkocr.com, api.jiaonizuocai.com, api.gyrosco.pe, backend.getdrafts.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, testflight.apple.com, *music.163.com
