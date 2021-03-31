@@ -1570,6 +1570,10 @@ DOMAIN-SUFFIX,traffic.uusee.com
 DOMAIN-SUFFIX,union.6.cn
 DOMAIN-SUFFIX,wa.gtimg.com
 DOMAIN-SUFFIX,bfshan.cn
+DOMAIN-SUFFIX,abovede6.com
+DOMAIN-SUFFIX,cy6px.com
+DOMAIN-SUFFIX,stm65i8.com
+DOMAIN-SUFFIX,fb360xp.com
 URL-REGEX,^https?://ad\d\.sina\.com
 URL-REGEX,^https?://ad\d\.sina\.com.cn
 URL-REGEX,^https?://app\.58\.com/api/log
