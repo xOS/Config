@@ -4,6 +4,9 @@
 # >> Apple Store 搜索页推荐app
 #DOMAIN,amp-api.apps.apple.com
 
+# > 宝塔面板弹窗
+URL-REGEX,^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/ajax\?action=GetSoftList$,REJECT
+
 # > POCO
 DOMAIN-SUFFIX,hmma.baidu.com
 DOMAIN-SUFFIX,adnonstop.com
