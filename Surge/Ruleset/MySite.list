@@ -34,9 +34,10 @@ DOMAIN-SUFFIX, cdn.ink
 #IP-CIDR,51.79.128.0/17
 
 # > 其它
-DOMAIN-SUFFIX, xg4.net
+DOMAIN-SUFFIX, 5ki.net
 DOMAIN-SUFFIX, bk9.net
 DOMAIN-SUFFIX, v6h.net
+DOMAIN-SUFFIX, qste.com
 DOMAIN-SUFFIX, cloudimg.net
 DOMAIN-SUFFIX, static.today
 DOMAIN-SUFFIX, free.ac.cn
