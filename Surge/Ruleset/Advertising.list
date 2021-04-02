@@ -1196,6 +1196,7 @@ DOMAIN,ws.ksmobile.net
 
 # > 其它
 #DOMAIN-KEYWORD,adservice
+DOMAIN-SUFFIX,21cn.com
 DOMAIN-SUFFIX,1phads.com
 DOMAIN-SUFFIX,1rtb.com
 DOMAIN-SUFFIX,1xl.co.uk
