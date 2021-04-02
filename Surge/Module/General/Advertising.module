@@ -1,8 +1,8 @@
 #!name=广告屏蔽
-#!desc=最后更新时间 2021-04-02 19:25
+#!desc=最后更新时间 2021-04-02 23:57
 
 [General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net,123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
+force-http-engine-hosts = %APPEND% *.ott.cibntv.net,119.18.193.135,122.14.246.33,123.59.31.1,175.102.178.52
 
 [Rule]
 # > 腾讯视频
@@ -186,6 +186,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog) - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/api\/v\d\/app_square\/start_up_with_ad$ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/brand\/search\/v1\.json - reject
+^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/c\/s\/splashSchedule - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/promotion\/(display_cache|display_ad|feed_display|search_ad) - reject
@@ -199,6 +200,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert - reject
 ^https?:\/\/(e|m).+/((uu|oo).php.+|\d+.x?html\?$) - reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4}) - reject
+^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) - reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_9\d{2} - reject
 ^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) - reject
 ^https?:\/\/.+/videos/other/.+ - reject
@@ -269,6 +271,8 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash - reject
 ^https?:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/ - reject
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
+^https?:\/\/api\.rr\.tv\/.*?(getAll|Version) - reject
+^https?:\/\/api\.rr\.tv\/ad\/ - reject
 ^https?:\/\/api\.vuevideo\.net\/api\/v\d\/ad\/ - reject
 ^https?:\/\/api\.weibo\.cn\/2\/statuses\/extend\?gsid= - reject
 ^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad - reject
@@ -335,15 +339,16 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/img\d\.doubanio\.com\/view\/dale-online\/dale_ad\/ - reject
 ^https?:\/\/img\w\.g\.pptv\.com - reject
 ^https?:\/\/impservice.+?youdao.com - reject
-^https?:\/\/interface(\d)?.music.163.com\/eapi\/ad\/ - reject
+^https?:\/\/interface(\d)?\.music\.163\.com/eapi/(ad|abtest|sp|hot|store|search/(specialkeyword|defaultkeyword|hot)) - reject
+^https?:\/\/ios\.lantouzi\.com\/api\/startpage - reject
 ^https?:\/\/ios\.wps\.cn\/ad-statistics-service - reject
 ^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/(guanggao|ts_ad)\/ - reject
 ^https?:\/\/itunes\.apple\.com\/lookup\?id=575826903 - reject
 ^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml - reject
 ^https?:\/\/log.+?baidu\.com - reject
 ^https?:\/\/m5\.amap\.com\/ws\/valueadded\/ - reject
-^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm - reject
-^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd - reject
+^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) - reject
+^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) - reject
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/json\/getAdsList - reject
 ^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject
 ^https?:\/\/ma\.ofo\.com\/adImage\/ - reject
@@ -356,8 +361,9 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint - reject
 ^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video - reject
 ^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report - reject
+^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) - reject
 ^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo - reject
-^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/.{25}\.jpg - reject
+^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg) - reject
 ^https?:\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p - reject
 ^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp - reject
 ^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/ - reject
@@ -370,7 +376,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/overseas\.weico\.cc\/portal\.php\?a=get_coopen_ads - reject
 ^https?:\/\/p\.c\.music\.126.net\/.*?jpg$ - reject
 ^https?:\/\/p\.du\.163\.com\/ad\/ - reject
-^https?:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do - reject
+^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do - reject
 ^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg - reject
 ^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+\.jpg\?may_covertWebp - reject
 ^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp - reject
@@ -385,7 +391,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/pic\.k\.sohu\.com\/img\d\/wb\/tj\/ - reject
 ^https?:\/\/pic\.xiami\.net\/images\/common\/uploadpic[\s\S]*?\.jpg$ - reject
 ^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
-^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) - reject
+^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getBannerAds|getFullScreenPic|getNewsRemoteConfig|getQQNewsRemoteConfig|searchHotCatList|upLoadLoc) - reject
 ^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json - reject
 ^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/ - reject
 ^https?:\/\/s\.go\.sohu\.com\/adgtr\/\?gbcode=(ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map)?\.(baidu|n\.shifen)\.com - reject
@@ -406,6 +412,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/tqt\.weibo\.cn\/[\w=?&%.-]+advert\.index - reject
 ^https?:\/\/tqt\.weibo\.cn\/api\/advert\/ - reject
 ^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=(tqt_sdkad|tqtad) - reject
+^https?:\/\/tracker-download\.oss-cn-beijing\.aliyuncs\.com\/SIMPlus\/ad_ - reject
 ^https?:\/\/update\.pan\.baidu\.com\/statistics - reject
 ^https?:\/\/ups\.youku\.com\/.*?needad=1& - reject
 ^https?:\/\/v\.cctv\.com\/.+?850 - reject
@@ -436,8 +443,8 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/(api|www)\.zhihu\.com\/.*?(featured-comment-ad|recommendations|community-ad) data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
 ^https?:\/\/(iyes|(api|hd)\.mobile)\.youku\.com\/(adv|common\/v3\/hudong\/new) data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
-^https?:\/\/.+?\.(snssdk|amemv)\.com\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+;^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
+;^https?:\/\/.+?\.(snssdk|amemv)\.com\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/.+?\.127\.net\/ad data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/.+?\/api\/app\/member\/ver2\/user\/login\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/.+?\/client?functionId=lauch\/lauchConfig&appName=paidaojia data="https://hub.nan.ge/Surge/Blank/Blank.gif"
@@ -466,7 +473,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/211\.98\.71\.(195|196|226):8080\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/789\.kakamobi\.cn\/.+?adver data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/[\s\S]*\.baidu\.com/.*?ad[xs]\.php data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/[\s\S]*\.snssdk\.com\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+;^https?:\/\/[\s\S]*\.snssdk\.com\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/[\s\S]*\/.+?\.tc\.qq\.com/.*?p201.1\.mp4 data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/[\s\S]*\/eapi\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/[\s\S]*\/music\/photo_new\/T017R data="https://hub.nan.ge/Surge/Blank/Blank.gif"
@@ -499,13 +506,14 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/app\.veryzhun\.com\/ad\/admob data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+;^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+;^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+;^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+;^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+;^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/bank\.wo\.cn\/v9\/getstartpage data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+^https?:\/\/bbs\.airav\.cc\/data\/.+?\.jpg data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/bj\.bcebos\.com\/fc-feed\/0\/pic\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/book\.img\.ireader\.com\/group6\/M00 data="https://hub.nan.ge/Surge/Blank/Blank.gif"
@@ -530,7 +538,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/douyucdn\.cn\/.+?\/appapi\/getinfo data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/elemecdn\.com\/.+?\/sitemap data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/fcvbjbcebos\.baidu\.com\/.+?\.mp4 data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/frontier\.snssdk\.com\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+;^https?:\/\/frontier\.snssdk\.com\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/fuss10\.elemecdn\.com\/.+?\.mp4 data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/fuss10\.elemecdn\.com\/.+?\/w\/640\/h\/\d{3,4} data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/g1\.163\.com\/madfeedback data="https://hub.nan.ge/Surge/Blank/Blank.gif"
@@ -600,6 +608,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/r1\.ykimg\.com\/\w{30,35}\.jpg data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/r1\.ykimg\.com\/material\/.+?\/\d{3,4}-\d{4} data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/r1\.ykimg\.com\/material\/.+?\/\d{6}\/\d{4}\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+^https?:\/\/r\.inews\.qq\.com\/getSplash\?apptype=ios&startarticleid=&__qnr= data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/r\.inews\.qq\.com\/adsBlacklist data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/r\.inews\.qq\.com\/getBannerAds data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/r\.inews\.qq\.com\/getFullScreenPic data="https://hub.nan.ge/Surge/Blank/Blank.gif"
