@@ -27,10 +27,10 @@ URL-REGEX,^https:\/\/music\.163\.com\/store\/,DIRECT
 
 [URL Rewrite]
 # > TikTok 解锁
-(?<=_region=)CN(?=&) KR 307
-(?<=&mcc_mnc=)4 2 307
-    ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
-(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
+;(?<=_region=)CN(?=&) KR 307
+;(?<=&mcc_mnc=)4 2 307
+;    ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+;(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 
 # > 知乎
 ^https:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302

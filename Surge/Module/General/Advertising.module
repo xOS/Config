@@ -480,7 +480,7 @@ rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\
 # > 抖音去广告和水印
 抖音 & TikTok = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/ByteDance/Aweme.js
 抖音 & TikTok = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/ByteDance/Aweme.js
-;抖音 = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=https://hub.nan.ge/Surge/Script/ByteDance/DouYin.js
+抖音 = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=https://hub.nan.ge/Surge/Script/ByteDance/DouYin.js
 
 # > 微博去广告
 开屏 = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Weibo/LaunchAds.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
@@ -534,7 +534,7 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?:\/\/211\.98\.71\.(195|196|226):8080\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/789\.kakamobi\.cn\/.+?adver data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/[\s\S]*\.baidu\.com/.*?ad[xs]\.php data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-;^https?:\/\/[\s\S]*\.snssdk\.com\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+^https?:\/\/[\s\S]*\.snssdk\.com\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/[\s\S]*\/.+?\.tc\.qq\.com/.*?p201.1\.mp4 data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/[\s\S]*\/eapi\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/[\s\S]*\/music\/photo_new\/T017R data="https://hub.nan.ge/Surge/Blank/Blank.gif"
@@ -567,11 +567,11 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/app\.veryzhun\.com\/ad\/admob data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-;^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-;^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-;^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-;^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-;^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/bank\.wo\.cn\/v9\/getstartpage data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/bbs\.airav\.cc\/data\/.+?\.jpg data="https://hub.nan.ge/Surge/Blank/Blank.gif"
@@ -657,7 +657,7 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/p\d\.meituan\.net\/(mmc|wmbanner)\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/p\d\.meituan\.net\/wmbanner\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-# ^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+; ^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/pan-api\.bitqiu\.com\/activity\/(getPromoteGuide|getUrlList) data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/pb\d\.pstatp\.com\/origin data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/pcvideoyd\.titan\.mgtv\.com\/pb\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
