@@ -46,14 +46,6 @@ IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\
 # > VSCO滤镜VIP
 VSCO = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Photo/VSCO.js,type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/
 
-# > 91短视频
- 91短视频 = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Live/MicroVideo.js,type=http-response,pattern="^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$"
-
-http-response ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ requires-body=1,max-size=0,script-path=https://hub.nan.ge/Surge/Script/Live/ShortVideo.js
-
-# > 香蕉视频VIP
-BananaVideo = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Live/BananaVideo.js,type=http-response,pattern=^https?:\/\/.*\.(lago|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/)
-
 # Termius 解锁本地pro  (By Maasea)
 ;Termius = requires-body=1,script-path=https://hub.nan.ge/Surge/Script/Dev/Termius.js,type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/
 
@@ -105,4 +97,4 @@ Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, ios.fuliapps.com, vsco.co, apple.fuliapps.com, *.lagoapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *music.163.com
+hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *music.163.com
