@@ -3,6 +3,11 @@
 DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,baidu.com
 
+# > Maxmind
+DOMAIN-KEYWORD,maxmind
+DOMAIN-SUFFIX,maxmind.com
+DOMAIN-SUFFIX,mmapiws.com
+
 # > 人人影视
 USER-AGENT,RRShare*
 USER-AGENT,p4pclient*
