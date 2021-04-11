@@ -3,7 +3,7 @@
 DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,baidu.com
 
-# > Maxmind
+# > MaxMind
 DOMAIN-KEYWORD,maxmind
 DOMAIN-SUFFIX,maxmind.com
 DOMAIN-SUFFIX,mmapiws.com
