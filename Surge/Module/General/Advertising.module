@@ -547,6 +547,8 @@ Recommend = type=http-response,requires-body=1,max-size=0,pattern=https://api.zh
 Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://hub.nan.ge/Surge/Script/Zhihu/Answer.js
 
 [Map Local]
+^http:\/\/pgdt\.gtimg\.cn\/ data="https://hub.nan.ge/Surge/Blank/Blank.jpg"
+^http:\/\/mtrace\.qq\.com\/mkvcollect data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(adgateway|adv)\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
 ^https?:\/\/(101\.201\.175\.228|182\.92\.251\.113)\/brand\/search\/v1\.json data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"

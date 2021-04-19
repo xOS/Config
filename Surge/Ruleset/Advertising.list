@@ -1486,7 +1486,7 @@ DOMAIN-SUFFIX,he3kz8.com
 DOMAIN-SUFFIX,k42jvw.com
 DOMAIN-SUFFIX,ads.cdn.tvb.com
 DOMAIN-SUFFIX,pq.stat.ku6.com
-DOMAIN-SUFFIX,pv.sohu.com
+#DOMAIN-SUFFIX,pv.sohu.com
 DOMAIN-SUFFIX,hitikapi.info
 DOMAIN-SUFFIX,pinwu123.com
 DOMAIN-SUFFIX,shidaikongcheng.cn
