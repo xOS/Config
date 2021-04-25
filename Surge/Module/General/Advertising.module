@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net,119.18.193.135,122.14.246.33,123.59.31.1,175.102.178.52,118.89.204.198,220.112*,211.162*,124.193*,124.14*,119.79*,116.211*,175.6.225.125,36.99*,140.249*,14.18.175.253
+force-http-engine-hosts = %APPEND% *.ott.cibntv.net,119.18.193.135,122.14.246.33,123.59.31.1,175.102.178.52,118.89.204.198,220.112*,211.162*,124.193*,124.14*,119.79*,116.211*,175.6.225.125,36.99*,140.249*,14.18.175.253,150.138*
 
 [Rule]
 # > 京东，去启动广告
@@ -40,14 +40,15 @@ URL-REGEX,^https?://.+\.beacon\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.gdt\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.l\.qq\.com,REJECT
 URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?,REJECT
-URL-REGEX,^https?://.+\/variety\/.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
+URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
 URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\?,REJECT
 URL-REGEX,^https?://.+\/monitor\/receive\.action$,REJECT
 URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
 IP-CIDR,14.18.175.253/32,REJECT
 IP-CIDR,36.99.176.160/32,REJECT
 IP-CIDR,140.249.94.150/32,REJECT
-IP-CIDR,58.250.137.64/32,REJECT
+;IP-CIDR,58.250.137.64/32,REJECT
+IP-CIDR,150.138.229.18/32,REJECT
 
 # > 微信
 URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad),REJECT
