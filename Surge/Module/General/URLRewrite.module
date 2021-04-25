@@ -55,7 +55,7 @@
 ^(http|https):\/\/(www.)?mindmapper\.cc\/ https://www.mindmapper.com/ 302
 ^(http|https):\/\/(www.)?(mycleanmymac|xitongqingli)\.com\/ https://macpaw.com/ 302
 ^(http|https):\/\/(www.)?nicelabel\.cc\/ https://www.nicelabel.com/zh/ 302
-^(http|https):\/\/(www.)?ntfsformac\.cc\/ https://www.tuxera.com/products/tuxera-ntfs-for-mac-cn/ 302
+^(http|https):\/\/(www.)?ntfsformac\.cc\/ https://ntfsformac.tuxera.com/ 302
 ^(http|https):\/\/(www.)?ntfsformac\.cn\/ https://china.paragon-software.com/home-mac/ntfs-for-mac/ 302
 ^(http|https):\/\/(www.)?overturechina\.com\/ https://sonicscores.com/ 302
 ^(http|https):\/\/(www.)?passwordrecovery\.cn\/ https://cn.elcomsoft.com/aopr.html 302
