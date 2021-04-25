@@ -40,7 +40,7 @@ URL-REGEX,^https?://.+\.beacon\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.gdt\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.l\.qq\.com,REJECT
 URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?,REJECT
-URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
+URL-REGEX,^https?://.+\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
 URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\?,REJECT
 URL-REGEX,^https?://.+\/monitor\/receive\.action$,REJECT
 URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
