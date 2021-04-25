@@ -3,7 +3,7 @@
 
 [URL Rewrite]
 # Redirect Google Search Service
-^(http|https):\/\/(www.)?(g|google)\.cn https://www.google.com 302
+^(http|https):\/\/(www.)?(g|google)\.(cn|hk|com.hk) https://www.google.com 302
 
 # Redirect Google Maps Service
 ^(http|https):\/\/(ditu|maps).google\.cn https://maps.google.com 302
