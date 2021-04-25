@@ -191,7 +191,6 @@ http://(\d{1,3}\.){3}\d{1,3}/(variety|vlive\.qqvideo)\.tc\.qq\.com/ - reject
 ^https?:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons - reject
 ^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
 ^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/ - reject
-^https?:\/\/btrace\.qq\.com - reject
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
 ^https?:\/\/r\.inews\.qq\.com\/getQQNewsRemoteConfig - reject
 ^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/ - reject
@@ -636,7 +635,6 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?:\/\/bj\.bcebos\.com\/fc-feed\/0\/pic\/ data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/book\.img\.ireader\.com\/group6\/M00 data="https://hub.nan.ge/Surge/Blank/Blank.gif"
-^https?:\/\/btrace\.qq\.com data="https://hub.nan.ge/Surge/Blank/Blank.txt"
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/p\/img\?src= data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/logtogether\?cmd= data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/cache\.gclick\.cn data="https://hub.nan.ge/Surge/Blank/Blank.gif"
