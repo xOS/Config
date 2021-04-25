@@ -552,7 +552,7 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 [Map Local]
 ^http:\/\/msg\.qy\.net\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
 ^http:\/\/pgdt\.gtimg\.cn\/ data="https://hub.nan.ge/Surge/Blank/Blank.jpg"
-^http:\/\/mtrace\.qq\.com\/mkvcollect data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/(mtrace|trace)\.qq\.com\/(mkvcollect|kvcollect) data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https:\/\/log\.snssdk\.com\/service\/ data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(adgateway|adv)\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/ad\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
