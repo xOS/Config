@@ -4,6 +4,7 @@
 [URL Rewrite]
 # Redirect Google Search Service
 ^(http|https):\/\/(www.)?(g|google)\.(cn|hk|com.hk) https://www.google.com 302
+https?://www.google.com(.*)?/(.*)safe=strict&(.*) https://www.google.com/$2$3 307
 
 # Redirect Google Maps Service
 ^(http|https):\/\/(ditu|maps).google\.cn https://maps.google.com 302
@@ -72,4 +73,4 @@
 ^(http|https):\/\/api\.abema\.io\/v\d\/ip\/check - reject
 
 [MITM]
-hostname = %INSERT% www.google.cn, *google.com.hk, *google.hk, api.abema.io
+hostname = %INSERT% www.google.cn, *google.com.??, *google.hk, api.abema.io
