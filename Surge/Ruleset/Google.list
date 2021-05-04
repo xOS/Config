@@ -105,7 +105,7 @@ DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,googlesource
-DOMAIN-KEYWORD,gstatic
+#DOMAIN-KEYWORD,gstatic
 DOMAIN-KEYWORD,recaptcha
 DOMAIN-KEYWORD,www.google.
 IP-CIDR,173.194.0.0/16,no-resolve
