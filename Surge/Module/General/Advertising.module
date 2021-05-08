@@ -54,6 +54,9 @@ IP-CIDR,116.207.148.20/32,REJECT
 # > 微信
 URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad),REJECT
 
+# > 和彩云
+URL-REGEX,^https?:\/\/mcmm\.caiyun\.feixin\.10086\.cn:80\/mcmm\/api\/IAdvert$,REJECT
+
 # > 天翼云盘
 DOMAIN-SUFFIX,21cn.com,REJECT
 URL-REGEX,^https:\/\/api\.cloud\.189\.cn\/message\/queryAssignMsg,REJECT
