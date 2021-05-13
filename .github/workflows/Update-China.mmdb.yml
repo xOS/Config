@@ -11,7 +11,7 @@ on:
   schedule:
     - cron: 0 */6 * * *
 jobs:
-  build:
+  Update:
     runs-on: ubuntu-latest
 
     steps:
