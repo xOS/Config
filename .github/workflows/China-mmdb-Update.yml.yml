@@ -1,0 +1,34 @@
+name: Update China.mmdb
+
+on:
+  push:
+    branches:
+      - "Her"
+    paths-ignore:
+      - "LICENSE"
+      - "*.md"
+      - ".*"
+  schedule:
+    - cron: 0 */6 * * *
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2.3.3
+
+    - name: Get China.mmdb
+      run: |
+        cd $GITHUB_WORKSPACE
+        curl -L https://raw.githubusercontent.com/XOS/China.mmdb/release/cn-ip-cidr.txt
+        curl -L https://raw.githubusercontent.com/XOS/China.mmdb/release/China.list
+        curl -L https://raw.githubusercontent.com/XOS/China.mmdb/release/China.mmdb
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v4.4.0
+      with:
+        author_name: GitHub Action
+        author_email: noreply@github.com
+        message: "Add China.mmdb"
+        add: "-A"
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
