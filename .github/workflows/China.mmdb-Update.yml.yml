@@ -20,14 +20,14 @@ jobs:
     - name: Get China.mmdb
       run: |
         cd $GITHUB_WORKSPACE
-        curl -L https://raw.githubusercontent.com/XOS/China.mmdb/release/cn-ip-cidr.txt
-        curl -L https://raw.githubusercontent.com/XOS/China.mmdb/release/China.list
-        curl -L https://raw.githubusercontent.com/XOS/China.mmdb/release/China.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/XOS/China.mmdb/release/cn-ip-cidr.txt
+        wget -N --no-check-certificate https://raw.githubusercontent.com/XOS/China.mmdb/release/China.list
+        wget -N --no-check-certificate https://raw.githubusercontent.com/XOS/China.mmdb/release/China.mmdb
     - name: Add & Commit
       uses: EndBug/add-and-commit@v4.4.0
       with:
-        author_name: GitHub Action
-        author_email: noreply@github.com
+        author_name: 翠花
+        author_email: admin@nange.cn
         message: "Add China.mmdb"
         add: "-A"
       env:
