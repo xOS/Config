@@ -7,6 +7,7 @@ on:
     paths-ignore:
       - "LICENSE"
       - "*.md"
+      - "**/*.md"
       - ".*"
   schedule:
     - cron: 0 */6 * * *
@@ -30,7 +31,7 @@ jobs:
       with:
         author_name: 翠花
         author_email: admin@nange.cn
-        message: "Add China.mmdb"
+        message: "Update China.mmdb"
         add: "-A"
       env:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
