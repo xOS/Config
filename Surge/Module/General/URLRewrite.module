@@ -3,8 +3,8 @@
 
 [URL Rewrite]
 # Redirect Google Search Service
-https?://www.google.com.??/(.*)safe=strict&(.*) https://www.google.com/$2$3 307
 ^(http|https):\/\/(www.)?(g|google)\.(cn|hk|com.hk) https://www.google.com 302
+^(http|https):\/\/(www.)?(g|google)\.com(.*)? /(.*)safe=strict&(.*) https://www.google.com/$2$3 307
 
 # Redirect Google Maps Service
 ^(http|https):\/\/(ditu|maps).google\.cn https://maps.google.com 302
