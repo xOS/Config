@@ -21,8 +21,8 @@ jobs:
     - name: Get China.mmdb
       run: |
         cd $GITHUB_WORKSPACE
-        mkdir GEOIP
-        cd GEOIP
+        mkdir GeoIP
+        cd GeoIP
         wget -N --no-check-certificate https://raw.githubusercontent.com/XOS/China.mmdb/release/cn-ip-cidr.txt
         wget -N --no-check-certificate https://raw.githubusercontent.com/XOS/China.mmdb/release/China.list
         wget -N --no-check-certificate https://raw.githubusercontent.com/XOS/China.mmdb/release/China.mmdb
