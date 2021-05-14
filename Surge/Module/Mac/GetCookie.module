@@ -8,7 +8,7 @@ hostname = %APPEND% weibo.com, music.163.com, *.bilibili.com, tieba.baidu.com
 [Script]
 
 # > 微博超话获取Cookie
-微博超话 = max-size=0,script-path=https://hub.nan.ge/Surge/Script/Weibo/GetCookie.js,pattern=https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin,type=http-request
+微博超话 = max-size=0,script-path=https://hub.nange.cn/Surge/Script/Weibo/GetCookie.js,pattern=https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin,type=http-request
 
 # > 网易云音乐
 # 浏览器访问并登录: https://music.163.com/m/login

@@ -14,16 +14,16 @@
 
 [Script]
 # > 简书
-简书1 = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
-简书2 = type=http-request,pattern=^https:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
+简书1 = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
+简书2 = type=http-request,pattern=^https:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url=,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
 
 # > 知乎
-知乎 = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
+知乎 = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
 
 # > 微博
-微博1 = type=http-request,pattern=^https?:\/\/weibo\.cn\/sinaurl\?(.*&)?(u|toasturl|goto)=,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
-微博2 = type=http-request,pattern=^https:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
-微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nan.ge/Surge/Script/Others/NoRedirect.js
+微博1 = type=http-request,pattern=^https?:\/\/weibo\.cn\/sinaurl\?(.*&)?(u|toasturl|goto)=,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
+微博2 = type=http-request,pattern=^https:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
+微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
 
 [MITM]
 hostname = %APPEND% *poco.cn, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com
