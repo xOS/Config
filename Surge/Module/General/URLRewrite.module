@@ -2,14 +2,14 @@
 #!desc=URL优化与重写
 
 [URL Rewrite]
-# Redirect Google Search Service
+# > Redirect Google Search Service
 ^(http|https):\/\/(www.)?(g|google)\.(cn|hk|com.hk) https://www.google.com 302
 ^(http|https):\/\/(www.)?(g|google)\.com(.*)? /(.*)safe=strict&(.*) https://www.google.com/$2$3 307
 
-# Redirect Google Maps Service
+# > Redirect Google Maps Service
 ^(http|https):\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
-# Redirect HTTP to HTTPS
+# > Redirect HTTP to HTTPS
 ^(http|https):\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
 ^(http|https):\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
 ^(http|https):\/\/(www.)?mi\.com\/ https://www.mi.com/ 302
@@ -17,10 +17,10 @@
 ^(http|https):\/\/(www.)?suning\.com\/ https://suning.com/ 302
 ^(http|https):\/\/(www.)?yhd\.com\/ https://yhd.com/ 302
 
-# Weibo Short URL
+# > Weibo Short URL
 ^http:\/\/t\.cn http://sinaurl.cn 302
 
-# Redirect False to True
+# > Redirect False to True
 # > IGN China to IGN Global
 ^(http|https):\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
 # > Fake Website Made By C&J Marketing
@@ -69,7 +69,7 @@
 ^(http|https):\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
 ^(http|https):\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
 
-# AbeamTV - api.abema.io
+# > AbeamTV - api.abema.io
 ^(http|https):\/\/api\.abema\.io\/v\d\/ip\/check - reject
 
 [MITM]

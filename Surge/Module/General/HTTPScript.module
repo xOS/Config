@@ -32,7 +32,7 @@ URL-REGEX,^https:\/\/music\.163\.com\/store\/,DIRECT
 ^https?:\/\/home\.115\.com\/go\?(https?:\/\/)?(.*) http://$2 302
 
 # > 人人视频 解锁AI原画 (by@george Jiang & R)
-人人影视 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Live/RRTV.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
+;人人影视 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Live/RRTV.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
 [Script]
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
@@ -97,4 +97,4 @@ Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *music.163.com
+hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, *poco.cn, -api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, dayone.me, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *music.163.com
