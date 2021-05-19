@@ -38,15 +38,20 @@ URL-REGEX,^https:\/\/music\.163\.com\/store\/,DIRECT
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Apple/iPA_Install.js
 
+# > 韩剧TV
+韩剧TV = requires-body=1,script-path=https://hub.nange.cn/Surge/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
+
 # > 奈飞评分
 奈飞评分 = script-path=https://hub.nange.cn/Surge/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+
 奈飞评分 = requires-body=1,script-path=https://hub.nange.cn/Surge/Script/Netflix/Rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+
 单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Netflix/RatingSeason.js
 
 # > VSCO滤镜VIP
 VSCO = requires-body=1,script-path=https://hub.nange.cn/Surge/Script/Photo/VSCO.js,type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/
 
-# Termius 解锁本地pro  (By Maasea)
+# > Termius 解锁本地pro  (By Maasea)
 ;Termius = requires-body=1,script-path=https://hub.nange.cn/Surge/Script/Dev/Termius.js,type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/
 
 # > WorkingCopy.js
@@ -93,7 +98,9 @@ Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\
 
 # > 微博
 微博1 = type=http-request,pattern=^https?:\/\/weibo\.cn\/sinaurl\?(.*&)?(u|toasturl|goto)=,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
+
 微博2 = type=http-request,pattern=^https:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
+
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
 
 [MITM]

@@ -22,7 +22,9 @@
 
 # > 微博
 微博1 = type=http-request,pattern=^https?:\/\/weibo\.cn\/sinaurl\?(.*&)?(u|toasturl|goto)=,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
+
 微博2 = type=http-request,pattern=^https:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
+
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
 
 [MITM]
