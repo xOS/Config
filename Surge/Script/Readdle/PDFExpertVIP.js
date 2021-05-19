@@ -10,5 +10,3 @@ var obj= {
 };
 
 $done({body: JSON.stringify(obj)});
-
-//

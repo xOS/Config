@@ -1,1 +1,5 @@
-$done({body: '{"quality":10}'})
+var obj= {
+  "quality":10
+};
+
+$done({body: JSON.stringify(obj)});
