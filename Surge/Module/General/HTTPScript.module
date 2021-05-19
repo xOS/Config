@@ -39,7 +39,7 @@ URL-REGEX,^https:\/\/music\.163\.com\/store\/,DIRECT
 IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Apple/iPA_Install.js
 
 # > 韩剧TV
-韩剧TV = requires-body=1,script-path=https://hub.nange.cn/Surge/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
+;韩剧TV = requires-body=1,script-path=https://hub.nange.cn/Surge/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
 
 # > 奈飞评分
 奈飞评分 = script-path=https://hub.nange.cn/Surge/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
