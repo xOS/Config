@@ -6,3 +6,4 @@ DOMAIN-SUFFIX,metric-api.newrelic.com
 DOMAIN-SUFFIX,game.wr.pvp.net
 DOMAIN-SUFFIX,prod01.amer.cros.wr.pvp.net
 DOMAIN-SUFFIX,prod-speedtest.cros.wr.pvp.net
+IP-CIDR,13.56.0.0/16
