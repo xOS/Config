@@ -4,5 +4,5 @@ DOMAIN-SUFFIX,pvp.net
 DOMAIN-SUFFIX,riotcdn.net
 DOMAIN-SUFFIX,ekg.riotgames.com
 DOMAIN-SUFFIX,metric-api.newrelic.com
-IP-CIDR,13.56.0.0/16
-IP-CIDR,18.144.0.0/15
+IP-CIDR,13.56.0.0/16,no-resolve
+IP-CIDR,18.144.0.0/15,no-resolve
