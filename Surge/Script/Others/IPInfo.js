@@ -3,8 +3,8 @@ if ($response.statusCode != 200) {
 }
 
 const emojis= ['🆘','🈲','⚠️','🔞','📵','🚦','🏖','🖥','📺','🐧','🐬','🦉','🍄','⛳️','🚴','🤑','👽','🤖','🎃', '👺', '👁', '🐶', '🐼','🐌', '👥']
-var city0 = "高谭市";
-var isp0 = "Cross-GFW.org";
+var city0 = "上海市";
+var isp0 = "www.nange.cn";
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
