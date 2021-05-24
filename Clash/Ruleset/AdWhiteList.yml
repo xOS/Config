@@ -1,0 +1,10 @@
+# > 谷歌统计与广告
+payload:
+  - DOMAIN-KEYWORD,adservice
+  - DOMAIN-KEYWORD,googleads
+  - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,googlesyndication.com
+  - DOMAIN-SUFFIX,googletagmanager.com
+  - DOMAIN-SUFFIX,adservice.google.com
+  - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN-SUFFIX,displayads-formats.googleusercontent.com

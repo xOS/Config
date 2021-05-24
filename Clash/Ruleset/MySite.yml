@@ -1,0 +1,49 @@
+payload:
+# 我自己的站点
+
+# > 唯美女生
+  - DOMAIN-SUFFIX, vmgirls.com
+
+# > 楠格
+  - DOMAIN-SUFFIX, nange.cn
+
+# > 楠格主页
+  - DOMAIN-SUFFIX, nange.org
+  - DOMAIN-SUFFIX, nan.ge
+
+# > 主机测评
+  - DOMAIN-SUFFIX, vpsce.com
+
+# > 楠歌
+  - DOMAIN-SUFFIX, nangle.com.cn
+
+# > API服务
+  - DOMAIN-SUFFIX, api.srl
+  - DOMAIN-SUFFIX, sub.click
+
+# > CDN域名
+  - DOMAIN-SUFFIX, applecache.com
+  - DOMAIN-SUFFIX, somecache.com
+  - DOMAIN-SUFFIX, cdn.ink
+
+# > IP段
+# >> Oracle 首尔
+#  - CIDR,193.122.96.0/19
+#  - CIDR,193.123.224.0/19
+
+# >> OVH新加坡
+#  - CIDR,51.79.128.0/17
+
+# > 其它
+  - DOMAIN-SUFFIX, 5ki.net
+  - DOMAIN-SUFFIX, bk9.net
+  - DOMAIN-SUFFIX, v6h.net
+  - DOMAIN-SUFFIX, qste.com
+  - DOMAIN-SUFFIX, cloudimg.net
+  - DOMAIN-SUFFIX, static.today
+  - DOMAIN-SUFFIX, free.ac.cn
+  - DOMAIN-SUFFIX, doh.show
+  - DOMAIN-SUFFIX, doh.social
+  - DOMAIN-SUFFIX, xupeinan.com
+  - DOMAIN-SUFFIX, imxpn.com
+  - DOMAIN-SUFFIX, xu.wtf
