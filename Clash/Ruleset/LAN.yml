@@ -5,15 +5,15 @@ payload:
   - DOMAIN-SUFFIX,localhost
   - DOMAIN-SUFFIX,ip6-localhost
   - DOMAIN-SUFFIX,ip6-loopback
-  - CIDR,192.168.0.0/16
-  - CIDR,10.0.0.0/8
-  - CIDR,172.16.0.0/12
-  - CIDR,127.0.0.0/8
-  - CIDR,100.64.0.0/10
-  - CIDR6,::1/128
-  - CIDR6,fc00::/7
-  - CIDR6,fe80::/10
-  - CIDR6,fd00::/8
+  - IP-CIDR,192.168.0.0/16
+  - IP-CIDR,10.0.0.0/8
+  - IP-CIDR,172.16.0.0/12
+  - IP-CIDR,127.0.0.0/8
+  - IP-CIDR,100.64.0.0/10
+  - IP-CIDR6,::1/128
+  - IP-CIDR6,fc00::/7
+  - IP-CIDR6,fe80::/10
+  - IP-CIDR6,fd00::/8
 
 # > 路由器管理域名
   - DOMAIN,router.asus.com

@@ -44,14 +44,14 @@ payload:
   - DOMAIN,intl-passport.iqiyi.com
   - DOMAIN,intl-sns.iqiyi.com
   - DOMAIN,msg-intl.qy.net
-  - CIDR,101.224.0.0/13,no-resolve
-  - CIDR,103.44.56.0/22,no-resolve
-  - CIDR,118.26.120.0/24,no-resolve
-  - CIDR,118.26.32.0/23,no-resolve
-  - CIDR,119.176.0.0/12,no-resolve
-  - CIDR,223.119.62.224/28,no-resolve
-  - CIDR,23.40.241.251/32,no-resolve
-  - CIDR,23.40.242.10/32,no-resolve
+  - IP-CIDR,101.224.0.0/13,no-resolve
+  - IP-CIDR,103.44.56.0/22,no-resolve
+  - IP-CIDR,118.26.120.0/24,no-resolve
+  - IP-CIDR,118.26.32.0/23,no-resolve
+  - IP-CIDR,119.176.0.0/12,no-resolve
+  - IP-CIDR,223.119.62.224/28,no-resolve
+  - IP-CIDR,23.40.241.251/32,no-resolve
+  - IP-CIDR,23.40.242.10/32,no-resolve
 
 # > 哔哩哔哩
   - DOMAIN-KEYWORD,bilibili
@@ -98,22 +98,22 @@ payload:
   - DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
   - DOMAIN-SUFFIX,uposdash-302-bilivideo.yfcdn.net
   - DOMAIN-SUFFIX,yo9.com
-  - CIDR,106.75.74.76/32,no-resolve
-  - CIDR,111.206.25.147/32,no-resolve
-  - CIDR,119.29.29.29/32,no-resolve
-  - CIDR,119.3.238.64/32,no-resolve
-  - CIDR,120.92.108.182/32,no-resolve
-  - CIDR,120.92.113.99/32,no-resolve
-  - CIDR,120.92.153.217/32,no-resolve
-  - CIDR,128.1.62.200/31,no-resolve
-  - CIDR,134.175.207.130/32,no-resolve
-  - CIDR,150.116.92.250/32,no-resolve
-  - CIDR,164.52.76.18/32,no-resolve
-  - CIDR,203.107.1.33/32,no-resolve
-  - CIDR,203.107.1.34/32,no-resolve
-  - CIDR,203.107.1.65/32,no-resolve
-  - CIDR,203.107.1.66/32,no-resolve
-  - CIDR,45.43.32.234/32,no-resolve
+  - IP-CIDR,106.75.74.76/32,no-resolve
+  - IP-CIDR,111.206.25.147/32,no-resolve
+  - IP-CIDR,119.29.29.29/32,no-resolve
+  - IP-CIDR,119.3.238.64/32,no-resolve
+  - IP-CIDR,120.92.108.182/32,no-resolve
+  - IP-CIDR,120.92.113.99/32,no-resolve
+  - IP-CIDR,120.92.153.217/32,no-resolve
+  - IP-CIDR,128.1.62.200/31,no-resolve
+  - IP-CIDR,134.175.207.130/32,no-resolve
+  - IP-CIDR,150.116.92.250/32,no-resolve
+  - IP-CIDR,164.52.76.18/32,no-resolve
+  - IP-CIDR,203.107.1.33/32,no-resolve
+  - IP-CIDR,203.107.1.34/32,no-resolve
+  - IP-CIDR,203.107.1.65/32,no-resolve
+  - IP-CIDR,203.107.1.66/32,no-resolve
+  - IP-CIDR,45.43.32.234/32,no-resolve
 
 # > Bahamut
   - DOMAIN-SUFFIX,bahamut.com.tw

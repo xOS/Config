@@ -106,5 +106,5 @@ payload:
 #  - DOMAIN-KEYWORD,gstatic
   - DOMAIN-KEYWORD,recaptcha
   - DOMAIN-KEYWORD,www.google.
-  - CIDR,173.194.0.0/16,no-resolve
-  - CIDR,74.125.0.0/16,no-resolve
+  - IP-CIDR,173.194.0.0/16,no-resolve
+  - IP-CIDR,74.125.0.0/16,no-resolve

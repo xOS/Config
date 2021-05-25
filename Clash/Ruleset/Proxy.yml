@@ -9,4 +9,4 @@ payload:
   - DOMAIN,voice.google.com
 
 # > OVH新加坡
-  - CIDR,51.79.128.0/17
+  - IP-CIDR,51.79.128.0/17
