@@ -51,10 +51,13 @@ DOMAIN-SUFFIX,stun.qqlive.qq.com
 DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,apponline.research.qq.com
 DOMAIN-SUFFIX,voreader.reader.qq.com
+DOMAIN-SUFFIX,mtrace.qq.com
 DOMAIN-SUFFIX,str.mdt.qq.com
 DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,omgid.qq.com
 DOMAIN-SUFFIX,ios.rqd.qq.com
+#DOMAIN-SUFFIX,beaconcdn.qq.com
+DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,cdn-go.cn
 DOMAIN-SUFFIX,btrace.video.qq.com
 DOMAIN-SUFFIX,c.l.qq.com
@@ -101,6 +104,7 @@ DOMAIN-SUFFIX,appsupport.qq.com
 DOMAIN-SUFFIX,astat.bugly.qq.com
 DOMAIN-SUFFIX,astrategy.beacon.qq.com
 DOMAIN-SUFFIX,bs.l.qq.com
+DOMAIN-SUFFIX,btrace.qq.com
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,bugreportv2.qq.com
 DOMAIN-SUFFIX,c.gdt.qq.com
@@ -208,6 +212,7 @@ DOMAIN-SUFFIX,tj.b.qq.com
 DOMAIN-SUFFIX,tj.video.qq.com
 DOMAIN-SUFFIX,tools.3g.qq.com
 DOMAIN-SUFFIX,tpush.html5.qq.com
+DOMAIN-SUFFIX,trace.qq.com
 DOMAIN-SUFFIX,union.discuz.qq.com
 DOMAIN-SUFFIX,up-hl.3g.qq.com
 DOMAIN-SUFFIX,updatecenter.qq.com
@@ -238,6 +243,7 @@ DOMAIN,rich.kuwo.cn
 
 # > 腾讯视频
 URL-REGEX,^https?://.+/videos/other/.+
+URL-REGEX,^https?://.+\.beacon\.qq\.com
 URL-REGEX,^https?://.+\.gdt\.qq\.com
 URL-REGEX,^https?://.+\.l\.qq\.com
 URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?
