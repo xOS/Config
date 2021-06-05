@@ -55,8 +55,6 @@ DOMAIN-SUFFIX,str.mdt.qq.com
 DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,omgid.qq.com
 DOMAIN-SUFFIX,ios.rqd.qq.com
-#DOMAIN-SUFFIX,beaconcdn.qq.com
-DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,cdn-go.cn
 DOMAIN-SUFFIX,btrace.video.qq.com
 DOMAIN-SUFFIX,c.l.qq.com
@@ -240,7 +238,6 @@ DOMAIN,rich.kuwo.cn
 
 # > 腾讯视频
 URL-REGEX,^https?://.+/videos/other/.+
-URL-REGEX,^https?://.+\.beacon\.qq\.com
 URL-REGEX,^https?://.+\.gdt\.qq\.com
 URL-REGEX,^https?://.+\.l\.qq\.com
 URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?
