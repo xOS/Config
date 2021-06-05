@@ -18,16 +18,7 @@ DOMAIN-SUFFIX,share.mob.com
 DOMAIN-SUFFIX,xmpush.xiaomi.com
 
 # > 抖音
-#DOMAIN,tnc3-bjlgy.snssdk.com
-#DOMAIN,security-hl.snssdk.com
-#DOMAIN,tnc3-alisc1.snssdk.com
-#DOMAIN,abtest-ch.snssdk.com
 DOMAIN,g.cn.miaozhen.com
-#DOMAIN,log3-misc-hl.amemv.com
-#DOMAIN,log-hl.snssdk.com
-#DOMAIN-SUFFIX,ixigua.com
-#DOMAIN,sf3-scmcdn-tos.pstatp.com
-#DOMAIN,frontier-aweme.snssdk.com
 
 # > 腾讯
 DOMAIN-SUFFIX,e.qq.com
@@ -537,17 +528,6 @@ URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.qu
 URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4}
 
 # > 字节跳动
-DOMAIN-SUFFIX,mon.toutiao.com
-#DOMAIN-SUFFIX,toutiao-frontier.snssdk.com
-DOMAIN-SUFFIX,log.snssdk.com
-#DOMAIN-SUFFIX,imapi2.snssdk.com
-#DOMAIN-SUFFIX,ic.snssdk.com
-#DOMAIN-SUFFIX,isub.snssdk.com
-DOMAIN-SUFFIX,mon.snssdk.com
-#DOMAIN-SUFFIX,gurd.snssdk.com
-#DOMAIN-SUFFIX,security.snssdk.com
-DOMAIN-SUFFIX,mon.toutiaocloud.com
-DOMAIN-SUFFIX,mon.toutiaocloud.net
 URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad
 URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/
 URL-REGEX,^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/
