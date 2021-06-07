@@ -105,7 +105,7 @@ proxy-providers:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
-  🇨🇳 回国节点:
+  🇨🇳 大陆节点:
     type: http
     path: ./Proxy/CN.yaml
     url: https://api.io/getprofile?name=Clash/CN.ini&token=XX
@@ -125,7 +125,7 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - 🇺🇳 其它
-      - 🇨🇳 回国
+      - 🇨🇳 大陆
   - name: 🖥 我的服务
     type: select
     proxies:
@@ -135,7 +135,7 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - 🇺🇳 其它
-      - 🇨🇳 回国
+      - 🇨🇳 大陆
   - name: 📧 网易云村
     type: select
     proxies:
@@ -159,7 +159,7 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - 🇺🇳 其它
-      - 🇨🇳 回国
+      - 🇨🇳 大陆
   - name: 📸 境外媒体
     type: select
     proxies:
@@ -169,7 +169,7 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - 🇺🇳 其它
-      - 🇨🇳 回国
+      - 🇨🇳 大陆
   - name: 🛫 境外服务
     type: select
     proxies:
@@ -179,7 +179,7 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - 🇺🇳 其它
-      - 🇨🇳 回国
+      - 🇨🇳 大陆
   - name: 🔐 广告拦截
     type: select
     proxies:
@@ -194,7 +194,7 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - 🇺🇳 其它
-      - 🇨🇳 回国
+      - 🇨🇳 大陆
   - name: 🇭🇰 香港
     type: select
     proxies:
@@ -225,11 +225,11 @@ proxy-groups:
     proxies:
     use:
       - 📧 解锁节点
-  - name: 🇨🇳 回国
+  - name: 🇨🇳 大陆
     type: select
     proxies:
     use:
-      - 🇨🇳 回国节点  
+      - 🇨🇳 大陆节点  
 
 rule-providers:
   Direct:
