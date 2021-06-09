@@ -116,7 +116,7 @@ URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
 
 # > 字节跳动
 URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad,REJECT
-URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/,REJECT
+;URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/,REJECT
 URL-REGEX,^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/,REJECT
 URL-REGEX,^https?+:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/,REJECT
 URL-REGEX,^https?+:\/\/.+?\/img\/ad\.union\.api\/,REJECT
@@ -298,7 +298,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
 ^https?:\/\/9377\w{2}\.com - reject
 ^https?:\/\/[\s\s]*baidu\.com/.*ad[xs]\.php - reject
-^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ - reject
+;^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ - reject
 ^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/ - reject
 ^https?:\/\/[^(apple|10010)]+\.(com|cn)\/(a|A)d(s|v)?(/|\.js) - reject
 ^https?:\/\/[^bbs].tianya\.cn - reject
