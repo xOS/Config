@@ -1093,10 +1093,10 @@ URL-REGEX,^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising
 URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/
 
 # > Instagram
-DOMAIN-SUFFIX,portal.fb.com
-DOMAIN-SUFFIX,edge-mqtt.facebook.com
-DOMAIN-SUFFIX,graph.facebook.com
-DOMAIN-SUFFIX,graph.instagram.com
+#DOMAIN-SUFFIX,portal.fb.com
+#DOMAIN-SUFFIX,edge-mqtt.facebook.com
+#DOMAIN-SUFFIX,graph.facebook.com
+#DOMAIN-SUFFIX,graph.instagram.com
 
 # > Apple
 DOMAIN-SUFFIX,iadsdk.apple.com
