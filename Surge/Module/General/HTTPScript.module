@@ -75,7 +75,7 @@ Fantastical = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/
 Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Work/Bear.js,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
 
 # > Buyhack
-VerifyReceipt = requires-body=1,max-size=262144,script-path=https://hub.nange.cn/Surge/Script/Live/VerifyReceipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
+VerifyReceipt = requires-body=1,max-size=262144,script-path=https://hub.nange.cn/Surge/Script/Life/VerifyReceipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
 
 # > Peak 解锁Pro
 Peak = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Work/Peak.js,type=http-response,pattern=^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
