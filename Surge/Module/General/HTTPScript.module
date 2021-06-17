@@ -1,9 +1,6 @@
 #!name=常用规则
 #!desc=日用夜用
 
-[General]
-# > 暂无
-
 [Rule]
 # > 网易云音乐
 URL-REGEX,^https:\/\/interface\.music\.163\.com\/eapi\/usertool\/,DIRECT
@@ -14,6 +11,10 @@ URL-REGEX,^https:\/\/interface\.music\.163\.com\/weapi\/resource-exposure\/,DIRE
 URL-REGEX,^https:\/\/music\.163\.com\/api\/music-vip-membership\/,DIRECT
 URL-REGEX,^https:\/\/music\.163\.com\/weapi\/user\/,DIRECT
 URL-REGEX,^https:\/\/music\.163\.com\/store\/,DIRECT
+
+# > Proxy for Common Port Only
+AND,((NOT,((DEST-PORT,21))), (NOT,((DEST-PORT,22))), (NOT,((DEST-PORT,23))), (NOT,((DEST-PORT,53))), (NOT,((DEST-PORT,80))), (NOT,((DEST-PORT,123))), (NOT,((DEST-PORT,194))), (NOT,((DEST-PORT,443))), (NOT,((DEST-PORT,465))), (NOT,((DEST-PORT,587))), (NOT,((DEST-PORT,993))), (NOT,((DEST-PORT,995))), (NOT,((DEST-PORT,2052))), (NOT,((DEST-PORT,2053))), (NOT,((DEST-PORT,2082))), (NOT,((DEST-PORT,2083))), (NOT,((DEST-PORT,2086))), (NOT,((DEST-PORT,2095))), (NOT,((DEST-PORT,2096))), (NOT,((DEST-PORT,5228))), (NOT,((DEST-PORT,5229))), (NOT,((DEST-PORT,5230))), (NOT,((DEST-PORT,8080))), (NOT,((DEST-PORT,8443))), (NOT,((DEST-PORT,8880)))),DIRECT
+
 
 [Header Rewrite]
 # > 颇可
@@ -60,7 +61,7 @@ VSCO = type=http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsc
 ;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Dev/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
 
 # > Lightroom
-Adobe Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Adobe/Lightroom.js,script-update-interval=0
+Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Adobe/Lightroom.js,script-update-interval=-1
 
 # > Photoshop Express
 Photoshop Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
@@ -81,7 +82,13 @@ VerifyReceipt = requires-body=1,max-size=262144,script-path=https://hub.nange.cn
 Peak = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Work/Peak.js,type=http-response,pattern=^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
 
 # > TextNow
-Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/TextNow/TextNow.js,script-update-interval=0
+Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/TextNow/TextNow.js,script-update-interval=-1
+
+# > 轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
+轻颜相机 = type=http-response,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Photo/ULike.js,script-update-interval=-1
+
+# > Unlock Documents-PdfExpert-Scaner Pro
+Documents-PdfExpert = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Readdle/PDFExpert.js,script-update-interval=-1
 
 # > 简书
 简书1 = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
@@ -98,4 +105,4 @@ Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nange.cn/Surge/Script/Others/NoRedirect.js
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, billing.peakcloud.org, api.textnow.me, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *music.163.com
+hostname = %APPEND% x.io, -*vmgirls.com, -  *nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, -*somecache.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, api.flexibits.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, *music.163.com

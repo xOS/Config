@@ -1,7 +1,8 @@
 /*
 Adobe Lightroom by LangKhach
 [Script]
-Adobe Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/XOS/Config/Her/Surge/Script/Lightroom.js
+Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/lightroom.js,script-update-interval=-1
+
 [MITM]
 photos.adobe.io
 */
