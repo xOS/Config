@@ -10,15 +10,12 @@ HOST-SUFFIX, nange.cn,DIRECT
 HOST-SUFFIX, nange.org,DIRECT
 HOST-SUFFIX, nan.ge,DIRECT
 
-# > 主机测评
-HOST-SUFFIX, vpsce.com,DIRECT
-
 # > 楠歌
 HOST-SUFFIX, nangle.com.cn,DIRECT
 
 # > API服务
-HOST-SUFFIX, api.srl,DIRECT
-HOST-SUFFIX, sub.click,DIRECT
+HOST-SUFFIX, api.nan.ge,DIRECT
+HOST-SUFFIX, api.iploc.xyz,DIRECT
 
 # > CDN域名
 HOST-SUFFIX, applecache.com,DIRECT
@@ -34,14 +31,9 @@ HOST-SUFFIX, cdn.ink,DIRECT
 #IP-CIDR,51.79.128.0/17,DIRECT
 
 # > 其它
-HOST-SUFFIX, xg4.net,DIRECT
+HOST-SUFFIX, iploc.xyz,DIRECT
 HOST-SUFFIX, bk9.net,DIRECT
 HOST-SUFFIX, v6h.net,DIRECT
 HOST-SUFFIX, cloudimg.net,DIRECT
-HOST-SUFFIX, static.today,DIRECT
 HOST-SUFFIX, free.ac.cn,DIRECT
-HOST-SUFFIX, doh.show,DIRECT
-HOST-SUFFIX, doh.social,DIRECT
 HOST-SUFFIX, xupeinan.com,DIRECT
-HOST-SUFFIX, imxpn.com,DIRECT
-HOST-SUFFIX, xu.wtf,DIRECT

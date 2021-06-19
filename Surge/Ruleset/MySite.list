@@ -7,18 +7,14 @@ DOMAIN-SUFFIX, vmgirls.com
 DOMAIN-SUFFIX, nange.cn
 
 # > 楠格主页
-DOMAIN-SUFFIX, nange.org
 DOMAIN-SUFFIX, nan.ge
-
-# > 主机测评
-DOMAIN-SUFFIX, vpsce.com
 
 # > 楠歌
 DOMAIN-SUFFIX, nangle.com.cn
 
 # > API服务
-DOMAIN-SUFFIX, api.srl
-DOMAIN-SUFFIX, sub.click
+DOMAIN-SUFFIX, api.iploc.xyz
+DOMAIN-SUFFIX, api.nan.ge
 
 # > CDN域名
 DOMAIN-SUFFIX, applecache.com
@@ -34,15 +30,10 @@ DOMAIN-SUFFIX, cdn.ink
 #IP-CIDR,51.79.128.0/17
 
 # > 其它
-DOMAIN-SUFFIX, 5ki.net
+DOMAIN-SUFFIX, iploc.xyz
 DOMAIN-SUFFIX, bk9.net
 DOMAIN-SUFFIX, v6h.net
 DOMAIN-SUFFIX, qste.com
 DOMAIN-SUFFIX, cloudimg.net
-DOMAIN-SUFFIX, static.today
 DOMAIN-SUFFIX, free.ac.cn
-DOMAIN-SUFFIX, doh.show
-DOMAIN-SUFFIX, doh.social
 DOMAIN-SUFFIX, xupeinan.com
-DOMAIN-SUFFIX, imxpn.com
-DOMAIN-SUFFIX, xu.wtf
