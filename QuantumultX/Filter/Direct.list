@@ -1,3 +1,44 @@
+# > General
+USER-AGENT,coffeecorp*,DIRECT
+USER-AGENT,restaurant-mobile*,DIRECT
+HOST,app.adjust.com,DIRECT
+
+# > iTerm2
+USER-AGENT,iTerm2*,DIRECT
+HOST-SUFFIX,iterm2.com,DIRECT
+
+# > Tencent
+HOST,livew.l.qq.com,DIRECT
+HOST,vd.l.qq.com,DIRECT
+
+# > Strava
+HOST,analytics.strava.com,DIRECT
+
+# > 网站
+HOST-SUFFIX,wzfou.com,DIRECT
+HOST-SUFFIX,bwl87.com,DIRECT
+
+# > VirMach
+HOST-SUFFIX,virmach.com,DIRECT
+
+# > 头条系
+#HOST-SUFFIX,snssdk.com,DIRECT
+
+# > 腾讯游戏
+HOST,cloudctrl.gcloud.qq.com,DIRECT
+USER-AGENT,smoba*,DIRECT
+
+# > 微信
+USER-AGENT,MicroMessenger*,DIRECT
+USER-AGENT,WeChat*,DIRECT
+USER-AGENT,MicroMessenger20%Client*,DIRECT
+HOST-SUFFIX,weixin.qq.com,DIRECT
+
+# > MaxMind
+HOST-KEYWORD,maxmind
+HOST-SUFFIX,maxmind.com
+HOST-SUFFIX,mmapiws.com
+
 # > Client
 # > 百度网盘
 HOST-SUFFIX,bdstatic.com,DIRECT
