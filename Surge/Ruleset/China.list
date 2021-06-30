@@ -443,7 +443,7 @@ DOMAIN-SUFFIX,nfoservers.com
 DOMAIN-SUFFIX,ngabbs.com
 DOMAIN-SUFFIX,nim-lang-cn.org
 DOMAIN-SUFFIX,novipnoad.com
-DOMAIN-SUFFIX,nssurge.com
+#DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,ntp.org
 DOMAIN-SUFFIX,nuomi.com
 DOMAIN-SUFFIX,nvidia.com

@@ -9,3 +9,6 @@ DOMAIN,voice.google.com
 
 # > OVH新加坡
 IP-CIDR,51.79.128.0/17
+
+# > Surge官网
+DOMAIN-SUFFIX,surge.com
