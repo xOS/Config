@@ -106,10 +106,10 @@ payload:
   - DOMAIN-SUFFIX,springsunday.net
   - DOMAIN-SUFFIX,tjupt.org
   - DOMAIN-SUFFIX,totheglory.im
-  - DOMAIN-KEYWORD,aria2
-  - DOMAIN-KEYWORD,announce
-  - DOMAIN-KEYWORD,torrent
-  - DOMAIN-KEYWORD,tracker
+  #- DOMAIN-KEYWORD,aria2
+  #- DOMAIN-KEYWORD,announce
+  #- DOMAIN-KEYWORD,torrent
+  #- DOMAIN-KEYWORD,tracker
   - DOMAIN-SUFFIX,smtp
 
 # > Tencent Weiyun
