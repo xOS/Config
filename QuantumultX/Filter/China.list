@@ -38,7 +38,7 @@ HOST-KEYWORD,alipay,DIRECT
 HOST-KEYWORD,aliyun,DIRECT
 HOST-KEYWORD,baidu,DIRECT
 HOST-KEYWORD,beplay,DIRECT
-HOST-KEYWORD,icloud.com.akadns.net,DIRECT
+#HOST-KEYWORD,icloud.com.akadns.net,DIRECT
 HOST-KEYWORD,microsoft,DIRECT
 HOST-KEYWORD,officecdn,DIRECT
 HOST-KEYWORD,speedtest,DIRECT
@@ -51,7 +51,7 @@ HOST,dl.google.com,DIRECT
 HOST,download.jetbrains.com,DIRECT
 HOST,file-igamecj.akamaized.net,DIRECT
 HOST,images-cn.ssl-images-amazon.com,DIRECT
-HOST,ip.istatmenus.app,DIRECT
+#HOST,ip.istatmenus.app,DIRECT
 HOST,mtalk.google.com,DIRECT
 HOST,officecdn-microsoft-com.akamaized.net,DIRECT
 HOST,safebrowsing.googleapis.com,DIRECT
@@ -202,7 +202,7 @@ HOST-SUFFIX,cmbimg.com,DIRECT
 HOST-SUFFIX,cmbt.cn,DIRECT
 HOST-SUFFIX,cmct.tv,DIRECT
 HOST-SUFFIX,cmfu.com,DIRECT
-HOST-SUFFIX,cn,DIRECT
+#HOST-SUFFIX,cn,DIRECT
 HOST-SUFFIX,cnbeta.com,DIRECT
 HOST-SUFFIX,cnbetacdn.com,DIRECT
 HOST-SUFFIX,cnlang.org,DIRECT
@@ -309,8 +309,8 @@ HOST-SUFFIX,icedropper.com,DIRECT
 HOST-SUFFIX,icetorrent.org,DIRECT
 HOST-SUFFIX,icevirtuallibrary.com,DIRECT
 HOST-SUFFIX,iciba.com,DIRECT
-HOST-SUFFIX,icloud-content.com,DIRECT
-HOST-SUFFIX,icloud.com,DIRECT
+#HOST-SUFFIX,icloud-content.com,DIRECT
+#HOST-SUFFIX,icloud.com,DIRECT
 HOST-SUFFIX,idqqimg.com,DIRECT
 HOST-SUFFIX,ieee.org,DIRECT
 HOST-SUFFIX,iesdouyin.com,DIRECT
@@ -323,11 +323,11 @@ HOST-SUFFIX,img4me.com,DIRECT
 HOST-SUFFIX,infinitynewtab.com,DIRECT
 HOST-SUFFIX,iop.org,DIRECT
 HOST-SUFFIX,ip-cdn.com,DIRECT
-HOST-SUFFIX,ip.la,DIRECT
-HOST-SUFFIX,ip.sb,DIRECT
-HOST-SUFFIX,ipify.org,DIRECT
-HOST-SUFFIX,ipip.net,DIRECT
-HOST-SUFFIX,ipv6-test.com,DIRECT
+#HOST-SUFFIX,ip.la,DIRECT
+#HOST-SUFFIX,ip.sb,DIRECT
+#HOST-SUFFIX,ipify.org,DIRECT
+#HOST-SUFFIX,ipip.net,DIRECT
+#HOST-SUFFIX,ipv6-test.com,DIRECT
 HOST-SUFFIX,iqiyi.com,DIRECT
 HOST-SUFFIX,iqiyipic.com,DIRECT
 HOST-SUFFIX,ithome.com,DIRECT
@@ -429,7 +429,7 @@ HOST-SUFFIX,mxhichina.com,DIRECT
 HOST-SUFFIX,myanonamouse.net,DIRECT
 HOST-SUFFIX,myapp.com,DIRECT
 HOST-SUFFIX,myilibrary.com,DIRECT
-HOST-SUFFIX,myip.la,DIRECT
+#HOST-SUFFIX,myip.la,DIRECT
 HOST-SUFFIX,myqcloud.com,DIRECT
 HOST-SUFFIX,myunlu.com,DIRECT
 HOST-SUFFIX,myzaker.com,DIRECT
@@ -443,7 +443,7 @@ HOST-SUFFIX,nfoservers.com,DIRECT
 HOST-SUFFIX,ngabbs.com,DIRECT
 HOST-SUFFIX,nim-lang-cn.org,DIRECT
 HOST-SUFFIX,novipnoad.com,DIRECT
-HOST-SUFFIX,nssurge.com,DIRECT
+#HOST-SUFFIX,nssurge.com,DIRECT
 HOST-SUFFIX,ntp.org,DIRECT
 HOST-SUFFIX,nuomi.com,DIRECT
 HOST-SUFFIX,nvidia.com,DIRECT

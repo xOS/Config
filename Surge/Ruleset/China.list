@@ -38,7 +38,7 @@ DOMAIN-KEYWORD,alipay
 DOMAIN-KEYWORD,aliyun
 DOMAIN-KEYWORD,baidu
 DOMAIN-KEYWORD,beplay
-DOMAIN-KEYWORD,icloud.com.akadns.net
+#DOMAIN-KEYWORD,icloud.com.akadns.net
 DOMAIN-KEYWORD,microsoft
 DOMAIN-KEYWORD,officecdn
 DOMAIN-KEYWORD,speedtest
@@ -51,7 +51,7 @@ DOMAIN,dl.google.com
 DOMAIN,download.jetbrains.com
 DOMAIN,file-igamecj.akamaized.net
 DOMAIN,images-cn.ssl-images-amazon.com
-DOMAIN,ip.istatmenus.app
+#DOMAIN,ip.istatmenus.app
 DOMAIN,mtalk.google.com
 DOMAIN,officecdn-microsoft-com.akamaized.net
 DOMAIN,safebrowsing.googleapis.com
@@ -202,7 +202,7 @@ DOMAIN-SUFFIX,cmbimg.com
 DOMAIN-SUFFIX,cmbt.cn
 DOMAIN-SUFFIX,cmct.tv
 DOMAIN-SUFFIX,cmfu.com
-DOMAIN-SUFFIX,cn
+#DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,cnbeta.com
 DOMAIN-SUFFIX,cnbetacdn.com
 DOMAIN-SUFFIX,cnlang.org
@@ -309,8 +309,8 @@ DOMAIN-SUFFIX,icedropper.com
 DOMAIN-SUFFIX,icetorrent.org
 DOMAIN-SUFFIX,icevirtuallibrary.com
 DOMAIN-SUFFIX,iciba.com
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,icloud.com
+#DOMAIN-SUFFIX,icloud-content.com
+#DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,idqqimg.com
 DOMAIN-SUFFIX,ieee.org
 DOMAIN-SUFFIX,iesdouyin.com
@@ -322,12 +322,12 @@ DOMAIN-SUFFIX,imf.org
 DOMAIN-SUFFIX,img4me.com
 DOMAIN-SUFFIX,infinitynewtab.com
 DOMAIN-SUFFIX,iop.org
-DOMAIN-SUFFIX,ip-cdn.com
-DOMAIN-SUFFIX,ip.la
-DOMAIN-SUFFIX,ip.sb
+#DOMAIN-SUFFIX,ip-cdn.com
+#DOMAIN-SUFFIX,ip.la
+#DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,ipify.org
-DOMAIN-SUFFIX,ipip.net
-DOMAIN-SUFFIX,ipv6-test.com
+#DOMAIN-SUFFIX,ipip.net
+#DOMAIN-SUFFIX,ipv6-test.com
 DOMAIN-SUFFIX,iqiyi.com
 DOMAIN-SUFFIX,iqiyipic.com
 DOMAIN-SUFFIX,ithome.com
@@ -429,7 +429,7 @@ DOMAIN-SUFFIX,mxhichina.com
 DOMAIN-SUFFIX,myanonamouse.net
 DOMAIN-SUFFIX,myapp.com
 DOMAIN-SUFFIX,myilibrary.com
-DOMAIN-SUFFIX,myip.la
+#DOMAIN-SUFFIX,myip.la
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,myunlu.com
 DOMAIN-SUFFIX,myzaker.com
