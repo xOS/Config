@@ -521,17 +521,17 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 
 [Map Local]
 # > 微博隐私
-^https:\/\/api\.weibo\.cn\/2\/direct_messages\/user_list,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/users\/show,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/mfp\/dix,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-#^https:\/\/api\.weibo\.cn\/2\/profile\/me,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/push\/active,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/client\/throw_batch,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/client\/addlog_batch,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/!\/client\/modifycalendars,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/client\/sharetype,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
-^https:\/\/api\.weibo\.cn\/2\/client\/patch,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/direct_messages\/user_list,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/remind\/unread_count,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/users\/show,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/mfp\/dix,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+#^https?:\/\/api\.weibo\.cn\/2\/profile\/me,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/push\/active,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/client\/throw_batch,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/client\/addlog_batch,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/!\/client\/modifycalendars,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/client\/sharetype,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/client\/patch,data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
 
 # > 小红书通知弹窗
 ^https?:\/\/www\.xiaohongshu\.com\/api\/im\/v2\/messages\/unread$ data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
