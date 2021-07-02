@@ -1288,7 +1288,7 @@ HOST-SUFFIX,outbrain.com,REJECT
 HOST-SUFFIX,pubmatic.com,REJECT
 HOST-SUFFIX,qchannel01.cn,REJECT
 HOST-SUFFIX,rayjump.com,REJECT
-HOST-SUFFIX,rtbasia.com,REJECT
+#HOST-SUFFIX,rtbasia.com,REJECT
 HOST-SUFFIX,rubiconproject.com,REJECT
 HOST-SUFFIX,runative-syndicate.com,REJECT
 HOST-SUFFIX,scorecardresearch.com,REJECT
