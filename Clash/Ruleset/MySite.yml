@@ -9,8 +9,8 @@ payload:
   - DOMAIN, status.nange.cn
   - DOMAIN, static.nange.cn
   - DOMAIN, api.nange.cn
-  - DOMAIN, cloud.nange.cn
-  - DOMAIN, drive.nange.cn
+ # - DOMAIN, cloud.nange.cn
+ # - DOMAIN, drive.nange.cn
   - DOMAIN, mail.nange.cn
   - DOMAIN, admin.nange.cn
   - DOMAIN, server.nange.cn

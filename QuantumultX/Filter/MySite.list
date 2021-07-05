@@ -8,9 +8,9 @@ HOST, www.nange.cn,direct
 HOST, status.nange.cn,direct
 HOST, static.nange.cn,direct
 HOST, api.nange.cn,direct
-HOST, cloud.nange.cn,direct
+#HOST, cloud.nange.cn,direct
 HOST, drive.nange.cn,direct
-HOST, mail.nange.cn,direct
+#HOST, mail.nange.cn,direct
 HOST, admin.nange.cn,direct
 HOST, server.nange.cn,direct
 HOST, whois.nange.cn,direct
