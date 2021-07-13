@@ -521,7 +521,7 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 
 [Map Local]
 # > 微博积分弹窗
-^https:\/\/luck\.sc\.weibo\.com\/aj\/Action\/indexInfo$ https://hub.nange.cn/Surge/Blank/Blank_Dict.json
+^https?:\/\/luck\.sc\.weibo\.com\/aj\/Action\/indexInfo$ data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
 
 # > 其它
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nange.cn/Surge/Blank/Blank.txt"
