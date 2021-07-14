@@ -1109,6 +1109,10 @@ HOST,ws.ksmobile.net,REJECT
 
 # > 其它
 #HOST-KEYWORD,adservice,REJECT
+HOST-SUFFIX,yl-zipper.com,REJECT
+HOST-SUFFIX,zhoumoduo.com,REJECT
+HOST-SUFFIX,3e8h.cc,REJECT
+HODT-SUFFIX,zhanyangkj.cc,REJECT
 HOST-SUFFIX,1phads.com,REJECT
 HOST-SUFFIX,1rtb.com,REJECT
 HOST-SUFFIX,1xl.co.uk,REJECT
