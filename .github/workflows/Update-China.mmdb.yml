@@ -9,6 +9,7 @@ on:
       - "*.md"
       - "**/*.md"
       - ".*"
+      - "node_modules"
   schedule:
     - cron: 0 */6 * * *
 jobs:

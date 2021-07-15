@@ -9,6 +9,7 @@ on:
       - "*.md"
       - "**/*.md"
       - ".*"
+      - "node_modules"
   schedule:
     - cron:  0 */6 * * *
 
@@ -47,9 +48,9 @@ jobs:
       - name: commit, push
         uses: EndBug/add-and-commit@v5
         with:
-          add: 'domain-set'
+          add: "-A"
           author_name: 佩佩
           author_email: admin@nange.cn
-          message: 'auto update'
+          message: "UpdateRules"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
