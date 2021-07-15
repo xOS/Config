@@ -1,4 +1,4 @@
-name: UpdateRules
+name: AdGuardRules
 
 on:
   push:
@@ -51,6 +51,6 @@ jobs:
           add: "-A"
           author_name: 佩佩
           author_email: admin@nange.cn
-          message: "UpdateRules"
+          message: "Update AdGuardRules"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
