@@ -39,7 +39,7 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
 
-      - name: yarn install, generate
+      - name: yarn install, update
         run: |
           yarn install
           yarn update-rules
