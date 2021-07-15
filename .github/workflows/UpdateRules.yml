@@ -1,0 +1,47 @@
+name: Cron
+
+on:
+  schedule:
+    - cron:  0 */6 * * *
+
+jobs:
+  release:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [12]
+
+    steps:
+      - name: Fetch repository
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - name: yarn install, generate
+        run: |
+          yarn install
+          yarn update-rules
+
+      - name: commit, push
+        uses: EndBug/add-and-commit@v5
+        with:
+          add: 'domain-set'
+          author_name: 佩佩
+          author_email: admin@nange.cn
+          message: 'auto update'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
