@@ -4202,6 +4202,9 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.customerevents.netflix.com
+.nmtracking.netflix.com
+.presentationtracking.netflix.com
 .analytics.tmonews.com
 .segment-cdn.producthunt.com
 .logs.gaana.com
