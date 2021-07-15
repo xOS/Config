@@ -5,7 +5,7 @@ const { join } = require('path')
 const fs = require('fs-extra')
 const slugify = require('@sindresorhus/slugify')
 
-const distDir = join(__dirname, '../Ruleset')
+const distDir = join(__dirname, './Ruleset')
 const configurations = [
   {
     name: 'Adaway',
