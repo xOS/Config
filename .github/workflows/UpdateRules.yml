@@ -1,6 +1,14 @@
 name: UpdateRules
 
 on:
+  push:
+    branches:
+      - "Her"
+    paths-ignore:
+      - "LICENSE"
+      - "*.md"
+      - "**/*.md"
+      - ".*"
   schedule:
     - cron:  0 */6 * * *
 
