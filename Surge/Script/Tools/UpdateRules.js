@@ -5,7 +5,7 @@ const { join } = require('path')
 const fs = require('fs-extra')
 const slugify = require('@sindresorhus/slugify')
 
-const distDir = join(__dirname, '/home/runner/work/Config/Surge/Ruleset')
+const distDir = join(__dirname, '..../Surge/Ruleset')
 const configurations = [
   {
     name: 'Adaway',
