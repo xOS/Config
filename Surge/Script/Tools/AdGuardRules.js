@@ -3,7 +3,7 @@
 const compile = require('@adguard/hostlist-compiler')
 const { join } = require('path')
 const fs = require('fs-extra')
-const slugify = require('@sindresorhus/slugify')
+//const slugify = require('@sindresorhus/slugify')
 
 const distDir = join(__dirname, '../../../Surge/Ruleset/AdGuardRules')
 const configurations = [
@@ -61,7 +61,7 @@ const configurations = [
     ],
   },
   {
-    name: 'Tracking Protection',
+    name: 'TrackingProtection',
     sources: [
       {
         source:
@@ -121,7 +121,7 @@ const configurations = [
     ],
   },
   {
-    name: 'Social media',
+    name: 'SocialMedia',
     sources: [
       {
         source:
@@ -270,7 +270,7 @@ function formatRule(rule) {
 }
 
 async function outputCompiled(config, compiled) {
-  const fileName = `${slugify(config.name)}.list`
+  const fileName = `${config.name}.list`
   const dest = join(distDir, fileName)
 
   if (fs.existsSync(dest)) {
