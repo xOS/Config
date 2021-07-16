@@ -61,7 +61,7 @@ const configurations = [
     ],
   },
   {
-    name: 'Tracking Protection filter',
+    name: 'Tracking Protection',
     sources: [
       {
         source:
@@ -76,7 +76,7 @@ const configurations = [
     ],
   },
   {
-    name: 'Chinese filter',
+    name: 'Chinese',
     sources: [
       {
         source:
@@ -91,7 +91,7 @@ const configurations = [
     ],
   },
   {
-    name: 'Annoyances filter',
+    name: 'Annoyances',
     sources: [
       {
         source:
@@ -106,7 +106,7 @@ const configurations = [
     ],
   },
   {
-    name: 'Base filter',
+    name: 'Base',
     sources: [
       {
         source:
@@ -121,7 +121,7 @@ const configurations = [
     ],
   },
   {
-    name: 'Social media filter',
+    name: 'Social media',
     sources: [
       {
         source:
@@ -136,7 +136,7 @@ const configurations = [
     ],
   },
   {
-    name: 'DNS filter',
+    name: 'DNS',
     sources: [
       {
         source:
