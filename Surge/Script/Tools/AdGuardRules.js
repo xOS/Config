@@ -150,6 +150,111 @@ const configurations = [
       'Deduplicate',
     ],
   },
+  {
+    name: 'EasyList',
+    sources: [
+      {
+        source:
+          'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_101_EasyList/filter.txt',
+      },
+    ],
+    transformations: [
+      'RemoveComments',
+      'RemoveModifiers',
+      'Validate',
+      'Deduplicate',
+    ],
+  },
+  {
+    name: 'EasyListChina',
+    sources: [
+      {
+        source:
+          'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_104_EasyListChina/filter.txt',
+      },
+    ],
+    transformations: [
+      'RemoveComments',
+      'RemoveModifiers',
+      'Validate',
+      'Deduplicate',
+    ],
+  },
+  {
+    name: 'EasyPrivacy',
+    sources: [
+      {
+        source:
+          'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_118_EasyPrivacy/filter.txt',
+      },
+    ],
+    transformations: [
+      'RemoveComments',
+      'RemoveModifiers',
+      'Validate',
+      'Deduplicate',
+    ],
+  },
+  {
+    name: 'AdBlockID',
+    sources: [
+      {
+        source:
+          'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_120_AdBlockID/filter.txt',
+      },
+    ],
+    transformations: [
+      'RemoveComments',
+      'RemoveModifiers',
+      'Validate',
+      'Deduplicate',
+    ],
+  },
+  {
+    name: 'ChinaListAndEasyList',
+    sources: [
+      {
+        source:
+          'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_219_ChinaListAndEasyList/filter.txt',
+      },
+    ],
+    transformations: [
+      'RemoveComments',
+      'RemoveModifiers',
+      'Validate',
+      'Deduplicate',
+    ],
+  },
+  {
+    name: 'FanboysAnnoyances',
+    sources: [
+      {
+        source:
+          'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_122_FanboysAnnoyances/filter.txt',
+      },
+    ],
+    transformations: [
+      'RemoveComments',
+      'RemoveModifiers',
+      'Validate',
+      'Deduplicate',
+    ],
+  },
+  {
+    name: 'CJXsAnnoyanceList',
+    sources: [
+      {
+        source:
+          'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_220_CJXsAnnoyanceList/filter.txt',
+      },
+    ],
+    transformations: [
+      'RemoveComments',
+      'RemoveModifiers',
+      'Validate',
+      'Deduplicate',
+    ],
+  },
 ]
 
 function formatRule(rule) {
