@@ -43,24 +43,6 @@ const configurations = [
     ],
   },
   {
-    name: 'neohosts-full',
-    homepage: 'https://github.com/neoFelhz/neohosts',
-    sources: [
-      {
-        source:
-          'https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/full/hosts',
-        type: 'hosts',
-      },
-    ],
-    transformations: [
-      'RemoveComments',
-      'RemoveModifiers',
-      'Compress',
-      'Validate',
-      'Deduplicate',
-    ],
-  },
-  {
     name: 'TrackingProtection',
     sources: [
       {
