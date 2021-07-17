@@ -10,3 +10,29 @@ DOMAIN-SUFFIX,displayads-formats.googleusercontent.com
 
 # > 字节跳动
 DOMAIN-SUFFIX,ib.snssdk.com
+
+# > GeoIP API
+DOMAIN-SUFFIX,ipapi.co
+DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,ipgeolocation.io
+DOMAIN-SUFFIX,abstractapi.com
+DOMAIN-SUFFIX,ipdata.co
+DOMAIN-SUFFIX,whoisxmlapi.com
+DOMAIN-SUFFIX,whatsmyip.com
+DOMAIN-SUFFIX,geoapify.com
+DOMAIN-SUFFIX,ifconfig.co
+DOMAIN-SUFFIX,ip.gs
+DOMAIN-SUFFIX,ipaddress.com
+DOMAIN-SUFFIX,ipworld.info
+DOMAIN-SUFFIX,ipapi.com
+DOMAIN-SUFFIX,ip-api.com
+DOMAIN-SUFFIX,my-ip.io
+DOMAIN-SUFFIX,myip.com
+DOMAIN-SUFFIX,ip125.com
+DOMAIN-SUFFIX,extreme-ip-lookup.com
+DOMAIN-SUFFIX,ip.nf
+DOMAIN-SUFFIX,seeip.org
+DOMAIN-SUFFIX,whois.pconline.com.cn
+DOMAIN-SUFFIX,pv.sohu.com
+DOMAIN-SUFFIX,ipwhois.app
+DOMAIN-SUFFIX,api.ipstack.com
