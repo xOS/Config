@@ -5,6 +5,13 @@
 force-http-engine-hosts = %APPEND% *.ott.cibntv.net,119.18.193.135,122.14.246.33,123.59.31.1,175.102.178.52,118.89.204.198,220.112*,211.162*,124.193*,124.14*,119.79*,116.211*,175.6.225.125,36.99*,140.249*,14.18.175.253,150.138*,116.207*
 
 [Rule]
+# > 微博视频推荐
+URL-REGEX,^https:\/\/api\.weibo\.cn\/2\/video\/redpacket,REJECT
+URL-REGEX,^https:\/\/api\.weibo\.cn\/2\/video\/community_tab,REJECT
+DOMAIN-SUFFIX,mediadata.api.weibo.com,REJECT
+URL-REGEX,^https:\/\/api\.weibo\.cn\/2\/!\/multimedia\/playback\/batch_get,REJECT
+URL-REGEX,^https:\/\/api\.weibo\.cn\/2\/!\/multimedia\/video\/comments\/get_comments_order_by_hot,REJECT
+
 # > 京东，去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 
