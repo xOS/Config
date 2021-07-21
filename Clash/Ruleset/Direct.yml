@@ -3,6 +3,11 @@ payload:
 # > 百度网盘
   - DOMAIN-SUFFIX,bdstatic.com
   - DOMAIN-SUFFIX,baidu.com
+  
+# > 彩云天气  
+  - DOMAIN,sdkapi.sms.mob.com
+  - DOMAIN,api.share.mob.com
+  - DOMAIN-SUFFIX,code.sms.mob.com
 
 # > MaxMind
   - DOMAIN-KEYWORD,maxmind

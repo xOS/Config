@@ -3,6 +3,11 @@ USER-AGENT,coffeecorp*,DIRECT
 USER-AGENT,restaurant-mobile*,DIRECT
 HOST,app.adjust.com,DIRECT
 
+# > 彩云天气
+HOST,sdkapi.sms.mob.com,DIRECT
+HOST,api.share.mob.com,DIRECT
+HOST-SUFFIX,code.sms.mob.com,DIRECT
+
 # > iTerm2
 USER-AGENT,iTerm2*,DIRECT
 HOST-SUFFIX,iterm2.com,DIRECT
