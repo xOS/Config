@@ -1,6 +1,7 @@
 {"name":"图标库", 
     "description":"常用图库", 
-    "icons":[
+    "icons":
+    [
         {"name":"Netease_Music_Unlock", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netease_Music_Unlock.png"}, 
         {"name":"iQIYI", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/iQIYI.png"}, 
         {"name":"iQIYI&bilibili", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/iQIYI&bilibili.png"}, 
@@ -90,7 +91,6 @@
         {"name":"Mail", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Mail.png"}, 
         {"name":"Magic", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Magic.png"}, 
         {"name":"Macao", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Macao.png"}, 
-        {"name":"MY", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/MY.png"}, 
         {"name":"Luffy", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Luffy.png"}, 
         {"name":"Loop", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Loop.png"}, 
         {"name":"Lock", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Lock.png"}, 
@@ -109,7 +109,6 @@
         {"name":"ITV", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV.png"}, 
         {"name":"ITV_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV_1.png"},
         {"name":"ITV_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV_2.png"},
-
         {"name":"IPLC", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/IPLC.png"}, 
         {"name":"IEPL", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/IEPL.png"}, 
         {"name":"Hulu", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hulu.png"}, 
@@ -202,4 +201,6 @@
         {"name":"AdBlack", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AdBlack.png"}, 
         {"name":"AbemaTV", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AbemaTV.png"}, 
         {"name":"AIA", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AIA.png"}, 
-        {"name":"AGA", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AGA.png"}]}
+        {"name":"AGA", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AGA.png"}
+    ]
+}
