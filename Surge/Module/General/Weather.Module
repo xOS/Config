@@ -4,4 +4,4 @@
 [Script]
 
 # > 每日天气提示
-天气提醒 = debug=1,script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Surge/Script/Weather.js,cronexp=*/60 * * * *,type=cron
+天气提醒 = debug=1,script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Script/Weather.js,cronexp=*/60 * * * *,type=cron

@@ -10,4 +10,4 @@ always-real-ip = %APPEND% link-ip.nextdns.io
 link-ip.nextdns.io = server:45.90.30.31
 [Script]
 # > NextDNS
-event network-changed script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Surge/Script/NextDNS.js
+event network-changed script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Script/NextDNS.js

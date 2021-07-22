@@ -2,7 +2,7 @@
 #!desc=网易云音乐获取Cookie
 
 [Script]
-云村获取Cookie = type=http-request,pattern=^https:\/\/music.163.com\/weapi\/user\/level,script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Surge/Script/NetEaseMusicGetCookie.js,requires-body=true
+云村获取Cookie = type=http-request,pattern=^https:\/\/music.163.com\/weapi\/user\/level,script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Script/NetEaseMusicGetCookie.js,requires-body=true
 
 [MITM]
 hostname = %APPEND% music.163.com, *.m.163.com

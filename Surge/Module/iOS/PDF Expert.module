@@ -6,4 +6,4 @@
 hostname = license.pdfexpert.com
 
 [Script]
-http-response ^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://hub.nange.cn/Surge/Script/Readdle/PDFExpert.js,script-update-interval=0
+http-response ^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Readdle/PDFExpert.js,script-update-interval=0

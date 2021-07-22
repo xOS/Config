@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "update-rules": "node Surge/Script/Tools/AdGuardRules"
+    "update-rules": "node Script/Tools/AdGuardRules"
   },
   "dependencies": {
     "@adguard/hostlist-compiler": "^1.0.8",
