@@ -3,6 +3,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.restisbench.com
+.events.tremorhub.com
 .cdn.trackclicks.info
 .mm.actionlink.jp
 .btloader.com
@@ -4214,6 +4216,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.klik.nrc.nl
 .uie.data.cbc.ca
 .ub.finanzfrage.net
 .slike.indiatimes.com
