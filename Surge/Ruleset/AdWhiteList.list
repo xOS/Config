@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,displayads-formats.googleusercontent.com
 DOMAIN-SUFFIX,ib.snssdk.com
 
 # > GeoIP API
+DOMAIN-KEYWORD,geo
 DOMAIN-SUFFIX,ipapi.co
 DOMAIN-SUFFIX,ipinfo.io
 DOMAIN-SUFFIX,ipgeolocation.io
