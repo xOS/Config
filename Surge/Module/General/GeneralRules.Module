@@ -18,7 +18,7 @@ AND,((NOT,((DEST-PORT,21))), (NOT,((DEST-PORT,22))), (NOT,((DEST-PORT,23))), (NO
 
 [Header Rewrite]
 # > 颇可
-^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15
+;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15
 
 # > 添加标记
 ;^https?://(?:\w+\.)*?((nan|cdn|nange|bk9|nangle|vmgirls|cloudimg|somecache|applecache)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
