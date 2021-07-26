@@ -3,14 +3,14 @@
 
 [Rule]
 # > 网易云音乐
-URL-REGEX,^https:\/\/interface\.music\.163\.com\/eapi\/usertool\/,DIRECT
-URL-REGEX,^https:\/\/music\.163\.com\/user\/,DIRECT
-URL-REGEX,^https:\/\/music\.163\.com\/#\/user\/,DIRECT
-URL-REGEX,^https:\/\/interface\.music\.163\.com\/weapi\/activity\/bonus\/playpage\/,DIRECT
-URL-REGEX,^https:\/\/interface\.music\.163\.com\/weapi\/resource-exposure\/,DIRECT
-URL-REGEX,^https:\/\/music\.163\.com\/api\/music-vip-membership\/,DIRECT
-URL-REGEX,^https:\/\/music\.163\.com\/weapi\/user\/,DIRECT
-URL-REGEX,^https:\/\/music\.163\.com\/store\/,DIRECT
+URL-REGEX,^https?:\/\/interface\.music\.163\.com\/eapi\/usertool\/,DIRECT
+URL-REGEX,^https?:\/\/music\.163\.com\/user\/,DIRECT
+URL-REGEX,^https?:\/\/music\.163\.com\/#\/user\/,DIRECT
+URL-REGEX,^https?:\/\/interface\.music\.163\.com\/weapi\/activity\/bonus\/playpage\/,DIRECT
+URL-REGEX,^https?:\/\/interface\.music\.163\.com\/weapi\/resource-exposure\/,DIRECT
+URL-REGEX,^https?:\/\/music\.163\.com\/api\/music-vip-membership\/,DIRECT
+URL-REGEX,^https?:\/\/music\.163\.com\/weapi\/user\/,DIRECT
+URL-REGEX,^https?:\/\/music\.163\.com\/store\/,DIRECT
 
 # > Proxy for Common Port Only
 AND,((NOT,((DEST-PORT,21))), (NOT,((DEST-PORT,22))), (NOT,((DEST-PORT,23))), (NOT,((DEST-PORT,53))), (NOT,((DEST-PORT,80))), (NOT,((DEST-PORT,123))), (NOT,((DEST-PORT,194))), (NOT,((DEST-PORT,443))), (NOT,((DEST-PORT,465))), (NOT,((DEST-PORT,587))), (NOT,((DEST-PORT,993))), (NOT,((DEST-PORT,995))), (NOT,((DEST-PORT,2052))), (NOT,((DEST-PORT,2053))), (NOT,((DEST-PORT,2082))), (NOT,((DEST-PORT,2083))), (NOT,((DEST-PORT,2086))), (NOT,((DEST-PORT,2095))), (NOT,((DEST-PORT,2096))), (NOT,((DEST-PORT,5228))), (NOT,((DEST-PORT,5229))), (NOT,((DEST-PORT,5230))), (NOT,((DEST-PORT,8080))), (NOT,((DEST-PORT,8443))), (NOT,((DEST-PORT,8880)))),DIRECT
@@ -28,18 +28,18 @@ AND,((NOT,((DEST-PORT,21))), (NOT,((DEST-PORT,22))), (NOT,((DEST-PORT,23))), (NO
 
 [URL Rewrite]
 # > 知乎
-^https:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
+^https?:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
 # > 115
 ^https?:\/\/home\.115\.com\/go\?(https?:\/\/)?(.*) http://$2 302
 
 [Script]
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
-IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Apple/iPA_Install.js
+IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Apple/iPA_Install.js
 
 # > 人人视频 解锁AI原画 (by@george Jiang & R)
-人人视频会员解锁 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Live/RRTV.js,type=http-response,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
+人人视频会员解锁 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Live/RRTV.js,type=http-response,pattern=^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
-人人视频 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Live/RRSP.js,type=http-response,pattern=^https:\/\/api\.rr\.tv\/watch\/v4\/priority_video_quality\/get_priority_video_quality_config\?
+人人视频 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Live/RRSP.js,type=http-response,pattern=^https?:\/\/api\.rr\.tv\/watch\/v4\/priority_video_quality\/get_priority_video_quality_config\?
 
 # > 韩剧TV解锁蓝光
 韩剧TV = requires-body=1,script-path=https://hub.nange.cn/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
@@ -52,52 +52,60 @@ IPA应用安装 = type=http-request,pattern=^https:\/\/x.io/(install|download)(\
 单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Netflix/RatingSeason.js
 
 # > VSCO滤镜VIP
-VSCO = type=http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Photo/VSCO.js
+VSCO = type=http-response ^https?:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Photo/VSCO.js
 
 # > Termius 解锁本地pro  (By Maasea)
 ;Termius = requires-body=1,script-path=https://hub.nange.cn/Script/Dev/Termius.js,type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/
 
 # > WorkingCopy.js
-;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Dev/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
+;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Dev/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/education\.github\.com\/api\/user$
 
 # > Lightroom
-Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Adobe/Lightroom.js,script-update-interval=-1
+Lightroom = type=http-response,pattern=^https?:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Adobe/Lightroom.js,script-update-interval=-1
 
 # > Photoshop Express
-Photoshop Express = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
+Photoshop Express = type=http-response,pattern=^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
 
 # > CamScanner unlocks pro, Cloud scanning is not available.
 CamScanner = type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Work/CamScanner.js,script-update-interval=0
 
 # > Bear熊掌记 (By Miao Miao)
-Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Work/Bear.js,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Work/Bear.js,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt
 
 # > Buyhack
-VerifyReceipt = requires-body=1,max-size=262144,script-path=https://hub.nange.cn/Script/Life/VerifyReceipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
+VerifyReceipt = requires-body=1,max-size=262144,script-path=https://hub.nange.cn/Script/Life/VerifyReceipt.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
 
 # > Peak 解锁Pro
-Peak = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Work/Peak.js,type=http-response,pattern=^https:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
+Peak = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Work/Peak.js,type=http-response,pattern=^https?:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
 
 # > TextNow
-Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.+,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/TextNow/TextNow.js,script-update-interval=-1
+premium_state = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/users\/.+\/premium_state?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/TextNow/TextNow.js,script-update-interval=-1
+
+blocks = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/blocks?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/TextNow/TextNow.js,script-update-interval=-1
+
+subscription = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/users\/.+\/subscription?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/TextNow/TextNow.js,script-update-interval=-1
+
+subscription_state = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+/users\/.+\/subscription_state?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/TextNow/TextNow.js,script-update-interval=-1
+
+settings = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/settings?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/TextNow/Setting.js,script-update-interval=-1
 
 # > 轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
-轻颜相机 = type=http-response,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Photo/ULike.js,script-update-interval=-1
+轻颜相机 = type=http-response,pattern=^https?:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Photo/ULike.js,script-update-interval=-1
 
 # > Unlock Documents-PdfExpert-Scaner Pro
-Documents-PdfExpert = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Readdle/PDFExpert.js,script-update-interval=-1
+Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Readdle/PDFExpert.js,script-update-interval=-1
 
 # > 简书
-简书1 = type=http-request,pattern=^https:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
-简书2 = type=http-request,pattern=^https:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url=,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
+简书1 = type=http-request,pattern=^https?:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
+简书2 = type=http-request,pattern=^https?:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url=,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
 
 # > 知乎
-知乎 = type=http-request,pattern=^https:\/\/link\.zhihu\.com\/\?target=,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
+知乎 = type=http-request,pattern=^https?:\/\/link\.zhihu\.com\/\?target=,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
 
 # > 微博
 微博1 = type=http-request,pattern=^https?:\/\/weibo\.cn\/sinaurl\?(.*&)?(u|toasturl|goto)=,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
 
-微博2 = type=http-request,pattern=^https:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
+微博2 = type=http-request,pattern=^https?:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
 
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
 
