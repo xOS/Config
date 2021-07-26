@@ -9,5 +9,7 @@ obj["ad"]["native_ads"]["conversation_list"]["enabled"]  = false;
 obj["ad"]["native_ads"]["in_call"]["enabled"]  = false;
 obj["ad"]["native_ads"]["outgoing_call_message"]["enabled"]  = false;
 obj["ad"]["native_ads"]["default_native_ad"] = {};
+obj["ad"]["native_ads"]["native_announcement"] = {};
+obj["ad"]["native_ads"]["jsdict"] = [];
 obj["ad"]["enable_native_ads"]= false;
 $done({body: JSON.stringify(obj)});
