@@ -6,6 +6,7 @@ obj["android"]["native_ads"]["default_native_ad"] = {};
 obj["android"]["native_ads"]["outgoing_call_message"]["enabled"]  = false;
 obj["android"]["native_ads"]["enable_native_ads"] = false;
 obj["ad"]["native_ads"]["conversation_list"]["enabled"]  = false;
+obj["ad"]["native_ads"]["in_call"]["enabled"]  = false;
 obj["ad"]["native_ads"]["outgoing_call_message"]["enabled"]  = false;
 obj["ad"]["native_ads"]["default_native_ad"] = {};
 obj["ad"]["enable_native_ads"]= false;
