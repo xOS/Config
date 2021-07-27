@@ -14,9 +14,9 @@ URL-REGEX,^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/tiny_stream_channel_li
 URL-REGEX,^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/tiny_stream_video_list,REJECT
 
 # > 央视频开头广告
-DOMAIN-SUFFIX,adstore-1252524079.file.myqcloud.com,REJECT // Added for webpage: https://adstore-1252524079.file.myqcloud.com/frontVideo/1627141364623/1627141364623-00005.ts
+DOMAIN-SUFFIX,adstore-1252524079.file.myqcloud.com,REJECT
 # > 央视频开屏广告
-DOMAIN-SUFFIX,adstore-index-1252524079.file.myqcloud.com,REJECT // Added for webpage: https://adstore-index-1252524079.file.myqcloud.com/sdk/pool/Yq0R6SwvtQ8ldGyk.json
+DOMAIN-SUFFIX,adstore-index-1252524079.file.myqcloud.com,REJECT
 
 # > 京东，去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
