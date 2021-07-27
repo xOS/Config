@@ -3,6 +3,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.microanalytics.io
 .tracking.sexcash.com
 .fastly-insights.com
 .restisbench.com
@@ -4217,6 +4218,10 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.t.imgur.com
+.counter1.fc2.com
+.analyzer*.fc2.com
+.analyzer52.fc2.com
 .klik.nrc.nl
 .uie.data.cbc.ca
 .ub.finanzfrage.net
@@ -4649,7 +4654,6 @@
 .analytics.wetpaint.me
 .analytics.whatculture.com
 .analyze.yahooapis.com
-.analyzer52.fc2.com
 .atax.gamespy.com
 .atax.gamestats.com
 .atax.ign.com
@@ -15509,7 +15513,6 @@
 .log.prezi.com
 .analytics-static.unister-gmbh.de
 .analytics.unister-gmbh.de
-.analyzer*.fc2.com
 .b-ssl.grvcdn.com
 .beacon.richrelevance.com
 .btrace.qq.com
