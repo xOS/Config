@@ -6,5 +6,5 @@ obj['result']['state'] = "PREMIUM_SUBSCRIPTION";
 obj['result']['show_ads'] = false;
 obj['result']['premium_calling'] = true;
 obj['result']['platform'] = "TN_IOS";
-obj['result']['error_code'] = "NOT_FOUND";
+obj['result']['code'] = "10000";
 $done({body: JSON.stringify(obj)});
