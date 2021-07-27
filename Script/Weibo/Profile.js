@@ -1,6 +1,5 @@
-let body= $response.body;
-var obj = JSON.parse(body);
-delete obj.items;
-$done({
-    body: JSON.stringify(body)
-  });
+var obj = JSON.parse($response.body); 
+obj['moreInfo']['noMore'] = true;
+a = obj['items'];
+a.splice(8);
+$done({body: JSON.stringify(obj)});
