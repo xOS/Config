@@ -18,6 +18,19 @@ DOMAIN-SUFFIX,adstore-1252524079.file.myqcloud.com,REJECT
 # > 央视频开屏广告
 DOMAIN-SUFFIX,adstore-index-1252524079.file.myqcloud.com,REJECT
 
+# > 颇可
+#  >>首页轮播图
+URL-REGEX,^https:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_rank_page_info\?,REJECT
+# >> 个人资料页广告
+URL-REGEX,^https:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_user_info_banner\?,REJECT
+# >> 启动页广告
+URL-REGEX,^https:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_start_screen_ad\?,REJECT
+# >> 其它
+DOMAIN-SUFFIX,kepler.jd.com,REJECT
+URL-REGEX,^https:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_tag_list\?,REJECT
+URL-REGEX,^https:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_list\?,REJECT
+URL-REGEX,^https:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_info\?,REJECT
+
 # > 京东，去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 
@@ -207,10 +220,10 @@ http://.+\.cp31\.ott\.cibntv\.net - reject
 ^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= - reject
 ctier=[A-Z] citer=A 302
 
-# > POCO
-^https?:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_wap_works_info_banner$ - reject
-^https?:\/\/web-api\.poco\.cn\/v1_1\/rank\/get_floating_layer_ad$ - reject
-^https?:\/\/app-api\.poco\.cn\/v1_1\/rank\/get_app_start_screen_ad - reject
+# > 颇可
+^https?:\/\/web-api\.poco\.cn\/.+\/rank\/get_wap_works_info_banner - reject
+^https?:\/\/web-api\.poco\.cn\/.+\/rank\/get_floating_layer_ad - reject
+//^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_start_screen_ad - reject
 
 # > 其它
 ^https?:\/\/www\.rtmma\.com\/Data\/yk\/css\/showfloatdiv\.css$ - reject
@@ -512,7 +525,8 @@ ctier=[A-Z] citer=A 302
 
 [Script]
 # > 颇可
-推荐 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/v1_1\/works\/get_user_recommend_list\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Poco/Recommend.js
+推荐 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_user_recommend_list\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Poco/Recommend.js
+关注页广告 = type=http-response,pattern=^https:\/\/app-api\.poco\.cn\/.+\/space\/get_app_followers,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Poco/Follow.js
 
 # > 人人视频 去广告
 rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://hub.nange.cn/Script/Live/RRTVAds.js

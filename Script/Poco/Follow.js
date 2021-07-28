@@ -1,4 +1,7 @@
-let body = JSON.parse($response.body);
-if (body['data'])
-    body['data'] = body['data']['list'].filter(element => (element['type'] === 'ad'));
-$done({body: JSON.stringify(body)});
+let body = $response.body;
+body = JSON.parse(body);
+// adType: '推荐/广告', type: ad
+if (body.hasOwnProperty('data'))
+    body['data']['list'] = body['data']['list'].filter(element => !(element['type'] === 'ad'));
+body = JSON.stringify(body);
+$done({body});
