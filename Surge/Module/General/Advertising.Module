@@ -543,7 +543,7 @@ rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\
 
 最新推荐 = type=http-response,pattern=^https?://api\.weibo\.cn/2/statuses/(unread_hot_timeline)|(friends/timeline)\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Status.js
 
-发现热门 = type=http-response,pattern=^https?://api\.weibo\.cn/2/cardlist\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/FindHot.js
+发现热门 = type=http-response,pattern=^https?://api\.weibo\.cn/2/(cardlist)|(searchall)\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/FindHot.js
 
 创作者广告共享计划 = type=http-response,pattern=^https://api\.weibo\.cn/2/statuses/extend\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Extend.js
 
