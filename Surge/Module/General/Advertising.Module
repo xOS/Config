@@ -19,7 +19,7 @@ DOMAIN-SUFFIX,adstore-1252524079.file.myqcloud.com,REJECT
 DOMAIN-SUFFIX,adstore-index-1252524079.file.myqcloud.com,REJECT
 
 # > 颇可
-#  >>首页轮播图
+# >>首页轮播图
 URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_rank_page_info\?,REJECT
 # >> 个人资料页广告
 URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_user_info_banner\?,REJECT
