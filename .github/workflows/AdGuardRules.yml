@@ -52,7 +52,8 @@ jobs:
           awk '!seen[$0]++' Surge/Ruleset/AdGuardRules/merge.txt > Surge/Ruleset/AdGuardRules/merge.list
           sed '/^$/d' Surge/Ruleset/AdGuardRules/merge.list > Surge/Ruleset/AdGuardRules/AdGuardRules.list
           rm -rf Surge/Ruleset/AdGuardRules/merge.txt
-          rm -rf Surge/Ruleset/AdGuardRules/anti-ad-surge2.txt
+          rm -rf Surge/Ruleset/AdGuardRules/merge.list
+          rm -rf Surge/Ruleset/AdGuardRules/anti-ad.txt
 
       - name: commit, push
         uses: EndBug/add-and-commit@v5
