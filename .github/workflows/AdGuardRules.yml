@@ -44,6 +44,11 @@ jobs:
         run: |
           yarn install
           yarn update-rules
+        
+      - name: Merge and IP lists and remove duplicates
+        run: |
+          awk 'FNR==1{print ""}{print}' *.list > merge.txt
+          awk '!seen[$0]++' merge.txt> AdGuardRules.list
 
       - name: commit, push
         uses: EndBug/add-and-commit@v5
