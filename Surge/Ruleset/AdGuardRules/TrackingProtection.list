@@ -15605,6 +15605,7 @@
 .track.appsflyer.com
 .relap.io
 .adj.st
+.stats-proto.pandora.com
 .collector.vhx.tv
 .log-tb.sgsnssdk.com
 .xlog.byteoversea.com
@@ -15865,7 +15866,6 @@
 .flurry.agentportal-*.yahoodns.net
 .amptrack-dailymail-co-uk.cdn.ampproject.org
 .metrics-cbslocal-com.cdn.ampproject.org
-.counter.hdvb.info
 .tracking-server-prod-1.zenmxapps.com
 .config.uca.cloud.unity3d.com
 .api.uca.cloud.unity3d.com
