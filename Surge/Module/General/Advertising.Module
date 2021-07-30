@@ -67,7 +67,7 @@ DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
 # > 腾讯视频
 DOMAIN,news.l.qq.com,REJECT
 DOMAIN,tetrack.qq.com,REJECT
-DOMAIN,vv.video.qq.com,REJECT
+#DOMAIN,vv.video.qq.com,REJECT
 DOMAIN-SUFFIX,gzc.vod.tencent-cloud.com,REJECT
 DOMAIN-SUFFIX,xsweb.gdt.qq.com,REJECT
 DOMAIN-SUFFIX,btrace.qq.com,REJECT-DROP
