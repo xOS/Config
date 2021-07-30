@@ -562,6 +562,35 @@ DOMAIN-SUFFIX,zello.com
 DOMAIN-SUFFIX,zeronet.io
 DOMAIN-SUFFIX,zoom.us
 
+# > Github 服务
+DOMAIN-KEYWORD,github
+DOMAIN-SUFFIX,atom.io
+DOMAIN-SUFFIX,dependabot.com
+DOMAIN-SUFFIX,ghcr.io
+DOMAIN-SUFFIX,git.io
+DOMAIN-SUFFIX,github-atom-io-herokuapp-com.freetls.fastly.net
+DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
+DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com
+DOMAIN-SUFFIX,github.blog
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.community
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubpreview.dev
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubuniverse.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,myoctocat.com
+DOMAIN-SUFFIX,npm.community
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,rawgit.com
+DOMAIN-SUFFIX,rawgithub.com
+DOMAIN-SUFFIX,thegithubshop.com
+
 # (Region-Restricted Access Denied)
 DOMAIN-SUFFIX,apartmentratings.com
 DOMAIN-SUFFIX,apartments.com
@@ -630,9 +659,6 @@ DOMAIN-SUFFIX,fortawesome.com
 DOMAIN-SUFFIX,freetls.fastly.net
 DOMAIN-SUFFIX,ft.com
 DOMAIN-SUFFIX,genius.com
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,huffpost.com
 DOMAIN-SUFFIX,independent.co.uk
@@ -867,3 +893,30 @@ IP-CIDR,74.86.0.0/16,no-resolve
 IP-CIDR,75.126.0.0/16,no-resolve
 IP-CIDR,91.108.0.0/16,no-resolve
 IP-CIDR,91.198.174.0/24,no-resolve
+
+# > Github
+IP-CIDR,140.82.112.0/24,no-resolve
+IP-CIDR,140.82.112.0/20,no-resolve
+IP-CIDR,140.82.113.0/24,no-resolve
+IP-CIDR,140.82.114.0/24,no-resolve
+IP-CIDR,140.82.115.0/24,no-resolve
+IP-CIDR,140.82.116.0/24,no-resolve
+IP-CIDR,140.82.117.0/24,no-resolve
+IP-CIDR,140.82.120.0/24,no-resolve
+IP-CIDR,140.82.120.0/23,no-resolve
+IP-CIDR,140.82.121.0/24,no-resolve
+IP-CIDR,140.82.122.0/24,no-resolve
+IP-CIDR,140.82.123.0/24,no-resolve
+IP-CIDR,140.82.124.0/24,no-resolve
+IP-CIDR,140.82.125.0/24,no-resolve
+IP-CIDR,140.82.126.0/24,no-resolve
+IP-CIDR,143.55.64.0/24,no-resolve
+IP-CIDR,143.55.64.0/20,no-resolve
+IP-CIDR,143.55.65.0/24,no-resolve
+IP-CIDR,192.30.252.0/24,no-resolve
+IP-CIDR,192.30.252.0/23,no-resolve
+IP-CIDR,192.30.252.0/22,no-resolve
+IP-CIDR,192.30.253.0/24,no-resolve
+IP-CIDR,192.30.254.0/24,no-resolve
+IP-CIDR,192.30.254.0/23,no-resolve
+IP-CIDR,192.30.255.0/24,no-resolve
