@@ -45,10 +45,10 @@ jobs:
           yarn install
           yarn update-rules
         
-      - name: Merge and IP lists and remove duplicates
+      - name: Merge and Rules and remove duplicates
         run: |
-          awk 'FNR==1{print ""}{print}' *.list > merge.txt
-          awk '!seen[$0]++' merge.txt> AdGuardRules.list
+          awk 'FNR==1{print ""}{print}' Surge/Ruleset/AdGuardRules/*.list > Surge/Ruleset/AdGuardRules/merge.txt
+          awk '!seen[$0]++' Surge/Ruleset/AdGuardRules/merge.txt> Surge/Ruleset/AdGuardRules/AdGuardRules.list
 
       - name: commit, push
         uses: EndBug/add-and-commit@v5
