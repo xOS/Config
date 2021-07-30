@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 116.211*, 175.6.225.125, 140.249*, 14.18.175.253, 150.138*,116.207*, 36.99.*,14.18.*, stun.qqlive.qq.com, 42.81.*, 221.238.*, 114.221.*, 117.62.*, 119.147.*, ts.qq.com, access1.tpns.tencent.com,101.91.*, vi.bls.mdt.qq.com, oth.str.mdt.qq.com, 106.42.*, 114.80.*
+force-http-engine-hosts = %APPEND% *.ott.cibntv.net, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 116.211*, 175.6.225.125, 140.249*, 36.99.*, 14.18.175.253, 150.138*,116.207*, 36.99.*,14.18.*, stun.qqlive.qq.com, 42.81.*, 221.238.*, 114.221.*, 117.62.*, 119.147.*, ts.qq.com, access1.tpns.tencent.com,101.91.*, vi.bls.mdt.qq.com, oth.str.mdt.qq.com, 106.42.*, 114.80.*
 
 [Rule]
 # > 微博视频推荐
@@ -76,7 +76,6 @@ DOMAIN-SUFFIX,trace.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,beacon.qq.com,REJECT-DROP
 DOMAIN,video.dispatch.tc.qq.com,REJECT
 URL-REGEX,^https?://.+/videos/other/.+,REJECT
-URL-REGEX,^https?://.+\.beacon\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.gdt\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.l\.qq\.com,REJECT
 URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?,REJECT
@@ -312,7 +311,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ - reject
 ^https?:\/\/.+?\.58cdn\.com\.cn\/brandads\/ - reject
 ^https?:\/\/.+?\.atm\.youku\.com - reject
-^https?:\/\/.+?\.beacon\.qq\.com - reject
+;^https?:\/\/.+?\.beacon\.qq\.com - reject
 ^https?:\/\/.+?\.gdt\.qq\.com - reject
 ^https?:\/\/.+?\.l\.qq\.com - reject
 ^https?:\/\/.+?\.mp4\?ccode=0902 - reject
@@ -347,7 +346,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/[^(apple|10010)]+\.(com|cn)\/(a|A)d(s|v)?(/|\.js) - reject
 ^https?:\/\/[^bbs].tianya\.cn - reject
 ^https?:\/\/\w+?\.ximalaya\.com\/api\/v\d\/adRealTime - reject
-^https?:\/\/\w+\.beacon\.qq\.com - reject
+;^https?:\/\/\w+\.beacon\.qq\.com - reject
 ^https?:\/\/\w+\.cloudfront\.net\/banner - reject
 ^https?:\/\/\w+\.gdt\.qq\.com - reject
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
