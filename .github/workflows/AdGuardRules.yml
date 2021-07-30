@@ -1,4 +1,4 @@
-name: AdGuardRules
+name: AdRules
 
 on:
   push:
@@ -47,13 +47,14 @@ jobs:
         
       - name: Merge and Rules and remove duplicates
         run: |
-          curl -LR -o Surge/Ruleset/AdGuardRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
-          awk 'FNR==1{print ""}{print}' Surge/Ruleset/AdGuardRules/*.list > Surge/Ruleset/AdGuardRules/merge.txt
-          awk '!seen[$0]++' Surge/Ruleset/AdGuardRules/merge.txt > Surge/Ruleset/AdGuardRules/merge.list
-          sed '/^$/d' Surge/Ruleset/AdGuardRules/merge.list > Surge/Ruleset/AdGuardRules/AdGuardRules.list
-          rm -rf Surge/Ruleset/AdGuardRules/merge.txt
-          rm -rf Surge/Ruleset/AdGuardRules/merge.list
-          rm -rf Surge/Ruleset/AdGuardRules/anti-ad.txt
+          curl -LR -o Surge/DomainSet/AdRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
+          awk 'FNR==1{print ""}{print}' Surge/DomainSet/AdRules/*.list > Surge/DomainSet/AdRules/merge.txt
+          awk '!seen[$0]++' Surge/DomainSet/AdRules/merge.txt > Surge/DomainSet/AdRules/merge.list
+          sed '/^$/d' Surge/DomainSet/AdRules/merge.list > Surge/DomainSet/AdRules/AdRules.list
+          mv Surge/DomainSet/AdRules/AdRules.list Surge/DomainSet/AdRules.list
+          rm -rf Surge/DomainSet/AdRules/merge.txt
+          rm -rf Surge/DomainSet/AdRules/merge.list
+          rm -rf Surge/DomainSet/AdRules/anti-ad.txt
 
       - name: commit, push
         uses: EndBug/add-and-commit@v5
@@ -61,6 +62,6 @@ jobs:
           add: "-A"
           author_name: 佩佩
           author_email: admin@nange.cn
-          message: "Update AdGuardRules"
+          message: "Update AdRules"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,5 @@
 {
-  "name": "update-rules",
+  "name": "update-adrules",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:xOS/Config.git",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "update-rules": "node Script/Tools/AdGuardRules"
+    "update-adrules": "node Script/Tools/AdRules"
   },
   "dependencies": {
     "@adguard/hostlist-compiler": "^1.0.8",
