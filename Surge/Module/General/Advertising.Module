@@ -65,7 +65,15 @@ DOMAIN,api.cupid.dns.iqiyi.com,REJECT
 DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
 
 # > 腾讯视频
-DOMAIN,btrace.qq.com,REJECT-DROP
+DOMAIN,news.l.qq.com,REJECT
+DOMAIN,tetrack.qq.com,REJECT
+DOMAIN-SUFFIX,xsweb.gdt.qq.com,REJECT
+DOMAIN-SUFFIX,btrace.qq.com,REJECT-DROP
+DOMAIN-SUFFIX,mtrace.qq.com,REJECT-DROP
+DOMAIN-SUFFIX,btrace.video.qq.com,REJECT-DROP
+DOMAIN-SUFFIX,mtrace.video.qq.com,REJECT-DROP
+DOMAIN-SUFFIX,trace.qq.com,REJECT-DROP
+DOMAIN-SUFFIX,beacon.qq.com,REJECT-DROP
 DOMAIN,video.dispatch.tc.qq.com,REJECT
 URL-REGEX,^https?://.+/videos/other/.+,REJECT
 URL-REGEX,^https?://.+\.beacon\.qq\.com,REJECT
@@ -570,8 +578,8 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 # > 其它
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nange.cn/Surge/Blank/Blank.txt"
 ^https?:\/\/pgdt\.gtimg\.cn\/ data="https://hub.nange.cn/Surge/Blank/Blank.jpg"
-^https?:\/\/(mtrace|btrace)\.qq\.com\/(mkvcollect|kvcollect) data="https://hub.nange.cn/Surge/Blank/Blank.txt"
-^https?:\/\/h\.trace\.qq\.com\/kv data="https://hub.nange.cn/Surge/Blank/Blank.txt"
+;^https?:\/\/(mtrace|btrace)\.qq\.com\/(mkvcollect|kvcollect) data="https://hub.nange.cn/Surge/Blank/Blank.txt"
+;^https?:\/\/h\.trace\.qq\.com\/kv data="https://hub.nange.cn/Surge/Blank/Blank.txt"
 ^https?:\/\/log\.snssdk\.com\/service\/ data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(adgateway|adv)\/ data="https://hub.nange.cn/Surge/Blank/Blank.txt"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/ad\/ data="https://hub.nange.cn/Surge/Blank/Blank.txt"

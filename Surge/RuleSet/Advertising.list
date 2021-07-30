@@ -241,6 +241,9 @@ DOMAIN,mobilead.kuwo.cn
 DOMAIN,rich.kuwo.cn
 
 # > 腾讯视频
+DOMAIN,news.l.qq.com
+DOMAIN,tetrack.qq.com
+DOMAIN-SUFFIX,xsweb.gdt.qq.com
 DOMAIN,video.dispatch.tc.qq.com
 URL-REGEX,^https?://.+/videos/other/.+
 URL-REGEX,^https?://.+\.beacon\.qq\.com
