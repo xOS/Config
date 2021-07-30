@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 116.211*, 175.6.225.125, 140.249*, 36.99.*, 14.18.175.253, 150.138*,116.207*, 36.99.*,14.18.*, stun.qqlive.qq.com, 42.81.*, 221.238.*, 114.221.*, 117.62.*, 119.147.*, access1.tpns.tencent.com,101.91.*, vi.bls.mdt.qq.com, oth.str.mdt.qq.com, 106.42.*, 114.80.*
+force-http-engine-hosts = %APPEND% *.ott.cibntv.net, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 116.211*, 175.6.225.125, 140.249*, 36.99.*, 150.138*,116.207*, 36.99.*, stun.qqlive.qq.com, 42.81.*, 221.238.*, 114.221.*, 117.62.*, 119.147.*, access1.tpns.tencent.com,101.91.*, vi.bls.mdt.qq.com, oth.str.mdt.qq.com, 106.42.*, 114.80.*, punch.p2p.qq.com, *.research.qq.com
 
 [Rule]
 # > 微博视频推荐
@@ -69,13 +69,10 @@ DOMAIN,news.l.qq.com,REJECT
 DOMAIN,tetrack.qq.com,REJECT
 DOMAIN,vv.video.qq.com,REJECT
 DOMAIN-SUFFIX,gzc.vod.tencent-cloud.com,REJECT
-DOMAIN-SUFFIX,xsweb.gdt.qq.com,REJECT
-DOMAIN-SUFFIX,btrace.qq.com,REJECT-DROP
-DOMAIN-SUFFIX,mtrace.qq.com,REJECT-DROP
+URL-REGEX,^https?:\/\/(m?trace|btrace)\.qq\.com\/?,REJECT
 DOMAIN-SUFFIX,btrace.video.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,mtrace.video.qq.com,REJECT-DROP
-DOMAIN-SUFFIX,trace.qq.com,REJECT-DROP
-DOMAIN-SUFFIX,otheve.beacon.qq.com,REJECT-DROP
+DOMAIN-SUFFIX,beacon.qq.com,REJECT-DROP
 #DOMAIN,video.dispatch.tc.qq.com,REJECT
 URL-REGEX,^https?://.+/videos/other/.+,REJECT
 URL-REGEX,^https?://.+\.gdt\.qq\.com,REJECT
@@ -87,10 +84,9 @@ URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?,REJECT
 #URL-REGEX,^https?://.+\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
 #URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
 #URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\?,REJECT
-URL-REGEX,^https:\/\/vm\.gtimg\.cn\/c\/=\/tencentvideo\/txp\/js\/plugins\?,REJECT
+#URL-REGEX,^https:\/\/vm\.gtimg\.cn\/c\/=\/tencentvideo\/txp\/js\/plugins\?,REJECT
 URL-REGEX,^https?://.+\/monitor\/receive\.action$,REJECT
 #URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
-;IP-CIDR,14.18.175.253/32,REJECT,no-resolve
 IP-CIDR,36.99.176.160/32,REJECT,no-resolve
 IP-CIDR,140.249.94.150/32,REJECT,no-resolve
 ;IP-CIDR,58.250.137.64/32,REJECT,no-resolve
