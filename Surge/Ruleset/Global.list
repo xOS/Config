@@ -920,3 +920,5 @@ IP-CIDR,192.30.253.0/24,no-resolve
 IP-CIDR,192.30.254.0/24,no-resolve
 IP-CIDR,192.30.254.0/23,no-resolve
 IP-CIDR,192.30.255.0/24,no-resolve
+IP-CIDR6,2620:112:3000::/44,no-resolve
+IP-CIDR6,2a0a:a440::/29,no-resolve
