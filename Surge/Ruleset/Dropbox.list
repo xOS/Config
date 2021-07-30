@@ -1,6 +1,0 @@
-# > Dropbox
-USER-AGENT,Dropbox*
-DOMAIN-KEYWORD,dropbox
-DOMAIN-SUFFIX,getdropbox.com
-DOMAIN-SUFFIX,dropbox.com
-DOMAIN-SUFFIX,dropboxapi.com
