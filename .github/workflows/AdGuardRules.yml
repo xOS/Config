@@ -47,8 +47,12 @@ jobs:
         
       - name: Merge and Rules and remove duplicates
         run: |
+          curl -LR -o Surge/Ruleset/AdGuardRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
           awk 'FNR==1{print ""}{print}' Surge/Ruleset/AdGuardRules/*.list > Surge/Ruleset/AdGuardRules/merge.txt
-          awk '!seen[$0]++' Surge/Ruleset/AdGuardRules/merge.txt> Surge/Ruleset/AdGuardRules/AdGuardRules.list
+          awk '!seen[$0]++' Surge/Ruleset/AdGuardRules/merge.txt > Surge/Ruleset/AdGuardRules/merge.list
+          sed '/^$/d' Surge/Ruleset/AdGuardRules/merge.list > Surge/Ruleset/AdGuardRules/AdGuardRules.list
+          rm -rf Surge/Ruleset/AdGuardRules/merge.txt
+          rm -rf Surge/Ruleset/AdGuardRules/anti-ad-surge2.txt
 
       - name: commit, push
         uses: EndBug/add-and-commit@v5
