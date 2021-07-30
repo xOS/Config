@@ -579,10 +579,10 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?:\/\/luck\.sc\.weibo\.com\/aj\/Action\/indexInfo$ data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
 
 # > 腾讯视频
-^https?://.+\/variety\.tc\.qq\.com\? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
-^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
-^https?:\/\/video\.dispatch\.tc\.qq\.com\? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
-^https?://.+\/defaultts\.tc.\qq\.com\? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
+^https?://.+\/variety\.tc\.qq\.com\/? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
+^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
+^https?:\/\/video\.dispatch\.tc\.qq\.com\/? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
+^https?://.+\/defaultts\.tc.\qq\.com\/? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
 
 # > 其它
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nange.cn/Surge/Blank/Blank.txt"
