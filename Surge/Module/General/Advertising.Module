@@ -74,19 +74,19 @@ DOMAIN-SUFFIX,btrace.video.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,mtrace.video.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,trace.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,beacon.qq.com,REJECT-DROP
-DOMAIN,video.dispatch.tc.qq.com,REJECT
+#DOMAIN,video.dispatch.tc.qq.com,REJECT
 URL-REGEX,^https?://.+/videos/other/.+,REJECT
 URL-REGEX,^https?://.+\.gdt\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.l\.qq\.com,REJECT
 URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?,REJECT
-URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\?,REJECT
-URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\?,REJECT
-URL-REGEX,^https?:\/\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
-URL-REGEX,^https?://.+\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
-URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
-URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\?,REJECT
+#URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\?,REJECT
+#URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\?,REJECT
+#URL-REGEX,^https?:\/\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
+#URL-REGEX,^https?://.+\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
+#URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
+#URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\?,REJECT
 URL-REGEX,^https?://.+\/monitor\/receive\.action$,REJECT
-URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
+#URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
 ;IP-CIDR,14.18.175.253/32,REJECT,no-resolve
 IP-CIDR,36.99.176.160/32,REJECT,no-resolve
 IP-CIDR,140.249.94.150/32,REJECT,no-resolve
@@ -270,9 +270,10 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/mail\.yandex\.ru\/u2709\/? - reject
 ^https?:\/\/an\.yandex\.ru\/? - reject
 ^https?:\/\/avatars\.mds\.yandex\.net\/get-direct-picture\/? - reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/video\.dispatch\/.tc\.qq\.com\/.+?\/.+?\.mp4\? - reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4\? - reject
-^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\? - reject
+
+;^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/video\.dispatch\/.tc\.qq\.com\/.+?\/.+?\.mp4\? - reject
+;^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4\? - reject
+;^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\? - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/monitor\/receive\.action$ - reject
 # 微博视频误杀，故注释掉
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\.mp4 - reject
@@ -285,7 +286,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/EcomResourceServer/AdPlayPage/adinfo - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/MobileAdServer\/ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004 - reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\? - reject
+;^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\? - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog) - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/api\/v\d\/app_square\/start_up_with_ad$ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/brand\/search\/v1\.json - reject
@@ -296,7 +297,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/(adgateway|adv)\/ - reject
 ^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/EcomResourceServer/AdPlayPage/adinfo - reject
 ^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/MobileAdServer\/ - reject
-^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\? - reject
+;^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\? - reject
 ^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/ting\/preload\/ - reject
 ^https?:\/\/(a?d|sax)\d.sina.com - reject
 ^https?:\/\/(api|api-bk\d+)\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap - reject
@@ -573,6 +574,11 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 [Map Local]
 # > 微博积分弹窗
 ^https?:\/\/luck\.sc\.weibo\.com\/aj\/Action\/indexInfo$ data="https://hub.nange.cn/Surge/Blank/Blank_Dict.json"
+
+# > 腾讯视频
+^https?://.+\/variety\.tc\.qq\.com\? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
+^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
+^https?:\/\/video\.dispatch\.tc\.qq\.com\? data="https://hub.nange.cn/Surge/Blank/Blank.gif"
 
 # > 其它
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nange.cn/Surge/Blank/Blank.txt"
