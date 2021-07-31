@@ -1,0 +1,18 @@
+var obj = JSON.parse($response.body);
+obj['body']['memberInfo']['memberInfo']['rights']['isDiamond'] = true;
+obj['body']['memberInfo']['memberInfo']['rights']['skipBeforeAd'] = true;
+obj['body']['memberInfo']['memberInfo']['rights']['isVip'] = true;
+obj['body']['memberInfo']['memberInfo']['memberGroup'] = '4';
+obj['body']['memberInfo']['memberInfo']['icons'] = 'diamond';
+obj['body']['memberInfo']['memberInfo']['title']= '钻石会员';
+obj['body']['memberInfo']['memberInfo']['iconsDetail']['teamBorderIcon'] = 'http:\/\/img.cmvideo.cn:8080\/publish\/noms\/2020\/05\/25\/1O25B1UFCP3IC.png';
+obj['body']['memberInfo']['memberInfo']['iconsDetail']['personalCenterIcon'] = 'http:\/\/img.cmvideo.cn:8080\/publish\/noms\/2020\/05\/27\/1O25B7OBAS02V.png';
+obj['body']['memberInfo']['memberInfo']['iconsDetail']['badgeIcon'] = 'http:\/\/img.cmvideo.cn:8080\/publish\/noms\/2020\/05\/25\/1O25B1UER73KR.png';
+obj['body']['memberInfo']['memberInfo']['iconsDetail']['personalInfoIcon'] = 'http:\/\/img.cmvideo.cn:8080\/publish\/noms\/2020\/05\/27\/1O25B7ONU63LG.png';
+obj['body']['memberInfo']['memberInfo']['iconsDetail']['smallIcon'] = 'http:\/\/img.cmvideo.cn:8080\/publish\/noms\/2020\/05\/25\/1O25B1UC3SHKH.png';
+obj['body']['memberInfo']['memberInfo']['iconsDetail']['barrageIcon'] = 'http:\/\/img.cmvideo.cn:8080\/publish\/noms\/2020\/05\/25\/1O25B1UCU9I45.png';
+obj['body']['memberInfo']['memberInfo']['type'] = 'diamond';
+obj['body']['memberInfo']['memberInfo']['term'] = 'diamond';
+obj['body']['memberInfo']['memberTerm'] = true;
+obj['body']['resultCode']= '200';
+$done({body: JSON.stringify(obj)});

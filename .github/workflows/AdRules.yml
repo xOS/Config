@@ -47,14 +47,12 @@ jobs:
         
       - name: Merge and Rules and remove duplicates
         run: |
-          curl -LR -o Surge/DomainSet/AdRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
-          awk 'FNR==1{print ""}{print}' Surge/DomainSet/AdRules/*.list > Surge/DomainSet/AdRules/merge.txt
-          awk '!seen[$0]++' Surge/DomainSet/AdRules/merge.txt > Surge/DomainSet/AdRules/merge.list
-          sed '/^$/d' Surge/DomainSet/AdRules/merge.list > Surge/DomainSet/AdRules/AdRules.list
-          mv Surge/DomainSet/AdRules/AdRules.list Surge/DomainSet/AdRules.list
-          rm -rf Surge/DomainSet/AdRules/merge.txt
-          rm -rf Surge/DomainSet/AdRules/merge.list
-          rm -rf Surge/DomainSet/AdRules/anti-ad.txt
+          curl -LR -o Surge/RuleSet/AdRules/anti-ad.list "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
+          awk 'FNR==1{print ""}{print}' Surge/RuleSet/AdRules/*.list > Surge/RuleSet/AdRules/Merge.txt
+          awk '!seen[$0]++' Surge/RuleSet/AdRules/Merge.txt > Surge/RuleSet/AdRules/Merge.list
+          sed '/^$/d' Surge/RuleSet/AdRules/Merge.list > Surge/RuleSet/AdRule.list
+          rm -rf Surge/RuleSet/AdRules/Merge.txt
+          rm -rf Surge/RuleSet/AdRules/Merge.list
 
       - name: commit, push
         uses: EndBug/add-and-commit@v5
