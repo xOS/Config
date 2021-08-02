@@ -42,7 +42,7 @@ IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(
 
 # > 咪咕视频
 indexC = type=http-response,pattern=^https:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/indexC.js
-Gateway = type=http-response,pattern=^http:\/\/.*\.miguvideo\.com\/gateway\/playurl\/.+\/play\/?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/Gateway.js
+Gateway = type=http-response,pattern=^http:\/\/.*\.miguvideo\.com\/gateway\/playurl\/.+\/play\/?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/PlayUrl.js
 PlayUrl = type=http-response,pattern=^https:\/\/play\.miguvideo\.com\/playurl\/.+\/play\/playurl\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/PlayUrl.js
 manage = type=http-response,pattern=^https:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/Manage.js
 member = type=http-response,pattern=^https:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/Member.js
