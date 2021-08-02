@@ -11,6 +11,9 @@ DOMAIN-SUFFIX,displayads-formats.googleusercontent.com
 # > 字节跳动
 DOMAIN-SUFFIX,ib.snssdk.com
 
+# > 咪咕视频
+DOMAIN-SUFFIX,v.miguvideo.com
+
 # > GeoIP API
 DOMAIN-KEYWORD,geo
 DOMAIN-SUFFIX,ipapi.co
