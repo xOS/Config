@@ -41,6 +41,12 @@ DOMAIN-SUFFIX,virmach.com
 # > 头条系
 #DOMAIN-SUFFIX,snssdk.com
 
+# > 字节跳动
+DOMAIN-SUFFIX,ib.snssdk.com
+
+# > 网页云音乐
+DOMAIN-SUFFIX,dun.163yun.com
+
 # > 腾讯游戏
 DOMAIN,cloudctrl.gcloud.qq.com
 USER-AGENT,smoba*
