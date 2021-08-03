@@ -20,6 +20,9 @@ DOMAIN-SUFFIX,v.miguvideo.com
 # > Oracle
 DOMAIN-SUFFIX,oracleinfinity.io
 
+# > Apple
+DOMAIN-SUFFIX,metrics.icloud.com
+
 # > GeoIP API
 DOMAIN-KEYWORD,geo
 DOMAIN-SUFFIX,ipapi.co
