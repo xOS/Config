@@ -11,6 +11,9 @@ DOMAIN-SUFFIX,displayads-formats.googleusercontent.com
 # > 字节跳动
 DOMAIN-SUFFIX,ib.snssdk.com
 
+# > 网页云音乐
+DOMAIN-SUFFIX,dun.163yun.com
+
 # > 咪咕视频
 DOMAIN-SUFFIX,v.miguvideo.com
 
