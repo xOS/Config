@@ -17,6 +17,9 @@ DOMAIN-SUFFIX,dun.163yun.com
 # > 咪咕视频
 DOMAIN-SUFFIX,v.miguvideo.com
 
+# > Oracle
+DOMAIN-SUFFIX,oracleinfinity.io
+
 # > GeoIP API
 DOMAIN-KEYWORD,geo
 DOMAIN-SUFFIX,ipapi.co
