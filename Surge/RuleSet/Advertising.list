@@ -879,7 +879,7 @@ DOMAIN-SUFFIX,feed.theta.sogou.com
 DOMAIN-SUFFIX,files2.sogou.com
 DOMAIN-SUFFIX,fych.uranus.sogou.com
 DOMAIN-SUFFIX,galaxy.sogoucdn.com
-DOMAIN-SUFFIX,get.sogou.com
+;DOMAIN-SUFFIX,get.sogou.com
 DOMAIN-SUFFIX,gif.lu.sogoucdn.com
 DOMAIN-SUFFIX,goto.sogou.com
 DOMAIN-SUFFIX,gxe.husky.sogou.com
