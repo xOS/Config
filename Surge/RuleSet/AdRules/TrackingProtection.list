@@ -4234,6 +4234,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.aem-collector.daumkakao.io
 .cl.canva.com
 .p-events.ivideosmart.com
 .user-rating.burda-forward.de
