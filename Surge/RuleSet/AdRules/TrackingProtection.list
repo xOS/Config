@@ -3,6 +3,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.recs.richrelevance.com
+.analytics.sqreem.com
+.iper2.com
 .dc.banggood.com
 .p.kolplay.com
 .fw-ad.jp
@@ -4237,6 +4240,9 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.boomerang.dell.com
+.fp.kakaku.com
+.sysmon.kakaku.com
 .cstats.sankakucomplex.com
 .aem-collector.daumkakao.io
 .cl.canva.com
