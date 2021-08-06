@@ -3,6 +3,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.collect.mxapis.com
 .simility.com
 .recs.richrelevance.com
 .analytics.sqreem.com
@@ -9826,7 +9827,6 @@
 .sadobe.falabella.com.ar
 .sadobe.falabella.com.co
 .sadobe.falabella.com.pe
-.sadobeanalytics.geico.com
 .sadobeanalytics.medline.com
 .sadobemarketing.boden.co.uk
 .sadobemarketing.boden.eu
@@ -10360,7 +10360,6 @@
 .smetrics.directline.com
 .smetrics.directlineforbusiness.co.uk
 .smetrics.directv.com
-.smetrics.discover.com
 .smetrics.dish.co
 .smetrics.dish.com
 .smetrics.dnb.com
@@ -16624,6 +16623,10 @@
 .stat.y.qq.com
 .relap.io
 .adj.st
+.events.tvtime.com
+.smetrics.discover.com
+.geico.com.ssl.sc.omtrdc.net
+.sadobeanalytics.geico.com
 .dit.whatsapp.net
 .analytics.redbubble.com
 .stats-sg.ganymede.eu
