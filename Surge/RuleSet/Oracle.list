@@ -8,3 +8,4 @@ DOMAIN-SUFFIX,online-metrix.net
 DOMAIN,oracle.112.2o7.net
 DOMAIN-SUFFIX,cybersource.com
 DOMAIN-SUFFIX,oracleinfinity.io
+IP-CIDR,224.0.0.251/32,no-resolve
