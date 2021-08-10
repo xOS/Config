@@ -220,7 +220,7 @@ URL-REGEX,^https:\/\/notifications-pa\.googleapis\.com\/v1\/fetchlatestthreads$,
 DOMAIN,yt3.ggpht.com,REJECT
 URL-REGEX,^https?:\/\/www\.youtube\.com\/pcs\/activeview\?,REJECT
 URL-REGEX,^https?:\/\/www\.youtube\.com\/pagead\/adview\?,REJECT
-URL-REGEX,^https?:\/\/lh[0-9]\.googleusercontent\.com\/?,REJECT
+URL-REGEX,^https?:\/\/lh[0-9]\.googleusercontent\.com\/proxy\/?,REJECT
 
 # > 其它
 URL-REGEX,^https?:\/\/hostloc\.com\/data\/attachment\/common\/cf,REJECT-TINYGIF
