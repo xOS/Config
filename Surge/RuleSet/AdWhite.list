@@ -5,8 +5,8 @@ DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,adservice.google.com
-DOMAIN-SUFFIX,doubleclick.net
-DOMAIN-SUFFIX,displayads-formats.googleusercontent.com
+#DOMAIN-SUFFIX,doubleclick.net
+#DOMAIN-SUFFIX,displayads-formats.googleusercontent.com
 
 # > 字节跳动
 DOMAIN-SUFFIX,ib.snssdk.com
