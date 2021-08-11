@@ -104,12 +104,13 @@ URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad
 # > 天翼云盘
 DOMAIN-SUFFIX,21cn.com,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/message\/queryAssignMsg,REJECT
-URL-REGEX,^http:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds,REJECT
+URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds,REJECT
+URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds\.action\?,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getFloatingWindow,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/privilege\/checkTryPrivilege,REJECT
-URL-REGEX,^http:\/\/api\.cloud\.189\.cn\/guns\/img\/hfw\/,REJECT
+URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/hfw\/,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getRecommendedPositionList,REJECT
-URL-REGEX,^http:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/m\.cloud\.189\.cn\/wap\/client\/activity\/,REJECT
 URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
 
