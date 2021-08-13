@@ -1,0 +1,9 @@
+# > 支付宝
+#HOST-SUFFIX,alipay.com,DIRECT
+HOST-SUFFIX,alipay.hk,DIRECT
+
+# > 八达通
+USER-AGENT,OctopusQuickBuild*,DIRECT
+HOST-SUFFIX,octopus.com.hk,DIRECT
+HOST-SUFFIX,octopuscards.com,DIRECT
+HOST-SUFFIX,octopus-cards.com,DIRECT
