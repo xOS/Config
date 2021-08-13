@@ -1,6 +1,10 @@
 #!name=常用规则
 #!desc=日用夜用
 
+[Rule]
+# > Royal TSX
+URL-REGEX,^https?:\/\/api\.royalapps\.com\/api\/UpdateCheck$,REJECT
+
 [Header Rewrite]
 # > 颇可
 ;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
@@ -104,4 +108,4 @@ Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -*nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com
+hostname = %APPEND% x.io, -*vmgirls.com, -*nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, api.royalapps.com, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com
