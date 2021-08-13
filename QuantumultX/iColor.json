@@ -1,206 +1,1194 @@
-{"name":"图标库", 
-    "description":"常用图库", 
-    "icons":
-    [
-        {"name":"Netease_Music_Unlock", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netease_Music_Unlock.png"}, 
-        {"name":"iQIYI", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/iQIYI.png"}, 
-        {"name":"iQIYI&bilibili", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/iQIYI&bilibili.png"}, 
-        {"name":"iCloud", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/iCloud.png"}, 
-        {"name":"bilibili", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/bilibili.png"}, 
-        {"name":"bilibili_3", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/bilibili_3.png"}, 
-        {"name":"YouTube", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/YouTube.png"}, 
-        {"name":"Yahoo", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Yahoo.png"}, 
-        {"name":"Windows_11", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Windows_11.png"}, 
-        {"name":"Windows", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Windows.png"}, 
-        {"name":"WiFi", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/WiFi.png"}, 
-        {"name":"WeTV", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/WeTV.png"}, 
-        {"name":"WeChat", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/WeChat.png"}, 
-        {"name":"Viu", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Viu.png"}, 
-        {"name":"VIP", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/VIP.png"}, 
-        {"name":"Vimeo", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Vimeo.png"}, 
-        {"name":"Unlock", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Unlock.png"}, 
-        {"name":"United_Nations", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/United_Nations.png"}, 
-        {"name":"United_States", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/United_States.png"}, 
-        {"name":"United_Kingdom", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/United_Kingdom.png"}, 
-        {"name":"ULB", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ULB.png"}, 
-        {"name":"Twitter", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Twitter.png"}, 
-        {"name":"Twitch", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Twitch.png"}, 
-        {"name":"Turkey", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Turkey.png"}, 
-        {"name":"TikTok", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TikTok.png"}, 
-        {"name":"TikTok_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TikTok_1.png"}, 
-        {"name":"TikTok_2.png", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TikTok_2.png"}, 
-        {"name":"Thailand", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Thailand.png"}, 
-        {"name":"TestFlight", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TestFlight.png"}, 
-        {"name":"TestFlight_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TestFlight_1.png"}, 
-        {"name":"TestFlight_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TestFlight_2.png"}, 
-        {"name":"Telegram", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Telegram.png"}, 
-        {"name":"Taobao", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Taobao.png"}, 
-        {"name":"Taiwan", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Taiwan.png"}, 
-        {"name":"TVB", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TVB.png"}, 
-        {"name":"StreamingSE", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/StreamingSE.png"}, 
-        {"name":"StreamingCN", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/StreamingCN.png"}, 
-        {"name":"Streaming", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Streaming.png"}, 
-        {"name":"Steam", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Steam.png"}, 
-        {"name":"Star", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Star.png"}, 
-        {"name":"Stack", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Stack.png"}, 
-        {"name":"Spotify", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Spotify.png"}, 
-        {"name":"Speedtest", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Speedtest.png"}, 
-        {"name":"Spark", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Spark.png"}, 
-        {"name":"Sling_TV", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Sling_TV.png"}, 
-        {"name":"Siri", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Siri.png"}, 
-        {"name":"Singapore", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Singapore.png"}, 
-        {"name":"Server", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Server.png"}, 
-        {"name":"Scholar", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Scholar.png"}, 
-        {"name":"SSID", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/SSID.png"}, 
-        {"name":"SSID_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/SSID_1.png"}, 
-        {"name":"Russia", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Russia.png"}, 
-        {"name":"Round_Robin", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Round_Robin.png"}, 
-        {"name":"Round_Robin_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Round_Robin_1.png"}, 
-        {"name":"Rocket", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Rocket.png"}, 
-        {"name":"Reject", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Reject.png"}, 
-        {"name":"QQ", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/QQ.png"}, 
-        {"name":"Puzzle", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Puzzle.png"}, 
-        {"name":"Proxy", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Proxy.png"}, 
-        {"name":"Prime_Video", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Prime_Video.png"}, 
-        {"name":"Prime_Video_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Prime_Video_1.png"}, 
-        {"name":"Prime_Video_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Prime_Video_2.png"}, 
-        {"name":"PostBox", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PostBox.png"}, 
-        {"name":"PostBox_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PostBox_1.png"}, 
-        {"name":"Pig", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Pig.png"}, 
-        {"name":"Philippines", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Philippines.png"}, 
-        {"name":"PayPal", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PayPal.png"}, 
-        {"name":"Paramount", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Paramount.png"}, 
-        {"name":"Pandora", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Pandora.png"}, 
-        {"name":"PBS", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PBS.png"}, 
-        {"name":"OneDrive", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/OneDrive.png"}, 
-        {"name":"Ox", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Ox.png"}, 
-        {"name":"Null_Nation", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Null_Nation.png"}, 
-        {"name":"Notion", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Notion.png"}, 
-        {"name":"Netflix", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netflix.png"}, 
-        {"name":"Netflix_Letter", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netflix_Letter.png"}, 
-        {"name":"Netease_Music", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netease_Music.png"}, 
-        {"name":"NBC", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/NBC.png"}, 
-        {"name":"NBA", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/NBA.png"}, 
-        {"name":"My5", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/My5.png"}, 
-        {"name":"Music_Enhance", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Music_Enhance.png"}, 
-        {"name":"Mouse", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Mouse.png"}, 
-        {"name":"Microsoft", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Microsoft.png"}, 
-        {"name":"Mickey", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Mickey.png"}, 
-        {"name":"Media", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Media.png"}, 
-        {"name":"Malaysia", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Malaysia.png"}, 
-        {"name":"Mail", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Mail.png"}, 
-        {"name":"Magic", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Magic.png"}, 
-        {"name":"Macao", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Macao.png"}, 
-        {"name":"Luffy", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Luffy.png"}, 
-        {"name":"Loop", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Loop.png"}, 
-        {"name":"Lock", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Lock.png"}, 
-        {"name":"Line", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Line.png"}, 
-        {"name":"League_of_Legends", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/League_of_Legends.png"}, 
-        {"name":"Lab", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Lab.png"}, 
-        {"name":"LOL", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/LOL.png"}, 
-        {"name":"Korea", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Korea.png"}, 
-        {"name":"Japan", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Japan.png"}, 
-        {"name":"JOOX", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/JOOX.png"}, 
-        {"name":"Instagram", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Instagram.png"}, 
-        {"name":"Ingress", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Ingress.png"}, 
-        {"name":"Infuse", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Infuse.png"}, 
-        {"name":"Infuse", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Infuse_7.png"}, 
-        {"name":"India", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/India.png"}, 
-        {"name":"ITV", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV.png"}, 
-        {"name":"ITV_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV_1.png"},
-        {"name":"ITV_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV_2.png"},
-        {"name":"IPLC", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/IPLC.png"}, 
-        {"name":"IEPL", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/IEPL.png"}, 
-        {"name":"Hulu", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hulu.png"}, 
-        {"name":"Hulu_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hulu_1.png"}, 
-        {"name":"Hong_Kong", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hong_Kong.png"}, 
-        {"name":"Hijacking", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hijacking.png"}, 
-        {"name":"Heart", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Heart.png"}, 
-        {"name":"HKMTMedia", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HKMTMedia.png"}, 
-        {"name":"HBO", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO.png"}, 
-        {"name":"HBO_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_1.png"}, 
-        {"name":"HBO_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_2.png"}, 
-        {"name":"HBO_GO", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_GO.png"}, 
-        {"name":"HBO_GO_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_GO_1.png"}, 
-        {"name":"HBO_GO_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_GO_2.png"}, 
-        {"name":"HBO_Max", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_Max.png"}, 
-        {"name":"Global", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Global.png"}, 
-        {"name":"Google", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Google.png"}, 
-        {"name":"Google_Drive", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Google_Drive.png"}, 
-        {"name":"Google_Opinion_Rewards", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Google_Opinion_Rewards.png"}, 
-        {"name":"Google_Search", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Google_Search.png"}, 
-        {"name":"France", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/France.png"}, 
-        {"name":"GIA", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/GIA.png"}, 
-        {"name":"Game", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Game.png"}, 
-        {"name":"Germany", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Germany.png"}, 
-        {"name":"GitHub", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/GitHub.png"}, 
-        {"name":"Final", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Final.png"}, 
-        {"name":"Final_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Final_1.png"}, 
-        {"name":"Find_My", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Find_My.png"}, 
-        {"name":"Finland", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Finland.png"}, 
-        {"name":"Flamingo", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Flamingo.png"}, 
-        {"name":"ForeignMedia", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ForeignMedia.png"}, 
-        {"name":"Filter", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Filter.png"}, 
-        {"name":"Facebook", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Facebook.png"}, 
-        {"name":"FOX", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/FOX.png"}, 
-        {"name":"European_Union", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/European_Union.png"}, 
-        {"name":"Emby", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Emby.png"}, 
-        {"name":"Egypt", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Egypt.png"}, 
-        {"name":"ESPN+", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ESPN+.png"}, 
-        {"name":"ESPN+_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ESPN+_1.png"}, 
-        {"name":"ESPN+_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ESPN+_2.png"}, 
-        {"name":"Drill", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Drill.png"}, 
-        {"name":"Download", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Download.png"}, 
-        {"name":"DomesticMedia", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/DomesticMedia.png"}, 
-        {"name":"Domestic", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Domestic.png"}, 
-        {"name":"Disney", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Disney.png"}, 
-        {"name":"Disney+", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Disney+.png"}, 
-        {"name":"Disney+_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Disney+_1.png"}, 
-        {"name":"Disney+_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Disney+_2.png"}, 
-        {"name":"Discord", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Discord.png"}, 
-        {"name":"Direct", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Direct.png"}, 
-        {"name":"Dinosaur", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Dinosaur.png"}, 
-        {"name":"Daily", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Daily.png"}, 
-        {"name":"Cydia", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cydia.png"},
-        {"name":"Clubhouse", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Clubhouse.png"},
-        {"name":"Cloudflare", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cloudflare.png"}, 
-        {"name":"China", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/China.png"}, 
-        {"name":"Cellular", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cellular.png"}, 
-        {"name":"Canada", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Canada.png"}, 
-        {"name":"Bypass", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Bypass.png"}, 
-        {"name":"Brazil", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Brazil.png"}, 
-        {"name":"Bot", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Bot.png"}, 
-        {"name":"Bookpedia", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Bookpedia.png"}, 
-        {"name":"Back", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Back.png"}, 
-        {"name":"BGP", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BGP.png"}, 
-        {"name":"BBC_iPlayer", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BBC_iPlayer.png"}, 
-        {"name":"Azure", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Azure.png"}, 
-        {"name":"Available", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Available.png"}, 
-        {"name":"Available_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Available_1.png"}, 
-        {"name":"Auto", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Auto.png"}, 
-        {"name":"Australia", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Australia.png"}, 
-        {"name":"Area", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Area.png"}, 
-        {"name":"Apple_Update", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_Update.png"}, 
-        {"name":"Apple_TV_Plus", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_TV_Plus.png"}, 
-        {"name":"Apple_TV", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_TV.png"}, 
-        {"name":"Apple_News", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_News.png"}, 
-        {"name":"Apple_Music", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_Music.png"}, 
-        {"name":"Apple_Fitness", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_Fitness.png"}, 
-        {"name":"Apple", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple.png"}, 
-        {"name":"Apple_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_1.png"}, 
-        {"name":"Apple_2", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_2.png"}, 
-        {"name":"App_Store", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/App_Store.png"}, 
-        {"name":"Amazon", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Amazon.png"}, 
-        {"name":"Amazon_1", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Amazon_1.png"}, 
-        {"name":"All4", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/All4.png"}, 
-        {"name":"Alibaba", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Alibaba.png"}, 
-        {"name":"Airport", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Airport.png"}, 
-        {"name":"AfreecaTV", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AfreecaTV.png"}, 
-        {"name":"Advertising", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Advertising.png"}, 
-        {"name":"AdWhite", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AdWhite.png"}, 
-        {"name":"AdBlack", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AdBlack.png"}, 
-        {"name":"AbemaTV", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AbemaTV.png"}, 
-        {"name":"AIA", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AIA.png"}, 
-        {"name":"AGA", "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AGA.png"}
+{
+    "name":"图标库",
+    "description":"常用图库",
+    "icons":[
+        {
+            "name":"5iTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/5iTV.png"
+        },
+        {
+            "name":"HC.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HC.png"
+        },
+        {
+            "name":"AbemaTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AbemaTV.png"
+        },
+        {
+            "name":"AdBlack.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AdBlack.png"
+        },
+        {
+            "name":"Advertising.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Advertising.png"
+        },
+        {
+            "name":"AdWhite.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AdWhite.png"
+        },
+        {
+            "name":"AfreecaTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AfreecaTV.png"
+        },
+        {
+            "name":"Africa_Map.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Africa_Map.png"
+        },
+        {
+            "name":"AGA.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AGA.png"
+        },
+        {
+            "name":"AIA.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AIA.png"
+        },
+        {
+            "name":"Airport.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Airport.png"
+        },
+        {
+            "name":"Alibaba.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Alibaba.png"
+        },
+        {
+            "name":"All4.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/All4.png"
+        },
+        {
+            "name":"Amazon.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Amazon.png"
+        },
+        {
+            "name":"Amazon_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Amazon_1.png"
+        },
+        {
+            "name":"America_Map.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/America_Map.png"
+        },
+        {
+            "name":"Apple.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple.png"
+        },
+        {
+            "name":"Apple_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_1.png"
+        },
+        {
+            "name":"Apple_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_2.png"
+        },
+        {
+            "name":"Apple_Fitness+.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_Fitness+.png"
+        },
+        {
+            "name":"Apple_Fitness+_Letter.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_Fitness+_Letter.png"
+        },
+        {
+            "name":"Apple_Fitness.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_Fitness.png"
+        },
+        {
+            "name":"Apple_Music.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_Music.png"
+        },
+        {
+            "name":"Apple_News.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_News.png"
+        },
+        {
+            "name":"Apple_TV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_TV.png"
+        },
+        {
+            "name":"Apple_TV_Plus.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_TV_Plus.png"
+        },
+        {
+            "name":"Apple_Update.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Apple_Update.png"
+        },
+        {
+            "name":"App_Store.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/App_Store.png"
+        },
+        {
+            "name":"Area.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Area.png"
+        },
+        {
+            "name":"Asia_Map.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Asia_Map.png"
+        },
+        {
+            "name":"AU.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/AU.png"
+        },
+        {
+            "name":"Australia.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Australia.png"
+        },
+        {
+            "name":"Auto.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Auto.png"
+        },
+        {
+            "name":"Available.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Available.png"
+        },
+        {
+            "name":"Available_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Available_1.png"
+        },
+        {
+            "name":"Azure.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Azure.png"
+        },
+        {
+            "name":"Back.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Back.png"
+        },
+        {
+            "name":"Bahamut.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Bahamut.png"
+        },
+        {
+            "name":"BBC_iPlayer.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BBC_iPlayer.png"
+        },
+        {
+            "name":"BBC_iPlayer_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BBC_iPlayer_1.png"
+        },
+        {
+            "name":"BBC_iPlayer_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BBC_iPlayer_2.png"
+        },
+        {
+            "name":"BGP.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BGP.png"
+        },
+        {
+            "name":"bilibili.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/bilibili.png"
+        },
+        {
+            "name":"bilibili_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/bilibili_1.png"
+        },
+        {
+            "name":"bilibili_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/bilibili_2.png"
+        },
+        {
+            "name":"bilibili_3.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/bilibili_3.png"
+        },
+        {
+            "name":"bilibili_4.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/bilibili_4.png"
+        },
+        {
+            "name":"Blinkload.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Blinkload.png"
+        },
+        {
+            "name":"Blinkload_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Blinkload_1.png"
+        },
+        {
+            "name":"Bookpedia.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Bookpedia.png"
+        },
+        {
+            "name":"BosLife.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BosLife.png"
+        },
+        {
+            "name":"BosLife_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BosLife_1.png"
+        },
+        {
+            "name":"Bot.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Bot.png"
+        },
+        {
+            "name":"BR.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/BR.png"
+        },
+        {
+            "name":"Brazil.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Brazil.png"
+        },
+        {
+            "name":"Bypass.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Bypass.png"
+        },
+        {
+            "name":"CA.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/CA.png"
+        },
+        {
+            "name":"Canada.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Canada.png"
+        },
+        {
+            "name":"CC.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/CC.png"
+        },
+        {
+            "name":"Cellular.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cellular.png"
+        },
+        {
+            "name":"China.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/China.png"
+        },
+        {
+            "name":"China_Map.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/China_Map.png"
+        },
+        {
+            "name":"Cloudflare.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cloudflare.png"
+        },
+        {
+            "name":"Clubhouse.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Clubhouse.png"
+        },
+        {
+            "name":"Clubhouse_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Clubhouse_1.png"
+        },
+        {
+            "name":"Clubhouse_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Clubhouse_2.png"
+        },
+        {
+            "name":"CN.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/CN.png"
+        },
+        {
+            "name":"Cryptocurrency.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cryptocurrency.png"
+        },
+        {
+            "name":"Cryptocurrency_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cryptocurrency_1.png"
+        },
+        {
+            "name":"Cryptocurrency_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cryptocurrency_2.png"
+        },
+        {
+            "name":"Cryptocurrency_3.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cryptocurrency_3.png"
+        },
+        {
+            "name":"Cydia.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Cydia.png"
+        },
+        {
+            "name":"Daily.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Daily.png"
+        },
+        {
+            "name":"DAZN.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/DAZN.png"
+        },
+        {
+            "name":"DAZN_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/DAZN_1.png"
+        },
+        {
+            "name":"DAZN_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/DAZN_2.png"
+        },
+        {
+            "name":"DE.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/DE.png"
+        },
+        {
+            "name":"deezer.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/deezer.png"
+        },
+        {
+            "name":"deezer_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/deezer_1.png"
+        },
+        {
+            "name":"deezer_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/deezer_2.png"
+        },
+        {
+            "name":"Dinosaur.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Dinosaur.png"
+        },
+        {
+            "name":"Direct.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Direct.png"
+        },
+        {
+            "name":"Discord.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Discord.png"
+        },
+        {
+            "name":"discovery+.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/discovery+.png"
+        },
+        {
+            "name":"Disney+.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Disney+.png"
+        },
+        {
+            "name":"Disney+_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Disney+_1.png"
+        },
+        {
+            "name":"Disney+_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Disney+_2.png"
+        },
+        {
+            "name":"Disney.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Disney.png"
+        },
+        {
+            "name":"Domestic.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Domestic.png"
+        },
+        {
+            "name":"DomesticMedia.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/DomesticMedia.png"
+        },
+        {
+            "name":"Download.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Download.png"
+        },
+        {
+            "name":"Drill.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Drill.png"
+        },
+        {
+            "name":"EG.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/EG.png"
+        },
+        {
+            "name":"Egypt.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Egypt.png"
+        },
+        {
+            "name":"Emby.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Emby.png"
+        },
+        {
+            "name":"encoreTVB.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/encoreTVB.png"
+        },
+        {
+            "name":"ESPN+.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ESPN+.png"
+        },
+        {
+            "name":"ESPN+_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ESPN+_1.png"
+        },
+        {
+            "name":"ESPN+_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ESPN+_2.png"
+        },
+        {
+            "name":"EU.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/EU.png"
+        },
+        {
+            "name":"European_Union.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/European_Union.png"
+        },
+        {
+            "name":"Europe_Map.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Europe_Map.png"
+        },
+        {
+            "name":"Facebook.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Facebook.png"
+        },
+        {
+            "name":"FI.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/FI.png"
+        },
+        {
+            "name":"Filter.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Filter.png"
+        },
+        {
+            "name":"Final.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Final.png"
+        },
+        {
+            "name":"Final_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Final_1.png"
+        },
+        {
+            "name":"Find_My.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Find_My.png"
+        },
+        {
+            "name":"Finland.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Finland.png"
+        },
+        {
+            "name":"Flamingo.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Flamingo.png"
+        },
+        {
+            "name":"ForeignMedia.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ForeignMedia.png"
+        },
+        {
+            "name":"FOX.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/FOX.png"
+        },
+        {
+            "name":"FR.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/FR.png"
+        },
+        {
+            "name":"France.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/France.png"
+        },
+        {
+            "name":"friDay.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/friDay.png"
+        },
+        {
+            "name":"fuboTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/fuboTV.png"
+        },
+        {
+            "name":"Game.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Game.png"
+        },
+        {
+            "name":"Germany.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Germany.png"
+        },
+        {
+            "name":"GIA.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/GIA.png"
+        },
+        {
+            "name":"GitHub.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/GitHub.png"
+        },
+        {
+            "name":"GitHub_Letter.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/GitHub_Letter.png"
+        },
+        {
+            "name":"Global.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Global.png"
+        },
+        {
+            "name":"Google.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Google.png"
+        },
+        {
+            "name":"Google_Drive.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Google_Drive.png"
+        },
+        {
+            "name":"Google_Opinion_Rewards.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Google_Opinion_Rewards.png"
+        },
+        {
+            "name":"Google_Search.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Google_Search.png"
+        },
+        {
+            "name":"HBO.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO.png"
+        },
+        {
+            "name":"HBO_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_1.png"
+        },
+        {
+            "name":"HBO_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_2.png"
+        },
+        {
+            "name":"HBO_GO.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_GO.png"
+        },
+        {
+            "name":"HBO_GO_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_GO_1.png"
+        },
+        {
+            "name":"HBO_GO_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_GO_2.png"
+        },
+        {
+            "name":"HBO_Max.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HBO_Max.png"
+        },
+        {
+            "name":"Heart.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Heart.png"
+        },
+        {
+            "name":"Hijacking.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hijacking.png"
+        },
+        {
+            "name":"HK.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HK.png"
+        },
+        {
+            "name":"HKMTMedia.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/HKMTMedia.png"
+        },
+        {
+            "name":"Hong_Kong.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hong_Kong.png"
+        },
+        {
+            "name":"Hulu.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hulu.png"
+        },
+        {
+            "name":"Hulu_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Hulu_1.png"
+        },
+        {
+            "name":"iCloud.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/iCloud.png"
+        },
+        {
+            "name":"IEPL.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/IEPL.png"
+        },
+        {
+            "name":"IN.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/IN.png"
+        },
+        {
+            "name":"India.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/India.png"
+        },
+        {
+            "name":"Infuse.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Infuse.png"
+        },
+        {
+            "name":"Infuse_7.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Infuse_7.png"
+        },
+        {
+            "name":"Ingress.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Ingress.png"
+        },
+        {
+            "name":"Instagram.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Instagram.png"
+        },
+        {
+            "name":"IPLC.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/IPLC.png"
+        },
+        {
+            "name":"iQIYI&bilibili.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/iQIYI&bilibili.png"
+        },
+        {
+            "name":"iQIYI.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/iQIYI.png"
+        },
+        {
+            "name":"ITV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV.png"
+        },
+        {
+            "name":"ITV_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV_1.png"
+        },
+        {
+            "name":"ITV_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ITV_2.png"
+        },
+        {
+            "name":"Japan.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Japan.png"
+        },
+        {
+            "name":"JOOX.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/JOOX.png"
+        },
+        {
+            "name":"JP.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/JP.png"
+        },
+        {
+            "name":"KKBOX.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/KKBOX.png"
+        },
+        {
+            "name":"KKTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/KKTV.png"
+        },
+        {
+            "name":"Korea.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Korea.png"
+        },
+        {
+            "name":"KR.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/KR.png"
+        },
+        {
+            "name":"Lab.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Lab.png"
+        },
+        {
+            "name":"League_of_Legends.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/League_of_Legends.png"
+        },
+        {
+            "name":"Line.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Line.png"
+        },
+        {
+            "name":"LineTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/LineTV.png"
+        },
+        {
+            "name":"LiTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/LiTV.png"
+        },
+        {
+            "name":"Lock.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Lock.png"
+        },
+        {
+            "name":"LOL.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/LOL.png"
+        },
+        {
+            "name":"Loop.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Loop.png"
+        },
+        {
+            "name":"Luffy.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Luffy.png"
+        },
+        {
+            "name":"Macao.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Macao.png"
+        },
+        {
+            "name":"Magic.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Magic.png"
+        },
+        {
+            "name":"Mail.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Mail.png"
+        },
+        {
+            "name":"Malaysia.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Malaysia.png"
+        },
+        {
+            "name":"Media.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Media.png"
+        },
+        {
+            "name":"Mickey.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Mickey.png"
+        },
+        {
+            "name":"Microsoft.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Microsoft.png"
+        },
+        {
+            "name":"MO.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/MO.png"
+        },
+        {
+            "name":"Mouse.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Mouse.png"
+        },
+        {
+            "name":"Music_Enhance.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Music_Enhance.png"
+        },
+        {
+            "name":"MY.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/MY.png"
+        },
+        {
+            "name":"My5.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/My5.png"
+        },
+        {
+            "name":"myTV_SUPER.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/myTV_SUPER.png"
+        },
+        {
+            "name":"NBA.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/NBA.png"
+        },
+        {
+            "name":"NBC.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/NBC.png"
+        },
+        {
+            "name":"Netease_Music.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netease_Music.png"
+        },
+        {
+            "name":"Netease_Music_Unlock.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netease_Music_Unlock.png"
+        },
+        {
+            "name":"Netflix.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netflix.png"
+        },
+        {
+            "name":"Netflix_Letter.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Netflix_Letter.png"
+        },
+        {
+            "name":"niconico.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/niconico.png"
+        },
+        {
+            "name":"niconico_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/niconico_1.png"
+        },
+        {
+            "name":"niconico_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/niconico_2.png"
+        },
+        {
+            "name":"Notion.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Notion.png"
+        },
+        {
+            "name":"nowe.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/nowe.png"
+        },
+        {
+            "name":"Null_Nation.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Null_Nation.png"
+        },
+        {
+            "name":"Oceania_Map.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Oceania_Map.png"
+        },
+        {
+            "name":"OneDrive.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/OneDrive.png"
+        },
+        {
+            "name":"Ox.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Ox.png"
+        },
+        {
+            "name":"Pandora.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Pandora.png"
+        },
+        {
+            "name":"Paramount.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Paramount.png"
+        },
+        {
+            "name":"PayPal.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PayPal.png"
+        },
+        {
+            "name":"PBS.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PBS.png"
+        },
+        {
+            "name":"Peacock.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Peacock.png"
+        },
+        {
+            "name":"Peacock_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Peacock_1.png"
+        },
+        {
+            "name":"Peacock_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Peacock_2.png"
+        },
+        {
+            "name":"PH.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PH.png"
+        },
+        {
+            "name":"Philippines.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Philippines.png"
+        },
+        {
+            "name":"Pig.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Pig.png"
+        },
+        {
+            "name":"Pornhub.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Pornhub.png"
+        },
+        {
+            "name":"Pornhub_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Pornhub_1.png"
+        },
+        {
+            "name":"Pornhub_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Pornhub_2.png"
+        },
+        {
+            "name":"PostBox.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PostBox.png"
+        },
+        {
+            "name":"PostBox_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/PostBox_1.png"
+        },
+        {
+            "name":"Prime_Video.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Prime_Video.png"
+        },
+        {
+            "name":"Prime_Video_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Prime_Video_1.png"
+        },
+        {
+            "name":"Prime_Video_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Prime_Video_2.png"
+        },
+        {
+            "name":"Proxy.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Proxy.png"
+        },
+        {
+            "name":"Puzzle.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Puzzle.png"
+        },
+        {
+            "name":"QQ.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/QQ.png"
+        },
+        {
+            "name":"Quantumult_X.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Quantumult_X.png"
+        },
+        {
+            "name":"Qure.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Qure.png"
+        },
+        {
+            "name":"Reject.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Reject.png"
+        },
+        {
+            "name":"Rocket.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Rocket.png"
+        },
+        {
+            "name":"Round_Robin.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Round_Robin.png"
+        },
+        {
+            "name":"Round_Robin_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Round_Robin_1.png"
+        },
+        {
+            "name":"RU.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/RU.png"
+        },
+        {
+            "name":"Russia.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Russia.png"
+        },
+        {
+            "name":"Scholar.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Scholar.png"
+        },
+        {
+            "name":"Server.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Server.png"
+        },
+        {
+            "name":"SG.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/SG.png"
+        },
+        {
+            "name":"Singapore.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Singapore.png"
+        },
+        {
+            "name":"Siri.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Siri.png"
+        },
+        {
+            "name":"Sling_TV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Sling_TV.png"
+        },
+        {
+            "name":"Spark.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Spark.png"
+        },
+        {
+            "name":"Speedtest.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Speedtest.png"
+        },
+        {
+            "name":"Spotify.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Spotify.png"
+        },
+        {
+            "name":"SSID.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/SSID.png"
+        },
+        {
+            "name":"SSID_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/SSID_1.png"
+        },
+        {
+            "name":"Stack.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Stack.png"
+        },
+        {
+            "name":"Star.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Star.png"
+        },
+        {
+            "name":"Static.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Static.png"
+        },
+        {
+            "name":"Static_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Static_1.png"
+        },
+        {
+            "name":"Steam.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Steam.png"
+        },
+        {
+            "name":"Streaming.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Streaming.png"
+        },
+        {
+            "name":"StreamingCN.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/StreamingCN.png"
+        },
+        {
+            "name":"StreamingSE.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/StreamingSE.png"
+        },
+        {
+            "name":"TAG.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TAG.png"
+        },
+        {
+            "name":"Taiwan.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Taiwan.png"
+        },
+        {
+            "name":"Taobao.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Taobao.png"
+        },
+        {
+            "name":"Telegram.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Telegram.png"
+        },
+        {
+            "name":"Telegram_X.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Telegram_X.png"
+        },
+        {
+            "name":"TestFlight.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TestFlight.png"
+        },
+        {
+            "name":"TestFlight_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TestFlight_1.png"
+        },
+        {
+            "name":"TestFlight_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TestFlight_2.png"
+        },
+        {
+            "name":"TH.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TH.png"
+        },
+        {
+            "name":"Thailand.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Thailand.png"
+        },
+        {
+            "name":"TIDAL.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TIDAL.png"
+        },
+        {
+            "name":"TIDAL_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TIDAL_1.png"
+        },
+        {
+            "name":"TIDAL_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TIDAL_2.png"
+        },
+        {
+            "name":"TikTok.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TikTok.png"
+        },
+        {
+            "name":"TikTok_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TikTok_1.png"
+        },
+        {
+            "name":"TikTok_2.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TikTok_2.png"
+        },
+        {
+            "name":"TR.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TR.png"
+        },
+        {
+            "name":"Tubi.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Tubi.png"
+        },
+        {
+            "name":"Turkey.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Turkey.png"
+        },
+        {
+            "name":"TVB.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TVB.png"
+        },
+        {
+            "name":"TW.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/TW.png"
+        },
+        {
+            "name":"Twitch.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Twitch.png"
+        },
+        {
+            "name":"Twitter.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Twitter.png"
+        },
+        {
+            "name":"UK.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/UK.png"
+        },
+        {
+            "name":"ULB.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ULB.png"
+        },
+        {
+            "name":"ULB_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ULB_1.png"
+        },
+        {
+            "name":"UN.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/UN.png"
+        },
+        {
+            "name":"United_Kingdom.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/United_Kingdom.png"
+        },
+        {
+            "name":"United_Nations.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/United_Nations.png"
+        },
+        {
+            "name":"United_States.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/United_States.png"
+        },
+        {
+            "name":"United_States_Map.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/United_States_Map.png"
+        },
+        {
+            "name":"Unlock.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Unlock.png"
+        },
+        {
+            "name":"US.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/US.png"
+        },
+        {
+            "name":"Vimeo.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Vimeo.png"
+        },
+        {
+            "name":"VIP.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/VIP.png"
+        },
+        {
+            "name":"Viu.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Viu.png"
+        },
+        {
+            "name":"ViuTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/ViuTV.png"
+        },
+        {
+            "name":"Want_Want.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Want_Want.png"
+        },
+        {
+            "name":"Want_Want_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Want_Want_1.png"
+        },
+        {
+            "name":"WeChat.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/WeChat.png"
+        },
+        {
+            "name":"WeTV.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/WeTV.png"
+        },
+        {
+            "name":"WeTV_Letter.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/WeTV_Letter.png"
+        },
+        {
+            "name":"WiFi.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/WiFi.png"
+        },
+        {
+            "name":"Windows.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Windows.png"
+        },
+        {
+            "name":"Windows_11.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Windows_11.png"
+        },
+        {
+            "name":"World_Map.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/World_Map.png"
+        },
+        {
+            "name":"Yahoo.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Yahoo.png"
+        },
+        {
+            "name":"Yahoo_1.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/Yahoo_1.png"
+        },
+        {
+            "name":"YouTube.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/YouTube.png"
+        },
+        {
+            "name":"YouTube_Letter.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/YouTube_Letter.png"
+        },
+        {
+            "name":"YouTube_Music.png",
+            "url":"https:\/\/hub.nange.cn\/QuantumultX\/iColor\/YouTube_Music.png"
+        }
     ]
 }
