@@ -56,7 +56,7 @@ AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
 URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 
 # > IPIP
-URL-REGEX,^https?:\/\/cdn\.ipip\.net\/loveapp\/ipip\/tools\/theme\/partner\/?,REJECT
+URL-REGEX,^https?:\/\/cdn\.ipip\.net\/loveapp\/ipip\/tools\/theme\/partner\/?,REJECT-TINYGIF
 
 # > 人人视频 去广告
 AND,((USER-AGENT,PUClient*), (NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
