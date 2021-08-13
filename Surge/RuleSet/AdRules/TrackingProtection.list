@@ -4250,6 +4250,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.ttmetrics.jcpenney.com
 .api.iterative.ly
 .logger.goeuro.com
 .t.wizards.com
