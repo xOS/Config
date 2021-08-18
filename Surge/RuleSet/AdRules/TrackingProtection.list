@@ -3,6 +3,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.log.gobankingrates.com
+.v*.sitecounter.site
 .macromill.com
 .fh-main.measure.agilemeasure.com
 .analytics.cdn.live
@@ -487,7 +489,6 @@
 .techlab-cdn.com
 .realytics.net
 .eue.d-teknoloji.com.tr
-.track.thevtk.com
 .track.mp3vizor.com
 .track.mp3bars.com
 .hs-scripts.com
@@ -4254,6 +4255,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.d2r1yp2w7bby2u.cloudfront.net
+.csm.cxpublic.com
 .evt.houzz.com
 .ttmetrics.jcpenney.com
 .api.iterative.ly
@@ -4289,7 +4292,7 @@
 .track.searchiq.co
 .broker.datazoom.io
 .dot.texastribune.org
-.ping.hashnode.com
+.analytics.hashnode.com
 .log.vava.com
 .beacon.samsclub.com
 .counter.theconversation.com
