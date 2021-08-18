@@ -39,6 +39,10 @@ DOMAIN-KEYWORD,maxmind
 DOMAIN-SUFFIX,maxmind.com
 DOMAIN-SUFFIX,mmapiws.com
 
+# > SSH
+PROCESS-NAME,RoyalTSX
+PROCESS-NAME,Termius
+
 # > Proxy
 PROCESS-NAME,v2ray
 PROCESS-NAME,ss-local
