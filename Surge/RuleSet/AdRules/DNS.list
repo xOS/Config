@@ -1,3 +1,4 @@
+.scripts.static-od.com
 .thevtk.com
 .cutestpotting.com
 .juwymapy.xyz
@@ -18162,6 +18163,10 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.facil-iti.com
+.api.all-internet.jp
+.p-analytics.life
+.snowplow-collector-*.amazonaws.com
 .analytics.getshogun.com
 .log.gobankingrates.com
 .v*.sitecounter.site
@@ -22209,6 +22214,9 @@
 .um-public-panel-prod.s3.amazonaws.com
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
+.zion-telemetry.api.cnn.io
+.collector.cdp.cnn.com
+.collector-dev.cdp-dev.cnn.com
 .rps-uk.rockpapershotgun.com
 .d2r1yp2w7bby2u.cloudfront.net
 .csm.cxpublic.com
@@ -23844,6 +23852,7 @@
 .adstats.tencentmusic.com
 .monitor.music.qq.com
 .stat.y.qq.com
+.metrics.sp0n.io
 .liveme-sensors-collect2-*.amazonaws.com
 .online-metrix.imars.cloud
 .snowplow-collector.apartmentlist.io
@@ -24680,7 +24689,6 @@
 .outbid.io
 .owlanalytics.io
 .ox-bio.com
-.p-analytics.life
 .p2r14.com
 .pagesense.io
 .parametre.online
@@ -25476,6 +25484,7 @@
 .confiant-integrations.global.ssl.fastly.net
 .control.cityofcairns.com
 .conversions.genieventures.co.uk
+.cookie-guard-erdee.ey.r.appspot.com
 .cookies.livepartners.com
 .cookiex.ngd.yahoo.com
 .count.carrierzone.com
@@ -26171,7 +26180,6 @@
 .early-birds.fr
 .early-birds.io
 .ew3.io
-.facil-iti.com
 .galaxiemedia.fr
 .geovisite.ovh
 .getjad.io
@@ -26895,6 +26903,7 @@
 .ver-pelis.net
 .xclk-integracion.com
 .yestorrents.org
+.ljknem.com
 .sandelf.com
 .fooluminou.review
 .rzqdqw.com
@@ -31340,6 +31349,7 @@
 .adimp.excite.co.jp
 .adimpkwd.excite.co.jp
 .adingo.jp.eimg.jp
+.adcent.jp
 .pokoran.com
 .world-ad.jp
 .waqool.com
@@ -32563,6 +32573,7 @@
 .ads-backend.nhadatmoi.net
 .ads-cdn.fptplay.net
 .ads.1thegioi.vn
+.ads.247phim.com
 .ads.568play.vn
 .ads.autonet.com.vn
 .ads.baoangiang.com.vn
@@ -33110,6 +33121,7 @@
 .one88.vip
 .one88.vn
 .oneday88.com
+.oppa888.com
 .oppa88888888.com
 .oxbet.club
 .oxbet.com
@@ -36000,11 +36012,6 @@
 .runkao.net
 .stunninglover.com
 .watakaw133.xyz
-.ygtt.mobi
-.austinareahomeschoolers.com
-.taiquandao0.cn
-.fugufeimaotui.cn
-.freshmate.com.cn
 .01tn.cn
 .027whht.com
 .0511qsfhknvz.xyz
@@ -36236,6 +36243,7 @@
 .arkn81.com
 .askfsh.cn
 .atomicfile.cn
+.austinareahomeschoolers.com
 .autobedo.com.cn
 .awtks.com
 .awyys.com
@@ -36247,6 +36255,7 @@
 .babalink.top
 .bahu.xyz
 .baidu.bxwx3.org
+.baidu2img.com
 .bailequan.net.cn
 .bairentou.com.cn
 .baitaoidc.com
@@ -36382,6 +36391,7 @@
 .chinazhaoye.com
 .chkwwg.cn
 .chongnikeji.com
+.chuang-yi.com.cn
 .chuangjulm.cn
 .chuanjiae.cn
 .churchatsouthcreek.com
@@ -36491,6 +36501,7 @@
 .dfjbgfldsjdsnldksjalld1235.cn
 .dfseafood.com
 .dgaoz.com
+.dgbaozhuang.cn
 .dglscm.cn
 .dgxzwj.com
 .dhdgkj.com
@@ -36618,12 +36629,14 @@
 .foumm.com
 .fqsgj.com
 .fqzds.com
+.freshmate.com.cn
 .friend17.net
 .fskj100.cn
 .fstaw.com
 .fsxzbs.cn
 .fszhxd.com
 .fuchuqu.cn
+.fugufeimaotui.cn
 .fuhaimuye.cn
 .fuligrs.cn
 .funnyweb.fun
@@ -36824,6 +36837,7 @@
 .htdzwy.com
 .htfmbt.com
 .htjsk.com
+.htvxjl.top
 .huangyeqing.cn
 .huayancn.cn
 .huayange.com
@@ -37266,6 +37280,7 @@
 .nkzjc.cn
 .nkzker.cn
 .nlyjs2015.com
+.nmctm.cn
 .nmlhkj.com
 .nmqdnykj.com
 .nmrlx.cn
@@ -37362,6 +37377,7 @@
 .qgydhjh.cn
 .qhdmqzc.cn
 .qhdop.com
+.qhdymdc.com
 .qhgbkr.cn
 .qhruisen.cn
 .qhweisen.cn
@@ -37586,6 +37602,7 @@
 .tabyee.cn
 .tahui.club
 .taikangshenyuan.com
+.taiquandao0.cn
 .taishijian.com
 .tajxgs.com
 .tangequan.co
@@ -37643,6 +37660,7 @@
 .toumppk.cn
 .tpcdn.top
 .tpool.cn
+.tqlyjz.cn
 .travel-together.cn
 .trhccn.cn
 .trpsm.xyz
@@ -37920,6 +37938,7 @@
 .yg10x.cn
 .ygblogtag.cn
 .ygnoqu.cn
+.ygtt.mobi
 .yhaizy.cn
 .yhdtns.com
 .yicuntian.cn
