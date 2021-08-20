@@ -43,6 +43,9 @@ DOMAIN-SUFFIX,mmapiws.com
 PROCESS-NAME,RoyalTSX
 PROCESS-NAME,Termius
 
+# > TeamViewer
+PROCESS-NAME,TeamViewer
+
 # > Proxy
 PROCESS-NAME,v2ray
 PROCESS-NAME,ss-local
