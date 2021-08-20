@@ -3,6 +3,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.datasign.co
 .analytics.daasrv.net
 .coll.v00yvd.xyz
 .analytics.fatmedia.io
@@ -4263,6 +4264,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.events.niit-mts.com
+.analytics.tripoto.com
 .zion-telemetry.api.cnn.io
 .collector.cdp.cnn.com
 .collector-dev.cdp-dev.cnn.com
