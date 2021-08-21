@@ -4264,6 +4264,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.track.lobi.co
 .events.niit-mts.com
 .analytics.tripoto.com
 .zion-telemetry.api.cnn.io
