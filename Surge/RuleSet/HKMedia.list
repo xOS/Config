@@ -130,7 +130,7 @@ DOMAIN,gamer-cds.cdn.hinet.net
 DOMAIN,gamer2-cds.cdn.hinet.net
 
 # > 支付宝
-DOMAIN-SUFFIX,alipay.com
+#DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,alipay.hk
 
 # > 八达通
