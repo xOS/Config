@@ -16,7 +16,7 @@
 
 最新推荐 = type=http-response,pattern=^https://m?api\.weibo\.c(n|om)/2/(statuses/unread_hot_timeline)|(statuses/friends/timeline)|(video/tiny_stream_video_list)\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Status.js
 
-发现热门 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(cardlist)|(searchall)|(page)\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/FindHot.js
+#发现热门 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(cardlist)|(searchall)|(page)\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/FindHot.js
 
 创作者广告共享计划 = type=http-response,pattern=^https://m?api\.weibo\.c(n|om)/2/statuses/extend\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Extend.js
 
