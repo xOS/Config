@@ -709,6 +709,7 @@ DOMAIN,nsclick.baidu.com
 DOMAIN-SUFFIX,mobads.baidu.com
 
 # > 百度网盘
+DOMAIN-SUFFIX,update.pan.baidu.com
 URL-REGEX,^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx
 URL-REGEX,^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry
 URL-REGEX,^https?+:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/
