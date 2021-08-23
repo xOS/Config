@@ -182,6 +182,7 @@ URL-REGEX,^https?:\/\/mbd\.baidu\.com\/tcbox,REJECT
 URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT
 
 # > 百度网盘
+URL-REGEX,^https?:\/\/update\.pan\.baidu\.com\/statistics,REJECT
 URL-REGEX,^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx,REJECT
 URL-REGEX,^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry,REJECT
 URL-REGEX,^https?+:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/,REJECT
@@ -546,7 +547,6 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/tqt\.weibo\.cn\/api\/advert\/ - reject
 ^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=(tqt_sdkad|tqtad) - reject
 ^https?:\/\/tracker-download\.oss-cn-beijing\.aliyuncs\.com\/SIMPlus\/ad_ - reject
-^https?:\/\/update\.pan\.baidu\.com\/statistics - reject
 ^https?:\/\/ups\.youku\.com\/.*?needad=1& - reject
 ^https?:\/\/v\.cctv\.com\/.+?850 - reject
 ^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ - reject
