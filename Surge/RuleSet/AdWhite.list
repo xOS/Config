@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,adservice.google.com
 
 # > 字节跳动
 DOMAIN-SUFFIX,ib.snssdk.com
+DOMAIN-SUFFIX,pstatp.com
 
 # > 网页云音乐
 DOMAIN-SUFFIX,dun.163yun.com
