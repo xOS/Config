@@ -1,12 +1,21 @@
 # > Telegram
 # https://core.telegram.org/resources/cidr.txt
+DOMAIN-KEYWORD,nicegram
 DOMAIN-KEYWORD,telegram
+DOMAIN-SUFFIX,comments.app
+DOMAIN-SUFFIX,graph.org
+DOMAIN-SUFFIX,stel.com
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telega.one
 DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.dog
 DOMAIN-SUFFIX,telegram.me
 DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegram.space
+DOMAIN-SUFFIX,telegramdownload.com
 DOMAIN-SUFFIX,telesco.pe
+DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 IP-CIDR,109.239.140.0/24,no-resolve
 IP-CIDR,149.154.160.0/20,no-resolve
