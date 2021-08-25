@@ -3,6 +3,12 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.ct2.kyarame.com
+.x8.cho-chin.com
+.sibulla.com
+.logs*.smithsonian.museum
+.pixel.convertize.io
+.a.run.app
 .uz-analysis.akamaized.net
 .kissmetrics.io
 .api.rudderlabs.com
@@ -4271,6 +4277,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.stats.ficbook.net
+.s.beop.io
 .track.lobi.co
 .events.niit-mts.com
 .analytics.tripoto.com
@@ -5812,6 +5820,8 @@
 .analytics.vadio.com
 .analytics.xyscdn.com
 .app.adjust.io
+.app.adjust.world
+.app.adjust.net.in
 .b-aws.aol.com
 .b-aws.huffingtonpost.com
 .b.huffingtonpost.com
@@ -17035,7 +17045,6 @@
 .comet.yahoo.com
 .countess.twitch.tv
 .dot-stat.radikal.ru
-.g.msn.com
 .giga-abs.de
 .log.liverail.com
 .logger.rm.uol.com.br
