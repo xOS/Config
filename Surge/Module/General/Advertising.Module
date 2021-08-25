@@ -24,6 +24,8 @@ URL-REGEX,^https?:\/\/.+\/eapi\/socialsquare\/?,REJECT
 # > Instagram
 DOMAIN,graph.facebook.com,REJECT
 DOMAIN,z-p42-chat-e2ee-ig.facebook.com,REJECT
+URL-REGEX,^https?:\/\/web\.facebook\.com\/messaging\/lightspeed\/request$,REJECT
+URL-REGEX,^https?:\/\/portal\.fb\.com\/mobile\/status\.php$,REJECT
 URL-REGEX,^https?:\/\/(i|www|graph)\.(instagram|facebook)\.(net|com)\/logging_client_events,REJECT
 URL-REGEX,^https?:\/\/(i|www|graph)\.(instagram|facebook)\.(net|com)\/ajax\/bz,REJECT
 URL-REGEX,^https?:\/\/(i|www|graph)\.(instagram|facebook)\.(net|com)\/logging\/falco,REJECT
