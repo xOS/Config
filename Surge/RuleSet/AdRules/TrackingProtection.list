@@ -3,12 +3,16 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.collector-*.tvsquared.com
+.collectorj.tvsquared.com
+.pixelapi-*.cs.mysamba.tv
+.adgrx.com
+.etop.ro
 .ct2.kyarame.com
 .x8.cho-chin.com
 .sibulla.com
 .logs*.smithsonian.museum
 .pixel.convertize.io
-.a.run.app
 .uz-analysis.akamaized.net
 .kissmetrics.io
 .api.rudderlabs.com
