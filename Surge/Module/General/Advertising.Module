@@ -22,7 +22,7 @@ URL-REGEX,^https?:\/\/.+\/eapi\/privilege\/song\/?,REJECT
 URL-REGEX,^https?:\/\/.+\/eapi\/socialsquare\/?,REJECT
 
 # > Instagram
-DOMAIN,graph.facebook.com,REJECT
+#DOMAIN,graph.facebook.com,REJECT
 DOMAIN,z-p42-chat-e2ee-ig.facebook.com,REJECT
 URL-REGEX,^https?:\/\/web\.facebook\.com\/messaging\/lightspeed\/request$,REJECT
 URL-REGEX,^https?:\/\/portal\.fb\.com\/mobile\/status\.php$,REJECT
