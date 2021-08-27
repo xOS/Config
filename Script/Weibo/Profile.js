@@ -1,8 +1,8 @@
 var obj = JSON.parse($response.body); 
 obj['moreInfo']['noMore'] = true;
-items = obj['items'];
-delete items[3];
-recommend = items[5]['items'];
-recommend.splice(3);
-items.splice(8);
+item = obj['items'];
+delete item[3];
+item.splice(8);
+items = item[5];
+if(items['items'][3]) items['items'].splice(3);
 $done({body: JSON.stringify(obj)});
