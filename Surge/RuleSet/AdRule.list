@@ -231,6 +231,8 @@
 .metrics.client-eng.a2z.com
 .analytics.console.aws.a2z.com
 .notify.bugsnag.appstore.a2z.com
+.global.telemetry.insights.video.a2z.com
+.us-east-1.telemetry.insights.video.a2z.com
 .segment.a3cloud.net
 .a8.net
 .smetrics.aa.com
@@ -839,6 +841,7 @@
 .roundrobin-log.agoop.net
 .aimatch.com
 .airpush.com
+.pop-iad-2.cf.dash.row.aiv-cdn.net
 .s3-iad-2.cf.dash.row.aiv-cdn.net
 .s3-iad-ww.cf.videorolls.row.aiv-cdn.net
 .s3.ll.videorolls.row.aiv-cdn.net
@@ -1525,6 +1528,7 @@
 .app.cision.com
 .prapi.cision.com
 .www.clarity.ms
+.events.claspws.tv
 .i.clean.gg
 .net.cleverjp.com
 .report.clevernt.com
@@ -1758,6 +1762,8 @@
 .compass-events.deliverimp.com
 .compass-v2.deliverimp.com
 .deloton.com
+.balanced-collect.deltadna.net
+.balanced-engage.deltadna.net
 .collect10665dd4kq.deltadna.net
 .collect10791rllrc.deltadna.net
 .collect10854wrdcr.deltadna.net
@@ -1773,6 +1779,7 @@
 .collect3515gvrnr.deltadna.net
 .collect4739mgndm.deltadna.net
 .collect5081wrdch.deltadna.net
+.collect82532756ggplc.deltadna.net
 .engage10665dd4kq.deltadna.net
 .engage10791rllrc.deltadna.net
 .engage10854wrdcr.deltadna.net
@@ -1785,6 +1792,7 @@
 .engage17070dvntr.deltadna.net
 .engage3515gvrnr.deltadna.net
 .engage5081wrdch.deltadna.net
+.engage82532756ggplc.deltadna.net
 .engage8829thscr.deltadna.net
 .deltago.com
 .api.demandbase.com
@@ -2080,6 +2088,7 @@
 .ssl.exelator.com
 .vdna.exelator.com
 .smetrics1.experian.com
+.extend.tv
 .extreme-ip-lookup.com
 .beacons.extremereach.io
 .beacons2.extremereach.io
@@ -2141,6 +2150,8 @@
 .sdk.follow-apps.com
 .sor-sdk.follow-apps.com
 .king-contenido-prod.secure2.footprint.net
+.fuse.forbes.com
+.geolocation.forbes.com
 .analytics.foresee.com
 .bd-nplb01.foresee.com
 .bd-nplb02.foresee.com
@@ -2642,7 +2653,7 @@
 .sin2.ipromote.com
 .api.ipstack.com
 .iqzone.com
-.ovp.iris.tv
+.iris.tv
 .iam-agof-app.irquest.com
 .irr.ru
 .irs01.com
@@ -2883,6 +2894,8 @@
 .scadxrtb.lfstmedia.com
 .tracking.lg.com
 .us.ibs.lgappstv.com
+.us.lgtvsdp.com
+.us.rdx2.lgtvsdp.com
 .b-code.liadm.com
 .snap.licdn.com
 .licensebuttons.net
@@ -3004,6 +3017,7 @@
 .c.lytics.io
 .m1-shop.ru
 .ingest.m2appmonitor.com
+.macromill.com
 .metrics.macys.net
 .madadsmedia.com
 .api.madkudu.com
@@ -4020,6 +4034,7 @@
 .cdn.rebel.ai
 .recreativ.ru
 .events.redditmedia.com
+.redfast.com
 .redintelligence.net
 .go.redirectingat.com
 .api.redshell.io
@@ -4207,6 +4222,7 @@
 .server.seadform.net
 .track.seadform.net
 .analytics.seattleclouds.com
+.secondstreetapp.com
 .agoda.securedtouch.com
 .hub.securedtouch.com
 .static.securedtouch.com
@@ -4522,6 +4538,7 @@
 .supersonicads.com
 .ads.supplyframe.com
 .search.supplyframe.com
+.survata.com
 .api.survicate.com
 .survey.survicate.com
 .telemetry.api.swiftkey.com
@@ -4711,6 +4728,7 @@
 .ads.themoneytizer.com
 .theoremreach.com
 .analytics-tracker.thescore.com
+.thetimmedia.site
 .thetrafficstat.net
 .mopub-server.thinknearhub.com
 .openx-server.thinknearhub.com
@@ -4788,6 +4806,8 @@
 .ads-router-noneu.truecaller.com
 .ads5-noneu.truecaller.com
 .pushid-noneu.truecaller.com
+.truex.com
+.truoptik.com
 .choices.truste.com
 .sofia.trustx.org
 .cdn.tsyndicate.com
@@ -4996,10 +5016,7 @@
 .wserver.vidazoo.com
 .ads.videoadex.com
 .videoamp.com
-.ads-secure.videohub.tv
-.adserver.videohub.tv
-.l0-secure.videohub.tv
-.nginx13.iad1.videohub.tv
+.videohub.tv
 .sdkcdn.videojj.com
 .kinja-com.videoplayerhub.com
 .pmc-com.videoplayerhub.com
@@ -5296,6 +5313,7 @@
 .yomedia.vn
 .rg.yottos.com
 .sdk.youappi.com
+.youborafds01.com
 .infinity-c4.youboranqs01.com
 .dsp.youdao.com
 .youmi.net
@@ -6067,7 +6085,6 @@
 .adzmarket.net
 .loxitdat.com
 .betklefkior.com
-.dramaco.xyz
 .xmorex.com
 .scrapebust.com
 .beach-trk.com
@@ -11853,6 +11870,7 @@
 .dqulcczd.com
 .dragonsniffcashmere.com
 .drako2sha8de09.com
+.dramaco.xyz
 .drapefabric.com
 .drasticdifferentfoetus.com
 .draulinehandon.info
@@ -12415,7 +12433,6 @@
 .expresentc.top
 .expresswebtraffic.com
 .exrtbsrv.com
-.extend.tv
 .exterminatetooth.com
 .extra33.com
 .extrafastip.xyz
@@ -15163,6 +15180,7 @@
 .mopedisods.com
 .mopnixhem.com
 .mopsaups.net
+.mopsilysa.com
 .mopushy.com
 .morbitempus.com
 .moregamers.com
@@ -15379,6 +15397,7 @@
 .neevateb.com
 .neewoapi.com
 .neezausu.net
+.nefijapu.com
 .negativescarcelyrooms.com
 .negolist.com
 .negyuk.com
@@ -18701,6 +18720,7 @@
 .uiwaqbvvhz.com
 .uixsuffkzkhbj.com
 .ujccccb.com
+.ujgjyjltunl.com
 .ujqcbxcjkc.com
 .ujuqvalvvvof.com
 .ukcomparends.pro
@@ -19207,6 +19227,7 @@
 .weptpremisedefined.com
 .weredadmitt.club
 .wergad.com
+.weshuhori.com
 .westerdayeol.site
 .wethornsprecede.com
 .wfawhfxe.com
@@ -19548,6 +19569,7 @@
 .xts7fgss.com
 .xu5ctufltn.com
 .xubob.com
+.xuhycaphe.com
 .xuossk3tu6hb.com
 .xuteketa.com
 .xuveiai.ru
@@ -20769,6 +20791,7 @@
 .cleafs.com
 .cleverads.vn
 .cleverwebserver.com
+.click.scour.com
 .clickable.com
 .clickad.pl
 .clickadilla.com
@@ -22285,7 +22308,6 @@
 .trmit.com
 .trombocrack.com
 .truefilen32.com
-.truex.com
 .trustaffs.com
 .trustx.org
 .trustyfine.com
@@ -24899,6 +24921,7 @@
 .onfocus.io
 .secretmedia.com
 .6angebot.ch
+.adcleanerpage.com
 .adfreevision.com
 .adrotator.se
 .adserving.unibet.com
@@ -24906,9 +24929,7 @@
 .amazing-dating.com
 .canyoublockit.com
 .cdn.optmd.com
-.click.junmediadirect.com
-.click.scour.com
-.ctcautobody.com
+.cyberprivacy.pro
 .error-alerts.com
 .evanetwork.com
 .fastclick.net
@@ -24916,21 +24937,26 @@
 .firstload.de
 .fsoft4down.com
 .get-express-vpn.online
-.get.movieboxsearch.com
+.getflowads.net
 .insideoftech.com
+.iyfsearch.com
 .laborates.com
 .lewis.kingko.xyz
-.lp.titanpoker.com
+.mackeeperaffiliates.com
 .mydiethub.com
+.paid.outbrain.com
 .profitsurvey365.live
+.promo.stormgain.com
 .record.affiliatelounge.com
 .saucepanstream.com
 .serve.prestigecasino.com
 .serve.williamhillcasino.com
 .skipvideoads.com
-.theonlygames.com
-.track.mypcbackup.com
+.smartblocker.org
+.torrent-protection.com
+.vid-adblocker.com
 .vpnfortorrents.best
+.vpnfortorrents.org
 .whataboutnews.com
 .aff-jp.dxlive.com
 .affiliate.dtiserv.com
@@ -30991,13 +31017,11 @@
 .tns.simba.taobao.com
 .cdnny.com
 .adblock.sina.cn
-.jingyuan0820.com
-.ccjudian.com
-.whycywhivu.pro
-.hyhfimgg.com
 .3338651.com
+.978655.online
 .alivelivevideos.com
 .bllzgqbyp.com
+.ccjudian.com
 .cjgcedu.com
 .cl-xny.cn
 .coinever.net
@@ -31009,8 +31033,10 @@
 .henanzhulongjx.com
 .hmong-miaojiuyi.com
 .houbaotech.cn
+.hyhfimgg.com
 .hylmxing.com
 .imnvgma.cn
+.jingyuan0820.com
 .kzxsrxf.cn
 .lctcw.top
 .lehutv6.com
@@ -31028,6 +31054,7 @@
 .simpasa.cn
 .sportsdream.top
 .tumeite.cn
+.whycywhivu.pro
 .xmhaorizi.cn
 .99smsf.com
 .1.ccutu.com
@@ -31039,25 +31066,12 @@
 .img.0279.net
 .udiab1.jianshu.com
 .z1.cwbaike.com
-.jianly.top
-.300segundos.com
-.yujianli.top
-.hyhfsj.com
-.lgygy.cn
-.2f0jlqc.cn
-.mnszpr.cn
-.zhylm.cn
-.shihualandun.cn
-.rjakwq.cn
-.jsboom.cn
-.ysclub.top
-.a8cd.com
-.v00yvd.xyz
-.xpst0kx.cn
-.jiese.fun
 .0ulfpx.cn
+.2f0jlqc.cn
+.300segundos.com
 .3dshoppingwall.com
 .591huishou.cn
+.a8cd.com
 .ahgjtc.com
 .alwonroad.club
 .aroudy.cn
@@ -31076,6 +31090,7 @@
 .chuang-yi.com.cn
 .chy365.cn
 .cqlijie.cn
+.cqxykj.com.cn
 .d3iih5w7xp5hdg.cloudfront.net
 .damaoli.com
 .damow.cn
@@ -31107,8 +31122,13 @@
 .huojua.com
 .huojua1.com
 .huojub.com
+.hyhfsj.com
 .hyos.store
+.iagc.com.cn
 .idevoa.cn
+.jianly.top
+.jiese.fun
+.jsboom.cn
 .jygtlqh.cn
 .kenxq.com
 .ketianguanye.com
@@ -31118,6 +31138,7 @@
 .le258.cn
 .lecuiwangluo.com
 .leslieyu.com.cn
+.lgygy.cn
 .likefly.com.cn
 .limessy.xyz
 .liwq.club
@@ -31128,6 +31149,7 @@
 .lygrydwz.net.cn
 .milan100.cn
 .mingcidianzi162.cn
+.mnszpr.cn
 .njzhlaw.cn
 .nmctm.cn
 .notepade.top
@@ -31140,7 +31162,9 @@
 .qhdymdc.com
 .r5rl5r.cn
 .rioufn.cn
+.rjakwq.cn
 .shenbianlaoshi.com
+.shihualandun.cn
 .sinotealife.cn
 .taidi.net.cn
 .taiquandao0.cn
@@ -31151,6 +31175,7 @@
 .tuan512.cn
 .tutese.com.cn
 .v-vlog.cn
+.v00yvd.xyz
 .vb7ojn.cn
 .vpbbc.cn
 .wechatweb.com.cn
@@ -31161,16 +31186,19 @@
 .wytsoft.xyz
 .xiayk.cn
 .xingzhu.top
+.xpst0kx.cn
 .yanglangkk.cn
 .ygtt.mobi
+.ysclub.top
+.yujianli.top
 .zchange.xyz
 .zd2020.top
 .zhengyuanguojimc.com
+.zhylm.cn
 .zncat.cn
 .zzqsmjj.top
 .muer.cdn-baidu.fs-sywh.com
 .lockerdome.com
-.setupad.com
 .xjnwqdospderqtk.ru
 .nfiuerwtftasnuk.com
 .qoisocrldvnesni.ru
@@ -31502,6 +31530,7 @@
 .jmp9.com
 .justad.mobi
 .krutilka.net
+.l0-secure.videohub.tv
 .l3op.info
 .leadboltads.net
 .leanplum.com
@@ -32092,7 +32121,6 @@
 .id5-sync.com
 .simonsignal.com
 .analytics.vodgc.net
-.youborafds01.com
 .statsy.net
 .mc.admetrica.ru
 .shopnetic.com
@@ -37114,7 +37142,6 @@
 .analytics.mobilegamestats.com
 .p.statp.com
 .api.imqtyik.com
-.events.claspws.tv
 .tracking-receiver.prod-general.stocard-backend.com
 .metrics.happycolor.app
 .digianalytics.airtel.in
@@ -37977,7 +38004,6 @@
 .trs.cn
 .trtl.ws
 .truconversion.com
-.truoptik.com
 .trysera.com
 .tuinfra.com
 .tunnl.com
@@ -45898,6 +45924,12 @@
 .tools.runetki.co
 .a4.overclockers.ua
 .novunu.football-plyus.net
+.click.junmediadirect.com
+.ctcautobody.com
+.get.movieboxsearch.com
+.lp.titanpoker.com
+.theonlygames.com
+.track.mypcbackup.com
 .7eer.net
 .agilecrm.com
 .airbrake.io
@@ -46001,7 +46033,6 @@
 .sjv.io
 .tanx.com
 .enter-system.com
-.macromill.com
 .msgs.jp
 .rtoaster.jp
 .stats.lt
@@ -46226,7 +46257,6 @@
 .gc.newsweek.com
 .geo.gfycat.com
 .geoip.hmageo.com
-.geolocation.forbes.com
 .glassmoni.researchgate.net
 .gmonitor.aliimg.com
 .gnar.grammarly.com
@@ -46364,7 +46394,6 @@
 .consent.api.osano.com
 .consent.inm.ie
 .d.sourcepoint.capitalfm.com
-.fuse.forbes.com
 .gamesradar-gb.gamesradar.com
 .h-bid.com
 .isgprivacy.cbsi.com
