@@ -3,6 +3,8 @@ obj['moreInfo']['noMore'] = true;
 item = obj['items'];
 delete item[3];
 item.splice(8);
+items4 = item[4];
+if(items4['items'][3]) items4['items'].splice(3);
 items = item[5];
 if(items['items'][3]) items['items'].splice(3);
 $done({body: JSON.stringify(obj)});
