@@ -4,6 +4,8 @@
 .xlog.snssdk.com
 .log.snssdk.com
 .adfstat.yandex.ru
+.clicks.h.hepsiburada.com
+.spgo.io
 .rcp.evolok.net
 .pd.trysera.com
 .ct2.sarashi.com
@@ -4288,6 +4290,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.log.strm.yandex.ru
 .stats.ficbook.net
 .s.beop.io
 .track.lobi.co
@@ -17006,6 +17009,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.mgs123.com
 .api.stats.promoapka.pl
 .metrics.sp0n.io
 .liveme-sensors-collect2-*.amazonaws.com
