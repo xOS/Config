@@ -1359,7 +1359,6 @@
 .ailoganalyticsportal-eus.cloudapp.net
 .bi-analytics.cloudapp.net
 .bkt.clouddn.com
-.tls10.newrelic.com.cdn.cloudflare.net
 .metrics.cloudflarebolt.com
 .static.cloudflareinsights.com
 .us-central1-adaptive-growth.cloudfunctions.net
@@ -1750,7 +1749,6 @@
 .evidon.com.edgekey.net
 .exacttarget.com.edgekey.net
 .flashtalking.com.edgekey.net
-.go-mpulse.net.edgekey.net
 .innovid.com.edgekey.net
 .insightexpressai.com.edgekey.net
 .marketo.com.edgekey.net
@@ -1900,7 +1898,6 @@
 .fam-ad.com
 .fastapi.net
 .mparticle.map.fastly.net
-.newrelic.map.fastly.net
 .confiant-integrations.global.ssl.fastly.net
 .sonar-iad.xx.fbcdn.net
 .aimg.fc2.com
@@ -2061,7 +2058,6 @@
 .personalization.centech.glulive.com
 .revid.centech.glulive.com
 .gmossp-sp.jp
-.go-mpulse.net
 .log.go.com
 .sw88.go.com
 .tredir.go.com
@@ -3348,7 +3344,6 @@
 .app.networkad.net
 .networld.hk
 .wpm.neustar.biz
-.newrelic.com
 .www.newsbreak.com
 .us.tags.newscgp.com
 .nex8.net
