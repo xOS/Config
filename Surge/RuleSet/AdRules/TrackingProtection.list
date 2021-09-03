@@ -4294,6 +4294,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.stats.bluebillywig.com
 .heartbeats.prd.data.s.joyn.de
 .log.strm.yandex.ru
 .stats.ficbook.net
