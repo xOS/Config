@@ -12,3 +12,6 @@ IP-CIDR,51.79.128.0/17
 
 # > Surge官网
 DOMAIN-SUFFIX,surge.com
+
+# > 腾讯游戏
+DOMAIN,cdn-1302064167.file.myqcloud.com
