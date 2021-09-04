@@ -1606,6 +1606,7 @@
 .myusersonline.com
 .mywebstats.com.au
 .mywebstats.org
+.n-analytics.io
 .n74s9.com
 .naayna.com
 .naj.sk
@@ -4428,7 +4429,6 @@
 .analytic.rollout.io
 .analytic.xingcloud.com
 .analyticcdn.globalmailer.com
-.analytics-beacon-*.amazonaws.com
 .analytics-cms.whitebeard.me
 .analytics-production.hapyak.com
 .analytics-rhwg.rhcloud.com
@@ -4539,7 +4539,6 @@
 .analytics.yola.net
 .analytics.yolacdn.net
 .analytics.ziftsolutions.com
-.analyticsengine.s3.amazonaws.com
 .analyze.full-marke.com
 .aorta.clickagy.com
 .ape-tagit.timeinc.net
@@ -4612,7 +4611,6 @@
 .c.wen.ru
 .c3metrics.medifast1.com
 .cache2.delvenetworks.com
-.cadreon.s3.amazonaws.com
 .cahf4eed.mooo.com
 .camel.headfarming.com
 .canvas-ping.conduit-data.com
@@ -4631,7 +4629,6 @@
 .cgicounter.oneandone.co.uk
 .cgicounter.puretec.de
 .chanalytics.merchantadvantage.com
-.chartaca.com.s3.amazonaws.com
 .check.ddos-guard.net
 .check.deadlinefunnel.com
 .cimage.adobe.com
@@ -4768,7 +4765,6 @@
 .d2tgfbvjf3q6hn.cloudfront.net
 .d2wu036mkcz52n.cloudfront.net
 .d2wy8f7a9ursnm.cloudfront.net
-.d303e3cdddb4ded4b6ff495a7b496ed5.s3.amazonaws.com
 .d31qbv1cthcecs.cloudfront.net
 .d34ko97cxuv4p7.cloudfront.net
 .d34qb8suadcc4g.cloudfront.net
@@ -4816,6 +4812,7 @@
 .detect.ergebnis-dienst.de
 .dfanalytics.dealerfire.com
 .diagnose.igstatic.com
+.dig.ultimedia.com
 .dirt.dennis.co.uk
 .distillery.wistia.com
 .djibeacon.djns.com
@@ -5014,7 +5011,6 @@
 .lucid.mjhassoc.com
 .lunametrics.wpengine.netdna-cdn.com
 .m.addthisedge.com
-.magnify360-cdn.s3.amazonaws.com
 .make.cohesionapps.com
 .martech.condenastdigital.com
 .mas.nth.ch
@@ -5036,7 +5032,6 @@
 .metrics.scribblelive.com
 .metrix.emagister.com
 .metrixlablw.customers.luna.net
-.metro-trending-*.amazonaws.com
 .mlweb.dmlab.hu
 .mmi.bemobile.ua
 .monitor.azure.com
@@ -5169,7 +5164,6 @@
 .researchintel.com
 .response.pure360.com
 .rest.wildstar-online.com
-.rich-agent.s3.amazonaws.com
 .rlinks.one.in
 .rs.sinajs.cn
 .rss.tmgrup.com.tr
@@ -5191,7 +5185,6 @@
 .s.clickiocdn.com
 .s.sniphub.com
 .s.srvsynd.com
-.s3-tracking.synthasite.net.s3.amazonaws.com
 .sadv.dadapro.com
 .scripts.psyma.com
 .sdrive.skoda-auto.com
@@ -5492,7 +5485,6 @@
 .visit.geocities.com
 .visit.webhosting.yahoo.com
 .vmstats.varrando.com
-.vtnlog-*.elb.amazonaws.com
 .wco.crownpeak.com
 .web1.51.la
 .weblog.livesport.eu
@@ -5504,10 +5496,8 @@
 .widget.perfectmarket.com
 .widget.quantcast.com
 .win.staticstuff.net
-.woolik.com^*^tracker
 .wren.condenastdigital.com
 .ws.audioeye.com
-.wstat.wibiya.com
 .wtbevents.pricespider.com
 .x.disq.us
 .x.weather.com
@@ -6214,6 +6204,7 @@
 .link.kogan.com
 .log-api.newrelic.com
 .log.china.cn
+.log.ctrl.blog
 .log.genyt.net
 .log.hypebeast.com
 .log.mappy.net
