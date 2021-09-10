@@ -50,6 +50,7 @@ USER-AGENT,com.kktv.ios.kktv*
 USER-AGENT,encoreTVB*
 USER-AGENT,mytv*
 PROCESS-NAME,lookupviewservice
+DOMAIN-SUFFIX,cloudcell.com
 DOMAIN-KEYWORD,-spotify-com
 DOMAIN-KEYWORD,-tiktokcdn-com
 DOMAIN-KEYWORD,.blogspot.

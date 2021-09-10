@@ -54,10 +54,6 @@ USER-AGENT,Steam*
 DOMAIN-SUFFIX,pinyuncloud.com
 DOMAIN-SUFFIX,steamcontent.com
 
-# > Games
-DOMAIN-SUFFIX,mars.tnt-ea.com
-DOMAIN-SUFFIX,cloudcell.com
-
 # > UUBooster
 PROCESS-NAME,UUBooster
 
