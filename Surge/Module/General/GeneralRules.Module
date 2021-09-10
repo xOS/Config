@@ -108,7 +108,7 @@ Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nange.cn/Script/Others/NoRedirect.js
 
 # > DouYin
-DY = type=http-response,pattern=^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$,script-path=https://hub.nange.cn/Script/Live/DouYin.js
+DY = type=http-response,pattern=^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$,script-path=https://hub.nange.cn/Script/Live/DouY.js
 
 # > Banana
 BAN = type=http-response,pattern=^https?:\/\/.*\.(guoguo|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/),script-path=https://hub.nange.cn/Script/Live/Banana.js
