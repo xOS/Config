@@ -147,7 +147,6 @@ IP-CIDR,140.249.94.150/32,REJECT,no-resolve
 IP-CIDR,150.138.229.18/32,REJECT,no-resolve
 IP-CIDR,116.207.148.20/32,REJECT,no-resolve
 
-
 # > 微信
 URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad),REJECT
 
