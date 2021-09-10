@@ -109,9 +109,6 @@ DOMAIN-KEYWORD,baiducdnct.inter.iqiyi.com,REJECT
 URL-REGEX,^https?://.+/videos/other/.+?,REJECT
 URL-REGEX,^https?://.+\/.+/videos/other/.+,REJECT
 
-124.193*, 124.14*, 119.79*, 116.211*, 119.96.*, 111.48.*, 49.7.*, 36.99.*, 36.110.*, 106.38.*, 106.39.*, 123.101.*, 123.149.*, 123.160.*, 111.202.*, 1.193.*, 
-
-
 # > 腾讯视频
 DOMAIN,news.l.qq.com,REJECT
 DOMAIN,tetrack.qq.com,REJECT
