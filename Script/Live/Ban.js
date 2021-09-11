@@ -1,0 +1,74 @@
+/*
+香蕉视频 解锁部分观看限制
+官网: https://www.aa2.app
+
+***************************
+QuantumultX:
+
+[rewrite_local]
+^https?:\/\/.+?\.(pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|(\/|)vod\/reqplay\/) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
+
+[mitm]
+hostname = ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com
+
+***************************
+Surge4 or Loon://
+
+[Script]
+http-response https?:\/\/.+?\.(pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|(\/|)vod\/reqplay\/) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
+
+[MITM]
+hostname = ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com
+
+**************************/
+
+var body = $response.body;
+var url = $request.url;
+
+if (body) {
+  var obj = JSON.parse($response.body);
+  if (/\/ucp\/index/.test(url) && obj.data) {
+  if(obj.data.uinfo.goldcoin) obj.data.uinfo.goldcoin = "1";
+  if(obj.data.uinfo.down_daily_remainders) obj.data.uinfo.down_daily_remainders = 999;
+  if(obj.data.uinfo.play_daily_remainders) obj.data.uinfo.play_daily_remainders = 999;
+  if(obj.data.uinfo.minivod_play_daily_remainders) obj.data.uinfo.minivod_play_daily_remainders = 666;
+  if(obj.data.uinfo.minivod_down_daily_remainders) obj.data.uinfo.minivod_down_daily_remainders = 666;
+  if(obj.data.uinfo.curr_group.minup) obj.data.uinfo.curr_group.minup = "1000000";
+  if(obj.data.uinfo.curr_group.gname) obj.data.uinfo.curr_group.gname = "尊贵VIP";
+  if(obj.data.uinfo.curr_group.gicon) obj.data.uinfo.curr_group.gicon = "V6";
+  if(obj.data.uinfo.curr_group.gid) obj.data.uinfo.curr_group.gid = "6";
+  if(obj.data.uinfo.next_group.gname) obj.data.uinfo.next_group.gname = "荣誉VIP";
+  if(obj.data.uinfo.next_group.minup) obj.data.uinfo.next_group.minup = "10";
+  if(obj.data.uinfo.next_group.gicon) obj.data.uinfo.next_group.gicon = "V5";
+  if(obj.data.uinfo.next_group.gid) obj.data.uinfo.next_group.gid = "5";
+  if(obj.data.uinfo["next_upgrade_need"] ) obj.data.uinfo["next_upgrade_need"] = "0";
+  if(obj.data.user.isvip) obj.data.user.isvip = 1;
+  if(obj.data.user.goldcoin) obj.data.user.goldcoin = "1";
+  if(obj.data.user.gicon) obj.data.user.gicon = "V6";
+  if(obj.data.user.gid) obj.data.user.gid = "6";
+}
+if (/\/getGlobalData/.test(url) && obj.data) {
+  if(obj.data.app_launch_times_adshow) obj.data.app_launch_times_adshow = 0;
+  if(obj.data.sharetext ) obj.data.sharetext = "";
+  if(obj.data.promotion_earn_dscr) obj.data.promotion_earn_dscr = {};
+  if(obj.data.popuptext_v2) obj.data.popuptext_v2 = {};
+  if(obj.data.adgroups) obj.data.adgroups = {};
+  if(obj.data.Android_adgroups) obj.data.Android_adgroups = {};
+  if(obj.data.iOS_adgroups) obj.data.iOS_adgroups ={};
+}
+if (/\/index/.test(url) && obj.data) {
+  if(obj.data.pcsliderows) obj.data.pcsliderows = [];
+  v2 = obj.data.v2sliderows;
+  if(v2) v2.splice(0,3);
+}
+if (/\/reqplay\//.test(url) && obj.data) {
+    obj.retcode = "0";
+    if (obj.data.hasOwnProperty("httpurl_preview")) {
+      var playurl = obj.data["httpurl_preview"];
+      obj.data["httpurl"] = playurl;
+    };
+  }
+  $done({ body: JSON.stringify(obj) });
+} else {
+  $done({})
+}
