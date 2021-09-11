@@ -307,6 +307,10 @@ URL-REGEX,^https?://d\d\.sinaimg\.cn,REJECT
 URL-REGEX,^https?://sax\d\.sina\.com\.cn,REJECT
 URL-REGEX,^https?://api\d\.tuisong\.baidu\.com,REJECT
 URL-REGEX,^https?://sa\d\.tuisong\.baidu\.com,REJECT
+URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/202011\/2f\/15fa682a84fe3a82d080d22e45c5e42f\.jpg$,REJECT
+URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201905\/49\/95cd459ee198f292732f6e90940d1149\.jpg$,REJECT
+URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201911\/4f\/25dbb0cf8b26f14134469761ffa14e4f\.jpg$,REJECT
+URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201904\/7e\/55cb2240159a222065ffc2fcfd010b7e\.jpg$,REJECT
 
 [URL Rewrite]
 # > 视频广告
