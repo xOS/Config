@@ -1,6 +1,4 @@
 /*
-91短视频 解锁部分限制
-http://download.91porn.love/
 ***************************
 QuantumultX:
 [rewrite_local]
