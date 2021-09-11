@@ -53,9 +53,6 @@ member = type=http-response,pattern=^https:\/\/.*\.miguvideo\.com\/ability\/.+\/
 # > VSCO滤镜VIP
 VSCO = type=http-response ^https?:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\?, requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Photo/VSCO.js
 
-# > Termius 解锁本地pro  (By Maasea)
-Termius = requires-body=1,script-path=https://hub.nange.cn/Script/Dev/Termius.js,type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/
-
 # > WorkingCopy.js
 ;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Dev/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/education\.github\.com\/api\/user$
 
