@@ -55,7 +55,7 @@ DOMAIN-SUFFIX,omgid.qq.com
 DOMAIN-SUFFIX,ios.rqd.qq.com
 #DOMAIN-SUFFIX,beaconcdn.qq.com
 DOMAIN-SUFFIX,beacon.qq.com
-DOMAIN-SUFFIX,cdn-go.cn
+#DOMAIN-SUFFIX,cdn-go.cn
 DOMAIN-SUFFIX,btrace.video.qq.com
 DOMAIN-SUFFIX,c.l.qq.com
 DOMAIN-SUFFIX,livep.l.qq.com
