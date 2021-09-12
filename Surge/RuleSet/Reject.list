@@ -1,6 +1,6 @@
 # > 屏蔽服务
 # > Parallels
-DOMAIN,update.parallels.com
+# DOMAIN,update.parallels.com
 
 # > Royal TSX
 DOMAIN,api.royalapps.com
