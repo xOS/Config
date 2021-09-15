@@ -3,7 +3,7 @@
 #!system=ios
 
 [Script]
-微博启动页 = requires-body=1,script-path=https://hub.nange.cn/Script/Weibo/LaunchAds.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
+微博启动页 = requires-body=1,script-path=https://hub.nan.ge/Script/Weibo/LaunchAds.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
 
 [MITM]
 hostname = %APPEND% *.uve.weibo.com
