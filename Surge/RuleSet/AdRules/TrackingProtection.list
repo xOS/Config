@@ -4306,6 +4306,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.log.enuri.com
 .t.451.io
 .collector.hamsterix.cam
 .tracking-api.sub100.com.br
