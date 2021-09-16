@@ -246,7 +246,7 @@ URL-REGEX,^https?://.+/videos/other/.+
 URL-REGEX,^https?://.+\.beacon\.qq\.com
 URL-REGEX,^https?://.+\.gdt\.qq\.com
 URL-REGEX,^https?://.+\.l\.qq\.com
-URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?
+# URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?
 URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?
 
 # > 微信
