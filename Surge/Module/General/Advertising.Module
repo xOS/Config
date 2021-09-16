@@ -114,7 +114,7 @@ URL-REGEX,^https?:\/\/rhcdn\.verycloud\.cn\/baiducdnct\.inter\.iqiyi\.com\/video
 # > 腾讯视频
 DOMAIN,news.l.qq.com,REJECT
 DOMAIN,tetrack.qq.com,REJECT
-DOMAIN,vv.video.qq.com,REJECT
+# DOMAIN,vv.video.qq.com,REJECT
 DOMAIN-SUFFIX,gzc.vod.tencent-cloud.com,REJECT
 DOMAIN-SUFFIX,trace.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,btrace.video.qq.com,REJECT-DROP
