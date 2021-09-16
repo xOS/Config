@@ -104,6 +104,12 @@ DOMAIN-KEYWORD,111.202.,REJECT
 DOMAIN-KEYWORD,1.193.,REJECT
 URL-REGEX,^https?://.+/videos/other/.+?,REJECT
 URL-REGEX,^https?://.+\/.+/videos/other/.+,REJECT
+URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT
+URL-REGEX,^https?:\/\/data[0-9]\.video\.iqiyi\.com\/.+\.f4v$,REJECT
+URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT,REJECT
+URL-REGEX,^https?+:\/\/.+?\/(?>mixer|track2)\?,REJECT
+URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT
+URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show,REJECT
 URL-REGEX,^https?:\/\/.+\.+\.+\.+\/videos\/other\.+\/.+\/.+\/.+\.mp4,REJECT
 URL-REGEX,^https?:\/\/baiducdnct\.inter\.iqiyi\.com\/videos\/other\/.+\/.+\/.+\/.+\.mp4,REJECT
 URL-REGEX,^https?:\/\/exchang\.qnssl\.com\/baiducdnct\.inter\.iqiyi\.com\/videos\/other\/.+\/.+\/.+\/.+\.mp4,REJECT
@@ -187,17 +193,6 @@ URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getRecommendedPositionList,REJE
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/m\.cloud\.189\.cn\/wap\/client\/activity\/,REJECT
 URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
-
-# > 爱奇艺
-URL-REGEX,https?://.+/videos/other/.+,REJECT
-URL-REGEX,http?://.+/videos/other/.+,REJECT
-URL-REGEX,https?://paopao\w?.qiyipic.com,REJECT
-URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT,REJECT
-URL-REGEX,^https?+:\/\/.+?\/(?>mixer|track2)\?,REJECT
-URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT
-URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show,REJECT
-URL-REGEX,https?://data[0-9]\.video\.iqiyi\.com,REJECT
-URL-REGEX,https?://data\.video\.iqiyi\.com,REJECT
 
 # > 优酷
 URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT
