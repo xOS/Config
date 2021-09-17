@@ -8,6 +8,9 @@ DOMAIN-SUFFIX,adservice.google.com
 #DOMAIN-SUFFIX,doubleclick.net
 #DOMAIN-SUFFIX,displayads-formats.googleusercontent.com
 
+# > 微软
+DOMAIN,self.events.data.microsoft.com
+
 # > 字节跳动
 DOMAIN-SUFFIX,ib.snssdk.com
 DOMAIN-SUFFIX,pstatp.com
