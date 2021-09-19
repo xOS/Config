@@ -628,7 +628,7 @@ DOMAIN-SUFFIX,mobads-logs.baidu.com
 DOMAIN-SUFFIX,mpro.baidu.com
 DOMAIN-SUFFIX,msite.baidu.com
 DOMAIN-SUFFIX,neirong.baidu.com
-DOMAIN-SUFFIX,newvector.map.baidu.com
+# DOMAIN-SUFFIX,newvector.map.baidu.com
 DOMAIN-SUFFIX,nsclick.baidu.com
 DOMAIN-SUFFIX,nsclickvideo.baidu.com
 DOMAIN-SUFFIX,offnavi.map.baidu.com
@@ -1717,7 +1717,7 @@ IP-CIDR,180.76.162.60/32,no-resolve
 IP-CIDR,180.76.171.28/32,no-resolve
 IP-CIDR,180.76.172.149/32,no-resolve
 IP-CIDR,180.76.181.213/32,no-resolve
-IP-CIDR,180.76.76.200/32,no-resolve
+# IP-CIDR,180.76.76.200/32,no-resolve 
 IP-CIDR,182.92.81.104/32,no-resolve
 IP-CIDR,183.131.79.130/32,no-resolve
 IP-CIDR,183.131.79.30/32,no-resolve
