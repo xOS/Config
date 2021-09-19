@@ -2,7 +2,7 @@ var obj = JSON.parse($response.body);
 obj['moreInfo']['noMore'] = true;
 item = obj['items'];
 if(item[3]) delete item[3];
-if(item[8]) item.splice(7);
+if(item[8]) item.splice(6);
 items4 = item[4];
 if(items4['items'][3]) items4['items'].splice(3);
 //items = item[5];
