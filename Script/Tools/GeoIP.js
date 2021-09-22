@@ -18,6 +18,6 @@ $httpClient.get("https://myip.ipip.net/json", function(error, response, data){
 		title: "本地 IP 信息",
 		//content: 'IP：' + ip + '\n' + '地区：' + country + '\n' + '城市：' +  city + '\n' + 'ASN：' + asn + '\n' + 'ISP：' + isp +'\n' + '组织：' + org,
         content: data,
-        style: 'info',
+        style: 'good',
 	});
 });
