@@ -4,6 +4,10 @@
 [General]
 force-http-engine-hosts = *91*:8080, *my10api*:8080
 
+[Panel]
+# > 信息面板
+本地 IP = title="本地 IP 信息",content="IP 信息",style=info,script-name=GeoIP
+
 [Rule]
 # > Royal TSX
 URL-REGEX,^https?:\/\/api\.royalapps\.com\/api\/UpdateCheck$,REJECT
@@ -25,6 +29,9 @@ URL-REGEX,^https?:\/\/api\.royalapps\.com\/api\/UpdateCheck$,REJECT
 ^https?:\/\/home\.115\.com\/go\?(https?:\/\/)?(.*) http://$2 302
 
 [Script]
+# > GEOIP
+GeoIP = script-path=https://hub.nan.ge/Script/Tools/GeoIP.js,type=generic
+
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
 
