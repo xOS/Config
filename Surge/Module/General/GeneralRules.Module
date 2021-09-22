@@ -35,7 +35,7 @@ URL-REGEX,^https?:\/\/api\.royalapps\.com\/api\/UpdateCheck$,REJECT
 GeoIP = script-path=https://hub.nan.ge/Script/Tools/GeoIP.js,type=generic
 
 # > 网络信息
-网络信息 =script-path=https://hub.nan.ge/Script/Tools/NetInfo/NetInfo.js,type=generic
+网络信息 =script-path=https://hub.nan.ge/Script/Tools/NetInfo.js,type=generic
 
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
