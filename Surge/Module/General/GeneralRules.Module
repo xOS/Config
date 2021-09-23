@@ -7,8 +7,8 @@ force-http-engine-hosts = *91*:8080, *my10api*:8080
 [Panel]
 # > 信息面板
 楠格 = title="良好",content="服务正常",style=good,script-name=panel
-本地 IP = title="本地 IP 信息",content="本地 IP 信息",style=info,update-interval=3600,script-name=GeoIP
-网络状态 = title="网络状态",content="请刷新",style=info,update-interval=3600,script-name=NetInfo
+本地 IP = title="本地 IP 信息",content="本地 IP 信息",style=info,update-interval=360,script-name=GeoIP
+网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=NetInfo
 
 [Rule]
 # > Royal TSX
