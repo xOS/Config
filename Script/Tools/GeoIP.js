@@ -7,7 +7,6 @@ if (!v4IP) {
         icon: "airplane",
         "icon-color": "#ff9800"
     });
-    return;
 } else {
     $httpClient.get("https://myip.ipip.net/json", function(error, response, data){
     data = JSON.parse(data);
