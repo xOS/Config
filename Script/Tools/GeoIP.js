@@ -1,4 +1,15 @@
-$httpClient.get("https://myip.ipip.net/json", function(error, response, data){
+const { wifi, v4 } = $network;
+const v4IP = v4.primaryAddress;
+if (!v4IP) {
+    $.done({
+        title: "未连接网络",
+        content: "请检查网络连接",
+        icon: "airplane",
+        "icon-color": "#ff9800"
+    });
+    return;
+} else {
+    $httpClient.get("https://myip.ipip.net/json", function(error, response, data){
     data = JSON.parse(data);
     ip = data['data']['ip'];
     country = data['data']['location'][0];
@@ -19,5 +30,6 @@ $httpClient.get("https://myip.ipip.net/json", function(error, response, data){
 		//content: 'IP：' + ip + '\n' + '地区：' + country + '\n' + '城市：' +  city + '\n' + 'ASN：' + asn + '\n' + 'ISP：' + isp +'\n' + '组织：' + org,
         content: data,
         style: 'info',
-	});
-});
+	    });
+    });
+}
