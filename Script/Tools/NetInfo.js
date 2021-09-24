@@ -30,7 +30,7 @@
              + (wifi.ssid ? `路由 IP：${router}\n` : "")
              + `外部 IP：${externalIP}`,
          icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
-         "icon-color": "#35C759"
+         "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
      };
      $.done(body);
  })();
