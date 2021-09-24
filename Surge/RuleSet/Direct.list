@@ -66,6 +66,10 @@ PROCESS-NAME,UUBooster
 USER-AGENT,%E8%BF%85%E9%9B%B7
 DOMAIN-SUFFIX,xunlei.com
 
+# > Others
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,spartanhost.net
+
 # > Download
 PROCESS-NAME,aria2c
 PROCESS-NAME,fdm
