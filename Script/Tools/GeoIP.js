@@ -1,7 +1,7 @@
 const { wifi, v4 } = $network;
 const v4IP = v4.primaryAddress;
 if (!v4IP) {
-    $.done({
+    $done({
         title: "未连接网络",
         content: "请检查网络连接",
         icon: "airplane",
