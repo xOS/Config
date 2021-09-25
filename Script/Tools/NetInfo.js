@@ -21,14 +21,26 @@
      const ip = v4IP;
      const router = wifi.ssid ? v4.primaryRouter : undefined;
  
-     const resp = await $http.get("https://ip.qste.com");
-     const externalIP = resp.body;
- 
-     const body = {
+     const resp = await $http.get("https://myip.ipip.net/json");
+     data = JSON.parse(resp.body)
+     const externalIP = data['data']['ip'];
+     const region = data['data']['location'][1];
+     const city = data['data']['location'][2];
+     const isp = data['data']['location'][4];
+     
+    if(city != '' ){
+        info = region + ' ' + city + ' ' + isp;
+    }
+    else {
+        info = region + ' ' + isp;
+    };
+    
+    const body = {
          title: wifi.ssid || "蜂窝数据",
          content: `内部 IP：${ip} \n`
              + (wifi.ssid ? `路由 IP：${router}\n` : "")
-             + `外部 IP：${externalIP}`,
+             + `外部 IP：${externalIP}\n`
+             + `IP 信息：${info}`,
          icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
          "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
      };
