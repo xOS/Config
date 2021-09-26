@@ -5,8 +5,13 @@
 force-http-engine-hosts = *91*:8080, *my10api*:8080
 
 [Panel]
-# > 信息面板
+# > 服务状态
 服务状态 = title="优秀",content="服务正常",style=good,update-interval=360,script-name=服务状态
+
+# > 刷新 DNS 缓存
+刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=arrow.clockwise.circle,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
+
+# > 网络状态
 网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
 
 [Rule]
@@ -31,10 +36,13 @@ URL-REGEX,^https?:\/\/api\.royalapps\.com\/api\/UpdateCheck$,REJECT
 
 [Script]
 # > 网络信息
-网络状态 = script-path=https://hub.nan.ge/Script/Tools/NetInfo.js,type=generic
+网络状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NetInfo.js
+
+# > 刷新 DNS 缓存
+刷新 DNS = type=generic, script-path=https://hub.nan.ge/Script/Tools/FlushDNS.js
 
 # > 服务状态
-服务状态 = script-path=https://hub.nan.ge/Script/Tools/Status.js,type=generic
+服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/Status.js
 
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
