@@ -8,3 +8,7 @@ DOMAIN,api.royalapps.com
 # > Beyond Compare
 DOMAIN,www.scootersoftware.com
 DOMAIN,scootersoftware.com
+
+# > 拦截 100
+DOMAIN-SUFFIX,hyhuo.com
+DOMAIN-SUFFIX,huoying666.com
