@@ -26,6 +26,9 @@ USER-AGENT,WeChat*
 USER-AGENT,MicroMessenger20%Client*
 DOMAIN-SUFFIX,weixin.qq.com
 
+# > 百度搜索
+URL-REGEX,^https?:\/\/t[0-9]\.baidu\.com\/it
+
 # > 百度网盘
 #DOMAIN-SUFFIX,bdstatic.com
 #DOMAIN-SUFFIX,baidu.com
