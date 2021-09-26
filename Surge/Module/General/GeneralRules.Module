@@ -12,7 +12,7 @@ force-http-engine-hosts = *91*:8080, *my10api*:8080
 Netflix 检测 = title="Netflix 检测",content="请刷新",style=good,update-interval=-1,script-name=Netflix 检测
 
 # > 刷新 DNS 缓存
-刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=arrow.clockwise.circle,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
+刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=leaf.arrow.triangle.circlepath,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
 
 # > 网络状态
 网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
