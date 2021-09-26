@@ -8,7 +8,7 @@ const NOT_ORIGINAL_FILM_ID = 70143836
     .then((code) => {
       if (code != 'Not Available') {
         $done({
-          title: 'Netflix 解锁检测',
+          title: 'Netflix 已解锁',
           style: 'good',
           content: '您的出口 IP 完整解锁 Netflix',
         })
@@ -19,7 +19,7 @@ const NOT_ORIGINAL_FILM_ID = 70143836
     .then((code) => {
       if (code != 'Not Available') {
         $done({
-          title: 'Netflix 解锁检测',
+          title: 'Netflix 半解锁',
           style: 'info',
           content: '您的出口 IP 仅支持解锁自制剧',
         })
@@ -30,13 +30,13 @@ const NOT_ORIGINAL_FILM_ID = 70143836
     .then((code) => {
       if (code != 'Not Available') {
         $done({
-          title: 'Netflix 解锁检测',
+          title: 'Netflix 未解锁',
           style: 'alert',
           content: '您的出口 IP 不支持解锁强版权的自制剧',
         })
       } else {
         $done({
-          title: 'Netflix 解锁检测',
+          title: 'Netflix 无法解锁',
           style: 'error',
           content: 'Netflix 不为您的出口 IP 提供服务',
         })
@@ -44,7 +44,7 @@ const NOT_ORIGINAL_FILM_ID = 70143836
     })
     .catch((error) => {
       $done({
-        title: 'Netflix 解锁检测',
+        title: 'Netflix 检测异常',
         style: 'error',
         content: '检测失败，请重试',
       })
