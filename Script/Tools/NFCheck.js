@@ -1,5 +1,4 @@
 const BASE_URL = 'https://www.netflix.com/title/'
-
 const FILM_ID = 81215567
 const AREA_TEST_FILM_ID = 80018499
 
@@ -20,7 +19,7 @@ var area = new Map([[ "AF" , "阿富汗" ] , [ "AI" , "安圭拉岛" ] , [ "AL" 
       region = area.get(code.toUpperCase());
       result['title'] = 'Netflix 已解锁'
       result['style'] = 'good'
-      result['content'] = '完整解锁 Netflix，主区域：' + region
+      result['content'] = '完整解锁' + region + '区所有剧'
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
@@ -30,14 +29,14 @@ var area = new Map([[ "AF" , "阿富汗" ] , [ "AI" , "安圭拉岛" ] , [ "AL" 
       region = area.get(code.toUpperCase());
       result['title'] = 'Netflix 半解锁'
       result['style'] = 'info'
-      result['content'] = '仅支持解锁自制剧，主区域：' + region
+      result['content'] = '仅支持解锁' + region + '区自制剧'
       return Promise.reject('BreakSignal')
     })
     .catch((error) => {
       if (error === 'Not Available') {
         result['title'] = 'Netflix 未解锁'
         result['style'] = 'alert'
-        result['content'] = '不支持解锁 Netflix'
+        result['content'] = '不支持解锁'
         return
       }
     })
