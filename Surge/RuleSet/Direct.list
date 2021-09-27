@@ -3,6 +3,9 @@ DOMAIN,sdkapi.sms.mob.com
 DOMAIN,api.share.mob.com
 DOMAIN-SUFFIX,code.sms.mob.com
 
+# > IPIP
+DOMAIN,myip.ipip.net
+
 # > 网站
 DOMAIN-SUFFIX,wzfou.com
 DOMAIN-SUFFIX,bwl87.com
