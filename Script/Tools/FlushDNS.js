@@ -16,7 +16,7 @@
     let delay = ((await httpAPI("/v1/test/dns_delay")).delay * 1000).toFixed(0);
     $done({
         title: "DNS 缓存已刷新",
-        content: `延迟：${delay}ms${dnsCache ? `\nDNS 服务器：\n${dnsCache}` : ""}`,
+        content: `延迟：${delay} ms${dnsCache ? `\nDNS 服务器：\n${dnsCache}` : ""}`,
         icon: "checkmark.circle.fill",
         "icon-color": "#00AF00"
     });
