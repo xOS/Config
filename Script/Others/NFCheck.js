@@ -3,8 +3,8 @@
 For Quantumult-X
 
 [task-local]
-# > 奈非解锁监测
-event-interaction https://hub.nan.ge/Script/Others/NFCheck.js, tag=奈非监测, img-url=text.magnifyingglass.system, enabled=true
+# > 奈非解锁检测
+event-interaction https://hub.nan.ge/Script/Others/NFCheck.js, tag=奈非检测, img-url=text.magnifyingglass.system, enabled=true
 
 **/
 
