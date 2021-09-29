@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = *91*:8080, *my10api*:8080
+force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080
 
 [Panel]
 # > 服务状态

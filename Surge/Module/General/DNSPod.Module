@@ -4,4 +4,4 @@
 [Host]
 *.itunes.apple.com = script:DNSPod
 [Script]
-DNSPod = type=dns,script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Script/DNSPod.js,script-update-interval=-1
+DNSPod = type=dns,script-path=https://hub.nan.ge/Script/DNS/DNSPod.js,script-update-interval=-1

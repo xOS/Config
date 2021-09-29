@@ -2,7 +2,7 @@
 #!desc=甲骨文分流
 
 [General]
-force-http-engine-hosts = *.online-metrix.net, 224.0.0.*
+force-http-engine-hosts = %APPEND% *.online-metrix.net, 224.0.0.*
 
 [Rule]
 RULE-SET,https://hub.nan.ge/Surge/RuleSet/Oracle.list,DIRECT,update-interval=259200
