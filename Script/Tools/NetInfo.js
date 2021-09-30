@@ -2,12 +2,14 @@
  * Surge 网络信息面板
  */
 
- const { wifi, v4 } = $network;
- const v4IP = v4.primaryAddress;
+ const { wifi, v4 , v6 } = $network;
+ const IPv4 = v4.primaryAddress;
+ const radio = $network["cellular-data"].radio;
+ const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{8}).+(.{8})$/, "$1****$2") : null;
  let url = "https://myip.ipip.net/json";
 
  ;(async () => {
-     if (!v4IP) {
+     if (!IPv4) {
          $done({
              title: "未连接网络",
              content: "请检查网络连接",
@@ -15,7 +17,7 @@
              "icon-color": "#ff9800"
          });
      }
-    const ip = v4IP;
+    const ip = IPv4;
     const router = wifi.ssid ? v4.primaryRouter : undefined;
 
     $httpClient.get(url, function(error, response, data){
@@ -34,10 +36,12 @@
         
         const body = {
             title: wifi.ssid || "蜂窝数据",
-            content: `内部 IP：${ip} \n`
-                + (wifi.ssid ? `路由 IP：${router}\n` : "")
-                + `外部 IP：${externalIP}\n`
-                + `IP 信息：${info}`,
+            content: (radio ? `网络制式：${radio}\n` : "")
+                + `内部 IPv4：${ip} \n`
+                + (wifi.ssid ? `路由 IPv4：${router}\n` : "")
+                + `外部 IPv4：${externalIP}\n`
+                + (IPv6 ? `外部 IPv6：${IPv6}\n` : "")
+                + `IPv4 信息：${info}`,
             icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
             "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
         };
