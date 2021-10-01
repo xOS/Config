@@ -19,6 +19,10 @@ DOMAIN-SUFFIX,xmpush.xiaomi.com
 # > 抖音
 DOMAIN,g.cn.miaozhen.com
 
+# > 讯飞输入法
+DOMAIN-SUFFIX,xfinfr.com
+URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice
+
 # > 腾讯
 DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
