@@ -13,6 +13,22 @@
  var Mobile = ['460-00','460-02','460-04','460-07','460-08'];
  var CBN = ['460-15']; //广电
  var CSR = ['460-20']; //铁路
+ const radioGeneration = {
+    'GPRS': '2.5G',
+    'CDMA1x': '2.5G',
+    'EDGE': '2.75G',
+    'WCDMA': '3G',
+    'HSDPA': '3.5G',
+    'CDMAEVDORev0': '3.5G',
+    'CDMAEVDORevA': '3.5G',
+    'CDMAEVDORevB': '3.75G',
+    'HSUPA': '3.75G',
+    'eHRPD': '3.9G',
+    'LTE': '4G',
+    'NRNSA': '5G',
+    'NR': '5G',
+  };
+const radios = radioGeneration[radio];
  if(CNNET.includes(carrier)){
     server = "中国电信";
 }else if(Unicom.includes(carrier)){
@@ -55,7 +71,7 @@
         
         const body = {
             title: wifi.ssid || "蜂窝数据",
-            content: (radio && server ? `网络制式：${server} ${radio}\n` : "")
+            content: (radio && server ? `网络制式：${server} ${radios}(${radio})\n` : "")
                 + `内部 IPv4：${ip} \n`
                 + (wifi.ssid ? `路由 IPv4：${router}\n` : "")
                 + `外部 IPv4：${externalIP}\n`
