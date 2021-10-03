@@ -10,12 +10,12 @@ if (!v4IP) {
 } else {
 $httpClient.get("https://api.nan.ge/version", function(error, response, data){
     var str = data.toString();
-    var ver = str.replace(/backend\n$/gm, "").replace("subconverter v", "");
+    var ver = str.replace(/backend\n$/gm, "").replace("subconverter v", "").replace(/\s+/g,"");
     var reg = RegExp(/backend/);
     if(str.match(reg)){
         $done({
             title: "优秀",
-            content: 'API' + ver + '服务正常',
+            content: 'API' + ' ' + ver + ' ' + '服务正常',
             style: 'good'
         });       
     } else {
