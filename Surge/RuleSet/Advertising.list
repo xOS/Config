@@ -1107,7 +1107,7 @@ URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/
 DOMAIN-SUFFIX,amazon-adsystem.com
 
 # > Apple
-DOMAIN-SUFFIX,iadsdk.apple.com
+#DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,ads.internal.unity3d.com
 DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com
 DOMAIN-SUFFIX,unityads.unity3d.com
