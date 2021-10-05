@@ -18,3 +18,5 @@ DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN,journey.pcms.apple.com
 DOMAIN,xp.apple.com
+DOMAIN,gdmf.apple.com
+DOMAIN,smp-device-content.apple.com
