@@ -4,7 +4,7 @@ DOMAIN,api.share.mob.com
 DOMAIN-SUFFIX,code.sms.mob.com
 
 # > IPIP
-DOMAIN,myip.ipip.net
+DOMAIN-SUFFIX,ipip.net
 
 # > 网站
 DOMAIN-SUFFIX,wzfou.com
@@ -13,11 +13,18 @@ DOMAIN-SUFFIX,bwl87.com
 # > VirMach
 DOMAIN-SUFFIX,virmach.com
 
-# > 头条系
-#DOMAIN-SUFFIX,snssdk.com
-
 # > 网页云音乐
 DOMAIN-SUFFIX,dun.163yun.com
+
+# > 字节跳动
+DOMAIN-SUFFIX,ib.snssdk.com
+DOMAIN-SUFFIX,pstatp.com
+
+# > 咪咕视频
+DOMAIN-SUFFIX,v.miguvideo.com
+
+# > Oracle
+DOMAIN-SUFFIX,oracleinfinity.io
 
 # > 腾讯游戏
 DOMAIN,cloudctrl.gcloud.qq.com

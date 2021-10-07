@@ -11,19 +11,6 @@ DOMAIN-SUFFIX,adservice.google.com
 # > 微软
 DOMAIN,self.events.data.microsoft.com
 
-# > 字节跳动
-DOMAIN-SUFFIX,ib.snssdk.com
-DOMAIN-SUFFIX,pstatp.com
-
-# > 网页云音乐
-DOMAIN-SUFFIX,dun.163yun.com
-
-# > 咪咕视频
-DOMAIN-SUFFIX,v.miguvideo.com
-
-# > Oracle
-DOMAIN-SUFFIX,oracleinfinity.io
-
 # > Mate Translate
 DOMAIN-SUFFIX,amplitude.com
 
