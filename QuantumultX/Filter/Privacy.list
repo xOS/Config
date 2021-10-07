@@ -23,6 +23,19 @@ HOST,log-hl-ipv6.snssdk.com,REJECT
 HOST,log-lq.snssdk.com,REJECT
 HOST,log-va.tiktokv.com,REJECT
 HOST,xlog.snssdk.com,REJECT
+HOST,security.snssdk.com,REJECT
+HOST,gurd.snssdk.com,REJECT
+HOST,i.snssdk.com,REJECT
+HOST,ic.snssdk.com,REJECT
+HOST,mon.snssdk.com,REJECT
+HOST,mon.toutiao.com,REJECT
+HOST,mon.toutiaocloud.com,REJECT
+HOST,mon.toutiaocloud.net,REJECT
+HOST,srp4.snssdk.com,REJECT
+HOST,srp2.snssdk.com,REJECT
+HOST,srp1.snssdk.com,REJECT
+HOST,srp3.snssdk.com,REJECT
+HOST,diamond.snssdk.com,REJECT
 
 # > Google
 #HOST-SUFFIX,googletagmanager.com,REJECT
