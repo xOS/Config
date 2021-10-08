@@ -225,4 +225,4 @@ payload:
   - DOMAIN-SUFFIX,weixin.com
   - DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
 
-  - USER-AGENT,WeChat*
+  #- USER-AGENT,WeChat*
