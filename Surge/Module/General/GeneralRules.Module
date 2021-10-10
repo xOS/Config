@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080
+force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz
 
 [Panel]
 # > 服务状态
@@ -132,7 +132,7 @@ Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nan.ge/Script/Others/NoRedirect.js
 
 # > DY
-Ban = type=http-response,pattern=^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/DY.js
+Ban = type=http-response,pattern=^https?:\/\/.+?\.(liking|my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/DY.js
 
 # > Ban
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|index|(\/|)vod\/reqplay\/),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Ban.js
