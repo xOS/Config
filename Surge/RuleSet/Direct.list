@@ -6,7 +6,7 @@ DOMAIN-SUFFIX,code.sms.mob.com
 # > IPIP
 DOMAIN-SUFFIX,ipip.net
 
-# GEOIP
+# > GEOIP
 DOMAIN-SUFFIX,rtbasia.com
 
 # > 网站

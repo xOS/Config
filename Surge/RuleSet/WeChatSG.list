@@ -2,8 +2,8 @@
 DOMAIN,wxapp.tc.qq.com
 DOMAIN,vweixinf.tc.qq.com
 DOMAIN-SUFFIX,wechat.com
-DOMAIN-SUFFIX,wechatos.net
-DOMAIN-SUFFIX,servicewechat.com
+#DOMAIN-SUFFIX,wechatos.net
+#DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-KEYWORD,101.32.104.
 DOMAIN-KEYWORD,101.32.118.
 DOMAIN-KEYWORD,101.32.133.
