@@ -1,15 +1,18 @@
 /*
-***************************
 QuantumultX:
+
 [rewrite_local]
 ^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
-***************************
+
 Surge4:
+
 [Script]
 http-response ^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
+
 [General]
 force-http-engine-hosts = *91*:8080, *my10api*:8080
-**************************/
+
+**/
 
 let body = $response.body;
 let obj = JSON.parse(body && /^\{/.test(body) ? body : '{}');
