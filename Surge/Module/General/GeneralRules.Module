@@ -132,7 +132,7 @@ Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\
 微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nan.ge/Script/Others/NoRedirect.js
 
 # > DY
-Ban = type=http-response,pattern=^https?:\/\/.+?\.(liking|my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/DY.js
+Ban = type=http-response,pattern=^https?:\/\/.+?\.(liking|my10api|(.*91.*|my10api))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/DY.js
 
 # > Ban
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|index|(\/|)vod\/reqplay\/),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Ban.js
