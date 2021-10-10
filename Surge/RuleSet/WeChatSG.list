@@ -1,6 +1,4 @@
 # > WeChatSG
-USER-AGENT,WeChat*
- USER-AGENT,MicroMessenger*
 DOMAIN,wxapp.tc.qq.com
 DOMAIN,vweixinf.tc.qq.com
 DOMAIN-SUFFIX,wechat.com
