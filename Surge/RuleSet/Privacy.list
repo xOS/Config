@@ -3,6 +3,20 @@ DOMAIN,track.tiara.daum.net
 DOMAIN,track.tiara.kakao.com
 DOMAIN,zgsdk.zhugeio.com
 
+# > Alibaba
+USER-AGENT,MTOPSDK*
+DOMAIN,umdc.aliapp.org
+DOMAIN,ynuf.aliapp.org
+DOMAIN,amdc.alipay.com
+DOMAIN,gw.alipayobjects.com
+DOMAIN,mobilegw.alipay.com
+DOMAIN,mum.m.alibaba.com
+DOMAIN,audid-api.taobao.com
+URL-REGEX,^https?:\/\/.+\/squery$
+DOMAIN,mazu.m.qq.com
+DOMAIN,guide-acs.m.taobao.com
+DOMAIN,acs.m.taobao.com
+
 # > 51.LA
 DOMAIN,js.users.51.la
 DOMAIN,mc.51.la
