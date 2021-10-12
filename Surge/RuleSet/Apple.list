@@ -24,7 +24,6 @@ PROCESS-NAME,com.apple.geod
 PROCESS-NAME,lookupviewservice
 PROCESS-NAME,news
 DOMAIN-KEYWORD,apple.com.akadns.net
-DOMAIN-KEYWORD,icloud
 DOMAIN-KEYWORD,icloud.com.akadns.net
 DOMAIN-KEYWORD,icoudo
 DOMAIN-KEYWORD,icoudos
