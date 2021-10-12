@@ -5,12 +5,20 @@ DOMAIN,zgsdk.zhugeio.com
 
 # > Alibaba
 USER-AGENT,MTOPSDK*
+DOMAIN-KEYWORD,mdc.
+DOMAIN-KEYWORD,gw.
+DOMAIN-KEYWORD,mum.
+DOMAIN-KEYWORD,acs.
+DOMAIN-KEYWORD,ads.
+DOMAIN-KEYWORD,ad.
+DOMAIN-KEYWORD,adash
 DOMAIN,umdc.aliapp.org
 DOMAIN,ynuf.aliapp.org
 DOMAIN,amdc.alipay.com
 DOMAIN,gw.alipayobjects.com
 DOMAIN,mobilegw.alipay.com
 DOMAIN,mum.m.alibaba.com
+DOMAIN,mum.m.taobao.com
 DOMAIN,audid-api.taobao.com
 URL-REGEX,^https?:\/\/.+\/squery$
 DOMAIN,mazu.m.qq.com
@@ -69,6 +77,7 @@ DOMAIN,mtrace.qq.com
 DOMAIN,safebrowsing.urlsec.qq.com
 
 # > Umeng
+DOMAIN-SUFFIX,umeng.com
 DOMAIN-KEYWORD,log.umeng.com
 DOMAIN-KEYWORD,logs.umeng.com
 DOMAIN-KEYWORD,logs.umengcloud.com
