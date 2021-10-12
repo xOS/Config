@@ -4572,6 +4572,8 @@
 .bmrg.reflected.net
 .botdetection.hbrsd.com
 .branch.io
+.browser.events.data.microsoft.com
+.browser.pipe.aria.microsoft.com
 .bs.yandex.ru
 .c.imedia.cz
 .c.live.com
@@ -4813,7 +4815,6 @@
 .ecommstats.s3.amazonaws.com
 .edge.bredg.com
 .eel.transistor.fm
-.epnt.ebay.com
 .errors.snackly.co
 .event-api.contactatonce.co.uk
 .event-api.contactatonce.com.au
@@ -5439,6 +5440,7 @@
 .visit.webhosting.yahoo.com
 .vmstats.varrando.com
 .wco.crownpeak.com
+.web.vortex.data.microsoft.com
 .web1.51.la
 .weblog.livesport.eu
 .weblogger-dynamic-lb.playdom.com
@@ -6041,7 +6043,6 @@
 .appanalysis.banggood.com
 .atrack.allposters.com
 .ats.alot.com
-.auth4-eng.spankbang.com
 .bat.maydream.com
 .bats.video.yahoo.com
 .bdt.123rf.com
@@ -6129,6 +6130,7 @@
 .fp.measure.office.com
 .fpa-cdn.arstechnica.com
 .fpa-events.decrypt.co
+.fpt.microsoft.com
 .fresnel-events.vimeocdn.com
 .g.ign.com
 .g.mashable.com
@@ -6160,6 +6162,7 @@
 .intent.cmo.com.au
 .intent.goodgearguide.com.au
 .intent.pcworld.idg.com.au
+.internal-ana.spankbang.com
 .intg.snapchat.com
 .intuitvisitorid.api.intuit.com
 .ip.cliphunter.com
@@ -6485,6 +6488,7 @@
 .cdn1.pebx.pl
 .de-mi-nis-ner2.info
 .piti.bplaced.net
+.primate.dmarcdigests.com
 .a8.01cloud.jp
 .a8.cyclemarket.jp
 .a8.denwa-hikari.com
