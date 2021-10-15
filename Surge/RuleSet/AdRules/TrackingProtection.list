@@ -3,6 +3,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.scupio.net
 .t.metrilo.com
 .eye.rd.services
 .analytics.appsbnet.com.br
@@ -4326,6 +4327,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.webvitals.luxnet.ua
+.counter24.luxnet.ua
 .player-telemetry.vimeo.com
 .tms.oracle.com
 .tim.nextinpact.com
