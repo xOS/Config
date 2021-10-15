@@ -3,6 +3,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.analytics.kkb.com.tr
 .scupio.net
 .t.metrilo.com
 .eye.rd.services
@@ -356,7 +357,7 @@
 .4sqt6jq.de
 .sprocket-ping.s3.amazonaws.com
 .events.launchdarkly.com
-.eclog*.cafe24.com
+.eclog*-*.cafe24.com
 .tag.goadopt.io
 .tag.hariken.co
 .tracker.cauly.co.kr
