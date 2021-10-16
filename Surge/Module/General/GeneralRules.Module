@@ -74,7 +74,7 @@ member = type=http-response,pattern=^https:\/\/.*\.miguvideo\.com\/ability\/.+\/
 
 单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Netflix/RatingSeason.js
 
-# > VSCO滤镜VIP
+# > VSCO 滤镜 VIP
 VSCO = type=http-response ^https?:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\?, requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Photo/VSCO.js
 
 # > WorkingCopy.js
@@ -95,10 +95,10 @@ Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Scrip
 # > Buyhack
 VerifyReceipt = requires-body=1,max-size=262144,script-path=https://hub.nan.ge/Script/Life/VerifyReceipt.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
 
-# > Peak 解锁Pro
+# > Peak 解锁 Pro
 Peak = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Work/Peak.js,type=http-response,pattern=^https?:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
 
-# > Reddit解锁Premium
+# > Reddit 解锁 Premium
 Premium = type=http-response,pattern=^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Reddit/Premium.js
 
 # > TextNow
