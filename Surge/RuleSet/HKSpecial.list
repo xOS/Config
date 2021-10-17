@@ -9,7 +9,8 @@ DOMAIN-SUFFIX,octopuscards.com
 DOMAIN-SUFFIX,octopus-cards.com
 
 # > WeChat
-DOMAIN-SUFFIX,wechat.com
+DOMAIN,wechat.com
+DOMAIN,www.wechat.com
 IP-CIDR,203.205.232.0/23,no-resolve
 IP-CIDR,203.205.234.0/23,no-resolve
 IP-CIDR,203.205.252.0/23,no-resolve

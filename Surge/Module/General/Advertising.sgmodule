@@ -279,6 +279,7 @@ URL-REGEX,^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising,REJECT
 URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/,REJECT
 
 # > 移除 YouTube 页面广告和视频贴片广告
+AND,((PROTOCOL,UDP),(OR,((DOMAIN-SUFFIX,googlevideo.com),(DOMAIN,www.youtube.com),(DOMAIN,s.youtube.com)))),REJECT
 URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
 URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
 URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
@@ -639,6 +640,9 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad - reject
 ^https?:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$ - reject
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
+^https?:\/\/iadmusicmat\.music.126.net\/.*?jpg$ - reject
+^https?:\/\/p\.c\.music\.126.net\/.*?jpg$ - reject
+^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
 
 [Script]
 # > 颇可

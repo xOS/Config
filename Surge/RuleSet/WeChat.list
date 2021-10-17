@@ -193,7 +193,7 @@ DOMAIN-KEYWORD,61.241.44.
 DOMAIN-KEYWORD,61.241.47.
 DOMAIN-KEYWORD,61.241.49.
 
-# WeChat Pay SDK
+# >> WeChat Pay SDK
 DOMAIN-KEYWORD,101.226.129.
 DOMAIN-KEYWORD,101.227.162.
 DOMAIN-KEYWORD,101.89.50.
@@ -223,7 +223,7 @@ IP-CIDR6,2408:80f1:31:50::/112,no-resolve
 IP-CIDR6,2409:8c1e:8fd0:50::/112,no-resolve
 IP-CIDR6,240e:e1:a900:50::/112,no-resolve
 
-# China Unicom IPv6 (WeChat)
+# >> China Unicom IPv6 (WeChat)
 IP-CIDR6,2408:80F1:21::/48,no-resolve
 IP-CIDR6,2408:80F1:31::/48,no-resolve
 IP-CIDR6,2408:8711:10:10::/112,no-resolve
@@ -237,7 +237,7 @@ IP-CIDR6,2408:8756:3AF0:10::/112,no-resolve
 IP-CIDR6,2408:8756:3AF0:2013::/112,no-resolve
 IP-CIDR6,2408:8763:0:200::/60,no-resolve
 
-# China Mobile IPv6 (WeChat)
+# >> China Mobile IPv6 (WeChat)
 IP-CIDR6,2409:8702:4860:10::/112,no-resolve
 IP-CIDR6,2409:8C1E:75B0:1010::/112,no-resolve
 IP-CIDR6,2409:8C1E:75B0:13::/112,no-resolve
@@ -252,7 +252,7 @@ IP-CIDR6,2409:8C54:2800:9110::/60,no-resolve
 IP-CIDR6,2409:8C54:5100::/56,no-resolve
 IP-CIDR6,2409:8C54:810:208:2D::/112,no-resolve
 
-# China Telecom IPv6 (WeChat)
+# >> China Telecom IPv6 (WeChat)
 IP-CIDR6,240E:928:1400:10::/112,no-resolve
 IP-CIDR6,240E:93C:8:10::/60,no-resolve
 IP-CIDR6,240E:95C:2003:20::/60,no-resolve
@@ -284,14 +284,15 @@ DOMAIN-SUFFIX,qlogo.cn
 DOMAIN-SUFFIX,wx.qq.com
 DOMAIN-SUFFIX,wxs.qq.com
 DOMAIN-SUFFIX,weixin.qq.com
-DOMAIN-SUFFIX,wechat.com
+DOMAIN,wechat.com
+DOMAIN,www.wechat.com
 DOMAIN-SUFFIX,weixin.com
 DOMAIN-SUFFIX,vweixinthumb.tc.qq.com
 DOMAIN-SUFFIX,iot-tencent.com
 DOMAIN-SUFFIX,wechatos.net
 DOMAIN-SUFFIX,servicewechat.com
 
-# Device positioning
+# >> Device positioning
 DOMAIN-SUFFIX,cc.map.qq.com
 DOMAIN-SUFFIX,analytics.map.qq.com
 DOMAIN-SUFFIX,rttgps.map.qq.com
