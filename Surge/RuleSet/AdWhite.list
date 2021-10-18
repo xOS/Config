@@ -14,9 +14,6 @@ DOMAIN,self.events.data.microsoft.com
 # > Mate Translate
 DOMAIN-SUFFIX,amplitude.com
 
-# > Apple
-DOMAIN-SUFFIX,metrics.icloud.com
-
 # > GeoIP API
 DOMAIN-KEYWORD,geo
 DOMAIN-SUFFIX,ipapi.co
