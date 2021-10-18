@@ -5,6 +5,7 @@ DOMAIN,zgsdk.zhugeio.com
 
 # > Alibaba
 USER-AGENT,MTOPSDK*
+USER-AGENT,Munion-SDK*
 DOMAIN-KEYWORD,mdc.
 DOMAIN-KEYWORD,mum.
 #DOMAIN-KEYWORD,acs.
