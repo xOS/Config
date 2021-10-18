@@ -48,6 +48,7 @@ jobs:
       - name: Merge and Rules and remove duplicates
         run: |
           curl -LR -o Surge/RuleSet/AdRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
+          curl -LR -o Surge/RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
           awk 'FNR==1{print ""}{print}' Surge/RuleSet/AdRules/*.list > Surge/RuleSet/AdRules/Merge.txt
           awk '!seen[$0]++' Surge/RuleSet/AdRules/Merge.txt > Surge/RuleSet/AdRules/Merge.list
           sed '/^$/d' Surge/RuleSet/AdRules/Merge.list > Surge/RuleSet/AdRule.list
