@@ -7,8 +7,8 @@ DOMAIN,zgsdk.zhugeio.com
 USER-AGENT,MTOPSDK*
 DOMAIN-KEYWORD,mdc.
 DOMAIN-KEYWORD,mum.
-DOMAIN-KEYWORD,acs.
-DOMAIN-KEYWORD,adash
+#DOMAIN-KEYWORD,acs.
+#DOMAIN-KEYWORD,adash
 DOMAIN,umdc.aliapp.org
 DOMAIN,ynuf.aliapp.org
 DOMAIN,amdc.alipay.com
