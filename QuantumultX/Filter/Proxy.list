@@ -6,3 +6,12 @@ HOST-SUFFIX,fabric.io,Proxy
 
 # > Google Voice
 HOST,voice.google.com,Proxy
+
+# > OVH新加坡
+IP-CIDR,51.79.128.0/17,no-resolve,Proxy
+
+# > Surge官网
+HOST-SUFFIX,surge.com,Proxy
+
+# > 腾讯游戏
+HOST,cdn-1302064167.file.myqcloud.com,Proxy

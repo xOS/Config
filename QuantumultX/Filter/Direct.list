@@ -1,23 +1,13 @@
-# > General
-USER-AGENT,coffeecorp*,DIRECT
-USER-AGENT,restaurant-mobile*,DIRECT
-HOST,app.adjust.com,DIRECT
-
 # > 彩云天气
 HOST,sdkapi.sms.mob.com,DIRECT
 HOST,api.share.mob.com,DIRECT
 HOST-SUFFIX,code.sms.mob.com,DIRECT
 
-# > iTerm2
-USER-AGENT,iTerm2*,DIRECT
-HOST-SUFFIX,iterm2.com,DIRECT
+# > IPIP
+HOST-SUFFIX,ipip.net,DIRECT
 
-# > Tencent
-HOST,livew.l.qq.com,DIRECT
-HOST,vd.l.qq.com,DIRECT
-
-# > Strava
-HOST,analytics.strava.com,DIRECT
+# > GEOIP
+HOST-SUFFIX,rtbasia.com,DIRECT
 
 # > 网站
 HOST-SUFFIX,wzfou.com,DIRECT
@@ -26,8 +16,18 @@ HOST-SUFFIX,bwl87.com,DIRECT
 # > VirMach
 HOST-SUFFIX,virmach.com,DIRECT
 
-# > 头条系
-#HOST-SUFFIX,snssdk.com,DIRECT
+# > 网页云音乐
+HOST-SUFFIX,dun.163yun.com,DIRECT
+
+# > 字节跳动
+HOST-SUFFIX,ib.snssdk.com,DIRECT
+HOST-SUFFIX,pstatp.com,DIRECT
+
+# > 咪咕视频
+HOST-SUFFIX,v.miguvideo.com,DIRECT
+
+# > Oracle
+HOST-SUFFIX,oracleinfinity.io,DIRECT
 
 # > 腾讯游戏
 HOST,cloudctrl.gcloud.qq.com,DIRECT
@@ -39,19 +39,28 @@ USER-AGENT,WeChat*,DIRECT
 USER-AGENT,MicroMessenger20%Client*,DIRECT
 HOST-SUFFIX,weixin.qq.com,DIRECT
 
-# > MaxMind
-HOST-KEYWORD,maxmind
-HOST-SUFFIX,maxmind.com
-HOST-SUFFIX,mmapiws.com
+# > 百度搜索
+URL-REGEX,^https?:\/\/t[0-9]\.baidu\.com\/it,DIRECT
 
-# > Client
 # > 百度网盘
-HOST-SUFFIX,bdstatic.com,DIRECT
-HOST-SUFFIX,baidu.com,DIRECT
+#HOST-SUFFIX,bdstatic.com,DIRECT
+#HOST-SUFFIX,baidu.com,DIRECT
 
-# > 人人影视
-USER-AGENT,RRShare*,DIRECT
-USER-AGENT,p4pclient*,DIRECT
+# > MaxMind
+HOST-KEYWORD,maxmind,DIRECT
+HOST-SUFFIX,maxmind.com,DIRECT
+HOST-SUFFIX,mmapiws.com,DIRECT
+
+# > SSH
+PROCESS-NAME,RoyalTSX,DIRECT
+PROCESS-NAME,Termius,DIRECT
+
+# > TeamViewer
+PROCESS-NAME,TeamViewer,DIRECT
+
+# > Proxy
+PROCESS-NAME,v2ray,DIRECT
+PROCESS-NAME,ss-local,DIRECT
 
 # > Microsoft
 HOST-SUFFIX,msftconnecttest.com,DIRECT
@@ -61,6 +70,9 @@ USER-AGENT,Steam*,DIRECT
 HOST-SUFFIX,pinyuncloud.com,DIRECT
 HOST-SUFFIX,steamcontent.com,DIRECT
 
+# > UUBooster
+PROCESS-NAME,UUBooster,DIRECT
+
 # > Windows
 #HOST-SUFFIX,windows.com,DIRECT
 #HOST-SUFFIX,windows.net,DIRECT
@@ -69,6 +81,21 @@ HOST-SUFFIX,steamcontent.com,DIRECT
 # > Xunlei
 USER-AGENT,%E8%BF%85%E9%9B%B7,DIRECT
 HOST-SUFFIX,xunlei.com,DIRECT
+
+# > Others
+HOST-SUFFIX,hcaptcha.com,DIRECT
+HOST-SUFFIX,spartanhost.net,DIRECT
+
+# > Download
+PROCESS-NAME,aria2c,DIRECT
+PROCESS-NAME,fdm,DIRECT
+PROCESS-NAME,Folx,DIRECT
+PROCESS-NAME,NetTransport,DIRECT
+PROCESS-NAME,Thunder,DIRECT
+PROCESS-NAME,Transmission,DIRECT
+PROCESS-NAME,uTorrent,DIRECT
+PROCESS-NAME,WebTorrent,DIRECT
+PROCESS-NAME,WebTorrent Helper,DIRECT
 
 # > Private Tracker
 HOST-SUFFIX,awesome-hd.me,DIRECT
@@ -94,8 +121,8 @@ HOST-SUFFIX,redacted.ch,DIRECT
 HOST-SUFFIX,springsunday.net,DIRECT
 HOST-SUFFIX,tjupt.org,DIRECT
 HOST-SUFFIX,totheglory.im,DIRECT
-#HOST-KEYWORD,aria2,DIRECT
-#HOST-KEYWORD,announce,DIRECT
-#HOST-KEYWORD,torrent,DIRECT
-#HOST-KEYWORD,tracker,DIRECT
+HOST-KEYWORD,aria2,DIRECT
+HOST-KEYWORD,announce,DIRECT
+HOST-KEYWORD,torrent,DIRECT
+HOST-KEYWORD,tracker,DIRECT
 HOST-SUFFIX,smtp,DIRECT

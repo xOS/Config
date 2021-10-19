@@ -8,7 +8,7 @@ DOMAIN-SUFFIX,fabric.io
 DOMAIN,voice.google.com
 
 # > OVH新加坡
-IP-CIDR,51.79.128.0/17
+IP-CIDR,51.79.128.0/17,no-resolve
 
 # > Surge官网
 DOMAIN-SUFFIX,surge.com

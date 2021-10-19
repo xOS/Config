@@ -7,3 +7,11 @@ USER-AGENT,OctopusQuickBuild*,DIRECT
 HOST-SUFFIX,octopus.com.hk,DIRECT
 HOST-SUFFIX,octopuscards.com,DIRECT
 HOST-SUFFIX,octopus-cards.com,DIRECT
+
+# > WeChat
+HOST,wechat.com
+HOST,www.wechat.com
+IP-CIDR,203.205.232.0/23,no-resolve
+IP-CIDR,203.205.234.0/23,no-resolve
+IP-CIDR,203.205.252.0/23,no-resolve
+IP-CIDR,203.205.254.0/23,no-resolve

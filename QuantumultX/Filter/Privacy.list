@@ -3,6 +3,23 @@ HOST,track.tiara.daum.net,REJECT
 HOST,track.tiara.kakao.com,REJECT
 HOST,zgsdk.zhugeio.com,REJECT
 
+# > Alibaba
+USER-AGENT,MTOPSDK*
+USER-AGENT,Munion-SDK*
+DOMAIN-KEYWORD,mdc.
+DOMAIN-KEYWORD,mum.
+DOMAIN-KEYWORD,adash
+DOMAIN,umdc.aliapp.org
+DOMAIN,ynuf.aliapp.org
+DOMAIN,amdc.alipay.com
+DOMAIN,gw.alipayobjects.com
+DOMAIN,mobilegw.alipay.com
+DOMAIN,mum.m.alibaba.com
+DOMAIN,mum.m.taobao.com
+DOMAIN,audid-api.taobao.com
+DOMAIN,mazu.m.qq.com
+DOMAIN,acs.m.taobao.com
+
 # > 51.LA
 HOST,js.users.51.la,REJECT
 HOST,mc.51.la,REJECT

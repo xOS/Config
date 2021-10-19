@@ -34,8 +34,10 @@ URL-REGEX,^https?:\/\/.+\/eapi\/socialsquare\/?,REJECT
 #URL-REGEX,^https:\/\/graph\.(facebook|instagram)\.(net|com)\/.+\/.+\/activities$,REJECT
 
 # > 央视频开头广告
+URL-REGEX,^https?:\/\/adstore-(.*).file.myqcloud.com\?,REJECT
 DOMAIN-SUFFIX,adstore-1252524079.file.myqcloud.com,REJECT
 # > 央视频开屏广告
+URL-REGEX,^https?:\/\/adstore-index-(.*).file.myqcloud.com\?,REJECT
 DOMAIN-SUFFIX,adstore-index-1252524079.file.myqcloud.com,REJECT
 
 # > 中新网开屏

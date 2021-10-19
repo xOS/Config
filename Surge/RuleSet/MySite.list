@@ -53,7 +53,7 @@ DOMAIN, get.nan.ge
 # > 楠歌
 DOMAIN-SUFFIX, nangle.com.cn
 
-# > CDN域名
+# > CDN 域名
 DOMAIN-SUFFIX, somecache.com
 DOMAIN, cdn.ink
 DOMAIN, www.cdn.ink
@@ -71,14 +71,6 @@ DOMAIN, api.cdn.ink
 DOMAIN, get.cdn.ink
 DOMAIN, raw.cdn.ink
 DOMAIN, app.cdn.ink
-
-# > IP段
-# >> Oracle 首尔
-#IP-CIDR,193.122.96.0/19
-#IP-CIDR,193.123.224.0/19
-
-# >> OVH新加坡
-#IP-CIDR,51.79.128.0/17
 
 # > 其它
 DOMAIN-SUFFIX, iploc.xyz
