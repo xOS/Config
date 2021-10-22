@@ -50,6 +50,9 @@ Netflix 检测 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NFChe
 # > 服务状态
 服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
 
+# > 美标空气质量
+iOS15美标空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v2/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.nan.ge/Script/Apple/Weather_AQI_US_iOS15.js
+
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
 
@@ -141,4 +144,4 @@ DY = type=http-response,pattern="^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|index|(\/|)vod\/reqplay\/),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Ban.js
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -*nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, api.royalapps.com, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com
+hostname = %APPEND% x.io, -*vmgirls.com, -*nange.cn, -*nan.ge, -*bk9.net, -*cdn.ink, -*nangle.com.cn, -*cloudimg.net, api.royalapps.com, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com
