@@ -14,8 +14,8 @@ hostname = %APPEND% weather-data.apple.com
 */
 
 const AirQualityStandard = {
-	CN: 'HJ6332012.4',
-	US: 'EPA_NowCast.4'
+	CN: 'HJ6332012.2111',
+	US: 'EPA_NowCast.2111'
 }
 
 const AirQualityLevel = {
