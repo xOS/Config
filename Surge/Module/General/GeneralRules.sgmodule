@@ -51,7 +51,9 @@ Netflix 检测 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NFChe
 服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
 
 # > 美标空气质量
-iOS15美标空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v2/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.nan.ge/Script/Apple/Weather_AQI_US_iOS15.js
+iOS14 美标空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v1/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.nan.ge/Script/Apple/Weather_AQI_US_iOS14.js
+
+iOS15 美标空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v2/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.nan.ge/Script/Apple/Weather_AQI_US_iOS15.js
 
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
