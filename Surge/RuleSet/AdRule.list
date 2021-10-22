@@ -33302,6 +33302,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.integrations.syncmedia.io
 .fbthirdpartypixel.com
 .log.lon22.com
 .tracking.leeep.jp
@@ -38785,6 +38786,7 @@
 .torimochi.line-apps.com
 .appanalysis*.banggood.com
 .line1-log.biligame.net
+.log-upload-eur.mihoyo.com
 .log-upload-os.mihoyo.com
 .s3-analytics-events.easybrain.com
 .mgs123.com
@@ -58268,7 +58270,7 @@
 .sumome-140a.kxcdn.com
 .widgets.bufferapp.com
 .x.pluso.ru
-.integrations.syncmedia.io
+.vortex.data.msn.com
 .pd.trysera.com
 .coll.v00yvd.xyz
 .collect.mxapis.com
@@ -59855,7 +59857,6 @@
 .af-event-logger.appsflyer.com
 .statsgoogle.appsflyer.com
 .post-log.pushwoosh.com
-.log-upload-eur.mihoyo.com
 .geico.com.ssl.sc.omtrdc.net
 .tracker.departapp.com
 .log.adtimaserver.vn
@@ -59865,6 +59866,7 @@
 .dsp-tracking.unityads.unity3d.com
 .installtracker.unityads.unity3d.com
 .tracking.adsx.unityads.unity3d.com
+.mediation-tracking.prd.mz.internal.unity3d.com
 .publisher-event.unityads.unity3d.com
 .imp.startappservice.com
 .aftonbladetnya.sc.omtrdc.net
