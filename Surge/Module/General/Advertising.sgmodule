@@ -235,8 +235,8 @@ URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.qu
 URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
 
 # > 抖音
-URL-REGEX,^https?:\/\/v(.*)-cold(.*).douyinvod.com,REJECT
-DOMAIN,activity-ag.awemeughun.com,REJECT
+URL-REGEX,^https?:\/\/v(.*)-cold(.*)?.douyinvod.com,REJECT
+DOMAIN,^https?:\/\/activity-(.*).awemeughun.com,REJECT
 URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-adbrand.byteimg.com,REJECT
 URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-ad-sign.byteimg.com,REJECT
 URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-sign\.douyinpic\.com\/large\/tos-cn-p-([0-9][0-9][0-9][0-9])\/.+\.jpeg,REJECT
