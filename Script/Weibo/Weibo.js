@@ -432,7 +432,6 @@ if(method) {
 	log(method);
 	var func = eval(method);
 	let data = JSON.parse(body);
-    data['moreInfo']['noMore'] = true;
 	new func(data);
 	body = JSON.stringify(data);
 }
