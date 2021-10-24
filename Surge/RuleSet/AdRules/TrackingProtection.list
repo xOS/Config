@@ -4338,6 +4338,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.twin-iq.kickfire.com
 .metrics.bangbros.com
 .log.mix.sina.com.cn
 .log.sina.cn
