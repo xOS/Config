@@ -1,6 +1,6 @@
 # > 屏蔽服务
 # > Parallels
-# DOMAIN,update.parallels.com
+DOMAIN,update.parallels.com
 
 # > Royal TSX
 DOMAIN,api.royalapps.com
@@ -10,5 +10,5 @@ DOMAIN,www.scootersoftware.com
 DOMAIN,scootersoftware.com
 
 # > 拦截 100
-DOMAIN-SUFFIX,hyhuo.com
-DOMAIN-SUFFIX,huoying666.com
+#DOMAIN-SUFFIX,hyhuo.com
+#DOMAIN-SUFFIX,huoying666.com
