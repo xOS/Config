@@ -237,7 +237,8 @@ URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
 # > 抖音
 DOMAIN-KEYWORD,ad-sign,REJECT
 DOMAIN-KEYWORD,-adbrand,REJECT
-URL-REGEX,^https?:\/\/v(.*)-cold(.*)?.douyinvod.com,REJECT
+URL-REGEX,^https?:\/\/v(.*)-cold(.*)?\.douyinvod\.com,REJECT
+URL-REGEX,^https?:\/\/v([0-9]|[0-9][0-9])-cold(.+)?\.douyinvod\.com,REJECT
 URL-REGEX,^https?:\/\/activity-(.*)\.awemeughun\.com,REJECT
 URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-adbrand.byteimg.com,REJECT
 URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-ad-sign.byteimg.com,REJECT
