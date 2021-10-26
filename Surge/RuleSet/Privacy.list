@@ -8,12 +8,10 @@ USER-AGENT,MTOPSDK*
 USER-AGENT,Munion-SDK*
 DOMAIN-KEYWORD,mdc.
 DOMAIN-KEYWORD,mum.
-#DOMAIN-KEYWORD,acs.
 DOMAIN-KEYWORD,adash
 DOMAIN,umdc.aliapp.org
 DOMAIN,ynuf.aliapp.org
 DOMAIN,amdc.alipay.com
-DOMAIN,gw.alipayobjects.com
 DOMAIN,mobilegw.alipay.com
 DOMAIN,mum.m.alibaba.com
 DOMAIN,mum.m.taobao.com
