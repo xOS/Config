@@ -352,7 +352,6 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/www\.rtmma\.com\/Data\/yk\/css\/showfloatdiv\.css$ - reject
 ^https?:\/\/www\.rtmma\.com\/Data\/yk\/js\/showfloatdiv\.js$ - reject
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
-^https?:\/\/cbu01\.alicdn\.com\/img\/ibank\/? - reject
 ^https?:\/\/kuaim99\.com\/api\/boot\/bootUp$ - reject
 ^https?:\/\/kuaim99\.com\/api\/system\/getInfo$ - reject
 ^https?:\/\/kuaim99\.com\/api\/notice\/listCenter - reject
