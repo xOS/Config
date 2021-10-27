@@ -1,5 +1,6 @@
 # > iCloud
 DOMAIN,www-cdn.icloud.com.akadns.net
+DOMAIN-KEYWORD,gcs-asia-
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-icloud.cn
 DOMAIN-SUFFIX,appleicloud.cn
@@ -50,3 +51,4 @@ DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,myicloud.net
 DOMAIN-SUFFIX,mylcloud.net
 DOMAIN-SUFFIX,wwwicloud.com
+DOMAIN-SUFFIX,content-storage-upload.googleapis.com
