@@ -3,6 +3,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.fireworkanalytics.com
 .t.ltmse.com
 .clickbrainiacs.com
 .wsapi.master.live
@@ -4346,6 +4347,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.logtake.weidian.com
 .statwup.nimo.tv
 .metric.nimo.tv
 .ylog.nimo.tv
@@ -16173,6 +16175,7 @@
 .log.mgtv.com
 .dflow.log.hunantv.com
 .ali-stats.jpush.cn
+.msg.simeji.me
 .msg.simeji.baidu.jp
 .log.tiktokv.com
 .beacons*.gvt3.com
