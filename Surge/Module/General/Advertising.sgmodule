@@ -237,6 +237,26 @@ URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
 # > 抖音
 DOMAIN-KEYWORD,ad-sign,REJECT
 DOMAIN-KEYWORD,-adbrand,REJECT
+DOMAIN-KEYWORD,-search-lq,REJECT
+DOMAIN-KEYWORD,-lq.amemv.com,REJEC
+DOMAIN-KEYWORD,-search-quic-,REJECT
+DOMAIN-KEYWORD,webcast0,REJECT
+DOMAIN-KEYWORD,webcast1,REJECT
+DOMAIN-KEYWORD,webcast2,REJECT
+DOMAIN-KEYWORD,webcast3,REJECT
+DOMAIN-KEYWORD,webcast4,REJECT
+DOMAIN-KEYWORD,webcast5,REJECT
+DOMAIN-KEYWORD,webcast6,REJECT
+DOMAIN-KEYWORD,webcast7,REJECT
+DOMAIN-KEYWORD,webcast8,REJECT
+DOMAIN-KEYWORD,webcast9,REJECT
+DOMAIN-KEYWORD,webcast,REJECT
+DOMAIN,imapi-hl.snssdk.com,REJECT
+DOMAIN,frontier-aweme-hl-ipainner.amemv.com,REJECT
+URL-REGEX,^https?:\/\/search(.*)-search-lq\.amemv\.com,REJECT
+URL-REGEX,^https?:\/\/search(.*)-search-quic-lq\.amemv\.com,REJECT
+URL-REGEX,^https?:\/\/webcast(.*)-normal-c-hl\.amemv\.com,REJECT
+URL-REGEX,^https?:\/\/webcast(.*)-core-c-hl\.amemv\.com,REJECT
 URL-REGEX,^https?:\/\/v(.*)-cold(.*)?\.douyinvod\.com,REJECT
 URL-REGEX,^https?:\/\/v([0-9]|[0-9][0-9])-cold(.+)?\.douyinvod\.com,REJECT
 URL-REGEX,^https?:\/\/activity-(.*)\.awemeughun\.com,REJECT
