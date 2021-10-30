@@ -7,7 +7,7 @@ DOMAIN-SUFFIX,code.sms.mob.com
 DOMAIN-SUFFIX,ipip.net
 
 # > GEOIP
-DOMAIN-SUFFIX,rtbasia.com
+DOMAIN,rtbasia.com
 
 # > 网站
 DOMAIN-SUFFIX,wzfou.com
@@ -21,13 +21,9 @@ DOMAIN-SUFFIX,dun.163yun.com
 
 # > 字节跳动
 DOMAIN-SUFFIX,ib.snssdk.com
-DOMAIN-SUFFIX,pstatp.com
 
 # > 咪咕视频
 DOMAIN-SUFFIX,v.miguvideo.com
-
-# > Oracle
-DOMAIN-SUFFIX,oracleinfinity.io
 
 # > 腾讯游戏
 DOMAIN,cloudctrl.gcloud.qq.com

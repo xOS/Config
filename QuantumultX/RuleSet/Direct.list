@@ -7,7 +7,7 @@ HOST-SUFFIX,code.sms.mob.com,DIRECT
 HOST-SUFFIX,ipip.net,DIRECT
 
 # > GEOIP
-HOST-SUFFIX,rtbasia.com,DIRECT
+HOST,rtbasia.com,DIRECT
 
 # > 网站
 HOST-SUFFIX,wzfou.com,DIRECT
@@ -21,13 +21,9 @@ HOST-SUFFIX,dun.163yun.com,DIRECT
 
 # > 字节跳动
 HOST-SUFFIX,ib.snssdk.com,DIRECT
-HOST-SUFFIX,pstatp.com,DIRECT
 
 # > 咪咕视频
 HOST-SUFFIX,v.miguvideo.com,DIRECT
-
-# > Oracle
-HOST-SUFFIX,oracleinfinity.io,DIRECT
 
 # > 腾讯游戏
 HOST,cloudctrl.gcloud.qq.com,DIRECT
