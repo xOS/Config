@@ -52,6 +52,7 @@ HOST,srp2.snssdk.com,REJECT
 HOST,srp1.snssdk.com,REJECT
 HOST,srp3.snssdk.com,REJECT
 HOST,diamond.snssdk.com,REJECT
+HOST,toutiao-frontier.snssdk.com
 
 # > Google
 #HOST-SUFFIX,googletagmanager.com,REJECT
