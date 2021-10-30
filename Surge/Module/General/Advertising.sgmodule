@@ -265,7 +265,7 @@ URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-sign\.douyinpic\.com\/large\/tos-cn-p-
 URL-REGEX,^https?:\/\/v([0-9]|[0-9][0-9])-cold(.+)?\.douyinvod\.com\/.+\/.+\/video\/tos\/cn\/tos-cn-ve-([0-9][0-9])(.+)?\/.+\/\?,REJECT
 URL-REGEX,^https?:\/\/v([0-9]|[0-9][0-9])-traffic\.douyinvod\.com\/.+\/.+\/video\/tos\/cn\/tos-cn-ve-([0-9][0-9])\/.+\/\,REJECT
 DOMAIN-SUFFIX,tt.x.bsgslb.cn,REJECT
-URL-REGEX,^https?:\/\/s(*)?\.pstatp\.com\/bytecom\/resource\/tetris\/pi\.ad(*)?\.js$,REJECT
+URL-REGEX,^https?:\/\/s(.*)?\.pstatp\.com\/bytecom\/resource\/tetris\/pi\.ad(.*)?\.js$,REJECT
 
 # > 字节跳动
 URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad,REJECT
