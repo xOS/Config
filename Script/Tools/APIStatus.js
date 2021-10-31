@@ -10,7 +10,7 @@ if (!v4IP) {
 } else {
 $httpClient.get("https://api.nan.ge/version", function(error, response, data){
     var str = data.toString();
-    var ver = str.replace(/backend\n$/gm, "").replace("subconverter v", "").replace(/\s+/g,"");
+    var ver = str.replace(/backend\n$/gm, "").replace("subconverter ", "").replace(/\s+/g,"");
     var reg = RegExp(/backend/);
     if(str.match(reg)){
         $done({
