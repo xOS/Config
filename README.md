@@ -1,4 +1,4 @@
-# Config
-自用  
+# 一些配置文件
+> 自用  
 Telegram Channel:  
-https://t.me/Surge_News
+https://t.me/SurgeNotify
