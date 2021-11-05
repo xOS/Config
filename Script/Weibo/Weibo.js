@@ -1,4 +1,4 @@
-const version = 'v1026.2';
+const version = 'v1105.1';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -15,7 +15,7 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
 	removeRelate: true,			//相关推荐
 	removeGood: true,			//微博主好物种草
 	removeFollow: true,			//关注博主
-	modifyMenus: true,			//编辑上下文菜单
+	modifyMenus: false,			//编辑上下文菜单
 	removeRelateItem: true,	//评论区相关内容
 	removeRecommendItem: true,	//评论区推荐内容
 	removeRewardItem: false,	//微博详情页打赏模块
@@ -27,6 +27,7 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
 	removeInterestTopic: true,				//超话：可能感兴趣的超话 + 好友关注
 	removeInterestUser: true,				//用户页：可能感兴趣的人
 	
+	removeLvZhou: false,	//绿洲模块
 	profileSkin1: null,						//用户页：自定义图标1
 	profileSkin2: null,						//用户页：自定义图标2
 	tabIconVersion: 0,						//配置大于100的数
@@ -38,28 +39,28 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
 const itemMenusConfig = storeItemMenusConfig ? JSON.parse(storeItemMenusConfig) : {
 	creator_task:false,					//转发任务
 	mblog_menus_custom:false,				//寄微博
-	mblog_menus_video_later:true,			//可能是稍后再看？没出现过
-	mblog_menus_comment_manager:true,		//评论管理
+	mblog_menus_video_later:false,			//可能是稍后再看？没出现过
+	mblog_menus_comment_manager:false,		//评论管理
 	mblog_menus_avatar_widget:false,		//头像挂件
 	mblog_menus_card_bg: false,			//卡片背景
-	mblog_menus_long_picture:true,		//生成长图
+	mblog_menus_long_picture:false,		//生成长图
 	mblog_menus_delete:false,				//删除
 	mblog_menus_edit:false,				//编辑
 	mblog_menus_edit_history:false,		//编辑记录
-	mblog_menus_edit_video:true,			//编辑视频
-	mblog_menus_sticking:true,			//置顶
+	mblog_menus_edit_video:false,			//编辑视频
+	mblog_menus_sticking:false,			//置顶
 	mblog_menus_open_reward:true,			//赞赏
 	mblog_menus_novelty:false,			//新鲜事投稿
-	mblog_menus_favorite:true,			//收藏
+	mblog_menus_favorite:false,			//收藏
 	mblog_menus_promote:true,				//推广
-	mblog_menus_modify_visible:true,		//设置分享范围
-	mblog_menus_copy_url:true,			//复制链接
-	mblog_menus_follow:true,				//关注
+	mblog_menus_modify_visible:false,		//设置分享范围
+	mblog_menus_copy_url:false,			//复制链接
+	mblog_menus_follow:false,				//关注
 	mblog_menus_video_feedback:true,		//播放反馈
-	mblog_menus_shield:true,				//屏蔽
-	mblog_menus_report:true,				//投诉
-	mblog_menus_apeal:true,				//申诉
-	mblog_menus_home:true					//返回首页
+	mblog_menus_shield:false,				//屏蔽
+	mblog_menus_report:false,				//投诉
+	mblog_menus_apeal:false,				//申诉
+	mblog_menus_home:false					//返回首页
 }
 
 const modifyCardsUrls = ['/cardlist', '/page', 'video/community_tab', '/searchall'];
@@ -75,9 +76,10 @@ const otherUrls = {
 	'/container/get_item': 'containerHandler',			//列表相关
 	'/profile/statuses': 'userHandler',					//用户主页
 	'/video/tiny_stream_video_list': 'nextVidepHandler',	//取消自动播放下一个视频
+	'/2/statuses/video_mixtimeline': 'nextVidepHandler',	
 	'/!/client/light_skin': 'tabSkinHandler',
 	'/littleskin/preview': 'skinPreviewHandler',
-	'/remind/unread_count': 'unreadCountHandler',		
+	// '/remind/unread_count': 'unreadCountHandler',		
 }
 
 function getModifyMethod(url) {
@@ -142,6 +144,22 @@ function removeCards(data) {
 }
 
 
+function lvZhouHandler(data) {
+	if(!mainConfig.removeLvZhou) return;
+	if(!data) return;
+	let struct = data.common_struct;
+	if(!struct) return;
+	let newStruct = [];
+	for (const s of struct) {
+		if(s.name != '绿洲') {
+			newStruct.push(s);
+		}
+	}
+	data.common_struct = newStruct;
+}
+
+
+
 function removeTimeLine(data) {
 	for (const s of ["ad", "advertises", "trends"]) {
 		if(data[s]) {
@@ -154,6 +172,7 @@ function removeTimeLine(data) {
 	let newStatuses = [];
 	for (const s of data.statuses) {
 		if(!isAd(s)) {
+			lvZhouHandler(s);
 			newStatuses.push(s);
 		}
 	}
@@ -381,6 +400,7 @@ function userHandler(data) {
 		if(item.itemid == 'INTEREST_PEOPLE') {
 			log('remove 感兴趣的人');
 		} else {
+			lvZhouHandler(item.mblog);
 			newItems.push(item);
 		}
 	}
@@ -391,6 +411,7 @@ function userHandler(data) {
 function nextVidepHandler(data) {
 	if(mainConfig.removeNextVideo) {
 		data.statuses = [];
+		data.tab_list = [];
 		console.log('nextVidepHandler');
 	}
 }
@@ -421,12 +442,12 @@ function skinPreviewHandler(data) {
 }
 
 
-function unreadCountHandler(data) {
-	let ext = data.ext_new;
-	if(!ext) return;
-	if(!ext.creator_task) return;
-	ext.creator_task.text = '';
-}
+// function unreadCountHandler(data) {
+// 	let ext = data.ext_new;
+// 	if(!ext) return;
+// 	if(!ext.creator_task) return;
+// 	ext.creator_task.text = '';
+// }
 
 function log(data) {
 	if(mainConfig.isDebug) {
