@@ -10,4 +10,8 @@ DOMAIN-SUFFIX,cybersource.com
 DOMAIN-SUFFIX,oracleinfinity.io
 DOMAIN-SUFFIX,atgsvcs.com
 DOMAIN-SUFFIX,custhelp.com
+DOMAIN-SUFFIX,oracleimg.com
+DOMAIN-SUFFIX,truste.com
+DOMAIN-SUFFIX,en25.com
+DOMAIN-SUFFIX,bkrtx.com
 IP-CIDR,224.0.0.251/32,no-resolve
