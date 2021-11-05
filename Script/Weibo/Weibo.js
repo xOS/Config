@@ -14,20 +14,20 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
 	//微博详情页配置
 	removeRelate: true,			//相关推荐
 	removeGood: true,			//微博主好物种草
-	removeFollow: true,			//关注博主
+	removeFollow: false,			//关注博主
 	modifyMenus: false,			//编辑上下文菜单
 	removeRelateItem: true,	//评论区相关内容
 	removeRecommendItem: true,	//评论区推荐内容
-	removeRewardItem: false,	//微博详情页打赏模块
+	removeRewardItem: true,	//微博详情页打赏模块
 
-	removeLiveMedia: true,		//首页顶部直播
+	removeLiveMedia: true,		            //首页顶部直播
 	removeNextVideo: true,					//关闭自动播放下一个视频
 
 	removeInterestFriendInTopic: true,		//超话：超话里的好友
 	removeInterestTopic: true,				//超话：可能感兴趣的超话 + 好友关注
 	removeInterestUser: true,				//用户页：可能感兴趣的人
 	
-	removeLvZhou: false,	//绿洲模块
+	removeLvZhou: true,	             //绿洲模块
 	profileSkin1: null,						//用户页：自定义图标1
 	profileSkin2: null,						//用户页：自定义图标2
 	tabIconVersion: 0,						//配置大于100的数
@@ -37,7 +37,7 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
 
 //菜单配置
 const itemMenusConfig = storeItemMenusConfig ? JSON.parse(storeItemMenusConfig) : {
-	creator_task:false,					//转发任务
+	creator_task:true,					//转发任务
 	mblog_menus_custom:false,				//寄微博
 	mblog_menus_video_later:false,			//可能是稍后再看？没出现过
 	mblog_menus_comment_manager:false,		//评论管理
