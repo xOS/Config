@@ -138,6 +138,7 @@ DOMAIN-SUFFIX,mtrace.video.qq.com,REJECT-TINYGIF
 DOMAIN-SUFFIX,beacon.qq.com,REJECT-TINYGIF
 #DOMAIN,video.dispatch.tc.qq.com,REJECT
 URL-REGEX,^https?:\/\/(m?trace|btrace)\.qq\.com\/?,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/.*\/kvcollect\?,REJECT-TINYGIF
 URL-REGEX,^https?://.+/videos/other/.+,REJECT
 URL-REGEX,^https?://.+\.gdt\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.l\.qq\.com,REJECT
