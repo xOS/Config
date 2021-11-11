@@ -3,6 +3,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.logs.viadata.store
+.hitapi.pulpoar.com
+.api.dataroid.com
 .counter.websiteout.net
 .cdn.topmind.io
 .audienceplay.com
@@ -4371,6 +4374,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.tracking.swogo.net
+.pixels.ingbank.com.tr
 .dmc1acwvwny3.cloudfront.net
 .analytics.sports.ru
 .aegis.qq.com
@@ -17169,6 +17174,9 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.measure.ic.tver.jp
+.toblog.ctobsnssdk.com
+.tobapplog.ctobsnssdk.com
 .t.castle.io
 .bs.nakanohito.jp
 .tag.karte.io
