@@ -21,9 +21,6 @@ Netflix 检测 = title="Netflix 检测",content="请刷新",style=good,update-in
 # > Royal TSX
 URL-REGEX,^https?:\/\/api\.royalapps\.com\/api\/UpdateCheck$,REJECT
 
-# > 网络防火墙
-AND,((NOT,((OR,((USER-AGENT,Surge*), (RULE-SET,https://hub.nan.ge/Surge/RuleSet/Apple.list))))), (SCRIPT,防火墙(规则))),REJECT-TINYGIF
-
 [Header Rewrite]
 # > 颇可
 ;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
@@ -35,12 +32,6 @@ AND,((NOT,((OR,((USER-AGENT,Surge*), (RULE-SET,https://hub.nan.ge/Surge/RuleSet/
 ;^https?://(?:\w+\.)*?((nan|cdn|nange|vmgirls|cloudimg)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-replace User-Agent Surge
 
 [URL Rewrite]
-# > 知乎
-^https?:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
-
-# > 115
-^https?:\/\/home\.115\.com\/go\?(https?:\/\/)?(.*) http://$2 302
-
 # > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
 # >> Bag (iOS/macOS)
 (^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/bag.*)(cc=[A-Z]{2})(.*) $1com$3cc=TW$5 header
@@ -67,10 +58,6 @@ Netflix 检测 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NFChe
 
 # > 服务状态
 服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
-
-# > 网络防火墙
-防火墙(规则) = type=rule,script-path=https://hub.nan.ge/Script/Tools/TimedFirewall.js
-防火墙(事件) = type=event,event-name=network-changed,script-path=https://hub.nan.ge/Script/Tools/WiFiFirewall.js
 
 # > 美标空气质量
 iOS14 美标空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v1/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.nan.ge/Script/Apple/Weather_AQI_iOS14.js
@@ -168,4 +155,4 @@ DY = type=http-response,pattern="^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|index|(\/|)vod\/reqplay\/),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Ban.js
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, api.royalapps.com, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, link.zhihu.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, weibo.cn, sinaurl.cn, home.115.com, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn
+hostname = %APPEND% x.io, -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, api.royalapps.com, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn
