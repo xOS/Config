@@ -25,6 +25,10 @@ DOMAIN, nange.cn
 # > 探针
 DOMAIN, ops.qste.com
 
+# > 图床
+DOMAIN-SUFFIX, cloudimg.net
+DOMAIN-SUFFIX, appleimg.com
+
 # > 楠格主页
 DOMAIN, nan.ge
 DOMAIN, www.nan.ge
@@ -93,6 +97,5 @@ DOMAIN, server.qste.com
 DOMAIN, api.qste.com
 DOMAIN, ip.qste.com
 DOMAIN, ddns.qste.com
-DOMAIN-SUFFIX, cloudimg.net
 DOMAIN-SUFFIX, free.ac.cn
 DOMAIN-SUFFIX, xupeinan.com
