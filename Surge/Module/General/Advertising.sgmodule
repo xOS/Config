@@ -4,16 +4,6 @@
 [General]
 force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.video.iqiyi.com, *.inter.iqiyi.com, exchang.qnssl.com, *.verycloud.cn, ts.qq.com, *.douyinvod.com, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 116.211*, 119.96.*, 111.48.*, 49.7.*, 36.99.*, 36.110.*, 106.38.*, 106.39.*, 123.101.*, 123.149.*, 123.160.*, 111.202.*, 1.193.*, 175.6.225.125, 140.249*, 36.99.*, 150.138*, 150.139.*, 116.207*, 36.99.*, 42.81.*, 221.238.*, 114.221.*, 114.222.*, 117.62.*, 119.147.*,101.91.*, 106.42.*, 114.80.*, 58.49.*, 61.129.*, 58.60.*, 101.89.*, 14.22.*, 14.18.*, 123.150.*, 14.116.*, 180.202.*, 140.249.*
 
-[Host]
-i*?.snssdk.com = 0.0.0.0
-log.snssdk.com = 0.0.0.0
-mon.snssdk.com = 0.0.0.0
-ib.snssdk.com = 0.0.0.0
-ic.snssdk.com = 0.0.0.0
-*trace.qq.com = 0.0.0.0
-*.beacon.qq.com = 0.0.0.0
-*trace.video.qq.com = 0.0.0.0
-
 [Rule]
 # > 微博视频推荐
 URL-REGEX,^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/redpacket,REJECT
@@ -355,6 +345,15 @@ URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/202011\/2f\/15fa682a84fe3a82d080d22e45c5
 URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201905\/49\/95cd459ee198f292732f6e90940d1149\.jpg$,REJECT
 URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201911\/4f\/25dbb0cf8b26f14134469761ffa14e4f\.jpg$,REJECT
 URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201904\/7e\/55cb2240159a222065ffc2fcfd010b7e\.jpg$,REJECT
+
+[Host]
+i.snssdk.com = 0.0.0.0
+log.snssdk.com = 0.0.0.0
+mon.snssdk.com = 0.0.0.0
+ic.snssdk.com = 0.0.0.0
+*trace.qq.com = 0.0.0.0
+*.beacon.qq.com = 0.0.0.0
+*trace.video.qq.com = 0.0.0.0
 
 [URL Rewrite]
 # > 视频广告
