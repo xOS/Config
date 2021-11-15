@@ -55,6 +55,12 @@ jobs:
           rm -rf Surge/RuleSet/AdRules/Merge.txt
           rm -rf Surge/RuleSet/AdRules/Merge.list
 
+      - name: Download ChinaIPs.list
+        run: |
+          curl -LR -o Surge/RuleSet/ChinaIPs.txt "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
+          awk 'FNR==1{print ""}{print}' Surge/RuleSet/ChinaIPs.txt | grep -v "#" | sed '/^$/d' > dist/ChinaIPs.list
+          rm -rf Surge/RuleSet/ChinaIPs.txt
+
       - name: commit, push
         uses: EndBug/add-and-commit@v5
         with:
