@@ -58,7 +58,7 @@ jobs:
       - name: Download ChinaIPs.list
         run: |
           curl -LR -o Surge/RuleSet/ChinaIPs.txt "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
-          awk 'FNR==1{print ""}{print}' Surge/RuleSet/ChinaIPs.txt | grep -v "#" | sed '/^$/d' > dist/ChinaIPs.list
+          awk 'FNR==1{print ""}{print}' Surge/RuleSet/ChinaIPs.txt | grep -v "#" | sed '/^$/d' > Surge/RuleSet/ChinaIPs.list
           rm -rf Surge/RuleSet/ChinaIPs.txt
 
       - name: commit, push
