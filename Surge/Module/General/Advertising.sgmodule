@@ -346,7 +346,6 @@ URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201905\/49\/95cd459ee198f292732f6e90940d
 URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201911\/4f\/25dbb0cf8b26f14134469761ffa14e4f\.jpg$,REJECT
 URL-REGEX,^https:\/\/pic\.xjpik\.com\/\/201904\/7e\/55cb2240159a222065ffc2fcfd010b7e\.jpg$,REJECT
 DOMAIN-SUFFIX,tpns.tencent.com,REJECT-TINYGIF
-DOMAIN-SUFFIX,snssdk.com,REJECT-TINYGIF
 DOMAIN,mssdk-bu.snssdk.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/m?api\(.+)?\.jd\.com\/ksdk\/updlist\.json$,REJECT
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT-TINYGIF

@@ -55,6 +55,7 @@ DOMAIN,srp1.snssdk.com
 DOMAIN,srp3.snssdk.com
 DOMAIN,diamond.snssdk.com
 DOMAIN,toutiao-frontier.snssdk.com
+DOMAIN-SUFFIX,snssdk.com
 
 # > Google
 #DOMAIN-SUFFIX,googletagmanager.com
