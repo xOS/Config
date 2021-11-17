@@ -24282,6 +24282,7 @@
 .um-public-panel-prod.s3.amazonaws.com
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
+.events-service.coinbase.com
 .snowplow-pixel.tradingview.com
 .f-log-at.grammarly.io
 .f-log-test.grammarly.io
@@ -27615,6 +27616,7 @@
 .audienceapi.newsdiscover.com.au
 .audit.303br.net
 .audit.median.hu
+.aurora-d3.herokuapp.com
 .awaps.yandex.net
 .awesome.section.io
 .axislogger.appspot.com
@@ -27853,6 +27855,7 @@
 .ga-beacon.appspot.com
 .ga.kvideo.io
 .ga.webdigi.co.uk
+.ganon.yahoo.com
 .gateway.foresee.com
 .gemius.mgr.consensu.org
 .geo.ertya.com
@@ -38551,6 +38554,11 @@
 .stunninglover.com
 .anfcadf.cn
 .tivfcaa.cn
+.sdw8vzd.cn
+.tangxue.me
+.banzd.com
+.nggdwfz.cn
+.gdshuotai.cn
 .ilmwi.cn
 .000123456789.online
 .000123456789.space
