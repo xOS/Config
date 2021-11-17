@@ -3,6 +3,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.uim.tifbs.net
+.shonretimus.com
 .h.cloudengage.com
 .cdp.vemt.com
 .signifyd.com
@@ -4384,6 +4386,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.snowplow-pixel.tradingview.com
 .f-log-at.grammarly.io
 .f-log-test.grammarly.io
 .tracking.swogo.net
@@ -4535,8 +4538,6 @@
 .pla-tk.flipkart.net
 .stat.myshows.me
 .d2ieqaiwehnqqp.cloudfront.net
-.lc.fresheye.com
-.lcexp.fresheye.com
 .behave.noen.at
 .tracking.noen.at
 .track.wattpad.com
@@ -5760,7 +5761,6 @@
 .adcounter*.uptolike.ru
 .analytics.spankbang.com
 .event.demirorenteknoloji.com
-.felix.data.tm-awx.com
 .collect.data.tm-awx.com
 .t2.hulu.com
 .analytics-ingress.bitmovin.com
