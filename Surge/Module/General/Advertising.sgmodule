@@ -20,9 +20,6 @@ URL-REGEX,^https?:\/\/.+\/eapi\/mlog\/publish\/?,REJECT
 URL-REGEX,^https?:\/\/.+\/eapi\/delivery\/deliver,REJECT
 URL-REGEX,^https?:\/\/.+\/eapi\/privilege\/song\/?,REJECT
 
-# > Telegram
-IP-CIDR,5.28.194.123/32,REJECT
-
 # > Instagram
 #DOMAIN,graph.facebook.com,REJECT
 #DOMAIN,z-p42-chat-e2ee-ig.facebook.com,REJECT
@@ -312,6 +309,12 @@ URL-REGEX,^https?:\/\/mbd\.baidu\.com\/tcbox,REJECT
 URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT
 
 # > 百度网盘
+DOMAIN,open.e.kuaishou.com,REJECT
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/diffall,REJECT-TINYGIF
+DOMAIN,rp.hpplay.cn,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/analytics,REJECT-TINYGIF
+DOMAIN,tcbox.baidu.com,REJECT-TINYGIF
+DOMAIN,mbd.baidu.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/update\.pan\.baidu\.com\/statistics,REJECT
 URL-REGEX,^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx,REJECT
 URL-REGEX,^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry,REJECT
