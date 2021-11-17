@@ -9,6 +9,9 @@
 # >> 若为域名或IP
 URL-REGEX,^https?:\/\/([^/:]+)(:\d*)?\/ajax\?action=GetSoftList$,REJECT
 
+# > Telegram
+IP-CIDR,5.28.194.123/32,REJECT
+
 # > POCO
 DOMAIN-SUFFIX,hmma.baidu.com
 DOMAIN-SUFFIX,adnonstop.com
