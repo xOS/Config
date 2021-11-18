@@ -312,6 +312,7 @@ URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN,sofire.baidu.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/static\/js\/chunk-vendors\.+\.js$,REJECT
+URL-REGEX,^https:\/\/update\.pan\.baidu\.com\/statistics,REJECT-TINYGIF
 
 # > 百度贴吧
 URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,REJECT
