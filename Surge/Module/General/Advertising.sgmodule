@@ -310,15 +310,6 @@ URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT
 
 # > 百度网盘
 DOMAIN,open.e.kuaishou.com,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/diffall,REJECT-TINYGIF
-DOMAIN,rp.hpplay.cn,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/analytics,REJECT-TINYGIF
-DOMAIN,tcbox.baidu.com,REJECT-TINYGIF
-DOMAIN,mbd.baidu.com,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/update\.pan\.baidu\.com\/statistics,REJECT
-URL-REGEX,^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx,REJECT
-URL-REGEX,^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry,REJECT
-URL-REGEX,^https?+:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/,REJECT
 
 # > 百度贴吧
 URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,REJECT
@@ -768,6 +759,23 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/? data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/? data="https://hub.nan.ge/Surge/Blank/Blank.gif"
 ^https?://.+\/defaultts\.tc.\qq\.com\/? data="https://hub.nan.ge/Surge/Blank/Blank.gif"
+
+# > 百度网盘
+^https?:\/\/pan\.baidu\.com\/api\/diffall data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/pan\.baidu\.com\/pmall\/support\/hometabs data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/wk\.baidu\.com\/smallapp\/browse\/home\?personal_recommend=1&isFullScreen=1$ data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/pan\.baidu\.com\/act\/v2\/bchannel\/list data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/pan\.baidu\.com\/act\/task\/tasklist data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/pan\.baidu\.com\/pmall\/points\/goodslist data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/pan\.baidu\.com\/act\/api\/activitystatus data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/pan\.baidu\.com\/aipic\/image\/gettags data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/pan\.baidu\.com\/api\/analytics data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/update\.pan\.baidu\.com\/statistics data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/tcbox\.baidu\.com data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/mdb\.baidu\.com data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 
 # > 其它
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
