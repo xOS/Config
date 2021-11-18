@@ -1,6 +1,7 @@
 name: Update Country.mmdb
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "Her"
@@ -13,7 +14,7 @@ on:
   #schedule:
   #  - cron: 0 */24 * * *
 jobs:
-  build:
+  Update:
     runs-on: ubuntu-latest
 
     steps:
