@@ -774,7 +774,7 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activitystatus data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/aipic\/image\/gettags data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/api\/analytics data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
-^https?:\/\/update\.pan\.baidu\.com\/statistics data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^http:\/\/update\.pan\.baidu\.com\/statistics data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/tcbox\.baidu\.com data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
