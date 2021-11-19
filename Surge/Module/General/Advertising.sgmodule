@@ -207,6 +207,9 @@ AND,((PROTOCOL,UDP), (OR,((DOMAIN-SUFFIX,mdn.alipayobjects.com), (DOMAIN,gw.alip
 DOMAIN,loggw.alipay.com,REJECT-TINYGIF
 DOMAIN,cdn.ynuf.aliapp.org,REJECT-TINYGIF
 DOMAIN,gw.alipayobjects.com,REJECT-TINYGIF
+DOMAIN,api-mayi.django.t.taobao.com,REJECT-TINYGIF
+DOMAIN,tracert.alipay.com,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/.+\.alipayobjects\.com\/.+\.amr$,REJECT-TINYGIF
 #URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/.+\/afts\/file\/,REJECT
 #URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/,REJECT
 #URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/afts\/file\/.+\?,REJECT
