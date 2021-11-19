@@ -257,6 +257,7 @@ HOST-SUFFIX,googleapis.cn,Proxy
 HOST-SUFFIX,gvt1.com,Proxy
 
 # > Other
+DOMAIN-SUFFIX,ufile.io,Proxy
 HOST-SUFFIX,4shared.com,Proxy
 HOST-SUFFIX,520cc.cc,Proxy
 HOST-SUFFIX,881903.com,Proxy

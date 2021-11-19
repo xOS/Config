@@ -151,6 +151,7 @@ payload:
   - DOMAIN-SUFFIX,joinclubhouse.com
 
 # > Google
+  - DOMAIN-SUFFIX,ufile.io
   - DOMAIN-SUFFIX,abc.xyz
   - DOMAIN-SUFFIX,advertisercommunity.com
   - DOMAIN-SUFFIX,ampproject.org

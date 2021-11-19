@@ -207,27 +207,27 @@ AND,((PROTOCOL,UDP), (OR,((DOMAIN-SUFFIX,mdn.alipayobjects.com), (DOMAIN,gw.alip
 DOMAIN,loggw.alipay.com,REJECT-TINYGIF
 DOMAIN,cdn.ynuf.aliapp.org,REJECT-TINYGIF
 DOMAIN,gw.alipayobjects.com,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/.+\/afts\/file\/,REJECT
-URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/,REJECT
-URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/afts\/file\/.+\?,REJECT
+#URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/.+\/afts\/file\/,REJECT
+#URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as\/,REJECT
+#URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/afts\/file\/.+\?,REJECT
 URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/nebulamng\/uri\/file\/as\/.+\/.+\/.+\/default\/.+\.amr$,REJECT
-URL-REGEX,^https?:\/\/render\.alipay\.com\/p\/c\/.+\/pages\/index\/index\.html,REJECT
-URL-REGEX,^https:\/\/render\.alipay\.com\/p\/alertserver\/.+\/index\.json$,REJECT
+#URL-REGEX,^https?:\/\/render\.alipay\.com\/p\/c\/.+\/pages\/index\/index\.html,REJECT
+#URL-REGEX,^https:\/\/render\.alipay\.com\/p\/alertserver\/.+\/index\.json$,REJECT
 URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/os\/lib\/react\/.+\/umd\/react\.production\.min\.js$,REJECT
 URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/os\/lib\/react-dom\/.+\/umd\/react-dom\.production\.min\.js$,REJECT
 URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/as\/g\/component\/tracert\/.+/ap\.js$,REJECT
 URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/a\/g\/serviceCenter\/pa-lib\/.+\/tracert\/index\.js$,REJECT
 URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/a\/g\/serviceCenter\/msg-center\/.+\/center\.js$,REJECT
 URL-REGEX,^https?:\/\/as\.alipayobjects\.com\/g\/component\/fastclick\/.+\/fastclick\.js$,REJECT
-URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/uri\/img\/api\/streamsvr\?,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/promo_creative\/,REJECT-TINYGIF
+#URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/uri\/img\/api\/streamsvr\?,REJECT-TINYGIF
+#URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/promo_creative\/,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/nebulamng\/uri\/file\/as\/apwallet\/.+\/.+\/www\/replaceHtml\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/render\.alipay\.com\/p\/alertserver\/.+\/index\.js$,REJECT
-URL-REGEX,^https:\/\/mdap\.alipay\.com\/loggw\/logUpload\.do$,REJECT-TINYGIF
+#URL-REGEX,^https:\/\/mdap\.alipay\.com\/loggw\/logUpload\.do$,REJECT-TINYGIF
 DOMAIN,mass.alipay.com,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/os\/mobiletms,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/config\/loggw,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/render\.alipay\.com\/p\/h5data\/functionmanage_portal_feature-h5data\.json$,REJECT-TINYGIF
+#URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/os\/mobiletms,REJECT-TINYGIF
+#URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/config\/loggw,REJECT-TINYGIF
+#URL-REGEX,^https?:\/\/render\.alipay\.com\/p\/h5data\/functionmanage_portal_feature-h5data\.json$,REJECT-TINYGIF
 
 # > 优酷
 URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT
@@ -779,6 +779,19 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/tcbox\.baidu\.com data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/mdb\.baidu\.com data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+
+# > 支付宝
+^https?:\/\/mdn\.alipayobjects\.com\/.+\/afts\/file data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/mdn\.alipayobjects\.com\/afts\/file\/.+\? data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/render\.alipay\.com\/p\/c\/.+\/pages\/index\/index\.html data="https://hub.nan.ge/Surge/Blank/Blank.html"
+^https:\/\/render\.alipay\.com\/p\/alertserver\/.+\/index\.json$ data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/mdn\.alipayobjects\.com\/uri\/img\/api\/streamsvr\? data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/mdn\.alipayobjects\.com\/promo_creative data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https:\/\/mdap\.alipay\.com\/loggw\/logUpload\.do$ data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/gw\.alipayobjects\.com\/os\/mobiletms data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/gw\.alipayobjects\.com\/config\/loggw data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/render\.alipay\.com\/p\/h5data\/functionmanage_portal_feature-h5data\.json$ data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 
 # > 其它
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nan.ge/Surge/Blank/Blank.txt"
