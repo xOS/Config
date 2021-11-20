@@ -267,15 +267,8 @@ URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
 # > 抖音
 DOMAIN-KEYWORD,ad-sign,REJECT
 DOMAIN-KEYWORD,-adbrand,REJECT
-DOMAIN-KEYWORD,-search-lq,REJECT
-DOMAIN-KEYWORD,-lq.amemv.com,REJEC
-DOMAIN-KEYWORD,-search-quic-,REJECT
 DOMAIN,imapi-hl.snssdk.com,REJECT
 DOMAIN,frontier-aweme-hl-ipainner.amemv.com,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/search(.*)-search-lq\.amemv\.com,REJECT
-URL-REGEX,^https?:\/\/search(.*)-search-quic-lq\.amemv\.com,REJECT
-URL-REGEX,^https?:\/\/webcast(.*)-normal-c-hl\.amemv\.com,REJECT
-URL-REGEX,^https?:\/\/webcast(.*)-core-c-hl\.amemv\.com,REJECT
 URL-REGEX,^https?:\/\/activity-(.*)\.awemeughun\.com,REJECT
 URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-adbrand.byteimg.com,REJECT
 URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-ad-sign.byteimg.com,REJECT
