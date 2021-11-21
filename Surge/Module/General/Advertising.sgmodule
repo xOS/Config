@@ -57,7 +57,7 @@ URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_info\
 
 # > 豆瓣
 URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$,REJECT
-URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$,DIRECT
+URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$,REJECT
 
 # > 京东，去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
