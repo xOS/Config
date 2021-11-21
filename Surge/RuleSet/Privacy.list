@@ -73,6 +73,8 @@ DOMAIN,btrace.qq.com
 DOMAIN,btrace.video.qq.com
 DOMAIN,mtrace.qq.com
 DOMAIN,safebrowsing.urlsec.qq.com
+DOMAIN,config.ab.qq.com
+DOMAIN,rmonitor.qq.com
 
 # > Umeng
 DOMAIN-SUFFIX,umeng.com
