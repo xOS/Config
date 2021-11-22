@@ -771,9 +771,6 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?:\/\/mdb\.baidu\.com data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 
 # > 支付宝
-^https?:\/\/mdn\.alipayobjects\.com\/.+\/afts\/file data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
-^https?:\/\/mdn\.alipayobjects\.com\/ccdn\/uri\/file\/as data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
-^https?:\/\/mdn\.alipayobjects\.com\/afts\/file\/.+\? data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/render\.alipay\.com\/p\/c\/.+\/pages\/index\/index\.html data="https://hub.nan.ge/Surge/Blank/Blank.html"
 ^https:\/\/render\.alipay\.com\/p\/alertserver\/.+\/index\.json$ data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/mdn\.alipayobjects\.com\/uri\/img\/api\/streamsvr\? data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
