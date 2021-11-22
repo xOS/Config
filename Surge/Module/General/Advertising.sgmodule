@@ -372,10 +372,6 @@ URL-REGEX,^https?:\/\/m?api\(.+)?\.jd\.com\/ksdk\/updlist\.json$,REJECT
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT-TINYGIF
 
 [Host]
-i.snssdk.com = 0.0.0.0
-log.snssdk.com = 0.0.0.0
-mon.snssdk.com = 0.0.0.0
-ic.snssdk.com = 0.0.0.0
 *trace.qq.com = 0.0.0.0
 *.beacon.qq.com = 0.0.0.0
 *trace.video.qq.com = 0.0.0.0
