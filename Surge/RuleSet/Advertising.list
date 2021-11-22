@@ -556,7 +556,13 @@ URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.qu
 URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4}
 
 # > 字节跳动
-DOMAIN-SUFFIX,snssdk.com
+DOMAIN,log.snssdk.com
+DOMAIN,mon.snssdk.com
+DOMAIN,gurd.snssdk.com
+DOMAIN,security.snssdk.com
+DOMAIN,learning.snssdk.com
+DOMAIN,isub.snssdk.com
+DOMAIN,ic.snssdk.com
 URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad
 URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/
 URL-REGEX,^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/
