@@ -6,6 +6,9 @@ DOMAIN-SUFFIX,code.sms.mob.com
 # > IPIP
 DOMAIN-SUFFIX,ipip.net
 
+# > JSDelivr
+DOMAIN-SUFFIX,cdn.jsdelivr.net
+
 # > GEOIP
 DOMAIN,rtbasia.com
 
