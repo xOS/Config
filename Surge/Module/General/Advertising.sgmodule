@@ -209,6 +209,9 @@ URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition,REJECT
 URL-REGEX,^https?:\/\/m\.cloud\.189\.cn\/wap\/client\/activity\/,REJECT
 URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
 
+# > 无忧行
+URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn\/appSyncimage\/.+\.jpg$,REJECT
+
 # > 支付宝
 AND,((PROTOCOL,UDP), (OR,((DOMAIN-SUFFIX,mdn.alipayobjects.com), (DOMAIN,gw.alipayobjects.com)))),REJECT
 DOMAIN,loggw.alipay.com,REJECT-TINYGIF
