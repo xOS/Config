@@ -4,7 +4,6 @@ DOMAIN,track.tiara.kakao.com
 DOMAIN,zgsdk.zhugeio.com
 
 # > Alibaba
-USER-AGENT,MTOPSDK*
 USER-AGENT,Munion-SDK*
 DOMAIN-KEYWORD,mdc.
 DOMAIN-KEYWORD,mum.
@@ -18,7 +17,6 @@ DOMAIN,mum.m.taobao.com
 DOMAIN,audid-api.taobao.com
 URL-REGEX,^https?:\/\/.+\/squery$
 DOMAIN,mazu.m.qq.com
-#DOMAIN,guide-acs.m.taobao.com
 DOMAIN,acs.m.taobao.com
 
 # > 51.LA
