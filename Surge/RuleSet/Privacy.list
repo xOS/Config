@@ -31,18 +31,10 @@ DOMAIN,log-hl-ipv6.snssdk.com
 DOMAIN,log-lq.snssdk.com
 DOMAIN,log-va.tiktokv.com
 DOMAIN,xlog.snssdk.com
-DOMAIN,security.snssdk.com
-DOMAIN,gurd.snssdk.com
-DOMAIN,mon.snssdk.com
-DOMAIN,mon.toutiao.com
-DOMAIN,mon.toutiaocloud.com
-DOMAIN,mon.toutiaocloud.net
 DOMAIN,srp4.snssdk.com
 DOMAIN,srp2.snssdk.com
 DOMAIN,srp1.snssdk.com
 DOMAIN,srp3.snssdk.com
-DOMAIN,diamond.snssdk.com
-DOMAIN,toutiao-frontier.snssdk.com
 
 # > Google
 #DOMAIN-SUFFIX,googletagmanager.com
