@@ -13,7 +13,6 @@ payload:
   - DOMAIN-KEYWORD,maxmind
   - DOMAIN-SUFFIX,maxmind.com
   - DOMAIN-SUFFIX,mmapiws.com
-
   - DOMAIN,app.adjust.com
 
 # Client
@@ -45,8 +44,15 @@ payload:
 # > VirMach
   - DOMAIN-SUFFIX,virmach.com
 
-# > 头条系
-#  - DOMAIN-SUFFIX,snssdk.com
+# > 字节跳动
+  - DOMAIN-SUFFIX,ib.snssdk.com
+  - DOMAIN-SUFFIX,mon.snssdk.com
+
+# > Jselivr
+  - DOMAIN-SUFFIX,cdn.jsdelivr.net
+
+# > GEOIP
+  - DOMAIN,rtbasia.com
 
 # > 腾讯游戏
   - DOMAIN,cloudctrl.gcloud.qq.com

@@ -6,6 +6,9 @@ HOST-SUFFIX,code.sms.mob.com,DIRECT
 # > IPIP
 HOST-SUFFIX,ipip.net,DIRECT
 
+# > Jsdelivr
+HOST-SUFFIX,cdn.jsdelivr.net,DIRECT
+
 # > GEOIP
 HOST,rtbasia.com,DIRECT
 
@@ -21,6 +24,7 @@ HOST-SUFFIX,dun.163yun.com,DIRECT
 
 # > 字节跳动
 HOST-SUFFIX,ib.snssdk.com,DIRECT
+HOST-SUFFIX,mon.snssdk.com,DIRECT
 
 # > 咪咕视频
 HOST-SUFFIX,v.miguvideo.com,DIRECT
