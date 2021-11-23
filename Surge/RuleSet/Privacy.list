@@ -5,19 +5,11 @@ DOMAIN,zgsdk.zhugeio.com
 
 # > Alibaba
 USER-AGENT,Munion-SDK*
-DOMAIN-KEYWORD,mdc.
-DOMAIN-KEYWORD,mum.
 DOMAIN-KEYWORD,adash
-DOMAIN,umdc.aliapp.org
 DOMAIN,ynuf.aliapp.org
-DOMAIN,amdc.alipay.com
 DOMAIN,mobilegw.alipay.com
-DOMAIN,mum.m.alibaba.com
-DOMAIN,mum.m.taobao.com
-DOMAIN,audid-api.taobao.com
 URL-REGEX,^https?:\/\/.+\/squery$
 DOMAIN,mazu.m.qq.com
-DOMAIN,acs.m.taobao.com
 
 # > 51.LA
 DOMAIN,js.users.51.la
