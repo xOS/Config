@@ -4396,6 +4396,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.frog.yuanfudao.com
+.clog*.yuanfudao.com
 .analytics.send.cm
 .s.union.360.cn
 .fclog.baidu.com
