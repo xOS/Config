@@ -221,7 +221,6 @@ URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn\/appSyncimage\/.+\.jpg$,REJECT
 
 # > 支付宝
 AND,((PROTOCOL,UDP), (OR,((DOMAIN-SUFFIX,mdn.alipayobjects.com), (DOMAIN,gw.alipayobjects.com)))),REJECT
-DOMAIN,loggw.alipay.com,REJECT-TINYGIF
 DOMAIN,cdn.ynuf.aliapp.org,REJECT-TINYGIF
 DOMAIN,tracert.alipay.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/.+\.alipayobjects\.com\/.+\.amr$,REJECT-TINYGIF
