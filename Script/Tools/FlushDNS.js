@@ -18,7 +18,7 @@
         title: "DNS 缓存已刷新",
         content: `延迟：${delay} ms${dnsCache ? `\nDNS 服务器：\n${dnsCache}` : ""}`,
         icon: "bolt.horizontal.circle.fill",
-        "icon-color": "#00AF00"
+        "icon-color": "orange"
     });
 })();
 
