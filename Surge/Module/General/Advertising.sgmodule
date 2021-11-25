@@ -220,21 +220,14 @@ URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
 URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn\/appSyncimage\/.+\.jpg$,REJECT
 
 # > 支付宝
-AND,((PROTOCOL,UDP), (OR,((DOMAIN-SUFFIX,mdn.alipayobjects.com), (DOMAIN,gw.alipayobjects.com)))),REJECT
-DOMAIN,cdn.ynuf.aliapp.org,REJECT-TINYGIF
-DOMAIN,tracert.alipay.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/.+\.alipayobjects\.com\/.+\.amr$,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/nebulamng\/uri\/file\/as\/.+\/.+\/.+\/default\/.+\.amr$,REJECT
-URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/os\/lib\/react\/.+\/umd\/react\.production\.min\.js$,REJECT
-URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/os\/lib\/react-dom\/.+\/umd\/react-dom\.production\.min\.js$,REJECT
 URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/as\/g\/component\/tracert\/.+/ap\.js$,REJECT
 URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/a\/g\/serviceCenter\/pa-lib\/.+\/tracert\/index\.js$,REJECT
 URL-REGEX,^https?:\/\/gw\.alipayobjects\.com\/a\/g\/serviceCenter\/msg-center\/.+\/center\.js$,REJECT
 URL-REGEX,^https?:\/\/as\.alipayobjects\.com\/g\/component\/fastclick\/.+\/fastclick\.js$,REJECT
 URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/promo_creative\/,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/mdn\.alipayobjects\.com\/nebulamng\/uri\/file\/as\/apwallet\/.+\/.+\/www\/replaceHtml\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/render\.alipay\.com\/p\/alertserver\/.+\/index\.js$,REJECT
-DOMAIN,mass.alipay.com,REJECT-TINYGIF
 
 # > 优酷
 URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT
