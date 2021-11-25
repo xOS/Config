@@ -6,7 +6,7 @@
             title: "未连接网络",
             content: "请检查网络连接",
             icon: "airplane",
-            "icon-color": "#ff9800"
+            "icon-color": "#00c8ff"
         });
     }
 
@@ -18,7 +18,7 @@
         title: "DNS 缓存已刷新",
         content: `延迟：${delay} ms${dnsCache ? `\nDNS 服务器：\n${dnsCache}` : ""}`,
         icon: "bolt.horizontal.circle.fill",
-        "icon-color": "orange"
+        "icon-color": "#ff9800"
     });
 })();
 
