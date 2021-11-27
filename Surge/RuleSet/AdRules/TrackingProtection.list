@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.vought.removeads.workers.dev
+.clickiocdn.com
 .delivery.satr.jp
 .i-cmg-amlg-prod.appspot.com
 .a.myfidevs.io
@@ -4397,6 +4399,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.pix2.services.tvn.pl
 .frog.yuanfudao.com
 .clog*.yuanfudao.com
 .analytics.send.cm
