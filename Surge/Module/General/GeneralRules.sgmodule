@@ -18,8 +18,7 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz
 网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
 
 [Rule]
-# > Royal TSX
-URL-REGEX,^https?:\/\/api\.royalapps\.com\/api\/UpdateCheck$,REJECT
+# > 扩展规则
 
 [Header Rewrite]
 # > 颇可
@@ -150,4 +149,4 @@ DY = type=http-response,pattern="^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|index|(\/|)vod\/reqplay\/),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Ban.js
 
 [MITM]
-hostname = %APPEND% x.io, -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, api.royalapps.com, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn
+hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn
