@@ -337,6 +337,7 @@ URL-REGEX,^https?:\/\/www\.youtube\.com\/pagead\/adview\?,REJECT
 URL-REGEX,^https?:\/\/lh[0-9]\.googleusercontent\.com\/proxy\/?,REJECT
 
 # > 其它
+URL-REGEX,^https?:\/\/.+?\/disable-devtool\.min\.js$,REJECT
 URL-REGEX,^https?:\/\/open\.web\.meitu\.com\/sources\/xiuxiu\.js$,REJECT
 URL-REGEX,^https?:\/\/geek-share\.com\/public\/geekshare\/js\/geek\.js$,REJECT
 URL-REGEX,^https?:\/\/geek-share\.com\/public\/com\/js\/jquery\.searchableSelect\.js$,REJECT

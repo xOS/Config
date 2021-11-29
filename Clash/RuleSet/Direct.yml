@@ -41,8 +41,9 @@ payload:
   - DOMAIN-SUFFIX,wzfou.com
   - DOMAIN-SUFFIX,bwl87.com
 
-# > VirMach
+# > VPS Providers
   - DOMAIN-SUFFIX,virmach.com
+  - DOMAIN-SUFFIX,spartanhost.net
 
 # > 字节跳动
   - DOMAIN-SUFFIX,ib.snssdk.com

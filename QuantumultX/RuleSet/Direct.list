@@ -6,9 +6,6 @@ HOST-SUFFIX,code.sms.mob.com,DIRECT
 # > IPIP
 HOST-SUFFIX,ipip.net,DIRECT
 
-# > Jsdelivr
-HOST-SUFFIX,cdn.jsdelivr.net,DIRECT
-
 # > GEOIP
 HOST,rtbasia.com,DIRECT
 
@@ -16,8 +13,9 @@ HOST,rtbasia.com,DIRECT
 HOST-SUFFIX,wzfou.com,DIRECT
 HOST-SUFFIX,bwl87.com,DIRECT
 
-# > VirMach
+# > VPS Providers
 HOST-SUFFIX,virmach.com,DIRECT
+HOST-SUFFIX,spartanhost.net,DIRECT
 
 # > 网页云音乐
 HOST-SUFFIX,dun.163yun.com,DIRECT

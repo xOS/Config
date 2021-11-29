@@ -6,9 +6,6 @@ DOMAIN-SUFFIX,code.sms.mob.com
 # > IPIP
 DOMAIN-SUFFIX,ipip.net
 
-# > Jsdelivr
-DOMAIN-SUFFIX,cdn.jsdelivr.net
-
 # > GEOIP
 DOMAIN,rtbasia.com
 
@@ -16,8 +13,9 @@ DOMAIN,rtbasia.com
 DOMAIN-SUFFIX,wzfou.com
 DOMAIN-SUFFIX,bwl87.com
 
-# > VirMach
+# > VPS Providers
 DOMAIN-SUFFIX,virmach.com
+DOMAIN-SUFFIX,spartanhost.net
 
 # > 网页云音乐
 DOMAIN-SUFFIX,dun.163yun.com
