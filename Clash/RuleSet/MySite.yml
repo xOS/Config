@@ -53,8 +53,6 @@ payload:
   - DOMAIN-SUFFIX, nangle.com.cn
 
 # > CDN域名
-  - DOMAIN-SUFFIX, applecache.com
-  - DOMAIN-SUFFIX, somecache.com
   - DOMAIN, cdn.ink
   - DOMAIN, www.cdn.ink
   - DOMAIN, t.cdn.ink
@@ -69,18 +67,7 @@ payload:
   - DOMAIN, raw.cdn.ink
   - DOMAIN, app.cdn.ink
 
-# > IP段
-# >> Oracle 首尔
-#IP-CIDR,193.122.96.0/19
-#IP-CIDR,193.123.224.0/19
-
-# >> OVH新加坡
-#IP-CIDR,51.79.128.0/17
-
 # > 其它
-  - DOMAIN-SUFFIX, iploc.xyz
-  - DOMAIN-SUFFIX, bk9.net
-  - DOMAIN-SUFFIX, v6h.net
   - DOMAIN, qste.com
   - DOMAIN, www.qste.com
   - DOMAIN, admin.qste.com
@@ -89,13 +76,14 @@ payload:
   - DOMAIN, cloud.qste.com
   - DOMAIN, mail.qste.com
   - DOMAIN, files.qste.com
-  - DOMAIN, files.qste.com
+  - DOMAIN, file.qste.com
   - DOMAIN, cloud.qste.com
   - DOMAIN, drive.qste.com
   - DOMAIN, server.qste.com
   - DOMAIN, api.qste.com
   - DOMAIN, ddns.qste.com
   - DOMAIN-SUFFIX, cloudimg.net
+  - DOMAIN-SUFFIX, appleimg.com
   - DOMAIN-SUFFIX, free.ac.cn
   - DOMAIN-SUFFIX, xupeinan.com
   - DOMAIN-SUFFIX, http3.online

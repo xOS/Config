@@ -61,7 +61,6 @@ DOMAIN, get.nan.ge
 DOMAIN-SUFFIX, nangle.com.cn
 
 # > CDN 域名
-DOMAIN-SUFFIX, somecache.com
 DOMAIN, cdn.ink
 DOMAIN, www.cdn.ink
 DOMAIN, t.cdn.ink
@@ -80,8 +79,6 @@ DOMAIN, raw.cdn.ink
 DOMAIN, app.cdn.ink
 
 # > 其它
-DOMAIN-SUFFIX, iploc.xyz
-DOMAIN-SUFFIX, bk9.net
 DOMAIN, qste.com
 DOMAIN, www.qste.com
 DOMAIN, admin.qste.com
@@ -90,7 +87,7 @@ DOMAIN, status.qste.com
 DOMAIN, cloud.qste.com
 DOMAIN, mail.qste.com
 DOMAIN, files.qste.com
-DOMAIN, files.qste.com
+DOMAIN, file.qste.com
 DOMAIN, cloud.qste.com
 DOMAIN, drive.qste.com
 DOMAIN, server.qste.com

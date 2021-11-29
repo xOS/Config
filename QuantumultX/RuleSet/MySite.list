@@ -54,7 +54,6 @@ HOST, get.nan.ge,direct
 HOST-SUFFIX, nangle.com.cn,direct
 
 # > CDN 域名
-HOST-SUFFIX, somecache.com,direct
 HOST, cdn.ink,direct
 HOST, www.cdn.ink,direct
 HOST, t.cdn.ink,direct
@@ -73,8 +72,6 @@ HOST, raw.cdn.ink,direct
 HOST, app.cdn.ink,direct
 
 # > 其它
-HOST-SUFFIX, iploc.xyz,direct
-HOST-SUFFIX, bk9.net,direct
 HOST, qste.com,direct
 HOST, www.qste.com,direct
 HOST, admin.qste.com,direct
@@ -83,7 +80,7 @@ HOST, status.qste.com,direct
 HOST, cloud.qste.com,direct
 HOST, mail.qste.com,direct
 HOST, files.qste.com,direct
-HOST, files.qste.com,direct
+HOST, file.qste.com,direct
 HOST, cloud.qste.com,direct
 HOST, drive.qste.com,direct
 HOST, server.qste.com,direct
@@ -91,5 +88,6 @@ HOST, api.qste.com,direct
 HOST, ip.qste.com,direct
 HOST, ddns.qste.com,direct
 HOST-SUFFIX, cloudimg.net,direct
+HOST-SUFFIX, appleimg.com,direct
 HOST-SUFFIX, free.ac.cn,direct
 HOST-SUFFIX, xupeinan.com,direct
