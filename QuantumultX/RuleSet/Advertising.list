@@ -619,10 +619,8 @@ HOST-SUFFIX,t11.baidu.com,REJECT
 HOST-SUFFIX,t12.baidu.com,REJECT
 HOST-SUFFIX,tk.baidu.com,REJECT
 HOST-SUFFIX,tkweb.baidu.com,REJECT
-HOST-SUFFIX,tongji.baidu.com,REJECT
 HOST-SUFFIX,toolbar.baidu.com,REJECT
 HOST-SUFFIX,tracker.baidu.com,REJECT
-HOST-SUFFIX,tuijian.baidu.com,REJECT
 HOST-SUFFIX,tuisong.baidu.com,REJECT
 HOST-SUFFIX,ubmcmm.baidustatic.com,REJECT
 HOST-SUFFIX,ucstat.baidu.com,REJECT
