@@ -14,11 +14,11 @@ URL-REGEX,^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/tiny_stream_channel_li
 URL-REGEX,^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/tiny_stream_video_list,REJECT
 
 # > 网易云村屏蔽
-URL-REGEX,^https?:\/\/.+\/eapi\/socialsquare\/?,REJECT
-URL-REGEX,^https?:\/\/.+\/api\/feedback\/?,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/.+\/eapi\/mlog\/publish\/?,REJECT
-URL-REGEX,^https?:\/\/.+\/eapi\/delivery\/deliver,REJECT
-URL-REGEX,^https?:\/\/.+\/eapi\/privilege\/song\/?,REJECT
+;URL-REGEX,^https?:\/\/.+\/eapi\/socialsquare\/?,REJECT
+;URL-REGEX,^https?:\/\/.+\/api\/feedback\/?,REJECT-TINYGIF
+;URL-REGEX,^https?:\/\/.+\/eapi\/mlog\/publish\/?,REJECT
+;URL-REGEX,^https?:\/\/.+\/eapi\/delivery\/deliver,REJECT
+;URL-REGEX,^https?:\/\/.+\/eapi\/privilege\/song\/?,REJECT
 
 # > Spotify
 URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ads\/v3\/ads\?slots=preroll$,REJECT
