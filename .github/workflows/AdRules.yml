@@ -1,6 +1,7 @@
 name: AdRules
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "Her"
