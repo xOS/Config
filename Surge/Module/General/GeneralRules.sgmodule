@@ -64,7 +64,10 @@ IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(
 # > 人人视频 解锁AI原画 (by@george Jiang & R)
 人人视频会员解锁 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/RRTV.js,type=http-response,pattern=^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
-人人视频 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/RRSP.js,type=http-response,pattern=^https?:\/\/api\.rr\.tv\/watch\/v4\/priority_video_quality\/get_priority_video_quality_config\?
+人人视频 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/RRSP.js,type=http-response,pattern=^https?:\/\/api\.rr\.tv\/watch\/v4\/priority_video_quality\/get_priority_video_quality_config
+
+# > Windscribe 解锁专业版
+Windscribe = type=http-response,pattern=^https?:\/\/api\.windscribe\.com\/Session,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Windscribe/Windscribe_Pro.js
 
 # > 韩剧TV解锁蓝光
 韩剧TV = requires-body=1,script-path=https://hub.nan.ge/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
@@ -149,4 +152,4 @@ DY = type=http-response,pattern="^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|index|(\/|)vod\/reqplay\/),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Ban.js
 
 [MITM]
-hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn
+hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com
