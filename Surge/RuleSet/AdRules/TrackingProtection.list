@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.cl.qualaroo.com
 .more-data.ru
 .f-log-editor.grammarly.io
 .gnar.grammarly.com
@@ -4401,6 +4402,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.pcapp-data-collect.youku.com
 .log.polarisoffice.com
 .logconfig.polarisoffice.com
 .t.n.mcdonalds.de
