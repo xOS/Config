@@ -232,6 +232,7 @@ URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
 
 # > 无忧行
 URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn\/appSyncimage\/.+\.jpg$,REJECT
+URL-REGEX,^http:\/\/oss\.jegotrip\.com\.cn\/appSyncimage\/.+\.png$,REJECT
 
 # > 支付宝
 URL-REGEX,^https?:\/\/.+\.alipayobjects\.com\/.+\.amr$,REJECT-TINYGIF
@@ -761,6 +762,7 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?:\/\/api\.weibo\.cn\/2\/page\/get_fragment data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/api\.weibo\.cn\/2\/push\/active data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 ^https?:\/\/m\.weibo\.cn\/c\/checkin data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
+^https?:\/\/api\.weibo\.cn\/2\/video\/machine data="https://hub.nan.ge/Surge/Blank/Blank_Dict.json"
 
 # > 腾讯视频
 ;^https?://.+\/.+\.tc\.qq\.com\/? data="https://hub.nan.ge/Surge/Blank/Blank.gif"
