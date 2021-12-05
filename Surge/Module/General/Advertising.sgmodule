@@ -338,7 +338,7 @@ URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info,REJECT
 URL-REGEX,^https?:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png,REJECT
 URL-REGEX,^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/ts_ad\/,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adv\? - reject
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adv,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from),REJECT
 
 # > 百度贴吧
