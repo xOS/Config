@@ -2,6 +2,7 @@
 USER-AGENT,SpeedTest*
 DOMAIN-KEYWORD,speedtest
 DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN,fast.rockisland.net
 
 #DOMAIN-SUFFIX,88-f.net
 #DOMAIN,st.pautina-telecom.ru
