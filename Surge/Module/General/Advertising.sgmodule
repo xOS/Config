@@ -167,6 +167,10 @@ URL-REGEX,^https?:\/\/tcqcloudcdnct\.inter\.iqiyi\.com\/videos\/other\/.+\/.+\/.
 URL-REGEX,^https?:\/\/data[0-9]\.video\.iqiyi\.com\/videos\/other\/.+\/._\/.+\/.+\.mp4,REJECT
 URL-REGEX,^https?:\/\/rhcdn\.verycloud\.cn\/baiducdnct\.inter\.iqiyi\.com\/videos\/other\/.+\/.+\/.+\/.+\.mp4,REJECT
 
+# > 腾讯QQ
+URL-REGEX,^http:\/\/.+\/analytics\/upload,REJECT
+DOMAIN,sq.bls.mdt.qq.com,REJECT
+
 # > 腾讯视频
 DOMAIN,news.l.qq.com,REJECT
 DOMAIN,tetrack.qq.com,REJECT-TINYGIF
