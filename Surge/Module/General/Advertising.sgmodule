@@ -142,11 +142,6 @@ URL-REGEX,^https?+:\/\/.+?\/(?>mixer|track2)\?,REJECT
 URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT
 URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show,REJECT
 URL-REGEX,^https?:\/\/.+\.+\.+\.+\/videos\/other\.+\/.+\/.+\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/baiducdnct\.inter\.iqiyi\.com\/videos\/other\/.+\/.+\/.+\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/exchang\.qnssl\.com\/baiducdnct\.inter\.iqiyi\.com\/videos\/other\/.+\/.+\/.+\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/tcqcloudcdnct\.inter\.iqiyi\.com\/videos\/other\/.+\/.+\/.+\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/data[0-9]\.video\.iqiyi\.com\/videos\/other\/.+\/._\/.+\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/rhcdn\.verycloud\.cn\/baiducdnct\.inter\.iqiyi\.com\/videos\/other\/.+\/.+\/.+\/.+\.mp4,REJECT
 
 # > 腾讯QQ
 URL-REGEX,^http:\/\/.+\/analytics\/upload,REJECT
