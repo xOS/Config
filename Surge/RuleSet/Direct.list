@@ -9,6 +9,9 @@ DOMAIN-SUFFIX,ipip.net
 # > GEOIP
 DOMAIN,rtbasia.com
 
+# > 爱奇艺
+DOMAIN,msg.qy.net
+
 # > 网站
 DOMAIN-SUFFIX,wzfou.com
 DOMAIN-SUFFIX,bwl87.com

@@ -27,6 +27,9 @@ HOST-SUFFIX,mon.snssdk.com,DIRECT
 # > 咪咕视频
 HOST-SUFFIX,v.miguvideo.com,DIRECT
 
+# > 爱奇艺
+HOST,msg.qy.net,DIRECT
+
 # > 腾讯游戏
 HOST,cloudctrl.gcloud.qq.com,DIRECT
 USER-AGENT,smoba*,DIRECT
