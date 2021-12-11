@@ -294,7 +294,6 @@ URL-REGEX,^https?:\/\/ali-ec\.static\.yximgs\.com\/kos\/.+\/hybrid\/ad-union-fee
 URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/static\/js\/chunk-vendors\.+\.js$,REJECT
 URL-REGEX,^https:\/\/update\.pan\.baidu\.com\/statistics,REJECT-TINYGIF
 URL-REGEX,^http:\/\/rp\.hpplay\.cn\/logouts,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info,REJECT
 URL-REGEX,^https?:\/\/.+\/rest\/.+\/pcs\/adx,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/useractivity\/activity,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/act\/.+\/bchannel\/list,REJECT
@@ -303,7 +302,6 @@ URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js,
 URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info,REJECT
 URL-REGEX,^https?:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png,REJECT
-# URL-REGEX,^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/ts_ad\/,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adv,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from),REJECT
 
