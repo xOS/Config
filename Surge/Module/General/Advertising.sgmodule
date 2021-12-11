@@ -128,7 +128,6 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,upqzfile.com,REJECT
 DOMAIN,mbdlog.iqiyi.com,REJECT
 DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
-DOMAIN,myg.qy.net,REJECT
 DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
 DOMAIN,show.ssports.com,REJECT
 DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT

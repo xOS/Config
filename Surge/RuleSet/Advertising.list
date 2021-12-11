@@ -263,12 +263,10 @@ URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad
 DOMAIN-SUFFIX,cmonitor.iqiyi.com
 DOMAIN-SUFFIX,opportunarch.iqiyi.com
 DOMAIN-SUFFIX,ssports.com
-DOMAIN-SUFFIX,msg.qy.net
 DOMAIN-SUFFIX,du-feige.iqiyi.com
 DOMAIN-SUFFIX,api-yuedu.iqiyi.com
 DOMAIN-SUFFIX,hcdn.ppstream.com
 DOMAIN-SUFFIX,ccrgt.com
-DOMAIN-SUFFIX,data.video.iqiyi.com
 DOMAIN-SUFFIX,adtrack.enlightent.cn
 DOMAIN-SUFFIX,pangolin-dsp-toutiao.com
 DOMAIN-SUFFIX,collect.ux.21cn.com
