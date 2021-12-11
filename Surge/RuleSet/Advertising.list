@@ -298,7 +298,7 @@ DOMAIN-SUFFIX,c.uaa.iqiyi.com
 DOMAIN-SUFFIX,cloudpush.iqiyi.com
 DOMAIN-SUFFIX,cm.passport.iqiyi.com
 DOMAIN-SUFFIX,count.game.pps.tv
-# DOMAIN-SUFFIX,cupid.iqiyi.com
+DOMAIN-SUFFIX,cupid.iqiyi.com
 DOMAIN-SUFFIX,emoticon.sns.iqiyi.com
 DOMAIN-SUFFIX,game.pps.tv
 DOMAIN-SUFFIX,gamecenter.iqiyi.com
