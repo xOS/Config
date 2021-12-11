@@ -116,7 +116,7 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 # > 爱奇艺
 DOMAIN,video-ad.sm.cn,REJECT-DROP
 DOMAIN,api.cupid.dns.iqiyi.com,REJECT
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+DOMAIN,cupid.iqiyi.com,REJECT
 DOMAIN,cr-status.iqiyi.com,REJECT
 DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
 DOMAIN,ef-dongfeng.tanx.com,REJECT
@@ -127,14 +127,13 @@ DOMAIN,puma-api.iqiyi.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,upqzfile.com,REJECT
 DOMAIN,mbdlog.iqiyi.com,REJECT
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
 DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
 DOMAIN,show.ssports.com,REJECT
 DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
 URL-REGEX,^https?://.+/videos/other/.+?,REJECT
 URL-REGEX,^https?://.+\/.+/videos/other/.+,REJECT
 URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT
-URL-REGEX,^https?:\/\/data[0-9]\.video\.iqiyi\.com\/.+\.f4v$,REJECT
+# URL-REGEX,^https?:\/\/data(.*)?\.video\.iqiyi\.com\/.+\.f4v$,REJECT
 URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT
 URL-REGEX,^https?+:\/\/.+?\/(?>mixer|track2)\?,REJECT
 URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT
