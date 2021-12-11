@@ -121,7 +121,7 @@ DOMAIN,cr-status.iqiyi.com,REJECT
 DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
 DOMAIN,ef-dongfeng.tanx.com,REJECT
 DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT
-DOMAIN,t7z.cupid.iqiyi.com,DIRECT
+DOMAIN,t7z.cupid.iqiyi.com,REJECT
 DOMAIN,paopao-monitor.iqiyi.com,REJECT
 DOMAIN,puma-api.iqiyi.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
