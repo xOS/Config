@@ -280,14 +280,14 @@ DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN,sofire.baidu.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/pmall\/points\/balance,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/aipic\/image\/guidelist,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/usercfg,REJECT
+# URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/usercfg,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/ndbs\/nd_bundle(.*)\.js$,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/story\/new,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/checkthumbnailstatus,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/dss\/device,REJECT
 URL-REGEX,^https?:\/\/panpic\.baidu\.com\/rest\/2\.0\/pcs\/thumbnail,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/account\/getprivilege,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/chaselist,REJECT
+# URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/chaselist,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/wfm\/jnqp$,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/aipic\/image\/config,REJECT
 URL-REGEX,^https?:\/\/ali-ec\.static\.yximgs\.com\/kos\/.+\/hybrid\/ad-union-feed-template,REJECT
@@ -302,7 +302,7 @@ URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js,
 URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info,REJECT
 URL-REGEX,^https?:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adv,REJECT
+#URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adv,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from),REJECT
 
 # > 百度贴吧
