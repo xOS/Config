@@ -17,7 +17,7 @@ URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/index\.lazy\.+\.js$,RE
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/captcha\.weibo\.com\/static\/js\/jigsawLock\.min\.js$,REJECT
-URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/client\/throw_batch,REJECT-DROP
+# URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/client\/(throw_batch|addlog_batch),REJECT-DROP
 
 # > 网易云村屏蔽
 ;URL-REGEX,^https?:\/\/.+\/eapi\/socialsquare\/?,REJECT
