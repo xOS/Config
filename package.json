@@ -10,8 +10,8 @@
     "update-adrules": "node Script/Tools/AdRules"
   },
   "dependencies": {
-    "@adguard/hostlist-compiler": "^1.0.8",
-    "@sindresorhus/slugify": "^1.1.0",
-    "fs-extra": "^9.0.1"
+    "@adguard/hostlist-compiler": "^1.0.12",
+    "@sindresorhus/slugify": "^2.1.0",
+    "fs-extra": "^10.0.0"
   }
 }
