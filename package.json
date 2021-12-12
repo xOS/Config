@@ -13,5 +13,10 @@
     "@adguard/hostlist-compiler": "^1.0.12",
     "@sindresorhus/slugify": "^2.1.0",
     "fs-extra": "^10.0.0"
+  },
+  "resolutions": {
+    "axios": "^0.21.1",
+    "jsonpointer": "^5.0.0",
+    "better-ajv-errors": "^1.1.2"
   }
 }
