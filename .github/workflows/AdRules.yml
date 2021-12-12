@@ -63,7 +63,7 @@ jobs:
           rm -rf Surge/RuleSet/ChinaIPs.txt
 
       - name: commit, push
-        uses: EndBug/add-and-commit@v5
+        uses: EndBug/add-and-commit@v7.5.0
         with:
           add: "-A"
           author_name: 佩佩
