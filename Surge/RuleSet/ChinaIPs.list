@@ -5976,7 +5976,6 @@ IP-CIDR,49.4.0.0/14,no-resolve
 IP-CIDR,49.51.0.0/16,no-resolve
 IP-CIDR,49.52.0.0/14,no-resolve
 IP-CIDR,49.64.0.0/11,no-resolve
-IP-CIDR,5.154.144.0/22,no-resolve
 IP-CIDR,52.130.0.0/15,no-resolve
 IP-CIDR,52.80.0.0/14,no-resolve
 IP-CIDR,52.93.242.120/29,no-resolve
