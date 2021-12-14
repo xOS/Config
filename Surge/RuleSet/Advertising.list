@@ -14,6 +14,7 @@ IP-CIDR,5.28.194.123/32,REJECT
 
 # > 小红书
 DOMAIN-KEYWORD,miaozhen.
+DOMAIN-SUFFIX,miaozhen.com
 DOMAIN,ads-video-al.xhscdn.com
 
 # > POCO

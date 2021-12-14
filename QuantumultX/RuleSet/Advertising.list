@@ -6,6 +6,7 @@ HOST,amp-api.apps.apple.com,REJECT
 
 # > 小红书
 HOST-KEYWORD,miaozhen.,REJECT
+DOMAIN-SUFFIX,miaozhen.com
 HOST,ads-video-al.xhscdn.com,REJECT
 
 # > POCO
