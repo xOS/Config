@@ -774,7 +774,6 @@ HOST-SUFFIX,promote.biz.weibo.cn,REJECT
 HOST-SUFFIX,alitui.weibo.com,REJECT
 HOST-SUFFIX,s.alitui.weibo.com,REJECT
 HOST-SUFFIX,adimg.uve.weibo.com,REJECT
-HOST-SUFFIX,biz.weibo.com,REJECT
 HOST-SUFFIX,c.biz.weibo.com,REJECT
 HOST-SUFFIX,c.wcpt.biz.weibo.com,REJECT
 HOST-SUFFIX,click.uve.weibo.com,REJECT
