@@ -1058,10 +1058,6 @@
 .buzzcity.net
 .pixiedust.buzzfeed.com
 .bypass.jp
-.mon-va.byteoversea.com
-.starling-va.byteoversea.com
-.vcs-va.byteoversea.com
-.verification-va.byteoversea.com
 .c1exchange.com
 .c8.net.ua
 .applog.camera360.com
@@ -1102,6 +1098,7 @@
 .cdnstoremedia.com
 .cdnwidget.com
 .api.monedata.iomericreceiver.cellrebel.com
+.metricreceiver.cellrebel.com
 .celltick.com
 .celtra.com
 .js.center.io
@@ -1295,6 +1292,7 @@
 .monetize-api.coronalabs.com
 .stats.coronalabs.com
 .count.ly
+.static.cloud.coveo.com
 .smetrics.cox.com
 .cpmstar.com
 .cpx.to
@@ -2735,6 +2733,7 @@
 .api-analytics.metaps.com
 .api-analytics-bootstrap.metaps.com
 .metrilo.com
+.analytics.metrix.ir
 .rtb.mfadsrvr.com
 .rtb-use.mfadsrvr.com
 .rtb-usw.mfadsrvr.com
@@ -2885,6 +2884,7 @@
 .image.moengage.com
 .websdk.moengage.com
 .mologiq.net
+.api.monedata.io
 .ad.monetate.net
 .af.monetate.net
 .api.monetate.net
@@ -3074,6 +3074,7 @@
 .midoweb.offerstrack.net
 .mobfloral.offerstrack.net
 .mobnerve.offerstrack.net
+.sdk-monitoring.ogury.co
 .cloud.ogury.io
 .consent-manager-events.ogury.io
 .dsp-1.ogury.io
@@ -4131,6 +4132,8 @@
 .tappx.com
 .www.tapresearch.com
 .api.taps.io
+.api.tapsell.ir
+.plus.tapsell.ir
 .api.tapstream.com
 .reporting.tapstream.com
 .cdnsonata.taptapnetworks.com
