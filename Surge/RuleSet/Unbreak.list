@@ -1,48 +1,47 @@
-# Unbreak
 # > General
-USER-AGENT,archero*
-USER-AGENT,coffeecorp*
-USER-AGENT,Coffee%20Corp*
-USER-AGENT,restaurant-mobile*
-DOMAIN,app.adjust.com
-DOMAIN,bdtj.tagtic.cn
+USER-AGENT,archero*,DIRECT
+USER-AGENT,coffeecorp*,DIRECT
+USER-AGENT,Coffee%20Corp*,DIRECT
+USER-AGENT,restaurant-mobile*,DIRECT
+DOMAIN,app.adjust.com,DIRECT
+DOMAIN,bdtj.tagtic.cn,DIRECT
 
 # > Alibaba
-DOMAIN,log.mmstat.com
-DOMAIN,sycm.mmstat.com
+DOMAIN,log.mmstat.com,DIRECT
+DOMAIN,sycm.mmstat.com,DIRECT
 
 # > Google
-DOMAIN-SUFFIX,blog.google
-DOMAIN-SUFFIX,googletraveladservices.com
-DOMAIN,clientservices.googleapis.com
-DOMAIN,dl.google.com
-DOMAIN,dl.l.google.com
-DOMAIN,update.googleapis.com
-DOMAIN,translate.googleapis.com
+DOMAIN-SUFFIX,blog.google,DIRECT
+DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+DOMAIN,clientservices.googleapis.com,DIRECT
+DOMAIN,dl.google.com,DIRECT
+DOMAIN,dl.l.google.com,DIRECT
+DOMAIN,update.googleapis.com,DIRECT
+DOMAIN,translate.googleapis.com,DIRECT
 
 # >> Google Fonts API
-DOMAIN,fonts.googleapis.com
-DOMAIN,fonts.gstatic.com
+DOMAIN,fonts.googleapis.com,DIRECT
+DOMAIN,fonts.gstatic.com,DIRECT
 
 # >> Firebase Cloud Messaging
-#DOMAIN,mtalk.google.com
-#DOMAIN,alt1-mtalk.google.com
-#DOMAIN,alt2-mtalk.google.com
-#DOMAIN,alt3-mtalk.google.com
-#DOMAIN,alt4-mtalk.google.com
-#DOMAIN,alt5-mtalk.google.com
-#DOMAIN,alt6-mtalk.google.com
-#DOMAIN,alt7-mtalk.google.com
-#DOMAIN,alt8-mtalk.google.com
+#DOMAIN,mtalk.google.com,DIRECT
+#DOMAIN,alt1-mtalk.google.com,DIRECT
+#DOMAIN,alt2-mtalk.google.com,DIRECT
+#DOMAIN,alt3-mtalk.google.com,DIRECT
+#DOMAIN,alt4-mtalk.google.com,DIRECT
+#DOMAIN,alt5-mtalk.google.com,DIRECT
+#DOMAIN,alt6-mtalk.google.com,DIRECT
+#DOMAIN,alt7-mtalk.google.com,DIRECT
+#DOMAIN,alt8-mtalk.google.com,DIRECT
 
 # > Tencent
-DOMAIN,fairplay.l.qq.com
-DOMAIN,livew.l.qq.com
-DOMAIN,vd.l.qq.com
+DOMAIN,fairplay.l.qq.com,DIRECT
+DOMAIN,livew.l.qq.com,DIRECT
+DOMAIN,vd.l.qq.com,DIRECT
 
 # > Strava
-DOMAIN,analytics.strava.com
+DOMAIN,analytics.strava.com,DIRECT
 
 # > Umeng
-#DOMAIN,msg.umeng.com
-#DOMAIN,msg.umengcloud.com
+#DOMAIN,msg.umeng.com,DIRECT
+#DOMAIN,msg.umengcloud.com,DIRECT

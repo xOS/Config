@@ -1,44 +1,44 @@
 # > 谷歌统计与广告
-DOMAIN-KEYWORD,adservice
-DOMAIN-KEYWORD,googleads
-DOMAIN-SUFFIX,googleadservices.com
-DOMAIN-SUFFIX,googlesyndication.com
-DOMAIN-SUFFIX,googletagmanager.com
-DOMAIN-SUFFIX,adservice.google.com
-#DOMAIN-SUFFIX,doubleclick.net
-#DOMAIN-SUFFIX,displayads-formats.googleusercontent.com
+DOMAIN-KEYWORD,adservice,DIRECT
+DOMAIN-KEYWORD,googleads,DIRECT
+DOMAIN-SUFFIX,googleadservices.com,DIRECT
+DOMAIN-SUFFIX,googlesyndication.com,DIRECT
+DOMAIN-SUFFIX,googletagmanager.com,DIRECT
+DOMAIN-SUFFIX,adservice.google.com,DIRECT
+#DOMAIN-SUFFIX,doubleclick.net,DIRECT
+#DOMAIN-SUFFIX,displayads-formats.googleusercontent.com,DIRECT
 
 # > 谷歌开发日志
-DOMAIN,firebaselogging-pa.googleapis.com
+DOMAIN,firebaselogging-pa.googleapis.com,DIRECT
 
 # > 微软
-DOMAIN,self.events.data.microsoft.com
+DOMAIN,self.events.data.microsoft.com,DIRECT
 
 # > Mate Translate
-DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,amplitude.com,DIRECT
 
 # > GeoIP API
-DOMAIN-KEYWORD,geo
-DOMAIN-SUFFIX,ipapi.co
-DOMAIN-SUFFIX,ipinfo.io
-DOMAIN-SUFFIX,ipgeolocation.io
-DOMAIN-SUFFIX,abstractapi.com
-DOMAIN-SUFFIX,ipdata.co
-DOMAIN-SUFFIX,whoisxmlapi.com
-DOMAIN-SUFFIX,whatsmyip.com
-DOMAIN-SUFFIX,geoapify.com
-DOMAIN-SUFFIX,ifconfig.co
-DOMAIN-SUFFIX,ip.gs
-DOMAIN-SUFFIX,ipaddress.com
-DOMAIN-SUFFIX,ipworld.info
-DOMAIN-SUFFIX,ipapi.com
-DOMAIN-SUFFIX,ip-api.com
-DOMAIN-SUFFIX,my-ip.io
-DOMAIN-SUFFIX,ip125.com
-DOMAIN-SUFFIX,extreme-ip-lookup.com
-DOMAIN-SUFFIX,ip.nf
-DOMAIN-SUFFIX,seeip.org
-DOMAIN-SUFFIX,whois.pconline.com.cn
-DOMAIN-SUFFIX,pv.sohu.com
-DOMAIN-SUFFIX,ipwhois.app
-DOMAIN-SUFFIX,api.ipstack.com
+DOMAIN-KEYWORD,geo,DIRECT
+DOMAIN-SUFFIX,ipapi.co,DIRECT
+DOMAIN-SUFFIX,ipinfo.io,DIRECT
+DOMAIN-SUFFIX,ipgeolocation.io,DIRECT
+DOMAIN-SUFFIX,abstractapi.com,DIRECT
+DOMAIN-SUFFIX,ipdata.co,DIRECT
+DOMAIN-SUFFIX,whoisxmlapi.com,DIRECT
+DOMAIN-SUFFIX,whatsmyip.com,DIRECT
+DOMAIN-SUFFIX,geoapify.com,DIRECT
+DOMAIN-SUFFIX,ifconfig.co,DIRECT
+DOMAIN-SUFFIX,ip.gs,DIRECT
+DOMAIN-SUFFIX,ipaddress.com,DIRECT
+DOMAIN-SUFFIX,ipworld.info,DIRECT
+DOMAIN-SUFFIX,ipapi.com,DIRECT
+DOMAIN-SUFFIX,ip-api.com,DIRECT
+DOMAIN-SUFFIX,my-ip.io,DIRECT
+DOMAIN-SUFFIX,ip125.com,DIRECT
+DOMAIN-SUFFIX,extreme-ip-lookup.com,DIRECT
+DOMAIN-SUFFIX,ip.nf,DIRECT
+DOMAIN-SUFFIX,seeip.org,DIRECT
+DOMAIN-SUFFIX,whois.pconline.com.cn,DIRECT
+DOMAIN-SUFFIX,pv.sohu.com,DIRECT
+DOMAIN-SUFFIX,ipwhois.app,DIRECT
+DOMAIN-SUFFIX,api.ipstack.com,DIRECT

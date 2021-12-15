@@ -1,7 +1,7 @@
 # > 屏蔽服务
 # > Parallels
-DOMAIN,update.parallels.com
+DOMAIN,update.parallels.com,REJECT
 
 # > Beyond Compare
-DOMAIN,www.scootersoftware.com
-DOMAIN,scootersoftware.com
+DOMAIN,www.scootersoftware.com,REJECT
+DOMAIN,scootersoftware.com,REJECT

@@ -1,16 +1,16 @@
 # > Speedtest
-USER-AGENT,SpeedTest*
-DOMAIN-KEYWORD,speedtest
-DOMAIN-SUFFIX,ooklaserver.net
-DOMAIN,fast.rockisland.net
+USER-AGENT,SpeedTest*,PROXY
+DOMAIN-KEYWORD,speedtest,PROXY
+DOMAIN-SUFFIX,ooklaserver.net,PROXY
+DOMAIN,fast.rockisland.net,PROXY
 
-#DOMAIN-SUFFIX,88-f.net
-#DOMAIN,st.pautina-telecom.ru
-#DOMAIN-SUFFIX,goodnet.su
-#DOMAIN-SUFFIX,a-mo.net
+#DOMAIN-SUFFIX,88-f.net,PROXY
+#DOMAIN,st.pautina-telecom.ru,PROXY
+#DOMAIN-SUFFIX,goodnet.su,PROXY
+#DOMAIN-SUFFIX,a-mo.net,PROXY
 
 # > Fast
-DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,fast.com,PROXY
 
-# > Speed Test by Cloudflare
-DOMAIN-SUFFIX,speed.cloudflare.com
+# > Speed Test by Cloudflare,PROXY
+DOMAIN-SUFFIX,speed.cloudflare.com,PROXY
