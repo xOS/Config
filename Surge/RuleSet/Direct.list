@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,ipip.net,DIRECT
 DOMAIN,rtbasia.com,DIRECT
 
 # > 微博企业认证
+DOMAIN,verified.biz.weibo.com,DIRECT
 DOMAIN,future.biz.weibo.com,DIRECT
 
 # > 爱奇艺
