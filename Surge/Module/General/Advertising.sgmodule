@@ -131,15 +131,12 @@ DOMAIN,mbdlog.iqiyi.com,REJECT
 DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
 DOMAIN,show.ssports.com,REJECT
 DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
-URL-REGEX,^https?://.+/videos/other/.+?,REJECT
-URL-REGEX,^https?://.+\/.+/videos/other/.+,REJECT
 URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT
 URL-REGEX,^https?:\/\/data(.*)?\.video\.iqiyi\.com\/.+\.f4v$,REJECT
 URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT
 URL-REGEX,^https?+:\/\/.+?\/(?>mixer|track2)\?,REJECT
 URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT
 URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show,REJECT
-# URL-REGEX,^https?:\/\/.+\.+\.+\.+\/videos\/other\.+\/.+\/.+\/.+\.mp4,REJECT
 
 # > 腾讯QQ
 URL-REGEX,^http:\/\/.+\/analytics\/upload,REJECT
@@ -157,7 +154,6 @@ DOMAIN-SUFFIX,beacon.qq.com,REJECT-TINYGIF
 #DOMAIN,video.dispatch.tc.qq.com,REJECT
 URL-REGEX,^https?:\/\/(m?trace|btrace)\.qq\.com\/?,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/.*\/kvcollect\?,REJECT-TINYGIF
-URL-REGEX,^https?://.+/videos/other/.+,REJECT
 URL-REGEX,^https?://.+\.gdt\.qq\.com,REJECT
 URL-REGEX,^https?://.+\.l\.qq\.com,REJECT
 URL-REGEX,^https?:\/\/wa\.gtimg\.com\/adxcdn\/?,REJECT
@@ -517,7 +513,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) - reject
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_9\d{2} - reject
 ^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) - reject
-^https?:\/\/.+/videos/other/.+ - reject
 ^https?:\/\/.+?/V\d\/splash\/getSplashV\d\.action - reject
 ^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ - reject
 ^https?:\/\/.+?\.58cdn\.com\.cn\/brandads\/ - reject
@@ -832,7 +827,12 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ;^https?://.+\/defaultts\.tc.\qq\.com\/? data="https://hub.nan.ge/Blank/Blank.mp4"
 
 # > 爱奇艺
+^https?:\/\/.+\/videos\/other\.+\/.+\/.+\/.+\.mp4 data="https://hub.nan.ge/Blank/Blank.mp4"
+^https?://.+/videos/other/.+? data="https://hub.nan.ge/Blank/Blank.mp4"
+^https?://.+\/.+/videos/other/.+ data="https://hub.nan.ge/Blank/Blank.mp4"
 ^https?:\/\/.+\.+\.+\.+\/videos\/other\.+\/.+\/.+\/.+\.mp4 data="https://hub.nan.ge/Blank/Blank.mp4"
+^https?://.+/videos/other/.+ data="https://hub.nan.ge/Blank/Blank.mp4"
+^https?:\/\/.+/videos/other/.+ data="https://hub.nan.ge/Blank/Blank.mp4"
 
 # > 百度网盘
 ^https?:\/\/pan\.baidu\.com\/api\/diffall data="https://hub.nan.ge/Blank/Blank_Dict.json"
