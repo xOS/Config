@@ -8,7 +8,8 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.iqiyipic.com, *.video.iqi
 # > 微博其它
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/1071\/1468\/.+\/.+\.gif$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live_Normal\.png$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fish\.png$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/(fish|redicon)\.png$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/100,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
