@@ -188,8 +188,10 @@ function removeHomeVip(data) {
 	if(!vipCenter) {
 		return data;
 	}
-	vipCenter.icon = '';
-	vipCenter.title.content = '会员中心';
+	vipCenter.icon = {};
+	vipCenter.title = {};
+	vipCenter.content.contents[2].content = '个人中心';
+	// vipCenter.title.content = '会员中心';
 	return data;
 }
 
@@ -303,7 +305,7 @@ function removeHome(data) {
 		let itemId = item.itemId;
 		if(itemId == 'profileme_mine') {
 			if(mainConfig.removeHomeVip) {
-				item = removeHomeVip(item);;
+				item = removeHomeVip(item);
 			}
 			updateFollowOrder(item);
 			newItems.push(item);

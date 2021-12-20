@@ -9,7 +9,8 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.iqiyipic.com, *.video.iqi
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/1071\/1468\/.+\/.+\.gif$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live_Normal\.png$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/(fish|redicon)\.png$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/100,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/1071\/,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/100\/953\/,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
@@ -824,6 +825,7 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^http:\/\/.+\/moviets\.tc\.qq\.com\/.+/svp_(.*)/.+/.+\.ts data="https://hub.nan.ge/Blank/Blank.mp4"
 ^http:\/\/.+\/defaultts\.tc\.qq\.com\/.+\/svp_(.*)\/.+\/.+\.ts data="https://hub.nan.ge/Blank/Blank.mp4"
 ^http:\/\/.+\/variety\.tc\.qq\.com\/.+/svp_(.*)/.+/.+\.ts data="https://hub.nan.ge/Blank/Blank.mp4"
+^http:\/\/.+\/vhqts\.tc\.qq\.com\/.+/svp_(.*)/.+/.+\.ts data="https://hub.nan.ge/Blank/Blank.mp4"
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 data="https://hub.nan.ge/Blank/Blank.mp4"
 ^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4 data="https://hub.nan.ge/Blank/Blank.mp4"
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 data="https://hub.nan.ge/Blank/Blank.mp4"
