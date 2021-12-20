@@ -189,9 +189,9 @@ function removeHomeVip(data) {
 		return data;
 	}
 	vipCenter.icon = {};
-	vipCenter.title = {};
-	vipCenter.content.contents[2].content = '个人中心';
-	// vipCenter.title.content = '会员中心';
+	// vipCenter.title = {};
+	(vipCenter.content.contents)[2].content = '会员中心';
+	vipCenter.title.content = '会员中心';
 	return data;
 }
 
