@@ -1948,7 +1948,8 @@ IP-CIDR,103.97.192.0/22,no-resolve
 IP-CIDR,103.97.40.0/22,no-resolve
 IP-CIDR,103.97.60.0/23,no-resolve
 IP-CIDR,103.98.100.0/22,no-resolve
-IP-CIDR,103.98.124.0/22,no-resolve
+IP-CIDR,103.98.124.0/24,no-resolve
+IP-CIDR,103.98.126.0/23,no-resolve
 IP-CIDR,103.98.136.0/21,no-resolve
 IP-CIDR,103.98.144.0/22,no-resolve
 IP-CIDR,103.98.164.0/22,no-resolve
@@ -6119,7 +6120,6 @@ IP-CIDR,67.198.207.0/24,no-resolve
 IP-CIDR,67.198.208.0/24,no-resolve
 IP-CIDR,67.198.221.0/24,no-resolve
 IP-CIDR,67.198.235.0/24,no-resolve
-IP-CIDR,67.198.236.0/24,no-resolve
 IP-CIDR,67.198.239.0/24,no-resolve
 IP-CIDR,67.198.244.0/24,no-resolve
 IP-CIDR,67.198.255.0/24,no-resolve
