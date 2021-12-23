@@ -45,6 +45,12 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz
 # >> tv Movies and TV Show Card (macOS)
 (^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=(?:tv|movies))(.*)(q=(?:tv|movies)%3A)(.*)(%2F)([a-z]{2}-[A-Z]{2})(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9$10$11$12zh-TW$14 header
 
+[Map Local]
+# > 微博
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data="https://h5.sinaimg.cn/upload/1071/1468/2021/12/22/hy_dongtu.gif"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://h5.sinaimg.cn/upload/100/888/2021/03/22/jiantougaocheng.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://h5.sinaimg.cn/upload/100/888/2021/04/07/avatar_vip_golden.png"
+
 [Script]
 # > 网络信息
 网络状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NetInfo.js
@@ -152,4 +158,4 @@ DY = type=http-response,pattern="^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|index|(\/|)vod\/reqplay\/),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Ban.js
 
 [MITM]
-hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com
+hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn
