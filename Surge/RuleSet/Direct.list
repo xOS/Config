@@ -9,6 +9,9 @@ DOMAIN-SUFFIX,ipip.net,DIRECT
 # > GEOIP
 DOMAIN,rtbasia.com,DIRECT
 
+# > 监控宝
+DOMAIN-SUFFIX,jiankongbao.com,DIRECT
+
 # > 微博企业认证
 DOMAIN,verified.biz.weibo.com,DIRECT
 DOMAIN,future.biz.weibo.com,DIRECT
