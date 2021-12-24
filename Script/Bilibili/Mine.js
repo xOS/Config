@@ -1,12 +1,12 @@
 let body = JSON.parse($response.body);
 body['data']['official_verify']['type'] = 1;
 body['data']['official_verify']['desc'] = "管理员";
-body['data']['vip_type'] = 2;
+body['data']['vip_type'] = 3;
 body['data']['vip_section_v2']= {};
 body['data']['vip_section']= {};
 body['data']['vip']['status'] = 1;
 body['data']['vip']['avatar_subscript'] = 2;
-body['data']['vip']['role'] = 2;
+body['data']['vip']['role'] = 1;
 body['data']['vip']['vip_pay_type'] = 1;
 // 删除了“推荐服务”
 body['data']['sections_v2'] = [

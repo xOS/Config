@@ -1,5 +1,5 @@
 var obj = JSON.parse($response.body); 
-obj['data']['card']['official_verify']['type'] = 1;
+obj['data']['card']['official_verify']['type'] = 2;
 obj['data']['card']['official_verify']['desc'] = "超级管理员";
 obj['data']['card']['official_verify']['role'] = 1;
 obj['data']['card']['official_verify']['title'] = "管理员";
