@@ -1,5 +1,5 @@
 let body = JSON.parse($response.body);
-body['data']['official_verify']['type'] = 2;
+body['data']['official_verify']['type'] = 1;
 body['data']['official_verify']['desc'] = "管理员";
 body['data']['vip_type'] = 2;
 body['data']['vip_section_v2']= {};

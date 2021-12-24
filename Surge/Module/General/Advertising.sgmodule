@@ -782,6 +782,9 @@ http-response ^https://app\.bilibili\.com/x/v2/account/mine\?access_key requires
 # >>  “我的信息”的修改
 http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/MyInfo.js
 
+# >>  “空间”的修改
+http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/space requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/Space.js
+
 # >>  动态广告
 http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$ requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/Dynamic.js
 
