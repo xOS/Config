@@ -1,13 +1,23 @@
 let body = JSON.parse($response.body);
 body['data']['official_verify']['type'] = 1;
 body['data']['official_verify']['desc'] = "管理员";
-body['data']['vip_type'] = 3;
+body['data']['vip_type'] = 2;
 body['data']['vip_section_v2']= {};
 body['data']['vip_section']= {};
-body['data']['vip']['status'] = 1;
-body['data']['vip']['avatar_subscript'] = 2;
-body['data']['vip']['role'] = 1;
-body['data']['vip']['vip_pay_type'] = 1;
+body['data']['vip'] = {
+    "status": 1,
+    "avatar_subscript": 1,
+    "nickname_color": "#FB7299",
+    "due_date": 0,
+    "vip_pay_type": 0,
+    "label": {
+      "path": "",
+      "text": "十年大会员",
+      "label_theme": "ten_annual_vip"
+    },
+    "type": 2,
+    "theme_type": 0
+  };
 // 删除了“推荐服务”
 body['data']['sections_v2'] = [
     {
