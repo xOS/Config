@@ -11,6 +11,9 @@ DOMAIN-SUFFIX,adservice.google.com,DIRECT
 # > 谷歌开发日志
 DOMAIN,firebaselogging-pa.googleapis.com,DIRECT
 
+# > 日志收集
+DOMAIN-SUFFIX,bugsnag.com,DIRECT
+
 # > 微软
 DOMAIN,self.events.data.microsoft.com,DIRECT
 
