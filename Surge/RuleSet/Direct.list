@@ -8,9 +8,14 @@ DOMAIN-SUFFIX,ipip.net,DIRECT
 
 # > GEOIP
 DOMAIN,rtbasia.com,DIRECT
+DOMAIN-SUFFIX,ip2location.com,DIRECT
 
 # > 监控宝
 DOMAIN-SUFFIX,jiankongbao.com,DIRECT
+
+# > 日志收集
+DOMAIN-SUFFIX,bugsnag.com,DIRECT
+DOMAIN-SUFFIX,app-measurement.com,DIRECT
 
 # > 微博企业认证
 DOMAIN,verified.biz.weibo.com,DIRECT
