@@ -123,7 +123,6 @@ URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/
 DOMAIN,video-ad.sm.cn,REJECT-DROP
 DOMAIN,api.cupid.dns.iqiyi.com,REJECT
 DOMAIN,cupid.iqiyi.com,REJECT
-DOMAIN,cr-status.iqiyi.com,REJECT
 DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT
 DOMAIN,ef-dongfeng.tanx.com,REJECT
 DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT

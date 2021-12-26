@@ -271,7 +271,6 @@ DOMAIN-SUFFIX,ccrgt.com,REJECT
 DOMAIN-SUFFIX,adtrack.enlightent.cn,REJECT
 DOMAIN-SUFFIX,pangolin-dsp-toutiao.com,REJECT
 DOMAIN-SUFFIX,collect.ux.21cn.com,REJECT
-DOMAIN-SUFFIX,cr-status.iqiyi.com,REJECT
 DOMAIN-SUFFIX,u2.iqiyipic.com,REJECT
 DOMAIN-SUFFIX,muses-ugc.iqiyi.com,REJECT
 DOMAIN-SUFFIX,tuiguang.iqiyi.com,REJECT
