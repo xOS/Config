@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,bugsnag.com,DIRECT
 DOMAIN-SUFFIX,app-measurement.com,DIRECT
 
 # > 微博企业认证
+DOMAIN,e.biz.weibo.com,DIRECT
 DOMAIN,verified.biz.weibo.com,DIRECT
 DOMAIN,future.biz.weibo.com,DIRECT
 
