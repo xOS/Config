@@ -135,9 +135,9 @@ DOMAIN,mbdlog.iqiyi.com,REJECT
 DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
 DOMAIN,show.ssports.com,REJECT
 DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
-URL-REGEX,^http:\/\/dx-aliyuncdnct\.inter\.iqiyi\.com\/qpdxv\/other\/.+\.mp4,REJECT
-URL-REGEX,^http:\/\/pic(.*)\.iqiyipic\.com\/advertise ,REJECT
-URL-REGEX,^http:\/\/pic(.*)\.iqiyipic\.com\/image\/.+\/pv_(.*)\.jpg,REJECT
+URL-REGEX,^https?:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4,REJECT
+URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/advertise ,REJECT
+URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/image\/.+\/pv_(.*)\.jpg,REJECT
 URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT
 URL-REGEX,^https?:\/\/data(.*)?\.video\.iqiyi\.com\/.+\.f4v$,REJECT
 URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT
@@ -848,12 +848,7 @@ Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu
 ^https?://.+\/defaultts\.tc.\qq\.com\/? data="https://hub.nan.ge/Blank/Blank.mp4"
 
 # > 爱奇艺
-^https?:\/\/.+\/videos\/other\.+\/.+\/.+\/.+\.mp4 data="https://hub.nan.ge/Blank/Blank.mp4"
-^https?://.+/videos/other/.+? data="https://hub.nan.ge/Blank/Blank.mp4"
-^https?://.+\/.+/videos/other/.+ data="https://hub.nan.ge/Blank/Blank.mp4"
-^https?:\/\/.+\.+\.+\.+\/videos\/other\.+\/.+\/.+\/.+\.mp4 data="https://hub.nan.ge/Blank/Blank.mp4"
-^https?://.+/videos/other/.+ data="https://hub.nan.ge/Blank/Blank.mp4"
-^https?:\/\/.+/videos/other/.+ data="https://hub.nan.ge/Blank/Blank.mp4"
+;^http:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4 data="https://hub.nan.ge/Blank/Blank.mp4"
 
 # > 百度网盘
 ^https?:\/\/pan\.baidu\.com\/api\/diffall data="https://hub.nan.ge/Blank/Blank_Dict.json"

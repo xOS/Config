@@ -23,7 +23,7 @@ DOMAIN,verified.biz.weibo.com,DIRECT
 DOMAIN,future.biz.weibo.com,DIRECT
 
 # > 爱奇艺
-DOMAIN,msg.qy.net,DIRECT
+#DOMAIN,msg.qy.net,DIRECT
 
 # > 网站
 DOMAIN-SUFFIX,wzfou.com,DIRECT
