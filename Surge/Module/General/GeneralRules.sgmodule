@@ -47,10 +47,10 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz
 
 [Map Local]
 # > 微博
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data="https://h5.sinaimg.cn/upload/1071/1468/2021/12/22/hy_dongtu.gif"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://h5.sinaimg.cn/upload/100/888/2021/03/22/jiantougaocheng.png"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://h5.sinaimg.cn/upload/100/888/2021/04/07/avatar_vip_golden.png"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7_default.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data="https://hub.nan.ge/Mock/Weibo/hy_dongtu.gif"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://hub.nan.ge/Mock/Weibo/jiantougaocheng.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.nan.ge/Mock/Weibo/avatar_vip_golden.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.nan.ge/Mock/Weibo/feed_icon_100vip_7_default.png"
 
 [Script]
 # > 网络信息
