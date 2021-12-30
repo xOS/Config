@@ -4422,6 +4422,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.i.bigin.io
 .events*.cre.ma
 .anon-stats.eff.org
 .improving.wuzhuiso.com
