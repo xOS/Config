@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.iqiyipic.com, *.video.iqiyi.com, *.inter.iqiyi.com, exchang.qnssl.com, *.verycloud.cn, ts.qq.com, *.douyinvod.com, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 116.211*, 119.96.*, 111.48.*, 49.7.*, 36.99.*, 36.110.*, 106.38.*, 106.39.*, 123.101.*, 123.149.*, 123.160.*, 111.202.*, 1.193.*, 175.6.225.125, 140.249*, 150.138*, 150.139.*, 116.207*, 42.81.*, 221.238.*, 114.221.*, 114.222.*, 117.62.*, 119.147.*,101.91.*, 106.42.*, 114.80.*, 58.49.*, 61.129.*, 58.60.*, 101.89.*, 14.22.*, 14.18.*, 123.150.*, 14.116.*, 180.202.*, 140.249.*, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, 123.54.*, 1.71.*, 171.11.*, *.tc.qq.com
+force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.iqiyipic.com, *.video.iqiyi.com, *.inter.iqiyi.com, exchang.qnssl.com, *.verycloud.cn, ts.qq.com, *.douyinvod.com, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 119.96.*, 111.48.*, 49.7.*, 36.99.*, 36.110.*, 106.38.*, 106.39.*, 123.101.*, 123.149.*, 123.160.*, 111.202.*, 1.193.*, 175.6.225.125, 140.249*, 150.138*, 150.139.*, 116.207*, 42.81.*, 221.238.*, 114.221.*, 114.222.*, 117.62.*, 119.147.*,101.91.*, 106.42.*, 114.80.*, 58.49.*, 61.129.*, 58.60.*, 101.89.*, 14.22.*, 14.18.*, 123.150.*, 14.116.*, 180.202.*, 140.249.*, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, 123.54.*, 1.71.*, 171.11.*, *.tc.qq.com
 
 [Rule]
 # > 微博其它
@@ -10,9 +10,6 @@ URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/(fish|redicon)\.png$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/lipin_dongtu\.gif$,REJECT
 # URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/1071\/1468\/.+\/.+\.gif$,REJECT
-# URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/1071\/1468\/,REJECT
-# URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/100\/953\/,REJECT
-# URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/100\/1676\/,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
@@ -21,15 +18,7 @@ URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/index\.lazy\.+\.js$,RE
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/captcha\.weibo\.com\/static\/js\/jigsawLock\.min\.js$,REJECT
-# URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/client\/(throw_batch|addlog_batch),REJECT-DROP
 URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
-
-# > 网易云村屏蔽
-;URL-REGEX,^https?:\/\/.+\/eapi\/socialsquare\/?,REJECT
-;URL-REGEX,^https?:\/\/.+\/api\/feedback\/?,REJECT-TINYGIF
-;URL-REGEX,^https?:\/\/.+\/eapi\/mlog\/publish\/?,REJECT
-;URL-REGEX,^https?:\/\/.+\/eapi\/delivery\/deliver,REJECT
-;URL-REGEX,^https?:\/\/.+\/eapi\/privilege\/song\/?,REJECT
 
 # > Spotify
 URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ads,REJECT
@@ -37,18 +26,6 @@ URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/gabo-receiver-service\/v3\/eve
 URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic,REJECT
 DOMAIN,video-akpcw-cdn-spotify-com.akamaized.net,REJECT
 DOMAIN,adeventtracker.spotify.com,REJECT
-
-# > Instagram
-#DOMAIN,graph.facebook.com,REJECT
-#DOMAIN,z-p42-chat-e2ee-ig.facebook.com,REJECT
-#URL-REGEX,^https?:\/\/web\.facebook\.com\/messaging\/lightspeed\/request$,REJECT
-#URL-REGEX,^https?:\/\/portal\.fb\.com\/mobile\/status\.php$,REJECT
-#URL-REGEX,^https?:\/\/(i|www|graph)\.(instagram|facebook)\.(net|com)\/logging_client_events,REJECT
-#URL-REGEX,^https?:\/\/(i|www|graph)\.(instagram|facebook)\.(net|com)\/ajax\/bz,REJECT
-#URL-REGEX,^https?:\/\/(i|www|graph)\.(instagram|facebook)\.(net|com)\/logging\/falco,REJECT
-#URL-REGEX,^https?:\/\/(i|www|graph)\.(instagram|facebook)\.(net|com)\/graphql\/query\/?,REJECT
-#URL-REGEX,^https?:\/\/(connect|www)\.facebook\.(net|com)\/.+\/sdk.js,REJECT
-#URL-REGEX,^https:\/\/graph\.(facebook|instagram)\.(net|com)\/.+\/.+\/activities$,REJECT
 
 # > 央视频开头广告
 URL-REGEX,^https?:\/\/adstore-(.*).file.myqcloud.com\?,REJECT
@@ -406,7 +383,7 @@ ctier=[A-Z] citer=A 302
 # > 颇可
 ^https?:\/\/web-api\.poco\.cn\/.+\/rank\/get_wap_works_info_banner - reject
 ^https?:\/\/web-api\.poco\.cn\/.+\/rank\/get_floating_layer_ad - reject
-//^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_start_screen_ad - reject
+# ^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_start_screen_ad - reject
 
 # > 百度贴吧(TributePaulWalker搬运)->*.tieba.baidu.com,feed-image.baidu.com
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule - reject
@@ -432,11 +409,6 @@ ctier=[A-Z] citer=A 302
 ^https:\/\/m\.ctrip\.com\/html5\/webresource\/js\/iscroll\.js$,REJECT
 ^https:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare - reject
 
-# > 腾讯视频广告屏蔽
-# ^http:\/\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 - reject
-# ^http:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4 - reject
-^http:\/\/wa\.gtimg\.com\/adxcdn\/.+\.jpg - reject
-
 # > 爱奇艺广告屏蔽
 ^http:\/\/.+\.iqiyipic\.com\/image\/.+\/ad\/.+\.jpg - reject
 ^http:\/\/static-s\.iqiyi\.com\/common\/.+\/Small_video/a2/af/.+\.png - reject
@@ -445,7 +417,6 @@ https?:\/\/ssports\.iqiyi\.com\/app\/ - reject
 https?:\/\/ssports\.iqiyi\.com\/json\/shop\/shopInfo  - reject
 https?:\/\/.+\.iqiyi\.com\/videos\/other\/20$ - reject
 https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000 - reject
-#https?:\/\/static\.iqiyi\.com\/js\/common\/.+\.js - reject
 https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 
 # > 搬运爱奇艺(by gitee-木剑)->act.vip.iqiyi.com
@@ -485,14 +456,9 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/an\.yandex\.ru\/? - reject
 ^https?:\/\/avatars\.mds\.yandex\.net\/get-direct-picture\/? - reject
 
-;^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/video\.dispatch\/.tc\.qq\.com\/.+?\/.+?\.mp4\? - reject
-;^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4\? - reject
-;^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\? - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/monitor\/receive\.action$ - reject
 # 微博视频误杀，故注释掉
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\.mp4 - reject
-# 爱奇艺
-;^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/videos\/? - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)(:\d+)?\/V\d\/splash\/getSplashV\d\.action$ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d):\d+/xygj-config-api\/queryData - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d):\d+\/allOne\.php\?ad_name - reject
@@ -500,7 +466,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/EcomResourceServer/AdPlayPage/adinfo - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/MobileAdServer\/ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004 - reject
-;^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\? - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog) - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/api\/v\d\/app_square\/start_up_with_ad$ - reject
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/brand\/search\/v1\.json - reject
