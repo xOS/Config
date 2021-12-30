@@ -96,7 +96,7 @@ member = type=http-response,pattern=^https:\/\/.*\.miguvideo\.com\/ability\/.+\/
 VSCO = type=http-response ^https?:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\?, requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Photo/VSCO.js
 
 # > WorkingCopy.js
-;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Dev/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/education\.github\.com\/api\/user$
+;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/WorkingCopy/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/education\.github\.com\/api\/user$
 
 # > Lightroom
 Lightroom = type=http-response,pattern=^https?:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Adobe/Lightroom.js,script-update-interval=-1
