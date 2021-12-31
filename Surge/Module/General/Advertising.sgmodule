@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.iqiyipic.com, *.video.iqiyi.com, *.inter.iqiyi.com, exchang.qnssl.com, *.verycloud.cn, ts.qq.com, *.douyinvod.com, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 119.96.*, 111.48.*, 49.7.*, 36.99.*, 36.110.*, 106.38.*, 106.39.*, 123.101.*, 123.149.*, 123.160.*, 111.202.*, 1.193.*, 175.6.225.125, 140.249*, 150.138*, 150.139.*, 116.207*, 42.81.*, 221.238.*, 114.221.*, 114.222.*, 117.62.*, 119.147.*,101.91.*, 106.42.*, 114.80.*, 58.49.*, 61.129.*, 58.60.*, 101.89.*, 14.22.*, 14.18.*, 123.150.*, 14.116.*, 180.202.*, 140.249.*, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, 123.54.*, 1.71.*, 171.11.*, *.tc.qq.com, api*.amemv.com
+force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.iqiyipic.com, *.video.iqiyi.com, *.inter.iqiyi.com, exchang.qnssl.com, *.verycloud.cn, ts.qq.com, *.douyinvod.com, 119.18.193.135, 122.14.246.33, 123.59.31.1, 175.102.178.52, 118.89.204.198, 220.112*, 211.162*, 124.193*, 124.14*, 119.79*, 119.96.*, 111.48.*, 49.7.*, 36.99.*, 36.110.*, 106.38.*, 106.39.*, 123.101.*, 123.149.*, 123.160.*, 111.202.*, 1.193.*, 175.6.225.125, 140.249*, 150.138*, 150.139.*, 116.207*, 42.81.*, 221.238.*, 114.221.*, 114.222.*, 117.62.*, 119.147.*,101.91.*, 106.42.*, 114.80.*, 58.49.*, 61.129.*, 58.60.*, 101.89.*, 14.22.*, 14.18.*, 123.150.*, 14.116.*, 180.202.*, 140.249.*, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, 123.54.*, 1.71.*, 171.11.*, *.tc.qq.com, api*.amemv.com, 1.195.*, 106.42.*, 123.161.*, 123.149.*, 222.88.*, 123.55.*, 1.199.*, 1.198.*, 171.13.*, 1.196.*, 1.19*.*
 
 [Rule]
 # > 微博其它
@@ -809,6 +809,7 @@ Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#s
 ^https?:\/\/api\.weibo\.cn\/2\/video\/machine data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
 # > 腾讯视频
+^http:\/\/.+\/svp_(.*)\/.+\.(ts|mp4) data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 ^http:\/\/.+\/(moviet|defaultts|variety|vhqts)\.tc\.qq\.com\/.+/svp_(.*)/.+/.+\.ts data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 ^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
