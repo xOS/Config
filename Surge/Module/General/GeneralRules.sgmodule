@@ -169,5 +169,11 @@ UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/v1\/user\/
 Center = type=http-response,pattern=^https:\/\/.+\.wtzw\.com\/api\/v2\/user\/my-center,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QiMao/Center.js
 GetInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/v1\/user\/get-role-adv-vip-info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QiMao/GetInfo.js
 
+# > 百度网盘
+http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Baidu/BaiduCloud.js
+
+# > Spotify
+Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nan.ge/Script/Spotify/Spotify.js
+
 [MITM]
-hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com
+hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com
