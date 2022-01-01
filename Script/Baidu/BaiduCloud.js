@@ -53,9 +53,9 @@ obj = {
       'advertiseContent': []
   },
   'request_id': 7501873289383875000,
-  "status_data": "已是超级会员 SVIP V8",
+  "status_data": "已是超级会员SVIP",
   'guide_data': {
-      'title': '超级会员 SVIP',
+      'title': '超级会员SVIP',
       'content': '已拥有极速下载+视频倍速特权',
       'button': {
           'text': '会员中心',
