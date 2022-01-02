@@ -815,7 +815,6 @@ Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#s
 ^https?:\/\/api\.weibo\.cn\/2\/push\/active data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/m\.weibo\.cn\/c\/checkin data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.weibo\.cn\/2\/video\/machine data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/api\.weibo\.cn\/2\/push\/applet data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/fastimage\.uve\.weibo\.com\/interface\/sdk\/getad\.php$ data="https://hub.nan.ge/Mock/Weibo/fastimage.json"
 
 # > 腾讯视频
