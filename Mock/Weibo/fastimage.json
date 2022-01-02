@@ -1,0 +1,8 @@
+{
+  "show_push_splash_ad": false,
+  "ads": [
+  ],
+  "background_delay_display_time": 300000,
+  "lastAdShow_delay_display_time": 900000,
+  "needlocation": false
+}
