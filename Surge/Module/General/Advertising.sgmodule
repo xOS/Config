@@ -62,10 +62,10 @@ URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.mi
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 
 # > 哔哩哔哩
-URL-REGEX, ^https://app\.bilibili\.com/x/v2/splash/list, REJECT
-DOMAIN-SUFFIX, grpc.biliapi.net, REJECT
+URL-REGEX,^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list, REJECT
+# DOMAIN-SUFFIX, grpc.biliapi.net, REJECT
 // URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
-URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
 URL-REGEX,^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/,REJECT
 URL-REGEX,^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
 
@@ -265,12 +265,12 @@ DOMAIN-SUFFIX,hpplay.cn,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN,sofire.baidu.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/pmall\/points\/balance,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/aipic\/image\/guidelist,REJECT
+# URL-REGEX,^https?:\/\/pan\.baidu\.com\/aipic\/image\/guidelist,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/ndbs\/nd_bundle(.*)\.js$,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/checkthumbnailstatus,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/dss\/device,REJECT
-URL-REGEX,^https?:\/\/panpic\.baidu\.com\/rest\/2\.0\/pcs\/thumbnail,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/account\/getprivilege,REJECT
+# URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/dss\/device,REJECT
+# URL-REGEX,^https?:\/\/panpic\.baidu\.com\/rest\/2\.0\/pcs\/thumbnail,REJECT
+# URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/account\/getprivilege,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/wfm\/jnqp$,REJECT
 URL-REGEX,^https?:\/\/ali-ec\.static\.yximgs\.com\/kos\/.+\/hybrid\/ad-union-feed-template,REJECT
 URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/static\/js\/chunk-vendors\.+\.js$,REJECT
@@ -823,15 +823,15 @@ Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#s
 ;^http:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 
 # > 百度网盘
-^https?:\/\/pan\.baidu\.com\/api\/diffall data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+# ^https?:\/\/pan\.baidu\.com\/api\/diffall data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/pmall\/support\/hometabs data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/wk\.baidu\.com\/smallapp\/browse\/home\?personal_recommend=1&isFullScreen=1$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/pan\.baidu\.com\/act\/v2\/bchannel\/list data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+# ^https?:\/\/pan\.baidu\.com\/act\/v2\/bchannel\/list data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/task\/tasklist data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/pmall\/points\/goodslist data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activitystatus data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/pan\.baidu\.com\/aipic\/image\/gettags data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+# ^https?:\/\/pan\.baidu\.com\/aipic\/image\/gettags data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/api\/analytics data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^http:\/\/update\.pan\.baidu\.com\/statistics data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
