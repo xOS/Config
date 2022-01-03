@@ -80,6 +80,7 @@ DOMAIN, app.cdn.ink,DIRECT
 # > 其它
 DOMAIN, qste.com,DIRECT
 DOMAIN, www.qste.com,DIRECT
+DOMAIN, shop.qste.com,DIRECT
 DOMAIN, admin.qste.com,DIRECT
 DOMAIN, cdn.qste.com,DIRECT
 DOMAIN, status.qste.com,DIRECT
