@@ -30,7 +30,7 @@ obj.icons = [
     "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
   }
 ];
-// const verified = {
+const verified = {
   "scheme": "",
   "icon_video_style_dark": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2021\/04\/16\/video_verified_dark.png",
   "icon_video_style": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2021\/04\/16\/video_verified.png",
