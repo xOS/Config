@@ -1,4 +1,4 @@
-const version = 'v1105.1';
+const version = 'v0105.1';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -182,7 +182,7 @@ function removeTimeLine(data) {
 
 function removeHomeVip(data) {
 	if(!data.header) {
-	    data.header.desc.content = '微博认证：系统管理员';
+	    data.header.desc.content = '微博认证：最美小仙女';
 	    data.items[0].title.content = 0;
 		return data;
 	}

@@ -8,15 +8,15 @@ const verified_detail = {
       "key": 1,
       "weight": 10,
       "sub_key": 0,
-      "desc": "系统管理员"
+      "desc": "最美小仙女"
     }
   ]
 };
 obj.verified_detail = verified_detail;
 obj.svip = 1;
-obj.verified_reason = "系统管理员";
+obj.verified_reason = "最美小仙女";
 obj.statuses_count = 0;
-obj.orange_v = "系统管理员";
+obj.orange_v = "最美小仙女";
 obj.verified_level = 2;
 obj.avatargj_id = "gj_vip_583";
 obj.verified = true;
@@ -46,7 +46,7 @@ const verified = {
     "oid": ""
   },
   "icon": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2020\/05\/19\/verified.png",
-  "desc": "系统管理员"
+  "desc": "最美小仙女"
 };
 if(obj.infoList[0].actionlog.ext !='name:verified') obj.infoList.splice(0, 0, verified);
 obj.badge = {
