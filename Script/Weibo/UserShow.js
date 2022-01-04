@@ -30,7 +30,7 @@ obj.icons = [
     "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
   }
 ];
-const verified = {
+// const verified = {
   "scheme": "",
   "icon_video_style_dark": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2021\/04\/16\/video_verified_dark.png",
   "icon_video_style": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2021\/04\/16\/video_verified.png",
@@ -48,7 +48,7 @@ const verified = {
   "icon": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2020\/05\/19\/verified.png",
   "desc": "最美小仙女"
 };
-if(obj.infoList[0].actionlog.ext !='name:verified') obj.infoList.splice(0, 0, verified);
+// if(obj.infoList[0].actionlog.ext !='name:verified') obj.infoList.splice(0, 0, verified);
 obj.badge = {
     "ylpshuidao_2021": 1,
     "gongyi_level": 1,
