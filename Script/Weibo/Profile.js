@@ -1,14 +1,14 @@
 var obj = JSON.parse($response.body); 
 obj.userInfo.user_ability_extend = 1;
 obj.userInfo.verified_type_ext = 1;
-obj.userInfo.verified_type = 1;
+// obj.userInfo.verified_type = 1;
 obj.userInfo.verified_detail.data[0].desc = "系统管理员";
 obj.userInfo.infoList[0].desc = "系统管理员";
 obj.userInfo.svip = 1;
 obj.userInfo.verified_reason = "系统管理员";
 obj.userInfo.statuses_count = 0;
 obj.userInfo.orange_v = "系统管理员";
-obj.userInfo.verified_level = 5;
+obj.userInfo.verified_level = 2;
 obj.userInfo.avatargj_id = "gj_vip_583";
 obj.userInfo.verified = true;
 // obj.userInfo.story_read_state = -1;
