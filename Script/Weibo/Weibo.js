@@ -182,16 +182,20 @@ function removeTimeLine(data) {
 
 function removeHomeVip(data) {
 	if(!data.header) {
+	    data.header.desc.content = '微博认证：系统管理员';
+	    data.items[0].title.content = 0;
 		return data;
 	}
 	let vipCenter = data.header.vipCenter;
 	if(!vipCenter) {
 		return data;
 	}
-	vipCenter.icon = {};
+	// vipCenter.icon = {};
+	vipCenter.icon.iconUrl = 'https://h5.sinaimg.cn/upload/1071/1468/2021/12/22/hy_dongtu.gif';
+	vipCenter.dot.iconUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/03/22/jiantougaocheng.png';
 	// vipCenter.title = {};
-	(vipCenter.content.contents)[2].content = '会员中心';
-	vipCenter.title.content = '会员中心';
+	vipCenter.content.contents[2].content = '会员';
+	vipCenter.title.content = '会员';
 	return data;
 }
 

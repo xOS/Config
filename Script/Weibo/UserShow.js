@@ -1,22 +1,21 @@
 var obj = JSON.parse($response.body); 
-obj.userInfo.user_ability_extend = 1;
-obj.userInfo.verified_type_ext = 1;
-obj.userInfo.verified_type = 1;
-obj.userInfo.verified_detail.data[0].desc = "系统管理员";
-obj.userInfo.infoList[0].desc = "系统管理员";
-obj.userInfo.svip = 1;
-obj.userInfo.verified_reason = "系统管理员";
-obj.userInfo.statuses_count = 0;
-obj.userInfo.orange_v = "系统管理员";
-obj.userInfo.verified_level = 5;
-obj.userInfo.avatargj_id = "gj_vip_583";
-obj.userInfo.verified = true;
-// obj.userInfo.story_read_state = -1;
-obj.userInfo.has_ability_tag = 1;
-obj.userInfo.type = 1;
-obj.userInfo.star = 1;
-obj.userInfo.friendships_relation = 2;
-obj.userInfo.badge = {
+obj.user_ability_extend = 1;
+obj.verified_type_ext = 1;
+obj.verified_type = 1;
+obj.verified_detail.data[0].desc = "系统管理员";
+// obj.infoList[0].desc = "系统管理员";
+obj.svip = 1;
+obj.verified_reason = "系统管理员";
+obj.statuses_count = 0;
+obj.orange_v = "系统管理员";
+obj.verified_level = 5;
+obj.avatargj_id = "gj_vip_583";
+obj.verified = true;
+obj.has_ability_tag = 1;
+obj.type = 1;
+obj.star = 1;
+obj.friendships_relation = 2;
+obj.badge = {
     "ylpshuidao_2021": 1,
     "gongyi_level": 1,
     "travel_2017": 1,
