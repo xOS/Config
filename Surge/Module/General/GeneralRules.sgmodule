@@ -176,7 +176,7 @@ http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-
 Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nan.ge/Script/Spotify/Spotify.js
 
 # > 微博个人信息
-主页 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/profile,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Profile.js
+主页 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/profile\?gsid=,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Profile.js
 个人信息 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/users\/show,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/UserShow.js
 
 [MITM]

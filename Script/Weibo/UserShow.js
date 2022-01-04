@@ -1,9 +1,18 @@
 var obj = JSON.parse($response.body); 
 obj.user_ability_extend = 1;
 obj.verified_type_ext = 1;
-// obj.verified_type = 1;
-obj.verified_detail.data[0].desc = "系统管理员";
-// obj.infoList[0].desc = "系统管理员";
+const verified_detail = {
+  "custom": 1,
+  "data": [
+    {
+      "key": 1,
+      "weight": 10,
+      "sub_key": 0,
+      "desc": "系统管理员"
+    }
+  ]
+};
+obj.verified_detail = verified_detail;
 obj.svip = 1;
 obj.verified_reason = "系统管理员";
 obj.statuses_count = 0;
@@ -15,6 +24,31 @@ obj.has_ability_tag = 1;
 obj.type = 1;
 obj.star = 1;
 obj.friendships_relation = 2;
+obj.icons = [
+  {
+    "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
+    "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+  }
+];
+const verified = {
+  "scheme": "",
+  "icon_video_style_dark": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2021\/04\/16\/video_verified_dark.png",
+  "icon_video_style": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2021\/04\/16\/video_verified.png",
+  "icon_dark": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2020\/05\/19\/verified-dark.png",
+  "actionlog": {
+    "uicode": "10000198",
+    "cardid": "",
+    "luicode": "10000011",
+    "act_code": 4630,
+    "ext": "name:verified",
+    "fid": "",
+    "lfid": "profile_me",
+    "oid": ""
+  },
+  "icon": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2020\/05\/19\/verified.png",
+  "desc": "系统管理员"
+};
+if(obj.infoList[0].actionlog.ext !='name:verified') obj.infoList.splice(0, 0, verified);
 obj.badge = {
     "ylpshuidao_2021": 1,
     "gongyi_level": 1,
