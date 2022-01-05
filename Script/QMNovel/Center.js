@@ -1,0 +1,11 @@
+var obj = JSON.parse($response.body); 
+obj.data.user_area.vip_info = {};
+obj.data.user_area.base_info.year_vip_show = 1;
+obj.data.user_area.base_info.level = 50;
+obj.data.user_area.base_info.is_vip = 1;
+obj.data.user_area.base_info.vip_show_type = 3;
+obj.data.user_area.base_info.level_icon = 'https://cdn.wtzw.com/bookimg/free/images/app/1_0_0/level/level_icon_50.png';
+obj.data.user_area.grid_info[0].num = 9999999;
+obj.data.user_area.grid_info[0].coin_to_money = 9999999;
+obj.data.func_area[1] = {};
+$done({body: JSON.stringify(obj)});
