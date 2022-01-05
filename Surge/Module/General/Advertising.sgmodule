@@ -855,12 +855,12 @@ Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#s
 
 # > 七猫小说
 ^https?:\/\/.+\.wtzw\.com\/.+\/vip_banner\.png$ data="https://hub.nan.ge/Mock/Blank/Blank.png"
-^https?:\/\/.+\.wtzw\.com\/api\/v4\/timing-reward\/report$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/.+\.wtzw\.com\/api\/v1\/init-adv\/index data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/.+\.wtzw\.com\/api\/v2\/reader-adv\/index data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/.+\.wtzw\.com\/api\/v5\/book-shelf\/recommend data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/.+\.wtzw\.com\/api\/v2\/bookshelf-adv\/index$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/.+\.wtzw\.com\/api\/v1\/mycenter\/screen-adv data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/.+\.wtzw\.com\/api\/.+\/timing-reward\/report$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/.+\.wtzw\.com\/api\/.+\/init-adv\/index data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/.+\.wtzw\.com\/api\/.+\/reader-adv\/index data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/.+\.wtzw\.com\/api\/.+\/book-shelf\/recommend data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/.+\.wtzw\.com\/api\/.+\/bookshelf-adv\/index$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/.+\.wtzw\.com\/api\/.+\/mycenter\/screen-adv data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
 # > 其它
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nan.ge/Mock/Blank/Blank.txt"
