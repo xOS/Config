@@ -945,13 +945,11 @@ DOMAIN-SUFFIX,rmoeu.mercury.sogou.com,REJECT
 DOMAIN-SUFFIX,service.epro.sogou.com,REJECT
 DOMAIN-SUFFIX,sw.mobile.sogou.com,REJECT
 DOMAIN-SUFFIX,sy.brand.sogou.com,REJECT
-DOMAIN-SUFFIX,union.sogou.com,REJECT
 DOMAIN-SUFFIX,vjoz.lu.sogou.com,REJECT
 DOMAIN-SUFFIX,vps.inte.sogou.com,REJECT
 DOMAIN-SUFFIX,wan.sogou.com,REJECT
 DOMAIN-SUFFIX,wb.brand.sogou.com,REJECT
 DOMAIN-SUFFIX,wds.inte.sogoucdn.com,REJECT
-DOMAIN-SUFFIX,web.sogou.com,REJECT
 DOMAIN-SUFFIX,wuliao.epro.sogou.com,REJECT
 DOMAIN-SUFFIX,xtruh.uranus.sogou.com,REJECT
 DOMAIN-SUFFIX,ztrpm.lu.sogou.com,REJECT

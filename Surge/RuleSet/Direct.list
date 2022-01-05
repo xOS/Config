@@ -17,6 +17,9 @@ DOMAIN-SUFFIX,jiankongbao.com,DIRECT
 DOMAIN-SUFFIX,bugsnag.com,DIRECT
 DOMAIN-SUFFIX,app-measurement.com,DIRECT
 
+# > 搜狗联盟
+DOMAIN,union.sogou.com,DIRECT
+
 # > 微博企业认证
 DOMAIN,e.biz.weibo.com,DIRECT
 DOMAIN,verified.biz.weibo.com,DIRECT
