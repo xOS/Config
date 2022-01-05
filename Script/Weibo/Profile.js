@@ -15,11 +15,11 @@ const verified_detail = {
 };
 obj.userInfo.verified_detail = verified_detail;
 obj.userInfo.svip = 1;
-obj.userInfo.verified_reason = "最美小仙女";
+obj.userInfo.verified_reason = '最美小仙女';
 obj.userInfo.statuses_count = 0;
-obj.userInfo.orange_v = "最美小仙女";
+obj.userInfo.orange_v = '最美小仙女';
 obj.userInfo.verified_level = 2;
-obj.userInfo.avatargj_id = "gj_vip_583";
+obj.userInfo.avatargj_id = 'gj_vip_583';
 obj.userInfo.verified = true;
 obj.userInfo.has_ability_tag = 1;
 obj.userInfo.type = 1;
@@ -49,7 +49,11 @@ const verified = {
   "icon": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2020\/05\/19\/verified.png",
   "desc": "最美小仙女"
 };
-if(obj.userInfo.infoList[0].actionlog.ext !='name:verified') obj.userInfo.infoList.splice(0, 0, verified);
+if(obj.userInfo.infoList[0].actionlog.ext !='name:verified') {
+  obj.userInfo.infoList.splice(0, 0, verified);
+} else {
+  obj.userInfo.infoList[0].desc = '最美小仙女';
+}
 obj.userInfo.badge = {
     "ylpshuidao_2021": 1,
     "gongyi_level": 1,
