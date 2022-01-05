@@ -1,4 +1,4 @@
-const version = 'v0105.1';
+const version = 'v0106.1';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -182,18 +182,16 @@ function removeTimeLine(data) {
 
 function removeHomeVip(data) {
 	if(!data.header) {
-	    data.header.desc.content = '微博认证：最美小仙女';
-	    data.items[0].title.content = 0;
 		return data;
 	}
+    data.header.desc.content = '微博认证：最美小仙女';
+    data.items[0].title.content = '0';
 	let vipCenter = data.header.vipCenter;
 	if(!vipCenter) {
 		return data;
 	}
-	// vipCenter.icon = {};
 	vipCenter.icon.iconUrl = 'https://h5.sinaimg.cn/upload/1071/1468/2021/12/22/hy_dongtu.gif';
 	vipCenter.dot.iconUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/03/22/jiantougaocheng.png';
-	// vipCenter.title = {};
 	vipCenter.content.contents[2].content = '会员';
 	vipCenter.title.content = '会员';
 	return data;
