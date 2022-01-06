@@ -112,6 +112,12 @@ function isAd(data) {
 }
 
 
+function removeHongbaofei(data) {
+     if (!data)
+      data = null;
+}
+
+
 function removeCards(data) {
 	if(!data.cards) {
 		return;
@@ -311,6 +317,9 @@ function removeHome(data) {
 			}
 			updateFollowOrder(item);
 			newItems.push(item);
+		} else if (itemId == '100505_-_hongbao2022') {
+			item = removeHongbaofei(item);
+			newItems.push(item);
 		} else if (itemId == '100505_-_top8') {
 			updateProfileSkin(item, 'profileSkin1');
 			newItems.push(item);
@@ -454,6 +463,9 @@ function skinPreviewHandler(data) {
 // }
 
 function log(data) {
+// data.moreInfo.noMore = true;
+if (data.hasOwnProperty('items'))
+    data['items'] = data['items'].filter(element => !(element['itemId'] == '100505_-_hongbao2022'));
 	if(mainConfig.isDebug) {
 		console.log(data);
 	}
