@@ -179,7 +179,7 @@ Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bo
 
 # > 微博个人信息
 主页 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/profile\?gsid=,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Profile.js
-个人信息 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/users\/show,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/UserShow.js
+个人信息 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/users\/(show|relation),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/UserShow.js
 会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.cn\/aj\/vipcenter\/home,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/VIPCenter.js
 消息列表 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/direct_messages\/user_list\?gsid=,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Message.js
 
