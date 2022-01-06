@@ -1,6 +1,6 @@
 var obj = JSON.parse($response.body); 
 obj.data.user_area.vip_info.deadline_date = '永久会员';
-obj.data.user_area.vip_info.vip_privilege_desc = '您已是尊贵的永久VIP会员。';
+obj.data.user_area.vip_info.vip_privilege_desc = '您已经是尊贵的永久VIP会员。';
 // obj.data.user_area.vip_info = {};
 obj.data.user_area.base_info.year_vip_show = 1;
 // obj.data.user_area.base_info.level = 50;

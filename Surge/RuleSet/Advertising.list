@@ -1199,6 +1199,8 @@ DOMAIN,ws.ksmobile.net,REJECT
 
 # > 其它
 #DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-SUFFIX,atomhike.com,REJECT
+DOMAIN-SUFFIX,langago.cn,REJECT
 DOMAIN-SUFFIX,530service.com,REJECT
 DOMAIN-SUFFIX,jctwindows.com,REJECT
 DOMAIN-SUFFIX,naimancha.com,REJECT
