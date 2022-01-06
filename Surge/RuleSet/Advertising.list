@@ -743,6 +743,9 @@ URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog)
 DOMAIN,newclient.map.baidu.com,REJECT
 URL-REGEX,^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg,REJECT
 
+# > CSDN
+DOMAIN-SUFFIX,openinstall.io,REJECT
+
 # > 新浪
 DOMAIN-SUFFIX,2016.sina.cn,REJECT
 DOMAIN-SUFFIX,ad.sina.com.cn,REJECT
