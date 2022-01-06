@@ -112,12 +112,6 @@ function isAd(data) {
 }
 
 
-function removeHongbaofei(data) {
-     if (!data)
-      data = null;
-}
-
-
 function removeCards(data) {
 	if(!data.cards) {
 		return;
@@ -317,9 +311,6 @@ function removeHome(data) {
 			}
 			updateFollowOrder(item);
 			newItems.push(item);
-		} else if (itemId == '100505_-_hongbao2022') {
-			item = removeHongbaofei(item);
-			newItems.push(item);
 		} else if (itemId == '100505_-_top8') {
 			updateProfileSkin(item, 'profileSkin1');
 			newItems.push(item);
@@ -332,7 +323,7 @@ function removeHome(data) {
 					newItems.push(item);
 				}
 			}
-		} else if(['mine_attent_title', '100505_-_meattent_pic', '100505_-_newusertask', '100505_-_vipkaitong'].indexOf(itemId) > -1) {
+		} else if(['mine_attent_title', '100505_-_meattent_pic', '100505_-_newusertask', '100505_-_vipkaitong', '100505_-_hongbao2022'].indexOf(itemId) > -1) {
 			continue;
 		} else if (itemId.match(/100505_-_meattent_-_\d+/)) {
 			continue;
