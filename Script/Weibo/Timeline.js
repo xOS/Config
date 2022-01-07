@@ -38,8 +38,8 @@ if (
     url.indexOf(path20) != -1
 ) {
     let obj = JSON.parse(body);
-    if(obj.hasOwnProperty('verified_type_ext')) obj.replace(/\"verified_type_ext\":(\d)/g,'"verified_type_ext": 1');
     if (obj.statuses) obj.statuses = filter_timeline_statuses(obj.statuses);
+    // if(obj.statuses.user.hasOwnProperty('verified_type_ext')) obj.replace(/\"verified_type_ext\":(\d)/g,'"verified_type_ext": 1');
     if (obj.advertises) obj.advertises = [];
     if (obj.ad) obj.ad = [];
     if (obj.num) obj.num = obj.original_num;
@@ -121,6 +121,22 @@ function filter_timeline_statuses(statuses) {
         let i = statuses.length;
         while (i--) {
             let element = statuses[i];
+            element.user.user_ability_extend = 1;
+            element.user.verified_type_ext = 1;
+            element.user.verified_type = 0;
+            element.user.svip = 1;
+            element.user.verified_level = 2;
+            element.user.avatargj_id = 'gj_vip_583';
+            element.user.verified = true;
+            element.user.has_ability_tag = 1;
+            element.user.type = 1;
+            element.user.star = 1;
+            element.user.icons = [
+  {
+    "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
+    "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+  }
+];
             if (
                 is_timeline_likerecommend(element.title) ||
                 is_timeline_ad(element) ||

@@ -161,7 +161,6 @@ function lvZhouHandler(data) {
 
 
 function removeTimeLine(data) {
-    if(data.hasOwnProperty('verified_type_ext')) data.replace(/\"verified_type_ext\":(\d)/g,'"verified_type_ext": 1');
 	for (const s of ["ad", "advertises", "trends"]) {
 		if(data[s]) {
 			delete data[s];
@@ -178,6 +177,28 @@ function removeTimeLine(data) {
 		}
 	}
 	data.statuses = newStatuses;
+	if (data.statuses && data.statuses.length > 0) {
+        let i = data.statuses.length;
+        while (i--) {
+            let element = data.statuses[i];
+            element.user.user_ability_extend = 1;
+            element.user.verified_type_ext = 1;
+            element.user.verified_type = 0;
+            element.user.svip = 1;
+            element.user.verified_level = 2;
+            element.user.avatargj_id = 'gj_vip_583';
+            element.user.verified = true;
+            element.user.has_ability_tag = 1;
+            element.user.type = 1;
+            element.user.star = 1;
+            element.user.icons = [
+  {
+    "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
+    "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+  }
+];
+        }
+    }
 }
 
 
