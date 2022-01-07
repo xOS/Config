@@ -161,6 +161,7 @@ function lvZhouHandler(data) {
 
 
 function removeTimeLine(data) {
+    if(data.hasOwnProperty('verified_type_ext')) data.replace(/\"verified_type_ext\":(\d)/g,'"verified_type_ext": 1');
 	for (const s of ["ad", "advertises", "trends"]) {
 		if(data[s]) {
 			delete data[s];

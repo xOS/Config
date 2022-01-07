@@ -38,6 +38,7 @@ if (
     url.indexOf(path20) != -1
 ) {
     let obj = JSON.parse(body);
+    if(obj.hasOwnProperty('verified_type_ext')) obj.replace(/\"verified_type_ext\":(\d)/g,'"verified_type_ext": 1');
     if (obj.statuses) obj.statuses = filter_timeline_statuses(obj.statuses);
     if (obj.advertises) obj.advertises = [];
     if (obj.ad) obj.ad = [];
