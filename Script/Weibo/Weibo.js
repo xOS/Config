@@ -206,16 +206,17 @@ function removeHomeVip(data) {
 	if(!data.header) {
 		return data;
 	}
+	data.header.avatar.badgeUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/04/07/avatar_vip_golden.png';
     data.header.desc.content = '微博认证：最美小仙女';
-    data.items[0].title.content = '0';
+    // data.items[0].title.content = '0';
 	let vipCenter = data.header.vipCenter;
 	if(!vipCenter) {
 		return data;
 	}
 	vipCenter.icon.iconUrl = 'https://h5.sinaimg.cn/upload/1071/1468/2021/12/22/hy_dongtu.gif';
 	vipCenter.dot.iconUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/03/22/jiantougaocheng.png';
-	vipCenter.content.contents[2].content = '会员';
-	vipCenter.title.content = '会员';
+	vipCenter.content.contents[2].content = '会员中心';
+	vipCenter.title.content = '会员中心';
 	return data;
 }
 
