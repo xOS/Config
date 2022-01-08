@@ -56,7 +56,7 @@ if (/\/getGlobalData/.test(url) && obj.data) {
 }
 if (/\/index/.test(url) && obj.data) {
   if(obj.data.pcsliderows) obj.data.pcsliderows = [];
-  obj.data.replace(/\"isvip":"(\d)"/g, '"isvip": "0"');
+  obj.data.toString().replace(/\"isvip":"(\d)"/g, '"isvip": "0"');
   v2 = obj.data.v2sliderows;
   if(v2) {
   v2.splice(0,4);
