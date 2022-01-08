@@ -57,9 +57,11 @@ if (/\/getGlobalData/.test(url) && obj.data) {
 if (/\/index/.test(url) && obj.data) {
   if(obj.data.pcsliderows) obj.data.pcsliderows = [];
   v2 = obj.data.v2sliderows;
-  if(v2) v2.splice(0,4);
+  if(v2) {
+  v2.splice(0,4);
   v2.pop();
-  obj.data.mbsliderows = [];
+  }
+  if(obj.data.mbsliderows) obj.data.mbsliderows = [];
 }
 if (/\/reqplay\//.test(url) && obj.data) {
     obj.retcode = "0";
