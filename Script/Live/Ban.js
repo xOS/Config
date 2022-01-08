@@ -24,8 +24,8 @@ var url = $request.url;
 
 if (body) {
   var obj = JSON.parse($response.body);
-  if (/\/ucp\/index/.test(url) && obj.data) {
-  if(obj.data.uinfo.goldcoin) obj.data.uinfo.goldcoin = "1";
+  if (/\/ucp\/(index|affcenter)/.test(url) && obj.data) {
+  if(obj.data.uinfo.goldcoin) obj.data.uinfo.goldcoin = "999";
   if(obj.data.uinfo.down_daily_remainders) obj.data.uinfo.down_daily_remainders = 999;
   if(obj.data.uinfo.play_daily_remainders) obj.data.uinfo.play_daily_remainders = 999;
   if(obj.data.uinfo.minivod_play_daily_remainders) obj.data.uinfo.minivod_play_daily_remainders = 666;
@@ -38,11 +38,12 @@ if (body) {
   if(obj.data.uinfo.next_group.minup) obj.data.uinfo.next_group.minup = "10";
   if(obj.data.uinfo.next_group.gicon) obj.data.uinfo.next_group.gicon = "V5";
   if(obj.data.uinfo.next_group.gid) obj.data.uinfo.next_group.gid = "5";
-  if(obj.data.uinfo["next_upgrade_need"] ) obj.data.uinfo["next_upgrade_need"] = "0";
-  if(obj.data.user.isvip) obj.data.user.isvip = 1;
-  if(obj.data.user.goldcoin) obj.data.user.goldcoin = "1";
-  if(obj.data.user.gicon) obj.data.user.gicon = "V6";
-  if(obj.data.user.gid) obj.data.user.gid = "6";
+  obj.data.uinfo["next_upgrade_need"] = "0";
+  obj.data.user.isvip = 1;
+  obj.data.user.goldcoin = "999";
+  obj.data.user.gicon = "V6";
+  obj.data.user.gid = "6";
+  
 }
 if (/\/getGlobalData/.test(url) && obj.data) {
   if(obj.data.app_launch_times_adshow) obj.data.app_launch_times_adshow = 0;
@@ -55,8 +56,9 @@ if (/\/getGlobalData/.test(url) && obj.data) {
 }
 if (/\/index/.test(url) && obj.data) {
   if(obj.data.pcsliderows) obj.data.pcsliderows = [];
-  v2 = obj.data.v2sliderows;
-  if(v2) v2.splice(0,3);
+  v2 = obj.data.v2sliderows.pop();
+  if(v2) v2.splice(0,4);
+  obj.data.mbsliderows = [];
 }
 if (/\/reqplay\//.test(url) && obj.data) {
     obj.retcode = "0";
