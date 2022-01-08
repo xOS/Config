@@ -1199,6 +1199,9 @@ DOMAIN,ws.ksmobile.net,REJECT
 
 # > 其它
 #DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN,cloud.tgpa.qq.com,REJECT
+DOMAIN,myip.myzaker.com,REJECT
+DOMAIN,smr.snssdk.com,REJECT
 DOMAIN-SUFFIX,bxguwen.com,REJECT
 DOMAIN-SUFFIX,atomhike.com,REJECT
 DOMAIN-SUFFIX,langago.cn,REJECT
