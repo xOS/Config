@@ -36,8 +36,8 @@ if (body) {
   if(obj.data.uinfo.curr_group.gid) obj.data.uinfo.curr_group.gid = "6";
   if(obj.data.uinfo.next_group.gname) obj.data.uinfo.next_group.gname = "荣誉VIP";
   if(obj.data.uinfo.next_group.minup) obj.data.uinfo.next_group.minup = "10";
-  if(obj.data.uinfo.next_group.gicon) obj.data.uinfo.next_group.gicon = "V5";
-  if(obj.data.uinfo.next_group.gid) obj.data.uinfo.next_group.gid = "5";
+  if(obj.data.uinfo.next_group.gicon) obj.data.uinfo.next_group.gicon = "V6";
+  if(obj.data.uinfo.next_group.gid) obj.data.uinfo.next_group.gid = "6";
   obj.data.uinfo["next_upgrade_need"] = "0";
   obj.data.user.isvip = 1;
   obj.data.user.goldcoin = "999";
@@ -56,6 +56,7 @@ if (/\/getGlobalData/.test(url) && obj.data) {
 }
 if (/\/index/.test(url) && obj.data) {
   if(obj.data.pcsliderows) obj.data.pcsliderows = [];
+  obj.data.replace(/\"isvip":"(\d)"/g, '"isvip": "0"');
   v2 = obj.data.v2sliderows;
   if(v2) {
   v2.splice(0,4);

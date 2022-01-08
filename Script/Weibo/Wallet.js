@@ -12,7 +12,7 @@ if (url.indexOf(person) != -1){
     obj.data.ad = [];
     obj.data.sign_new = {};
     $done({body: JSON.stringify(obj)});
-} else if(url.indexOf(index) != -1){
+} if(url.indexOf(index) != -1){
     obj.data.recommend_cards = {};
     obj.data.other_cards = [];
     obj.data.popad = {};
@@ -22,4 +22,6 @@ if (url.indexOf(person) != -1){
     obj.data.ad = [];
     obj.data.sign_new = {};
     $done({body: JSON.stringify(obj)});
+} else {
+  $done({})
 }

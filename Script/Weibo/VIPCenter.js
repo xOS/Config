@@ -1,6 +1,6 @@
 var obj = JSON.parse($response.body); 
 obj.data.baseInfo.user_info.s_type = 1;
-obj.data.baseInfo.user_info.desc = '永久会员';
+obj.data.baseInfo.user_info.desc = '终身会员';
 obj.data.baseInfo.user_info.level = '7';
 obj.data.baseInfo.user_info.expired_days = 0;
 obj.data.baseInfo.user_info.curtab.cashier_tab_id = '0';
