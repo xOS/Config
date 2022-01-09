@@ -124,9 +124,8 @@ function removeCards(data) {
 			for (const group of cardGroup) {
 				let cardType = group.card_type;
 				if(cardType != 118) {
-					newGroup.push(group);
-				}
-				if(cardType != 182) {
+				    group[0].col = 1;
+				    group[1] = [];
 					newGroup.push(group);
 				}
 			}
