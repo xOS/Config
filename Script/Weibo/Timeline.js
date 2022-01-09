@@ -179,7 +179,7 @@ function filter_timeline_cards(cards) {
                             if (card_type == 9) {
                                 if (is_timeline_ad(card_group_item.mblog))
                                     card_group.splice(i, 1);
-                            } else if (card_type == 118 || card_type == 89) {
+                            } else if (card_type == 118 || card_type == 182 ||  card_type == 89) {
                                 card_group.splice(i, 1);
                             } else if (card_type == 42) {
                                 if (
@@ -190,7 +190,8 @@ function filter_timeline_cards(cards) {
                                     break;
                                 }
                             } else if (card_type == 17) {
-                                filter_top_search(card_group_item.group);
+cards[0].card_group[0].col = 1;
+                              filter_top_search(card_group_item.group);
                             }
                         }
                     }
