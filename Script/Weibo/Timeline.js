@@ -131,12 +131,10 @@ function filter_timeline_statuses(statuses) {
             element.user.has_ability_tag = 1;
             element.user.type = 1;
             element.user.star = 1;
-            element.user.icons = [
-  {
-    "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
-    "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
-  }
-];
+            element.user.icons = [{
+                "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
+                "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+            }];
             if (
                 is_timeline_likerecommend(element.title) ||
                 is_timeline_ad(element) ||
@@ -179,7 +177,7 @@ function filter_timeline_cards(cards) {
                             if (card_type == 9) {
                                 if (is_timeline_ad(card_group_item.mblog))
                                     card_group.splice(i, 1);
-                            } else if (card_type == 118 || card_type == 182 ||  card_type == 89) {
+                            } else if (card_type == 118 || card_type == 182 || card_type == 89) {
                                 card_group.splice(i, 1);
                             } else if (card_type == 42) {
                                 if (
@@ -190,8 +188,8 @@ function filter_timeline_cards(cards) {
                                     break;
                                 }
                             } else if (card_type == 17) {
-cards[0].card_group[0].col = 1;
-                              filter_top_search(card_group_item.group);
+                                cards[0].card_group[0].col = 1;
+                                filter_top_search(card_group_item.group);
                             }
                         }
                     }
