@@ -126,9 +126,6 @@ function removeCards(data) {
 				if(cardType != 118) {
 					newGroup.push(group);
 				}
-				group[0].col = 1;
-				group[1] = null;
-			    newGroup.push(group);
 			}
 			card.card_group = newGroup;
 			newCards.push(card);
@@ -144,6 +141,8 @@ function removeCards(data) {
 		}
 	}
 	data.cards = newCards;
+	data.cards[0].card_group[0].col = 1;
+	data.cards[0].card_group[1] = null;
 }
 
 
