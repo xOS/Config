@@ -128,6 +128,9 @@ function removeCards(data) {
 				    group[1] = [];
 					newGroup.push(group);
 				}
+				group[0].col = 1;
+				group[1] = null;
+			    newGroup.push(group);
 			}
 			card.card_group = newGroup;
 			newCards.push(card);
