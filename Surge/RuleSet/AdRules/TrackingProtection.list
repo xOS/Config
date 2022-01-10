@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.services.sdiapi.com
 .events.brightline.tv
 .event.dengage.com
 .rum.uptime.com
@@ -933,7 +934,6 @@
 .cloud.roistat.com
 .nrich.ai
 .adoric.com
-.rfksrv.com
 .stack-sonar.com
 .mindtake.com
 .leadlab.click
@@ -4433,6 +4433,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.collector.megaxh.com
+.d1mdhw23tj9j17.cloudfront.net
 .istatistik.trthaber.com
 .i.bigin.io
 .events*.cre.ma
@@ -18002,6 +18004,8 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.click.oneplus.com
+.click.oneplus.cn
 .mapi-log.qoo*.jp
 .events.api.red.wemesh.ca
 .prod-plague-bacon.miniclippt.com
