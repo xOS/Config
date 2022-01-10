@@ -25,10 +25,10 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz
 ;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
 
 # > 添加标记
-;^https?://(?:\w+\.)*?((nan|cdn|nange|vmgirls)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
+^https?://(?:\w+\.)*?((nan|cdn|nange|qste|vmgirls)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
 
 # > 更改 UA
-;^https?://(?:\w+\.)*?((nan|cdn|nange|vmgirls|cloudimg)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-replace User-Agent Surge
+^https?://(?:\w+\.)*?((nan|cdn|nange|vmgirls|qste|appleimg|cloudimg)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-replace User-Agent Surge
 
 [URL Rewrite]
 # > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
@@ -190,4 +190,4 @@ VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/
 Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Enpass/Enpass.js
 
 [MITM]
-hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*nan.ge, -*cdn.ink, -*cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io
+hostname = %APPEND% *vmgirls.com, *nange.cn, *nan.ge, *cdn.ink, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io
