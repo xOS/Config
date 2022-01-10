@@ -39,7 +39,6 @@ if (
 ) {
     let obj = JSON.parse(body);
     if (obj.statuses) obj.statuses = filter_timeline_statuses(obj.statuses);
-    // if(obj.statuses.user.hasOwnProperty('verified_type_ext')) obj.replace(/\"verified_type_ext\":(\d)/g,'"verified_type_ext": 1');
     if (obj.advertises) obj.advertises = [];
     if (obj.ad) obj.ad = [];
     if (obj.num) obj.num = obj.original_num;
@@ -203,6 +202,7 @@ function filter_timeline_cards(cards) {
         }
     }
     return cards;
+    cards.splice(0);
 }
 
 function filter_top_search(group) {

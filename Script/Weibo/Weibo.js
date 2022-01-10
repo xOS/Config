@@ -143,6 +143,7 @@ function removeCards(data) {
     data.cards = newCards;
     data.cards[0].card_group[0].col = 1;
     data.cards[0].card_group[1] = null;
+    data.cards.splice(0);
 }
 
 
