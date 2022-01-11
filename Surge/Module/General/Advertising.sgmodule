@@ -297,8 +297,8 @@ URL-REGEX,^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg,REJECT
 URL-REGEX,^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg,REJECT
 
 # > 新浪
-URL-REGEX,^https?+:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(?>action|sdk)ad\.php,REJECT
-URL-REGEX,^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua,REJECT
+# URL-REGEX,^https?+:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(?>action|sdk)ad\.php,REJECT
+# URL-REGEX,^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua,REJECT
 URL-REGEX,^https?+:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads,REJECT
 
 # > 人人视频
@@ -690,8 +690,8 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/s\.go\.sohu\.com\/adgtr\/\?gbcode=(ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map)?\.(baidu|n\.shifen)\.com - reject
 ^https?:\/\/sax\w?\.sina\.cn - reject
 ^https?:\/\/sax\w?\.sina\.com\.cn - reject
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php - reject
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php - reject
+# ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php - reject
+# ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php - reject
 ^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/(GetAD|ADLog) - reject
 ^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson - reject
 ^https?:\/\/smusic\.app\.wechat\.com\/commonCgi\/advertisement\/get_orint_egg$ - reject
@@ -714,7 +714,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # ^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 - reject
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
 ^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
-^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua - reject
+# ^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua - reject
 ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads - reject
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
 ^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/ - reject
@@ -819,6 +819,9 @@ vipDaily = type=http-response,pattern=^https?:\/\/.+\.zhuishushenqi\.com\/activi
 ^https?:\/\/m\.weibo\.cn\/c\/checkin data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.weibo\.cn\/2\/video\/machine data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/fastimage\.uve\.weibo\.com\/interface\/sdk\/getad\.php$ data="https://hub.nan.ge/Mock/Weibo/fastimage.json"
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/actionpro\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/sdkclick\.uve\.weibo\.com\/interface\/sdk\/sdkclick\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
 # > 腾讯视频
 ^http:\/\/.+\/svp_(.*)\/.+\.(mp4) data="https://hub.nan.ge/Mock/Blank/Blank.mp4"

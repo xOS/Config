@@ -25,6 +25,8 @@ DOMAIN,theta.sogoucdn.com,DIRECT
 DOMAIN,e.biz.weibo.com,DIRECT
 DOMAIN,verified.biz.weibo.com,DIRECT
 DOMAIN,future.biz.weibo.com,DIRECT
+DOMAIN,wbapp.uve.weibo.com,DIRECT
+DOMAIN,sdkapp.uve.weibo.com,DIRECT
 
 # > 爱奇艺
 #DOMAIN,msg.qy.net,DIRECT
