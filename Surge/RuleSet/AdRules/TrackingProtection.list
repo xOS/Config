@@ -4433,6 +4433,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.stt.nimbusweb.me
+.statistics.daktilo.com
 .collector.megaxh.com
 .d1mdhw23tj9j17.cloudfront.net
 .istatistik.trthaber.com
@@ -18004,6 +18006,8 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.trackersdk.bdash-cloud.com
+.hit.gemius.pl
 .click.oneplus.com
 .click.oneplus.cn
 .mapi-log.qoo*.jp
