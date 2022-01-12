@@ -141,7 +141,7 @@ function removeCards(data) {
         }
     }
     data.cards = newCards;
-    if(cards[0].card_group[0].col) data.cards[0].card_group[0].col = 1;
+    if(data.cards[0].card_group[0].col) data.cards[0].card_group[0].col = 1;
     if(data.cards[0].card_group[1]) data.cards[0].card_group[1] = null;
     data.cards.splice(0);
 }
