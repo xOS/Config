@@ -148,7 +148,7 @@ function removeCards(data) {
     }
     data.cards = newCards;
     if (data.cards[0].card_group) data.cards[0].card_group[0].col = 1;
-    if (data.cards[0].card_group[1]) data.cards[0].card_group[1] = null;
+    if (data.cards[0].card_group) data.cards[0].card_group[1] = null;
 }
 
 
