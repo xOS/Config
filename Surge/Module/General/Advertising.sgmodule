@@ -56,7 +56,7 @@ URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_info\
 
 # > 咪咕阅读
 URL-REGEX,^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService,REJECT
-URL-REGEX,^https?:\/\/client2\.cmread\.com\/cmread\/portalapi$,REJECT
+# URL-REGEX,^https?:\/\/client2\.cmread\.com\/cmread\/portalapi$,REJECT
 
 # > 搜狗阅读
 URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/api\/app\/ios\/shelf\/recommend,REJECT
