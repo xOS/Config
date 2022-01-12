@@ -126,6 +126,11 @@ function removeCards(data) {
                 if (cardType != 118) {
                     newGroup.push(group);
                 }
+                if (cardType != 182) {
+                    newGroup.push(group);
+                }if (cardType != 89) {
+                    newGroup.push(group);
+                }
             }
             card.card_group = newGroup;
             newCards.push(card);
@@ -141,7 +146,7 @@ function removeCards(data) {
         }
     }
     data.cards = newCards;
-    if(data.cards[0].card_group[0].col) data.cards[0].card_group[0].col = 1;
+    if(data.cards[0].card_group) data.cards[0].card_group[0].col = 1;
     if(data.cards[0].card_group[1]) data.cards[0].card_group[1] = null;
     data.cards.splice(0);
 }
