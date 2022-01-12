@@ -187,7 +187,7 @@ function filter_timeline_cards(cards) {
                                     break;
                                 }
                             } else if (card_type == 17) {
-                                if(cards[0].card_group) cards[0].card_group[0].col = 1;
+                                if (cards[0].card_group) cards[0].card_group[0].col = 1;
                                 filter_top_search(card_group_item.group);
                             }
                         }
@@ -202,7 +202,6 @@ function filter_timeline_cards(cards) {
         }
     }
     return cards;
-    cards.splice(0);
 }
 
 function filter_top_search(group) {
