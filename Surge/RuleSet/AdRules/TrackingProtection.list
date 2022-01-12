@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.smartlify.com
+.analytics.styria.hr
 .culturaltracking.ru
 .services.sdiapi.com
 .events.brightline.tv
@@ -4433,6 +4435,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.matomo.a1.by
 .d1stxfv94hrhia.cloudfront
 .stt.nimbusweb.me
 .statistics.daktilo.com
