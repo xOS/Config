@@ -13,6 +13,7 @@ obj.data.card_list[0].bg_config.img = 'https://h5.sinaimg.cn/upload/1004/14/2021
 obj.data.card_list[0].bg_config.link = 'sinaweibo://mppopupwindow?wbx_hide_close_btn=true&wbx_bg_view_dismiss=true&scheme=sinaweibo%3A%2F%2Fwbox%3Fid%3Dn1htatg0fm%26page%3Dpages%2Fcashier%2Fcashier%26cashier_id%3D3%26F%3Dvipcenter_userinfo_t_hy';
 if (obj.data.baseInfo.user_info.type != 1){
     obj.data.baseInfo.user_info.type = 1;
-    obj.data.card_list.splice(1,13);
+    let i = obj.data.card_list.length - 3;
+    obj.data.card_list.splice(1,i);
 }
 $done({body: JSON.stringify(obj)});
