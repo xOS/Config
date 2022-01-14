@@ -237,6 +237,7 @@ URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
 # > 抖音
 DOMAIN-KEYWORD,ad-sign,REJECT
 DOMAIN-KEYWORD,-adbrand,REJECT
+DOMAIN,dig.bdurl.net,REJECT
 DOMAIN,imapi-hl.snssdk.com,REJECT
 DOMAIN,frontier-aweme-hl-ipainner.amemv.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/activity-(.*)\.awemeughun\.com,REJECT
