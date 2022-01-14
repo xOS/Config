@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.fwpixel.com
 .cdn.adt567.net
 .smartlify.com
 .analytics.styria.hr
@@ -4436,6 +4437,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.metrika.kontur.ru
+.api-stg.ensonhaber.com
 .matomo.a1.by
 .d1stxfv94hrhia.cloudfront
 .stt.nimbusweb.me
