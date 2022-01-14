@@ -25,6 +25,7 @@ const path20 = "/video/tiny_stream_video_list";
 const path21 = "/photo/info";
 const path22 = "/live/media_homelist";
 const path23 = "/remind/unread_count";
+const path24 = "/createrIndex";
 
 const url = $request.url;
 let body = $response.body;
@@ -111,6 +112,11 @@ if (
 } else if (url.indexOf(path23) != -1) {
     let obj = JSON.parse(body);
     obj.video = {};
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path24) != -1) {
+    let obj = JSON.parse(body);
+    if (obj.data.hasOwnProperty('cards'))
+    obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_task_task'));
     body = JSON.stringify(obj);
 }
 $done({ body });
