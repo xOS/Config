@@ -734,8 +734,8 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 推荐页广告 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\?client_volume,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/RedBook/RedBook.js
 
 # > 颇可
-推荐 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_user_recommend_list\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Poco/Recommend.js
-关注页广告 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/space\/get_app_followers,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Poco/Follow.js
+推荐 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_user_recommend_list\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Poco/UserList.js
+关注页广告 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/space\/get_app_followers,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Poco/Dynamic.js
 
 # > 中新网 APP
 CNS = type=http-response,pattern=^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/activity_entrance,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/ChinaNews/CNS.js
