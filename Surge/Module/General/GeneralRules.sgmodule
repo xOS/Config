@@ -120,17 +120,11 @@ Peak = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Work/Pea
 Premium = type=http-response,pattern=^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Reddit/Premium.js
 
 # > TextNow
-premium_state = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/.+\/premium_state\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/State.js,script-update-interval=-1
-
-blocks = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/blocks\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/TextNow.js,script-update-interval=-1
-
-subscription = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/users\/.+\/subscription\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/State.js,script-update-interval=-1
-
-subscription_state = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+/users\/.+\/subscription_state\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/State.js,script-update-interval=-1
+premium_state = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/.+\/(subscription|subscription_state|premium_state)\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/State.js,script-update-interval=-1
 
 settings = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/settings\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/Setting.js,script-update-interval=-1
 
-TextNow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/users\/.+\?client_id,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/TextNow.js,script-update-interval=-1
+TextNow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/users\/im(.*)(|blocks)\?client_id,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/TextNow.js,script-update-interval=-1
 
 # > 轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
 轻颜相机 = type=http-response,pattern=^https?:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Photo/ULike.js,script-update-interval=-1

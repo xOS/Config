@@ -9,4 +9,6 @@ obj['phone_expiry'] = '2099-12-30';
 obj['expiry'] = '2099-12-30';
 obj['show_ads'] = false;
 obj['premium_calling'] = true;
+obj.voice_autorenew = 1;
+obj.ad_categories = null;
 $done({body: JSON.stringify(obj)});
