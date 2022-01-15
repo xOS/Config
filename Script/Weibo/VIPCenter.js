@@ -16,7 +16,7 @@ if (obj.data.baseInfo.user_info.type != 1){
     let i = obj.data.card_list.length - 3;
     obj.data.card_list.splice(1,i);
 }
-else if (obj.data.cardlist) {
+else if (obj.data.card_list) {
     obj.data.card_list = obj.data.card_list.filter(element => !(element['m_id'] == '2630'));
     obj.data.card_list = obj.data.card_list.filter(element => !(element['m_id'] == '2080'));
     obj.data.card_list = obj.data.card_list.filter(element => !(element['m_id'] == '2480'));
