@@ -839,10 +839,10 @@ vipDaily = type=http-response,pattern=^https?:\/\/.+\.zhuishushenqi\.com\/activi
 ^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 ^https?://.+\/variety\.tc\.qq\.com\/? data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
-^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/? data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
-^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/? data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
-^https?:\/\/video\.dispatch\.tc\.qq\.com\/? data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
-^https?://.+\/defaultts\.tc.\qq\.com\/? data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
+^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
+^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
+^https?:\/\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
+^https?://.+\/defaultts\.tc.\qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 
 # > 爱奇艺
 ;^http:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
