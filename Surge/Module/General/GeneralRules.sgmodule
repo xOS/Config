@@ -28,7 +28,7 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz
 ; ^https?://(?:\w+\.)*?((nan|cdn|nange|qste|vmgirls)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
 
 # > 更改 UA
-^https?://(?:\w+\.)*?((nange|vmgirls|qste|appleimg|cloudimg)\.(?:com\.cn|cn|com|net))[\\\/]* header-replace User-Agent Surge
+;^https?://(?:\w+\.)*?((nange|vmgirls|qste|appleimg|cloudimg)\.(?:com\.cn|cn|com|net))[\\\/]* header-replace User-Agent Surge
 
 [URL Rewrite]
 # > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
