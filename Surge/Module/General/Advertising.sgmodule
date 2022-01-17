@@ -816,7 +816,7 @@ vipDaily = type=http-response,pattern=^https?:\/\/.+\.zhuishushenqi\.com\/activi
 ^https?:\/\/api\.weibo\.cn\/2\/!\/multimedia\/video\/red_package\/grow_follower\/active_uids data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.weibo\.cn\/2\/client\/tabbar data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.weibo\.cn\/2\/push\/daily data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/api\.weibo\.cn\/2\/page\/get_fragment data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+# ^https?:\/\/api\.weibo\.cn\/2\/page\/get_fragment data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.weibo\.cn\/2\/push\/active data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/m\.weibo\.cn\/c\/checkin data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.weibo\.cn\/2\/video\/machine data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"

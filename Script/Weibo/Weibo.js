@@ -123,13 +123,7 @@ function removeCards(data) {
             let newGroup = [];
             for (const group of cardGroup) {
                 let cardType = group.card_type;
-                if (cardType != 118) {
-                    newGroup.push(group);
-                }
-                if (cardType != 182) {
-                    newGroup.push(group);
-                }
-                if (cardType != 89) {
+                if (cardType != 118 && cardType != 182 && cardType != 89) {
                     newGroup.push(group);
                 }
             }
@@ -147,8 +141,6 @@ function removeCards(data) {
         }
     }
     data.cards = newCards;
-    if (data.cards[0].card_group) data.cards[0].card_group[0].col = 1;
-    if (data.cards[0].card_group) data.cards[0].card_group[1] = null;
 }
 
 
