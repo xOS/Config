@@ -26,6 +26,7 @@ jobs:
         cd GeoIP
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/Country.mmdb/release/Country-lite.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country-only-cn-private.mmdb
     - name: Add & Commit
       uses: EndBug/add-and-commit@v7.5.0
       with:
