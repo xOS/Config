@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.embed.usersmagic.com
 .stats-iobit-com.us-east-1.elasticbeanstalk.com
 .zeustechnology.com
 .fwpixel.com
@@ -4439,6 +4440,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.tracker.remp.sme.sk
 .targeting.washpost.nile.works
 .metrika.kontur.ru
 .api-stg.ensonhaber.com
