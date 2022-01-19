@@ -1,4 +1,4 @@
-name: Update Country.mmdb
+name: Update GeoIPs
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2.3.3
 
-    - name: Get Country.mmdb
+    - name: Get GeoIPs
       run: |
         cd $GITHUB_WORKSPACE
         cd GeoIP
@@ -28,6 +28,7 @@ jobs:
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/Country.mmdb/release/Country-lite.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country-only-cn-private.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip.dat
+        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip-only-cn-private.dat
         
     - name: Add & Commit
       uses: EndBug/add-and-commit@v7.5.0
