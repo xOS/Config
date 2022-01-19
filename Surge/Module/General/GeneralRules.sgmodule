@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz
+force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz, ap*.intsig.net
 
 [Panel]
 # > 服务状态
@@ -105,7 +105,9 @@ Lightroom = type=http-response,pattern=^https?:\/\/photos\.adobe\.io\/v2\/accoun
 Photoshop Express = type=http-response,pattern=^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
 
 # > CamScanner unlocks pro, Cloud scanning is not available.
-CamScanner = type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Work/CamScanner.js,script-update-interval=0
+CamScanner = type=http-response,pattern=https?:\/\/.+\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/CamScanner/CamScanner.js,script-update-interval=0
+UserAttribute = type=http-response,pattern=^https?:\/\/.+\.intsig\.net\/user\/cs\/get_user_attribute,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/CamScanner/UserAttribute.js
+
 
 # > Bear熊掌记 (By Miao Miao)
 Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Work/Bear.js,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt
