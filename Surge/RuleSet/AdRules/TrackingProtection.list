@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.analytics-api.statvoo.com
+.ga-bq-py-1.appspot.com
 .cdnstr.com
 .log.yapaytech.com
 .air360tracker.net
@@ -3398,6 +3400,7 @@
 .visilabs.com
 .visilabs.net
 .functionalclam.com
+.fearlessfaucet.com
 .nondescriptnote.com
 .tiresomethunder.com
 .sordidsmile.com
