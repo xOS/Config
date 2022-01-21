@@ -22,3 +22,6 @@ DOMAIN,gdmf.apple.com,PROXY
 DOMAIN,smp-device-content.apple.com,PROXY
 DOMAIN,itunes.com,PROXY
 DOMAIN,sse-ws-p189.apple.com,PROXY
+DOMAIN-SUFFIX,apple.news,PROXY
+DOMAIN-SUFFIX,mail.me.com,PROXY
+DOMAIN,p12-buy.itunes.apple.com,PROXY
