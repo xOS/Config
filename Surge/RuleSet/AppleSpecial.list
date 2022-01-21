@@ -25,3 +25,4 @@ DOMAIN,sse-ws-p189.apple.com,PROXY
 DOMAIN-SUFFIX,apple.news,PROXY
 DOMAIN-SUFFIX,mail.me.com,PROXY
 DOMAIN,p12-buy.itunes.apple.com,PROXY
+DOMAIN,configuration.ls.apple.com,PROXY
