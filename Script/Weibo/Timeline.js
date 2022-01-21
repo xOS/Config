@@ -26,6 +26,7 @@ const path21 = "/photo/info";
 const path22 = "/live/media_homelist";
 const path23 = "/remind/unread_count";
 const path24 = "/createrIndex";
+const path25 = "/st_videos/tiny/effect/shoot_display_config";
 
 const url = $request.url;
 let body = $response.body;
@@ -117,6 +118,11 @@ if (
     let obj = JSON.parse(body);
     if (obj.data.hasOwnProperty('cards'))
     obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_task_task'));
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path25) != -1) {
+    let obj = JSON.parse(body);
+    obj.camera_widget = {};
+    obj.camera_widget.show_close = false;
     body = JSON.stringify(obj);
 }
 $done({ body });
