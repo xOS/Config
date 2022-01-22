@@ -26,3 +26,4 @@ DOMAIN-SUFFIX,apple.news,PROXY
 DOMAIN-SUFFIX,mail.me.com,PROXY
 DOMAIN,p12-buy.itunes.apple.com,PROXY
 DOMAIN,configuration.ls.apple.com,PROXY
+DOMAIN-SUFFIX,gsp10-ssl.apple.com,PROXY

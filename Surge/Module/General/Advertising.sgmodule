@@ -192,8 +192,8 @@ URL-REGEX,^https?:\/\/m\.cloud\.189\.cn\/wap\/client\/activity\/,REJECT
 URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
 
 # > 无忧行
-URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn\/appSyncimage\/.+\.jpg$,REJECT
-URL-REGEX,^http:\/\/oss\.jegotrip\.com\.cn\/appSyncimage\/.+\.png$,REJECT
+DOMAIN,abtest.jegotrip.com.cn,REJECT
+URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn\/appSyncimage\/.+\.(jpg|png|gif)$,REJECT
 
 # > 优酷
 URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT
