@@ -42,17 +42,10 @@ DOMAIN-SUFFIX,adstore-index-1252524079.file.myqcloud.com,REJECT
 URL-REGEX,^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/open_screen_ad,REJECT
 
 # > 颇可
-# >>首页轮播图
-URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_rank_page_info\?,REJECT
-# >> 个人资料页广告
-URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_user_info_banner\?,REJECT
-# >> 启动页广告
-URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_start_screen_ad\?,REJECT
 # >> 其它
+DOMAIN,dg.k.jd.com,REJECT
 DOMAIN-SUFFIX,kepler.jd.com,REJECT
-URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_tag_list\?,REJECT
-URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_list\?,REJECT
-URL-REGEX,^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_info\?,REJECT
+URL-REGEX,^https?:\/\/api-(.*)\.dutils\.com,REJECT
 
 # > 咪咕阅读
 URL-REGEX,^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService,REJECT
@@ -829,6 +822,19 @@ Feed 过滤所有视频 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/actionpro\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/sdkclick\.uve\.weibo\.com\/interface\/sdk\/sdkclick\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+
+# > 颇可
+# >>首页轮播图
+^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_rank_page_info\? https://hub.nan.ge/Mock/Blank/Blank_Dict.json
+# >> 个人资料页广告
+^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_user_info_banner\? https://hub.nan.ge/Mock/Blank/Blank_Dict.json
+# >> 启动页广告
+^https?:\/\/app-api\.poco\.cn\/.+\/rank\/get_app_start_screen_ad\? https://hub.nan.ge/Mock/Blank/Blank_Dict.json
+# >> 其它
+^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_tag_list\? https://hub.nan.ge/Mock/Blank/Blank_Dict.json
+^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_list\? https://hub.nan.ge/Mock/Blank/Blank_Dict.json
+^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_info\? https://hub.nan.ge/Mock/Blank/Blank_Dict.json
+^https?:\/\/app-api\.poco\.cn\/v1_1\/rank\/get_app_works_info_banner https://hub.nan.ge/Mock/Blank/Blank_Dict.json
 
 # > 扫描全能王
 ^https?:\/\/open\.camscanner\.com\/sync\/get_ad_ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
