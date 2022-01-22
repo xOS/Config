@@ -406,25 +406,25 @@ URL-REGEX,^https?+:\/\/.+?\.mp4\?sid=,REJECT
 URL-REGEX,^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=,REJECT
 
 # > 阿里
-DOMAIN-SUFFIX,adash-c.ut.taobao.com,REJECT
-DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
-DOMAIN-SUFFIX,adashbc.m.taobao.com,REJECT
-DOMAIN-SUFFIX,adashbc.ut.taobao.com,REJECT
-DOMAIN-SUFFIX,adashx.m.taobao.com,REJECT
-DOMAIN-SUFFIX,adashxgc.ut.taobao.com,REJECT
-DOMAIN-SUFFIX,agoodm.m.taobao.com,REJECT
-DOMAIN-SUFFIX,ai.m.taobao.com,REJECT
-DOMAIN-SUFFIX,ai.taobao.com,REJECT
-DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,adash-c.ut.taobao.com,REJECT
+# DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,adashbc.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,adashbc.ut.taobao.com,REJECT
+# DOMAIN-SUFFIX,adashx.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,adashxgc.ut.taobao.com,REJECT
+# DOMAIN-SUFFIX,agoodm.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,ai.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,ai.taobao.com,REJECT
+# DOMAIN-SUFFIX,amdc.m.taobao.com,REJECT
 DOMAIN-SUFFIX,api.waptest.taobao.com,REJECT
-DOMAIN-SUFFIX,c-adash.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,c-adash.m.taobao.com,REJECT
 DOMAIN-SUFFIX,click.mz.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,click.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,click.tz.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,dsp.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,fav.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,ip.taobao.com,REJECT
-DOMAIN-SUFFIX,m-adash.m.taobao.com,REJECT
+# DOMAIN-SUFFIX,m-adash.m.taobao.com,REJECT
 DOMAIN-SUFFIX,m.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,mclick.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,nbsdk-baichuan.taobao.com,REJECT

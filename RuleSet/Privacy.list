@@ -5,9 +5,9 @@ DOMAIN,zgsdk.zhugeio.com,REJECT
 
 # > Alibaba
 USER-AGENT,Munion-SDK*,REJECT
-DOMAIN-KEYWORD,adash,REJECT
-DOMAIN,ynuf.aliapp.org,REJECT
-DOMAIN,mobilegw.alipay.com,REJECT
+# DOMAIN-KEYWORD,adash,REJECT
+# DOMAIN,ynuf.aliapp.org,REJECT
+# DOMAIN,mobilegw.alipay.com,REJECT
 URL-REGEX,^https?:\/\/.+\/squery$,REJECT
 DOMAIN,mazu.m.qq.com,REJECT
 
