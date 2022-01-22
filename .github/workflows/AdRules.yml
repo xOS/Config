@@ -48,19 +48,19 @@ jobs:
         
       - name: Merge and Rules and remove duplicates
         run: |
-          curl -LR -o Surge/RuleSet/AdRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
-          curl -LR -o Surge/RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
-          awk 'FNR==1{print ""}{print}' Surge/RuleSet/AdRules/*.list > Surge/RuleSet/AdRules/Merge.txt
-          awk '!seen[$0]++' Surge/RuleSet/AdRules/Merge.txt > Surge/RuleSet/AdRules/Merge.list
-          sed '/^$/d' Surge/RuleSet/AdRules/Merge.list > Surge/RuleSet/AdRule.list
-          rm -rf Surge/RuleSet/AdRules/Merge.txt
-          rm -rf Surge/RuleSet/AdRules/Merge.list
+          curl -LR -o RuleSet/AdRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
+          curl -LR -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
+          awk 'FNR==1{print ""}{print}' RuleSet/AdRules/*.list > RuleSet/AdRules/Merge.txt
+          awk '!seen[$0]++' RuleSet/AdRules/Merge.txt > RuleSet/AdRules/Merge.list
+          sed '/^$/d' RuleSet/AdRules/Merge.list > RuleSet/AdRule.list
+          rm -rf RuleSet/AdRules/Merge.txt
+          rm -rf RuleSet/AdRules/Merge.list
 
       - name: Download ChinaIPs.list
         run: |
-          curl -LR -o Surge/RuleSet/ChinaIPs.txt "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
-          awk 'FNR==1{print ""}{print}' Surge/RuleSet/ChinaIPs.txt | grep -v "#" | sed '/^$/d' > Surge/RuleSet/ChinaIPs.list
-          rm -rf Surge/RuleSet/ChinaIPs.txt
+          curl -LR -o RuleSet/ChinaIPs.txt "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
+          awk 'FNR==1{print ""}{print}' RuleSet/ChinaIPs.txt | grep -v "#" | sed '/^$/d' > RuleSet/ChinaIPs.list
+          rm -rf RuleSet/ChinaIPs.txt
 
       - name: commit, push
         uses: EndBug/add-and-commit@v7.5.0
