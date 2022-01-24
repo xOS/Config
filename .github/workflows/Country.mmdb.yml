@@ -31,7 +31,7 @@ jobs:
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip-only-cn-private.dat
         
     - name: Add & Commit
-      uses: EndBug/add-and-commit@v7.5.0
+      uses: EndBug/add-and-commit@v8.0.1
       with:
         author_name: 翠花
         author_email: admin@nange.cn
