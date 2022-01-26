@@ -258,6 +258,8 @@ URL-REGEX,^https?://.+\.l\.qq\.com,REJECT
 URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
 
 # > 微信
+# DOMAIN-SUFFIX,resstatic.servicewechat.com,REJECT
+# DOMAIN-SUFFIX,dlied1.cdntips.net,REJECT
 URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad),REJECT
 
 # > 爱奇艺
