@@ -780,6 +780,9 @@ http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/Dy
 
 微博钱包 = type=http-response,pattern=^https?:\/\/pay\.sc\.weibo\.com\/api\/client\/sdk\/app\/indexnew\/(index|person),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Wallet.js
 
+# > 微博配置注入
+微博去广告配置注入 = type=cron,cronexp="0 0 1 1 * ? ",debug=1,script-path=https://hub.nan.ge/Script/Weibo/Config.js
+
 # > 微信公众号
 WeChat = script-path=https://hub.nan.ge/Script/WeChat/WeChat.js,type=http-request,pattern=^https?://mp\.weixin\.qq\.com/mp/getappmsgad
 
