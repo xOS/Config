@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.kantartns.lt
 .trk2-wtb.swaven.com
 .st.hbrd.io
 .analytics-api.statvoo.com
@@ -55,6 +56,7 @@
 .gnar.grammarly.com
 .cdn.sophi.io
 .vought.removeads.workers.dev
+.analytics.churnzero.net
 .trk.reclameaqui.com.br
 .clickiocdn.com
 .delivery.satr.jp
@@ -4451,6 +4453,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.hwa.his.huawei.com
 .analytics.histmag.org
 .tracker.remp.sme.sk
 .targeting.washpost.nile.works
@@ -4652,7 +4655,6 @@
 .fly.gentside.com
 .tr.namu.wiki
 .track.eadv.it
-.datalytics.utair.io
 .appsanalytics.appideas.it
 .api-adservices.apple.com
 .analytics.atlassian.com
