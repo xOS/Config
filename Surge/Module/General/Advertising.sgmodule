@@ -787,7 +787,7 @@ http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/Dy
 WeChat = script-path=https://hub.nan.ge/Script/WeChat/WeChat.js,type=http-request,pattern=^https?://mp\.weixin\.qq\.com/mp/getappmsgad
 
 # > 知乎 去广告
-People = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/.+\.zhihu\.com\/(api\/v4\/me|people|feed-root\/block),script-path=https://hub.nan.ge/Script/Zhihu/People.js
+People = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(www|api)\.zhihu\.com\/(api\/v4\/me|people|feed-root\/block),script-path=https://hub.nan.ge/Script/Zhihu/People.js
 Feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://hub.nan.ge/Script/Zhihu/Feed.js
 Recommend = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend,script-path=https://hub.nan.ge/Script/Zhihu/Recommend.js
 Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://hub.nan.ge/Script/Zhihu/Answer.js
