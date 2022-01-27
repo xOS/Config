@@ -17,8 +17,6 @@ if (url.indexOf(person) != -1){
     obj.data.static.other_cards = [];
     obj.data.static.popad = {};
     obj.data.static.sign = {};
-    obj.data.static.finance.recommendcard = [];
-    obj.data.static.finance.extraicon= [];
     obj.data.static.ad = [];
     obj.data.static.sign_new = {};
     }
@@ -38,8 +36,6 @@ if (url.indexOf(person) != -1){
     obj.data.static.other_cards = [];
     obj.data.static.popad = {};
     obj.data.static.sign = {};
-    // obj.data.static.finance.recommendcard = [];
-    // obj.data.static.finance.extraicon= [];
     obj.data.static.ad = [];
     obj.data.static.sign_new = {};
     }
