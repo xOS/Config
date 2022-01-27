@@ -668,7 +668,6 @@
 .static.apester.com
 .apis.com.br
 .app-adforce.jp
-.app-measurement.com
 .cdn-api.appadhoc.com
 .experiment.appadhoc.com
 .sdk.appadhoc.com
@@ -1217,7 +1216,6 @@
 .cpmstar.com
 .cpx.to
 .crasheye.cn
-.crashlytics.com
 .sample-api-v2.crazyegg.com
 .script.crazyegg.com
 .tracking.crazyegg.com
@@ -1575,7 +1573,6 @@
 .fiksu.com
 .ads.fingersoft.net
 .ads3.fingersoft.net
-.famobi-01.firebaseio.com
 .firstimpression.io
 .logging.fishsticksgames.com
 .widget.fitanalytics.com
@@ -1731,7 +1728,6 @@
 .s0-2mdn-net.l.google.com
 .googleadservices.com
 .static.googleadsserving.cn
-.crashlyticsreports-pa.googleapis.com
 .googlesyndication.com
 .displayads-formats.googleusercontent.com
 .gop1.co
@@ -3418,6 +3414,7 @@
 .etl.xlmc.sandai.net
 .execution-use.ci360.sas.com
 .ak-ns.sascdn.com
+.mobileconfig.sascdn.com
 .track.saygames.io
 .saymedia.com
 .api.saypromo.net
@@ -3468,7 +3465,6 @@
 .ios-quinoa-personal-identify-prod.sense360eng.com
 .quinoa-personal-identify-prod.sense360eng.com
 .api.sentiance.com
-.sentry.io
 .servebom.com
 .m.servedby-buysellads.com
 .e.serverbid.com
