@@ -8,6 +8,9 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 # > 服务状态
 服务状态 = title="优秀",content="服务正常",style=good,update-interval=360,script-name=服务状态
 
+# > 电信流量
+电信流量 = title ="电信流量",content ="请刷新",style=info, script-name=电信流量,update-interval=3600
+
 # > Netflix 检测
 # Netflix 检测 = title="Netflix 检测",content="请刷新",style=good,update-interval=-1,script-name=Netflix 检测
 
@@ -19,9 +22,6 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 
 # > 网络状态
 网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
-
-# > 电信流量
-电信流量 = title ="电信流量",content ="请刷新",style=info, script-name=电信流量,update-interval=3600
 
 [Rule]
 # > 扩展规则
