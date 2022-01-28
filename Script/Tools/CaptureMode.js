@@ -1,13 +1,3 @@
-/*
-[Script]
-captureMode.js = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/captureMode.js
-// use "module", "title", "icon", "color1", "color2", "color3" or "showHostname" in "argument":
-// captureMode.js = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/captureMode.js,argument=title=CaptureMode&module=capturemode&icon=tray.and.arrow.down&color1=#008080&color2=#efc56f&color3=#994714&showHostname=false
-
-[Panel]
-captureMode.js = script-name=captureMode.js,update-interval=43200
-*/
-
 !(async() => {
     const { wifi, v4 } = $network;
     const v4IP = v4.primaryAddress;
@@ -16,28 +6,13 @@ captureMode.js = script-name=captureMode.js,update-interval=43200
             title: "未连接网络",
             content: "请检查网络连接",
             icon: "airplane",
-            "icon-color": "#00c8ff"
+            "icon-color": "#ff9800"
         });
     }
     let module = "MitM 所有主机名",
-        panel = { title: module, icon: "tray.and.arrow.down.fill" },
-        showHostname = false,
+        panel = { title: "抓包状态", icon: "tray.and.arrow.down.fill" },
         capture,
-        mitmall,
-        hostname,
-        color1,
-        color2,
-        color3;
-    if (typeof $argument != "undefined") {
-        let arg = Object.fromEntries($argument.split("&").map((item) => item.split("=")));
-        if (arg.module) module = panel.title = arg.module;
-        if (arg.title) panel.title = arg.title;
-        if (arg.icon) panel.icon = arg.icon;
-        if (arg.color1) color1 = arg.color1;
-        if (arg.color2) color2 = arg.color2;
-        if (arg.color3) color3 = arg.color3;
-        if (arg.showHostname == "false") showHostname = false;
-    }
+        mitmall;
     if ($trigger == "button") {
         capture = (await httpAPI("/v1/features/capture")).enabled;
         mitmall = (await httpAPI("/v1/modules")).enabled.includes(module);
@@ -46,22 +21,16 @@ captureMode.js = script-name=captureMode.js,update-interval=43200
         let moduleBody = {};
         moduleBody[module] = !mitmall;
         await httpAPI("/v1/modules", "POST", moduleBody);
-        await sleep(100);
+        // await sleep(30);
     }
     capture = (await httpAPI("/v1/features/capture")).enabled;
     mitmall = (await httpAPI("/v1/modules")).enabled.includes(module);
-    if (showHostname && mitmall) {
-        hostname = /hostname\s?=\s?(.*)/.exec(
-            (await httpAPI("/v1/profiles/current?sensitive=0")).profile
-        )[1];
-    }
-    if (capture && mitmall) panel["icon-color"] = color3 ? color3 : "#ff0000";
-    else if (capture || mitmall) panel["icon-color"] = color2 ? color2 : "#00c8ff";
-    else color1 ? (panel["icon-color"] = color1) : "";
+
+    if (capture && mitmall) panel["icon-color"] = "#ff0000";
+    else if (capture || mitmall) panel["icon-color"] = "#ff9800";
+    else panel["icon-color"] = "#35C759";
     panel.content =
-        `抓包模式：${capture ? "开启" : "关闭"}\n` +
-        `${module}：${mitmall ? "开启" : "关闭"}` +
-        (hostname ? `\nhostname: ${hostname}` : "");
+        `抓包模式：${mitmall && capture ? "开启" : "关闭"}`;
     $done(panel);
 })();
 

@@ -8,22 +8,23 @@ if (!v4IP) {
         "icon-color": "#ff9800"
     });
 } else {
-$httpClient.get("https://api.nan.ge/version", function(error, response, data){
-    var str = data.toString();
-    var ver = str.replace(/backend\n$/gm, "").replace("subconverter ", "").replace(/\s+/g,"");
-    var reg = RegExp(/backend/);
-    if(str.match(reg)){
-        $done({
-            title: "优秀",
-            content: 'API' + ' ' + ver + ' ' + '服务正常',
-            style: 'good'
-        });       
-    } else {
-        $done({
-            title: "错误",
-            content: "API 服务异常",
-            style: 'error'
-        });
-    }
-});
+    $httpClient.get("https://api.nan.ge/version", function(error, response, data) {
+        var str = data.toString();
+        var ver = str.replace(/backend\n$/gm, "").replace("subconverter ", "").replace(/\s+/g, "");
+        var reg = RegExp(/backend/);
+        if (str.match(reg)) {
+            $done({
+                title: "正常",
+                content: 'API' + ' ' + ver + ' ' + '服务正常',
+                icon: "server.rack",
+                "icon-color": "#35C759"
+            });
+        } else {
+            $done({
+                title: "错误",
+                content: "API 服务异常",
+                style: 'error'
+            });
+        }
+    });
 }
