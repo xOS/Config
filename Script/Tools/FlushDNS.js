@@ -1,4 +1,4 @@
-!(async () => {
+!(async() => {
     const { wifi, v4 } = $network;
     const v4IP = v4.primaryAddress;
     if (!v4IP) {
@@ -16,7 +16,7 @@
     let delay = ((await httpAPI("/v1/test/dns_delay")).delay * 1000).toFixed(0);
     $done({
         title: "DNS 缓存已刷新",
-        content: `延迟：${delay} ms${dnsCache ? `\nDNS 服务器：\n${dnsCache}` : ""}`,
+        content: `延迟：${delay} ms`,
         icon: "bolt.ring.closed",
         "icon-color": "#ff9800"
     });
