@@ -117,7 +117,7 @@ if (
 } else if (url.indexOf(path24) != -1) {
     let obj = JSON.parse(body);
     if (obj.data.hasOwnProperty('cards'))
-    obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_task_task'));
+        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_task_task'));
     body = JSON.stringify(obj);
 } else if (url.indexOf(path25) != -1) {
     let obj = JSON.parse(body);
@@ -188,7 +188,7 @@ function filter_timeline_cards(cards) {
                             if (card_type == 9) {
                                 if (is_timeline_ad(card_group_item.mblog))
                                     card_group.splice(i, 1);
-                            } else if (card_type == 118 || card_type == 182 || card_type == 89) {
+                            } else if (card_type == 118 || card_type == 182 || card_type == 89 || card_type == 19) {
                                 card_group.splice(i, 1);
                             } else if (card_type == 42) {
                                 if (

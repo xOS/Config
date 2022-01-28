@@ -21,16 +21,16 @@
         let moduleBody = {};
         moduleBody[module] = !mitmall;
         await httpAPI("/v1/modules", "POST", moduleBody);
-        // await sleep(30);
+        await sleep(100);
     }
     capture = (await httpAPI("/v1/features/capture")).enabled;
     mitmall = (await httpAPI("/v1/modules")).enabled.includes(module);
 
     if (capture && mitmall) panel["icon-color"] = "#ff0000";
     else if (capture || mitmall) panel["icon-color"] = "#ff9800";
-    else panel["icon-color"] = "#35C759";
+    else panel["icon-color"] = "#9978FF";
     panel.content =
-        `抓包模式：${mitmall && capture ? "开启" : "关闭"}`;
+        `抓包模式：${(mitmall && capture) ? "开启" : "关闭"}`;
     $done(panel);
 })();
 
