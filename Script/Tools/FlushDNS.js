@@ -15,7 +15,7 @@
     await httpAPI("/v1/dns/flush");
     let delay = ((await httpAPI("/v1/test/dns_delay")).delay * 1000).toFixed(0);
     $done({
-        title: "DNS 缓存已刷新",
+        title: "DNS 缓存刷新",
         content: `延迟：${delay} ms`,
         icon: "bolt.ring.closed",
         "icon-color": "#ff9800"
