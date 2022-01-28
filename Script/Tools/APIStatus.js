@@ -14,14 +14,13 @@ if (!v4IP) {
         var reg = RegExp(/backend/);
         if (str.match(reg)) {
             $done({
-                title: "正常",
+                title: "服务正常",
                 content: 'API' + ' ' + ver + ' ' + '服务正常',
-                icon: "server.rack",
-                "icon-color": "#35C759"
+                style: 'good',
             });
         } else {
             $done({
-                title: "错误",
+                title: "服务异常",
                 content: "API 服务异常",
                 style: 'error'
             });
