@@ -37,13 +37,13 @@
 
     if (mitm && capture) {
         panel['icon-color'] = "#ff0000";
-        panel.content = '抓包模式：开启';
+        panel.content = '抓包模式：已开启';
     } else if (capture || mitm) {
         panel['icon-color'] = "#ff9800";
-        panel.content = '抓包模式：半开启';
+        panel.content = '抓包模式：未就绪';
     } else {
         panel['icon-color'] = "#9978FF";
-        panel.content = '抓包模式：关闭';
+        panel.content = '抓包模式：已关闭';
     }
     // panel.content = `抓包模式：${mitm && capture ? "开启" : "关闭"}`;
     $done(panel);
