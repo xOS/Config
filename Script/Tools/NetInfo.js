@@ -43,7 +43,7 @@ const radios = radioGeneration[radio];
     server = "移动网络";
 }
 
- ;(async () => {
+;(async () => {
      if (!IPv4) {
          $done({
              title: "未连接网络",
