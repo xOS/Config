@@ -29,7 +29,6 @@
         }
         let moduleBody = {};
         moduleBody[moduleName] = !mitm;
-        console.log(moduleBody);
         await httpAPI("/v1/modules", "POST", moduleBody);
         await sleep(500);
     }
