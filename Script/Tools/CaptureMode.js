@@ -9,28 +9,44 @@
             "icon-color": "#ff9800"
         });
     }
-    let module = "MitM 所有主机名",
-        panel = { title: "抓包状态", icon: "tray.and.arrow.down.fill" },
-        capture,
-        mitmall;
+    var moduleName = "MitM 所有主机名";
+    let panel = { title: "抓包状态", icon: "tray.and.arrow.down.fill" },
+        capture, mitm;
+
+    if (typeof $argument != "undefined") {
+        let arg = Object.fromEntries($argument.split("&").map((item) => item.split("=")));
+        if (arg.moduleName) moduleName = panel.title = arg.moduleName;
+        if (arg.title) panel.title = arg.title;
+        if (arg.icon) panel.icon = arg.icon;
+    }
+
     if ($trigger == "button") {
         capture = (await httpAPI("/v1/features/capture")).enabled;
-        mitmall = (await httpAPI("/v1/modules")).enabled.includes(module);
-        if (capture == mitmall)
+        mitm = (await httpAPI("/v1/modules")).enabled.includes(moduleName);
+
+        if (capture == mitm) {
             await httpAPI("/v1/features/capture", "POST", { enabled: !capture });
+        }
         let moduleBody = {};
-        moduleBody[module] = !mitmall;
+        moduleBody[moduleName] = !mitm;
+        console.log(moduleBody);
         await httpAPI("/v1/modules", "POST", moduleBody);
-        await sleep(100);
+        await sleep(500);
     }
     capture = (await httpAPI("/v1/features/capture")).enabled;
-    mitmall = (await httpAPI("/v1/modules")).enabled.includes(module);
+    mitm = (await httpAPI("/v1/modules")).enabled.includes(moduleName);
 
-    if (capture && mitmall) panel["icon-color"] = "#ff0000";
-    else if (capture || mitmall) panel["icon-color"] = "#ff9800";
-    else panel["icon-color"] = "#9978FF";
-    panel.content =
-        `抓包模式：${(mitmall && capture) ? "开启" : "关闭"}`;
+    if (mitm && capture) {
+        panel['icon-color'] = "#ff0000";
+        panel.content = '抓包模式：开启';
+    } else if (capture || mitm) {
+        panel['icon-color'] = "#ff9800";
+        panel.content = '抓包模式：半开启';
+    } else {
+        panel['icon-color'] = "#9978FF";
+        panel.content = '抓包模式：关闭';
+    }
+    // panel.content = `抓包模式：${mitm && capture ? "开启" : "关闭"}`;
     $done(panel);
 })();
 

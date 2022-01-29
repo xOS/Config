@@ -18,7 +18,7 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=leaf.arrow.triangle.circlepath,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
 
 # > 抓包状态
-抓包状态 =title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=-1
+抓包状态 =title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=3600
 
 # > 网络状态
 网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
@@ -66,7 +66,7 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 刷新 DNS = type=generic, script-path=https://hub.nan.ge/Script/Tools/FlushDNS.js
 
 # > 抓包状态
-抓包状态 = type=generic,timeout=10,script-path=https://hub.nan.ge/Script/Tools/CaptureMode.js
+抓包状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/CaptureMode.js
 
 # > 服务状态
 服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
