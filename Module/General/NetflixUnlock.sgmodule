@@ -1,0 +1,13 @@
+#!name=Netflix 检测
+#!desc=Netflix 解锁检测
+
+[Panel]
+# > Netflix 检测
+Netflix 检测 = title="Netflix 检测",content="请刷新",style=good,update-interval=-1,script-name=Netflix 检测
+
+[Script]
+# > Netflix 检测
+Netflix 检测 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NFCheck.js
+
+[MITM]
+hostname = %APPEND% ios.prod.ftl.netflix.com

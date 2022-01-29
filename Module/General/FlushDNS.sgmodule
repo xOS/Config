@@ -1,0 +1,10 @@
+#!name=DNS 刷新
+#!desc=刷新 DNS 缓存
+
+[Panel]
+# > 刷新 DNS 缓存
+刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=leaf.arrow.triangle.circlepath,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
+
+[Script]
+# > 刷新 DNS 缓存
+刷新 DNS = type=generic, script-path=https://hub.nan.ge/Script/Tools/FlushDNS.js
