@@ -30,7 +30,7 @@
         let moduleBody = {};
         moduleBody[moduleName] = !mitm;
         await httpAPI("/v1/modules", "POST", moduleBody);
-        await sleep(500);
+        await sleep(600);
     }
     capture = (await httpAPI("/v1/features/capture")).enabled;
     mitm = (await httpAPI("/v1/modules")).enabled.includes(moduleName);
