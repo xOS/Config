@@ -77,6 +77,9 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
 
+# > GitHub Education
+http-response ^https?:\/\/education\.github\.com\/api\/user$ requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/GitHub/Education.js
+
 # > 人人视频 解锁AI原画 (by@george Jiang & R)
 人人视频会员解锁 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/RRTV.js,type=http-response,pattern=^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
 
@@ -194,4 +197,4 @@ VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/
 Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Enpass/Enpass.js
 
 [MITM]
-hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn
+hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, api.rr.tv, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com

@@ -1,4 +1,4 @@
-var obj = JSON.parse($response.body); 
+var obj = JSON.parse($response.body);
 obj = {
     "data": {
         "ignore_udp_tests": 1,
@@ -20,4 +20,4 @@ obj = {
     }
 };
 
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });
