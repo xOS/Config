@@ -1,4 +1,4 @@
-var obj = JSON.parse($response.body); 
+var obj = JSON.parse($response.body);
 obj.data.user_area.vip_info.deadline_date = '永久会员';
 obj.data.user_area.vip_info.vip_privilege_desc = '您已经是尊贵的永久VIP会员。';
 // obj.data.user_area.vip_info = {};
@@ -11,4 +11,4 @@ obj.data.user_area.grid_info[0].num = '999999';
 obj.data.user_area.grid_info[0].coin_to_money = '99999';
 // obj.data.func_area[1] = {};
 obj.data.func_area.splice(1, 1);
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });

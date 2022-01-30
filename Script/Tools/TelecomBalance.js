@@ -8,7 +8,7 @@ https://e.189.cn/store/user/balance_new.do
 const detail = "https://e.189.cn/store/user/package_detail.do";
 const money = "https://e.189.cn/store/user/balance_new.do";
 
-(async() => {
+(async () => {
     if (typeof $request != "undefined") {
         saveRequest();
         $done({

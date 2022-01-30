@@ -36,30 +36,30 @@ const mainConfig = {
 
 //菜单配置
 const itemMenusConfig = {
-	creator_task:true,					//转发任务
-	mblog_menus_custom:false,				//寄微博
-	mblog_menus_video_later:true,			//可能是稍后再看？没出现过
-	mblog_menus_comment_manager:false,		//评论管理
-	mblog_menus_avatar_widget:false,		//头像挂件
+	creator_task: true,					//转发任务
+	mblog_menus_custom: false,				//寄微博
+	mblog_menus_video_later: true,			//可能是稍后再看？没出现过
+	mblog_menus_comment_manager: false,		//评论管理
+	mblog_menus_avatar_widget: false,		//头像挂件
 	mblog_menus_card_bg: false,			//卡片背景
-	mblog_menus_long_picture:false,		//生成长图
-	mblog_menus_delete:false,				//删除
-	mblog_menus_edit:false,				//编辑
-	mblog_menus_edit_history:false,		//编辑记录
-	mblog_menus_edit_video:false,			//编辑视频
-	mblog_menus_sticking:false,			//置顶
-	mblog_menus_open_reward:true,			//赞赏
-	mblog_menus_novelty:false,			//新鲜事投稿
-	mblog_menus_favorite:false,			//收藏
-	mblog_menus_promote:true,				//推广
-	mblog_menus_modify_visible:false,		//设置分享范围
-	mblog_menus_copy_url:false,			//复制链接
-	mblog_menus_follow:false,				//关注
-	mblog_menus_video_feedback:false,		//播放反馈
-	mblog_menus_shield:false,				//屏蔽
-	mblog_menus_report:false,				//投诉
-	mblog_menus_apeal:false,				//申诉
-	mblog_menus_home:false					//返回首页
+	mblog_menus_long_picture: false,		//生成长图
+	mblog_menus_delete: false,				//删除
+	mblog_menus_edit: false,				//编辑
+	mblog_menus_edit_history: false,		//编辑记录
+	mblog_menus_edit_video: false,			//编辑视频
+	mblog_menus_sticking: false,			//置顶
+	mblog_menus_open_reward: true,			//赞赏
+	mblog_menus_novelty: false,			//新鲜事投稿
+	mblog_menus_favorite: false,			//收藏
+	mblog_menus_promote: true,				//推广
+	mblog_menus_modify_visible: false,		//设置分享范围
+	mblog_menus_copy_url: false,			//复制链接
+	mblog_menus_follow: false,				//关注
+	mblog_menus_video_feedback: false,		//播放反馈
+	mblog_menus_shield: false,				//屏蔽
+	mblog_menus_report: false,				//投诉
+	mblog_menus_apeal: false,				//申诉
+	mblog_menus_home: false					//返回首页
 }
 
 
@@ -67,7 +67,7 @@ function nobyda() {
 	const isQuanX = typeof $task != "undefined";
 	const isSurge = typeof $httpClient != "undefined";
 	const isRequest = typeof $request != "undefined";
-	const notify = (title, subtitle='', message='') => {
+	const notify = (title, subtitle = '', message = '') => {
 		if (isQuanX) $notify(title, subtitle, message)
 		if (isSurge) $notification.post(title, subtitle, message);
 	}

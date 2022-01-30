@@ -1,4 +1,4 @@
-var obj = JSON.parse($response.body); 
+var obj = JSON.parse($response.body);
 obj['has_gold_subscription'] = true;
 obj['pref_autoplay'] = false;
 obj['has_subscribed_to_premium'] = true;
@@ -11,4 +11,4 @@ obj['has_ios_subscription'] = true;
 obj['seen_premium_adblock_modal'] = true;
 obj['can_edit_name'] = true;
 obj['has_external_account'] = true;
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });

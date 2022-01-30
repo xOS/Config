@@ -1,4 +1,4 @@
-!(async() => {
+!(async () => {
     const { wifi, v4 } = $network;
     const v4IP = v4.primaryAddress;
     if (!v4IP) {

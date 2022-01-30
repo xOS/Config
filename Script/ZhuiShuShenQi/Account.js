@@ -1,4 +1,4 @@
-var obj = JSON.parse($response.body); 
+var obj = JSON.parse($response.body);
 obj.isFree = true;
 obj.isVip = true;
 obj.superMonthlyExpire = 999;
@@ -14,4 +14,4 @@ obj.iosBalance = 999;
 obj.voucherCount = 999;
 obj.voucherSum = 999;
 obj.vipId = '001';
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });

@@ -1,3 +1,3 @@
-var obj = JSON.parse($response.body); 
+var obj = JSON.parse($response.body);
 obj['data']['is_vip'] = '1';
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });

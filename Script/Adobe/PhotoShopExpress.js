@@ -7,8 +7,8 @@ lcs-mobile-cops.adobe.io
 */
 
 let obj = JSON.parse($response.body)
-let pro= obj["mobileProfile"];
+let pro = obj["mobileProfile"];
 pro["profileStatus"] = "PROFILE_AVAILABLE";
 pro["legacyProfile"] = "{}";
 pro["relationshipProfile"] = "[]";
-$done({body: JSON.stringify(obj)})
+$done({ body: JSON.stringify(obj) })

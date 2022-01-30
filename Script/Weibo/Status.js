@@ -8,4 +8,4 @@ body['statuses'] = body['statuses'].filter(element => !(element.hasOwnProperty('
 if (body['advertises']) body['advertises'] = [];
 if (body['ad']) body['ad'] = [];
 if (body['trends']) body['trends'] = [];
-$done({body: JSON.stringify(body)});
+$done({ body: JSON.stringify(body) });

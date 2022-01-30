@@ -1,3 +1,3 @@
-var obj = JSON.parse($response.body); 
+var obj = JSON.parse($response.body);
 obj.isVip = true;
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });

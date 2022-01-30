@@ -210,7 +210,8 @@ function IMDbApikeys() {
         "f6dfce0e", "b9db622f",
         "e6bde2b9", "d324dbab",
         "d7904fa3", "aeaf88b9",
-        "4e89234e",];
+        "4e89234e",
+    ];
     return apikeys;
 }
 

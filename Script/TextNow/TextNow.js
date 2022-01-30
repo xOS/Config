@@ -11,4 +11,4 @@ obj['show_ads'] = false;
 obj['premium_calling'] = true;
 obj.voice_autorenew = 1;
 obj.ad_categories = null;
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });

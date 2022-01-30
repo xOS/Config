@@ -161,7 +161,7 @@ function lvZhouHandler(data) {
 
 
 function removeTimeLine(data) {
-    for (const s of["ad", "advertises", "trends"]) {
+    for (const s of ["ad", "advertises", "trends"]) {
         if (data[s]) {
             delete data[s];
         }

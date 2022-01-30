@@ -4,4 +4,4 @@ body = JSON.parse(body);
 if (body.hasOwnProperty('data'))
     body['data']['list'] = body['data']['list'].filter(element => !(element['type'] === 'ad'));
 body = JSON.stringify(body);
-$done({body});
+$done({ body });

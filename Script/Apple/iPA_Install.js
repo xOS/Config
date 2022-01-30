@@ -32,7 +32,7 @@ if (eva.url.match(/install/)) {
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://nobyda/download${eva.url.match(/jsbox/)?"/jsbox":""}</string>
+					<string>https://nobyda/download${eva.url.match(/jsbox/) ? "/jsbox" : ""}</string>
 				</dict>
 			</array>
 			<key>metadata</key>

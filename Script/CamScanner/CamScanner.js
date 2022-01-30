@@ -21,8 +21,8 @@ obj = {
     },
     "pdfword_balance": "9000",
     "vip_imagerestore_balance": 5000,
-    "psnl_vip_property":{
-      "expiry":"4072543930"
+    "psnl_vip_property": {
+      "expiry": "4072543930"
     },
     "pay": {
       "edu_expiry": 4072543930
@@ -83,4 +83,4 @@ obj = {
     "ocr_balance": 1000
   }
 };
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });

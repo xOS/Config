@@ -17,4 +17,4 @@ if (body['cards']) {  // 包括 body['cards'] 可能为 null 的情况
                 }
     }
 }
-$done({body: JSON.stringify(body)});
+$done({ body: JSON.stringify(body) });

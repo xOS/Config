@@ -13,8 +13,7 @@ obj['body']['urlInfo']['hdEquityInfo']['toast'] = '尊贵的钻石会员，为�
 obj['body']['urlInfo']['hdEquityInfo']['source'] = 'member';
 obj['body']['urlInfo']['hdEquityInfo']['rateDesc'] = '蓝光 1080P';
 obj['body']['urlInfo']['hdEquityInfo']['rateType'] = '4';
-obj['body']['mediaFiles'] = [
-  {
+obj['body']['mediaFiles'] = [{
     "hdCodeType": null,
     "fileSize": "0",
     "hdrType": null,
@@ -31,8 +30,8 @@ obj['body']['mediaFiles'] = [
     "currentTerminalCanSwitch": "1",
     "rateDesc": "标清 540P",
     "rateType": "2"
-  },
-  {
+},
+{
     "hdCodeType": null,
     "fileSize": "0",
     "hdrType": null,
@@ -49,8 +48,8 @@ obj['body']['mediaFiles'] = [
     "currentTerminalCanSwitch": "1",
     "rateDesc": "高清 720P",
     "rateType": "3"
-  },
-  {
+},
+{
     "hdCodeType": null,
     "fileSize": "0",
     "hdrType": null,
@@ -67,30 +66,30 @@ obj['body']['mediaFiles'] = [
     "currentTerminalCanSwitch": "1",
     "rateDesc": "蓝光 1080P",
     "rateType": "4"
-  }
+}
 ];
 obj['body']['auth'] = {
-  "member": {
-    "triadiamondl": "2099-12-21 14:39:31"
-  },
-  "logined": true,
-  "authPassDefinitionMap": {
-    "3": "member",
-    "1": "release",
-    "4": "member",
-    "2": "release"
-  },
-  "authResult": "SUCCESS",
-  "extInfo": null,
-  "resultDesc": "成功",
-  "benefites": null
+    "member": {
+        "triadiamondl": "2099-12-21 14:39:31"
+    },
+    "logined": true,
+    "authPassDefinitionMap": {
+        "3": "member",
+        "1": "release",
+        "4": "member",
+        "2": "release"
+    },
+    "authResult": "SUCCESS",
+    "extInfo": null,
+    "resultDesc": "成功",
+    "benefites": null
 };
 obj['body']['advertInfo'] = {
-  "playLengths": "5",
-  "isAdvert": "2",
-  "toast": null,
-  "reason": "ad-skip-5-seconds",
-  "source": "member",
-  "openMemberBenifitType": null
+    "playLengths": "5",
+    "isAdvert": "2",
+    "toast": null,
+    "reason": "ad-skip-5-seconds",
+    "source": "member",
+    "openMemberBenifitType": null
 };
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });
