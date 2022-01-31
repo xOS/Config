@@ -1,8 +1,9 @@
 const index = "/index";
 const person = "/person";
+const cache = "/walletcache.json";
 const url = $request.url;
 const obj = JSON.parse($response.body);
-if (url.indexOf(person) != -1) {
+if (url.indexOf(person) != -1 || url.indexOf(cache) != -1) {
   obj.data.recommend_cards = {};
   obj.data.other_cards = [];
   obj.data.popad = {};
