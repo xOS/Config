@@ -5,8 +5,8 @@
 URL-REGEX,^https?:\/\/([^/:]+)(:\d*)?\/ajax\?action=GetSoftList$,REJECT
 
 # > Telegram
-IP-CIDR,5.28.194.123/32,REJECT
-IP-CIDR,5.28.192.0/18,REJECT
+# IP-CIDR,5.28.194.123/32,REJECT
+# IP-CIDR,5.28.192.0/18,REJECT
 
 # > 小红书
 DOMAIN-KEYWORD,miaozhen.,REJECT
