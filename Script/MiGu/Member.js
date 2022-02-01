@@ -6,7 +6,7 @@ obj = {
         "memberInfo": {
             "memberInfo": {
                 "rights": {
-                    "isUfc": false,
+                    "isUfc": true,
                     "isDiamond": true,
                     "skipBeforeAd": true,
                     "isVip": true

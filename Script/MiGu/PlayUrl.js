@@ -1,7 +1,8 @@
-let body = $response.body.replace('"needAuth": true', '"needAuth": false');
+let body = $response.body.toString().replace(/\"needAuth\"\:true/g, '"needAuth": false');
 var obj = JSON.parse(body);
 obj['rid'] = 'SUCCESS';
 obj['playCode'] = '100000';
+if(obj.body.urlInfo){
 //obj['body']['auth']['logined'] = 'false';
 //obj['body']['auth']['authPassDefinitionMap']['3'] = 'release';
 obj['body']['urlInfo']['definitionRightSource'] = 'member';
@@ -91,5 +92,6 @@ obj['body']['advertInfo'] = {
     "reason": "ad-skip-5-seconds",
     "source": "member",
     "openMemberBenifitType": null
-};
+ }
+}
 $done({ body: JSON.stringify(obj) });

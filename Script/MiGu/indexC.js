@@ -4,7 +4,7 @@ obj = {
     "message": "success",
     "body": {
         "indexMember": {
-            "expireTime": "2099-21-21 14:39:31",
+            "expireTime": "2099-12-21 14:39:31",
             "id": "5da5614dd79302d926350525",
             "expiredCardImg": "",
             "serialNumber": 2,
@@ -16,7 +16,7 @@ obj = {
             "cardImg": "",
             "sealedFlag": "0",
             "identityIconUrl": "http:\/\/img.cmvideo.cn:8080\/publish\/noms\/2019\/10\/18\/1O1AACVK3GNL7.png",
-            "rightsCopywriting": "无通看券赠送权益哦",
+            "rightsCopywriting": "",
             "iconUrl": "http:\/\/img.cmvideo.cn:8080\/publish\/noms\/2019\/10\/18\/1O1AACVSQ6SQI.png",
             "rightsDescription": "享会员片库、直播7天回看、VIP专属下载等会员权益。",
             "effectiveFlag": "4"
