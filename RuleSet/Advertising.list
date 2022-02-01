@@ -1206,6 +1206,17 @@ DOMAIN,ws.ksmobile.net,REJECT
 
 # > 其它
 #DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN,adash-emas.cn-hangzhou.aliyuncs.com,REJECT
+DOMAIN,fp-it.fengkongcloud.com,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/barSelpag\/.+\.pag$,REJECT
+DOMAIN,www.qchannel01.cn,REJECT
+DOMAIN,cruiser.bayescom.cn,REJECT
+DOMAIN,mpush-api.aliyun.com,REJECT
+DOMAIN,gate.atomhike.com,REJECT
+DOMAIN,t.langago.cn,REJECT
+DOMAIN,gate.langago.cn,REJECT
+DOMAIN,raddus.bayescom.com,REJECT
+DOMAIN,sf3-fe-tos.pglstatp-toutiao.com,REJECT 
 DOMAIN-SUFFIX,pub.tpl.infzm.com,REJECT
 DOMAIN-SUFFIX,lkme.cc,REJECT
 DOMAIN,cloud.tgpa.qq.com,REJECT

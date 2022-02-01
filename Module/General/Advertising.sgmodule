@@ -108,7 +108,17 @@ DOMAIN-SUFFIX,xfinfr.com,REJECT
 URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice,REJECT
 
 # > 人人视频 去广告
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_a12146ea59314861bf606f50f7c594f0\.png-w1300$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_232d4a95cd7043b4b6898a6d5f39bb17\.jpg-w1300$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_e009880f0ac0420794dd8bc546dc3d9a\.jpg-w1300$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_83202fa02a2e413b91958c970546329e\.jpg-w1300$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_1d901bd9b6cf4fdd9cec74433c857bf0\.jpg-w400$,REJECT
+URL-REGEX,^https?:\/\/api\.rr\.tv\/user\/subscription\/redPoint\/display$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/barSelpag\/.+\.pag$,REJECT
 AND,((USER-AGENT,PUClient*), (NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
+URL-REGEX,^https?+:\/\/msspjh\.emarbox\.com\/getAdConfig,REJECT
+URL-REGEX,^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising,REJECT
+URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/,REJECT
 URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
 
 # > 爱奇艺
@@ -305,11 +315,6 @@ URL-REGEX,^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg,REJECT
 # URL-REGEX,^https?+:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(?>action|sdk)ad\.php,REJECT
 # URL-REGEX,^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua,REJECT
 URL-REGEX,^https?+:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads,REJECT
-
-# > 人人视频
-URL-REGEX,^https?+:\/\/msspjh\.emarbox\.com\/getAdConfig,REJECT
-URL-REGEX,^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising,REJECT
-URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/,REJECT
 
 # > 移除 YouTube 页面广告和视频贴片广告
 AND,((PROTOCOL,UDP),(OR,((DOMAIN-SUFFIX,googlevideo.com),(DOMAIN,www.youtube.com),(DOMAIN,s.youtube.com)))),REJECT
@@ -747,9 +752,14 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # > 中新网 APP
 CNS = type=http-response,pattern=^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/activity_entrance,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/ChinaNews/CNS.js
 
-# > 人人视频 去广告
-rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://hub.nan.ge/Script/Live/RRTVAds.js
-rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel,script-path=https://hub.nan.ge/Script/Live/RRTVAds.js
+# > 多多视频 去广告
+rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://hub.nan.ge/Script/DuoduoVideo/videoAds.js
+rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel,script-path=https://hub.nan.ge/Script/DuoduoVideo/videoAds.js
+
+# > 多多视频
+多多视频广告 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/RRTV.js,type=http-response,pattern=^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail)
+
+# > 多多视频视频质量 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/DuoduoVideo/videoConfig.js,type=http-response,pattern=(^https?:\/\/api\.rr\.tv\/watch\/v4\/get_movie_play_info|^https?:\/\/api\.rr\.tv\/drama\/app\/get_combined_drama_detail|^https?:\/\/api\.rr\.tv\/watch\/v4\/priority_video_quality\/get_priority_video_quality_config)
 
 # > 哔哩哔哩
 # >> 整体栏的布局修改(包括“首页”右上角、下边 tab 等)
