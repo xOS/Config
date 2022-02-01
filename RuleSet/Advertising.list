@@ -1209,6 +1209,11 @@ DOMAIN,ws.ksmobile.net,REJECT
 DOMAIN,adash-emas.cn-hangzhou.aliyuncs.com,REJECT
 DOMAIN,fp-it.fengkongcloud.com,REJECT
 URL-REGEX,^http:\/\/img\.rr\.tv\/barSelpag\/.+\.pag$,REJECT
+DOMAIN-SUFFIX,udbac.com,REJECT
+DOMAIN,umdc.aliapp.org,REJECT
+DOMAIN,ynuf.aliapp.org,REJECT
+DOMAIN-SUFFIX,baichuan-sdk.alicdn.com,REJECT
+DOMAIN-SUFFIX,getui.com,REJECT
 DOMAIN,www.qchannel01.cn,REJECT
 DOMAIN,cruiser.bayescom.cn,REJECT
 DOMAIN,mpush-api.aliyun.com,REJECT

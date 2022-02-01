@@ -90,10 +90,10 @@ Windscribe = type=http-response,pattern=^https?:\/\/api\.windscribe\.com\/Sessio
 韩剧TV = requires-body=1,script-path=https://hub.nan.ge/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
 
 # > 咪咕视频
-indexC = type=http-response,pattern=^https:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/indexC.js
-Gateway = type=http-response,pattern=^http:\/\/.*\.miguvideo\.com\/gateway\/playurl\/.+\/play\/?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/PlayUrl.js
-manage = type=http-response,pattern=^https:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/Manage.js
-member = type=http-response,pattern=^https:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/Member.js
+indexC = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/indexC.js
+playURL = type=http-response,pattern=(^https?:\/\/play\.miguvideo\.com\/playurl\/v1\/play\/playurl|^https?:\/\/.*\.miguvideo\.com\/gateway\/playurl\/.+\/play\/?),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/PlayUrl.js
+manage = type=http-response,pattern=^https?:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/Manage.js
+member = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/Member.js
 
 # > 奈飞评分
 奈飞评分 = script-path=https://hub.nan.ge/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
