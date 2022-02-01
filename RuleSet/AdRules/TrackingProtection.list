@@ -4460,6 +4460,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.tracking.adsbot.kr
 .gtm.beiersdorf.com
 .hwa.his.huawei.com
 .stat.i3.dmm.com
