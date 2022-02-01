@@ -848,6 +848,7 @@ Feed 过滤所有视频 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com
 # >> 用户推荐
 ^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_user_recommend_list data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 # >> 其它
+^https:?\/\/app-api\.poco\.cn\/v1_1\/rank\/get_homepage_recomment_banner data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_tag_list\? data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_list\? data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_info\? data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"

@@ -245,6 +245,9 @@ DOMAIN,kgmobilestatbak.kugou.com,REJECT
 DOMAIN,mobilelog.kugou.com,REJECT
 DOMAIN,mobilead.kuwo.cn,REJECT
 DOMAIN,rich.kuwo.cn,REJECT
+DOMAIN,adexpo.tencentmusic.com,REJECT
+DOMAIN-SUFFIX,tmead.y.qq.com,REJECT
+DOMAIN,adcdn.tencentmusic.com,REJECT
 
 # > 腾讯视频
 DOMAIN,news.l.qq.com,REJECT
@@ -1203,6 +1206,8 @@ DOMAIN,ws.ksmobile.net,REJECT
 
 # > 其它
 #DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-SUFFIX,pub.tpl.infzm.com,REJECT
+DOMAIN-SUFFIX,lkme.cc,REJECT
 DOMAIN,cloud.tgpa.qq.com,REJECT
 DOMAIN,myip.myzaker.com,REJECT
 DOMAIN,smr.snssdk.com,REJECT
@@ -1611,6 +1616,7 @@ URL-REGEX,^https?://d\d\.sinaimg\.cn,REJECT
 URL-REGEX,^https?://sax\d\.sina\.com\.cn,REJECT
 URL-REGEX,^https?://api\d\.tuisong\.baidu\.com,REJECT
 URL-REGEX,^https?://sa\d\.tuisong\.baidu\.com,REJECT
+URL-REGEX,^https?:\/\/nas\.infzm\.com\/api\/advertising\/ireader,REJECT
 
 # > IPCIDR
 IP-CIDR,1.3.0.10/32,no-resolve,REJECT
