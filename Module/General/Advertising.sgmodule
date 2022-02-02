@@ -11,7 +11,7 @@ URL-REGEX,^https?:\/\/.+\/licai\.png$,REJECT
 URL-REGEX,^https?:\/\/.+\/3fc\.png$,REJECT
 URL-REGEX,^https?:\/\/.+\/pull-flv-(.*)\.douyincdn\.com\/stage\/.+\.flv,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live_Normal\.png$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/(.*)?(fish|redicon|redpacket_icon)\.png$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/(.*)?(fish|redicon|redpacket)(.*)?\.png$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/lipin_dongtu\.gif$,REJECT
 # URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/1071\/1468\/.+\/.+\.gif$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter,REJECT
