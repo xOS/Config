@@ -39171,6 +39171,7 @@
 .d10vy5gom1ed53.cloudfront.net
 .um-public-panel-prod.s3.amazonaws.com
 .collection-endpoint-prod.herokuapp.com
+.tracking.adsbot.kr
 .gtm.beiersdorf.com
 .hwa.his.huawei.com
 .stat.i3.dmm.com
@@ -43704,6 +43705,7 @@
 .profiling.avandor.com
 .top.skyzone.ro
 .views.cancan.ro
+.vlogs.deja.media
 .a.tovarro.com
 .awaps.yandex.ru
 .browser-updater.yandex.net
@@ -60853,7 +60855,6 @@
 .inrecsys.popin.cc
 .jp-axia.m0mentum.net
 .telemetry.mozilla.org
-.tracking.adsbot.kr
 .twin-iq.kickfire.com
 .broker.datazoom.io
 .c0.adalyser.com
