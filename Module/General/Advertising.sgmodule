@@ -933,7 +933,6 @@ Feed 过滤所有视频 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com
 ^https?:\/\/v\.miguvideo\.com\/videoActivity\/activityList data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/ggic(.*)\.miguvideo\.com\/ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.m\.taobao\.com\/rest\/api3\.do data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-^https?:\/\/app-sc\.miguvideo\.com data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/ggx(.*)\.miguvideo\.com data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
 # > 其它
