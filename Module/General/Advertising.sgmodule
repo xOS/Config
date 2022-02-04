@@ -156,7 +156,6 @@ DOMAIN,sq.bls.mdt.qq.com,REJECT
 DOMAIN,news.l.qq.com,REJECT
 DOMAIN,tetrack.qq.com,REJECT-TINYGIF
 # DOMAIN,vv.video.qq.com,REJECT
-DOMAIN-SUFFIX,gzc.vod.tencent-cloud.com,REJECT
 DOMAIN-SUFFIX,trace.qq.com,REJECT-TINYGIF
 DOMAIN-SUFFIX,btrace.video.qq.com,REJECT-TINYGIF
 DOMAIN-SUFFIX,mtrace.video.qq.com,REJECT-TINYGIF
