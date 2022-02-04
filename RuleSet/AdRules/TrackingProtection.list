@@ -4461,6 +4461,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.event-collector.analytics.onedio.com
 .tracking.adsbot.kr
 .gtm.beiersdorf.com
 .hwa.his.huawei.com
@@ -18904,7 +18905,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
-.self.events.data.microsoft.com
+.analytics.studiodesignapp.com
 .misc.api.snaptube.app
 .dig.bdurl.net
 .trusted-collector-bk.tmocce.com
