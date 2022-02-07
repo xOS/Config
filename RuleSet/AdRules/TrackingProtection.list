@@ -4462,6 +4462,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.analytics.vedantu.com
 .stat.mydaddy.cc
 .event-collector.analytics.onedio.com
 .tracking.adsbot.kr
