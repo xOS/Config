@@ -29,7 +29,7 @@ const money = "https://e.189.cn/store/user/balance_new.do";
 
     $done({
         title: `中国电信 | ${getTime()}`,
-        content: `余额：¥ ${fee / 100} 元\n流量：${bytesToSize(be)}`,
+        content: `话费：¥ ${fee / 100} 元 | 流量：${bytesToSize(be)}`,
         icon: "simcard",
         "icon-color": "#35C759",
     });
