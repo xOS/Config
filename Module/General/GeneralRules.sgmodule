@@ -8,8 +8,8 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 # > 服务状态
 服务状态 = title="服务状态",content="请刷新",style=info,update-interval=360,script-name=服务状态
 
-# > 电信流量
-电信流量 = title ="电信流量",content ="请刷新",style=info, script-name=电信流量,update-interval=3600
+# > 话费流量
+话费流量 = title ="电信流量",content ="请刷新",style=info, script-name=电信流量,update-interval=3600
 
 # > Netflix 检测
 # Netflix 检测 = title="Netflix 检测",content="请刷新",style=good,update-interval=-1,script-name=Netflix 检测
@@ -71,8 +71,8 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 # > 服务状态
 服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
 
-# > 电信流量
-电信流量 = type=http-request,script-path=https://hub.nan.ge/Script/Tools/TelecomBalance.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
+# > 话费流量
+话费流量 = type=http-request,script-path=https://hub.nan.ge/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
 
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js

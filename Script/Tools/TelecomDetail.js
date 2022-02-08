@@ -29,7 +29,7 @@ const money = "https://e.189.cn/store/user/balance_new.do";
 
     $done({
         title: `中国电信 | ${getTime()}`,
-        content: `余额：¥ ${fee / 100} 元\n流量：${bytesToSize(be)} | ${bytesToSize(total)}`,
+        content: `余额：¥ ${fee / 100} 元\n流量：${bytesToSize(be)}`,
         icon: "simcard",
         "icon-color": "#35C759",
     });
@@ -61,7 +61,7 @@ function bytesToSize(bytes) {
     let k = 1024;
     sizes = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
     let i = Math.floor(Math.log(bytes) / Math.log(k));
-    return (bytes / Math.pow(k, i)).toFixed(2) + " " + sizes[i];
+    return (bytes / Math.pow(k, i)).toFixed(2) + sizes[i];
 }
 
 function saveRequest() {
