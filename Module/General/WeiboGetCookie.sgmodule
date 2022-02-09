@@ -1,8 +1,0 @@
-#!name= 微博Cookie获取
-#!desc= 微博Cookie获取。
-
-[Script]
-微博cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://hub.nan.ge/Script/Weibo/GetCookie.js,script-update-interval=0
-
-[MITM]
-hostname = %APPEND% api.weibo.cn

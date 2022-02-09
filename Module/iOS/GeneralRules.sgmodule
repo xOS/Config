@@ -1,5 +1,6 @@
 #!name=常用规则
 #!desc=日用夜用
+#!system=ios
 
 [General]
 force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz, ap*.intsig.net
