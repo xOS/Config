@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.lps.qantas.com
+.lpx.qantas.com
 .trknex.com
 .events.audioplace.me
 .usageanalytics.coveo.com
@@ -4464,6 +4466,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.tags.news.com.au
 .statistics.fppressa.ru
 .analytics.vedantu.com
 .stat.mydaddy.cc
