@@ -317,7 +317,6 @@ DOMAIN-SUFFIX,nl.notice.iqiyi.com,REJECT
 DOMAIN-SUFFIX,nl.rcd.iqiyi.com,REJECT
 DOMAIN-SUFFIX,notice.iqiyi.com,REJECT
 DOMAIN-SUFFIX,noxagile.duapp.com,REJECT
-DOMAIN-SUFFIX,paopao.iqiyi.com,REJECT
 DOMAIN-SUFFIX,policy.video.iqiyi.com,REJECT
 DOMAIN-SUFFIX,qosp.msg.71.am,REJECT
 DOMAIN-SUFFIX,static.g.iqiyi.com,REJECT
