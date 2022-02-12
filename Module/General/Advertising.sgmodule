@@ -137,8 +137,8 @@ DOMAIN,mbdlog.iqiyi.com,REJECT
 DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT
 DOMAIN,show.ssports.com,REJECT
 DOMAIN-SUFFIX,afdback.ppsimg.com,REJECT
-URL-REGEX,^https?:\/\/.+\/(videos|qpdxv)\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4,REJECT
+#URL-REGEX,^https?:\/\/.+\/(videos|qpdxv)\/.+\.mp4,REJECT
+#URL-REGEX,^https?:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4,REJECT
 URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/advertise ,REJECT
 URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/image\/.+\/pv_(.*)\.jpg,REJECT
 URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT
