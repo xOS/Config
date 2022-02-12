@@ -4466,6 +4466,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.metcon.hulu.com
+.vortex.hulu.com
 .tags.news.com.au
 .statistics.fppressa.ru
 .analytics.vedantu.com
