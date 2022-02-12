@@ -142,7 +142,7 @@ URL-REGEX,^https?:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4,REJECT
 URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/advertise ,REJECT
 URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/image\/.+\/pv_(.*)\.jpg,REJECT
 URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT
-URL-REGEX,^https?:\/\/data(.*)?\.video\.iqiyi\.com\/.+\.f4v$,REJECT
+# URL-REGEX,^https?:\/\/data(.*)?\.video\.iqiyi\.com\/.+\.f4v$,REJECT
 URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT
 URL-REGEX,^https?+:\/\/.+?\/(?>mixer|track2)\?,REJECT
 URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT
