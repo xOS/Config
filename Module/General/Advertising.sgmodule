@@ -58,6 +58,7 @@ URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/ad\/multi,REJECT
 URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/images\/tj\.gif,REJECT
 URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/ad\/api,REJECT
 
+
 # > 豆瓣
 URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$,REJECT
 URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$,REJECT
@@ -848,6 +849,9 @@ Feed 过滤所有视频 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/actionpro\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/sdkclick\.uve\.weibo\.com\/interface\/sdk\/sdkclick\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+
+# > 搜狗阅读
+^https?:\/\/k\.sogou\.com\/abs\/ios\/v3\/bookcoverRecomm data="https://hub.nan.ge/Mock/Blank/Default.html"
 
 # > 颇可
 # >>首页轮播图
