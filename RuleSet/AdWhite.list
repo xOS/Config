@@ -13,32 +13,3 @@ DOMAIN,firebaselogging-pa.googleapis.com,DIRECT
 
 # > 微软
 DOMAIN,self.events.data.microsoft.com,DIRECT
-
-# > Mate Translate
-DOMAIN-SUFFIX,amplitude.com,DIRECT
-
-# > GeoIP API
-DOMAIN-KEYWORD,geo,DIRECT
-DOMAIN-SUFFIX,ipapi.co,DIRECT
-DOMAIN-SUFFIX,ipinfo.io,DIRECT
-DOMAIN-SUFFIX,ipgeolocation.io,DIRECT
-DOMAIN-SUFFIX,abstractapi.com,DIRECT
-DOMAIN-SUFFIX,ipdata.co,DIRECT
-DOMAIN-SUFFIX,whoisxmlapi.com,DIRECT
-DOMAIN-SUFFIX,whatsmyip.com,DIRECT
-DOMAIN-SUFFIX,geoapify.com,DIRECT
-DOMAIN-SUFFIX,ifconfig.co,DIRECT
-DOMAIN-SUFFIX,ip.gs,DIRECT
-DOMAIN-SUFFIX,ipaddress.com,DIRECT
-DOMAIN-SUFFIX,ipworld.info,DIRECT
-DOMAIN-SUFFIX,ipapi.com,DIRECT
-DOMAIN-SUFFIX,ip-api.com,DIRECT
-DOMAIN-SUFFIX,my-ip.io,DIRECT
-DOMAIN-SUFFIX,ip125.com,DIRECT
-DOMAIN-SUFFIX,extreme-ip-lookup.com,DIRECT
-DOMAIN-SUFFIX,ip.nf,DIRECT
-DOMAIN-SUFFIX,seeip.org,DIRECT
-DOMAIN-SUFFIX,whois.pconline.com.cn,DIRECT
-DOMAIN-SUFFIX,pv.sohu.com,DIRECT
-DOMAIN-SUFFIX,ipwhois.app,DIRECT
-DOMAIN-SUFFIX,api.ipstack.com,DIRECT
