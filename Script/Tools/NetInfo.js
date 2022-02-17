@@ -62,7 +62,7 @@ if (CNNET.includes(carrier)) {
         // const region = data['data']['location'][1];
         // const city = data['data']['location'][2];
         // const isp = data['data']['location'][4];
-        const externalIP = IPv4;
+        const externalIP = ip;
         const country = data['a2'];
         const region = data['a3'];
         const city = data['a4'];
