@@ -2,11 +2,13 @@
 DOMAIN,wxapp.tc.qq.com,DIRECT
 DOMAIN,vweixinf.tc.qq.com,DIRECT
 DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN,dl.wechat.com,DIRECT
 DOMAIN,sgshort.pay.wechat.com,DIRECT
 DOMAIN,sglong.wechat.com,DIRECT
 DOMAIN,sgminorshort.wechat.com,DIRECT
 DOMAIN,sgshort.wechat.com,DIRECT
 DOMAIN,sgaxshort.wechat.com,DIRECT
+DOMAIN,tencentmap.wechat.com,DIRECT
 DOMAIN-KEYWORD,101.32.104.,DIRECT
 DOMAIN-KEYWORD,101.32.118.,DIRECT
 DOMAIN-KEYWORD,101.32.133.,DIRECT
