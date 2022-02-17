@@ -7,7 +7,7 @@ const IPv4 = v4.primaryAddress;
 const radio = $network["cellular-data"].radio;
 const carrier = $network["cellular-data"].carrier;
 const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{8}).+(.{8})$/, "$1****$2") : null;
-let url = "https://myip.ipip.net/json";
+let url = "https://api.grpc.fun/ip";
 var CNNET = ['460-03', '460-05', '460-11'];
 var Unicom = ['460-01', '460-06', '460-09'];
 var Mobile = ['460-00', '460-02', '460-04', '460-07', '460-08'];
@@ -58,16 +58,24 @@ if (CNNET.includes(carrier)) {
 
     $httpClient.get(url, function (error, response, data) {
         data = JSON.parse(data);
-        const externalIP = data['data']['ip'];
-        const region = data['data']['location'][1];
-        const city = data['data']['location'][2];
-        const isp = data['data']['location'][4];
+        // const externalIP = data['data']['ip'];
+        // const region = data['data']['location'][1];
+        // const city = data['data']['location'][2];
+        // const isp = data['data']['location'][4];
+        const externalIP = IPv4;
+        const country = data['a2'];
+        const region = data['a3'];
+        const city = data['a4'];
+        const district = data['a5'];
+        const isp = data['a6'];
 
-        if (city != '') {
-            info = region + ' ' + city + ' ' + isp;
-        } else {
-            info = region + ' ' + isp;
-        };
+        info = externalIP + ' ' + country + ' ' + region + ' ' + city + ' ' + district + ' ' + isp;
+
+        // if (city != '') {
+        //     info = region + ' ' + city + ' ' + isp;
+        // } else {
+        //     info = region + ' ' + isp;
+        // };
 
         const body = {
             title: wifi.ssid || "蜂窝数据",
