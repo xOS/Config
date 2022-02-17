@@ -69,13 +69,15 @@ if (CNNET.includes(carrier)) {
         const district = data['a5'];
         const isp = data['a6'];
 
-        info = externalIP + ' ' + country + ' ' + region + ' ' + city + ' ' + district + ' ' + isp;
-
-        // if (city != '') {
-        //     info = region + ' ' + city + ' ' + isp;
-        // } else {
-        //     info = region + ' ' + isp;
-        // };
+        if (city != '' || district =='') {
+            info = country + ' ' + region + ' ' + city + ' ' + isp;
+        } else if (district !='' || city == '') {
+            info = country + ' ' + region + ' ' + district + ' ' + isp;
+        } else if (city == '' && district == '') {
+            info = country + ' ' + region + ' ' + isp;
+        } else {
+            info = country + ' ' + region + ' ' + city + ' ' + district + ' ' + isp;
+        };
 
         const body = {
             title: wifi.ssid || "蜂窝数据",
