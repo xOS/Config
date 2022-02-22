@@ -1,6 +1,6 @@
 let obj = JSON.parse($response.body);
 obj.data.reminderFlag = true;
-obj.data.quota = 9000;
+obj.data.quota = 9999;
 //obj.data.packageName = '高级版套餐';
 obj.data.proEditionUser = true;
 obj.data.packageGroupName = '商业版';

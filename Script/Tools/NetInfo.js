@@ -81,14 +81,14 @@
                 info = region + ' ' + city + ' ' + district + ' ' + isp;
             }
          } else {
-            if (city && !district) {
-                info = country +' ' + region + ' ' + city + ' ' + isp;
-            } else if (district && !city) {
-                info = country +' ' + region + ' ' + district + ' ' + isp;
-            } else if (!city && !district) {
-                info = country +' ' + region + ' ' + isp;
+            if (city && !region) {
+                info = country + ' ' + city;
+            } else if (!city && region) {
+                info = country +' ' + region;
+            } else if (!city && !region) {
+                info = country;
             } else {
-                info = country +' ' + region + ' ' + city + ' ' + district + ' ' + isp;
+                info = country +' ' + region + ' ' + city;
             }
          }
  
