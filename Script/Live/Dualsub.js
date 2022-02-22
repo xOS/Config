@@ -78,7 +78,7 @@ if (!settings) settings = {
         type: "Google", // Google, DeepL, Disable
         lang: "English",
         sl: "auto",
-        tl: "en",
+        tl: "zh-CN",
         line: "s", // f, s
         dkey: "null", // DeepL API key
         s_subtitles_url: "null",
@@ -93,7 +93,7 @@ if (!settings) settings = {
         type: "Enable", // Enable, Disable
         lang: "English",
         sl: "auto",
-        tl: "en",
+        tl: "zh-CN",
     }
 }
 
