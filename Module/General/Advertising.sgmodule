@@ -214,7 +214,7 @@ URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
 
 # > 无忧行
 DOMAIN,abtest.jegotrip.com.cn,REJECT
-URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn\/(\/|)appSyncimage\/.+\.(jpg|png|gif)$,REJECT
+URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn\/(\/|\/\/|)appSyncimage\/.+\.(jpg|png|gif)$,REJECT
 
 # > 优酷
 URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT
