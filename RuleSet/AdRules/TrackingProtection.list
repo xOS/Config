@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.cdn.raekdata.com
 .felix.data.tm-awx.com
 .imzahrwl.xyz
 .karte.io
@@ -4498,6 +4499,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.log.suumo.jp
+.tracking.nw.de
 .trk.storyly.io
 .d.email.forbes.com
 .curiosity-seven.vercel.app
