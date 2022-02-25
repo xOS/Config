@@ -5281,7 +5281,6 @@ IP-CIDR,36.69.16.0/20,no-resolve
 IP-CIDR,36.69.32.0/19,no-resolve
 IP-CIDR,36.69.64.0/18,no-resolve
 IP-CIDR,36.96.0.0/11,no-resolve
-IP-CIDR,38.126.117.0/24,no-resolve
 IP-CIDR,38.142.239.114/32,no-resolve
 IP-CIDR,39.0.0.0/24,no-resolve
 IP-CIDR,39.0.128.0/17,no-resolve
