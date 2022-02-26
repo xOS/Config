@@ -208,8 +208,8 @@ URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/privilege\/checkTryPrivilege,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/hfw\/,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getRecommendedPositionList,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/m\.cloud\.189\.cn\/wap\/client\/activity\/,REJECT
-URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
+#URL-REGEX,^https?:\/\/m\.cloud\.189\.cn\/wap\/client\/activity\/,REJECT
+#URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
 
 # > 无忧行
 DOMAIN,abtest.jegotrip.com.cn,REJECT
@@ -830,6 +830,9 @@ vipDaily = type=http-response,pattern=^https?:\/\/.+\.zhuishushenqi\.com\/activi
 # > 今日头条（专业版）
 Feed 过滤所有视频 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com\/api\/news\/feed\/v88\/\?session_id=,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Toutiao/Feed.js
 钱包净化 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com\/wallet\/portal\/api\/v3\/prefetch\/settings\?session_id=,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Toutiao/Wallet.js
+
+# > 天翼云盘
+homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/client\/homePages\.action,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Telecom/CTCloud.js
 
 [Map Local]
 # > 小红书
