@@ -7,7 +7,7 @@ body['data'].forEach((element, index) => {
 })
 if (body.data && body.data.length > 0) {
     for (var i in body.data) {
-        let type = JSON.parse(body.data[i].extra.type);
+        let type = body.data[i].extra.type;
         if (type == 'zvideo') {
             delete body.data[i];
         }
