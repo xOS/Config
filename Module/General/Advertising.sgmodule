@@ -85,7 +85,7 @@ URL-REGEX, ^https?://static\.zhihu\.com/[^/]+/(main|column)\.signflow\.[^.]+.js,
 DOMAIN,118.89.204.198,REJECT
 
 USER-AGENT,AVOS*,REJECT
-URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
+URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
 AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
 
 # > 优酷 去广告
@@ -595,7 +595,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ;^https?:\/\/api\.weibo\.cn\/2\/statuses\/extend\?gsid= - reject
 ^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad - reject
 ^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations - reject
-# ^https?:\/\/api\.zhihu\.com\/commercial_api\/ - reject
+^https?:\/\/api\.zhihu\.com\/commercial_api\/ - reject
 ^https?:\/\/api\.zhihu\.com\/fringe\/ad - reject
 ^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage - reject
 ^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios - reject
@@ -814,7 +814,7 @@ http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/Dy
 WeChat = script-path=https://hub.nan.ge/Script/WeChat/WeChat.js,type=http-request,pattern=^https?://mp\.weixin\.qq\.com/mp/getappmsgad
 
 # > 知乎 去广告
-People = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(www|api)\.zhihu\.com\/(api\/v4\/me|people|feed-root\/block),script-path=https://hub.nan.ge/Script/Zhihu/People.js
+People = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(www|api)\.zhihu\.com\/(api\/v4\/me\/|people|feed-root\/block),script-path=https://hub.nan.ge/Script/Zhihu/People.js
 Feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://hub.nan.ge/Script/Zhihu/Feed.js
 Recommend = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend,script-path=https://hub.nan.ge/Script/Zhihu/Recommend.js
 Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://hub.nan.ge/Script/Zhihu/Answer.js
@@ -964,7 +964,7 @@ Feed 过滤所有视频 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/ad\/ data="https://hub.nan.ge/Mock/Blank/Blank.txt"
 ^https?:\/\/(101\.201\.175\.228|182\.92\.251\.113)\/brand\/search\/v1\.json data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/(\d{1,3}\.){1,3}\d{1,3}\/view\/dale-online\/dale_ad\/ data="https://hub.nan.ge/Mock/Blank/Blank.gif"
-^https?:\/\/(api|www)\.zhihu\.com\/(fringe|adx|ad-style-service|banners|mqtt) data="https://hub.nan.ge/Mock/Blank/Blank.gif"
+^https?:\/\/(api|www)\.zhihu\.com\/(fringe|adx|commercial|ad-style-service|banners|mqtt) data="https://hub.nan.ge/Mock/Blank/Blank.gif"
 ^https?:\/\/(api|www)\.zhihu\.com\/.*?(featured-comment-ad|recommendations|community-ad) data="https://hub.nan.ge/Mock/Blank/Blank.gif"
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ data="https://hub.nan.ge/Mock/Blank/Blank.txt"
 ^https?:\/\/(iyes|(api|hd)\.mobile)\.youku\.com\/(adv|common\/v3\/hudong\/new) data="https://hub.nan.ge/Mock/Blank/Blank.gif"
