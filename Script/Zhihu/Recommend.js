@@ -5,5 +5,14 @@ body['data'].forEach((element, index) => {
         body['data'].splice(index, 1)
     }
 })
+if (body.data && body.data.length > 0) {
+    var data = body.data;
+    for (var i in data) {
+        let content = JSON.parse(data[i].brief);
+        if (content.type == 'zvideo') {
+            data[i] = {};
+        }
+    }
+}
 body = JSON.stringify(body)
 $done({ body })
