@@ -595,7 +595,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ;^https?:\/\/api\.weibo\.cn\/2\/statuses\/extend\?gsid= - reject
 ^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad - reject
 ^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations - reject
-^https?:\/\/api\.zhihu\.com\/commercial_api\/ - reject
+# ^https?:\/\/api\.zhihu\.com\/commercial_api\/ - reject
 ^https?:\/\/api\.zhihu\.com\/fringe\/ad - reject
 ^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage - reject
 ^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios - reject
