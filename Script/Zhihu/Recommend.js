@@ -9,8 +9,9 @@ if (body.data && body.data.length > 0) {
     for (var i in body.data) {
         let type = body.data[i].extra.type;
         if (type == 'zvideo') {
-            delete body.data[i];
+            body.data.splice(i, 1);
         }
+        if (body.data[i].common_card.feed_content.hasOwnProperty('video')) body.data.splice(i, 1);
     }
 }
 body = JSON.stringify(body)
