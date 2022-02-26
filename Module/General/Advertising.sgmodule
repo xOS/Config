@@ -355,7 +355,7 @@ URL-REGEX,^https?:\/\/static\.vecteezy\.com\/packs\/js\/application-(.*)\.chunk\
 URL-REGEX,^https?:\/\/static\.vecteezy\.com\/packs\/js\/application~rebrand-landing-(.*)\.chunk\.js,REJECT
 URL-REGEX,^https?:\/\/static\.vecteezy\.com\/packs\/js\/application~bundles-timeline-(.*)\.chunk\.js,DIRECT
 URL-REGEX,^https?:\/\/static\.vecteezy\.com\/packs\/js\/collections\/collection-show~resources-show-(.*)\.chunk\.js,REJECT
-URL-REGEX,^https?:\/\/.+?\/disable-devtool\.+?\.js$,REJECT
+URL-REGEX,^https?:\/\/(.+)?\/disable-devtool\(.+)?\.js,REJECT
 URL-REGEX,^https?:\/\/open\.web\.meitu\.com\/sources\/xiuxiu\.js$,REJECT
 URL-REGEX,^https?:\/\/geek-share\.com\/public\/geekshare\/js\/geek\.js$,REJECT
 URL-REGEX,^https?:\/\/geek-share\.com\/public\/com\/js\/jquery\.searchableSelect\.js$,REJECT
