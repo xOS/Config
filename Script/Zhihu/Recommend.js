@@ -6,11 +6,10 @@ body['data'].forEach((element, index) => {
     }
 })
 if (body.data && body.data.length > 0) {
-    var data = body.data;
-    for (var i in data) {
-        let content = JSON.parse(data[i].brief);
-        if (content.type == 'zvideo') {
-            data[i] = {};
+    for (var i in body.data) {
+        let type = JSON.parse(body.data[i].extra.type);
+        if (type == 'zvideo') {
+            delete body.data[i];
         }
     }
 }
