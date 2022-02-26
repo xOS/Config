@@ -85,7 +85,7 @@ URL-REGEX, ^https?://static\.zhihu\.com/[^/]+/(main|column)\.signflow\.[^.]+.js,
 DOMAIN,118.89.204.198,REJECT
 
 USER-AGENT,AVOS*,REJECT
-URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
+URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
 AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
 
 # > 优酷 去广告
