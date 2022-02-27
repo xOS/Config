@@ -1205,6 +1205,9 @@ DOMAIN,ws.ksmobile.net,REJECT
 
 # > 其它
 #DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-SUFFIX,analysis.tratao.com,REJECT
+DOMAIN-SUFFIX,easemob.com,REJECT
+DOMAIN-SUFFIX,free-lbv6.idouyinvod.com,REJECT
 DOMAIN,adash-emas.cn-hangzhou.aliyuncs.com,REJECT
 DOMAIN,fp-it.fengkongcloud.com,REJECT
 URL-REGEX,^http:\/\/img\.rr\.tv\/barSelpag\/.+\.pag$,REJECT
