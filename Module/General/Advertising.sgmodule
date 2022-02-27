@@ -200,16 +200,11 @@ URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad
 ;URL-REGEX,^https?:\/\/mcmm\.caiyun\.feixin\.10086\.cn:80\/mcmm\/api\/IAdvert$,REJECT
 
 # > 天翼云盘
-# URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/message\/queryAssignMsg,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds\.action\?,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getFloatingWindow,REJECT
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/privilege\/checkTryPrivilege,REJECT
-#URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/hfw\/,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getRecommendedPositionList,REJECT
 URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/m\.cloud\.189\.cn\/wap\/client\/activity\/,REJECT
-#URL-REGEX,^https?:\/\/cloud\.189\.cn\/client\/activity\/,REJECT
 
 # > 无忧行
 DOMAIN,abtest.jegotrip.com.cn,REJECT
