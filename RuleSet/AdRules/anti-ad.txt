@@ -1,7 +1,7 @@
 #TITLE=anti-AD
-#VER=20220226024047
+#VER=20220227093606
 #URL=https://github.com/privacy-protection-tools/anti-AD
-#TOTAL_LINES=52423
+#TOTAL_LINES=52418
 
 #DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT
 .00-gov.cn
@@ -537,7 +537,6 @@
 .188server.com
 .marketing.188weststjames.com
 .188xiaoba.net
-.e.189.cn
 .189zj.cn
 .18a8f5a1c1.com
 .18clicks.com
@@ -13914,9 +13913,6 @@
 .df9377.com
 .m.dfanf.com
 .dfb79196408612f1.com
-.dfscdn.dfcfw.com
-.empic.dfcfw.com
-.gbfek.dfcfw.com
 .dfcwg.com
 .dfdjilnzqgtow.com
 .dfdybylchujl.com
@@ -33471,7 +33467,6 @@
 .parcrescentimportantly.com
 .parding.info
 .pardnergam.com
-.go.pardot.com
 .parentful.club
 .discover.parexel.com
 .parflushfeet.com
