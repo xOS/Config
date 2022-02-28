@@ -116,8 +116,11 @@ if (
     body = JSON.stringify(obj);
 } else if (url.indexOf(path24) != -1) {
     let obj = JSON.parse(body);
-    if (obj.data.hasOwnProperty('cards'))
+    if (obj.data.hasOwnProperty('cards')) {
         obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_task_task'));
+        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_video_video'));
+        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_banner_hot'));
+        }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path25) != -1) {
     let obj = JSON.parse(body);
