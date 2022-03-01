@@ -312,7 +312,7 @@ URL-REGEX,^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg,REJECT
 URL-REGEX,^https?+:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads,REJECT
 
 # > 移除 YouTube 页面广告和视频贴片广告
-AND,((PROTOCOL,UDP),(OR,((DOMAIN-SUFFIX,googlevideo.com),(DOMAIN,www.youtube.com),(DOMAIN,s.youtube.com)))),REJECT
+AND,((PROTOCOL,UDP),(OR,((DOMAIN-SUFFIX,googlevideo.com),(DOMAIN,www.youtube.com),(DOMAIN,s.youtube.com)))),REJECT-NO-DROP
 URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
 URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
 URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
