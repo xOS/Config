@@ -338,6 +338,7 @@ URL-REGEX,^https?:\/\/lh[0-9]\.googleusercontent\.com\/proxy\/?,REJECT
 URL-REGEX,^https?:\/\/www\.googleapis\.com\/adsmeasurement,REJECT
 
 # > 其它
+URL-REGEX,^https?:\/\/app\.10086\.cn\/biz-orange\/SA\/advertising,REJECT
 URL-REGEX,^https?:\/\/api\.lynne\.ink\/wechat\/readTopMessage,REJECT
 URL-REGEX,^http:\/\/.+\/d\?dn=,REJECT
 URL-REGEX,^https?:\/\/tnc(.*)-aliec(.*)\.snssdk\.com,REJECT
