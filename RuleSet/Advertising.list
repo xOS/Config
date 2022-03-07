@@ -1206,6 +1206,8 @@ DOMAIN,ws.ksmobile.net,REJECT
 
 # > 其它
 #DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN,adstore-1252524079.cos.ap-beijing.myqcloud.com,REJECT
+DOMAIN,rapi.cmgadx.com,REJECT
 DOMAIN,app-product.jegotrip.com.cn,REJEC
 DOMAIN-SUFFIX,analysis.tratao.com,REJECT
 DOMAIN-SUFFIX,easemob.com,REJECT
