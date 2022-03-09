@@ -208,7 +208,7 @@ URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition,REJECT
 
 # > 无忧行
 DOMAIN,abtest.jegotrip.com.cn,REJECT
-URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn(.+?)appSyncimage\/%E5%BC%B9%E7%AA%97-(.+)?\.(jpg|png|gif)$,REJECT
+URL-REGEX,^https?:\/\/oss\.jegotrip\.com\.cn(.+?)appSyncimage\/.+?\.(jpg|png|gif)$,REJECT
 
 # > 优酷
 URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT
