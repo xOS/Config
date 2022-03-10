@@ -166,9 +166,6 @@ IPLab = type=http-response,pattern=^https?:\/\/iplab\.rtbasia\.com\/user\/get_us
 # > GitHub Education
 http-response ^https?:\/\/education\.github\.com\/api\/user$ requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/GitHub/Education.js
 
-# > Windscribe 解锁专业版
-Windscribe = type=http-response,pattern=^https?:\/\/api\.windscribe\.com\/Session,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Windscribe/Windscribe_Pro.js
-
 # > 韩剧TV解锁蓝光
 韩剧TV = requires-body=1,script-path=https://hub.nan.ge/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
 
@@ -187,9 +184,6 @@ member = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\
 
 # > VSCO 滤镜 VIP
 VSCO = type=http-response ^https?:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\?, requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Photo/VSCO.js
-
-# > WorkingCopy.js
-;WorkingCopy= requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/WorkingCopy/WorkingCopy.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/education\.github\.com\/api\/user$
 
 # > Lightroom
 Lightroom = type=http-response,pattern=^https?:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Adobe/Lightroom.js,script-update-interval=-1
@@ -289,4 +283,4 @@ YouTube-Subtrans = type=http-request,pattern=https:\/\/(setting|www).youtube.com
 UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/UptimeRobot/UptimeRobot.js
 
 [MITM]
-hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, iplab.rtbasia.com, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, tagit.hyhuo.com, api.uptimerobot.com
+hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, iplab.rtbasia.com, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, tagit.hyhuo.com, api.uptimerobot.com
