@@ -285,9 +285,6 @@ Netflix-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.nflxvideo.
 # >> YouTube 中文字幕
 YouTube-Subtrans = type=http-request,pattern=https:\/\/(setting|www).youtube.com\/(api\/timedtext.+|\?action=(g|s)et),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
 
-# > 拦截100 会员
-拦截100  = type=http-response,pattern=^https?:\/\/tagit\.hyhuo\.com\/cypt\/block100\/get_vip_info$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Block100/Block100.js,script-update-interval=0
-
 # > UptimeRobot
 UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/UptimeRobot/UptimeRobot.js
 
