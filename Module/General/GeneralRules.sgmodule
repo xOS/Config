@@ -277,12 +277,19 @@ VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/
 # > Enpass 高级版
 Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Enpass/Enpass.js
 
-# > 中文字幕 
+# > 中文字幕
+# >> Netflix 中文字幕
 Netflix-Dualsub = type=http-response,pattern=https:\/\/.+nflxvideo.net\/\?o=\d+&v=\d+&e=.+,requires-body=1,max-size=0,timeout=30,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
+Netflix-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.nflxvideo.net\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
 
-Netflix-Dualsub-Setting = type=http-request,pattern=https:\/\/.+nflxvideo.net\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
-
+# >> YouTube 中文字幕
 YouTube-Subtrans = type=http-request,pattern=https:\/\/(setting|www).youtube.com\/(api\/timedtext.+|\?action=(g|s)et),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
 
+# > 拦截100 会员
+拦截100  = type=http-response,pattern=^https?:\/\/tagit\.hyhuo\.com\/cypt\/block100\/get_vip_info$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Block100/Block100.js,script-update-interval=0
+
+# > UptimeRobot
+UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/UptimeRobot/UptimeRobot.js
+
 [MITM]
-hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, iplab.rtbasia.com, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com
+hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, api.windscribe.com, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, iplab.rtbasia.com, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, tagit.hyhuo.com, api.uptimerobot.com
