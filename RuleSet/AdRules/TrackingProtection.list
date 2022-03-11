@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.dygassets.dygdigital.com
 .ukw.jp
 .api.trueaudience.io
 .pixel.tatpek.com
@@ -4513,6 +4514,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.tracking.bloomberg.com
 .analytics.stanby.com
 .d1snv67wdds0p2.cloudfront.net
 .track.easeus.com
