@@ -94,7 +94,7 @@
  
          const body = {
              title: wifi.ssid || "蜂窝数据",
-             content: (radio && server ? `网络制式：${server} ${radios} (${radio})\n` : "") +
+             content: (radio && server ? `网络制式：${server} ${radios} [${radio}]\n` : "") +
                  `内部 IPv4：${ip} \n` +
                  (wifi.ssid ? `路由 IPv4：${router}\n` : "") +
                  `外部 IPv4：${externalIP}\n` +
