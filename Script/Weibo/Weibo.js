@@ -1,4 +1,4 @@
-const version = 'v0110.1';
+const version = 'v0312.1';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -158,7 +158,19 @@ function lvZhouHandler(data) {
     data.common_struct = newStruct;
 }
 
-
+function isBlock(data) {
+	let blockIds = mainConfig.blockIds || [];
+	if(blockIds.length === 0) {
+		return false;
+	}
+	let uid = data.user.id;
+	for (const blockId of blockIds) {
+		if(blockId == uid) {
+			return true;
+		}
+	}
+	return false;
+}
 
 function removeTimeLine(data) {
     for (const s of ["ad", "advertises", "trends"]) {
@@ -173,7 +185,9 @@ function removeTimeLine(data) {
     for (const s of data.statuses) {
         if (!isAd(s)) {
             lvZhouHandler(s);
-            newStatuses.push(s);
+            if(!isBlock(s)) {
+				newStatuses.push(s);
+			}
         }
     }
     data.statuses = newStatuses;
@@ -377,7 +391,7 @@ function removeComments(data) {
     let delType = ['广告'];
     if (mainConfig.removeRelateItem) delType.push('相关内容');
     if (mainConfig.removeRecommendItem) delType.push('推荐');
-    // if (delType.length === 0) return;
+    if (delType.length === 0) return;
     let items = data.datas || [];
     if (items.length === 0) return;
     let newItems = [];
