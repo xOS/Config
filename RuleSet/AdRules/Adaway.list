@@ -375,6 +375,13 @@
 .assets.adstage.io
 .adstune.com
 .adsunflower.com
+.cdn.adswizz.com
+.deliveryengine.cox.adswizz.com
+.delivery-cdn-cf.adswizz.com
+.cox.deliveryengine.adswizz.com
+.streamguys.deliveryengine.adswizz.com
+.synchroscript.deliveryengine.adswizz.com
+.synchrobox.adswizz.com
 .zc.adswizz.com
 .adsymptotic.com
 .adtarget.com.tr
@@ -543,6 +550,8 @@
 .co.akisinn.info
 .int.akisinn.info
 .int.akisinn.site
+.17de4c16.akstat.io
+.17de4c17.akstat.io
 .p.alcmpn.com
 .alexametrics.com
 .abtest.alibaba.com
@@ -561,6 +570,7 @@
 .am15.net
 .amazon-adsystem.com
 .aan.amazon.com
+.fls-na.amazon.com
 .ads-api-new-2052271615.ap-northeast-1.elb.amazonaws.com
 .adserver-1277986481.ap-northeast-1.elb.amazonaws.com
 .adserver-vpc-alb-0-649637586.ap-northeast-1.elb.amazonaws.com
@@ -630,6 +640,7 @@
 .analytics.analytics-egain.com
 .cloud-emea.analytics-egain.com
 .cloud-us.analytics-egain.com
+.analyticssystems.net
 .andomedia.com
 .go1.aniview.com
 .gov.aniview.com
@@ -1013,6 +1024,7 @@
 .castplatform.com
 .pa.wme.catchmedia.com
 .ad.cauly.co.kr
+.vod-gcs-cedexis.cbsaavideo.com
 .production-cmp.isgprivacy.cbsi.com
 .doppler-reporting.cbsivideo.com
 .tealium.cbsnews.com
@@ -1376,6 +1388,8 @@
 .controller.duokanbox.com
 .fm.duokanbox.com
 .stat.duokanbox.com
+.be.durationmedia.net
+.tag.durationmedia.net
 .ak.dxsvr.com
 .rc.dxsvr.com
 .tls.dxsvr.com
@@ -1694,6 +1708,7 @@
 .personalization.centech.glulive.com
 .revid.centech.glulive.com
 .gmossp-sp.jp
+.c.go-mpulse.net
 .s.go-mpulse.net
 .log.go.com
 .sw88.go.com
@@ -2279,6 +2294,7 @@
 .sparkle.locationlabs.com
 .api.locuslabs.com
 .assets.locuslabs.com
+.rest.locuslabs.com
 .smetrics.loft.com
 .api.logentries.com
 .data.logentries.com
@@ -2752,6 +2768,7 @@
 .mpnrs.com
 .r.mradx.net
 .r0.mradx.net
+.ad.mrtnsvr.com
 .msads.net
 .ads.msn.com
 .a.ads1.msn.com
@@ -3240,6 +3257,7 @@
 .assets.rbl.ms
 .rbnt.org
 .realclever.com
+.ac.realvu.net
 .cdn.rebel.ai
 .recreativ.ru
 .events.redditmedia.com
@@ -3258,6 +3276,7 @@
 .researchnow.com
 .ds.reson8.com
 .idsync.reson8.com
+.cdn.resonate.com
 .static.cdn.responsys.net
 .restartad.com
 .sdk.resu.io
@@ -4307,6 +4326,9 @@
 .eligibility.wootric.com
 .production.wootric.com
 .survey.wootric.com
+.content.worldnow.com
+.ftpcontent.worldnow.com
+.kake.images.worldnow.com
 .wowanalytics.co.uk
 .pixel.wp.com
 .stats.wp.com

@@ -467,6 +467,13 @@
 .assets.adstage.io
 .adstune.com
 .adsunflower.com
+.cdn.adswizz.com
+.deliveryengine.cox.adswizz.com
+.delivery-cdn-cf.adswizz.com
+.cox.deliveryengine.adswizz.com
+.streamguys.deliveryengine.adswizz.com
+.synchroscript.deliveryengine.adswizz.com
+.synchrobox.adswizz.com
 .zc.adswizz.com
 .adsymptotic.com
 .adtarget.com.tr
@@ -635,6 +642,8 @@
 .co.akisinn.info
 .int.akisinn.info
 .int.akisinn.site
+.17de4c16.akstat.io
+.17de4c17.akstat.io
 .p.alcmpn.com
 .alexametrics.com
 .abtest.alibaba.com
@@ -653,6 +662,7 @@
 .am15.net
 .amazon-adsystem.com
 .aan.amazon.com
+.fls-na.amazon.com
 .ads-api-new-2052271615.ap-northeast-1.elb.amazonaws.com
 .adserver-1277986481.ap-northeast-1.elb.amazonaws.com
 .adserver-vpc-alb-0-649637586.ap-northeast-1.elb.amazonaws.com
@@ -721,6 +731,7 @@
 .analytics.analytics-egain.com
 .cloud-emea.analytics-egain.com
 .cloud-us.analytics-egain.com
+.analyticssystems.net
 .andomedia.com
 .go1.aniview.com
 .gov.aniview.com
@@ -1104,6 +1115,7 @@
 .castplatform.com
 .pa.wme.catchmedia.com
 .ad.cauly.co.kr
+.vod-gcs-cedexis.cbsaavideo.com
 .production-cmp.isgprivacy.cbsi.com
 .doppler-reporting.cbsivideo.com
 .tealium.cbsnews.com
@@ -1467,6 +1479,8 @@
 .controller.duokanbox.com
 .fm.duokanbox.com
 .stat.duokanbox.com
+.be.durationmedia.net
+.tag.durationmedia.net
 .ak.dxsvr.com
 .rc.dxsvr.com
 .tls.dxsvr.com
@@ -1784,6 +1798,7 @@
 .personalization.centech.glulive.com
 .revid.centech.glulive.com
 .gmossp-sp.jp
+.c.go-mpulse.net
 .s.go-mpulse.net
 .log.go.com
 .sw88.go.com
@@ -2368,6 +2383,7 @@
 .sparkle.locationlabs.com
 .api.locuslabs.com
 .assets.locuslabs.com
+.rest.locuslabs.com
 .smetrics.loft.com
 .api.logentries.com
 .data.logentries.com
@@ -2841,6 +2857,7 @@
 .mpnrs.com
 .r.mradx.net
 .r0.mradx.net
+.ad.mrtnsvr.com
 .msads.net
 .ads.msn.com
 .a.ads1.msn.com
@@ -3328,6 +3345,7 @@
 .assets.rbl.ms
 .rbnt.org
 .realclever.com
+.ac.realvu.net
 .cdn.rebel.ai
 .recreativ.ru
 .events.redditmedia.com
@@ -3346,6 +3364,7 @@
 .researchnow.com
 .ds.reson8.com
 .idsync.reson8.com
+.cdn.resonate.com
 .static.cdn.responsys.net
 .restartad.com
 .sdk.resu.io
@@ -4395,6 +4414,9 @@
 .eligibility.wootric.com
 .production.wootric.com
 .survey.wootric.com
+.content.worldnow.com
+.ftpcontent.worldnow.com
+.kake.images.worldnow.com
 .wowanalytics.co.uk
 .pixel.wp.com
 .stats.wp.com
@@ -5342,6 +5364,24 @@
 .sge-chat.skorpik.ru
 .widgets.coingecko.com
 .cdnjs.buymeacoffee.com
+.afgfjdivrf.com
+.eezoulru.com
+.thatsouh.com
+.hqlgixkuocvwhu.top
+.hxmvequsbyv.xyz
+.pakuvcgjdpqjjs.xyz
+.qyysdkjcf.xyz
+.vclpwxgae.xyz
+.yjgghmmnoykj.top
+.astcarbinkom.com
+.nxwipuoybxc.com
+.cwdlynbxh.top
+.eblytohxbgvxt.xyz
+.hocbdmaexoq.top
+.nxwipuoybxc.top
+.fmvliiinznfso.com
+.fmnybwjmkfpoqdm.xyz
+.zusepe.xyz
 .untvwqvrk.com
 .knifecontributionproposition.com
 .cdn.applixir.com
@@ -16449,6 +16489,7 @@
 .lqcdn.com
 .lqcqhkgoer.com
 .lqw.me
+.lrlptkumwpcck.com
 .lrxlbekpmav.com
 .lsariz.com
 .lsjne.com
@@ -36091,6 +36132,7 @@
 .gxlsjt.com
 .haoyongdm.com
 .haoyundmtaotao.com
+.hengtengds.com
 .hjqsyyy.com
 .huixianjiaoyuedu.com
 .hylmimgg.com
@@ -36161,7 +36203,9 @@
 .99zan.site
 .9go.mobi
 .achu.wang
+.afx001.pw
 .ahuang.site
+.anni141224.club
 .apio.ink
 .assistantrok.club
 .attempted.wang
@@ -36169,6 +36213,7 @@
 .awwlfb.cn
 .awwlib.cn
 .awwlrd.cn
+.aybe.me
 .banggongxia.xyz
 .bazinga12138.online
 .bendibao.site
@@ -36245,6 +36290,7 @@
 .happycastle.me
 .hbears.com
 .hdjlkj.vip
+.hfcpa.top
 .hgdgdsgh.cn
 .hiba.club
 .hidanhao.vip
@@ -36269,6 +36315,7 @@
 .iahjoni.cn
 .icfy.xyz
 .ionia.pro
+.iqn.world
 .irsufth.cn
 .irzeemn.cn
 .ixmlusc.cn
@@ -36322,6 +36369,7 @@
 .mcaspkd.cn
 .mclseww.top
 .mdkjefq.cn
+.me511.win
 .meitaolianmeng.ltd
 .mhdjkx.cn
 .mhqx.store
@@ -36339,6 +36387,7 @@
 .mzwfw.club
 .mzy1.xyz
 .naqsadv.cn
+.neihan.co
 .netshare.ltd
 .nmsl.ink
 .nnopp.website
@@ -36346,6 +36395,7 @@
 .nopph.website
 .npubvjw.cn
 .ns-zhy.com
+.omduzge.cn
 .omzpbbz.cn
 .ooykew.cn
 .opiwb.com
@@ -36353,8 +36403,10 @@
 .oqrwpru.cn
 .oxzwsxs.cn
 .panli.site
+.pcfdgc.cn
 .pdqgywt.cn
 .plkjia.top
+.pmdatabase.xyz
 .poewage.top
 .pofooz.cn
 .pqsjb.cn
@@ -36379,11 +36431,13 @@
 .rrogfhs.cn
 .ruiyijy.xyz
 .rushwei.ltd
+.rusu01.top
 .ruwei.me
 .rvpbdcf.cn
 .sanqian.press
 .sanqianxingxuan.icu
 .sdskj.club
+.sfceco.cn
 .shappapa.top
 .shenghemy.mobi
 .shengtaiyuan.mobi
@@ -36470,12 +36524,15 @@
 .xingyou65.xyz
 .xjsq.xyz
 .xmwn.shop
+.xn--2hvw21e.online
 .xocs.ren
 .xryrylt.cn
+.xs8888.vip
 .xsdlt.top
 .xshijie.xyz
 .xubb.xyz
 .xulilin.ltd
+.xwwj.ink
 .xxdesi.top
 .yakel.top
 .yanghuaer.mobi
@@ -36486,6 +36543,7 @@
 .ylbx.me
 .ymdxxkj.icu
 .ynyn.shop
+.yovkr.xyz
 .yrlfnyx.cn
 .ys2727.xyz
 .yxjibph.cn
@@ -36508,6 +36566,7 @@
 .zllxy.love
 .zonmxej.cn
 .ztrynpo.cn
+.zuijin.wang
 .zuolgc.cn
 .zwmosu.xyz
 .zxhstudy.online
@@ -36611,7 +36670,6 @@
 .cl-ad.x-flow.app
 .soundcloud-pax.pandora.com
 .promoted.sndcdn.com
-.delivery-cdn-cf.adswizz.com
 .ad.particlenews.com
 .ad.wynk.in
 .pushad.metajoy.services
@@ -37512,7 +37570,6 @@
 .msg.qy.net
 .hubvisor.io
 .sitest.jp
-.cdn.resonate.com
 .log2.spotify.com
 .analytics.a-f.io
 .analytics-api.a-f.io
@@ -41659,7 +41716,6 @@
 .cmstrendslog.indiatimes.com
 .cmstrendslog.timesnow.tv
 .cnt.nicemix.com
-.cnt.vivatube.com
 .collection.theaa.com
 .collector-cdn.github.com
 .collector-medium.lightstep.com
@@ -51036,8 +51092,8 @@
 .ld82ydd.com
 .lpaizureik.com
 .lsgqlgoc.com
-.luven.xyz
 .luckyads.pro
+.luven.xyz
 .mediab.uy
 .mifsirnhvvrps.top
 .misxgkvnlf.com
@@ -52131,6 +52187,7 @@
 .analyzer52.fc2.com
 .clientlog.portal.office.com
 .cnt.nuvid.com
+.cnt.vivatube.com
 .collect.sas.com
 .collect2.sas.com
 .log.optimizely.com
@@ -52171,7 +52228,6 @@
 .letysheeps.ru
 .a4.overclockers.ua
 .novunu.football-plyus.net
-.lrlptkumwpcck.com
 .googletagmanager.com
 .zdbb.net
 .7eer.net
