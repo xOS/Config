@@ -1,0 +1,16 @@
+payload:
+# > Speedtest
+  - DOMAIN-KEYWORD,speedtest
+  - DOMAIN-SUFFIX,ooklaserver.net
+  - DOMAIN,fast.rockisland.net
+
+#  - DOMAIN-SUFFIX,88-f.net
+#  - DOMAIN,st.pautina-telecom.ru
+#  - DOMAIN-SUFFIX,goodnet.su
+#  - DOMAIN-SUFFIX,a-mo.net
+
+# > Fast
+  - DOMAIN-SUFFIX,fast.com
+
+# > Speed Test by Cloudflare
+  - DOMAIN-SUFFIX,speed.cloudflare.com

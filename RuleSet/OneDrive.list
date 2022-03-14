@@ -1,0 +1,21 @@
+# > OneDrive
+USER-AGENT,OneDrive*,PROXY
+USER-AGENT,OneDriveiOSApp*,PROXY
+PROCESS-NAME,onedrive,PROXY
+PROCESS-NAME,onedriveupdater,PROXY
+DOMAIN-KEYWORD,1drv,PROXY
+DOMAIN-KEYWORD,onedrive,PROXY
+DOMAIN-KEYWORD,skydrive,PROXY
+DOMAIN-SUFFIX,1drv.com,PROXY
+DOMAIN-SUFFIX,livefilestore.com,PROXY
+DOMAIN-SUFFIX,oneclient.sfx.ms,PROXY
+DOMAIN-SUFFIX,onedrive.com,PROXY
+DOMAIN-SUFFIX,onedrive.live.com,PROXY
+DOMAIN-SUFFIX,photos.live.com,PROXY
+DOMAIN-SUFFIX,sharepoint.com,PROXY
+DOMAIN-SUFFIX,sharepointonline.com,PROXY
+DOMAIN-SUFFIX,skydrive.wns.windows.com,PROXY
+DOMAIN-SUFFIX,spoprod-a.akamaihd.net,PROXY
+DOMAIN-SUFFIX,storage.live.com,PROXY
+DOMAIN-SUFFIX,storage.msn.com,PROXY
+DOMAIN-SUFFIX,in.appcenter.ms,PROXY

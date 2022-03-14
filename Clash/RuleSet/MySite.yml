@@ -1,0 +1,91 @@
+payload:
+# 自家服务
+# > 唯美女生
+  - DOMAIN-SUFFIX, vmgirls.com
+
+# > 楠格
+  - DOMAIN, nange.cn
+  - DOMAIN, www.nange.cn
+  - DOMAIN, status.nange.cn
+  - DOMAIN, static.nange.cn
+  - DOMAIN, api.nange.cn
+ # - DOMAIN, cloud.nange.cn
+ # - DOMAIN, drive.nange.cn
+  - DOMAIN, mail.nange.cn
+  - DOMAIN, admin.nange.cn
+  - DOMAIN, server.nange.cn
+  - DOMAIN, whois.nange.cn
+  - DOMAIN, node.nange.cn
+  - DOMAIN, hub.nan.ge
+  - DOMAIN, ali.nange.cn
+  - DOMAIN, agent.nange.cn
+  - DOMAIN, today.nange.cn
+  - DOMAIN, shop.nange.cn
+  - DOMAIN, nange.cn
+
+# > 楠格主页
+  - DOMAIN, nan.ge
+  - DOMAIN, www.nan.ge
+  - DOMAIN, i.nan.ge
+  - DOMAIN, bt.nan.ge
+  - DOMAIN, sub.nan.ge
+  - DOMAIN, api.nan.ge
+  - DOMAIN, air.nan.ge
+  - DOMAIN, for.nan.ge
+  - DOMAIN, mail.nan.ge
+  - DOMAIN, rdp.nan.ge
+  - DOMAIN, vnc.nan.ge
+  - DOMAIN, ssh.nan.ge
+  - DOMAIN, dns.nan.ge
+  - DOMAIN, ddns.nan.ge
+  - DOMAIN, ms.nan.ge
+  - DOMAIN, hub.nan.ge
+  - DOMAIN, tb.nan.ge
+  - DOMAIN, bot.nan.ge
+  - DOMAIN, admin.nan.ge
+  - DOMAIN, cp.nan.ge
+  - DOMAIN, chr.nan.ge
+  - DOMAIN, app.nan.ge
+  - DOMAIN, raw.nan.ge
+  - DOMAIN, get.nan.ge
+
+# > 楠歌
+  - DOMAIN-SUFFIX, nangle.com.cn
+
+# > CDN域名
+  - DOMAIN, cdn.ink
+  - DOMAIN, www.cdn.ink
+  - DOMAIN, t.cdn.ink
+  - DOMAIN, i.cdn.ink
+  - DOMAIN, e.cdn.ink
+  - DOMAIN, s.cdn.ink
+  - DOMAIN, o.cdn.ink
+  - DOMAIN, a.cdn.ink
+  - DOMAIN, b.cdn.ink
+  - DOMAIN, api.cdn.ink
+  - DOMAIN, get.cdn.ink
+  - DOMAIN, raw.cdn.ink
+  - DOMAIN, app.cdn.ink
+
+# > 其它
+  - DOMAIN, qste.com
+  - DOMAIN, www.qste.com
+  - DOMAIN, admin.qste.com
+  - DOMAIN, cdn.qste.com
+  - DOMAIN, status.qste.com
+  - DOMAIN, cloud.qste.com
+  - DOMAIN, mail.qste.com
+  - DOMAIN, files.qste.com
+  - DOMAIN, file.qste.com
+  - DOMAIN, cloud.qste.com
+  - DOMAIN, drive.qste.com
+  - DOMAIN, server.qste.com
+  - DOMAIN, api.qste.com
+  - DOMAIN, ddns.qste.com
+  - DOMAIN-SUFFIX, cloudimg.net
+  - DOMAIN-SUFFIX, appleimg.com
+  - DOMAIN-SUFFIX, free.ac.cn
+  - DOMAIN-SUFFIX, xupeinan.com
+  - DOMAIN-SUFFIX, http3.online
+  - DOMAIN-SUFFIX, terzoacerra.com
+

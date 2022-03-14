@@ -1,0 +1,17 @@
+# > AppleProxy
+USER-AGENT,com.apple.trustd*,PROXY
+PROCESS-NAME,lookupviewservice,PROXY
+DOMAIN,api-glb-sea.smoot.apple.com,PROXY
+DOMAIN,books.itunes.apple.com,PROXY
+DOMAIN,cvws.icloud-content.com,PROXY
+DOMAIN,developer.apple.com,PROXY
+DOMAIN,hls.itunes.apple.com,PROXY
+DOMAIN,itunes.apple.com,PROXY
+DOMAIN,lookup-api.apple.com,PROXY
+DOMAIN,sandbox.itunes.apple.com,PROXY
+DOMAIN,testflight.apple.com,PROXY
+DOMAIN-SUFFIX,apple-dns.net,PROXY
+DOMAIN-SUFFIX,apps.apple.com,PROXY
+DOMAIN-SUFFIX,appsto.re,PROXY
+DOMAIN-SUFFIX,blobstore.apple.com,PROXY
+DOMAIN-SUFFIX,digicert.com,PROXY

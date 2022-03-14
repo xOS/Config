@@ -1,0 +1,10 @@
+#!name=网络信息
+#!desc=网络信息面板
+
+[Panel]
+# > 网络状态
+网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
+
+[Script]
+# > 网络信息
+网络状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NetInfo.js

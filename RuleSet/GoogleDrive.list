@@ -1,0 +1,8 @@
+# > Google Drive
+USER-AGENT,Google.Drive*,PROXY
+USER-AGENT,*com.google.Drive*,PROXY
+USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*,PROXY
+DOMAIN-SUFFIX,docs.google.com,PROXY
+DOMAIN-SUFFIX,drive.google.com,PROXY
+DOMAIN-SUFFIX,googledrive.com,PROXY
+DOMAIN-SUFFIX,googleusercontent.com,PROXY

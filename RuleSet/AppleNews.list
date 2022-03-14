@@ -1,0 +1,12 @@
+# > Apple News
+USER-AGENT,AppleNews*,PROXY
+USER-AGENT,com.apple.news*,PROXY
+PROCESS-NAME,news,PROXY
+DOMAIN-SUFFIX,apple.news,PROXY
+DOMAIN,apple.comscoreresearch.com,PROXY
+DOMAIN,gateway.icloud.com,PROXY
+DOMAIN,gspe1-ssl.ls.apple.com,PROXY
+DOMAIN,news-assets.apple.com,PROXY
+DOMAIN,news-client.apple.com,PROXY
+DOMAIN,news-edge.apple.com,PROXY
+DOMAIN,news-events.apple.com,PROXY

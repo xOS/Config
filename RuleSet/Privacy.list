@@ -1,0 +1,62 @@
+# > Privacy
+DOMAIN,track.tiara.daum.net,REJECT
+DOMAIN,track.tiara.kakao.com,REJECT
+DOMAIN,zgsdk.zhugeio.com,REJECT
+
+# > Alibaba
+USER-AGENT,Munion-SDK*,REJECT
+# DOMAIN-KEYWORD,adash,REJECT
+# DOMAIN,ynuf.aliapp.org,REJECT
+# DOMAIN,mobilegw.alipay.com,REJECT
+URL-REGEX,^https?:\/\/.+\/squery$,REJECT
+DOMAIN,mazu.m.qq.com,REJECT
+
+# > 51.LA
+DOMAIN,js.users.51.la,REJECT
+DOMAIN,mc.51.la,REJECT
+DOMAIN,wc.51.la,REJECT
+
+# > 58,
+DOMAIN,track.58.com,REJECT
+DOMAIN,tracklog.58.com,REJECT
+
+# > Baidu
+DOMAIN,hm.baidu.com,REJECT
+DOMAIN,hmma.baidu.com,REJECT
+
+# > ByteDance
+DOMAIN,log.byteoversea.com,REJECT
+DOMAIN,log.tiktokv.com,REJECT
+DOMAIN,log-hl-ipv6.snssdk.com,REJECT
+DOMAIN,log-lq.snssdk.com,REJECT
+DOMAIN,log-va.tiktokv.com,REJECT
+DOMAIN,xlog.snssdk.com,REJECT
+DOMAIN,srp4.snssdk.com,REJECT
+DOMAIN,srp2.snssdk.com,REJECT
+DOMAIN,srp1.snssdk.com,REJECT
+DOMAIN,srp3.snssdk.com,REJECT
+
+# > Google
+#DOMAIN-SUFFIX,googletagmanager.com,REJECT
+#DOMAIN-SUFFIX,google-analytics.com,REJECT
+#DOMAIN,safebrowsing.googleapis.com,REJECT
+
+# > MI
+DOMAIN-SUFFIX,tracking.miui.com,REJECT
+DOMAIN,data.mistat.xiaomi.com,REJECT
+DOMAIN,tracking.intl.miui.com,REJECT
+
+# > Tencent
+DOMAIN-SUFFIX,trace.qq.com,REJECT
+DOMAIN,btrace.qq.com,REJECT
+DOMAIN,btrace.video.qq.com,REJECT
+DOMAIN,mtrace.qq.com,REJECT
+DOMAIN,safebrowsing.urlsec.qq.com,REJECT
+DOMAIN,config.ab.qq.com,REJECT
+DOMAIN,rmonitor.qq.com,REJECT
+
+# > Umeng
+DOMAIN-SUFFIX,umeng.com,REJECT
+DOMAIN-KEYWORD,log.umeng.com,REJECT
+DOMAIN-KEYWORD,logs.umeng.com,REJECT
+DOMAIN-KEYWORD,logs.umengcloud.com,REJECT

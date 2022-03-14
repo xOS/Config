@@ -1,0 +1,290 @@
+#!name=常用规则
+#!desc=日用夜用
+
+[General]
+force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz, ap*.intsig.net
+
+[Panel]
+# > 服务状态
+服务状态 = title="服务状态",content="请刷新",style=info,update-interval=360,script-name=服务状态
+
+# > 话费流量
+话费流量 = title ="话费流量",content ="请刷新",style=info, script-name=话费流量,update-interval=3600
+
+# > Netflix 检测
+# Netflix 检测 = title="Netflix 检测",content="请刷新",style=good,update-interval=-1,script-name=Netflix 检测
+
+# > 刷新 DNS 缓存
+刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=leaf.arrow.triangle.circlepath,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
+
+# > 抓包状态
+抓包状态 =title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=3600
+
+# > 网络状态
+网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
+
+[Header Rewrite]
+# > 颇可
+;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
+
+# > 添加标记
+; ^https?://(?:\w+\.)*?((nan|cdn|nange|qste|vmgirls)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
+
+# > 更改 UA
+;^https?://(?:\w+\.)*?((nange|vmgirls|qste|appleimg|cloudimg)\.(?:com\.cn|cn|com|net))[\\\/]* header-replace User-Agent Surge
+
+[URL Rewrite]
+# > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
+# >> Bag (iOS/macOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/bag.*)(cc=[A-Z]{2})(.*) $1com$3cc=TW$5 header
+# >> General Spotlight & Look Up Search (iOS/macOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/search.*)(cc=[A-Z]{2})(.*) $1com$3cc=TW$5 header
+# >> General Info Card (macOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=[^kg][^tv][^movies])(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9 header
+# >> Siri Knowledge(Siri资料) Card (Spotlight@macOS & Siri@iOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=(?:kgcn|kg))(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9 header
+# >> Siri Knowledge(Siri资料) Card (Spotlight@iOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/search.*)(cardDomain=kg)(.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*) $1com$3$4$5card_locale=zh-Hans_CN$7cc=TW$9 header
+# >> tv Movies and TV Show Card (macOS)
+(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=(?:tv|movies))(.*)(q=(?:tv|movies)%3A)(.*)(%2F)([a-z]{2}-[A-Z]{2})(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9$10$11$12zh-TW$14 header
+
+# > Bilibili
+(^https?:\/\/app\.biliintl\.com\/(x\/)?(intl|dm|reply|history|v\d/msgfeed).+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$5&sim_code=51503$7 header
+(^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/.+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$35&sim_code=51503$5 header
+
+# > Redirect Google Search Service
+(https:\/\/www\.google\.com([.a-z]+)?\/.+)(&safe=(active|strict)&)(.+) $1&safe=off 302
+https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/search?q=$1&safe=off 302
+^https?:\/\/(www.)?(g|google)\.(cn|hk) https://www.google.com 302
+
+# > Redirect Google Maps Service
+^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
+
+# > Weibo Short URL
+^http:\/\/t\.cn http://sinaurl.cn 302
+
+# > Redirect False to True
+# > IGN China to IGN Global
+^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
+# > Fake Website Made By C&J Marketing
+^https?:\/\/(www.)?abbyychina\.com\/ https://www.abbyy.cn/ 302
+^https?:\/\/(www.)?bartender\.cc\/ https://www.macbartender.com/ 302
+^https?:\/\/(www.)?(betterzipcn|betterzip)\.(com|net)\/ https://macitbetter.com/ 302
+^https?:\/\/(www.)?beyondcompare\.cc\/ https://www.scootersoftware.com/ 302
+^https?:\/\/(www.)?bingdianhuanyuan\.cn\/ https://www.faronics.com/zh-hans/products/deep-freeze 302
+^https?:\/\/(www.)?chemdraw\.com\.cn\/ https://www.perkinelmer.com.cn/ 302
+^https?:\/\/(www.)?codesoftchina\.com\/ https://www.teklynx.com/ 302
+^https?:\/\/(www.)?coreldrawchina\.com\/ https://www.coreldraw.com/cn/ 302
+^https?:\/\/(www.)?crossoverchina\.com\/ https://www.codeweavers.com/ 302
+^https?:\/\/(www.)?dongmansoft\.com\/ https://www.udongman.cn/ 302
+^https?:\/\/(www.)?earmasterchina\.cn\/ https://www.earmaster.com/ 302
+^https?:\/\/(www.)?easyrecoverychina\.com\/ https://www.ontrack.com/ 302
+^https?:\/\/(www.)?ediuschina\.com\/ https://www.grassvalley.com/ 302
+^https?:\/\/(www.)?flstudiochina\.com\/ https://www.image-line.com/ 302
+^https?:\/\/(www.)?formysql\.com\/ https://www.navicat.com.cn/ 302
+^https?:\/\/(www.)?guitarpro\.cc\/ https://www.guitar-pro.com/ 302
+^https?:\/\/(www.)?huishenghuiying\.com\.cn\/ https://www.coreldraw.com/cn/ 302
+^https?:\/\/hypersnap\.mairuan\.com\/ https://www.hyperionics.com/ 302
+^https?:\/\/(www.)?iconworkshop\.cn\/ https://www.axialis.com/ 302
+^https?:\/\/(www.)?idmchina\.net\/ https://www.internetdownloadmanager.com/ 302
+^https?:\/\/(www.)?imindmap\.cc\/ https://www.ayoa.com/previously-imindmap/ 302
+^https?:\/\/(www.)?jihehuaban\.com\.cn\/ https://www.chartwellyorke.com/sketchpad/x24795.html 302
+^https?:\/\/hypersnap\.mairuan\.com\/ https://www.keyshot.com/ 302
+^https?:\/\/(www.)?kingdeecn\.cn\/ http://www.kingdee.com/ 302
+^https?:\/\/(www.)?logoshejishi\.com https://www.sothink.com/product/logo-design-software/ 302
+^https?:\/\/logoshejishi\.mairuan\.com\/ https://www.sothink.com/product/logo-design-software/ 302
+^https?:\/\/(www.)?luping\.net\.cn\/ https://www.techsmith.com/ 302
+^https?:\/\/(www.)?mathtype\.cn\/ https://www.dessci.com/ 302
+^https?:\/\/(www.)?mindmanager\.(cc|cn)\/ https://www.mindjet.com/cn/ 302
+^https?:\/\/(www.)?mindmapper\.cc\/ https://www.mindmapper.com/ 302
+^https?:\/\/(www.)?(mycleanmymac|xitongqingli)\.com\/ https://macpaw.com/ 302
+^https?:\/\/(www.)?nicelabel\.cc\/ https://www.nicelabel.com/zh/ 302
+^https?:\/\/(www.)?ntfsformac\.cc\/ https://ntfsformac.tuxera.com/ 302
+^https?:\/\/(www.)?ntfsformac\.cn\/ https://china.paragon-software.com/home-mac/ntfs-for-mac/ 302
+^https?:\/\/(www.)?overturechina\.com\/ https://sonicscores.com/ 302
+^https?:\/\/(www.)?passwordrecovery\.cn\/ https://cn.elcomsoft.com/aopr.html 302
+^https?:\/\/(www.)?pdfexpert\.cc\/ https://pdfexpert.com/zh 302
+^https?:\/\/(www.)?photozoomchina\.com\/ https://www.benvista.com/ 302
+^https?:\/\/(www.)?shankejingling\.com\/ https://www.sothink.com/product/flashdecompiler/ 302
+^https?:\/\/cn\.ultraiso\.net\/ https://cn.ezbsystems.com/ultraiso/ 302
+^https?:\/\/(www.)?vegaschina\.cn\/ https://www.vegascreativesoftware.com/ 302
+^https?:\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/zh/xshell/ 302
+^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
+^https?:\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
+^https?:\/\/hypersnap\.mairuan\.com\/ https://www.keyshot.com/ 302
+^https?:\/\/logoshejishi\.mairuan\.com\/ https://www.sothink.com/product/logo-design-software/ 302
+^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
+^http:\/\/(www.)?aicoin\.cn\/$ https://www.aicoin.cn/?long_lives_aicoin=%22live%22 302
+^http?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
+
+# > AbeamTV - api.abema.io
+^https?:\/\/api\.abema\.io\/v\d\/ip\/check - reject
+
+# > 知乎
+^https?:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
+
+# > 115
+^https?:\/\/home\.115\.com\/go\?(https?:\/\/)?(.*) http://$2 302
+
+[Map Local]
+# > 微博
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data="https://hub.nan.ge/Mock/Weibo/hy_dongtu.gif"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://hub.nan.ge/Mock/Weibo/jiantougaocheng.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.nan.ge/Mock/Weibo/avatar_vip_golden.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.nan.ge/Mock/Weibo/feed_icon_100vip_7_default.png"
+
+[Script]
+# > 网络信息
+网络状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NetInfo.js
+
+# > Netflix 检测
+# Netflix 检测 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NFCheck.js
+
+# > 刷新 DNS 缓存
+刷新 DNS = type=generic, script-path=https://hub.nan.ge/Script/Tools/FlushDNS.js
+
+# > 抓包状态
+抓包状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/CaptureMode.js
+
+# > 服务状态
+服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
+
+# > 话费流量
+话费流量 = type=http-request,script-path=https://hub.nan.ge/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
+
+# > 空气质量
+iOS14 美标空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v1/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.nan.ge/Script/Apple/Weather_AQI_iOS14.js
+
+iOS15 空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v2/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.nan.ge/Script/Apple/Weather_AQI_iOS15.js
+
+# > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
+IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
+
+# > IPLab
+IPLab = type=http-response,pattern=^https?:\/\/iplab\.rtbasia\.com\/user\/get_user_info$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/IPLab/IPLab.js
+
+# > GitHub Education
+http-response ^https?:\/\/education\.github\.com\/api\/user$ requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/GitHub/Education.js
+
+# > 韩剧TV解锁蓝光
+韩剧TV = requires-body=1,script-path=https://hub.nan.ge/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
+
+# > 咪咕视频
+indexC = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/indexC.js
+playURL = type=http-response,pattern=(^https?:\/\/play\.miguvideo\.com\/playurl\/v1\/play\/playurl|^https?:\/\/.*\.miguvideo\.com\/gateway\/playurl\/.+\/play\/?),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/PlayUrl.js
+manage = type=http-response,pattern=^https?:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/Manage.js
+member = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/MiGu/Member.js
+
+# > 奈飞评分
+奈飞评分 = script-path=https://hub.nan.ge/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+
+奈飞评分 = requires-body=1,script-path=https://hub.nan.ge/Script/Netflix/Rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+
+单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Netflix/RatingSeason.js
+
+# > VSCO 滤镜 VIP
+VSCO = type=http-response ^https?:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\?, requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Photo/VSCO.js
+
+# > Lightroom
+Lightroom = type=http-response,pattern=^https?:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Adobe/Lightroom.js,script-update-interval=-1
+
+# > Photoshop Express
+Photoshop Express = type=http-response,pattern=^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
+
+# > CamScanner unlocks pro, Cloud scanning is not available.
+CamScanner = type=http-response,pattern=https?:\/\/.+\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/CamScanner/CamScanner.js,script-update-interval=0
+UserAttribute = type=http-response,pattern=^https?:\/\/.+\.intsig\.net\/user\/cs\/get_user_attribute,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/CamScanner/UserAttribute.js
+
+# > Bear熊掌记 (By Miao Miao)
+Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Work/Bear.js,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+
+# > Buyhack
+VerifyReceipt = requires-body=1,max-size=262144,script-path=https://hub.nan.ge/Script/Apple/Receipt.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
+
+# > Peak 解锁 Pro
+Peak = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Work/Peak.js,type=http-response,pattern=^https?:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
+
+# > Reddit 解锁 Premium
+Premium = type=http-response,pattern=^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Reddit/Premium.js
+
+# > TextNow
+premium_state = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/.+\/(subscription|subscription_state|premium_state)\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/State.js,script-update-interval=-1
+
+settings = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/settings\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/Setting.js,script-update-interval=-1
+
+TextNow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/users\/im(.*)\?client_id,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/TextNow.js,script-update-interval=-1
+
+# > 轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
+轻颜相机 = type=http-response,pattern=^https?:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Photo/ULike.js,script-update-interval=-1
+
+# > Unlock Documents-PdfExpert-Scaner Pro
+Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Readdle/PDFExpert.js,script-update-interval=-1
+
+# > 简书
+简书1 = type=http-request,pattern=^https?:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.nan.ge/Script/Others/NoRedirect.js
+简书2 = type=http-request,pattern=^https?:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url=,script-path=https://hub.nan.ge/Script/Others/NoRedirect.js
+
+# > 知乎
+知乎 = type=http-request,pattern=^https?:\/\/link\.zhihu\.com\/\?target=,script-path=https://hub.nan.ge/Script/Others/NoRedirect.js
+
+# > 微博
+微博1 = type=http-request,pattern=^https?:\/\/weibo\.cn\/sinaurl\?(.*&)?(u|toasturl|goto)=,script-path=https://hub.nan.ge/Script/Others/NoRedirect.js
+
+微博2 = type=http-request,pattern=^https?:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.nan.ge/Script/Others/NoRedirect.js
+
+微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.nan.ge/Script/Others/NoRedirect.js
+
+# > DY
+DY = type=http-response,pattern="^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$",requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/DY.js,script-update-interval=0
+
+# > Ban
+Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|ucp\/affcenter|getGlobalData|index|(\/|)vod\/reqplay|vod\/),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Ban.js
+
+# > Aloha 高级版
+Aloha = type=http-response,pattern=^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Aloha/Aloha.js
+
+# > NiceGram 高级版
+NiceGram = type=http-response,pattern=^https?:\/\/my\.nicegram\.app\/api\/v4\/settings,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/NiceGram/NiceGram.js
+
+# > 七猫小说 VIP
+UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/get-user-info$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserInfo.js
+Center = type=http-response,pattern=^https:\/\/.+\.wtzw\.com\/api\/.+\/user\/my-center,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/Center.js
+GetInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/get-role-adv-vip-info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/GetInfo.js
+Level = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/my-level,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/Level.js
+UserPage = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/page,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserPage.js
+
+# > 百度网盘
+http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Baidu/BaiduCloud.js
+
+# > Spotify
+Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nan.ge/Script/Spotify/Spotify.js
+
+# > 微博个人信息
+主页 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/profile\?gsid=,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Profile.js
+个人信息 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/users\/(show|relation),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/UserShow.js
+会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.cn\/aj\/vipcenter\/home,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/VIPCenter.js
+消息列表 = type=http-response,pattern=^https?:\/\/api\.weibo\.cn\/2\/(direct_messages\/user_list|messageflow\/notice)\?gsid=,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Message.js
+
+# > 搜狗阅读 VIP
+VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/(vip\/vipInfo|completeUserInfo),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/SogouReader/VIPInfo.js
+
+# > Enpass 高级版
+Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Enpass/Enpass.js
+
+# > 中文字幕
+# >> Netflix 中文字幕
+Netflix-Dualsub = type=http-response,pattern=https:\/\/.+nflxvideo.net\/\?o=\d+&v=\d+&e=.+,requires-body=1,max-size=0,timeout=30,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
+Netflix-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.nflxvideo.net\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
+
+# >> YouTube 中文字幕
+YouTube-Subtrans = type=http-request,pattern=https:\/\/(setting|www).youtube.com\/(api\/timedtext.+|\?action=(g|s)et),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
+
+# > UptimeRobot
+UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/UptimeRobot/UptimeRobot.js
+
+# > 拦截100 会员
+拦截100  = type=http-response,pattern=^https?:\/\/tagit\.hyhuo\.com\/cypt\/block100\/get_vip_info$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Block100/Block100.js,script-update-interval=0
+
+
+[MITM]
+hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, iplab.rtbasia.com, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, tagit.hyhuo.com, api.uptimerobot.com

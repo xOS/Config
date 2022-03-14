@@ -1,0 +1,26 @@
+# > Oracle
+DOMAIN-KEYWORD,oracle,DIRECT
+DOMAIN,shop.oracle.com,DIRECT
+DOMAIN,shop.oraclecloud.com,DIRECT
+DOMAIN-SUFFIX,oracle.com,DIRECT
+DOMAIN-SUFFIX,oraclecloud.com,DIRECT
+DOMAIN-SUFFIX,online-metrix.net,DIRECT
+DOMAIN-SUFFIX,2o7.net,DIRECT
+DOMAIN-SUFFIX,cybersource.com,DIRECT
+DOMAIN-SUFFIX,oracleinfinity.io,DIRECT
+DOMAIN-SUFFIX,atgsvcs.com,DIRECT
+DOMAIN-SUFFIX,custhelp.com,DIRECT
+DOMAIN-SUFFIX,oracleimg.com,DIRECT
+DOMAIN-SUFFIX,truste.com,DIRECT
+DOMAIN-SUFFIX,en25.com,DIRECT
+DOMAIN-SUFFIX,bkrtx.com,DIRECT
+DOMAIN-SUFFIX,rnengage.com,DIRECT
+DOMAIN-SUFFIX,assets.adobedtm.com,DIRECT
+DOMAIN-SUFFIX,trustarc.com,DIRECT
+DOMAIN-SUFFIX,bluekai.com,DIRECT
+DOMAIN-SUFFIX,rfihub.com,DIRECT
+DOMAIN-SUFFIX,trustarc.eu,DIRECT
+DOMAIN-SUFFIX,truste-svc.net,DIRECT
+DOMAIN-SUFFIX,consensu.org,DIRECT
+DOMAIN-SUFFIX,oraclecorp.com,DIRECT
+IP-CIDR,224.0.0.251/32,no-resolve,DIRECT

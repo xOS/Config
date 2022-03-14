@@ -1,0 +1,130 @@
+#!name=基本配置
+#!desc=General字段基本配置。
+#!system=mac
+
+[General]
+# > HTTP API 配置
+http-api = Cat@0.0.0.0:2222
+
+# >> HTTP-API TLS设置
+http-api-tls = true
+
+# >> HTTP API 网页控制台启用
+http-api-web-dashboard = true
+
+# > 日志等级 warning, notify, info, verbose (默认值: notify)
+loglevel = notify
+
+# > 隐藏VPN图标
+hide-vpn-icon = true
+
+# > TLS Provider: default, secure-transport, network-framework, openssl (默认值: default)
+tls-provider = default
+
+# > GeoIP 数据库
+geoip-maxmind-url = https://hub.nan.ge/GeoIP/Country.mmdb
+
+# > 当开启时，如果在 [Host] 段有为某主机名指定 IP，在使用代理访问该主机名时，将使用该 IP 地址进行代理请求，不再依赖远端解析。
+use-local-host-item-for-proxy = true
+
+# > IPv6 支持
+ipv6 = true
+
+# > Wi-Fi Assist 开启时，支持使用数据网络进行后备 DNS 查询
+wifi-assist = true
+
+# > 允许 Wi-Fi 网络下其它设备访问
+allow-wifi-access = true
+
+# > iOS 端 HTTP 代理服务端口（默认为"6152"）
+wifi-access-http-port = 2000
+
+# > iOS 端 SOCKS5 代理服务端口（默认为"6153"）
+wifi-access-socks5-port = 2345
+
+# > MacOS 端 HTTP 代理服务端口（默认为"6152"）
+http-listen = 0.0.0.0:2000
+
+# > MacOS 端 SOCKS5 代理服务端口（默认为"6153"）
+socks5-listen = 0.0.0.0:2345
+
+# > DNS 服务地址，只用于解析 DoH 服务地址
+dns-server = 119.29.29.29
+
+# > 使 DoH 请求通过代理策略执行
+doh-follow-outbound-mode = false
+
+# > DoH 服务地址
+doh-server = https://223.6.6.6/dns-query
+
+# > DoH 解析格式（json 或 wireformat）
+doh-format = wireformat
+
+# > 从 /etc/hosts 读取 DNS 记录
+read-etc-hosts = true
+
+# > 启用 Network.framework
+network-framework = false
+
+# > 外部控制器
+external-controller-access = Cat@0.0.0.0:5555
+
+# > 兼容模式（默认为"0/禁用"）
+compatibility-mode = 0
+
+# > 错误警告显示页
+show-error-page-for-reject = true
+
+# > 测速超时（秒）
+test-timeout = 5
+
+# > 网络测试 URL
+internet-test-url = http://wifi.vivo.com.cn/generate_204
+
+# > 代理测速 URL
+proxy-test-url = http://www.gstatic.com/generate_204
+
+# > Always Real IP Hosts
+always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
+
+# > Hijack DNS
+hijack-dns = 8.8.8.8:53,8.8.4.4:53
+
+# > 公共Wi-Fi下的默认策略启用
+use-default-policy-if-wifi-not-primary = false
+
+# > 排除主机名
+exclude-simple-hostnames = true
+
+# > 跳过代理
+skip-proxy = 127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,localhost,*.local,e.crashlytics.com,captive.apple.com,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1
+
+# > TCP Force HTTP Hosts
+force-http-engine-hosts = 123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
+
+# > 默认情况下，Surge VIF 接口会声明自己是默认路由。但是，由于 Wi-Fi 接口的路由较小，有些流量可能不会通过 Surge VIF 接口。使用此选项可以添加一条较小的路由。
+tun-included-routes = 192.168.1.12/32
+
+# > Surge VIF 只能处理 TCP 和 UDP 协议。使用此选项可以绕过特定的 IP 范围，允许所有流量通过。
+tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+
+# > 强制接管设备所有网络
+include-all-networks = false
+
+# > 强制接管设备本地网络
+include-local-networks = true
+
+[Replica]
+# > 抓取流量 => 过滤器
+# >> 隐藏 Apple 请求
+hide-apple-request = false
+
+# >> 隐藏 Crash Reporter 请求
+hide-crash-reporter-request = true
+
+# >> 隐藏 UDP 会话
+hide-udp = false
+
+# >> 关键词过滤器
+keyword-filter-type = none
+keyword-filter = icloud, ocsp, logs, analytic, imap

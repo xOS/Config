@@ -1,0 +1,17 @@
+var obj = JSON.parse($response.body);
+obj.isFree = true;
+obj.isVip = true;
+obj.superMonthlyExpire = 999;
+obj.isSVIPUser = true;
+obj.isMonthly = true;
+obj.vipStatus = 2;
+obj.isAppstoreAutoMonthly = true;
+obj.monthly = 1;
+obj.isNewUserVip = true;
+obj.beanVoucherBalance = 999;
+obj.expiresDay = 999;
+obj.iosBalance = 999;
+obj.voucherCount = 999;
+obj.voucherSum = 999;
+obj.vipId = '001';
+$done({ body: JSON.stringify(obj) });

@@ -1,0 +1,24 @@
+# > HongKong WeChat
+DOMAIN,wechat.com,DIRECT
+DOMAIN,www.wechat.com,DIRECT
+DOMAIN-SUFFIX,servicewechat.com,DIRECT
+DOMAIN,hkshort.weixin.qq.com,DIRECT
+DOMAIN,hkaxshort.weixin.qq.com,DIRECT
+DOMAIN,hkextshort.weixin.qq.com,DIRECT
+DOMAIN,hkdisas.weixin.qq.com,DIRECT
+DOMAIN,hkshort6.weixin.qq.com,DIRECT
+DOMAIN,hkshort.pay.weixin.qq.com,DIRECT
+DOMAIN,hklong.weixin.qq.com,DIRECT
+DOMAIN,hkminorshort.weixin.qq.com,DIRECT
+DOMAIN,hkquic.weixin.qq.com,DIRECT
+IP-CIDR,121.51.8.104/32,no-resolve,DIRECT
+IP-CIDR,112.60.8.216/32,no-resolve,DIRECT
+IP-CIDR,183.232.246.114/32,no-resolve,DIRECT
+IP-CIDR,120.241.21.116/32,no-resolve,DIRECT
+IP-CIDR,129.226.107.244/32,no-resolve,DIRECT
+IP-CIDR,183.232.246.11/32,no-resolve,DIRECT
+IP-CIDR,120.241.21.28/32,no-resolve,DIRECT
+IP-CIDR,203.205.232.0/23,no-resolve,DIRECT
+IP-CIDR,203.205.234.0/23,no-resolve,DIRECT
+IP-CIDR,203.205.252.0/23,no-resolve,DIRECT
+IP-CIDR,203.205.254.0/23,no-resolve,DIRECT

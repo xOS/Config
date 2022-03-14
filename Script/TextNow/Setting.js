@@ -1,0 +1,12 @@
+var obj = JSON.parse($response.body);
+obj['textnow_wireless_store_banner'] = null;
+obj['android']['native_ads'] = {};
+obj.android.ad_settings.keyboard_ad_max_shows_per_day = 999;
+obj.android.ad_settings.keyboard_ad_frequency_cap_ms = 0;
+obj.android.ad_settings.call_end_interstitial_required_call_length_seconds = 0;
+obj['android']['promo_campaign_ad'] = {};
+obj['android']['banner_message'] = {};
+// obj['android']['banners'] = [];
+// obj['android']['banner_group'] = [];
+if (obj.ad) obj['ad'] = {};
+$done({ body: JSON.stringify(obj) });

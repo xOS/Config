@@ -1,0 +1,7 @@
+# > Google Photos
+payload:
+  - DOMAIN,photos.googleapis.com
+  - DOMAIN,photos.google.com
+  - DOMAIN,photo.google.com
+  - DOMAIN,photosdata-pa.googleapis.com
+  - DOMAIN,people-pa.googleapis.com
