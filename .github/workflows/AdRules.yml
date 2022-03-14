@@ -1,0 +1,73 @@
+name: AdRules
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "Her"
+    paths-ignore:
+      - "LICENSE"
+      - "*.md"
+      - "**/*.md"
+      - ".*"
+      - "node_modules"
+  schedule:
+    - cron:  0 */24 * * *
+
+jobs:
+  Update:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [14]
+
+    steps:
+      - name: Fetch repository
+        uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - name: yarn install, update
+        run: |
+          yarn install
+          yarn update-adrules
+        
+      - name: Merge and Rules and remove duplicates
+        run: |
+          curl -LR -o RuleSet/AdRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
+          curl -LR -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
+          awk 'FNR==1{print ""}{print}' RuleSet/AdRules/*.list > RuleSet/AdRules/Merge.txt
+          awk '!seen[$0]++' RuleSet/AdRules/Merge.txt > RuleSet/AdRules/Merge.list
+          grep -v -f RuleSet/AdRules/Bypass.list RuleSet/AdRules/Merge.list | sed '/^$/d' > RuleSet/AdRule.list
+          rm -rf RuleSet/AdRules/Merge.txt
+          rm -rf RuleSet/AdRules/Merge.list
+
+      - name: Download ChinaIPs.list
+        run: |
+          curl -LR -o RuleSet/ChinaIPs.txt "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
+          awk 'FNR==1{print ""}{print}' RuleSet/ChinaIPs.txt | grep -v "#" | sed '/^$/d' > RuleSet/ChinaIPs.list
+          rm -rf RuleSet/ChinaIPs.txt
+
+      - name: commit, push
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "-A"
+          author_name: 佩佩
+          author_email: admin@nange.cn
+          message: "Update AdRules"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

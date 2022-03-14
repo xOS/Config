@@ -1,0 +1,18 @@
+# > TikTok
+USER-AGENT,TikTok*,PROXY
+DOMAIN-KEYWORD,-tiktokcdn-com,PROXY
+DOMAIN-KEYWORD,tiktok,PROXY
+DOMAIN,p16-tiktokcdn-com.akamaized.net,PROXY
+#DOMAIN-SUFFIX,amemv.com,PROXY
+DOMAIN-SUFFIX,byteoversea.com,PROXY
+DOMAIN-SUFFIX,ibytedtos.com,PROXY
+DOMAIN-SUFFIX,ibyteimg.com,PROXY
+DOMAIN-SUFFIX,ipstatp.com,PROXY
+DOMAIN-SUFFIX,muscdn.com,PROXY
+DOMAIN-SUFFIX,musical.ly,PROXY
+DOMAIN-SUFFIX,sgpstatp.com,PROXY
+#DOMAIN-SUFFIX,snssdk.com,PROXY
+DOMAIN-SUFFIX,tik-tokapi.com,PROXY
+DOMAIN-SUFFIX,tiktok.com,PROXY
+DOMAIN-SUFFIX,tiktokcdn.com,PROXY
+DOMAIN-SUFFIX,tiktokv.com,PROXY

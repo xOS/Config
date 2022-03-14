@@ -1,0 +1,20 @@
+# > Speedtest
+USER-AGENT,SpeedTest*,PROXY
+DOMAIN-KEYWORD,speedtest,PROXY
+DOMAIN-KEYWORD,speed,PROXY
+DOMAIN-KEYWORD,ookla,PROXY
+DOMAIN-SUFFIX,noc.vvsu.ru,PROXY
+DOMAIN-SUFFIX,vvosp1.dv.rt.ru,PROXY
+DOMAIN-SUFFIX,wlvpn.com,PROXY
+DOMAIN-SUFFIX,ooklaserver.net,PROXY
+DOMAIN,fast.rockisland.net,PROXY
+DOMAIN-SUFFIX,88-f.net,PROXY
+DOMAIN,st.pautina-telecom.ru,PROXY
+DOMAIN-SUFFIX,goodnet.su,PROXY
+DOMAIN-SUFFIX,a-mo.net,PROXY
+
+# > Fast
+DOMAIN-SUFFIX,fast.com,PROXY
+
+# > Speed Test by Cloudflare,PROXY
+DOMAIN-SUFFIX,speed.cloudflare.com,PROXY

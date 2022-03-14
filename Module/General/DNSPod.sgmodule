@@ -1,0 +1,7 @@
+#!name=DNSPod
+#!desc=Apple下载解析加速。
+
+[Host]
+*.itunes.apple.com = script:DNSPod
+[Script]
+DNSPod = type=dns,script-path=https://hub.nan.ge/Script/DNS/DNSPod.js,script-update-interval=-1

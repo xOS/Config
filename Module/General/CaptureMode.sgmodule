@@ -1,0 +1,10 @@
+#!name=抓包状态
+#!desc=抓包模式操作面板
+
+[Panel]
+# > 抓包状态
+抓包状态 =title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=3600
+
+[Script]
+# > 抓包状态
+抓包状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/CaptureMode.js

@@ -1,0 +1,17 @@
+# > 支付宝
+#DOMAIN-SUFFIX,alipay.com,PROXY
+DOMAIN-SUFFIX,alipay.hk,PROXY
+
+# > 八达通
+USER-AGENT,OctopusQuickBuild*,PROXY
+DOMAIN-SUFFIX,octopus.com.hk,PROXY
+DOMAIN-SUFFIX,octopuscards.com,PROXY
+DOMAIN-SUFFIX,octopus-cards.com,PROXY
+
+# > WeChat
+DOMAIN,wechat.com,PROXY
+DOMAIN,www.wechat.com,PROXY
+IP-CIDR,203.205.232.0/23,no-resolve,PROXY
+IP-CIDR,203.205.234.0/23,no-resolve,PROXY
+IP-CIDR,203.205.252.0/23,no-resolve,PROXY
+IP-CIDR,203.205.254.0/23,no-resolve,PROXY

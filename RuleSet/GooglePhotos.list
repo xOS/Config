@@ -1,0 +1,7 @@
+# > Google Photos
+USER-AGENT,Google%20%E7%9B%B8%E5%86%8C*,PROXY
+DOMAIN,photos.googleapis.com,PROXY
+DOMAIN,photos.google.com,PROXY
+DOMAIN,photo.google.com,PROXY
+DOMAIN,photosdata-pa.googleapis.com,PROXY
+DOMAIN,people-pa.googleapis.com,PROXY

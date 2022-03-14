@@ -1,0 +1,5 @@
+# > Instagram
+USER-AGENT,Instagram*,Proxy
+HOST-KEYWORD,instagram,Proxy
+HOST-SUFFIX,cdninstagram.com,Proxy
+HOST-SUFFIX,instagram.com,Proxy

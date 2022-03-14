@@ -1,0 +1,42 @@
+# > General
+payload:
+  - DOMAIN,app.adjust.com
+
+# Client
+# > WeChat
+  - PROCESS-NAME,/Applications/WeChat.app/Contents/MacOS/WeChat
+
+# > Termius
+  - PROCESS-NAME,/Applications/Termius.app/Contents/MacOS/Termius
+  - PROCESS-NAME,/Applications/Termius.app/Contents/Frameworks/Termius Helper (Renderer).app/Contents/MacOS/Termius Helper (Renderer)
+
+# > iTerm2
+  - DOMAIN-SUFFIX,iterm2.com
+  - PROCESS-NAME,/Applications/iTerm2.app/Contents/MacOS/iTerm2
+
+# > BestTrace
+  - PROCESS-NAME,/Applications/BestTrace.app/Contents/MacOS/BestTrace
+
+# > Tencent
+  - DOMAIN,livew.l.qq.com
+  - DOMAIN,vd.l.qq.com
+
+# > Strava
+  - DOMAIN,analytics.strava.com
+
+# > 网站
+  - DOMAIN-SUFFIX,wzfou.com
+  - DOMAIN-SUFFIX,bwl87.com
+
+# > VirMach
+  - DOMAIN-SUFFIX,virmach.com
+
+# > 头条系
+#  - DOMAIN-SUFFIX,snssdk.com
+
+# > 腾讯游戏
+  - DOMAIN,cloudctrl.gcloud.qq.com
+
+# > 微信
+  - DOMAIN-SUFFIX,weixin.qq.com
+

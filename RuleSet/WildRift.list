@@ -1,0 +1,6 @@
+# > WildRift
+USER-AGENT,wildrift*,DIRECT
+DOMAIN-SUFFIX,pvp.net,DIRECT
+DOMAIN-SUFFIX,riotcdn.net,DIRECT
+DOMAIN-SUFFIX,riotgames.com,DIRECT
+DOMAIN-SUFFIX,metric-api.newrelic.com,DIRECT

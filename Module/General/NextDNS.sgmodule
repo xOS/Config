@@ -1,0 +1,13 @@
+#!name=NextDNS
+#!desc=Script event auto linked ipv4 nextdns: network-change 。
+
+[General]
+# > DNS
+dns-server = %APPEND% 45.90.30.31
+always-real-ip = %APPEND% link-ip.nextdns.io
+[Host]
+# > NextDNS
+link-ip.nextdns.io = server:45.90.30.31
+[Script]
+# > NextDNS
+event network-changed script-path=https://hub.nan.ge/Script/DNS/NextDNS.js

@@ -1,0 +1,12 @@
+let obj = JSON.parse($response.body);
+obj.data.reminderFlag = true;
+obj.data.quota = 9999;
+//obj.data.packageName = '高级版套餐';
+obj.data.proEditionUser = true;
+obj.data.packageGroupName = '商业版';
+//obj.data.role.roleName = proEditionUser;
+//obj.data.system = false;
+obj.data.role.id = 4;
+//obj.data.status = 1;
+//obj.data.authorities = [{'proUser'}];
+$done({ body: JSON.stringify(obj) });

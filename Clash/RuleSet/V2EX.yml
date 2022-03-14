@@ -1,0 +1,6 @@
+payload:
+# > V2EX
+ - DOMAIN-SUFFIX,v2ex.com
+ - DOMAIN-SUFFIX,v2ex.io
+ - DOMAIN-SUFFIX,v2ex.co
+ - DOMAIN-KEYWORD,v2ex

@@ -1,0 +1,24 @@
+# > iCloudSpecial
+USER-AGENT,TestFlight*,Proxy
+USER-AGENT,com.apple.trustd*,Proxy
+PROCESS-NAME,lookupviewservice,Proxy
+HOST,api-glb-sea.smoot.apple.com,Proxy
+HOST,books.itunes.apple.com,Proxy
+HOST,cvws.icloud-content.com,Proxy
+HOST,developer.apple.com,Proxy
+HOST,hls.itunes.apple.com,Proxy
+HOST,itunes.apple.com,Proxy
+HOST,lookup-api.apple.com,Proxy
+HOST,sandbox.itunes.apple.com,Proxy
+HOST,testflight.apple.com,Proxy
+HOST-SUFFIX,apple-dns.net,Proxy
+HOST-SUFFIX,apps.apple.com,Proxy
+HOST-SUFFIX,appsto.re,Proxy
+HOST-SUFFIX,blobstore.apple.com,Proxy
+HOST-SUFFIX,digicert.com,Proxy
+HOST,journey.pcms.apple.com,Proxy
+HOST,xp.apple.com,Proxy
+HOST,gdmf.apple.com,Proxy
+HOST,smp-device-content.apple.com,Proxy
+HOST,itunes.com,Proxy
+HOST,sse-ws-p189.apple.com,Proxy

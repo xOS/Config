@@ -1,0 +1,41 @@
+name: Update GeoIPs
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "Her"
+    paths-ignore:
+      - "LICENSE"
+      - "*.md"
+      - "**/*.md"
+      - ".*"
+      - "node_modules"
+  #schedule:
+  #  - cron: 0 */24 * * *
+jobs:
+  Update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Get GeoIPs
+      run: |
+        cd $GITHUB_WORKSPACE
+        cd GeoIP
+        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/Country.mmdb/release/Country-lite.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country-only-cn-private.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip.dat
+        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip-only-cn-private.dat
+        
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9
+      with:
+        author_name: 翠花
+        author_email: admin@nange.cn
+        message: "Update Country.mmdb"
+        add: "-A"
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}

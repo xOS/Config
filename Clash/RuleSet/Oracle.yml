@@ -1,0 +1,9 @@
+payload:
+# > Oracle
+  - DOMAIN-KEYWORD,oracle
+  - DOMAIN,shop.oracle.com
+  - DOMAIN,shop.oraclecloud.com
+  - DOMAIN-SUFFIX,oracle.com
+  - DOMAIN-SUFFIX,oraclecloud.com
+  - DOMAIN-SUFFIX,online-metrix.net
+  - DOMAIN,oracle.112.2o7.net
