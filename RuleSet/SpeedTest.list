@@ -1,20 +1,21 @@
 # > Speedtest
-USER-AGENT,SpeedTest*,PROXY
-DOMAIN-KEYWORD,speedtest,PROXY
-DOMAIN-KEYWORD,speed,PROXY
-DOMAIN-KEYWORD,ookla,PROXY
-DOMAIN-SUFFIX,noc.vvsu.ru,PROXY
-DOMAIN-SUFFIX,vvosp1.dv.rt.ru,PROXY
-DOMAIN-SUFFIX,wlvpn.com,PROXY
-DOMAIN-SUFFIX,ooklaserver.net,PROXY
-DOMAIN,fast.rockisland.net,PROXY
-DOMAIN-SUFFIX,88-f.net,PROXY
-DOMAIN,st.pautina-telecom.ru,PROXY
-DOMAIN-SUFFIX,goodnet.su,PROXY
-DOMAIN-SUFFIX,a-mo.net,PROXY
+USER-AGENT,SpeedTest*,DIRECT
+PROCESS-NAME,/Applications/Speedtest.app/Contents/MacOS/Speedtest,DIRECT
+DOMAIN-KEYWORD,speedtest,DIRECT
+DOMAIN-KEYWORD,speed,DIRECT
+DOMAIN-KEYWORD,ookla,DIRECT
+DOMAIN-SUFFIX,noc.vvsu.ru,DIRECT
+DOMAIN-SUFFIX,vvosp1.dv.rt.ru,DIRECT
+DOMAIN-SUFFIX,wlvpn.com,DIRECT
+DOMAIN-SUFFIX,ooklaserver.net,DIRECT
+DOMAIN,fast.rockisland.net,DIRECT
+DOMAIN-SUFFIX,88-f.net,DIRECT
+DOMAIN,st.pautina-telecom.ru,DIRECT
+DOMAIN-SUFFIX,goodnet.su,DIRECT
+DOMAIN-SUFFIX,a-mo.net,DIRECT
 
 # > Fast
-DOMAIN-SUFFIX,fast.com,PROXY
+DOMAIN-SUFFIX,fast.com,DIRECT
 
-# > Speed Test by Cloudflare,PROXY
-DOMAIN-SUFFIX,speed.cloudflare.com,PROXY
+# > Speed Test by Cloudflare,DIRECT
+DOMAIN-SUFFIX,speed.cloudflare.com,DIRECT
