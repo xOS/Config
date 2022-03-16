@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.api.tomi.ai
+.dttrk.com
 .adara.com
 .adcontroll.com
 .log.medietall.no
@@ -4519,6 +4521,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.pxl-*.ozone.ru
+.xapi.ozon.ru
 .tracking.bloomberg.com
 .analytics.stanby.com
 .d1snv67wdds0p2.cloudfront.net
@@ -6102,7 +6106,6 @@
 .analytics.cervellio.com
 .stats.qmerce.com
 .counter*-yadro*-ru.unblocked.lol
-.t.sgc.io
 .stat.sputnik.ru
 .wstat.ozon.ru
 .analytics.vooxe.com
@@ -19349,6 +19352,12 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.evt.mxplay.com
+.log.geetest.com
+.prod-clientlog.fastly.newssuite.sinfony.ne.jp
+.track.hk01.com
+.event*.hk01.com
+.analytics.kaltura.com
 .eventgw.twilio.com
 .log.estand.jp
 .event-search.jorte.com
