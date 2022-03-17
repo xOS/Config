@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.trc.caravas.jp
 .track.adspire.io
 .cdn.ddmanager.ru
 .api.tomi.ai
@@ -4523,6 +4524,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.scis.tbs.co.jp
 .sp.flocktory.com
 .rta2.newzit.com
 .pxl-*.ozone.ru
