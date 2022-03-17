@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.track.adspire.io
+.cdn.ddmanager.ru
 .api.tomi.ai
 .dttrk.com
 .adara.com
@@ -4521,6 +4523,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.sp.flocktory.com
+.rta2.newzit.com
 .pxl-*.ozone.ru
 .xapi.ozon.ru
 .tracking.bloomberg.com
@@ -4588,7 +4592,6 @@
 .logconfig.polarisoffice.com
 .t.n.mcdonalds.de
 .ploz.mangadex.org
-.pix2.services.tvn.pl
 .frog.yuanfudao.com
 .clog*.yuanfudao.com
 .analytics.send.cm
@@ -19224,6 +19227,7 @@
 .wiz.ghostbed.com
 .wiz.sncf-connect.com
 .wz.allianz.fr
+.pix2.services.tvn.pl
 .az416426.vo.msecnd.net
 .lurker.olx.com.br
 .geoip.olx.com.br
