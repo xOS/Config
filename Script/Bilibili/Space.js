@@ -9,18 +9,18 @@ obj['data']['card']['vip'] = {
     "vipStatusWarn": "",
     "vipType": 2,
     "dueRemark": "",
-    "vipDueDate": 0,
+    "vipDueDate": 1964448000,
     "accessStatus": 0,
     "vipStatus": 1,
     "themeType": 0,
     "label": {
-        "bg_color": "",
-        "bg_style": 0,
+        "bg_color": "#FB7299",
+        "bg_style": 1,
         "text": "十年大会员",
         "border_color": "",
         "path": "",
         "label_theme": "ten_annual_vip",
-        "text_color": ""
+        "text_color": "#FFFFFF"
     }
 };
 $done({ body: JSON.stringify(obj) });
