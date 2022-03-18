@@ -76,6 +76,8 @@ DOMAIN-SUFFIX, grpc.biliapi.net, REJECT-NO-DROP
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
 URL-REGEX,^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/,REJECT
 URL-REGEX,^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
+# >>  会员中心弹窗
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/vip\/window\/list,REJECT
 
 # > 知乎 去广告
 # >> SOME MCN INFO MAY BE USEFUL
@@ -792,9 +794,6 @@ http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/space\?access_key requires-
 
 # >>  “大会员”的修改
 http-response ^https?:\/\/api\.bilibili\.com\/x\/vip\/web\/vip_center\/combine requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/Center.js
-
-# >>  WindowList
-http-response ^https?:\/\/api\.bilibili\.com\/x\/vip\/Window\/list\?csrf= requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/WindowList.js
 
 # >>  动态广告
 http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$ requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/Dynamic.js
