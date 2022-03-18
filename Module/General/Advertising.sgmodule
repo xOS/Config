@@ -76,8 +76,6 @@ DOMAIN-SUFFIX, grpc.biliapi.net, REJECT-NO-DROP
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
 URL-REGEX,^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/,REJECT
 URL-REGEX,^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
-# >>  会员中心弹窗
-URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/vip\/window\/list,REJECT
 
 # > 知乎 去广告
 # >> SOME MCN INFO MAY BE USEFUL
@@ -868,6 +866,9 @@ homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/clien
 
 # > 搜狗阅读
 ^https?:\/\/k\.sogou\.com\/abs\/ios\/v3\/bookcoverRecomm data="https://hub.nan.ge/Mock/Blank/Default.html"
+
+# >>  会员中心弹窗
+^https?:\/\/api\.bilibili\.com\/x\/vip\/window\/list data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
 # > 颇可
 # >>首页轮播图
