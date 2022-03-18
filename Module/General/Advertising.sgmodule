@@ -793,6 +793,9 @@ http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/space\?access_key requires-
 # >>  “大会员”的修改
 http-response ^https?:\/\/api\.bilibili\.com\/x\/vip\/web\/vip_center\/combine requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/Center.js
 
+# >>  WindowList
+http-response ^https?:\/\/api\.bilibili\.com\/x\/vip\/Window\/list\?csrf= requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/WindowList.js
+
 # >>  动态广告
 http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$ requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/Dynamic.js
 

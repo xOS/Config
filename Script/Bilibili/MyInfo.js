@@ -7,20 +7,20 @@ obj['data']['vip'] = {
     "status": 1,
     "avatar_subscript": 1,
     "nickname_color": "#FB7299",
-    "due_date": 0,
-    "role": 0,
+    "due_date": 1964448000,
+    "role": 1,
     "vip_pay_type": 0,
-    "avatar_subscript_url": "",
+    "avatar_subscript_url": "http:\/\/i0.hdslb.com\/bfs\/vip\/icon_Certification_big_member_22_3x.png",
     "label": {
-        "bg_color": "",
-        "bg_style": 0,
+        "bg_color": "#FB7299",
+        "bg_style": 1,
         "text": "十年大会员",
         "border_color": "",
         "path": "",
         "label_theme": "ten_annual_vip",
-        "text_color": ""
+        "text_color": "#FFFFFF"
     },
-    "type": 2,
+    "type": 1,
     "theme_type": 0
 };
 $done({ body: JSON.stringify(obj) });
