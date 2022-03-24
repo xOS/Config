@@ -7,10 +7,10 @@ DOMAIN,books.itunes.apple.com,PROXY
 DOMAIN,cvws.icloud-content.com,PROXY
 DOMAIN,developer.apple.com,PROXY
 DOMAIN,hls.itunes.apple.com,PROXY
-DOMAIN,itunes.apple.com,PROXY
+DOMAIN-SUFFIX,itunes.apple.com,PROXY
 DOMAIN,lookup-api.apple.com,PROXY
 DOMAIN,sandbox.itunes.apple.com,PROXY
-DOMAIN,testflight.apple.com,PROXY
+DOMAIN-SUFFIX,testflight.apple.com,PROXY
 DOMAIN-SUFFIX,apple-dns.net,PROXY
 DOMAIN-SUFFIX,apps.apple.com,PROXY
 DOMAIN-SUFFIX,appsto.re,PROXY
@@ -20,7 +20,7 @@ DOMAIN,journey.pcms.apple.com,PROXY
 DOMAIN,xp.apple.com,PROXY
 DOMAIN,gdmf.apple.com,PROXY
 DOMAIN,smp-device-content.apple.com,PROXY
-DOMAIN,itunes.com,PROXY
+DOMAIN-SUFFIX,itunes.com,PROXY
 DOMAIN,sse-ws-p189.apple.com,PROXY
 DOMAIN-SUFFIX,apple.news,PROXY
 DOMAIN-SUFFIX,mail.me.com,PROXY
