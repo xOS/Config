@@ -29,7 +29,16 @@ jobs:
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country-only-cn-private.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip.dat
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip-only-cn-private.dat
-        
+ 
+    - name: Import GPG key
+      id: import_gpg
+      uses: crazy-max/ghaction-import-gpg@v4
+      with:
+        gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+        git_user_signingkey: true
+        git_commit_gpgsign: true
+ 
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9
       with:
