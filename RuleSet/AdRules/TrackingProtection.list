@@ -4527,6 +4527,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.counter.mgronline.com
 .omapi.fangraphs.com
 .sp.minds.com
 .event-action.popinfo.jp
