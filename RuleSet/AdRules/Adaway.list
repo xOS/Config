@@ -1056,6 +1056,7 @@
 .ssp-events.chartboost.com
 .t.chartboost.com
 .t2.chartboost.com
+.v-ak.chartboost.com
 .v2.chartboost.com
 .www.chartboost.com
 .chartboosts.com
@@ -1917,6 +1918,7 @@
 .image.influenster.com
 .images.informatm.com
 .studcat.infra.systems
+.inhousedsp.com
 .adapi.inlcorp.com
 .sdk.inlocomedia.com
 .sdk-analytics.inlocomedia.com
@@ -1934,6 +1936,8 @@
 .de.inmobi.com
 .glance.inmobi.com
 .glance-internal.inmobi.com
+.s.iff.inmobi.com
+.dspbeacons.error.ihasdsp.inmobi.com
 .imces.inmobi.com
 .pulse.inmobi.com
 .sdk.inmobi.com
@@ -2835,8 +2839,8 @@
 .ccpa.psg.nexstardigital.net
 .segment.psg.nexstardigital.net
 .nextclick.pl
-.us-tracking.nextdoor.com
 .uk-tracking.nextdoor.com
+.us-tracking.nextdoor.com
 .ads.nicovideo.jp
 .apps.nielsen.com
 .analytics.nike.com
@@ -2890,8 +2894,6 @@
 .apicosdk.onemt.co
 .apicssdk.onemt.co
 .click.oneplus.com
-.api.onesignal.com
-.cdn.onesignal.com
 .onetag-sys.com
 .geolocation.onetrust.com
 .online-metrix.net
