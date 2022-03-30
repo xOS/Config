@@ -93,7 +93,7 @@
          }
  
          const body = {
-             title: "WiFi 网络" + " | " + wifi.ssid || "蜂窝数据" + " | " + ${server} ,
+             title: "WiFi 网络" + " | " + wifi.ssid || "蜂窝数据" + " | " + server ,
              content: (radio && server ? `网络制式：${server} ${radios} [${radio}]\n` : "") +
                  `内部 IPv4：${ip} \n` +
                  (wifi.ssid ? `路由 IPv4：${router}\n` : "") +
