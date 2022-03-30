@@ -57,12 +57,12 @@
      const ip = IPv4;
      const router = wifi.ssid ? v4.primaryRouter : undefined;
  
-     $httpClient.get(url2, function (errorr, response, data) {
-         const json = JSON.parse(data);
+     $httpClient.get(url2, function (errorr, response, data1) {
+         const json = JSON.parse(data1);
          const externalIP = json['data']['ip'];
  
-     $httpClient.get(url1, function (error, response, data) {
-         data = JSON.parse(data);
+     $httpClient.get(url1, function (error, response, data2) {
+         const data = JSON.parse(data2);
          const country = data['a2'];
          const region = data['a3'];
          const city = data['a4'];
@@ -93,7 +93,7 @@
          }
  
          const body = {
-             title: wifi.ssid || "蜂窝数据",
+             title: "WiFi 网络" + " | " + wifi.ssid || "蜂窝数据" + " | " + ${server} ,
              content: (radio && server ? `网络制式：${server} ${radios} [${radio}]\n` : "") +
                  `内部 IPv4：${ip} \n` +
                  (wifi.ssid ? `路由 IPv4：${router}\n` : "") +
