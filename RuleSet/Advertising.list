@@ -1118,6 +1118,7 @@ DOMAIN-SUFFIX,stat.letv.com,REJECT
 DOMAIN-SUFFIX,static.app.m.letv.com,REJECT
 
 # > 哔哩哔哩
+DOMAIN,activity.biligame.com,REJECT
 URL-REGEX,^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/,REJECT
 URL-REGEX,^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
 
