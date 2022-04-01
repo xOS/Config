@@ -10,6 +10,8 @@ obj['data']['user']['vip_overdue_explain'] = "大会员有效期 2032\/04\/02";
 obj['data']['user']['tv_overdue_explain'] = "电视大会员有效期 2032\/04\/02";
 obj['data']['user']['panel_sub_title'] = "十年大会员";
 obj['data']['user']['notice']['can_close'] = true;
+obj['data']['user']['notice']['surplus_seconds'] = 1964448000;
+obj['data']['user']['notice']['type'] = 1;
 obj['data']['user']['vip'] = {
     "nickname_color": "#FB7299",
     "avatar_subscript": 1,
