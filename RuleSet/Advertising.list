@@ -1164,6 +1164,7 @@ USER-AGENT,AVOS*,REJECT
 DOMAIN,appcloud2.zhihu.com,REJECT
 DOMAIN,appcloud2.in.zhihu.com,REJECT
 DOMAIN,sugar.zhihu.com,REJECT
+DOMAIN-SUFFIX,aaid.uyunad.com,REJECT
 
 # > Google
 #DOMAIN-SUFFIX,doubleclick.net,REJECT
