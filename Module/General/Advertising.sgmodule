@@ -813,11 +813,11 @@ http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/Dy
 WeChat = script-path=https://hub.nan.ge/Script/WeChat/WeChat.js,type=http-request,pattern=^https?://mp\.weixin\.qq\.com/mp/getappmsgad
 
 # > 知乎 去广告
-People = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(www|api)\.zhihu\.com\/(api\/v4\/me\?include=|people|feed-root\/block),script-path=https://hub.nan.ge/Script/Zhihu/People.js
-Feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://hub.nan.ge/Script/Zhihu/Feed.js
-Recommend = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend,script-path=https://hub.nan.ge/Script/Zhihu/Recommend.js
-Answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://hub.nan.ge/Script/Zhihu/Answer.js
-cards = type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/api\/v4\/profile\/cards$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Zhihu/Cards.js
+个人中心 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(www|api)\.zhihu\.com\/(api\/v4\/me\?include=|people\/self|feed-root\/block),script-path=https://hub.nan.ge/Script/Zhihu/People.js
+订阅 = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://hub.nan.ge/Script/Zhihu/Feed.js
+推荐 = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend\?start,script-path=https://hub.nan.ge/Script/Zhihu/Recommend.js
+问答 = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://hub.nan.ge/Script/Zhihu/Answer.js
+卡片 = type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/api\/v4\/profile\/cards$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Zhihu/Cards.js
 
 # > 抖音
 Req = type=http-request,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/,script-path=https://hub.nan.ge/Script/DouYin/DouYin.js
