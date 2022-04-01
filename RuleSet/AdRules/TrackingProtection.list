@@ -4538,6 +4538,9 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.tracking.komoot.de
+.telemetry.battle.net
+.telemetry-in.battle.net
 .events.virtusize.jp
 .adc-js.nine.com.au
 .analytics.pointdrive.linkedin.com
@@ -18562,6 +18565,7 @@
 .int.vlancaa.fun
 .tok.vaicore.xyz
 .telemetry.navigatorapp.net
+.pathfinder.analytics.komoot.net
 .evt.mxplay.com
 .log.geetest.com
 .prod-clientlog.fastly.newssuite.sinfony.ne.jp
