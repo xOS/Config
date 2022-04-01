@@ -20,7 +20,7 @@ obj['data']['vip'] = {
         "label_theme": "ten_annual_vip",
         "text_color": "#FFFFFF"
     },
-    "type": 1,
+    "type": 2,
     "theme_type": 0
 };
 $done({ body: JSON.stringify(obj) });
