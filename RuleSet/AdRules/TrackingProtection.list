@@ -4538,6 +4538,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.events.virtusize.jp
 .adc-js.nine.com.au
 .analytics.pointdrive.linkedin.com
 .analytics.pinterest.com
@@ -4653,7 +4654,6 @@
 .blue.fox8.com
 .astat.nikkei.co.jp
 .stats.zone-telechargement.work
-.events-service.coinbase.com
 .snowplow-pixel.tradingview.com
 .analytics.clic2buy.com
 .tracking.swogo.net
@@ -18431,6 +18431,7 @@
 .wiz.ghostbed.com
 .wiz.sncf-connect.com
 .wz.allianz.fr
+.ddla593ymz72o.cloudfront.net
 .pix2.services.tvn.pl
 .az416426.vo.msecnd.net
 .lurker.olx.com.br
