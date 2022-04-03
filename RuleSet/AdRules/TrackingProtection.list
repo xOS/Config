@@ -4538,6 +4538,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.analytics.tver.jp
 .tracking.komoot.de
 .telemetry.battle.net
 .telemetry-in.battle.net
