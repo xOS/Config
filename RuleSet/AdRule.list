@@ -4728,6 +4728,9 @@
 .clickio.mgr.consensu.org
 .cdn.consentmanager.mgr.consensu.org
 .quantcast.mgr.consensu.org
+.cmp.ganref.jp
+.cmp.netatopi.jp
+.cmp.seniorguide.jp
 .cmp.impress.co.jp
 .cmpv2.macworld.co.uk
 .gdpr.laxd.com
@@ -36257,6 +36260,7 @@
 .adblock.sina.cn
 .juejdkio.com
 .symaa.cn
+.d40.xyz
 .0819837.com
 .0837079.com
 .2022aaa.xyz
@@ -36399,11 +36403,19 @@
 .u.qxen.com
 .ywg.jobui.com
 .zq.lansedir.com
+.nxdfg.xyz
+.preroot.xyz
+.jnqiangzhi.xyz
+.kgho.info
 .wulongqiyi.com
 .shenfagg.com
 .huixiangdou.xyz
 .twnb.xyz
 .autumnleaf.ltd
+.xazhangshaohui.xyz
+.ziyunxs.com
+.cxccm.com
+.nantongle.com
 .0371app.wang
 .19811231.me
 .2999.store
@@ -41513,6 +41525,7 @@
 .d10vy5gom1ed53.cloudfront.net
 .um-public-panel-prod.s3.amazonaws.com
 .collection-endpoint-prod.herokuapp.com
+.analytics.tver.jp
 .tracking.komoot.de
 .telemetry.battle.net
 .telemetry-in.battle.net
@@ -62818,6 +62831,7 @@
 .worldpush.co
 .wpushsdk.com
 .mobi24.net
+.api.pico.tools
 .data.reachplc.com
 .addnow.com
 .addthis.com
