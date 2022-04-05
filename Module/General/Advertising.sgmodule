@@ -847,6 +847,9 @@ flighTradar24 = type=http-response,pattern=^https?:\/\/www\.flightradar24\.com\/
 # > 微博积分弹窗
 ^https?:\/\/luck\.sc\.weibo\.com\/aj\/Action\/indexInfo$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
+# > 微博推荐
+^https?:\/\/api\.weibo\.cn\/2\/statuses\/unread_hot_timeline\?gsid= data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+
 # > 微博视频推荐
 ^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/redpacket data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/community_tab data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
