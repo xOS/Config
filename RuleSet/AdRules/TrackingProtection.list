@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.taplytics.com
 .event-stream.spot.im
 .1ee085aa-4c05-43a8-a4fe-fafedbedd062.xyz
 .track.swaptrap.live
@@ -73,7 +74,6 @@
 .track.91app.io
 .track.stat.pet
 .cdn.teleportapi.com
-.api.rollbar.com
 .fouanalytics.com
 .analitits.com
 .rtxpx-a.akamaihd.net
@@ -4540,6 +4540,9 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.ts.delfi.lt
+.metrics.beyondwords.io
+.launcher.spot.im
 .api.data.ciceksepeti.com
 .wlog.tmon.co.kr
 .analytics.appservice.tech
@@ -19027,7 +19030,6 @@
 .api.gameanalytics.com
 .api.gimbal.com
 .api.sec.miui.com
-.api.taplytics.com
 .appmetrica.yandex.net
 .appmetrica.yandex.com
 .ar.umeng.com
@@ -19089,7 +19091,6 @@
 .oc.umeng.com
 .online-metrix.net
 .openstat.net
-.ping.taplytics.com
 .ping.xlmc.sandai.net
 .pingma.qq.com
 .prugskh.com
