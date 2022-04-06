@@ -18,7 +18,7 @@ for (var i = 0; i < content.length; i++) {
         content[i].innerHTML = content[i].innerHTML.replace(regex, '<a href="$1" target="_blank">$1</a><');
     }
     // 去掉aff
-    content[i].innerHTML = content[i].innerHTML.replace(/aff\.php/gm, 'cart.php').replace(/aff=\d+/gm, 'a=add').replace(/ref=\w+/gm, '').replace(aff=\d+/gm, 'a=add');
+    content[i].innerHTML = content[i].innerHTML.replace(/aff\.php/gm, 'cart.php').replace(/aff=\d+/gm, 'a=add').replace(/ref=\w+/gm, '');
 }
 </script></body>`)
 }
