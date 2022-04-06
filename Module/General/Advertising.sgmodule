@@ -838,7 +838,7 @@ homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/clien
 flighTradar24 = type=http-response,pattern=^https?:\/\/www\.flightradar24\.com\/mobile\/user-session\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/FlighTradar24/FlighTradar24.js
 
 # > Hostloc 移除 AFF，URL 超链接化
-ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Hostloc/ClearURL.js
+ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/(forum.php|thread-),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Hostloc/ClearURL.js
 
 [Map Local]
 # > 小红书
