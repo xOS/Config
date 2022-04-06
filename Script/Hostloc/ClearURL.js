@@ -31,6 +31,6 @@ if (/<\/html>|<\/body>/.test(body)) {
 //     }
 // })();
 </script>
-<script src=https://hub.nan.ge/Script/Hostloc/ClearURL.js></script></body>`)
+<script src=https://hub.nan.ge/Script/Hostloc/TinyURL.js></script></body>`)
 }
 $done({ body });
