@@ -16,7 +16,7 @@ if (/<\/html>|<\/body>/.test(body)) {
     'use strict';
     // https://regex101.com/r/sZaYtI/1
     var content = document.querySelectorAll(".pcb");
-    const regex = new RegExp('(?<!font size="2"><a href=")((?<!src="|href=")https?:\/\/.*?)(<|&nbsp;)', 'gm');
+    const regex = new RegExp('(?<!font size="2"><a href=")((?<!src="|href=")https?:\//\//.*?)(<|&nbsp;)', 'gm');
 
     for (var i = 0; i < content.length; i++) {
         //console.log(content[i].innerHTML);
@@ -27,7 +27,7 @@ if (/<\/html>|<\/body>/.test(body)) {
             content[i].innerHTML = content[i].innerHTML.replace(regex, '<a href="$1" target="_blank">$1</a><');
         }
         // 去掉 AFF
-        content[i].innerHTML = content[i].innerHTML.replace(/aff\.php/gm,'cart.php').replace(/aff=\\d+/gm,'a=add').replace(/(aff\\w*|ref=\\w+)/gm,'').replace(/affid=\\d+/gm, 'a=b').replace(/affkey=\\d+/gm, 'a=b');
+        content[i].innerHTML = content[i].innerHTML.replace(/aff\\.php/gm,'cart.php').replace(/aff=\\d+/gm,'a=add').replace(/(aff\\w*|ref=\\w+)/gm,'').replace(/affid=\\d+/gm, 'a=b').replace(/affkey=\\d+/gm, 'a=b');
     }
 })();
 </script></body>`)
