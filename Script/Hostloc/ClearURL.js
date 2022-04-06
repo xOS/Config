@@ -27,7 +27,7 @@ if (/<\/html>|<\/body>/.test(body)) {
             content[i].innerHTML = content[i].innerHTML.replace(regex, '<a href="$1" target="_blank">$1</a><');
         }
         // 去掉 AFF
-        content[i].innerHTML = content[i].innerHTML.replace(/aff\.php/gm, 'cart.php').replace(/aff=\d+/gm, 'a=add').replace(/\/aff\/\w*|ref=\w+/gm, '');
+        content[i].innerHTML = content[i].innerHTML.replace(/aff\.php/gm, 'cart.php').replace(/aff=\d+/gm, 'a=add').replace(/aff\/\w*|ref=\w+/gm, '').replace(/affid=\d+/gm, 'a=b').replace(/affkey=\d+/gm, 'a=b');
     }
 })();
 </script></body>`)
