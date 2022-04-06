@@ -7,7 +7,7 @@ if (/<\/html>|<\/body>/.test(body)) {
   <script>
 
 // @description  Hostloc 移除 AFF，URL 超链接化
-// @author       Faxlok
+// @author        Faxlok
 // @match        https://hostloc.com/thread-*.html
 // @match        https://hostloc.com/forum.php?mod=viewthread&tid=*&highlight=*
 // @match        https://hostloc.com/forum.php?mod=viewthread&tid=*&page=*
@@ -27,7 +27,7 @@ if (/<\/html>|<\/body>/.test(body)) {
             content[i].innerHTML = content[i].innerHTML.replace(regex, '<a href="$1" target="_blank">$1</a><');
         }
         // 去掉 AFF
-        content[i].innerHTML = content[i].innerHTML.replace(/aff\.php/gm, 'cart.php').replace(/aff=\d+/gm, 'a=add').replace(/aff\/\w*|ref=\w+/gm, '').replace(/affid=\d+/gm, 'a=b').replace(/affkey=\d+/gm, 'a=b');
+        content[i].innerHTML = content[i].innerHTML.replace(/aff\.php/gm,'cart.php').replace(/aff=\\d+/gm,'a=add').replace(/(aff\\w*|ref=\\w+)/gm,'').replace(/affid=\\d+/gm, 'a=b').replace(/affkey=\\d+/gm, 'a=b');
     }
 })();
 </script></body>`)
