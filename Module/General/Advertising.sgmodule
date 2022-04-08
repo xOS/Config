@@ -835,7 +835,7 @@ Feed 过滤所有视频 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com
 homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/client\/homePages\.action,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Telecom/CTCloud.js
 
 # > FlighTradar24
-flighTradar24 = type=http-response,pattern=^https?:\/\/www\.flightradar24\.com\/mobile\/user-session\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/FlighTradar24/FlighTradar24.js
+flighTradar24 = type=http-response,pattern=^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/FlighTradar24/FlighTradar24.js
 
 # > Hostloc 移除 AFF，URL 超链接化
 ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/(forum.php\?mod\=viewthread\&tid\=|thread-),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Hostloc/InjectJS.js
