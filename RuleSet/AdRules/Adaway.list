@@ -275,6 +275,7 @@
 .banners.adnetmedia.lt
 .adnetwork.vn
 .adnium.com
+.prebids.adnsx.com
 .nym1-ib.adnxs-simple.com
 .acdn.adnxs.com
 .adscale-emea.adnxs.com
@@ -694,6 +695,7 @@
 .cdn.appdynamics.com
 .trk.apperol.com
 .appflood.com
+.inapps.appflyer.com
 .creative-cdn.appgrowth.com
 .appia.com
 .ad.appier.net
@@ -767,6 +769,8 @@
 .api.apptentive.com
 .app-icons.apptentive.com
 .sdk.apptentive.com
+.brahe.apptimize.com
+.md-a-c.apptimize.com
 .apptornado.com
 .tracking.apptrackerlink.com
 .apsalar.com
@@ -894,6 +898,8 @@
 .uswest.bfmio.com
 .biddingx.com
 .bidgear.com
+.cdn.bidmatrixdsp.com
+.us-trk.bidmatrixdsp.com
 .bidr.io
 .bidsopt.com
 .gce-or.bidswitch.net
@@ -2055,7 +2061,6 @@
 .cdnimg.izooto.com
 .err.izooto.com
 .jampp.com
-.jdoqocy.com
 .api.jeeng.com
 .sdk.jeeng.com
 .telemetries.jeeng.com
@@ -3561,10 +3566,7 @@
 .slicktext.com
 .smaato.com
 .smaato.net
-.cm.smadex.com
-.creatives.smadex.com
-.geo-tracker.smadex.com
-.static-content-1.smadex.com
+.smadex.com
 .ap.smardroid.com
 .lg.smardroid.com
 .sc.smardroid.com
@@ -4315,6 +4317,7 @@
 .identity.api.wmcdp.io
 .logs.psm.wmcdp.io
 .api.wonderpush.com
+.woobids.com
 .static.woopra.com
 .api.wootric.com
 .app.wootric.com
