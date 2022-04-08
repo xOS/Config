@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.stlog.d.dmkt-sp.jp
+.dynatrace-managed.com
 .cdn.reproio.com
 .init.blackcrow.ai
 .taplytics.com
@@ -4505,6 +4507,7 @@
 .jpaasne.e.shifen.com
 .caclick.baidu.com
 .wkclick.baidu.com
+.trace.popin.cc
 .rlog.popin.cc
 .log.popin.cc
 .r.popin.cc
@@ -4542,6 +4545,9 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.alxc.addlv.smt.docomo.ne.jp
+.pa.pinpoll.com
+.d2wu036mkcz52n.cloudfront.net
 .ts.delfi.lt
 .tracking.gvm.com.tw
 .metrics.beyondwords.io
