@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.analytics*.prezly.com
 .gapp1.com
 .stlog.d.dmkt-sp.jp
 .dynatrace-managed.com
@@ -4508,6 +4509,7 @@
 .jpaasne.e.shifen.com
 .caclick.baidu.com
 .wkclick.baidu.com
+.a.popin.cc
 .trace.popin.cc
 .rlog.popin.cc
 .log.popin.cc
