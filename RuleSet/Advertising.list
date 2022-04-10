@@ -181,11 +181,6 @@ DOMAIN-SUFFIX,p2.l.qq.com,REJECT
 DOMAIN-SUFFIX,p3.l.qq.com,REJECT
 DOMAIN-SUFFIX,pagespeed.report.qq.com,REJECT
 DOMAIN-SUFFIX,pcbrowser.dd.qq.com,REJECT
-DOMAIN-SUFFIX,pinghot.qq.com,REJECT
-DOMAIN-SUFFIX,pingjs.qq.com,REJECT
-DOMAIN-SUFFIX,pingma.qq.com,REJECT
-DOMAIN-SUFFIX,pingtcss.qq.com,REJECT
-DOMAIN-SUFFIX,pmir.3g.qq.com,REJECT
 DOMAIN-SUFFIX,pms.mb.qq.com,REJECT
 DOMAIN-SUFFIX,pvstat.html5.qq.com,REJECT
 DOMAIN-SUFFIX,q.i.gdt.qq.com,REJECT
