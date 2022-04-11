@@ -1,6 +1,3 @@
-/*
-README：https://github.com/yichahucha/surge/tree/master
- */
 
 const path1 = "/groups/timeline";
 const path2 = "/statuses/unread";
@@ -28,6 +25,7 @@ const path23 = "/remind/unread_count";
 const path24 = "/createrIndex";
 const path25 = "/st_videos/tiny/effect/shoot_display_config";
 const path26 = "/search/finder";
+const path27 = "/search/container_timeline";
 
 const url = $request.url;
 let body = $response.body;
@@ -121,7 +119,7 @@ if (
         obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_task_task'));
         obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_video_video'));
         obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_banner_hot'));
-        }
+    }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path25) != -1) {
     let obj = JSON.parse(body);
@@ -136,6 +134,21 @@ if (
         let items = obj.channelInfo.channels[0].payload.items;
         items.splice(2);
         items[1].data.col = 1;
+    }
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path27) != -1) {
+    let obj = JSON.parse(body);
+    if (obj.items) {
+        obj.items.splice(2);
+        obj.items[1].data.col = 1;
+        if (obj.items.length > 0) {
+            let i = obj.items.length;
+            while (i--) {
+                let element = obj.items[i];
+                if (element.category == 'feed')
+                    obj.items[i] = null;
+            }
+        }
     }
     body = JSON.stringify(obj);
 }
