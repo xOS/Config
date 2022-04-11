@@ -27,6 +27,7 @@ const path22 = "/live/media_homelist";
 const path23 = "/remind/unread_count";
 const path24 = "/createrIndex";
 const path25 = "/st_videos/tiny/effect/shoot_display_config";
+const path26 = "/search/finder";
 
 const url = $request.url;
 let body = $response.body;
@@ -126,6 +127,16 @@ if (
     let obj = JSON.parse(body);
     obj.camera_widget = {};
     obj.camera_widget.show_close = false;
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path26) != -1) {
+    let obj = JSON.parse(body);
+    if (obj.channelInfo) {
+        obj.channelInfo.channels.splice(1, 4);
+        obj.channelInfo.channels[0].title = '';
+        let items = obj.channelInfo.channels[0].payload.items;
+        items.splice(2);
+        items[1].data.col = 1;
+    }
     body = JSON.stringify(obj);
 }
 $done({ body });
