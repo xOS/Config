@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.wurfl.io
 .t.trsbf.com
 .t.powerreviews.com
 .analytics*.prezly.com
@@ -4550,6 +4551,8 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.b.travel-assets.com
+.ev.api.bdg.com
 .tracking.live.oe24.at
 .momowa.momoshop.com.tw
 .montelena-rcv.gmarket.co.kr
