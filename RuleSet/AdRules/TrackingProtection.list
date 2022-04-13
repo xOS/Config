@@ -4,6 +4,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.metrics.pico.tools
+.lndata.com
+.quietyellowday.com
 .client.botchk.net
 .b.px-cdn.net
 .wurfl.io
@@ -4553,6 +4556,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.spade.twitch.tv
 .b.travel-assets.com
 .ev.api.bdg.com
 .tracking.live.oe24.at
@@ -4564,7 +4568,6 @@
 .ts.delfi.lt
 .tracking.gvm.com.tw
 .metrics.beyondwords.io
-.launcher.spot.im
 .api.data.ciceksepeti.com
 .wlog.tmon.co.kr
 .analytics.appservice.tech
