@@ -4556,6 +4556,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.ab.blogs.es
 .spade.twitch.tv
 .b.travel-assets.com
 .ev.api.bdg.com
