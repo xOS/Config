@@ -3090,7 +3090,6 @@ IP-CIDR,150.242.0.0/21,no-resolve
 IP-CIDR,150.242.112.0/21,no-resolve
 IP-CIDR,150.242.120.0/22,no-resolve
 IP-CIDR,150.242.152.0/22,no-resolve
-IP-CIDR,150.242.156.0/23,no-resolve
 IP-CIDR,150.242.158.0/24,no-resolve
 IP-CIDR,150.242.160.0/21,no-resolve
 IP-CIDR,150.242.168.0/22,no-resolve
@@ -3431,11 +3430,9 @@ IP-CIDR,193.17.120.0/22,no-resolve
 IP-CIDR,193.20.64.0/22,no-resolve
 IP-CIDR,193.200.196.0/24,no-resolve
 IP-CIDR,193.200.222.160/28,no-resolve
-IP-CIDR,194.0.0.0/24,no-resolve
 IP-CIDR,194.138.136.0/24,no-resolve
 IP-CIDR,194.138.202.0/23,no-resolve
 IP-CIDR,194.138.245.0/24,no-resolve
-IP-CIDR,194.246.96.0/24,no-resolve
 IP-CIDR,195.142.215.0/24,no-resolve
 IP-CIDR,198.175.100.0/22,no-resolve
 IP-CIDR,198.208.17.0/24,no-resolve

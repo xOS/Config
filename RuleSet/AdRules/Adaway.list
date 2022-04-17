@@ -1122,13 +1122,10 @@
 .mxase.clmbtech.com
 .tml.clmbtech.com
 .g2c.cloud-elements.com
-.ailoganalyticsportal-eus.cloudapp.net
-.bi-analytics.cloudapp.net
 .bkt.clouddn.com
 .metrics.cloudflarebolt.com
 .static.cloudflareinsights.com
 .us-central1-adaptive-growth.cloudfunctions.net
-.us-central1-production-242307.cloudfunctions.net
 .cloudmobi.net
 .cas.cluep.com
 .dev-as.cluep.com
@@ -2138,8 +2135,6 @@
 .a.klaviyo.com
 .static.klaviyo.com
 .telemetrics.klaviyo.com
-.trk.klclick2.com
-.trk.klclick3.com
 .gplayer.kmpmedia.net
 .update.kmpmedia.net
 .brand-sdk.kmsmep.com
@@ -2579,7 +2574,6 @@
 .microad.net
 .send.microadinc.com
 .bingads.microsoft.com
-.c1.microsoft.com
 .adtrack1.midasplayer.com
 .client.midosoo.com
 .minimob.com
@@ -2779,7 +2773,6 @@
 .b.ads1.msn.com
 .ads2.msn.com
 .c.msn.com
-.browser.events.data.msn.com
 .mobileads.msn.com
 .rads.msn.com
 .srtb.msn.com
@@ -4309,7 +4302,6 @@
 .wigetmedia.com
 .ad-display.wikawika.xyz
 .analytics.wildtangent.com
-.optanon.blob.core.windows.net
 .tracker.winudf.com
 .pie.wirelessregistry.com
 .tag.wknd.ai
