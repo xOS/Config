@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.sdtagging.azureedge.net
+.sd-tagging.azurefd.net
 .metrics.pico.tools
 .lndata.com
 .quietyellowday.com
