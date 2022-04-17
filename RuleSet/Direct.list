@@ -9,6 +9,7 @@ DOMAIN,bdtj.tagtic.cn,DIRECT
 # > Alibaba
 DOMAIN,log.mmstat.com,DIRECT
 DOMAIN,sycm.mmstat.com,DIRECT
+DOMAIN,t.uc.cn,DIRECT
 
 # # > Google
 # DOMAIN-SUFFIX,blog.google,DIRECT
