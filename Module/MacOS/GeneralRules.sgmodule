@@ -4,7 +4,19 @@
 
 [Rule]
 # > Look Up (Only for Wikipedia@macOS, Surge Enhance Mode enabled required)
-RULE-SET,https://hub.nan.ge/RuleSet/Wikipedia_for_Look_Up.list,常用
+RULE-SET,https://hub.nan.ge/RuleSet/Wikipedia_for_Look_Up.list,常用服务
+
+# > iCloud Private Relay
+# >> Optimize for Private Relay connections
+AND,((PROTOCOL,UDP),(DEST-PORT,443),(USER-AGENT,Transparent%20network%20proxy%20for%20Apple%20system%20services*)),DIRECT, interface=en0, allow-other-interface=true
+AND,((PROTOCOL,UDP),(DEST-PORT,443),(DOMAIN,mask.icloud.com)),DIRECT, interface=en0, allow-other-interface=true
+AND,((PROTOCOL,UDP),(DEST-PORT,443),(DOMAIN,mask.apple-dns.net)),DIRECT, interface=en0, allow-other-interface=true
+AND,((PROTOCOL,UDP),(DEST-PORT,443),(DOMAIN,mask-h2.icloud.com)),DIRECT, interface=en0, allow-other-interface=true
+AND,((PROTOCOL,UDP),(DEST-PORT,443),(DOMAIN,mask-t.apple-dns.net)),DIRECT, interface=en0, allow-other-interface=true
+AND,((PROTOCOL,UDP),(DEST-PORT,443),(IP-CIDR,17.0.0.0/8,no-resolve)),DIRECT, interface=en0, allow-other-interface=true
+
+# >> Allow for network traffic audits
+RULE-SET,https://hub.nan.ge/RuleSet/iCloudPrivateRelay.list, 常用服务
 
 [Header Rewrite]
 # > 颇可
@@ -15,6 +27,9 @@ RULE-SET,https://hub.nan.ge/RuleSet/Wikipedia_for_Look_Up.list,常用
 
 # > 更改 UA
 ;^https?://(?:\w+\.)*?((nange|vmgirls|qste|appleimg|cloudimg)\.(?:com\.cn|cn|com|net))[\\\/]* header-replace User-Agent Surge
+
+# > iCloud Private Relay
+^https?:\/\/p[\d]{1,3}-acsegateway\.icloud\.com header-replace X-MMe-Country TW
 
 [URL Rewrite]
 # > Bilibili
@@ -109,4 +124,4 @@ Netflix-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.nflxvideo.
 YouTube-Subtrans = type=http-request,pattern=https:\/\/(setting|www).youtube.com\/(api\/timedtext.+|\?action=(g|s)et),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
 
 [MITM]
-hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*qste.com, -*appleimg.com, -*cloudimg.net, *.smoot.apple.com, *.smoot.apple.cn, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, api*.smoot.apple.com, api*.smoot.apple.cn, *.nflxvideo.net, *.youtube.com
+hostname = %APPEND% -*vmgirls.com, -*nange.cn, -*qste.com, -*appleimg.com, -*cloudimg.net, *.smoot.apple.com, *.smoot.apple.cn, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, api*.smoot.apple.com, api*.smoot.apple.cn, *.nflxvideo.net, *.youtube.com, mask-api.icloud.com, mask-api.fe.apple-dns.net, mask.icloud.com, mask.apple-dns.net, p*-acsegateway.icloud.com

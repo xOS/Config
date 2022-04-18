@@ -1,0 +1,13 @@
+# > iCloud Private Relay
+# https://developer.apple.com/cn/support/prepare-your-network-for-icloud-private-relay/
+# https://mask-api.icloud.com/egress-ip-ranges.csv
+
+DOMAIN,mask-api.icloud.com,Proxy
+DOMAIN,mask-api.fe.apple-dns.net,Proxy
+
+# > Allow for network traffic audits
+AND,((PROTOCOL,TCP),(DEST-PORT,443),(USER-AGENT,Transparent%20network%20proxy%20for%20Apple%20system%20services*)),Proxy
+AND,((PROTOCOL,TCP),(DEST-PORT,443),(DOMAIN,mask.icloud.com)),Proxy
+AND,((PROTOCOL,TCP),(DEST-PORT,443),(DOMAIN,mask.apple-dns.net)),Proxy
+AND,((PROTOCOL,TCP),(DEST-PORT,443),(DOMAIN,mask-h2.icloud.com)),Proxy
+AND,((PROTOCOL,TCP),(DEST-PORT,443),(DOMAIN,mask-t.apple-dns.net)),Proxy
