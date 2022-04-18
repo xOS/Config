@@ -23,6 +23,10 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 # > 网络状态
 网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
 
+[Rule]
+# > Look Up (Only for Wikipedia@macOS, Surge Enhance Mode enabled required)
+RULE-SET,https://hub.nan.ge/RuleSet/Wikipedia_for_Look_Up.list,常用
+
 [Header Rewrite]
 # > 颇可
 ;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
