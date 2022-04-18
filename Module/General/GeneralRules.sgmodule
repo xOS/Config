@@ -37,7 +37,7 @@ AND,((PROTOCOL,UDP),(DEST-PORT,443),(DOMAIN,mask-t.apple-dns.net)),DIRECT, inter
 AND,((PROTOCOL,UDP),(DEST-PORT,443),(IP-CIDR,17.0.0.0/8,no-resolve)),DIRECT, interface=en0, allow-other-interface=true
 
 # >> Allow for network traffic audits
-RULE-SET,https://hub.nan.ge/RuleSet/iCloudPrivateRelay.list, 常用
+RULE-SET,https://hub.nan.ge/RuleSet/iCloudPrivateRelay.list,常用
 
 [Header Rewrite]
 # > 颇可
