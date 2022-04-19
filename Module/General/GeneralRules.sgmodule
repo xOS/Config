@@ -293,7 +293,7 @@ UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/
 flighTradar24 = type=http-response,pattern=^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/FlighTradar24/FlighTradar24.js
 
 # > Response Geo Services to TW
-Geo Services = type=http-request, pattern=^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc), argument=GeoCountryCode=TW, requires-body=0, script-path=https://hub.nan.ge/Script/Apple/Geo_Services.js
+# Geo Services = type=http-request, pattern=^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc), argument=GeoCountryCode=TW, requires-body=0, script-path=https://hub.nan.ge/Script/Apple/Geo_Services.js
 
 # > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
 Siri Suggestions Service = type=http-request, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=0, timeout=5, script-path=https://hub.nan.ge/Script/Apple/Siri_Req.js
