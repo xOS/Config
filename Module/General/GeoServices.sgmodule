@@ -1,0 +1,9 @@
+#!name=修改定位
+#!desc=Response Geo Services to TW
+
+[Script]
+# > Response Geo Services to TW
+Geo Services = type=http-request, pattern=^https?:\/\/gspe\d*-ssl\.ls\.apple\.com(\/pep\/gcc), argument=GeoCountryCode=TW, requires-body=0, script-path=https://hub.nan.ge/Script/Apple/Geo_Services.js
+
+[MITM]
+hostname= %APPEND% gspe1-ssl.ls.apple.com
