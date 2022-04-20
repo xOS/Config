@@ -1,7 +1,7 @@
 /*
 README:https://github.com/VirgilClyne/iRingo
 */
-const $ = new Env("Apple Siri v2.0.0-beta");
+const $ = new Env("Apple Siri v2.0.2");
 const URL = new URLSearch();
 const DataBase = {
 	"Weather":{"Switch":true,"Mode":"WAQI Public","Location":"Station","Verify":{"Mode":"Token","Content":null},"Scale":"EPA_NowCast.2201"},
@@ -89,7 +89,6 @@ var { body } = $response;
 		} else if (url?.path == "search") {
 		} else if (url?.path == "card") {
 		}
-		url = URL.stringify(url);
 		body = JSON.stringify(data);
 	}
 })()
@@ -101,11 +100,11 @@ var { body } = $response;
  * Set Environment Variables
  * @author VirgilClyne
  * @param {String} t - Persistent Store Key
- * @param {String} e - Request URL
- * @param {Object} i - Default DataBase
+ * @param {String} i - Request URL
+ * @param {Object} e - Default DataBase
  * @return {Promise<*>}
  */
-async function setENV(t,e,i){const s=/weather-(.*)\.apple\.com/i.test(e)?"Weather":/smoot\.apple\.(com|cn)/i.test(e)?"Siri":(/\.apple\.com/i.test(e),"Apple");let n=$.getjson(t,i),a=n?.[s]||n?.Settings?.[s]||n?.Apple?.[s]||i[s];if("undefined"!=typeof $argument){let t=Object.fromEntries($argument.split("&").map((t=>t.split("="))));Object.assign(a,t)}return a.Switch=JSON.parse(a.Switch),"string"==typeof a?.Domains&&(a.Domains=a.Domains.split(",")),"string"==typeof a?.Functions&&(a.Functions=a.Functions.split(",")),a.Safari_Smart_History=JSON.parse(a.Safari_Smart_History),{Platform:s,Settings:a}}
+async function setENV(t,i,e){const s=/weather-(.*)\.apple\.com/i.test(i)?"Weather":/smoot\.apple\.(com|cn)/i.test(i)?"Siri":(/\.apple\.com/i.test(i),"Apple");let n=$.getjson(t,e),a=n?.[s]||n?.Settings?.[s]||n?.Apple?.[s]||e[s];if("undefined"!=typeof $argument){let t=Object.fromEntries($argument.split("&").map((t=>t.split("="))));Object.assign(a,t)}return a.Switch=JSON.parse(a.Switch),"string"==typeof a?.Domains&&(a.Domains=a.Domains.split(",")),"string"==typeof a?.Functions&&(a.Functions=a.Functions.split(",")),a?.Safari_Smart_History&&(a.Safari_Smart_History=JSON.parse(a.Safari_Smart_History)),{Platform:s,Settings:a}}
 
 /***************** Env *****************/
 // prettier-ignore
