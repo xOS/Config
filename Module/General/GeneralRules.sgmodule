@@ -31,6 +31,9 @@ RULE-SET,https://hub.nan.ge/RuleSet/Wikipedia_for_Look_Up.list,常用
 # > 颇可
 ;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
 
+# > Google Voice
+^https?:\/\/www\.google\.com\/voice\/? header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
+
 # > 添加标记
 ; ^https?://(?:\w+\.)*?((nan|cdn|nange|qste|vmgirls)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
 
@@ -266,4 +269,4 @@ Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.ap
 天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://hub.nan.ge/Script/Apple/Weather_Map.js
 
 [MITM]
-hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
+hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
