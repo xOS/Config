@@ -5,3 +5,6 @@ DOMAIN,update.parallels.com,REJECT
 # > Beyond Compare
 DOMAIN,www.scootersoftware.com,REJECT
 DOMAIN,scootersoftware.com,REJECT
+
+# > 禁止网页跳转APP 
+DOMAIN,app-site-association.cdn-apple.com,REJECT
