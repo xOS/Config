@@ -142,10 +142,6 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 # > 话费流量
 话费流量 = type=http-request,script-path=https://hub.nan.ge/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
 
-# > Apple 天气
-Apple Weather = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.*, requires-body=1, script-path=https://hub.nan.ge/Script/Apple/Apple_Weather.js
-Apple Weather Availability = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/availability\/.*, requires-body=1, script-path=https://hub.nan.ge/Script/Apple/Weather_Availability.js
-
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
 
@@ -258,8 +254,16 @@ UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/
 flighTradar24 = type=http-response,pattern=^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/FlighTradar24/FlighTradar24.js
 
 # > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
-Siri Suggestions Service = type=http-request, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=0, timeout=5, script-path=https://hub.nan.ge/Script/Apple/Siri_Req.js
-Siri Suggestions Service = type=http-response, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=1, timeout=10, script-path=https://hub.nan.ge/Script/Apple/Siri_Resp.js
+Siri 建议 请求体 = type=http-request, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=0, timeout=5, script-path=https://hub.nan.ge/Script/Apple/Siri_Req.js
+
+Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=1, timeout=10, script-path=https://hub.nan.ge/Script/Apple/Siri_Resp.js
+
+# > Apple 天气
+可用性 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/availability\/.*, requires-body=1, script-path=https://hub.nan.ge/Script/Apple/Weather_Availability.js
+
+天气 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.*, requires-body=1, script-path=https://hub.nan.ge/Script/Apple/Weather.js
+
+天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://hub.nan.ge/Script/Apple/Weather_Map.js
 
 [MITM]
-hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, api.waqi.info, www.weatherol.cn, api.caiyunapp.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
+hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
