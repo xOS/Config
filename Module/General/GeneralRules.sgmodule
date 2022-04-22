@@ -29,16 +29,16 @@ RULE-SET,https://hub.nan.ge/RuleSet/Wikipedia_for_Look_Up.list,常用
 
 [Header Rewrite]
 # > 颇可
-;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
+;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/605.1.15"
 
 # > Google Voice
-^https?:\/\/www\.google\.com\/voice\/? header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
+^https?:\/\/www\.google\.com\/voice\/? header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/605.1.15"
 
 # > 添加标记
-; ^https?://(?:\w+\.)*?((nan|cdn|nange|qste|vmgirls)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
+; ^https?://(?:\w+\.)*?((nan|cdn|nange|qste|vmgirls)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor "Surge"
 
 # > 更改 UA
-;^https?://(?:\w+\.)*?((nange|vmgirls|qste|appleimg|cloudimg)\.(?:com\.cn|cn|com|net))[\\\/]* header-replace User-Agent Surge
+;^https?://(?:\w+\.)*?((nange|vmgirls|qste|appleimg|cloudimg)\.(?:com\.cn|cn|com|net))[\\\/]* header-replace User-Agent "Surge"
 
 [URL Rewrite]
 # > Bilibili
