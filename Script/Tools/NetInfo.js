@@ -70,7 +70,7 @@
  
          const externalIP = data.toString().split("\n")[0];
          const info = data.toString().split("\n")[1];
-         data = data.replace(/中国\n$/gm, "");
+         info = info.replace(/中国\n$/gm, "").replace(/\s+/g, "");
  
         //  if (state == 'CN') {
         //      if (city && !district) {
