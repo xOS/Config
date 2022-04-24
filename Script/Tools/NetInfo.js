@@ -69,7 +69,7 @@
         //  const state = json['state'];
  
          const externalIP = data.toString().split("\n")[0];
-         const info = data.toString().split("\n")[1];
+         const info = data.toString().split("\n")[1].replace(/中国\n$/gm, "");
  
         //  if (state == 'CN') {
         //      if (city && !district) {
