@@ -7,8 +7,8 @@
  const radio = $network["cellular-data"].radio;
  const carrier = $network["cellular-data"].carrier;
  const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{8}).+(.{8})$/, "$1****$2") : null;
- let url = "https://api.grpc.fun";
- // let url = "http://ip.ping0.cc/geo";
+//  let url = "https://api.grpc.fun";
+ let url = "http://ip.ping0.cc/geo";
  // let url2 = "https://myip.ipip.net/json";
  var CNNET = ['460-03', '460-05', '460-11'];
  var Unicom = ['460-01', '460-06', '460-09'];
@@ -59,39 +59,39 @@
      const router = wifi.ssid ? v4.primaryRouter : undefined;
  
      $httpClient.get(url, function (error, response, data) {
-         const json = JSON.parse(data);
-         const externalIP = json['ip'];
-         const country = json['a2'];
-         const region = json['a3'];
-         const city = json['a4'];
-         const district = json['a5'];
-         const isp = json['a6'];
-         const state = json['state'];
+        //  const json = JSON.parse(data);
+        //  const externalIP = json['ip'];
+        //  const country = json['a2'];
+        //  const region = json['a3'];
+        //  const city = json['a4'];
+        //  const district = json['a5'];
+        //  const isp = json['a6'];
+        //  const state = json['state'];
  
-         // const externalIP = data.toString().split("\n")[0];
-         // const info = data.toString().split("\n")[1];
+         const externalIP = data.toString().split("\n")[0];
+         const info = data.toString().split("\n")[1];
  
-         if (state == 'CN') {
-             if (city && !district) {
-                 info = region + ' ' + city + ' ' + isp;
-             } else if (district && !city) {
-                 info = region + ' ' + district + ' ' + isp;
-             } else if (!city && !district) {
-                 info = region + ' ' + isp;
-             } else {
-                 info = region + ' ' + city + ' ' + district + ' ' + isp;
-             }
-         } else {
-             if (city && !region) {
-                 info = country + ' ' + city;
-             } else if (!city && region) {
-                 info = country + ' ' + region;
-             } else if (!city && !region) {
-                 info = country;
-             } else {
-                 info = country + ' ' + region + ' ' + city;
-             }
-         }
+        //  if (state == 'CN') {
+        //      if (city && !district) {
+        //          info = region + ' ' + city + ' ' + isp;
+        //      } else if (district && !city) {
+        //          info = region + ' ' + district + ' ' + isp;
+        //      } else if (!city && !district) {
+        //          info = region + ' ' + isp;
+        //      } else {
+        //          info = region + ' ' + city + ' ' + district + ' ' + isp;
+        //      }
+        //  } else {
+        //      if (city && !region) {
+        //          info = country + ' ' + city;
+        //      } else if (!city && region) {
+        //          info = country + ' ' + region;
+        //      } else if (!city && !region) {
+        //          info = country;
+        //      } else {
+        //          info = country + ' ' + region + ' ' + city;
+        //      }
+        //  }
  
          const body = {
              title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : `蜂窝数据 | ${server} ${radios} [${radio}]`,

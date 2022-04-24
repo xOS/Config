@@ -37,6 +37,9 @@ DOMAIN,sdkapi.sms.mob.com,DIRECT
 DOMAIN,api.share.mob.com,DIRECT
 DOMAIN-SUFFIX,code.sms.mob.com,DIRECT
 
+# > 空气质量
+DOMAIN,api.waqi.info,DIRECT
+
 # > IPIP
 DOMAIN-SUFFIX,ipip.net,DIRECT
 
