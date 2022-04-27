@@ -1,8 +1,8 @@
 let body = $response.body;
 body = JSON.parse(body);
 
-// 黑名单 201843361
-let blockId = [201494286, 178336580, 201919782, 200605457];
+// 黑名单 201843361 178336580, 
+let blockId = [201494286, 201919782, 200605457];
 
 if (body.data && body.data.list && body.data.list.length > 0) {
     var data = body.data.list;
