@@ -1,7 +1,7 @@
 let body = $response.body;
 body = JSON.parse(body);
 
-// 黑名单 201843361 178336580, 
+// 黑名单
 let blackId = [201843361, 201494286, 201919782, 200605457];
 
 if (body.data && body.data.list && body.data.list.length > 0) {
@@ -17,8 +17,7 @@ if (body.data && body.data.list && body.data.list.length > 0) {
                 console.log(nickname + "已被屏蔽！");
                 // console.log("屏蔽用户ID："+ uid);
             }
-        }
-        
+        } 
     }
 }
 
