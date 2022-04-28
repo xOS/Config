@@ -4579,6 +4579,9 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.static.cloudflareinsights.com
+.mobile.slgnt.eu
+.eum*.instana.io
 .analytics.fontanka.ru
 .dnh523js9661q.cloudfront.net
 .tr.discuss.com.hk
