@@ -12,6 +12,7 @@ const verified_detail = {
     }
   ]
 };
+obj.geo_enabled = false;
 obj.verified_detail = verified_detail;
 obj.svip = 1;
 obj.verified_reason = "最美小仙女";
