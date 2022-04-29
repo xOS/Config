@@ -44,9 +44,9 @@ if (url.indexOf(person) != -1 || url.indexOf(cache) != -1) {
   $done({ body: JSON.stringify(obj) });
 } if (url.indexOf(order) != -1) {
   obj.data.banner = [];
-  if (obj.data.order_self) {
-    obj.data.order_self = {};
-  }
+  // if (obj.data.order_self) {
+  //   obj.data.order_self = {};
+  // }
   $done({ body: JSON.stringify(obj) });
 } else {
   $done({})
