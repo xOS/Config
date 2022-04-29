@@ -1,6 +1,7 @@
 const index = "/index";
 const person = "/person";
 const cache = "/walletcache.json";
+const order = "/order/center";
 const url = $request.url;
 const obj = JSON.parse($response.body);
 if (url.indexOf(person) != -1 || url.indexOf(cache) != -1) {
@@ -39,6 +40,12 @@ if (url.indexOf(person) != -1 || url.indexOf(cache) != -1) {
     obj.data.static.sign = {};
     obj.data.static.ad = [];
     obj.data.static.sign_new = {};
+  }
+  $done({ body: JSON.stringify(obj) });
+} if (url.indexOf(order) != -1) {
+  obj.data.banner = [];
+  if (obj.data.order_self) {
+    obj.data.order_self = {};
   }
   $done({ body: JSON.stringify(obj) });
 } else {
