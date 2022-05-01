@@ -759,7 +759,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # > 颇可
 关注页广告 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/space\/get_app_followers,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Poco/Dynamic.js
 
-# 黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list,requires-body=1,max-size=-1,script-path=https://hub.nan.ge/Script/Poco/BlockUser.js
+黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list,requires-body=1,max-size=-1,script-path=https://hub.nan.ge/Script/Poco/BlockUser.js
 
 # > 阿里云盘
 阿里云盘 = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/apps\/v1\/users\/apps\/widgets$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Ali/AliDrive.js
@@ -848,6 +848,9 @@ ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/(forum.php\?mod
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/launch data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+
+# > 阿里云盘会员
+^https?:\/\/api\.aliyundrive\.com\/business\/.+\/users\/vip\/info data="https://hub.nan.ge/Mock/AliDrive/SVIPInfo.json"
 
 # > 微博积分弹窗
 ^https?:\/\/luck\.sc\.weibo\.com\/aj\/Action\/indexInfo$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
