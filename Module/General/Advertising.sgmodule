@@ -762,7 +762,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list\?req=,requires-body=1,max-size=-1,script-path=https://hub.nan.ge/Script/Poco/BlockUser.js
 
 # > 阿里云盘
-阿里云盘 = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/apps\/v1\/users\/apps\/widgets$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Ali/AliDrive.js
+阿里云盘 = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/apps\/v1\/users\/apps\/widgets$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/AliDrive/AliDrive.js
 
 # > 中新网 APP
 CNS = type=http-response,pattern=^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/activity_entrance,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/ChinaNews/CNS.js

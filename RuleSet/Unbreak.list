@@ -21,4 +21,4 @@ DOMAIN,translate.googleapis.com,DIRECT
 DOMAIN,firebaselogging-pa.googleapis.com,DIRECT
 
 # > 微软
-DOMAIN,self.events.data.microsoft.com,DIRECT
+# DOMAIN,self.events.data.microsoft.com,DIRECT
