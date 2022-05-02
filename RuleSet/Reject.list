@@ -8,3 +8,6 @@ DOMAIN,scootersoftware.com,REJECT
 
 # > 禁止网页跳转APP 
 DOMAIN,app-site-association.cdn-apple.com,REJECT
+
+# > 微软
+DOMAIN,self.events.data.microsoft.com,REJECT
