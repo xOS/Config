@@ -3130,7 +3130,6 @@ IP-CIDR,156.107.160.0/24,no-resolve
 IP-CIDR,156.107.170.0/24,no-resolve
 IP-CIDR,156.107.178.0/23,no-resolve
 IP-CIDR,156.107.180.0/23,no-resolve
-IP-CIDR,156.154.142.0/23,no-resolve
 IP-CIDR,156.154.62.0/23,no-resolve
 IP-CIDR,156.237.2.0/23,no-resolve
 IP-CIDR,157.0.0.0/16,no-resolve
@@ -5832,7 +5831,6 @@ IP-CIDR,45.119.232.0/22,no-resolve
 IP-CIDR,45.119.60.0/22,no-resolve
 IP-CIDR,45.119.64.0/21,no-resolve
 IP-CIDR,45.119.72.0/22,no-resolve
-IP-CIDR,45.12.234.0/23,no-resolve
 IP-CIDR,45.120.100.0/22,no-resolve
 IP-CIDR,45.120.140.0/22,no-resolve
 IP-CIDR,45.120.164.0/22,no-resolve
