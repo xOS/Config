@@ -757,9 +757,9 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 推荐页广告 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\?client_volume,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/RedBook/RedBook.js
 
 # > 颇可
-关注页广告 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/space\/get_app_followers,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Poco/Dynamic.js
+# 关注页广告 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/space\/get_app_followers,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/PoCo/Dynamic.js
 
-黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list,requires-body=1,max-size=-1,script-path=https://hub.nan.ge/Script/Poco/BlockUser.js
+黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list,requires-body=1,max-size=-1,script-path=https://hub.nan.ge/Script/PoCo/BlockUser.js
 
 # > 阿里云盘
 阿里云盘 = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/apps\/v1\/users\/apps\/widgets$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/AliDrive/AliDrive.js
