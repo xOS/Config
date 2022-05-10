@@ -759,6 +759,8 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # > 颇可
 # 关注页广告 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/space\/get_app_followers,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/PoCo/Dynamic.js
 
+用户信息 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/space\/(get_user_identity_info|get_brief_user_info),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/PoCo/UserInfo.js
+
 黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list,requires-body=1,max-size=-1,script-path=https://hub.nan.ge/Script/PoCo/BlockUser.js
 
 # > 阿里云盘
