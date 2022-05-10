@@ -6,11 +6,7 @@ DOMAIN-SUFFIX, qste.com,DIRECT
 DOMAIN-SUFFIX, cloudimg.net,DIRECT
 DOMAIN-SUFFIX, appleimg.com,DIRECT
 DOMAIN-SUFFIX, free.ac.cn,DIRECT
-DOMAIN-SUFFIX, vmgirls.com,DIRECT
 DOMAIN-SUFFIX, ip.hn.cn,DIRECT
-
-# > 唯美女生
-DOMAIN-SUFFIX, vmgirls.com,DIRECT
 
 # > 楠格
 DOMAIN, nange.cn,DIRECT
@@ -66,9 +62,6 @@ DOMAIN, chr.nan.ge,DIRECT
 DOMAIN, app.nan.ge,DIRECT
 DOMAIN, raw.nan.ge,DIRECT
 DOMAIN, get.nan.ge,DIRECT
-
-# > 楠歌
-DOMAIN-SUFFIX, nangle.com.cn,DIRECT
 
 # > CDN 域名
 DOMAIN, cdn.ink,DIRECT
