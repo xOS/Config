@@ -2,7 +2,7 @@ let body = $response.body;
 body = JSON.parse(body);
 
 // 黑名单
-let blackId = [201843361, 201494286, 201919782, 200605457, 201489873, 201107858, 201977522, 201919782];
+let blackId = [201843361, 201494286, 201919782, 200605457, 201489873, 201107858, 201977522, 201919782, 201582860];
 
 if (body.data && body.data.list && body.data.list.length > 0) {
     var data = body.data.list;
