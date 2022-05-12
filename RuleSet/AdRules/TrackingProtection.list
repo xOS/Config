@@ -4,9 +4,12 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.sofire.bdstatic.com
+.knowctr.com
 .px.mountain.com
 .gs.mountain.com
 .dx.mountain.com
+.track.rheinpfalz.de
 .noibu.com
 .gwmtracking.com
 .analytics.formstack.com
@@ -4603,6 +4606,7 @@
 .collection-endpoint-prod.herokuapp.com
 .collection-endpoint-staging.herokuapp.com
 .telemetry.mozilla.org
+.sfp.safe.baidu.com
 .revi.rcs.it
 .counter.megagroup.ru
 .howmanyview.com
