@@ -1,37 +1,9 @@
 var obj = JSON.parse($response.body);
-obj.userInfo.user_ability_extend = 1;
-obj.userInfo.verified_type_ext = 1;
-obj.userInfo.verified_type = 0;
-const verified_detail = {
-  "custom": 1,
-  "data": [
-    {
-      "key": 1,
-      "weight": 10,
-      "sub_key": 0,
-      "desc": "最美小仙女"
-    }
-  ]
-};
-obj.userInfo.geo_enabled = false;
-obj.userInfo.verified_detail = verified_detail;
-obj.userInfo.svip = 1;
-obj.userInfo.verified_reason = '最美小仙女';
-obj.userInfo.statuses_count = 0;
-obj.userInfo.orange_v = '最美小仙女';
-obj.userInfo.verified_level = 2;
-obj.userInfo.avatargj_id = 'gj_vip_583';
-obj.userInfo.verified = true;
-obj.userInfo.has_ability_tag = 1;
-obj.userInfo.type = 1;
-obj.userInfo.star = 1;
-obj.userInfo.friendships_relation = 2;
-obj.userInfo.icons = [
-  {
-    "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
-    "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
-  }
-];
+const profile = "/profile";
+const users = "/users\/(show|relation)";
+const comments = "/comments\/destroy";
+const statuses = "/statuses\/destroy";
+const url = $request.url;
 const verified = {
   "scheme": "",
   "icon_video_style_dark": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2021\/04\/16\/video_verified_dark.png",
@@ -50,12 +22,7 @@ const verified = {
   "icon": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2020\/05\/19\/verified.png",
   "desc": "最美小仙女"
 };
-if (obj.userInfo.infoList[0].actionlog.ext != 'name:verified') {
-  obj.userInfo.infoList.splice(0, 0, verified);
-} else {
-  obj.userInfo.infoList[0].desc = '最美小仙女';
-}
-obj.userInfo.badge = {
+const badge = {
   "ylpshuidao_2021": 1,
   "gongyi_level": 1,
   "travel_2017": 1,
@@ -207,4 +174,168 @@ obj.userInfo.badge = {
   "rrgyj_2019": 1,
   "macao_2019": 1
 };
+if (url.indexOf(profile) != -1) {
+  obj.userInfo.user_ability_extend = 1;
+  obj.userInfo.verified_type_ext = 1;
+  obj.userInfo.verified_type = 0;
+  const verified_detail = {
+    "custom": 1,
+    "data": [
+      {
+        "key": 1,
+        "weight": 10,
+        "sub_key": 0,
+        "desc": "最美小仙女"
+      }
+    ]
+  };
+  obj.userInfo.geo_enabled = false;
+  obj.userInfo.verified_detail = verified_detail;
+  obj.userInfo.svip = 1;
+  obj.userInfo.verified_reason = '最美小仙女';
+  obj.userInfo.statuses_count = 0;
+  obj.userInfo.orange_v = '最美小仙女';
+  obj.userInfo.verified_level = 2;
+  obj.userInfo.avatargj_id = 'gj_vip_583';
+  obj.userInfo.verified = true;
+  obj.userInfo.has_ability_tag = 1;
+  obj.userInfo.type = 1;
+  obj.userInfo.star = 1;
+  obj.userInfo.friendships_relation = 2;
+  obj.userInfo.icons = [
+    {
+      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
+      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+    }
+  ];
+
+  if (obj.userInfo.infoList[0].actionlog.ext != 'name:verified') {
+    obj.userInfo.infoList.splice(0, 0, verified);
+  } else {
+    obj.userInfo.infoList[0].desc = '最美小仙女';
+  }
+  obj.userInfo.badge = badge;
+}
+
+if (url.indexOf(users) != -1) {
+  obj.user_ability_extend = 1;
+  obj.verified_type_ext = 1;
+  const verified_detail = {
+    "custom": 1,
+    "data": [
+      {
+        "key": 1,
+        "weight": 10,
+        "sub_key": 0,
+        "desc": "最美小仙女"
+      }
+    ]
+  };
+  obj.geo_enabled = false;
+  obj.verified_detail = verified_detail;
+  obj.svip = 1;
+  obj.verified_reason = "最美小仙女";
+  obj.statuses_count = 0;
+  obj.orange_v = "最美小仙女";
+  obj.verified_level = 2;
+  obj.avatargj_id = "gj_vip_583";
+  obj.verified = true;
+  obj.has_ability_tag = 1;
+  obj.type = 1;
+  obj.star = 1;
+  obj.friendships_relation = 2;
+  obj.icons = [
+    {
+      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
+      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+    }
+  ];
+
+  // if(obj.infoList[0].actionlog.ext !='name:verified') obj.infoList.splice(0, 0, verified);
+  obj.badge = badge;
+}
+
+if (url.indexOf(comments) != -1) {
+  obj.user.user_ability_extend = 1;
+  obj.user.verified_type_ext = 1;
+  obj.user.verified_type = 0;
+  const verified_detail = {
+    "custom": 1,
+    "data": [
+      {
+        "key": 1,
+        "weight": 10,
+        "sub_key": 0,
+        "desc": "最美小仙女"
+      }
+    ]
+  };
+  obj.user.geo_enabled = false;
+  obj.user.verified_detail = verified_detail;
+  obj.user.svip = 1;
+  obj.user.verified_reason = '最美小仙女';
+  obj.user.statuses_count = 0;
+  obj.user.orange_v = '最美小仙女';
+  obj.user.verified_level = 2;
+  obj.user.avatargj_id = 'gj_vip_583';
+  obj.user.verified = true;
+  obj.user.has_ability_tag = 1;
+  obj.user.type = 1;
+  obj.user.star = 1;
+  obj.user.friendships_relation = 2;
+  obj.user.icons = [
+    {
+      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
+      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+    }
+  ];
+
+  obj.user.badge = badge;
+  obj.status.is_paid = true;
+  obj.status.geo = false;
+  obj.status.user.geo_enabled = false;
+  obj.status.user.verified = true;
+  obj.status.user.svip = 1;
+  obj.status.user.has_ability_tag = 1;
+
+}
+
+if (url.indexOf(statuses) != -1) {
+  obj.user.user_ability_extend = 1;
+  obj.user.verified_type_ext = 1;
+  obj.user.verified_type = 0;
+  const verified_detail = {
+    "custom": 1,
+    "data": [
+      {
+        "key": 1,
+        "weight": 10,
+        "sub_key": 0,
+        "desc": "最美小仙女"
+      }
+    ]
+  };
+  obj.user.geo_enabled = false;
+  obj.user.verified_detail = verified_detail;
+  obj.user.svip = 1;
+  obj.user.verified_reason = '最美小仙女';
+  obj.user.statuses_count = 0;
+  obj.user.orange_v = '最美小仙女';
+  obj.user.verified_level = 2;
+  obj.user.avatargj_id = 'gj_vip_583';
+  obj.user.verified = true;
+  obj.user.has_ability_tag = 1;
+  obj.user.type = 1;
+  obj.user.star = 1;
+  obj.user.friendships_relation = 2;
+  obj.user.icons = [
+    {
+      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
+      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+    }
+  ];
+
+  obj.user.badge = badge;
+  obj.region_name = "重庆";
+}
 $done({ body: JSON.stringify(obj) });
