@@ -871,6 +871,9 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # > 阿里云盘
 ^https?:\/\/api\.aliyundrive\.com\/business\/.+\/users\/vip\/info data="https://hub.nan.ge/Mock/AliDrive/SVIPInfo.json"
 
+# > 天翼云盘
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners\.action data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+
 # > 小红书
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/tag\/ads_engage$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"

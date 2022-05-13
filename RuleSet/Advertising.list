@@ -31,6 +31,9 @@ DOMAIN,g.cn.miaozhen.com,REJECT
 DOMAIN-SUFFIX,xfinfr.com,REJECT
 URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice,REJECT
 
+# > 天翼云
+DOMAIN,client-push.21cn.com,REJECT
+
 # > 腾讯
 DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
