@@ -1,3 +1,9 @@
 # > 微博
-DOMAIN-KEYWORD,weibo,DIRECT
-DOMAIN-KEYWORD,sina,DIRECT
+# DOMAIN-KEYWORD,weibo,DIRECT
+# DOMAIN-KEYWORD,sina,DIRECT
+
+# > 发微博触发IP识别
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,DIRECT
+
+# > 评论触发IP识别
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,DIRECT
