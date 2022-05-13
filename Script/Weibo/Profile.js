@@ -1,8 +1,8 @@
 var obj = JSON.parse($response.body);
 const profile = "/profile";
-const users = "/users\/(show|relation)";
-const comments = "/comments\/destroy";
-const statuses = "/statuses\/destroy";
+const users = "/users";
+const comments = "/comments";
+const statuses = "/statuses";
 const url = $request.url;
 const verified = {
   "scheme": "",
