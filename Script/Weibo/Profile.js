@@ -189,6 +189,7 @@ if (url.indexOf(profile) != -1) {
       }
     ]
   };
+  obj.userInfo.ip_location = '重庆';
   obj.userInfo.geo_enabled = false;
   obj.userInfo.verified_detail = verified_detail;
   obj.userInfo.svip = 1;
@@ -231,6 +232,7 @@ if (url.indexOf(users) != -1) {
       }
     ]
   };
+  obj.ip_location = '重庆';
   obj.geo_enabled = false;
   obj.verified_detail = verified_detail;
   obj.svip = 1;
@@ -270,6 +272,7 @@ if (url.indexOf(comments) != -1) {
       }
     ]
   };
+  obj.user.ip_location = '重庆';
   obj.user.geo_enabled = false;
   obj.user.verified_detail = verified_detail;
   obj.user.svip = 1;
@@ -315,6 +318,7 @@ if (url.indexOf(statuses) != -1) {
       }
     ]
   };
+  obj.user.ip_location = '重庆';
   obj.user.geo_enabled = false;
   obj.user.verified_detail = verified_detail;
   obj.user.svip = 1;
