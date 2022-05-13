@@ -1346,7 +1346,7 @@ http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-
 # > Spotify
 Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nan.ge/Script/Spotify/Spotify.js
 
-个人信息 = type=http-response,pattern=^https?:\/\/api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation))\?gsid=,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Profile.js
+个人信息 = type=http-response,pattern=^https?:\/\/api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation))\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Profile.js
 
 会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.cn\/aj\/vipcenter\/home,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/VIPCenter.js
 
