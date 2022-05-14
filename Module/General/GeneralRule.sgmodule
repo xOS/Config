@@ -220,13 +220,6 @@ URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad
 # > 和彩云
 ;URL-REGEX,^https?:\/\/mcmm\.caiyun\.feixin\.10086\.cn:80\/mcmm\/api\/IAdvert$,REJECT
 
-# > 天翼云盘
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds,REJECT
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds\.action\?,REJECT
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getFloatingWindow,REJECT
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getRecommendedPositionList,REJECT
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition,REJECT-TINYGIF
-
 # > 无忧行
 DOMAIN,abtest.jegotrip.com.cn,REJECT
 URL-REGEX,^https?:\/\/.+\.jegotrip\.com\.cn(.+?)appSyncimage\/.+?\.(jpg|png|gif),REJECT
@@ -872,6 +865,11 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/api\.aliyundrive\.com\/business\/.+\/users\/vip\/info data="https://hub.nan.ge/Mock/AliDrive/SVIPInfo.json"
 
 # > 天翼云盘
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds\.action data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getFloatingWindow data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getRecommendedPositionList data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners\.action data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getMyPageRecommendedPositionList\.action data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
