@@ -32,7 +32,7 @@ DOMAIN-SUFFIX,xfinfr.com,REJECT
 URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice,REJECT
 
 # > 天翼云
-DOMAIN,client-push.21cn.com,REJECT
+DOMAIN-KEYWORD,-push,REJECT
 
 # > 腾讯
 DOMAIN-SUFFIX,e.qq.com,REJECT
