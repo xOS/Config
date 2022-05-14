@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz, ap*.intsig.net, *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.api.weibo.cn
+force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz, ap*.intsig.net, *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.api.weibo.cn, api.cloud.189.cn
 
 [Panel]
 # > 服务状态
