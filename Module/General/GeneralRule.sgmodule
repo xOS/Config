@@ -1361,13 +1361,10 @@ VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/
 # > Enpass 高级版
 Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Enpass/Enpass.js
 
-# > 中文字幕
-# >> Netflix 中文字幕
-Netflix-Dualsub = type=http-response,pattern=https:\/\/.+nflxvideo.net\/\?o=\d+&v=\d+&e=.+,requires-body=1,max-size=0,timeout=30,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
-Netflix-Dualsub-Setting = type=http-request,pattern=https:\/\/setting.nflxvideo.net\/\?action=(g|s)et,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
-
-# >> YouTube 中文字幕
-YouTube-Subtrans = type=http-request,pattern=https:\/\/(setting|www).youtube.com\/(api\/timedtext.+|\?action=(g|s)et),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Live/Dualsub.js
+# > YouTube 中文字幕
+DualSubs.YouTube.Player = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$, requires-body=1, max-size=0, timeout=30, script-path=https://hub.nan.ge/Script/Live/DualSubs.YouTube.Player.js
+DualSubs.YouTube.TimedText = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*(format|fmt)=(?!vtt).*)$, requires-body=1, max-size=0, script-path=https://hub.nan.ge/Script/Live/DualSubs.YouTube.TimedText.js
+DualSubs.YouTube.TimedText.vtt = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*(format|fmt)=(vtt).*)$, requires-body=1, max-size=0, script-path=https://hub.nan.ge/Script/Live/DualSubs.VTT.js
 
 # > UptimeRobot
 UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/UptimeRobot/UptimeRobot.js
