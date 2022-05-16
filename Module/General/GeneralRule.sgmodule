@@ -872,6 +872,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners\.action data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getMyPageRecommendedPositionList\.action data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getPageBanners\.action data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
 # > 小红书
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/tag\/ads_engage$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
