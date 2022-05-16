@@ -195,15 +195,15 @@ DOMAIN-SUFFIX,tpns.tencent.com,REJECT
 DOMAIN-SUFFIX,api.poll.video.qq.com,REJECT
 DOMAIN-SUFFIX,static-res.qq.com,REJECT
 DOMAIN-SUFFIX,stat.tpns.tencent.com,REJECT
-#URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\?,REJECT
-#URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\?,REJECT
-#URL-REGEX,^https?:\/\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
-#URL-REGEX,^https?://.+\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
-#URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
-#URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\?,REJECT
-#URL-REGEX,^https:\/\/vm\.gtimg\.cn\/c\/=\/tencentvideo\/txp\/js\/plugins\?,REJECT
+URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\?,REJECT
+URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\?,REJECT
+URL-REGEX,^https?:\/\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
+URL-REGEX,^https?://.+\/video\.dispatch\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
+URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
+URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\?,REJECT
+URL-REGEX,^https:\/\/vm\.gtimg\.cn\/c\/=\/tencentvideo\/txp\/js\/plugins\?,REJECT
 URL-REGEX,^https?://.+\/monitor\/receive\.action$,REJECT
-#URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
+URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
 IP-CIDR,140.249.94.150/32,REJECT,no-resolve
 IP-CIDR,150.138.229.18/32,REJECT,no-resolve
 IP-CIDR,116.207.148.20/32,REJECT,no-resolve
@@ -961,7 +961,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/api\.zhihu\.com\/topseller\/parker\/goods data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 
 # > 腾讯视频
-^http:\/\/.+\/svp_(.*)\/.+\.(mp4) data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
+^https?:\/\/.+\/svp_(.*)\/.+\.(mp4) data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 ^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 ^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
@@ -972,18 +972,15 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?://.+\/defaultts\.tc.\qq\.com\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 
 # > 爱奇艺
-;^http:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
+^https?:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4 data="https://hub.nan.ge/Mock/Blank/Blank.mp4"
 
 # > 百度网盘
-# ^https?:\/\/pan\.baidu\.com\/api\/diffall data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/pmall\/support\/hometabs data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/wk\.baidu\.com\/smallapp\/browse\/home\?personal_recommend=1&isFullScreen=1$ data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-# ^https?:\/\/pan\.baidu\.com\/act\/v2\/bchannel\/list data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/task\/tasklist data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/pmall\/points\/goodslist data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activitystatus data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
-# ^https?:\/\/pan\.baidu\.com\/aipic\/image\/gettags data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/api\/analytics data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^http:\/\/update\.pan\.baidu\.com\/statistics data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
