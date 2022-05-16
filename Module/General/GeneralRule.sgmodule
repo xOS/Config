@@ -211,6 +211,7 @@ URL-REGEX,^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\&start\=,REJECT
 URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+\&start\=,REJECT
 URL-REGEX,^https?://.+\/vhqts\.tc\.qq\.com\/.+\&start\=,REJECT
 URL-REGEX,^https?://.+\/omts\.tc\.qq\.com\/.+\&start\=,REJECT
+URL-REGEX,^https?://.+\/defaultts\.tc\.qq\.com\/.+\&start\=,REJECT
 URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+\&start\=,REJECT
 URL-REGEX,^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/.+\&start\=,REJECT
 URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\&start\=,REJECT
