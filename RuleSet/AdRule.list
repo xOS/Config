@@ -41819,6 +41819,7 @@
 .d10vy5gom1ed53.cloudfront.net
 .um-public-panel-prod.s3.amazonaws.com
 .collection-endpoint-prod.herokuapp.com
+.r.razer.com
 .pix.boursorama.com
 .wa.mail.com
 .sfp.safe.baidu.com
@@ -41830,7 +41831,6 @@
 .e.viously.com
 .blue.thehill.com
 .events.newsroom.bi
-.logs.eu-west-1.amazonaws.com
 .ampltd.top.gg
 .gtm.vanmoof.com
 .pc3.vanmoof.com
@@ -42802,7 +42802,6 @@
 .t.cinemablend.com
 .t.eharmony.com
 .t.my.jobs
-.t.vimeo.com
 .t2.huluim.com
 .tracer.perezhilton.com
 .track.briskfile.com
@@ -52517,6 +52516,7 @@
 .stats.wwitv.com
 .t.9gag.com
 .t.appsflyer.com
+.t.vimeo.com
 .adocean.cz
 .tt.onthe.io
 .dualstack.adbert-web-lbs-*.elb.amazonaws.com
@@ -63100,7 +63100,6 @@
 .inrecsys.popin.cc
 .jp-axia.m0mentum.net
 .telemetry.mozilla.org
-.r.razer.com
 .alxc.addlv.smt.docomo.ne.jp
 .adstax-cdn.adrtx.net
 .twin-iq.kickfire.com
