@@ -205,17 +205,17 @@ DOMAIN-SUFFIX,stat.tpns.tencent.com,REJECT
 URL-REGEX,^https?://.+\/monitor\/receive\.action$,REJECT
 #URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
 
-URL-REGEX,^https?:\/\/.+\/svp_(.*)\/.+\&start\=,REJECT
-URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?://.+\/vhqts\.tc\.qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?://.+\/omts\.tc\.qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?://.+\/defaultts\.tc\.qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\&start\=,REJECT
-URL-REGEX,^https?://.+\/defaultts\.tc.\qq\.com\/.+\&start\=,REJECT
+URL-REGEX,^https?:\/\/.+\/svp_(.*)\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?://.+\/vhqts\.tc\.qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?://.+\/omts\.tc\.qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?://.+\/defaultts\.tc\.qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\&start\=(^[0]),REJECT
+URL-REGEX,^https?://.+\/defaultts\.tc.\qq\.com\/.+\&start\=(^[0]),REJECT
 
 IP-CIDR,140.249.94.150/32,REJECT,no-resolve
 IP-CIDR,150.138.229.18/32,REJECT,no-resolve
