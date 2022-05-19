@@ -402,7 +402,7 @@ function removeHome(data) {
                     newItems.push(item);
                 }
             }
-        } else if (['mine_attent_title', '100505_-_meattent_pic', '100505_-_newusertask', '100505_-_vipkaitong', '100505_-_hongbao2022', '100505_-_adphoto'].indexOf(itemId) > -1) {
+        } else if (['mine_attent_title', '100505_-_meattent_pic', '100505_-_newusertask', '100505_-_vipkaitong', '100505_-_hongbao2022', '100505_-_adphoto', '100505_-_advideo', '2022mqj_me_biaoti', '2022mqj_me_wz7'].indexOf(itemId) > -1) {
             continue;
         } else if (itemId.match(/100505_-_meattent_-_\d+/)) {
             continue;
