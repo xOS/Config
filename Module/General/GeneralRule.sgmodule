@@ -1353,7 +1353,7 @@ NiceGram = type=http-response,pattern=^https?:\/\/my\.nicegram\.app\/api\/v4\/se
 # > 七猫小说 VIP
 UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/get-user-info$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserInfo.js
 Center = type=http-response,pattern=^https:\/\/.+\.wtzw\.com\/api\/.+\/user\/my-center,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/Center.js
-GetInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/get-role-adv-vip-info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/GetInfo.js
+GetInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/(user\/get-role-adv-vip-info|vip\/index),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/GetInfo.js
 Level = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/my-level,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/Level.js
 UserPage = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/page,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserPage.js
 
