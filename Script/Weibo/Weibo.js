@@ -1,4 +1,4 @@
-const version = 'v0506.1';
+const version = 'v0522.1';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -115,36 +115,45 @@ function isAd(data) {
 
 
 function removeSearchMain(data) {
-	let channels = data.channelInfo.channels;
-	if (!channels) {return data;}
-	for(let channel of channels) {
-		let paload = channel.paload;
-		if (!paload) {continue;}
-		removeSearch(paload)
-	}
-	log('remove_search main success');
-	return data;
+    let channels = data.channelInfo.channels;
+    if (!channels) { return data; }
+    for (let channel of channels) {
+        let payload = channel.payload;
+        if (!payload) { continue; }
+        removeSearch(payload)
+    }
+    log('remove_search main success');
+    return data;
+}
+
+
+function checkSearchWindow(item) {
+    if (!mainConfig.removeSearchWindow) return false;
+    if (item.category != 'card') return false;
+    return item?.data.itemid == 'finder_window';
 }
 
 
 //发现页
 function removeSearch(data) {
-	if(!data.items) {
-		return data;
-	}
-	let newItems = [];
-	for (let item of data.items) {
-		if(item.category == 'feed') {
-			if(!isAd(item.data)) {
-				newItems.push(item);
-			}
-		} else {
-			newItems.push(item);
-		}
-	}
-	data.items = newItems;
-	log('remove_search success');	
-	return data;
+    if (!data.items) {
+        return data;
+    }
+    let newItems = [];
+    for (let item of data.items) {
+        if (item.category == 'feed') {
+            if (!isAd(item.data)) {
+                newItems.push(item);
+            }
+        } else {
+            if (!checkSearchWindow(item)) {
+                newItems.push(item);
+            }
+        }
+    }
+    data.items = newItems;
+    log('remove_search success');
+    return data;
 }
 
 
@@ -195,17 +204,17 @@ function lvZhouHandler(data) {
 }
 
 function isBlock(data) {
-	let blockIds = mainConfig.blockIds || [];
-	if(blockIds.length === 0) {
-		return false;
-	}
-	let uid = data.user.id;
-	for (const blockId of blockIds) {
-		if(blockId == uid) {
-			return true;
-		}
-	}
-	return false;
+    let blockIds = mainConfig.blockIds || [];
+    if (blockIds.length === 0) {
+        return false;
+    }
+    let uid = data.user.id;
+    for (const blockId of blockIds) {
+        if (blockId == uid) {
+            return true;
+        }
+    }
+    return false;
 }
 
 function removeTimeLine(data) {
@@ -221,9 +230,9 @@ function removeTimeLine(data) {
     for (const s of data.statuses) {
         if (!isAd(s)) {
             lvZhouHandler(s);
-            if(!isBlock(s)) {
-				newStatuses.push(s);
-			}
+            if (!isBlock(s)) {
+                newStatuses.push(s);
+            }
         }
     }
     data.statuses = newStatuses;
@@ -349,31 +358,31 @@ function updateFollowOrder(item) {
 }
 
 function updateProfileSkin(item, k) {
-	try {
-		let profileSkin = mainConfig[k];
-		if(!profileSkin) {return;}
-		let i = 0;
-		for (let d of item.items) {
-			if(!d.image) {
-				continue;
-			}
-			try {
-				dm = d.image.style.darkMode
-				if(dm != 'alpha') {
-					d.image.style.darkMode = 'alpha'
-				}
-				d.image.iconUrl = profileSkin[i++];
-				if(d.dot) {
-					d.dot = [];
-				}
-			} catch (error) {
-				
-			}
-		}
-		log('updateProfileSkin success');
-	} catch (error) {
-		console.log('updateProfileSkin fail');
-	}
+    try {
+        let profileSkin = mainConfig[k];
+        if (!profileSkin) { return; }
+        let i = 0;
+        for (let d of item.items) {
+            if (!d.image) {
+                continue;
+            }
+            try {
+                dm = d.image.style.darkMode
+                if (dm != 'alpha') {
+                    d.image.style.darkMode = 'alpha'
+                }
+                d.image.iconUrl = profileSkin[i++];
+                if (d.dot) {
+                    d.dot = [];
+                }
+            } catch (error) {
+
+            }
+        }
+        log('updateProfileSkin success');
+    } catch (error) {
+        console.log('updateProfileSkin fail');
+    }
 }
 
 
@@ -483,10 +492,10 @@ function userHandler(data) {
         if (item.itemid == 'INTEREST_PEOPLE') {
             log('remove 感兴趣的人');
         } else {
-            if(!isAd(item.mblog)) {
-				lvZhouHandler(item.mblog);
-				newItems.push(item);
-			}
+            if (!isAd(item.mblog)) {
+                lvZhouHandler(item.mblog);
+                newItems.push(item);
+            }
         }
     }
     data.cards = newItems;
@@ -536,9 +545,9 @@ function skinPreviewHandler(data) {
 // }
 
 function log(data) {
-	if(mainConfig.isDebug) {
-		console.log(data);
-	}
+    if (mainConfig.isDebug) {
+        console.log(data);
+    }
 }
 
 
