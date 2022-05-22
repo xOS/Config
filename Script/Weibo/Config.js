@@ -23,6 +23,7 @@ const mainConfig = {
 	removeInterestUser: true,				//用户页：可能感兴趣的人
 
 	removeLvZhou: true,					//绿洲模块
+	removeSearchWindow: true,			//#搜索页滑动窗口，有的不是广告
 
 	blockIds: [2794631974],	//屏蔽的用户id列表
 
