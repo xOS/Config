@@ -875,9 +875,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.nan.ge/Mock/Weibo/avatar_vip_golden.png"
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.nan.ge/Mock/Weibo/feed_icon_100vip_7_default.png"
 
-# > 阿里云盘
-^https?:\/\/api\.aliyundrive\.com\/business\/.+\/users\/vip\/info data="https://hub.nan.ge/Mock/AliDrive/SVIPInfo.json"
-
 # > 天翼云盘
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds\.action data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
@@ -1409,7 +1406,9 @@ Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.ap
 黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list,requires-body=1,max-size=-1,script-path=https://hub.nan.ge/Script/PoCo/BlockUser.js
 
 # > 阿里云盘
-# 阿里云盘 = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/apps\/v1\/users\/apps\/widgets$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/AliDrive/AliDrive.js
+推荐 = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/apps\/v1\/users\/apps\/widgets$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/AliDrive/AliDrive.js
+
+SVIP = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/(v2\/databox\/get_personal_info|business\/.+\/users\/vip\/info),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/AliDrive/SVIPInfo.js
 
 # > 中新网 APP
 CNS = type=http-response,pattern=^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/activity_entrance,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/ChinaNews/CNS.js
