@@ -1,4 +1,4 @@
-let body = JSON.parse($response.body);
+var body = JSON.parse($response.body);
 const personal = "/personal";
 const svip = "/vip/info";
 const url = $request.url;
