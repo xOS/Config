@@ -8,25 +8,6 @@ skip-proxy = %APPEND% localhost, *.local, passenger.t3go.cn, e.crashlytics.com, 
 # > TCP Force HTTP Hosts
 force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz, ap*.intsig.net, *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.api.weibo.cn, api.cloud.189.cn, *vsco.co
 
-[Panel]
-# > 服务状态
-服务状态 = title="服务状态",content="请刷新",style=info,update-interval=360,script-name=服务状态
-
-# > 话费流量
-# 话费流量 = title ="话费流量",content ="请刷新",style=info, script-name=话费流量,update-interval=3600
-
-# > Netflix 检测
-# Netflix 检测 = title="Netflix 检测",content="请刷新",style=good,update-interval=-1,script-name=Netflix 检测
-
-# > 刷新 DNS 缓存
-刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=leaf.arrow.triangle.circlepath,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
-
-# > 抓包状态
-抓包状态 =title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=3600
-
-# > 网络状态
-网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
-
 [Rule]
 # > 微博其它
 URL-REGEX,^https?:\/\/.+\/wbts\.png$,REJECT
@@ -1257,24 +1238,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation data="https://hub.nan.ge/Mock/Blank/Blank.gif"
 
 [Script]
-# > 网络信息
-网络状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NetInfo.js
-
-# > Netflix 检测
-# Netflix 检测 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NFCheck.js
-
-# > 刷新 DNS 缓存
-刷新 DNS = type=generic, script-path=https://hub.nan.ge/Script/Tools/FlushDNS.js
-
-# > 抓包状态
-抓包状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/CaptureMode.js
-
-# > 服务状态
-服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
-
-# > 话费流量
-# 话费流量 = type=http-request,script-path=https://hub.nan.ge/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
-
 # > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
 # IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Apple/iPA_Install.js
 
