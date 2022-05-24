@@ -1446,7 +1446,7 @@ http-response ^https?:\/\/api\.bilibili\.com\/x\/vip\/web\/vip_center\/combine r
 http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$ requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nan.ge/Script/Bilibili/Dynamic.js
 
 # > 微博去广告
-扩展 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(profile/(me|statuses)|searchall|statuses/(unread_hot_timeline|extend|video_mixtimeline)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|container/get_item),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Weibo.js
+扩展 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(profile/(me|statuses)|searchall|statuses/(unread_hot_timeline|extend|video_mixtimeline)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|container/get_item|search/container_discover),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Weibo/Weibo.js
 
 开屏 = requires-body=1,script-path=https://hub.nan.ge/Script/Weibo/Launch.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
 
