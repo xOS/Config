@@ -1,0 +1,40 @@
+#!name=信息面板
+#!desc=日用夜用
+
+[Panel]
+# > 服务状态
+服务状态 = title="服务状态",content="请刷新",style=info,update-interval=360,script-name=服务状态
+
+# > 话费流量
+# 话费流量 = title ="话费流量",content ="请刷新",style=info, script-name=话费流量,update-interval=3600
+
+# > Netflix 检测
+# Netflix 检测 = title="Netflix 检测",content="请刷新",style=good,update-interval=-1,script-name=Netflix 检测
+
+# > 刷新 DNS 缓存
+刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=leaf.arrow.triangle.circlepath,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
+
+# > 抓包状态
+抓包状态 =title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=3600
+
+# > 网络状态
+网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
+
+[Script]
+# > 网络信息
+网络状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NetInfo.js
+
+# > Netflix 检测
+# Netflix 检测 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NFCheck.js
+
+# > 刷新 DNS 缓存
+刷新 DNS = type=generic, script-path=https://hub.nan.ge/Script/Tools/FlushDNS.js
+
+# > 抓包状态
+抓包状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/CaptureMode.js
+
+# > 服务状态
+服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
+
+# > 话费流量
+# 话费流量 = type=http-request,script-path=https://hub.nan.ge/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
