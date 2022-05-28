@@ -5,6 +5,9 @@
 # > 服务状态
 服务状态 = title="服务状态",content="请刷新",style=info,update-interval=360,script-name=服务状态
 
+# > 倒数日
+倒数日 = title="倒数日",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=倒数日
+
 # > 话费流量
 # 话费流量 = title ="话费流量",content ="请刷新",style=info, script-name=话费流量,update-interval=3600
 
@@ -15,7 +18,7 @@
 刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=leaf.arrow.triangle.circlepath,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
 
 # > 抓包状态
-抓包状态 =title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=3600
+抓包状态 = title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=3600
 
 # > 网络状态
 网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
@@ -35,6 +38,9 @@
 
 # > 服务状态
 服务状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/APIStatus.js
+
+# > 倒数日
+倒数日 = type=generic, script-path=https://hub.nan.ge/Script/Tools/Days.js
 
 # > 话费流量
 # 话费流量 = type=http-request,script-path=https://hub.nan.ge/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
