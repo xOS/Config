@@ -17,7 +17,7 @@
     $done({
         title: "DNS 缓存刷新",
         content: `延迟：${delay} ms`,
-        icon: "bolt.ring.closed",
+        icon: "bolt.circle",
         "icon-color": "#ff9800"
     });
 })();
