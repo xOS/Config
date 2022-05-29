@@ -1295,7 +1295,7 @@ Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|x
 Aloha = type=http-response,pattern=^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Aloha/Aloha.js
 
 # > 七猫小说 VIP
-UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/(user\/get-user-info|my-center|get-role-adv-vip-info|my-level|page)|vip\/index),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserInfo.js
+UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/(user\/(get-user-info|my-center|get-role-adv-vip-info|my-level|page)|vip\/index),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserInfo.js
 
 # > 百度网盘
 http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Baidu/BaiduCloud.js
