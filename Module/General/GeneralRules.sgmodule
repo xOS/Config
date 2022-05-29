@@ -201,13 +201,6 @@ Peak = requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Work/Pea
 # > Reddit 解锁 Premium
 Premium = type=http-response,pattern=^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Reddit/Premium.js
 
-# > TextNow
-premium_state = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/.+\/(subscription|subscription_state|premium_state)\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/State.js,script-update-interval=-1
-
-settings = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/settings\?,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/Setting.js,script-update-interval=-1
-
-TextNow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/.+\/users\/im(.*)\?client_id,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/TextNow/TextNow.js,script-update-interval=-1
-
 # > 轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
 轻颜相机 = type=http-response,pattern=^https?:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Photo/ULike.js,script-update-interval=-1
 
@@ -224,11 +217,7 @@ Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|x
 Aloha = type=http-response,pattern=^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Aloha/Aloha.js
 
 # > 七猫小说 VIP
-UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/get-user-info$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserInfo.js
-Center = type=http-response,pattern=^https:\/\/.+\.wtzw\.com\/api\/.+\/user\/my-center,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/Center.js
-GetInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/get-role-adv-vip-info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/GetInfo.js
-Level = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/my-level,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/Level.js
-UserPage = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/page,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserPage.js
+UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/(get-user-info|my-center|(get-role-adv-vip-info|vip\/index)|my-level|page),requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserInfo.js
 
 # > 百度网盘
 http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Baidu/BaiduCloud.js
@@ -278,4 +267,4 @@ Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.ap
 天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://hub.nan.ge/Script/Apple/Weather_Map.js, argument=
 
 [MITM]
-hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
+hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
