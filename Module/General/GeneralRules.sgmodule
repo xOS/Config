@@ -129,6 +129,9 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.nan.ge/Mock/Weibo/avatar_vip_golden.png"
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.nan.ge/Mock/Weibo/feed_icon_100vip_7_default.png"
 
+# > Nicegram
+^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} data="https://hub.nan.ge/Mock/Nicegram/premiumAccess.json" header="Content-Type: text/plain"
+
 [Script]
 # > 网络信息
 网络状态 = type=generic, script-path=https://hub.nan.ge/Script/Tools/NetInfo.js
@@ -220,9 +223,6 @@ Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|x
 # > Aloha 高级版
 Aloha = type=http-response,pattern=^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Aloha/Aloha.js
 
-# > NiceGram 高级版
-NiceGram = type=http-response,pattern=^https?:\/\/my\.nicegram\.app\/api\/v4\/settings,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/NiceGram/NiceGram.js
-
 # > 七猫小说 VIP
 UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/get-user-info$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/UserInfo.js
 Center = type=http-response,pattern=^https:\/\/.+\.wtzw\.com\/api\/.+\/user\/my-center,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/QMNovel/Center.js
@@ -278,4 +278,4 @@ Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.ap
 天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://hub.nan.ge/Script/Apple/Weather_Map.js, argument=
 
 [MITM]
-hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, my.nicegram.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
+hostname = %APPEND% *vmgirls.com, *nange.cn, *qste.com, *appleimg.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, -buy.itunes.apple.com, billing.peakcloud.org, api.textnow.me, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, education.github.com, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
