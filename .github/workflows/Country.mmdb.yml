@@ -2,15 +2,15 @@ name: Update GeoIPs
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - "Her"
-    paths-ignore:
-      - "LICENSE"
-      - "*.md"
-      - "**/*.md"
-      - ".*"
-      - "node_modules"
+#   push:
+#     branches:
+#       - "Her"
+#     paths-ignore:
+#       - "LICENSE"
+#       - "*.md"
+#       - "**/*.md"
+#       - ".*"
+#       - "node_modules"
   #schedule:
   #  - cron: 0 */24 * * *
 jobs:
