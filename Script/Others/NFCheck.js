@@ -4,13 +4,13 @@ For Quantumult-X
 
 [task-local]
 # > 奈非解锁检测
-event-interaction https://hub.nan.ge/Script/Others/NFCheck.js, tag=奈非检测, img-url=text.magnifyingglass.system, enabled=true
+event-interaction https://hub.qste.com/Script/Others/NFCheck.js, tag=奈非检测, img-url=text.magnifyingglass.system, enabled=true
 
 **/
 
 const BASE_URL = 'https://www.netflix.com/title/'
 const FILM_ID = 81215567
-const link = { "media-url": "https://hub.nan.ge/QuantumultX/iColor/Netflix.png" }
+const link = { "media-url": "https://hub.qste.com/QuantumultX/iColor/Netflix.png" }
 const policy_name = "奈非影视" //填入你的 netflix 策略组名
 
 var output = ""

@@ -2,7 +2,7 @@
 #!desc= 脚本转换器，自动转换来自QuantumultX，Loon，Surge格式脚本。
 
 [Script]
-脚本转换 = type=http-request,pattern=^https?:\/\/(hub|nde|config|node)\.(nan.ge|nange.cn|cdn.ink)/.*\.js$,requires-body=1,max-size=0,script-path=https://hub.nan.ge/Script/Tools/Converter.js
+脚本转换 = type=http-request,pattern=^https?:\/\/(hub|nde|config|node)\.(nan.ge|nange.cn|cdn.ink)/.*\.js$,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Tools/Converter.js
 
 [MITM]
-hostname= %APPEND% hub.nan.ge, nde.nan.ge, hub.nange.cn, config.nange.cn, hub.cdn.ink, nde.cdn.ink
+hostname= %APPEND% hub.qste.com, nde.qste.com, hub.nange.cn, config.nange.cn, hub.cdn.ink, nde.cdn.ink
