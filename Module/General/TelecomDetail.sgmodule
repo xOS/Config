@@ -7,7 +7,7 @@
 
 [Script]
 # > 电信流量
-电信流量 = type=http-request,script-path=https://hub.nan.ge/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
+电信流量 = type=http-request,script-path=https://hub.qste.com/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
 
 [MITM]
 hostname = %APPEND% e.189.cn
