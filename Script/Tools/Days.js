@@ -113,16 +113,14 @@ function now() {
     }
 }
 
-//如果是0天，发送emoji;
+//如果是0天，发送通知
 let nowlist = now();
 function today(day) {
     let daythis = day;
     if (daythis == "0") {
         datenotice();
-        return "🌹";
-    } else {
         return daythis;
-    }
+    } 
 }
 
 //提醒日当天发送通知
@@ -166,8 +164,9 @@ $done({
     title: title_random(tnumcount(Number(nowlist))),
     icon: icon_now(tnumcount(Number(nowlist))),
     "icon-color": icon_color(tnumcount(Number(nowlist))),
-    content: tlist[nowlist][0] + today(tnumcount(nowlist)) + "天" + " | " + tlist[Number(nowlist) + Number(1)][0] + tnumcount(Number(nowlist) + Number(1)) + "天" + " | " + tlist[Number(nowlist) + Number(2)][0] + tnumcount(Number(nowlist) + Number(2)) + "天"
+    content: today(tnumcount(nowlist)) == 0 ? tlist[Number(nowlist) + Number(1)][0] + tnumcount(Number(nowlist) + Number(1)) + "天" + " | " + tlist[Number(nowlist) + Number(2)][0] + tnumcount(Number(nowlist) + Number(2)) + "天" + " | " + tlist[Number(nowlist) + Number(3)][0] + tnumcount(Number(nowlist) + Number(3)) + "天" : tlist[nowlist][0] + today(tnumcount(nowlist)) + "天" + " | " + tlist[Number(nowlist) + Number(1)][0] + tnumcount(Number(nowlist) + Number(1)) + "天" + " | " + tlist[Number(nowlist) + Number(2)][0] + tnumcount(Number(nowlist) + Number(2)) + "天"
 })
+    console.log(today(tnumcount(nowlist)));
 function title_random(num) {
     let r = Math.floor((Math.random() * 12) + 1);
     let dic = {
@@ -184,5 +183,5 @@ function title_random(num) {
         11: "太难了！😫😩😖(´◉‿◉)",
         12: "反正放假也不能去玩😤"
     };
-    return num == 0 ? "今天是" + tlist[nowlist][0] + "，休息一下吧！" : dic[r]
+    return num == 0 ? "今天是" + tlist[nowlist][0] + "，休息一下吧 ~" : dic[r]
 }
