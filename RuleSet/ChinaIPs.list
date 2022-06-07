@@ -3025,6 +3025,7 @@ IP-CIDR,140.249.0.0/16,no-resolve
 IP-CIDR,140.250.0.0/16,no-resolve
 IP-CIDR,140.255.0.0/16,no-resolve
 IP-CIDR,140.75.0.0/16,no-resolve
+IP-CIDR,141.11.98.0/24,no-resolve
 IP-CIDR,142.70.0.0/16,no-resolve
 IP-CIDR,142.86.0.0/16,no-resolve
 IP-CIDR,143.64.0.0/16,no-resolve
