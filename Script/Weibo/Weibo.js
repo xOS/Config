@@ -1,4 +1,4 @@
-const version = 'v0524.1';
+const version = 'v0608.1';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -81,7 +81,7 @@ const otherUrls = {
     '/littleskin/preview': 'skinPreviewHandler',
     '/search/finder': 'removeSearchMain',
     '/search/container_timeline': 'removeSearch',
-    '/remind/container_discover': 'removeSearch',		
+    '/search/container_discover': 'removeSearch',
 }
 
 function getModifyMethod(url) {
@@ -130,7 +130,7 @@ function removeSearchMain(data) {
 function checkSearchWindow(item) {
     if (!mainConfig.removeSearchWindow) return false;
     if (item.category != 'card') return false;
-    return item?.data.itemid == 'finder_window';
+    return item.data?.itemid == 'finder_window';
 }
 
 
@@ -444,7 +444,7 @@ function removeComments(data) {
     let delType = ['广告'];
     if (mainConfig.removeRelateItem) delType.push('相关内容');
     if (mainConfig.removeRecommendItem) delType.push('推荐');
-    if (delType.length === 0) return;
+    // if (delType.length === 0) return;
     let items = data.datas || [];
     if (items.length === 0) return;
     let newItems = [];
