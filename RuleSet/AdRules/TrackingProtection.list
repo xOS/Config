@@ -4558,6 +4558,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.tag.escalated.io
+.app.leadsrx.com
 .stats.tipser.com
 .dynatrace.att.com
 .analytics.regex101.com
