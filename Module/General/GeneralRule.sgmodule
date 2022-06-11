@@ -187,21 +187,21 @@ DOMAIN-SUFFIX,stat.tpns.tencent.com,REJECT
 #URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+?\/.+?\.mp4,REJECT
 #URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+?p201\.1\.mp4\?,REJECT
 #URL-REGEX,^https:\/\/vm\.gtimg\.cn\/c\/=\/tencentvideo\/txp\/js\/plugins\?,REJECT
-URL-REGEX,^https?://.+\/monitor\/receive\.action$,REJECT
+# URL-REGEX,^https?://.+\/monitor\/receive\.action$,REJECT
 #URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?,REJECT
-URL-REGEX,^https?:\/\/vv\.video\.qq\.com\/getvinfo,REJECT
+# URL-REGEX,^https?:\/\/vv\.video\.qq\.com\/getvinfo,REJECT
 
-URL-REGEX,^https?:\/\/.+\/svp_(.*)\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?://.+\/vhqts\.tc\.qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?://.+\/omts\.tc\.qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?://.+\/defaultts\.tc\.qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?://.+\/defaultts\.tc.\qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?:\/\/.+\/svp_(.*)\/.+\.mp4,REJECT
+# URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?://.+\/variety\.tc\.qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?://.+\/vhqts\.tc\.qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?://.+\/omts\.tc\.qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?://.+\/defaultts\.tc\.qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\.mp4,REJECT
+# URL-REGEX,^https?://.+\/defaultts\.tc.\qq\.com\/.+\.mp4,REJECT
 
 # > 简书
 URL-REGEX,^https?:\/\/.+\.jianshu\.io\/shakespeare\/_next\/static\/.+\/pages\/p\/(.*)?slug(.*)?\.js$,REJECT
@@ -962,15 +962,15 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/api\.zhihu\.com\/topseller\/parker\/goods data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 腾讯视频
-^http:\/\/.+\/svp_(.*)\/.+\.(mp4) data="https://hub.qste.com/Mock/Blank/Blank.mp4"
-^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
-^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
-^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
-^https?://.+\/variety\.tc\.qq\.com\/? data="https://hub.qste.com/Mock/Blank/Blank.mp4"
-^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
-^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
-^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
-^https?://.+\/defaultts\.tc.\qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^http:\/\/.+\/svp_(.*)\/.+\.(mp4) data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^https?:\/\/.+\/vmind\.qqvideo\.tc\.qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^https?://.+\/variety\.tc\.qq\.com\/? data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^https?://.+\/vmind\.qqvideo\.tc.\qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^https?://.+\/vlive\.qqvideo\.tc.\qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^https?:\/\/.+\/video\.dispatch\.tc\.qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
+# ^https?://.+\/defaultts\.tc.\qq\.com\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
 
 # > 爱奇艺
 ;^http:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4 data="https://hub.qste.com/Mock/Blank/Blank.mp4"
