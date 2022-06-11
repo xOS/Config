@@ -28,3 +28,4 @@ DOMAIN,p12-buy.itunes.apple.com,PROXY
 DOMAIN,configuration.ls.apple.com,PROXY
 DOMAIN-SUFFIX,gsp10-ssl.apple.com,PROXY
 DOMAIN,gateway.icloud.com,PROXY
+DOMAIN,ontology.health.apple.com,PROXY
