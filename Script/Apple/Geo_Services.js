@@ -18,7 +18,7 @@ README:https://github.com/VirgilClyne/iRingo
 */
 
 // Default GeoCountryCode: US
-let GeoCountryCode = "US";
+let GeoCountryCode = "SG";
 
 // Argument Function Supported
 if (typeof $argument != "undefined") {
