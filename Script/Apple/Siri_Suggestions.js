@@ -24,12 +24,12 @@ if (url.indexOf(url0) != -1) url.replace(/smoot\.apple\.cn/g, 'smoot.apple.com')
 
 // PATH
 if (url.indexOf(path1) != -1) { //Bag
-    url = (cc == 'CN') ? processQuery(url, 'cc', 'TW') : processQuery(url, 'cc', cc);
+    url = (cc == 'CN') ? processQuery(url, 'cc', 'SG') : processQuery(url, 'cc', cc);
     console.log(path1, `locale=${locale}, cc=${cc}`, ``);
     $done({ url });
 }
 else if (url.indexOf(path2) != -1) { //Search
-    url = (cc == 'CN') ? processQuery(url, 'cc', 'TW') : processQuery(url, 'cc', cc);
+    url = (cc == 'CN') ? processQuery(url, 'cc', 'SG') : processQuery(url, 'cc', cc);
     if (qtype == 'zkw') { // 处理'新闻'小组件
         ['CN', 'HK', 'MO', 'TW', 'SG'].includes(`${cc}`) ? url = processQuery(url, 'locale', `${esl}_SG`)
             : ['US', 'CA', 'UK', 'AU'].includes(`${cc}`) ? url = processQuery(url, 'locale')
@@ -55,7 +55,7 @@ else if (url.indexOf(path2) != -1) { //Search
     $done({ url });
 }
 else if (url.indexOf(path3) != -1) { //Card
-    url = (cc == 'CN') ? processQuery(url, 'cc', 'TW') : processQuery(url, 'cc', cc);
+    url = (cc == 'CN') ? processQuery(url, 'cc', 'SG') : processQuery(url, 'cc', cc);
     url = processQuery(url, 'card_locale', card_locale);
     //url = processQuery(url, 'storefront', '143464-19%2C29'); //SG
     //url = processQuery(url, 'storefront', '143441-19%2C29'); //US
