@@ -833,7 +833,7 @@ vipDaily = type=http-response,pattern=^https?:\/\/.+\.zhuishushenqi\.com\/activi
 头条净化 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com\/(api\/news\/feed\/v88\/|wallet\/portal\/api\/v3\/prefetch\/settings)\?session_id=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ByteDance/Toutiao.js
 
 # > TextNow
-TextNow = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/(im(.*)\?|.+\/(wallet|subscription|subscription_state|premium_state)),requires-body=1,max-size=0,script-path=State.js,script-update-interval=-1
+TextNow = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/(im(.*)\?|.+\/(wallet|subscription|subscription_state|premium_state)),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/TextNow/State.js,script-update-interval=-1
 
 # > 天翼云盘
 homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/client\/homePages\.action,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Telecom/CTCloud.js
