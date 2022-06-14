@@ -3,7 +3,7 @@
 #!system=ios
 
 [General]
-force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz, ap*.intsig.net
+force-http-engine-hosts = %APPEND% ap*.intsig.net
 
 [Panel]
 # > 服务状态
@@ -38,31 +38,9 @@ force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz,
 ;^https?://(?:\w+\.)*?((nange|vmgirls|qste|appleimg|cloudimg)\.(?:com\.cn|cn|com|net))[\\\/]* header-replace User-Agent Surge
 
 [URL Rewrite]
-# > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
-# >> Bag (iOS/macOS)
-(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/bag.*)(cc=[A-Z]{2})(.*) $1com$3cc=TW$5 header
-# >> General Spotlight & Look Up Search (iOS/macOS)
-(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/search.*)(cc=[A-Z]{2})(.*) $1com$3cc=TW$5 header
-# >> General Info Card (macOS)
-(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=[^kg][^tv][^movies])(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9 header
-# >> Siri Knowledge(Siri资料) Card (Spotlight@macOS & Siri@iOS)
-(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=(?:kgcn|kg))(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9 header
-# >> Siri Knowledge(Siri资料) Card (Spotlight@iOS)
-(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/search.*)(cardDomain=kg)(.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*) $1com$3$4$5card_locale=zh-Hans_CN$7cc=TW$9 header
-# >> tv Movies and TV Show Card (macOS)
-(^https?:\/\/api.*\.smoot\.apple\.)(com|cn)(\/card.*)(card_locale=[a-zA-z\-]{2,7}_[A-Z]{2})(.*)(cc=[A-Z]{2})(.*)(include=(?:tv|movies))(.*)(q=(?:tv|movies)%3A)(.*)(%2F)([a-z]{2}-[A-Z]{2})(.*) $1com$3card_locale=zh-Hans_CN$5cc=TW$7$8$9$10$11$12zh-TW$14 header
-
 # > Bilibili
 (^https?:\/\/app\.biliintl\.com\/(x\/)?(intl|dm|reply|history|v\d/msgfeed).+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$5&sim_code=51503$7 header
 (^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/.+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$35&sim_code=51503$5 header
-
-# > Redirect Google Search Service
-(https:\/\/www\.google\.com([.a-z]+)?\/.+)(&safe=(active|strict)&)(.+) $1&safe=off 302
-https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/search?q=$1&safe=off 302
-^https?:\/\/(www.)?(g|google)\.(cn|hk) https://www.google.com 302
-
-# > Redirect Google Maps Service
-^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 # > Weibo Short URL
 ^http:\/\/t\.cn http://sinaurl.cn 302
@@ -132,9 +110,9 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 
 [Map Local]
 # > 微博
-# ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data="https://hub.qste.com/Mock/Weibo/hy_dongtu.gif"
-# ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://hub.qste.com/Mock/Weibo/jiantougaocheng.png"
-# ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.qste.com/Mock/Weibo/avatar_vip_golden.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data="https://hub.qste.com/Mock/Weibo/hy_dongtu.gif"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://hub.qste.com/Mock/Weibo/jiantougaocheng.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.qste.com/Mock/Weibo/avatar_vip_golden.png"
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.qste.com/Mock/Weibo/feed_icon_100vip_7_default.png"
 
 # > Nicegram
@@ -162,20 +140,20 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 # > 话费流量
 # 话费流量 = type=http-request,script-path=https://hub.qste.com/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
 
-# > 空气质量
-iOS14 美标空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v1/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.qste.com/Script/Apple/Weather_AQI_iOS14.js
+# > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
+Siri 建议 请求体 = type=http-request, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=0, timeout=5, script-path=https://hub.qste.com/Script/Apple/Siri_Req.js
 
-iOS15 空气质量 = type=http-response,pattern=https?://weather-data.apple.com/v2/weather/[\w-]+/-?[0-9]+\.[0-9]+/-?[0-9]+\.[0-9]+\?,requires-body=true,max-size=0,script-path=https://hub.qste.com/Script/Apple/Weather_AQI_iOS15.js
+Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=1, timeout=10, script-path=https://hub.qste.com/Script/Apple/Siri_Resp.js
 
-# > 该模块可解决iOS14或IPadOS14无法在移动端安装IPA的问题. 注: 需要使用Shu+捷径或Jsbox辅助安装.
-IPA应用安装 = type=http-request,pattern=^https?:\/\/x.io/(install|download)(\/jsbox)?$,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Apple/iPA_Install.js
+# > Apple 天气
+可用性 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/availability\/.*, requires-body=1, script-path=https://hub.qste.com/Script/Apple/Weather_Availability.js, argument=
 
-# > 韩剧TV解锁蓝光
-韩剧TV = requires-body=1,script-path=https://hub.qste.com/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
+天气 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.*, requires-body=1, timeout=20, script-path=https://hub.qste.com/Script/Apple/Weather.js, argument=
+
+天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://hub.qste.com/Script/Apple/Weather_Map.js, argument=
 
 # > 咪咕视频
 indexC = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/indexC.js
-playURL = type=http-response,pattern=(^https?:\/\/play\.miguvideo\.com\/playurl\/v1\/play\/playurl|^https?:\/\/.*\.miguvideo\.com\/gateway\/playurl\/.+\/play\/?),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/PlayUrl.js
 manage = type=http-response,pattern=^https?:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/Manage.js
 member = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/Member.js
 
@@ -214,23 +192,6 @@ Premium = type=http-response,pattern=^https?:\/\/oauth\.reddit\.com\/api\/v1\/me
 # > Unlock Documents-PdfExpert-Scaner Pro
 Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Readdle/PDFExpert.js,script-update-interval=-1
 
-# > 简书
-简书1 = type=http-request,pattern=^https?:\/\/links\.jianshu\.com\/go\?to=,script-path=https://hub.qste.com/Script/Others/NoRedirect.js
-简书2 = type=http-request,pattern=^https?:\/\/www\.jianshu\.com\/go-wild\?ac=\d&url=,script-path=https://hub.qste.com/Script/Others/NoRedirect.js
-
-# > 知乎
-知乎 = type=http-request,pattern=^https?:\/\/link\.zhihu\.com\/\?target=,script-path=https://hub.qste.com/Script/Others/NoRedirect.js
-
-# > 微博
-微博1 = type=http-request,pattern=^https?:\/\/weibo\.cn\/sinaurl\?(.*&)?(u|toasturl|goto)=,script-path=https://hub.qste.com/Script/Others/NoRedirect.js
-
-微博2 = type=http-request,pattern=^https?:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url=(.*),script-path=https://hub.qste.com/Script/Others/NoRedirect.js
-
-微博3 = type=http-response,pattern=^https?:\/\/(sinaurl|t)\.cn\/,script-path=https://hub.qste.com/Script/Others/NoRedirect.js
-
-# > DY
-DY = type=http-response,pattern="^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$",requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Live/DY.js,script-update-interval=0
-
 # > Ban
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|ucp\/affcenter|getGlobalData|index|(\/|)vod\/reqplay|vod\/),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Live/Ban.js
 
@@ -258,5 +219,9 @@ VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/
 # > Enpass 高级版
 Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Enpass/Enpass.js
 
+# > YouTube 中文字幕
+Player = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$, requires-body=1, max-size=0, timeout=30, script-path=https://hub.qste.com/Script/YouTube/Player.js
+TimedText = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$, requires-body=1, max-size=0, script-path=https://hub.qste.com/Script/YouTube/TimedText.js
+
 [MITM]
-hostname = %APPEND% *nange.cn, *qste.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, links.jianshu.com, www.jianshu.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, *.smoot.apple.com, *.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com
+hostname = %APPEND% -hub.qste.com, -api.qste.com, *nange.cn, *qste.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, *.smoot.apple.com, *.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.youtube.com
