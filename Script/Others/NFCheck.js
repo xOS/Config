@@ -117,16 +117,16 @@ var area = new Map([
             console.log(code)
 
             if (code === 'Not Available') {
-                result['content'] = '该节点未解锁 Netflix'
+                result['content'] = '该节点不支持 Netflix'
                 //return 
                 //console.log(result)
             } else if (code === 'Not Found') {
-                result['content'] = '该节点仅支持解锁' + area.get(code.toUpperCase()) + '地区自剧'
+                result['content'] = '该节点仅支持解锁 Netflix 自制剧'
                 //return
             } else if (code === "timeout") {
                 result['content'] = "测试超时"
             } else {
-                result['content'] = '该节点完整解锁' + area.get(code.toUpperCase()) + '地区所有剧'
+                result['content'] = '该节点完整解锁 Netflix ' + area.get(code.toUpperCase()) + '地区所有剧'
             }
 
             //$notify(result["title"], output, result["content"], link)
@@ -153,7 +153,7 @@ function test(filmId) {
             url: BASE_URL + filmId,
             opts: opts,
             headers: {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36',
             },
         }
         $task.fetch(option).then(response => {
