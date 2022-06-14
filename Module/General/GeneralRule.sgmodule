@@ -6,7 +6,7 @@
 skip-proxy = %APPEND% localhost, *.local, passenger.t3go.cn, e.crashlytics.com, captive.apple.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, www.baidu.com, yunbusiness.ccb.com, 10.0.0.0/8, 100.64.0.0/10, 127.0.0.1/32, 169.254.0.0/16, 172.16.0.0/12, 192.168.0.0/16, 224.0.0.0/4, 240.0.0.0/4, ::1/128, fc00::/7, fd00::/8, fe80::/10, ff00::/8, 2001::/32, 2001:db8::/32, 2002::/16, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1, iosapps.itunes.apple.com
 
 # > TCP Force HTTP Hosts
-force-http-engine-hosts = %APPEND% *91*:8080, *my10api*:8080, store.i91porn.xyz, ap*.intsig.net, *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.api.weibo.cn, api.cloud.189.cn
+force-http-engine-hosts = %APPEND% ap*.intsig.net, *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.api.weibo.cn, api.cloud.189.cn
 
 [Rule]
 # > 微博其它
@@ -1247,12 +1247,8 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation data="https://hub.qste.com/Mock/Blank/Blank.gif"
 
 [Script]
-# > 韩剧TV解锁蓝光
-韩剧TV = requires-body=1,script-path=https://hub.qste.com/Script/Live/HanjuTV.js,type=http-response,pattern=^http:\/\/api\.hanju\.koudaibaobao\.com\/api\/series\/rslvV4
-
 # > 咪咕视频
 indexC = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/indexC.js
-playURL = type=http-response,pattern=(^https?:\/\/play\.miguvideo\.com\/playurl\/v1\/play\/playurl|^https?:\/\/.*\.miguvideo\.com\/gateway\/playurl\/.+\/play\/?),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/PlayUrl.js
 manage = type=http-response,pattern=^https?:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/Manage.js
 member = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/Member.js
 
@@ -1284,9 +1280,6 @@ TextNow = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/(i
 
 # > 轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
 轻颜相机 = type=http-response,pattern=^https?:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Photo/ULike.js,script-update-interval=-1
-
-# > DY
-DY = type=http-response,pattern=^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Live/DY.js,script-update-interval=0
 
 # > Ban
 Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|ucp\/affcenter|getGlobalData|index|(\/|)vod\/reqplay|vod\/),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Live/Ban.js
