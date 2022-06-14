@@ -2,7 +2,7 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *91*:8080, ap*.intsig.net, *vsco.co
+force-http-engine-hosts = %APPEND% *91*:8080, *.intsig.net, *vsco.co
 
 [Panel]
 # > 服务状态
@@ -247,4 +247,4 @@ Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.ap
 天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://hub.qste.com/Script/Apple/Weather_Map.js, argument=
 
 [MITM]
-hostname = %APPEND% -hub.qste.com, -api.qste.com, *nange.cn, *qste.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, ap*.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
+hostname = %APPEND% -hub.qste.com, -api.qste.com, *nange.cn, *qste.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, *.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, api.weibo.cn, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com
