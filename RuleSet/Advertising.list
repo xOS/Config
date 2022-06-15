@@ -27,6 +27,11 @@ DOMAIN-SUFFIX,xmpush.xiaomi.com,REJECT
 # > 抖音
 DOMAIN,g.cn.miaozhen.com,REJECT
 
+# > 抖音商城
+DOMAIN,ecom.snssdk.com,REJECT
+DOMAIN,ecom.douyin.com,REJECT
+DOMAIN,ecom.amemv.com,REJECT
+
 # > 讯飞输入法
 DOMAIN-SUFFIX,xfinfr.com,REJECT
 URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice,REJECT
