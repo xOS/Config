@@ -26,6 +26,8 @@ const path24 = "/createrIndex";
 const path25 = "/st_videos/tiny/effect/shoot_display_config";
 const path26 = "/search/finder";
 const path27 = "/search/container_timeline";
+const path28 = "/huati/discovery_home_bottom_channel_list";
+// const path29 = "/statuses/unread_topic_timeline";
 
 const url = $request.url;
 let body = $response.body;
@@ -44,6 +46,20 @@ if (
     if (obj.ad) obj.ad = [];
     if (obj.num) obj.num = obj.original_num;
     if (obj.trends) obj.trends = [];
+    if (obj.cards) {
+        if (obj.cards.length > 0) {
+            // obj.cards.splice(0, 2);
+            var data = obj.cards;
+            for (var i in data) {
+                let element = obj.cards[i];
+                if (element.card_type != 9) {
+                    data[i] = null;
+                    obj.cards.splice(i, 1);
+                    // console.log(i);
+                }
+            }
+        }
+    }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path3) != -1) {
     let obj = JSON.parse(body);
@@ -151,7 +167,13 @@ if (
         }
     }
     body = JSON.stringify(obj);
-}
+} else if (url.indexOf(path28) != -1) {
+    let obj = JSON.parse(body);
+    if (obj.channel_list) {
+        obj.channel_list.splice(1);
+    }
+    body = JSON.stringify(obj);
+} 
 $done({ body });
 
 function filter_timeline_statuses(statuses) {
