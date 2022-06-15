@@ -2,7 +2,7 @@
 README:https://github.com/DualSubs/DualSubs/
 */
 
-const $ = new Env("DualSubs v0.4.1-youtube-player");
+const $ = new Env("DualSubs v0.4.2-youtube-player");
 const URL = new URLs();
 
 const DataBase = {
@@ -15,13 +15,7 @@ const DataBase = {
 	"Default": {
 		"Settings":{"Switch":true,"Types":["Official","Google","GoogleCloud","Azure","DeepL"],"Type":"Google","Languages":["ZH","EN"],"Language":"ZH","External":{"URL":null,"Offset":0,"ShowOnly":false},"Position":"Forward","CacheSize":6,"Tolerance":1000},
 		"Configs": {
-			"Languages":{"AUTO":"","AR":["ar","ar-001"],"BG":["bg","bg-BG"],"CS":["cs","cs-CZ"],"DA":["da","da-DK"],"DE":["de","de-DE"],"EL":["el","el-GR"],"EN":["en","en-US","en-GB","en-UK","en-CA"],"EN-CA":["en-CA","en"],"EN-GB":["en-UK","en"],"EN-US":["en-US","en"],"EN-US SDH":["en-US SDH","en-US","en"],"ES":["es","es-419","es-ES","es-419 SDH"],"ES-419":["es-419","es"],"ES-419 SDH":["es-419 SDH","es-419","es"],"ES-ES":["es-ES","es"],"ET":["et","et-EE"],"FI":["fi","fi-FI"],"FR":["fr","fr-CA","fr-FR"],"FR-CA":["fr-CA","fr"],"FR-DR":["fr-FR","fr"],"HU":["hu","hu-HU"],"ID":["id","id-id"],"IT":["it","it-IT"],"JA":["ja","ja-JP"],"KO":["ko","ko-KR"],"LT":["lt","lt-LT"],"LV":["lv","lv-LV"],"NL":["nl","nl-NL"],"NO":["no","nb-NO"],"PL":["pl","pl-PL"],"PT":["pt","pt-PT","pt-BR"],"PT-PT":["pt-PT","pt"],"PT-BR":["pt-BR","pt"],"RO":["ro","ro-RO"],"RU":["ru","ru-RU"],"SK":["sk","sk-SK"],"SL":["sl","sl-SI"],"SV":["sv","sv-SE"],"IS":["is","is-IS"],"ZH":["zh","cmn"],"ZH-CN":["zh-CN","zh-Hans","cmn-Hans"],"ZH-HANS":["zh-Hans","cmn-Hans","zh-CN"],"ZH-HK":["zh-HK","yue-Hant","yue"],"ZH-TW":["zh-TW","zh-Hant","cmn-Hant"],"ZH-HANT":["zh-Hant","cmn-Hant","zh-TW"],"YUE":["yue","yue-Hant"],"YUE-HK":["yue-Hant","yue"]}
-		}
-	},
-	"Hulu": {
-		"Configs": {
-			"Languages":{"AR":"ar-001","BG":"bul","CS":"ces","DA":"dan","DE":"deu","EL":"ell","EN":"eng","EN-GB":"eng","EN-US":"eng","EN-US SDH":"eng","ES":"spa","ES-419":"spa","ES-ES":"spa","ET":"est","FI":"fin","FR":"fra","HU":"hun","IT":"ita","JA":"jpn","KO":"kor","LT":"lit","LV":"lav","NL":"nld","NO":"nor","PL":"pol","PT":"por","PT-PT":"por","PT-BR":"por","RO":"ron","RU":"rus","SK":"slk","SL":"slv","SV":"swe","IS":"isl","ZH":"zh","ZH-HANS":"zho","ZH-HK":"zho","ZH-HANT":"zho"}
-		}
+			"Languages":{"AUTO":"","AR":["ar","ar-001"],"BG":["bg","bg-BG","bul"],"CS":["cs","cs-CZ","ces"],"DA":["da","da-DK","dan"],"DE":["de","de-DE","deu"],"EL":["el","el-GR","ell"],"EN":["en","en-US","eng","en-GB","en-UK","en-CA"],"EN-CA":["en-CA","en","eng"],"EN-GB":["en-UK","en","eng"],"EN-US":["en-US","en","eng"],"EN-US SDH":["en-US SDH","en-US","en","eng"],"ES":["es","es-419","es-ES","spa","es-419 SDH"],"ES-419":["es-419","es","spa"],"ES-419 SDH":["es-419 SDH","es-419","es","spa"],"ES-ES":["es-ES","es","spa"],"ET":["et","et-EE","est"],"FI":["fi","fi-FI","fin"],"FR":["fr","fr-CA","fr-FR","fra"],"FR-CA":["fr-CA","fr","fra"],"FR-DR":["fr-FR","fr","fra"],"HU":["hu","hu-HU","hun"],"ID":["id","id-id"],"IT":["it","it-IT","ita"],"JA":["ja","ja-JP","jpn"],"KO":["ko","ko-KR","kor"],"LT":["lt","lt-LT","lit"],"LV":["lv","lv-LV","lav"],"NL":["nl","nl-NL","nld"],"NO":["no","nb-NO","nor"],"PL":["pl","pl-PL"],"PT":["pt","pt-PT","pt-BR","por"],"PT-PT":["pt-PT","pt","por"],"PT-BR":["pt-BR","pt","por"],"RO":["ro","ro-RO","ron"],"RU":["ru","ru-RU","rus"],"SK":["sk","sk-SK","slk"],"SL":["sl","sl-SI","slv"],"SV":["sv","sv-SE","swe"],"IS":["is","is-IS","isl"],"ZH":["zh","cmn","zho"],"ZH-CN":["zh-CN","zh-Hans","cmn-Hans","zho"],"ZH-HANS":["zh-Hans","cmn-Hans","zh-CN","zho"],"ZH-HK":["zh-HK","yue-Hant","yue","zho"],"ZH-TW":["zh-TW","zh-Hant","cmn-Hant","zho"],"ZH-HANT":["zh-Hant","cmn-Hant","zh-TW","zho"],"YUE":["yue","yue-Hant","zho"],"YUE-HK":["yue-Hant","yue","zho"]}		}
 	},
 	"YouTube": {
 		"Configs": {
@@ -112,14 +106,14 @@ delete $request.headers["Range"]
 /***************** Async Function *****************/
 /**
  * Get Environment Variables
- * https://github.com/VirgilClyne/VirgilClyne/blob/main/function/getENV/getENV.min.js
+ * @link https://github.com/VirgilClyne/VirgilClyne/blob/main/function/getENV/getENV.min.js
  * @author VirgilClyne
  * @param {String} t - Persistent Store Key
  * @param {String} e - Platform Name
- * @param {Object} n - Default DataBase
+ * @param {Object} n - Default Database
  * @return {Promise<*>}
  */
-async function getENV(t,e,n){let i=$.getjson(t,n),s=i?.[e]?.Settings||n?.[e]?.Settings||n?.Default?.Settings,g=i?.[e]?.Configs||n?.[e]?.Configs||n?.Default?.Configs,f=i?.[e]?.Caches||void 0;if("string"==typeof f&&(f=JSON.parse(f)),"undefined"!=typeof $argument){if($argument){let t=Object.fromEntries($argument.split("&").map((t=>t.split("=")))),e={};for(var a in t)o(e,a,t[a]);Object.assign(s,e)}function o(t,e,n){e.split(".").reduce(((t,i,s)=>t[i]=e.split(".").length===++s?n:t[i]||{}),t)}}return{Settings:s,Caches:f,Configs:g}}
+async function getENV(t,e,n){let i=$.getjson(t,n),s={};if("undefined"!=typeof $argument&&Boolean($argument)){let t=Object.fromEntries($argument.split("&").map((t=>t.split("="))));for(let e in t)f(s,e,t[e])}let g={...n?.Default?.Settings,...n?.[e]?.Settings,...i?.[e]?.Settings,...s},o={...n?.Default?.Configs,...n?.[e]?.Configs,...i?.[e]?.Configs},a=i?.[e]?.Caches||void 0;return"string"==typeof a&&(a=JSON.parse(a)),{Settings:g,Caches:a,Configs:o};function f(t,e,n){e.split(".").reduce(((t,i,s)=>t[i]=e.split(".").length===++s?n:t[i]||{}),t)}}
 
 /**
  * Set Environment Variables
