@@ -313,7 +313,7 @@ URL-REGEX,^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg,REJECT
 # > 新浪
 # URL-REGEX,^https?+:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(?>action|sdk)ad\.php,REJECT
 # URL-REGEX,^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua,REJECT
-URL-REGEX,^https?+:\/\/weibointl\.(m?api)\.weibo\.(cn|com)\/portal\.php\?a=get_coopen_ads,REJECT
+URL-REGEX,^https?+:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads,REJECT
 
 # > 移除 YouTube 页面广告和视频贴片广告
 AND,((PROTOCOL,UDP),(OR,((DOMAIN-SUFFIX,googlevideo.com),(DOMAIN,www.youtube.com),(DOMAIN,s.youtube.com)))),REJECT-NO-DROP
@@ -502,7 +502,7 @@ ctier=[A-Z] citer=A 302
 ^https?:\/\/.+?\/music\/common\/upload\/t_splash_info\/ - reject
 
 # > 微博国际
-^https?:\/\/weibointl\.(m?api)\.weibo\.(cn|com)\/portal\.php\?a=get_coopen_ads - reject
+^https?:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads - reject
 
 # > 美团
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture - reject
@@ -682,7 +682,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/api\.rr\.tv\/.*?(getAll|Version) - reject
 ^https?:\/\/api\.rr\.tv\/ad\/ - reject
 ^https?:\/\/api\.vuevideo\.net\/api\/v\d\/ad\/ - reject
-;^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/statuses\/extend\?gsid= - reject
+;^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/extend\?gsid= - reject
 ^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad - reject
 ^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations - reject
 ^https?:\/\/api\.zhihu\.com\/commercial_api\/ - reject
@@ -830,7 +830,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? - reject
 ^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
 # ^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua - reject
-^https?:\/\/weibointl\.(m?api)\.weibo\.(cn|com)\/portal\.php\?a=get_coopen_ads - reject
+^https?:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads - reject
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
 ^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/ - reject
 ^https?:\/\/www\.cntv\.cn\/nettv\/adp\/ - reject
@@ -864,38 +864,38 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/luck\.sc\.weibo\.com\/aj\/Action\/indexInfo$ data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博推荐
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/statuses\/unread_hot_timeline\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/unread_hot_timeline\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博发现
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/search\/container_discover\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/search\/container_discover\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博网络检测
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/carrier\/get\/info data="https://hub.qste.com/Mock/Weibo/carrier.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/carrier\/get\/info data="https://hub.qste.com/Mock/Weibo/carrier.json"
 
 # > 微博订单
 ^https?:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/prolist data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博视频推荐
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/redpacket data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/community_tab data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/!\/multimedia\/playback\/batch_get data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/!\/multimedia\/video\/comments\/get_comments_order_by_hot data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/tiny_stream_channel_list data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/tiny_stream_video_list data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/video\/redpacket data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/video\/community_tab data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/multimedia\/playback\/batch_get data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/multimedia\/video\/comments\/get_comments_order_by_hot data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/video\/tiny_stream_channel_list data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/video\/tiny_stream_video_list data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博其它
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/!\/multimedia\/video\/red_package\/grow_follower\/active_uids data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/client\/tabbar data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/push\/daily data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/page\/get_fragment data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/push\/active data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/multimedia\/video\/red_package\/grow_follower\/active_uids data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/client\/tabbar data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/push\/daily data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/page\/get_fragment data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/push\/active data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/m\.weibo\.cn\/c\/checkin data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/video\/machine data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/video\/machine data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/fastimage\.uve\.weibo\.com\/interface\/sdk\/getad\.php$ data="https://hub.qste.com/Mock/Weibo/fastimage.json"
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/actionpro\.php data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/sdkclick\.uve\.weibo\.com\/interface\/sdk\/sdkclick\.php data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/hot\/repost_daily data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/hot\/repost_daily data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 飞常准
 ^https?:\/\/api\.cdmcaac\.com\/ad\/ data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
