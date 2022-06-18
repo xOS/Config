@@ -8,6 +8,8 @@ DOMAIN-SUFFIX, appleimg.com,DIRECT
 DOMAIN-SUFFIX, free.ac.cn,DIRECT
 DOMAIN-SUFFIX, ip.hn.cn,DIRECT
 DOMAIN-SUFFIX, bt.sh.cn,DIRECT
+DOMAIN-SUFFIX, nange.eu.org,DIRECT
+DOMAIN-SUFFIX, edgenode.eu.org,DIRECT
 
 # > 楠格
 DOMAIN, nange.cn,DIRECT
