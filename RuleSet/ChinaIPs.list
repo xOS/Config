@@ -9320,6 +9320,7 @@ IP-CIDR6,2600:70ff:a89b::/48,no-resolve
 IP-CIDR6,2600:70ff:a89c::/47,no-resolve
 IP-CIDR6,2602:fe9f:a00::/48,no-resolve
 IP-CIDR6,2605:3e80:1b00::/40,no-resolve
+IP-CIDR6,2605:a7c0:19::/48,no-resolve
 IP-CIDR6,2606:54c0:1980:100::/64,no-resolve
 IP-CIDR6,2606:54c0:1980:108::/64,no-resolve
 IP-CIDR6,2606:54c0:1980:10::/64,no-resolve
@@ -10396,3 +10397,4 @@ IP-CIDR6,2a12:49c4:3180::/41,no-resolve
 IP-CIDR6,2a12:49c4:3200::/43,no-resolve
 IP-CIDR6,2a12:49c4:3e80::/42,no-resolve
 IP-CIDR6,2a12:49c4:3ec0::/43,no-resolve
+IP-CIDR6,2a13:1800::/29,no-resolve
