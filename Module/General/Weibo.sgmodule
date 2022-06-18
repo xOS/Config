@@ -39,8 +39,8 @@ URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/search\/container_discover\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博超话看帖
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/!\/huati\/discovery_home_bottom_channel_list\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/statuses\/unread_topic_timeline\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/huati\/discovery_home_bottom_channel_list\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/unread_topic_timeline\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博网络检测
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/carrier\/get\/info data="https://hub.qste.com/Mock/Weibo/carrier.json"
@@ -68,7 +68,7 @@ URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/actionpro\.php data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/sdkclick\.uve\.weibo\.com\/interface\/sdk\/sdkclick\.php data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkconfig\.php data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/hot\/repost_daily data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/hot\/repost_daily data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 [Script]
 # > 微博个人信息
@@ -76,7 +76,7 @@ URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
 
 会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.cn\/aj\/vipcenter\/home,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/VIPCenter.js
 
-消息列表 = type=http-response,pattern=^https?:\/\/(m?api)\.weibo\.(cn|com)\/2\/(direct_messages\/user_list|messageflow\/notice)\?gsid=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Message.js
+消息列表 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(direct_messages\/user_list|messageflow\/notice)\?gsid=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Message.js
 
 # > 微博去广告
 扩展 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)/2/(profile/(me|statuses)|searchall|statuses/(unread_hot_timeline|extend|video_mixtimeline)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|container/get_item|search/container_discover),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Weibo.js
