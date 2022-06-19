@@ -3132,6 +3132,7 @@ IP-CIDR,156.107.160.0/24,no-resolve
 IP-CIDR,156.107.170.0/24,no-resolve
 IP-CIDR,156.107.178.0/23,no-resolve
 IP-CIDR,156.107.180.0/23,no-resolve
+IP-CIDR,156.154.141.0/24,no-resolve
 IP-CIDR,156.154.62.0/23,no-resolve
 IP-CIDR,156.237.2.0/23,no-resolve
 IP-CIDR,157.0.0.0/16,no-resolve
