@@ -94,4 +94,4 @@ URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
 微博去广告配置注入 = type=cron,cronexp="0 0 1 ? * MON",debug=1,script-path=https://hub.qste.com/Script/Weibo/Config.js
 
 [MITM]
-hostname = %APPEND% *.uve.weibo.com, m?api.weibo.cn, m?api.weibo.com, h5.sinaimg.cn, new.vip.weibo.cn, *.sc.weibo.com, captcha.weibo.com, wx*.sinaimg.cn, js.t.sinajs.cn
+hostname = %APPEND% *.uve.weibo.com, *api.weibo.cn, *api.weibo.com, h5.sinaimg.cn, new.vip.weibo.cn, *.sc.weibo.com, captcha.weibo.com, wx*.sinaimg.cn, js.t.sinajs.cn
