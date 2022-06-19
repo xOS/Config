@@ -1,12 +1,12 @@
 # > Twitter
-HOST-KEYWORD,twitter,Proxy
-HOST-SUFFIX,periscope.tv,Proxy
-HOST-SUFFIX,pscp.tv,Proxy
-HOST-SUFFIX,t.co,Proxy
-HOST-SUFFIX,twimg.co,Proxy
-HOST-SUFFIX,twimg.com,Proxy
-HOST-SUFFIX,twimg.org,Proxy
-HOST-SUFFIX,twitpic.com,Proxy
-HOST-SUFFIX,twitter.com,Proxy
-HOST-SUFFIX,twitter.jp,Proxy
-HOST-SUFFIX,vine.co,Proxy
+DOMAIN-KEYWORD,twitter,PROXY
+DOMAIN-SUFFIX,periscope.tv,PROXY
+DOMAIN-SUFFIX,pscp.tv,PROXY
+DOMAIN-SUFFIX,t.co,PROXY
+DOMAIN-SUFFIX,twimg.co,PROXY
+DOMAIN-SUFFIX,twimg.com,PROXY
+DOMAIN-SUFFIX,twimg.org,PROXY
+DOMAIN-SUFFIX,twitpic.com,PROXY
+DOMAIN-SUFFIX,twitter.com,PROXY
+DOMAIN-SUFFIX,twitter.jp,PROXY
+DOMAIN-SUFFIX,vine.co,PROXY
