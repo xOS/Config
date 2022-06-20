@@ -28,6 +28,9 @@ DOMAIN-SUFFIX,xmpush.xiaomi.com,REJECT
 DOMAIN,g.cn.miaozhen.com,REJECT
 
 # > 抖音商城
+DOMAIN-KEYWORD,minigame,REJECT
+DOMAIN-KEYWORD,ecombd,REJECT
+DOMAIN-SUFFIX,jinritemai.com,REJECT
 DOMAIN,ecom.snssdk.com,REJECT
 DOMAIN,ecom.douyin.com,REJECT
 DOMAIN,ecom.amemv.com,REJECT
