@@ -8,6 +8,7 @@ DOMAIN,cvws.icloud-content.com,PROXY
 DOMAIN,developer.apple.com,PROXY
 DOMAIN,hls.itunes.apple.com,PROXY
 DOMAIN,gsa.apple.com,PROXY
+DOMAIN,gsas.apple.com,PROXY
 DOMAIN-SUFFIX,itunes.apple.com,PROXY
 DOMAIN,lookup-api.apple.com,PROXY
 DOMAIN,sandbox.itunes.apple.com,PROXY
