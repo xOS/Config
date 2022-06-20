@@ -12,9 +12,9 @@ obj.data.baseInfo.vip_identity = 1;
 if (obj.data.gobuy) {
     obj.data.gobuy = {};
 }
-let i = obj.data.card_list.length;
-obj.data.card_list[i].show_act = false;
-obj.data.card_list[i].actbg_config = {};
+let n = obj.data.card_list.length;
+obj.data.card_list[n].show_act = false;
+obj.data.card_list[n].actbg_config = {};
 obj.data.card_list[0].show_act = false;
 obj.data.card_list[0].actbg_config = {};
 obj.data.card_list[0].img = 'https://h5.sinaimg.cn/upload/1004/14/2021/01/22/VIIPcard3x.png';
