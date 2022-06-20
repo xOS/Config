@@ -12,7 +12,7 @@ obj.data.baseInfo.vip_identity = 1;
 if (obj.data.gobuy) {
     obj.data.gobuy = {};
 }
-let n = obj.data.card_list.length;
+let n = obj.data.card_list.length-1;
 obj.data.card_list[n].show_act = false;
 obj.data.card_list[n].actbg_config = {};
 obj.data.card_list[0].show_act = false;
