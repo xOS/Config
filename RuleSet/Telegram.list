@@ -1,5 +1,10 @@
 # > Telegram
 # https://core.telegram.org/resources/cidr.txt
+IP-ASN,62041,PROXY
+IP-ASN,62014,PROXY
+IP-ASN,59930,PROXY
+IP-ASN,44907,PROXY
+IP-ASN,211157,PROXY
 DOMAIN-KEYWORD,nicegram,PROXY
 DOMAIN-KEYWORD,telegram,PROXY
 DOMAIN-SUFFIX,comments.app,PROXY
