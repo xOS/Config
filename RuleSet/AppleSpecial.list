@@ -1,4 +1,7 @@
 # > Apple Special
+IP-ASN,714,DIRECT
+IP-ASN,6185,DIRECT
+IP-ASN,2709,DIRECT
 USER-AGENT,TestFlight*,PROXY
 USER-AGENT,com.apple.trustd*,PROXY
 PROCESS-NAME,lookupviewservice,PROXY
