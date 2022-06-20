@@ -12,6 +12,9 @@ obj.data.baseInfo.vip_identity = 1;
 if (obj.data.gobuy) {
     obj.data.gobuy = {};
 }
+let i = obj.data.card_list.length;
+obj.data.card_list[i].show_act = false;
+obj.data.card_list[i].actbg_config = {};
 obj.data.card_list[0].show_act = false;
 obj.data.card_list[0].actbg_config = {};
 obj.data.card_list[0].img = 'https://h5.sinaimg.cn/upload/1004/14/2021/01/22/VIIPcard3x.png';
@@ -32,6 +35,7 @@ else if (obj.data.card_list) {
     obj.data.card_list = obj.data.card_list.filter(element => !(element['m_id'] == '2080'));
     obj.data.card_list = obj.data.card_list.filter(element => !(element['m_id'] == '2480'));
     obj.data.card_list = obj.data.card_list.filter(element => !(element['m_id'] == '2530'));
+    obj.data.card_list = obj.data.card_list.filter(element => !(element['m_id'] == '3263'));
 }
 if (obj.data.card_list.Notice) obj.data.card_list.Notice = {};
 
