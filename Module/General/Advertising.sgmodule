@@ -856,6 +856,7 @@ ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/(forum.php\?mod
 
 # > 会员中心弹窗
 ^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/vipcenter\/popalert data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/vipcenter\/userdata data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博推荐
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/unread_hot_timeline\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
