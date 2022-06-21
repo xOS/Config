@@ -1,4 +1,5 @@
 var obj = JSON.parse($response.body);
+if (obj.data.baseInfo) {
 obj.data.baseInfo.user_info.s_type = 1;
 obj.data.baseInfo.user_info.desc = '终身会员';
 obj.data.baseInfo.user_info.level = '7';
@@ -11,6 +12,7 @@ obj.data.baseInfo.user_info.vip_identity = 1;
 obj.data.baseInfo.vip_identity = 1;
 if (obj.data.gobuy) {
     obj.data.gobuy = {};
+ }
 }
 let n = obj.data.card_list.length - 1;
 obj.data.card_list[n].show_act = false;
