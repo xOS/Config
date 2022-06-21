@@ -879,7 +879,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/unread_hot_timeline\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博话题按钮红点
-^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/huati\/discovery_home_bottom_getdotinfo data="https://hub.nan.ge/Mock/Blank/Blank_Dict.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/huati\/discovery_home_bottom_getdotinfo data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博超话看帖
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/huati\/discovery_home_bottom_channel_list\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
