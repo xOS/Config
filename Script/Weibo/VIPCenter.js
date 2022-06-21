@@ -10,9 +10,9 @@ obj.data.baseInfo.user_info.identity = '1,0';
 obj.data.baseInfo.user_info.svip_desc = '您已经是微博高级会员';
 obj.data.baseInfo.user_info.vip_identity = 1;
 obj.data.baseInfo.vip_identity = 1;
+}
 if (obj.data.gobuy) {
     obj.data.gobuy = {};
- }
 }
 let n = obj.data.card_list.length - 1;
 obj.data.card_list[n].show_act = false;
