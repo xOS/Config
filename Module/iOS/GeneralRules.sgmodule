@@ -115,6 +115,9 @@ force-http-engine-hosts = %APPEND% *.intsig.net
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.qste.com/Mock/Weibo/avatar_vip_golden.png"
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.qste.com/Mock/Weibo/feed_icon_100vip_7_default.png"
 
+# > 会员中心弹窗
+^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/vipcenter\/popalert data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+
 # > Nicegram
 ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} data="https://hub.qste.com/Mock/Nicegram/premiumAccess.json" header="Content-Type: text/plain"
 
@@ -210,7 +213,7 @@ Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bo
 # > 微博个人信息
 主页 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/profile\?gsid=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Profile.js
 个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/users\/(show|relation),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/UserShow.js
-会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.cn\/aj\/vipcenter\/home,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/VIPCenter.js
+会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.cn\/aj\/vipcenter\/(userdata|home),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/VIPCenter.js
 消息列表 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(direct_messages\/user_list|messageflow\/notice)\?gsid=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Message.js
 
 # > 搜狗阅读 VIP
