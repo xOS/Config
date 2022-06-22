@@ -3,6 +3,10 @@
 #!system=ios
 
 [General]
+# > 跳过代理
+skip-proxy = %APPEND% iosapps.itunes.apple.com
+
+# > 强制走 HTTP 
 force-http-engine-hosts = %APPEND% *.intsig.net
 
 [Panel]
@@ -227,5 +231,8 @@ Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/su
 Player = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$, requires-body=1, max-size=0, timeout=30, script-path=https://hub.qste.com/Script/YouTube/Player.js
 TimedText = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$, requires-body=1, max-size=0, script-path=https://hub.qste.com/Script/YouTube/TimedText.js
 
+# > TestFlight 账户管理
+TestFlight 账户管理 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://hub.qste.com/Script/Apple/TestFlight.js
+
 [MITM]
-hostname = %APPEND% -hub.qste.com, -api.qste.com, *nange.cn, *qste.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, *.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, weibo.cn, *api.weibo.cn, *api.weibo.com, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, *.smoot.apple.com, *.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.youtube.com
+hostname = %APPEND% -hub.qste.com, -api.qste.com, *nange.cn, *qste.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, *.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, weibo.cn, *api.weibo.cn, *api.weibo.com, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, *.smoot.apple.com, *.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, www.google.cn, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.youtube.com, testflight.apple.com
