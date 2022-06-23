@@ -71,14 +71,11 @@ DOMAIN-SUFFIX,stun.qqlive.qq.com,REJECT
 DOMAIN-SUFFIX,p2p.qq.com,REJECT
 DOMAIN-SUFFIX,apponline.research.qq.com,REJECT
 DOMAIN-SUFFIX,voreader.reader.qq.com,REJECT
-DOMAIN-SUFFIX,mtrace.qq.com,REJECT
 DOMAIN-SUFFIX,str.mdt.qq.com,REJECT
 DOMAIN-SUFFIX,pgdt.gtimg.cn,REJECT
 DOMAIN-SUFFIX,omgid.qq.com,REJECT
 DOMAIN-SUFFIX,ios.rqd.qq.com,REJECT
-#DOMAIN-SUFFIX,beaconcdn.qq.com,REJECT
 DOMAIN-SUFFIX,beacon.qq.com,REJECT
-#DOMAIN-SUFFIX,cdn-go.cn,REJECT
 DOMAIN-SUFFIX,btrace.video.qq.com,REJECT
 DOMAIN-SUFFIX,c.l.qq.com,REJECT
 DOMAIN-SUFFIX,livep.l.qq.com,REJECT
@@ -124,7 +121,6 @@ DOMAIN-SUFFIX,appsupport.qq.com,REJECT
 DOMAIN-SUFFIX,astat.bugly.qq.com,REJECT
 DOMAIN-SUFFIX,astrategy.beacon.qq.com,REJECT
 DOMAIN-SUFFIX,bs.l.qq.com,REJECT
-DOMAIN-SUFFIX,btrace.qq.com,REJECT
 DOMAIN-SUFFIX,bugly.qq.com,REJECT
 DOMAIN-SUFFIX,bugreportv2.qq.com,REJECT
 DOMAIN-SUFFIX,c.gdt.qq.com,REJECT
@@ -227,7 +223,6 @@ DOMAIN-SUFFIX,tj.b.qq.com,REJECT
 DOMAIN-SUFFIX,tj.video.qq.com,REJECT
 DOMAIN-SUFFIX,tools.3g.qq.com,REJECT
 DOMAIN-SUFFIX,tpush.html5.qq.com,REJECT
-DOMAIN-SUFFIX,trace.qq.com,REJECT
 DOMAIN-SUFFIX,union.discuz.qq.com,REJECT
 DOMAIN-SUFFIX,up-hl.3g.qq.com,REJECT
 DOMAIN-SUFFIX,updatecenter.qq.com,REJECT
