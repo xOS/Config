@@ -931,7 +931,7 @@ ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/(forum.php\?mod
 ^https?:\/\/app-api\.poco\.cn\/v1_1\/rank\/get_app_works_info_banner data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > TikTok 消息中心用户推荐
-^https?:\/\/api\.tiktokv\.com\/aweme\/v1\/profile\/user\/recommend?\(.*)&scenario=1 data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/api\.tiktokv\.com\/aweme\/v1\/profile\/user\/recommend(\/|)\?\(.*)&scenario=1 data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 扫描全能王
 ^https?:\/\/open\.camscanner\.com\/sync\/get_ad_ data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
