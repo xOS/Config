@@ -1401,7 +1401,7 @@ Req = type=http-request,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/,scri
 Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#scripting$,requires-body=1,script-path=https://hub.qste.com/Script/DouYin/DouYin.js
 
 # > 今日头条（专业版）
-头条净化 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com\/(api\/news\/feed\/v88\/|wallet\/portal\/api\/v3\/prefetch\/settings)\?session_id=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ByteDance/Toutiao.js
+头条净化 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com\/(api\/news\/feed\/v88\/|wallet\/portal\/api\/v3\/prefetch\/settings),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ByteDance/Toutiao.js
 
 # > 天翼云盘
 homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/client\/homePages\.action,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Telecom/CTCloud.js
