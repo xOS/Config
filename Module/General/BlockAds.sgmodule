@@ -834,8 +834,7 @@ Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#s
 vipDaily = type=http-response,pattern=^https?:\/\/.+\.zhuishushenqi\.com\/activity\/vipDaily\/info\?tag=vip,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ZhuiShuShenQi/vipDaily.js
 
 # > 今日头条（专业版）
-Feed 过滤所有视频 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com\/api\/news\/feed\/v88\/\?session_id=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Toutiao/Feed.js
-钱包净化 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com\/wallet\/portal\/api\/v3\/prefetch\/settings\?session_id=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Toutiao/Wallet.js
+头条净化 = type=http-response,pattern=^https?:\/\/.+\.snssdk\.com\/(api\/news\/feed\/v88\/|wallet\/portal\/api\/v3\/prefetch\/settings),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ByteDance/Toutiao.js
 
 # > 天翼云盘
 homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/client\/homePages\.action,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Telecom/CTCloud.js
