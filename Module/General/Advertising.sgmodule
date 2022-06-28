@@ -393,13 +393,13 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT-TINYGIF
 # > 韩剧TV片头广告
 ^http:\/\/static\.hanju\.koudaibaobao\.com\/img\/pub\/.*?.mp4$ - reject
 
-# > YouTube
-ctier=[A-Z] citer=A 302
-(^https?:\/\/(?!redirector)[\w-]+\.googlevideo\.com\/((?!dclk_video_ads).)+)(ctier=L)(&.+) $1$3 302
-^https?:\/\/[\w-]+\.googlevideo\.com\/((?!(dclk_video_ads|videoplayback)).)+&(oad|ctier) - reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
-^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= - reject
+# > YouTube ，当前为 YouTube Premium ，故暂时注释掉
+# ctier=[A-Z] citer=A 302
+# (^https?:\/\/(?!redirector)[\w-]+\.googlevideo\.com\/((?!dclk_video_ads).)+)(ctier=L)(&.+) $1$3 302
+# ^https?:\/\/[\w-]+\.googlevideo\.com\/((?!(dclk_video_ads|videoplayback)).)+&(oad|ctier) - reject
+# ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
+# ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
+# ^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= - reject
 
 # > 颇可
 ^https?:\/\/web-api\.poco\.cn\/.+\/rank\/get_wap_works_info_banner - reject
@@ -565,7 +565,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
 ^https?:\/\/\w+\.kingsoft-office-service\.com\/ad - reject
 ^https?:\/\/\w+\.l\.qq\.com - reject
-^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking) - reject
+;^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking) - reject
 ^https?:\/\/\w{6}.com1.z0.glb.clouddn.com - reject
 ^https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com - reject
 ^https?:\/\/a0b\w{2}\.com - reject
@@ -829,7 +829,7 @@ Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#s
 账户信息 = type=http-response,pattern=^https:\/\/.+\.zhuishushenqi\.com\/user\/account\?token=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ZhuiShuShenQi/Account.js
 vipDaily = type=http-response,pattern=^https?:\/\/.+\.zhuishushenqi\.com\/activity\/vipDaily\/info\?tag=vip,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ZhuiShuShenQi/vipDaily.js
 
-# > 今日头条（专业版）
+# > 今日头条
 头条净化 = type=http-response,pattern=^https?:\/\/.+\.(snssdk|toutiaoapi)\.com\/(api\/news\/feed\/v88|wallet\/portal\/api\/v3\/prefetch\/settings),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ByteDance/Toutiao.js
 
 # > TextNow
