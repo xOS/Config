@@ -1400,7 +1400,7 @@ WeChat = script-path=https://hub.qste.com/Script/WeChat/WeChat.js,type=http-requ
 Req = type=http-request,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/,script-path=https://hub.qste.com/Script/DouYin/DouYin.js
 Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#scripting$,requires-body=1,script-path=https://hub.qste.com/Script/DouYin/DouYin.js
 
-# > 今日头条（专业版）
+# > 今日头条
 头条净化 = type=http-response,pattern=^https?:\/\/.+\.(snssdk|toutiaoapi)\.com\/(api\/news\/feed\/v88|wallet\/portal\/api\/v3\/prefetch\/settings),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/ByteDance/Toutiao.js
 
 # > 天翼云盘
