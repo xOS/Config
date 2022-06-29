@@ -21,7 +21,7 @@ hide-vpn-icon = true
 tls-provider = default
 
 # > GeoIP 数据库
-geoip-maxmind-url = https://hub.qste.com/GeoIP/Country.mmdb
+geoip-maxmind-url = https://hub.qste.com/GeoIP/Country-lite.mmdb
 
 # > 当开启时，如果在 [Host] 段有为某主机名指定 IP，在使用代理访问该主机名时，将使用该 IP 地址进行代理请求，不再依赖远端解析。
 use-local-host-item-for-proxy = true

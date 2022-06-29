@@ -871,6 +871,9 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # > 微博推荐
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/unread_hot_timeline\?gsid= data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
+# > 获取设备型号
+^https?:\/\/m?api\.weibo\.c(n|om)\/device\/get data="https://hub.qste.com/Mock/Weibo/getDevice.json"
+
 # > 微博话题按钮红点
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/huati\/discovery_home_bottom_getdotinfo data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
@@ -896,6 +899,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/video\/tiny_stream_video_list data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 微博其它
+^https?:\/\/letsgo\.e\.weibo\.com\/stracker\/fe\/report data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/multimedia\/video\/red_package\/grow_follower\/active_uids data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/client\/tabbar data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/push\/daily data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
@@ -1301,7 +1305,7 @@ Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bo
 # > 微博个人信息
 个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation))\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Profile.js
 
-会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/vipcenter\/home,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/VIPCenter.js
+会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/VIPCenter.js
 
 消息列表 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(direct_messages\/user_list|messageflow\/notice)\?gsid=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Message.js
 
