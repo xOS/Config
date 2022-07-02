@@ -4598,6 +4598,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.sp-trk.com
 .acelogger.heraldcorp.com
 .t.hypers.com.cn
 .log.ycapp.yiche.com
@@ -5566,6 +5567,7 @@
 .m.dubcm.com
 .ma.news.naver.com
 .ma.tarnkappe.info
+.posthog.tarnkappe.info
 .ma.zoho.eu
 .magnetrack.klangoo.com
 .mamka.aviasales.ru
@@ -6426,7 +6428,6 @@
 .trck.cyberport.de
 .trck.spoteffects.net
 .treasuredata.com
-.treg.hearstnp.com
 .triggertag.gorillanation.com
 .trk.10ru.pt
 .trk.i0.cz
