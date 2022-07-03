@@ -5,8 +5,8 @@
 # > 跳过代理
 skip-proxy = %APPEND% localhost, *.local, passenger.t3go.cn, e.crashlytics.com, captive.apple.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, www.baidu.com, yunbusiness.ccb.com, 10.0.0.0/8, 100.64.0.0/10, 127.0.0.1/32, 169.254.0.0/16, 172.16.0.0/12, 192.168.0.0/16, 224.0.0.0/4, 240.0.0.0/4, ::1/128, fc00::/7, fd00::/8, fe80::/10, ff00::/8, 2001::/32, 2001:db8::/32, 2002::/16, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1, iosapps.itunes.apple.com
 
-# > TCP Force HTTP Hosts
-force-http-engine-hosts = %APPEND% *.intsig.net, *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.m?api\.weibo\.c(n|om), api.cloud.189.cn, boxjs.com, boxjs.net
+# > 强制使用 HTTP
+force-http-engine-hosts = %APPEND% *.intsig.net, *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.api.weibo.cn, weibointl.mapi.weibo.com, api.cloud.189.cn, boxjs.com, boxjs.net
 
 [Rule]
 # > 微博其它
@@ -1348,7 +1348,7 @@ Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.ap
 # > 阿里云盘
 推荐 = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/apps\/v1\/users\/apps\/widgets$,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/AliDrive/AliDrive.js
 
-# SVIP = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/(v2\/databox\/get_personal_info|business\/.+\/users\/vip\/info),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/AliDrive/SVIPInfo.js
+SVIP = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/(v2\/databox\/get_personal_info|business\/.+\/users\/vip\/info),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/AliDrive/SVIPInfo.js
 
 # > 哔哩哔哩
 # >> 整体栏的布局修改(包括“首页”右上角、下边 tab 等)
@@ -1411,8 +1411,7 @@ Resp = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#s
 homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/client\/homePages\.action,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Telecom/CTCloud.js
 
 # > TestFlight 账户管理
-TestFlight 请求 = type=http-request, pattern=^https?:\/\/testflight\.apple\.com\/(.+)(\?.*)?$, requires-body=1, script-path=https://hub.qste.com/Script/Apple/TestFlight_Req.js, argument=
-TestFlight 响应= type=http-response, pattern=^https?:\/\/testflight\.apple\.com\/(.+)(\?.*)?$, requires-body=1, script-path=https://hub.qste.com/Script/Apple/TestFlight_Resp.js, argument=
+TestFlight  = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://hub.qste.com/Script/Apple/TestFlight.js
 
 # > BoxJS
 BoxJs = type=http-request,pattern=^https?:\/\/boxjs\.(com|net),script-path=https://hub.qste.com/Script/BoxJS/BoxJS.js, requires-body=true, timeout=120
