@@ -5,7 +5,6 @@ const url = $request.url;
 
 if (!body) {
   $done({});
-  return;
 }
 
 if (url.indexOf(svip) != -1) {
