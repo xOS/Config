@@ -1,4 +1,4 @@
-const version = 'v0608.1';
+const version = 'v0703.3';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -267,13 +267,24 @@ function removeHomeVip(data) {
     data.header.desc.content = '微博认证：最美小仙女';
     // data.items[0].title.content = '0';
     let vipCenter = data.header.vipCenter;
+    let vipIcon = data.header.vipIcon;
+    let vipView = data.header.vipView;
     if (!vipCenter) {
         return data;
     }
-    vipCenter.icon.iconUrl = 'https://h5.sinaimg.cn/upload/1071/1468/2021/12/22/hy_dongtu.gif';
-    vipCenter.dot.iconUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/03/22/jiantougaocheng.png';
-    vipCenter.content.contents[2].content = '会员中心';
-    vipCenter.title.content = '会员中心';
+    if (vipCenter) {
+        if (vipCenter.icon) vipCenter.icon.iconUrl = 'https://h5.sinaimg.cn/upload/1071/1468/2021/12/22/hy_dongtu.gif';
+        if (vipCenter.dot) vipCenter.dot.iconUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/03/22/jiantougaocheng.png';
+        if (vipCenter.content.contents) vipCenter.content.contents[2].content = '会员中心';
+        if (vipCenter.title) vipCenter.title.content = '会员中心';
+    }
+
+    if (vipIcon) {
+        vipIcon.iconUrl = 'https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png';
+        vipIcon.style.width = '15';
+        vipIcon.style.height = '18';
+    }
+    if (vipView && vipView.content1 && vipView.content1.contents && vipView.content1.contents[2]) vipView.content1.contents[2].content = '您是尊贵的终身VIP用户';
     return data;
 }
 
@@ -420,6 +431,7 @@ function removeHome(data) {
         }
     }
     data.items = newItems;
+    if(data.moreInfo) data.moreInfo.noMore = true;
     return data;
 }
 
