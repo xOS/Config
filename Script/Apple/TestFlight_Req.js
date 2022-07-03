@@ -25,7 +25,7 @@ const DataBase = {
 		"Settings":{"Switch":true,"CountryCode":"US","newsPlusUser":true}
 	},
 	"TestFlight":{
-		"Settings":{"Switch":true,"CountryCode":"US","MultiAccount":false,"Universal":true}
+		"Settings":{"Switch":true,"CountryCode":"US","MultiAccount":true,"Universal":true}
 	},
 	"Default": {
 		"Settings":{"Switch":true},

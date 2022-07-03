@@ -6,7 +6,7 @@
 # > 跳过代理
 skip-proxy = %APPEND% iosapps.itunes.apple.com
 
-# > 强制走 HTTP 
+# > 强制使用 HTTP
 force-http-engine-hosts = %APPEND% *.intsig.net, boxjs.com, boxjs.net
 
 [Panel]
@@ -235,8 +235,7 @@ Player = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/youtubei
 TimedText = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$, requires-body=1, max-size=0, script-path=https://hub.qste.com/Script/YouTube/TimedText.js
 
 # > TestFlight 账户管理
-TestFlight 请求 = type=http-request, pattern=^https?:\/\/testflight\.apple\.com\/(.+)(\?.*)?$, requires-body=1, script-path=https://hub.qste.com/Script/Apple/TestFlight_Req.js, argument=
-TestFlight 响应= type=http-response, pattern=^https?:\/\/testflight\.apple\.com\/(.+)(\?.*)?$, requires-body=1, script-path=https://hub.qste.com/Script/Apple/TestFlight_Resp.js, argument=
+TestFlight  = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://hub.qste.com/Script/Apple/TestFlight.js
 
 # > BoxJS
 BoxJs = type=http-request,pattern=^https?:\/\/boxjs\.(com|net),script-path=https://hub.qste.com/Script/BoxJS/BoxJS.js, requires-body=true, timeout=120

@@ -3,6 +3,11 @@ const personal = "/personal";
 const svip = "/vip/info";
 const url = $request.url;
 
+if (!body) {
+  $done({});
+  return;
+}
+
 if (url.indexOf(svip) != -1) {
   if (body.vipList) {
     body.vipList[0] = {

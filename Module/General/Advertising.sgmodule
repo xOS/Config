@@ -2,7 +2,8 @@
 #!desc=日用夜用
 
 [General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.api.weibo.cn
+# > 强制使用 HTTP
+force-http-engine-hosts = %APPEND% *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.alipayobjects.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, *.miguvideo.com, wmapi.meituan.com, weibointl.api.weibo.cn, weibointl.mapi.weibo.com
 
 [Rule]
 # > 微博其它
