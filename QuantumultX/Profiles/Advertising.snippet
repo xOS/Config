@@ -485,6 +485,12 @@ HOST,dg.k.jd.com url reject
 # > 微博钱包
 (^https?:\/\/js\.t\.sinajs\.cn\/c2p\/sam\/frontend\/assets\/walletcache\.json|^https?:\/\/pay\.sc\.weibo\.com\/api\/client\/sdk\/app\/indexnew\/(index|person)|^https?:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/center) url script-response-body https://hub.qste.com/Script/Weibo/Wallet.js
 
+# > 微博个人信息
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\? url script-response-body https://hub.qste.com/Script/Weibo/Profile.js
+
+# > 微博会员中心
+^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index) url script-response-body https://hub.qste.com/Script/Weibo/VIPCenter.js
+
 # > 微博配置注入
 0 0 1 ? * MON https://hub.qste.com/Script/Weibo/Config.js, img-url=https://hub.qste.com/IconSet/Color/Apple_Update.png, tag=微博配置, enabled=true
 

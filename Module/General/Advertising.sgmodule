@@ -806,6 +806,12 @@ http-response ^https://app\.bilibili\.com/bilibili\.app\.dynamic\.v2\.Dynamic/Dy
 
 微博钱包 = type=http-response,pattern=(^https?:\/\/js\.t\.sinajs\.cn\/c2p\/sam\/frontend\/assets\/walletcache\.json|^https?:\/\/pay\.sc\.weibo\.com\/api\/client\/sdk\/app\/indexnew\/(index|person)),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Wallet.js
 
+# > 微博个人信息
+个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Profile.js
+
+# > 微博会员中心
+会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/VIPCenter.js
+
 # > 微博配置注入
 微博去广告配置注入 = type=cron,cronexp="0 0 1 ? * MON",debug=1,script-path=https://hub.qste.com/Script/Weibo/Config.js
 
