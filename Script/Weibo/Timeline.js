@@ -146,7 +146,8 @@ if (
     let obj = JSON.parse(body);
     if (obj.channelInfo) {
         obj.channelInfo.channels.splice(1, 4);
-        obj.channelInfo.channels[0].title = '';
+        obj.channelInfo.channels[0].title = '随机词条';
+        // obj.channelInfo.channels[0].titleInfo.style.padding = [0,0,0,0];
         let items = obj.channelInfo.channels[0].payload.items;
         items.splice(2);
         items[1].data.col = 1;
@@ -161,9 +162,10 @@ if (
             let i = obj.items.length;
             while (i--) {
                 let element = obj.items[i];
-                if (element.category == 'feed')
+                if (element.category == 'feed') {
                     obj.items[i] = null;
                     obj.items.splice(i, 1);
+                }
             }
         }
     }

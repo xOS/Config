@@ -202,7 +202,7 @@ const badge = {
 if (url.indexOf(userList) != -1 || url.indexOf(notice) != -1) {
   let data = $response.body.replace(/\"verified_type\":-1/g, '"verified_type": 0').replace(/\"verified\":false/g, '"verified": true, "verified_type_ext": 1').replace(/\"verified_type_ext\":(\d)/g, '"verified_type_ext": 1');
   obj = JSON.parse(data);
-  obj.messages = obj.messages.filter(element => !(element['isrecommend'] == true));
+  if(obj.messages) obj.messages = obj.messages.filter(element => !(element['isrecommend'] == true));
 }
 if (url.indexOf(profile) != -1) {
   obj.userInfo.user_ability_extend = 1;
