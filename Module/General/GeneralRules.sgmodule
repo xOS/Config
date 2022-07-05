@@ -221,13 +221,9 @@ http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-
 Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.qste.com/Script/Spotify/Spotify.js
 
 # > 微博个人信息
-主页 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/profile\?gsid=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Profile.js
-
-个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/users\/(show|relation),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/UserShow.js
+个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Profile.js
 
 会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/VIPCenter.js
-
-消息列表 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(direct_messages\/user_list|messageflow\/notice)\?gsid=,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Message.js
 
 # > 搜狗阅读 VIP
 VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/(vip\/vipInfo|completeUserInfo),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/SogouReader/VIPInfo.js
