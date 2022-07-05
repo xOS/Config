@@ -163,6 +163,7 @@ if (
                 let element = obj.items[i];
                 if (element.category == 'feed')
                     obj.items[i] = null;
+                    obj.items.splice(i, 1);
             }
         }
     }
@@ -186,7 +187,6 @@ function filter_timeline_statuses(statuses) {
             element.user.verified_type = 0;
             element.user.svip = 1;
             element.user.verified_level = 2;
-            element.user.avatargj_id = 'gj_vip_583';
             element.user.verified = true;
             element.user.has_ability_tag = 1;
             element.user.type = 1;

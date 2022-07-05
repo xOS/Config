@@ -245,7 +245,6 @@ function removeTimeLine(data) {
             element.user.verified_type = 0;
             element.user.svip = 1;
             element.user.verified_level = 2;
-            element.user.avatargj_id = 'gj_vip_583';
             element.user.verified = true;
             element.user.has_ability_tag = 1;
             element.user.type = 1;
