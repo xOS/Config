@@ -1,4 +1,4 @@
-const version = 'v0703.3';
+const version = 'v0706.1906';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -283,7 +283,98 @@ function removeHomeVip(data) {
         vipIcon.style.width = '15';
         vipIcon.style.height = '18';
     }
-    if (vipView && vipView.content1 && vipView.content1.contents && vipView.content1.contents[2]) vipView.content1.contents[2].content = '您是尊贵的终身VIP用户';
+    if (vipView) {
+        if (vipView.content1 && vipView.content1.contents && vipView.content1.contents.length > 1) {
+            vipView.content1.contents[0].iconUrl = 'https://h5.sinaimg.cn/upload/100/1734/2022/06/01/vip7_title.png';
+            vipView.content1.contents[2].content = '您是尊贵的终身VIP用户';
+            vipView.content1.contents[2].style.textColor = '#BB5416';
+            vipView.content1.contents[2].style.textColorDark = '#AC521C';
+        }
+        if (vipView.content2) vipView.content2.texts = [
+            {
+                "type": "richText",
+                "contents": [
+                    {
+                        "type": "text",
+                        "style": {
+                            "textColor": "#E1834D",
+                            "textColorDark": "#D0743F",
+                            "textSize": 12
+                        },
+                        "content": "每天都要开开心心！"
+                    },
+                    {
+                        "type": "icon",
+                        "style": {
+                            "width": 10,
+                            "height": 10,
+                            "darkMode": "urlAppend"
+                        },
+                        "iconUrl": "https:\/\/h5.sinaimg.cn\/upload\/100\/1734\/2022\/06\/01\/vip7_subtitle.png"
+                    }
+                ]
+            },
+            {
+                "type": "richText",
+                "contents": [
+                    {
+                        "type": "text",
+                        "style": {
+                            "textColor": "#E1834D",
+                            "textColorDark": "#D0743F",
+                            "textSize": 12
+                        },
+                        "content": "明天又是个好日子！"
+                    },
+                    {
+                        "type": "icon",
+                        "style": {
+                            "width": 10,
+                            "height": 10,
+                            "darkMode": "urlAppend"
+                        },
+                        "iconUrl": "https:\/\/h5.sinaimg.cn\/upload\/100\/1734\/2022\/06\/01\/vip7_subtitle.png"
+                    }
+                ]
+            },
+            {
+                "type": "richText",
+                "contents": [
+                    {
+                        "type": "text",
+                        "style": {
+                            "textColor": "#E1834D",
+                            "textColorDark": "#D0743F",
+                            "textSize": 12
+                        },
+                        "content": "努力过好每一天！"
+                    },
+                    {
+                        "type": "icon",
+                        "style": {
+                            "width": 10,
+                            "height": 10,
+                            "darkMode": "urlAppend"
+                        },
+                        "iconUrl": "https:\/\/h5.sinaimg.cn\/upload\/100\/1734\/2022\/06\/01\/vip7_subtitle.png"
+                    }
+                ]
+            }
+        ];
+        if (vipView.rightImage) {
+            vipView.rightImage.iconUrl = 'https://h5.sinaimg.cn/upload/100/1734/2022/06/01/vip7_button.png';
+            vipView.rightImage.itemId = 'button_VIP_all';
+        }
+        if (vipView.rightText) {
+            vipView.rightText.content = '会员中心';
+            vipView.rightText.itemId = 'button_VIP_all';
+            vipView.rightText.style.textColor = '#BB5416';
+            vipView.rightText.style.textColorDark = '#AC521C';
+        }
+        if (vipView.bgImage1) vipView.bgImage1.iconUrl = 'https://h5.sinaimg.cn/upload/100/1734/2022/06/08/vip7_bg1.png';
+        vipView.itemId = 'background_VIP';
+    }
+
     return data;
 }
 
@@ -430,7 +521,7 @@ function removeHome(data) {
         }
     }
     data.items = newItems;
-    if(data.moreInfo) data.moreInfo.noMore = true;
+    if (data.moreInfo) data.moreInfo.noMore = true;
     return data;
 }
 
