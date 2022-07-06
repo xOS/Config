@@ -1,4 +1,4 @@
-const version = 'v0706.1906';
+const version = 'v0706.2059';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -504,6 +504,8 @@ function removeHome(data) {
             updateProfileSkin(item, 'profileSkin1');
             newItems.push(item);
         } else if (itemId == '100505_-_newcreator') {
+            //创作者中心卡片底部圆角
+            item.style.background.corners = [7, 7, 7, 7];
             if (item.type == 'grid') {
                 updateProfileSkin(item, 'profileSkin2');
                 newItems.push(item);
