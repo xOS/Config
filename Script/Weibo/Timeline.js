@@ -144,8 +144,9 @@ if (
 } else if (url.indexOf(path26) != -1) {
     let obj = JSON.parse(body);
     if (obj.channelInfo) {
+        if(obj.channelInfo.channelConfig.style) obj.channelInfo.channelConfig.style.height = '0.1';
         obj.channelInfo.channels.splice(1, 4);
-        obj.channelInfo.channels[0].title = '随机词条';
+        obj.channelInfo.channels[0].title = '';
         // obj.channelInfo.channels[0].titleInfo.style.padding = [0,0,0,0];
         let items = obj.channelInfo.channels[0].payload.items;
         items.splice(2);
