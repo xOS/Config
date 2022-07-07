@@ -1,4 +1,4 @@
-const version = 'v0706.2101';
+const version = 'v0707.1737';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -505,7 +505,8 @@ function removeHome(data) {
             newItems.push(item);
         } else if (itemId == '100505_-_newcreator') {
             //创作者中心卡片底部圆角
-            if(item.style && item.style.background) item.style.background.corners = [7, 7, 7, 7];
+            if (item.style && item.style.background) item.style.background.corners = [7, 7, 7, 7];
+            if (item.style) item.style.padding = [0, 0, 0, 7];
             if (item.type == 'grid') {
                 updateProfileSkin(item, 'profileSkin2');
                 newItems.push(item);
