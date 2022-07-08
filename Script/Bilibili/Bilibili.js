@@ -184,14 +184,6 @@ if (url.indexOf(path1) != -1) {
             "title": "创作日历",
             "uri": "https://member.bilibili.com/studio/gabriel/creator-calendar/today?navhide=1",
             "icon": "http://i0.hdslb.com/bfs/archive/ccb3a0f38ed0ea72a773741c5d82b11ceb8ce3f0.png"
-        },
-        {
-            "need_login": 1,
-            "display": 1,
-            "id": 174,
-            "title": "热门活动",
-            "uri": "https://www.bilibili.com/blackboard/x/activity-tougao-h5/all",
-            "icon": "http://i0.hdslb.com/bfs/archive/7f4fa86d99bf3814bf10f8ee5d6c8c9db6e931c8.png"
         }
         ],
         "style": 1,
@@ -221,13 +213,6 @@ if (url.indexOf(path1) != -1) {
             "title": "直播中心",
             "icon": "http://i0.hdslb.com/bfs/archive/1db5791746a0112890b77a0236baf263d71ecb27.png",
             "uri": "bilibili://user_center/live_center"
-        },
-        {
-            "id": 421,
-            "title": "创作学院",
-            "icon": "http://i0.hdslb.com/bfs/archive/12327dba191bc36e9e65a815aa56aa9bb9225c7e.png",
-            "need_login": 1,
-            "uri": "https://member.bilibili.com/college?navhide=1&from=my"
         }
         ],
         "style": 1,
