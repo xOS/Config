@@ -998,6 +998,8 @@ ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/(forum.php\?mod
 ^https?:\/\/ggx(.*)\.miguvideo\.com data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 
 # > 其它
+^https?:\/\/app\.bilibili\.com\/x\/resource\/ip\? data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.qste.com/Mock/Blank/Blank.txt"
 ^https?:\/\/pgdt\.gtimg\.cn\/ data="https://hub.qste.com/Mock/Blank/Blank.jpg"
 ;^https?:\/\/(mtrace|btrace)\.qq\.com\/(mkvcollect|kvcollect) data="https://hub.qste.com/Mock/Blank/Blank.txt"

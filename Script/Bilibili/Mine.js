@@ -55,47 +55,71 @@ body['data']['sections_v2'] = [{
 },
 {
     "title": "创作中心",
-    "items": [{
-        "id": 171,
-        "title": "创作首页",
-        "uri": "bilibili://uper/homevc",
-        "icon": "http://i0.hdslb.com/bfs/archive/d3aad2d07538d2d43805f1fa14a412d7a45cc861.png",
-        "need_login": 1,
-        "global_red_dot": 1,
-        "display": 1
-    },
-    {
-        "id": 324864,
-        "title": "主播中心",
-        "uri": "https://live.bilibili.com/p/html/live-app-anchor-center/index.html?is_live_webview=1#/",
-        "icon": "https://i0.hdslb.com/bfs/live/48e17ccd0ce0cfc9c7826422d5e47ce98f064c2a.png",
-        "need_login": 1,
-        "display": 1
-    },
-    {
-        "id": 34944,
-        "title": "主播活动",
-        "uri": "https://live.bilibili.com/p/html/live-app-activity-list/index.html?force_web=1&is_live_webview=1#/activity-list",
-        "icon": "https://i0.hdslb.com/bfs/live/5bc5a1aa8dd4bc5d6f5222d29ebaca9ef9ce37de.png",
-        "need_login": 1,
-        "display": 1
-    },
-    {
-        "id": 4,
-        "title": "直播数据",
-        "uri": "https://live.bilibili.com/p/html/live-app-data/index.html?is_live_webview=1#/",
-        "icon": "https://i0.hdslb.com/bfs/live/684d9c8a4cddc45d6d13f3527185e83a879ffae3.png",
-        "need_login": 1,
-        "display": 1
-    },
-    {
-        "id": 1,
-        "title": "我的直播",
-        "uri": "https://live.bilibili.com/p/html/live-app-center/index.html?is_live_webview=1",
-        "icon": "https://i0.hdslb.com/bfs/live/a9be4fa50ea4772142c1fc7992cde28294d63021.png",
-        "need_login": 1,
-        "display": 1
-    }
+    "items": [
+        {
+            "id": 171,
+            "title": "创作首页",
+            "uri": "bilibili://uper/homevc",
+            "icon": "http://i0.hdslb.com/bfs/archive/d3aad2d07538d2d43805f1fa14a412d7a45cc861.png",
+            "need_login": 1,
+            "global_red_dot": 0,
+            "display": 1
+        }
+        ,
+        {
+            "id": 402,
+            "title": "个性装扮",
+            "uri": "https://www.bilibili.com/h5/mall/home?navhide=1\u0026from=myservice",
+            "icon": "http://i0.hdslb.com/bfs/archive/0bcad10661b50f583969b5a188c12e5f0731628c.png",
+            "common_op_item": {}
+        },
+        {
+            "id": 404,
+            "title": "我的钱包",
+            "uri": "bilibili://bilipay/mine_wallet",
+            "icon": "http://i0.hdslb.com/bfs/archive/f416634e361824e74a855332b6ff14e2e7c2e082.png",
+            "common_op_item": {}
+        },
+        {
+            "id": 324864,
+            "title": "主播中心",
+            "uri": "https://live.bilibili.com/p/html/live-app-anchor-center/index.html?is_live_webview=1#/",
+            "icon": "https://i0.hdslb.com/bfs/live/48e17ccd0ce0cfc9c7826422d5e47ce98f064c2a.png",
+            "need_login": 1,
+            "display": 1
+        },
+        {
+            "id": 34944,
+            "title": "主播活动",
+            "uri": "https://live.bilibili.com/p/html/live-app-activity-list/index.html?force_web=1&is_live_webview=1#/activity-list",
+            "icon": "https://i0.hdslb.com/bfs/live/5bc5a1aa8dd4bc5d6f5222d29ebaca9ef9ce37de.png",
+            "need_login": 1,
+            "display": 1
+        },
+        {
+            "id": 4,
+            "title": "直播数据",
+            "uri": "https://live.bilibili.com/p/html/live-app-data/index.html?is_live_webview=1#/",
+            "icon": "https://i0.hdslb.com/bfs/live/684d9c8a4cddc45d6d13f3527185e83a879ffae3.png",
+            "need_login": 1,
+            "display": 1
+        },
+        {
+            "id": 514,
+            "title": "社区中心",
+            "uri": "https://www.bilibili.com/blackboard/dynamic/169422",
+            "icon": "http://i0.hdslb.com/bfs/archive/551a39b7539e64d3b15775295c4b2e13e5513b43.png",
+            "need_login": 1,
+            "common_op_item": {}
+        },
+        {
+            "id": 1,
+            "title": "我的直播",
+            "uri": "https://live.bilibili.com/p/html/live-app-center/index.html?is_live_webview=1",
+            "icon": "https://i0.hdslb.com/bfs/live/a9be4fa50ea4772142c1fc7992cde28294d63021.png",
+            "need_login": 1,
+            "display": 1
+        }
     ],
     "style": 1,
     "button": {
