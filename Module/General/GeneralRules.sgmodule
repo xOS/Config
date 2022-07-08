@@ -36,7 +36,7 @@ RULE-SET,https://hub.qste.com/RuleSet/Wikipedia_for_Look_Up.list,常用
 
 [Header Rewrite]
 # > 颇可
-;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/605.1.15"
+^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/605.1.15"
 
 # > Google Voice
 ^https?:\/\/www\.google\.com\/voice\/? header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/605.1.15"
@@ -51,6 +51,9 @@ RULE-SET,https://hub.qste.com/RuleSet/Wikipedia_for_Look_Up.list,常用
 # > Bilibili
 (^https?:\/\/app\.biliintl\.com\/(x\/)?(intl|dm|reply|history|v\d/msgfeed).+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$5&sim_code=51503$7 header
 (^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/.+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$35&sim_code=51503$5 header
+
+# > 颇可
+^https?:\/\/m.poco\.cn/* https://www.poco.cn/$1 302
 
 # > Redirect Google Search Service
 (https:\/\/www\.google\.com([.a-z]+)?\/.+)(&safe=(active|strict)&)(.+) $1&safe=off 302
