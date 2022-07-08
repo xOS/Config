@@ -65,34 +65,6 @@ body['data']['sections_v2'] = [{
         "display": 1
     },
     {
-        "id": 570,
-        "title": "UP主推荐",
-        "uri": "https://member.bilibili.com/york/up-invitation/inviter?activity_id=7&navhide=1",
-        "icon": "http://i0.hdslb.com/bfs/feed-admin/621e25266b15b2bf311eeb4314e84310836bd4d6.png",
-        "need_login": 1,
-        "global_red_dot": 1,
-        "display": 1
-    },
-    {
-        "id": 533,
-        "title": "任务中心",
-        "uri": "https://member.bilibili.com/studio/bds/redirect?target_source=mission_archive_2&",
-        "icon": "http://i0.hdslb.com/bfs/archive/ae18624fd2a7bdda6d95ca606d5e4cf2647bfa4d.png",
-        "need_login": 1,
-        "global_red_dot": 1,
-        "display": 1
-    },
-    {
-        "id": 174,
-        "title": "有奖活动",
-        "uri": "https://member.bilibili.com/york/hot-activity",
-        "icon": "http://i0.hdslb.com/bfs/archive/7f4fa86d99bf3814bf10f8ee5d6c8c9db6e931c8.png",
-        "need_login": 1,
-        "red_dot": 1,
-        "global_red_dot": 1,
-        "display": 1
-    },
-    {
         "id": 324864,
         "title": "主播中心",
         "uri": "https://live.bilibili.com/p/html/live-app-anchor-center/index.html?is_live_webview=1#/",
