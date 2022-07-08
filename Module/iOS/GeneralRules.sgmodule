@@ -33,7 +33,7 @@ force-http-engine-hosts = %APPEND% *.intsig.net, boxjs.com, boxjs.net
 
 [Header Rewrite]
 # > 颇可
-;^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
+^https?:\/\/[\w-]+\.poco\.cn header-replace User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36
 
 # > 添加标记
 ; ^https?://(?:\w+\.)*?((nan|cdn|nange|qste|vmgirls)\.(?:com\.cn|cn|ink|ge|com|net))[\\\/]* header-add Visitor Surge
@@ -45,6 +45,9 @@ force-http-engine-hosts = %APPEND% *.intsig.net, boxjs.com, boxjs.net
 # > Bilibili
 (^https?:\/\/app\.biliintl\.com\/(x\/)?(intl|dm|reply|history|v\d/msgfeed).+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$5&sim_code=51503$7 header
 (^https?:\/\/passport\.biliintl\.com\/x\/intl\/passport-login\/.+)(&s_locale=zh-Hans_[A-Z]{2})(.+)(&sim_code=\d+)(.+) $1&s_locale=zh-Hans_PH$35&sim_code=51503$5 header
+
+# > 颇可
+^https?:\/\/m.poco\.cn/* https://www.poco.cn/$1 302
 
 # > Weibo Short URL
 ^http:\/\/t\.cn http://sinaurl.cn 302
