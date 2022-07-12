@@ -21,8 +21,8 @@ DOMAIN,t.uc.cn,DIRECT
 # DOMAIN,translate.googleapis.com,DIRECT
 
 # > Google Fonts API
-DOMAIN,fonts.googleapis.com,DIRECT
-DOMAIN,fonts.gstatic.com,DIRECT
+# DOMAIN,fonts.googleapis.com,DIRECT
+# DOMAIN,fonts.gstatic.com,DIRECT
 
 # > Tencent
 DOMAIN,fairplay.l.qq.com,DIRECT
