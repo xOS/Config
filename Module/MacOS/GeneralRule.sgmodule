@@ -481,7 +481,7 @@ http://.+\.cp31\.ott\.cibntv\.net - reject
 ^http:\/\/static\.hanju\.koudaibaobao\.com\/img\/pub\/.*?.mp4$ - reject
 
 # > YouTube
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 header
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
 ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - reject
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
