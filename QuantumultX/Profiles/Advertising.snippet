@@ -586,7 +586,7 @@ https?://link.zhihu.com/?target= url script-request-header https://hub.qste.com/
 ^https?:\/\/*hostloc\.com\/(forum.php\?mod\=viewthread\&tid\=|thread-) url script-response-body https://hub.qste.com/Script/Hostloc/InjectJS.js
 
 # > YouTube
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject
 ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break url reject
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
