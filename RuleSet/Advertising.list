@@ -1178,10 +1178,6 @@ DOMAIN,ads.youtube.com,REJECT
 # > Youtube
 DOMAIN-SUFFIX,ads.youtube.com,REJECT
 DOMAIN-SUFFIX,youtube.112.2o7.net,REJECT
-URL-REGEX,^https?+:\/\/.+?\.googlevideo\.com\/.+?(?>&oad|ctier),REJECT
-URL-REGEX,^https?+:\/\/\w+?\.youtube\.com\/api\/.+?ad,REJECT
-URL-REGEX,^https?+:\/\/\w+?\.youtube\.com\/p(?>agead|tracking),REJECT
-URL-REGEX,^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_,REJECT
 
 # > Yahoo
 DOMAIN-SUFFIX,adserver.yahoo.com,REJECT

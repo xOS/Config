@@ -329,16 +329,9 @@ URL-REGEX,https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
 URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
 URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
 URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
-URL-REGEX,^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/guide\?,REJECT
-URL-REGEX,^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/notification_registration\/get_settings\?,REJECT
-URL-REGEX,^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/notification_registration\/set_registration\?,REJECT
-URL-REGEX,^https:\/\/suggestqueries\.google\.com\/complete\/search\?,REJECT
-URL-REGEX,^https:\/\/redirector\.googlevideo\.com\/initplayback\?,REJECT
-URL-REGEX,^https:\/\/.+\.googlevideo\.com\/initplayback\?,REJECT
 URL-REGEX,^https:\/\/notifications-pa\.googleapis\.com\/v1\/fetchlatestthreads$,REJECT
 URL-REGEX,^https?:\/\/www\.youtube\.com\/pcs\/activeview\?,REJECT
 URL-REGEX,^https?:\/\/www\.youtube\.com\/pagead\/adview\?,REJECT
-URL-REGEX,^https?:\/\/lh[0-9]\.googleusercontent\.com\/proxy\/?,REJECT
 URL-REGEX,^https?:\/\/www\.googleapis\.com\/adsmeasurement,REJECT
 
 # > 其它
