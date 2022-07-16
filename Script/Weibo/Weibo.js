@@ -165,7 +165,7 @@ function removePage(data){
 	if (mainConfig.removePinedTrending && data.cards && data.cards.length > 0) {
 		data.cards[0].card_group = data.cards[0].card_group.filter(c=>!c.itemid.includes("t:51"));
     }
-    filter_timeline_cards(data);
+    data = filter_timeline_cards(data);
 	return data;
 }
 
