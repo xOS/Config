@@ -164,8 +164,56 @@ function removePage(data){
 	// 删除热搜列表置顶条目
 	if (mainConfig.removePinedTrending && data.cards && data.cards.length > 0) {
 		data.cards[0].card_group = data.cards[0].card_group.filter(c=>!c.itemid.includes("t:51"));
-	}
+    }
+    filter_timeline_cards(data);
 	return data;
+}
+
+function filter_timeline_cards(cards) {
+    if (cards && cards.length > 0) {
+        let j = cards.length;
+        while (j--) {
+            let item = cards[j];
+            let card_group = item.card_group;
+            if (card_group && card_group.length > 0) {
+                if (item.itemid && item.itemid == "hotword") {
+                    filter_top_search(card_group);
+                } else {
+                    let i = card_group.length;
+                    while (i--) {
+                        let card_group_item = card_group[i];
+                        let card_type = card_group_item.card_type;
+                        if (card_type) {
+                            if (card_type == 9) {
+                                if (is_timeline_ad(card_group_item.mblog))
+                                    card_group.splice(i, 1);
+                            } else if (card_type == 118 || card_type == 182 || card_type == 89 || card_type == 19) {
+                                card_group.splice(i, 1);
+                            } else if (card_type == 42) {
+                                if (
+                                    card_group_item.desc ==
+                                    "\u53ef\u80fd\u611f\u5174\u8da3\u7684\u4eba"
+                                ) {
+                                    cards.splice(j, 1);
+                                    break;
+                                }
+                            } else if (card_type == 17) {
+                                if (cards[0].card_group) cards[0].card_group[0].col = 1;
+                                //if (cards[0].card_group) cards[0].card_group[1] = null;
+                                filter_top_search(card_group_item.group);
+                            }
+                        }
+                    }
+                }
+            } else {
+                let card_type = item.card_type;
+                if (card_type && card_type == 9) {
+                    if (is_timeline_ad(item.mblog)) cards.splice(j, 1);
+                }
+            }
+        }
+    }
+    return cards;
 }
 
 function removeCards(data) {
