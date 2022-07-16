@@ -162,18 +162,18 @@ function removePage(data){
 	removeCards(data);
 
 	// 删除热搜列表置顶条目
-	if (mainConfig.removePinedTrending && data.cards && data.cards.length > 0) {
+	if (mainConfig.removePinedTrending && data.cards && data.cards.length > 0 && data.cards[0].card_group) {
 		data.cards[0].card_group = data.cards[0].card_group.filter(c=>!c.itemid.includes("t:51"));
     }
-    data = filter_timeline_cards(data);
+    if(data) data = filter_timeline_cards(data);
 	return data;
 }
 
-function filter_timeline_cards(cards) {
-    if (cards && cards.length > 0) {
-        let j = cards.length;
+function filter_timeline_cards(data) {
+    if (data && data.length > 0) {
+        let j = data.length;
         while (j--) {
-            let item = cards[j];
+            let item = data[j];
             let card_group = item.card_group;
             if (card_group && card_group.length > 0) {
                 if (item.itemid && item.itemid == "hotword") {
@@ -194,12 +194,12 @@ function filter_timeline_cards(cards) {
                                     card_group_item.desc ==
                                     "\u53ef\u80fd\u611f\u5174\u8da3\u7684\u4eba"
                                 ) {
-                                    cards.splice(j, 1);
+                                    data.splice(j, 1);
                                     break;
                                 }
                             } else if (card_type == 17) {
-                                if (cards[0].card_group) cards[0].card_group[0].col = 1;
-                                //if (cards[0].card_group) cards[0].card_group[1] = null;
+                                if (data[0].card_group) data[0].card_group[0].col = 1;
+                                //if (data[0].card_group) data[0].card_group[1] = null;
                                 filter_top_search(card_group_item.group);
                             }
                         }
@@ -208,12 +208,32 @@ function filter_timeline_cards(cards) {
             } else {
                 let card_type = item.card_type;
                 if (card_type && card_type == 9) {
-                    if (is_timeline_ad(item.mblog)) cards.splice(j, 1);
+                    if (is_timeline_ad(item.mblog)) data.splice(j, 1);
                 }
             }
         }
     }
-    return cards;
+    return data;
+}
+
+function filter_top_search(group) {
+    if (group && group.length > 0) {
+        let k = group.length;
+        while (k--) {
+            let group_item = group[k];
+            if (group_item.hasOwnProperty("promotion")) {
+                group.splice(k, 1);
+            }
+        }
+    }
+}
+
+function is_timeline_ad(mblog) {
+    if (!mblog) return false;
+    let promotiontype =
+        mblog.promotion && mblog.promotion.type && mblog.promotion.type == "ad";
+    let mblogtype = mblog.mblogtype && mblog.mblogtype == 1;
+    return promotiontype || mblogtype ? true : false;
 }
 
 function removeCards(data) {
