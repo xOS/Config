@@ -1,4 +1,4 @@
-const version = 'v0707.1737';
+const version = 'v0717.0220';
 
 let $ = new nobyda();
 let storeMainConfig = $.read('mainConfig');
@@ -22,7 +22,7 @@ const mainConfig = storeMainConfig ? JSON.parse(storeMainConfig) : {
 
     removeLiveMedia: true, //首页顶部直播
     removeNextVideo: true, //关闭自动播放下一个视频
-
+    removePinedTrending: true, //删除热搜列表置顶条目
     removeInterestFriendInTopic: true, //超话：超话里的好友
     removeInterestTopic: true, //超话：可能感兴趣的超话 + 好友关注
     removeInterestUser: true, //用户页：可能感兴趣的人
@@ -63,7 +63,7 @@ const itemMenusConfig = storeItemMenusConfig ? JSON.parse(storeItemMenusConfig) 
     mblog_menus_home: false //返回首页
 }
 
-const modifyCardsUrls = ['/cardlist', '/page', 'video/community_tab', '/searchall'];
+const modifyCardsUrls = ['/cardlist', 'video/community_tab', '/searchall'];
 const modifyStatusesUrls = ['statuses/friends/timeline', 'statuses/unread_friends_timeline', 'statuses/unread_hot_timeline', 'groups/timeline'];
 
 const otherUrls = {
@@ -82,6 +82,8 @@ const otherUrls = {
     '/search/finder': 'removeSearchMain',
     '/search/container_timeline': 'removeSearch',
     '/search/container_discover': 'removeSearch',
+	'/2/messageflow': 'removeMsgAd',
+	'/page': 'removePage'
 }
 
 function getModifyMethod(url) {
@@ -156,6 +158,15 @@ function removeSearch(data) {
     return data;
 }
 
+function removePage(data){
+	removeCards(data);
+
+	// 删除热搜列表置顶条目
+	if (mainConfig.removePinedTrending && data.cards && data.cards.length > 0) {
+		data.cards[0].card_group = data.cards[0].card_group.filter(c=>!c.itemid.includes("t:51"));
+	}
+	return data;
+}
 
 function removeCards(data) {
     if (!data.cards) {
@@ -397,21 +408,23 @@ function itemExtendHandler(data) {
         if (data.trend && data.trend.titles) {
             let title = data.trend.titles.title;
             if (mainConfig.removeRelate && title === '相关推荐') {
-                data.trend = null;
+                delete data.trend;
             } else if (mainConfig.removeGood && title === '博主好物种草') {
-                data.trend = null;
+                delete data.trend;
             }
         }
     }
     if (mainConfig.removeFollow) {
         if (data.follow_data) {
             data.follow_data = null;
+            delete data.reward_info;
         }
     }
 
     if (mainConfig.removeRewardItem) {
         if (data.reward_info) {
             data.reward_info = null;
+            delete data.reward_info;
         }
     }
 
@@ -419,7 +432,7 @@ function itemExtendHandler(data) {
     try {
         let picUrl = data.trend.extra_struct.extBtnInfo.btn_picurl;
         if (picUrl.indexOf('timeline_icon_ad_delete') > -1) {
-            data.trend = null;
+            delete data.trend;
         }
     } catch (error) {
 
