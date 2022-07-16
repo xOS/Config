@@ -155,7 +155,8 @@ if (
         let items = obj.channelInfo.channels[0].payload.items;
         items.splice(2);
         items[1].data.col = 1;
-        // items = filter_top_search(items);
+        let group = obj.channelInfo.channels[0].payload.items[1].data.group;
+        group = filter_top_search(group);
     }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path27) != -1) {
