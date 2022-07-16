@@ -175,15 +175,7 @@ if (
             }
         }
         let group = obj.items[1].data.group;
-        if (group && group.length > 0) {
-            let k = group.length;
-            while (k--) {
-                let group_item = group[k];
-                if (group_item.hasOwnProperty("promotion")) {
-                    group.splice(k, 1);
-                }
-            }
-        }
+        group = filter_top_search(group);
     }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path28) != -1) {
