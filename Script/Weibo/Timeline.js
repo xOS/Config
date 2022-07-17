@@ -153,17 +153,21 @@ if (
         obj.channelInfo.channels[0].title = '';
         // obj.channelInfo.channels[0].titleInfo.style.padding = [0,0,0,0];
         let items = obj.channelInfo.channels[0].payload.items;
-        items.splice(2);
-        items[1].data.col = 1;
-        let group = obj.channelInfo.channels[0].payload.items[1].data.group;
-        group = filter_top_search(group);
+        if (items && items.length > 0) {
+            items.splice(2);
+            items[1].data.col = 1;
+            items[1].data.title = '推荐词条';
+            let group = obj.channelInfo.channels[0].payload.items[1].data.group;
+            group = filter_top_search(group);
+        }
     }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path27) != -1) {
     let obj = JSON.parse(body);
-    if (obj.items) {
+    if (obj.items && obj.items.length > 0) {
         obj.items.splice(2);
         obj.items[1].data.col = 1;
+        obj.items[1].data.title = '推荐词条';
         if (obj.items.length > 0) {
             let i = obj.items.length;
             while (i--) {
