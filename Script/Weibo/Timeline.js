@@ -153,6 +153,7 @@ if (
         obj.channelInfo.channels[0].title = '';
         // obj.channelInfo.channels[0].titleInfo.style.padding = [0,0,0,0];
         let items = obj.channelInfo.channels[0].payload.items;
+        if(obj.channelInfo.channels[0].payload.moreInfo) obj.channelInfo.channels[0].payload.moreInfo = null;
         if (items && items.length > 0) {
             items.splice(2);
             items[1].data.col = 1;
@@ -164,6 +165,7 @@ if (
     body = JSON.stringify(obj);
 } else if (url.indexOf(path27) != -1) {
     let obj = JSON.parse(body);
+    if (obj.moreInfo) obj.moreInfo = null;
     if (obj.items && obj.items.length > 0) {
         obj.items.splice(2);
         obj.items[1].data.col = 1;
