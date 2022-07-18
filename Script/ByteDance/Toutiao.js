@@ -6,7 +6,7 @@ const url = $request.url;
 if (body.data) {
     if (url.indexOf(feed) != -1) {
     var data = body.data;
-      if (data.api_base_info.info_type && data.api_base_info.info_type == null && data.length > 0) {
+      if (data.api_base_info.raw_data && data.api_base_info.raw_data == null && data.length > 0) {
             for (var i in data) {
                 let content = JSON.parse(data[i].content);
                 if (content.abstract == '' || content.card_title == '小视频' || content.video_source == 'ugc_video' || content.video_style == 2 || content.has_video == true) {
