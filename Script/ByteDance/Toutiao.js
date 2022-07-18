@@ -5,13 +5,13 @@ const url = $request.url;
 
 if (body.data) {
     if (url.indexOf(feed) != -1) {
-      if (body.data.api_base_info != null && body.data.api_base_info.info_type != 2 && body.data.length > 0) {
-            var data = body.data;
+    var data = body.data;
+      if (data.api_base_info.info_type && data.api_base_info.info_type == null && data.length > 0) {
             for (var i in data) {
                 let content = JSON.parse(data[i].content);
                 if (content.abstract == '' || content.card_title == '小视频' || content.video_source == 'ugc_video' || content.video_style == 2 || content.has_video == true) {
-                    data[i] = {};
-                    //delete data[i];
+                    //data[i] = {};
+                    delete data[i];
                 }
             }
         }
