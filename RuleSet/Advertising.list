@@ -13,9 +13,12 @@ DOMAIN,api.esimplus.mobi,REJECT
 DOMAIN,api.mbrx.app,REJECT
 
 # > 小红书
+DOMAIN-KEYWORD,ads-video,REJECT
+DOMAIN-KEYWORD,ads-img,REJECT
 DOMAIN-KEYWORD,miaozhen.,REJECT
 DOMAIN-SUFFIX,miaozhen.com,REJECT
 DOMAIN,ads-video-al.xhscdn.com,REJECT
+DOMAIN,ads-img-al.xhscdn.com,REJECT
 
 # > POCO
 DOMAIN-SUFFIX,hmma.baidu.com,REJECT
