@@ -1,6 +1,14 @@
 let body = $response.body;
 body = JSON.parse(body);
-if (body.hasOwnProperty('data'))
-    body['data'] = body['data'].filter(element => !(element['is_ads'] == true));
+var data = body.data;
+if (data.length > 0) {
+    for (var i in data) {
+        let element = data[i];
+        if (element.ads_info || element.is_ads == true) {
+            data[i] = {};
+            delete data[i];
+        }
+    }
+}
 body = JSON.stringify(body);
 $done({ body });
