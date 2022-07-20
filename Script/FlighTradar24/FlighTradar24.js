@@ -113,10 +113,9 @@ if (body.userData) {
             "typeSubscription": "annually"
         }
     }
-}
 
-if (body.userData.features) {
-    body.userData.features = {
+ if (body.userData.features) {
+     body.userData.features = {
         "app.ios": "enabled",
         "map.info.flight.ems.mach": "enabled",
         "map.layer.ndb.alt.high": "enabled",
@@ -198,7 +197,8 @@ if (body.userData.features) {
         "map.layer.navdata": "enabled",
         "map.layer.weather.radar": "enabled",
         "user.bookmarks.max": 25
-    }
+     }
+  }
 }
 
 $done({ body: JSON.stringify(body) });
