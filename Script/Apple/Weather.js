@@ -6,7 +6,7 @@
 // eslint-disable-next-line
 function Env(t,e){class s{constructor(t){this.env=t}send(t,e="GET"){t="string"==typeof t?{url:t}:t;let s=this.get;return"POST"===e&&(s=this.post),new Promise((e,i)=>{s.call(this,t,(t,s,r)=>{t?i(t):e(s)})})}get(t){return this.send.call(this.env,t)}post(t){return this.send.call(this.env,t,"POST")}}return new class{constructor(t,e){this.name=t,this.http=new s(this),this.data=null,this.dataFile="box.dat",this.logs=[],this.isMute=!1,this.isNeedRewrite=!1,this.logSeparator="\n",this.encoding="utf-8",this.startTime=(new Date).getTime(),Object.assign(this,e),this.log("",`\ud83d\udd14${this.name}, \u5f00\u59cb!`)}isNode(){return"undefined"!=typeof module&&!!module.exports}isQuanX(){return"undefined"!=typeof $task}isSurge(){return"undefined"!=typeof $httpClient&&"undefined"==typeof $loon}isLoon(){return"undefined"!=typeof $loon}isShadowrocket(){return"undefined"!=typeof $rocket}isStash(){return"undefined"!=typeof $environment&&$environment["stash-version"]}toObj(t,e=null){try{return JSON.parse(t)}catch{return e}}toStr(t,e=null){try{return JSON.stringify(t)}catch{return e}}getjson(t,e){let s=e;const i=this.getdata(t);if(i)try{s=JSON.parse(this.getdata(t))}catch{}return s}setjson(t,e){try{return this.setdata(JSON.stringify(t),e)}catch{return!1}}getScript(t){return new Promise(e=>{this.get({url:t},(t,s,i)=>e(i))})}runScript(t,e){return new Promise(s=>{let i=this.getdata("@chavy_boxjs_userCfgs.httpapi");i=i?i.replace(/\n/g,"").trim():i;let r=this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");r=r?1*r:20,r=e&&e.timeout?e.timeout:r;const[o,h]=i.split("@"),n={url:`http://${h}/v1/scripting/evaluate`,body:{script_text:t,mock_type:"cron",timeout:r},headers:{"X-Key":o,Accept:"*/*"}};this.post(n,(t,e,i)=>s(i))}).catch(t=>this.logErr(t))}loaddata(){if(!this.isNode())return{};{this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e);if(!s&&!i)return{};{const i=s?t:e;try{return JSON.parse(this.fs.readFileSync(i))}catch(t){return{}}}}}writedata(){if(this.isNode()){this.fs=this.fs?this.fs:require("fs"),this.path=this.path?this.path:require("path");const t=this.path.resolve(this.dataFile),e=this.path.resolve(process.cwd(),this.dataFile),s=this.fs.existsSync(t),i=!s&&this.fs.existsSync(e),r=JSON.stringify(this.data);s?this.fs.writeFileSync(t,r):i?this.fs.writeFileSync(e,r):this.fs.writeFileSync(t,r)}}lodash_get(t,e,s){const i=e.replace(/\[(\d+)\]/g,".$1").split(".");let r=t;for(const t of i)if(r=Object(r)[t],void 0===r)return s;return r}lodash_set(t,e,s){return Object(t)!==t?t:(Array.isArray(e)||(e=e.toString().match(/[^.[\]]+/g)||[]),e.slice(0,-1).reduce((t,s,i)=>Object(t[s])===t[s]?t[s]:t[s]=Math.abs(e[i+1])>>0==+e[i+1]?[]:{},t)[e[e.length-1]]=s,t)}getdata(t){let e=this.getval(t);if(/^@/.test(t)){const[,s,i]=/^@(.*?)\.(.*?)$/.exec(t),r=s?this.getval(s):"";if(r)try{const t=JSON.parse(r);e=t?this.lodash_get(t,i,""):e}catch(t){e=""}}return e}setdata(t,e){let s=!1;if(/^@/.test(e)){const[,i,r]=/^@(.*?)\.(.*?)$/.exec(e),o=this.getval(i),h=i?"null"===o?null:o||"{}":"{}";try{const e=JSON.parse(h);this.lodash_set(e,r,t),s=this.setval(JSON.stringify(e),i)}catch(e){const o={};this.lodash_set(o,r,t),s=this.setval(JSON.stringify(o),i)}}else s=this.setval(t,e);return s}getval(t){return this.isSurge()||this.isLoon()?$persistentStore.read(t):this.isQuanX()?$prefs.valueForKey(t):this.isNode()?(this.data=this.loaddata(),this.data[t]):this.data&&this.data[t]||null}setval(t,e){return this.isSurge()||this.isLoon()?$persistentStore.write(t,e):this.isQuanX()?$prefs.setValueForKey(t,e):this.isNode()?(this.data=this.loaddata(),this.data[e]=t,this.writedata(),!0):this.data&&this.data[e]||null}initGotEnv(t){this.got=this.got?this.got:require("got"),this.cktough=this.cktough?this.cktough:require("tough-cookie"),this.ckjar=this.ckjar?this.ckjar:new this.cktough.CookieJar,t&&(t.headers=t.headers?t.headers:{},void 0===t.headers.Cookie&&void 0===t.cookieJar&&(t.cookieJar=this.ckjar))}get(t,e=(()=>{})){if(t.headers&&(delete t.headers["Content-Type"],delete t.headers["Content-Length"]),this.isSurge()||this.isLoon())this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient.get(t,(t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status),e(t,s,i)});else if(this.isQuanX())this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>e(t));else if(this.isNode()){let s=require("iconv-lite");this.initGotEnv(t),this.got(t).on("redirect",(t,e)=>{try{if(t.headers["set-cookie"]){const s=t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();s&&this.ckjar.setCookieSync(s,null),e.cookieJar=this.ckjar}}catch(t){this.logErr(t)}}).then(t=>{const{statusCode:i,statusCode:r,headers:o,rawBody:h}=t;e(null,{status:i,statusCode:r,headers:o,rawBody:h},s.decode(h,this.encoding))},t=>{const{message:i,response:r}=t;e(i,r,r&&s.decode(r.rawBody,this.encoding))})}}post(t,e=(()=>{})){const s=t.method?t.method.toLocaleLowerCase():"post";if(t.body&&t.headers&&!t.headers["Content-Type"]&&(t.headers["Content-Type"]="application/x-www-form-urlencoded"),t.headers&&delete t.headers["Content-Length"],this.isSurge()||this.isLoon())this.isSurge()&&this.isNeedRewrite&&(t.headers=t.headers||{},Object.assign(t.headers,{"X-Surge-Skip-Scripting":!1})),$httpClient[s](t,(t,s,i)=>{!t&&s&&(s.body=i,s.statusCode=s.status),e(t,s,i)});else if(this.isQuanX())t.method=s,this.isNeedRewrite&&(t.opts=t.opts||{},Object.assign(t.opts,{hints:!1})),$task.fetch(t).then(t=>{const{statusCode:s,statusCode:i,headers:r,body:o}=t;e(null,{status:s,statusCode:i,headers:r,body:o},o)},t=>e(t));else if(this.isNode()){let i=require("iconv-lite");this.initGotEnv(t);const{url:r,...o}=t;this.got[s](r,o).then(t=>{const{statusCode:s,statusCode:r,headers:o,rawBody:h}=t;e(null,{status:s,statusCode:r,headers:o,rawBody:h},i.decode(h,this.encoding))},t=>{const{message:s,response:r}=t;e(s,r,r&&i.decode(r.rawBody,this.encoding))})}}time(t,e=null){const s=e?new Date(e):new Date;let i={"M+":s.getMonth()+1,"d+":s.getDate(),"H+":s.getHours(),"m+":s.getMinutes(),"s+":s.getSeconds(),"q+":Math.floor((s.getMonth()+3)/3),S:s.getMilliseconds()};/(y+)/.test(t)&&(t=t.replace(RegExp.$1,(s.getFullYear()+"").substr(4-RegExp.$1.length)));for(let e in i)new RegExp("("+e+")").test(t)&&(t=t.replace(RegExp.$1,1==RegExp.$1.length?i[e]:("00"+i[e]).substr((""+i[e]).length)));return t}msg(e=t,s="",i="",r){const o=t=>{if(!t)return t;if("string"==typeof t)return this.isLoon()?t:this.isQuanX()?{"open-url":t}:this.isSurge()?{url:t}:void 0;if("object"==typeof t){if(this.isLoon()){let e=t.openUrl||t.url||t["open-url"],s=t.mediaUrl||t["media-url"];return{openUrl:e,mediaUrl:s}}if(this.isQuanX()){let e=t["open-url"]||t.url||t.openUrl,s=t["media-url"]||t.mediaUrl,i=t["update-pasteboard"]||t.updatePasteboard;return{"open-url":e,"media-url":s,"update-pasteboard":i}}if(this.isSurge()){let e=t.url||t.openUrl||t["open-url"];return{url:e}}}};if(this.isMute||(this.isSurge()||this.isLoon()?$notification.post(e,s,i,o(r)):this.isQuanX()&&$notify(e,s,i,o(r))),!this.isMuteLog){let t=["","==============\ud83d\udce3\u7cfb\u7edf\u901a\u77e5\ud83d\udce3=============="];t.push(e),s&&t.push(s),i&&t.push(i),console.log(t.join("\n")),this.logs=this.logs.concat(t)}}log(...t){t.length>0&&(this.logs=[...this.logs,...t]),console.log(t.join(this.logSeparator))}logErr(t,e){const s=!this.isSurge()&&!this.isQuanX()&&!this.isLoon();s?this.log("",`\u2757\ufe0f${this.name}, \u9519\u8bef!`,t.stack):this.log("",`\u2757\ufe0f${this.name}, \u9519\u8bef!`,t)}wait(t){return new Promise(e=>setTimeout(e,t))}done(t={}){const e=(new Date).getTime(),s=(e-this.startTime)/1e3;this.log("",`\ud83d\udd14${this.name}, \u7ed3\u675f! \ud83d\udd5b ${s} \u79d2`),this.log(),(this.isSurge()||this.isQuanX()||this.isLoon())&&$done(t)}}(t,e)}
 
-const $ = new Env('Apple Weather v4.0.0-beta');
+const $ = new Env('Apple Weather v4.0.0-beta3');
 
 // https://github.com/VirgilClyne/VirgilClyne/blob/main/function/URL/URLs.embedded.min.js
 // noinspection
@@ -2433,15 +2433,29 @@ const fixQweatherCo = (unit, amount) => {
   return amount;
 };
 
+const convertV1Pollutants = (pollutants) => {
+  const units = ['ppb', 'µg/m3'];
+  const validPollutants = Array.isArray(pollutants) ? pollutants.filter(
+    (pollutant) => (
+      units.includes(pollutant?.unit) && typeof pollutant?.name === 'string' && pollutant.name.length > 0
+      && isNonNanNumber(pollutant?.amount) && pollutant.amount >= 0
+    ),
+  ) : [];
+
+  return validPollutants.map((pollutant) => ({
+    ...pollutant, unit: pollutant.unit === 'µg/m3' ? 'microgramsPerM3' : pollutant.unit,
+  }));
+};
+
 /**
  * Convert pollutants from Apple to specific EPA standard
  * @param {aqiStandard} standard
- * @param {Object.<iosPollutantNames, pollutantV2>} pollutants
+ * @param {pollutantV2[]} pollutants
  * @return {Object} - Object for {@link toAirQuality}
  */
 const appleToEpaAirQuality = (standard, pollutants) => {
   if (
-    typeof standard !== 'object' || typeof pollutants !== 'object'
+    typeof standard !== 'object' || !Array.isArray(pollutants)
     || typeof standard?.CONCENTRATIONS !== 'object' || typeof standard?.AQI_LEVELS !== 'object'
   ) {
     return {};
@@ -2460,12 +2474,13 @@ const appleToEpaAirQuality = (standard, pollutants) => {
     return {};
   }
 
-  const pollutantsValue = Object.values(pollutants).filter((pollutant) => (
-    Object.keys(validConcentrations).includes(pollutant?.name) && typeof pollutant?.unit === 'string'
-    && pollutant.unit.length > 0 && isNonNanNumber(pollutant?.amount) && pollutant.amount >= 0
+  const units = ['ppb', 'microgramsPerM3'];
+  const validPollutants = pollutants.filter((pollutant) => (
+    Object.keys(validConcentrations).includes(pollutant?.name) && units.includes(pollutant?.unit)
+    && isNonNanNumber(pollutant?.amount) && pollutant.amount >= 0
   ));
 
-  const aqis = toEpaAqis(validConcentrations, pollutantsValue);
+  const aqis = toEpaAqis(validConcentrations, validPollutants);
   if (!isNonNanNumber(aqis.index) || aqis.index < 0) {
     return {};
   }
@@ -2710,13 +2725,13 @@ const colorfulCloudsToAqi = (
    * Convert data from {@link getCcAirQuality} to {@link pollutantV2} object for Apple Weather
    * @author WordlessEcho <wordless@echo.moe>
    * @param {Object} airQuality - Pollutants data from {@link getCcAirQuality}
-   * @return {Object.<iosPollutantNames, pollutantV2>|{}} -
+   * @return {pollutantV2[]|[]} -
    * Object for `airQuality.pollutants` of Apple Weather
    */
   const toPollutants = (airQuality) => (typeof airQuality === 'object'
-    ? Object.fromEntries(Object.entries(airQuality)
+    ? Object.entries(airQuality)
       .filter(([key]) => key !== 'aqi')
-      .map(([pollutantName, amount]) => ([pollutantName, {
+      .map(([pollutantName, amount]) => ({
         name: pollutantName,
         amount: pollutantName === 'CO' ? pollutantUnitConverterUs(
           'milligramsPerM3',
@@ -2725,8 +2740,8 @@ const colorfulCloudsToAqi = (
           null,
         ) : amount,
         unit: 'microgramsPerM3',
-      }])))
-    : {});
+      }))
+    : []);
 
   const airQuality = getCcAirQuality(realtimeAndHistoryData);
   const standard = getCcStandard(airQuality.aqi.usa >= 0, aqiForceChn);
@@ -2739,7 +2754,7 @@ const colorfulCloudsToAqi = (
 
   const categoryIndex = toAqiLevel(Object.values(standard.AQI_LEVELS), aqi);
   const pollutants = toPollutants(airQuality);
-  const primaryPollutant = toEpaAqis(standard.CONCENTRATIONS, Object.values(pollutants))?.primary;
+  const primaryPollutant = toEpaAqis(standard.CONCENTRATIONS, pollutants)?.primary;
 
   return {
     isSignificant: categoryIndex >= (isNonNanNumber(standard.SIGNIFICANT_LEVEL)
@@ -2822,7 +2837,7 @@ const waqiToAqi = (feedData) => {
     url: typeof feedData?.data?.city?.url === 'string' && feedData.data.city.url.length > 0
       ? feedData.data.city.url : 'https://aqicn.org/',
     // Pollutant data from WAQI is AQI not amount
-    pollutants: {},
+    pollutants: [],
     ...(Object.keys(toApplePollutantName).includes(feedData?.data?.dominentpol)
       && { primary: toApplePollutantName[feedData.data.dominentpol] }),
     sourceName: typeof feedData?.data?.city?.name === 'string' && feedData.data.city.name.length > 0
@@ -3042,7 +3057,7 @@ const colorfulCloudsToNextHour = (providerName, dataWithMinutely) => {
    */
   const getPrecipitationType = (timestamp, dataWithHourlySkycons) => {
     const skycons = dataWithHourlySkycons?.result?.hourly?.skycon;
-    if (typeof dataWithHourlySkycons !== 'object' || !Array.isArray(skycons)) {
+    if (!Array.isArray(skycons)) {
       return '';
     }
 
@@ -3050,10 +3065,13 @@ const colorfulCloudsToNextHour = (providerName, dataWithMinutely) => {
     const versionCode = typeof apiVersion === 'string' && parseFloat(apiVersion.slice(1));
     const validVersionCode = isNonNanNumber(versionCode) ? versionCode : -1;
 
-    const validTimestamp = isNonNanNumber(timestamp) && timestamp > 0 ? timestamp : (+(new Date()));
-    const nowHourTimestamp = (new Date(validTimestamp)).setMinutes(0, 0, 0);
+    const serverTime = parseInt(dataWithHourlySkycons?.server_time, 10);
+    const serverTimestamp = isNonNanNumber(serverTime) && serverTime > 0
+      ? serverTime * 1000 : (+(new Date()));
+    const hourTimestamp = (new Date(serverTimestamp)).setMinutes(0, 0, 0);
+    const currentHourTimestamp = (new Date(timestamp)).setMinutes(0, 0, 0);
 
-    const skyCondition = skycons.find((skycon) => {
+    const skyConditions = skycons.filter((skycon) => {
       if (typeof skycon?.datetime !== 'string' || skycon.datetime.length <= 0) {
         return false;
       }
@@ -3071,8 +3089,22 @@ const colorfulCloudsToNextHour = (providerName, dataWithMinutely) => {
 
       return isNonNanNumber(ts) && ts > 0
         // Limit to two hour since ColorfulClouds provide two hours report
-        && ts >= nowHourTimestamp && ts < nowHourTimestamp + 1000 * 60 * 60 * 2;
-    })?.value;
+        && ts >= hourTimestamp && ts <= hourTimestamp + 1000 * 60 * 60;
+    });
+
+    const skyCondition = skyConditions.concat().sort((a, b) => {
+      const aTimestamp = Date.parse(validVersionCode < 2.3
+        ? `${a.datetime.replace(' ', 'T')}:00.000${isoTimezoneOffset(-(dataWithHourlySkycons.tzshift / 60))}`
+        : a.datetime.split('+').join(':00.000+'));
+      const bTimestamp = Date.parse(validVersionCode < 2.3
+        ? `${b.datetime.replace(' ', 'T')}:00.000${isoTimezoneOffset(-(dataWithHourlySkycons.tzshift / 60))}`
+        : b.datetime.split('+').join(':00.000+'));
+
+      return currentHourTimestamp - aTimestamp - (currentHourTimestamp - bTimestamp);
+    }).find((skycon) => (
+      typeof skycon?.value === 'string' && (
+        skycon.value.includes('RAIN') || skycon.value.includes('SNOW')
+      )))?.value;
 
     if (typeof skyCondition !== 'string' || skyCondition.length <= 0) {
       return '';
@@ -3214,7 +3246,7 @@ const colorfulCloudsToNextHour = (providerName, dataWithMinutely) => {
               ...splitDescriptions.slice(0, splitDescriptions.length - 1),
               splitDescriptions[splitDescriptions.length - 1]
                 // Append `after that` to description.
-                .replaceAll('} min later', `{$1} min later ${AFTER.en_GB}`),
+                .replaceAll('} min later', `} min later ${AFTER.en_GB}`),
             ].join(FIRST_AT);
           case 'zh_CN':
             return [
@@ -3236,13 +3268,13 @@ const colorfulCloudsToNextHour = (providerName, dataWithMinutely) => {
             return [
               ...splitDescriptions.slice(0, splitDescriptions.length - 1),
               splitDescriptions[splitDescriptions.length - 1]
-                .replaceAll('{', `${AFTER.ja}{`),
+                .replaceAll('{', `${AFTER.ja} {`),
             ].join(FIRST_AT);
           case 'en_US':
             return [
               ...splitDescriptions.slice(0, splitDescriptions.length - 1),
               splitDescriptions[splitDescriptions.length - 1]
-                .replaceAll('} min later', `{$1} min later ${AFTER.en_US}`),
+                .replaceAll('} min later', `} min later ${AFTER.en_US}`),
             ].join(FIRST_AT);
           default:
             return modifiedDescription;
@@ -3380,7 +3412,7 @@ const colorfulCloudsToNextHour = (providerName, dataWithMinutely) => {
       end: validEnd,
       isDrizzleOrFlurries: isNonNanNumber(sum)
         && Math.max(...slicedPrecipitations) < levels.HEAVY.RANGE.LOWER
-        && average < levels.MODERATE.RANGE.UPPER,
+        && average < levels.MODERATE.RANGE.LOWER,
     }];
   });
 
@@ -3388,7 +3420,7 @@ const colorfulCloudsToNextHour = (providerName, dataWithMinutely) => {
     const validPrecipitation = isNonNanNumber(precipitation) && precipitation >= 0
       ? precipitation : 0;
 
-    const timeInMinute = index + 1;
+    const timeInMinute = validStartIndex + index + 1;
 
     const hourlyPrecipitationType = getPrecipitationType(
       serverTimestamp + 1000 * 60 * timeInMinute,
@@ -3565,34 +3597,24 @@ const toMetadata = (appleApiVersion, metadataObject) => {
  * @return {Object}
  */
 const toAirQuality = (appleApiVersion, aqiObject) => {
-  const getUnits = (apiVersion) => {
-    const sharedUnit = ['ppb'];
-    switch (apiVersion) {
-      case 1:
-        return sharedUnit.concat(['µg/m3']);
-      case 2:
-      case 3:
-        return sharedUnit.concat(['microgramsPerM3']);
-      default:
-        return [];
-    }
-  };
-
   const iosPollutantNames = [
     'NO2', 'NO', 'NOX', 'PM2.5', 'SO2', 'OZONE', 'PM10', 'CO',
   ];
+  const units = ['ppb', 'microgramsPerM3'];
   const comparisonValues = ['better', 'same', 'worse', 'unknown'];
   const sourceTypes = ['station', 'modeled'];
+
+  const validPollutants = Array.isArray(aqiObject?.pollutants) ? aqiObject.pollutants.filter(
+    (pollutant) => (
+      units.includes(pollutant?.unit) && typeof pollutant?.name === 'string' && pollutant.name.length > 0
+      && isNonNanNumber(pollutant?.amount) && pollutant.amount >= 0
+    ),
+  ) : [];
 
   const sharedAirQuality = {
     ...(typeof aqiObject?.isSignificant === 'boolean' && { isSignificant: aqiObject.isSignificant }),
     // TODO
     ...(typeof aqiObject?.url === 'string' && aqiObject.url.length > 0 && { learnMoreURL: aqiObject.url }),
-    ...(Object.keys(aqiObject?.pollutants ?? {}).length > 0 && {
-      pollutants: Object.fromEntries(Object.entries(aqiObject.pollutants).filter(
-        ([, info]) => getUnits(appleApiVersion).includes(info?.unit),
-      )),
-    }),
     ...(iosPollutantNames.includes(aqiObject?.primary) && { primaryPollutant: aqiObject.primary }),
     // TODO: source was removed after APIv3
     ...(typeof aqiObject?.sourceName === 'string' && aqiObject.sourceName.length > 0
@@ -3611,6 +3633,12 @@ const toAirQuality = (appleApiVersion, aqiObject) => {
           // TODO: find out all scale
           ...(typeof aqiObj?.scale === 'string' && aqiObj.scale.length > 0
             && { airQualityScale: aqiObj.scale }),
+          ...(validPollutants.length > 0 && {
+            pollutants: Object.fromEntries(validPollutants.map((pollutant) => ([
+              pollutant.name,
+              { ...pollutant, unit: pollutant.unit === 'microgramsPerM3' ? 'µg/m3' : pollutant.unit },
+            ]))),
+          }),
         };
       case 2:
       case 3:
@@ -3626,6 +3654,11 @@ const toAirQuality = (appleApiVersion, aqiObject) => {
           ...(typeof aqiObj?.scale === 'string' && aqiObj.scale.length > 0
             && { scale: aqiObj.scale }),
           ...(sourceTypes.includes(aqiObj?.sourceType) && { sourceType: aqiObj.sourceType }),
+          ...(validPollutants.length > 0 && {
+            pollutants: Object.fromEntries(validPollutants.map((pollutant) => ([
+              pollutant.name, pollutant,
+            ]))),
+          }),
         };
       default:
         return {};
@@ -3648,14 +3681,8 @@ const toAirQuality = (appleApiVersion, aqiObject) => {
  * @return {Object} a `Promise` that returned edited Apple data
  */
 const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
-  const isMinuteArray = (minutes) => (
-    Array.isArray(minutes) && !minutes.some((minute) => (
-      typeof minute?.weatherStatus !== 'string' || minute.weatherStatus.length <= 0
-    ))
-  );
-
   if (
-    !isMinuteArray(nextHourObject?.minutes) || !isNonNanNumber(nextHourObject?.startTimestamp)
+    !Array.isArray(nextHourObject?.minutes) || !isNonNanNumber(nextHourObject?.startTimestamp)
     || nextHourObject.startTimestamp <= 0
   ) {
     return {};
@@ -3663,111 +3690,100 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
 
   /**
    * Check type of weather status of minute
-   * @param {minute} minuteData - data of minute
+   * @param {minute} minute - data of minute
    * @return {'precipitation'|'clear'|string} - weatherStatus if valid,
    * or `precipitation`/`clear` based on precipitation
    */
-  const checkWeatherStatus = (minuteData) => {
-    if (typeof minuteData?.weatherStatus !== 'string' || minuteData.weatherStatus.length <= 0) {
-      if (minuteData.precipitation > 0) {
+  const checkWeatherStatus = (weatherStatus, precipitation) => {
+    if (typeof weatherStatus !== 'string' || weatherStatus.length <= 0) {
+      if (isNonNanNumber(precipitation) && precipitation > 0) {
         return 'precipitation';
       }
 
       return 'clear';
     }
 
-    return minuteData.weatherStatus;
+    return weatherStatus;
   };
 
-  const toValidMinutes = (minutes) => {
-    if (!isMinuteArray(minutes)) {
-      return [];
-    }
+  const minutesData = nextHourObject.minutes.map((minute) => {
+    const precipitationIntensityPerceived = isNonNanNumber(minute?.precipitationIntensityPerceived)
+    && minute.precipitationIntensityPerceived >= 0 ? minute.precipitationIntensityPerceived : 0;
+    const fallbackChance = precipitationIntensityPerceived <= 0 ? 0 : 100;
+    const chance = isNonNanNumber(minute?.chance) && minute.chance >= 0
+      ? minute.chance : fallbackChance;
 
-    return minutes.map((minute) => {
-      const pip = isNonNanNumber(minute?.precipitationIntensityPerceived)
-      && minute.precipitationIntensityPerceived >= 0 ? minute.precipitationIntensityPerceived : 0;
-      const fallbackChance = pip <= 0 ? 0 : 100;
-      const chance = isNonNanNumber(minute?.chance) && minute.chance >= 0
-        ? minute.chance : fallbackChance;
+    const validShortDescription = typeof minute?.shortDescription === 'string'
+    && minute.shortDescription.length > 0 ? minute.shortDescription : $.name;
+    const validLongDescription = typeof minute?.longDescription === 'string'
+    && minute.longDescription.length > 0 ? minute.longDescription : validShortDescription;
 
-      const validLongDescription = typeof minute?.longDescription === 'string'
-      && minute.longDescription.length > 0 ? minute.longDescription : $.name;
-      const validShortDescription = typeof minute?.shortDescription === 'string'
-      && minute.shortDescription.length > 0 ? minute.shortDescription : validLongDescription;
-
-      return {
-        ...minute,
-        precipitation: isNonNanNumber(minute?.precipitation) && minute.precipitation >= 0
-          ? minute.precipitation : 0,
-        precipitationIntensityPerceived: pip,
-        chance: Math.round(chance),
-        longDescription: validLongDescription,
-        shortDescription: validShortDescription,
-        ...(typeof minute?.parameters === 'object' && { parameters: minute.parameters }),
-      };
-    });
-  };
+    return {
+      weatherStatus: checkWeatherStatus(minute?.weatherStatus, minute?.precipitation),
+      precipitation: isNonNanNumber(minute?.precipitation) && minute.precipitation >= 0
+        ? minute.precipitation : 0,
+      precipitationIntensityPerceived,
+      chance: Math.round(chance),
+      shortDescription: validShortDescription,
+      longDescription: validLongDescription,
+      ...(typeof minute?.parameters === 'object' && { parameters: minute.parameters }),
+    };
+  });
 
   /**
    * Output array of condition for `condition` in `NextHourForecast`
    * @author WordlessEcho <wordless@echo.moe>
    * @param {supportedIosApi} apiVersion - Apple Weather API Version
-   * @param {minute[]} minutesData - Array of minute precipitation data
+   * @param {minute[]} minutes - Array of minute precipitation data
    * @param {number} startTimestamp - UNIX timestamp when condition start
    * @return { nextHourConditionV1[] | nextHourConditionV2[] } - For `forecastNextHour.condition`
    */
-  const toConditions = (apiVersion, minutesData, startTimestamp) => {
-    const supportedApis = [1, 2, 3];
-    if (!supportedApis.includes(apiVersion) || !isMinuteArray(minutesData)) {
-      return [];
-    }
+  const toConditions = (apiVersion, minutes, startTimestamp) => {
+    const slicedMinutes = minutes.slice(0, 60);
 
     /**
      * Merge possibility, weather status and time status for `forecastNextHour.condition.token`
      * @author WordlessEcho <wordless@echo.moe>
-     * @param {minute[]} minuteArray - add `possible-` prefix to token
      * @param {number} bound
      * @return {string} token for Apple Weather
      */
-    const toToken = (minuteArray, bound) => {
-      if (!isMinuteArray(minuteArray) || !isNonNanNumber(bound) || bound < 0) {
-        return 'precipitation';
+    const toToken = (bound) => {
+      if (!isNonNanNumber(bound) || bound < 0 || bound >= slicedMinutes.length) {
+        return 'clear';
       }
 
-      const validMinuteArray = toValidMinutes(minuteArray);
-      const firstStatus = checkWeatherStatus(validMinuteArray[bound]);
-      const secondStatusRelatedIndex = validMinuteArray.slice(bound).findIndex((minute) => (
-        checkWeatherStatus(minute) !== firstStatus));
+      const firstStatus = slicedMinutes[bound].weatherStatus;
+      const secondStatusRelatedIndex = slicedMinutes.slice(bound).findIndex((minute) => (
+        minute.weatherStatus !== firstStatus));
       const secondStatusIndex = secondStatusRelatedIndex === -1
         ? -1 : secondStatusRelatedIndex + bound;
       const secondStatus = secondStatusIndex === -1 ? null
-        : checkWeatherStatus(validMinuteArray[secondStatusIndex]);
+        : slicedMinutes[secondStatusIndex].weatherStatus;
 
       if (firstStatus === 'clear') {
         if (secondStatusIndex === -1) {
           return firstStatus;
         }
 
-        const nextClearIndex = validMinuteArray.slice(secondStatusIndex)
-          .findIndex((minute) => checkWeatherStatus(minute) === 'clear');
+        const nextClearIndex = slicedMinutes.slice(secondStatusIndex)
+          .findIndex((minute) => minute.weatherStatus === 'clear');
         if (nextClearIndex === -1) {
-          const maxChance = Math.max(...validMinuteArray
+          const maxChance = Math.max(...slicedMinutes
             .slice(secondStatusIndex).map((minute) => minute.chance));
           // https://developer.apple.com/documentation/weatherkitrestapi/certainty
           return `${maxChance < 50 ? 'possible-' : ''}${secondStatus}.start`;
         }
 
-        const maxChance = Math.max(...validMinuteArray
+        const maxChance = Math.max(...slicedMinutes
           .slice(secondStatusIndex, nextClearIndex).map((minute) => minute.chance));
         return `${maxChance < 50 ? 'possible-' : ''}${secondStatus}.start-stop`;
       }
 
       // if current weather is not clear
       if (secondStatus === 'clear') {
-        const nextNotClearIndex = validMinuteArray.slice(secondStatusIndex)
-          .findIndex((minute) => checkWeatherStatus(minute) !== 'clear');
-        const maxChance = Math.max(...validMinuteArray
+        const nextNotClearIndex = slicedMinutes.slice(secondStatusIndex)
+          .findIndex((minute) => minute.weatherStatus !== 'clear');
+        const maxChance = Math.max(...slicedMinutes
           .slice(bound, secondStatusIndex).map((minute) => minute.chance));
 
         if (nextNotClearIndex !== -1) {
@@ -3777,22 +3793,22 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
         return `${maxChance < 50 ? 'possible-' : ''}${firstStatus}.stop`;
       }
 
-      const maxChance = Math.max(...validMinuteArray.map((minute) => minute.chance));
+      const maxChance = Math.max(...slicedMinutes.map((minute) => minute.chance));
       return firstStatus.startsWith('heavy-') && secondStatusIndex !== -1
         ? `${maxChance < 50 ? 'possible-' : ''}${firstStatus}-to-${secondStatus}.constant`
         : `${maxChance < 50 ? 'possible-' : ''}${firstStatus}.constant`;
     };
 
-    const toParameters = (bounds, indexInBound, minutes, timestamp) => bounds
+    const toParameters = (bounds, indexInBound, timestamp) => bounds
       .slice(indexInBound).reduce((parameters, currentBound, index) => {
-        const lastStatus = minutes[
+        const lastStatus = slicedMinutes[
           indexInBound + index - 1 < 0 ? 0 : bounds[indexInBound + index - 1]
         ].weatherStatus;
-        const currentStatus = minutes[currentBound].weatherStatus;
+        const currentStatus = slicedMinutes[currentBound].weatherStatus;
 
         if (
-          currentBound + 1 === minutes.length && (currentBound <= 0
-          || currentStatus === minutes[currentBound - 1].weatherStatus)
+          currentBound + 1 === slicedMinutes.length && (currentBound <= 0
+          || currentStatus === slicedMinutes[currentBound - 1].weatherStatus)
         ) {
           return parameters;
         }
@@ -3808,9 +3824,7 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
         };
       }, {});
 
-    const validMinutesData = toValidMinutes(minutesData);
-    const slicedMinutesData = validMinutesData.slice(0, 60);
-    const bounds = slicedMinutesData.flatMap((current, index, array) => {
+    const bounds = slicedMinutes.flatMap((current, index, array) => {
       const previous = array[index - 1];
 
       if (
@@ -3828,13 +3842,12 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
 
     // TODO: (FIX) Infinite loop while length of minutesData is 1
     return bounds.map((bound, index, array) => {
-      const minute = slicedMinutesData[bound];
+      const minute = slicedMinutes[bound];
       const lastBound = index === 0 ? 0 : array[index - 1];
 
-      const token = toToken(slicedMinutesData, lastBound);
+      const token = toToken(lastBound);
       const needEndTime = !(
-        index + 1 === array.length
-        && checkWeatherStatus(minute) === checkWeatherStatus(validMinutesData[bound + 1])
+        index + 1 === array.length && minute.weatherStatus === minutes[bound + 1].weatherStatus
       );
 
       const shortDescription = typeof minute.shortDescription === 'string'
@@ -3856,7 +3869,7 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
             && Object.keys(minute.parameters).length > 0
               ? Object.fromEntries(Object.entries(minute.parameters).map(([key, value]) => [
                 key, toAppleTime(apiVersion, timestamp + value * 60 * 1000),
-              ])) : toParameters(array, index, slicedMinutesData, timestamp),
+              ])) : {},
           };
         case 2:
           return {
@@ -3871,7 +3884,7 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
             && Object.keys(minute.parameters).length > 0
               ? Object.fromEntries(Object.entries(minute.parameters).map(([key, value]) => [
                 key, toAppleTime(apiVersion, timestamp + value * 60 * 1000),
-              ])) : toParameters(array, index, slicedMinutesData, timestamp),
+              ])) : toParameters(array, index, slicedMinutes, timestamp),
           };
         case 3:
           return {
@@ -3880,7 +3893,7 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
               endTime: toAppleTime(apiVersion, timestamp + bound * 60 * 1000),
             }),
             token,
-            parameters: toParameters(array, index, slicedMinutesData, timestamp),
+            parameters: toParameters(array, index, slicedMinutes, timestamp),
           };
         default:
           return {};
@@ -3892,25 +3905,19 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
    * Output array of summary for `summary` in `NextHourForecast`
    * @author WordlessEcho <wordless@echo.moe>
    * @param {supportedIosApi} apiVersions - Apple Weather API Version
-   * @param {minute[]} minutesData - array of minute precipitation data
+   * @param {minute[]} minutes - array of minute precipitation data
    * @param {number} startTimestamp - UNIX timestamp when minutes start
    * @return {nextHourSummaryV1[] | nextHourSummaryV2[]} - value for `forecastNextHour.summary[]`
    */
-  const toSummaries = (apiVersions, minutesData, startTimestamp) => {
-    const supportedApis = [1, 2, 3];
-    if (!supportedApis.includes(apiVersions) || !isMinuteArray(minutesData)) {
-      return [];
-    }
-
-    const validMinutesData = toValidMinutes(minutesData);
+  const toSummaries = (apiVersions, minutes, startTimestamp) => {
     /** @type number[] */
-    const bounds = validMinutesData.slice(0, 59).flatMap((current, index, array) => {
+    const bounds = minutes.slice(0, 59).flatMap((current, index, array) => {
       const previous = array[index - 1];
 
       if (
         index === 0 || (
-          index + 1 !== array.length && weatherStatusToType(checkWeatherStatus(current))
-          === weatherStatusToType(checkWeatherStatus(previous))
+          index + 1 !== array.length && weatherStatusToType(current.weatherStatus)
+          === weatherStatusToType(previous.weatherStatus)
         )
       ) {
         return [];
@@ -3924,13 +3931,13 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
 
     return bounds.map((bound, index, array) => {
       const lastBound = index === 0 ? 0 : array[index - 1];
-      const minutesInSummary = validMinutesData.slice(lastBound, bound + 1);
+      const minutesInSummary = minutes.slice(lastBound, bound + 1);
 
       const needEndTime = !(
-        index + 1 === array.length && checkWeatherStatus(validMinutesData[bound])
-        === checkWeatherStatus(validMinutesData[bound + 1])
+        index + 1 === array.length
+        && minutes[bound].weatherStatus === minutes[bound + 1].weatherStatus
       );
-      const condition = weatherStatusToType(checkWeatherStatus(validMinutesData[lastBound]));
+      const condition = weatherStatusToType(minutes[lastBound].weatherStatus);
 
       const isNotClear = condition !== 'clear';
       const maxChance = Math.max(...minutesInSummary.filter(({ chance }) => (
@@ -3989,21 +3996,15 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
    * Output array of minutes for `minutes` in `NextHourForecast`
    * @author WordlessEcho <wordless@echo.moe>
    * @param {supportedIosApi} apiVersions - Apple Weather API Version
-   * @param {minute[]} minutesData - array of minute precipitation data
+   * @param {minute[]} minutes - array of minute precipitation data
    * @param {number} startTimestamp - UNIX timestamp when minutes start
    * @return {nextHourMinuteV1[] | nextHourMinuteV2[]} - For `forecastNextHour.minutes`
    */
-  const toMinutes = (apiVersions, minutesData, startTimestamp) => {
-    const supportedApis = [1, 2, 3];
-    if (!supportedApis.includes(apiVersions) || !isMinuteArray(minutesData)) {
-      return [];
-    }
-
-    const validMinutesData = toValidMinutes(minutesData);
+  const toMinutes = (apiVersions, minutes, startTimestamp) => {
     const timestamp = isNonNanNumber(startTimestamp) && startTimestamp > 0
       ? startTimestamp : (+(new Date()));
 
-    return validMinutesData.map(
+    return minutes.map(
       ({ precipitation, chance, precipitationIntensityPerceived }, index) => {
         const v1AndV2Minute = {
           precipIntensity: isNonNanNumber(precipitation) && precipitation > 0 ? precipitation : 0,
@@ -4070,9 +4071,9 @@ const toNextHour = (appleApiVersion, nextHourObject, debugOptions) => {
 
   const nextHour = getNextHour(
     appleApiVersion,
-    toConditions(appleApiVersion, nextHourObject.minutes, nextHourObject.startTimestamp),
-    toSummaries(appleApiVersion, nextHourObject.minutes, nextHourObject.startTimestamp),
-    toMinutes(appleApiVersion, nextHourObject.minutes, nextHourObject.startTimestamp),
+    toConditions(appleApiVersion, minutesData, nextHourObject.startTimestamp),
+    toSummaries(appleApiVersion, minutesData, nextHourObject.startTimestamp),
+    toMinutes(appleApiVersion, minutesData, nextHourObject.startTimestamp),
     nextHourObject.startTimestamp,
   );
 
@@ -4143,7 +4144,6 @@ const toResponseBody = (envs, request, response) => {
   const caches = toCaches(envs);
 
   const supportedAppleApis = [1, 2, 3];
-  const apiWithAqiComparison = ['api.caiyunapp.com'];
   const settingsToAqiStandard = { WAQI_InstantCast: WAQI_INSTANT_CAST };
   const scaleToAqiStandard = { [EPA_454.APPLE_SCALE]: EPA_454, [HJ_633.APPLE_SCALE]: HJ_633 };
   const supportedApis = ['www.weatherol.cn', 'api.caiyunapp.com', 'api.waqi.info'];
@@ -4218,9 +4218,10 @@ const toResponseBody = (envs, request, response) => {
     }
 
     switch (missions[0]) {
-      case 'nextHour':
-        return 'minutely';
       case 'aqi':
+        return 'realtime';
+      // We need hourly.skycons to detect rain or snow
+      case 'nextHour':
       case 'aqiForComparison':
       default:
         return 'weather';
@@ -4416,9 +4417,7 @@ const toResponseBody = (envs, request, response) => {
       )));
 
   const needCompareAqi = requireData.includes(AIR_QUALITY) && settings.aqi.comparison.switch
-    && AQI_COMPARISON.length > 0 && (
-    (needAqi && !apiWithAqiComparison.includes(settings.aqi.source))
-      || airQuality?.[AQI_COMPARISON] === 'unknown');
+    && AQI_COMPARISON.length > 0 && (airQuality?.[AQI_COMPARISON] === 'unknown' || needAqi);
   const nowHourTimestamp = (new Date()).setMinutes(0, 0, 0);
   const yesterdayHourTimestamp = nowHourTimestamp - 1000 * 60 * 60 * 24;
   const yesterdayReportTimestamp = needAqi ? yesterdayHourTimestamp : appleTimeToTimestamp(
@@ -4444,6 +4443,8 @@ const toResponseBody = (envs, request, response) => {
     needCompareAqi && cachedAqi.aqi < 0 ? settings.aqi.comparison.source : null,
     needNextHour ? settings.nextHour.source : null,
   );
+  // eslint-disable-next-line functional/no-expression-statement
+  $.log(`🚧 ${$.name}：missionList: ${JSON.stringify(missionList)}`, '');
 
   const promises = Array.isArray(missionList) ? missionList
     .filter((missionObject) => (
@@ -4484,7 +4485,7 @@ const toResponseBody = (envs, request, response) => {
           });
         case 'api.caiyunapp.com': {
           const path = missionsToCcPath(missions);
-          const needHistory = missions.includes('aqi') || missions.includes('forCompareAqi');
+          const needHistory = missions.includes('forCompareAqi');
 
           return [colorfulClouds(
             settings.apis.colorfulClouds.token,
@@ -4558,6 +4559,8 @@ const toResponseBody = (envs, request, response) => {
       metadata: { ...airQuality?.[METADATA], ...modifiedAirQuality?.[METADATA] },
     };
     const mergedScale = mergedAirQuality?.[AQI_SCALE];
+    const pollutants = typeof mergedAirQuality?.[POLLUTANTS] === 'object'
+      ? Object.values(mergedAirQuality[POLLUTANTS]) : [];
     const localConvertedAirQuality = {
       ...mergedAirQuality,
       ...(settings.aqi.local.switch && typeof mergedAirQuality?.[POLLUTANTS] === 'object'
@@ -4566,11 +4569,11 @@ const toResponseBody = (envs, request, response) => {
         )
         && toAirQuality(appleApiVersion, appleToEpaAirQuality(
           settingsToAqiStandard[settings.aqi.local.standard],
-          mergedAirQuality[POLLUTANTS],
+          appleApiVersion === 1 ? convertV1Pollutants(pollutants) : pollutants,
         ))),
     };
     const aqiLevels = scaleToAqiStandard[localConvertedAirQuality?.[AQI_SCALE]]?.AQI_LEVELS;
-    const modifiedComapreAqi = localConvertedAirQuality?.[AQI_INDEX] >= 0 && cachedAqi.aqi >= 0
+    const modifiedCompareAqi = localConvertedAirQuality?.[AQI_INDEX] >= 0 && cachedAqi.aqi >= 0
     && typeof aqiLevels === 'object'
       ? compareAqi(
         toAqiLevel(aqiLevels, localConvertedAirQuality[AQI_INDEX]),
@@ -4584,7 +4587,7 @@ const toResponseBody = (envs, request, response) => {
       ...(requireData.includes(AIR_QUALITY) && {
         [AIR_QUALITY]: {
           ...localConvertedAirQuality,
-          ...(needCompareAqi && { [AQI_COMPARISON]: modifiedComapreAqi }),
+          ...(needCompareAqi && { [AQI_COMPARISON]: modifiedCompareAqi }),
         },
       }),
       ...(requireData.includes(NEXT_HOUR) && {
@@ -4630,7 +4633,7 @@ if (settings.switch && typeof $request?.url === 'string') {
   // eslint-disable-next-line functional/no-conditional-statement
   } else {
     const {
-      AIR_QUALITY, METADATA, REPORTED_TIME, PROVIDER_NAME, SOURCE, AQI_INDEX, AQI_SCALE,
+      AIR_QUALITY, NEXT_HOUR, METADATA, REPORTED_TIME, PROVIDER_NAME, SOURCE, AQI_INDEX, AQI_SCALE,
     } = getKeywords(appleApiVersion);
     // eslint-disable-next-line functional/no-expression-statement
     $.log(`🚧 ${$.name}：模块已启用`, '');
@@ -4665,9 +4668,11 @@ if (settings.switch && typeof $request?.url === 'string') {
         ), '@iRingo.Weather.Caches');
       }
       // eslint-disable-next-line functional/no-expression-statement
-      $.log(`🚧 ${$.name}：nextHour condition = ${JSON.stringify(responseBody?.forecastNextHour?.condition)}`, '');
+      $.log(`🚧 ${$.name}：AQI scale = ${JSON.stringify(responseBody?.[AIR_QUALITY]?.[AQI_SCALE])}`, '');
       // eslint-disable-next-line functional/no-expression-statement
-      $.log(`🚧 ${$.name}：nextHour summary = ${JSON.stringify(responseBody?.forecastNextHour?.summary)}`, '');
+      $.log(`🚧 ${$.name}：nextHour condition = ${JSON.stringify(responseBody?.[NEXT_HOUR]?.condition)}`, '');
+      // eslint-disable-next-line functional/no-expression-statement
+      $.log(`🚧 ${$.name}：nextHour summary = ${JSON.stringify(responseBody?.[NEXT_HOUR]?.summary)}`, '');
       // eslint-disable-next-line functional/no-expression-statement,no-undef
       setResponse({ ...$response, ...(typeof responseBody === 'object' && { body: JSON.stringify(responseBody) }) });
     });
