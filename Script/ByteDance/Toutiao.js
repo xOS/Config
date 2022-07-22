@@ -9,7 +9,7 @@ if (body && body.data) {
       if (body.api_base_info != null && body.api_base_info.raw_data === null && data.length > 0) {
             for (var i in data) {
                 let content = JSON.parse(data[i].content);
-                if (content.abstract == '' || content.card_title == '小视频' || content.video_source == 'ugc_video' || content.video_style == 2 || content.has_video == true) {
+                if (content.abstract == '' || content.card_title == '小视频' || content.video_source == 'ugc_video' || content.video_style == 2 || content.has_video == true || content.label == '广告' || content.label == '置顶') {
                     data[i] = {};
                     delete data[i];
                 }
