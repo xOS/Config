@@ -4619,6 +4619,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.clt.banggood.com
+.collect.banggood.com
 .collector.github.com
 .logs.unchecky.com
 .logging.e-himart.co.kr
@@ -18607,6 +18609,10 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.static.fengkongcloud.com
+.fp-*it*.fengkongcloud.com
+.cloudconf.fengkongcloud.com
+.tracker.fengkongcloud.com
 .dm.pstatp.com
 .countly.globaldelight.net
 .log.game.qcplay.com
