@@ -4,6 +4,12 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.tracking.emerse.com
+.master-shopify-tracker.s3.amazonaws.com
+.analytics.m7g.twitch.tv
+.kmp.twbymc.cn
+.mbt.deeterno.cn
+.brt.studylabs.cn
 .effirst.com
 .klickly.com
 .alexatracker.com
@@ -4625,6 +4631,10 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.middleware.p7s1.io
+.player-feedback.p7s1video.net
+.stats.rustica.fr
+.analytics.e1.ru
 .ipcc.vnpt.com.vn
 .stats.ucheba.ru
 .stat.novinky.cz
