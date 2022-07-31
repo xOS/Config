@@ -34,7 +34,7 @@ DOMAIN,apm3.music.163.com,DIRECT
 DOMAIN,aqqmusic.tc.qq.com,DIRECT
 DOMAIN,interface.music.163.com,DIRECT
 DOMAIN,interface3.music.163.com,DIRECT
-DOMAIN-SUFFIX,*music.qq.com,DIRECT
+DOMAIN-SUFFIX,music.qq.com,DIRECT
 DOMAIN-SUFFIX,1.letvlive.com,DIRECT
 DOMAIN-SUFFIX,2.letvlive.com,DIRECT
 DOMAIN-SUFFIX,56.com,DIRECT
