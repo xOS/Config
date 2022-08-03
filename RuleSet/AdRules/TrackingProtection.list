@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.cdn.kaizenplatform.net
 .oaprodlogging.yo-digital.com
 .analytics.e2estudios.com
 .tracking.emerse.com
@@ -4632,6 +4633,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.pixel.dmdi.pl
 .pumpkin.abine.com
 .middleware.p7s1.io
 .player-feedback.p7s1video.net
@@ -4639,6 +4641,7 @@
 .analytics.e1.ru
 .ipcc.vnpt.com.vn
 .stats.ucheba.ru
+.inspector-collector.m.naver.com
 .stat.novinky.cz
 .cdn.stat-track.com
 .t.zhipin.com
@@ -5878,8 +5881,6 @@
 .s.izrnvo.com
 .s.news.naver.com
 .s.union.360.cn
-.s.youtube.com
-.s2.youtube.com
 .s3.smartphonehoesjes.nl
 .sa.aol.com
 .sa.bbc.co.uk
@@ -20136,6 +20137,10 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.log1.apkomega.com
+.log.pngindir.com
+.log.happyapkdown.com
+.log-v4-insight.kaizenplatform.net
 .tracker.neodatagroup.com
 .stats.sxp.smartclip.net
 .static.fengkongcloud.com
@@ -20173,7 +20178,6 @@
 .log.geetest.com
 .prod-clientlog.fastly.newssuite.sinfony.ne.jp
 .track.hk01.com
-.event*.hk01.com
 .analytics.kaltura.com
 .eventgw.twilio.com
 .log.estand.jp
@@ -20228,7 +20232,7 @@
 .bs.nakanohito.jp
 .tag.karte.io
 .alogsus.umeng.com
-.log*.happymod.com
+.log1.happymod.com
 .log.pvpgang.com
 .adash.man.aliyuncs.com
 .beacon-api.aliyuncs.com
@@ -20240,7 +20244,7 @@
 .gd-stats.jpush.cn
 .analytics.enjoymobiserver.com
 .api.reproio.com
-.log*.interactive-circle.jp
+.log5.interactive-circle.jp
 .b94.yahoo.co.jp
 .api.smbeat.jp
 .hibiki-track.logica.bz
