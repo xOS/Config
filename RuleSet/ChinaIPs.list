@@ -6215,7 +6215,8 @@ IP-CIDR,8.209.96.0/19,no-resolve
 IP-CIDR,8.210.0.0/15,no-resolve
 IP-CIDR,8.212.0.0/14,no-resolve
 IP-CIDR,8.216.0.0/13,no-resolve
-IP-CIDR,81.173.16.0/21,no-resolve
+IP-CIDR,81.173.18.0/23,no-resolve
+IP-CIDR,81.173.20.0/22,no-resolve
 IP-CIDR,81.68.0.0/14,no-resolve
 IP-CIDR,82.156.0.0/15,no-resolve
 IP-CIDR,87.254.207.0/24,no-resolve
