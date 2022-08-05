@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.analytics.audionow.de
 .cdn.kaizenplatform.net
 .oaprodlogging.yo-digital.com
 .analytics.e2estudios.com
@@ -1020,8 +1021,7 @@
 .monetate.net
 .instana.io
 .sitelabweb.com
-.scripts.jixie.io
-.tr.jixie.io
+.jixie.io
 .mc.yandex.ru
 .mc.yandex.com
 .track.segmentstream.com
@@ -4633,6 +4633,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.monorail-edge.shopifysvc.com
 .pixel.dmdi.pl
 .pumpkin.abine.com
 .middleware.p7s1.io
