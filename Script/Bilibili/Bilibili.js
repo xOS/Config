@@ -8,7 +8,7 @@ URL-REGEX,^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/season\/rank\/cn|x\/v2\/(dm\/
 hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com
 
 [Script]
-哔哩哔哩 = requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Bilibili/Bilibili.js,pattern=^https?:\/\/ap(i|p).(live.)?bilibili.com\/x(live)?\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/(mine(\/ipad)?|teenagers\/status)|view|feed\/index|rank|channel\/region\/list)|app-room/v1/index/getInfoByRoom)\?access_key,type=http-response
+哔哩哔哩 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Bilibili.js,pattern=^https?:\/\/ap(i|p).(live.)?bilibili.com\/x(live)?\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/(mine(\/ipad)?|teenagers\/status)|view|feed\/index|rank|channel\/region\/list)|app-room/v1/index/getInfoByRoom)\?access_key,type=http-response
 */
 
 const path1 = "/x/resource/show/tab?access_key";

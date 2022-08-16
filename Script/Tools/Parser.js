@@ -98,7 +98,7 @@
 /**
 * 使用说明，
 0️⃣ 在QuantumultX 配置文件中[general] 部分，加入 
-resource_parser_url = https://hub.qste.com/Script/Tools/Parser.js
+resource_parser_url = https://hub.nange.cn/Script/Tools/Parser.js
 ⚠️⚠️如提示"没有自定义解析器"，请长按右下角图标后点击左侧刷新按钮，更新资源，后台退出 app，直到出现解析器说明
 
 ------------------------------
