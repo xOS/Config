@@ -4,90 +4,90 @@ hostname = link.zhihu.com, *.intsig.net, ios.prod.ftl.netflix.com, app.xunjiepdf
 ^https?:\/\/m.poco\.cn/* url 302 https://www.poco.cn/$1
 
 # > Unlock Revenuecat
-^https?:\/\/api\.revenuecat\.com url script-request-body https://hub.qste.com/Script/RevenueCat/RevenueCat.js
+^https?:\/\/api\.revenuecat\.com url script-request-body https://hub.nange.cn/Script/RevenueCat/RevenueCat.js
 
 # > 微信自动阅读
 ^https?://mp\.weixin\.qq\.com/s.+? url response-body "</script>" response-body "setTimeout(()=>window.history.back(),6000); </script>"
 
 # > 迅雷解锁
-^https?:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$ url script-request-body https://hub.qste.com/Script/Xunlei/Xunlei.js
+^https?:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$ url script-request-body https://hub.nange.cn/Script/Xunlei/Xunlei.js
 
 # > WPS解锁
-^https?:\/\/account\.wps\.cn\/api\/users url script-request-body https://hub.qste.com/Script/WPS//WPS.js
+^https?:\/\/account\.wps\.cn\/api\/users url script-request-body https://hub.nange.cn/Script/WPS//WPS.js
 
 # > BoxJS
-^https?:\/\/boxjs\.(com|net) url script-analyze-echo-response https://hub.qste.com/Script/BoxJS/BoxJS.js
+^https?:\/\/boxjs\.(com|net) url script-analyze-echo-response https://hub.nange.cn/Script/BoxJS/BoxJS.js
 
 # > TestFlight 账户管理
-^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://hub.qste.com/Script/Apple/TestFlight.js
+^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/ url script-analyze-echo-response https://hub.nange.cn/Script/Apple/TestFlight.js
 
 # > FlighTradar24
-^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? url script-response-body https://hub.qste.com/Script/FlighTradar24/FlighTradar24.js
+^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? url script-response-body https://hub.nange.cn/Script/FlighTradar24/FlighTradar24.js
 
 # > UptimeRobot
-^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$ url script-response-body https://hub.qste.com/Script/UptimeRobot/UptimeRobot.js
+^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$ url script-response-body https://hub.nange.cn/Script/UptimeRobot/UptimeRobot.js
 
 # > YouTube 中文字幕
-^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$ url script-response-body https://hub.qste.com/Script/YouTube/Player.js
-^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$ url script-response-body https://hub.qste.com/Script/YouTube/TimedText.js
+^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$ url script-response-body https://hub.nange.cn/Script/YouTube/Player.js
+^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$ url script-response-body https://hub.nange.cn/Script/YouTube/TimedText.js
 
 # > 微博个人信息
-^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\? url script-response-body https://hub.qste.com/Script/Weibo/Profile.js
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\? url script-response-body https://hub.nange.cn/Script/Weibo/Profile.js
 
 # > 会员中心
-^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index) url script-response-body https://hub.qste.com/Script/Weibo/VIPCenter.js
+^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index) url script-response-body https://hub.nange.cn/Script/Weibo/VIPCenter.js
 
 # > Aloha 高级版
-^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info url script-response-body https://hub.qste.com/Script/Aloha/Aloha.js
+^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info url script-response-body https://hub.nange.cn/Script/Aloha/Aloha.js
 
 # > NiceGram 高级版
-^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} url echo-response text/json echo-response https://hub.qste.com/Mock/Nicegram/premiumAccess.json
+^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} url echo-response text/json echo-response https://hub.nange.cn/Mock/Nicegram/premiumAccess.json
 
 # > 七猫小说 VIP
-^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/(get-user-info|my-center|(get-role-adv-vip-info|vip\/index)|my-level|page) url script-response-body https://hub.qste.com/Script/QMNovel/UserInfo.js
+^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/(get-user-info|my-center|(get-role-adv-vip-info|vip\/index)|my-level|page) url script-response-body https://hub.nange.cn/Script/QMNovel/UserInfo.js
 
 # > 搜狗阅读 VIP
-^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/(vip\/vipInfo|completeUserInfo) url script-response-body https://hub.qste.com/Script/SogouReader/VIPInfo.js
+^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/(vip\/vipInfo|completeUserInfo) url script-response-body https://hub.nange.cn/Script/SogouReader/VIPInfo.js
 
 # > 百度网盘
-https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://hub.qste.com/Script/Baidu/BaiduCloud.js
+https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://hub.nange.cn/Script/Baidu/BaiduCloud.js
 
 # > Spotify
-^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://hub.qste.com/Script/Spotify/Spotify.js
+^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://hub.nange.cn/Script/Spotify/Spotify.js
 
 # > Enpass 高级版
-^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me url script-response-body https://hub.qste.com/Script/Enpass/Enpass.js
+^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me url script-response-body https://hub.nange.cn/Script/Enpass/Enpass.js
 
 # > Reddit 解锁 Premium
-^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json url script-response-body https://hub.qste.com/Script/Reddit/Premium.js
+^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json url script-response-body https://hub.nange.cn/Script/Reddit/Premium.js
 
 # > Apple 天气
 # >> 可用性请求
-^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/availability\/.* url script-request-header https://hub.qste.com/Script/Apple/Weather_Availability_Req.js
+^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/availability\/.* url script-request-header https://hub.nange.cn/Script/Apple/Weather_Availability_Req.js
 
 # >> 可用性响应
-^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/availability\/.* url script-response-body https://hub.qste.com/Script/Apple/Weather_Availability_Resp.js
+^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/availability\/.* url script-response-body https://hub.nange.cn/Script/Apple/Weather_Availability_Resp.js
 
 # >> 天气
-^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/weather\/.* url script-response-body https://hub.qste.com/Script/Apple/Weather.js
+^https?:\/\/weather-data\.apple\.com\/(v1|v2|v3)\/weather\/.* url script-response-body https://hub.nange.cn/Script/Apple/Weather.js
 
 # >> 天气地图
-^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*) url script-request-header https://hub.qste.com/Script/Apple/Weather_Map.js
+^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*) url script-request-header https://hub.nange.cn/Script/Apple/Weather_Map.js
 
 # > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
-^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*) url script-request-header https://hub.qste.com/Script/Apple/Siri_Req.js
-^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/bag\?(.*) url script-response-body https://hub.qste.com/Script/Apple/Siri_Resp.js
+^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*) url script-request-header https://hub.nange.cn/Script/Apple/Siri_Req.js
+^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/bag\?(.*) url script-response-body https://hub.nange.cn/Script/Apple/Siri_Resp.js
 
 # > 咪咕视频
 # >> indexC
-^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\? url script-response-body https://hub.qste.com/Script/MiGu/indexC.js
+^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\? url script-response-body https://hub.nange.cn/Script/MiGu/indexC.js
 # >> manage
-^https?:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/? url script-response-body https://hub.qste.com/Script/MiGu/Manage.js
+^https?:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/? url script-response-body https://hub.nange.cn/Script/MiGu/Manage.js
 # >> member
-^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\? url script-response-body https://hub.qste.com/Script/MiGu/Member.js
+^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\? url script-response-body https://hub.nange.cn/Script/MiGu/Member.js
 
 # > Ban
-^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|ucp\/affcenter|getGlobalData|index|(\/|)vod\/reqplay|vod\/) url script-response-body https://hub.qste.com/Script/Live/Ban.js
+^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|ucp\/affcenter|getGlobalData|index|(\/|)vod\/reqplay|vod\/) url script-response-body https://hub.nange.cn/Script/Live/Ban.js
 
 # > 解锁 TikTok
 (?<=_region=)CN(?=&) url 307 KR
@@ -99,38 +99,38 @@ https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-bod
 ^https?:\/\/www\.zhihu\.com\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
 
 # > 扫描全能王 pro
-^https:\/\/.+\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://hub.qste.com/Script/CamScanner/CamScanner.js
-^https?:\/\/.+\.intsig\.net\/user\/cs\/get_user_attribute url script-response-body https://hub.qste.com/Script/CamScanner/UserAttribute.js
+^https:\/\/.+\.intsig\.net\/purchase\/cs\/query_property\? url script-response-body https://hub.nange.cn/Script/CamScanner/CamScanner.js
+^https?:\/\/.+\.intsig\.net\/user\/cs\/get_user_attribute url script-response-body https://hub.nange.cn/Script/CamScanner/UserAttribute.js
 
 # > Bear熊掌记  内购解锁
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://hub.qste.com/Script/Work/Bear.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://hub.nange.cn/Script/Work/Bear.js
 
 # > 智能证件照相机 (by @superuv)
-^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister url script-response-body https://hub.qste.com/Script/Work/TakeIDPhoto.js
+^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister url script-response-body https://hub.nange.cn/Script/Work/TakeIDPhoto.js
 
 # > 轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
-https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info) url script-response-body https://hub.qste.com/Script/Photo/ULike.js
+https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info) url script-response-body https://hub.nange.cn/Script/Photo/ULike.js
 
 #> 菜谱大全解锁vip (By @photonmang)
-https?:\/\/api\.jiaonizuocai\.com url script-response-body https://hub.qste.com/Script/Life/CookBook.js
+https?:\/\/api\.jiaonizuocai\.com url script-response-body https://hub.nange.cn/Script/Life/CookBook.js
 
 # > 美颜相机一次性解锁内购（by黑黑酱）
-^https:\/\/api\.meiyan\.com\/iap\/verify\.json url script-response-body https://hub.qste.com/Script/Photo/BeautyCam.js
+^https:\/\/api\.meiyan\.com\/iap\/verify\.json url script-response-body https://hub.nange.cn/Script/Photo/BeautyCam.js
 
 #> Netflix获取评分(by yichahucha)
-^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://hub.qste.com/Script/Netflix/Rating.js
+^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://hub.nange.cn/Script/Netflix/Rating.js
 
-^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://hub.qste.com/Script/Netflix/Rating.js
+^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://hub.nange.cn/Script/Netflix/Rating.js
 
 # > VSCO
-^https:\/\/(api\.revenuecat\.com\/.+\/subscribers|vsco\.co\/api\/subscriptions\/.+\/user-subscriptions)\/ url script-response-body https://hub.qste.com/Script/Photo/VSCO.js
+^https:\/\/(api\.revenuecat\.com\/.+\/subscribers|vsco\.co\/api\/subscriptions\/.+\/user-subscriptions)\/ url script-response-body https://hub.nange.cn/Script/Photo/VSCO.js
 
 # > Lightroom
-^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://hub.qste.com/Script/Adobe/Lightroom.js
+^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body https://hub.nange.cn/Script/Adobe/Lightroom.js
 
 # > Pdfexpert
-^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body https://hub.qste.com/Script/Readdle/PDFExpertVIP.js
+^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body https://hub.nange.cn/Script/Readdle/PDFExpertVIP.js
 
 # > phothop&PSexpress
-^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile url script-response-body https://hub.qste.com/Script/Adobe/PhotoShopExpress.js
+^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile url script-response-body https://hub.nange.cn/Script/Adobe/PhotoShopExpress.js
 

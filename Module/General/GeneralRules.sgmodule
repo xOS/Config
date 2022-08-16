@@ -32,7 +32,7 @@ skip-proxy = %APPEND% iosapps.itunes.apple.com
 
 [Rule]
 # > Look Up (Only for Wikipedia@macOS, Surge Enhance Mode enabled required)
-RULE-SET,https://hub.qste.com/RuleSet/Wikipedia_for_Look_Up.list,常用
+RULE-SET,https://hub.nange.cn/RuleSet/Wikipedia_for_Look_Up.list,常用
 
 [Header Rewrite]
 # > 颇可
@@ -131,145 +131,145 @@ https://www\.google\.com\.hk\/search\?q=([\w.]+)&(.+) https://www.google.com.sg/
 
 [Map Local]
 # > 微博
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data="https://hub.qste.com/Mock/Weibo/hy_dongtu.gif"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://hub.qste.com/Mock/Weibo/jiantougaocheng.png"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.qste.com/Mock/Weibo/avatar_vip_golden.png"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.qste.com/Mock/Weibo/feed_icon_100vip_7_default.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data="https://hub.nange.cn/Mock/Weibo/hy_dongtu.gif"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://hub.nange.cn/Mock/Weibo/jiantougaocheng.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.nange.cn/Mock/Weibo/avatar_vip_golden.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.nange.cn/Mock/Weibo/feed_icon_100vip_7_default.png"
 
 # > 会员中心弹窗
-^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/vipcenter\/popalert data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
-^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/vipcenter\/userdata data="https://hub.qste.com/Mock/Blank/Blank_Dict.json"
+^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/vipcenter\/popalert data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
+^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/vipcenter\/userdata data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
 # > 获取设备型号
-^https?:\/\/m?api\.weibo\.c(n|om)\/device\/get data="https://hub.qste.com/Mock/Weibo/getDevice.json"
+^https?:\/\/m?api\.weibo\.c(n|om)\/device\/get data="https://hub.nange.cn/Mock/Weibo/getDevice.json"
 
 # > Nicegram
-^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} data="https://hub.qste.com/Mock/Nicegram/premiumAccess.json" header="Content-Type: text/plain"
+^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} data="https://hub.nange.cn/Mock/Nicegram/premiumAccess.json" header="Content-Type: text/plain"
 
 [Script]
 # > 网络信息
-网络状态 = type=generic, script-path=https://hub.qste.com/Script/Tools/NetInfo.js
+网络状态 = type=generic, script-path=https://hub.nange.cn/Script/Tools/NetInfo.js
 
 # > Netflix 检测
-# Netflix 检测 = type=generic, script-path=https://hub.qste.com/Script/Tools/NFCheck.js
+# Netflix 检测 = type=generic, script-path=https://hub.nange.cn/Script/Tools/NFCheck.js
 
 # > 倒数日
-倒数日 = type=generic, script-path=https://hub.qste.com/Script/Tools/Days.js
+倒数日 = type=generic, script-path=https://hub.nange.cn/Script/Tools/Days.js
 
 # > 刷新 DNS 缓存
-刷新 DNS = type=generic, script-path=https://hub.qste.com/Script/Tools/FlushDNS.js
+刷新 DNS = type=generic, script-path=https://hub.nange.cn/Script/Tools/FlushDNS.js
 
 # > 抓包状态
-抓包状态 = type=generic, script-path=https://hub.qste.com/Script/Tools/CaptureMode.js
+抓包状态 = type=generic, script-path=https://hub.nange.cn/Script/Tools/CaptureMode.js
 
 # > 服务状态
-服务状态 = type=generic, script-path=https://hub.qste.com/Script/Tools/APIStatus.js
+服务状态 = type=generic, script-path=https://hub.nange.cn/Script/Tools/APIStatus.js
 
 # > 话费流量
-话费流量 = type=http-request,script-path=https://hub.qste.com/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
+话费流量 = type=http-request,script-path=https://hub.nange.cn/Script/Tools/TelecomDetail.js,pattern=^https?:\/\/e.189.cn\/store\/user\/package_detail.do,requires-body=1,max-size=0,timeout=10
 
 # > 咪咕视频
-indexC = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/indexC.js
-manage = type=http-response,pattern=^https?:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/Manage.js
-member = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/MiGu/Member.js
+indexC = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/indexContract\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/indexC.js
+manage = type=http-response,pattern=^https?:\/\/app-sc\.miguvideo\.com\/app-management\/.+\/resolution\/?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/Manage.js
+member = type=http-response,pattern=^https?:\/\/.*\.miguvideo\.com\/ability\/.+\/member-info\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/MiGu/Member.js
 
 # > 奈飞评分
-奈飞评分 = script-path=https://hub.qste.com/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+奈飞评分 = script-path=https://hub.nange.cn/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
 
-奈飞评分 = requires-body=1,script-path=https://hub.qste.com/Script/Netflix/Rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
+奈飞评分 = requires-body=1,script-path=https://hub.nange.cn/Script/Netflix/Rating.js,type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
 
-单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Netflix/RatingSeason.js
+单集评分 = type=http-response,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Netflix/RatingSeason.js
 
 # > VSCO 滤镜 VIP
-VSCO = type=http-response,pattern=^https?:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/VSCO/VSCO.js
+VSCO = type=http-response,pattern=^https?:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/VSCO/VSCO.js
 
 # > Lightroom
-Lightroom = type=http-response,pattern=^https?:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Adobe/Lightroom.js,script-update-interval=-1
+Lightroom = type=http-response,pattern=^https?:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Adobe/Lightroom.js,script-update-interval=-1
 
 # > Photoshop Express
-Photoshop Express = type=http-response,pattern=^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
+Photoshop Express = type=http-response,pattern=^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
 
 # > CamScanner unlocks pro, Cloud scanning is not available.
-CamScanner = type=http-response,pattern=https?:\/\/.+\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/CamScanner/CamScanner.js,script-update-interval=0
-UserAttribute = type=http-response,pattern=^https?:\/\/.+\.intsig\.net\/user\/cs\/get_user_attribute,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/CamScanner/UserAttribute.js
+CamScanner = type=http-response,pattern=https?:\/\/.+\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/CamScanner/CamScanner.js,script-update-interval=0
+UserAttribute = type=http-response,pattern=^https?:\/\/.+\.intsig\.net\/user\/cs\/get_user_attribute,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/CamScanner/UserAttribute.js
 
 # > Bear熊掌记 (By Miao Miao)
-Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Work/Bear.js,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+Bear 熊掌记 = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Work/Bear.js,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt
 
 # > Peak 解锁 Pro
-Peak = requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Work/Peak.js,type=http-response,pattern=^https?:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
+Peak = requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Work/Peak.js,type=http-response,pattern=^https?:\/\/billing\.peakcloud\.org\/billing\/2\/user\/me?
 
 # > Reddit 解锁 Premium
-Premium = type=http-response,pattern=^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Reddit/Premium.js
+Premium = type=http-response,pattern=^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Reddit/Premium.js
 
 # > 轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
-轻颜相机 = type=http-response,pattern=^https?:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Photo/ULike.js,script-update-interval=-1
+轻颜相机 = type=http-response,pattern=^https?:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Photo/ULike.js,script-update-interval=-1
 
 # > Unlock Documents-PdfExpert-Scaner Pro
-Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Readdle/PDFExpert.js,script-update-interval=-1
+Documents-PdfExpert = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Readdle/PDFExpert.js,script-update-interval=-1
 
 # > Ban
-Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|ucp\/affcenter|getGlobalData|index|(\/|)vod\/reqplay|vod\/),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Live/Ban.js
+Ban = type=http-response,pattern=^https?:\/\/.+?\.(guoguo|pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|ucp\/affcenter|getGlobalData|index|(\/|)vod\/reqplay|vod\/),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Live/Ban.js
 
 # > Aloha 高级版
-Aloha = type=http-response,pattern=^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Aloha/Aloha.js
+Aloha = type=http-response,pattern=^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Aloha/Aloha.js
 
 # > 七猫小说 VIP
-UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/(get-user-info|my-center|(get-role-adv-vip-info|vip\/index)|my-level|page),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/QMNovel/UserInfo.js
+UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/user\/(get-user-info|my-center|(get-role-adv-vip-info|vip\/index)|my-level|page),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/QMNovel/UserInfo.js
 
 # > 百度网盘
-http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Baidu/BaiduCloud.js
+http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Baidu/BaiduCloud.js
 
 # > Spotify
-Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.qste.com/Script/Spotify/Spotify.js
+Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nange.cn/Script/Spotify/Spotify.js
 
 # > 微博个人信息
-个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/Profile.js
+个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Profile.js
 
-会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Weibo/VIPCenter.js
+会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/VIPCenter.js
 
 # > 搜狗阅读 VIP
-VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/(vip\/vipInfo|completeUserInfo),requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/SogouReader/VIPInfo.js
+VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/(vip\/vipInfo|completeUserInfo),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/SogouReader/VIPInfo.js
 
 # > Enpass 高级版
-Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/Enpass/Enpass.js
+Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Enpass/Enpass.js
 
 # > YouTube 中文字幕
-Player = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$, requires-body=1, max-size=0, timeout=30, script-path=https://hub.qste.com/Script/YouTube/Player.js
-TimedText = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$, requires-body=1, max-size=0, script-path=https://hub.qste.com/Script/YouTube/TimedText.js
+Player = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$, requires-body=1, max-size=0, timeout=30, script-path=https://hub.nange.cn/Script/YouTube/Player.js
+TimedText = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$, requires-body=1, max-size=0, script-path=https://hub.nange.cn/Script/YouTube/TimedText.js
 
 # > UptimeRobot
-UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/UptimeRobot/UptimeRobot.js
+UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/UptimeRobot/UptimeRobot.js
 
 # > FlighTradar24
-flighTradar24 = type=http-response,pattern=^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\?,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/FlighTradar24/FlighTradar24.js
+flighTradar24 = type=http-response,pattern=^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/FlighTradar24/FlighTradar24.js
 
 # > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
-Siri 建议 请求体 = type=http-request, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=0, timeout=5, script-path=https://hub.qste.com/Script/Apple/Siri_Req.js
+Siri 建议 请求体 = type=http-request, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=0, timeout=5, script-path=https://hub.nange.cn/Script/Apple/Siri_Req.js
 
-Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=1, timeout=10, script-path=https://hub.qste.com/Script/Apple/Siri_Resp.js
+Siri 建议 响应体 = type=http-response, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=1, timeout=10, script-path=https://hub.nange.cn/Script/Apple/Siri_Resp.js
 
 # > Apple 天气
-可用性 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/availability\/.*, requires-body=1, script-path=https://hub.qste.com/Script/Apple/Weather_Availability.js, argument=
+可用性 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/availability\/.*, requires-body=1, script-path=https://hub.nange.cn/Script/Apple/Weather_Availability.js, argument=
 
-天气 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.*, requires-body=1, timeout=20, script-path=https://hub.qste.com/Script/Apple/Weather.js, argument=
+天气 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.*, requires-body=1, timeout=20, script-path=https://hub.nange.cn/Script/Apple/Weather.js, argument=
 
-天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://hub.qste.com/Script/Apple/Weather_Map.js, argument=
+天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://hub.nange.cn/Script/Apple/Weather_Map.js, argument=
 
 # > TestFlight 账户管理
-TestFlight  = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://hub.qste.com/Script/Apple/TestFlight.js
+TestFlight  = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://hub.nange.cn/Script/Apple/TestFlight.js
 
 # > Unlock Revenuecat
-Revenuecat = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://hub.qste.com/Script/RevenueCat/RevenueCat.js,script-update-interval=-1
+Revenuecat = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/RevenueCat/RevenueCat.js,script-update-interval=-1
 
 # > 微信自动阅读
-微信阅读 = type=http-response,pattern=^https?://mp\.weixin\.qq\.com/s.+?,requires-body=1,script-path=https://hub.qste.com/Script/Tools/RewriteBody.js, argument="</script>->setTimeout(()=>window.history.back(),6000); </script>"
+微信阅读 = type=http-response,pattern=^https?://mp\.weixin\.qq\.com/s.+?,requires-body=1,script-path=https://hub.nange.cn/Script/Tools/RewriteBody.js, argument="</script>->setTimeout(()=>window.history.back(),6000); </script>"
 
 # > 迅雷解锁
-迅雷 = type=http-response,pattern=^https?:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$,requires-body=1,script-path=https://hub.qste.com/Script/Xunlei/Xunlei.js,script-update-interval=0,max-size=0
+迅雷 = type=http-response,pattern=^https?:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$,requires-body=1,script-path=https://hub.nange.cn/Script/Xunlei/Xunlei.js,script-update-interval=0,max-size=0
 
 # > WPS解锁
-WPS解锁超级 = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,script-path=https://hub.qste.com/Script/WPS//WPS.js,script-update-interval=0,max-size=0
+WPS解锁超级 = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,script-path=https://hub.nange.cn/Script/WPS//WPS.js,script-update-interval=0,max-size=0
 
 [MITM]
-hostname = %APPEND% -hub.qste.com, -api.qste.com, *nange.cn, *qste.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, *.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, *api.weibo.cn, *api.weibo.com, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com, mp.weixin.qq.com, api.revenuecat.com, xluser-ssl.xunlei.com, account.wps.cn, testflight.apple.com
+hostname = %APPEND% -hub.nange.cn, -api.qste.com, *nange.cn, *qste.com, *cloudimg.net, *.miguvideo.com, *poco.cn, ios.prod.ftl.netflix.com, vsco.co, api.revenuecat.com, *.intsig.net, lcs-mobile-cops.adobe.io, photos.adobe.io, billing.peakcloud.org, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, license.pdfexpert.com, link.zhihu.com, weibo.cn, *api.weibo.cn, *api.weibo.com, new.vip.weibo.cn, sinaurl.cn, shop.sc.weibo.com, ios.fuliapps.com, apple.fuliapps.com, ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com, *.pipiapps.com, *.guoguoapps.com, oauth.reddit.com, weather-data.apple.com, weather-map.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, h5.sinaimg.cn, restore-access.indream.app, api.alohaprofile.com, *.wtzw.com, spclient.wg.spotify.com, pan.baidu.com, *.sogou.com, license.enpass.io, e.189.cn, www.google.cn, www.google.com, *google.com.??, *google.hk, api.abema.io, app.biliintl.com, passport.biliintl.com, www.firefox.com.cn, link.zhihu.com, home.115.com, *.nflxvideo.net, *.youtube.com, api.uptimerobot.com, *.flightradar24.com, mp.weixin.qq.com, api.revenuecat.com, xluser-ssl.xunlei.com, account.wps.cn, testflight.apple.com

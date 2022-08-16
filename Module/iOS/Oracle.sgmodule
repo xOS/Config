@@ -5,4 +5,4 @@
 force-http-engine-hosts = %APPEND% *.online-metrix.net, 224.0.0.*
 
 [Rule]
-RULE-SET,https://hub.qste.com/RuleSet/Oracle.list,常用,update-interval=259200
+RULE-SET,https://hub.nange.cn/RuleSet/Oracle.list,常用,update-interval=259200

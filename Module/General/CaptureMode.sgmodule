@@ -7,4 +7,4 @@
 
 [Script]
 # > 抓包状态
-抓包状态 = type=generic, script-path=https://hub.qste.com/Script/Tools/CaptureMode.js
+抓包状态 = type=generic, script-path=https://hub.nange.cn/Script/Tools/CaptureMode.js

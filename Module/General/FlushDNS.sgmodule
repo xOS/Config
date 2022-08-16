@@ -7,4 +7,4 @@
 
 [Script]
 # > 刷新 DNS 缓存
-刷新 DNS = type=generic, script-path=https://hub.qste.com/Script/Tools/FlushDNS.js
+刷新 DNS = type=generic, script-path=https://hub.nange.cn/Script/Tools/FlushDNS.js

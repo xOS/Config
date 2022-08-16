@@ -3,8 +3,8 @@
 #!system=ios
 
 [Script]
-防火墙(规则) = type=rule,script-path=https://hub.qste.com/Script/Tools/TimedFirewall.js
-防火墙(事件) = type=event,event-name=network-changed,script-path=https://hub.qste.com/Script/Tools/WiFiFirewall.js
+防火墙(规则) = type=rule,script-path=https://hub.nange.cn/Script/Tools/TimedFirewall.js
+防火墙(事件) = type=event,event-name=network-changed,script-path=https://hub.nange.cn/Script/Tools/WiFiFirewall.js
 
 [Rule]
-AND,((NOT,((OR,((USER-AGENT,Surge*), (RULE-SET,https://hub.qste.com/RuleSet/Apple.list))))), (SCRIPT,防火墙(规则))),REJECT-TINYGIF
+AND,((NOT,((OR,((USER-AGENT,Surge*), (RULE-SET,https://hub.nange.cn/RuleSet/Apple.list))))), (SCRIPT,防火墙(规则))),REJECT-TINYGIF

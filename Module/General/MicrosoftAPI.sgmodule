@@ -2,8 +2,8 @@
 #!desc=Extend MS api expiration date till 2999. 
 
 [Script]
-MicrosoftAPI = type=http-request,pattern=^https:\/\/graph\.microsoft\.com\/v1\.0\/myorganization\/applications\/[\w-]+\/addPassword,requires-body=1,max-size=-1,script-path=https://hub.qste.com/Script/Others/MicrosoftAPI.js
-AzureAPI = type=http-request,pattern=^https:\/\/main\.iam\.ad\.ext\.azure\.com\/api\/AADGraph,requires-body=1,max-size=-1,script-path=https://hub.qste.com/Script/Others/AzureAPI.js
+MicrosoftAPI = type=http-request,pattern=^https:\/\/graph\.microsoft\.com\/v1\.0\/myorganization\/applications\/[\w-]+\/addPassword,requires-body=1,max-size=-1,script-path=https://hub.nange.cn/Script/Others/MicrosoftAPI.js
+AzureAPI = type=http-request,pattern=^https:\/\/main\.iam\.ad\.ext\.azure\.com\/api\/AADGraph,requires-body=1,max-size=-1,script-path=https://hub.nange.cn/Script/Others/AzureAPI.js
 
 [MITM]
 hostname = %INSERT% graph.microsoft.com, main.iam.ad.ext.azure.com
