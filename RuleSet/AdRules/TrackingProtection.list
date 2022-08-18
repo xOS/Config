@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.lr-ingest.io
 .svibeacon.onezapp.com
 .views.2222.ro
 .signalayer.com
@@ -4640,6 +4641,9 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.analytics.newscred.com
+.analytics.digitalpfizer.com
+.intg.snapchat.com
 .p.ura.news
 .statsapi.tiendeo.com.tr
 .perf.hsforms.com
