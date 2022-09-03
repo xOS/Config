@@ -4,6 +4,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.log-sg.bytegsdk.com
+.gpm-mon-sg.bytegsdk.com
+.gpm-mon-sg.byteoversea.com
 .ip2c.landscape.co.jp
 .analytics.clientify.net
 .stats.darkreader.app
@@ -4647,6 +4650,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.metricus.artlebedev.ru
 .pipe-collect.ebu.io
 .d3kyk5bao1crtw.cloudfront.net
 .o365diagtelemetry.trafficmanager.net
@@ -18852,7 +18856,7 @@
 .xlog.byteoversea.com
 .gecko-sg.byteoversea.com
 .ug-sg.byteoversea.com
-.log.byteoversea.com
+.log*.byteoversea.com
 .tracking.aldi-international.com
 .direct-collect.dy-api.com
 .direct-collect.dy-api.eu
