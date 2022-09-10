@@ -55,14 +55,6 @@ URL-REGEX,^https?:\/\/api-(.*)\.dutils\.com,REJECT
 URL-REGEX,^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService,REJECT
 # URL-REGEX,^https?:\/\/client2\.cmread\.com\/cmread\/portalapi$,REJECT
 
-# > 搜狗阅读
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/api\/app\/ios\/shelf\/recommend,REJECT
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/ad,REJECT
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/ad\/multi,REJECT
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/images\/tj\.gif,REJECT
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/ad\/api,REJECT
-
-
 # > 豆瓣
 URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$,REJECT
 URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$,REJECT
@@ -895,9 +887,6 @@ ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/(forum.php\?mod
 
 # > 飞常准
 ^https?:\/\/api\.cdmcaac\.com\/ad\/ data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
-
-# > 搜狗阅读
-^https?:\/\/k\.sogou\.com\/abs\/ios\/v3\/bookcoverRecomm data="https://hub.nange.cn/Mock/Blank/Default.html"
 
 # >>  会员中心弹窗
 ^https?:\/\/api\.bilibili\.com\/x\/vip\/window\/list data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"

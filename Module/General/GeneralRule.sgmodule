@@ -58,13 +58,6 @@ URL-REGEX,^https?:\/\/api-(.*)\.dutils\.com,REJECT
 URL-REGEX,^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService,REJECT
 # URL-REGEX,^https?:\/\/client2\.cmread\.com\/cmread\/portalapi$,REJECT
 
-# > 搜狗阅读
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/api\/app\/ios\/shelf\/recommend,REJECT
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/ad,REJECT
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/ad\/multi,REJECT
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/images\/tj\.gif,REJECT
-URL-REGEX,^https?:\/\/k\.sogou\.com\/abs\/ad\/api,REJECT
-
 # > 豆瓣
 URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$,REJECT
 URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$,REJECT
@@ -937,9 +930,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # > 飞常准
 ^https?:\/\/api\.cdmcaac\.com\/ad\/ data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
-# > 搜狗阅读
-^https?:\/\/k\.sogou\.com\/abs\/ios\/v3\/bookcoverRecomm data="https://hub.nange.cn/Mock/Blank/Default.html"
-
 # >>  会员中心弹窗
 ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/vip\/window\/list data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
@@ -1336,9 +1326,6 @@ Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bo
 个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Profile.js
 
 会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/VIPCenter.js
-
-# > 搜狗阅读 VIP
-VIPInfo = type=http-response,pattern=^https?:\/\/.+\.sogou\.com\/apt\/app\/ios\/(vip\/vipInfo|completeUserInfo),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/SogouReader/VIPInfo.js
 
 # > Enpass 高级版
 Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/subscription\/me,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Enpass/Enpass.js
