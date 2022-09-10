@@ -1235,10 +1235,6 @@ Enpass = type=http-response,pattern=^https?:\/\/license\.enpass\.io\/api\/v1\/su
 
 # SVIP = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/(v2\/databox\/get_personal_info|business\/.+\/users\/vip\/info),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/AliDrive/SVIPInfo.js
 
-# > YouTube 中文字幕
-Player = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$, requires-body=1, max-size=0, timeout=30, script-path=https://hub.nange.cn/Script/YouTube/Player.js
-TimedText = type=http-response, pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$, requires-body=1, max-size=0, script-path=https://hub.nange.cn/Script/YouTube/TimedText.js
-
 # > 在聚焦搜索(Spotlight)和查询(Look Up)中启用Siri建议(Siri Suggestions)功能
 Siri 建议 请求体 = type=http-request, pattern=^https?:\/\/api.*\.smoot\.apple\.(com|cn)\/(bag|search|card)\?(.*), requires-body=0, timeout=5, script-path=https://hub.nange.cn/Script/Apple/Siri_Req.js
 
