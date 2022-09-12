@@ -440,6 +440,7 @@
 .adnium.com
 .prebids.adnsx.com
 .acdn.adnxs-simple.com
+.ib.adnxs-simple.com
 .nym1-ib.adnxs-simple.com
 .acdn.adnxs.com
 .adscale-emea.adnxs.com
@@ -704,10 +705,13 @@
 .inmobisdk-a.akamaihd.net
 .middycdn-a.akamaihd.net
 .ntvcld-a.akamaihd.net
+.113vod-adaptive.akamaized.net
 .appsflyer.com.akamaized.net
 .jioads.akamaized.net
 .abcd.mdc.akamaized.net
 .speee-ad.akamaized.net
+.statics-marketingsites-eus-ms-com.akamaized.net
+.statics-marketingsites-neu-ms-com.akamaized.net
 .co.akisinn.info
 .int.akisinn.info
 .int.akisinn.site
@@ -957,6 +961,9 @@
 .api.areametrics.com
 .dptr.areyouahuman.com
 .n-cdn.areyouahuman.com
+.metabet.api.areyouwatchingthis.com
+.metabet.static.api.areyouwatchingthis.com
+.metabet.static.areyouwatchingthis.com
 .api.arity.com
 .rcn.asapp.com
 .sdk.asapp.com
@@ -989,6 +996,7 @@
 .smetrics.att.com
 .api.attentivemobile.com
 .events.attentivemobile.com
+.cdn.attn.tv
 .at.atwola.com
 .uc.atwola.com
 .y.atwola.com
@@ -1018,6 +1026,7 @@
 .masdpanalytics.azureedge.net
 .ffg-analytics-functionsk3nvxfne4dp4s.azurewebsites.net
 .b2c.com
+.collect.banggood.com
 .dc.banggood.com
 .bango.net
 .bannersnack.com
@@ -1069,6 +1078,7 @@
 .us-trk.bidmatrixdsp.com
 .bidr.io
 .bidsopt.com
+.server.bidstack.com
 .gce-or.bidswitch.net
 .gce-sc.bidswitch.net
 .ghent-gce-sc.bidswitch.net
@@ -1137,6 +1147,10 @@
 .cdn.braze.eu
 .fra-01.braze.eu
 .brealtime.com
+.cdn.brid.tv
+.p.brid.tv
+.services.brid.tv
+.stats-dev.brid.tv
 .ads.bridgebase.com
 .adserver.bridgebase.com
 .sec-citi.bridgetrack.com
@@ -1380,6 +1394,7 @@
 .config.claspws.tv
 .events.claspws.tv
 .i.clean.gg
+.marketo.clearbit.com
 .net.cleverjp.com
 .sender.clevernt.com
 .ui.clevernt.com
@@ -1425,7 +1440,9 @@
 .metrics.cloudflarebolt.com
 .static.cloudflareinsights.com
 .us-central1-adaptive-growth.cloudfunctions.net
+.res.cloudinary.com
 .cloudmobi.net
+.customer.cludo.com
 .cas.cluep.com
 .dev-as.cluep.com
 .lcf.cmplay.cmcm.com
@@ -1511,12 +1528,15 @@
 .prebid.cootlogix.com
 .events-stream-svc.usw2.cordial.com
 .message-hub-svc.usw2.cordial.com
+.sitegenesis.production.deckers.coremedia.cloud
 .coremetrics.com
 .locator1.corevm.com
 .locatorpp.corevm.com
 .monetize-api.coronalabs.com
 .stats.coronalabs.com
 .count.ly
+.static.cloud.coveo.com
+.cloudplatform.coveo.com
 .smetrics.cox.com
 .cpmstar.com
 .cpx.to
@@ -1672,6 +1692,7 @@
 .t.domdex.com
 .collector.doordash.com
 .uk-script.dotmetrics.net
+.prebid-match.dotomi.com
 .doubleclick.net
 .doubleverify.com
 .api.doumob.com
@@ -1808,6 +1829,7 @@
 .adlic.us-west-2.elasticbeanstalk.com
 .api-gateway.us-west-2.elasticbeanstalk.com
 .wpsconfig4svr.elasticbeanstalk.com
+.assets.emarsys.net
 .me-client.eservice.emarsys.net
 .mobile-sdk-config.gservice.emarsys.net
 .config.emb-api.com
@@ -1858,11 +1880,13 @@
 .smetrics1.experian.com
 .boombit-api.exponea.com
 .extend.tv
+.everlywell.extole.io
 .extremereach.io
 .ps.eyeota.net
 .track.eyeviewads.com
 .filter.ezmob.com
 .xml.ezmob.com
+.go.ezoic.net
 .fabric.io
 .an.facebook.com
 .pixel.facebook.com
@@ -1881,6 +1905,7 @@
 .firstimpression.io
 .logging.fishsticksgames.com
 .widget.fitanalytics.com
+.script.fixel.ai
 .flashtalking.com
 .ad.flipboard.com
 .ue.flipboard.com
@@ -1982,9 +2007,11 @@
 .tag.getdrip.com
 .api-telemetry.servers.getgo.com
 .telemetry.servers.getgo.com
+.everlywell.cname.getrockerbox.com
 .analytics.getshogun.com
 .hades.getsocial.im
 .sdk.open.talk.getui.net
+.app.getwoohoo.com
 .analytics-server.gimbal.com
 .communicate.gimbal.com
 .placebubble.gimbal.com
@@ -2013,6 +2040,7 @@
 .unid.go.com
 .tapjoy.go2cloud.org
 .media.go2speed.org
+.marketing.goabode.com
 .goadservices.com
 .gocarrot.com
 .adlockscreen.goforandroid.com
@@ -2244,6 +2272,7 @@
 .innity.com
 .innity.net
 .innovid.com
+.perimeterx.widget.insent.ai
 .analytics-events.inshorts.com
 .insightexpressai.com
 .cdn.insigit.com
@@ -2365,6 +2394,7 @@
 .sis.jpush.io
 .c.jsrdn.com
 .s.jsrdn.com
+.cdn.jst.ai
 .juiceadv.com
 .analytics.jumboprivacy.com
 .mobile-sdk-resources.jumio.com
@@ -2860,6 +2890,8 @@
 .adtrack1.midasplayer.com
 .client.midosoo.com
 .minimob.com
+.analytics-tcp.mintegral.net
+.pok.mintegral.net
 .apv-launcher.minute.ly
 .snippet.minute.ly
 .assets.minutemediacdn.com
@@ -3061,6 +3093,7 @@
 .sdkconf.msstatic.com
 .mtburn.com
 .mtrcss.com
+.cdn-aka.ts.mtvnservices.com
 .adv.mxmcdn.net
 .mxpnl.com
 .oxp.mxptint.net
@@ -3079,6 +3112,7 @@
 .nappyattack.com
 .static.narrativ.com
 .io.narrative.io
+.assets.narvar.com
 .api.native.ai
 .cdn.native.ai
 .sdk.native123.com
@@ -3108,6 +3142,7 @@
 .js-agent.newrelic.com
 .mobile-collector.newrelic.com
 .www.newsbreak.com
+.v2.pixel.newscgp.com
 .us.tags.newscgp.com
 .nex8.net
 .nexac.com
@@ -3188,6 +3223,7 @@
 .openstat.net
 .log.opentracker.net
 .update.openx.com
+.nytimes-d.openx.net
 .rtb.openx.net
 .samyonews-d.openx.net
 .u.openx.net
@@ -3342,6 +3378,7 @@
 .trk.pinterest.com
 .pippio.com
 .pixel.watch
+.pub.pixels.ai
 .placed.com
 .ads.placeiq.com
 .ak-cdn.placelocal.com
@@ -3504,6 +3541,7 @@
 .log.wtlogin.qq.com
 .ysdk.qq.com
 .siteintercept.qualtrics.com
+.cmp.quantcast.com
 .quantcount.com
 .2kpixel.quantserve.com
 .cms.quantserve.com
@@ -3532,10 +3570,13 @@
 .ravm.tv
 .rayjump.com
 .assets.rbl.ms
+.pages-stats.rbl.ms
+.user-stats.rbl.ms
 .rbnt.org
 .realclever.com
 .ac.realvu.net
 .cdn.rebel.ai
+.cdn.rebuyengine.com
 .recreativ.ru
 .events.redditmedia.com
 .redfast.com
@@ -3562,6 +3603,7 @@
 .tag.retargeter.com
 .tracking.retargeting.biz
 .waves.retentionscience.com
+.static.returngo.ai
 .assets.revcontent.com
 .cdn.revcontent.com
 .html-img.revcontent.com
@@ -3684,6 +3726,7 @@
 .api.salmonads.com
 .net.salmonads.com
 .report.salmonads.com
+.images.salsify.com
 .sam4m.com
 .samba.tv
 .tracker.samplicio.us
@@ -3699,6 +3742,7 @@
 .api.saypromo.net
 .sbbanner.com
 .sc-static.net
+.cdn.scarabresearch.com
 .recommender.scarabresearch.com
 .aprod.scopely.io
 .collector.scopely.io
@@ -3746,6 +3790,7 @@
 .servebom.com
 .m.servedby-buysellads.com
 .e.serverbid.com
+.sync.serverbid.com
 .serving-sys.com
 .ws.sessioncam.com
 .track.sgdmobile.com
@@ -3756,6 +3801,7 @@
 .partner.shareaholic.com
 .pixel.shareaholic.com
 .recs.shareaholic.com
+.static.shareasale.com
 .id.sharedid.org
 .buttons-config.sharethis.com
 .count-server.sharethis.com
@@ -4000,6 +4046,7 @@
 .strikeiron.com
 .static.subiz.com
 .www.summerhamster.com
+.load.sumo.com
 .sumome.com
 .superad2.com.sg
 .u.superadbox.com
@@ -4209,6 +4256,8 @@
 .adx-exchange.toast.com
 .tagmanager.toast.com
 .aamt.today.com
+.adscfg.togothermany.cn
+.adsup.togothermany.cn
 .adservice.tohsoft.com
 .android-com-wildlife-games-battle-royale-free-zooba.topaz-analytics.com
 .playtest-api.topaz-analytics.com
@@ -4217,6 +4266,7 @@
 .analytics.tout.com
 .tpbid.com
 .s.tpctrust.com
+.cdn.tpdads.com
 .log.trackingio.com
 .slog.trackingio.com
 .cdn-magiclinks.trackonomics.net
@@ -4656,6 +4706,7 @@
 .m.yap.yahoo.com
 .pr-bh.ybp.yahoo.com
 .partnerads.ysm.yahoo.com
+.report.appmetrica.yandex.net
 .yandexadexchange.net
 .yemonisoni.com
 .bi.yeshen.com
@@ -4773,7 +4824,6 @@
 .smart.idmnet.pl
 .axept.io
 .controlcookies.com
-.cmp.quantcast.com
 .clickskeks.at
 .consent.nit.ro
 .ccm.takuma.de
@@ -5572,7 +5622,6 @@
 .plus20.ru
 .st.yagla.ru
 .partner-widget.vse-sdal.com
-.perimeterx.widget.insent.ai
 .go.pardot.com
 .dl.metabar.ru
 .plista.com
@@ -5982,7 +6031,6 @@
 .ad.lomadee.com
 .myezads.com
 .adshares.net
-.tonemedia.com
 .2d56d0483a.com
 .slowerwave.cyou
 .nearestaxe.com
@@ -9264,6 +9312,7 @@
 .5nt1gx7o57.com
 .5odjin7ipi.com
 .5ovrmmmoubi71efvatfd.com
+.5pi13h3q.de
 .5qg9ibt1a6.com
 .5toft8or7on8tt.com
 .5umpz4evlgkm.com
@@ -17808,6 +17857,7 @@
 .lepinsar.com
 .lepsogoso.com
 .lerrdoriak.com
+.les7andla4.cfd
 .lessalle.com
 .lessite.pro
 .lessonis.com
@@ -23761,6 +23811,7 @@
 .tomqcaljnjvge.com
 .tomrigdabih.com
 .tomvtvucvlee.com
+.tonemedia.com
 .tonicincompetent.com
 .toninjaska.com
 .tonnection.xyz
@@ -26272,6 +26323,7 @@
 .adshuffle.com
 .adsiduous.com
 .adslivecorp.com
+.adsmart.hk
 .adsninja.ca
 .adsparc.net
 .adspeed.com
@@ -40794,12 +40846,29 @@
 .ixbccrp.cn
 .jiuku.pw
 .tianlans.xyz
+.mzhw.xyz
+.cppwd2ahf.xyz
+.ok-qqzzjsyuming.com
+.dccc.cloud
+.lebkrli.cn
+.id08.top
+.28n7.icu
+.wykw.fun
+.jwadakesa.cyou
+.jhuvybt.cn
+.ryjhrqn.cn
+.666826.xyz
+.ahp12.site
+.yd3c.top
+.cqqwe2pea.xyz
 .dmg-dd.oss-accelerate.aliyuncs.com
 .dongtukj.oss-cn-hongkong.aliyuncs.com
 .facai383.oss-cn-guangzhou.aliyuncs.com
 .hdtu.oss-cn-beijing.aliyuncs.com
 .xpj08.oss-cn-beijing.aliyuncs.com
 .smuc.cnnfootballclub.com
+.d1.gocye.com
+.bmjs.xzw.com
 .display.itmemo.cn
 .1.doudouditu.com
 .a.zuowenku.net
@@ -41827,8 +41896,6 @@
 .tag-based.s3.*.amazonaws.com
 .oeqirr.com
 .cbdatatracker.com
-.user-stats.rbl.ms
-.pages-stats.rbl.ms
 .res.rbl.ms
 .hubble.netease.com
 .im.cbsileads.com
@@ -45469,7 +45536,6 @@
 .svi.online.sberbank.ru
 .dmp.sbermarketing.ru
 .clt.banggood.com
-.collect.banggood.com
 .collector.github.com
 .logs.unchecky.com
 .logging.e-himart.co.kr
@@ -46772,7 +46838,6 @@
 .statistics.fppressa.ru
 .statistics.mailerlite.com
 .statistics.news1.kr
-.stats-dev.brid.tv
 .stats-newyork1.bloxcms.com
 .stats.aplus.com
 .stats.articlesbase.com
@@ -48237,6 +48302,7 @@
 .ndf81.com
 .nejmqianyan.cn
 .nero.live
+.netcentric.biz
 .netcore.co.in
 .netcoresmartech.com
 .netrefer.com
@@ -48282,6 +48348,7 @@
 .pirsch.io
 .plerdy.com
 .pnstat.com
+.podcorn.com
 .podfdch.com
 .pointillist.com
 .posthog.com
@@ -56530,6 +56597,7 @@
 .novunu.football-plyus.net
 .cxense.com
 .googletagmanager.com
+.tw.cx
 .zdbb.net
 .7eer.net
 .adfox.ru
@@ -56607,7 +56675,6 @@
 .tracemyip.org
 .trackcmp.net
 .treasuredata.com
-.tw.cx
 .uralweb.ru
 .userreport.com
 .v3cdn.net
@@ -68988,7 +69055,6 @@
 .cdn.cohesionapps.com
 .cdn.kaizenplatform.net
 .cdn.zx-adnet.com
-.script.fixel.ai
 .utt.impactcdn.com
 .cdn.memo.co
 .j.mrpdata.net
@@ -72357,7 +72423,6 @@
 .data.mistat.xiaomi.com
 .dsg.sc.omtrdc.net
 .metrics.adflake.com
-.report.appmetrica.yandex.net
 .taurus.iad.appboy.com
 .ups.ksmobile.net
 .114so.cn
