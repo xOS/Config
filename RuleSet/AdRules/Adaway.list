@@ -1279,7 +1279,6 @@
 .metrics.cloudflarebolt.com
 .static.cloudflareinsights.com
 .us-central1-adaptive-growth.cloudfunctions.net
-.res.cloudinary.com
 .cloudmobi.net
 .customer.cludo.com
 .cas.cluep.com
@@ -2312,8 +2311,6 @@
 .ask.log.kuyun.com
 .api.lanistaads.com
 .largosoft.co.kr
-.events.launchdarkly.com
-.mobile.launchdarkly.com
 .lavanetwork.net
 .cc.lbesec.com
 .events.lbesecapi.com
