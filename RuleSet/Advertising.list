@@ -1139,7 +1139,7 @@ URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/,REJECT
 DOMAIN-SUFFIX,amazon-adsystem.com,REJECT
 
 # > Apple
-DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
+#DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
 DOMAIN-SUFFIX,ads.internal.unity3d.com,REJECT
 DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT
 DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
