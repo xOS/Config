@@ -11,3 +11,6 @@ DOMAIN,scootersoftware.com,REJECT
 
 # > 微软
 DOMAIN,self.events.data.microsoft.com,REJECT
+
+# > 拼多多视频
+DOMAIN-KEYWORD,pplay-video,REJECT
