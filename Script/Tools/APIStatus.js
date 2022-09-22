@@ -8,7 +8,7 @@ if (!v4IP) {
         "icon-color": "#ff9800"
     });
 } else {
-    $httpClient.get("https://api.qste.com/version", function (error, response, data) {
+    $httpClient.get("https://api.nange.cn/version", function (error, response, data) {
         var str = data.toString();
         var ver = str.replace(/backend\n$/gm, "").replace("subconverter ", "").replace(/\s+/g, "");
         var reg = RegExp(/backend/);
