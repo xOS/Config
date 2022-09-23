@@ -120,6 +120,7 @@ if (
         obj.cards[0].card_group = obj.cards[0].card_group.filter(c => !c.itemid.includes("t:51"));
     }
     filter_top_search(obj.cards[0].card_group);
+    }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path19) != -1) {
     let obj = JSON.parse(body);
