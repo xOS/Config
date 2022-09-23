@@ -115,9 +115,11 @@ if (
     let obj = JSON.parse(body);
     if (obj.cards) obj.cards = filter_timeline_cards(obj.cards);
     // 删除热搜列表置顶条目
-    if (url.indexOf(path16) != -1 && obj.cards && obj.cards.length > 0 && obj.cards[0].card_group && obj.cards[0].card_group[0].itemid) {
+    if (url.indexOf(path16) != -1 && obj.cards && obj.cards.length > 0 && obj.cards[0].card_group) {
+    if (obj.cards[0].card_group[0].itemid) {
         obj.cards[0].card_group = obj.cards[0].card_group.filter(c => !c.itemid.includes("t:51"));
     }
+    filter_top_search(obj.cards[0].card_group);
     body = JSON.stringify(obj);
 } else if (url.indexOf(path19) != -1) {
     let obj = JSON.parse(body);
