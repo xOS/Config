@@ -116,10 +116,10 @@ if (
     if (obj.cards) obj.cards = filter_timeline_cards(obj.cards);
     // 删除热搜列表置顶条目
     if (url.indexOf(path16) != -1 && obj.cards && obj.cards.length > 0 && obj.cards[0].card_group) {
-    if (obj.cards[0].card_group[0].itemid) {
-        obj.cards[0].card_group = obj.cards[0].card_group.filter(c => !c.itemid.includes("t:51"));
-    }
-    filter_top_search(obj.cards[0].card_group);
+        if (obj.cards[0].card_group[0].itemid) {
+            obj.cards[0].card_group = obj.cards[0].card_group.filter(c => !c.itemid.includes("t:51"));
+        }
+        filter_top_search(obj.cards[0].card_group);
     }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path19) != -1) {
@@ -156,7 +156,7 @@ if (
         obj.channelInfo.channels[0].title = '';
         // obj.channelInfo.channels[0].titleInfo.style.padding = [0,0,0,0];
         let items = obj.channelInfo.channels[0].payload.items;
-        if(obj.channelInfo.channels[0].payload.moreInfo) obj.channelInfo.channels[0].payload.moreInfo = null;
+        if (obj.channelInfo.channels[0].payload.moreInfo) obj.channelInfo.channels[0].payload.moreInfo = null;
         if (items && items.length > 0) {
             items.splice(2);
             items[1].data.col = 1;
