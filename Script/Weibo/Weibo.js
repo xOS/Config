@@ -64,7 +64,7 @@ const itemMenusConfig = storeItemMenusConfig ? JSON.parse(storeItemMenusConfig) 
 }
 
 const modifyCardsUrls = ['/cardlist', 'video/community_tab', '/searchall'];
-const modifyStatusesUrls = ['statuses/friends/timeline', 'statuses/unread_friends_timeline', 'statuses/unread_hot_timeline', 'groups/timeline'];
+const modifyStatusesUrls = ['statuses/friends/timeline', 'statuses/unread_friends_timeline', 'statuses/unread_hot_timeline', 'groups/timeline' , 'statuses/container_timeline'];
 
 const otherUrls = {
     '/profile/me': 'removeHome', //个人页模块
@@ -75,6 +75,7 @@ const otherUrls = {
     '/comments/build_comments': 'removeComments', //微博详情页评论区相关内容
     '/container/get_item': 'containerHandler', //列表相关
     '/profile/statuses': 'userHandler', //用户主页
+    '/profile/userinfo': 'userHandler', //用户主页
     '/video/tiny_stream_video_list': 'nextVideoHandler', //取消自动播放下一个视频
     '/2/statuses/video_mixtimeline': 'nextVideoHandler',
     '/!/client/light_skin': 'tabSkinHandler',
