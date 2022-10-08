@@ -12,4 +12,4 @@
 天气地图 = type=http-request, pattern=^https?:\/\/weather-map2?\.apple\.com\/(v1|v2)\/mapOverlay\/\w+(\?.*country=CN.*)?$, requires-body=0, script-path=https://hub.nange.cn/Script/Apple/Weather_Map.js, argument=
 
 [MITM]
-hostname= %APPEND% weather-data.apple.com, weather-data-origin.apple.com, weather-map.apple.com, weather-map2.apple.com
+hostname= %APPEND% weather-edge.apple.com, weather-data.apple.com, weather-data-origin.apple.com, weather-map.apple.com, weather-map2.apple.com
