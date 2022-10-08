@@ -1442,7 +1442,7 @@ Revenuecat = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com,require
 迅雷 = type=http-response,pattern=^https?:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$,requires-body=1,script-path=https://hub.nange.cn/Script/Xunlei/Xunlei.js,script-update-interval=0,max-size=0
 
 # > WPS解锁
-WPS解锁超级 = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,script-path=https://hub.nange.cn/Script/WPS//WPS.js,script-update-interval=0,max-size=0
+WPS解锁超级 = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,script-path=https://hub.nange.cn/Script/WPS/WPS.js,script-update-interval=0,max-size=0
 
 # > 广告联盟
 广告联盟 = type=http-response,pattern=^https?:\/\/((api-access\.pangolin-sdk-toutiao|is\.snssdk)\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Adsense/Adsense.js
