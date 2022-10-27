@@ -752,7 +752,7 @@ URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo,REJECT
 URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog),REJECT
 
 # > 百度地图
-DOMAIN,newclient.map.baidu.com,REJECT
+# DOMAIN,newclient.map.baidu.com,REJECT
 URL-REGEX,^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg,REJECT
 
 # > CSDN
