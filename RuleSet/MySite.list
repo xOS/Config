@@ -7,6 +7,7 @@ DOMAIN-SUFFIX, cloudimg.net,DIRECT
 DOMAIN-SUFFIX, appleimg.com,DIRECT
 DOMAIN-SUFFIX, free.ac.cn,DIRECT
 DOMAIN-SUFFIX, ip.hn.cn,DIRECT
+DOMAIN-SUFFIX, ip.hi.cn,DIRECT
 DOMAIN-SUFFIX, bt.sh.cn,DIRECT
 DOMAIN-SUFFIX, nange.eu.org,DIRECT
 DOMAIN-SUFFIX, edgenode.eu.org,DIRECT
@@ -103,5 +104,4 @@ DOMAIN, hub.nange.cn,DIRECT
 DOMAIN, api.qste.com,DIRECT
 DOMAIN, ip.qste.com,DIRECT
 DOMAIN, ddns.qste.com,DIRECT
-DOMAIN-SUFFIX, free.ac.cn,DIRECT
 DOMAIN-SUFFIX, xupeinan.com,DIRECT
