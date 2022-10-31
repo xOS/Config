@@ -1400,7 +1400,7 @@ http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)/bilibili\.app\.view\
 http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)/x/v2/splash/list requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Splash.js
 
 # > 微博去广告
-微博 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(profile/(me|statuses|userinfo)|searchall|statuses/(unread_hot_timeline|extend|video_mixtimeline)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|container/get_item|search/container_discover),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Weibo.js
+微博 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(profile/(me|statuses|container_timeline)|searchall|statuses/(unread_hot_timeline|extend|video_mixtimeline)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|container/get_item|search/(finder|container_timeline|container_discover)),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Weibo.js
 
 开屏 = requires-body=1,script-path=https://hub.nange.cn/Script/Weibo/Launch.js,type=http-response,pattern=^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
 
