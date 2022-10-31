@@ -25,6 +25,8 @@ const mainConfig = {
 	removeLvZhou: true,					//绿洲模块
 	removeSearchWindow: true,			//#搜索页滑动窗口，有的不是广告
 
+	removeUnfollowTopic: true,	//超话-未关注的
+	removeUnusedPart: true,	//超话-乱七八糟没用的部分
 	blockIds: [2794631974],	//屏蔽的用户id列表
 
 	// profileSkin1: ["https://wx2.sinaimg.cn/large/006Y6guWly1gvjeaingvoj6046046dg802.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeaiuoxtj6046046dga02.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeaiytuyj60460463yv02.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeaj19hvj6046046aac02.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeaj5ka0j6046046jrp02.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeaj9jfmj6046046dg502.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeajd0hfj60460463yu02.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeajfce5j6046046wet02.jpg"],	//用户页：自定义 我的相册 - 客服 8个图标（需要8项），如果不需要设置为profileSkin1: null
