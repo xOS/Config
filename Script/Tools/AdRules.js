@@ -75,7 +75,7 @@ const configurations = [{
 {
     name: 'Base',
     sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt',
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt',
     },],
     transformations: [
         'RemoveComments',
