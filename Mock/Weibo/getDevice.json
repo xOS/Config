@@ -1,58 +1,61 @@
 {
     "devices": [
-        {
-            "id": "cvip_1071",
-            "vip": "0",
-            "name": "鞠婧祎的蜜橘"
-        },
-        {
-            "id": "7279",
-            "pid": "1854",
-            "vip": "0",
-            "name": "iPhone 13 Pro（银色）"
-        },
-        {
-            "id": "7280",
-            "pid": "1854",
-            "vip": "0",
-            "name": "iPhone 13 Pro（深空灰色）"
-        },
-        {
-            "id": "7281",
-            "pid": "1854",
-            "vip": "0",
-            "name": "iPhone 13 Pro（金色）"
-        },
-        {
-            "id": "7292",
-            "pid": "1854",
-            "vip": "0",
-            "name": "iPhone 13 Pro",
-            "default": 1
-        },
-        {
-            "id": 1399,
-            "vip": 0,
-            "name": "iPhone客户端"
-        }
+      {
+        "vip": "1",
+        "id": "7638",
+        "default": 1,
+        "name": "iPhone 14 Pro",
+        "pid": "1980"
+      },
+      {
+        "vip": "1",
+        "id": "7639",
+        "name": "iPhone 14 Pro(暗紫色)",
+        "pid": "1980"
+      },
+      {
+        "vip": "1",
+        "id": "7640",
+        "name": "iPhone 14 Pro(金色)",
+        "pid": "1980"
+      },
+      {
+        "vip": "1",
+        "id": "7641",
+        "name": "iPhone 14 Pro(银色)",
+        "pid": "1980"
+      },
+      {
+        "vip": "1",
+        "id": "7642",
+        "name": "iPhone 14 Pro(深空黑色)",
+        "pid": "1980"
+      },
+      {
+        "id": 1399,
+        "vip": 0,
+        "name": "iPhone客户端"
+      }
     ],
     "cards": [
-        {
-            "card_type": 6,
-            "title": "续费会员",
-            "itemid": "",
-            "scheme": "sinaweibo:\/\/wbox?id=5cc40d2fb5fbd",
-            "display_arrow": 0,
-            "is_asyn": 0,
-            "actionlog": [],
-            "multimedia_actionlog": [],
-            "highlight_state": "",
-            "readtimetype": "",
-            "card_type_name": "",
-            "show_type": 1,
-            "desc": "续费会员",
-            "positive_scheme": "",
-            "section_id": ""
-        }
+      {
+        "display_arrow": 0,
+        "actionlog": [
+        ],
+        "positive_scheme": "",
+        "readtimetype": "",
+        "is_asyn": 0,
+        "desc": "续费会员",
+        "title": "续费会员",
+        "card_type_name": "",
+        "card_type": 6,
+        "scheme": "sinaweibo:\/\/wbox?id=5cc40d2fb5fbd",
+        "itemid": "",
+        "highlight_state": "",
+        "section_id": "",
+        "multimedia_actionlog": [
+        ],
+        "show_type": 1
+      }
     ]
-}
+  }
