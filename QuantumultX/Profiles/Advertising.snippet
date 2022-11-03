@@ -48,7 +48,7 @@
 
 # > TextNow
 ^https?:\/\/api\.textnow\.me\/.+\/settings\? reject-dict
-^https?:\/\/api\.textnow\.me\/.+\/users\/(im(.*)\?|.+\/(wallet|subscription|subscription_state|premium_state)) url script-response-body https://hub.nange.cn/Script/TextNow/TextNow.js
+^https?:\/\/api\.textnow\.me\/.+\/users\/im(.*)\? url script-response-body https://hub.nange.cn/Script/TextNow/TextNow.js
 
 # > 拦截100弹窗
 ^https?:\/\/tagit\.hyhuo\.com\/block100\/get_popup reject-dict
