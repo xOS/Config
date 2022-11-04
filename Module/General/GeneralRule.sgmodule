@@ -13,7 +13,6 @@ force-http-engine-hosts = %APPEND% *.intsig.net, *.ott.cibntv.net, *.alicdn.com,
 URL-REGEX,^https?:\/\/.+\/wbts\.png$,REJECT
 URL-REGEX,^https?:\/\/.+\/licai\.png$,REJECT
 URL-REGEX,^https?:\/\/.+\/3fc\.png$,REJECT
-URL-REGEX,^https?:\/\/.+\/pull-flv-(.*)\.douyincdn\.com\/stage\/.+\.flv,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live_Normal\.png$,REJECT
 URL-REGEX,^https?:\/\/.+\.sinaimg\.cn\/.+\/(.*)?(fish|redicon|redpacket)(.*)?\.(png|jpg|jpeg|gif)$,REJECT
 URL-REGEX,^https?:\/\/.+\.sinaimg\.cn\/.+\/lipin_dongtu\.gif$,REJECT
