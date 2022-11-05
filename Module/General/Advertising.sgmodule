@@ -872,7 +872,7 @@ ClearURL = type=http-response,pattern=^https?:\/\/*hostloc\.com\/(forum.php\?mod
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/video\/tiny_stream_video_list data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
 # > 微博订单
-^https:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/menulist data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
+^https?:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/menulist data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
 # > 微博其它
 ^https?:\/\/letsgo\.e\.weibo\.com\/stracker\/fe\/report data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
