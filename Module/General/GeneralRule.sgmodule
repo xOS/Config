@@ -850,6 +850,8 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://hub.nange.cn/Mock/Weibo/jiantougaocheng.png"
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.nange.cn/Mock/Weibo/avatar_vip_golden.png"
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.nange.cn/Mock/Weibo/feed_icon_100vip_7_default.png"
+# > 微博订单
+^https:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/menulist data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
 # > 天翼云盘
 ^https?:\/\/api\.cloud\.189\.cn\/guns\/getCarouselAds data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
