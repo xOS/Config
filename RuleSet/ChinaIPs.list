@@ -2050,7 +2050,6 @@ IP-CIDR,106.75.224.0/19,no-resolve
 IP-CIDR,106.8.0.0/15,no-resolve
 IP-CIDR,106.80.0.0/12,no-resolve
 IP-CIDR,107.176.0.0/15,no-resolve
-IP-CIDR,107.6.225.0/24,no-resolve
 IP-CIDR,107.6.231.0/24,no-resolve
 IP-CIDR,107.6.240.0/24,no-resolve
 IP-CIDR,109.244.0.0/16,no-resolve
