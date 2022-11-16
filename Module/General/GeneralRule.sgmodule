@@ -341,6 +341,7 @@ URL-REGEX,^https?:\/\/www\.youtube\.com\/pagead\/adview\?,REJECT
 URL-REGEX,^https?:\/\/www\.googleapis\.com\/adsmeasurement,REJECT
 
 # > 其它
+URL-REGEX,^http:\/\/tbm-auth\.alicdn\.com\/.+\.mp4,REJECT
 URL-REGEX,^https?:\/\/cdn\.v2ex\.com\/assets\/sidebar\/.+\.png,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/i\.v2ex\.co\/70opo0Ru\.gif,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/app\.10086\.cn\/biz-orange\/SA\/advertising,REJECT
@@ -1306,9 +1307,6 @@ TextNow = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/im
 # > Aloha 高级版
 Aloha = type=http-response,pattern=^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Aloha/Aloha.js
 
-# > 七猫小说 VIP
-UserInfo = type=http-response,pattern=^https?:\/\/.+\.wtzw\.com\/api\/.+\/(user\/(get-user-info|my-center|get-role-adv-vip-info|my-level|page)|vip\/index),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/QMNovel/UserInfo.js
-
 # > 百度网盘
 http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Baidu/BaiduCloud.js
 
@@ -1342,41 +1340,10 @@ Siri Infomation Card = type=http-request, pattern=^https?:\/\/api(.*)\.smoot\.ap
 
 Siri Infomation Card = type=http-response, pattern=^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/card(\?.*)?$, requires-body=1, timeout=10, script-path=https://hub.nange.cn/Script/Apple/Siri_Resp.js, argument=
 
-# > 小红书
-推荐页广告 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\?client_volume,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/RedBook/RedBook.js
-
 # > 颇可
 用户信息 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/space\/(get_user_identity_info|get_brief_user_info),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/PoCo/UserInfo.js
 
 黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list,requires-body=1,max-size=-1,script-path=https://hub.nange.cn/Script/PoCo/BlockUser.js
-
-# > 哔哩哔哩
-# >> 整体栏的布局修改(包括“首页”右上角、下边 tab 等)
-http-response ^https:\/\/.+\.(bilibili|biliapi)\.(com|net)/x/resource/show/tab(/v2)?\?access_key requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Tab.js
-
-# >> “首页”的推荐
-http-response ^https?:\/\/.+\.(biliapi|bilibili)\.(net|com)/x/v2/feed/index(/story)\?access_key requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Feed.js
-
-# >>  “我的”的修改
-http-response ^https:\/\/.+\.(bilibili|biliapi)\.(com|net)/x/v2/account/mine\?access_key requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Mine.js
-
-# >>  “我的信息”的修改
-http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/account\/myinfo\?access_key requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/MyInfo.js
-
-# >>  “空间”的修改
-http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/space\?access_key requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Space.js
-
-# >>  “大会员”的修改
-http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/vip\/web\/vip_center\/combine requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Center.js
-
-# >>  动态广告
-http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)/bilibili\.app\.dynamic\.v2\.Dynamic/DynAll$ requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Dynamic.js
-
-# >> 播放器广告
-http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)/bilibili\.app\.view\.v1\.View/View$ requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/View.js
-
-# >> 开屏广告（预加载）
-http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)/x/v2/splash/list requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Bilibili/Splash.js
 
 # > 微博去广告
 微博 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(profile/(me|statuses|container_timeline)|searchall|statuses/(unread_hot_timeline|extend|video_mixtimeline)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|container/get_item|search/container_discover),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Weibo.js
@@ -1393,13 +1360,6 @@ http-response ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)/x/v2/splash/list req
 # > 微信公众号
 WeChat = script-path=https://hub.nange.cn/Script/WeChat/WeChat.js,type=http-request,pattern=^https?://mp\.weixin\.qq\.com/mp/getappmsgad
 
-# > 知乎 去广告
-个人中心 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/(www|api)\.zhihu\.com\/(api\/v4\/me\?include=draft_count|people\/self|feed-root\/block),script-path=https://hub.nange.cn/Script/Zhihu/People.js
-订阅 = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://hub.nange.cn/Script/Zhihu/Feed.js
-推荐 = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend\?start,script-path=https://hub.nange.cn/Script/Zhihu/Recommend.js
-问答 = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://hub.nange.cn/Script/Zhihu/Answer.js
-卡片 = type=http-response,pattern=^https?:\/\/api\.zhihu\.com\/api\/v4\/profile\/cards$,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Zhihu/Cards.js
-
 # > 天翼云盘
 homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/client\/homePages\.action,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Telecom/CTCloud.js
 
@@ -1408,9 +1368,6 @@ TestFlight  = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\
 
 # > Unlock Revenuecat
 Revenuecat = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/RevenueCat/RevenueCat.js,script-update-interval=-1
-
-# > 微信自动阅读
-微信阅读 = type=http-response,pattern=^https?://mp\.weixin\.qq\.com/s.+?,requires-body=1,script-path=https://hub.nange.cn/Script/Tools/RewriteBody.js, argument="</script>->setTimeout(()=>window.history.back(),6000); </script>"
 
 # > 迅雷解锁
 迅雷 = type=http-response,pattern=^https?:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v3\/getuserinfo$,requires-body=1,script-path=https://hub.nange.cn/Script/Xunlei/Xunlei.js,script-update-interval=0,max-size=0
