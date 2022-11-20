@@ -205,7 +205,7 @@ if (url.indexOf(userList) != -1 || url.indexOf(notice) != -1) {
   obj = JSON.parse(data);
   if(obj.messages) obj.messages = obj.messages.filter(element => !(element['isrecommend'] == true));
 }
-if (url.indexOf(profile) != -1) {
+if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
   obj.userInfo.user_ability_extend = 1;
   obj.userInfo.verified_type_ext = 1;
   obj.userInfo.verified_type = 0;
