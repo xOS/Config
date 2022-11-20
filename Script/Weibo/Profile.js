@@ -370,25 +370,25 @@ if (url.indexOf(statuses) != -1) {
   obj.region_name = "重庆";
 }
 if (url.indexOf(userInfo) != -1) {
-obj.header.data.verified_reason = "最美小仙女";
-obj.header.data.verified = true;
-obj.header.data.verified_type = 0;
-obj.header.data.verified_type_ext = 0;
-obj.header.data.svip = 1;
-obj.header.data.extend.chaohua_ability = 1;
-obj.header.data.orange_v = "最美小仙女";
-obj.header.data.extend.chaohua_ability = 1;
-obj.header.data.extend.brand_ability = 1;
-obj.header.data.extend.nft_ability = 1;
-obj.header.data.extend.vplus_ability = 1;
-obj.header.data.extend.wenda_ability = 1;
-obj.header.data.extend.live_ability = 1;
-obj.header.data.extend.gongyi_ability = 1;
-obj.header.data.extend.paycolumn_ability = 1;
-obj.header.data.extend.newbrand_ability = 1;
-obj.header.data.extend.ecommerce_ability = 1;
-obj.header.data.extend.hardfan_ability = 1;
-obj.header.data.verified_detail = {
+obj.header.data.userInfo.verified_reason = "最美小仙女";
+obj.header.data.userInfo.verified = true;
+obj.header.data.userInfo.verified_type = 0;
+obj.header.data.userInfo.verified_type_ext = 0;
+obj.header.data.userInfo.svip = 1;
+obj.header.data.userInfo.extend.chaohua_ability = 1;
+obj.header.data.userInfo.orange_v = "最美小仙女";
+obj.header.data.userInfo.extend.chaohua_ability = 1;
+obj.header.data.userInfo.extend.brand_ability = 1;
+obj.header.data.userInfo.extend.nft_ability = 1;
+obj.header.data.userInfo.extend.vplus_ability = 1;
+obj.header.data.userInfo.extend.wenda_ability = 1;
+obj.header.data.userInfo.extend.live_ability = 1;
+obj.header.data.userInfo.extend.gongyi_ability = 1;
+obj.header.data.userInfo.extend.paycolumn_ability = 1;
+obj.header.data.userInfo.extend.newbrand_ability = 1;
+obj.header.data.userInfo.extend.ecommerce_ability = 1;
+obj.header.data.userInfo.extend.hardfan_ability = 1;
+obj.header.data.userInfo.verified_detail = {
     "custom": 1,
     "data": [
       {
