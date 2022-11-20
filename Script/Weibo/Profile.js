@@ -1,11 +1,11 @@
 var obj = JSON.parse($response.body);
-const profile = "/profile";
+const profile = "/profile?";
 const users = "/users";
 const comments = "/comments";
 const statuses = "/statuses";
 const userList = "/direct_messages/user_list";
 const notice = "/messageflow/notice";
-const userInfo = "/userinfo";
+const userInfo = "/profile/userinfo";
 const url = $request.url;
 const verified = {
   "scheme": "",
