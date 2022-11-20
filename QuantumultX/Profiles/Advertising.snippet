@@ -497,7 +497,7 @@ HOST,dg.k.jd.com url reject
 (^https?:\/\/js\.t\.sinajs\.cn\/c2p\/sam\/frontend\/assets\/walletcache\.json|^https?:\/\/pay\.sc\.weibo\.com\/api\/client\/sdk\/app\/indexnew\/(index|person)|^https?:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/center) url script-response-body https://hub.nange.cn/Script/Weibo/Wallet.js
 
 # > 微博个人信息
-^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\? url script-response-body https://hub.nange.cn/Script/Weibo/Profile.js
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(profile\/userinfo|statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\? url script-response-body https://hub.nange.cn/Script/Weibo/Profile.js
 
 # > 微博会员中心
 ^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index) url script-response-body https://hub.nange.cn/Script/Weibo/VIPCenter.js

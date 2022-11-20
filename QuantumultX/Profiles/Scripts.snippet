@@ -35,7 +35,7 @@ hostname = link.zhihu.com, *.intsig.net, ios.prod.ftl.netflix.com, app.xunjiepdf
 ^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$ url script-response-body https://hub.nange.cn/Script/YouTube/TimedText.js
 
 # > 微博个人信息
-^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\? url script-response-body https://hub.nange.cn/Script/Weibo/Profile.js
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(profile\/userinfo|statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\? url script-response-body https://hub.nange.cn/Script/Weibo/Profile.js
 
 # > 会员中心
 ^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index) url script-response-body https://hub.nange.cn/Script/Weibo/VIPCenter.js

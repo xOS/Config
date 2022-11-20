@@ -86,7 +86,7 @@ URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
 
 [Script]
 # > 微博个人信息
-个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Profile.js
+个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(profile\/userinfo|statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Profile.js
 
 会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/VIPCenter.js
 
