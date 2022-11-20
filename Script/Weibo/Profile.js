@@ -5,6 +5,7 @@ const comments = "/comments";
 const statuses = "/statuses";
 const userList = "/direct_messages/user_list";
 const notice = "/messageflow/notice";
+const userInfo = "/userinfo";
 const url = $request.url;
 const verified = {
   "scheme": "",
@@ -367,5 +368,37 @@ if (url.indexOf(statuses) != -1) {
 
   obj.user.badge = badge;
   obj.region_name = "重庆";
+}
+if (url.indexOf(userInfo) != -1) {
+obj.header.data.verified_reason = "最美小仙女";
+obj.header.data.verified = true;
+obj.header.data.verified_type = 0;
+obj.header.data.verified_type_ext = 0;
+obj.header.data.svip = 1;
+obj.header.data.extend.chaohua_ability = 1;
+obj.header.data.orange_v = "最美小仙女";
+obj.header.data.extend.chaohua_ability = 1;
+obj.header.data.extend.brand_ability = 1;
+obj.header.data.extend.nft_ability = 1;
+obj.header.data.extend.vplus_ability = 1;
+obj.header.data.extend.wenda_ability = 1;
+obj.header.data.extend.live_ability = 1;
+obj.header.data.extend.gongyi_ability = 1;
+obj.header.data.extend.paycolumn_ability = 1;
+obj.header.data.extend.newbrand_ability = 1;
+obj.header.data.extend.ecommerce_ability = 1;
+obj.header.data.extend.hardfan_ability = 1;
+obj.header.data.verified_detail = {
+    "custom": 1,
+    "data": [
+      {
+        "key": 1,
+        "sub_key": 0,
+        "weight": 10,
+        "desc": "最美小仙女",
+        "timestamp": 0
+      }
+    ]
+  };
 }
 $done({ body: JSON.stringify(obj) });
