@@ -207,51 +207,50 @@ if (url.indexOf(userList) != -1 || url.indexOf(notice) != -1) {
 }
 
 if (url.indexOf(userInfo) != -1) {
-obj.header.data.userInfo.verified_reason = "最美小仙女";
-obj.header.data.userInfo.verified = true;
-obj.header.data.userInfo.verified_type = 0;
-obj.header.data.userInfo.verified_type_ext = 1;
-obj.header.data.userInfo.user_ability_extend = 1;
-obj.header.data.userInfo.svip = 1;
-obj.header.data.userInfo.extend.chaohua_ability = 1;
-obj.header.data.userInfo.orange_v = "最美小仙女";
-obj.header.data.userInfo.extend.chaohua_ability = 1;
-obj.header.data.userInfo.extend.brand_ability = 1;
-obj.header.data.userInfo.extend.nft_ability = 1;
-obj.header.data.userInfo.extend.vplus_ability = 1;
-obj.header.data.userInfo.extend.wenda_ability = 1;
-obj.header.data.userInfo.extend.live_ability = 1;
-obj.header.data.userInfo.extend.gongyi_ability = 1;
-obj.header.data.userInfo.extend.paycolumn_ability = 1;
-obj.header.data.userInfo.extend.newbrand_ability = 1;
-obj.header.data.userInfo.extend.ecommerce_ability = 1;
-obj.header.data.userInfo.extend.hardfan_ability = 1;
-obj.header.data.userInfo.verified_detail = {
-    "custom": 1,
-    "data": [
-      {
-        "key": 1,
-        "sub_key": 0,
-        "weight": 10,
-        "desc": "最美小仙女",
-        "timestamp": 0
-      }
-    ]
-  };
-obj.header.data.userInfo.icons = [
-    {
-      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
-      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
-    }
-  ];
+    obj.header.data.userInfo.verified_reason = "最美小仙女";
+    obj.header.data.userInfo.verified = true;
+    obj.header.data.userInfo.verified_type = 0;
+    obj.header.data.userInfo.verified_type_ext = 1;
+    obj.header.data.userInfo.user_ability_extend = 1;
+    obj.header.data.userInfo.svip = 1;
+    obj.header.data.userInfo.extend.chaohua_ability = 1;
+    obj.header.data.userInfo.orange_v = "最美小仙女";
+    obj.header.data.userInfo.extend.chaohua_ability = 1;
+    obj.header.data.userInfo.extend.brand_ability = 1;
+    obj.header.data.userInfo.extend.nft_ability = 1;
+    obj.header.data.userInfo.extend.vplus_ability = 1;
+    obj.header.data.userInfo.extend.wenda_ability = 1;
+    obj.header.data.userInfo.extend.live_ability = 1;
+    obj.header.data.userInfo.extend.gongyi_ability = 1;
+    obj.header.data.userInfo.extend.paycolumn_ability = 1;
+    obj.header.data.userInfo.extend.newbrand_ability = 1;
+    obj.header.data.userInfo.extend.ecommerce_ability = 1;
+    obj.header.data.userInfo.extend.hardfan_ability = 1;
+    obj.header.data.userInfo.verified_detail = {
+        custom: 1,
+        data: [
+            {
+                key: 1,
+                sub_key: 0,
+                weight: 10,
+                desc: "最美小仙女",
+                timestamp: 0,
+            },
+        ],
+    };
+    obj.header.data.userInfo.icons = [
+        {
+            url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
+            scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
+        },
+    ];
 
-  if (obj.header.data.userInfo.infoList[0].actionlog.ext != 'name:verified') {
-    obj.header.data.userInfo.infoList.splice(0, 0, verified);
-  } else {
-    obj.header.data.userInfo.infoList[0].desc = '最美小仙女';
-  }
-  obj.header.data.userInfo.badge = badge;
- }
+    if (obj.header.data.userInfo.infoList[0].actionlog.ext != "name:verified") {
+        obj.header.data.userInfo.infoList.splice(0, 0, verified);
+    } else {
+        obj.header.data.userInfo.infoList[0].desc = "最美小仙女";
+    }
+    obj.header.data.userInfo.badge = badge;
 }
 
 if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
