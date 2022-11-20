@@ -1,5 +1,5 @@
 var obj = JSON.parse($response.body);
-const profile = "/profile?";
+const profile = "/profile\?";
 const users = "/users";
 const comments = "/comments";
 const statuses = "/statuses";
@@ -205,6 +205,40 @@ if (url.indexOf(userList) != -1 || url.indexOf(notice) != -1) {
   obj = JSON.parse(data);
   if(obj.messages) obj.messages = obj.messages.filter(element => !(element['isrecommend'] == true));
 }
+
+if (url.indexOf(userInfo) != -1) {
+obj.header.data.userInfo.verified_reason = "最美小仙女";
+obj.header.data.userInfo.verified = true;
+obj.header.data.userInfo.verified_type = 0;
+obj.header.data.userInfo.verified_type_ext = 0;
+obj.header.data.userInfo.svip = 1;
+obj.header.data.userInfo.extend.chaohua_ability = 1;
+obj.header.data.userInfo.orange_v = "最美小仙女";
+obj.header.data.userInfo.extend.chaohua_ability = 1;
+obj.header.data.userInfo.extend.brand_ability = 1;
+obj.header.data.userInfo.extend.nft_ability = 1;
+obj.header.data.userInfo.extend.vplus_ability = 1;
+obj.header.data.userInfo.extend.wenda_ability = 1;
+obj.header.data.userInfo.extend.live_ability = 1;
+obj.header.data.userInfo.extend.gongyi_ability = 1;
+obj.header.data.userInfo.extend.paycolumn_ability = 1;
+obj.header.data.userInfo.extend.newbrand_ability = 1;
+obj.header.data.userInfo.extend.ecommerce_ability = 1;
+obj.header.data.userInfo.extend.hardfan_ability = 1;
+obj.header.data.userInfo.verified_detail = {
+    "custom": 1,
+    "data": [
+      {
+        "key": 1,
+        "sub_key": 0,
+        "weight": 10,
+        "desc": "最美小仙女",
+        "timestamp": 0
+      }
+    ]
+  };
+}
+
 if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
   obj.userInfo.user_ability_extend = 1;
   obj.userInfo.verified_type_ext = 1;
@@ -369,36 +403,5 @@ if (url.indexOf(statuses) != -1) {
   obj.user.badge = badge;
   obj.region_name = "重庆";
 }
-if (url.indexOf(userInfo) != -1) {
-obj.header.data.userInfo.verified_reason = "最美小仙女";
-obj.header.data.userInfo.verified = true;
-obj.header.data.userInfo.verified_type = 0;
-obj.header.data.userInfo.verified_type_ext = 0;
-obj.header.data.userInfo.svip = 1;
-obj.header.data.userInfo.extend.chaohua_ability = 1;
-obj.header.data.userInfo.orange_v = "最美小仙女";
-obj.header.data.userInfo.extend.chaohua_ability = 1;
-obj.header.data.userInfo.extend.brand_ability = 1;
-obj.header.data.userInfo.extend.nft_ability = 1;
-obj.header.data.userInfo.extend.vplus_ability = 1;
-obj.header.data.userInfo.extend.wenda_ability = 1;
-obj.header.data.userInfo.extend.live_ability = 1;
-obj.header.data.userInfo.extend.gongyi_ability = 1;
-obj.header.data.userInfo.extend.paycolumn_ability = 1;
-obj.header.data.userInfo.extend.newbrand_ability = 1;
-obj.header.data.userInfo.extend.ecommerce_ability = 1;
-obj.header.data.userInfo.extend.hardfan_ability = 1;
-obj.header.data.userInfo.verified_detail = {
-    "custom": 1,
-    "data": [
-      {
-        "key": 1,
-        "sub_key": 0,
-        "weight": 10,
-        "desc": "最美小仙女",
-        "timestamp": 0
-      }
-    ]
-  };
-}
+
 $done({ body: JSON.stringify(obj) });
