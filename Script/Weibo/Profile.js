@@ -208,6 +208,7 @@ if (url.indexOf(userList) != -1 || url.indexOf(notice) != -1) {
 
 if (url.indexOf(userInfo) != -1) {
     obj.header.data.userInfo.verified_reason = "最美小仙女";
+    obj.header.data.userInfo.remark = "";
     obj.header.data.userInfo.verified = true;
     obj.header.data.userInfo.verified_type = 0;
     obj.header.data.userInfo.verified_type_ext = 1;
@@ -245,10 +246,10 @@ if (url.indexOf(userInfo) != -1) {
         },
     ];
 
-    if (obj.header.data.userInfo.infoList[0].actionlog.ext != "name:verified") {
-        obj.header.data.userInfo.infoList.splice(0, 0, verified);
+    if (obj.header.data.infoList[0].actionlog.ext != "name:verified") {
+        obj.header.data.infoList.splice(0, 0, verified);
     } else {
-        obj.header.data.userInfo.infoList[0].desc = "最美小仙女";
+        obj.header.data.infoList[0].desc = "最美小仙女";
     }
     obj.header.data.userInfo.badge = badge;
 }
@@ -281,6 +282,7 @@ if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
   obj.userInfo.type = 1;
   obj.userInfo.star = 1;
   obj.userInfo.friendships_relation = 2;
+  obj.userInfo.remark = "";
   obj.userInfo.icons = [
     {
       "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
@@ -322,6 +324,7 @@ if (url.indexOf(users) != -1) {
   obj.has_ability_tag = 1;
   obj.type = 1;
   obj.star = 1;
+  obj.remark = "";
   obj.friendships_relation = 2;
   obj.icons = [
     {
@@ -361,6 +364,7 @@ if (url.indexOf(comments) != -1) {
   obj.user.has_ability_tag = 1;
   obj.user.type = 1;
   obj.user.star = 1;
+  obj.user.remark = "";
   obj.user.friendships_relation = 2;
   obj.user.icons = [
     {
@@ -406,6 +410,7 @@ if (url.indexOf(statuses) != -1) {
   obj.user.has_ability_tag = 1;
   obj.user.type = 1;
   obj.user.star = 1;
+  obj.user.remark = "";
   obj.user.friendships_relation = 2;
   obj.user.icons = [
     {
