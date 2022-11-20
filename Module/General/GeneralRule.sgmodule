@@ -1314,7 +1314,7 @@ http-response https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-
 Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://hub.nange.cn/Script/Spotify/Spotify.js
 
 # > 微博个人信息
-个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Profile.js
+个人信息 = type=http-response,pattern=^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(profile\/userinfo|statuses\/send|statuses\/destroy|comments\/destroy|profile|users\/(show|relation)|direct_messages\/user_list|messageflow\/notice)\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Profile.js
 
 会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/VIPCenter.js
 
