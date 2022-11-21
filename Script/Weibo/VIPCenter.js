@@ -13,7 +13,7 @@ if (url.indexOf(vipCenter) != -1) {
         obj.data.baseInfo.user_info.curtab.cashier_tab_id = '0';
         obj.data.baseInfo.user_info.mbtype = 12;
         obj.data.baseInfo.user_info.identity = '1,0';
-        obj.data.baseInfo.user_info.svip_desc = '您已经是微博高级会员';
+        obj.data.baseInfo.user_info.svip_desc = '您已经是微博超级会员';
         obj.data.baseInfo.user_info.vip_identity = 1;
         obj.data.baseInfo.vip_identity = 1;
     }
@@ -59,7 +59,7 @@ if (url.indexOf(mall) != -1 || url.indexOf(cardBackground) != -1) {
         obj.data.isVip = true;
         obj.data.novip_status = 0;
         obj.data.vip_level = 7;
-        obj.data.vip_end_date = '2099-12-21';
+        obj.data.vip_end_date = '2199-12-21';
         obj.data.pay_info = {
             'is_baoyue': false,
             'is_ios': true,
@@ -70,7 +70,7 @@ if (url.indexOf(mall) != -1 || url.indexOf(cardBackground) != -1) {
             'novip_status': 0,
             'vip_level': 7,
             'is_vip': true,
-            'vip_end_date': '2099-12-21'
+            'vip_end_date': '2199-12-21'
         }
         obj.data.payPop = 0;
     }
