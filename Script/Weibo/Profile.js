@@ -203,55 +203,62 @@ const badge = {
 if (url.indexOf(userList) != -1 || url.indexOf(notice) != -1) {
   let data = $response.body.replace(/\"verified_type\":-1/g, '"verified_type": 0').replace(/\"verified\":false/g, '"verified": true, "verified_type_ext": 1').replace(/\"verified_type_ext\":(\d)/g, '"verified_type_ext": 1');
   obj = JSON.parse(data);
-  if(obj.messages) obj.messages = obj.messages.filter(element => !(element['isrecommend'] == true));
+  if (obj.messages) obj.messages = obj.messages.filter(element => !(element['isrecommend'] == true));
 }
 
 if (url.indexOf(userInfo) != -1) {
-    obj.header.data.userInfo.verified_reason = "最美小仙女";
-    obj.header.data.userInfo.remark = "";
-    obj.header.data.userInfo.verified = true;
-    obj.header.data.userInfo.verified_type = 0;
-    obj.header.data.userInfo.verified_type_ext = 1;
-    obj.header.data.userInfo.user_ability_extend = 1;
-    obj.header.data.userInfo.svip = 1;
-    obj.header.data.userInfo.extend.chaohua_ability = 1;
-    obj.header.data.userInfo.orange_v = "最美小仙女";
-    obj.header.data.userInfo.extend.chaohua_ability = 1;
-    obj.header.data.userInfo.extend.brand_ability = 1;
-    obj.header.data.userInfo.extend.nft_ability = 1;
-    obj.header.data.userInfo.extend.vplus_ability = 1;
-    obj.header.data.userInfo.extend.wenda_ability = 1;
-    obj.header.data.userInfo.extend.live_ability = 1;
-    obj.header.data.userInfo.extend.gongyi_ability = 1;
-    obj.header.data.userInfo.extend.paycolumn_ability = 1;
-    obj.header.data.userInfo.extend.newbrand_ability = 1;
-    obj.header.data.userInfo.extend.ecommerce_ability = 1;
-    obj.header.data.userInfo.extend.hardfan_ability = 1;
-    obj.header.data.userInfo.verified_detail = {
-        custom: 1,
-        data: [
-            {
-                key: 1,
-                sub_key: 0,
-                weight: 10,
-                desc: "最美小仙女",
-                timestamp: 0,
-            },
-        ],
-    };
-    obj.header.data.userInfo.icons = [
-        {
-            url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
-            scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
-        },
-    ];
+  obj.header.data.userInfo.verified_reason = "最美小仙女";
+  obj.header.data.userInfo.remark = "";
+  obj.header.data.userInfo.verified = true;
+  obj.header.data.userInfo.followers_count = 987650000;
+  obj.header.data.userInfo.followers_count_str = "9876万";
+  obj.header.data.userInfo.star = 1;
+  obj.header.data.userInfo.mb_expire_time = 7257139200;
+  obj.header.data.userInfo.ip_location = "重庆";
+  obj.header.data.userInfo.verified_type_ext = 1;
+  obj.header.data.userInfo.user_ability_extend = 1;
+  obj.header.data.userInfo.svip = 1;
+  obj.header.data.userInfo.extend.chaohua_ability = 1;
+  obj.header.data.userInfo.orange_v = "最美小仙女";
+  obj.header.data.userInfo.extend.chaohua_ability = 1;
+  obj.header.data.userInfo.extend.brand_ability = 1;
+  obj.header.data.userInfo.extend.nft_ability = 1;
+  obj.header.data.userInfo.extend.vplus_ability = 1;
+  obj.header.data.userInfo.extend.wenda_ability = 1;
+  obj.header.data.userInfo.extend.live_ability = 1;
+  obj.header.data.userInfo.extend.gongyi_ability = 1;
+  obj.header.data.userInfo.extend.paycolumn_ability = 1;
+  obj.header.data.userInfo.extend.newbrand_ability = 1;
+  obj.header.data.userInfo.extend.ecommerce_ability = 1;
+  obj.header.data.userInfo.extend.hardfan_ability = 1;
+  obj.header.data.userInfo.verified_detail = {
+    custom: 1,
+    data: [
+      {
+        key: 1,
+        sub_key: 0,
+        weight: 10,
+        desc: "最美小仙女",
+        timestamp: 0,
+      },
+    ],
+  };
+  obj.header.data.userInfo.icons = [
+    {
+      name : "svip",
+      url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
+      isgif : true,
+      scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
+    },
+  ];
 
-    if (obj.header.data.infoList[0].actionlog.ext != "name:verified") {
-        obj.header.data.infoList.splice(0, 0, verified);
-    } else {
-        obj.header.data.infoList[0].desc = "最美小仙女";
-    }
-    obj.header.data.userInfo.badge = badge;
+  if (obj.header.data.infoList[0].actionlog.ext != "name:verified") {
+    obj.header.data.infoList.splice(0, 0, verified);
+  } else {
+    obj.header.data.infoList[0].desc = "最美小仙女";
+  }
+  obj.header.data.userInfo.badge = badge;
+  obj.header.data.userDescribe[0].text[0].content = "9876万";
 }
 
 if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
@@ -285,8 +292,10 @@ if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
   obj.userInfo.remark = "";
   obj.userInfo.icons = [
     {
-      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
-      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+      name : "svip",
+      url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
+      isgif : true,
+      scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     }
   ];
 
@@ -328,8 +337,10 @@ if (url.indexOf(users) != -1) {
   obj.friendships_relation = 2;
   obj.icons = [
     {
-      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
-      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+      name : "svip",
+      url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
+      isgif : true,
+      scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     }
   ];
 
@@ -368,8 +379,10 @@ if (url.indexOf(comments) != -1) {
   obj.user.friendships_relation = 2;
   obj.user.icons = [
     {
-      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
-      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+      name : "svip",
+      url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
+      isgif : true,
+      scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     }
   ];
 
@@ -414,8 +427,10 @@ if (url.indexOf(statuses) != -1) {
   obj.user.friendships_relation = 2;
   obj.user.icons = [
     {
-      "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
-      "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+      name : "svip",
+      url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
+      isgif : true,
+      scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     }
   ];
 
