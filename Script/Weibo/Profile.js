@@ -210,6 +210,7 @@ if (url.indexOf(userInfo) != -1) {
   obj.header.data.userInfo.verified_reason = "最美小仙女";
   obj.header.data.userInfo.remark = "";
   obj.header.data.userInfo.verified = true;
+  obj.header.data.userInfo.type = 1;
   obj.header.data.userInfo.followers_count = 98760000;
   obj.header.data.userInfo.followers_count_str = "9876万";
   obj.header.data.userInfo.star = 1;
