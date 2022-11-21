@@ -414,7 +414,7 @@ function removeTimeLine(data) {
             element.user.type = 1;
             element.user.star = 1;
             element.user.remark = "";
-            element.user.followers_count = 987650000;
+            element.user.followers_count = 98760000;
             element.user.followers_count_str = "9876万";
             element.user.mb_expire_time = 7257139200;
             element.user.icons = [{
@@ -436,6 +436,12 @@ function removeHomeVip(data) {
     let vipCenter = data.header.vipCenter;
     let vipIcon = data.header.vipIcon;
     let vipView = data.header.vipView;
+    let items = data.items;
+    if (items) {
+        if (items[3].title) {
+            items[3].title.content = "9876万";
+        }
+    }
     if (!vipCenter) {
         return data;
     }
