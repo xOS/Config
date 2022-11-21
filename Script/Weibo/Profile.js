@@ -245,9 +245,9 @@ if (url.indexOf(userInfo) != -1) {
   };
   obj.header.data.userInfo.icons = [
     {
-      name : "svip",
+      name: "svip",
       url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
-      isgif : true,
+      isgif: true,
       scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     },
   ];
@@ -290,11 +290,14 @@ if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
   obj.userInfo.star = 1;
   obj.userInfo.friendships_relation = 2;
   obj.userInfo.remark = "";
+  obj.userInfo.followers_count = 987650000;
+  obj.userInfo.followers_count_str = "9876万";
+  obj.userInfo.mb_expire_time = 7257139200;
   obj.userInfo.icons = [
     {
-      name : "svip",
+      name: "svip",
       url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
-      isgif : true,
+      isgif: true,
       scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     }
   ];
@@ -335,11 +338,14 @@ if (url.indexOf(users) != -1) {
   obj.star = 1;
   obj.remark = "";
   obj.friendships_relation = 2;
+  obj.followers_count = 987650000;
+  obj.followers_count_str = "9876万";
+  obj.mb_expire_time = 7257139200;
   obj.icons = [
     {
-      name : "svip",
+      name: "svip",
       url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
-      isgif : true,
+      isgif: true,
       scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     }
   ];
@@ -377,11 +383,14 @@ if (url.indexOf(comments) != -1) {
   obj.user.star = 1;
   obj.user.remark = "";
   obj.user.friendships_relation = 2;
+  obj.user.followers_count = 987650000;
+  obj.user.followers_count_str = "9876万";
+  obj.user.mb_expire_time = 7257139200;
   obj.user.icons = [
     {
-      name : "svip",
+      name: "svip",
       url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
-      isgif : true,
+      isgif: true,
       scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     }
   ];
@@ -425,11 +434,14 @@ if (url.indexOf(statuses) != -1) {
   obj.user.star = 1;
   obj.user.remark = "";
   obj.user.friendships_relation = 2;
+  obj.user.followers_count = 987650000;
+  obj.user.followers_count_str = "9876万";
+  obj.user.mb_expire_time = 7257139200;
   obj.user.icons = [
     {
-      name : "svip",
+      name: "svip",
       url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
-      isgif : true,
+      isgif: true,
       scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
     }
   ];

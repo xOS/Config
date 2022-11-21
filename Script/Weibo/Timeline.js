@@ -210,9 +210,15 @@ function filter_timeline_statuses(statuses) {
             element.user.has_ability_tag = 1;
             element.user.type = 1;
             element.user.star = 1;
+            element.user.remark = "";
+            element.user.followers_count = 987650000;
+            element.user.followers_count_str = "9876万";
+            element.user.mb_expire_time = 7257139200;
             element.user.icons = [{
-                "url": "https:\/\/h5.sinaimg.cn\/upload\/1004\/409\/2021\/06\/08\/feed_icon_100vip_7.png",
-                "scheme": "https:\/\/me.verified.weibo.com\/fans\/intro?topnavstyle=1"
+                name: "svip",
+                url: "https://h5.sinaimg.cn/upload/1004/409/2021/06/08/feed_icon_100vip_7.png",
+                isgif: true,
+                scheme: "https://me.verified.weibo.com/fans/intro?topnavstyle=1",
             }];
             if (
                 is_timeline_likerecommend(element.title) ||
