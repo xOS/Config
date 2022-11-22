@@ -37,8 +37,8 @@ if (url.indexOf(vipCenter) != -1) {
     obj.data.card_list[0].group[1].show_act = false;
     obj.data.card_list[0].group[1].actbg_config = {};
     if(obj.data.card_list[0].growdate_sort) obj.data.card_list[0].growdate_sort = [
-  "VIP：20199年12月21日 到期",
-  "SVIP：2199年12月21日 到期"
+  "SVIP：2199年12月21日 到期",
+  "VIP：2199年12月21日 到期"
 ];
     obj.data.card_list[0].group[1].img = 'https://h5.sinaimg.cn/upload/1004/14/2021/01/22/VIIPcard3x.png';
     if(obj.data.card_list[0].group[1].btn_config){
