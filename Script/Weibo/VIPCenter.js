@@ -16,7 +16,7 @@ if (url.indexOf(vipCenter) != -1) {
         obj.data.baseInfo.user_info.svip_desc = '您已经是微博超级会员';
         obj.data.baseInfo.user_info.tip_desc = '2199年12月21日 到期';
         obj.data.baseInfo.user_info.vip_identity = 3;
-        obj.data.baseInfo.user_info.curtab.name = svip;
+        obj.data.baseInfo.user_info.curtab.name = "svip";
         obj.data.baseInfo.vip_identity = 3;
     }
     if (obj.data.gobuy) {
