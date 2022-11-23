@@ -5,6 +5,7 @@ const mall = "/avatargj/mall";
 const cardBackground = "/cardbackground/index";
 const url = $request.url;
 if (url.indexOf(vipCenter) != -1) {
+ obj = obj.replace("gq_", 'hy_');
     if (obj && obj.data && obj.data.baseInfo) {
         obj.data.baseInfo.user_info.s_type = 3;
         obj.data.baseInfo.user_info.desc = '终身会员';
