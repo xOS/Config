@@ -1,12 +1,10 @@
-var obj = JSON.parse($response.body);
+var obj = JSON.parse($response.body.replace(/gq_/g, 'hy_'));
 const vipCenter = "/vipcenter/home";
 const userInfo = "/activity/userinfo";
 const mall = "/avatargj/mall";
 const cardBackground = "/cardbackground/index";
 const url = $request.url;
 if (url.indexOf(vipCenter) != -1) {
- let data = obj.replace(/gq_/g, 'hy_');
- let obj = data.JSON.parse(data);
     if (obj && obj.data && obj.data.baseInfo) {
         obj.data.baseInfo.user_info.s_type = 3;
         obj.data.baseInfo.user_info.desc = '终身会员';
