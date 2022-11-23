@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.pro-web-metrics.alias.s24cloud.net
 .i.tct-rom.com
 .js.glossom.jp
 .trackad.cz
@@ -4707,6 +4708,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.xp.apple.com
+.tracking.immobilienscout24.de
 .kinesis.eu-west-1.amazonaws.com
 .pclog.3u.com
 .analytics.tn.kz
@@ -22483,6 +22486,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.stat.gspaceteam.com
 .alexa-mobile-analytics-configuration-prod.s3.amazonaws.com
 .ets.easybrain.com
 .tracking-widget.fillr.com
