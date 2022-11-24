@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.counter.dev
 .pro-web-metrics.alias.s24cloud.net
 .i.tct-rom.com
 .js.glossom.jp
@@ -259,7 +260,6 @@
 .adcontroll.com
 .log.medietall.no
 .uqd.io
-.dygassets.dygdigital.com
 .ukw.jp
 .api.trueaudience.io
 .pixel.tatpek.com
@@ -22354,6 +22354,7 @@
 .wiz.ghostbed.com
 .wiz.sncf-connect.com
 .wz.allianz.fr
+.dygassets.dygdigital.com
 .analytics.chita.ru
 .metrics.ainews.kz
 .ddla593ymz72o.cloudfront.net
