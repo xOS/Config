@@ -1055,7 +1055,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # > 其它
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
 ^https?:\/\/pgdt\.gtimg\.cn\/ data="https://hub.nange.cn/Mock/Blank/Blank.jpg"
-^https?:\/\/log\.snssdk\.com\/service\/ data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(adgateway|adv)\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/eapi\/ad\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
 ^https?:\/\/(101\.201\.175\.228|182\.92\.251\.113)\/brand\/search\/v1\.json data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
