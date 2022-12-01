@@ -4710,6 +4710,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.harvester.cms.markiza.sk
 .trc.gpcdn.pl
 .web-device-id.banggood.com
 .dotcounter.douyucdn.cn
@@ -4725,7 +4726,6 @@
 .d-log.tv-asahi.co.jp
 .view.fujitv.co.jp
 .analytics.*.sky.com
-.xp.apple.com
 .tracking.immobilienscout24.de
 .kinesis.eu-west-1.amazonaws.com
 .pclog.3u.com
@@ -4760,7 +4760,6 @@
 .lists.ccmbg.com
 .track-srv.vietnamnet.vn
 .stats.tirexo.blue
-.cnt.streamz.ws
 .intake-analytics.wikimedia.org
 .tracking.univtec.com
 .counter.sberbank.ru
