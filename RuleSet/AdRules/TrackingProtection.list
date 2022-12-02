@@ -4710,6 +4710,13 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.collect.nature.com
+.analytics-api.dvdfab.*
+.servo-report.dvdfab.*
+.collector.xhwide8.com
+.collector.xhamster*.*
+.anonym.data.funkedigital.de
+.analytics.makeitmeme.com
 .harvester.cms.markiza.sk
 .trc.gpcdn.pl
 .web-device-id.banggood.com
@@ -5297,8 +5304,6 @@
 .collector.tescocompare.com
 .collector.trendmd.com
 .collector.wawlabs.com
-.collector.xhamster.com
-.collector.xhamster*.desi
 .collector.xhwide1.com
 .collector1.xhamster.com
 .comet.sputniknews.com
@@ -6025,7 +6030,6 @@
 .pixel.wp.com
 .pixel.yabidos.com
 .pixelappcollector.thesun.co.uk
-.pixelg.adswizz.com
 .pixelhere.com
 .pixels.ingbank.com.tr
 .pixels.livingsocial.com
@@ -23253,6 +23257,8 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.mon*-platform-*.tiktokv.com
+.log*-applog-*.tiktokv.com
 .logservice-*.platform.dbankcloud.cn
 .ubacollect-*.cloud.dbankcloud.cn
 .datacollector-*.dt.dbankcloud.cn
