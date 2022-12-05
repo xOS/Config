@@ -12,7 +12,7 @@
   "dependencies": {
     "@adguard/hostlist-compiler": "^1.0.15",
     "@sindresorhus/slugify": "^2.1.1",
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^11.1.0"
   },
   "resolutions": {
     "axios": "^0.24.0",
