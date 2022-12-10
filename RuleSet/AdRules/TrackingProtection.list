@@ -4720,6 +4720,11 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.s.360.cn
+.sp*.baidu.com
+.analytics.map.qq.com
+.zhihu-web-analytics.zhihu.com
+.sugar.zhihu.com
 .trace.51jingying.com
 .ss.webdock.io
 .events.webdock.io
