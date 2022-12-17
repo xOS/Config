@@ -22,22 +22,18 @@ hostname = *account.wps.cn, *account.wps.com
 **************************/
 
 var body = JSON.parse($response.body);
-var obj = {
-  exp: 0,
-  level: 8,
-  privilege: [
+if (body) {
+	body.level = 8;
+	body.exp = 9999;
+	body.privilege = [
     { spid: "data_recover", times: 0, expire_time: 4133059437 },
     { spid: "ocr", times: 0, expire_time: 4133059437 },
     { spid: "pdf2doc", times: 0, expire_time: 4133059437 },
     { spid: "pdf_merge", times: 0, expire_time: 4133059437 },
     { spid: "pdf_sign", times: 0, expire_time: 4133059437 },
     { spid: "pdf_split", times: 0, expire_time: 4133059437 }
-  ],
-  result: "ok",
-  total_buy: 0,
-  total_cost: -30,
-  userid: body.userid,
-  vip: {
+  ];
+	body.vip = {
     name: "超级会员",
     has_ad: 0,
     memberid: 40,
@@ -47,9 +43,8 @@ var obj = {
       { memberid: 20, name: "WPS会员", expire_time: 4133059437 },
       { memberid: 12, name: "稻壳会员", expire_time: 4133059437 }
     ]
-  },
-  wealth: 0,
-  expire_time: 4133059437
-};
-
-$done({ body: JSON.stringify(obj) });
+  };
+	body.expire_time = 4133059437;
+  
+}
+$done({ body: JSON.stringify(body) });
