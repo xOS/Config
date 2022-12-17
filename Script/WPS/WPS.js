@@ -50,11 +50,12 @@ if (body) {
   body.expire_time = 4133059437;
 }
 if (body.data) {
-  body.data.userinfo.exp = 99999;
-  body.data.userinfo.level = 9;
-  body.data.userinfo.privilege = privilege;
-  body.data.userinfo.vip = vip;
-  body.data.spaces_info = {
+  let data = body.data;
+  data.exp = 99999;
+  data.level = 9;
+  data.privilege = privilege;
+  data.vip = vip;
+  data.spaces_info = {
     "used": "0.10",
     "total": "1000.21",
     "unit": "T"
