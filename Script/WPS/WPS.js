@@ -22,29 +22,44 @@ hostname = *account.wps.cn, *account.wps.com
 **************************/
 
 var body = JSON.parse($response.body);
+var privilege = [
+  { spid: "data_recover", times: 0, expire_time: 4133059437 },
+  { spid: "ocr", times: 0, expire_time: 4133059437 },
+  { spid: "pdf2doc", times: 0, expire_time: 4133059437 },
+  { spid: "pdf_merge", times: 0, expire_time: 4133059437 },
+  { spid: "pdf_sign", times: 0, expire_time: 4133059437 },
+  { spid: "pdf_split", times: 0, expire_time: 4133059437 }
+];
+var vip = {
+  name: "超级会员",
+  has_ad: 0,
+  memberid: 40,
+  expire_time: 4133059437,
+  enabled: [
+    { memberid: 40, name: "超级会员", expire_time: 4133059437 },
+    { memberid: 20, name: "WPS会员", expire_time: 4133059437 },
+    { memberid: 12, name: "稻壳会员", expire_time: 4133059437 }
+  ]
+};
+
 if (body) {
-	body.level = 8;
-	body.exp = 9999;
-	body.privilege = [
-    { spid: "data_recover", times: 0, expire_time: 4133059437 },
-    { spid: "ocr", times: 0, expire_time: 4133059437 },
-    { spid: "pdf2doc", times: 0, expire_time: 4133059437 },
-    { spid: "pdf_merge", times: 0, expire_time: 4133059437 },
-    { spid: "pdf_sign", times: 0, expire_time: 4133059437 },
-    { spid: "pdf_split", times: 0, expire_time: 4133059437 }
-  ];
-	body.vip = {
-    name: "超级会员",
-    has_ad: 0,
-    memberid: 40,
-    expire_time: 4133059437,
-    enabled: [
-      { memberid: 40, name: "超级会员", expire_time: 4133059437 },
-      { memberid: 20, name: "WPS会员", expire_time: 4133059437 },
-      { memberid: 12, name: "稻壳会员", expire_time: 4133059437 }
-    ]
+  body.level = 8;
+  body.exp = 99999;
+  body.privilege = privilege;
+  body.vip = vip;
+  body.expire_time = 4133059437;
+}
+if (body.data) {
+  let data = body.data;
+  data.userinfo.exp = 99999;
+  data.userinfo.level = 9;
+  data.userinfo.privilege = privilege;
+  data.userinfo.vip = vip;
+  data.spaces_info = {
+    "used": "0.10",
+    "total": "1000.21",
+    "unit": "T"
   };
-	body.expire_time = 4133059437;
-  
+
 }
 $done({ body: JSON.stringify(body) });
