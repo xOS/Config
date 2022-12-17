@@ -5,7 +5,7 @@
 .xlog.snssdk.com
 .log.snssdk.com
 .improving.duckduckgo.com
-.bitban.com
+.web-vitals.bfops.io
 .media.richrelevance.com
 .eventtracking.hubapi.com
 .traffic.wdc.center
@@ -4723,6 +4723,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.cl.t3n.de
+.st.bitban.com
 .d1n00d49gkbray.cloudfront.net
 .in.unext.jp
 .s.360.cn
