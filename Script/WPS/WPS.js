@@ -43,16 +43,16 @@ var vip = {
 };
 
 if (body) {
-  body.level = 8;
-  body.exp = 99999;
+  body.level = 5;
+  body.exp = 999;
   body.privilege = privilege;
   body.vip = vip;
   body.expire_time = 4133059437;
 }
 if (body.data) {
   let data = body.data;
-  data.exp = 99999;
-  data.level = 9;
+  data.exp = 999;
+  data.level = 5;
   data.privilege = privilege;
   data.vip = vip;
   data.spaces_info = {
