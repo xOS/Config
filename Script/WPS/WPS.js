@@ -48,6 +48,7 @@ if (body) {
   body.privilege = privilege;
   body.vip = vip;
   body.expire_time = 4133059437;
+  body.total_cost = -30;
 }
 if (body.data) {
   let data = body.data;
@@ -55,6 +56,7 @@ if (body.data) {
   data.level = 5;
   data.privilege = privilege;
   data.vip = vip;
+  data.total_cost = -30;
   data.spaces_info = {
     "used": "0.10",
     "total": "1000.21",
