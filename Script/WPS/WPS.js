@@ -23,22 +23,22 @@ hostname = *account.wps.cn, *account.wps.com
 
 var body = JSON.parse($response.body);
 var privilege = [
-  { spid: "data_recover", times: 0, expire_time: 4133059437 },
-  { spid: "ocr", times: 0, expire_time: 4133059437 },
-  { spid: "pdf2doc", times: 0, expire_time: 4133059437 },
-  { spid: "pdf_merge", times: 0, expire_time: 4133059437 },
-  { spid: "pdf_sign", times: 0, expire_time: 4133059437 },
-  { spid: "pdf_split", times: 0, expire_time: 4133059437 }
+  { spid: "data_recover", times: 0, expire_time: 1924070637 },
+  { spid: "ocr", times: 0, expire_time: 1924070637 },
+  { spid: "pdf2doc", times: 0, expire_time: 1924070637 },
+  { spid: "pdf_merge", times: 0, expire_time: 1924070637 },
+  { spid: "pdf_sign", times: 0, expire_time: 1924070637 },
+  { spid: "pdf_split", times: 0, expire_time: 1924070637 }
 ];
 var vip = {
   name: "超级会员",
   has_ad: 0,
   memberid: 40,
-  expire_time: 4133059437,
+  expire_time: 1924070637,
   enabled: [
-    { memberid: 40, name: "超级会员", expire_time: 4133059437 },
-    { memberid: 20, name: "WPS会员", expire_time: 4133059437 },
-    { memberid: 12, name: "稻壳会员", expire_time: 4133059437 }
+    { memberid: 40, name: "超级会员", expire_time: 1924070637 },
+    { memberid: 20, name: "WPS会员", expire_time: 1924070637 },
+    { memberid: 12, name: "稻壳会员", expire_time: 1924070637 }
   ]
 };
 
@@ -47,7 +47,7 @@ if (body) {
   body.exp = 999;
   body.privilege = privilege;
   body.vip = vip;
-  body.expire_time = 4133059437;
+  body.expire_time = 1924070637;
 }
 if (body.data) {
   let data = body.data;
