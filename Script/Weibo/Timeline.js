@@ -161,6 +161,9 @@ if (
             items.splice(2);
             items[1].data.col = 1;
             items[1].data.title = '推荐词条';
+            if (items[1].data.itemid && items[1].data.itemid == "hot_search_push") {
+                items[1].data = null;
+            }
             let group = obj.channelInfo.channels[0].payload.items[1].data.group;
             group = filter_top_search(group);
         }
