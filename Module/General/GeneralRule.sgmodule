@@ -1317,9 +1317,6 @@ Spotify = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/(bo
 
 会员中心 = type=http-response,pattern=^https?:\/\/new\.vip\.weibo\.c(n|om)\/aj\/(vipcenter\/home|avatargj\/mall|activity\/userinfo|cardbackground\/index),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/VIPCenter.js
 
-# > UptimeRobot
-UptimeRobot = type=http-response,pattern=^https?:\/\/api\.uptimerobot\.com\/v2\/getAccountDetails$,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/UptimeRobot/UptimeRobot.js
-
 # > FlighTradar24
 flighTradar24 = type=http-response,pattern=^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/FlighTradar24/FlighTradar24.js
 
