@@ -4725,6 +4725,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.tracker.ranker.com
 .c.salon24.pl
 .cl.t3n.de
 .st.bitban.com
@@ -24697,6 +24698,8 @@
 .analytics-sprint.qoqa.com
 .analytics.qoqa.ch
 .analytics.qoqa.com
+.launches.appsflyersdk.com
+.cdn-settings.appsflyersdk.com
 .appsflyer-report.honkaiimpact3.com
 .af-event-logger.appsflyer.com
 .inapps.appsflyer.com
