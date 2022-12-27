@@ -2860,7 +2860,6 @@ IP-CIDR,194.138.136.0/24,no-resolve
 IP-CIDR,194.138.202.0/23,no-resolve
 IP-CIDR,194.180.37.0/24,no-resolve
 IP-CIDR,194.180.49.0/24,no-resolve
-IP-CIDR,194.246.96.0/24,no-resolve
 IP-CIDR,194.58.42.0/24,no-resolve
 IP-CIDR,194.58.58.0/24,no-resolve
 IP-CIDR,194.87.11.0/24,no-resolve
