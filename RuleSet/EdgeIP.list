@@ -1,0 +1,14 @@
+# > 发微博触发IP识别
+# >> APP 端
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,DIRECT
+# >> 网页端
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,DIRECT
+
+# > 评论触发IP识别
+# >> APP 端
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,DIRECT
+# >> 网页端
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,DIRECT
+
+# > 微信公众平台
+DOMAIN-SUFFIX,mp.weixin.qq.com,DIRECT
