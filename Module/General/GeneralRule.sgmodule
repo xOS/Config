@@ -1053,6 +1053,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https:\/\/.+\.(bilibili|biliapi)\.(com|net)\/bilibili\.app\.wall\.v1\.Wall\/RuleInfo$ data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
 # > 其它
+^https?:\/\/log\.snssdk\.com\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
 ^https?:\/\/pgdt\.gtimg\.cn\/ data="https://hub.nange.cn/Mock/Blank/Blank.jpg"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(adgateway|adv)\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
