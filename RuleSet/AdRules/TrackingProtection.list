@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.tpstelemetry.tencent.com
+.posthog.com
 .crossees.com
 .plausiblecdn.co
 .humanz.com
@@ -4731,6 +4733,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.analytics.slidesai.io
 .idat.production.ippen.space
 .snowy.bellroy.com
 .res.regoo.com
