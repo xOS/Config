@@ -1291,7 +1291,7 @@ Lightroom = type=http-response,pattern=^https?:\/\/photos\.adobe\.io\/v2\/accoun
 Photoshop Express = type=http-response,pattern=^https?:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Adobe/PhotoShopExpress.js,script-update-interval=0
 
 # > CamScanner unlocks pro, Cloud scanning is not available.
-CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/CamScanner/Scanner.js,script-update-interval=0
+CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/CamScanner/Scanner.js,script-update-interval=0
 
 UserAttribute = type=http-response,pattern=^https?:\/\/.+\.intsig\.net\/user\/cs\/get_user_attribute,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/CamScanner/UserAttribute.js
 
