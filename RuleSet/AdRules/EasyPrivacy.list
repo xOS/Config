@@ -25,6 +25,7 @@
 .altopd.com
 .analys.live
 .analysis.fi
+.anonstat.pw
 .apeagle.io
 .apenterprise.io
 .apxl.io
@@ -107,7 +108,9 @@
 .fpavx.net
 .fpaxu.net
 .fpcdn.io
+.fpnpmcdn.net
 .fptls.com
+.fptls2.com
 .fpxau.net
 .fzlnk.com
 .g10300385420.co
@@ -352,6 +355,7 @@
 .aaxdetect.com
 .abcstats.com
 .ablsrv.com
+.ablyft.com
 .abmr.net
 .absolstats.co.za
 .abtrcking.com
@@ -1565,6 +1569,7 @@
 .livesession.io
 .livestat.com
 .livetrafficfeed.com
+.llanalytics.com
 .lloogg.com
 .lngtd.com
 .localytics.com
@@ -5549,6 +5554,7 @@
 .browser.pipe.aria.microsoft.com
 .bs.yandex.ru
 .c.amazinglybrilliant.com.au
+.c.bazo.io
 .c.imedia.cz
 .c.live.com
 .c.mgid.com
@@ -5944,10 +5950,12 @@
 .onespot-tracking.herokuapp.com
 .open.delivery.net
 .openxcdn.net
+.optimeeze.appspot.com
 .optimizely.appspot.com
 .orts.wixawin.com
 .p.delivery.net
 .p.placed.com
+.p.typekit.net
 .p.yotpo.com
 .page-events-ustats.udemy.com
 .pages-stats.rbl.ms
@@ -6080,6 +6088,7 @@
 .solutions.invocacdn.com
 .sonar.viously.com
 .sp-wukong-tracker.b-cdn.net
+.sp.tinymce.com
 .speedtrap.shopdirect.com
 .ssa.stepstone.com
 .ssr.streamrail.net
@@ -6275,6 +6284,7 @@
 .track.wayin.com
 .track.yfret.com
 .track.yieldsoftware.com
+.tracker-dot-optimeeze.appspot.com
 .tracker.affiliate.iqoption.com
 .tracker.affirm.com
 .tracker.arc.io
@@ -6951,6 +6961,7 @@
 .stats.ulixes.pl
 .statystyki.panelek.com
 .tracking.novem.pl
+.trc.gpcdn.pl
 .analytics-coletor-site.ojc.com.br
 .api.nobeta.com.br
 .collect.chaordicsystems.com
@@ -7069,6 +7080,7 @@
 .pixel.smartmedia.tj
 .sal.isanook.com
 .stat.matichon.co.th
+.analytics.kkb.com.tr
 .statistics.daktilo.com
 .tracking.venturify.at
 .informers.sinoptik.ua
@@ -7180,6 +7192,7 @@
 .collect.alipay.com
 .collect.asics.com
 .collect.banggood.com
+.collect.hollisterco.com
 .collect.thunder-io.com
 .collector-px0py5pczn.octopart.com
 .collector.cint.com
@@ -7217,6 +7230,7 @@
 .desb.fkapi.net
 .desr.fkapi.net
 .discover-metrics.cloud.seek.com.au
+.dp.coinbase.com
 .dp.shoprunner.com
 .dtag.breadfinancial.com
 .dumpster.cam4.com
@@ -7389,6 +7403,7 @@
 .prairiedog.hashnode.com
 .privacy-api.9gag.com
 .privacyfriendly.netlify.app
+.prod-events.nykaa.com
 .pulsar.ebay.com
 .pulse.delta.com
 .pumpkin.abine.com
@@ -7553,6 +7568,7 @@
 .stats.pandora.com
 .stats.paste2.org
 .stats.pstream.net
+.stats.sandberg.world
 .stats.searchftps.net
 .stats.vk-portal.net
 .stats.wordpress.com
@@ -19084,7 +19100,6 @@
 .stat.novinky.cz
 .stat.super.cz
 .statistics.csob.cz
-.aa.tweakers.nl
 .analytics.rambla.be
 .bc34.wijnvoordeel.nl
 .ds2.independer.nl
