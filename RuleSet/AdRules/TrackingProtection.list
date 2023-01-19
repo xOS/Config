@@ -4738,6 +4738,10 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.analytics-mkt.wemakeprice.com
+.ad-log.wemakeprice.com
+.analytics.ubports.com
+.tracker.dcdn.baidu.com
 .apetite.index.hr
 .push.zhanzhang.baidu.com
 .tealium.cbsnews.com
