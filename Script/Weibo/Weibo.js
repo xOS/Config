@@ -116,9 +116,9 @@ function isAd(data) {
     }
     if (data.mblogtypename == '广告' || data.mblogtypename == '热推') { return true };
     if (data.promotion && data.promotion.type == 'ad') { return true };
+    if (data.readtimetype && data.readtimetype == 'adMblog') { return true };
     return false;
 }
-
 
 function removeMain(data) {
     if (!data.items) {
