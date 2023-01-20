@@ -4738,6 +4738,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.a.pikabu.ru
 .analytics-mkt.wemakeprice.com
 .ad-log.wemakeprice.com
 .analytics.ubports.com
@@ -25668,6 +25669,9 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.log.isnssdk.com
+.log-tb.isnssdk.com
+.mon.isnssdk.com
 .event.togothermany.com
 .oldevent.togothermany.com
 .logs.ironsrc.mobi
