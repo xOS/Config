@@ -60,8 +60,8 @@ function doWork() {
                 title: title,
                 content: notifyContent,
                 icon: 'calendar',
-                'icon-color': '#9999FF'
-            } : body = { title: title, content: notifyContent, icon: 'calendar', backgroundColor: '#9999FF' }
+                'icon-color': '#9978FF'
+            } : body = { title: title, content: notifyContent, icon: 'calendar', backgroundColor: '#9978FF' }
             console.log('\n内容：\n' + notifyContent)
             $.msg(title, nlDate, notifyContent)
             $.isSurge || $.isStash ? $.done(body) : $.done()
