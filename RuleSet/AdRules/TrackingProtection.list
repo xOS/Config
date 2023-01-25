@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.cntxtfl.com
+.ztrck.me
 .trk.lightdatahouse.com
 .fpnpmcdn.net
 .offer-go.com
@@ -310,7 +312,6 @@
 .imzahrwl.xyz
 .gae.karte.io
 .script.anura.io
-.collector-*.px-cloud.net
 .metricskey.com
 .static-tracking.klaviyo.com
 .telemetrics.klaviyo.com
@@ -1241,8 +1242,6 @@
 .target.mixi.media
 .analytics.servogram.io
 .checkmygeo.com
-.collector-*.perimeterx.net
-.client.perimeterx.net
 .stats.coronalabs.com
 .track.special-offers.online
 .crm-analytics.imweb.ru
