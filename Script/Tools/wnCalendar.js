@@ -39,8 +39,8 @@ function doWork() {
             url: apiUrl,
             headers: {}
         }
-        let nlDate = null // 农历 如 正月初一
-        let desc = null // 节日或描述 如 上元节 四九
+        let nlDate = '' // 农历 如 正月初一
+        let desc = '' // 节日或描述 如 上元节 四九
         // 请求日历数据
         $.get(option2, function (error, response, data) {
             let jsonObj = JSON.parse(response.body)
@@ -49,7 +49,7 @@ function doWork() {
                 if (i.year === dateArray[0] && i.month === dateArray[1] && i.day === dateArray[2]) {
                     nlDate = date + ' ' + i.lMonth + '月' + i.lDate
                     // 拼接今日节日
-                    desc += i.desc ? i.desc : ''
+                    desc += i.desc ? i.desc : ""
                     desc += i.term ? ' ' + i.term : ''
                     desc += i.value ? ' ' + i.value : ''
                     // 拼接消息体
