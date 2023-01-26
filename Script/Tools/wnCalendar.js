@@ -39,8 +39,8 @@ function doWork() {
             url: apiUrl,
             headers: {}
         }
-        let nlDate = '' // 农历 如 正月初一
-        let desc = '每天都是最好的' // 节日或描述 如 上元节 四九
+        let nlDate = null // 农历 如 正月初一
+        let desc = null // 节日或描述 如 上元节 四九
         // 请求日历数据
         $.get(option2, function (error, response, data) {
             let jsonObj = JSON.parse(response.body)
