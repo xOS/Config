@@ -2610,7 +2610,6 @@ IP-CIDR,154.89.4.0/24,no-resolve
 IP-CIDR,155.126.176.0/23,no-resolve
 IP-CIDR,155.235.232.0/21,no-resolve
 IP-CIDR,155.235.240.0/22,no-resolve
-IP-CIDR,156.154.143.0/24,no-resolve
 IP-CIDR,156.154.62.0/23,no-resolve
 IP-CIDR,156.225.101.0/24,no-resolve
 IP-CIDR,156.225.102.0/23,no-resolve
