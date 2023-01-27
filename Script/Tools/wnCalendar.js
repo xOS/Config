@@ -57,7 +57,7 @@ function doWork() {
                     notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日\n禁忌：' + i.avoid + '\n适宜：' + i.suit
                 }
             })
-            let title = (desc ? `今日黄历 | ${lunar} | [${desc}]` : `今日黄历 | ${lunar}`)
+            let title = (desc ? `今日黄历 | ${nlDate} | [${desc}]` : `今日黄历 | ${lunar}`)
             $.isSurge() ? body = {
                 title: title,
                 content: notifyContent,
