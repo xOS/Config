@@ -54,11 +54,10 @@ function doWork() {
                     desc += i.value ? ' ' + i.value : ''
                     // 拼接消息体
                     notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日\n禁忌：' + i.avoid + '\n适宜：' + i.suit
-                    var lunar = i.lMonth + '月' + i.lDate
                 }
             })
-            
-            let title = (desc ? `今日黄历 | ${lunar} | ${desc}` : `今日黄历`)
+            let lunar = i.lMonth + '月' + i.lDate
+            let title = (desc ? `今日黄历 | ${lunar} | [${desc}]` : `今日黄历 | ${lunar}`)
             $.isSurge() ? body = {
                 title: title,
                 content: notifyContent,
