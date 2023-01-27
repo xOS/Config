@@ -48,6 +48,7 @@ function doWork() {
             result.forEach(function (i) {
                 if (i.year === dateArray[0] && i.month === dateArray[1] && i.day === dateArray[2]) {
                     nlDate = date + ' ' + i.lMonth + '月' + i.lDate
+                    let lunar = i.lMonth + '月' + i.lDate
                     // 拼接今日节日
                     desc += i.desc ? i.desc : ''
                     desc += i.term ? ' ' + i.term : ''
@@ -56,7 +57,6 @@ function doWork() {
                     notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日\n禁忌：' + i.avoid + '\n适宜：' + i.suit
                 }
             })
-            let lunar = i.lMonth + '月' + i.lDate
             let title = (desc ? `今日黄历 | ${lunar} | [${desc}]` : `今日黄历 | ${lunar}`)
             $.isSurge() ? body = {
                 title: title,
