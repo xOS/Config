@@ -1,3 +1,7 @@
+/*
+README：https://github.com/yichahucha/surge/tree/master
+ */
+
 const path1 = "/groups/timeline";
 const path2 = "/statuses/unread";
 const path3 = "/statuses/extend";
@@ -21,12 +25,16 @@ const path20 = "/video/tiny_stream_video_list";
 const path21 = "/photo/info";
 const path22 = "/live/media_homelist";
 const path23 = "/remind/unread_count";
-const path24 = "/createrIndex";
-const path25 = "/st_videos/tiny/effect/shoot_display_config";
-const path26 = "/search/finder";
-const path27 = "/search/container_timeline";
-const path28 = "/huati/discovery_home_bottom_channel_list";
-// const path29 = "/statuses/unread_topic_timeline";
+const path24 = "/search/container_timeline"
+const path25 = "/messageflow/notice"
+const path26 = "/statuses/container_timeline_hot"
+const path27 = "/search/finder"
+const path28 = "/statuses/container_timeline_unread"
+const path29 = "/statuses/container_timeline"
+const path30 = "/createrIndex";
+const path31 = "/st_videos/tiny/effect/shoot_display_config";
+const path32 = "/huati/discovery_home_bottom_channel_list";
+
 
 const url = $request.url;
 let body = $response.body;
@@ -45,20 +53,6 @@ if (
     if (obj.ad) obj.ad = [];
     if (obj.num) obj.num = obj.original_num;
     if (obj.trends) obj.trends = [];
-    if (obj.cards) {
-        if (obj.cards.length > 0) {
-            // obj.cards.splice(0, 2);
-            var data = obj.cards;
-            for (var i in data) {
-                let element = obj.cards[i];
-                if (element.card_type != 9) {
-                    data[i] = null;
-                    obj.cards.splice(i, 1);
-                    // console.log(i);
-                }
-            }
-        }
-    }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path3) != -1) {
     let obj = JSON.parse(body);
@@ -114,13 +108,6 @@ if (
 ) {
     let obj = JSON.parse(body);
     if (obj.cards) obj.cards = filter_timeline_cards(obj.cards);
-    // 删除热搜列表置顶条目
-    if (url.indexOf(path16) != -1 && obj.cards && obj.cards.length > 0 && obj.cards[0].card_group) {
-        if (obj.cards[0].card_group[0].itemid) {
-            obj.cards[0].card_group = obj.cards[0].card_group.filter(c => !c.itemid.includes("t:51"));
-        }
-        filter_top_search(obj.cards[0].card_group);
-    }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path19) != -1) {
     let obj = JSON.parse(body);
@@ -137,42 +124,7 @@ if (
     body = JSON.stringify(obj);
 } else if (url.indexOf(path24) != -1) {
     let obj = JSON.parse(body);
-    if (obj.data.hasOwnProperty('cards')) {
-        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_task_task'));
-        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_video_video'));
-        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_banner_hot'));
-    }
-    body = JSON.stringify(obj);
-} else if (url.indexOf(path25) != -1) {
-    let obj = JSON.parse(body);
-    obj.camera_widget = {};
-    obj.camera_widget.show_close = false;
-    body = JSON.stringify(obj);
-} else if (url.indexOf(path26) != -1) {
-    let obj = JSON.parse(body);
-    if (obj.channelInfo) {
-        if (obj.channelInfo.channelConfig.style) obj.channelInfo.channelConfig.style.height = '0.1';
-        obj.channelInfo.channels.splice(1, 4);
-        obj.channelInfo.channels[0].title = '';
-        // obj.channelInfo.channels[0].titleInfo.style.padding = [0,0,0,0];
-        let items = obj.channelInfo.channels[0].payload.items;
-        if (obj.channelInfo.channels[0].payload.moreInfo) obj.channelInfo.channels[0].payload.moreInfo = null;
-        if (items && items.length > 0) {
-            items.splice(2);
-            items[1].data.col = 1;
-            items[1].data.title = '推荐词条';
-            
-            let group = obj.channelInfo.channels[0].payload.items[1].data.group;
-            group = filter_top_search(group);
-            
-            if (items[1].data.itemid && items[1].data.itemid == "hot_search_push") {
-                items[1] = null;
-            }
-        }
-    }
-    body = JSON.stringify(obj);
-} else if (url.indexOf(path27) != -1) {
-    let obj = JSON.parse(body);
+    filter_items_feed(obj)
     if (obj.moreInfo) obj.moreInfo = null;
     if (obj.items && obj.items.length > 0) {
         obj.items.splice(2);
@@ -192,14 +144,111 @@ if (
         group = filter_top_search(group);
     }
     body = JSON.stringify(obj);
-} else if (url.indexOf(path28) != -1) {
+} else if (url.indexOf(path25) != -1) {
+    let obj = JSON.parse(body);
+    filter_messageflow_notice(obj)
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path26) != -1 || url.indexOf(path28) != -1 || url.indexOf(path29) != -1) {
+    let obj = JSON.parse(body);
+    filter_items_feed(obj)
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path27) != -1) {
+    let obj = JSON.parse(body);
+    filter_search_finder(obj)
+    if (obj.channelInfo) {
+        if (obj.channelInfo.channelConfig.style) obj.channelInfo.channelConfig.style.height = '0.1';
+        obj.channelInfo.channels.splice(1, 4);
+        obj.channelInfo.channels[0].title = '';
+        // obj.channelInfo.channels[0].titleInfo.style.padding = [0,0,0,0];
+        let items = obj.channelInfo.channels[0].payload.items;
+        if (obj.channelInfo.channels[0].payload.moreInfo) obj.channelInfo.channels[0].payload.moreInfo = null;
+        if (items && items.length > 0) {
+            items.splice(2);
+            items[1].data.col = 1;
+            items[1].data.title = '推荐词条';
+
+            let group = obj.channelInfo.channels[0].payload.items[1].data.group;
+            group = filter_top_search(group);
+
+            if (items[1].data.itemid && items[1].data.itemid == "hot_search_push") {
+                items[1] = null;
+            }
+        }
+    }
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path30) != -1) {
+    let obj = JSON.parse(body);
+    if (obj.data.hasOwnProperty('cards')) {
+        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_task_task'));
+        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_video_video'));
+        obj.data['cards'] = obj.data['cards'].filter(element => !(element['item_id'] == 'creator_center_banner_hot'));
+    }
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path31) != -1) {
+    let obj = JSON.parse(body);
+    obj.camera_widget = {};
+    obj.camera_widget.show_close = false;
+    body = JSON.stringify(obj);
+} else if (url.indexOf(path32) != -1) {
     let obj = JSON.parse(body);
     if (obj.channel_list) {
         obj.channel_list.splice(1);
     }
     body = JSON.stringify(obj);
 }
+
 $done({ body });
+
+function filter_search_finder(data) {
+    channels = data["channelInfo"]["channels"]
+    for (let index = 0; index < channels.length; index++) {
+        const element = channels[index];
+        if (element["en_name"] == "Discover") {
+            filter_finder_items(element["payload"])
+        }
+    }
+}
+
+function filter_finder_items(data) {
+    items = data["items"]
+    for (let index = items.length - 1; index >= 0; index--) {
+        const item = items[index];
+        if (item["category"] == "card") {
+            type = item["data"]["card_type"]
+            if (type == 118) {
+                items.splice(index, 1)
+            }
+        } else if (item["category"] == "feed") {
+            type = item["data"]["mblogtype"]
+            if (type == 1) {
+                items.splice(index, 1)
+            }
+        }
+    }
+}
+
+function filter_messageflow_notice(data) {
+    items = data["messages"]
+    for (let index = items.length - 1; index >= 0; index--) {
+        const item = items[index];
+        if (item["isrecommend"] == true) {
+            items.splice(index, 1)
+        }
+    }
+}
+
+function filter_items_feed(data) {
+    items = data["items"]
+    for (let index = items.length - 1; index >= 0; index--) {
+        const item = items[index];
+        if (item["category"] == "feed") {
+            type = item["data"]["mblogtype"]
+            if (type == 1) {
+                items.splice(index, 1)
+            }
+        }
+    }
+}
 
 function filter_timeline_statuses(statuses) {
     if (statuses && statuses.length > 0) {
