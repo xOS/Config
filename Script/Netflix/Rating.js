@@ -56,8 +56,9 @@ if (!$tool.isResponse) {
             const IMDbrating = IMDb.msg.rating;
             const tomatoes = IMDb.msg.tomatoes;
             const country = IMDb.msg.country;
+            const awards = IMDb.msg.awards;
             const doubanRating = Douban.rating;
-            const message = `${country}\n${IMDbrating}\n${doubanRating}${tomatoes.length > 0 ? "\n" + tomatoes + "\n" : "\n"}`;
+            const message = `${awards.length > 0 ? awards + "\n" : ""}${country}\n${IMDbrating}\n${doubanRating}${tomatoes.length > 0 ? "\n" + tomatoes + "\n" : "\n"}`;
             return message;
         }
         let msg = "";
@@ -67,6 +68,12 @@ if (!$tool.isResponse) {
             .finally(() => {
                 let summary = obj.value.videos[videoID].summary;
                 summary["supplementalMessage"] = `${msg}${summary && summary.supplementalMessage ? "\n" + summary.supplementalMessage : ""}`;
+                msg_obj = { "tagline": summary.supplementalMessage, "classification": "REGULAR" }
+                if (summary["supplementalMessages"]) {
+                    summary["supplementalMessages"].push(msg_obj)
+                } else {
+                    summary["supplementalMessages"] = [msg_obj]
+                }
                 if (consoleLog) console.log("Netflix Modified Body:\n" + JSON.stringify(obj));
                 $done({ body: JSON.stringify(obj) });
             });
@@ -154,6 +161,10 @@ function get_IMDb_message(data) {
     let tomatoes_message = "";
     let country_message = "";
     let ratings = data.Ratings;
+    let awards_message = "";
+    if (data.Awards && data.Awards != "N/A") {
+        awards_message = "🏆 " + data.Awards;
+    }
     if (ratings.length > 0) {
         const imdb_source = ratings[0]["Source"];
         if (imdb_source == "Internet Movie Database") {
@@ -172,12 +183,12 @@ function get_IMDb_message(data) {
         }
     }
     country_message = get_country_message(data.Country);
-    return { rating: rating_message, tomatoes: tomatoes_message, country: country_message }
+    return { rating: rating_message, tomatoes: tomatoes_message, country: country_message, awards: awards_message }
 }
 
 function get_douban_rating_message(data) {
     const s = data.replace(/\n| |&#\d{2}/g, '')
-    .match(/\[(\u7535\u5f71|\u7535\u89c6\u5267)\].+?subject-cast\">.+?<\/span>/g);
+        .match(/\[(\u7535\u5f71|\u7535\u89c6\u5267)\].+?subject-cast\">.+?<\/span>/g);
     const average = s ? s[0].split(/">(\d\.\d)</)[1] || '' : '';
     const numRaters = s ? s[0].split(/(\d+)\u4eba\u8bc4\u4ef7/)[1] || '' : '';
     const rating_message = `Douban:  ⭐️ ${average ? average + "/10" : "N/A"}   ${!numRaters ? "" : parseFloat(numRaters).toLocaleString()}`;
