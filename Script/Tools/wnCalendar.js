@@ -41,6 +41,7 @@ function doWork() {
         }
         let nlDate = '' // 农历 如 正月初一
         let desc = '' // 节日或描述 如 上元节 四九
+        let lunar = ''
         // 请求日历数据
         $.get(option2, function (error, response, data) {
             let jsonObj = JSON.parse(response.body)
@@ -48,7 +49,7 @@ function doWork() {
             result.forEach(function (i) {
                 if (i.year === dateArray[0] && i.month === dateArray[1] && i.day === dateArray[2]) {
                     nlDate = date + ' ' + i.lMonth + '月' + i.lDate
-                    let lunar = i.lMonth + '月' + i.lDate
+                    lunar = i.lMonth + '月' + i.lDate
                     // 拼接今日节日
                     desc += i.desc ? i.desc : ''
                     desc += i.term ? ' ' + i.term : ''
@@ -57,7 +58,7 @@ function doWork() {
                     notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日\n禁忌：' + i.avoid + '\n适宜：' + i.suit
                 }
             })
-            let title = (desc ? `今日黄历 | ${nlDate} | [${desc}]` : `今日黄历 | ${lunar}`)
+            let title = (desc ? `今日黄历 | ${lunar} | [${desc}]` : `今日黄历 | ${lunar}`)
             $.isSurge() ? body = {
                 title: title,
                 content: notifyContent,
