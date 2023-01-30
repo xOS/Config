@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@adguard/hostlist-compiler": "^1.0.15",
-    "@sindresorhus/slugify": "^2.1.1",
+    "@sindresorhus/slugify": "^2.2.0",
     "fs-extra": "^11.1.0"
   },
   "resolutions": {
