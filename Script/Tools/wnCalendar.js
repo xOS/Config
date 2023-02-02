@@ -58,6 +58,7 @@ function doWork() {
                     notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日\n禁忌：' + i.avoid + '\n适宜：' + i.suit
                 }
             })
+            desc = desc.toString().replace(/(\s+|\/)/gm, '');
             let title = (desc ? `今日黄历 | ${lunar} [${desc}]` : `今日黄历 | ${lunar}`)
             $.isSurge() ? body = {
                 title: title,
