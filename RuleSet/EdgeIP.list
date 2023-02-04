@@ -12,3 +12,6 @@ URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,DIRECT
 
 # > 微信公众平台
 DOMAIN-SUFFIX,mp.weixin.qq.com,DIRECT
+
+# > 颇可
+DOMAIN-SUFFIX,app-api.poco.cn,DIRECT
