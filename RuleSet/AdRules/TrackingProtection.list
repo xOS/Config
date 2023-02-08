@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.region1.analytics.google.com
+.google-analytics.com
 .iad.anm.co.uk
 .cdn.wgchrrammzv.com
 .cdn.pranmcpkx.com
@@ -6456,7 +6458,6 @@
 .stats.vc.gg
 .stats.video.search.yahoo.com
 .stats.videodelivery.net
-.stats.videoseyredin.net
 .stats.vidyome.com
 .stats.visistat.com
 .stats.vulture.com
@@ -26022,7 +26023,6 @@
 .etl.xlmc.sandai.net
 .events.lbesecapi.com
 .geoip.fotoable.net
-.google-analytics.com
 .googleadapis.l.google.com
 .iam-agof-app.irquest.com
 .imp.apprevolve.com
