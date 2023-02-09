@@ -92,6 +92,9 @@ DOMAIN-KEYWORD,whatsapp,PROXY
 DOMAIN-KEYWORD,wikileaks,PROXY
 DOMAIN-KEYWORD,youtube,PROXY
 
+# > OpenAI
+DOMAIN-SUFFIX,openai.com,PROXY
+
 # > PayPal
 DOMAIN-SUFFIX,paypal.com,PROXY
 DOMAIN-SUFFIX,paypalobjects.com,PROXY
