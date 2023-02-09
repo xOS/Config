@@ -759,6 +759,7 @@ URL-REGEX,^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg,REJECT
 DOMAIN-SUFFIX,openinstall.io,REJECT
 
 # > 新浪
+DOMAIN-SUFFIX,adstrategy.biz.weibo.com,REJECT
 DOMAIN-SUFFIX,ad.us.sinaimg.cn,REJECT
 # DOMAIN,sdkclick.uve.weibo.com,REJECT
 DOMAIN,adimg.uve.weibo.com,REJECT
