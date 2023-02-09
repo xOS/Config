@@ -138,6 +138,10 @@ if (
                     obj.items[i] = null;
                     obj.items.splice(i, 1);
                 }
+                if (element.data && element.data.itemid && element.data.itemid == "hot_search_push") {
+                    obj.items[i] = null;
+                    obj.items.splice(i, 1);
+                }
             }
         }
         let group = obj.items[1].data.group;
@@ -169,10 +173,6 @@ if (
 
             let group = obj.channelInfo.channels[0].payload.items[1].data.group;
             group = filter_top_search(group);
-
-            if (items[1].data.itemid && items[1].data.itemid == "hot_search_push") {
-                items[1] = null;
-            }
         }
     }
     body = JSON.stringify(obj);
