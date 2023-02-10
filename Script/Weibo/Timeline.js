@@ -173,6 +173,14 @@ if (
 
             let group = obj.channelInfo.channels[0].payload.items[1].data.group;
             group = filter_top_search(group);
+            let i = obj.items.length;
+            while (i--) {
+                let element = obj.items[i];
+                if (element.data && element.data.itemid && element.data.itemid == "hot_search_push") {
+                    obj.items[i] = null;
+                    obj.items.splice(i, 1);
+                }
+            }
         }
     }
     body = JSON.stringify(obj);
