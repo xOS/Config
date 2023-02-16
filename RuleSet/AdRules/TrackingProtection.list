@@ -4762,6 +4762,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.beacon.unext.jp
+.log.affiliate.rakuten.co.jp
 .d-collector.jennifersoft.com
 .analytics.dashboard.fingerprint.com
 .tracking.ensonhaber.com
@@ -27540,6 +27542,7 @@
 .monitoring-sdk.experimentation.intuit.com
 .logging.api.intuit.com
 .analytics.prod.mybuddy.ai
+.dualstack-logs.amap.com
 .logs.amap.com
 .edmanalytics.pandahall.com
 .applogs.pixelfederation.com
