@@ -172,13 +172,13 @@ if (
 
             let group = obj.channelInfo.channels[0].payload.items[1].data.group;
             group = filter_top_search(group);
-            if (obj.items.length) {
-                let i = obj.items.length;
+            if (items.length) {
+                let i = items.length;
                 while (i--) {
-                    let element = obj.items[i];
+                    let element = items[i];
                     if (element.data && element.data.itemid && element.data.itemid == "hot_search_push") {
-                        obj.items[i] = null;
-                        obj.items.splice(i, 1);
+                        items[i] = null;
+                        items.splice(i, 1);
                     }
                 }
             }
