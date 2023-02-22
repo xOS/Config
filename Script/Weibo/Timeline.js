@@ -167,17 +167,19 @@ if (
         if (obj.channelInfo.channels[0].payload.moreInfo) obj.channelInfo.channels[0].payload.moreInfo = null;
         if (items && items.length > 0) {
             items.splice(2);
-            items[1].data.col = 1;
-            items[1].data.title = '推荐词条';
+            if (items[1].data) items[1].data.col = 1;
+            if (items[1].data) items[1].data.title = '推荐词条';
 
             let group = obj.channelInfo.channels[0].payload.items[1].data.group;
             group = filter_top_search(group);
-            let i = obj.items.length;
-            while (i--) {
-                let element = obj.items[i];
-                if (element.data && element.data.itemid && element.data.itemid == "hot_search_push") {
-                    obj.items[i] = null;
-                    obj.items.splice(i, 1);
+            if (obj.items.length) {
+                let i = obj.items.length;
+                while (i--) {
+                    let element = obj.items[i];
+                    if (element.data && element.data.itemid && element.data.itemid == "hot_search_push") {
+                        obj.items[i] = null;
+                        obj.items.splice(i, 1);
+                    }
                 }
             }
         }
