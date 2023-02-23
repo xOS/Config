@@ -1173,6 +1173,7 @@ IP-CIDR,103.228.176.0/22,no-resolve
 IP-CIDR,103.228.196.0/22,no-resolve
 IP-CIDR,103.228.208.0/22,no-resolve
 IP-CIDR,103.228.228.0/22,no-resolve
+IP-CIDR,103.228.228.0/23,no-resolve
 IP-CIDR,103.228.232.0/22,no-resolve
 IP-CIDR,103.228.64.0/24,no-resolve
 IP-CIDR,103.228.88.0/22,no-resolve
