@@ -143,8 +143,10 @@ if (
                 }
             }
         }
-        let group = obj.items[1].data.group;
+        if (obj.items[1].data) {
+            let group = obj.items[1].data.group;
         group = filter_top_search(group);
+        }   
     }
     body = JSON.stringify(obj);
 } else if (url.indexOf(path25) != -1) {
