@@ -143,7 +143,7 @@ if (
                 }
             }
         }
-        if (obj.items[1].data) {
+        if (obj.items.length > 1 && obj.items[1].data) {
             let group = obj.items[1].data.group;
         group = filter_top_search(group);
         }   
