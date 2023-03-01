@@ -4,6 +4,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.hotjar.io
+.hellosmpl.com
+.8digits.com
 .1800cnt.com
 .tag.nifty.com
 .tracker.kantan-access.com
@@ -3698,6 +3701,7 @@
 .visilabs.com
 .visilabs.net
 .functionalclam.com
+.boundlessbrake.com
 .distributionneck.com
 .aliasanvil.com
 .shiveringspot.com
@@ -4771,6 +4775,9 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.metrics.icloud.com
+.units.knotch.it
+.mercury.coupang.com
 .client-telemetry.roblox.com
 .treatment.grammarly.com
 .rac.ruutu.fi
@@ -5771,7 +5778,6 @@
 .hi.hellobar.com
 .hindsight.significanceapps.com
 .hit-pool.upscore.io
-.hit.8digits.com
 .hit.copesa.cl
 .hit.darmoweliczniki.pl
 .hit.demirorenteknoloji.com
@@ -27882,7 +27888,7 @@
 .api.setting.intl.miui.com
 .data.sec.intl.miui.com
 .log.avlyun.sec.intl.miui.com
-.tracking.intl.miui.com
+.tracking.*.miui.com
 .metok.sys.miui.com
 .mazu.sec.miui.com
 .auth.be.sec.miui.com
@@ -27963,6 +27969,8 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.logservice.hicloud.com
+.logger.growstarry.com
 .woodpecker.uc.cn
 .adashx4ae.ut.taobao.com
 .audid-api.taobao.com
