@@ -15,3 +15,12 @@ DOMAIN-SUFFIX,mp.weixin.qq.com,DIRECT
 
 # > 颇可
 DOMAIN-SUFFIX,app-api.poco.cn,DIRECT
+
+# > 什么值得买
+# DOMAIN-SUFFIX,qny.smzdm.com,DIRECT
+# DOMAIN-SUFFIX,haojia-api.smzdm.com,DIRECT
+# DOMAIN-SUFFIX,s-api.smzdm.com,DIRECT      
+# DOMAIN-SUFFIX,app-api.smzdm.com,DIRECT
+# DOMAIN-SUFFIX,homepage-api.smzdm.com,DIRECT
+DOMAIN-SUFFIX,user-api.smzdm.com,DIRECT
+# DOMAIN-SUFFIX,common-api.smzdm.com,DIRECT
