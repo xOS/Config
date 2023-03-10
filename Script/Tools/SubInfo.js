@@ -75,7 +75,7 @@ function getArgs() {
 
 function getUserInfo(url) {
   let method = args.method || "head";
-  let request = { headers: { "User-Agent": "Quantumult%20X" }, url };
+  let request = { headers: { "User-Agent": "Surge%20iOS" }, url };
   return new Promise((resolve, reject) =>
     $httpClient[method](request, (err, resp) => {
       if (err != null) {
