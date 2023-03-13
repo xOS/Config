@@ -20,6 +20,7 @@ DOMAIN-SUFFIX,app-api.poco.cn,DIRECT
 DOMAIN-SUFFIX,s-api.smzdm.com,DIRECT      
 DOMAIN-SUFFIX,homepage-api.smzdm.com,DIRECT
 DOMAIN-SUFFIX,qny.smzdm.com,DIRECT
+DOMAIN-SUFFIX,qna.smzdm.com,DIRECT
 DOMAIN-SUFFIX,haojia-api.smzdm.com,DIRECT
 DOMAIN-SUFFIX,app-api.smzdm.com,DIRECT
 DOMAIN-SUFFIX,user-api.smzdm.com,DIRECT
