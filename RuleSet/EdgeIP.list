@@ -3,6 +3,7 @@
 URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,DIRECT
 # >> 网页端
 URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,DIRECT
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/2\/client\/publisher_primary,DIRECT
 
 # > 评论触发IP识别
 # >> APP 端
