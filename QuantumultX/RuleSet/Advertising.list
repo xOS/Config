@@ -485,7 +485,6 @@ HOST,tunion-api.m.taobao.com,REJECT
 # > 字节跳动
 HOST-SUFFIX,mon.toutiao.com,REJECT
 HOST-SUFFIX,toutiao-frontier.snssdk.com,REJECT
-HOST-SUFFIX,log.snssdk.com,REJECT
 HOST-SUFFIX,imapi2.snssdk.com,REJECT
 HOST-SUFFIX,ic.snssdk.com,REJECT
 HOST-SUFFIX,isub.snssdk.com,REJECT

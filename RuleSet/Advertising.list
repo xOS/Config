@@ -561,7 +561,7 @@ URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.qu
 URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
 
 # > 字节跳动
-DOMAIN,log.snssdk.com,REJECT
+# DOMAIN,log.snssdk.com,REJECT
 URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad,REJECT
 URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/,REJECT
 URL-REGEX,^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/,REJECT
