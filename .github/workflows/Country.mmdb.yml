@@ -25,7 +25,7 @@ jobs:
         cd $GITHUB_WORKSPACE
         cd GeoIP
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country.mmdb
-        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/Country.mmdb/release/Country-lite.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/lite/Country.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country-only-cn-private.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip.dat
         wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip-only-cn-private.dat
