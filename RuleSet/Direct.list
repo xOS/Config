@@ -143,6 +143,7 @@ DOMAIN-SUFFIX,xunlei.com,DIRECT
 # > Others
 DOMAIN-SUFFIX,hcaptcha.com,DIRECT
 DOMAIN-SUFFIX,spartanhost.net,DIRECT
+DOMAIN-SUFFIX,livechatinc.com,DIRECT
 
 # # > Download
 # PROCESS-NAME,aria2c,DIRECT
