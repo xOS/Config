@@ -48,7 +48,6 @@ jobs:
         
       - name: Merge and Rules and remove duplicates
         run: |
-          curl -LR -o RuleSet/AdRules/anti-ad.txt "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt"
           curl -LR -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
           awk 'FNR==1{print ""}{print}' RuleSet/AdRules/*.list > RuleSet/AdRules/Merge.txt
           awk '!seen[$0]++' RuleSet/AdRules/Merge.txt > RuleSet/AdRules/Merge.list
