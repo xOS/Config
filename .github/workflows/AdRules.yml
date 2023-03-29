@@ -74,7 +74,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: "-A"
-          author_name: 佩佩
+          author_name: 翠花
           author_email: admin@nange.cn
           message: "Update AdRules"
         env:
