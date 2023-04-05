@@ -32,7 +32,10 @@ DOMAIN,vd.l.qq.com,DIRECT
 # > Strava
 DOMAIN,analytics.strava.com,DIRECT
 
-# > 彩云天气
+# > Ultramobile
+DOMAIN-SUFFIX,ultramobile.com,DIRECT
+
+DOMAIN-SUFFIX,ipip.net,DIRECT# > 彩云天气
 DOMAIN,sdkapi.sms.mob.com,DIRECT
 DOMAIN,api.share.mob.com,DIRECT
 DOMAIN-SUFFIX,code.sms.mob.com,DIRECT
