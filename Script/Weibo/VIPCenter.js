@@ -7,13 +7,13 @@ const url = $request.url;
 if (url.indexOf(vipCenter) != -1) {
     if (obj && obj.data && obj.data.baseInfo) {
         obj.data.baseInfo.user_info.s_type = 3;
-        obj.data.baseInfo.user_info.desc = '终身会员';
+        obj.data.baseInfo.user_info.desc = '终身高级会员';
         obj.data.baseInfo.user_info.level = '8';
         obj.data.baseInfo.user_info.expired_days = 9999;
         obj.data.baseInfo.user_info.curtab.cashier_tab_id = '0';
         obj.data.baseInfo.user_info.mbtype = 12;
         obj.data.baseInfo.user_info.identity = '1,0';
-        obj.data.baseInfo.user_info.svip_desc = '您已经是微博超级会员';
+        obj.data.baseInfo.user_info.svip_desc = '您已经是微博高级会员';
         obj.data.baseInfo.user_info.tip_desc = '2199年12月21日 到期';
         obj.data.baseInfo.user_info.vip_identity = 3;
         obj.data.baseInfo.user_info.curtab.name = "svip";
