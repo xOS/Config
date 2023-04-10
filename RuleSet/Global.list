@@ -95,6 +95,9 @@ DOMAIN-KEYWORD,youtube,PROXY
 # > OpenAI
 DOMAIN-SUFFIX,openai.com,PROXY
 
+# > HOSTLOC
+DOMAIN-SUFFIX,hostloc.com,PROXY
+
 # > PayPal
 DOMAIN-SUFFIX,paypal.com,PROXY
 DOMAIN-SUFFIX,paypalobjects.com,PROXY
