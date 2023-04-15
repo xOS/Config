@@ -4835,6 +4835,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.analytics.s3.amazonaws.com
+.analyticsengine.s3.amazonaws.com
 .lake.joongang.co.kr
 .dsas.danawa.com
 .t.apkpure.net
