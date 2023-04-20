@@ -860,7 +860,7 @@
 .ad-spire.net
 .investingchannel.com
 .f-counter.net
-.moshimo.com
+.i.moshimo.com
 .counter.monkeybanana3.com
 .analytic-client.playful-fairies.com
 .eventapi.libring.com
@@ -4840,6 +4840,7 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.btrace.qq.com
 .prd-collector-anon.ex.co
 .l.francetvinfo.fr
 .counter.any.run
@@ -31034,7 +31035,6 @@
 .analytics.unister-gmbh.de
 .b-ssl.grvcdn.com
 .beacon.richrelevance.com
-.btrace.qq.com
 .click.uol.com.br
 .clientlog.portal.office.com
 .cm.g.doubleclick.net
