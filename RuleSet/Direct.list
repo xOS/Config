@@ -19,6 +19,7 @@ DOMAIN,t.uc.cn,DIRECT
 # DOMAIN,dl.l.google.com,DIRECT
 # DOMAIN,update.googleapis.com,DIRECT
 # DOMAIN,translate.googleapis.com,DIRECT
+DOMAIN-SUFFIX,app-measurement.com,DIRECT
 
 # > Google Fonts API
 # DOMAIN,fonts.googleapis.com,DIRECT
@@ -31,9 +32,6 @@ DOMAIN,vd.l.qq.com,DIRECT
 
 # > Strava
 DOMAIN,analytics.strava.com,DIRECT
-
-# > Ultramobile
-DOMAIN-SUFFIX,ultramobile.com,DIRECT
 
 DOMAIN-SUFFIX,ipip.net,DIRECT# > 彩云天气
 DOMAIN,sdkapi.sms.mob.com,DIRECT
