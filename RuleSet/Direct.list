@@ -47,7 +47,7 @@ DOMAIN-SUFFIX,ipip.net,DIRECT
 # > GEOIP
 DOMAIN,rtbasia.com,DIRECT
 DOMAIN-SUFFIX,api.grpc.fun,DIRECT
-DOMAIN-SUFFIX,ip.ping0.cc,DIRECT
+DOMAIN-SUFFIX,ping0.cc,DIRECT
 
 # > 监控宝
 DOMAIN-SUFFIX,jiankongbao.com,DIRECT
