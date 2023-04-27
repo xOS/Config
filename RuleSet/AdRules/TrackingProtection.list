@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.getlasso.co
+.widget.sparrow.ru
 .medipartner.jp
 .tr.usergram.info
 .code.usergram.info
@@ -594,7 +596,7 @@
 .sanity-dataplane.rudderstack.com
 .counter.kikibobo.top
 .c1.politexpert.ru
-.logrocket.com
+.cdn.logrocket.com
 .ipmeta.io
 .datasign.co
 .analytics.daasrv.net
@@ -4844,6 +4846,8 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.shopify-fast-tags.deliverr.com
+.event-tracking.deliverr.com
 .track.capitaloneshopping.com
 .player.stats.live-video.net
 .w3-reporting.reddit.com
@@ -6819,7 +6823,6 @@
 .tracker.cdnbye.com
 .tracker.cpapath.com
 .tracker.downdetector.com
-.tracker.files.fm
 .tracker.giftd.ru
 .tracker.joongang.co.kr
 .tracker.joost.com
@@ -31502,6 +31505,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.vik-analytics.moonactive.net
 .report.apkpure.net
 .report.iheartmedia.gbqofs.io
 .grs.hicloud.com
@@ -31730,7 +31734,6 @@
 .direct-collect.dy-api.com
 .direct-collect.dy-api.eu
 .api.telemetry.watchabc.go.com
-.browser.events.data.microsoft.com
 .analytics.rover.io
 .events-collector-api.viacom.tech
 .pipe.aria.microsoft.com
