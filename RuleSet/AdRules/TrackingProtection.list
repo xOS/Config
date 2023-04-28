@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.collector-*.px-cloud.net
 .getlasso.co
 .widget.sparrow.ru
 .medipartner.jp
@@ -4846,6 +4847,8 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.adtima-media.zascdn.me
+.px.dmp.zaloapp.com
 .shopify-fast-tags.deliverr.com
 .event-tracking.deliverr.com
 .track.capitaloneshopping.com
