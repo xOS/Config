@@ -4,7 +4,6 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
-.collector-*.px-cloud.net
 .getlasso.co
 .widget.sparrow.ru
 .medipartner.jp
@@ -2495,7 +2494,6 @@
 .jirafe.com
 .js.medi-8.net
 .jscounter.com
-.jsonip.com
 .jstracker.com
 .jump-time.net
 .jumptime.com
@@ -4847,6 +4845,7 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.wayfinderanalytics.servicebus.windows.net
 .adtima-media.zascdn.me
 .px.dmp.zaloapp.com
 .shopify-fast-tags.deliverr.com
