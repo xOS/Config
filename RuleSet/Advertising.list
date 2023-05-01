@@ -929,7 +929,7 @@ DOMAIN-SUFFIX,goto.sogou.com,REJECT
 DOMAIN-SUFFIX,gxe.husky.sogou.com,REJECT
 DOMAIN-SUFFIX,ht.www.sogou.com,REJECT
 DOMAIN-SUFFIX,image.p4p.sogou.com,REJECT
-DOMAIN-SUFFIX,img.shouji.sogou.com,REJECT
+# DOMAIN-SUFFIX,img.shouji.sogou.com,REJECT
 DOMAIN-SUFFIX,img.wan.sogou.com,REJECT
 DOMAIN-SUFFIX,info.pinyin.sogou.com,REJECT
 DOMAIN-SUFFIX,input.shouji.sogou.com,REJECT
