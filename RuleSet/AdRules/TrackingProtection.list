@@ -4846,6 +4846,8 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.pixel*.production-public.tubi.io
+.uid.mavencoalition.io
 .wayfinderanalytics.servicebus.windows.net
 .adtima-media.zascdn.me
 .px.dmp.zaloapp.com
@@ -31858,6 +31860,10 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.adtrack.xiaojukeji.com
+.rtag.farmers.com
+.s.pixsrvcs.com
+.cws-hulu.conviva.com
 .vik-analytics.moonactive.net
 .report.apkpure.net
 .report.iheartmedia.gbqofs.io
