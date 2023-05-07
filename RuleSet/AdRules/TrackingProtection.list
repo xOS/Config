@@ -4848,6 +4848,13 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.track.buzzerilla.com
+.track.historictalk.com
+.track.juststarz.com
+.track.kueez.com
+.track.parentmood.com
+.track.shrinkplus.com
+.track.thefunpost.com
 .pixel*.production-public.tubi.io
 .uid.mavencoalition.io
 .wayfinderanalytics.servicebus.windows.net
