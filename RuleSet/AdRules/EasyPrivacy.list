@@ -6008,6 +6008,7 @@
 .metrics.beyondwords.io
 .metrics.brightcove.com
 .metrics.ctvdigital.net
+.metrics.doppiocdn.org
 .metrics.gs-chat.com
 .metrics.kmsmep.com
 .metrics.mdstrm.com
@@ -6411,6 +6412,7 @@
 .tracker.myyschool.xyz
 .tracker.nitropay.com
 .tracker.novage.com.ua
+.tracker.openwebtorrent.com
 .tracker.roitesting.com
 .tracker.services.vaix.ai
 .tracker.softcube.com
@@ -7360,7 +7362,6 @@
 .desb.fkapi.net
 .desr.fkapi.net
 .discover-metrics.cloud.seek.com.au
-.dp.coinbase.com
 .dp.shoprunner.com
 .dtag.breadfinancial.com
 .dumpster.cam4.com
@@ -7385,7 +7386,6 @@
 .event-collector.moviesanywhere.com
 .eventlog.jackpot.de
 .events-prod.autolist.com
-.events-service.coinbase.com
 .events-tracker.deliveroo.net
 .events.api.godaddy.com
 .events.framer.com
@@ -7802,6 +7802,7 @@
 .user-metrics.onthemarket.com
 .userfly.com
 .usmetric.rediff.com
+.v.adblockultimate.net
 .views.arabnews.com
 .visit.theglobeandmail.com
 .visitors.sourcingmap.com
@@ -7851,6 +7852,7 @@
 .rba-screen.healthsafe-id.com
 .rsx.afterpay.com
 .svc2.sc.com
+.tm-eps.neutrino.nu
 .tmetrix.my.chick-fil-a.com
 .tmx.bestbuy.com
 .tmx.td.com
