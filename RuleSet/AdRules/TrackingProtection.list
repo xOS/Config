@@ -4848,6 +4848,8 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.rum-metrics.bunny.net
+.analytics.ravanallc.com
 .track.buzzerilla.com
 .track.historictalk.com
 .track.juststarz.com
@@ -32028,6 +32030,9 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.sia.internet.apps.samsung.com
+.config-api.internet.apps.samsung.com
+.terms.internet.apps.samsung.com
 .r.apkpure.net
 .analytics.zg-api.com
 .creative.bidease.com
