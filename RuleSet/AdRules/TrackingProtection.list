@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.stats.sprocketrocket.co
+.analytics.recruitics.com
 .zcode11.me
 .mgtmod01.com
 .getlasso.co
@@ -387,6 +389,7 @@
 .analytics2.awsli.com.br
 .pgs.io
 .script-sh.d2cdm.jp
+.browser-intake-*-datadoghq.com
 .browser-intake-datadoghq.com
 .cl*.k5a.io
 .analytics.superstructure.ai
@@ -1035,7 +1038,6 @@
 .ga-analytics.com
 .analytics.webads.eu
 .erandex.com
-.recruitics.com
 .direct-events-collector.spot.im
 .metrics-logger.spot.im
 .adwstats.com
@@ -32061,7 +32063,6 @@
 .dt.beyla.site
 .collect.analytics.unity3d.com
 .accscdn.m.taobao.com
-.acs.m.taobao.com
 .apsrgeo.amap.com
 .confe.dc.oppomobile.com
 .conff.dc.oppomobile.com
