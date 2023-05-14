@@ -31,6 +31,5 @@ for (let item of body['cached_ad']['ads']) {
     }
     body = JSON.stringify(body);
 }
-}
 
 $done({ body });
