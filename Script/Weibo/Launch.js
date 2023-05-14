@@ -28,7 +28,7 @@ for (let item of body['cached_ad']['ads']) {
     // 2026-11-30 15:48:24
     item['end_date'] = '1796024904'
     item['start_date'] = '1796024914'
-    ｝
+    }
     body = JSON.stringify(body);
 }
 }
