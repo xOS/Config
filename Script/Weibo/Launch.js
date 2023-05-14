@@ -22,6 +22,15 @@ if (url.indexOf(path2) != -1) {
     var obj = JSON.parse(body);
     if (obj.cached_ad && obj.cached_ad.ads) obj.cached_ad.ads = [];
     body = JSON.stringify(obj);
+    if (body.hasOwnProperty('cached_ad') && body['cached_ad'].hasOwnProperty('ads'))
+for (let item of body['cached_ad']['ads']) {
+    item['duration'] = 0
+    // 2026-11-30 15:48:24
+    item['end_date'] = '1796024904'
+    item['start_date'] = '1796024914'
+    ｝
+    body = JSON.stringify(body);
+}
 }
 
 $done({ body });
