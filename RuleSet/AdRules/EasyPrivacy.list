@@ -5701,6 +5701,7 @@
 .collector-*.px-client.net
 .collector-api.99designs.com
 .collector.api.video
+.collector.appconsent.io
 .collector.automote.co.nz
 .collector.clareity.net
 .collector.contentexchange.me
@@ -6006,6 +6007,7 @@
 .metrics.beyondwords.io
 .metrics.brightcove.com
 .metrics.ctvdigital.net
+.metrics.doppiocdn.com
 .metrics.doppiocdn.org
 .metrics.gs-chat.com
 .metrics.kmsmep.com
@@ -7095,6 +7097,7 @@
 .neurotrack.neurolake.io
 .sat.soluall.net
 .segmentor.snowfox-ai.com
+.stats.gridmidia.com.br
 .tags.cmp.tail.digital
 .track.noddus.com
 .tracker.tolvnow.com
@@ -22533,6 +22536,7 @@
 .statistics.csob.cz
 .analytics.rambla.be
 .bc34.wijnvoordeel.nl
+.c.vrt.be
 .ds2.independer.nl
 .events.reclamefolder.nl
 .log.rabobank.nl
@@ -22541,6 +22545,7 @@
 .r.kleertjes.com
 .sat.sanoma.fi
 .stats.fd.nl
+.t.vrt.be
 .tdep.kvk.nl
 .topspin.npo.nl
 .track.pexi.nl
