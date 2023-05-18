@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.wct-2.com
 .code.r5hsid.ru
 .stats.sprocketrocket.co
 .analytics.recruitics.com
@@ -4852,6 +4853,7 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.metrics.onewegg.com
 .stat.gc.my.games
 .1l-hit.vkplay.ru
 .1l-view.my.games
@@ -32734,6 +32736,9 @@
 .do-not-tracker.org
 .eviltracker.net
 .trackersimulator.org
+.log.ngsm.nexon.com
+.log.nexon.io
+.receiver.habby.mobi
 .pangle-b.io
 .track.*.roku.com
 .traces.sr.roku.com
