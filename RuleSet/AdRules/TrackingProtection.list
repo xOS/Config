@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.b91.yahoo.co.jp
+.services.brightline.tv
 .wct-2.com
 .code.r5hsid.ru
 .stats.sprocketrocket.co
@@ -4853,6 +4855,7 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.metrics.svc.conholdate.cloud
 .mywedding-beacon.team-rec.jp
 .metrics.onewegg.com
 .stat.gc.my.games
@@ -5847,7 +5850,6 @@
 .events.emogi.com
 .events.jora.com
 .events.kaloo.ga
-.events.mobile.optimizely.com
 .events.newsroom.bi
 .events.niit-mts.com
 .events.ocdn.eu
@@ -32737,8 +32739,6 @@
 .do-not-tracker.org
 .eviltracker.net
 .trackersimulator.org
-.log.ngsm.nexon.com
-.log.nexon.io
 .receiver.habby.mobi
 .pangle-b.io
 .track.*.roku.com
