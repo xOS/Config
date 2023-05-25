@@ -1078,6 +1078,7 @@
 .etahub.com
 .ethn.io
 .ethnio.com
+.ethyca.com
 .etp-prod.com
 .etracker.com
 .etrigue.com
@@ -1784,7 +1785,6 @@
 .n74s9.com
 .naayna.com
 .naj.sk
-.nakanohito.jp
 .nalook.com
 .nanovisor.io
 .natero.com
@@ -5810,6 +5810,8 @@
 .ec.walkme.com
 .ecomm.events
 .ecommstats.s3.amazonaws.com
+.edge-hls.doppiocdn.com
+.edge-hls.doppiocdn.org
 .edge.bredg.com
 .eel.transistor.fm
 .ele26126.jscrambler.com
@@ -5908,7 +5910,6 @@
 .gtrk.s3.amazonaws.com
 .gu-pix.appspot.com
 .happen.spkt.io
-.harpocrates.ethyca.com
 .hb.vhsrv.com
 .hello.staticstuff.net
 .hi.hellobar.com
@@ -7009,6 +7010,7 @@
 .cookie.sync.usonar.jp
 .counter2.blog.livedoor.com
 .crossees.com
+.cs.nakanohito.jp
 .ev.tpocdm.com
 .hatmiso.net
 .ip2c.landscape.co.jp
@@ -7044,6 +7046,7 @@
 .tracker-rec.smart-bdash.com
 .tracker.520call.me
 .trk.fensi.plus
+.uh.nakanohito.jp
 .userdive.com
 .webbc.fivecdm.com
 .webtracker.jp
@@ -7382,6 +7385,7 @@
 .events.framer.com
 .events.mercadolibre.com
 .events.practo.com
+.events.prd.api.max.com
 .events.privy.com
 .events.reddit.com
 .events.redditmedia.com
@@ -7629,6 +7633,7 @@
 .targeting.washpost.nile.works
 .td.airdroid.com
 .ted.dailymail.co.uk
+.telegraph.prd.api.max.com
 .telem.sre.gopuff.com
 .telemetry.adobe.io
 .telemetry.api.playstation.com
@@ -22252,6 +22257,8 @@
 .d-log.bs-asahi.tv
 .d-log.tv-asahi.co.jp
 .d.tv-asahi.co.jp
+.eq-beacon.stream.co.jp
+.eq-player-log.cdnext.stream.ne.jp
 .j1.ax.xrea.com
 .ln.ameba.jp
 .log-lb.skyperfectv.co.jp
@@ -22354,7 +22361,6 @@
 .stats.mos.ru
 .sync.rambler.ru
 .top-staging.mail.ru
-.trk.mail.ru
 .xapi.ozon.ru
 .xray.mail.ru
 .yast.rutube.ru
