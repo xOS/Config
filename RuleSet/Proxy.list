@@ -4,6 +4,9 @@ DOMAIN-SUFFIX,admin.onedrive.com,PROXY
 DOMAIN-SUFFIX,onedrive.live.com,PROXY
 DOMAIN-SUFFIX,fabric.io,PROXY
 
+# > T-Mobile
+DOMAIN-SUFFIX,t-mobile.com,PROXY
+
 # > Google Voice
 DOMAIN,voice.google.com,PROXY
 
@@ -11,7 +14,7 @@ DOMAIN,voice.google.com,PROXY
 IP-CIDR,51.79.128.0/17,no-resolve,PROXY
 
 # > Surge官网
-DOMAIN-SUFFIX,surge.com,PROXY
+DOMAIN-SUFFIX,dl.surge.com,PROXY
 
 # > 腾讯游戏
 DOMAIN,cdn-1302064167.file.myqcloud.com,PROXY
