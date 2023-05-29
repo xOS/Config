@@ -8262,7 +8262,6 @@ IP-CIDR,204.74.113.0/24,no-resolve
 IP-CIDR,204.74.114.0/23,no-resolve
 IP-CIDR,204.74.67.0/24,no-resolve
 IP-CIDR,204.74.96.0/24,no-resolve
-IP-CIDR,206.119.53.0/24,no-resolve
 IP-CIDR,206.206.126.0/24,no-resolve
 IP-CIDR,206.219.44.0/23,no-resolve
 IP-CIDR,206.219.50.0/23,no-resolve
