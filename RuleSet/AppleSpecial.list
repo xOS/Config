@@ -23,13 +23,13 @@ DOMAIN-SUFFIX,blobstore.apple.com,DIRECT
 DOMAIN-SUFFIX,digicert.com,DIRECT
 DOMAIN,journey.pcms.apple.com,DIRECT
 DOMAIN,xp.apple.com,DIRECT
-DOMAIN,gdmf.apple.com,DIRECT
+#DOMAIN,gdmf.apple.com,DIRECT
 DOMAIN,smp-device-content.apple.com,DIRECT
 DOMAIN-SUFFIX,itunes.com,DIRECT
 DOMAIN,sse-ws-p189.apple.com,DIRECT
 DOMAIN-SUFFIX,apple.news,DIRECT
 DOMAIN-SUFFIX,mail.me.com,DIRECT
-DOMAIN,p12-buy.itunes.apple.com,DIRECT
+# DOMAIN,p12-buy.itunes.apple.com,DIRECT
 DOMAIN,configuration.ls.apple.com,DIRECT
 DOMAIN-SUFFIX,gsp10-ssl.apple.com,DIRECT
 DOMAIN,gateway.icloud.com,DIRECT
