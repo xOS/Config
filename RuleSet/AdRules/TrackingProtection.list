@@ -67,7 +67,6 @@
 .ganalytics.live
 .analytics-cdiscount.com
 .hotjar.io
-.hellosmpl.com
 .8digits.com
 .1800cnt.com
 .tag.nifty.com
@@ -4860,6 +4859,7 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.logger*.kma.go.kr
 .webtracking.fe.union-investment.de
 .metrics.mdstrm.com
 .track.17goforward.com
