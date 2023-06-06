@@ -9788,8 +9788,8 @@ IP-CIDR,223.160.144.0/20,no-resolve
 IP-CIDR,223.160.16.0/20,no-resolve
 IP-CIDR,223.160.16.0/21,no-resolve
 IP-CIDR,223.160.160.0/19,no-resolve
-IP-CIDR,223.160.192.0/19,no-resolve
 IP-CIDR,223.160.204.0/22,no-resolve
+IP-CIDR,223.160.208.0/20,no-resolve
 IP-CIDR,223.160.240.0/20,no-resolve
 IP-CIDR,223.160.32.0/19,no-resolve
 IP-CIDR,223.160.4.0/22,no-resolve
