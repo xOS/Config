@@ -4861,6 +4861,7 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
+.stats.online-convert.com
 .ss.azuremagazine.com
 .logger*.kma.go.kr
 .webtracking.fe.union-investment.de
@@ -36013,6 +36014,7 @@
 .astat.bugly.qq.com
 .ios.bugly.qq.com
 .fdplttrk.com
+.tracking-*.trnox.com
 .tracking.trnox.com
 .rts.mobula.sdk.duapps.com
 .aftonbladetnya.sc.omtrdc.net
