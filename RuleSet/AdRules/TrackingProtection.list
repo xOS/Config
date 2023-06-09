@@ -4861,7 +4861,6 @@
 .telemetry.mozilla.org
 .analytics.s3.amazonaws.com
 .analyticsengine.s3.amazonaws.com
-.gae2-spclient.spotify.com
 .stats.online-convert.com
 .ss.azuremagazine.com
 .logger*.kma.go.kr
@@ -36171,7 +36170,6 @@
 .sc-analytics.appspot.com
 .ssl-google-analytics.l.google.com
 .stat.duokanbox.com
-.statistics.videofarm.daum.net
 .stats.popcap.com
 .stats.unity3d.com
 .taurus.iad.appboy.com
