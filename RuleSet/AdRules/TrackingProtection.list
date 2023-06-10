@@ -5392,7 +5392,6 @@
 .analytics.tout.com
 .analytics.tripoto.com
 .analytics.tver.jp
-.analytics.twitter.com
 .analytics.upworthy.com
 .analytics.us.archive.org
 .analytics.vadio.com
@@ -35583,6 +35582,10 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.events.prd.api.discomax.com
+.events.betterhelp.com
+.analytics-gateway.delta.dp.lightricks.com
+.log.bloodsugars.live
 .logservice1.dbankcloud.cn
 .open.oneplus.net
 .analytics-api.samsunghealthcn.com
