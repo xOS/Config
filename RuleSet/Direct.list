@@ -34,8 +34,7 @@ DOMAIN,vd.l.qq.com,DIRECT
 
 # > Strava
 DOMAIN,analytics.strava.com,DIRECT
-
-DOMAIN-SUFFIX,ipip.net,DIRECT# > 彩云天气
+DOMAIN-SUFFIX,ipip.net,DIRECT
 DOMAIN,sdkapi.sms.mob.com,DIRECT
 DOMAIN,api.share.mob.com,DIRECT
 DOMAIN-SUFFIX,code.sms.mob.com,DIRECT
