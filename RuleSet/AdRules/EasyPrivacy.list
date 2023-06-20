@@ -5082,7 +5082,6 @@
 .d-markets.net
 .d2-apps.net
 .d2c.ne.jp
-.datasign.co
 .dbfocus.jp
 .deteql.net
 .dmtag.jp
@@ -5702,6 +5701,7 @@
 .clouderrorreporting.googleapis.com
 .cloudfront-labs.amazonaws.com
 .cltgtstor001.blob.core.windows.net
+.cmp.datasign.co
 .cnt.3dmy.net
 .cnt.mastorage.net
 .cnt.trvdp.com
@@ -7584,6 +7584,7 @@
 .rum.kobo.com
 .rvo-cohesion.healthline.com
 .s.infogram.com
+.s.wayfair.com
 .saa.insideedition.com
 .search.anonymous.ads.brave.com
 .shopmetric.rediff.com
@@ -22164,6 +22165,7 @@
 .u299.libelle-lekker.be
 .analytics.sanoma.fi
 .data.reactandshare.com
+.dax.yle.fi
 .events.il.fi
 .rac.ruutu.fi
 .stat.mtv3.fi
