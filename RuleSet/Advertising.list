@@ -124,7 +124,7 @@ DOMAIN-SUFFIX,appsupport.qq.com,REJECT
 DOMAIN-SUFFIX,astat.bugly.qq.com,REJECT
 DOMAIN-SUFFIX,astrategy.beacon.qq.com,REJECT
 DOMAIN-SUFFIX,bs.l.qq.com,REJECT
-DOMAIN-SUFFIX,bugly.qq.com,REJECT
+# DOMAIN-SUFFIX,bugly.qq.com,REJECT
 DOMAIN-SUFFIX,bugreportv2.qq.com,REJECT
 DOMAIN-SUFFIX,c.gdt.qq.com,REJECT
 DOMAIN-SUFFIX,c.gj.qq.com,REJECT
@@ -1241,7 +1241,7 @@ DOMAIN,raddus.bayescom.com,REJECT
 DOMAIN,sf3-fe-tos.pglstatp-toutiao.com,REJECT 
 DOMAIN-SUFFIX,pub.tpl.infzm.com,REJECT
 DOMAIN-SUFFIX,lkme.cc,REJECT
-DOMAIN,cloud.tgpa.qq.com,REJECT
+# DOMAIN,cloud.tgpa.qq.com,REJECT
 DOMAIN,myip.myzaker.com,REJECT
 DOMAIN,smr.snssdk.com,REJECT
 DOMAIN-SUFFIX,bxguwen.com,REJECT
