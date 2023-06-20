@@ -1216,6 +1216,11 @@ DOMAIN,ups.ksmobile.net,REJECT
 DOMAIN,ws.ksmobile.net,REJECT
 
 # > 其它
+DOMAIN,gdfp.gifshow.com,REJECT
+DOMAIN-SUFFIX,volceapplog.com,REJECT
+DOMAIN,receiver.ta.thinkingdata.cn,REJECT
+DOMAIN,open.e.kuaishou.cn,REJECT
+DOMAIN-SUFFIX,adukwai.com,REJECT
 DOMAIN-SUFFIX,ad.cyapi.cn,REJECT
 #DOMAIN-KEYWORD,adservice,REJECT
 DOMAIN,adstore-1252524079.cos.ap-beijing.myqcloud.com,REJECT
