@@ -3,7 +3,7 @@
 
 [General]
 # > 跳过代理
-skip-proxy = %APPEND% localhost, *.local, captive.apple.com, cable.auth.com, www.baidu.com, yunbusiness.ccb.com, 127.0.0.1/32, 192.168.0.0/16, ::1/128, fc00::/7, fd00::/8, fe80::/10, ff00::/8, 2001::/32, 2001:db8::/32, 2002::/16, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1, iosapps.itunes.apple.com
+skip-proxy = %APPEND% localhost, *.local, captive.apple.com, cable.auth.com, www.baidu.com, yunbusiness.ccb.com, 127.0.0.1/32, 192.168.0.0/16, ::1/128, fc00::/7, fd00::/8, fe80::/10, ff00::/8, 2001::/32, 2001:db8::/32, 2002::/16, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1, iosapps.itunes.apple.com, seed-sequoia.siri.apple.com, sequoia.siri.apple.com, sequoia.apple.com, wxh.wo.cn, gate.lagou.com, www.abchina.com.cn, www.shanbay.com, login-service.mobile-bank.psbc.com, mobile-bank.psbc.com
 
 # > 强制使用 HTTP
 force-http-engine-hosts = %APPEND% *.intsig.net, *.ott.cibntv.net, *.alicdn.com, *.myalicdn.com, *.iqiyipic.com, ts.qq.com, *.douyinvod.com, *.xhscdn.com, *.xiaohongshu.com, *.tc.qq.com, api*.amemv.com, wmapi.meituan.com, weibointl.api.weibo.cn, weibointl.mapi.weibo.com, api.cloud.189.cn
@@ -26,6 +26,7 @@ URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
 URL-REGEX,^https?:\/\/captcha\.weibo\.com\/static\/js\/jigsawLock\.min\.js$,REJECT
 URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
+URL-REGEX,^https?:\/\/bootpreload\.uve\.weibo\.com\/v1\/ad\/preload$,REJECT-TINYGIF
 
 # > 拦截100弹窗
 URL-REGEX,^https?:\/\/tagit\.hyhuo\.com\/block100\/get_popup,REJECT
@@ -49,13 +50,11 @@ URL-REGEX,^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/open_screen_ad,REJECT
 
 # > 颇可
 # >> 其它
-DOMAIN,dg.k.jd.com,REJECT
 DOMAIN-SUFFIX,kepler.jd.com,REJECT
 URL-REGEX,^https?:\/\/api-(.*)\.dutils\.com,REJECT
 
 # > 咪咕阅读
 URL-REGEX,^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService,REJECT
-# URL-REGEX,^https?:\/\/client2\.cmread\.com\/cmread\/portalapi$,REJECT
 
 # > 豆瓣
 URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$,REJECT
@@ -158,7 +157,6 @@ DOMAIN,tetrack.qq.com,REJECT-TINYGIF
 DOMAIN-SUFFIX,beacon.qq.com,REJECT-TINYGIF
 #DOMAIN,video.dispatch.tc.qq.com,REJECT
 URL-REGEX,^https?://.+\.gdt\.qq\.com,REJECT
-URL-REGEX,^https?://.+\.l\.qq\.com,REJECT
 URL-REGEX,^https?:\/\/wa\.gtimg\.com\/adxcdn\/?,REJECT
 URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?,REJECT
 DOMAIN-SUFFIX,tetrack.qq.com,REJECT
@@ -209,8 +207,6 @@ DOMAIN-SUFFIX,file.video.qpic.cn,REJECT
 URL-REGEX,^https?:\/\/.+\.jianshu\.io\/shakespeare\/_next\/static\/.+\/pages\/p\/(.*)?slug(.*)?\.js$,REJECT
 
 # > 微信
-URL-REGEX,^https?:\/\/resstatic\.servicewechat\.com\/weapp\/release_,REJECT
-URL-REGEX,^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/.+\/snscosdownload\/SZ\/reserved,REJECT
 URL-REGEX,^https?:\/\/dlied(.*).cdntips.net,REJECT
 URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad),REJECT
 
@@ -242,7 +238,7 @@ URL-REGEX,^https?+:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-
 URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/,REJECT
 
 # > 淘宝
-URL-REGEX,^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}+$,REJECT
+URL-REGEX,^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_,REJECT
 URL-REGEX,^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$,REJECT
 URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$,REJECT
 URL-REGEX,^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless,REJECT
@@ -285,23 +281,17 @@ URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT
 # > 百度网盘
 DOMAIN-SUFFIX,hpplay.cn,REJECT
 DOMAIN,open.e.kuaishou.com,REJECT
-DOMAIN,sofire.baidu.com,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/pmall\/points\/balance,REJECT
-# URL-REGEX,^https?:\/\/pan\.baidu\.com\/aipic\/image\/guidelist,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/ndbs\/nd_bundle(.*)\.js$,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/checkthumbnailstatus,REJECT
-# URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/dss\/device,REJECT
-# URL-REGEX,^https?:\/\/panpic\.baidu\.com\/rest\/2\.0\/pcs\/thumbnail,REJECT
-# URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/account\/getprivilege,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/wfm\/jnqp$,REJECT
 URL-REGEX,^https?:\/\/ali-ec\.static\.yximgs\.com\/kos\/.+\/hybrid\/ad-union-feed-template,REJECT
 URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/static\/js\/chunk-vendors\.+\.js$,REJECT
 URL-REGEX,^https:\/\/update\.pan\.baidu\.com\/statistics,REJECT-TINYGIF
-URL-REGEX,^http:\/\/rp\.hpplay\.cn\/logouts,REJECT
+URL-REGEX,^https?:\/\/rp\.hpplay\.cn\/logouts,REJECT
 URL-REGEX,^https?:\/\/.+\/rest\/.+\/pcs\/adx,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/useractivity\/activity,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/act\/.+\/bchannel\/list,REJECT
-URL-REGEX,^https?:\/\/sofire\.baidu\.com\/ios\/.+,REJECT
 URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js,REJECT
 URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html,REJECT
 URL-REGEX,^https?:\/\/pan\.baidu\.com\/pmall\/order\/privilege\/info,REJECT
@@ -323,7 +313,6 @@ URL-REGEX,^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg,REJECT
 URL-REGEX,^https?+:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads,REJECT
 
 # > 移除 YouTube 页面广告和视频贴片广告
-AND,((PROTOCOL,UDP),(OR,((DOMAIN-SUFFIX,googlevideo.com),(DOMAIN,www.youtube.com),(DOMAIN,s.youtube.com)))),REJECT-NO-DROP
 URL-REGEX,https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
 URL-REGEX,https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
 URL-REGEX,https?:\/\/.+.youtube.com\/get_midroll_,REJECT
@@ -341,6 +330,8 @@ URL-REGEX,^https?:\/\/www\.youtube\.com\/pagead\/adview\?,REJECT
 URL-REGEX,^https?:\/\/www\.googleapis\.com\/adsmeasurement,REJECT
 
 # > 其它
+DOMAIN-SUFFIX,ads.twitch.tv,REJECT-TINYGIF
+#DOMAIN-SUFFIX,biggggg.com,REJECT-TINYGIF
 URL-REGEX,^http:\/\/tbm-auth\.alicdn\.com\/.+\.mp4,REJECT
 URL-REGEX,^https?:\/\/cdn\.v2ex\.com\/assets\/sidebar\/.+\.png,REJECT-TINYGIF
 URL-REGEX,^https?:\/\/i\.v2ex\.co\/70opo0Ru\.gif,REJECT-TINYGIF
@@ -486,12 +477,17 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT-TINYGIF
 ^http:\/\/static\.hanju\.koudaibaobao\.com\/img\/pub\/.*?.mp4$ - reject
 
 # > YouTube
-# (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
 ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - reject
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
+
+# > 飞客茶馆
+^https?+:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis - reject
+^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis - reject
+^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg -reject
+^https?:\/\/ptf\.flyertrip\.com\/.+\.mp4 -reject
 
 # > 颇可
 ^https?:\/\/web-api\.poco\.cn\/.+\/rank\/get_wap_works_info_banner - reject
@@ -619,7 +615,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/.+?\.atm\.youku\.com - reject
 ;^https?:\/\/.+?\.beacon\.qq\.com - reject
 ^https?:\/\/.+?\.gdt\.qq\.com - reject
-^https?:\/\/.+?\.l\.qq\.com - reject
 ^https?:\/\/.+?\.mp4\?ccode=0902 - reject
 ^https?:\/\/.+?\.mp4\?sid= - reject
 ^https?:\/\/.+?\.pstatp\.com\/img\/ad - reject
@@ -657,7 +652,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/\w+\.gdt\.qq\.com - reject
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ - reject
 ^https?:\/\/\w+\.kingsoft-office-service\.com\/ad - reject
-^https?:\/\/\w+\.l\.qq\.com - reject
 ^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking) - reject
 ^https?:\/\/\w{6}.com1.z0.glb.clouddn.com - reject
 ^https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com - reject
@@ -704,7 +698,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg - reject
 ^https?:\/\/business\.msstatic\.com\/advertiser\/ - reject
 ^https?:\/\/c\.m\.163\.com\/nc\/gl\/ - reject
-^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|newlog|mlog) - reject
+# ^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|newlog|mlog) - reject
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo - reject
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule - reject
 ^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/ - reject
@@ -844,6 +838,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/iadmusicmat\.music.126.net\/.*?jpg$ - reject
 ^https?:\/\/p\.c\.music\.126.net\/.*?jpg$ - reject
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? - reject
+^https?:\/\/api\.zuihuimai\.com - reject
 
 [Map Local]
 # > 微博
@@ -851,6 +846,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data="https://hub.nange.cn/Mock/Weibo/jiantougaocheng.png"
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data="https://hub.nange.cn/Mock/Weibo/avatar_vip_golden.png"
 ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data="https://hub.nange.cn/Mock/Weibo/feed_icon_100vip_7_default.png"
+^https?:\/\/bootpreload\.uve\.weibo\.com\/v1\/ad\/preload data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
 # > 微博订单
 ^https?:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/menulist data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
@@ -889,6 +885,7 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 
 # > 微博超话看帖
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/!\/huati\/discovery_home_bottom_channel_list data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
+^https:\/\/api\.weibo\.cn\/2\/!\/huati\/discovery_home_bottom_channels data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/unread_topic_timeline data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/container_timeline_topic data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
@@ -953,6 +950,9 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 # >> 用户推荐
 ^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_user_recommend_list data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
+# >> 什么值得买
+^https?:\/\/user-api\.smzdm\.com\/vip data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
+
 # >> 其它
 ^https:?\/\/app-api\.poco\.cn\/.+\/rank\/get_homepage_recomment_banner data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/app-api\.poco\.cn\/.+\/activity\/get_online_activity_tag_list\? data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
@@ -992,15 +992,12 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ;^http:\/\/.+\/(videos|qpdxv)\/other\/.+\.mp4 data="https://hub.nange.cn/Mock/Blank/Blank.mp4"
 
 # > 百度网盘
-# ^https?:\/\/pan\.baidu\.com\/api\/diffall data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/pmall\/support\/hometabs data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/wk\.baidu\.com\/smallapp\/browse\/home\?personal_recommend=1&isFullScreen=1$ data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
-# ^https?:\/\/pan\.baidu\.com\/act\/v2\/bchannel\/list data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/task\/tasklist data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/pmall\/points\/goodslist data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activitystatus data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
-# ^https?:\/\/pan\.baidu\.com\/aipic\/image\/gettags data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?:\/\/pan\.baidu\.com\/api\/analytics data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^http:\/\/update\.pan\.baidu\.com\/statistics data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 ^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
@@ -1053,7 +1050,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https:\/\/.+\.(bilibili|biliapi)\.(com|net)\/bilibili\.app\.wall\.v1\.Wall\/RuleInfo$ data="https://hub.nange.cn/Mock/Blank/Blank_Dict.json"
 
 # > 其它
-^https?:\/\/log\.snssdk\.com\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
 ^https?:\/\/msg\.qy\.net\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
 ^https?:\/\/pgdt\.gtimg\.cn\/ data="https://hub.nange.cn/Mock/Blank/Blank.jpg"
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(adgateway|adv)\/ data="https://hub.nange.cn/Mock/Blank/Blank.txt"
@@ -1184,7 +1180,6 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/impservice\.dictapp\.youdao\.com\/imp\/request data="https://hub.nange.cn/Mock/Blank/Blank.gif"
 ^https?:\/\/interface3?\.music\.163\.com/eapi/(ad|abtest|sp|hot|store|mlog|search/(specialkeyword|defaultkeyword|hot)) data="https://hub.nange.cn/Mock/Blank/Blank.gif"
 ^https?:\/\/interface\.music\.163\.com\/eapi\/ad data="https://hub.nange.cn/Mock/Blank/Blank.gif"
-^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= data="https://hub.nange.cn/Mock/Blank/Blank.gif"
 ^https?:\/\/log\..+?\.baidu\.com data="https://hub.nange.cn/Mock/Blank/Blank.gif"
 ^https?:\/\/m.+?\.china\.com\.cn\/statics\/sdmobile\/js\/ad data="https://hub.nange.cn/Mock/Blank/Blank.gif"
 ^https?:\/\/m.+?\.china\.com\.cn\/statics\/sdmobile\/js\/mobile\.advert\.js data="https://hub.nange.cn/Mock/Blank/Blank.gif"
@@ -1274,9 +1269,11 @@ https?:\/\/t7z\.cupid\.iqiyi\.com\/show - reject
 ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/targeted_ads data="https://hub.nange.cn/Mock/Blank/Blank.gif"
 ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation data="https://hub.nange.cn/Mock/Blank/Blank.gif"
 
-[Script]
-彩云天气SVIP = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://hub.nange.cn/Script/ColorWeather/ColorWeather.js
+# > 电信营业厅短视频
+^https?:\/\/1302045025\.vod[0-9]\.myqcloud\.com\/.*\/.*\/.*\.*\.(m3u8|ts) data="https://hub.nange.cn/Mock/Blank/Blank.mp4"
+^https?:\/\/livepull\.189\.cn\/live\/(.*)\.(m3u8|ts) data="https://hub.nange.cn/Mock/Blank/Blank.mp4"
 
+[Script]
 # > 奈飞评分
 奈飞评分 = script-path=https://hub.nange.cn/Script/Netflix/Rating.js,type=http-request,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D
 
@@ -1293,10 +1290,9 @@ Photoshop Express = type=http-response,pattern=^https?:\/\/lcs-mobile-cops\.adob
 # > CamScanner unlocks pro, Cloud scanning is not available.
 CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/CamScanner/Scanner.js,script-update-interval=0
 
-UserAttribute = type=http-response,pattern=^https?:\/\/.+\.intsig\.net\/user\/cs\/get_user_attribute,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/CamScanner/UserAttribute.js
-
-# > Reddit 解锁 Premium
+# > Reddit 解锁 Premium 图标
 Premium = type=http-response,pattern=^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Reddit/Premium.js
+去广告 = type=http-response,pattern=^https?:\/\/gql\.reddit\.com,requires-body=1,max-size=-1,script-path=https://hub.nange.cn/Script/Reddit/RedditAd.js
 
 # > TextNow
 TextNow = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/.+\/users\/im(.*)\?,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/TextNow/TextNow.js,script-update-interval=-1
@@ -1342,23 +1338,21 @@ Siri Infomation Card = type=http-response, pattern=^https?:\/\/api(.*)\.smoot\.a
 
 黑名单 = type=http-response,pattern=^https?:\/\/app-api\.poco\.cn\/.+\/works\/get_works_list,requires-body=1,max-size=-1,script-path=https://hub.nange.cn/Script/PoCo/BlockUser.js
 
+# > 小红书 去广告
+小红书 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v2\/system_service\/splash_config|v6\/homefeed\?),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/RedBook/RedBook.js,script-update-interval=0
+
 # > 微博去广告
-微博 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(profile/(me|statuses|container_timeline)|searchall|statuses/(unread_hot_timeline|extend|video_mixtimeline)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|container/get_item|search/container_discover),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Weibo.js
+微博 = type=http-response,pattern=^https?://m?api\.weibo\.c(n|om)/2/(profile/(me|statuses|container_timeline)|searchall|statuses/(unread_hot_timeline|extend|video_mixtimeline)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|container/get_item|search/container_discover|search/finder|search/container_timeline),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Weibo.js
 
 开屏 = requires-body=1,script-path=https://hub.nange.cn/Script/Weibo/Launch.js,type=http-response,pattern=^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
 
 微博信息流 = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/m?api\.weibo\.c(n|om)/2/(statuses/container_timeline|statuses/container_timeline_unread|statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|cardlist|page|!/(photos/pic_recommend_status|live/media_homelist|wbox\/.+\/createrIndex|st_videos\/tiny\/effect\/shoot_display_config)|video/tiny_stream_video_list|photo/info|remind/unread_count|search/finder|search/container_timeline|!\/huati\/discovery_home_bottom_channel_list|statuses\/unread_topic_timeline),script-path=https://hub.nange.cn/Script/Weibo/Timeline.js
-
-微博钱包订单 = type=http-response,pattern=(^https?:\/\/js\.t\.sinajs\.cn\/c2p\/sam\/frontend\/assets\/walletcache\.json|^https?:\/\/pay\.sc\.weibo\.com\/api\/client\/sdk\/app\/indexnew\/(index|person)|^https?:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/center),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Wallet.js
 
 # > 微博配置注入
 微博去广告配置注入 = type=cron,cronexp="0 0 1 ? * MON",debug=1,script-path=https://hub.nange.cn/Script/Weibo/Config.js
 
 # > 微信公众号
 WeChat = script-path=https://hub.nange.cn/Script/WeChat/WeChat.js,type=http-request,pattern=^https?://mp\.weixin\.qq\.com/mp/getappmsgad
-
-# > 天翼云盘
-homePage = type=http-response,pattern=^https?:\/\/api\.cloud\.189\.cn\/.+\/client\/homePages\.action,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Telecom/CTCloud.js
 
 # > TestFlight 账户管理
 TestFlight  = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://hub.nange.cn/Script/Apple/TestFlight.js
