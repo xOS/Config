@@ -2159,7 +2159,6 @@
 .feedjit.com
 .feedperfect.com
 .ferank.fr
-.fetchback.com
 .fiksu.com
 .filitrac.com
 .finalid.com
@@ -3740,6 +3739,7 @@
 .visilabs.com
 .visilabs.net
 .functionalclam.com
+.rebelhen.com
 .guardeddirection.com
 .enormousfoot.com
 .rebelswing.com
@@ -4855,6 +4855,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.tag.rmp.rakuten.com
 .abt.s3.yandex.net
 .uaas.yandex.ru
 .monitor.ebay.com
@@ -5944,7 +5945,6 @@
 .geoloc*.geostats.ovh
 .geoloc*.geovisite.ovh
 .geolocation.performgroup.com
-.geolocation.stroeerdp.de
 .geoservice.curse.com
 .geosvc.globalmailer.com
 .gjtrack.uc.cn
@@ -53652,7 +53652,6 @@
 .stats.grafana.org
 .rumstat.cdnvideo.ru
 .telemetry.api.swiftkey.com
-.telemetry.swiftkey.com
 .analytics.qoqa.ninja
 .analytics-sprint.qoqa.com
 .analytics.qoqa.ch
@@ -53711,6 +53710,9 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.track.ktplay.com
+.preview-collector.scopely.io
+.collector.scopely.io
 .events.swishapps.ai
 .telemetry.canva.com
 .analytics.picsart.com
