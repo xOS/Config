@@ -4,6 +4,11 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.webtrack.chd01.com
+.webtrack.savoysystems.co.uk
+.stats.revloq.com
+.afboskruta.com
+.metricswave.com
 .analytics.gtflixtv.com
 .colossusssp.com
 .consentag.eu
@@ -470,7 +475,6 @@
 .j.northbeam.io
 .srv.stackadapt.com
 .segmetrics.io
-.embed.usersmagic.com
 .stats-iobit-com.us-east-1.elasticbeanstalk.com
 .zeustechnology.com
 .fwpixel.com
@@ -517,19 +521,16 @@
 .api.autopilothq.com
 .to.getnitropack.com
 .deltadna.net
-.widget.mb-srv.com
 .uim.tifbs.net
 .shonretimus.com
 .h.cloudengage.com
 .cdp.vemt.com
 .signifyd.com
-.collector.snplow.net
 .pxksnymto.ru
 .prodmp.ru
 .events.busuu.com
 .log.intellimize.co
 .logs.viadata.store
-.hitapi.pulpoar.com
 .dataroid.com
 .counter.websiteout.net
 .cdn.topmind.io
@@ -545,14 +546,12 @@
 .adbrix.io
 .cc-api-data.adobe.io
 .adg-data.kajicam.com
-.report.smartcount.net
 .bacon.getcarro.com
 .t.unbounce.com
 .wipe.de
 .oremark.com
 .cbt.whatcounts.net
 .fireworkanalytics.com
-.t.ltmse.com
 .clickbrainiacs.com
 .wsapi.master.live
 .wsapi-global.master.live
@@ -1043,7 +1042,6 @@
 .sc.lfeeder.com
 .tr.lfeeder.com
 .am-trc-events.taboola.com
-.g2178927685.co
 .eba-amadeus.netdna-ssl.com
 .c.tvpixel.com
 .ga-analytics.com
@@ -1673,7 +1671,6 @@
 .b2c.com
 .babator.com
 .backlink-test.de
-.backlink-umsonst.de
 .backlinkdino.de
 .bam-x.com
 .baptisttop1000.com
@@ -1809,9 +1806,7 @@
 .checkstat.nl
 .christiantop1000.com
 .christmalicious.com
-.chrumedia.com
 .circle.am
-.circular-counters.com
 .cityua.net
 .claritytag.com
 .cleananalytics.com
@@ -2102,7 +2097,6 @@
 .ethnio.com
 .etracker.com
 .etracker.de
-.etracking24.de
 .etrigue.com
 .etyper.com
 .eu-survey.com
@@ -2236,7 +2230,6 @@
 .fun-hits.com
 .funneld.com
 .funstage.com
-.fuse-data.com
 .fusestats.com
 .fuziontech.net
 .fyreball.com
@@ -2273,7 +2266,6 @@
 .globetrackr.com
 .gmodmp.jp
 .go-mpulse.net
-.goaltraffic.com
 .godhat.com
 .goingup.com
 .goldstats.com
@@ -2313,7 +2305,6 @@
 .guanoo.net
 .gvisit.com
 .halldata.com
-.halstats.com
 .haveamint.com
 .heapanalytics.com
 .heatmap.it
@@ -2434,7 +2425,6 @@
 .intelevance.com
 .intelimet.com
 .intelli-direct.com
-.intelli-tracker.com
 .intelliad.de
 .intelligencefocus.com
 .intentmedia.net
@@ -2513,7 +2503,6 @@
 .kieden.com
 .killerwebstats.com
 .kissmetrics.com
-.kisstesting.com
 .kitbit.net
 .kitcode.net
 .klamm-counter.de
@@ -2643,7 +2632,6 @@
 .mediego.com
 .meetrics.net
 .mega-stats.com
-.megatopsites.com
 .memecounter.com
 .mengis-linden.org
 .mercadoclics.com
@@ -2697,7 +2685,6 @@
 .mr-rank.de
 .msgapp.com
 .msgtag.com
-.mstracker.net
 .mtrack.nl
 .mtracking.com
 .musiccounter.ru
@@ -2709,7 +2696,6 @@
 .my-ranking.de
 .my-stats.info
 .myaffiliateprogram.com
-.myaudience.de
 .mybloglog.com
 .mycounter.com.ua
 .mycounter.ua
@@ -2717,7 +2703,6 @@
 .mynewcounter.com
 .myntelligence.com
 .myomnistar.com
-.myonlineanalytics.com
 .mypagerank.net
 .myreferer.com
 .myroitracking.com
@@ -2730,7 +2715,6 @@
 .mystats.nl
 .mysumo.de
 .mytictac.com
-.mytop.az
 .myusersonline.com
 .myvisualiq.net
 .mywebstats.com.au
@@ -2873,7 +2857,6 @@
 .pageranking-counter.de
 .pages05.net
 .pagesense.com
-.paidstats.com
 .parameter.dk
 .parklogic.com
 .parrable.com
@@ -2986,7 +2969,6 @@
 .q-stats.nl
 .qbaka.net
 .qbop.com
-.qdtracking.com
 .qoijertneio.com
 .qsstats.com
 .qubitproducts.com
@@ -3105,7 +3087,6 @@
 .rztrkr.com
 .s.conyak.com
 .s3s-main.net
-.s6w.de
 .sageanalyst.net
 .sail-horizon.com
 .sajari.com
@@ -3191,7 +3172,6 @@
 .sitebro.com
 .sitebro.de
 .sitebro.net
-.sitebro.tw
 .sitecompass.com
 .siteimprove.com
 .siteimproveanalytics.com
@@ -3334,7 +3314,6 @@
 .survicate.com
 .svr-prc-01.com
 .svtrd.com
-.swfstats.com
 .swiss-counter.com
 .synergy-e.com
 .synthasite.net
@@ -3427,7 +3406,6 @@
 .trackeame.com
 .trackedlink.net
 .trackedweb.net
-.tracking100.com
 .tracking202.com
 .trackinglabs.com
 .trackjs.com
@@ -3436,7 +3414,6 @@
 .trackset.com
 .trackset.it
 .tracksy.com
-.tracktrk.net
 .trackuity.com
 .trackvoluum.com
 .trackword.biz
@@ -3553,7 +3530,6 @@
 .visitor-stats.de
 .visitor-track.com
 .visitorglobe.com
-.visitorinspector.com
 .visitorjs.com
 .visitorpath.com
 .visitorprofiler.com
@@ -3575,7 +3551,6 @@
 .voicefive.com
 .voodooalerts.com
 .votistics.com
-.vstats.co
 .vtracker.net
 .w3counter.com
 .wa4y.com
@@ -3666,7 +3641,6 @@
 .wishloop.com
 .woopra-ns.com
 .woopra.com
-.wordkeyhelper.com
 .worldgravity.com
 .worldlogger.com
 .wowanalytics.co.uk
@@ -3692,7 +3666,6 @@
 .xcounter.ch
 .xg4ken.com
 .xhit.com
-.xpanama.net
 .xplosion.de
 .xref.io
 .xtractor.no
@@ -3731,7 +3704,6 @@
 .zoosnet.net
 .zoossoft.net
 .zqtk.net
-.zroitracker.com
 .visilabs.com
 .visilabs.net
 .functionalclam.com
@@ -4126,7 +4098,6 @@
 .thingsafterthought.com
 .orangeoperation.com
 .shockingship.com
-.medusasailor.com
 .spottedsnow.com
 .paradoxfactor.com
 .shutseashore.com
@@ -4155,7 +4126,6 @@
 .livelumber.com
 .shakesuggestion.com
 .dogsshoes.com
-.gloriouscracker.com
 .internalsink.com
 .sorethunder.com
 .briefbears.com
@@ -4569,7 +4539,6 @@
 .lackadaisicalkite.com
 .nonchalantnerve.com
 .entertainingeyes.com
-.acousticairplane.com
 .crafthenry.com
 .arizonapuzzle.com
 .awarealley.com
@@ -4580,8 +4549,6 @@
 .learnedmarket.com
 .enchantedjudge.com
 .standingsack.com
-.pocketsonic.com
-.scrawnystart.com
 .clamcelery.com
 .verifyvegetable.com
 .haltinggold.com
@@ -4594,7 +4561,6 @@
 .rejectfairies.com
 .synthesizespoon.com
 .evaluateend.com
-.brushdaughter.com
 .verseballs.com
 .rhetoricalloss.com
 .stalesummer.com
@@ -4620,7 +4586,6 @@
 .farshake.com
 .fadedsnow.com
 .nervoussummer.com
-.horsenectar.com
 .symbolizebeast.com
 .cannontwin.com
 .lumberamount.com
@@ -4688,7 +4653,6 @@
 .frightenedpotato.com
 .futuristicfairies.com
 .fuzzyflavor.com
-.ga87z2o.com
 .gammamaximum.com
 .giddycoat.com
 .giraffepiano.com
@@ -4738,11 +4702,9 @@
 .screechingfurniture.com
 .scrubswim.com
 .separatesilver.com
-.shakesea.com
 .shakytaste.com
 .sincerebuffalo.com
 .sixscissors.com
-.sneakystamp.com
 .spuriousstranger.com
 .standtrouble.com
 .stickssheep.com
@@ -4852,6 +4814,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.webtrack.pospal.cn
+.track.americansongwriter.com
 .tag.rmp.rakuten.com
 .abt.s3.yandex.net
 .uaas.yandex.ru
@@ -5790,7 +5754,6 @@
 .dt.nrjmobile.fr
 .dtch.brunel.nl
 .dtxtngytz5im1.cloudfront.net
-.dv0.info
 .dynatrace.att.com
 .e-stat.huya.com
 .e.dr-zh.com
