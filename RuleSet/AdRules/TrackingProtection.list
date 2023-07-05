@@ -604,7 +604,6 @@
 .tracking.affiliateclub.cz
 .p.altergeo.ru
 .analytics.mlstatic.com
-.api.carrottrack.io
 .collector-*.tvsquared.com
 .collectorj.tvsquared.com
 .pixelapi-*.cs.mysamba.tv
@@ -949,7 +948,6 @@
 .wh.giftd.tech
 .privatelands.biz
 .click.vgnett.no
-.api.rubic.com.tr
 .datadoghq-browser-agent.com
 .tag.wknd.ai
 .ext-inv-cdn.presage.io
@@ -3707,6 +3705,7 @@
 .visilabs.com
 .visilabs.net
 .functionalclam.com
+.serpentshampoo.com
 .guidecent.com
 .rebelhen.com
 .guardeddirection.com
@@ -4813,6 +4812,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.tracking.centerfield.com
+.c.security.org
 .a.flux.jp
 .t.881903.com
 .trackerapi.service.echobox.com
@@ -52209,6 +52210,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.metrics.macys.com
 .track.ktplay.com
 .preview-collector.scopely.io
 .collector.scopely.io
@@ -52757,15 +52759,12 @@
 .cedexis.com
 .clientmetrics-augmentum.kik.com
 .clientmetrics.kik.com
-.clktrk.display.io
 .collector.brandify.com
 .config2.mparticle.com
-.counter.kingsoft.com
 .crasheye.cn
 .crwdcntrl.net
 .demdex.net
 .dsg.sc.omtrdc.net
-.ep.xone.com
 .etl.xlmc.sandai.net
 .events.lbesecapi.com
 .geoip.fotoable.net
@@ -52780,8 +52779,6 @@
 .log.umsns.com
 .lp4.io
 .metrics.adflake.com
-.metrics.bestbuy.com
-.metrics.macys.net
 .metrics.sdkbox.com
 .mlb.did.ijinshan.com
 .mobile-collector.newrelic.com
