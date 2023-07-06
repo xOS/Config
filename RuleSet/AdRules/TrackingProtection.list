@@ -4812,6 +4812,8 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.log.recommend.nicovideo.jp
+.log.klook.com
 .tracking.centerfield.com
 .c.security.org
 .a.flux.jp
@@ -6981,7 +6983,6 @@
 .x.babe.today
 .xray.mail.ru
 .xtag.autotrader.com
-.ya.domain-vip.net
 .ybx.yahoo.co.jp
 .yield-manager.browsiprod.com
 .yieldmo-builds.s3.amazonaws.com
@@ -52210,6 +52211,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.ad-api-log.colopl.jp
 .metrics.macys.com
 .track.ktplay.com
 .preview-collector.scopely.io
