@@ -4,6 +4,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.loggw.alipay.com
+.loggw-ex.alipay.com
+.loggw.alipay.com.cn
 .analytics.gooogol.com
 .nol.hubty.network
 .bos.hubty.network
@@ -4790,6 +4793,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.analytics.tedium.co
 .tracking.gnavi.co.jp
 .logcollector.note.com
 .openmonitor.alipay.com
@@ -55222,7 +55226,6 @@
 .api.telemetry.watchabc.go.com
 .analytics.rover.io
 .events-collector-api.viacom.tech
-.pipe.aria.microsoft.com
 .log-api.aillis.net
 .log.snow.me
 .events.textme-app.com
