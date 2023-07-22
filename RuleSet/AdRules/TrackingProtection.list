@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.trafico.prensaiberica.es
 .collector-*.px-cloud.net
 .ediemidnightzombies.com
 .deqik.com
@@ -877,7 +878,6 @@
 .counter.yandro.ru
 .track-aws.notsy.io
 .track.notsy.io
-.log.ca.gov.vn
 .tracking.gpm-rtv.ru
 .uncn.jp
 .ad-spire.net
@@ -1037,7 +1037,6 @@
 .sc.lfeeder.com
 .tr.lfeeder.com
 .am-trc-events.taboola.com
-.eba-amadeus.netdna-ssl.com
 .c.tvpixel.com
 .ga-analytics.com
 .analytics.webads.eu
@@ -1101,7 +1100,6 @@
 .pixel.s3xified.com
 .collect.feefo.com
 .js.ptengine.jp
-.c.tgknt.com
 .imp.dmm.co.jp
 .imp.dmm.com
 .track.edu-info.jp
@@ -4798,6 +4796,7 @@
 .mkto-*.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.rake.tmap.co.kr
 .campaign.remp.nv.ua
 .analytics.ripped.guide
 .ats.auction.co.kr
@@ -54681,6 +54680,8 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.am.yahoo.co.jp
+.b99.yahoo.co.jp
 .logs13.xiti.com
 .tracing-collector.strava.com
 .cgicol.amap.com
@@ -54854,7 +54855,6 @@
 .click.oneplus.cn
 .mapi-log.qoo*.jp
 .events.api.red.wemesh.ca
-.prod-plague-bacon.miniclippt.com
 .logend.cookpad.com
 .viva.api.xiaoying.co
 .ub-xjp.vvbrd.com
