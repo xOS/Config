@@ -1,4 +1,4 @@
-const version = 'v0723.8';
+const version = 'v0723.1';
 
 const $ = new Env("微博去广告");
 let storeMainConfig = $.getdata('mainConfig');
@@ -438,8 +438,8 @@ function removeHomeVip(data) {
     let vipView = data.header.vipView;
     let items = data.items;
     if (items) {
-        if (items[3] && items[3].title) {
-            items[3].title.content = "9876万";
+        if (items[3]) {
+            if (items[3].title) items[3].title.content = "9876万";
         }
     }
     if (!vipCenter) {
