@@ -30,3 +30,6 @@ DOMAIN-SUFFIX,spotilocal.com,PROXY
 DOMAIN-SUFFIX,tospotify.com,PROXY
 IP-CIDR,104.154.127.126/32,no-resolve,PROXY
 IP-CIDR,35.186.224.47/32,no-resolve,PROXY
+
+# > Zoom
+DOMAIN-SUFFIX,zoom.us,PROXY
