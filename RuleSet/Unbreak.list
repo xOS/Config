@@ -1,24 +1,2 @@
-# > 谷歌统计与广告
-# DOMAIN-KEYWORD,adservice,DIRECT
-# DOMAIN-KEYWORD,googleads,DIRECT
-# DOMAIN-SUFFIX,googleadservices.com,DIRECT
-# DOMAIN-SUFFIX,googlesyndication.com,DIRECT
-# DOMAIN-SUFFIX,googletagmanager.com,DIRECT
-# DOMAIN-SUFFIX,adservice.google.com,DIRECT
-#DOMAIN-SUFFIX,doubleclick.net,DIRECT
-#DOMAIN-SUFFIX,displayads-formats.googleusercontent.com,DIRECT
-
-# > Google
-DOMAIN-SUFFIX,blog.google,DIRECT
-DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
-DOMAIN,clientservices.googleapis.com,DIRECT
-DOMAIN,dl.google.com,DIRECT
-DOMAIN,dl.l.google.com,DIRECT
-DOMAIN,update.googleapis.com,DIRECT
-DOMAIN,translate.googleapis.com,DIRECT
-
 # > 谷歌开发日志
 DOMAIN,firebaselogging-pa.googleapis.com,DIRECT
-
-# > 微软
-# DOMAIN,self.events.data.microsoft.com,DIRECT
