@@ -12332,7 +12332,7 @@ IP-CIDR,43.175.32.0/19,no-resolve
 IP-CIDR,43.175.64.0/18,no-resolve
 IP-CIDR,43.176.0.0/12,no-resolve
 IP-CIDR,43.192.0.0/14,no-resolve
-IP-CIDR,43.193.0.0/17,no-resolve
+IP-CIDR,43.193.0.0/18,no-resolve
 IP-CIDR,43.196.0.0/15,no-resolve
 IP-CIDR,43.224.100.0/22,no-resolve
 IP-CIDR,43.224.144.0/22,no-resolve
