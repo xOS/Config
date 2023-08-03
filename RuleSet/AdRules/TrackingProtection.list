@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.track.lemmatechnologies.com
 .wiseref.com
 .swetrix.org
 .getter.cfd
@@ -1053,7 +1054,6 @@
 .adwstats.com
 .smallbeginner.com
 .omappapi.com
-.lt.logly.co.jp
 .l.logly.co.jp
 .tagmanager.alright.network
 .statad.ru
@@ -5230,9 +5230,7 @@
 .a-reporting.nytimes.com
 .a.hstrck.com
 .a.mobify.com
-.a.oix.net
 .a.ria.ru
-.a1.huiqituan.com
 .a3.ogt.jp
 .ab.blogs.es
 .abc.esprit.de
@@ -5408,7 +5406,6 @@
 .awsync.yandex.ru
 .b-aws.aol.com
 .b.aol.com
-.b.grvcdn.com
 .b.oix.net
 .banstat.nadavi.net
 .bat.bing.com
@@ -5485,7 +5482,6 @@
 .clc.stackoverflow.com
 .clck.yandex.com
 .click.jasmin.com
-.click.livejasmin.com
 .click.mmosite.com
 .click.udimg.com
 .click2.cafepress.com
@@ -5502,25 +5498,18 @@
 .clkstat.china.cn
 .clog.go.com
 .clog*.yuanfudao.com
-.cls.ichotelsgroup.com
 .clvk.viki.io
 .cmap.alibaba.com
 .cmp-cdn.ghostery.com
 .cmstrendslog.indiatimes.com
 .cmstrendslog.timesnow.tv
-.cmt.setrowid.com
 .cnt.alawar.com
-.cnt.cerber.rambler.ru
-.cnt.inforotor.net
 .cnt.logoslovo.ru
 .cnt.nicemix.com
 .cnt.nov.ru
 .cnt.rambler.ru
 .cnt.ramlife.ru
 .cnt.xhamster.com
-.cnt2.stroeerdp.de
-.cntcerber.rambler.ru
-.code.lockbot.net
 .codes.royalad.pl
 .collect-elb-*.amazonaws.com
 .collect.igodigital.com
@@ -5692,7 +5681,6 @@
 .discovery-script.newspic.kr
 .discovery.newspic.kr
 .dj4odketdva9s.cloudfront.net
-.djibeacon.dowjoneson.com
 .dmc1acwvwny3.cloudfront.net
 .dmp.citiservi.es
 .dmtracking2.alibaba.com
@@ -6106,12 +6094,9 @@
 .n4p-rus.redtram.com
 .newlog.overwolf.com
 .ng.virgul.com
-.ngagement-engine.mobify.com
 .nil.naver.com
 .nmtracking.netflix.com
 .notify-bugs-fra1.rtl.de
-.ns1.phorm.com
-.ns2.phorm.com
 .ns336739.ip-37-187-249.eu
 .o.addthis.com
 .odb.outbrain.com
@@ -53928,7 +53913,6 @@
 .logs.ironsrc.mobi
 .events.mz.unity3d.com
 .r-log.dable.io
-.metrics.plaid.com
 .mon*-platform-*.tiktokv.com
 .log*-applog-*.tiktokv.com
 .logservice-*.platform.dbankcloud.cn
