@@ -42,8 +42,8 @@ obj = {
         "daily_value": 0,
         "accumulated_lost_points": 0,
         "current_max_points": 43000,
-        "current_level": 8,
-        "history_level": 7,
+        "current_level": 10,
+        "history_level": 8,
         "default_daily_value": 15,
         "accumulated_day": 0
     },
