@@ -1143,7 +1143,6 @@
 .flashb.id
 .flcounter.com
 .flexlinkspro.com
-.flippback.com
 .flixfacts.co.uk
 .flixsyndication.net
 .flocktory.com
@@ -6202,6 +6201,7 @@
 .monorail-edge.shopifysvc.com
 .mormont.gamer-network.net
 .ms-trackingapi.phenompeople.com
+.msadsscale.azureedge.net
 .mts.mansion.com
 .munchkin.marketo.net
 .mv.treehousei.com
@@ -7384,6 +7384,7 @@
 .tracking.venturify.at
 .informers.sinoptik.ua
 .tracker.prom.ua
+.webvitals.luxnet.ua
 .analytics.yomedia.vn
 .countervov.emitech.vn
 .f-emc.ngsp.gov.vn
@@ -7489,7 +7490,9 @@
 .collect.asics.com
 .collect.banggood.com
 .collect.hollisterco.com
+.collect.reagroupdata.com.au
 .collect.thunder-io.com
+.collections-api.realestate.com.au
 .collector-px0py5pczn.octopart.com
 .collector.cint.com
 .collector.fiverr.com
@@ -7622,6 +7625,7 @@
 .j927.statnews.com
 .jfapiprod.optimonk.com
 .jumbo.zomato.com
+.lexa.realestate.com.au
 .link.kogan.com
 .lists.ccmbg.com
 .log-gateway.zoom.us
@@ -24864,6 +24868,7 @@
 .bmly.impots.gouv.fr
 .cdtm.cdiscount.com
 .compteur.developpez.com
+.dd.leboncoin.fr
 .e.legalstart.fr
 .eum2.caisse-epargne.fr
 .events-logs.doctolib.com
