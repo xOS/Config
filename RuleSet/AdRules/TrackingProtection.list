@@ -3704,6 +3704,7 @@
 .visilabs.com
 .visilabs.net
 .functionalclam.com
+.eventexistence.com
 .pumpedpancake.com
 .hospitablehall.com
 .stomachscience.com
@@ -4829,6 +4830,7 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.pixel.aws.pfnetwork.net
 .stats.macg.io
 .ci.asosservices.com
 .creativeassets.asosservices.com
@@ -31675,6 +31677,7 @@
 .data.decathlon.fr
 .data.decathlon.pl
 .data.ricaud.com
+.data.ubi.com
 .data.wptag.net
 .logger.yp.ca
 .sales.disneylandparis.com
@@ -47305,7 +47308,6 @@
 .wiz.empowerhearing.com
 .wiz.sncf-connect.com
 .wz.allianz.fr
-.data.ubi.com
 .dygassets.dygdigital.com
 .analytics.chita.ru
 .metrics.ainews.kz
@@ -47334,7 +47336,6 @@
 .log.prezi.com
 .click.uol.com.br
 .cm.g.doubleclick.net
-.countess.twitch.tv
 .giga-abs.de
 .logger.rm.uol.com.br
 .metrics.aviasales.ru
@@ -47747,7 +47748,6 @@
 .api.telemetry.watchabc.go.com
 .analytics.rover.io
 .events-collector-api.viacom.tech
-.log-api.aillis.net
 .log.snow.me
 .events.textme-app.com
 .stocks-analytics-events.apple.com
@@ -47755,7 +47755,6 @@
 .books-analytics-events.apple.com
 .books-analytics-events.news.apple-dns.net
 .us04logfiles.zoom.us
-.us04logfiles-va.zoom.us
 .costco-adbutler.com
 .adbutler.costco.com
 .wompanalytics.azurewebsites.net
@@ -47771,8 +47770,6 @@
 .log.avlyun.com
 .api-analytics.prod.birdapp.com
 .mpianalytics.com
-.umengcloud.com.gds.alibabadns.com
-.umeng.com.gds.alibabadns.com
 .umengjmacs.m.taobao.com
 .umengacs.m.taobao.com
 .sdk-api-v1.singular.net
@@ -47785,7 +47782,6 @@
 .analytics.jodelapis.com
 .analytics.mobilegamestats.com
 .p.statp.com
-.api.imqtyik.com
 .events.claspws.tv
 .tracking-receiver.prod-general.stocard-backend.com
 .metrics.happycolor.app
@@ -47814,7 +47810,6 @@
 .logs.gaaana.com
 .sdk-log-inter.youdao.com
 .sensors.snappea.com
-.analytics.snappea.com
 .analytics.snaptube.app
 .px.ucweb.com
 .collector1.afreecatv.com
@@ -47857,7 +47852,6 @@
 .dsptrack.mobshark.net
 .analytics.metrix.ir
 .hwstats.unity3d.com
-.dsp-tracking.unityads.unity3d.com
 .installtracker.unityads.unity3d.com
 .tracking.adsx.unityads.unity3d.com
 .mediation-tracking.prd.mz.internal.unity3d.com
@@ -47889,12 +47883,10 @@
 .tracking.aatkit.com
 .reporting.aatkit.com
 .geo.go2s.co
-.log.go2s.co
 .batsavcdn.ksmobile.net
 .cfg.cml.ksmobile.com
 .tealand.cmcm.com
 .geoinfo.i2w.io
-.cmplay.did.ijinshan.com
 .tracking.i2w.io
 .detect.rayjump.com
 .a.appbaqend.com
@@ -47903,24 +47895,19 @@
 .ilyonanalytics.herokuapp.com
 .gcm.ksmobile.com
 .ninja.onap.io
-.api.splkmobile.com
 .sdk.stats-locations.com
 .config.safedk.com
-.api.safedk.com
 .elephantdata.net
 .sdks.stats-locations.com
 .imp.startappservice.com
 .ploy.batmobi.net
 .an.batmobi.net
-.ustat.batmobi.net
 .analytics.any.do
-.alog.umeng.co
 .oc.umeng.co
 .m.vpadn.com
 .api.instabug.com
 .sts.batmobi.net
 .pps-log.op-mobile.opera.com
-.event.allnews.uodoo.com
 .tktracker.aotter.net
 .tkrecorder.aotter.net
 .android.bugly.qq.com
@@ -47950,7 +47937,6 @@
 .geoplugin.net
 .d.applvn.com
 .rt.applvn.com
-.sdklogs.avocarrot.com
 .apiv2.moengage.com
 .rt.applovin.com
 .track.uc.cn
@@ -47971,7 +47957,6 @@
 .gjapplog.uc.cn
 .a.bitmango.com
 .tracking.directservices.it
-.onedrive-collection.device.mobileengagement.windows.net
 .metrics.timewarnercable.com
 .flurry.agentportal-*.yahoodns.net
 .amptrack-dailymail-co-uk.cdn.ampproject.org
@@ -47986,9 +47971,7 @@
 .stats.umsns.com
 .device-metrics-*.amazon.com
 .flurry.agentportal.*.yahoodns.net
-.iapp-cp.nuggad.net
 .4seeresults.com
-.ad-analytics-bootstrap.metaps.com
 .adash.m.taobao.com
 .adfuture.cn
 .adserver.snapads.com
@@ -48007,11 +47990,9 @@
 .api-analytics.metaps.com
 .api.amplitude.com
 .api.analytics.omgpop.com
-.api.appsee.com
 .api.apptentive.com
 .api.branch.io
 .api2.branch.io
-.api.crittercism.com
 .rubick.gameanalytics.com
 .api.gameanalytics.com
 .api.gimbal.com
@@ -48026,7 +48007,6 @@
 .brahe.apptimize.com
 .c.bigmir.net
 .carfax.sc.omtrdc.net
-.cb.ksmobile.com
 .cedexis-radar.net
 .cedexis.com
 .clientmetrics-augmentum.kik.com
@@ -48064,7 +48044,6 @@
 .oc.umeng.com
 .online-metrix.net
 .openstat.net
-.ping.xlmc.sandai.net
 .pingma.qq.com
 .prugskh.com
 .prugskh.net
@@ -48084,7 +48063,6 @@
 .tracker-api.my.com
 .tracking.lenzmx.com
 .trk.pinterest.com
-.tu.dxcnd.cn
 .tunein.adswizz.com
 .upalytics.com
 .ups.ksmobile.net
