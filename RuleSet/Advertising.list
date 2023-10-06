@@ -1176,11 +1176,11 @@ DOMAIN,sugar.zhihu.com,REJECT
 DOMAIN-SUFFIX,aaid.uyunad.com,REJECT
 
 # > Google
-#DOMAIN-SUFFIX,doubleclick.net,REJECT
-#DOMAIN-SUFFIX,googleadservices.com,REJECT
-#DOMAIN-SUFFIX,googleadsserving.cn,REJECT
-#DOMAIN-SUFFIX,googlesyndication.com,REJECT
-#DOMAIN-SUFFIX,googletagservices.com,REJECT
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN-SUFFIX,googleadservices.com,REJECT
+DOMAIN-SUFFIX,googleadsserving.cn,REJECT
+DOMAIN-SUFFIX,googlesyndication.com,REJECT
+DOMAIN-SUFFIX,googletagservices.com,REJECT
 DOMAIN,ads.youtube.com,REJECT
 
 # > Youtube
