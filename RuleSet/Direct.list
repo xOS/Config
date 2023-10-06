@@ -8,6 +8,8 @@ DOMAIN,bdtj.tagtic.cn,DIRECT
 DOMAIN,api.nxtlnodes.com,DIRECT
 DOMAIN,nqcbls.xyz,DIRECT
 DOMAIN,gcsbie.xyz,DIRECT
+DOMAIN-SUFFIX,ultramobile.com,DIRECT // Added for: w3b-api.ultramobile.com:443
+DOMAIN-SUFFIX,capitalone.com,DIRECT // Added for: ecm.capitalone.com:443
 
 # > Alibaba
 DOMAIN,log.mmstat.com,DIRECT
