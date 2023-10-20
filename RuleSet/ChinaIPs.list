@@ -6655,7 +6655,7 @@ IP-CIDR,123.58.88.0/22,no-resolve
 IP-CIDR,123.60.0.0/15,no-resolve
 IP-CIDR,123.62.0.0/16,no-resolve
 IP-CIDR,123.64.0.0/11,no-resolve
-IP-CIDR,123.64.0.0/12,no-resolve
+IP-CIDR,123.64.0.0/13,no-resolve
 IP-CIDR,123.64.252.0/22,no-resolve
 IP-CIDR,123.64.32.0/19,no-resolve
 IP-CIDR,123.65.32.0/19,no-resolve
