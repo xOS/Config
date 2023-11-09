@@ -97,10 +97,10 @@ DOMAIN,cloudctrl.gcloud.qq.com,DIRECT
 USER-AGENT,smoba*,DIRECT
 
 # > 微信
-USER-AGENT,MicroMessenger*,DIRECT
-USER-AGENT,WeChat*,DIRECT
-USER-AGENT,MicroMessenger20%Client*,DIRECT
-DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+#USER-AGENT,MicroMessenger*,DIRECT
+#USER-AGENT,WeChat*,DIRECT
+#USER-AGENT,MicroMessenger20%Client*,DIRECT
+#DOMAIN-SUFFIX,weixin.qq.com,DIRECT
 
 # > 百度搜索
 URL-REGEX,^https?:\/\/t[0-9]\.baidu\.com\/it,DIRECT
