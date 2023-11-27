@@ -42,7 +42,7 @@
  } else if (CSR.includes(carrier)) {
      server = "中国铁路";
  } else {
-     server = "移动网络";
+     server = "蜂窝网络";
  }
  
  ;
