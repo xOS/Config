@@ -49866,7 +49866,6 @@
 .analytics.qoqa.ch
 .analytics.qoqa.com
 .adrevenue.appsflyer.com
-.af-event-logger.appsflyer.com
 .api.appsflyer.com
 .api2.appsflyer.com
 .app.appsflyer.com
@@ -49890,7 +49889,6 @@
 .sdk-services.appsflyer.com
 .sdk.appsflyer.com
 .stats.appsflyer.com
-.statsgoogle.appsflyer.com
 .t.appsflyer.com
 .track.appsflyer.com
 .validate.appsflyer.com
@@ -50130,7 +50128,6 @@
 .msg.umengcloud.com
 .ulogs.umeng.com
 .ulogs.umengcloud.com
-.ada-tr.staff-start.com
 .analytics.liveact-vault.com
 .dex50.deteql.net
 .analytics.300624.com
@@ -50414,7 +50411,6 @@
 .geoip.ifunny.co
 .alogs.umeng.com
 .alogs.umengcloud.com
-.stats.umsns.com
 .device-metrics-*.amazon.com
 .flurry.agentportal.*.yahoodns.net
 .4seeresults.com
@@ -50438,7 +50434,6 @@
 .api.apptentive.com
 .api.branch.io
 .api2.branch.io
-.rubick.gameanalytics.com
 .api.gameanalytics.com
 .api.gimbal.com
 .appmetrica.yandex.net
@@ -50519,4 +50514,3 @@
 .upoll.umengcloud.com
 .utop.umengcloud.com
 .analy.qq.com
-.api.safegraph.com
