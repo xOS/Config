@@ -20276,7 +20276,6 @@ IP-ASN,200895,no-resolve
 IP-ASN,200907,no-resolve
 IP-ASN,200912,no-resolve
 IP-ASN,200936,no-resolve
-IP-ASN,200949,no-resolve
 IP-ASN,200954,no-resolve
 IP-ASN,200959,no-resolve
 IP-ASN,202256,no-resolve
@@ -20340,6 +20339,7 @@ IP-ASN,210872,no-resolve
 IP-ASN,210903,no-resolve
 IP-ASN,210934,no-resolve
 IP-ASN,211051,no-resolve
+IP-ASN,211293,no-resolve
 IP-ASN,211481,no-resolve
 IP-ASN,211571,no-resolve
 IP-ASN,211843,no-resolve
@@ -20691,8 +20691,8 @@ IP-ASN,138211,no-resolve
 IP-ASN,140720,no-resolve
 IP-ASN,142582,no-resolve
 IP-ASN,197626,no-resolve
+IP-ASN,200949,no-resolve
 IP-ASN,203874,no-resolve
-IP-ASN,211293,no-resolve
 IP-ASN,55988,no-resolve
 IP-ASN,55989,no-resolve
 IP-ASN,58026,no-resolve
