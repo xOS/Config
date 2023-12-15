@@ -4530,6 +4530,7 @@ IP-CIDR,110.93.32.0/19,no-resolve
 IP-CIDR,110.94.0.0/15,no-resolve
 IP-CIDR,110.96.0.0/11,no-resolve
 IP-CIDR,110.96.0.0/14,no-resolve
+IP-CIDR,110.96.0.0/15,no-resolve
 IP-CIDR,110.96.0.0/16,no-resolve
 IP-CIDR,111.0.0.0/10,no-resolve
 IP-CIDR,111.0.0.0/13,no-resolve
@@ -14272,6 +14273,8 @@ IP-CIDR,43.255.176.0/22,no-resolve
 IP-CIDR,43.255.184.0/22,no-resolve
 IP-CIDR,43.255.200.0/21,no-resolve
 IP-CIDR,43.255.200.0/22,no-resolve
+IP-CIDR,43.255.200.0/23,no-resolve
+IP-CIDR,43.255.202.0/24,no-resolve
 IP-CIDR,43.255.204.0/22,no-resolve
 IP-CIDR,43.255.208.0/22,no-resolve
 IP-CIDR,43.255.224.0/21,no-resolve
