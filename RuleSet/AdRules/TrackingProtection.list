@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.metrics.plaid.com
+.api.iterable.com
 .t.arcade.show
 .pxl.retaku.net
 .extrawatch.com
@@ -3841,6 +3843,7 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.metrics.geekwire.com
 .click-performance.assets.rndtech.de
 .track.linksynergy.com
 .tracking.epicgames.com
