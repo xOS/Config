@@ -1,4 +1,4 @@
-// 2023-12-10 21:00
+// 2024-01-04
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -243,7 +243,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     }
   } else if (url.includes("/2/direct_messages/user_list")) {
     if (obj?.user_list?.length > 0) {
-      obj.user_list = obj.user_list.filter((i) => !["活动通知", "闪聊"].includes(i?.user?.name));
+      obj.user_list = obj.user_list.filter((i) => !["活动通知", "闪聊"]?.includes(i?.user?.name));
     }
   } else if (url.includes("/2/flowlist")) {
     if (obj?.items?.length > 0) {
@@ -340,14 +340,14 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       let newItems = [];
       for (let item of obj.items) {
         if (item?.category === "card") {
-          // 筛选按钮
-          if (item?.data?.card_type === 216) {
+          // 58微博展示时间段提示 216筛选按钮
+          if ([58, 216]?.includes(item?.data?.card_type)) {
             newItems.push(item);
           }
         } else if (item?.category === "group") {
           // 遍历group,保留置顶微博
           if (item?.header?.data?.icon) {
-            // 置顶微博背景图
+            // 置顶微博皇冠背景图
             delete item.header.data.icon;
           }
           if (item?.itemId?.includes("INTEREST_PEOPLE")) {
@@ -368,6 +368,19 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                 if (ii?.data?.enable_comment_guide) {
                   ii.data.enable_comment_guide = false;
                 }
+              } else if (ii?.category === "card") {
+                if ([48, 176]?.includes(ii?.data?.card_type)) {
+                  // 最近关注与互动过的博主
+                  continue;
+                }
+                if (ii?.data?.rightImage) {
+                  // 新版置顶微博皇冠背景图
+                  delete ii.data.rightImage;
+                }
+                if (ii?.data?.backgroundImage) {
+                  // 新版置顶微博背景图
+                  delete ii.data.backgroundImage;
+                }
               }
               newII.push(ii);
             }
@@ -377,10 +390,13 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         } else if (item?.category === "feed") {
           if (item?.data) {
             if (!isAd(item.data)) {
+              // 信息流推广
               removeFeedAd(item.data);
               // 投票窗口
-              if (item?.data?.page_info?.media_info?.vote_info) {
-                delete item.data.page_info.media_info.vote_info;
+              removeVoteInfo(item.data);
+              if (item?.data?.source?.includes("生日动态")) {
+                // 移除生日祝福微博
+                continue;
               }
               if (item?.data?.title?.text !== "热门" && item?.data?.title?.structs?.length > 0) {
                 // 移除赞过的微博 保留热门内容
@@ -393,11 +409,11 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       }
       obj.items = newItems;
     }
-  } else if (url.includes("/2/profile/dealatt") || url.includes("/2/friendships/destroy")) {
+  } else if (url.includes("/2/profile/dealatt") || url.includes("/2/friendships/")) {
     // 个人主页点击关注后展示菜单
-    if (obj?.cards) {
+    if (obj?.cards?.length > 0) {
       // 相关推荐卡片
-      delete obj.cards;
+      obj.cards = [];
     }
     if (obj?.toolbar_menus_new?.items?.length > 0) {
       // 底部菜单
@@ -573,6 +589,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         for (let item of obj.items) {
           if (item?.category === "feed") {
             if (!isAd(item.data)) {
+              // 信息流推广
               removeFeedAd(item.data);
               newItems.push(item);
             }
@@ -616,6 +633,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
               for (let item of payload.items) {
                 if (item?.category === "feed") {
                   if (!isAd(item.data)) {
+                    // 信息流推广
                     removeFeedAd(item.data);
                     newItems.push(item);
                   }
@@ -676,9 +694,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                     delete group.mblog.common_struct;
                   }
                   // 投票窗口
-                  if (group?.mblog?.page_info?.media_info?.vote_info) {
-                    delete group.mblog.page_info.media_info.vote_info;
-                  }
+                  removeVoteInfo(group?.mblog);
                   // 新版热推
                   if (group?.mblog?.is_ad === 1) {
                     continue;
@@ -794,6 +810,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       let newStatuses = [];
       for (let item of obj.statuses) {
         if (!isAd(item)) {
+          // 信息流推广
           removeFeedAd(item);
           newStatuses.push(item);
         }
@@ -815,7 +832,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         if (!isAd(item?.data)) {
           if (item?.category === "feed") {
             // 信息流推广
-            // removeFeedAd(item?.data);
+            removeFeedAd(item?.data);
             if (item.data?.title?.structs) {
               // 移除 未关注人消息 (你关注的博主，他自己关注的别的博主的微博消息)
               continue;
@@ -940,7 +957,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     }
     if (obj.trend?.titles) {
       let title = obj.trend.titles.title;
-      if (["博主好物种草", "相关推荐"].includes(title)) {
+      if (["博主好物种草", "相关推荐"]?.includes(title)) {
         delete obj.trend;
       }
     }
@@ -989,6 +1006,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     removeFeedAd(obj);
     // 循环引用中的商品橱窗
     if (obj?.text) {
+      // 信息流推广
       removeFeedAd(obj.text);
     }
     // 赞赏信息
