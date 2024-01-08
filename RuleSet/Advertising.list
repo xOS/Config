@@ -31,7 +31,7 @@ DOMAIN-SUFFIX,xmpush.xiaomi.com,REJECT
 DOMAIN,g.cn.miaozhen.com,REJECT
 
 # > 抖音商城
-DOMAIN-KEYWORD,minigame,REJECT
+// DOMAIN-KEYWORD,minigame,REJECT
 DOMAIN-KEYWORD,ecombd,REJECT
 DOMAIN-SUFFIX,jinritemai.com,REJECT
 DOMAIN,ecom.snssdk.com,REJECT
@@ -69,7 +69,7 @@ DOMAIN-SUFFIX,sngapm.qq.com,REJECT
 DOMAIN-SUFFIX,tetrack.qq.com,REJECT
 DOMAIN-SUFFIX,mcgi.v.qq.com,REJECT
 DOMAIN-SUFFIX,ott.video.qq.com,REJECT
-DOMAIN-SUFFIX,eve.mdt.qq.com,REJECT
+// DOMAIN-SUFFIX,eve.mdt.qq.com,REJECT
 DOMAIN-SUFFIX,stun.qqlive.qq.com,REJECT
 DOMAIN-SUFFIX,p2p.qq.com,REJECT
 DOMAIN-SUFFIX,apponline.research.qq.com,REJECT
@@ -183,7 +183,7 @@ DOMAIN-SUFFIX,mta.qq.com,REJECT
 DOMAIN-SUFFIX,news.mpush.qq.com,REJECT
 DOMAIN-SUFFIX,novelsns.html5.qq.com,REJECT
 DOMAIN-SUFFIX,openapi.guanjia.qq.com,REJECT
-DOMAIN-SUFFIX,oth.eve.mdt.qq.com,REJECT
+// DOMAIN-SUFFIX,oth.eve.mdt.qq.com,REJECT
 DOMAIN-SUFFIX,oth.str.mdt.qq.com,REJECT
 DOMAIN-SUFFIX,oth.update.mdt.qq.com,REJECT
 DOMAIN-SUFFIX,p.store.qq.com,REJECT
