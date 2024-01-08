@@ -6009,6 +6009,7 @@ IP-CIDR,119.39.0.0/16,no-resolve
 IP-CIDR,119.4.0.0/14,no-resolve
 IP-CIDR,119.40.0.0/18,no-resolve
 IP-CIDR,119.40.128.0/17,no-resolve
+IP-CIDR,119.40.40.0/22,no-resolve
 IP-CIDR,119.41.0.0/16,no-resolve
 IP-CIDR,119.42.128.0/21,no-resolve
 IP-CIDR,119.42.52.0/22,no-resolve
@@ -21237,7 +21238,6 @@ IP-ASN,199392,no-resolve
 IP-ASN,199406,no-resolve
 IP-ASN,199436,no-resolve
 IP-ASN,199684,no-resolve
-IP-ASN,199691,no-resolve
 IP-ASN,199832,no-resolve
 IP-ASN,199932,no-resolve
 IP-ASN,200021,no-resolve
@@ -21258,7 +21258,6 @@ IP-ASN,200809,no-resolve
 IP-ASN,200853,no-resolve
 IP-ASN,200890,no-resolve
 IP-ASN,200895,no-resolve
-IP-ASN,200907,no-resolve
 IP-ASN,200912,no-resolve
 IP-ASN,200936,no-resolve
 IP-ASN,200949,no-resolve
@@ -21679,6 +21678,8 @@ IP-ASN,139133,no-resolve
 IP-ASN,140720,no-resolve
 IP-ASN,142582,no-resolve
 IP-ASN,198527,no-resolve
+IP-ASN,199691,no-resolve
+IP-ASN,200907,no-resolve
 IP-ASN,203691,no-resolve
 IP-ASN,203874,no-resolve
 IP-ASN,208698,no-resolve
