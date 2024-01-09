@@ -11,6 +11,9 @@ DOMAIN,gcsbie.xyz,DIRECT
 DOMAIN-SUFFIX,amysecure.com,DIRECT
 DOMAIN-SUFFIX,ultramobile.com,DIRECT // Added for: w3b-api.ultramobile.com:443
 DOMAIN-SUFFIX,capitalone.com,DIRECT // Added for: ecm.capitalone.com:443
+DOMAIN-SUFFIX,tagcdnsub.work,DIRECT
+DOMAIN-SUFFIX,dy.tagsub.net,DIRECT
+DOMAIN-SUFFIX,support.tagsssubscribe.com,DIRECT
 
 # > Alibaba
 DOMAIN,log.mmstat.com,DIRECT
