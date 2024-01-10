@@ -4,6 +4,10 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.pb.adriver.ru
+.sync.adspend.space
+.sync.opendsp.ru
+.sync.programmatica.com
 .tracker.smart-bdash.com
 .trk.a-dsp.com
 .metrics.plaid.com
@@ -3852,6 +3856,9 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.analytics.msk1.ru
+.metrics.viqeo.tv
+.rtb.videonow.ru
 .hn-ping*.hashnode.com
 .o920916.ingest.sentry.io
 .ping.hashnode.com
