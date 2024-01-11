@@ -15,3 +15,9 @@ DOMAIN,self.events.data.microsoft.com,REJECT
 # > 拼多多视频
 DOMAIN-KEYWORD,pplay-video,REJECT
 DOMAIN-KEYWORD,liveplay-edge,REJECT
+
+# > 拦截Netflix部分域名
+DOMAIN,ios.ngp.prod.cloud.netflix.com,REJECT
+DOMAIN,ios.prod.cloud.netflix.com,REJECT
+DOMAIN,appboot.netflix.com,REJECT
+    

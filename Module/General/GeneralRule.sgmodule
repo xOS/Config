@@ -214,7 +214,6 @@ URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad
 ;URL-REGEX,^https?:\/\/mcmm\.caiyun\.feixin\.10086\.cn:80\/mcmm\/api\/IAdvert$,REJECT
 
 # > 无忧行
-DOMAIN,abtest.jegotrip.com.cn,REJECT
 URL-REGEX,^https?:\/\/.+\.jegotrip\.com\.cn(.+?)appSyncimage\/.+?\.(jpg|png|gif),REJECT
 
 # > 优酷
