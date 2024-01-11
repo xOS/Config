@@ -95,6 +95,11 @@ DOMAIN-KEYWORD,youtube,PROXY
 # > OpenAI
 DOMAIN-SUFFIX,openai.com,PROXY
 
+# > 美国信报
+DOMAIN-SUFFIX,equifax.com,PROXY
+DOMAIN-SUFFIX,transunion.com,PROXY
+DOMAIN-SUFFIX,experian.com,PROXY
+
 # > HOSTLOC
 DOMAIN-SUFFIX,hostloc.com,PROXY
 
