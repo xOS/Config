@@ -75,6 +75,9 @@ DOMAIN,future.biz.weibo.com,DIRECT
 DOMAIN,wbapp.uve.weibo.com,DIRECT
 DOMAIN,sdkapp.uve.weibo.com,DIRECT
 
+# > 招商银行
+DOMAIN,ccclub.cmbchina.com,DIRECT
+
 # > 爱奇艺
 #DOMAIN,msg.qy.net,DIRECT
 
