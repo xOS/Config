@@ -153,7 +153,7 @@ USER-AGENT,%E8%BF%85%E9%9B%B7,DIRECT
 DOMAIN-SUFFIX,xunlei.com,DIRECT
 
 # > Others
-DOMAIN-SUFFIX,hcaptcha.com,DIRECT
+// DOMAIN-SUFFIX,hcaptcha.com,DIRECT
 DOMAIN-SUFFIX,spartanhost.net,DIRECT
 DOMAIN-SUFFIX,livechatinc.com,DIRECT
 
