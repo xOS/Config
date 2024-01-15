@@ -99,6 +99,7 @@ DOMAIN-SUFFIX,openai.com,PROXY
 DOMAIN-SUFFIX,equifax.com,PROXY
 DOMAIN-SUFFIX,transunion.com,PROXY
 DOMAIN-SUFFIX,experian.com,PROXY
+DOMAIN-SUFFIX,myfico.com,PROXY
 
 # > Varo
 DOMAIN-SUFFIX,varomoney.com,PROXY
