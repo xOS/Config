@@ -3859,6 +3859,10 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.analytics.fap.bar
+.analytics-batch.blitz.gg
+.tms-collect.sony.jp
+.tms-visitor-service.sony.jp
 .clicks.hurriyet.com
 .analytics.maxroll.gg
 .log.kinolights.com
@@ -3866,12 +3870,11 @@
 .metrics.viqeo.tv
 .rtb.videonow.ru
 .hn-ping*.hashnode.com
-.o920916.ingest.sentry.io
 .ping.hashnode.com
-.o1184810.ingest.sentry.io
 .t.la-croix.com
 .trk.tirto.id
 .prdwebcollector.ruetracking.com
+.analytics-dataplane.invideo.io
 .analytics-api.invideo.io
 .tr.staff-start.com
 .rtnl.bxcl.de
@@ -3936,7 +3939,6 @@
 .trace.rememberapp.co.kr
 .asv.transsion.com
 .f459fdc403a6.78a5254f.ap-northeast-1.token.awswaf.com
-.o1000929.ingest.sentry.io
 .sta.tirexo.ink
 .pixel.aws.pfnetwork.net
 .stats.macg.io
