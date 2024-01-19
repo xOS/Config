@@ -1,4 +1,4 @@
-// 2024-01-06 14:55
+// 2024-01-19 10:35
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -269,7 +269,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                 if (i?.pageDatas?.length > 0) {
                   let newII = [];
                   for (let ii of i.pageDatas) {
-                    if (["最新微博", "特别关注", "好友圈", "超话社区"]?.includes(ii?.title)) {
+                    if (["最新微博", "特别关注", "好友圈", "视频", "超话社区"]?.includes(ii?.title)) {
                       // 白名单列表
                       newII.push(ii);
                     } else {
@@ -441,6 +441,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             delete item.header.vipIcon;
             item.header.avatar.badgeUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/04/07/avatar_vip_golden.png';
             item.header.desc.content = '微博认证：小仙女';
+
           }
           if (item?.items?.length > 0) {
             for (let d of item.items) {
@@ -488,7 +489,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         } else if (itemId === "100505_-_chaohua" || itemId === "100505_-_recentlyuser") {
           newItems.push(item);
         } else {
-          // 其他项目全部移除
+          // 移除其他推广
           continue;
         }
       }
@@ -590,7 +591,10 @@ if (url.includes("/interface/sdk/sdkad.php")) {
               newItems.push(item);
             }
           } else if (item?.category === "card") {
-            if (!checkSearchWindow(item)) {
+            // 19热议等tab 118横版图片广告 208实况热聊 217错过了热词 249横版视频广告
+            if ([19, 118, 208, 217, 249]?.includes(item?.data?.card_type)) {
+              continue;
+            } else {
               newItems.push(item);
             }
           } else if (item?.category === "cell") {
@@ -598,9 +602,18 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             newItems.push(item);
           } else if (item?.category === "group") {
             if (item?.items?.length > 0) {
-              item.items = item.items.filter((i) => i.data?.card_type === 17);
-              newItems.push(item);
+              let newII = [];
+              for (let ii of item.items) {
+                if (ii?.data?.card_type === 182) {
+                  // 热议话题
+                  continue;
+                } else {
+                  newII.push(ii);
+                }
+              }
+              item.items = newII;
             }
+            newItems.push(item);
           }
         }
         obj.items = newItems;
@@ -616,12 +629,16 @@ if (url.includes("/interface/sdk/sdkad.php")) {
           if (payload) {
             if (payload?.loadedInfo) {
               // 去除搜索框填充词
-              if (payload?.loadedInfo?.searchBarContent) {
-                delete payload.loadedInfo.searchBarContent;
+              if (payload?.loadedInfo?.searchBarContent?.length > 0) {
+                payload.loadedInfo.searchBarContent = [];
               }
               // 去除搜索背景图片
               if (payload?.loadedInfo?.headerBack?.channelStyleMap) {
                 delete payload.loadedInfo.headerBack.channelStyleMap;
+              }
+              // 搜索框样式
+              if (payload?.loadedInfo?.searchBarStyleInfo) {
+                delete payload.loadedInfo.searchBarStyleInfo;
               }
             }
             if (payload?.items?.length > 0) {
@@ -634,7 +651,10 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                     newItems.push(item);
                   }
                 } else if (item?.category === "card") {
-                  if (!checkSearchWindow(item)) {
+                  // 19热议等tab 118横版图片广告 208实况热聊 217错过了热词 249横版视频广告
+                  if ([19, 118, 208, 217, 249]?.includes(item?.data?.card_type)) {
+                    continue;
+                  } else {
                     newItems.push(item);
                   }
                 } else if (item?.category === "cell") {
@@ -642,9 +662,18 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                   newItems.push(item);
                 } else if (item?.category === "group") {
                   if (item?.items?.length > 0) {
-                    item.items = item.items.filter((i) => i.data?.card_type === 17);
-                    newItems.push(item);
+                    let newII = [];
+                    for (let ii of item.items) {
+                      if (ii?.data?.card_type === 182) {
+                        // 热议话题
+                        continue;
+                      } else {
+                        newII.push(ii);
+                      }
+                    }
+                    item.items = newII;
                   }
+                  newItems.push(item);
                 }
               }
               payload.items = newItems;
@@ -806,7 +835,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             removeVoteInfo(item?.data);
             newItems.push(item);
           } else {
-            // 移除所有的推广
+            // 移除其他推广
             continue;
           }
         }
@@ -876,7 +905,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             // 管理特别关注按钮
             newItems.push(item);
           } else {
-            // 移除所有的推广
+            // 移除其他推广
             continue;
           }
         }
@@ -917,19 +946,29 @@ if (url.includes("/interface/sdk/sdkad.php")) {
               // 超话页顶部乱七八糟
               let newII = [];
               for (let ii of item.items) {
-                if (ii?.data?.itemid?.includes("mine_topics")) {
-                  // 保留我的超话
-                  newII.push(ii);
-                } else if (ii?.data?.itemid?.includes("_tab_search_input")) {
-                  // 保留搜索框
-                  if (ii?.data?.hotwords) {
-                    // 删除热搜词
-                    ii.data.hotwords = [{ word: "搜索超话" }];
+                if (ii?.data?.hasOwnProperty("itemid")) {
+                  if (ii?.data?.itemid?.includes("mine_topics")) {
+                    // 保留我的超话
+                    newII.push(ii);
+                  } else if (ii?.data?.itemid?.includes("tab_search_input")) {
+                    // 保留搜索框
+                    if (ii?.data?.hotwords) {
+                      // 删除热搜词
+                      ii.data.hotwords = [{ word: "搜索超话" }];
+                    }
+                    newII.push(ii);
+                  } else if (ii?.data?.itemid?.includes("poiRankList")) {
+                    // 保留地点超话 地标人气榜
+                    newII.push(ii);
                   }
+                } else {
+                  // 放行无itemid字段的内容
                   newII.push(ii);
                 }
+                // 头像挂件,关注按钮
+                removeAvatar(ii?.data);
+                item.items = newII;
               }
-              item.items = newII;
             } else {
               for (let ii of item.items) {
                 if (ii?.data) {
@@ -951,7 +990,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
           }
           newItems.push(item);
         } else {
-          // 移除所有的推广
+          // 移除其他推广
           continue;
         }
       }
@@ -1124,23 +1163,6 @@ function removeAvatar(data) {
     delete data.pic_bg_new;
   }
   return data;
-}
-
-// 移除搜索页组件
-function checkSearchWindow(item) {
-  if (
-    item.data?.card_type === 19 || // 找人 热议 本地
-    item.data?.card_type === 118 || // finder_window 横版大图
-    item.data?.card_type === 208 || // 实况热聊
-    item.data?.card_type === 217 ||
-    item.data?.card_type === 1005 ||
-    item.data?.itemid?.includes("finder_window") ||
-    item.data?.itemid?.includes("more_frame") ||
-    item.data?.mblog?.page_info?.actionlog?.source?.includes("ad")
-  ) {
-    return true;
-  }
-  return false;
 }
 
 // 移除信息流关注按钮,推广,热评
