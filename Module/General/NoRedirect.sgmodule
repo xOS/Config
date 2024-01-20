@@ -1,5 +1,6 @@
 #!name= 禁止跳转 APP
 #!desc= 禁止网页跳转 APP
+#!category=翠花
 
 [Header Rewrite]
 # > 颇可

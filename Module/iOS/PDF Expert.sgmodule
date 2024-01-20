@@ -1,6 +1,7 @@
 #!name= PDF Expert 高级版
 #!desc= PDF Expert 高级版解锁.
 #!system=ios
+#!category=翠花
 
 [MITM]
 hostname = license.pdfexpert.com

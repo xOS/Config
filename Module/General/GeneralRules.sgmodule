@@ -1,5 +1,6 @@
 #!name=常用规则
 #!desc=功能解锁
+#!category=翠花
 
 [General]
 # > 强制使用 HTTP 

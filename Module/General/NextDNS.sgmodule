@@ -1,5 +1,6 @@
 #!name=NextDNS
 #!desc=Script event auto linked ipv4 nextdns: network-change 。
+#!category=翠花
 
 [General]
 # > DNS

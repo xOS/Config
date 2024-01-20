@@ -1,6 +1,7 @@
 #!name=网络防火墙
 #!desc=启用后，如果设备从"蜂窝网络"切换至"WiFi"，则断网15秒，Apple/Surge除外。
 #!system=ios
+#!category=翠花
 
 [Script]
 防火墙(规则) = type=rule,script-path=https://hub.nange.cn/Script/Tools/TimedFirewall.js

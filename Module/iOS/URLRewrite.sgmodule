@@ -1,6 +1,7 @@
 #!name=URL 重写
 #!desc=302 Redirect & Advertising Block
 #!system=ios
+#!category=翠花
 
 // --- URL Rewrite and Header Rewrite ---
 [MITM]

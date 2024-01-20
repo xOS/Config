@@ -1,6 +1,7 @@
 #!name=常用规则
 #!desc=日用夜用
 #!system=mac
+#!category=翠花
 
 [General]
 # > 跳过代理

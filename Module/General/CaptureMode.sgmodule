@@ -1,5 +1,6 @@
 #!name=抓包状态
 #!desc=抓包模式操作面板
+#!category=翠花
 
 [Panel]
 # > 抓包状态

@@ -1,5 +1,7 @@
 #!name=订阅管理
 #!desc=高级订阅管理工具
+#!category=翠花
+
 [MITM]
 hostname= %APPEND% api.io
 

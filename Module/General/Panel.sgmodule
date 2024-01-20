@@ -1,5 +1,6 @@
 #!name=信息面板
 #!desc=日用夜用
+#!category=翠花
 
 [Panel]
 # > 服务状态
