@@ -1,5 +1,6 @@
 #!name=游戏模式
 #!desc=所有UDP端口直连，国内版
+#!category=翠花
 
 [Rule]
 PROTOCOL,UDP,DIRECT

@@ -1,5 +1,6 @@
 #!name=MitM 所有主机名
 #!desc=抓包专用，在端口443上的所有主机名上执行 MitM，但 Apple 和其他无法检查的常见站点除外。您仍然需要配置 CA 证书并启用 MitM 开关。
+#!category=翠花
 
 [MITM]
 hostname = -app*.jegotrip.com.cn, -probe.twitter.com, -analytics.twitter.com, -dc-api.twitter.com, -api-*.twitter.com, -global.glbtls.t.co, -api.twitter.com, -search*-search-quic-lq.amemv.com, -p*-notice.byteimg.com,-lf*-cm.ecombdstatic.com,-sf*-ttcdn-tos.pstatp.com,-search*-search-lq.amemv.com,-sf*-pitaya-tos.pstatp.com,-tnc*-alisc*.bytedance.com,-tnc*-bjlgy.bytedance.com,-tnc*-*.bytedance.com,-dm-hl.toutiao.com,-dm.bytedance.com,-dm.toutiao.com,-tnc*-*.snssdk.com,-tnc*-*.bytedance.com,-security-hl.snssdk.com,-vcs.snssdk.com,-api*-normal-hl.amemv.com,-api*-core-hl.amemv.com, -pitaya.bytedance.com, -lf*-dy-cdn-tos.bytegecko.com, -frontier*-aweme-hl.amemv.com, -p*-ad-sign.byteimg.com, -lf*-webcast-cdn-tos.bytegecko.com, -*-misc-hl.zijieapi.com, -p*.douyinpic.com, -p*-sign.douyinpic.com, -p*.douyinpic.com, -lf*-effectcdn-tos.byteeffecttos.com, -p*-sign.douyinpic.com, -i-hl.snssdk.com, -*-core-c-hl.amemv.com, -*-core-c-hl.amemv.com, -*-misc-hl.amemv.com, -*cdn-tos.douyinstatic.com, -*-normal-hl.zijieapi.com, -*-normal-c-hl.amemv.com, -*.apple.com, -*.icloud.com, -*.mzstatic.com, -*.crashlytics.com, -*.facebook.com, -*.instagram.com, *

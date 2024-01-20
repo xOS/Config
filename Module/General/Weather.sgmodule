@@ -1,7 +1,0 @@
-#!name= 每日天气提示
-#!desc= 每小时天气提示。
-
-[Script]
-
-# > 每日天气提示
-天气提醒 = debug=1,script-path=https://cdn.jsdelivr.net/gh/XOS/Config@Her/Script/Weather.js,cronexp=*/60 * * * *,type=cron

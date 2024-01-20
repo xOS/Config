@@ -1,5 +1,6 @@
 #!name=DNS 刷新
 #!desc=刷新 DNS 缓存
+#!category=翠花
 
 [Panel]
 # > 刷新 DNS 缓存

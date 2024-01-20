@@ -1,5 +1,6 @@
 #!name=URL 重写
 #!desc=URL优化与重写
+#!category=翠花
 
 [URL Rewrite]
 # > Bilibili

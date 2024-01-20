@@ -1,5 +1,6 @@
 #!name=屏蔽系统更新
 #!desc=屏蔽 iOS 系统更新。
+#!category=翠花
 
 [Rule]
 DOMAIN,mesu.apple.com,REJECT

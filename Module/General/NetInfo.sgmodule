@@ -1,5 +1,6 @@
 #!name=网络信息
 #!desc=网络信息面板
+#!category=翠花
 
 [Panel]
 # > 网络状态

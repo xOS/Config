@@ -1,5 +1,6 @@
 #!name=广告屏蔽（旧版）
 #!desc=日用夜用
+#!category=翠花
 
 [General]
 # > 强制使用 HTTP

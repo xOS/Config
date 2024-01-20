@@ -1,5 +1,6 @@
 #!name=TestFlight 账户管理
 #!desc=自动存储/合并多个 TestFlight 账户列表, 并可导出/分享 TestFlight APP。
+#!category=翠花
 
 [General]
 skip-proxy = %APPEND% iosapps.itunes.apple.com
