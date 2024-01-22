@@ -1,4 +1,4 @@
-// 2024-01-21 10:40
+// 2024-01-22 17:00
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -242,6 +242,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       obj.user_list = obj.user_list.filter((i) => !["活动通知", "闪聊"]?.includes(i?.user?.name));
     }
   } else if (url.includes("/2/flowlist")) {
+    // 关注列表
     if (obj?.items?.length > 0) {
       for (let item of obj.items) {
         if (item?.items?.length > 0) {
@@ -251,6 +252,27 @@ if (url.includes("/interface/sdk/sdkad.php")) {
           }
         }
       }
+    }
+  } else if (url.includes("/2/flowpage")) {
+    // 热搜列表
+    if (obj?.items?.length > 0) {
+      let newItems = [];
+      for (let item of obj.items) {
+        if (item?.items?.length > 0) {
+          let newII = [];
+          for (let i of item.items) {
+            if (i?.data.hasOwnProperty("promotion")) {
+              // 热搜列表中的推广项目
+              continue;
+            } else {
+              newII.push(i);
+            }
+          }
+          item.items = newII;
+        }
+        newItems.push(item);
+      }
+      obj.items = newItems;
     }
   } else if (url.includes("/2/groups/allgroups/v2")) {
     // 顶部tab
@@ -270,6 +292,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                   let newII = [];
                   for (let ii of i.pageDatas) {
                     if (["最新微博", "特别关注", "好友圈", "视频", "超话社区"]?.includes(ii?.title)) {
+
                       // 白名单列表
                       newII.push(ii);
                     } else {
@@ -443,6 +466,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             item.header.desc.content = '微博认证：小仙女';
 
 
+
           }
           if (item?.items?.length > 0) {
             for (let d of item.items) {
@@ -592,8 +616,8 @@ if (url.includes("/interface/sdk/sdkad.php")) {
               newItems.push(item);
             }
           } else if (item?.category === "card") {
-            // 19热议等tab 118横版图片广告 208实况热聊 217错过了热词 206,249横版视频广告
-            if ([19, 118, 206, 208, 217, 249]?.includes(item?.data?.card_type)) {
+            // 19热议等tab 208实况热聊 206,249横版视频广告
+            if ([19, 206, 208, 249]?.includes(item?.data?.card_type)) {
               continue;
             } else {
               newItems.push(item);
@@ -605,8 +629,8 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             if (item?.items?.length > 0) {
               let newII = [];
               for (let ii of item.items) {
-                if (ii?.data?.card_type === 182) {
-                  // 热议话题
+                // 118横版广告图片 182热议话题 217错过了热词 247横版视频广告
+                if ([118, 182, 217, 247]?.includes(ii?.data?.card_type)) {
                   continue;
                 } else {
                   newII.push(ii);
@@ -652,8 +676,8 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                     newItems.push(item);
                   }
                 } else if (item?.category === "card") {
-                  // 19热议等tab 118横版图片广告 208实况热聊 217错过了热词 206,249横版视频广告
-                  if ([19, 118, 206, 208, 217, 249]?.includes(item?.data?.card_type)) {
+                  // 19热议等tab 208实况热聊 206,249横版视频广告
+                  if ([19, 206, 208, 249]?.includes(item?.data?.card_type)) {
                     continue;
                   } else {
                     newItems.push(item);
@@ -665,8 +689,8 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                   if (item?.items?.length > 0) {
                     let newII = [];
                     for (let ii of item.items) {
-                      if (ii?.data?.card_type === 182) {
-                        // 热议话题
+                      // 118横版广告图片 182热议话题 217错过了热词 247横版视频广告
+                      if ([118, 182, 217, 247]?.includes(ii?.data?.card_type)) {
                         continue;
                       } else {
                         newII.push(ii);
