@@ -30,37 +30,49 @@ Sub_info = script-name=Sub_info,update-interval=600
 有些服务端不支持head访问，可以添加参数&method=get
 */
 
-let args = getArgs();
+/**********
+* 作者：cc63&ChatGPT
+* 更新时间：2024年1月20日
+**********/
 
 (async () => {
+  let args = getArgs();
   let info = await getDataInfo(args.url);
-  if (!info) $done();
-  let resetDayLeft = getRmainingDays(parseInt(args["reset_day"]));
+  
+  // 如果没有信息，则直接结束
+  if (!info) return $done();
+
+  let resetDayLeft = getRemainingDays(parseInt(args["reset_day"]));
+  let expireDaysLeft = getExpireDaysLeft(args.expire || info.expire);
 
   let used = info.download + info.upload;
   let total = info.total;
-  let expire = args.expire || info.expire;
-  let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
+  let content = [`用量：${bytesToSize(used)} ｜ ${bytesToSize(total)}`];
 
-  if (resetDayLeft) {
-    content.push(`重置：剩余${resetDayLeft}天`);
+  // 判断是否为不限时套餐
+  if (!resetDayLeft && !expireDaysLeft) {
+    let percentage = ((used / total) * 100).toFixed(1);
+    content.push(`提醒：不限时套餐，已用${percentage}%`);
+  } else {
+    if (resetDayLeft && expireDaysLeft) {
+      content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
+    } else if (resetDayLeft) {
+      content.push(`提醒：套餐将在${resetDayLeft}天后重置`);
+    } else if (expireDaysLeft) {
+      content.push(`提醒：套餐将在${expireDaysLeft}天后到期`);
+    }
+    
+    // 到期时间（日期）显示
+    if (expireDaysLeft) {
+      content.push(`到期：${formatTime(args.expire || info.expire)}`);
+    }
   }
-  if (expire && expire !== "false") {
-    if (/^[\d.]+$/.test(expire)) expire *= 1000;
-    content.push(`到期：${formatTime(expire)}`);
-  }
-
-  let now = new Date();
-  let hour = now.getHours();
-  let minutes = now.getMinutes();
-  hour = hour > 9 ? hour : "0" + hour;
-  minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `${args.title} | ${hour}:${minutes}`,
+    title: `${args.title}`,
     content: content.join("\n"),
-    icon: args.icon || "airplane.circle",
-    "icon-color": args.color || "#007aff",
+    icon: args.icon || "tornado",
+    "icon-color": args.color || "#DF4688",
   });
 })();
 
@@ -74,10 +86,9 @@ function getArgs() {
 }
 
 function getUserInfo(url) {
-  let method = args.method || "head";
   let request = { headers: { "User-Agent": "Quantumult%20X" }, url };
   return new Promise((resolve, reject) =>
-    $httpClient[method](request, (err, resp) => {
+    $httpClient.get(request, (err, resp) => {
       if (err != null) {
         reject(err);
         return;
@@ -86,9 +97,7 @@ function getUserInfo(url) {
         reject(resp.status);
         return;
       }
-      let header = Object.keys(resp.headers).find(
-        (key) => key.toLowerCase() === "subscription-userinfo"
-      );
+      let header = Object.keys(resp.headers).find((key) => key.toLowerCase() === "subscription-userinfo");
       if (header) {
         resolve(resp.headers[header]);
         return;
@@ -115,33 +124,61 @@ async function getDataInfo(url) {
   );
 }
 
-function getRmainingDays(resetDay) {
-  if (!resetDay) return;
+function getRemainingDays(resetDay) {
+  if (!resetDay || resetDay < 1 || resetDay > 31) return;
 
   let now = new Date();
   let today = now.getDate();
   let month = now.getMonth();
   let year = now.getFullYear();
-  let daysInMonth;
+
+  // 计算当前月份和下个月份的天数
+  let daysInThisMonth = new Date(year, month + 1, 0).getDate();
+  let daysInNextMonth = new Date(year, month + 2, 0).getDate();
+
+  // 如果重置日大于当前月份的天数，则在当月的最后一天重置
+  resetDay = Math.min(resetDay, daysInThisMonth);
 
   if (resetDay > today) {
-    daysInMonth = 0;
+    // 如果重置日在本月内
+    return resetDay - today;
   } else {
-    daysInMonth = new Date(year, month + 1, 0).getDate();
+    // 如果重置日在下个月，确保不超过下个月的天数
+    resetDay = Math.min(resetDay, daysInNextMonth);
+    return daysInThisMonth - today + resetDay;
+  }
+}
+
+function getExpireDaysLeft(expire) {
+  if (!expire) return;
+
+  let now = new Date().getTime();
+  let expireTime;
+
+  // 检查是否为时间戳
+  if (/^[\d.]+$/.test(expire)) {
+    expireTime = parseInt(expire) * 1000;
+  } else {
+    // 尝试解析YYYY-MM-DD格式的日期
+    expireTime = new Date(expire).getTime();
   }
 
-  return daysInMonth - today + resetDay;
+  let daysLeft = Math.ceil((expireTime - now) / (1000 * 60 * 60 * 24));
+  return daysLeft > 0 ? daysLeft : null;
 }
 
 function bytesToSize(bytes) {
   if (bytes === 0) return "0B";
   let k = 1024;
-  sizes = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+  let sizes = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
   let i = Math.floor(Math.log(bytes) / Math.log(k));
   return (bytes / Math.pow(k, i)).toFixed(2) + " " + sizes[i];
 }
 
 function formatTime(time) {
+  // 检查时间戳是否为秒单位，如果是，则转换为毫秒
+  if (time < 1000000000000) time *= 1000;
+
   let dateObj = new Date(time);
   let year = dateObj.getFullYear();
   let month = dateObj.getMonth() + 1;
