@@ -59,8 +59,8 @@ let args = getArgs();
   $done({
     title: `${args.title} | ${hour}:${minutes}`,
     content: content.join("\n"),
-    icon: args.icon || "airplane.departure",
-    "icon-color": args.color || "#f88400",
+    icon: args.icon || "airplane.circle",
+    "icon-color": args.color || "#007aff",
   });
 })();
 
@@ -75,7 +75,7 @@ function getArgs() {
 
 function getUserInfo(url) {
   let method = args.method || "head";
-  let request = { headers: { "User-Agent": "Surge iOS" }, url };
+  let request = { headers: { "User-Agent": "Quantumult%20X" }, url };
   return new Promise((resolve, reject) =>
     $httpClient[method](request, (err, resp) => {
       if (err != null) {
