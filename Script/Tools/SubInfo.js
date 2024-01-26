@@ -47,7 +47,7 @@ Sub_info = script-name=Sub_info,update-interval=600
 
   let used = info.download + info.upload;
   let total = info.total;
-  let content = [`用量：${bytesToSize(used)}｜${bytesToSize(total)}`];
+  let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   // 判断是否为不限时套餐
   if (!resetDayLeft && !expireDaysLeft) {
