@@ -3861,6 +3861,11 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.p-aw2-adapt-beacon.awsprodops.movetv.com
+.p-cg64-slinganalytics.movetv.com
+.pdsssl.gmarket.co.kr
+.pds.gmarket.co.kr
+.uts.gmarket.co.kr
 .prebid-log.getpublica.com
 .dmp.truoptik.com
 .analytics.nova.foxsports.com
@@ -4582,7 +4587,6 @@
 .beacon.lycos.com
 .beacon.netflix.com
 .beacon.nuskin.com
-.beacon.cdn.qq.com
 .beacon.riskified.com
 .beacon.samsclub.com
 .beacon.sojern.com
@@ -5667,7 +5671,6 @@
 .tr.ds.kakao.com
 .tr.junaroad.com
 .tr.marsflag.com
-.tr.namu.wiki
 .tr.outbrain.com
 .tr1.admeira.ch
 .trac.clicplan.co.uk
@@ -52887,6 +52890,8 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.reportwest-midas.codmwest.com
+.events.character.ai
 .sb.scorecard.research.com
 .zml-apm-prd.dbv4.noncd.db.de
 .api.bytebrew.io
