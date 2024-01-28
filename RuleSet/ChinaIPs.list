@@ -971,6 +971,7 @@ IP-CIDR,103.146.91.0/24,no-resolve
 IP-CIDR,103.147.12.0/23,no-resolve
 IP-CIDR,103.147.206.0/23,no-resolve
 IP-CIDR,103.147.211.0/24,no-resolve
+IP-CIDR,103.147.23.0/24,no-resolve
 IP-CIDR,103.148.174.0/23,no-resolve
 IP-CIDR,103.149.132.0/23,no-resolve
 IP-CIDR,103.149.144.0/23,no-resolve
