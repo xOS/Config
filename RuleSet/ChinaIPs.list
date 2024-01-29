@@ -5601,6 +5601,7 @@ IP-CIDR,117.51.160.0/19,no-resolve
 IP-CIDR,117.51.192.0/18,no-resolve
 IP-CIDR,117.53.176.0/20,no-resolve
 IP-CIDR,117.53.48.0/20,no-resolve
+IP-CIDR,117.55.206.0/24,no-resolve
 IP-CIDR,117.57.0.0/16,no-resolve
 IP-CIDR,117.58.0.0/17,no-resolve
 IP-CIDR,117.58.0.0/18,no-resolve
