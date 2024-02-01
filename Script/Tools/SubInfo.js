@@ -48,7 +48,7 @@ Sub_info = script-name=Sub_info,update-interval=600
   let used = info.download + info.upload;
   let total = info.total;
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
-  let expireDays ="";
+  let expireMsg ="";
   
 
   // 判断是否为不限时套餐
@@ -67,16 +67,16 @@ Sub_info = script-name=Sub_info,update-interval=600
     // 到期时间（日期）显示
     if (expireDaysLeft) {
       //content.push(`到期：${formatTime(args.expire || info.expire)}`);
-      expireDays = `到期：${formatTime(args.expire || info.expire)}`
+      expireMsg = `到期：${formatTime(args.expire || info.expire)}`
     }
     consolo.log(expireDays);
   }
 
   $done({
-    title: `${args.title} | ${expireDays}`,
+    title: `${args.title} | ${expireMsg}`,
     content: content.join("\n"),
-    icon: args.icon || "tornado",
-    "icon-color": args.color || "#DF4688",
+    icon: args.icon || "airplane.departure",
+    "icon-color": args.color || "#9978FF",
   });
 })();
 
