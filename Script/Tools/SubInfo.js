@@ -65,12 +65,13 @@ Sub_info = script-name=Sub_info,update-interval=600
     
     // 到期时间（日期）显示
     if (expireDaysLeft) {
-      content.push(`到期：${formatTime(args.expire || info.expire)}`);
+      //content.push(`到期：${formatTime(args.expire || info.expire)}`);
+      let expireDaysLeft = `到期：${formatTime(args.expire || info.expire)}`
     }
   }
 
   $done({
-    title: `${args.title}` | content[i-1],
+    title: `${args.title}` | expireDaysLeft,
     content: content.join("\n"),
     icon: args.icon || "tornado",
     "icon-color": args.color || "#DF4688",
