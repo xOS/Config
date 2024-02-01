@@ -73,7 +73,7 @@ Sub_info = script-name=Sub_info,update-interval=600
   }
 
   $done({
-    title: `${args.title}` | expireDays,
+    title: `${args.title} | ${expireDays}`,
     content: content.join("\n"),
     icon: args.icon || "tornado",
     "icon-color": args.color || "#DF4688",
