@@ -69,6 +69,7 @@ Sub_info = script-name=Sub_info,update-interval=600
       //content.push(`到期：${formatTime(args.expire || info.expire)}`);
       expireDays = "到期：`${formatTime(args.expire || info.expire)}`"
     }
+    consolo.log(expireDays);
   }
 
   $done({
