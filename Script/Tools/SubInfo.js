@@ -48,6 +48,7 @@ Sub_info = script-name=Sub_info,update-interval=600
   let used = info.download + info.upload;
   let total = info.total;
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
+  let i = content.length;
 
   // 判断是否为不限时套餐
   if (!resetDayLeft && !expireDaysLeft) {
@@ -69,7 +70,7 @@ Sub_info = script-name=Sub_info,update-interval=600
   }
 
   $done({
-    title: `${args.title}`,
+    title: `${args.title}` | content[i-1],
     content: content.join("\n"),
     icon: args.icon || "tornado",
     "icon-color": args.color || "#DF4688",
