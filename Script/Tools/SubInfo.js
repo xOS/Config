@@ -67,7 +67,7 @@ Sub_info = script-name=Sub_info,update-interval=600
     // 到期时间（日期）显示
     if (expireDaysLeft) {
       //content.push(`到期：${formatTime(args.expire || info.expire)}`);
-      expireDays = `到期：${formatTime(args.expire || info.expire)}`
+      expireDays = "到期：`$｛formatTime(args.expire || info.expire)}`"
     }
   }
 
