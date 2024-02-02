@@ -48,31 +48,33 @@ Sub_info = script-name=Sub_info,update-interval=600
   let used = info.download + info.upload;
   let total = info.total;
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
-  
+  let msg;
 
   // 判断是否为不限时套餐
   if (!resetDayLeft && !expireDaysLeft) {
     let percentage = ((used / total) * 100).toFixed(1);
-    content.push(`提醒：不限时套餐，已用${percentage}%`);
+    //content.push(`提醒：不限时套餐，已用${percentage}%`);
+    msg = `提醒：不限时套餐，已用${percentage}%`;
   } else {
     if (resetDayLeft && expireDaysLeft) {
-      content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
+      //content.push(`提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`);
+      msg = `提醒：${resetDayLeft}天后重置，${expireDaysLeft}天后到期`;
     } else if (resetDayLeft) {
-      content.push(`提醒：套餐将在${resetDayLeft}天后重置`);
+      //content.push(`提醒：套餐将在${resetDayLeft}天后重置`);
+      msg = `提醒：套餐将在${resetDayLeft}天后重置`;
     } else if (expireDaysLeft) {
-      content.push(`提醒：套餐将在${expireDaysLeft}天后到期`);
+      //content.push(`提醒：套餐将在${expireDaysLeft}天后到期`);
+      msg = `提醒：套餐将在${expireDaysLeft}天后到期`;
     }
     
     // 到期时间（日期）显示
     if (expireDaysLeft) {
-      //content.push(`到期：${formatTime(args.expire || info.expire)}`);
-      var expireMsg = `到期：${formatTime(args.expire || info.expire)}`
+      content.push(`到期：${formatTime(args.expire || info.expire)}`);
     }
-    consolo.log(expireDays);
   }
 
   $done({
-    title: `${args.title} | ${expireMsg}`,
+    title: `${args.title} | ${msg}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.departure",
     "icon-color": args.color || "#9978FF",
