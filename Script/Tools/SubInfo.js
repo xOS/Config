@@ -48,7 +48,6 @@ Sub_info = script-name=Sub_info,update-interval=600
   let used = info.download + info.upload;
   let total = info.total;
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
-  let expireMsg ="";
   
 
   // 判断是否为不限时套餐
@@ -67,7 +66,7 @@ Sub_info = script-name=Sub_info,update-interval=600
     // 到期时间（日期）显示
     if (expireDaysLeft) {
       //content.push(`到期：${formatTime(args.expire || info.expire)}`);
-      expireMsg = `到期：${formatTime(args.expire || info.expire)}`
+      var expireMsg = `到期：${formatTime(args.expire || info.expire)}`
     }
     consolo.log(expireDays);
   }
