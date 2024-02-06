@@ -4852,6 +4852,8 @@ IP-CIDR,113.251.0.0/16,no-resolve
 IP-CIDR,113.31.0.0/16,no-resolve
 IP-CIDR,113.31.128.0/20,no-resolve
 IP-CIDR,113.44.0.0/14,no-resolve
+IP-CIDR,113.44.0.0/18,no-resolve
+IP-CIDR,113.44.64.0/19,no-resolve
 IP-CIDR,113.45.128.0/17,no-resolve
 IP-CIDR,113.48.0.0/14,no-resolve
 IP-CIDR,113.48.0.0/15,no-resolve
