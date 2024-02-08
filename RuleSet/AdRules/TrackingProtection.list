@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.stats.getaim.org
 .analytics-cf.bigcrunch.com
 .trackerapi.ebxcdn.com
 .tongjiniao.com
@@ -3668,6 +3669,7 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.tcx-beacon.docs.aws.dev
 .analytics.githubassets.com
 .hkrpg-log-upload.mihoyo.com
 .reporting-api.gannettinnovation.com
