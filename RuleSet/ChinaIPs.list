@@ -855,7 +855,6 @@ IP-CIDR,103.132.68.0/22,no-resolve
 IP-CIDR,103.132.72.0/22,no-resolve
 IP-CIDR,103.132.76.0/22,no-resolve
 IP-CIDR,103.132.80.0/22,no-resolve
-IP-CIDR,103.132.80.0/23,no-resolve
 IP-CIDR,103.133.12.0/22,no-resolve
 IP-CIDR,103.133.128.0/22,no-resolve
 IP-CIDR,103.133.136.0/22,no-resolve
