@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.event.lib.visumo.io
 .gtm.taginstall.com
 .mdstats.info
 .site-config.com
@@ -3678,6 +3679,7 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.analytics.castel.jp
 .tagging.anaxago.com
 .tagging.boataround.com
 .tagging.bokus.com
