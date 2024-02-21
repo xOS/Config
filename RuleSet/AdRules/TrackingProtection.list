@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.trk.decido.io
 .tracker.oval.id
 .event.lib.visumo.io
 .gtm.taginstall.com
@@ -3680,6 +3681,11 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.tracking.ai.rakuten.co.jp
+.supportmetrics.apple.com
+.securemvt.apple.com
+.metrics.apple.com
+.eldoradottfha.dataplane.rudderstack.com
 .analytics.castel.jp
 .tagging.anaxago.com
 .tagging.boataround.com
@@ -58472,7 +58478,9 @@
 .us-tracking.nextdoor.com
 .us-events.api.iheart.com
 .notes-analytics-events.apple.com
+.notes-analytics-events.news.apple-dns.net
 .weather-analytics-events.apple.com
+.weather-analytics-events.news.apple-dns.net
 .v-collector.dp.aws.charter.com
 .smetrics.cnn.com
 .metrics.claspws.tv
