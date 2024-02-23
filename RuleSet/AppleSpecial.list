@@ -34,3 +34,4 @@ DOMAIN,configuration.ls.apple.com,DIRECT
 DOMAIN-SUFFIX,gsp10-ssl.apple.com,DIRECT
 DOMAIN,gateway.icloud.com,DIRECT
 DOMAIN,ontology.health.apple.com,DIRECT
+DOMAIN-SUFFIX,content-storage-  upload.googleapis.com,DIRECT
