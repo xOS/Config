@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.adx.promo
 .trk.decido.io
 .tracker.oval.id
 .event.lib.visumo.io
@@ -3681,6 +3682,10 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.events.caffeine.tv
+.analytics.totalprosports.com
+.analytics-conomi.line.me
+.sopr-api.cian.ru
 .analytics.b2.ai
 .tracking.ai.rakuten.co.jp
 .supportmetrics.apple.com
