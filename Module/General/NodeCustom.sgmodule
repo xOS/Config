@@ -1,9 +1,0 @@
-#!name=订阅管理
-#!desc=高级订阅管理工具
-#!category=翠花
-
-[MITM]
-hostname= %APPEND% api.io
-
-[Script]
-Sub_Store = type=http-request,pattern=^https?:\/\/api\.io,script-path=https://cdn.jsdelivr.net/gh/XOS/NodeCustom@master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072

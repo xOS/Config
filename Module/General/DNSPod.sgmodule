@@ -1,8 +1,0 @@
-#!name=DNSPod
-#!desc=Apple下载解析加速。
-#!category=翠花
-
-[Host]
-*.itunes.apple.com = script:DNSPod
-[Script]
-DNSPod = type=dns,script-path=https://hub.nange.cn/Script/DNS/DNSPod.js,script-update-interval=-1

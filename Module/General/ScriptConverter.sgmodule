@@ -1,9 +1,0 @@
-#!name= 脚本转换
-#!desc= 脚本转换器，自动转换来自QuantumultX，Loon，Surge格式脚本。
-#!category=翠花
-
-[Script]
-脚本转换 = type=http-request,pattern=^https?:\/\/(hub|nde|config|node)\.(nan.ge|nange.cn|cdn.ink)/.*\.js$,requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Tools/Converter.js
-
-[MITM]
-hostname= %APPEND% hub.nange.cn, nde.qste.com, hub.nange.cn, config.nange.cn, hub.cdn.ink, nde.cdn.ink

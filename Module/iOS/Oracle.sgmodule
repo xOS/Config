@@ -1,9 +1,0 @@
-#!name=甲骨文
-#!desc=甲骨文分流
-#!category=翠花
-
-[General]
-force-http-engine-hosts = %APPEND% *.online-metrix.net, 224.0.0.*
-
-[Rule]
-RULE-SET,https://hub.nange.cn/RuleSet/Oracle.list,常用,update-interval=259200
