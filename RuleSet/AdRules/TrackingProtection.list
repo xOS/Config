@@ -3663,6 +3663,9 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.reports.tunein.com
+.event.platform.tunein.com
+.data.r.pl
 .faro-collector-prod-*.grafana.net
 .affiliates.audiobooks.com
 .events.caffeine.tv
@@ -58402,6 +58405,8 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.events.funnelish.com
+.analytics.app.funnelish.com
 .analytics.starmakerstudios.com
 .track.starmakerstudios.com
 .volceapplog.com
