@@ -4,12 +4,12 @@
 
 # > 发微博触发IP识别
 # >> APP 端
-URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,DIRECT
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,DIRECT,extended-matching
 # >> 网页端
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,DIRECT
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,DIRECT,extended-matching
 
 # > 评论触发IP识别
 # >> APP 端
-URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,DIRECT
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,DIRECT,extended-matching
 # >> 网页端
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,DIRECT
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,DIRECT,extended-matching
