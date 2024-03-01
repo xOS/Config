@@ -1,31 +1,31 @@
 # > 发微博触发IP识别
 # >> APP 端
-URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,DIRECT
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,DIRECT,extended-matching
 # >> 网页端
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,DIRECT
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/2\/client\/publisher_primary,DIRECT
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,DIRECT,extended-matching
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/2\/client\/publisher_primary,DIRECT,extended-matching
 
 # > 评论触发IP识别
 # >> APP 端
-URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,DIRECT
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,DIRECT,extended-matching
 # >> 网页端
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,DIRECT
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,DIRECT,extended-matching
 
 # > 微信公众平台
-DOMAIN-SUFFIX,mp.weixin.qq.com,DIRECT
+DOMAIN-SUFFIX,mp.weixin.qq.com,DIRECT,extended-matching
 
 # > 颇可
-DOMAIN-SUFFIX,app-api.poco.cn,DIRECT
+DOMAIN-SUFFIX,app-api.poco.cn,DIRECT,extended-matching
 
 # > 什么值得买   
-DOMAIN-SUFFIX,s-api.smzdm.com,DIRECT      
-DOMAIN-SUFFIX,homepage-api.smzdm.com,DIRECT
-DOMAIN-SUFFIX,qny.smzdm.com,DIRECT
-DOMAIN-SUFFIX,qna.smzdm.com,DIRECT
+DOMAIN-SUFFIX,s-api.smzdm.com,DIRECT,extended-matching      
+DOMAIN-SUFFIX,homepage-api.smzdm.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,qny.smzdm.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,qna.smzdm.com,DIRECT,extended-matching
 DOMAIN-SUFFIX,haojia-api.smzdm.com,DIRECT
-DOMAIN-SUFFIX,app-api.smzdm.com,DIRECT
-DOMAIN-SUFFIX,user-api.smzdm.com,DIRECT
-DOMAIN-SUFFIX,common-api.smzdm.com,DIRECT
+DOMAIN-SUFFIX,app-api.smzdm.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,user-api.smzdm.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,common-api.smzdm.com,DIRECTextended-matching
 
 # > 其它
 DOMAIN-SUFFIX,weibo.cn,DIRECT
