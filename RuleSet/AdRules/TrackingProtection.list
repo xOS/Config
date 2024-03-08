@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.adoric-om.com
 .lz-pub-ads.com
 .w4h5ae.ru
 .get4click.ru
@@ -3669,6 +3670,10 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.apcdp.apnews.com
+.3p-udc.yahoo.com
+.3p-geo.yahoo.com
+.t.streetsblog.org
 .receive.wmcdp.io
 .event-router.olympics.com
 .ingest.do.brainsland.com
@@ -4492,8 +4497,6 @@
 .beta.simpel.nl
 .bi-eventtracker-*.amazonaws.com
 .bia.brightinfo.com
-.blue.fox8.com
-.blue.thehill.com
 .bonfire.spklw.com
 .boomerang.dell.com
 .broker.datazoom.io
