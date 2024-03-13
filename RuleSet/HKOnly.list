@@ -19,6 +19,14 @@ DOMAIN-SUFFIX,octopus.com.hk,PROXY
 DOMAIN-SUFFIX,octopuscards.com,PROXY
 DOMAIN-SUFFIX,octopus-cards.com,PROXY
 
+# > 银行
+DOMAIN-SUFFIX,livibank.queue-it.net,PROXY
+DOMAIN-SUFFIX,livibank.com,PROXY
+DOMAIN-SUFFIX,zajourney.com,PROXY
+DOMAIN-SUFFIX,zafinsvc.com,PROXY
+DOMAIN-SUFFIX,zaticdn.com,PROXY
+DOMAIN-SUFFIX,za.group,PROXY
+
 # > WeChat
 DOMAIN,wechat.com,PROXY
 DOMAIN,www.wechat.com,PROXY
