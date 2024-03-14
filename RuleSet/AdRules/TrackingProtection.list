@@ -4,6 +4,11 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.sdk-cdn.optimove.net
+.datadome.co
+.metrics.kmsmep.com
+.cs.zg-api.com
+.e.zg-api.com
 .fp.techinasia.com
 .create.lidstatic.com
 .cadmus.script.ac
@@ -3674,6 +3679,12 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.tracker.sqreemtech.com
+.analytics.waifu2x.org
+.analytics-api.vanceai.com
+.track.prod.smash.pet
+.metrics.quillbot.com
+.j927.statnews.com
 .metrics.ceneo.pl
 .analytics.purelovers.com
 .analytics.pixels.ai
