@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.events-ingestion.services.gorgias.com
 .accuratecoal.com
 .sdk-cdn.optimove.net
 .datadome.co
@@ -3680,6 +3681,9 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.t.poki.io
+.p.armorgames.net
+.analytics.crazygames.com
 .tracker.sqreemtech.com
 .analytics.waifu2x.org
 .analytics-api.vanceai.com
