@@ -1,9 +1,0 @@
-# > Apple Update
-# >> iOS updates
-HOST,appldnld.apple.com,PROXY
-HOST,ns.itunes.apple.com,PROXY
-# >  iOS, tvOS, and macOS
-HOST,mesu.apple.com,PROXY
-HOST,updates.cdn-apple.com,PROXY
-HOST,updates-http.cdn-apple.com,PROXY
-HOST,xp.apple.com,PROXY

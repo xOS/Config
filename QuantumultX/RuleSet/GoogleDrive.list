@@ -1,8 +1,0 @@
-# > Google Drive
-USER-AGENT,Google.Drive*,Proxy
-USER-AGENT,*com.google.Drive*,Proxy
-USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*,Proxy
-HOST-SUFFIX,docs.google.com,Proxy
-HOST-SUFFIX,drive.google.com,Proxy
-HOST-SUFFIX,googledrive.com,Proxy
-HOST-SUFFIX,googleusercontent.com,Proxy

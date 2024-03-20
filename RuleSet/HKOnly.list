@@ -1,36 +1,36 @@
 # > 香港
-DOMAIN-KEYWORD,hkt,PROXY
-DOMAIN-KEYWORD,hkb,PROXY
-DOMAIN-KEYWORD,hkg,PROXY
-DOMAIN-KEYWORD,sgsin,PROXY
-DOMAIN-KEYWORD,ap-sin,PROXY
-DOMAIN-KEYWORD,ap-hk,PROXY
-DOMAIN-KEYWORD,gcs-asia,PROXY
-DOMAIN-KEYWORD,southeast-,PROXY
-DOMAIN-KEYWORD,ap-southeast,PROXY
+DOMAIN-KEYWORD,hkt
+DOMAIN-KEYWORD,hkb
+DOMAIN-KEYWORD,hkg
+DOMAIN-KEYWORD,sgsin
+DOMAIN-KEYWORD,ap-sin
+DOMAIN-KEYWORD,ap-hk
+DOMAIN-KEYWORD,gcs-asia
+DOMAIN-KEYWORD,southeast-
+DOMAIN-KEYWORD,ap-southeast
 
 # > 支付宝
-#DOMAIN-SUFFIX,alipay.com,PROXY
-DOMAIN-SUFFIX,alipay.hk,PROXY
+#DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipay.hk
 
 # > 八达通
-USER-AGENT,OctopusQuickBuild*,PROXY
-DOMAIN-SUFFIX,octopus.com.hk,PROXY
-DOMAIN-SUFFIX,octopuscards.com,PROXY
-DOMAIN-SUFFIX,octopus-cards.com,PROXY
+USER-AGENT,OctopusQuickBuild*
+DOMAIN-SUFFIX,octopus.com.hk
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,octopus-cards.com
 
 # > 银行
-DOMAIN-SUFFIX,livibank.queue-it.net,PROXY
-DOMAIN-SUFFIX,livibank.com,PROXY
-DOMAIN-SUFFIX,zajourney.com,PROXY
-DOMAIN-SUFFIX,zafinsvc.com,PROXY
-DOMAIN-SUFFIX,zaticdn.com,PROXY
-DOMAIN-SUFFIX,za.group,PROXY
+DOMAIN-SUFFIX,livibank.queue-it.net
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zafinsvc.com
+DOMAIN-SUFFIX,zaticdn.com
+DOMAIN-SUFFIX,za.group
 
 # > WeChat
-DOMAIN,wechat.com,PROXY
-DOMAIN,www.wechat.com,PROXY
-IP-CIDR,203.205.232.0/23,no-resolve,PROXY
-IP-CIDR,203.205.234.0/23,no-resolve,PROXY
-IP-CIDR,203.205.252.0/23,no-resolve,PROXY
-IP-CIDR,203.205.254.0/23,no-resolve,PROXY
+DOMAIN,wechat.com
+DOMAIN,www.wechat.com
+IP-CIDR,203.205.232.0/23,no-resolve
+IP-CIDR,203.205.234.0/23,no-resolve
+IP-CIDR,203.205.252.0/23,no-resolve
+IP-CIDR,203.205.254.0/23,no-resolve

@@ -1,200 +1,200 @@
 # > General
-USER-AGENT,archero*,DIRECT
-USER-AGENT,coffeecorp*,DIRECT
-USER-AGENT,Coffee%20Corp*,DIRECT
-USER-AGENT,restaurant-mobile*,DIRECT
-DOMAIN,app.adjust.com,DIRECT
-DOMAIN,bdtj.tagtic.cn,DIRECT
-DOMAIN,api.nxtlnodes.com,DIRECT
-DOMAIN,nqcbls.xyz,DIRECT
-DOMAIN,gcsbie.xyz,DIRECT
-DOMAIN-SUFFIX,amysecure.com,DIRECT
-DOMAIN-SUFFIX,ultramobile.com,DIRECT // Added for: w3b-api.ultramobile.com:443
-DOMAIN-SUFFIX,capitalone.com,DIRECT // Added for: ecm.capitalone.com:443
-DOMAIN-SUFFIX,tagcdnsub.work,DIRECT
-DOMAIN-SUFFIX,tagsub.net,DIRECT
-DOMAIN-SUFFIX,tagsssubscribe.com,DIRECT
+USER-AGENT,archero*
+USER-AGENT,coffeecorp*
+USER-AGENT,Coffee%20Corp*
+USER-AGENT,restaurant-mobile*
+DOMAIN,app.adjust.com
+DOMAIN,bdtj.tagtic.cn
+DOMAIN,api.nxtlnodes.com
+DOMAIN,nqcbls.xyz
+DOMAIN,gcsbie.xyz
+DOMAIN-SUFFIX,amysecure.com
+DOMAIN-SUFFIX,ultramobile.com // Added for: w3b-api.ultramobile.com:443
+DOMAIN-SUFFIX,capitalone.com // Added for: ecm.capitalone.com:443
+DOMAIN-SUFFIX,tagcdnsub.work
+DOMAIN-SUFFIX,tagsub.net
+DOMAIN-SUFFIX,tagsssubscribe.com
 
 # > Alibaba
-DOMAIN,log.mmstat.com,DIRECT
-DOMAIN,sycm.mmstat.com,DIRECT
-DOMAIN,t.uc.cn,DIRECT
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
+DOMAIN,t.uc.cn
 
 # # > Google
-# DOMAIN-SUFFIX,blog.google,DIRECT
-# DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
-# DOMAIN,clientservices.googleapis.com,DIRECT
-# DOMAIN,dl.google.com,DIRECT
-# DOMAIN,dl.l.google.com,DIRECT
-# DOMAIN,update.googleapis.com,DIRECT
-# DOMAIN,translate.googleapis.com,DIRECT
-DOMAIN-SUFFIX,app-measurement.com,DIRECT
+# DOMAIN-SUFFIX,blog.google
+# DOMAIN-SUFFIX,googletraveladservices.com
+# DOMAIN,clientservices.googleapis.com
+# DOMAIN,dl.google.com
+# DOMAIN,dl.l.google.com
+# DOMAIN,update.googleapis.com
+# DOMAIN,translate.googleapis.com
+DOMAIN-SUFFIX,app-measurement.com
 
 # > Google Fonts API
-# DOMAIN,fonts.googleapis.com,DIRECT
-# DOMAIN,fonts.gstatic.com,DIRECT
+# DOMAIN,fonts.googleapis.com
+# DOMAIN,fonts.gstatic.com
 
 # > Tencent
-DOMAIN,fairplay.l.qq.com,DIRECT
-DOMAIN,livew.l.qq.com,DIRECT
-DOMAIN,vd.l.qq.com,DIRECT
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
 
 # > Strava
-DOMAIN,analytics.strava.com,DIRECT
-DOMAIN-SUFFIX,ipip.net,DIRECT
-DOMAIN,sdkapi.sms.mob.com,DIRECT
-DOMAIN,api.share.mob.com,DIRECT
-DOMAIN-SUFFIX,code.sms.mob.com,DIRECT
+DOMAIN,analytics.strava.com
+DOMAIN-SUFFIX,ipip.net
+DOMAIN,sdkapi.sms.mob.com
+DOMAIN,api.share.mob.com
+DOMAIN-SUFFIX,code.sms.mob.com
 
 # > 空气质量
-DOMAIN,api.waqi.info,DIRECT
+DOMAIN,api.waqi.info
 
 # > IPIP
-DOMAIN-SUFFIX,ipip.net,DIRECT
+DOMAIN-SUFFIX,ipip.net
 
 # > GEOIP
-DOMAIN,rtbasia.com,DIRECT
-DOMAIN-SUFFIX,api.grpc.fun,DIRECT
-DOMAIN-SUFFIX,ping0.cc,DIRECT
+DOMAIN,rtbasia.com
+DOMAIN-SUFFIX,api.grpc.fun
+DOMAIN-SUFFIX,ping0.cc
 
 # > 监控宝
-DOMAIN-SUFFIX,jiankongbao.com,DIRECT
+DOMAIN-SUFFIX,jiankongbao.com
 
 # > 日志收集
-DOMAIN-SUFFIX,bugsnag.com,DIRECT
-DOMAIN-SUFFIX,app-measurement.com,DIRECT
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,app-measurement.com
 
 # > 搜狗联盟
-DOMAIN,union.sogou.com,DIRECT
-DOMAIN,theta.sogoucdn.com,DIRECT
+DOMAIN,union.sogou.com
+DOMAIN,theta.sogoucdn.com
 
 # > 微博企业认证
-DOMAIN,e.biz.weibo.com,DIRECT
-DOMAIN,verified.biz.weibo.com,DIRECT
-DOMAIN,future.biz.weibo.com,DIRECT
-DOMAIN,wbapp.uve.weibo.com,DIRECT
-DOMAIN,sdkapp.uve.weibo.com,DIRECT
+DOMAIN,e.biz.weibo.com
+DOMAIN,verified.biz.weibo.com
+DOMAIN,future.biz.weibo.com
+DOMAIN,wbapp.uve.weibo.com
+DOMAIN,sdkapp.uve.weibo.com
 
 # > 招商银行
-DOMAIN,ccclub.cmbchina.com,DIRECT
+DOMAIN,ccclub.cmbchina.com
 
 # > 爱奇艺
-#DOMAIN,msg.qy.net,DIRECT
+#DOMAIN,msg.qy.net
 
 # > 网站
-DOMAIN-SUFFIX,wzfou.com,DIRECT
-DOMAIN-SUFFIX,bwl87.com,DIRECT
+DOMAIN-SUFFIX,wzfou.com
+DOMAIN-SUFFIX,bwl87.com
 
 # > VPS Providers
-DOMAIN-SUFFIX,virmach.com,DIRECT
-DOMAIN-SUFFIX,spartanhost.net,DIRECT
+DOMAIN-SUFFIX,virmach.com
+DOMAIN-SUFFIX,spartanhost.net
 
 # > 网页云音乐
-DOMAIN-SUFFIX,dun.163yun.com,DIRECT
+DOMAIN-SUFFIX,dun.163yun.com
 
 # > 字节跳动
-DOMAIN-SUFFIX,ib.snssdk.com,DIRECT
-DOMAIN-SUFFIX,mon.snssdk.com,DIRECT
+DOMAIN-SUFFIX,ib.snssdk.com
+DOMAIN-SUFFIX,mon.snssdk.com
 
 # > 咪咕视频
-DOMAIN-SUFFIX,v.miguvideo.com,DIRECT
+DOMAIN-SUFFIX,v.miguvideo.com
 
 # > 腾讯游戏
-DOMAIN,cloudctrl.gcloud.qq.com,DIRECT
-USER-AGENT,smoba*,DIRECT
+DOMAIN,cloudctrl.gcloud.qq.com
+USER-AGENT,smoba*
 
 # > 微信
-#USER-AGENT,MicroMessenger*,DIRECT
-#USER-AGENT,WeChat*,DIRECT
-#USER-AGENT,MicroMessenger20%Client*,DIRECT
-#DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+#USER-AGENT,MicroMessenger*
+#USER-AGENT,WeChat*
+#USER-AGENT,MicroMessenger20%Client*
+#DOMAIN-SUFFIX,weixin.qq.com
 
 # > 百度搜索
-URL-REGEX,^https?:\/\/t[0-9]\.baidu\.com\/it,DIRECT
+URL-REGEX,^https?:\/\/t[0-9]\.baidu\.com\/it
 
 # > 百度网盘
-#DOMAIN-SUFFIX,bdstatic.com,DIRECT
-#DOMAIN-SUFFIX,baidu.com,DIRECT
+#DOMAIN-SUFFIX,bdstatic.com
+#DOMAIN-SUFFIX,baidu.com
 
 # > MaxMind
-DOMAIN-KEYWORD,maxmind,DIRECT
-DOMAIN-SUFFIX,maxmind.com,DIRECT
-DOMAIN-SUFFIX,mmapiws.com,DIRECT
+DOMAIN-KEYWORD,maxmind
+DOMAIN-SUFFIX,maxmind.com
+DOMAIN-SUFFIX,mmapiws.com
 
 # > SSH
-PROCESS-NAME,RoyalTSX,DIRECT
-PROCESS-NAME,Termius,DIRECT
+PROCESS-NAME,RoyalTSX
+PROCESS-NAME,Termius
 
 # > TeamViewer
-PROCESS-NAME,TeamViewer,DIRECT
+PROCESS-NAME,TeamViewer
 
 # > Proxy
-PROCESS-NAME,v2ray,DIRECT
-PROCESS-NAME,ss-local,DIRECT
+PROCESS-NAME,v2ray
+PROCESS-NAME,ss-local
 
 # > Microsoft
-DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
+DOMAIN-SUFFIX,msftconnecttest.com
 
 # > Steam
-USER-AGENT,Steam*,DIRECT
-DOMAIN-SUFFIX,pinyuncloud.com,DIRECT
-DOMAIN-SUFFIX,steamcontent.com,DIRECT
+USER-AGENT,Steam*
+DOMAIN-SUFFIX,pinyuncloud.com
+DOMAIN-SUFFIX,steamcontent.com
 
 # > UUBooster
-PROCESS-NAME,UUBooster,DIRECT
+PROCESS-NAME,UUBooster
 
 # > Windows
-#DOMAIN-SUFFIX,windows.com,DIRECT
-#DOMAIN-SUFFIX,windows.net,DIRECT
-#DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+#DOMAIN-SUFFIX,windows.com
+#DOMAIN-SUFFIX,windows.net
+#DOMAIN-SUFFIX,windowsupdate.com
 
 # > Xunlei
-USER-AGENT,%E8%BF%85%E9%9B%B7,DIRECT
-DOMAIN-SUFFIX,xunlei.com,DIRECT
+USER-AGENT,%E8%BF%85%E9%9B%B7
+DOMAIN-SUFFIX,xunlei.com
 
 # > Others
-// DOMAIN-SUFFIX,hcaptcha.com,DIRECT
-DOMAIN-SUFFIX,spartanhost.net,DIRECT
-DOMAIN-SUFFIX,livechatinc.com,DIRECT
+// DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,spartanhost.net
+DOMAIN-SUFFIX,livechatinc.com
 
 # # > Download
-# PROCESS-NAME,aria2c,DIRECT
-# PROCESS-NAME,fdm,DIRECT
-# PROCESS-NAME,Folx,DIRECT
-# PROCESS-NAME,NetTransport,DIRECT
-# PROCESS-NAME,Thunder,DIRECT
-# PROCESS-NAME,Transmission,DIRECT
-# PROCESS-NAME,uTorrent,DIRECT
-# PROCESS-NAME,WebTorrent,DIRECT
-# PROCESS-NAME,WebTorrent Helper,DIRECT
+# PROCESS-NAME,aria2c
+# PROCESS-NAME,fdm
+# PROCESS-NAME,Folx
+# PROCESS-NAME,NetTransport
+# PROCESS-NAME,Thunder
+# PROCESS-NAME,Transmission
+# PROCESS-NAME,uTorrent
+# PROCESS-NAME,WebTorrent
+# PROCESS-NAME,WebTorrent Helper
 
 # # > Private Tracker
-# DOMAIN-SUFFIX,awesome-hd.me,DIRECT
-# DOMAIN-SUFFIX,broadcasthe.net,DIRECT
-# DOMAIN-SUFFIX,chdbits.co,DIRECT
-# DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
-# DOMAIN-SUFFIX,empornium.me,DIRECT
-# DOMAIN-SUFFIX,gazellegames.net,DIRECT
-# DOMAIN-SUFFIX,hdchina.org,DIRECT
-# DOMAIN-SUFFIX,hdsky.me,DIRECT
-# DOMAIN-SUFFIX,icetorrent.org,DIRECT
-# DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
-# DOMAIN-SUFFIX,keepfrds.com,DIRECT
-# DOMAIN-SUFFIX,madsrevolution.net,DIRECT
-# DOMAIN-SUFFIX,m-team.cc,DIRECT
-# DOMAIN-SUFFIX,nanyangpt.com,DIRECT
-# DOMAIN-SUFFIX,ncore.cc,DIRECT
-# DOMAIN-SUFFIX,open.cd,DIRECT
-# DOMAIN-SUFFIX,ourbits.club,DIRECT
-# DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
-# DOMAIN-SUFFIX,privatehd.to,DIRECT
-# DOMAIN-SUFFIX,redacted.ch,DIRECT
-# DOMAIN-SUFFIX,springsunday.net,DIRECT
-# DOMAIN-SUFFIX,tjupt.org,DIRECT
-# DOMAIN-SUFFIX,totheglory.im,DIRECT
-# DOMAIN-KEYWORD,aria2,DIRECT
-# DOMAIN-KEYWORD,announce,DIRECT
-# DOMAIN-KEYWORD,torrent,DIRECT
-# DOMAIN-KEYWORD,tracker,DIRECT
-# DOMAIN-SUFFIX,smtp,DIRECT
-# URL-REGEX,(Subject|HELO|SMTP),DIRECT
+# DOMAIN-SUFFIX,awesome-hd.me
+# DOMAIN-SUFFIX,broadcasthe.net
+# DOMAIN-SUFFIX,chdbits.co
+# DOMAIN-SUFFIX,classix-unlimited.co.uk
+# DOMAIN-SUFFIX,empornium.me
+# DOMAIN-SUFFIX,gazellegames.net
+# DOMAIN-SUFFIX,hdchina.org
+# DOMAIN-SUFFIX,hdsky.me
+# DOMAIN-SUFFIX,icetorrent.org
+# DOMAIN-SUFFIX,jpopsuki.eu
+# DOMAIN-SUFFIX,keepfrds.com
+# DOMAIN-SUFFIX,madsrevolution.net
+# DOMAIN-SUFFIX,m-team.cc
+# DOMAIN-SUFFIX,nanyangpt.com
+# DOMAIN-SUFFIX,ncore.cc
+# DOMAIN-SUFFIX,open.cd
+# DOMAIN-SUFFIX,ourbits.club
+# DOMAIN-SUFFIX,passthepopcorn.me
+# DOMAIN-SUFFIX,privatehd.to
+# DOMAIN-SUFFIX,redacted.ch
+# DOMAIN-SUFFIX,springsunday.net
+# DOMAIN-SUFFIX,tjupt.org
+# DOMAIN-SUFFIX,totheglory.im
+# DOMAIN-KEYWORD,aria2
+# DOMAIN-KEYWORD,announce
+# DOMAIN-KEYWORD,torrent
+# DOMAIN-KEYWORD,tracker
+# DOMAIN-SUFFIX,smtp
+# URL-REGEX,(Subject|HELO|SMTP)

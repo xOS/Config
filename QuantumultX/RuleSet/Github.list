@@ -1,8 +1,0 @@
-# >Github 服务
-HOST-SUFFIX,github.com,Proxy
-HOST-SUFFIX,github.io,Proxy
-HOST-SUFFIX,ghcr.io,Proxy
-HOST-SUFFIX,git.io,Proxy
-HOST-SUFFIX,githubapp.com,Proxy
-HOST-SUFFIX,githubassets.com,Proxy
-HOST-SUFFIX,githubusercontent.com,Proxy

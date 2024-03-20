@@ -1,8 +1,8 @@
 # > Singtel
-DOMAIN-SUFFIX,singtel.com,DIRECT
+DOMAIN-SUFFIX,singtel.com
 
 # > 币安
-DOMAIN-SUFFIX,binance.com,DIRECT
-DOMAIN-SUFFIX,bntrace.com,DIRECT
-DOMAIN-KEYWORD,binance,DIRECT
-DOMAIN-SUFFIX,bnbstatic.com,DIRECT
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-KEYWORD,binance
+DOMAIN-SUFFIX,bnbstatic.com

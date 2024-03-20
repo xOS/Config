@@ -1,9 +1,9 @@
 # >> iOS Updates
-DOMAIN,appldnld.apple.com,DIRECT
-DOMAIN,ns.itunes.apple.com,DIRECT
+DOMAIN,appldnld.apple.com
+DOMAIN,ns.itunes.apple.com
 
 # >  iOS, tvOS, and macOS
-DOMAIN,mesu.apple.com,DIRECT
-DOMAIN,updates.cdn-apple.com,DIRECT
-DOMAIN,updates-http.cdn-apple.com,DIRECT
-DOMAIN,xp.apple.com,DIRECT
+DOMAIN,mesu.apple.com
+DOMAIN,updates.cdn-apple.com
+DOMAIN,updates-http.cdn-apple.com
+DOMAIN,xp.apple.com

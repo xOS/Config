@@ -1,15 +1,15 @@
 # > 微博
-# DOMAIN-KEYWORD,weibo,DIRECT
-# DOMAIN-KEYWORD,sina,DIRECT
+# DOMAIN-KEYWORD,weibo
+# DOMAIN-KEYWORD,sina
 
 # > 发微博触发IP识别
 # >> APP 端
-URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,DIRECT,extended-matching
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,extended-matching
 # >> 网页端
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,DIRECT,extended-matching
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,extended-matching
 
 # > 评论触发IP识别
 # >> APP 端
-URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,DIRECT,extended-matching
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,extended-matching
 # >> 网页端
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,DIRECT,extended-matching
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,extended-matching

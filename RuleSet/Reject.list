@@ -1,23 +1,23 @@
 # > 屏蔽服务
 # > Parallels
-DOMAIN,update.parallels.com,REJECT
+DOMAIN,update.parallels.com
 
 # > Beyond Compare
-DOMAIN,www.scootersoftware.com,REJECT
-DOMAIN,scootersoftware.com,REJECT
+DOMAIN,www.scootersoftware.com
+DOMAIN,scootersoftware.com
 
 # > 禁止网页跳转APP 
-# DOMAIN,app-site-association.cdn-apple.com,REJECT
+# DOMAIN,app-site-association.cdn-apple.com
 
 # > 微软
-DOMAIN,self.events.data.microsoft.com,REJECT
+DOMAIN,self.events.data.microsoft.com
 
 # > 拼多多视频
-DOMAIN-KEYWORD,pplay-video,REJECT
-DOMAIN-KEYWORD,liveplay-edge,REJECT
+DOMAIN-KEYWORD,pplay-video
+DOMAIN-KEYWORD,liveplay-edge
 
 # > 拦截Netflix部分域名
-DOMAIN,ios.ngp.prod.cloud.netflix.com,REJECT
-DOMAIN,ios.prod.cloud.netflix.com,REJECT
-DOMAIN,appboot.netflix.com,REJECT
+DOMAIN,ios.ngp.prod.cloud.netflix.com
+DOMAIN,ios.prod.cloud.netflix.com
+DOMAIN,appboot.netflix.com
     

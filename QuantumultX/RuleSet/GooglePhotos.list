@@ -1,7 +1,0 @@
-# > Google Photos
-USER-AGENT,Google%20%E7%9B%B8%E5%86%8C*,Proxy
-HOST,photos.googleapis.com,Proxy
-HOST,photos.google.com,Proxy
-HOST,photo.google.com,Proxy
-HOST,photosdata-pa.googleapis.com,Proxy
-HOST,people-pa.googleapis.com,Proxy

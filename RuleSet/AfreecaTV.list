@@ -1,4 +1,4 @@
 # > AfreecaTV
-USER-AGENT,AfreecaTV*,DIRECT
-PROCESS-NAME,/Applications/AfreecaTV/MACafpackage.app/Contents/Resources/MACafstreamer.app/Contents/MacOS/MACafstreamer,DIRECT
-DOMAIN-SUFFIX,afreecatv.com,DIRECT
+USER-AGENT,AfreecaTV*
+PROCESS-NAME,/Applications/AfreecaTV/MACafpackage.app/Contents/Resources/MACafstreamer.app/Contents/MacOS/MACafstreamer
+DOMAIN-SUFFIX,afreecatv.com

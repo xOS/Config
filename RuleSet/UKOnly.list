@@ -1,8 +1,8 @@
-DOMAIN-SUFFIX,hsbc.co.uk, DIRECT
-DOMAIN-SUFFIX,barclays.com,DIRECT
-DOMAIN-SUFFIX,monzo.com,DIRECT
-DOMAIN-SUFFIX,experian.co.uk, DIRECT
-DOMAIN-SUFFIX,transunion.co.uk,DIRECT
-DOMAIN-SUFFIX,equifax.co.uk,DIRECT
-DOMAIN-SUFFIX,barclays.co.uk, DIRECT
-DOMAIN-SUFFIX,home.barclays,DIRECT
+DOMAIN-SUFFIX,hsbc.co.uk
+DOMAIN-SUFFIX,barclays.com
+DOMAIN-SUFFIX,monzo.com
+DOMAIN-SUFFIX,experian.co.uk
+DOMAIN-SUFFIX,transunion.co.uk
+DOMAIN-SUFFIX,equifax.co.uk
+DOMAIN-SUFFIX,barclays.co.uk
+DOMAIN-SUFFIX,home.barclays

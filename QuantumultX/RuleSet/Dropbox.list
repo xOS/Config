@@ -1,6 +1,0 @@
-# > Dropbox
-USER-AGENT,Dropbox*,Proxy
-HOST-KEYWORD,dropbox,Proxy
-HOST-SUFFIX,getdropbox.com,Proxy
-HOST-SUFFIX,dropbox.com,Proxy
-HOST-SUFFIX,dropboxapi.com,Proxy

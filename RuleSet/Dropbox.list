@@ -1,6 +1,6 @@
 # > Dropbox
-USER-AGENT,Dropbox*,PROXY
-DOMAIN-KEYWORD,dropbox,PROXY
-DOMAIN-SUFFIX,getdropbox.com,PROXY
-DOMAIN-SUFFIX,dropbox.com,PROXY
-DOMAIN-SUFFIX,dropboxapi.com,PROXY
+USER-AGENT,Dropbox*
+DOMAIN-KEYWORD,dropbox
+DOMAIN-SUFFIX,getdropbox.com
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropboxapi.com
