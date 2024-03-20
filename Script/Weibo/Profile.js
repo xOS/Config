@@ -23,7 +23,7 @@ const verified = {
     "oid": ""
   },
   "icon": "https:\/\/h5.sinaimg.cn\/upload\/1059\/799\/2020\/05\/19\/verified.png",
-  "desc": "小仙女"
+  "desc": "仙女"
 };
 const badge = {
   "uc_domain": 1,
@@ -207,7 +207,7 @@ if (url.indexOf(userList) != -1 || url.indexOf(notice) != -1) {
 }
 
 if (url.indexOf(userInfo) != -1) {
-  obj.header.data.userInfo.verified_reason = "小仙女";
+  obj.header.data.userInfo.verified_reason = "仙女";
   obj.header.data.userInfo.remark = "";
   obj.header.data.userInfo.verified = true;
   obj.header.data.userInfo.verified_type = 0;
@@ -222,7 +222,7 @@ if (url.indexOf(userInfo) != -1) {
   obj.header.data.userInfo.user_ability_extend = 1;
   obj.header.data.userInfo.svip = 1;
   obj.header.data.userInfo.extend.chaohua_ability = 1;
-  obj.header.data.userInfo.orange_v = "小仙女";
+  obj.header.data.userInfo.orange_v = "仙女";
   obj.header.data.userInfo.extend.chaohua_ability = 1;
   obj.header.data.userInfo.extend.brand_ability = 1;
   obj.header.data.userInfo.extend.nft_ability = 1;
@@ -258,7 +258,7 @@ if (url.indexOf(userInfo) != -1) {
   if (obj.header.data.infoList[0].actionlog.ext != "name:verified") {
     obj.header.data.infoList.splice(0, 0, verified);
   } else {
-    obj.header.data.infoList[0].desc = "小仙女";
+    obj.header.data.infoList[0].desc = "仙女";
   }
   obj.header.data.userInfo.badge = badge;
   obj.header.data.userDescribe[0].text[0].content = "9876万";
@@ -275,7 +275,7 @@ if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
         "key": 1,
         "weight": 10,
         "sub_key": 0,
-        "desc": "小仙女"
+        "desc": "仙女"
       }
     ]
   };
@@ -283,9 +283,9 @@ if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
   obj.userInfo.geo_enabled = false;
   obj.userInfo.verified_detail = verified_detail;
   obj.userInfo.svip = 1;
-  obj.userInfo.verified_reason = '小仙女';
+  obj.userInfo.verified_reason = '仙女';
   obj.userInfo.statuses_count = 0;
-  obj.userInfo.orange_v = '小仙女';
+  obj.userInfo.orange_v = '仙女';
   obj.userInfo.verified_level = 2;
   obj.userInfo.verified = true;
   obj.userInfo.has_ability_tag = 1;
@@ -308,7 +308,7 @@ if (url.indexOf(profile) != -1 && url.indexOf(userInfo) == -1) {
   if (obj.userInfo.infoList[0].actionlog.ext != 'name:verified') {
     obj.userInfo.infoList.splice(0, 0, verified);
   } else {
-    obj.userInfo.infoList[0].desc = '小仙女';
+    obj.userInfo.infoList[0].desc = '仙女';
   }
   obj.userInfo.badge = badge;
 }
@@ -323,7 +323,7 @@ if (url.indexOf(users) != -1) {
         "key": 1,
         "weight": 10,
         "sub_key": 0,
-        "desc": "小仙女"
+        "desc": "仙女"
       }
     ]
   };
@@ -331,9 +331,9 @@ if (url.indexOf(users) != -1) {
   obj.geo_enabled = false;
   obj.verified_detail = verified_detail;
   obj.svip = 1;
-  obj.verified_reason = "小仙女";
+  obj.verified_reason = "仙女";
   obj.statuses_count = 0;
-  obj.orange_v = "小仙女";
+  obj.orange_v = "仙女";
   obj.verified_type = 0;
   obj.verified_level = 2;
   obj.verified = true;
@@ -369,7 +369,7 @@ if (url.indexOf(comments) != -1) {
         "key": 1,
         "weight": 10,
         "sub_key": 0,
-        "desc": "小仙女"
+        "desc": "仙女"
       }
     ]
   };
@@ -377,9 +377,9 @@ if (url.indexOf(comments) != -1) {
   obj.user.geo_enabled = false;
   obj.user.verified_detail = verified_detail;
   obj.user.svip = 1;
-  obj.user.verified_reason = '小仙女';
+  obj.user.verified_reason = '仙女';
   obj.user.statuses_count = 0;
-  obj.user.orange_v = '小仙女';
+  obj.user.orange_v = '仙女';
   obj.user.verified_level = 2;
   obj.user.verified = true;
   obj.user.has_ability_tag = 1;
@@ -420,7 +420,7 @@ if (url.indexOf(statuses) != -1) {
         "key": 1,
         "weight": 10,
         "sub_key": 0,
-        "desc": "小仙女"
+        "desc": "仙女"
       }
     ]
   };
@@ -428,9 +428,9 @@ if (url.indexOf(statuses) != -1) {
   obj.user.geo_enabled = false;
   obj.user.verified_detail = verified_detail;
   obj.user.svip = 1;
-  obj.user.verified_reason = '小仙女';
+  obj.user.verified_reason = '仙女';
   obj.user.statuses_count = 0;
-  obj.user.orange_v = '小仙女';
+  obj.user.orange_v = '仙女';
   obj.user.verified_level = 2;
   obj.user.verified = true;
   obj.user.has_ability_tag = 1;
