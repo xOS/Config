@@ -487,7 +487,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             delete item.header.vipCenter;
             delete item.header.vipIcon;
             item.header.avatar.badgeUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/04/07/avatar_vip_golden.png';
-            item.header.desc.content = '微博认证：小仙女';                        
+            item.header.desc.content = '微博认证：仙女';                        
           }
           if (item?.items?.length > 0) {
             for (let d of item.items) {
