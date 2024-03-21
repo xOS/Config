@@ -6,3 +6,8 @@ DOMAIN-SUFFIX,transunion.co.uk
 DOMAIN-SUFFIX,equifax.co.uk
 DOMAIN-SUFFIX,barclays.co.uk
 DOMAIN-SUFFIX,home.barclays
+DOMAIN-KEYWORD,monzo
+DOMAIN-KEYWORD,lloydsbank
+DOMAIN-KEYWORD,metrobank
+DOMAIN-SUFFIX,rbs.co.uk
+DOMAIN-KEYWORD,natwest
