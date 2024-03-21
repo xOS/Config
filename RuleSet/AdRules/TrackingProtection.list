@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.analytics-sm.com
+.adxcel-ec2.com
 .cdn.ad-platform.jmty.jp
 .app.ardalio.com
 .events-ingestion.services.gorgias.com
@@ -3683,6 +3685,15 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.s.wayfair.com
+.imk.neweggimages.com
+.grgnsht.nzxt.com
+.h031.familydollar.com
+.api-gtm.grubhub.com
+.event.havasedge.com
+.tag.havasedge.com
+.d401.dollartree.com
+.auth-srv.launchthatapps.com
 .ast.techbook.de
 .track.ttsave.app
 .analytics.3c5.com
