@@ -46,6 +46,9 @@ URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice
 DOMAIN-KEYWORD,-push
 
 # > 腾讯
+DOMAIN-SUFFIX,api-adservices.apple.com
+DOMAIN-SUFFIX,adstats.tencentmusic.com
+DOMAIN-SUFFIX,adcdn6.tencentmusic.com
 DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,l.qq.com
