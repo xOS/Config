@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.jcpclick.com
 .analytics-sm.com
 .adxcel-ec2.com
 .cdn.ad-platform.jmty.jp
@@ -267,7 +268,7 @@
 .px*.mediahills.ru
 .sdk.conscent.in
 .tpstelemetry.tencent.com
-.posthog.com
+.app.posthog.com
 .crossees.com
 .plausiblecdn.co
 .humanz.com
