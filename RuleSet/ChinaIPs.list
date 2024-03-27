@@ -82697,6 +82697,7 @@ IP-CIDR,40.72.200.0/21,no-resolve
 IP-CIDR,40.72.208.0/20,no-resolve
 IP-CIDR,40.72.224.0/19,no-resolve
 IP-CIDR,40.72.64.0/22,no-resolve
+IP-CIDR,40.72.64.0/24,no-resolve
 IP-CIDR,40.72.68.0/24,no-resolve
 IP-CIDR,40.72.69.0/25,no-resolve
 IP-CIDR,40.72.69.128/25,no-resolve
@@ -101539,6 +101540,7 @@ IP-CIDR,8.136.0.0/13,no-resolve
 IP-CIDR,8.144.0.0/12,no-resolve
 IP-CIDR,8.144.0.0/14,no-resolve
 IP-CIDR,8.148.0.0/19,no-resolve
+IP-CIDR,8.149.0.0/16,no-resolve
 IP-CIDR,8.160.0.0/11,no-resolve
 IP-CIDR,8.208.128.0/17,no-resolve
 IP-CIDR,8.208.64.0/18,no-resolve
