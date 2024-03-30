@@ -1220,6 +1220,7 @@ DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
 
 # > 其它
+DOMAIN-SUFFIX,voiceads.cn
 DOMAIN,gdfp.gifshow.com
 DOMAIN-SUFFIX,volceapplog.com
 DOMAIN,receiver.ta.thinkingdata.cn
