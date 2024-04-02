@@ -27,7 +27,6 @@ DOMAIN,apptrailers.itunes.apple.com
 DOMAIN,updates-http.cdn-apple.com
 
 # > Map
-DOMAIN-SUFFIX,ls.apple.com
 DOMAIN,gs-loc-cn.apple.com
 
 # 引用地址 https://support.apple.com/en-us/HT210060

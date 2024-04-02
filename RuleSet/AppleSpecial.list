@@ -23,15 +23,16 @@ DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN,journey.pcms.apple.com
 DOMAIN,xp.apple.com
-#DOMAIN,gdmf.apple.com
+//DOMAIN,gdmf.apple.com
 DOMAIN,smp-device-content.apple.com
 DOMAIN-SUFFIX,itunes.com
 DOMAIN,sse-ws-p189.apple.com
 DOMAIN-SUFFIX,apple.news
 DOMAIN-SUFFIX,mail.me.com
-# DOMAIN,p12-buy.itunes.apple.com
+//DOMAIN,p12-buy.itunes.apple.com
 DOMAIN,configuration.ls.apple.com
 DOMAIN-SUFFIX,gsp10-ssl.apple.com
 DOMAIN,gateway.icloud.com
 DOMAIN,ontology.health.apple.com
 DOMAIN-SUFFIX,content-storage-  upload.googleapis.com
+DOMAIN-SUFFIX,ls.apple.com
