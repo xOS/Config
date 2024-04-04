@@ -21,13 +21,6 @@ DOMAIN,ios.ngp.prod.cloud.netflix.com
 DOMAIN,ios.prod.cloud.netflix.com
 DOMAIN,appboot.netflix.com
 
-# > 垃圾域名
-DOMAIN-SUFFIX,.pl
-DOMAIN-SUFFIX,.nl
-DOMAIN-SUFFIX,.vn
-DOMAIN-SUFFIX,.cl
-DOMAIN-SUFFIX,.es
-DOMAIN-SUFFIX,.in
-
 # > 其它
-DOMAIN-SUFFIX,httpdns
+DOMAIN-SUFFIX,httpdns,extended-matching
+DOMAIN-KEYWORD,pangolin,extended-matching
