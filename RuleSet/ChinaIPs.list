@@ -2507,7 +2507,6 @@ IP-CIDR,103.164.42.0/23,no-resolve
 IP-CIDR,103.164.64.0/23,no-resolve
 IP-CIDR,103.164.76.0/23,no-resolve
 IP-CIDR,103.165.110.0/23,no-resolve
-IP-CIDR,103.165.110.0/24,no-resolve
 IP-CIDR,103.165.44.0/23,no-resolve
 IP-CIDR,103.165.52.0/23,no-resolve
 IP-CIDR,103.165.82.0/23,no-resolve
