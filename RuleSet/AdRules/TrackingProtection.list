@@ -4,6 +4,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.fpad.jp
+.palibzh.tech
+.mediaownerscloud.com
 .jubbie.de
 .collector.lunalabs.io
 .greenbids.ai
@@ -3794,6 +3797,7 @@
 .gtm.saumag.edu
 .gtm.skrz.cz
 .gtm.thermondo.de
+.gtm.vanmoof.com
 .gtm.wonderbly.com
 .gtm.docswell.com
 .collector-pxfqtaw5et.px-client.net
@@ -3880,6 +3884,7 @@
 .analytics.clubic.com
 .logs.netflix.com
 .analytics.innologica.com
+.track.wattpad.com
 .analytics.keepstreams.com
 .analytics.gamesdrive.net
 .cnt.promodj.com
@@ -4067,6 +4072,7 @@
 .uplog.inews.qq.com
 .log1.wtlogin.qq.com
 .tp.content-score.com
+.ecsv2.roblox.com
 .volts.shopping.naver.com
 .analytics.grape.media
 .analytics.karakuri.ai
@@ -4102,7 +4108,6 @@
 .units.knotch.it
 .mercury.coupang.com
 .client-telemetry.roblox.com
-.ecsv2.roblox.com
 .tracing.roblox.com
 .treatment.grammarly.com
 .rac.ruutu.fi
@@ -4905,7 +4910,6 @@
 .gscounters.gigya.com
 .gtm.beiersdorf.com
 .gtm.udemy.com
-.gtm.vanmoof.com
 .harvester.hbpl.co.uk
 .harvester.hnonline.sk
 .hc-analytics.idp.clogin.att.com
@@ -5675,7 +5679,6 @@
 .track.tproger.ru
 .track.ugamezone.com
 .track.ultimate-guitar.com
-.track.wattpad.com
 .track.websiteceo.com
 .track.wildblue.com
 .track.zappos.com
@@ -8293,7 +8296,6 @@
 .asp.taishokunext.com
 .aspa8.ozmall.co.jp
 .car-a8.tabirai.net
-.cart.matsuzaka-steak.com
 .click.techtree.jp
 .clk.entry.surala.jp
 .clk.glam-print.com
@@ -18538,7 +18540,6 @@
 .3445498g48.secure0166.tt.omtrdc.net
 .3472855.group5.sites.tt.omtrdc.net
 .35-dev.tt.omtrdc.net
-.35.17.182abcnews.hb-api.tt.omtrdc.net
 .352833-web5.tt.omtrdc.net
 .352suisses.tt.tt.omtrdc.net
 .3531597.group47.sites.tt.omtrdc.net
@@ -23518,8 +23519,6 @@
 .data.descubre.interbank.pe
 .data.devbmg.bancobmg.com.br
 .data.devmail.northeast.aaa.com
-.data.digital.costco.ca
-.data.digital.costco.com
 .data.discover.ringcentral.com
 .data.dow.com
 .data.e.lotteryoffice.com.au
@@ -26362,7 +26361,6 @@
 .mbna.tt.tt.omtrdc.net
 .mbollu2.mluu.tt.omtrdc.net
 .mbox.offermatica.com
-.mbox.wegmans.com
 .mbox12.offermatica.com
 .mbox12e.offermatica.com
 .mbox12e.tt.omtrdc.net
@@ -33985,7 +33983,6 @@
 .omniture.walmart.ca
 .omniture.walmart.com
 .omniture.yell.com
-.omns.americanexpress.com
 .omns.crackle.com
 .omns.murdoch.edu.au
 .ompx.shopbop.com
@@ -37210,7 +37207,6 @@
 .data.decathlon.it
 .data.ouigo.com
 .data.ricaud.com
-.data.ubi.com
 .logger.yp.ca
 .sales.disneylandparis.com
 .tag.boulanger.fr
@@ -41434,7 +41430,6 @@
 .tms.betwayarabia.com
 .tms.betwaysatta.com
 .tms.betwaysatta1.com
-.tms.capitalone.com
 .tms.delta.com
 .tms.experian.com
 .tms.kone.com
@@ -43766,7 +43761,6 @@
 .data-60d896f23d.radio.es
 .data-60d896f23d.radio.fr
 .data-60d896f23d.radio.it
-.data-60d896f23d.radio.net
 .data-60d896f23d.radio.pl
 .data-60d896f23d.radio.pt
 .data-60d896f23d.radio.se
@@ -51410,7 +51404,6 @@
 .explore.epsilon.com
 .go.e.mailchimp.com
 .go.kareo.com
-.go.oracle.com
 .go.petrelocation.com
 .go.securitymsp.cisco.com
 .go.shutterstock.com
@@ -51579,7 +51572,6 @@
 .elqtracking.hitachi-powergrids.com
 .elqtracking.hitachienergy.com
 .eqtrack.americashomeplace.com
-.explore.agilent.com
 .explore.firstnet.com
 .fedexfield.redskins.com
 .fire.solutions.jci.com
@@ -57584,6 +57576,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.sg.log.ulivetv.net
 .kr-col-ext.nelo.navercorp.com
 .events.funnelish.com
 .analytics.app.funnelish.com
@@ -57617,7 +57610,6 @@
 .event-collector.moviesanywhere.com
 .us-east-1.paa-reporting-advertising.amazon
 .analytics.nianticlabs.com
-.sg.log.ulivetv.net
 .tracker.ulivetv.net
 .trackernew.ulivetv.net
 .gamestats.easybrain.com
