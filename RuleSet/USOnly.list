@@ -7,6 +7,9 @@ DOMAIN-SUFFIX,experian.com
 DOMAIN-KEYWORD,stripe
 DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,citi
+DOMAIN-KEYWORD,equifax
+DOMAIN-KEYWORD,stripe
+DOMAIN-KEYWORD,t-mobile
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,tktn.be
