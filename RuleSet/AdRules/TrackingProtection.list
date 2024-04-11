@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.tags.qortex.ai
 .analytics-ingestion.pbpms.de
 .fpad.jp
 .palibzh.tech
@@ -169,7 +170,6 @@
 .colossusssp.com
 .consentag.eu
 .collect-v*.51.la
-.cmp.datasign.co
 .ip.momentummedia.com.au
 .adrange.net
 .dmtag.jp
@@ -4291,7 +4291,6 @@
 .client-metrics.chess.com
 .stat.kwikmotion.com
 .analytics.vpplayer.tech
-.h.seznam.cz
 .stat.cncenter.cz
 .metrics.roblox.com
 .t.xoom.com
