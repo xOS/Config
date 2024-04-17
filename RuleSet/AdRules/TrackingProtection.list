@@ -4,6 +4,10 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.ebxcdn.com
+.prod.uidapi.com
+.fp-cdn.azureedge.net
+.cdn.mircheigeshoa.com
 .analytics.oceanengine.com
 .tags.qortex.ai
 .analytics-ingestion.pbpms.de
@@ -48079,6 +48083,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.app-analytics-services.com
 .sg.log.ulivetv.net
 .kr-col-ext.nelo.navercorp.com
 .events.funnelish.com
