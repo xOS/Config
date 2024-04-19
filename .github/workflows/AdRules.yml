@@ -51,7 +51,7 @@ jobs:
           curl -LR -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
           awk 'FNR==1{print ""}{print}' RuleSet/AdRules/*.list > RuleSet/AdRules/Merge.txt
           awk '!seen[$0]++' RuleSet/AdRules/Merge.txt > RuleSet/AdRules/Merge.list
-          grep -v -f RuleSet/AdRules/Bypass.list RuleSet/AdRules/Merge.list | sed '/^$/d' > RuleSet/AdRule.list
+          grep -v -f RuleSet/AdRules/Bypass.list RuleSet/AdRules/Merge.list | sed '/^$/d; /\*/d' > RuleSet/AdRule.list
           rm -rf RuleSet/AdRules/Merge.txt
           rm -rf RuleSet/AdRules/Merge.list
 
