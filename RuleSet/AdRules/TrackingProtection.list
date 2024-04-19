@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.stats.rip
 .ebxcdn.com
 .prod.uidapi.com
 .fp-cdn.azureedge.net
@@ -3723,6 +3724,7 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.log.classting.com
 .hoxha.nieuwspaal.network
 .tracker.gamemonkey.org
 .tracker-v4.gamedock.io
