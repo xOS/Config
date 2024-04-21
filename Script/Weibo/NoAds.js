@@ -1,4 +1,4 @@
-// 2024-02-02 19:20
+// 2024-04-13 19:05
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -127,7 +127,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             if (item?.data?.user) {
               // 头像挂件,关注按钮
               removeAvatar(item?.data);
-              if (["超话社区", "微博热搜", "微博视频"]?.includes(item.data?.user?.name)) {
+              if (["超话社区", "微博开新年", "微博热搜", "微博视频"]?.includes(item.data?.user?.name)) {
                 continue;
               }
             }
@@ -309,7 +309,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                 if (i?.pageDatas?.length > 0) {
                   let newII = [];
                   for (let ii of i.pageDatas) {
-                    if (["最新微博", "特别关注", "好友圈", "视频", "超话社区"]?.includes(ii?.title)) {
+                    if (["最新微博", "特别关注", "好友圈", "视频"]?.includes(ii?.title)) {
                       // 白名单列表
                       newII.push(ii);
                     } else {
@@ -378,7 +378,12 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         if (item?.category === "card") {
           // 58微博展示时间段提示 216筛选按钮
           if ([58, 216]?.includes(item?.data?.card_type)) {
-            newItems.push(item);
+            if (/没有公开博文，为你推荐以下精彩内容/.test(item?.data?.name)) {
+              // 个人微博页刷完后的推荐信息流
+              continue;
+            } else {
+              newItems.push(item);
+            }
           }
         } else if (item?.category === "group") {
           // 遍历group,保留置顶微博
@@ -442,6 +447,10 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                 // 移除赞过的微博 保留热门内容
                 continue;
               }
+              if (item?.data?.cleaned !== true) {
+                // 个人微博页刷完后的推荐微博
+                continue;
+              }
               newItems.push(item);
             }
           }
@@ -487,7 +496,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             delete item.header.vipCenter;
             delete item.header.vipIcon;
             item.header.avatar.badgeUrl = 'https://h5.sinaimg.cn/upload/100/888/2021/04/07/avatar_vip_golden.png';
-            item.header.desc.content = '微博认证：仙女';                        
+            item.header.desc.content = '微博认证：仙女';                                    
           }
           if (item?.items?.length > 0) {
             for (let d of item.items) {

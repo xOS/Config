@@ -45,7 +45,6 @@
      server = "蜂窝网络";
  }
  
- ;
  (async () => {
      if (!IPv4) {
          $done({
