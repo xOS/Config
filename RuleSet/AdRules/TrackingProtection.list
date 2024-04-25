@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.collector*.ex.co
 .cdn.sov.stream
 .programmatica.com
 .stats.rip
@@ -3727,6 +3728,9 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.c615.denverpost.com
+.newsstat.dallasnews.com
+.e.channelexco.com
 .y.one.impact-ad.jp
 .analytics.languagetoolplus.com
 .log.classting.com
