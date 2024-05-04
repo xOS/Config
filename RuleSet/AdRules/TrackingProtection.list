@@ -3732,6 +3732,8 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.sid.nordstrom.com
+.amethyst.zappos.com
 .sgmcdn.racingpost.com
 .logs.8thwall.com
 .ingest.make.rvohealth.com
@@ -49712,6 +49714,7 @@
 .webmetrics.nintendo-europe.com
 .webstat.freaks4u.com
 .mkto-*.com
+.https-filtering-check.adtidy.org
 .adeventtracker.spotify.com
 .do-not-tracker.org
 .eviltracker.net
