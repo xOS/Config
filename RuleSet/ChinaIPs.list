@@ -30253,7 +30253,6 @@ IP-CIDR,139.217.208.0/22,no-resolve
 IP-CIDR,139.217.212.0/22,no-resolve
 IP-CIDR,139.217.216.0/21,no-resolve
 IP-CIDR,139.217.224.0/19,no-resolve
-IP-CIDR,139.217.233.0/24,no-resolve
 IP-CIDR,139.217.32.0/22,no-resolve
 IP-CIDR,139.217.36.0/25,no-resolve
 IP-CIDR,139.217.36.128/25,no-resolve
