@@ -24,7 +24,9 @@ DOMAIN,appboot.netflix.com
 # > 其它
 DOMAIN-SUFFIX,httpdns,extended-matching
 DOMAIN-KEYWORD,hdns,extended-matching
-DOMAIN-KEYWORD,edns,extended-matching
+// DOMAIN-KEYWORD,edns,extended-matching   
 DOMAIN-SUFFIX,edns.ip-api.com,,extended-matching
 DOMAIN-SUFFIX,surfsharkdns.com,,extended-matching
 DOMAIN-KEYWORD,pangolin,extended-matching
+DOMAIN-WILDCARD,*.pl,REJECT,extended-matching
+DOMAIN-WILDCARD,*.in,REJECT,extended-matching
