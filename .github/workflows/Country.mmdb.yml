@@ -24,11 +24,11 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         cd GeoIP
-        wget -N --no-check-certificate https://raw.githubusercontent.com/alecthw/mmdb_china_ip_list/release/Country.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
         wget -NO Country-lite.mmdb --no-check-certificate https://github.com/alecthw/mmdb_china_ip_list/raw/release/lite/Country.mmdb
-        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/Country-only-cn-private.mmdb
-        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip.dat
-        wget -N --no-check-certificate https://raw.githubusercontent.com/xOS/GeoIPs/release/geoip-only-cn-private.dat
+        wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
+        wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat
  
     - name: Import GPG key
       id: import_gpg
