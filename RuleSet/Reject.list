@@ -7,7 +7,7 @@ DOMAIN,www.scootersoftware.com
 DOMAIN,scootersoftware.com
 
 # > 禁止网页跳转APP 
-# DOMAIN,app-site-association.cdn-apple.com
+DOMAIN,app-site-association.cdn-apple.com
 
 # > 微软
 DOMAIN,self.events.data.microsoft.com
@@ -24,10 +24,9 @@ DOMAIN,appboot.netflix.com
 # > 其它
 DOMAIN-KEYWORD,httpdns,extended-matching
 DOMAIN-SUFFIX,aedns.weixin.qq.com,extended-matching
-DOMAIN-KEYWORD,hdns,extended-matching
-// DOMAIN-KEYWORD,edns,extended-matching   
+DOMAIN-KEYWORD,hdns,extended-matching  
 DOMAIN-SUFFIX,edns.ip-api.com,,extended-matching
 DOMAIN-SUFFIX,surfsharkdns.com,,extended-matching
 DOMAIN-KEYWORD,pangolin,extended-matching
-DOMAIN-WILDCARD,*.pl,REJECT,extended-matching
-DOMAIN-WILDCARD,*.in,REJECT,extended-matching
+DOMAIN-WILDCARD,*.pl,extended-matching
+DOMAIN-WILDCARD,*.in,extended-matching

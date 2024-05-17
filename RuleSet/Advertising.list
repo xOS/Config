@@ -1,17 +1,3 @@
-# > 宝塔面板弹窗
-# >> 若为IP
-#URL-REGEX,^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)(:\d*)?\/ajax\?action=GetSoftList$
-# >> 若为域名或IP
-URL-REGEX,^https?:\/\/([^/:]+)(:\d*)?\/ajax\?action=GetSoftList$
-
-# > Telegram
-# IP-CIDR,5.28.194.123/32
-# IP-CIDR,5.28.192.0/18
-
-# > NiceGram
-DOMAIN,api.esimplus.mobi
-DOMAIN,api.mbrx.app
-
 # > 小红书
 DOMAIN-KEYWORD,ads-video
 DOMAIN-KEYWORD,ads-img
@@ -31,7 +17,6 @@ DOMAIN-SUFFIX,xmpush.xiaomi.com
 DOMAIN,g.cn.miaozhen.com
 
 # > 抖音商城
-// DOMAIN-KEYWORD,minigame
 DOMAIN-KEYWORD,ecombd
 DOMAIN-SUFFIX,jinritemai.com
 DOMAIN,ecom.snssdk.com
@@ -47,8 +32,7 @@ DOMAIN-KEYWORD,-push
 
 # > 腾讯
 DOMAIN-SUFFIX,api-adservices.apple.com
-DOMAIN-SUFFIX,adstats.tencentmusic.com
-DOMAIN-SUFFIX,adcdn6.tencentmusic.com
+DOMAIN-WILDCARD,ad*.tencentmusic.com
 DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,l.qq.com
@@ -72,7 +56,6 @@ DOMAIN-SUFFIX,sngapm.qq.com
 DOMAIN-SUFFIX,tetrack.qq.com
 DOMAIN-SUFFIX,mcgi.v.qq.com
 DOMAIN-SUFFIX,ott.video.qq.com
-// DOMAIN-SUFFIX,eve.mdt.qq.com
 DOMAIN-SUFFIX,stun.qqlive.qq.com
 DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,apponline.research.qq.com
@@ -84,9 +67,7 @@ DOMAIN-SUFFIX,ios.rqd.qq.com
 DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,btrace.video.qq.com
 DOMAIN-SUFFIX,c.l.qq.com
-DOMAIN-SUFFIX,livep.l.qq.com
-DOMAIN-SUFFIX,lives.l.qq.com
-DOMAIN-SUFFIX,livew.l.qq.com
+DOMAIN-WILDCARD,live*.l.qq.com
 DOMAIN-SUFFIX,mdevstat.qqlive.qq.com
 DOMAIN-SUFFIX,omgmta1.qq.com
 DOMAIN-SUFFIX,p.l.qq.com
@@ -100,24 +81,11 @@ DOMAIN-SUFFIX,ad.qq.com
 DOMAIN-SUFFIX,ad.qun.qq.com
 DOMAIN-SUFFIX,adfilter.imtt.qq.com
 DOMAIN-SUFFIX,adping.qq.com
-DOMAIN-SUFFIX,adpm.app.qq.com
-DOMAIN-SUFFIX,adrdir.qq.com
-DOMAIN-SUFFIX,adsclick.qq.com
+DOMAIN-WILDCARD,ad*.app.qq.com
+DOMAIN-WILDCARD,ad*.qq.com
+DOMAIN-WILDCARD,*click.qq.com
 DOMAIN-SUFFIX,adsense.html5.qq.com
-DOMAIN-SUFFIX,adsfile.qq.com
-DOMAIN-SUFFIX,adsgroup.qq.com
-DOMAIN-SUFFIX,adshmct.qq.com
-DOMAIN-SUFFIX,adshmmsg.qq.com
-DOMAIN-SUFFIX,adslvfile.qq.com
-DOMAIN-SUFFIX,adslvseed.qq.com
 DOMAIN-SUFFIX,adsolution.imtt.qq.com
-DOMAIN-SUFFIX,adsqqclick.qq.com
-DOMAIN-SUFFIX,adsrich.qq.com
-DOMAIN-SUFFIX,adstextview.qq.com
-DOMAIN-SUFFIX,adsview.qq.com
-DOMAIN-SUFFIX,adsview2.qq.com
-DOMAIN-SUFFIX,adv.app.qq.com
-DOMAIN-SUFFIX,adver.qq.com
 DOMAIN-SUFFIX,aeventlog.beacon.qq.com
 DOMAIN-SUFFIX,aexception.bugly.qq.com
 DOMAIN-SUFFIX,analy.qq.com
@@ -190,8 +158,7 @@ DOMAIN-SUFFIX,openapi.guanjia.qq.com
 DOMAIN-SUFFIX,oth.str.mdt.qq.com
 DOMAIN-SUFFIX,oth.update.mdt.qq.com
 DOMAIN-SUFFIX,p.store.qq.com
-DOMAIN-SUFFIX,p2.l.qq.com
-DOMAIN-SUFFIX,p3.l.qq.com
+DOMAIN-WILDCARD,p*.l.qq.com
 DOMAIN-SUFFIX,pagespeed.report.qq.com
 DOMAIN-SUFFIX,pcbrowser.dd.qq.com
 DOMAIN-SUFFIX,pms.mb.qq.com
@@ -208,8 +175,7 @@ DOMAIN-SUFFIX,rich.qq.com
 DOMAIN-SUFFIX,rm.gdt.qq.com
 DOMAIN-SUFFIX,routertips.video.qq.com
 DOMAIN-SUFFIX,rqd.qq.com
-DOMAIN-SUFFIX,rs1.qq.com
-DOMAIN-SUFFIX,rs2.qq.com
+DOMAIN-WILDCARD,rs*.qq.com
 DOMAIN-SUFFIX,s.gdt.qq.com
 DOMAIN-SUFFIX,scdown.qq.com
 DOMAIN-SUFFIX,sdk.e.qq.com
@@ -268,13 +234,6 @@ URL-REGEX,^https?://.+/videos/other/.+
 URL-REGEX,^https?://.+\.beacon\.qq\.com
 URL-REGEX,^https?://.+\.gdt\.qq\.com
 URL-REGEX,^https?://.+\.l\.qq\.com
-# URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?
-URL-REGEX,^https?+:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?
-
-# > 微信
-# DOMAIN-SUFFIX,resstatic.servicewechat.com
-# DOMAIN-SUFFIX,dlied1.cdntips.net
-URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad)
 
 # > 爱奇艺
 DOMAIN-SUFFIX,cmonitor.iqiyi.com
@@ -335,12 +294,6 @@ DOMAIN-SUFFIX,static.g.ppstream.com
 DOMAIN-SUFFIX,store.iqiyi.com
 DOMAIN-SUFFIX,tracker.sns.iqiyi.com
 DOMAIN-SUFFIX,yuedu.iqiyi.com
-URL-REGEX,https?://.+/videos/other/.+
-URL-REGEX,https?://paopao\w?.qiyipic.com
-URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo
-URL-REGEX,^https?+:\/\/.+?\/(?>mixer|track2)\?
-URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do
-URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show
 
 # > 优酷
 DOMAIN-SUFFIX,ad.mobile.youku.com
@@ -356,12 +309,7 @@ DOMAIN-SUFFIX,mf.atm.youku.com
 DOMAIN-SUFFIX,service.danmu.youku.com
 DOMAIN-SUFFIX,statis.mobile.youku.com
 DOMAIN-SUFFIX,v2html.atm.youku.com
-DOMAIN-SUFFIX,val.atm.youku.com
-DOMAIN-SUFFIX,valb.atm.youku.com
-DOMAIN-SUFFIX,valc.atm.youku.com
-DOMAIN-SUFFIX,valf.atm.youku.com
-DOMAIN-SUFFIX,valp.atm.youku.com
-DOMAIN-SUFFIX,valt.atm.youku.com
+DOMAIN-WILDCARD,val*.atm.youku.com
 DOMAIN-SUFFIX,agn.aty.sohu.com
 DOMAIN-SUFFIX,focusbaiduafp.allyes.com
 DOMAIN-SUFFIX,atm.youku.com
@@ -414,32 +362,16 @@ DOMAIN-SUFFIX,urchin.lstat.youku.com
 DOMAIN-SUFFIX,v.l.youku.com
 DOMAIN-SUFFIX,val.api.youku.com
 DOMAIN-SUFFIX,wan.youku.com
-DOMAIN-SUFFIX,ykatr.youku.com
-DOMAIN-SUFFIX,ykrec.youku.com
-URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902
-URL-REGEX,^https?+:\/\/.+?\.mp4\?sid=
-URL-REGEX,^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=
+DOMAIN-WILDCARD,yk*.youku.com
 
 # > 阿里
-# DOMAIN-SUFFIX,adash-c.ut.taobao.com
-# DOMAIN-SUFFIX,adash.m.taobao.com
-# DOMAIN-SUFFIX,adashbc.m.taobao.com
-# DOMAIN-SUFFIX,adashbc.ut.taobao.com
-# DOMAIN-SUFFIX,adashx.m.taobao.com
-# DOMAIN-SUFFIX,adashxgc.ut.taobao.com
-# DOMAIN-SUFFIX,agoodm.m.taobao.com
-# DOMAIN-SUFFIX,ai.m.taobao.com
-# DOMAIN-SUFFIX,ai.taobao.com
-# DOMAIN-SUFFIX,amdc.m.taobao.com
 DOMAIN-SUFFIX,api.waptest.taobao.com
-# DOMAIN-SUFFIX,c-adash.m.taobao.com
 DOMAIN-SUFFIX,click.mz.simba.taobao.com
 DOMAIN-SUFFIX,click.simba.taobao.com
 DOMAIN-SUFFIX,click.tz.simba.taobao.com
 DOMAIN-SUFFIX,dsp.simba.taobao.com
 DOMAIN-SUFFIX,fav.simba.taobao.com
 DOMAIN-SUFFIX,ip.taobao.com
-# DOMAIN-SUFFIX,m-adash.m.taobao.com
 DOMAIN-SUFFIX,m.simba.taobao.com
 DOMAIN-SUFFIX,mclick.simba.taobao.com
 DOMAIN-SUFFIX,nbsdk-baichuan.taobao.com
@@ -514,7 +446,6 @@ DOMAIN-SUFFIX,t.alimama.com
 DOMAIN-SUFFIX,ttjx-online.cn-hangzhou.log.aliyuncs.com
 DOMAIN-SUFFIX,xz-development.oss-cn-beijing.aliyuncs.com
 DOMAIN,tunion-api.m.taobao.com
-URL-REGEX,^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless
 
 # > 乐播
 DOMAIN-SUFFIX,sdkauth.hpplay.cn
@@ -537,39 +468,11 @@ DOMAIN-SUFFIX,gslb.hpplay.cn
 DOMAIN-SUFFIX,cdn.hpplay.com.cn
 DOMAIN-SUFFIX,pin.hpplay.cn
 
-# > 1688
-URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv
-
-# > 飞猪
-URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/
-
 # > 高德地图
 DOMAIN,optimus-ads.amap.com
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com
 URL-REGEX,^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/
 
-# > 口碑
-URL-REGEX,^https?+:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json
-URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/
-
-# > 淘宝
-URL-REGEX,^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}+$
-URL-REGEX,^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$
-URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$
-
-# > 淘票票
-URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/
-
-# > 天猫
-URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4}
-
-# > 字节跳动
-# DOMAIN,log.snssdk.com
-URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad
-URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/
-URL-REGEX,^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/
-URL-REGEX,^https?+:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/
-URL-REGEX,^https?+:\/\/.+?\/img\/ad\.union\.api\/
 
 # > 百度
 DOMAIN-SUFFIX,baidu.greenxf.cn
@@ -654,13 +557,12 @@ DOMAIN-SUFFIX,ikcode.baidu.com
 DOMAIN-SUFFIX,imageplus.baidu.com
 DOMAIN-SUFFIX,itsdata.map.baidu.com
 DOMAIN-SUFFIX,j.br.baidu.com
-DOMAIN-SUFFIX,jb.mbaidu.top
-DOMAIN-SUFFIX,js.mbaidu.top
+DOMAIN-WILDCARD,j*.mbaidu.top
 DOMAIN-SUFFIX,kstj.baidu.com
 DOMAIN-SUFFIX,log.music.baidu.com
 DOMAIN-SUFFIX,log.waimai.baidu.com
-DOMAIN-SUFFIX,m1.baidu.com
-DOMAIN-SUFFIX,ma.baidu.com
+DOMAIN-WILDCARD,m1*.baidu.com
+DOMAIN-WILDCARD,ma*.baidu.com
 DOMAIN-SUFFIX,mobads-logs.baidu.com
 DOMAIN-SUFFIX,mpro.baidu.com
 DOMAIN-SUFFIX,msite.baidu.com
@@ -695,11 +597,8 @@ DOMAIN-SUFFIX,spcode.baidu.com
 DOMAIN-SUFFIX,stat.v.baidu.com
 DOMAIN-SUFFIX,static.su.baidu.com
 DOMAIN-SUFFIX,sv.map.baidu.com
-DOMAIN-SUFFIX,t10.baidu.com
-DOMAIN-SUFFIX,t11.baidu.com
-DOMAIN-SUFFIX,t12.baidu.com
-DOMAIN-SUFFIX,tk.baidu.com
-DOMAIN-SUFFIX,tkweb.baidu.com
+DOMAIN-WILDCARD,t1*.baidu.com
+DOMAIN-WILDCARD,tk*.baidu.com
 DOMAIN-SUFFIX,toolbar.baidu.com
 DOMAIN-SUFFIX,tracker.baidu.com
 DOMAIN-SUFFIX,tuisong.baidu.com
@@ -724,9 +623,7 @@ DOMAIN-SUFFIX,wn.pos.baidu.com
 DOMAIN-SUFFIX,zhanzhang.baidu.com
 DOMAIN-SUFFIX,znsv.baidu.com
 DOMAIN-SUFFIX,baikebcs.bdimg.com
-DOMAIN-SUFFIX,ecma.bdimg.com
-DOMAIN-SUFFIX,ecmb.bdimg.com
-DOMAIN-SUFFIX,ecmc.bdimg.com
+DOMAIN-WILDCARD,ecm*.bdimg.com
 DOMAIN-SUFFIX,pups.bdimg.com
 DOMAIN-SUFFIX,static.map.bdimg.com
 DOMAIN-SUFFIX,su.bdimg.com
@@ -754,10 +651,6 @@ URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule
 URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo
 URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog)
 
-# > 百度地图
-# DOMAIN,newclient.map.baidu.com
-URL-REGEX,^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg
-
 # > CSDN
 DOMAIN-SUFFIX,openinstall.io
 
@@ -772,13 +665,8 @@ DOMAIN-SUFFIX,adstrategy.biz.weibo.com
 DOMAIN-SUFFIX,ad.us.sinaimg.cn
 DOMAIN,adimg.uve.weibo.com
 DOMAIN-SUFFIX,2016.sina.cn
-DOMAIN-SUFFIX,ad.sina.com.cn
-DOMAIN-SUFFIX,ad1.sina.com.cn
-DOMAIN-SUFFIX,ad2.sina.com.cn
-DOMAIN-SUFFIX,ad3.sina.com.cn
-DOMAIN-SUFFIX,ad4.sina.com
-DOMAIN-SUFFIX,ad4.sina.com.cn
-DOMAIN-SUFFIX,ad5.sina.com.cn
+DOMAIN-WILDCARD,ad*.sina.com.cn
+DOMAIN-WILDCARD,ad*.sina.com
 DOMAIN-SUFFIX,adbox.sina.com.cn
 DOMAIN-SUFFIX,adimages.sina.com.hk
 DOMAIN-SUFFIX,adimg.mobile.sina.cn
@@ -795,27 +683,8 @@ DOMAIN-SUFFIX,counter.sina.com.cn
 DOMAIN-SUFFIX,cre-dp.sina.cn
 DOMAIN-SUFFIX,cre.dp.sina.cn
 DOMAIN-SUFFIX,cre.mix.sina.com.cn
-DOMAIN-SUFFIX,d0.sina.com.cn
-DOMAIN-SUFFIX,d0.sinaimg.cn
-DOMAIN-SUFFIX,d00.sina.com.cn
-DOMAIN-SUFFIX,d1.sina.com.cn
-DOMAIN-SUFFIX,d1.sinaimg.cn
-DOMAIN-SUFFIX,d2.sina.com.cn
-DOMAIN-SUFFIX,d2.sinaimg.cn
-DOMAIN-SUFFIX,d3.sina.com.cn
-DOMAIN-SUFFIX,d3.sinaimg.cn
-DOMAIN-SUFFIX,d4.sina.com.cn
-DOMAIN-SUFFIX,d4.sinaimg.cn
-DOMAIN-SUFFIX,d5.sina.com.cn
-DOMAIN-SUFFIX,d5.sinaimg.cn
-DOMAIN-SUFFIX,d6.sina.com.cn
-DOMAIN-SUFFIX,d6.sinaimg.cn
-DOMAIN-SUFFIX,d7.sina.com.cn
-DOMAIN-SUFFIX,d7.sinaimg.cn
-DOMAIN-SUFFIX,d8.sina.com.cn
-DOMAIN-SUFFIX,d8.sinaimg.cn
-DOMAIN-SUFFIX,d9.sina.com.cn
-DOMAIN-SUFFIX,d9.sinaimg.cn
+DOMAIN-WILDCARD,d*.sina.com.cn
+DOMAIN-WILDCARD,d*.sinaimg.cn
 DOMAIN-SUFFIX,dcads.sina.com.cn
 DOMAIN-SUFFIX,dl.kjava.sina.cn
 DOMAIN-SUFFIX,dmp.sina.cn
@@ -844,17 +713,7 @@ DOMAIN-SUFFIX,s.img.mix.sina.com.cn
 DOMAIN-SUFFIX,sapi.sina.cn
 DOMAIN-SUFFIX,sax.sina.cn
 DOMAIN-SUFFIX,sax.sina.com.cn
-DOMAIN-SUFFIX,sax1.sina.com.cn
-DOMAIN-SUFFIX,sax2.sina.com.cn
-DOMAIN-SUFFIX,sax3.sina.com.cn
-DOMAIN-SUFFIX,sax4.sina.com.cn
-DOMAIN-SUFFIX,sax5.sina.com.cn
-DOMAIN-SUFFIX,sax6.sina.com.cn
-DOMAIN-SUFFIX,sax7.sina.com.cn
-DOMAIN-SUFFIX,sax8.sina.com.cn
-DOMAIN-SUFFIX,sax9.sina.com.cn
-DOMAIN-SUFFIX,saxn.sina.com.cn
-DOMAIN-SUFFIX,saxs.sina.com.cn
+DOMAIN-WILDCARD,sax*.sina.com.cn
 DOMAIN-SUFFIX,sbeacon.sina.com.cn
 DOMAIN-SUFFIX,sdkapp.mobile.sina.cn
 DOMAIN-SUFFIX,sdkclick.mobile.sina.cn
@@ -870,8 +729,7 @@ DOMAIN-SUFFIX,wbpctips.mobile.sina.cn
 DOMAIN-SUFFIX,woocall.sina.com.cn
 DOMAIN-SUFFIX,dp.im.weibo.cn
 DOMAIN-SUFFIX,game.weibo.cn
-DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn
-DOMAIN-SUFFIX,gw6.push.mcp.weibo.cn
+DOMAIN-WILDCARD,gw*.push.mcp.weibo.cn
 DOMAIN-SUFFIX,m.game.weibo.cn
 DOMAIN-SUFFIX,promote.biz.weibo.cn
 DOMAIN-SUFFIX,alitui.weibo.com
@@ -887,15 +745,9 @@ DOMAIN-SUFFIX,wbapp.uve.weibo.com
 DOMAIN-SUFFIX,widget.weibo.com
 DOMAIN-SUFFIX,zc.biz.weibo.com
 DOMAIN-SUFFIX,zymo.mps.weibo.com
-DOMAIN,adimg.uve.weibo.com
-DOMAIN,adimg.vue.weibo.com
+DOMAIN-WILDCARD,adimg.*e.weibo.com
 DOMAIN,u1.img.mobile.sina.cn
-DOMAIN,sax.sina.com.cn
-DOMAIN,saxs.sina.com.cn
-DOMAIN,saxn.sina.com.cn
-URL-REGEX,^https?+:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(?>action|sdk)ad\.php
-URL-REGEX,^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua
-URL-REGEX,^https?+:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads
+DOMAIN-WILDCARD,sa*.sina.com.cn
 
 # > 搜狗
 DOMAIN-SUFFIX,123.sogou.com
@@ -1007,13 +859,6 @@ DOMAIN-SUFFIX,lu.sogoucdn.com
 DOMAIN-SUFFIX,theta.sogoucdn.com
 DOMAIN-SUFFIX,uranus.sogou.com
 
-# > 搜狐
-DOMAIN-SUFFIX,ads.sohu.com
-DOMAIN-SUFFIX,aty.sohu.com
-DOMAIN,imp.optaim.com
-DOMAIN,v2.reachmax.cn
-DOMAIN,hui.sohu.com
-
 # > 网易
 DOMAIN-SUFFIX,analytics.hz.netease.com
 DOMAIN-SUFFIX,mr.da.netease.com
@@ -1064,91 +909,10 @@ DOMAIN,nex.163.com
 DOMAIN,yt-adp.nosdn.127.net
 DOMAIN,yt-adp.ws.126.net
 
-# > 湖南 TV
-DOMAIN-SUFFIX,da.mgtv.com
-DOMAIN-SUFFIX,da.hunantv.com
-DOMAIN-SUFFIX,log.hunantv.com
-DOMAIN-SUFFIX,v2.hunantv.com
-
-# > 芒果 TV
-DOMAIN-SUFFIX,ads-api.videojj.com
-DOMAIN-SUFFIX,cdn.cmop.mgtv.com
-DOMAIN-SUFFIX,click.hunantv.com
-DOMAIN-SUFFIX,cmop.mgtv.com
-DOMAIN-SUFFIX,cytron.videojj.com
-DOMAIN-SUFFIX,cytroncdn.videojj.com
-DOMAIN-SUFFIX,imgaliyun.da.mgtv.com
-DOMAIN-SUFFIX,imgaliyun.res.mgtv.com
-DOMAIN-SUFFIX,m2.da.mgtv.com
-DOMAIN-SUFFIX,me.videojj.com
-DOMAIN-SUFFIX,mobaliyun.res.mgtv.com
-DOMAIN-SUFFIX,mobile.da.mgtv.com
-DOMAIN-SUFFIX,mobile2.da.mgtv.com
-DOMAIN-SUFFIX,mp4.res.hunantv.com
-DOMAIN-SUFFIX,pc.da.mgtv.com
-DOMAIN-SUFFIX,pc1.da.mgtv.com
-DOMAIN-SUFFIX,pcvideoaliyun.titan.mgtv.com
-DOMAIN-SUFFIX,pcvideoyd.titan.mgtv.com
-DOMAIN-SUFFIX,pcweb.v1.mgtv.com
-DOMAIN-SUFFIX,plat.videojj.com
-DOMAIN-SUFFIX,py.da.mgtv.com
-DOMAIN-SUFFIX,res.hunantv.com
-DOMAIN-SUFFIX,store.videojj.com
-DOMAIN-SUFFIX,v2.da.mgtv.com
-DOMAIN-SUFFIX,va.videojj.com
-DOMAIN-SUFFIX,videojj.com
-DOMAIN-SUFFIX,web.da.mgtv.com
-DOMAIN-SUFFIX,x.da.hunantv.com
-DOMAIN-SUFFIX,x.da.mgtv.com
-DOMAIN-SUFFIX,x1.da.hunantv.com
-DOMAIN-SUFFIX,y.da.hunantv.com
-DOMAIN-SUFFIX,y.da.mgtv.com
-
-# > 乐视 TV
-DOMAIN-SUFFIX,g3.letv.com
-DOMAIN-SUFFIX,n.mark.letv.com
-DOMAIN-SUFFIX,webp2p.letv.com
-DOMAIN,emma-414870e223.huodonghezi.com
-DOMAIN-SUFFIX,apple.www.letv.com
-DOMAIN-SUFFIX,ark.letv.com
-DOMAIN-SUFFIX,g3.letv.cn
-DOMAIN-SUFFIX,1.letvlive.com
-DOMAIN-SUFFIX,2.letvlive.com
-DOMAIN-SUFFIX,ads1.lfengmobile.com
-DOMAIN-SUFFIX,api.game.letvstore.com
-DOMAIN-SUFFIX,api.push.le.com
-DOMAIN-SUFFIX,cdn.zampdsp.com
-DOMAIN-SUFFIX,cm.fancyapi.com
-DOMAIN-SUFFIX,cn.api.push.le.com
-DOMAIN-SUFFIX,dc.letv.com
-DOMAIN-SUFFIX,fz.letv.com
-DOMAIN-SUFFIX,minisite.letv.com
-DOMAIN-SUFFIX,msg.m.letv.com
-DOMAIN-SUFFIX,pro.hoye.letv.com
-DOMAIN-SUFFIX,pro.letv.com
-DOMAIN-SUFFIX,s.zampdsp.com
-DOMAIN-SUFFIX,stat.letv.com
-DOMAIN-SUFFIX,static.app.m.letv.com
-
-# > 哔哩哔哩
-DOMAIN,activity.biligame.com
-URL-REGEX,^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/
-URL-REGEX,^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash
-
-# > 人人视频
-URL-REGEX,^https?+:\/\/msspjh\.emarbox\.com\/getAdConfig
-URL-REGEX,^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising
-URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/
-
 # > Instagram
-#DOMAIN-SUFFIX,portal.fb.com
-#DOMAIN-SUFFIX,edge-mqtt.facebook.com
-#DOMAIN-SUFFIX,graph.facebook.com
-#DOMAIN-SUFFIX,graph.instagram.com
 DOMAIN-SUFFIX,amazon-adsystem.com
 
 # > Apple
-#DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,ads.internal.unity3d.com
 DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com
 DOMAIN-SUFFIX,unityads.unity3d.com
@@ -1162,15 +926,6 @@ DOMAIN,adshows.21cn.com
 # > 迅雷
 DOMAIN,adsp.xunlei.com
 DOMAIN,etl.xlmc.sandai.net
-
-# > 喜马拉雅
-DOMAIN,ad.ximalaya.com
-DOMAIN,adbs.ximalaya.com
-DOMAIN,adse.ximalaya.com
-DOMAIN,adse.wsa.ximalaya.com
-DOMAIN,adbehavior.wsa.ximalaya.com
-DOMAIN,adbehavior.ximalaya.com
-DOMAIN,adsebs.ximalaya.com
 
 # > Zhihu
 USER-AGENT,AVOS*
@@ -1202,12 +957,6 @@ DOMAIN,ads.yahoo.com
 DOMAIN,ads.yahoo.de
 DOMAIN-SUFFIX,comet.yahoo.com
 DOMAIN-SUFFIX,gemini.yahoo.com
-
-# > 墨迹天气
-DOMAIN,ad.api.moji.com
-DOMAIN,adlaunch.moji.com
-DOMAIN,ads.mojicdn.com
-DOMAIN,v1.log.moji.com
 
 # > Kingsoft
 DOMAIN,ad-stat.ksosoft.com
@@ -1251,7 +1000,6 @@ DOMAIN,raddus.bayescom.com
 DOMAIN,sf3-fe-tos.pglstatp-toutiao.com 
 DOMAIN-SUFFIX,pub.tpl.infzm.com
 DOMAIN-SUFFIX,lkme.cc
-# DOMAIN,cloud.tgpa.qq.com
 DOMAIN,myip.myzaker.com
 DOMAIN,smr.snssdk.com
 DOMAIN-SUFFIX,bxguwen.com
@@ -1287,10 +1035,7 @@ DOMAIN-SUFFIX,actionads.ru
 DOMAIN-SUFFIX,actionpay.ru
 DOMAIN-SUFFIX,ad.gt
 DOMAIN-SUFFIX,ad1.ru
-DOMAIN-SUFFIX,ad120m.com
-DOMAIN-SUFFIX,ad127m.com
-DOMAIN-SUFFIX,ad131m.com
-DOMAIN-SUFFIX,ad132m.com
+DOMAIN-WILDCARD,ad*m.com
 DOMAIN-SUFFIX,ad1data.com
 DOMAIN-SUFFIX,ad2games.com
 DOMAIN-SUFFIX,ad2iction.com
@@ -1650,15 +1395,6 @@ DOMAIN-SUFFIX,abovede6.com
 DOMAIN-SUFFIX,cy6px.com
 DOMAIN-SUFFIX,stm65i8.com
 DOMAIN-SUFFIX,fb360xp.com
-URL-REGEX,^https?://ad\d\.sina\.com
-URL-REGEX,^https?://ad\d\.sina\.com.cn
-URL-REGEX,^https?://app\.58\.com/api/log
-URL-REGEX,^https?://d\d\.sina\.com\.cn
-URL-REGEX,^https?://d\d\.sinaimg\.cn
-URL-REGEX,^https?://sax\d\.sina\.com\.cn
-URL-REGEX,^https?://api\d\.tuisong\.baidu\.com
-URL-REGEX,^https?://sa\d\.tuisong\.baidu\.com
-URL-REGEX,^https?:\/\/nas\.infzm\.com\/api\/advertising\/ireader
 
 # > IPCIDR
 IP-CIDR,1.3.0.10/32,no-resolve

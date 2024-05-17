@@ -5,41 +5,26 @@ DOMAIN,zgsdk.zhugeio.com
 
 # > Alibaba
 USER-AGENT,Munion-SDK*
-# DOMAIN-KEYWORD,adash
-# DOMAIN,ynuf.aliapp.org
-# DOMAIN,mobilegw.alipay.com
 URL-REGEX,^https?:\/\/.+\/squery$
 DOMAIN,mazu.m.qq.com
 
 # > 51.LA
 DOMAIN,js.users.51.la
-DOMAIN,mc.51.la
-DOMAIN,wc.51.la
+DOMAIN-WILDCARD,*c.51.la
 
 # > 58,
-DOMAIN,track.58.com
-DOMAIN,tracklog.58.com
+DOMAIN-WILDCARD,track*.58.com
 
 # > Baidu
-DOMAIN,hm.baidu.com
-DOMAIN,hmma.baidu.com
+DOMAIN-WILDCARD,hm*.baidu.com
 
 # > ByteDance
 DOMAIN,log.byteoversea.com
 DOMAIN,log.tiktokv.com
-DOMAIN,log-hl-ipv6.snssdk.com
-DOMAIN,log-lq.snssdk.com
-DOMAIN,log-va.tiktokv.com
+DOMAIN-WILDCARD,log-*.snssdk.com
+DOMAIN-WILDCARD,log-*.tiktokv.com
 DOMAIN,xlog.snssdk.com
-DOMAIN,srp4.snssdk.com
-DOMAIN,srp2.snssdk.com
-DOMAIN,srp1.snssdk.com
-DOMAIN,srp3.snssdk.com
-
-# > Google
-#DOMAIN-SUFFIX,googletagmanager.com
-#DOMAIN-SUFFIX,google-analytics.com
-#DOMAIN,safebrowsing.googleapis.com
+DOMAIN-WILDCARD,srp*.snssdk.com
 
 # > MI
 DOMAIN-SUFFIX,tracking.miui.com
@@ -52,7 +37,5 @@ DOMAIN,config.ab.qq.com
 DOMAIN,rmonitor.qq.com
 
 # > Umeng
-DOMAIN-SUFFIX,umeng.com
-DOMAIN-KEYWORD,log.umeng.com
-DOMAIN-KEYWORD,logs.umeng.com
-DOMAIN-KEYWORD,logs.umengcloud.com
+DOMAIN-WILDCARD,log*.umeng.com
+DOMAIN-WILDCARD,log*.umengcloud.com
