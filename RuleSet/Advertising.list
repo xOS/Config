@@ -622,7 +622,6 @@ DOMAIN-SUFFIX,wm.baidu.com
 DOMAIN-SUFFIX,wn.pos.baidu.com
 DOMAIN-SUFFIX,zhanzhang.baidu.com
 DOMAIN-SUFFIX,znsv.baidu.com
-DOMAIN-SUFFIX,baikebcs.bdimg.com
 DOMAIN-WILDCARD,ecm*.bdimg.com
 DOMAIN-SUFFIX,pups.bdimg.com
 DOMAIN-SUFFIX,static.map.bdimg.com
