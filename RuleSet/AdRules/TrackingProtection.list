@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.sync.outbrain.com
+.elb.the-ozone-project.com
 .pbcs.nypost.com
 .pbcs.decider.com
 .pbcs.pagesix.com
@@ -75,6 +77,7 @@
 .citrusad.net
 .pubperf.com
 .stats.getaim.org
+.dev-analytics-cf.bigcrunch.com
 .analytics-cf.bigcrunch.com
 .trackerapi.ebxcdn.com
 .tongjiniao.com
@@ -3740,6 +3743,11 @@
 .affex.org
 .ct.pinterest.com
 .telemetry.mozilla.org
+.tracking-api.passeidireto.com
+.analytics.lasegunda.ecn.cl
+.analytics.emol.com
+.webc2s.pubgw.yahoo.com
+.tracking.cosme.net
 .matomo.motorpresse.de
 .matomo.menshealth.de
 .analytics.denimdream.com
