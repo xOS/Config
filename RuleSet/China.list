@@ -58,6 +58,7 @@ DOMAIN,safebrowsing.googleapis.com
 DOMAIN,sms.imagetasks.com
 DOMAIN,speedtest.macpaw.com
 DOMAIN,steamcommunity-a.akamaihd.net
+DOMAIN-SUFFIX,hiyun.tv
 DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,10089.cn
