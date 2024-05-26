@@ -127,7 +127,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             if (item?.data?.user) {
               // 头像挂件,关注按钮
               removeAvatar(item?.data);
-              if (["超话社区", "微博开新年", "微博热搜", "微博视频"]?.includes(item.data?.user?.name)) {
+              if (["视频", "微博开新年", "微博热搜", "微博视频"]?.includes(item.data?.user?.name)) {
                 continue;
               }
             }
@@ -309,7 +309,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
                 if (i?.pageDatas?.length > 0) {
                   let newII = [];
                   for (let ii of i.pageDatas) {
-                    if (["最新微博", "特别关注", "好友圈", "视频"]?.includes(ii?.title)) {
+                    if (["最新微博", "特别关注", "好友圈", "超话社区"]?.includes(ii?.title)) {
                       // 白名单列表
                       newII.push(ii);
                     } else {
