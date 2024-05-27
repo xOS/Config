@@ -27,6 +27,6 @@ DOMAIN-SUFFIX,aedns.weixin.qq.com,extended-matching
 DOMAIN-KEYWORD,hdns,extended-matching  
 DOMAIN-SUFFIX,edns.ip-api.com,extended-matching
 DOMAIN-SUFFIX,surfsharkdns.com,extended-matching
-DOMAIN-KEYWORD,pangolin,extended-matching
+//DOMAIN-KEYWORD,pangolin,extended-matching
 DOMAIN-WILDCARD,*.pl,extended-matching
 DOMAIN-WILDCARD,*.in,extended-matching
