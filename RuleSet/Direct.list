@@ -13,7 +13,7 @@ DOMAIN-SUFFIX,ultramobile.com // Added for: w3b-api.ultramobile.com:443
 DOMAIN-SUFFIX,tagcdnsub.work
 DOMAIN-SUFFIX,tagsub.net
 DOMAIN-SUFFIX,tagsssubscribe.com
-DOMAIN-WILDCARD,*-toutiao.com,extended-matching
+DOMAIN-WILDCARD,*-toutiao*.com,extended-matching
 
 # > Alibaba
 DOMAIN,log.mmstat.com
