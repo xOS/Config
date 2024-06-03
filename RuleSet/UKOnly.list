@@ -17,9 +17,12 @@ DOMAIN-SUFFIX,curve.app
 DOMAIN-SUFFIX,chase.co.uk
 DOMAIN-SUFFIX,co.uk
 DOMAIN-SUFFIX,creditkarma.co.uk
-DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,branch.io 
 DOMAIN-SUFFIX,clearscore.com
 DOMAIN-SUFFIX,payzilch.com
 DOMAIN-SUFFIX,authy.com
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,royalmail.com
+DOMAIN-SUFFIX,capitalone-ukeu.apps-imiconnect.io
+DOMAIN-SUFFIX,capitalone.co.uk
+DOMAIN-WILDCARD,mobile-collector.eu*.nr-data.net
