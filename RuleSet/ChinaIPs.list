@@ -10179,7 +10179,7 @@ IP-CIDR,202.179.240.0/20,no-resolve
 IP-CIDR,202.180.128.0/19,no-resolve
 IP-CIDR,202.180.208.0/21,no-resolve
 IP-CIDR,202.181.112.0/20,no-resolve
-IP-CIDR,202.181.124.0/22,no-resolve
+IP-CIDR,202.181.120.0/21,no-resolve
 IP-CIDR,202.181.28.0/22,no-resolve
 IP-CIDR,202.181.28.0/24,no-resolve
 IP-CIDR,202.181.8.0/22,no-resolve
@@ -12113,6 +12113,7 @@ IP-CIDR,210.192.96.0/20,no-resolve
 IP-CIDR,210.2.0.0/19,no-resolve
 IP-CIDR,210.2.0.0/20,no-resolve
 IP-CIDR,210.2.0.0/23,no-resolve
+IP-CIDR,210.2.0.0/24,no-resolve
 IP-CIDR,210.2.16.0/20,no-resolve
 IP-CIDR,210.2.2.0/24,no-resolve
 IP-CIDR,210.2.22.0/23,no-resolve
