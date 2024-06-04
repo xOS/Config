@@ -1881,7 +1881,6 @@ IP-CIDR,103.205.108.0/22,no-resolve
 IP-CIDR,103.205.116.0/22,no-resolve
 IP-CIDR,103.205.120.0/22,no-resolve
 IP-CIDR,103.205.136.0/22,no-resolve
-IP-CIDR,103.205.136.0/24,no-resolve
 IP-CIDR,103.205.139.0/24,no-resolve
 IP-CIDR,103.205.162.0/24,no-resolve
 IP-CIDR,103.205.188.0/22,no-resolve
