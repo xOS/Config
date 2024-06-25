@@ -968,7 +968,11 @@ DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
 
 # > 其它
+DOMAIN,dsp-x.jd.com
+DOMAIN,janapi.jd.com
+DOMAIN,ad.data.lianjia.com
 DOMAIN-SUFFIX,voiceads.cn
+DOMAIN-SUFFIX,voiceads.com
 DOMAIN,gdfp.gifshow.com
 DOMAIN-SUFFIX,volceapplog.com
 DOMAIN,receiver.ta.thinkingdata.cn
