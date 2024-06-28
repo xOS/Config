@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.metrics-fe-na1.hubspot.com
 .pixel.mintigo.com
 .api.sardine.ai
 .au1.qualtrics.com
@@ -38459,6 +38460,10 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.metrics.biddertmz.com
+.moduleanalysis.aliexpress.com
+.metrics.doppiostreams.com
+.metrics.imdb.a2z.com
 .metrics.api.drift.com
 .targeting.api.drift.com
 .event.api.drift.com
