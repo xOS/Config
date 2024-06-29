@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.adtrack.adleadevent.com
 .metrics-fe-na1.hubspot.com
 .pixel.mintigo.com
 .api.sardine.ai
@@ -38460,6 +38461,11 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.pyxis.atp.fox
+.collector.appconsent.io
+.r.sib2.gardrops.com
+.nst.trex.media
+.pixel.kodixauto.ru
 .metrics.biddertmz.com
 .moduleanalysis.aliexpress.com
 .metrics.doppiostreams.com
