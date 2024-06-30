@@ -3618,17 +3618,14 @@ IP-CIDR,103.44.80.0/22,no-resolve
 IP-CIDR,103.45.0.0/18,no-resolve
 IP-CIDR,103.45.0.0/22,no-resolve
 IP-CIDR,103.45.100.0/22,no-resolve
-IP-CIDR,103.45.104.0/21,no-resolve
 IP-CIDR,103.45.104.0/22,no-resolve
 IP-CIDR,103.45.108.0/22,no-resolve
-IP-CIDR,103.45.112.0/20,no-resolve
 IP-CIDR,103.45.112.0/22,no-resolve
 IP-CIDR,103.45.116.0/22,no-resolve
 IP-CIDR,103.45.12.0/22,no-resolve
 IP-CIDR,103.45.120.0/22,no-resolve
 IP-CIDR,103.45.124.0/22,no-resolve
 IP-CIDR,103.45.128.0/18,no-resolve
-IP-CIDR,103.45.128.0/19,no-resolve
 IP-CIDR,103.45.128.0/22,no-resolve
 IP-CIDR,103.45.132.0/22,no-resolve
 IP-CIDR,103.45.136.0/22,no-resolve
@@ -3681,8 +3678,6 @@ IP-CIDR,103.45.88.0/22,no-resolve
 IP-CIDR,103.45.92.0/22,no-resolve
 IP-CIDR,103.45.96.0/19,no-resolve
 IP-CIDR,103.45.96.0/22,no-resolve
-IP-CIDR,103.45.97.0/24,no-resolve
-IP-CIDR,103.45.98.0/23,no-resolve
 IP-CIDR,103.46.0.0/22,no-resolve
 IP-CIDR,103.46.100.0/22,no-resolve
 IP-CIDR,103.46.104.0/22,no-resolve
@@ -8234,6 +8229,7 @@ IP-CIDR,139.200.0.0/13,no-resolve
 IP-CIDR,139.208.0.0/13,no-resolve
 IP-CIDR,139.217.0.0/16,no-resolve
 IP-CIDR,139.219.0.0/16,no-resolve
+IP-CIDR,139.219.138.0/24,no-resolve
 IP-CIDR,139.220.0.0/15,no-resolve
 IP-CIDR,139.220.0.0/17,no-resolve
 IP-CIDR,139.220.128.0/18,no-resolve
@@ -12505,7 +12501,6 @@ IP-CIDR,211.160.16.0/24,no-resolve
 IP-CIDR,211.160.160.0/19,no-resolve
 IP-CIDR,211.160.19.0/24,no-resolve
 IP-CIDR,211.160.195.0/24,no-resolve
-IP-CIDR,211.160.196.0/24,no-resolve
 IP-CIDR,211.160.20.0/22,no-resolve
 IP-CIDR,211.160.203.0/24,no-resolve
 IP-CIDR,211.160.205.0/24,no-resolve
