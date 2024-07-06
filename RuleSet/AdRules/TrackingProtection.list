@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.qobuz.surveysparrow.com
+.srvr.dmvs-apac.com
 .analytics.freespee.com
 .dash.zintrack.com
 .revotas.com
@@ -38877,6 +38879,7 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .telemetry.mozilla.org
+.peach-analytics.vercel.app
 .lfmetrics.loyalfans.com
 .track.amebame.com
 .pks-analytics.raenonx.cc

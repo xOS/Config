@@ -6258,7 +6258,6 @@
 .collect.usefathom.com
 .collect.verify.lnearn.com
 .collection.e-satisfaction.com
-.collector-*.px-client.net
 .collector-api.99designs.com
 .collector-api.frspecifics.com
 .collector-soompi.viki.io
@@ -6620,6 +6619,7 @@
 .munchkin.marketo.net
 .mv.treehousei.com
 .myscoop-tracking.googlecode.com
+.native-ads-events-api.c4s-rd.services
 .neocounter.neoworx-blog-tools.net
 .net-tracker.notolytix.com
 .netlify-rum.netlify.app
@@ -7700,6 +7700,7 @@
 .log.popin.cc
 .log000.goo.ne.jp
 .logger.torimochi-ad.net
+.mail-count.matsui.co.jp
 .metrics.streaks.jp
 .omt.shinobi.jp
 .panda.kasika.io
@@ -7808,6 +7809,7 @@
 .stats.gridmidia.com.br
 .tags.cmp.tail.digital
 .track.noddus.com
+.track.zapimoveis.com.br
 .tracker.tolvnow.com
 .visit-prod-us.occa.ocs.oraclecloud.com
 .webstats.sapo.pt
@@ -8141,6 +8143,7 @@
 .events-prod.autolist.com
 .events-tracker.deliveroo.net
 .events.api.godaddy.com
+.events.clips4sale.com
 .events.framer.com
 .events.mercadolibre.com
 .events.practo.com
@@ -44509,7 +44512,7 @@
 .fsm.lapresse.ca
 .hits.porn.fr
 .hlms.ecologie.gouv.fr
-.insights.decathlon.net
+.insights.v3.decathlon.net
 .kwgs.letudiant.fr
 .logstash-3.radio-canada.ca
 .metrics-broker.prod.p.tf1.fr
