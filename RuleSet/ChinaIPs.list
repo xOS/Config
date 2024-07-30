@@ -12981,8 +12981,7 @@ IP-CIDR,220.113.180.0/22,no-resolve
 IP-CIDR,220.113.184.0/22,no-resolve
 IP-CIDR,220.113.224.0/19,no-resolve
 IP-CIDR,220.113.96.0/21,no-resolve
-IP-CIDR,220.114.248.0/22,no-resolve
-IP-CIDR,220.114.64.0/21,no-resolve
+IP-CIDR,220.114.250.0/23,no-resolve
 IP-CIDR,220.115.16.0/20,no-resolve
 IP-CIDR,220.115.228.0/22,no-resolve
 IP-CIDR,220.115.232.0/21,no-resolve
