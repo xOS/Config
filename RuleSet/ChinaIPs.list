@@ -12043,6 +12043,7 @@ IP-CIDR,203.95.0.0/21,no-resolve
 IP-CIDR,203.95.104.0/21,no-resolve
 IP-CIDR,203.95.112.0/20,no-resolve
 IP-CIDR,203.95.128.0/18,no-resolve
+IP-CIDR,203.95.128.0/24,no-resolve
 IP-CIDR,203.95.129.0/24,no-resolve
 IP-CIDR,203.95.130.0/23,no-resolve
 IP-CIDR,203.95.132.0/22,no-resolve
