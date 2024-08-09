@@ -1,0 +1,11 @@
+# > Bybit
+DOMAIN-SUFFIX,rudderlabs.com
+DOMAIN-WILDCARD,*744cd.com
+DOMAIN-WILDCARD,*bybd*.com
+DOMAIN-WILDCARD,*.de
+DOMAIN-WILDCARD,*byabc*.com
+USER-AGENT,bybit*
+DOMAIN-WILDCARD,*byd*.com
+DOMAIN-SUFFIX,*bycsi.com
+DOMAIN-SUFFIX,bitverse.zone
+DOMAIN-KEYWORD,bybi
