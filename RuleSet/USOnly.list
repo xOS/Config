@@ -23,5 +23,7 @@ DOMAIN-SUFFIX,squarecdn.com
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,capitalone.com
 DOMAIN-SUFFIX,chase.com
-DOMAIN-SUFFIX,mytrueidentity.com,
+DOMAIN-SUFFIX,mytrueidentity.com
+DOMAIN-SUFFIX,acxiom.com
+DOMAIN-SUFFIX,americanexpress.com
 IP-ASN,18779,no-resolve
