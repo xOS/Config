@@ -6564,6 +6564,7 @@
 .event-service.letslinc.com
 .event-stream.spot.im
 .event.api.drift.com
+.event.collector.scopely.io
 .event.instiengage.com
 .event.syndigo.cloud
 .event.webcollage.net
@@ -6571,6 +6572,7 @@
 .eventgateway.soundcloud.com
 .eventlog.chatlead.com
 .eventlog.inspsearchapi.com
+.events-endpoint.pointandplace.com
 .events.air.tv
 .events.api.secureserver.net
 .events.attentivemobile.com
@@ -6581,6 +6583,7 @@
 .events.devcycle.com
 .events.elev.io
 .events.flagship.io
+.events.getmodemagic.com
 .events.getsitectrl.com
 .events.jotform.com
 .events.launchdarkly.com
@@ -6801,6 +6804,7 @@
 .nova.dice.net
 .nr.static.mmcdn.com
 .ns.rvmkitt.com
+.observe-nexus.pointandplace.com
 .observer.ip-label.net
 .octopart-analytics.com
 .oda.markitondemand.com
