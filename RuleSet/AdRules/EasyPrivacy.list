@@ -6803,6 +6803,7 @@
 .mv.treehousei.com
 .myscoop-tracking.googlecode.com
 .native-ads-events-api.c4s-rd.services
+.native-ads-events-api2.c4s-rd.services
 .neocounter.neoworx-blog-tools.net
 .net-tracker.notolytix.com
 .netlify-rum.netlify.app
@@ -6994,6 +6995,7 @@
 .stat.moevideo.net
 .stat.mydaddy.cc
 .stat.segitek.hu
+.stat.testme.cloud
 .stat.u.sb
 .stat.web-regie.com
 .statdb.pressflex.com
@@ -7057,6 +7059,7 @@
 .statscollector.sd-rtn.com
 .statt-collect.herokuapp.com
 .stg-data-collector.playbuzz.com
+.stream-log.dditscdn.com
 .streams.cablecar.sph.com.sg
 .sts.eccmp.com
 .sunlightmetrics.b-cdn.net
@@ -8439,6 +8442,7 @@
 .marketing.dropbox.com
 .mcc-tags.cisco.com
 .mcs-ie.tiktokw.eu
+.mcs-va-useast2a.tiktokv.com
 .mcs-va.tiktokv.com
 .mcs.tiktokv.us
 .mcs.tiktokw.us
@@ -8665,6 +8669,7 @@
 .telemetry.adobe.io
 .telemetry.algolia.com
 .telemetry.api.playstation.com
+.telemetry.canva.com
 .telemetry.firez.one
 .telemetry.stytch.com
 .telemetry.tradingview.com
@@ -44913,7 +44918,6 @@
 .bravo.israelweather.co.il
 .cellstats.mako.co.il
 .ds.haaretz.co.il
-.services.haaretz.co.il
 .stats.mako.co.il
 .adat.borsonline.hu
 .adat.ingatlanbazar.hu
