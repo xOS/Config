@@ -8,7 +8,7 @@
 //DOMAIN-KEYWORD,gcs-asia
 //DOMAIN-KEYWORD,southeast-
 //DOMAIN-KEYWORD,ap-southeast
-//DOMAIN-SUFFIX,com.hk
+DOMAIN-SUFFIX,com.hk
 
 # > 支付宝
 #DOMAIN-SUFFIX,alipay.com
