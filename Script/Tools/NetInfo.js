@@ -6,7 +6,7 @@
  const IPv4 = v4.primaryAddress;
  const radio = $network["cellular-data"].radio;
  const carrier = $network["cellular-data"].carrier;
- const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{8}).+(.{8})$/, "$1****$2") : null;
+ const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{7}).+(.{7})$/, "$1****$2") : null;
 //  let url = "https://api.grpc.fun";
  let url = "http://ip.ping0.cc/geo";
  // let url2 = "https://myip.ipip.net/json";
