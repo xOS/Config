@@ -1397,6 +1397,10 @@ DOMAIN-SUFFIX,abovede6.com
 DOMAIN-SUFFIX,cy6px.com
 DOMAIN-SUFFIX,stm65i8.com
 DOMAIN-SUFFIX,fb360xp.com
+DOMAIN-WILDCARD,blackhole.*.jd.com
+DOMAIN-SUFFIX,union-click.jd.com
+DOMAIN-SUFFIX,adtianmai.com
+DOMAIN-SUFFIX,admobile.top
 
 # > IPCIDR
 IP-CIDR,1.3.0.10/32,no-resolve
