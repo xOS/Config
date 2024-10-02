@@ -17,7 +17,7 @@ DOMAIN-SUFFIX,xmpush.xiaomi.com
 DOMAIN,g.cn.miaozhen.com
 
 # > 抖音商城
-DOMAIN-KEYWORD,ecombd
+//DOMAIN-KEYWORD,ecombd
 DOMAIN-SUFFIX,jinritemai.com
 DOMAIN,ecom.snssdk.com
 DOMAIN,ecom.douyin.com
