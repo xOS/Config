@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,tagcdnsub.work
 DOMAIN-SUFFIX,tagsub.net
 DOMAIN-SUFFIX,tagsssubscribe.com
 DOMAIN-WILDCARD,*-toutiao*.com,extended-matching
+AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22))
 
 # > Alibaba
 DOMAIN,log.mmstat.com
