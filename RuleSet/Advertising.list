@@ -968,6 +968,33 @@ DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
 
 # > 其它
+DOMAIN-SUFFIX,tosv.byted.org
+DOMAIN-SUFFIX,adjust.cn
+DOMAIN,ali-stats.jpush.cn
+DOMAIN-SUFFIX,sdk.1rtb.net
+DOMAIN-SUFFIX,dspsdk.pinduoduo.com
+DOMAIN-SUFFIX,t-dsp.pinduoduo.com
+DOMAIN-SUFFIX,qttunion.comm
+DOMAIN-SUFFIX,volces.com
+URL-REGEX,^http:\/\/pull-flv-l13\.douyincdn\.com\/third
+DOMAIN-SUFFIX,adintl.cn
+DOMAIN-SUFFIX,volces.com
+URL-REGEX,^https?:\/\/.+\/track\.gif
+DOMAIN-SUFFIX,gsp0.baidu.com
+IP-CIDR,153.3.238.242/32,no-resolve
+DOMAIN-SUFFIX,adwangmai.com
+IP-CIDR,116.196.84.232/32,no-resolve
+DOMAIN-WILDCARD,*umeng*.com
+DOMAIN-SUFFIX,dns.qq.com
+DOMAIN-SUFFIX,mobsurl.com 
+DOMAIN-SUFFIX,dutils.com 
+DOMAIN-SUFFIX,hiaiabc.com
+DOMAIN-SUFFIX,yksdks.com 
+DOMAIN-SUFFIX,cpatrk.net
+DOMAIN-SUFFIX,mob.com 
+DOMAIN-SUFFIX,dgstatic.jd.com
+DOMAIN-SUFFIX,im-x.jd.com
+DOMAIN-SUFFIX,dg.k.jd.com
 DOMAIN,dsp-x.jd.com
 DOMAIN,janapi.jd.com
 DOMAIN,ad.data.lianjia.com
