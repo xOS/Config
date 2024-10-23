@@ -968,6 +968,7 @@ DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
 
 # > 其它
+DOMAIN-WILDCARD,*ad*xiaomi.com
 DOMAIN-SUFFIX,tosv.byted.org
 DOMAIN-SUFFIX,adjust.cn
 DOMAIN,ali-stats.jpush.cn
