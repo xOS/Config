@@ -60,17 +60,17 @@ function doWork(){
                 if( i.year === dateArray[0] && i.month === dateArray[1] && i.day === dateArray[2] )
                 {
                     nlDate = date + ' ' + i.lMonth + '月' + i.lDate
+                    lnDate = i.lMonth + '月' + i.lDate
                     // 拼接今日节日
                     desc += i.desc?i.desc:''
                     desc += i.term?' ' + i.term:''
                     desc += i.value?' ' + i.value:''
                     // 拼接消息体
-                    notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日' + desc + '\n禁忌：' + i.avoid + '\n适宜：' + i.suit
+                    notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日' + '\n禁忌：' + i.avoid + '\n适宜：' + i.suit
                 }
             })
             $.isSurge() ? body = {
-                //title: title,
-                title: ${desc} ? `${title} [${desc}]`: `${title}`,
+                title: desc ? `${lnDate} [${desc}]`: `${lnDate}`,
                 content: notifyContent,
                 icon: 'calendar',
                 'icon-color': '#9978FF'
