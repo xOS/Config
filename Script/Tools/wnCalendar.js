@@ -69,7 +69,8 @@ function doWork(){
                 }
             })
             $.isSurge() ? body = {
-                title: title,
+                //title: title,
+                title: desc ? `title [desc]`: `title`,
                 content: notifyContent,
                 icon: 'calendar',
                 'icon-color': '#9978FF'
