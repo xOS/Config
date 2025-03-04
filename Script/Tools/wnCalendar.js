@@ -62,9 +62,10 @@ function doWork(){
                     nlDate = date + ' ' + i.lMonth + '月' + i.lDate
                     lnDate = i.lMonth + '月' + i.lDate
                     // 拼接今日节日
-                    desc += i.desc?i.desc:''
-                    desc += i.term?' ' + i.term:''
-                    desc += i.value?' ' + i.value:''
+                    desc += i.desc ? i.desc : '';
+desc += (i.term || i.value) ? 
+    (i.term ? (i.value ? `${i.term} ${i.value}` : i.term) : i.value) 
+    : '';
                     // 拼接消息体
                     notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日' + '\n禁忌：' + i.avoid + '\n适宜：' + i.suit
                 }
