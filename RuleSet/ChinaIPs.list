@@ -5742,7 +5742,6 @@ IP-CIDR,112.192.0.0/14,no-resolve
 IP-CIDR,112.196.208.0/24,no-resolve
 IP-CIDR,112.2.0.0/15,no-resolve
 IP-CIDR,112.213.101.0/24,no-resolve
-IP-CIDR,112.213.116.0/24,no-resolve
 IP-CIDR,112.224.0.0/11,no-resolve
 IP-CIDR,112.24.0.0/14,no-resolve
 IP-CIDR,112.28.0.0/15,no-resolve
