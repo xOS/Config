@@ -17,6 +17,10 @@ DOMAIN-SUFFIX,tagsssubscribe.com
 DOMAIN-WILDCARD,*-toutiao*.com,extended-matching
 AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22))
 
+# > Capital One
+DOMAIN-KEYWORD,capitalone
+DOMAIN-SUFFIX,capitalone.com
+
 # > Alibaba
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
