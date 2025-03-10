@@ -2,11 +2,30 @@
 # yarn lockfile v1
 
 
-"@adguard/hostlist-compiler@^1.0.35":
-  version "1.0.35"
-  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-1.0.35.tgz#39b0d84ea21f1549e72d29cf2dc5aacebfa84035"
-  integrity sha512-EveBdBmS8wgqwtUqsP4g6GBR+2KUtCR9XdVImzvs79dyFCloPkrizaEpaXPWbbeTLrtJQ5N3t5KPlwPq4FX/Gg==
+"@adguard/diff-builder@1.0.17":
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/@adguard/diff-builder/-/diff-builder-1.0.17.tgz#d7fd5f928d75f8955668ea0f45c51ac4ef8dd03a"
+  integrity sha512-pKM8oUQcl8IrVyJIlqwiAUMX4manZrfe2S/a9Np3VDbnaQFbGTwW1cmQoKffmdFUwk7dEKzQ83ILm1OuOu6kZw==
   dependencies:
+    commander "^11.1.0"
+    crypto-js "^4.2.0"
+    diff "git+https://github.com/105th/jsdiff.git#2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a"
+
+"@adguard/filters-downloader@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@adguard/filters-downloader/-/filters-downloader-2.3.0.tgz#dad0523cca05508d71f739428378a1e28fda151f"
+  integrity sha512-6sfrl9sroKjdrE0wgVh1hHq1Z1C7VdLbThJMwxL3Hucg5q121/+kzP4d0zF4dZOcE5ndbNOywJWu8zteUpYpXA==
+  dependencies:
+    "@adguard/diff-builder" "1.0.17"
+    axios "1.6.2"
+    crypto-js "^4.2.0"
+
+"@adguard/hostlist-compiler@^1.0.38":
+  version "1.0.38"
+  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-1.0.38.tgz#675bd6a476d68a6a22d798d0a2d58be2871383da"
+  integrity sha512-ujoSHikVoaQsKloTZIlMsG5P+HULp+h2gYYBk6KXePqdQGEdJ+3RLXD8m3Pm/Sh08lEp0fNGh2aaeL4BFgB0bQ==
+  dependencies:
+    "@adguard/filters-downloader" "^2.3.0"
     ajv "^6.12.0"
     ajv-errors "^1.0.1"
     axios "^0.19.2"
@@ -92,7 +111,7 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-axios@^0.19.2, axios@^0.24.0:
+axios@1.6.2, axios@^0.19.2, axios@^0.24.0:
   version "0.24.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
   integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
@@ -165,15 +184,30 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+commander@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-11.1.0.tgz#62fdce76006a68e5c1ab3314dc92e800eb83d906"
+  integrity sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==
+
 consola@^2.11.3:
   version "2.15.3"
   resolved "https://registry.yarnpkg.com/consola/-/consola-2.15.3.tgz#2e11f98d6a4be71ff72e0bdf07bd23e12cb61550"
   integrity sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==
 
+crypto-js@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
+  integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
+
 decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
+
+"diff@git+https://github.com/105th/jsdiff.git#2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a":
+  version "5.1.1"
+  uid "2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a"
+  resolved "git+https://github.com/105th/jsdiff.git#2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a"
 
 emoji-regex@^8.0.0:
   version "8.0.0"
