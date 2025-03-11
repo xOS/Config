@@ -969,8 +969,6 @@ DOMAIN-SUFFIX,googlevads-cn.com
 DOMAIN-SUFFIX,adtrafficquality.google
 DOMAIN-WILDCARD,ogads-*.clients*.google.com
 DOMAIN-SUFFIX,www.googletagmanager.com
-DOMAIN-SUFFIX,wpadmngr.com
-DOMAIN-SUFFIX,nawpush.com
 
 # > Youtube
 DOMAIN-SUFFIX,ads.youtube.com
@@ -999,6 +997,15 @@ DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
 
 # > 其它
+DOMAIN-SUFFIX,wpadmngr.com
+DOMAIN-SUFFIX,nawpush.com
+DOMAIN-SUFFIX,ads.betweendigital.com
+DOMAIN-SUFFIX,3638f4360b.com
+DOMAIN-SUFFIX,capndr.com
+DOMAIN-SUFFIX,wpushsdk.com
+DOMAIN-SUFFIX,nereserv.com
+DOMAIN-SUFFIX,1f1d9a652e.com
+DOMAIN-SUFFIX,ntvpforever.com
 DOMAIN-SUFFIX,adsmoloco.com
 DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,sink-ssdata.51touxiang.com
