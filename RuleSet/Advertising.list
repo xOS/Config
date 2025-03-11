@@ -967,6 +967,10 @@ DOMAIN-SUFFIX,googletagmanager-cn.com
 DOMAIN-SUFFIX,googletagservices-cn.com
 DOMAIN-SUFFIX,googlevads-cn.com
 DOMAIN-SUFFIX,adtrafficquality.google
+DOMAIN-WILDCARD,ogads-*.clients*.google.com
+DOMAIN-SUFFIX,www.googletagmanager.com
+DOMAIN-SUFFIX,wpadmngr.com
+DOMAIN-SUFFIX,nawpush.com
 
 # > Youtube
 DOMAIN-SUFFIX,ads.youtube.com
