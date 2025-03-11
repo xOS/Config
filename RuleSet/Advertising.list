@@ -959,7 +959,14 @@ DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googleadsserving.cn
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagservices.com
-DOMAIN,ads.youtube.com
+DOMAIN-SUFFIX,googleadservices-cn.com
+DOMAIN-SUFFIX,doubleclick-cn.net
+DOMAIN-SUFFIX,googletagservices-cn.com
+DOMAIN-SUFFIX,googlesyndication-cn.com
+DOMAIN-SUFFIX,googletagmanager-cn.com
+DOMAIN-SUFFIX,googletagservices-cn.com
+DOMAIN-SUFFIX,googlevads-cn.com
+DOMAIN-SUFFIX,adtrafficquality.google
 
 # > Youtube
 DOMAIN-SUFFIX,ads.youtube.com
