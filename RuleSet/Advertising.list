@@ -997,6 +997,7 @@ DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
 
 # > 其它
+DOMAIN-SUFFIX,2mdn.net
 DOMAIN-SUFFIX,wpadmngr.com
 DOMAIN-SUFFIX,nawpush.com
 DOMAIN-SUFFIX,ads.betweendigital.com
