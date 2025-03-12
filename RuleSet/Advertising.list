@@ -997,6 +997,9 @@ DOMAIN,ups.ksmobile.net
 DOMAIN,ws.ksmobile.net
 
 # > 其它
+DOMAIN-SUFFIX,lftxali.fancyapi.com
+DOMAIN-SUFFIX,xiawan8.com
+DOMAIN-SUFFIX,mantis.bayescom.com
 DOMAIN-SUFFIX,2mdn.net
 DOMAIN-SUFFIX,wpadmngr.com
 DOMAIN-SUFFIX,nawpush.com
