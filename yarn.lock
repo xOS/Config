@@ -11,21 +11,21 @@
     crypto-js "^4.2.0"
     diff "git+https://github.com/105th/jsdiff.git#2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a"
 
-"@adguard/filters-downloader@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@adguard/filters-downloader/-/filters-downloader-2.3.0.tgz#dad0523cca05508d71f739428378a1e28fda151f"
-  integrity sha512-6sfrl9sroKjdrE0wgVh1hHq1Z1C7VdLbThJMwxL3Hucg5q121/+kzP4d0zF4dZOcE5ndbNOywJWu8zteUpYpXA==
+"@adguard/filters-downloader@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@adguard/filters-downloader/-/filters-downloader-2.3.1.tgz#50198dfaa70c425646c0009299aeb15c6d17e665"
+  integrity sha512-3Mr2ye+BJJzhpaQBVgvka3TbCYzslXyHZ27TLkk4hlIWrLFy2rWufzqf5HYZehlGVViavQtSU6vuYzjkNnK49A==
   dependencies:
     "@adguard/diff-builder" "1.0.17"
     axios "1.6.2"
     crypto-js "^4.2.0"
 
-"@adguard/hostlist-compiler@^1.0.38":
-  version "1.0.38"
-  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-1.0.38.tgz#675bd6a476d68a6a22d798d0a2d58be2871383da"
-  integrity sha512-ujoSHikVoaQsKloTZIlMsG5P+HULp+h2gYYBk6KXePqdQGEdJ+3RLXD8m3Pm/Sh08lEp0fNGh2aaeL4BFgB0bQ==
+"@adguard/hostlist-compiler@^1.0.39":
+  version "1.0.39"
+  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-1.0.39.tgz#3182385a65f8be591887041931aec09be32e4dc1"
+  integrity sha512-UC3Tpn8k9/KhNVostajPoTFceTqqq1lHVInFv1eGBI/v/r8ydhulOzhxRERClzZ0F23Cl6+DPEqUbtGwzbvnMQ==
   dependencies:
-    "@adguard/filters-downloader" "^2.3.0"
+    "@adguard/filters-downloader" "^2.3.1"
     ajv "^6.12.0"
     ajv-errors "^1.0.1"
     axios "^0.19.2"
