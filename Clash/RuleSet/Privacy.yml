@@ -1,0 +1,84 @@
+payload:
+# > Privacy
+  - DOMAIN,track.tiara.daum.net
+  - DOMAIN,track.tiara.kakao.com
+  - DOMAIN,zgsdk.zhugeio.com
+
+# > 51.LA
+  - DOMAIN,js.users.51.la
+  - DOMAIN,mc.51.la
+  - DOMAIN,wc.51.la
+
+# > 58
+  - DOMAIN,track.58.com
+  - DOMAIN,tracklog.58.com
+  
+# > 阿里巴巴
+  - DOMAIN-KEYWORD,mdc.
+  - DOMAIN-KEYWORD,mum.
+  - DOMAIN-KEYWORD,adash
+  - DOMAIN,umdc.aliapp.org
+  - DOMAIN,ynuf.aliapp.org
+  - DOMAIN,amdc.alipay.com
+  - DOMAIN,mobilegw.alipay.com
+  - DOMAIN,mum.m.alibaba.com
+  - DOMAIN,mum.m.taobao.com
+  - DOMAIN,audid-api.taobao.com
+  - DOMAIN,mazu.m.qq.com
+  - DOMAIN,acs.m.taobao.com
+
+# > Baidu
+  - DOMAIN,hm.baidu.com
+  - DOMAIN,hmma.baidu.com
+
+# > 抖音
+  - DOMAIN,log.byteoversea.com
+  - DOMAIN,log.tiktokv.com
+  - DOMAIN,log-hl-ipv6.snssdk.com
+  - DOMAIN,log-lq.snssdk.com
+  - DOMAIN,log-va.tiktokv.com
+  - DOMAIN,xlog.snssdk.com
+  - DOMAIN,security.snssdk.com
+  - DOMAIN,gurd.snssdk.com
+  - DOMAIN,i.snssdk.com
+  - DOMAIN,ic.snssdk.com
+  - DOMAIN,mon.snssdk.com
+  - DOMAIN,mon.toutiao.com
+  - DOMAIN,mon.toutiaocloud.com
+  - DOMAIN,mon.toutiaocloud.net
+  - DOMAIN,srp4.snssdk.com
+  - DOMAIN,srp2.snssdk.com
+  - DOMAIN,srp1.snssdk.com
+  - DOMAIN,srp3.snssdk.com
+  - DOMAIN,diamond.snssdk.com
+  - DOMAIN,toutiao-frontier.snssdk.com
+
+# > ByteDance
+  - DOMAIN,log.byteoversea.com
+  - DOMAIN,log.tiktokv.com
+  - DOMAIN,log-hl-ipv6.snssdk.com
+  - DOMAIN,log-lq.snssdk.com
+  - DOMAIN,log-va.tiktokv.com
+  - DOMAIN,xlog.snssdk.com
+
+# > Google
+#  - DOMAIN-SUFFIX,googletagmanager.com
+#  - DOMAIN-SUFFIX,google-analytics.com
+#  - DOMAIN,safebrowsing.googleapis.com
+
+# > MI
+  - DOMAIN-SUFFIX,tracking.miui.com
+  - DOMAIN,data.mistat.xiaomi.com
+  - DOMAIN,tracking.intl.miui.com
+
+# > Tencent
+  - DOMAIN-SUFFIX,trace.qq.com
+  - DOMAIN,btrace.qq.com
+  - DOMAIN,btrace.video.qq.com
+  - DOMAIN,mtrace.qq.com
+  - DOMAIN,safebrowsing.urlsec.qq.com
+
+# > Umeng
+  - DOMAIN-KEYWORD,log.umeng.com
+  - DOMAIN-KEYWORD,logs.umeng.com
+  - DOMAIN-KEYWORD,logs.umengcloud.com

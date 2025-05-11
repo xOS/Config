@@ -1,0 +1,35 @@
+#!name=信息面板
+#!desc=日用夜用
+#!category=翠花
+
+[Panel]
+# > 服务状态
+服务状态 = title="服务状态",content="请刷新",style=info,update-interval=360,script-name=服务状态
+
+# > 倒数日
+倒数日 = title="倒数日",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF",update-interval=120,script-name=倒数日
+
+# > 刷新 DNS 缓存
+刷新 DNS = title="刷新 DNS ",content="DNS 缓存刷新",icon=leaf.arrow.triangle.circlepath,icon-color="#00C8FF",script-name= 刷新 DNS,update-interval=-1
+
+# > 抓包状态
+抓包状态 = title="抓包状态",content="请刷新",icon=tray.and.arrow.down.fill,icon-color="#9978FF", script-name=抓包状态,update-interval=-1
+
+# > 网络状态
+网络状态 = title="网络状态",content="请刷新",style=info,update-interval=360,script-name=网络状态
+
+[Script]
+# > 网络信息
+网络状态 = type=generic, script-path=https://hub.nange.cn/Script/Tools/NetInfo.js
+
+# > 刷新 DNS 缓存
+刷新 DNS = type=generic, script-path=https://hub.nange.cn/Script/Tools/FlushDNS.js
+
+# > 抓包状态
+抓包状态 = type=generic, script-path=https://hub.nange.cn/Script/Tools/CaptureMode.js
+
+# > 服务状态
+服务状态 = type=generic, script-path=https://hub.nange.cn/Script/Tools/APIStatus.js
+
+# > 倒数日
+倒数日 = type=generic, script-path=https://hub.nange.cn/Script/Tools/Days.js

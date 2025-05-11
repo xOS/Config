@@ -1,0 +1,44 @@
+# > 香港
+//DOMAIN-KEYWORD,hkt
+//DOMAIN-KEYWORD,hkb
+//DOMAIN-KEYWORD,hkg
+//DOMAIN-KEYWORD,sgsin
+//DOMAIN-KEYWORD,ap-sin
+//DOMAIN-KEYWORD,ap-hk
+//DOMAIN-KEYWORD,gcs-asia
+//DOMAIN-KEYWORD,southeast-
+//DOMAIN-KEYWORD,ap-southeast
+DOMAIN-SUFFIX,com.hk
+
+# > Club Sim
+DOMAIN-SUFFIX,clubsim.com.hk
+DOMAIN-SUFFIX,mcc454.pub.3gppnetwork.org
+DOMAIN-SUFFIX,three.com.hk
+DOMAIN-SUFFIX,csl.prod.ondemandconnectivity.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+
+# > 支付宝
+#DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipay.hk
+
+# > 八达通
+USER-AGENT,OctopusQuickBuild*
+DOMAIN-SUFFIX,octopus.com.hk
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,octopus-cards.com
+
+# > 银行
+DOMAIN-SUFFIX,livibank.queue-it.net
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zafinsvc.com
+DOMAIN-SUFFIX,zaticdn.com
+DOMAIN-SUFFIX,za.group
+
+# > WeChat
+DOMAIN,wechat.com
+DOMAIN,www.wechat.com
+IP-CIDR,203.205.232.0/23,no-resolve
+IP-CIDR,203.205.234.0/23,no-resolve
+IP-CIDR,203.205.252.0/23,no-resolve
+IP-CIDR,203.205.254.0/23,no-resolve

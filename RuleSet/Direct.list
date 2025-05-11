@@ -1,0 +1,205 @@
+# > General
+USER-AGENT,archero*
+USER-AGENT,coffeecorp*
+USER-AGENT,Coffee%20Corp*
+USER-AGENT,restaurant-mobile*
+DOMAIN,app.adjust.com
+DOMAIN,bdtj.tagtic.cn
+DOMAIN,api.nxtlnodes.com
+DOMAIN,nqcbls.xyz
+DOMAIN,gcsbie.xyz
+DOMAIN-SUFFIX,amysecure.com
+DOMAIN-SUFFIX,ultramobile.com
+DOMAIN-SUFFIX,tagcdnsub.work
+DOMAIN-SUFFIX,tagsub.net
+DOMAIN-SUFFIX,link.nobodys.uk
+DOMAIN-SUFFIX,tagsssubscribe.com
+DOMAIN-WILDCARD,*-toutiao*.com,extended-matching
+AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22))
+
+# > HKT
+AND,((IP-ASN,4760),(DEST-PORT,60379)),no-resolve
+
+# > Alibaba
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
+DOMAIN,t.uc.cn
+
+# # > Google
+# DOMAIN-SUFFIX,blog.google
+# DOMAIN-SUFFIX,googletraveladservices.com
+# DOMAIN,clientservices.googleapis.com
+# DOMAIN,dl.google.com
+# DOMAIN,dl.l.google.com
+# DOMAIN,update.googleapis.com
+# DOMAIN,translate.googleapis.com
+DOMAIN-SUFFIX,app-measurement.com
+
+# > Google Fonts API
+# DOMAIN,fonts.googleapis.com
+# DOMAIN,fonts.gstatic.com
+
+# > Tencent
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+
+# > Strava
+DOMAIN,analytics.strava.com
+DOMAIN-SUFFIX,ipip.net
+DOMAIN,sdkapi.sms.mob.com
+DOMAIN,api.share.mob.com
+DOMAIN-SUFFIX,code.sms.mob.com
+
+# > 空气质量
+DOMAIN,api.waqi.info
+
+# > IPIP
+DOMAIN-SUFFIX,ipip.net
+
+# > GEOIP
+DOMAIN,rtbasia.com
+DOMAIN-SUFFIX,api.grpc.fun
+DOMAIN-SUFFIX,ping0.cc
+
+# > 监控宝
+DOMAIN-SUFFIX,jiankongbao.com
+
+# > 日志收集
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,app-measurement.com
+
+# > 搜狗联盟
+DOMAIN,union.sogou.com
+DOMAIN,theta.sogoucdn.com
+
+# > 微博企业认证
+DOMAIN,e.biz.weibo.com
+DOMAIN,verified.biz.weibo.com
+DOMAIN,future.biz.weibo.com
+DOMAIN,wbapp.uve.weibo.com
+DOMAIN,sdkapp.uve.weibo.com
+
+# > 招商银行
+DOMAIN,ccclub.cmbchina.com
+
+# > 爱奇艺
+#DOMAIN,msg.qy.net
+
+# > 网站
+DOMAIN-SUFFIX,wzfou.com
+DOMAIN-SUFFIX,bwl87.com
+
+# > VPS Providers
+DOMAIN-SUFFIX,virmach.com
+DOMAIN-SUFFIX,spartanhost.net
+
+# > 网页云音乐
+DOMAIN-SUFFIX,dun.163yun.com
+
+# > 字节跳动
+DOMAIN-SUFFIX,ib.snssdk.com
+DOMAIN-SUFFIX,mon.snssdk.com
+
+# > 咪咕视频
+DOMAIN-SUFFIX,v.miguvideo.com
+
+# > 腾讯游戏
+DOMAIN,cloudctrl.gcloud.qq.com
+USER-AGENT,smoba*
+
+# > 微信
+#USER-AGENT,MicroMessenger*
+#USER-AGENT,WeChat*
+#USER-AGENT,MicroMessenger20%Client*
+#DOMAIN-SUFFIX,weixin.qq.com
+
+# > 百度搜索
+URL-REGEX,^https?:\/\/t[0-9]\.baidu\.com\/it
+
+# > 百度网盘
+#DOMAIN-SUFFIX,bdstatic.com
+#DOMAIN-SUFFIX,baidu.com
+
+# > MaxMind
+DOMAIN-KEYWORD,maxmind
+DOMAIN-SUFFIX,maxmind.com
+DOMAIN-SUFFIX,mmapiws.com
+
+# > SSH
+PROCESS-NAME,RoyalTSX
+PROCESS-NAME,Termius
+
+# > TeamViewer
+PROCESS-NAME,TeamViewer
+
+# > Proxy
+PROCESS-NAME,v2ray
+PROCESS-NAME,ss-local
+
+# > Microsoft
+DOMAIN-SUFFIX,msftconnecttest.com
+
+# > Steam
+USER-AGENT,Steam*
+DOMAIN-SUFFIX,pinyuncloud.com
+DOMAIN-SUFFIX,steamcontent.com
+
+# > UUBooster
+PROCESS-NAME,UUBooster
+
+# > Windows
+#DOMAIN-SUFFIX,windows.com
+#DOMAIN-SUFFIX,windows.net
+#DOMAIN-SUFFIX,windowsupdate.com
+
+# > Xunlei
+USER-AGENT,%E8%BF%85%E9%9B%B7
+DOMAIN-SUFFIX,xunlei.com
+
+# > Others
+// DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,spartanhost.net
+DOMAIN-SUFFIX,livechatinc.com
+
+# # > Download
+# PROCESS-NAME,aria2c
+# PROCESS-NAME,fdm
+# PROCESS-NAME,Folx
+# PROCESS-NAME,NetTransport
+# PROCESS-NAME,Thunder
+# PROCESS-NAME,Transmission
+# PROCESS-NAME,uTorrent
+# PROCESS-NAME,WebTorrent
+# PROCESS-NAME,WebTorrent Helper
+
+# # > Private Tracker
+# DOMAIN-SUFFIX,awesome-hd.me
+# DOMAIN-SUFFIX,broadcasthe.net
+# DOMAIN-SUFFIX,chdbits.co
+# DOMAIN-SUFFIX,classix-unlimited.co.uk
+# DOMAIN-SUFFIX,empornium.me
+# DOMAIN-SUFFIX,gazellegames.net
+# DOMAIN-SUFFIX,hdchina.org
+# DOMAIN-SUFFIX,hdsky.me
+# DOMAIN-SUFFIX,icetorrent.org
+# DOMAIN-SUFFIX,jpopsuki.eu
+# DOMAIN-SUFFIX,keepfrds.com
+# DOMAIN-SUFFIX,madsrevolution.net
+# DOMAIN-SUFFIX,m-team.cc
+# DOMAIN-SUFFIX,nanyangpt.com
+# DOMAIN-SUFFIX,ncore.cc
+# DOMAIN-SUFFIX,open.cd
+# DOMAIN-SUFFIX,ourbits.club
+# DOMAIN-SUFFIX,passthepopcorn.me
+# DOMAIN-SUFFIX,privatehd.to
+# DOMAIN-SUFFIX,redacted.ch
+# DOMAIN-SUFFIX,springsunday.net
+# DOMAIN-SUFFIX,tjupt.org
+# DOMAIN-SUFFIX,totheglory.im
+# DOMAIN-KEYWORD,aria2
+# DOMAIN-KEYWORD,announce
+# DOMAIN-KEYWORD,torrent
+# DOMAIN-KEYWORD,tracker
+# DOMAIN-SUFFIX,smtp
+# URL-REGEX,(Subject|HELO|SMTP)

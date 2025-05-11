@@ -1,0 +1,6 @@
+payload:
+# > WildRift
+  - DOMAIN-SUFFIX,pvp.net
+  - DOMAIN-SUFFIX,riotcdn.net
+  - DOMAIN-SUFFIX,riotgames.com
+  - DOMAIN-SUFFIX,metric-api.newrelic.com

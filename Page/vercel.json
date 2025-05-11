@@ -1,0 +1,22 @@
+{
+  "installCommand": "yarn install",
+  "buildCommand": "yarn run build",
+  "outputDirectory": "../public",
+  "routes": [
+    {
+      "src": "/(RuleSet|Module|Mock|MitM|IconSet|GeoIP|Script|static)/.*"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/app/.*",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/.*",
+      "status": 404,
+      "dest": "/404.html"
+    }
+  ]
+}

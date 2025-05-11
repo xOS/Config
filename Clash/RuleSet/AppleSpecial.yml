@@ -1,0 +1,7 @@
+# > iCloudSpecial
+payload:
+  - DOMAIN,gateway.icloud.com
+  - DOMAIN,testflight.apple.com
+  - DOMAIN,p46-fmf.icloud.com
+  - DOMAIN,p46-keyvalueservice.icloud.com
+  - DOMAIN-SUFFIX,blobstore.apple.com

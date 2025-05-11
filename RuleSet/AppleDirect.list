@@ -1,0 +1,44 @@
+# > General
+IP-ASN,63707
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,crashlytics.com
+
+# > Apple Music
+DOMAIN,aod.itunes.apple.com
+DOMAIN,api.smoot.apple.cn
+DOMAIN,music.apple.com
+DOMAIN,mvod.itunes.apple.com
+
+# > App Store
+DOMAIN-SUFFIX,appstore.com
+USER-AGENT,com.apple.appstored*
+PROCESS-NAME,storedownloadd
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN,iosapps.itunes.apple.com
+DOMAIN,osxapps.itunes.apple.com
+USER-AGENT,com.apple.appstored*
+
+# > Update
+DOMAIN,supportdownload.apple.com
+DOMAIN,appldnld.apple.com
+DOMAIN,swcdn.apple.com
+DOMAIN,apptrailers.itunes.apple.com
+DOMAIN,updates-http.cdn-apple.com
+
+# > Map
+DOMAIN,gs-loc-cn.apple.com
+
+# 引用地址 https://support.apple.com/en-us/HT210060
+# Apple 推送通知 - 当使用 Apple 推送通知服务 (APNS) 时，Apple 设备需要访问以下主机。
+DOMAIN-SUFFIX, push.apple.com
+DOMAIN, identity.apple.com
+IP-CIDR, 17.249.0.0/16, no-resolve
+IP-CIDR, 17.252.0.0/16, no-resolve
+IP-CIDR, 17.57.144.0/22, no-resolve
+IP-CIDR, 17.188.128.0/18, no-resolve
+IP-CIDR, 17.188.20.0/23, no-resolve
+IP-CIDR6, 2620:149:a44::/48, no-resolve
+IP-CIDR6, 2403:300:a42::/48, no-resolve
+IP-CIDR6, 2403:300:a51::/48, no-resolve
+IP-CIDR6, 2a01:b740:a42::/48, no-resolve

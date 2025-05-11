@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Surge 默认拦截页面</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: #444;
+      }
+      body {
+        font-size: 14px;
+        font-family: "宋体";
+      }
+      .main {
+        width: 800px;
+        margin: 15% auto;
+      }
+      .title {
+        background: #ff9800;
+        color: #fff;
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+      }
+      .content {
+        background-color: #f3f7f9;
+        border: 1px dashed #c6d9b6;
+        padding: 20px;
+      }
+      .t1 {
+        color: #ff4000;
+        font-weight: bold;
+        margin: 0 0 10px;
+      }
+      .t2 {
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+      ol {
+        margin: 0 0 20px 22px;
+        padding: 0;
+      }
+      ol li {
+        line-height: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="title">该请求已被 Surge 相关规则设置拦截！</div>
+      <div class="content">
+        <p class="t1">部分请求信息：</p>
+        <table>
+          <tr>
+            <td nowrap>请求 URL</td>
+            <td colspan="4"><span id="url"></span></td>
+          </tr>
+          <tr>
+            <td nowrap>请求时间</td>
+            <td colspan="4"><span id="stime"></span></td>
+          </tr>
+          <tr>
+            <td nowrap>直连 IP</td>
+            <td colspan="4">
+              <span id="IPloc"></span>
+            </td>
+          </tr>
+          <tr>
+            <td nowrap>代理 IP</td>
+            <td colspan="4">
+              <span id="ipp"></span>
+            </td>
+          </tr>
+          <tr>
+            <td nowrap>出国 IP</td>
+            <td colspan="4">
+              <span id="ipw"></span>
+            </td>
+          </tr>
+          <tr>
+            <td nowrap>请求 UA</td>
+            <td colspan="4">
+              <span id="ua"></span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <style>
+      table {
+        width: 100%;
+        max-width: 100%;
+        border: 1px dashed #c6d9b6;
+        padding: 0;
+        border-collapse: collapse;
+        word-wrap:break-word;
+        word-break:break-all;
+      }
+      table th {
+        font-size: 15px;
+      }
+      table tr {
+        border: 1px dashed #c6d9b6;
+        padding: 5px;
+      }
+      table th {
+        background: #5cb85c;
+      }
+      table th,
+      table td {
+        border: 1px dashed #c6d9b6;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 5px;
+        text-align: left;
+      }
+      table.table-hover > tbody > tr:hover > td,
+      table.table-hover > tbody > tr:hover > th {
+        background-color: #f5f5f5;
+      }
+    </style>
+    <script type="text/javascript">
+      var dom = {
+        element: null,
+        get: function (o) {
+          function F() {}
+          F.prototype = this;
+          obj = new F();
+          obj.element = typeof o == "object" ? o : document.createElement(o);
+          return obj;
+        },
+        width: function (w) {
+          if (!this.element) return;
+          this.element.style.width = w;
+          return this;
+        },
+        html: function (h) {
+          if (!this.element) return;
+          this.element.innerHTML = h;
+          return this;
+        },
+      };
+      
+      $ = function (s) {
+        return dom.get(document.getElementById(s.substring(1)));
+      };      
+
+      $.getData = function (url, f) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            f(xhr.responseText);
+          }
+        };
+        xhr.send();
+      };
+
+      $.getJSON = function (url, f) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            if (window.JSON) {
+              f(JSON.parse(xhr.responseText));
+            } else {
+              f(new Function("return " + xhr.responseText)());
+            }
+          }
+        };
+        xhr.send();
+      };
+
+      $.postJSON = function (url, f) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            if (window.JSON) {
+              f(JSON.parse(xhr.responseText));
+            } else {
+              f(new Function("return " + xhr.responseText)());
+            }
+          }
+        };
+        xhr.send();
+      };
+
+      function getIPloc() {
+        $.getJSON("https://myip.ipip.net/json", function (data) {
+          remoteip = getIPp.ipp;
+          ip = data.data.ip;
+          iploc =
+            data.data.location[0] +
+            " " +
+            data.data.location[1] +
+            " " +
+            data.data.location[2] +
+            " " +
+            data.data.location[3] +
+            " " +
+            data.data.location[4];
+
+          $("#IPloc").html(ip + " | " + iploc);
+        });
+      }
+
+      function getIPp() {
+        $.getJSON("https://ipapi.co/json", function (data) {
+          $("#ipp").html(
+            data.ip +
+              " | " +
+              data.country_code +
+              " | " +
+              data.region +
+              " | " +
+              data.city +
+              " | " +
+              data.asn +
+              " " +
+              data.org
+          );
+          ipp = data.ip;
+        });
+      }
+
+      function getIPw() {
+        var token = "1632d503de4a10";
+        $.getJSON("https://ipinfo.io/json?token=" + token, function (data) {
+          $("#ipw").html(
+            data.ip +
+              " | " +
+              data.country +
+              " | " +
+              data.region +
+              " | " +
+              data.city +
+              " | " +
+              data.org
+          );
+        });
+      }
+      var userAgent = navigator.userAgent;
+      document.getElementById("ua").textContent = userAgent;
+      Date.prototype.format = function (format) {
+        var date = {
+          "M+": this.getMonth() + 1,
+          "d+": this.getDate(),
+          "H+": this.getHours(),
+          "m+": this.getMinutes(),
+          "s+": this.getSeconds(),
+          "q+": Math.floor((this.getMonth() + 3) / 3),
+          "S+": this.getMilliseconds(),
+        };
+        if (/(y+)/i.test(format)) {
+          format = format.replace(
+            RegExp.$1,
+            (this.getFullYear() + "").substr(4 - RegExp.$1.length)
+          );
+        }
+        for (var k in date) {
+          if (new RegExp("(" + k + ")").test(format)) {
+            format = format.replace(
+              RegExp.$1,
+              RegExp.$1.length == 1
+                ? date[k]
+                : ("00" + date[k]).substr(("" + date[k]).length)
+            );
+          }
+        }
+        return format;
+      };
+      var date = new Date();
+      var stime = new Date(date).format("yyyy年MM月dd日 HH:mm:ss");
+      document.getElementById("stime").textContent = stime;
+      var href = window.location.href;
+      document.getElementById("url").textContent = href;
+      window.onload = function () {
+        setTimeout(getIPw, 0);
+        setTimeout(getIPp, 0);
+        setTimeout(getIPloc, 0);
+      };
+    </script>
+  </body>
+</html>
