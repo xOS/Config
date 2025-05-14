@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,medproad.com
 DOMAIN-WILDCARD,*dsp.meituan.com
 DOMAIN-SUFFIX,dsp-creative-test.ubixioe.com
 DOMAIN-SUFFIX,content-understand-strategy.sm.cn
+DOMAIN-SUFFIX,adapi.izuiyou.com
 
 # > 小红书
 DOMAIN-KEYWORD,ads-video
