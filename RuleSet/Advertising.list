@@ -15,6 +15,11 @@ DOMAIN-SUFFIX,dsp-creative-test.ubixioe.com
 DOMAIN-SUFFIX,content-understand-strategy.sm.cn
 DOMAIN-SUFFIX,adapi.izuiyou.com
 DOMAIN-SUFFIX,ixiaochuan.cn
+DOMAIN,tips.video.qq.com
+DOMAIN,playproxy.video.qq.com
+DOMAIN-WILDCARD,broker.tips*.gz.tencent.com
+DOMAIN-WILDCARD,disp-*.3g.qq.com
+DOMAIN,vv.video.qq.com
 
 # > 小红书
 DOMAIN-KEYWORD,ads-video
