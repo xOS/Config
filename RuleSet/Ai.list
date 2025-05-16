@@ -1,0 +1,71 @@
+# >> OpenAI / ChatGPT
+# DOMAIN,api.statsig.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN-KEYWORD,openai
+
+# >> Grok
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+
+# >> Perplexity
+DOMAIN-SUFFIX,perplexity.ai
+
+# >> Claude
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# >> Google Gemini
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
+
+# >> Google DeepMind
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+
+# >> Google Generative Language API
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+
+# >> Google AI Studio
+DOMAIN,ai.google.dev
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,generativeai.google
+
+# >> Google NotebookLM
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+
+# >> POE
+DOMAIN-SUFFIX,poe.com
+
+# >> Meta AI
+DOMAIN-SUFFIX,meta.ai
+
+# >> Cloudflare AI Gateway
+DOMAIN,gateway.ai.cloudflare.com
+
+# >> Dify.AI
+DOMAIN-SUFFIX,dify.ai
+
+# >> Jasper
+DOMAIN-SUFFIX,clipdrop.co
+DOMAIN-SUFFIX,jasper.ai
+
+# >> OpenArt
+DOMAIN-SUFFIX,openart.ai
+
+# >> GitHub Copilot
+DOMAIN,api.github.com
+
+# >> groq
+DOMAIN-SUFFIX,groq.com
