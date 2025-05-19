@@ -21,6 +21,9 @@ DOMAIN-WILDCARD,broker.tips*.gz.tencent.com
 DOMAIN-WILDCARD,disp-*.3g.qq.com
 DOMAIN,vv.video.qq.com
 DOMAIN-SUFFIX,chinaliftoff.io
+DOMAIN,ai.yun.139.com
+DOMAIN-SUFFIX,andfx.cn
+DOMAIN,bigdata.10086.cn
 
 # > 小红书
 DOMAIN-KEYWORD,ads-video
