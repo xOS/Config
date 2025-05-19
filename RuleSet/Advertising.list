@@ -20,6 +20,7 @@ DOMAIN,playproxy.video.qq.com
 DOMAIN-WILDCARD,broker.tips*.gz.tencent.com
 DOMAIN-WILDCARD,disp-*.3g.qq.com
 DOMAIN,vv.video.qq.com
+DOMAIN-SUFFIX,chinaliftoff.io
 
 # > 小红书
 DOMAIN-KEYWORD,ads-video
