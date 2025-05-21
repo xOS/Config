@@ -25,6 +25,11 @@ DOMAIN,ai.yun.139.com
 DOMAIN-SUFFIX,andfx.cn
 DOMAIN,bigdata.10086.cn
 
+# > 百度网盘
+DOMAIN,sofire.baidu.com
+DOMAIN-SUFFIX,hpplay.cn
+DOMAIN,open.e.kuaishou.com
+
 # > 小红书
 DOMAIN-KEYWORD,ads-video
 DOMAIN-KEYWORD,ads-img
