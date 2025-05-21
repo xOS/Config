@@ -24,11 +24,13 @@ DOMAIN-SUFFIX,chinaliftoff.io
 DOMAIN,ai.yun.139.com
 DOMAIN-SUFFIX,andfx.cn
 DOMAIN,bigdata.10086.cn
+DOMAIN-SUFFIX,adpinpai.video.weibocdn.com
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
 DOMAIN-SUFFIX,hpplay.cn
 DOMAIN,open.e.kuaishou.com
+DOMAIN,api-v3.mentamob.com
 
 # > 小红书
 DOMAIN-KEYWORD,ads-video
