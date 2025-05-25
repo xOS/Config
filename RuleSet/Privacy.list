@@ -5,6 +5,7 @@ DOMAIN,zgsdk.zhugeio.com
 DOMAIN,static.cloudflareinsights.com
 DOMAIN,graph.facebook.com
 DOMAIN,graph.instagram.com
+DOMAIN,tcbox.baidu.com
 
 # > Alibaba
 USER-AGENT,Munion-SDK*
@@ -28866,6 +28867,4 @@ DOMAIN-SUFFIX,smetrics.plymouthrock.com
 DOMAIN-SUFFIX,smetrics.pmis.abbott.com
 DOMAIN-SUFFIX,smetrics.podiumpodcast.com
 DOMAIN-SUFFIX,smetrics.pods.com
-DOMAIN-SUFFIX,smetrics.politico.com
-DOMAIN-SUFFIX,smetrics.politico.eu
-DOMAIN-SUFFIX,sm
+DOMAIN-SUFFIX,smetrics.politico.co
