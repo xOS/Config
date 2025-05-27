@@ -25,6 +25,9 @@ DOMAIN,ai.yun.139.com
 DOMAIN-SUFFIX,andfx.cn
 DOMAIN,bigdata.10086.cn
 DOMAIN-SUFFIX,adpinpai.video.weibocdn.com
+DOMAIN,activity.10010.com
+DOMAIN,ad.admin.10010.com
+DOMAIN,smartad.10010.com
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
