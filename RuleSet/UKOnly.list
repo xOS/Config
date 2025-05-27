@@ -58,6 +58,7 @@ DOMAIN-SUFFIX,collect.tealiumiq.com
 DOMAIN-SUFFIX,tags.tiqcdn.com
 DOMAIN-WILDCARD,execute-api.eu-west-*.amazonaws.com
 DOMAIN-WILDCARD,sdk.fra-0*.braze.eu
+hsbc-app.token.io,hsbc-app.token.io
 
 # > 地区检测
 DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
