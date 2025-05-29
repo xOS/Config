@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.reco.target2sell.com
 .t.tnafpt.com
 .getmetrical.com
 .trt-scripts.usedrop.io
@@ -54204,6 +54205,9 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.telegraph.prd.api.bleacherreport.com
+.gmss.use1.prd.api.discomax.com
+.events.shoplift.ai
 .flxr.myplan-c.com
 .seghg.hottopic.com
 .imgsct.cookiebot.com
@@ -57357,9 +57361,9 @@
 .mon-sg.capcutapi.com
 .tnc-sg.capcutapi.com
 .tnc-boot.capcutapi.com
-.tnc-va-us-looki.capcutapi.com
-.mon-va-us-looki.capcutapi.com
-.log-va-us-looki.capcutapi.com
+.tnc-va*.capcutapi.com
+.mon-va*.capcutapi.com
+.log-va*.capcutapi.com
 .metrics-prod.suno.com
 .ulog*.kwaipros.com
 .logs-ingress.svc.vinted.com
