@@ -4,6 +4,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.pubtrky.com
+.logs2.sportslocalmedia.com
+.analytics.pyksid.com
 .yandexmetrica.com
 .sr-client-cfg.amplitude.com
 .regionconfig.amplitude.com
@@ -54337,6 +54340,8 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.c2-eu.piano.io
+.proxima.midjourney.com
 .e.aimerce.ai
 .j0v36abmdj.execute-api.us-east-1.amazonaws.com
 .lumberjack-metrics.razorpay.com
@@ -54350,7 +54355,6 @@
 .img.sct.eu1.usercentrics.eu
 .segapi.splice.com
 .t.illuma-tech.com
-.experiment-variant.baemin.com
 .cdp.yna.co.kr
 .ingestion.webanalytics.italia.it
 .njoevqi1nx.hockerty.com
