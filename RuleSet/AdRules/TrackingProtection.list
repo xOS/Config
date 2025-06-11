@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.replay.reviews.io
 .ads-alpha.ewscloud.com
 .anonymised.io
 .m6ulblxep4.execute-api.us-east-1.amazonaws.com
@@ -53949,9 +53950,11 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.api.blackcrow.ai
+.analytics.python.org
+.t.danielwellington.com
 .analytics.emforce.co.kr
 .track.ssg.com
-.c2-eu.piano.io
 .proxima.midjourney.com
 .e.aimerce.ai
 .j0v36abmdj.execute-api.us-east-1.amazonaws.com
