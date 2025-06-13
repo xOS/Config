@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.api.melonity.gg
 .replay.reviews.io
 .ads-alpha.ewscloud.com
 .anonymised.io
@@ -78,7 +79,6 @@
 .watchtower.graindata.com
 .megadata.co.kr
 .easytomessage.com
-.unalytics.top
 .aisiteanalytics.com
 .cdnlogs.org
 .pushd.netky.tech
@@ -681,7 +681,6 @@
 .srmdata-*.com
 .doppler-beacons.cbsivideo.com
 .events.askjdhaa.com
-.tikstok.fun
 .smart.idmnet.pl
 .pollster.pl
 .x9.shinobi.jp
@@ -706,7 +705,6 @@
 .hermes.allo-media.net
 .cdn.cohesionapps.com
 .c212.net
-.imp.xmax.jp
 .analytics.audionow.de
 .cdn.kaizenplatform.net
 .oaprodlogging.yo-digital.com
@@ -1002,7 +1000,6 @@
 .trk-egestas.com
 .d41.co
 .tags.soloway.ru
-.instadrama.site
 .shoplytics.com
 .analytics.tradedoubler.com
 .edgrmtracking.com
@@ -1538,7 +1535,6 @@
 .lk.vectoranalytics.ru
 .track.saygames.io
 .stats.datawrapper.de
-.bigdata.riamedia.com.ua
 .track.adabra.com
 .reindaks.com
 .go.rcvlinks.com
@@ -1646,7 +1642,6 @@
 .pymx5.com
 .ubiquitousyard.com
 .i.compendium.com
-.statsp.fpop.net
 .conductrics.com
 .api.cazamba.com
 .maliva-mcs.byteoversea.com
@@ -3458,7 +3453,6 @@
 .trailheadapp.com
 .trakken.de
 .treehousei.com
-.trendcounter.com
 .trendcounter.de
 .trendemon.com
 .triggeredmessaging.com
@@ -53950,6 +53944,8 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.stats.anime-go.cc
+.kamp.daum.net
 .netmarbleslog.netmarble.com
 .slf.fugu-it.com
 .ukadh.livelyroot.com
@@ -55747,7 +55743,6 @@
 .hi.hellobar.com
 .hindsight.significanceapps.com
 .hit.darmoweliczniki.pl
-.hit.demirorenteknoloji.com
 .hit.mynet.com
 .hits.dealer.com
 .hits.theguardian.com
@@ -56160,7 +56155,6 @@
 .sp.bucyrustelegraphforum.com
 .sp.burlingtonfreepress.com
 .sp.caller.com
-.sp.centralfloridafuture.com
 .sp.chillicothegazette.com
 .sp.cincinnati.com
 .sp.citizen-times.com
@@ -56474,13 +56468,11 @@
 .trac.clicplan.fr
 .trac.clicplan.it
 .trac.couponandgo.co.uk
-.trac.couponandgo.com
 .trac.oferting.co.uk
 .trac.oferting.es
 .trac.oferting.fr
 .trac.oferting.it
 .trac.oferting.net
-.trac.oferting.org
 .tracelog.www.alibaba.com
 .track.analitycs.net
 .track.audtd.com
@@ -56987,6 +56979,9 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.data-detect.nie.easebar.com
+.mgbsdk*.matrix.easebar.com
+.applog*.matrix.easebar.com
 .urbanairship.com
 .hz-telemetry.adobe.io
 .smartcard.apps.coloros.com
