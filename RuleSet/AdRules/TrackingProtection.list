@@ -1769,7 +1769,6 @@
 .getbeacon.io
 .ymetrica.com
 .dep-x.com
-.fandommetrics.com
 .szsmtk.com
 .phywi.org
 .doomna.com
@@ -1805,7 +1804,6 @@
 .0stats.com
 .1-cl0ud.com
 .103bees.com
-.105app.com
 .11nux.com
 .123-counter.de
 .123compteur.com
@@ -1821,7 +1819,6 @@
 .2cnt.net
 .360i.com
 .360tag.com
-.360tag.net
 .3dlivestats.com
 .3dstats.com
 .3gl.net
@@ -1862,7 +1859,6 @@
 .activeconversion.com
 .activemeter.com
 .activeprospects.com
-.actnx.com
 .acxiom-online.com
 .ad-score.com
 .adblade.com
@@ -1937,7 +1933,6 @@
 .aprtx.com
 .aqtracker.com
 .arcadeweb.com
-.arena-quantum.co.uk
 .arkayne.com
 .arlime.com
 .arpxs.com
@@ -2173,7 +2168,6 @@
 .counter-kostenlos.info
 .counter-kostenlos.net
 .counter-treff.de
-.counter.de
 .counter.gd
 .counter27.ch
 .counterbot.com
@@ -2202,7 +2196,6 @@
 .countus.fr
 .countyou.de
 .countz.com
-.cpcmanager.com
 .cqcounter.com
 .cquotient.com
 .craftkeys.com
@@ -2271,7 +2264,6 @@
 .dotmetrics.net
 .dotomi.com
 .dpbolvw.net
-.dps-reach.com
 .dreamcounter.de
 .dsmmadvantage.com
 .dsparking.com
@@ -2352,7 +2344,6 @@
 .evergage.com
 .evisitanalyst.com
 .evyy.net
-.ewebanalytics.com
 .exactag.com
 .exapxl.de
 .exclusiveclicks.com
@@ -2402,7 +2393,6 @@
 .flurry.com
 .flx1.com
 .flxpxl.com
-.flyingpt.com
 .followercounter.com
 .footprintdns.com
 .footprintlive.com
@@ -2529,7 +2519,6 @@
 .hit2map.com
 .hitbox.com
 .hitcount.dk
-.hitcountersonline.com
 .hitcounterstats.com
 .hitgelsin.com
 .hitgraph.jp
@@ -2606,7 +2595,6 @@
 .insigit.com
 .insitemetrics.com
 .inspectlet.com
-.instadia.net
 .instore.biz
 .intarget.ru
 .intelli-direct.com
@@ -2643,7 +2631,6 @@
 .iplocationtools.com
 .ipro.com
 .iqfp1.com
-.iryazan.ru
 .ist-track.com
 .istat24.com
 .istats.nl
@@ -2772,7 +2759,6 @@
 .mb4a.com
 .mbsy.co
 .mbww.com
-.mdotlabs.com
 .measuremap.com
 .measurementapi.com
 .mediaarmor.com
@@ -2803,7 +2789,6 @@
 .mktoresp.com
 .ml314.com
 .mlclick.com
-.mlno6.com
 .mmccint.com
 .mmstat.com
 .mmtro.com
@@ -3011,7 +2996,6 @@
 .pjtra.com
 .placemypixel.com
 .platformpanda.com
-.plecki.com
 .pleisty.com
 .plexop.com
 .plexworks.de
@@ -56979,6 +56963,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.*-datareceiver.aki-game.net
 .data-detect.nie.easebar.com
 .mgbsdk*.matrix.easebar.com
 .applog*.matrix.easebar.com
@@ -57338,6 +57323,7 @@
 .eventgw.twilio.com
 .log.estand.jp
 .event-search.jorte.com
+.sdk-log-upload-os.hoyoverse.com
 .ad-log-upload-os.hoyoverse.com
 .apm-log-upload-os.hoyoverse.com
 .devlog-upload-os.hoyoverse.com
@@ -57667,8 +57653,6 @@
 .analytics.mobile.yandex.net
 .analytics.query.yahoo.com
 .andmlb.kshwtj.com
-.api-analytics-bootstrap.metaps.com
-.api-analytics.metaps.com
 .api.amplitude.com
 .api.analytics.omgpop.com
 .api.apptentive.com
