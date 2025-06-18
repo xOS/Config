@@ -72,11 +72,11 @@ if (CNNET.includes(carrier)) {
         if (wifi.ssid && isValid(wifi.ssid)) {
             title = `WiFi 网络 | ${wifi.ssid}`;
         } else {
-            let titleParts = [`蜂窝数据`];
+            let titleParts = ["蜂窝数据"];
             if (isValid(server)) titleParts.push(server);
             if (isValid(radios)) titleParts.push(radios);
             if (isValid(radio)) titleParts.push(`[${radio}]`);
-            title = titleParts.join(' ');
+            title = titleParts.join(' | ');
         }
 
         let content = '';
