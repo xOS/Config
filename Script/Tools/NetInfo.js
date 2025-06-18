@@ -64,12 +64,13 @@ if (CNNET.includes(carrier)) {
         const info = data.toString().split("\n")[1].replace(/(中国|\s+|\/|—|[a-zA-Z])/gm, '');
 
         const body = {
-            title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : `蜂窝数据 | ${server} ${radios} [${radio}]`,
-            content: `内部 IPv4：${ip}` +
-                (wifi.ssid && router && router !== 'unknown' ? `\n路由 IPv4：${router}` : "") +
-                (externalIP && externalIP !== 'unknown' ? `\n外部 IPv4：${externalIP}` : "") +
-                (IPv6 && IPv6 !== 'unknown' ? `\n外部 IPv6：${IPv6}` : "") +
-                (info && info !== 'unknown' && info.trim() ? `\nIPv4 信息：${info}` : ""),
+            title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : 
+                `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` | ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`,
+            content: `内部 IPv4：${ip} \n` +
+                (wifi.ssid ? `路由 IPv4：${router}\n` : "") +
+                `外部 IPv4：${externalIP}\n` +
+                (IPv6 ? `外部 IPv6：${IPv6}\n` : "") +
+                `IPv4 信息：${info}`,
             icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
             "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
         };
