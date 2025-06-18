@@ -63,15 +63,34 @@ if (CNNET.includes(carrier)) {
         const externalIP = data.toString().split("\n")[0];
         const info = data.toString().split("\n")[1].replace(/(中国|\s+|\/|—|[a-zA-Z])/gm, '');
 
+        // Helper function to check if a value is valid
+        function isValid(val) {
+            return val !== undefined && val !== null && val !== '' && val !== 'unknown';
+        }
+
+        let title = '';
+        if (wifi.ssid && isValid(wifi.ssid)) {
+            title = `WiFi 网络 | ${wifi.ssid}`;
+        } else {
+            let titleParts = [`蜂窝数据`];
+            if (isValid(server)) titleParts.push(server);
+            if (isValid(radios)) titleParts.push(radios);
+            if (isValid(radio)) titleParts.push(`[${radio}]`);
+            title = titleParts.join(' ');
+        }
+
+        let content = '';
+        if (isValid(ip)) content += `内部 IPv4：${ip} \n`;
+        if (wifi.ssid && isValid(wifi.ssid) && isValid(router)) content += `路由 IPv4：${router}\n`;
+        if (isValid(externalIP)) content += `外部 IPv4：${externalIP}\n`;
+        if (isValid(IPv6)) content += `外部 IPv6：${IPv6}\n`;
+        if (isValid(info)) content += `IPv4 信息：${info}`;
+
         const body = {
-            title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : `蜂窝数据 | ${server} ${radios} [${radio}]`,
-            content: `内部 IPv4：${ip} \n` +
-                (wifi.ssid ? `路由 IPv4：${router}\n` : "") +
-                `外部 IPv4：${externalIP}\n` +
-                (IPv6 ? `外部 IPv6：${IPv6}\n` : "") +
-                `IPv4 信息：${info}`,
-            icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
-            "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
+            title: title,
+            content: content.trim(),
+            icon: wifi.ssid && isValid(wifi.ssid) ? "wifi" : "antenna.radiowaves.left.and.right",
+            "icon-color": wifi.ssid && isValid(wifi.ssid) ? "#007AFE" : "#35C759"
         };
         $done(body);
     });
