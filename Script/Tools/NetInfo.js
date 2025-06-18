@@ -65,7 +65,7 @@ if (CNNET.includes(carrier)) {
 
         const body = {
             title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : 
-                `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` | ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`,
+                `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`,
             content: `内部 IPv4：${ip} \n` +
                 (wifi.ssid ? `路由 IPv4：${router}\n` : "") +
                 `外部 IPv4：${externalIP}\n` +
