@@ -5,9 +5,9 @@
 const { wifi, v4, v6 } = $network;
 const IPv4 = v4.primaryAddress;
 const cellularData = $network["cellular-data"];
-const radio = cellularData ? cellularData.radio : null;
-const carrier = cellularData ? cellularData.carrier : null;
-const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{7}).+(.{7})$/, "$1****$2") : null;
+const radio = cellularData ? cellularData.radio : '';
+const carrier = cellularData ? cellularData.carrier : '';
+const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{7}).+(.{7})$/, "$1****$2") : '';
 let url = "http://ip.ping0.cc/geo";
 var CNNET = ['460-03', '460-05', '460-11'];
 var Unicom = ['460-01', '460-06', '460-09'];
@@ -57,7 +57,7 @@ if (CNNET.includes(carrier)) {
         });
     }
     const ip = IPv4;
-    const router = wifi.ssid ? v4.primaryRouter : undefined;
+    const router = wifi.ssid ? v4.primaryRouter : '';
 
     $httpClient.get(url, function (error, response, data) {
         const externalIP = data.toString().split("\n")[0];
