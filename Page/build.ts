@@ -8,11 +8,36 @@ const SITE_BASE_URL = process.env.SITE_BASE_URL || "https://hub.quic.me/";
 const PAGE_DIR = path.resolve(".");
 const REPO_ROOT = path.resolve("..");
 const OUTPUT_DIR = path.join(REPO_ROOT, "public");
-const source = path.resolve(PAGE_DIR, '_headers')
-const target = path.resolve(OUTPUT_DIR, 'public/_headers')
 
-await fs.copyFile(source, target);
-console.log('✅ Copied _headers to public/')
+async function writeHeadersFile() {
+    const headersContent = `
+  /*  
+    Content-Type: text/html; charset=utf-8
+  
+  /*.js
+    Content-Type: application/javascript; charset=utf-8
+  
+  /*.css
+    Content-Type: text/css; charset=utf-8
+  
+  /*.json
+    Content-Type: application/json; charset=utf-8
+
+/*.list
+  Content-Type: application/json; charset=utf-8
+
+/*.txt
+  Content-Type: application/json; charset=utf-8
+
+/*.sgmodule
+  Content-Type: application/json; charset=utf-8
+
+  `.trim();
+  
+    const headersPath = path.join(OUTPUT_DIR, "_headers");
+    await fs.writeFile(headersPath, headersContent, "utf8");
+    console.log("✅ _headers file written to", headersPath);
+  }
 
 const allowedExtensions = [
     ".sgmodule", ".list", ".txt", ".js", ".json", ".gif", ".md",
@@ -362,6 +387,7 @@ async function build() {
         const html = generateHtml(tree);
         await writeHtmlFile(html);
         await copyRequiredFilesFs();
+        await writeHeadersFile();
 
     } catch (error: any) {
         console.error("Error during build process:", error); // Keep top-level build error log
