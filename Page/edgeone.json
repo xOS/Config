@@ -1,0 +1,71 @@
+{
+    "buildCommand": "npm install -g typescript && npm install && tsc && node --loader ts-node/esm build.ts",
+    "installCommand": "npm install",
+    "outputDirectory": "../public",
+    "nodeVersion": "22.11.0",
+    "headers": [
+        {
+            "source": "/*.js",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/javascript; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.css",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/css; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.json",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.txt",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/plain; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.list",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/plain; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.sgmodule",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/plain; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/static/*",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "max-age=31536000"
+                }
+            ]
+        }
+    ]
+}

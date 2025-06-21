@@ -9,36 +9,6 @@ const PAGE_DIR = path.resolve(".");
 const REPO_ROOT = path.resolve("..");
 const OUTPUT_DIR = path.join(REPO_ROOT, "public");
 
-async function writeHeadersFile() {
-    const headersContent = `
-  /*  
-    Content-Type: text/html; charset=utf-8
-  
-  /*.js
-    Content-Type: application/javascript; charset=utf-8
-  
-  /*.css
-    Content-Type: text/css; charset=utf-8
-  
-  /*.json
-    Content-Type: application/json; charset=utf-8
-
-/*.list
-  Content-Type: application/json; charset=utf-8
-
-/*.txt
-  Content-Type: application/json; charset=utf-8
-
-/*.sgmodule
-  Content-Type: application/json; charset=utf-8
-
-  `.trim();
-  
-    const headersPath = path.join(OUTPUT_DIR, "_headers");
-    await fs.writeFile(headersPath, headersContent, "utf8");
-    console.log("✅ _headers file written to", headersPath);
-  }
-
 const allowedExtensions = [
     ".sgmodule", ".list", ".txt", ".js", ".json", ".gif", ".md",
     ".png", ".jpg", ".html", ".mov", ".mp4", ".mobileconfig",
@@ -387,7 +357,6 @@ async function build() {
         const html = generateHtml(tree);
         await writeHtmlFile(html);
         await copyRequiredFilesFs();
-        await writeHeadersFile();
 
     } catch (error: any) {
         console.error("Error during build process:", error); // Keep top-level build error log
