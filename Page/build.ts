@@ -8,6 +8,10 @@ const SITE_BASE_URL = process.env.SITE_BASE_URL || "https://hub.quic.me/";
 const PAGE_DIR = path.resolve(".");
 const REPO_ROOT = path.resolve("..");
 const OUTPUT_DIR = path.join(REPO_ROOT, "public");
+const source = path.resolve(PAGE_DIR, '_headers')
+const target = path.resolve(OUTPUT_DIR, '../public/_headers')
+
+fs.copyFileSync(source, target)
 
 const allowedExtensions = [
     ".sgmodule", ".list", ".txt", ".js", ".json", ".gif", ".md",
