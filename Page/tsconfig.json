@@ -6,7 +6,6 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "charset": "utf8",
     "outDir": "./dist",
     "skipLibCheck": true
   },
