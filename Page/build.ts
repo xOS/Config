@@ -9,7 +9,7 @@ const PAGE_DIR = path.resolve(".");
 const REPO_ROOT = path.resolve("..");
 const OUTPUT_DIR = path.join(REPO_ROOT, "public");
 const source = path.resolve(PAGE_DIR, '_headers')
-const target = path.resolve(OUTPUT_DIR, '../public/_headers')
+const target = path.resolve(OUTPUT_DIR, 'public/_headers')
 
 await fs.copyFile(source, target);
 console.log('✅ Copied _headers to public/')
