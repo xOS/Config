@@ -60,17 +60,23 @@ if (CNNET.includes(carrier)) {
     const router = wifi.ssid ? v4.primaryRouter : '';
 
     $httpClient.get(url, function (error, response, data) {
+        if (error || !data) {
+            $done({
+                title: "外网信息获取失败",
+                content: "无法获取外部 IP 信息",
+                icon: "exclamationmark.triangle",
+                "icon-color": "#ff9800"
+            });
+            return;
+        }
         const externalIP = data.toString().split("\n")[0];
-        const info = data.toString().split("\n")[1].replace(/(中国|\s+|\/|—|[a-zA-Z])/gm, '');
+        const info = data.toString().split("\n")[1]?.replace(/(中国|\s+|\/|—|[a-zA-Z])/gm, '') || '';
 
         const body = {
-            title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : 
-                `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`,
-            content: `内部 IPv4：${ip} \n` +
-                (wifi.ssid ? `路由 IPv4：${router}\n` : "") +
-                `外部 IPv4：${externalIP}\n` +
-                (IPv6 ? `外部 IPv6：${IPv6}\n` : "") +
-                `IPv4 信息：${info}`,
+            title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`,
+            content: wifi.ssid
+                ? `内部 IPv4：${ip}\n路由 IPv4：${router}\n外部 IPv4：${externalIP}\n${IPv6 ? `外部 IPv6：${IPv6}\n` : ""}IPv4 信息：${info}`
+                : `内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? `外部 IPv6：${IPv6}\n` : ""}IPv4 信息：${info}`,
             icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
             "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
         };
