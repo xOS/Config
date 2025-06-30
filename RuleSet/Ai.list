@@ -64,8 +64,5 @@ DOMAIN-SUFFIX,jasper.ai
 # >> OpenArt
 DOMAIN-SUFFIX,openart.ai
 
-# >> GitHub Copilot
-DOMAIN,api.github.com
-
 # >> groq
 DOMAIN-SUFFIX,groq.com
