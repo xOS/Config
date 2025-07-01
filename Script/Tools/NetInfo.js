@@ -14,6 +14,20 @@ const radio = cellularData ? cellularData.radio : '';
 const carrier = cellularData ? cellularData.carrier : '';
 const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{7}).+(.{7})$/, "$1****$2") : '';
 
+// 配置使用的 GeoIP 接口
+// 从外部参数获取 GeoIPApi，格式: argument=GeoIPApi={{{GeoIPApi}}}
+let GeoIPApi = "muhan"; // 默认值
+if (typeof $argument !== 'undefined' && $argument) {
+    const args = $argument.split('&');
+    for (const arg of args) {
+        const [key, value] = arg.split('=');
+        if (key === 'GeoIPApi') {
+            GeoIPApi = value;
+            break;
+        }
+    }
+}
+
 // IPv4 地址验证函数
 function isValidIPv4(ip) {
     const ipv4Regex = /^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
@@ -81,46 +95,39 @@ if (CNNET.includes(carrier)) {
 
     // 获取外部 IPv4 地址的函数
     function getExternalIPv4(callback) {
-        const ipv4Interfaces = [
-            {
-                url: "https://uapi.woobx.cn/app/ip-location",
-                type: 'json',
-                parser: function(data) {
+        let url, parser;
+        
+        switch (GeoIPApi) {
+            case "muhan":
+                url = "https://uapi.woobx.cn/app/ip-location";
+                parser = function(data) {
                     try {
                         const json = JSON.parse(data);
-                        if (json && json.ip && isValidIPv4(json.ip)) {
-                            const info = `${json.province || ''}${json.city || ''}${json.isp || ''}`.replace(/中国|\s+/g, '');
-                            return { ip: json.ip, info: info || '未知地区' };
+                        if (json && json.code === 200 && json.data && json.data.showapi_res_body) {
+                            const body = json.data.showapi_res_body;
+                            const ip = body.ip;
+                            if (isValidIPv4(ip)) {
+                                const info = `${body.region || ''}${body.city || ''}${body.isp || ''}`.replace(/中国|\s+/g, '');
+                                return { ip, info: info || '未知地区' };
+                            }
                         }
                         return { ip: null, info: null };
                     } catch (e) {
                         return { ip: null, info: null };
                     }
-                }
-            },
-            {
-                url: "http://myip.ipip.net",
-                type: 'text',
-                parser: function(data) {
-                    const lines = data.toString().split("\n");
-                    const ip = lines[0].trim();
-                    if (isValidIPv4(ip)) {
-                        const info = lines[1] ? lines[1].replace(/来自于：|中国|\s+/gm, '') : '未知地区';
-                        return { ip, info };
-                    }
-                    return { ip: null, info: null };
-                }
-            },
-            {
-                url: "https://api.bilibili.com/x/web-interface/zone",
-                type: 'json',
-                parser: function(data) {
+                };
+                break;
+                
+            case "ipip":
+                url = "http://myip.ipip.net/json";
+                parser = function(data) {
                     try {
                         const json = JSON.parse(data);
-                        if (json && json.data && json.data.addr) {
-                            const ip = json.data.addr;
+                        if (json && json.ret === "ok" && json.data && json.data.ip) {
+                            const ip = json.data.ip;
                             if (isValidIPv4(ip)) {
-                                const info = `${json.data.province || ''}${json.data.city || ''}${json.data.isp || ''}`.replace(/中国|\s+/g, '') || '未知地区';
+                                const location = json.data.location || [];
+                                const info = location.slice(1).join('').replace(/中国|\s+/g, '') || '未知地区';
                                 return { ip, info };
                             }
                         }
@@ -128,55 +135,236 @@ if (CNNET.includes(carrier)) {
                     } catch (e) {
                         return { ip: null, info: null };
                     }
-                }
-            }
-        ];
+                };
+                break;
+                
+            case "bilibili":
+                url = "https://api.bilibili.com/x/web-interface/zone";
+                parser = function(data) {
+                    try {
+                        console.log(`bilibili 解析器收到数据: [${data.toString()}]`);
+                        const json = JSON.parse(data);
+                        console.log(`bilibili JSON解析结果:`, JSON.stringify(json, null, 2));
+                        
+                        if (json && json.code === 0 && json.data && json.data.addr) {
+                            const ip = json.data.addr;
+                            console.log(`bilibili 提取到IP: ${ip}`);
+                            
+                            if (isValidIPv4(ip)) {
+                                const province = json.data.province || '';
+                                const city = json.data.city || '';
+                                const isp = json.data.isp || '';
+                                console.log(`bilibili 地理信息: 省=${province}, 市=${city}, ISP=${isp}`);
+                                
+                                const info = `${province}${city}${isp}`.replace(/中国|\s+/g, '') || '未知地区';
+                                console.log(`bilibili 最终地理信息: ${info}`);
+                                
+                                return { ip, info };
+                            } else {
+                                console.log(`bilibili IP无效: ${ip}`);
+                            }
+                        } else {
+                            console.log(`bilibili 数据结构不符合预期`);
+                            console.log(`json.code: ${json ? json.code : 'undefined'}`);
+                            console.log(`json.data: ${json && json.data ? JSON.stringify(json.data) : 'undefined'}`);
+                        }
+                        return { ip: null, info: null };
+                    } catch (e) {
+                        console.log('bilibili 解析器出错:', e.message);
+                        return { ip: null, info: null };
+                    }
+                };
+                break;
+                
+            case "ping0":
+                url = "https://ipv4.ping0.cc/geo";
+                parser = function(data) {
+                    try {
+                        const dataStr = data.toString().trim();
+                        console.log(`ping0 解析器收到数据: [${dataStr}]`);
+                        
+                        // ping0 IPv4接口返回格式：4行数据
+                        // 第一行：IPv4地址
+                        // 第二行：位置信息
+                        // 第三行：AS号码
+                        // 第四行：商家名称
+                        const lines = dataStr.split('\n').map(line => line.trim()).filter(line => line);
+                        console.log(`ping0 按行分割结果:`, lines);
+                        
+                        if (lines.length >= 2) {
+                            const ip = lines[0]; // 第一行是IPv4地址
+                            const location = lines[1]; // 第二行是位置信息
+                            const asNumber = lines.length >= 3 ? lines[2] : ''; // 第三行是AS号码
+                            const provider = lines.length >= 4 ? lines[3] : ''; // 第四行是商家名称
+                            
+                            console.log(`ping0 解析结果: IP=${ip}, 位置=${location}, AS=${asNumber}, 商家=${provider}`);
+                            
+                            if (isValidIPv4(ip)) {
+                                // 组合地理信息：位置 + 商家
+                                let info = location;
+                                if (provider && !provider.startsWith('AS')) {
+                                    info += provider;
+                                }
+                                // 移除中国、"-"、空格和英文字符
+                                info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
+                                console.log(`ping0 最终地理信息: ${info}`);
+                                
+                                return { ip, info };
+                            } else {
+                                console.log(`ping0 IPv4地址无效: ${ip}`);
+                            }
+                        } else {
+                            console.log(`ping0 数据行数不足: ${lines.length} 行`);
+                        }
+                        
+                        return { ip: null, info: null };
+                    } catch (e) {
+                        console.log('ping0 解析器出错:', e.message);
+                        return { ip: null, info: null };
+                    }
+                };
+                break;
+                
+            default:
+                callback(null, null);
+                return;
+        }
         
-        let currentIndex = 0;
-        
-        function tryNextInterface() {
-            if (currentIndex >= ipv4Interfaces.length) {
+        $httpClient.get(url, function (error, response, data) {
+            if (error) {
+                console.log(`${GeoIPApi} 接口请求错误:`, error);
+                console.log(`${GeoIPApi} 请求URL: ${url}`);
                 callback(null, null);
                 return;
             }
             
-            const currentInterface = ipv4Interfaces[currentIndex];
-            currentIndex++;
+            console.log(`${GeoIPApi} 响应状态码:`, response ? response.status : 'no response');
+            if (response && response.headers) {
+                console.log(`${GeoIPApi} 响应头:`, JSON.stringify(response.headers, null, 2));
+            }
             
-            $httpClient.get(currentInterface.url, function (error, response, data) {
-                if (error || !data) {
-                    tryNextInterface();
-                    return;
-                }
-                
-                const result = currentInterface.parser(data);
-                
-                if (!result.ip || !isValidIPv4(result.ip)) {
-                    tryNextInterface();
-                    return;
-                }
-                
-                callback(result.ip, result.info || '未知地区');
-            });
-        }
-        
-        tryNextInterface();
+            if (!data) {
+                console.log(`${GeoIPApi} 接口返回空数据`);
+                callback(null, null);
+                return;
+            }
+            
+            // 详细打印返回数据
+            const dataStr = data ? data.toString() : 'null';
+            console.log(`${GeoIPApi} 接口返回完整数据: [${dataStr}]`);
+            console.log(`${GeoIPApi} 接口数据长度: ${dataStr.length}`);
+            console.log(`${GeoIPApi} 接口数据类型:`, typeof data);
+            
+            const result = parser(data);
+            
+            if (!result.ip || !isValidIPv4(result.ip)) {
+                console.log(`${GeoIPApi} 接口解析失败，解析结果:`, JSON.stringify(result));
+                console.log(`${GeoIPApi} 是否有效IPv4:`, result.ip ? isValidIPv4(result.ip) : false);
+                callback(null, null);
+                return;
+            }
+            
+            console.log(`${GeoIPApi} 接口解析成功:`, JSON.stringify(result));
+            callback(result.ip, result.info || '未知地区');
+        });
     }
 
-    // 获取外部 IPv6 地址的函数（简化版，因为新接口主要支持 IPv4）
+    // 获取外部 IPv6 地址的函数（增强版，支持真实的外部查询）
     function getExternalIPv6(callback) {
-        if (!IPv6) {
-            callback(null, null, false);
-            return;
-        }
-        
-        // 由于新接口主要支持 IPv4，IPv6 使用简化逻辑
-        // 如果有内部 IPv6，假设它可能是公网直连的
-        const IPv6Original = v6.primaryAddress;
-        if (IPv6Original) {
-            callback(IPv6, '公网直连', true);
+        // 如果选择 ping0 接口，也查询 IPv6
+        if (GeoIPApi === 'ping0' && IPv6) {
+            const ipv6Url = "https://ipv6.ping0.cc/geo";
+            
+            $httpClient.get(ipv6Url, function (error, response, data) {
+                if (error) {
+                    console.log(`ping0 IPv6接口请求错误:`, error);
+                    // 回退到简化逻辑
+                    const IPv6Original = v6.primaryAddress;
+                    if (IPv6Original) {
+                        callback(IPv6, '公网直连', true);
+                    } else {
+                        callback(null, null, false);
+                    }
+                    return;
+                }
+                
+                if (!data) {
+                    console.log(`ping0 IPv6接口返回空数据`);
+                    // 回退到简化逻辑
+                    const IPv6Original = v6.primaryAddress;
+                    if (IPv6Original) {
+                        callback(IPv6, '公网直连', true);
+                    } else {
+                        callback(null, null, false);
+                    }
+                    return;
+                }
+                
+                try {
+                    const dataStr = data.toString().trim();
+                    console.log(`ping0 IPv6接口返回数据: [${dataStr}]`);
+                    
+                    const lines = dataStr.split('\n').map(line => line.trim()).filter(line => line);
+                    console.log(`ping0 IPv6按行分割结果:`, lines);
+                    
+                    if (lines.length >= 2) {
+                        const externalIPv6 = lines[0]; // 第一行是IPv6地址
+                        const location = lines[1]; // 第二行是位置信息
+                        const provider = lines.length >= 4 ? lines[3] : ''; // 第四行是商家名称
+                        
+                        console.log(`ping0 IPv6解析结果: IP=${externalIPv6}, 位置=${location}`);
+                        
+                        if (isValidIPv6(externalIPv6)) {
+                            // 组合IPv6地理信息
+                            let ipv6Info = location;
+                            if (provider && !provider.startsWith('AS')) {
+                                ipv6Info += provider;
+                            }
+                            // 移除中国、"-"、空格和英文字符
+                            ipv6Info = ipv6Info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
+                            
+                            // 检查内外部IPv6是否相同
+                            const IPv6Original = v6.primaryAddress;
+                            const isIPv6Same = IPv6Original === externalIPv6;
+                            
+                            console.log(`ping0 IPv6最终信息: ${ipv6Info}, 内外部相同: ${isIPv6Same}`);
+                            
+                            // 格式化显示的IPv6地址
+                            const displayIPv6 = externalIPv6.replace(/^(.{7}).+(.{7})$/, "$1****$2");
+                            
+                            callback(displayIPv6, ipv6Info, isIPv6Same);
+                            return;
+                        } else {
+                            console.log(`ping0 IPv6地址无效: ${externalIPv6}`);
+                        }
+                    } else {
+                        console.log(`ping0 IPv6数据行数不足: ${lines.length} 行`);
+                    }
+                } catch (e) {
+                    console.log('ping0 IPv6解析器出错:', e.message);
+                }
+                
+                // 解析失败，回退到简化逻辑
+                const IPv6Original = v6.primaryAddress;
+                if (IPv6Original) {
+                    callback(IPv6, '公网直连', true);
+                } else {
+                    callback(null, null, false);
+                }
+            });
         } else {
-            callback(null, null, false);
+            // 非 ping0 接口或没有 IPv6，使用简化逻辑
+            if (!IPv6) {
+                callback(null, null, false);
+                return;
+            }
+            
+            const IPv6Original = v6.primaryAddress;
+            if (IPv6Original) {
+                callback(IPv6, '公网直连', true);
+            } else {
+                callback(null, null, false);
+            }
         }
     }
 
@@ -185,7 +373,7 @@ if (CNNET.includes(carrier)) {
         if (!externalIP) {
             $done({
                 title: "外网信息获取失败",
-                content: "所有外部 IP 接口都无法访问",
+                content: `无法通过 ${GeoIPApi} 接口获取外部 IP 信息`,
                 icon: "exclamationmark.triangle",
                 "icon-color": "#ff9800"
             });
@@ -197,8 +385,8 @@ if (CNNET.includes(carrier)) {
             const body = {
                 title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`,
                 content: wifi.ssid
-                    ? `路由 IPv4：${router}\n内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6} (公网直连)\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`
-                    : `内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6} (公网直连)\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`,
+                    ? `路由 IPv4：${router}\n内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6}\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`
+                    : `内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6}\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`,
                 icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
                 "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
             };
