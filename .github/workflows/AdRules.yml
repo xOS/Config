@@ -45,7 +45,7 @@ jobs:
         run: |
           yarn install
           yarn update-adrules
-        
+
       - name: Merge and Rules and remove duplicates
         run: |
           curl -LR -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
@@ -64,9 +64,9 @@ jobs:
       - name: Update Static and Download list
         run: |
           curl -LR -o RuleSet/cdn.txt "https://ruleset.skk.moe/List/domainset/cdn.conf"
-          awk 'FNR==1{print ""}{print}' RuleSet/cdn.txt | grep -v "#" | sed '/^$/d' > RuleSet/Static.list
+          awk 'FNR==1{print ""}{print}' RuleSet/cdn.txt | grep -v "#" | grep -v "skk.moe" | sed '/^$/d' > RuleSet/Static.list
           curl -LR -o RuleSet/download.txt "https://ruleset.skk.moe/List/domainset/download.conf"
-          awk 'FNR==1{print ""}{print}' RuleSet/download.txt | grep -v "#" | sed '/^$/d' > RuleSet/Download.list
+          awk 'FNR==1{print ""}{print}' RuleSet/download.txt | grep -v "#" | grep -v "skk.moe" | sed '/^$/d' > RuleSet/Download.list
           rm -rf RuleSet/cdn.txt
           rm -rf RuleSet/download.txt
 
