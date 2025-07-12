@@ -55,11 +55,20 @@ jobs:
           rm -rf RuleSet/AdRules/Merge.txt
           rm -rf RuleSet/AdRules/Merge.list
 
-      - name: Download ChinaIPs.list
+      - name: Update ChinaIPs.list
         run: |
           curl -LR -o RuleSet/ChinaIPs.txt "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
           awk 'FNR==1{print ""}{print}' RuleSet/ChinaIPs.txt | grep -v "#" | sed '/^$/d' > RuleSet/ChinaIPs.list
           rm -rf RuleSet/ChinaIPs.txt
+
+      - name: Update Static and Download list
+        run: |
+          curl -LR -o RuleSet/cdn.txt "https://ruleset.skk.moe/List/domainset/cdn.conf"
+          awk 'FNR==1{print ""}{print}' RuleSet/cdn.txt | grep -v "#" | sed '/^$/d' > RuleSet/Static.list
+          curl -LR -o RuleSet/download.txt "https://ruleset.skk.moe/List/domainset/download.conf"
+          awk 'FNR==1{print ""}{print}' RuleSet/download.txt | grep -v "#" | sed '/^$/d' > RuleSet/Download.list
+          rm -rf RuleSet/cdn.txt
+          rm -rf RuleSet/download.txt
 
       - name: Import GPG key
         id: import_gpg
