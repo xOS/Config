@@ -8,4 +8,4 @@
 
 [Script]
 # > 网络信息
-网络状态 = type=generic, script-path=https://hub.nange.cn/Script/Tools/NetInfo.js
+网络状态 = type=generic, script-path=https://rule.quic.me/Script/Tools/NetInfo.js
