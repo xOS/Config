@@ -286,6 +286,7 @@ if (CNNET.includes(carrier)) {
                                 const country = json.country || '';
                                 const region = json.region || '';
                                 const city = json.city || '';
+                                const street = json.street || '';
                                 let isp = json.isp || '';
                                 // connection_type 翻译
                                 let connType = '';
@@ -307,9 +308,12 @@ if (CNNET.includes(carrier)) {
                                         isp += connType;
                                     }
                                 }
-                                console.log(`quic 地理信息: 国家=${country}, 地区=${region}, 城市=${city}, ISP=${isp}`);
-                                // 组合地理信息，去除中国字样
-                                const info = `${region}${city}${isp}`.replace(/中国|\s+|[-/\\]/g, '') || '未知地区';
+                                // 拼接 info，包含 street 字段
+                                let info = `${region}${city}`;
+                                if (street) info += street;
+                                info += isp;
+                                info = info.replace(/中国|\s+|[-/\\]/g, '') || '未知地区';
+                                console.log(`quic 地理信息: 国家=${country}, 地区=${region}, 城市=${city}, 街道=${street}, ISP=${isp}`);
                                 console.log(`quic 最终地理信息: ${info}`);
                                 return { ip, info };
                             } else {
