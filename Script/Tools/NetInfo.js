@@ -209,7 +209,7 @@ if (CNNET.includes(carrier)) {
                                     info += provider;
                                 }
                                 // 移除中国、"-"、空格和英文字符
-                                info = info.replace([/中国|\s\-a-zA-Z]/g, '') || '未知地区';
+                                info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
                                 console.log(`ping0 最终地理信息: ${info}`);
                                 
                                 return { ip, info };
@@ -414,7 +414,7 @@ if (CNNET.includes(carrier)) {
                                 if (provider && !provider.startsWith('AS')) {
                                     info += provider;
                                 }
-                                info = info.replace([/中国|\s\-a-zA-Z]/g, '') || '未知地区';
+                                info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
                                 result = { ip, info };
                             }
                         }
