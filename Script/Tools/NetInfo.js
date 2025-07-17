@@ -110,7 +110,7 @@ if (CNNET.includes(carrier)) {
                             const body = json.data.showapi_res_body;
                             const ip = body.ip;
                             if (isValidIPv4(ip)) {
-                                const info = `${body.region || ''}${body.city || ''}${body.isp || ''}`.replace(/中国|\s+|[-/\\]/g, '');
+                                const info = `${body.region || ''}${body.city || ''}${body.isp || ''}`.replace(\s+|[-/\\]/g, '');
                                 return { ip, info: info || '未知地区' };
                             }
                         }
@@ -130,7 +130,7 @@ if (CNNET.includes(carrier)) {
                             const ip = json.data.ip;
                             if (isValidIPv4(ip)) {
                                 const location = json.data.location || [];
-                                const info = location.slice(1).join('').replace(/中国|\s+|[-/\\]/g, '') || '未知地区';
+                                const info = location.slice(1).join('').replace(\s+|[-/\\]/g, '') || '未知地区';
                                 return { ip, info };
                             }
                         }
@@ -159,7 +159,7 @@ if (CNNET.includes(carrier)) {
                                 const isp = json.data.isp || '';
                                 console.log(`bilibili 地理信息: 省=${province}, 市=${city}, ISP=${isp}`);
                                 
-                                const info = `${province}${city}${isp}`.replace(/中国|\s+|[-/\\]/g, '') || '未知地区';
+                                const info = `${province}${city}${isp}`.replace(\s+|[-/\\]/g, '') || '未知地区';
                                 console.log(`bilibili 最终地理信息: ${info}`);
                                 
                                 return { ip, info };
@@ -209,7 +209,7 @@ if (CNNET.includes(carrier)) {
                                     info += provider;
                                 }
                                 // 移除中国、"-"、空格和英文字符
-                                info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
+                                info = info.replace([\s\-a-zA-Z]/g, '') || '未知地区';
                                 console.log(`ping0 最终地理信息: ${info}`);
                                 
                                 return { ip, info };
@@ -248,7 +248,7 @@ if (CNNET.includes(carrier)) {
                                 console.log(`pingan 地理信息: 国家=${country}, 地区=${region}, 城市=${city}, ISP=${isp}`);
                                 
                                 // 组合地理信息，去除中国字样
-                                const info = `${region}${city}${isp}`.replace(/中国|\s+|[-/\\]/g, '') || '未知地区';
+                                const info = `${region}${city}${isp}`.replace(\s+|[-/\\]/g, '') || '未知地区';
                                 console.log(`pingan 最终地理信息: ${info}`);
                                 
                                 return { ip, info };
@@ -312,7 +312,7 @@ if (CNNET.includes(carrier)) {
                                 let info = `${region}${city}`;
                                 if (street) info += street;
                                 info += isp;
-                                info = info.replace(/中国|\s+|[-/\\]/g, '') || '未知地区';
+                                info = info.replace(\s+|[-/\\]/g, '') || '未知地区';
                                 console.log(`quic 地理信息: 国家=${country}, 地区=${region}, 城市=${city}, 街道=${street}, ISP=${isp}`);
                                 console.log(`quic 最终地理信息: ${info}`);
                                 return { ip, info };
@@ -414,7 +414,7 @@ if (CNNET.includes(carrier)) {
                                 if (provider && !provider.startsWith('AS')) {
                                     info += provider;
                                 }
-                                info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
+                                info = info.replace([\s\-a-zA-Z]/g, '') || '未知地区';
                                 result = { ip, info };
                             }
                         }
@@ -425,7 +425,7 @@ if (CNNET.includes(carrier)) {
                             const region = json.data.region || '';
                             const city = json.data.city || '';
                             const isp = json.data.isp || '';
-                            const info = `${region}${city}${isp}`.replace(/中国|\s+|[-/\\]/g, '') || '未知地区';
+                            const info = `${region}${city}${isp}`.replace(\s+|[-/\\]/g, '') || '未知地区';
                             result = { ip, info };
                         }
                     } else if (GeoIPApi === 'quic') {
@@ -451,7 +451,7 @@ if (CNNET.includes(carrier)) {
                                     isp += connType;
                                 }
                             }
-                            const info = `${region}${city}${isp}`.replace(/中国|\s+|[-/\\]/g, '') || '未知地区';
+                            const info = `${region}${city}${isp}`.replace(\s+|[-/\\]/g, '') || '未知地区';
                             result = { ip, info };
                         }
                     }
