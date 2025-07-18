@@ -269,7 +269,7 @@ if (CNNET.includes(carrier)) {
                 break;
                 
             case "quic":
-                url = "https://api.quic.me/json";
+                url = "https://api.quic.me/json?lang=zh";
                 parser = function(data) {
                     try {
                         console.log(`quic 解析器收到数据: [${data.toString()}]`);
@@ -391,7 +391,7 @@ if (CNNET.includes(carrier)) {
             } else if (GeoIPApi === 'pingan') {
                 ipv6Url = "https://rmb.pingan.com.cn/itam/mas/linden/ip/request";
             } else if (GeoIPApi === 'quic') {
-                ipv6Url = "https://ipv6.quic.me/json";
+                ipv6Url = "https://ipv6.quic.me/json?lang=zh";
             }
             
             $httpClient.get(ipv6Url, function (error, response, data) {
