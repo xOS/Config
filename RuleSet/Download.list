@@ -303,6 +303,7 @@ mirrors.standaloneinstaller.com
 mirror.yannic-bonenberger.com
 .dl.dropboxusercontent.com
 .digitaloceanspaces.com
+release-assets.githubusercontent.com
 pkg-containers.githubusercontent.com
 objects.githubusercontent.com
 .cloudflarestorage.com
@@ -999,6 +1000,7 @@ download.ameliorated.io
 .dl.elementary.io
 docker.cloudsmith.io
 dl.cloudsmith.io
+registry.terraform.io
 release.runcloud.io
 repo.nextdns.io
 .jitpack.io
