@@ -286,34 +286,41 @@ if (CNNET.includes(carrier)) {
                                 const country = json.country || '';
                                 const region = json.region || '';
                                 const city = json.city || '';
-                                const street = json.street || '';
+                                const district = json.district || json.street || '';
                                 let isp = json.isp || '';
-                                // connection_type 翻译
+                                // connection_type 处理
                                 let connType = '';
                                 if (json.connection_type && typeof json.connection_type === 'string' && json.connection_type.trim() !== '') {
-                                    switch (json.connection_type) {
-                                        case 'Cellular':
-                                            connType = '基站WiFi';
-                                            break;
-                                        case 'Cable/DSL':
-                                            connType = '宽带网络';
-                                            break;
-                                        case 'Corporate':
-                                            connType = '企业专线';
-                                            break;
-                                        default:
-                                            connType = '';
+                                    // 判断是否为中文
+                                    if (/[\u4e00-\u9fa5]/.test(json.connection_type)) {
+                                        // 中文直接使用
+                                        connType = json.connection_type;
+                                    } else {
+                                        // 英文进行翻译
+                                        switch (json.connection_type) {
+                                            case 'Cellular':
+                                                connType = '基站WiFi';
+                                                break;
+                                            case 'Cable/DSL':
+                                                connType = '宽带网络';
+                                                break;
+                                            case 'Corporate':
+                                                connType = '企业专线';
+                                                break;
+                                            default:
+                                                connType = '';
+                                        }
                                     }
                                     if (connType) {
                                         isp += connType;
                                     }
                                 }
-                                // 拼接 info，包含 street 字段
+                                // 拼接 info，包含 district 字段
                                 let info = `${region}${city}`;
-                                if (street) info += street;
+                                if (district) info += district;
                                 info += isp;
                                 info = info.replace(/\s+|[-/\\]/g, '') || '未知地区';
-                                console.log(`quic 地理信息: 国家=${country}, 地区=${region}, 城市=${city}, 街道=${street}, ISP=${isp}`);
+                                console.log(`quic 地理信息: 国家=${country}, 地区=${region}, 城市=${city}, 区域=${district}, ISP=${isp}`);
                                 console.log(`quic 最终地理信息: ${info}`);
                                 return { ip, info };
                             } else {
@@ -437,21 +444,33 @@ if (CNNET.includes(carrier)) {
                             const ip = json.ip;
                             const region = json.region || '';
                             const city = json.city || '';
+                            const district = json.district || json.street || '';
                             let isp = json.isp || '';
-                            // connection_type 翻译
+                            // connection_type 处理
                             let connType = '';
                             if (json.connection_type && typeof json.connection_type === 'string' && json.connection_type.trim() !== '') {
-                                switch (json.connection_type) {
-                                    case 'Cellular': connType = '基站WiFi'; break;
-                                    case 'Cable/DSL': connType = '宽带网络'; break;
-                                    case 'Corporate': connType = '企业专线'; break;
-                                    default: connType = '';
+                                // 判断是否为中文
+                                if (/[\u4e00-\u9fa5]/.test(json.connection_type)) {
+                                    // 中文直接使用
+                                    connType = json.connection_type;
+                                } else {
+                                    // 英文进行翻译
+                                    switch (json.connection_type) {
+                                        case 'Cellular': connType = '基站WiFi'; break;
+                                        case 'Cable/DSL': connType = '宽带网络'; break;
+                                        case 'Corporate': connType = '企业专线'; break;
+                                        default: connType = '';
+                                    }
                                 }
                                 if (connType) {
                                     isp += connType;
                                 }
                             }
-                            const info = `${region}${city}${isp}`.replace(/\s+|[-/\\]/g, '') || '未知地区';
+                            // 拼接 info，包含 district 字段
+                            let info = `${region}${city}`;
+                            if (district) info += district;
+                            info += isp;
+                            info = info.replace(/\s+|[-/\\]/g, '') || '未知地区';
                             result = { ip, info };
                         }
                     }
