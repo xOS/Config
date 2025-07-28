@@ -395,6 +395,7 @@ oct8neproxy.azurewebsites.net
 d4.alternativeto.net
 .vusercontent.net
 .vscode-unpkg.net
+cdn.tokyo-motion.net
 blacklist.tampermonkey.net
 static.edge.microsoftapp.net
 .f.hubspotemail.net
@@ -2648,6 +2649,7 @@ static-redesign.cnbcfm.com
 image.cnbcfm.com
 sf-flow-web-cdn.ciciai.com
 .cdnjhd.com
+.cdnjav.com
 signalcloud.cdnbye.com
 opensignal.cdnbye.com
 signal.cdnbye.com
@@ -3655,6 +3657,7 @@ resize-image.vocus.cc
 ti2.knews.cc
 ti1.knews.cc
 .ungh.cc
+cdn.road.cc
 t4.picb.cc
 t3.picb.cc
 t2.picb.cc
@@ -3664,6 +3667,7 @@ images.ptt.cc
 static-cache.k2s.cc
 static.k2s.cc
 .1passwordusercontent.ca
+cdn.adsninja.ca
 .abc-cdn.net.au
 res.abc.net.au
 styleguide-assets.shannons.com.au
