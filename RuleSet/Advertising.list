@@ -126,7 +126,7 @@ DOMAIN-SUFFIX,ios.rqd.qq.com
 DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,btrace.video.qq.com
 //DOMAIN-SUFFIX,c.l.qq.com
-DOMAIN-WILDCARD,live*.l.qq.com
+//DOMAIN-WILDCARD,live*.l.qq.com
 DOMAIN-SUFFIX,mdevstat.qqlive.qq.com
 DOMAIN-SUFFIX,omgmta1.qq.com
 //DOMAIN-SUFFIX,p.l.qq.com
@@ -258,7 +258,6 @@ DOMAIN-SUFFIX,union.discuz.qq.com
 DOMAIN-SUFFIX,up-hl.3g.qq.com
 DOMAIN-SUFFIX,updatecenter.qq.com
 DOMAIN-SUFFIX,user1.game.qq.com
-DOMAIN-SUFFIX,v.gdt.qq.com
 DOMAIN-SUFFIX,video.ureport.push.qq.com
 DOMAIN-SUFFIX,video.wap.mpush.qq.com
 DOMAIN-SUFFIX,vpic.video.qq.com
