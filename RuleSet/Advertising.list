@@ -30,6 +30,11 @@ DOMAIN,ad.admin.10010.com
 DOMAIN,smartad.10010.com
 DOMAIN-SUFFIX,8ziben.com
 DOMAIN-SUFFIX,fliduo.cn
+DOMAIN,active.v.qq.com
+DOMAIN-SUFFIX,ubixioe.com
+DOMAIN-SUFFIX,gravity-engine.com
+DOMAIN-SUFFIX,tgwsc.qq.com
+DOMAIN-SUFFIX,r.release.qq.com
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
