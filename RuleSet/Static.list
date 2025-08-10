@@ -407,6 +407,7 @@ static.vesselfinder.net
 map.vesselfinder.net
 cdn.tokyo-motion.net
 blacklist.tampermonkey.net
+cdn.sapphire.microsoftapp.net
 static.edge.microsoftapp.net
 .f.hubspotemail.net
 .coral.coralproject.net
@@ -564,6 +565,8 @@ img.perfops.net
 cdn.perfops.net
 .nodecdn.net
 static.nhentai.net
+t2.nhentai.net
+i2.nhentai.net
 t.nhentai.net
 i.nhentai.net
 cdn.myfonts.net
@@ -1338,6 +1341,7 @@ f001.backblazeb2.com
 f000.backblazeb2.com
 img.applealmond.com
 .aosikaimage.com
+.ancestrycdn.com
 showcase.abovemarket.com
 assets.aboutamazon.com
 cdn2.abiresearch.com
@@ -1363,6 +1367,8 @@ widget.trustpilot.com
 top1cdn.top1health.com
 .teraboxcdn.com
 .targetimg1.com
+cdn.streamlabs.com
+sp.streamlabs.com
 ui-statics-cf.streamable.com
 cdn-cf-east.streamable.com
 statics.streamable.com
@@ -1496,6 +1502,7 @@ themes.fourthwall.com
 cdn.fourthwall.com
 frontend.floatplane.com
 pbs.floatplane.com
+images.findagrave.com
 .externulls.com
 images.everyplate.com
 cdntranscend.eventbrite.com
@@ -1786,6 +1793,7 @@ badge.buildkite.com
 media.breitbart.com
 static.bravoporn.com
 .bnbstatic.com
+images.blockscan.com
 .bitgetimg.com
 upos-sz-mirrorcosbstar1.bilivideo.com
 upos-sz-mirroralibstar1.bilivideo.com
@@ -2334,6 +2342,7 @@ static.gl-inet.com
 .githack.com
 integrations.gitbook.com
 static-2v.gitbook.com
+static-2c.gitbook.com
 content.gitbook.com
 static.gitbook.com
 .app.gitbook.com
@@ -3167,6 +3176,7 @@ cdn.vidible.tv
 cdn1.hotmoza.tv
 clips-media-assets2.twitch.tv
 assets.twitch.tv
+embed.twitch.tv
 .storry.tv
 images.pluto.tv
 assets-cdn.jable.tv
