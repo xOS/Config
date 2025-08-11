@@ -1,1 +1,3 @@
 DOMAIN-SUFFIX,cloudfront.hls.ttvnw.net
+DOMAIN-SUFFIX,photos.googleapis.com
+DOMAIN-WILDCARD,*---sn-*.googlevideo.com
