@@ -108,7 +108,7 @@ if (CNNET.includes(carrier)) {
             url: 'https://api.quic.me/health',
             timeout: 5000,
             headers: {
-                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15'
+                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1'
             }
         };
 
@@ -371,7 +371,7 @@ if (CNNET.includes(carrier)) {
             url: url,
             timeout: GeoIPApi === 'quic' ? 15000 : 10000, // QUIC 接口使用更长超时时间
             headers: {
-                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15',
+                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1',
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
                 'Cache-Control': 'no-cache',
@@ -459,7 +459,7 @@ if (CNNET.includes(carrier)) {
                 url: ipv6Url,
                 timeout: GeoIPApi === 'quic' ? 15000 : 10000, // QUIC 接口使用更长超时
                 headers: {
-                    'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15',
+                    'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1',
                     'Accept': 'application/json, text/plain, */*',
                     'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
                     'Cache-Control': 'no-cache',
