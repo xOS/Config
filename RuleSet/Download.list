@@ -13,6 +13,7 @@ jing.rocks
 .s3.nl-ams.scw.cloud
 .s3-website.fr-par.scw.cloud
 .s3.fr-par.scw.cloud
+cdn-builds.paw.cloud
 .mirror.globo.tech
 gimp.ip-connect.info
 .1fichier.info
@@ -814,10 +815,8 @@ mirrors.aliyun.com
 downloads.xrite.com
 downloads.x-wrt.com
 cdn-patch.swtor.com
-static-production.npmjs.com
 replicate.npmjs.com
 registry.npmjs.com
-static.npmjs.com
 skimdb.npmjs.com
 mirror.kakao.com
 addins.deepl.com

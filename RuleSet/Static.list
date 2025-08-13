@@ -93,6 +93,7 @@ static.bad.news
 content.api.news
 pics.hentai.name
 .doppiocdn.live
+maps.wplace.live
 .airio3.live
 cdn.koala.live
 .trustless-gateway.link
@@ -179,6 +180,7 @@ api.allorigins.win
 .imglink.win
 www.10086.win
 .javcdn.vip
+tanju.vip
 cdn.violet.vin
 assets.orz.uno
 media.orz.uno
@@ -454,6 +456,7 @@ a.deviantart.net
 cdn.datatables.net
 .cloudfront.net
 players.brightcove.net
+.webinfcdn.net
 .video-cdn.net
 static.twitchcdn.net
 torrindex.net
@@ -573,6 +576,7 @@ i2.nhentai.net
 t.nhentai.net
 i.nhentai.net
 cdn.myfonts.net
+.mubicdn.net
 .itsre-sumo.mozilla.net
 interactive-examples.mdn.mozilla.net
 .cdn.mozilla.net
@@ -1094,7 +1098,6 @@ cdn.googlesource.com
 m3u8.girigirilove.com
 .framerstatic.com
 static.filestackapi.com
-cdn.fastmediaing.com
 staticm.fastcomments.com
 cdn.fastcomments.com
 .fakestoreapi.com
@@ -1343,7 +1346,6 @@ f002.backblazeb2.com
 f001.backblazeb2.com
 f000.backblazeb2.com
 img.applealmond.com
-.aosikaimage.com
 .ancestrycdn.com
 showcase.abovemarket.com
 assets.aboutamazon.com
@@ -1596,7 +1598,6 @@ hhhhhhome86227170.wordpress.com
 s0.wordpress.com
 .wixstatic.com
 image.westinyou.com
-.webinfcdn.com
 s3.eu-central-2.wasabisys.com
 .s3.wasabisys.com
 assets.videowise.com
@@ -1870,6 +1871,7 @@ cdn3.sysgears.com
 cdn2.sysgears.com
 cdn1.sysgears.com
 .sway-cdn.com
+frontend-assets.supabase.com
 cdn.substack.com
 .stylexjs.com
 .stripcdn.com
@@ -2250,7 +2252,6 @@ featureflags.netlify.com
 .ndtvimg.com
 nodeassets.nbcnews.com
 iframe.nbcnews.com
-.mubicdn.com
 stubdownloader.services.mozilla.com
 firefox.settings.services.mozilla.com
 .push.services.mozilla.com
@@ -2789,6 +2790,8 @@ cdn.paidy.com
 package-assets.oomol.com
 registry.oomol.com
 static.oomol.com
+static-production.npmjs.com
+static.npmjs.com
 .npmfs.com
 ws-cdn.nperf.com
 cdn.nperf.com
@@ -3709,7 +3712,6 @@ media.tailfin.cc
 .aayinltcs.arduino.cc
 content.arduino.cc
 cdn.arduino.cc
-pengtu.cc
 .imgimg.cc
 fonts.gishan.cc
 s.gishan.cc
