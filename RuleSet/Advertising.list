@@ -37,6 +37,7 @@ DOMAIN-SUFFIX,tgwsc.qq.com
 DOMAIN-SUFFIX,r.release.qq.com
 DOMAIN-SUFFIX,b.quark.cn
 DOMAIN-SUFFIX,biz.quark.cn
+DOMAIN-SUFFIX,adtrack.quark.cn
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
