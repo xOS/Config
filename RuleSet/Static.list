@@ -67,6 +67,7 @@ resources-live.sketch.cloud
 patterns.hiive.cloud
 cdn.tiny.cloud
 fscdn.eppo.cloud
+cdn-static.paw.cloud
 .dsc.cloud
 static.bit.cloud
 cdn.bigcloud.click
@@ -602,6 +603,7 @@ cf-images.us-east-1.prod.boltdns.net
 mir-s3-cdn-cf.behance.net
 a5.behance.net
 consentdeliveryfd.azurefd.net
+edgestorewebpme-d2hnhfgbgnfmfuha.z01.azurefd.net
 edgecdn-embza6g8cacagcbn.z01.azurefd.net
 assets-cdn.abcotvs.net
 .99avcdn.net
@@ -1100,6 +1102,7 @@ m3u8.girigirilove.com
 static.filestackapi.com
 staticm.fastcomments.com
 cdn.fastcomments.com
+static.fastboostcdn.com
 .fakestoreapi.com
 cdn-eu.dynamicyield.com
 st-eu.dynamicyield.com
@@ -1263,6 +1266,7 @@ assets1.lottiefiles.com
 cdn.livechatinc.com
 cdn.linearicons.com
 .lbpictupian.com
+.kleecks-cdn.com
 logos.kiwibrowser.com
 i.kickstarter.com
 a.kickstarter.com
@@ -1508,6 +1512,7 @@ cdn.fourthwall.com
 frontend.floatplane.com
 pbs.floatplane.com
 images.findagrave.com
+img.fastcybers.com
 .externulls.com
 images.everyplate.com
 cdntranscend.eventbrite.com
@@ -1704,6 +1709,7 @@ uhf.microsoft.com
 csp.microsoft.com
 js.memberful.com
 static.mediafire.com
+form-assets.mailchimp.com
 cdn-images.mailchimp.com
 static.macupdate.com
 images.macrumors.com
@@ -3589,6 +3595,7 @@ marfeelexperimentsexperienceengine.mrf.io
 static.ffx.io
 eep.io
 registry.api.cnn.io
+cdn.db.io
 static.snaptube.in
 .cdn.imgeng.in
 object.innei.in
