@@ -56,6 +56,7 @@ files.smashing.media
 images.github.media
 jssdk.opin.media
 .icon.horse
+node.green
 assets.buttondown.email
 .ipfs-gateway.cloud
 .dreamscape.cloud
@@ -110,6 +111,7 @@ wl-apps.yourwebsite.life
 .nest.land
 .deno.land
 image.theblockbeats.info
+lm.visualon.info
 .myvideos.info
 cdn.adguard.info
 static.javcdn.info
@@ -118,6 +120,7 @@ busuanzi.ibruce.info
 .ddpic.info
 .assets-servd.host
 cdn.masto.host
+assets.gorgias.help
 .usercontent.goog
 c.pki.goog
 .nel.goog
@@ -632,6 +635,7 @@ attachments.office.net
 support.content.office.net
 cdn.graph.office.net
 cdn.forms.office.net
+cdn.designerapp.osi.office.net
 .myanalytics.cdn.office.net
 res-geo.cdn.office.net
 .public.cdn.office.net
@@ -650,6 +654,7 @@ images.idgesg.net
 alt.idgesg.net
 .hbfile.net
 practicaldev-herokuapp-com.freetls.fastly.net
+lastfm.freetls.fastly.net
 brick.freetls.fastly.net
 brick.a.ssl.fastly.net
 .eroimg.net
@@ -747,6 +752,7 @@ static.coinall.ltd
 image.acg.lol
 cdn.cbd.int
 .cthd.icu
+time-a.nist.gov
 images-assets.nasa.gov
 smd-cms.nasa.gov
 assets.science.nasa.gov
@@ -828,6 +834,7 @@ media.theresanaiforthat.com
 .ssl-images-amazon.com
 .scorecardresearch.com
 assets.positional-bucket.com
+.parsecusercontent.com
 .notionusercontent.com
 navismithapis-cdn.com
 .googleusercontent.com
@@ -856,6 +863,7 @@ jslibs.blackmagicdesign.com
 images.blackmagicdesign.com
 css.blackmagicdesign.com
 cdn.worldvectorlogo.com
+cms.worldpokerdeals.com
 analytics.welcomesoftware.com
 images4.welcomesoftware.com
 images3.welcomesoftware.com
@@ -913,6 +921,7 @@ img3.socialshopwave.com
 img2.socialshopwave.com
 img1.socialshopwave.com
 img0.socialshopwave.com
+.seeusercontent.com
 micro.rubiconproject.com
 cms.recordedfuture.com
 .quip-marketing.com
@@ -992,6 +1001,7 @@ asset.mansionglobal.com
 .livemediahost.com
 pbs-prod.linustechtips.com
 .highwinds-cdn.com
+cdn.heapanalytics.com
 sig.grumpybumpers.com
 app.groovefunnels.com
 telemetry.individual.githubcopilot.com
@@ -1697,12 +1707,14 @@ static.mocortech.com
 public.mocortech.com
 cdn.miohentai.com
 cdn-dynmedia-1.microsoft.com
+cdn.techcommunity.microsoft.com
 store-images.microsoft.com
 .smartscreen.microsoft.com
 answers-afd.microsoft.com
 cmtycdn.powerpages.microsoft.com
 wcpstatic.microsoft.com
 filestore.community.support.microsoft.com
+cdn.create.microsoft.com
 images.ecomm.microsoft.com
 ajax.microsoft.com
 uhf.microsoft.com
@@ -1961,6 +1973,7 @@ api-eu.mixpanel.com
 api.mixpanel.com
 thumbnailer.mixcloud.com
 .static-prod-web.miniclip.com
+cdn.mikrotik.com
 static.mendeley.com
 i.mediatek.com
 resources.digital-cloud.medallia.com
@@ -2198,6 +2211,7 @@ videos2-h.sendvid.com
 thumbs2.sendvid.com
 cdn.segment.com
 ocsp.sectigo.com
+crt.sectigo.com
 interwiki.scpwiki.com
 cdn.scpwiki.com
 image-stgus.samsung.com
@@ -2295,6 +2309,10 @@ moodular.jotform.com
 files.jotform.com
 js.jotform.com
 pool.jortage.com
+blob.jortage.com
+img4.javmost.com
+img3.javmost.com
+img2.javmost.com
 img2.javdove.com
 assets.ipstack.com
 i.insider.com
@@ -2375,6 +2393,7 @@ assets.flodesk.com
 .flagcdn.com
 .fivetiu.com
 detectportal.firefox.com
+cdn.accounts.firefox.com
 .ffzy888.com
 .exp-tas.com
 .espncdn.com
@@ -2540,9 +2559,11 @@ stats.setapp.com
 imgix.setapp.com
 cdn.setapp.com
 cdn.seondf.com
+.seecdn.com
 vice-prod.sdiapi.com
 .scene7.com
 .sc-cdn.com
+.sascdn.com
 embed.runkit.com
 i.rtings.com
 .cms.replit.com
@@ -2599,6 +2620,7 @@ s.namemc.com
 .aacdn.nagich.com
 int.mwbbiz.com
 appassets.mvtdev.com
+.msocdn.com
 img.mresou.com
 static-main.moovit.com
 static.moomoo.com
@@ -2738,6 +2760,7 @@ i2.anysex.com
 i.anysex.com
 code.buywithprime.amazon.com
 d2c.aws.amazon.com
+time.akamai.com
 static.ahrefs.com
 .assets.adidas.com
 .glass.adidas.com
@@ -2962,6 +2985,7 @@ widget.user.com
 media.user.com
 assets.time.com
 .sirv.com
+cdn.sift.com
 static.seel.com
 cdn.sedo.com
 .www.s81c.com
@@ -3004,6 +3028,7 @@ img.atom.com
 g-static.ap4r.com
 .a1tb.com
 accounts-cdn.9gag.com
+bundle.5gtb.com
 img.4khd.com
 oss.1p3a.com
 cdn.you.com
@@ -3167,6 +3192,8 @@ storage.moegirl.tw
 img.moegirl.tw
 app.moegirl.tw
 cf.shopee.tw
+socialpic.video.friday.tw
+vbmspic.video.friday.tw
 megapx-assets.dcard.tw
 .pimg.tw
 news-data.pts.org.tw
@@ -3198,6 +3225,11 @@ assets-cdn.jable.tv
 assetscdn.jable.tv
 assets.jable.tv
 i.iwara.tv
+imgcn5.bgmbk.tv
+imgcn4.bgmbk.tv
+imgcn3.bgmbk.tv
+imgcn2.bgmbk.tv
+imgcn.bgmbk.tv
 cdn.18jav.tv
 s-cdnstatic.svc.litv.tv
 p-cdnstatic.svc.litv.tv
@@ -3243,6 +3275,8 @@ s3.doujin.sh
 .surge.sh
 static.scarf.sh
 proxy.cors.sh
+brew.sh
+docs.brew.sh
 flo.uri.sh
 .ttl.sh
 .now.sh
@@ -3573,6 +3607,7 @@ static.snyk.io
 .pnpm.io
 cdn.plyr.io
 cdn.pgvt.io
+.npms.io
 cdn.nolt.io
 images.loox.io
 fonts.loox.io
