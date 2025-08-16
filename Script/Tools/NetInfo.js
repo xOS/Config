@@ -322,7 +322,7 @@ if (CNNET.includes(carrier)) {
                                         // 英文进行翻译
                                         switch (json.connection_type) {
                                             case 'Cellular':
-                                                connType = '基站WiFi';
+                                                connType = '蜂窝网络';
                                                 break;
                                             case 'Cable/DSL':
                                                 connType = '宽带网络';
@@ -536,7 +536,7 @@ if (CNNET.includes(carrier)) {
                                     } else {
                                         // 英文进行翻译
                                         switch (json.connection_type) {
-                                            case 'Cellular': connType = '基站WiFi'; break;
+                                            case 'Cellular': connType = '蜂窝网络'; break;
                                             case 'Cable/DSL': connType = '宽带网络'; break;
                                             case 'Corporate': connType = '企业专线'; break;
                                             default: connType = '';
