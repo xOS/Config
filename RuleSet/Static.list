@@ -1204,6 +1204,7 @@ static1.squarespace.com
 s3media.squarespace.com
 assets.squarespace.com
 .splunkcloud.com
+assets.speedvitals.com
 .skypeassets.com
 img.shoplineapp.com
 cdn.servicebell.com
@@ -3239,6 +3240,11 @@ imgcn.bgmbk.tv
 cdn.18jav.tv
 s-cdnstatic.svc.litv.tv
 p-cdnstatic.svc.litv.tv
+jsmodule.svc.litv.tv
+bulletin.svc.litv.tv
+static.svc.litv.tv
+player.svc.litv.tv
+fino.svc.litv.tv
 4gtvimg2.4gtv.tv
 lain.bgm.tv
 embed-v2.testimonial.to
