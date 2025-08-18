@@ -38,6 +38,8 @@ DOMAIN-SUFFIX,r.release.qq.com
 DOMAIN-SUFFIX,b.quark.cn
 DOMAIN-SUFFIX,biz.quark.cn
 DOMAIN-SUFFIX,adtrack.quark.cn
+DOMAIN,jiguang.coc.10086.cn
+DOMAIN,huodong.caiyun.feixin.10086.cn
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
