@@ -130,7 +130,6 @@ DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,apponline.research.qq.com
 DOMAIN-SUFFIX,voreader.reader.qq.com
 DOMAIN-SUFFIX,str.mdt.qq.com
-DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,omgid.qq.com
 DOMAIN-SUFFIX,ios.rqd.qq.com
 DOMAIN-SUFFIX,beacon.qq.com
@@ -278,6 +277,14 @@ DOMAIN-SUFFIX,ws.sj.qq.com
 DOMAIN-SUFFIX,wup.imtt.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
 DOMAIN-SUFFIX,safebrowsing.urlsec.qq.com
+DOMAIN,info4.video.qq.com
+DOMAIN,info6.video.qq.com
+DOMAIN,ios.video.mpush.qq.com
+DOMAIN,tpns.qq.com
+DOMAIN,vv6.video.qq.com
+DOMAIN-KEYWORD,trace.qq.com
+DOMAIN-KEYWORD,trace.video.qq.com
+IP-CIDR,47.110.187.87/32,no-resolve
 
 # > 腾讯音乐
 DOMAIN,ad.tencentmusic.com
