@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.openinstall.io
+.s.ssl.qhres2.com
 .big7.com
 .collect.adplogger.no
 .lwadm.com
@@ -66099,6 +66101,9 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.cpx.golem.de
+.carmen.golem.de
+.cfa-js.cafe24.com
 .s.gofile.io
 .stats.traffective.cloud
 .collect.rebelmouse.io
@@ -66381,7 +66386,6 @@
 .clientlogger.marketplace.aws.a2z.com
 .mercury.books.com.tw
 .ganon.yahoo.com
-.udc.yahoo.com
 .tr.api.fanbyte.com
 .mcs-va.capcutapi.com
 .mon-va.capcutapi.com
@@ -69222,6 +69226,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.event.*.karrotmarket.com
 .beacons.ads.fubo.tv
 .s3-ca-liveops.easybrain.com
 .trackers.fubo.tv
