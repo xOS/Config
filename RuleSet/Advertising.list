@@ -282,6 +282,8 @@ DOMAIN,info6.video.qq.com
 DOMAIN,ios.video.mpush.qq.com
 DOMAIN,tpns.qq.com
 DOMAIN,vv6.video.qq.com
+DOMAIN,bkvv6.video.qq.com
+DOMAIN-WILDCARD,*vv6.video.qq.com
 DOMAIN-KEYWORD,trace.qq.com
 DOMAIN-KEYWORD,trace.video.qq.com
 IP-CIDR,47.110.187.87/32,no-resolve
