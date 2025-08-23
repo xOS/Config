@@ -40,6 +40,10 @@ DOMAIN-SUFFIX,biz.quark.cn
 DOMAIN-SUFFIX,adtrack.quark.cn
 DOMAIN,jiguang.coc.10086.cn
 DOMAIN,huodong.caiyun.feixin.10086.cn
+DOMAIN-SUFFIX,flysleep.cn
+DOMAIN-SUFFIX,zztfly.com
+DOMAIN-SUFFIX,yunxinfw.com
+DOMAIN-SUFFIX,gepush.com
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
