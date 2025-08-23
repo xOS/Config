@@ -4,6 +4,9 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.openstats.co
+.http-inputs-notion.splunkcloud.com
+.sentinelpro.com
 .openinstall.io
 .s.ssl.qhres2.com
 .big7.com
@@ -66101,6 +66104,9 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.c.bazu.cc
+.sherlock-events-sampler.ebay.com
+.ads.mozilla.org
 .cpx.golem.de
 .carmen.golem.de
 .cfa-js.cafe24.com
@@ -69226,6 +69232,9 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.event.flareflow.tv
+.api.deeplink.dev
+.attr-logs.*.amazonaws.com
 .event.*.karrotmarket.com
 .beacons.ads.fubo.tv
 .s3-ca-liveops.easybrain.com
@@ -71672,6 +71681,7 @@
 .swankysquare.com
 .sweetslope.com
 .swellstocking.com
+.swiftintro.com
 .swimfreely.com
 .swingslip.com
 .swipechief.com

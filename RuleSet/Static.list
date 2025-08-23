@@ -6,6 +6,7 @@ media.infosec.exchange
 static.ada.support
 images.web3.storage
 api.web3.storage
+.cdn.neustar
 .mangadex.network
 .ipfs.eth.aragon.network
 .gateway.serph.network
@@ -3131,6 +3132,7 @@ static.dw.com
 evt.24.com
 .pixiv.cat
 oss.moe.cat
+ns-cdn.neustar.biz
 pics.mf8.biz
 .ipfs.kaleido.art
 disco-static.productessentials.app
