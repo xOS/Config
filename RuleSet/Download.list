@@ -116,6 +116,7 @@ downloads.xiph.org
 .pypi.org
 ftp.ktug.org
 cdimage.kali.org
+archive.kali.org
 http.kali.org
 download.gimp.org
 tug.ctan.org
@@ -380,6 +381,7 @@ amupdatedl2.microsoft.com
 amupdatedl.microsoft.com
 packages.microsoft.com
 cdn.winget.microsoft.com
+.update.microsoft.com
 .download.prss.microsoft.com
 msdl.microsoft.com
 .delivery.mp.microsoft.com

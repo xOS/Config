@@ -145,6 +145,7 @@ domain.expiring-soon.xyz
 .mirror-media.xyz
 .packd.liuxingbaoyu.xyz
 eslint-react.xyz
+beta.eslint-react.xyz
 storage.withfabric.xyz
 .qiniuyun22.xyz
 cdn.yinghuazy.xyz
@@ -285,6 +286,8 @@ cdn.fosstodon.org
 moderate.cleantalk.org
 .angularjs.org
 images.videolan.org
+static.tvtropes.org
+assets.tvtropes.org
 static.tronscan.org
 cdn.tronscan.org
 static.spigotmc.org
