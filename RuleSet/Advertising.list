@@ -36,7 +36,6 @@ DOMAIN-SUFFIX,gravity-engine.com
 DOMAIN-SUFFIX,tgwsc.qq.com
 DOMAIN-SUFFIX,r.release.qq.com
 DOMAIN-SUFFIX,b.quark.cn
-DOMAIN-WILDCARD,b*.quark.cn
 DOMAIN,q.quark.cn
 DOMAIN-SUFFIX,biz.quark.cn
 DOMAIN-SUFFIX,adtrack.quark.cn
