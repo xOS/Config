@@ -105,7 +105,7 @@ if (CNNET.includes(carrier)) {
 
         console.log('QUIC 接口连接预热中...');
         const warmupOptions = {
-            url: 'https://api.quic.me/health',
+            url: 'https://api.aapls.com/health',
             timeout: 5000,
             headers: {
                 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1'
@@ -292,7 +292,7 @@ if (CNNET.includes(carrier)) {
                 break;
 
             case "quic":
-                url = "https://api.quic.me/json?lang=zh";
+                url = "https://api.aapls.com/v1/geoip?lang=zh";
                 parser = function (data) {
                     try {
                         console.log(`quic 解析器收到数据: [${data.toString()}]`);
@@ -451,7 +451,7 @@ if (CNNET.includes(carrier)) {
             } else if (GeoIPApi === 'pingan') {
                 ipv6Url = "https://rmb.pingan.com.cn/itam/mas/linden/ip/request";
             } else if (GeoIPApi === 'quic') {
-                ipv6Url = "https://ipv6.quic.me/json?lang=zh";
+                ipv6Url = "https://ipv6.aapls.com/v1/geoip?lang=zh";
             }
 
             // IPv6 请求选项，针对 QUIC 接口优化
