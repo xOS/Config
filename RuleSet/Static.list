@@ -192,7 +192,6 @@ assets.orz.uno
 media.orz.uno
 .filecunhua.top
 static-cdn.bytegiftia.top
-images.mooncloud.top
 .alphafish.top
 .mobilius.top
 .apperoni.top
@@ -277,10 +276,6 @@ s11.maxstream.org
 s10.maxstream.org
 s9.maxstream.org
 s8.maxstream.org
-s7.maxstream.org
-s6.maxstream.org
-s5.maxstream.org
-s4.maxstream.org
 s1.maxstream.org
 cdn.freesound.org
 cdn.fosstodon.org
@@ -504,7 +499,6 @@ edgeassetservice.azureedge.net
 xpaywalletcdn.azureedge.net
 claritystatic.azureedge.net
 mobilecenter.azureedge.net
-decart-oasis.azureedge.net
 typescript.azureedge.net
 edgestatic.azureedge.net
 ni-assets.azureedge.net
@@ -688,6 +682,8 @@ static-cdn.jtvnw.net
 jsdelivr.ioiox.net
 static-act.imoim.net
 .imgix.net
+file1.hkepc.net
+i.hkepc.net
 .ftcdn.net
 .fonts.net
 .fmcdn.net
@@ -724,8 +720,6 @@ cdn.ywxi.net
 fonts.sony.net
 www-static.ripe.net
 static.plus.net
-static-cdn.osdn.net
-static.osdn.net
 .ipfs.mttk.net
 .loli.net
 texture.laby.net
@@ -791,7 +785,6 @@ npm.antfu.dev
 p.sda1.dev
 .rss3.dev
 cdn.pika.dev
-mastodon-static.miao.dev
 .jspm.dev
 zod.dev
 cdn.tuk.dev
@@ -1226,7 +1219,6 @@ assets.redbullshop.com
 cached.rebuyengine.com
 cdn.rebuyengine.com
 assets-www.readspeaker.com
-vte-us.readspeaker.com
 vte-eu.readspeaker.com
 cdn-us.readspeaker.com
 cdn-eu.readspeaker.com
@@ -1255,11 +1247,6 @@ cdn.neverbounce.com
 pro2-ui-assets-s3-fy.myportfolio.com
 cdn.myportfolio.com
 i.mydramalist.com
-static5.muchohentai.com
-static4.muchohentai.com
-static3.muchohentai.com
-static2.muchohentai.com
-static1.muchohentai.com
 .ipfsgateway.makersplace.com
 .macysassets.com
 .ltwebstatic.com
@@ -1580,7 +1567,6 @@ ajax.cloudflare.com
 cf-assets.www.cloudflare.com
 .nel.cloudflare.com
 cp4.cloudflare.com
-cp3.cloudflare.com
 cp2.cloudflare.com
 imagecdn.clips4sale.com
 static.clips4sale.com
@@ -1724,10 +1710,8 @@ cdn-dynmedia-1.microsoft.com
 cdn.techcommunity.microsoft.com
 store-images.microsoft.com
 .smartscreen.microsoft.com
-answers-afd.microsoft.com
 cmtycdn.powerpages.microsoft.com
 wcpstatic.microsoft.com
-filestore.community.support.microsoft.com
 cdn.create.microsoft.com
 images.ecomm.microsoft.com
 ajax.microsoft.com
@@ -1837,7 +1821,6 @@ upos-sz-mirroralibstar1.bilivideo.com
 secure.beer7live.com
 cdn.babylonjs.com
 .awsstatic.com
-wac-cdn-2.atlassian.com
 media-cdn.atlassian.com
 wac-cdn.atlassian.com
 .assettype.com
@@ -2307,16 +2290,7 @@ aurora-customization-usw2.lithium.com
 static-forms.klaviyo.com
 static.klaviyo.com
 a.klaviyo.com
-media10.kissjav.com
-media9.kissjav.com
-media8.kissjav.com
-media7.kissjav.com
-media4.kissjav.com
-media3.kissjav.com
-media2.kissjav.com
-media1.kissjav.com
 cdnsecakmi.kaltura.com
-cdnapisec.kaltura.com
 cdnapi.kaltura.com
 cfvod.kaltura.com
 moodular.jotform.com
@@ -2428,7 +2402,6 @@ s1.divhunt.com
 import-cdn.default.com
 cdn.datdota.com
 proxy.csidetm.com
-v2-images.crackle.com
 player-frontend.cnevids.com
 player.cnevids.com
 .cmail20.com
@@ -2472,7 +2445,6 @@ cdn.apponic.com
 fast.appcues.com
 app-spm.com
 static.apkpure.com
-cdn.apkmonk.com
 static.anyporn.com
 .net.anydesk.com
 connectivitycheck.android.com
@@ -2738,7 +2710,6 @@ cdn.cxense.com
 .cwwcdn.com
 mkt-site-asset.crypto.com
 static.crypto.com
-sw.cool3c.com
 static-redesign.cnbcfm.com
 image.cnbcfm.com
 sf-flow-web-cdn.ciciai.com
@@ -2788,7 +2759,6 @@ cdn-widgetsrepository.yotpo.com
 cdn-swell-assets.yotpo.com
 staticw2.yotpo.com
 yep.video.yahoo.com
-cdn1.xxxsx.com
 .xhcdn.com
 .wsimg.com
 .wixmp.com
@@ -2881,8 +2851,6 @@ assets.ifttt.com
 talk.hyvor.com
 video-meta.humix.com
 assets.humix.com
-file1.hkepc.com
-i.hkepc.com
 .h-cdn.com
 static.gopro.com
 media4.giphy.com
@@ -2893,7 +2861,7 @@ media0.giphy.com
 media.giphy.com
 i.giphy.com
 cdns.gigya.com
-cdns.us.gigya.com
+cdn.gigya.com
 .ggpht.com
 cdn-1.ggjav.com
 media.gettr.com
@@ -2931,9 +2899,7 @@ assets-themes.chess.com
 sites.chase.com
 asset.chase.com
 assets-s3-us-east-1.ceros.com
-media-s3-us-west-1.ceros.com
 media-s3-us-east-1.ceros.com
-media-s3-eu-west-1.ceros.com
 ajax.cdnjs.com
 content-management-files.canva.com
 static.canva.com
@@ -3260,7 +3226,6 @@ embed-v2.testimonial.to
 .ninjastream.to
 .easylist.to
 .pixhost.to
-static.cracked.to
 img.sflix.to
 embed.tawk.to
 media.mas.to
@@ -3289,6 +3254,7 @@ images.spr.so
 .gitapp.si
 .gcr.si
 assets.vantage.sh
+cdn.cracked.sh
 api-frameworks.vercel.sh
 gitpkg-fork.vercel.sh
 openapi.vercel.sh
@@ -3544,7 +3510,6 @@ assets.holopin.io
 .files.gitbook.io
 geojson.io
 .ipfs.eternum.io
-static.cracked.io
 cdn.concert.io
 cpwebassets.codepen.io
 static.codepen.io
@@ -3783,8 +3748,6 @@ s.gishan.cc
 .bigcdn.cc
 pics.vpdmm.cc
 resize-image.vocus.cc
-ti2.knews.cc
-ti1.knews.cc
 .ungh.cc
 cdn.road.cc
 t4.picb.cc

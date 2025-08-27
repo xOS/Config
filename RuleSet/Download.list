@@ -71,7 +71,6 @@ repo.debiancn.org
 s3.teckids.org
 .iso.reactos.org
 downloads.openwrt.org
-aus2-community.mozilla.org
 download.mozilla.org
 versioncheck-bg.addons.mozilla.org
 versioncheck.addons.mozilla.org
@@ -150,7 +149,6 @@ piotrkosoft.net
 ftp.piotrkosoft.net
 .finkmirrors.net
 cpan.excellmedia.net
-ftp.download-by.net
 apache.communilink.net
 mirror.za.web4africa.net
 packages.virtfusion.net
@@ -239,12 +237,9 @@ mirror-hk.koddos.net
 mirror.koddos.net
 .mirror.gtcomm.net
 cloudfront.debian.net
-httpupdate127.cpanel.net
-httpupdate118.cpanel.net
 mirrors.coreix.net
 dl3.xmind.net
 dl2.xmind.net
-apache.volia.net
 mirrors.sonic.net
 mirror.pregi.net
 mirrors.netix.net
@@ -368,7 +363,6 @@ desktop.parallels.com
 update.parallels.com
 .mirrors.omnilance.com
 mirror.navercorp.com
-mirrors.namecheap.com
 mirrors.mivocloud.com
 .software-download.microsoft.com
 download.visualstudio.microsoft.com
@@ -922,7 +916,6 @@ mirrors.xservers.ro
 mirrors.m247.ro
 mirrors.nav.ro
 ftp.lug.ro
-cpan.perl.pt
 cpan.zbr.pt
 mirrors.up.pt
 ftp.eq.uc.pt
@@ -996,7 +989,6 @@ ftp.jaist.ac.jp
 it.apache.contactlab.it
 ftp.eutelia.it
 mirror.nohup.it
-ftp.panu.it
 .mirror.garr.it
 ctan.yazd.ac.ir
 ctan.um.ac.ir
