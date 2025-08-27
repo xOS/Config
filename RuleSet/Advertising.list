@@ -16,10 +16,8 @@ DOMAIN-SUFFIX,content-understand-strategy.sm.cn
 DOMAIN-SUFFIX,adapi.izuiyou.com
 DOMAIN-SUFFIX,ixiaochuan.cn
 DOMAIN,tips.video.qq.com
-//DOMAIN,playproxy.video.qq.com
 DOMAIN-WILDCARD,broker.tips*.gz.tencent.com
 DOMAIN-WILDCARD,disp-*.3g.qq.com
-//DOMAIN,vv.video.qq.com
 DOMAIN-SUFFIX,chinaliftoff.io
 DOMAIN,ai.yun.139.com
 DOMAIN-SUFFIX,andfx.cn
@@ -35,7 +33,6 @@ DOMAIN-SUFFIX,ubixioe.com
 DOMAIN-SUFFIX,gravity-engine.com
 DOMAIN-SUFFIX,tgwsc.qq.com
 DOMAIN-SUFFIX,r.release.qq.com
-//DOMAIN-SUFFIX,b.quark.cn
 DOMAIN,q.quark.cn
 DOMAIN-SUFFIX,render.quark.cn
 DOMAIN-SUFFIX,access-open.quark.cn
@@ -411,7 +408,6 @@ DOMAIN-SUFFIX,static.lstat.youku.com
 DOMAIN-SUFFIX,vid.atm.youku.com
 DOMAIN-SUFFIX,walp.atm.youku.com
 DOMAIN,ad.mobile.youku.com
-DOMAIN,iyes.youku.com
 DOMAIN,pl.cp31.ott.cibntv.net
 DOMAIN-SUFFIX,actives.youku.com
 DOMAIN-SUFFIX,ad.api.3g.tudou.com
@@ -454,6 +450,27 @@ DOMAIN-SUFFIX,v.l.youku.com
 DOMAIN-SUFFIX,val.api.youku.com
 DOMAIN-SUFFIX,wan.youku.com
 DOMAIN-WILDCARD,yk*.youku.com
+DOMAIN,un-acs.youku.com,DIRECT,extended-matching
+DOMAIN,acs4baichuan.m.taobao.com
+DOMAIN,adsmind.ugdtimg.com
+DOMAIN,amdc.m.youku.com
+DOMAIN,api.sm.cn
+DOMAIN,apiv4-iyes.youku.com
+DOMAIN,cad.youku.com
+DOMAIN,huichuan-mc.sm.cn
+DOMAIN,huichuan.sm.cn
+DOMAIN,m-vali.cp31.ott.cibntv.net
+DOMAIN-WILDCARD,m-vali.cp*.ott.cibntv.net
+DOMAIN,mc.atm.youku.com
+DOMAIN,pre-acs.youku.com
+DOMAIN,vali-g1.cp31.ott.cibntv.net
+DOMAIN-WILDCARD,vali-g*.cp*.ott.cibntv.net
+DOMAIN,vali-ugc.cp31.ott.cibntv.net
+DOMAIN-WILDCARD,vali-ugc.cp*.ott.cibntv.net
+DOMAIN,yk-ssp.ad.youku.com
+DOMAIN,ykad-data.youku.com
+DOMAIN,youku-acs.m.taobao.com
+// DOMAIN-WILDCARD,valipl-a*.cp*.ott.cibntv.net
 
 # > 阿里
 DOMAIN-SUFFIX,api.waptest.taobao.com
