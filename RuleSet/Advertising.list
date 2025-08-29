@@ -51,6 +51,11 @@ DOMAIN-SUFFIX,flysleep.cn
 DOMAIN-SUFFIX,zztfly.com
 DOMAIN-SUFFIX,yunxinfw.com
 DOMAIN-SUFFIX,gepush.com
+DOMAIN, adsmind.ugdtimg.com
+DOMAIN, adx-bj.anythinktech.com
+DOMAIN, adx-os.bridgeturbo.com
+DOMAIN, da.bridgeturbo.com
+DOMAIN, pgdt.ugdtimg.com,
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
