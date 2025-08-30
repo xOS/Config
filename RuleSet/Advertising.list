@@ -57,16 +57,6 @@ DOMAIN, adx-os.bridgeturbo.com
 DOMAIN, da.bridgeturbo.com
 DOMAIN, pgdt.ugdtimg.com
 
-# > 电信营业厅
-DOMAIN-WILDCARD,*gopro.189.cn
-DOMAIN-WILDCARD,appgoad*.189.cn
-DOMAIN-WILDCARD,*ad*.189.cn
-DOMAIN,appgoadpro.189.cn
-DOMAIN,appgoadsz.189.cn
-DOMAIN,bkappadpro.189.cn
-DOMAIN,bkappgopro.189.cn
-DOMAIN,appgopro.189.cn
-
 # > 百度网盘
 DOMAIN,sofire.baidu.com
 DOMAIN-SUFFIX,hpplay.cn
