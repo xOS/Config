@@ -56,6 +56,9 @@ DOMAIN, adx-bj.anythinktech.com
 DOMAIN, adx-os.bridgeturbo.com
 DOMAIN, da.bridgeturbo.com
 DOMAIN, pgdt.ugdtimg.com
+DOMAIN-SUFFIX,oneadtag.com
+DOMAIN-SUFFIX,global-rtb.com
+DOMAIN-SUFFIX,s4mdsp.com
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com

@@ -3,3 +3,5 @@ DOMAIN-SUFFIX,photos.googleapis.com
 DOMAIN-WILDCARD,*---sn-*.googlevideo.com
 DOMAIN-WILDCARD,*-my.sharepoint.com
 DOMAIN-SUFFIX,my.microsoftpersonalcontent.com
+DOMAIN-WILDCARD,live-global-cdn-v*.sooplive.co.kr
+DOMAIN-SUFFIX,stimg.sooplive.co.kr
