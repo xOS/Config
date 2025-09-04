@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,my.microsoftpersonalcontent.com
 
 # > SOOP  
 DOMAIN-WILDCARD,live-global-cdn-v*.sooplive.co.kr
+DOMAIN-WILDCARD,vod-normal-*-cdn-*.sooplive.co.kr
 DOMAIN-SUFFIX,stimg.sooplive.co.kr
 DOMAIN-SUFFIX,static.file.sooplive.co.kr
 DOMAIN-SUFFIX,res.sooplive.co.kr
