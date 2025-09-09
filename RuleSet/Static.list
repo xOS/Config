@@ -45,6 +45,7 @@ cdn5.telegram.space
 cdn4.telegram.space
 cdn1.telegram.space
 .pstorage.space
+.tutu1.space
 cdn.hiive.space
 cdn.deta.space
 .ipfs.kavin.rocks
@@ -1822,6 +1823,8 @@ static.coingecko.com
 assets.coingecko.com
 .cnbetacdn.com
 resources.chessbase.com
+banners.chessbase.com
+share.chessbase.com
 webstatic.chargebee.com
 js1.chargebee.com
 js.chargebee.com
@@ -3158,6 +3161,7 @@ videos.elephas.app
 .edgeone.app
 bundle.dyn-rev.app
 .vercel.app
+assets.slater.app
 pic.macked.app
 webassets.linear.app
 uploads.linear.app
@@ -3351,6 +3355,7 @@ cdn01.jotfor.ms
 cdn.jotfor.ms
 s3.acg.mn
 s3.m.0x.mk
+cdn.fasterthanli.me
 .randomuser.me
 .disconnect.me
 api.crashguard.me
