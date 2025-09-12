@@ -529,6 +529,8 @@ viu-static.akamaized.net
 mycommerce.akamaized.net
 amp.akamaized.net
 mixin-images.zeromesh.net
+static.zerochan.net
+s1.zerochan.net
 .yastatic.net
 cdn.wishpond.net
 .widencdn.net
@@ -792,6 +794,7 @@ plugins.dprint.dev
 fonts.upset.dev
 .react.dev
 .pages.dev
+ah-cdn.merge.dev
 p.depot.dev
 media.daily.dev
 cdn.daily.dev
@@ -877,6 +880,7 @@ js.braintreegateway.com
 jslibs.blackmagicdesign.com
 images.blackmagicdesign.com
 css.blackmagicdesign.com
+js.assemblyexchange.com
 cdn.worldvectorlogo.com
 cms.worldpokerdeals.com
 analytics.welcomesoftware.com
@@ -1006,6 +1010,7 @@ cdn.prowritingaid.com
 .cdn.printfriendly.com
 .pressidiumcdn.com
 media.pointandplace.com
+www.paypalobjects.com
 .oreillystatic.com
 .notion-static.com
 .agechecker.northern-apps.com
@@ -1069,6 +1074,9 @@ assets.xboxservices.com
 typescript.visualstudio.com
 sts.online.visualstudio.com
 .tunnels.api.visualstudio.com
+static-assets-prod.unrealengine.com
+components.unrealengine.com
+cms-assets.unrealengine.com
 cdn3.unrealengine.com
 cdn2.unrealengine.com
 cdn1.unrealengine.com
@@ -1862,7 +1870,12 @@ api.media.atlassian.com
 s-cdn.anthropic.com
 a-cdn.anthropic.com
 .ipfs.anonymize.com
+static.aninoapps.com
+wa1.aninoapps.com
+pm1.aninoapps.com
+pa1.aninoapps.com
 images.anandtech.com
+cm1.aminoapps.com
 ip-ranges.amazonaws.com
 .assets.as2.amazonaws.com
 .abcnewsfe.com
@@ -2054,6 +2067,9 @@ cdn.getkoala.com
 assets.getkirby.com
 geoip-js.com
 maps.geoapify.com
+img5.gelbooru.com
+img4.gelbooru.com
+img2.gelbooru.com
 .scripts.gatorapi.com
 .gammacdn.com
 media.gamestop.com
@@ -3730,6 +3746,7 @@ res.craft.do
 .tile.openstreetmap.de
 sp-spiegel-de.spiegel.de
 cdn.prod.www.spiegel.de
+www.acgpix.de
 cdn.ionos.de
 .ipfs.slang.cx
 cdn.stackoverflow.co
@@ -3851,6 +3868,7 @@ r2.leadsy.ai
 s3.masto.ai
 participants.evolv.ai
 media.evolv.ai
+cdn.candy.ai
 .telemetry.services.yofi.ai
 cdn2.suno.ai
 cdn1.suno.ai
