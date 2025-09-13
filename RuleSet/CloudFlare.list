@@ -64,3 +64,13 @@ IP-CIDR6,2606:4700::/32,no-resolve
 IP-CIDR6,2803:f800::/32,no-resolve
 IP-CIDR6,2a06:98c0::/29,no-resolve
 IP-CIDR6,2c0f:f248::/32,no-resolve
+IP-ASN,395747,no-resolve
+IP-ASN,394536,no-resolve
+IP-ASN,209242,no-resolve
+IP-ASN,203898,no-resolve
+IP-ASN,202623,no-resolve
+IP-ASN,14789,no-resolve
+IP-ASN,139242,no-resolve
+IP-ASN,133877,no-resolve
+IP-ASN,13335,no-resolve
+IP-ASN,132892,no-resolve
