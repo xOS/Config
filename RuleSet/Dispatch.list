@@ -25,3 +25,6 @@ DOMAIN-SUFFIX,sports.img.sooplive.co.kr
 
 # > Instagram 
 DOMAIN-SUFFIX,cdninstagram.com
+
+# > 原神资源
+DOMAIN-WILDCARD,autopatch*.yuanshen.com
