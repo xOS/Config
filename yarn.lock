@@ -61,21 +61,18 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/momoa/-/momoa-2.0.2.tgz#127d18c22abf4dd988797c898b4356db8d99b662"
   integrity sha512-mkMcsshJ7L17AyntqpyjLiGqhbG62w93B0StW+HSNVJ1WUeVFA2uPssV/GufEfDqN6lRKI1I+uDzBUw83C0VuA==
 
-"@sindresorhus/slugify@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/slugify/-/slugify-2.2.1.tgz#fa2e2e25d6e1e74a2eeb5e2c37f5ccc516ed2c4b"
-  integrity sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==
+"@sindresorhus/slugify@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/slugify/-/slugify-3.0.0.tgz#7b3c9bb8a5454923ef693c272141a46a6a29e62d"
+  integrity sha512-SCrKh1zS96q+CuH5GumHcyQEVPsM4Ve8oE0E6tw7AAhGq50K8ojbTUOQnX/j9Mhcv/AXiIsbCfquovyGOo5fGw==
   dependencies:
-    "@sindresorhus/transliterate" "^1.0.0"
+    "@sindresorhus/transliterate" "^2.0.0"
     escape-string-regexp "^5.0.0"
 
-"@sindresorhus/transliterate@^1.0.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/transliterate/-/transliterate-1.5.0.tgz#841109db51fe3158787c42a91c45c3ffea7589be"
-  integrity sha512-/sfSkoNelLq5riqNRp5uBjHIKBi1MWZk9ubRT1WiBQuTfmDf7BeQkph2DJzRB83QagMPHk2VDjuvpy0VuwyzdA==
-  dependencies:
-    escape-string-regexp "^5.0.0"
-    lodash.deburr "^4.1.0"
+"@sindresorhus/transliterate@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/transliterate/-/transliterate-2.0.0.tgz#e22e9a2eb6e426b19cddb3993d2d78e0893e44bc"
+  integrity sha512-lRx63oCHxeJ90DqIgmbxH1PQmiBDY1wVaLzB4hK0d/xS5BrG1iZO3HdCJS/DQJk6GJ8xHDev8OMI7iGxvE1ZUA==
 
 ajv-errors@^1.0.1:
   version "1.0.1"
@@ -316,11 +313,6 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
-
-lodash.deburr@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
-  integrity sha1-3bG7s+8HRYwBd7oH3hRCLLAz/5s=
 
 lodash@^4.17.15:
   version "4.17.21"
