@@ -40,7 +40,6 @@
 .assets.publicgood.com
 .tagm.uneedcomms.com
 .openstats.co
-.http-inputs-notion.splunkcloud.com
 .sentinelpro.com
 .openinstall.io
 .s.ssl.qhres2.com
@@ -67070,6 +67069,7 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.ad-bls-tracking.lemino.docomo.ne.jp
 .bdvmetricas.banvenez.com.ve
 .ek-tracker.ekitan.com
 .logstash-*.radio-canada.ca
