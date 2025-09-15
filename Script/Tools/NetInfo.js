@@ -96,28 +96,7 @@ if (CNNET.includes(carrier)) {
     const ip = IPv4;
     const router = wifi.ssid ? v4.primaryRouter : '';
 
-    // QUIC 接口连接预热函数
-    function warmupQuicConnection(callback) {
-        if (GeoIPApi !== 'quic') {
-            callback();
-            return;
-        }
-
-        console.log('QUIC 接口连接预热中...');
-        const warmupOptions = {
-            url: 'https://api.aapls.com/health',
-            timeout: 5000,
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1'
-            }
-        };
-
-        $httpClient.get(warmupOptions, function (error, response, data) {
-            // 无论成功失败都继续，预热只是为了建立连接
-            console.log('QUIC 连接预热完成');
-            setTimeout(callback, 500); // 短暂延迟后继续
-        });
-    }
+    // 已移除：QUIC 接口连接预热函数（避免额外请求导致超时）
 
     // 获取外部 IPv4 地址的函数
     function getExternalIPv4(callback) {
@@ -366,211 +345,138 @@ if (CNNET.includes(carrier)) {
                 return;
         }
 
-        // QUIC 接口专用优化配置
-        const requestOptions = {
-            url: url,
-            timeout: GeoIPApi === 'quic' ? 15000 : 10000, // QUIC 接口使用更长超时时间
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1',
-                'Accept': 'application/json, text/plain, */*',
-                'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-                'Cache-Control': 'no-cache',
-                'Connection': 'keep-alive'
+        // 简化：直接一次请求，不做 QUIC 特殊重试与定制超时
+        $httpClient.get(url, function (error, response, data) {
+            if (error) {
+                console.log(`${GeoIPApi} 接口请求错误:`, error);
+                console.log(`${GeoIPApi} 请求URL: ${url}`);
+                callback(null, null);
+                return;
             }
-        };
 
-        // 重试函数，专门针对 QUIC 接口优化
-        function makeRequest(retryCount = 0) {
-            const maxRetries = GeoIPApi === 'quic' ? 4 : 2; // QUIC 接口允许更多重试
+            console.log(`${GeoIPApi} 响应状态码:`, response ? response.status : 'no response');
+            if (response && response.headers) {
+                console.log(`${GeoIPApi} 响应头:`, JSON.stringify(response.headers, null, 2));
+            }
 
-            $httpClient.get(requestOptions, function (error, response, data) {
-                if (error) {
-                    console.log(`${GeoIPApi} 接口请求错误 (尝试 ${retryCount + 1}/${maxRetries + 1}):`, error);
-                    console.log(`${GeoIPApi} 请求URL: ${url}`);
+            if (!data) {
+                console.log(`${GeoIPApi} 接口返回空数据`);
+                callback(null, null);
+                return;
+            }
 
-                    // QUIC 接口重试逻辑
-                    if (GeoIPApi === 'quic' && retryCount < maxRetries) {
-                        const retryDelay = Math.min(2000 * Math.pow(1.5, retryCount), 8000); // 指数退避，最大8秒
-                        console.log(`${GeoIPApi} 接口将在 ${retryDelay}ms 后重试...`);
-                        setTimeout(() => makeRequest(retryCount + 1), retryDelay);
-                        return;
-                    }
+            // 详细打印返回数据
+            const dataStr = data ? data.toString() : 'null';
+            console.log(`${GeoIPApi} 接口返回完整数据: [${dataStr}]`);
+            console.log(`${GeoIPApi} 接口数据长度: ${dataStr.length}`);
+            console.log(`${GeoIPApi} 接口数据类型:`, typeof data);
 
-                    callback(null, null);
-                    return;
-                }
+            const result = parser(data);
 
-                console.log(`${GeoIPApi} 响应状态码:`, response ? response.status : 'no response');
-                if (response && response.headers) {
-                    console.log(`${GeoIPApi} 响应头:`, JSON.stringify(response.headers, null, 2));
-                }
+            if (!result.ip || !(isValidIPv4(result.ip) || isValidIPv6(result.ip))) {
+                console.log(`${GeoIPApi} 接口解析失败，解析结果:`, JSON.stringify(result));
+                console.log(`${GeoIPApi} 是否有效IP:`, result.ip ? (isValidIPv4(result.ip) || isValidIPv6(result.ip)) : false);
+                callback(null, null);
+                return;
+            }
 
-                if (!data) {
-                    console.log(`${GeoIPApi} 接口返回空数据`);
-                    callback(null, null);
-                    return;
-                }
-
-                // 详细打印返回数据
-                const dataStr = data ? data.toString() : 'null';
-                console.log(`${GeoIPApi} 接口返回完整数据: [${dataStr}]`);
-                console.log(`${GeoIPApi} 接口数据长度: ${dataStr.length}`);
-                console.log(`${GeoIPApi} 接口数据类型:`, typeof data);
-
-                const result = parser(data);
-
-                if (!result.ip || !(isValidIPv4(result.ip) || isValidIPv6(result.ip))) {
-                    console.log(`${GeoIPApi} 接口解析失败，解析结果:`, JSON.stringify(result));
-                    console.log(`${GeoIPApi} 是否有效IP:`, result.ip ? (isValidIPv4(result.ip) || isValidIPv6(result.ip)) : false);
-                    callback(null, null);
-                    return;
-                }
-
-                console.log(`${GeoIPApi} 接口解析成功:`, JSON.stringify(result));
-                callback(result.ip, result.info || '未知地区');
-            });
-        }
-
-        // 开始第一次请求
-        makeRequest();
+            console.log(`${GeoIPApi} 接口解析成功:`, JSON.stringify(result));
+            callback(result.ip, result.info || '未知地区');
+        });
     }
 
-    // 获取外部 IPv6 地址的函数（增强版，支持真实的外部查询）
+    // 获取外部 IPv6 地址的函数（恢复对支持接口的一次外部查询）
     function getExternalIPv6(callback) {
-        // 只要未开启 EnableIPv6 或没有本地 IPv6 地址，直接回调
+        // 未开启或本机无 IPv6，直接返回
         if (!EnableIPv6 || !IPv6) {
             callback(null, null, false);
             return;
         }
 
-        // 检查 API 是否支持 IPv6 查询
+        // 仅对支持 IPv6 的接口发起一次请求
         if (GeoIPApi === 'ping0' || GeoIPApi === 'pingan' || GeoIPApi === 'quic') {
             let ipv6Url;
             if (GeoIPApi === 'ping0') {
                 ipv6Url = "https://ipv6.ping0.cc/geo";
             } else if (GeoIPApi === 'pingan') {
                 ipv6Url = "https://rmb.pingan.com.cn/itam/mas/linden/ip/request";
-            } else if (GeoIPApi === 'quic') {
+            } else { // quic
                 ipv6Url = "https://ipv6.aapls.com/v1/geoip?lang=zh";
             }
 
-            // IPv6 请求选项，针对 QUIC 接口优化
-            const ipv6RequestOptions = {
-                url: ipv6Url,
-                timeout: GeoIPApi === 'quic' ? 15000 : 10000, // QUIC 接口使用更长超时
-                headers: {
-                    'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1',
-                    'Accept': 'application/json, text/plain, */*',
-                    'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-                    'Cache-Control': 'no-cache',
-                    'Connection': 'keep-alive'
+            $httpClient.get(ipv6Url, function (error, response, data) {
+                if (error || !data) {
+                    callback(null, null, false);
+                    return;
                 }
-            };
 
-            // IPv6 重试函数，专门针对 QUIC 接口优化
-            function makeIPv6Request(retryCount = 0) {
-                const maxRetries = GeoIPApi === 'quic' ? 4 : 2; // QUIC 接口允许更多重试
-
-                $httpClient.get(ipv6RequestOptions, function (error, response, data) {
-                    if (error) {
-                        console.log(`${GeoIPApi} IPv6接口请求错误 (尝试 ${retryCount + 1}/${maxRetries + 1}):`, error);
-
-                        // QUIC 接口重试逻辑
-                        if (GeoIPApi === 'quic' && retryCount < maxRetries) {
-                            const retryDelay = Math.min(2000 * Math.pow(1.5, retryCount), 8000); // 指数退避
-                            console.log(`${GeoIPApi} IPv6接口将在 ${retryDelay}ms 后重试...`);
-                            setTimeout(() => makeIPv6Request(retryCount + 1), retryDelay);
+                try {
+                    if (GeoIPApi === 'ping0') {
+                        const lines = data.toString().trim().split('\n').map(line => line.trim()).filter(line => line);
+                        if (lines.length >= 2) {
+                            const ip = lines[0];
+                            if (isValidIPv6(ip)) {
+                                const location = lines[1];
+                                const provider = lines.length >= 4 ? lines[3] : '';
+                                let info = location;
+                                if (provider && !provider.startsWith('AS')) info += provider;
+                                info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
+                                const obfuscated = ip.replace(/^(.{7}).+(.{7})$/, "$1****$2");
+                                callback(obfuscated, info, false);
+                                return;
+                            }
+                        }
+                    } else if (GeoIPApi === 'pingan') {
+                        const json = JSON.parse(data);
+                        if (json && json.code === 0 && json.data && json.data.ip && isValidIPv6(json.data.ip)) {
+                            const ip = json.data.ip;
+                            const region = json.data.region || '';
+                            const city = json.data.city || '';
+                            const isp = json.data.isp || '';
+                            const info = `${region}${city}${isp}`.replace(/\s+|[-/\\]/g, '') || '未知地区';
+                            const obfuscated = ip.replace(/^(.{7}).+(.{7})$/, "$1****$2");
+                            callback(obfuscated, info, false);
                             return;
                         }
-
-                        callback(null, null, false);
-                        return;
-                    }
-
-                    let result = { ip: null, info: null };
-
-                    try {
-                        if (GeoIPApi === 'ping0') {
-                            const lines = data.toString().trim().split('\n').map(line => line.trim()).filter(line => line);
-                            if (lines.length >= 2) {
-                                const ip = lines[0];
-                                if (isValidIPv6(ip)) {
-                                    const location = lines[1];
-                                    const provider = lines.length >= 4 ? lines[3] : '';
-                                    let info = location;
-                                    if (provider && !provider.startsWith('AS')) {
-                                        info += provider;
-                                    }
-                                    info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
-                                    result = { ip, info };
-                                }
-                            }
-                        } else if (GeoIPApi === 'pingan') {
-                            const json = JSON.parse(data);
-                            if (json && json.code === 0 && json.data && json.data.ip && isValidIPv6(json.data.ip)) {
-                                const ip = json.data.ip;
-                                const region = json.data.region || '';
-                                const city = json.data.city || '';
-                                const isp = json.data.isp || '';
-                                const info = `${region}${city}${isp}`.replace(/\s+|[-/\\]/g, '') || '未知地区';
-                                result = { ip, info };
-                            }
-                        } else if (GeoIPApi === 'quic') {
-                            let json = JSON.parse(data);
-                            if (Array.isArray(json)) {
-                                json = json[0] || {};
-                            }
-                            if (json && json.ip && isValidIPv6(json.ip)) {
-                                const ip = json.ip;
-                                const region = json.region || '';
-                                const city = json.city || '';
-                                const district = json.district || json.street || '';
-                                let isp = json.isp || '';
-                                // connection_type 处理
-                                let connType = '';
-                                if (json.connection_type && typeof json.connection_type === 'string' && json.connection_type.trim() !== '') {
-                                    // 判断是否为中文
-                                    if (/[\u4e00-\u9fa5]/.test(json.connection_type)) {
-                                        // 中文直接使用
-                                        connType = json.connection_type;
-                                    } else {
-                                        // 英文进行翻译
-                                        switch (json.connection_type) {
-                                            case 'Cellular': connType = '蜂窝网络'; break;
-                                            case 'Cable/DSL': connType = '宽带网络'; break;
-                                            case 'Corporate': connType = '企业专线'; break;
-                                            default: connType = '';
-                                        }
-                                    }
-                                    if (connType) {
-                                        isp += connType;
+                    } else { // quic
+                        let json = JSON.parse(data);
+                        if (Array.isArray(json)) json = json[0] || {};
+                        if (json && json.ip && isValidIPv6(json.ip)) {
+                            const ip = json.ip;
+                            const region = json.region || '';
+                            const city = json.city || '';
+                            const district = json.district || json.street || '';
+                            let isp = json.isp || '';
+                            let connType = '';
+                            if (json.connection_type && typeof json.connection_type === 'string' && json.connection_type.trim() !== '') {
+                                if (/^[\u4e00-\u9fa5]+$/.test(json.connection_type)) {
+                                    connType = json.connection_type;
+                                } else {
+                                    switch (json.connection_type) {
+                                        case 'Cellular': connType = '蜂窝网络'; break;
+                                        case 'Cable/DSL': connType = '宽带网络'; break;
+                                        case 'Corporate': connType = '企业专线'; break;
+                                        default: connType = '';
                                     }
                                 }
-                                // 拼接 info，包含 district 字段
-                                let info = `${region}${city}`;
-                                if (district) info += district;
-                                info += isp;
-                                info = info.replace(/\s+|[-/\\]/g, '') || '未知地区';
-                                result = { ip, info };
+                                if (connType) isp += connType;
                             }
+                            let info = `${region}${city}`;
+                            if (district) info += district;
+                            info += isp;
+                            info = info.replace(/\s+|[-/\\]/g, '') || '未知地区';
+                            const obfuscated = ip.replace(/^(.{7}).+(.{7})$/, "$1****$2");
+                            callback(obfuscated, info, false);
+                            return;
                         }
-                    } catch (e) {
-                        // ignore parsing error
                     }
-
-                    if (result.ip) {
-                        const obfuscatedIp = result.ip.replace(/^(.{7}).+(.{7})$/, "$1****$2");
-                        callback(obfuscatedIp, result.info, false);
-                    } else {
-                        callback(null, null, false);
-                    }
-                });
-            }
-
-            // 开始第一次 IPv6 请求
-            makeIPv6Request();
+                } catch (e) {
+                    // ignore
+                }
+                callback(null, null, false);
+            });
         } else {
-            // 对于不支持 IPv6 查询的 API，默认返回本地 IPv6
+            // 其它接口认为本机 IPv6 直接公网直连
             const IPv6Original = v6.primaryAddress;
             if (IPv6Original) {
                 callback(IPv6, '公网直连', true);
@@ -580,31 +486,29 @@ if (CNNET.includes(carrier)) {
         }
     }
 
-    // 先进行 QUIC 连接预热，然后获取外部 IPv4 信息
-    warmupQuicConnection(function () {
-        getExternalIPv4(function (externalIP, info) {
-            if (!externalIP) {
-                $done({
-                    title: "外网信息获取失败",
-                    content: `无法通过 ${GeoIPApi} 接口获取外部 IP 信息`,
-                    icon: "exclamationmark.triangle",
-                    "icon-color": "#ff9800"
-                });
-                return;
-            }
-
-            // 获取外部 IPv6 地址
-            getExternalIPv6(function (externalIPv6, ipv6Info, isIPv6Same) {
-                const body = {
-                    title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`,
-                    content: wifi.ssid
-                        ? `路由 IPv4：${router}\n内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6}\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`
-                        : `内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6}\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`,
-                    icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
-                    "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
-                };
-                $done(body);
+    // 直接获取外部 IPv4 信息
+    getExternalIPv4(function (externalIP, info) {
+        if (!externalIP) {
+            $done({
+                title: "外网信息获取失败",
+                content: `无法通过 ${GeoIPApi} 接口获取外部 IP 信息`,
+                icon: "exclamationmark.triangle",
+                "icon-color": "#ff9800"
             });
+            return;
+        }
+
+        // 获取外部 IPv6 地址（简化版）
+        getExternalIPv6(function (externalIPv6, ipv6Info, isIPv6Same) {
+            const body = {
+                title: wifi.ssid ? `WiFi 网络 | ${wifi.ssid}` : `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`,
+                content: wifi.ssid
+                    ? `路由 IPv4：${router}\n内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6}\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`
+                    : `内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6}\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`,
+                icon: wifi.ssid ? "wifi" : "antenna.radiowaves.left.and.right",
+                "icon-color": wifi.ssid ? "#007AFE" : "#35C759"
+            };
+            $done(body);
         });
     });
 })();
