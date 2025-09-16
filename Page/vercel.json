@@ -1,10 +1,11 @@
 {
+  "version": 2,
   "installCommand": "yarn install",
   "buildCommand": "yarn run build",
   "outputDirectory": "../public",
   "headers": [
     {
-      "source": "/(.*)\\.(conf|dconf|sgmodule|list|txt)$",
+      "source": "/:path*\\.(conf|dconf|sgmodule|list|txt)$",
       "headers": [
         { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
         { "key": "Content-Disposition", "value": "inline" },
