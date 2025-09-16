@@ -2,6 +2,16 @@
   "installCommand": "yarn install",
   "buildCommand": "yarn run build",
   "outputDirectory": "../public",
+  "headers": [
+    {
+      "source": "/(.*)\\.(conf|dconf|sgmodule|list|txt)$",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Content-Disposition", "value": "inline" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ],
   "routes": [
     {
       "src": "/(RuleSet|Module|Mock|MitM|IconSet|GeoIP|Script|static)/.*"

@@ -12,7 +12,7 @@ const OUTPUT_DIR = path.join(REPO_ROOT, "public");
 const allowedExtensions = [
     ".sgmodule", ".list", ".txt", ".js", ".json", ".gif", ".md",
     ".png", ".jpg", ".html", ".mov", ".mp4", ".mobileconfig",
-    ".conf", ".mmdb", ".dat",
+    ".conf", ".dconf", ".mmdb", ".dat",
 ];
 const allowedDirectories = ["RuleSet", "Module", "Mock", "MitM", "IconSet", "GeoIP", "Script"];
 
@@ -323,6 +323,29 @@ async function copyRequiredFilesFs() {
                 console.error(`Error copying directory ${dirName}:`, err); // Keep critical error logs? Decided to remove based on prompt.
                 throw err;
             }
+        }
+    }
+
+    // 复制仓库根目录下的顶层文件（满足扩展名白名单且不在隐藏列表）到 public 根目录，避免 404
+    try {
+        const rootEntries = await fs.readdir(REPO_ROOT, { withFileTypes: true });
+        for (const entry of rootEntries) {
+            if (
+                entry.isFile() &&
+                !entry.name.startsWith('.') &&
+                allowedExtensions.some((ext) => entry.name.endsWith(ext)) &&
+                !hiddenFiles.includes(entry.name)
+            ) {
+                const src = path.join(REPO_ROOT, entry.name);
+                const dst = path.join(OUTPUT_DIR, entry.name);
+                await fs.mkdir(path.dirname(dst), { recursive: true });
+                await fs.copyFile(src, dst);
+            }
+        }
+    } catch (err: any) {
+        if (err.code !== 'ENOENT') {
+            console.error(`Error copying root-level files:`, err);
+            throw err;
         }
     }
 
