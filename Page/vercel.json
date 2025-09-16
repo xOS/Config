@@ -3,54 +3,30 @@
   "installCommand": "yarn install",
     "buildCommand": "yarn run build",
     "outputDirectory": "../public",
-    "headers": [
-        {
-            "source": "/:path*.js",
-            "headers": [
-                { "key": "Content-Type", "value": "application/javascript; charset=utf-8" }
-            ]
-        },
-        {
-            "source": "/:path*.conf",
-            "headers": [
-                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-                { "key": "Content-Disposition", "value": "inline" },
-                { "key": "X-Content-Type-Options", "value": "nosniff" }
-            ]
-        },
-        {
-            "source": "/:path*.json",
-            "headers": [
-                { "key": "Content-Type", "value": "application/json; charset=utf-8" }
-            ]
-        },
-        {
-            "source": "/:path*.dconf",
-            "headers": [
-                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-                { "key": "Content-Disposition", "value": "inline" },
-                { "key": "X-Content-Type-Options", "value": "nosniff" }
-            ]
-        },
-        {
-            "source": "/:path*.list",
-            "headers": [
-                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-                { "key": "Content-Disposition", "value": "inline" },
-                { "key": "X-Content-Type-Options", "value": "nosniff" }
-            ]
-        },
-        {
-            "source": "/:path*.sgmodule",
-            "headers": [
-                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-                { "key": "Content-Disposition", "value": "inline" },
-                { "key": "X-Content-Type-Options", "value": "nosniff" }
-            ]
+    "routes": [
+      {
+        "src": "/(.*)\\.js",
+        "headers": {
+          "Content-Type": "application/javascript; charset=utf-8"
         }
-    ],
-    "rewrites": [
-            { "source": "/app/:path*", "destination": "/index.html" },
-            { "source": "/404", "destination": "/404.html" }
+      },
+      {
+        "src": "/(.*)\\.(conf|dconf|sgmodule)",
+        "headers": {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Content-Disposition": "inline",
+          "X-Content-Type-Options": "nosniff"
+        }
+      },
+      {
+        "src": "/(.*)\\.json",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      },
+      { "src": "/(RuleSet|Module|Mock|MitM|IconSet|GeoIP|Script|static)/.*" },
+      { "handle": "filesystem" },
+      { "src": "/app/.*", "dest": "/index.html" },
+      { "src": "/.*", "status": 404, "dest": "/404.html" }
     ]
 }
