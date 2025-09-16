@@ -1,8 +1,8 @@
 {
   "version": 2,
   "installCommand": "yarn install",
-  "buildCommand": "yarn run build",
-  "outputDirectory": "../public",
+    "buildCommand": "yarn run build",
+    "outputDirectory": "../public",
     "headers": [
         {
             "source": "/:path*.js",
@@ -11,7 +11,7 @@
             ]
         },
         {
-            "source": "/:path*.(conf|dconf|sgmodule|list|txt)",
+            "source": "/:path*.conf",
             "headers": [
                 { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
                 { "key": "Content-Disposition", "value": "inline" },
@@ -23,6 +23,34 @@
             "headers": [
                 { "key": "Content-Type", "value": "application/json; charset=utf-8" }
             ]
+        },
+        {
+            "source": "/:path*.dconf",
+            "headers": [
+                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+                { "key": "Content-Disposition", "value": "inline" },
+                { "key": "X-Content-Type-Options", "value": "nosniff" }
+            ]
+        },
+        {
+            "source": "/:path*.list",
+            "headers": [
+                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+                { "key": "Content-Disposition", "value": "inline" },
+                { "key": "X-Content-Type-Options", "value": "nosniff" }
+            ]
+        },
+        {
+            "source": "/:path*.sgmodule",
+            "headers": [
+                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+                { "key": "Content-Disposition", "value": "inline" },
+                { "key": "X-Content-Type-Options", "value": "nosniff" }
+            ]
         }
+    ],
+    "rewrites": [
+            { "source": "/app/:path*", "destination": "/index.html" },
+            { "source": "/404", "destination": "/404.html" }
     ]
 }
