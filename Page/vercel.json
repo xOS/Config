@@ -4,15 +4,61 @@
   "buildCommand": "yarn run build",
   "outputDirectory": "../public",
   "headers": [
-    {
-      "source": "/:path*\\.(conf|dconf|sgmodule|list|txt)$",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Content-Disposition", "value": "inline" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
-      ]
-    }
-  ],
+        {
+            "source": "/*.js",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/javascript; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.conf",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/plain; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.json",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.dconf",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/plain; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.list",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/plain; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "source": "/*.sgmodule",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/plain; charset=utf-8"
+                }
+            ]
+        }
+    ],
   "routes": [
     {
       "src": "/(RuleSet|Module|Mock|MitM|IconSet|GeoIP|Script|static)/.*"
