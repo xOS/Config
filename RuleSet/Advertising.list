@@ -59,6 +59,8 @@ DOMAIN, pgdt.ugdtimg.com
 DOMAIN-SUFFIX,oneadtag.com
 DOMAIN-SUFFIX,global-rtb.com
 DOMAIN-SUFFIX,s4mdsp.com
+DOMAIN-SUFFIX,ctrmi.cn
+DOMAIN,datacollection.uve.weibo.com
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
