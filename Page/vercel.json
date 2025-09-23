@@ -11,7 +11,7 @@
         }
       },
       {
-        "src": "/(.*)\\.(conf|dconf|sgmodule)",
+        "src": "/(.*)\\.(conf|dconf|sgmodule|list|txt|yaml|yml|toml)",
         "headers": {
           "Content-Type": "text/plain; charset=utf-8",
           "Content-Disposition": "inline",
