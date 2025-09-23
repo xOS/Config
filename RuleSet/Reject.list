@@ -39,7 +39,6 @@ DOMAIN,cc-api-data.adobe.io
 DOMAIN,msmp.abchina.com.cn
 
 # > 其它
-DOMAIN,ipv6.ping0.cc
 DOMAIN,metrics-picture.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
 DOMAIN,al-log.d.meituan.net
