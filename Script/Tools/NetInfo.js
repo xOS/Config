@@ -220,7 +220,7 @@ if (CNNET.includes(carrier)) {
                                         carrierCN = '中国移动';
                                     } else if (lower.includes('unicom')) {
                                         carrierCN = '中国联通';
-                                    } else if (lower.includes(/(chinanet|telecom)/i.test(provider))) {
+                                    } else if (/(chinanet|telecom)/i.test(provider)) {
                                         carrierCN = '中国电信';
                                     } else if (/(television|broadcas|cable|tv|radio)/i.test(provider)) {
                                         carrierCN = '中国广电';
@@ -319,7 +319,7 @@ if (CNNET.includes(carrier)) {
                                         // 英文进行翻译
                                         switch (json.connection_type) {
                                             case 'Cellular':
-                                                connType = '蜂窝网络';
+                                                connType = '基站网络';
                                                 break;
                                             case 'Cable/DSL':
                                                 connType = '宽带网络';
@@ -449,7 +449,7 @@ if (CNNET.includes(carrier)) {
                                         carrierCN = '中国移动';
                                     } else if (lower.includes('unicom')) {
                                         carrierCN = '中国联通';
-                                    } else if (lower.includes(/(chinanet|telecom)/i.test(provider))) {
+                                    } else if (/(chinanet|telecom)/i.test(provider)) {
                                         carrierCN = '中国电信';
                                     } else if (/(television|broadcas|cable|tv|radio)/i.test(provider)) {
                                         carrierCN = '中国广电';
@@ -491,7 +491,7 @@ if (CNNET.includes(carrier)) {
                                     connType = json.connection_type;
                                 } else {
                                     switch (json.connection_type) {
-                                        case 'Cellular': connType = '蜂窝网络'; break;
+                                        case 'Cellular': connType = '基站网络'; break;
                                         case 'Cable/DSL': connType = '宽带网络'; break;
                                         case 'Corporate': connType = '企业专线'; break;
                                         default: connType = '';
