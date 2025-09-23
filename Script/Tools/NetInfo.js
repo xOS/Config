@@ -200,20 +200,38 @@ if (CNNET.includes(carrier)) {
                             const ip = lines[0]; // 第一行是IPv4地址
                             const location = lines[1]; // 第二行是位置信息
                             const asNumber = lines.length >= 3 ? lines[2] : ''; // 第三行是AS号码
-                            const provider = lines.length >= 4 ? lines[3] : ''; // 第四行是商家名称
+                            const provider = lines.length >= 4 ? lines[3] : ''; // 第四行可能是运营商
 
-                            console.log(`ping0 解析结果: IP=${ip}, 位置=${location}, AS=${asNumber}, 商家=${provider}`);
+                            console.log(`ping0 解析结果: IP=${ip}, 位置=${location}, AS=${asNumber}, 第四行=${provider}`);
 
                             if (isValidIPv4(ip)) {
-                                // 组合地理信息：位置 + 商家
-                                let info = location;
-                                if (provider && !provider.startsWith('AS')) {
-                                    info += provider;
+                                // 去除第二行中的 '中国 '（中国后跟空白），不移除单独的'中国'
+                                // 仅当行首是 "中国 " 时移除；随后折叠多余空格
+                                let cleanedLocation = location
+                                    .replace(/^中国\s+/, '')
+                                    .replace(/\s+/g, ' ');
+                                let info = cleanedLocation; // 基础使用第二行位置信息
+                                const hasCarrierAlready = /(移动|电信|联通|广电)/.test(info);
+                                // 仅当第四行包含特定关键词时翻译并追加
+                                if (!hasCarrierAlready && provider && !provider.startsWith('AS')) {
+                                    const lower = provider.toLowerCase();
+                                    let carrierCN = '';
+                                    if (lower.includes('mobile')) {
+                                        carrierCN = '中国移动';
+                                    } else if (lower.includes('unicom')) {
+                                        carrierCN = '中国联通';
+                                    } else if (lower.includes('chinanet')) {
+                                        carrierCN = '中国电信';
+                                    } else if (/(television|broadcas|cable|tv|radio)/i.test(provider)) {
+                                        carrierCN = '中国广电';
+                                    }
+                                    if (carrierCN) {
+                                        info += carrierCN; // 只追加翻译后的中文
+                                    }
                                 }
-                                // 移除中国、"-"、空格和英文字符
-                                info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
+                                // 清洗：去除英文、空白、连字符，保留中文（含“\u4e2d国”）
+                                info = info.replace(/[\s\-a-zA-Z]/g, '') || '未知地区';
                                 console.log(`ping0 最终地理信息: ${info}`);
-
                                 return { ip, info };
                             } else {
                                 console.log(`ping0 IPv4地址无效: ${ip}`);
@@ -416,11 +434,31 @@ if (CNNET.includes(carrier)) {
                         if (lines.length >= 2) {
                             const ip = lines[0];
                             if (isValidIPv6(ip)) {
-                                const location = lines[1];
+                                // 去除第二行中的 '中国 '（中国后跟空白），不移除单独的'中国'
+                                const locationRaw = lines[1]; // 第二行位置信息原始
+                                const location = locationRaw
+                                    .replace(/^中国\s+/, '') // 仅移除行首的 "中国 "
+                                    .replace(/\s+/g, ' '); // 折叠多余空格
+                                const hasCarrierAlready = /(移动|电信|联通|广电)/.test(location);
                                 const provider = lines.length >= 4 ? lines[3] : '';
                                 let info = location;
-                                if (provider && !provider.startsWith('AS')) info += provider;
-                                info = info.replace(/中国|[\s\-a-zA-Z]/g, '') || '未知地区';
+                                if (!hasCarrierAlready && provider && !provider.startsWith('AS')) {
+                                    const lower = provider.toLowerCase();
+                                    let carrierCN = '';
+                                    if (lower.includes('mobile')) {
+                                        carrierCN = '中国移动';
+                                    } else if (lower.includes('unicom')) {
+                                        carrierCN = '中国联通';
+                                    } else if (lower.includes('chinanet')) {
+                                        carrierCN = '中国电信';
+                                    } else if (/(television|broadcas|cable|tv|radio)/i.test(provider)) {
+                                        carrierCN = '中国广电';
+                                    }
+                                    if (carrierCN) {
+                                        info += carrierCN;
+                                    }
+                                }
+                                info = info.replace(/[\s\-a-zA-Z]/g, '') || '未知地区';
                                 const obfuscated = ip.replace(/^(.{7}).+(.{7})$/, "$1****$2");
                                 callback(obfuscated, info, false);
                                 return;
