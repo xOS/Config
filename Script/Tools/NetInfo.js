@@ -220,7 +220,7 @@ if (CNNET.includes(carrier)) {
                                         carrierCN = '中国移动';
                                     } else if (lower.includes('unicom')) {
                                         carrierCN = '中国联通';
-                                    } else if (lower.includes('chinanet')) {
+                                    } else if (lower.includes(/(chinanet|telecom)/i.test(provider))) {
                                         carrierCN = '中国电信';
                                     } else if (/(television|broadcas|cable|tv|radio)/i.test(provider)) {
                                         carrierCN = '中国广电';
@@ -449,7 +449,7 @@ if (CNNET.includes(carrier)) {
                                         carrierCN = '中国移动';
                                     } else if (lower.includes('unicom')) {
                                         carrierCN = '中国联通';
-                                    } else if (lower.includes('chinanet')) {
+                                    } else if (lower.includes(/(chinanet|telecom)/i.test(provider))) {
                                         carrierCN = '中国电信';
                                     } else if (/(television|broadcas|cable|tv|radio)/i.test(provider)) {
                                         carrierCN = '中国广电';
