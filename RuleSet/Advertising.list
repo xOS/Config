@@ -61,6 +61,8 @@ DOMAIN-SUFFIX,global-rtb.com
 DOMAIN-SUFFIX,s4mdsp.com
 DOMAIN-SUFFIX,ctrmi.cn
 DOMAIN,datacollection.uve.weibo.com
+DOMAIN-SUFFIX,fan.twitch.tv
+DOMAIN-SUFFIX,spade.twitch.tv
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
