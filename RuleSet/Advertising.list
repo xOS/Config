@@ -39,8 +39,8 @@ DOMAIN-SUFFIX,access-open.quark.cn
 DOMAIN-SUFFIX,biz.quark.cn
 DOMAIN-SUFFIX,biz.sm.cn
 DOMAIN-SUFFIX,adtrack.quark.cn
-//DOMAIN-SUFFIX,puds.quark.cn
-//DOMAIN-SUFFIX,puds.ucweb.com
+DOMAIN-SUFFIX,puds.quark.cn
+DOMAIN-SUFFIX,puds.ucweb.com
 DOMAIN-SUFFIX,px.wpk.quark.cn
 DOMAIN-SUFFIX,unpm-upaas.quark.cn
 DOMAIN-SUFFIX,mum.alibabachengdun.net
