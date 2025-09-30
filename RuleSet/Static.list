@@ -619,7 +619,9 @@ avatars.hubspot.net
 js-eu1.hsforms.net
 js.hsforms.net
 static.ettoday.net
+media.ettoday.net
 cdn2.ettoday.net
+cdn1.ettoday.net
 .daumcdn.net
 badges.crowdin.net
 edge1.certona.net
@@ -759,6 +761,7 @@ s.wsj.net
 m.wsj.net
 .rsb.net
 storage.gra.cloud.ovh.net
+static.lwn.net
 static.j51.net
 cdn.css.net
 gravatar.cat.net
@@ -779,7 +782,6 @@ tile2.intervals.icu
 .cthd.icu
 time-a.nist.gov
 images-assets.nasa.gov
-smd-cms.nasa.gov
 assets.science.nasa.gov
 cdn.usd.fan
 cdn.onetime.dog
@@ -895,6 +897,7 @@ images4.welcomesoftware.com
 images3.welcomesoftware.com
 images2.welcomesoftware.com
 images1.welcomesoftware.com
+tn.tubepornclassic.com
 assets.the-independent.com
 .squarespace-cdn.com
 logos.speedtestcustom.com
@@ -1359,7 +1362,6 @@ js.createsend1.com
 firebase-settings.crashlytics.com
 .settings.crashlytics.com
 .e.crashlytics.com
-ddcdn.comtucdncom.com
 cdn.comparitech.com
 cloudfront.codeproject.com
 .cloudatacdn.com
@@ -1425,6 +1427,8 @@ simplicity.trustpilot.com
 widget.trustpilot.com
 top1cdn.top1health.com
 .teraboxcdn.com
+assets.tatlerasia.com
+cdn.tatlerasia.com
 .targetimg1.com
 .striiiipst.com
 cdn.streamlabs.com
@@ -2089,7 +2093,6 @@ cdn.getkoala.com
 assets.getkirby.com
 geoip-js.com
 maps.geoapify.com
-img5.gelbooru.com
 img4.gelbooru.com
 img2.gelbooru.com
 .scripts.gatorapi.com
@@ -2241,6 +2244,7 @@ widgets.media.weather.com
 api.weather.com
 .wdfiles.com
 .vox-cdn.com
+images.voguehk.com
 cdn.viglink.com
 assets.vidyard.com
 play.vidyard.com
@@ -2854,6 +2858,7 @@ barracuda-assets.zoovu.com
 barracuda-cdn.zoovu.com
 hello.zonos.com
 .ytimg.com
+.ypcdn.com
 cdn-yotpo-images-production.yotpo.com
 cdn-widgetsrepository.yotpo.com
 cdn-swell-assets.yotpo.com
@@ -2931,6 +2936,8 @@ media.ra.kroll.com
 storage.ko-fi.com
 cdn.ko-fi.com
 js.klarn.com
+static-assets.juksy.com
+assets.juksy.com
 static.jsbin.com
 null.jsbin.com
 icdn.javxx.com
@@ -3017,6 +3024,7 @@ safebrowsing.brave.com
 imgs.search.brave.com
 cdn.search.brave.com
 assets.bnidx.com
+spotlightimage.biggo.com
 images.bfmtv.com
 cdn.bfldr.com
 public-cdn.bblmw.com
