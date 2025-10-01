@@ -3046,6 +3046,7 @@ events-live.apple.com
 apple-relay.apple.com
 time.apple.com
 pba.apple.com
+static.ess.apple.com
 vsmarketplacebadge.apphb.com
 .ahcdn.com
 wwwimages2.adobe.com
@@ -3343,6 +3344,8 @@ static.svc.litv.tv
 player.svc.litv.tv
 fino.svc.litv.tv
 4gtvimg2.4gtv.tv
+pptstatic.iyf.tv
+static.iyf.tv
 lain.bgm.tv
 embed-v2.testimonial.to
 .ninjastream.to
@@ -3443,10 +3446,12 @@ s3.acg.mn
 s3.m.0x.mk
 cdn.fasterthanli.me
 .randomuser.me
+.global-cdn.me
 .disconnect.me
 api.crashguard.me
 .rocketcdn.me
 .javplayer.me
+.dnvodcdn.me
 cdn.daradara.me
 cf.javfree.me
 cdn.picrew.me
@@ -3921,6 +3926,7 @@ cdn.aimerce.ai
 vetted.ai
 static.netify.ai
 r2.leadsy.ai
+cdn.fellou.ai
 s3.masto.ai
 participants.evolv.ai
 media.evolv.ai
