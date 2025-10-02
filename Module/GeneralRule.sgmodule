@@ -4,25 +4,25 @@
 
 [General]
 # > 跳过代理
-skip-proxy = %INSERT% localhost, *.local, captive.apple.com, cable.auth.com, www.baidu.com, yunbusiness.ccb.com, fc00::/7, fd00::/8, fe80::/10, ff00::/8, 2001::/32, 2001:db8::/32, 2002::/16, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1, iosapps.itunes.apple.com, seed-sequoia.siri.apple.com, sequoia.siri.apple.com, sequoia.apple.com, wxh.wo.cn, gate.lagou.com, www.abchina.com.cn, www.shanbay.com, login-service.mobile-bank.psbc.com, mobile-bank.psbc.com, 164.88.*, passenger.t3go.cn, *.tfryb.com, *.gov.cn, e.crashlytics.com, *.ifastgb.com, *.hxb.com.cn, 10.0.0.0/8, 127.0.0.1/32, 172.16.0.0/12, 192.168.0.0/16, 192.168.122.1/32, 193.168.0.1/32, ::1/128, fe80::/10
+skip-proxy = %INSERT% localhost,*.local,captive.apple.com,cable.auth.com,www.baidu.com,yunbusiness.ccb.com,fc00::/7,fd00::/8,fe80::/10,ff00::/8,2001::/32,2001:db8::/32,2002::/16,::ffff:0:0:0:0/1,::ffff:128:0:0:0/1,iosapps.itunes.apple.com,seed-sequoia.siri.apple.com,sequoia.siri.apple.com,sequoia.apple.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,164.88.*,passenger.t3go.cn,*.tfryb.com,*.gov.cn,e.crashlytics.com,*.ifastgb.com,*.hxb.com.cn,10.0.0.0/8,127.0.0.1/32,172.16.0.0/12,192.168.0.0/16,192.168.122.1/32,193.168.0.1/32,::1/128,fe80::/10
 
 # > Always Real IP Hosts
 # 当 Surge VIF 处理 DNS 问题时，此选项要求 Surge 返回一个真正的 IP 地址，而不是一个假 IP 地址。
 # DNS 数据包将被转发到上游 DNS 服务器。
-always-real-ip = %INSERT% *.lan, *.direct, cable.auth.com, *.msftconnecttest.com, *.msftncsi.com, network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, stun.*, global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, localhost.*.qq.com, localhost.*.weixin.qq.com, *.logon.battlenet.com.cn, *.logon.battle.net, *.blzstatic.cn, music.163.com, *.music.163.com, *.126.net, musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, *.kuwo.cn, api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, *.y.qq.com, streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, *.xiami.com, *.music.migu.cn, music.migu.cn, proxy.golang.org, *.mcdn.bilivideo.cn, *.cmpassport.com, id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, *.jegotrip.com.cn, *.icitymobile.mobi, *.pingan.com.cn, *.cmbchina.com, *.10099.com.cn, *.microdone.cn, pool.ntp.org, *.pool.ntp.org, ntp.*.com, time.*.com, ntp?.*.com, time?.*.com, time.*.gov, time.*.edu.cn, *.ntp.org.cn, PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*, *.ifastgb.com, *.hxb.com.cn
+always-real-ip = %INSERT% *.lan,*.direct,cable.auth.com,*.msftconnecttest.com,*.msftncsi.com,network-test.debian.org,detectportal.firefox.com,resolver1.opendns.com,*.srv.nintendo.net,*.stun.playstation.net,xbox.*.microsoft.com,*.xboxlive.com,stun.*,global.turn.twilio.com,global.stun.twilio.com,app.yinxiang.com,injections.adguard.org,local.adguard.org,cable.auth.com,localhost.*.qq.com,localhost.*.weixin.qq.com,*.logon.battlenet.com.cn,*.logon.battle.net,*.blzstatic.cn,music.163.com,*.music.163.com,*.126.net,musicapi.taihe.com,music.taihe.com,songsearch.kugou.com,trackercdn.kugou.com,*.kuwo.cn,api-jooxtt.sanook.com,api.joox.com,joox.com,y.qq.com,*.y.qq.com,streamoc.music.tc.qq.com,mobileoc.music.tc.qq.com,isure.stream.qqmusic.qq.com,dl.stream.qqmusic.qq.com,aqqmusic.tc.qq.com,amobile.music.tc.qq.com,*.xiami.com,*.music.migu.cn,music.migu.cn,proxy.golang.org,*.mcdn.bilivideo.cn,*.cmpassport.com,id6.me,open.e.189.cn,mdn.open.wo.cn,opencloud.wostore.cn,auth.wosms.cn,*.jegotrip.com.cn,*.icitymobile.mobi,*.pingan.com.cn,*.cmbchina.com,*.10099.com.cn,*.microdone.cn,pool.ntp.org,*.pool.ntp.org,ntp.*.com,time.*.com,ntp?.*.com,time?.*.com,time.*.gov,time.*.edu.cn,*.ntp.org.cn,PDC._msDCS.*.*,DC._msDCS.*.*,GC._msDCS.*.*,*.ifastgb.com,*.hxb.com.cn
 
 
 # > 强制使用 HTTP
-force-http-engine-hosts = %INSERT% *.intsig.net:0, *.ott.cibntv.net:0, *.alicdn.com:0, *.myalicdn.com:0, *.xhscdn.com:0, *.xiaohongshu.com:0, weibointl.api.weibo.cn:0, weibointl.mapi.weibo.com:0, api.cloud.189.cn:0, boxjs.com:0, boxjs.net:0, *.boxjs.com:0, *.boxjs.net:0, dns.wechat.com:0
+force-http-engine-hosts = %INSERT% *.intsig.net:0,*.ott.cibntv.net:0,*.alicdn.com:0,*.myalicdn.com:0,*.xhscdn.com:0,*.xiaohongshu.com:0,weibointl.api.weibo.cn:0,weibointl.mapi.weibo.com:0,api.cloud.189.cn:0,boxjs.com:0,boxjs.net:0,*.boxjs.com:0,*.boxjs.net:0,dns.wechat.com:0
 
 # > Always Raw TCP Hosts
 # 注：always-raw-tcp-hosts 参数的优先级高于 force-http-engine-hosts 参数与 MITM 配置。
-always-raw-tcp-hosts = %INSERT% www.google.com, 91.108.*, 5.28.195.*, 149.154.1*, 185.76.151.*, 91.105.1*
+always-raw-tcp-hosts = %INSERT% www.google.com,91.108.*,5.28.195.*,149.154.1*,185.76.151.*,91.105.1*
 
 
 [Host]
 # > 给域名指定 DNS 或解析 IP
-epdg.epc.mnc002.mcc262.pub.3gppnetwork.org = 139.7.117.168, 139.7.117.170
+epdg.epc.mnc002.mcc262.pub.3gppnetwork.org = 139.7.117.168,139.7.117.170
 
 # > Apple App 下载优化
 iosapps.itunes.apple.com = iosapps.itunes.apple.com.m.alikunlun.net
@@ -42,306 +42,289 @@ updates.cdn-apple.com = updates.cdn-apple.com.w.kunlunca.com
 149.154.175.50 = 149.154.175.53,149.154.175.56
 
 # > WiFi 地址纠正
-// 192.168.43.1 = 192.168.5.1
+192.168.43.1 = 192.168.5.1
 
 [Rule]
-# > Tailscale
-DOMAIN-SUFFIX,ts.net,🇨🇳 联通
-//IP-CIDR,192.168.0.0/16,🇨🇳 联通,no-resolve
-IP-CIDR,100.64.0.0/10,🇨🇳 联通,no-resolve
-IP-CIDR6,fd7a:115c:a1e0:ab12::/64,🇨🇳 联通,no-resolve
-
-# > 防止TG加载转圈
-//IP-CIDR, 95.161.76.100/31, REJECT-NO-DROP, no-resolve, pre-matching
-//IP-CIDR,95.161.76.100/31,REJECT,no-resolve
-//IP-CIDR,5.28.195.1/32,REJECT,no-resolve
-//IP-CIDR,91.108.56.107/32,REJECT,no-resolve
-
 # > 微博其它
-//DOMAIN-WILDCARD, gw*.im.weibo.cn, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/.+\/wbts\.png$, REJECT
-URL-REGEX, ^https?:\/\/.+\/licai\.png$, REJECT
-URL-REGEX, ^https?:\/\/.+\/3fc\.png$, REJECT
-URL-REGEX, ^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live_Normal\.png$, REJECT
-URL-REGEX, ^https?:\/\/.+\.sinaimg\.cn\/.+\/(.*)?(fish|redicon|redpacket)(.*)?\.(png|jpg|jpeg|gif)$, REJECT
-URL-REGEX, ^https?:\/\/.+\.sinaimg\.cn\/.+\/lipin_dongtu\.gif$, REJECT
-URL-REGEX, ^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter, REJECT
-URL-REGEX, ^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$, REJECT
-URL-REGEX, ^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$, REJECT
-URL-REGEX, ^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/0\.+\.js$, REJECT
-URL-REGEX, ^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/index\.lazy\.+\.js$, REJECT
-URL-REGEX, ^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$, REJECT
-URL-REGEX, ^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$, REJECT
-URL-REGEX, ^https?:\/\/captcha\.weibo\.com\/static\/js\/jigsawLock\.min\.js$, REJECT
-URL-REGEX, ^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$, REJECT
+//DOMAIN-WILDCARD,gw*.im.weibo.cn,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/.+\/wbts\.png$,REJECT
+URL-REGEX,^https?:\/\/.+\/licai\.png$,REJECT
+URL-REGEX,^https?:\/\/.+\/3fc\.png$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live_Normal\.png$,REJECT
+URL-REGEX,^https?:\/\/.+\.sinaimg\.cn\/.+\/(.*)?(fish|redicon|redpacket)(.*)?\.(png|jpg|jpeg|gif)$,REJECT
+URL-REGEX,^https?:\/\/.+\.sinaimg\.cn\/.+\/lipin_dongtu\.gif$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/0\.+\.js$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/index\.lazy\.+\.js$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
+URL-REGEX,^https?:\/\/captcha\.weibo\.com\/static\/js\/jigsawLock\.min\.js$,REJECT
+URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
 URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/h5\/comonitor,REJECT
 
-# > 原神网络优化
-//AND, ((DOMAIN-KEYWORD, 8.211.), (PROTOCOL, UDP)), DIRECT
-
 # > Instagram 优化
-AND, ((DOMAIN-KEYWORD, instagram), (PROTOCOL, QUIC)), REJECT, pre-matching,extended-matching
+AND,((DOMAIN-KEYWORD,instagram),(PROTOCOL,QUIC)),REJECT,pre-matching,extended-matching
 
-AND, ((DOMAIN-SUFFIX, googleapis.com), (PROTOCOL, QUIC)), REJECT, pre-matching,extended-matching
+AND,((DOMAIN-SUFFIX,googleapis.com),(PROTOCOL,QUIC)),REJECT,pre-matching,extended-matching
 
-AND, ((DOMAIN-SUFFIX, picseed.com), (PROTOCOL, QUIC)), REJECT, pre-matching,extended-matching
-
-//AND, ((GEOIP, CN), (PROTOCOL, QUIC)), REJECT, pre-matching,extended-matching
+AND,((DOMAIN-SUFFIX,picseed.com),(PROTOCOL,QUIC)),REJECT,pre-matching,extended-matching
 
 # > 苹果天气业务回退
-AND, ((OR, ((IP-CIDR, 17.0.0.0/8), (IP-CIDR6, 2620:149::/32))), (PROTOCOL, QUIC)), REJECT, no-resolve, pre-matching,extended-matching
+AND,((OR,((IP-CIDR,17.0.0.0/8),(IP-CIDR6,2620:149::/32))),(PROTOCOL,QUIC)),REJECT,no-resolve,pre-matching,extended-matching
 
 # > 屏蔽 HTTPDNS
-//PROTOCOL, STUN, REJECT, pre-matching,extended-matching
-//DOMAIN-KEYWORD, stun., REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, twns.p2ptun.qq.com, REJECT, pre-matching,extended-matching
-//URL-REGEX, ^http?:\/\/(\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)\/((?!down)(d(\d*)?)|fetch|v2\/resolv|v4|v6|resolve|squery|dns), REJECT
+//PROTOCOL,STUN,REJECT,pre-matching,extended-matching
+//DOMAIN-KEYWORD,stun.,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,twns.p2ptun.qq.com,REJECT,pre-matching,extended-matching
+//URL-REGEX,^http?:\/\/(\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)\/((?!down)(d(\d*)?)|fetch|v2\/resolv|v4|v6|resolve|squery|dns),REJECT
 
 # > 无忧行
-URL-REGEX, ^https?:\/\/.+\.jegotrip\.com\.cn(.+?)appSyncimage\/.+?\.(jpg|png|gif), REJECT
-URL-REGEX, ^https?:\/\/.+\/\/appSyncimage/.+\.(jpg|png|gif), REJECT
+URL-REGEX,^https?:\/\/.+\.jegotrip\.com\.cn(.+?)appSyncimage\/.+?\.(jpg|png|gif),REJECT
+URL-REGEX,^https?:\/\/.+\/\/appSyncimage/.+\.(jpg|png|gif),REJECT
 
 # > 移动首页瀑布流
-URL-REGEX,^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/homePage\/getTopAreaList$,REJECT
+//URL-REGEX,^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/homePage\/getTopAreaList$,REJECT
 
 # > 拦截100弹窗
-URL-REGEX, ^https?:\/\/tagit\.hyhuo\.com\/block100\/get_popup, REJECT
+URL-REGEX,^https?:\/\/tagit\.hyhuo\.com\/block100\/get_popup,REJECT
 
 # > 菜鸟裹裹
-DOMAIN-SUFFIX, video.taobao.com, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, cloudvideocdn.taobao.com, REJECT, pre-matching,extended-matching
+DOMAIN-SUFFIX,video.taobao.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,cloudvideocdn.taobao.com,REJECT,pre-matching,extended-matching
 
 # > 猎聘
-URL-REGEX, ^https?:\/\/api-wanda\.liepin\.com\/api\/com\.liepin\.cbp\.baizhong\.op\.v2-show-4app$, REJECT
+URL-REGEX,^https?:\/\/api-wanda\.liepin\.com\/api\/com\.liepin\.cbp\.baizhong\.op\.v2-show-4app$,REJECT
 
 # > Spotify
-URL-REGEX, ^https?:\/\/spclient\.wg\.spotify\.com\/ads, REJECT
-URL-REGEX, ^https?:\/\/spclient\.wg\.spotify\.com\/gabo-receiver-service\/v3\/events$, REJECT
-URL-REGEX, ^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic, REJECT
-DOMAIN, video-akpcw-cdn-spotify-com.akamaized.net, REJECT, pre-matching,extended-matching
-DOMAIN, adeventtracker.spotify.com, REJECT, pre-matching,extended-matching
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ads,REJECT
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/gabo-receiver-service\/v3\/events$,REJECT
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic,REJECT
+DOMAIN,video-akpcw-cdn-spotify-com.akamaized.net,REJECT,pre-matching,extended-matching
+DOMAIN,adeventtracker.spotify.com,REJECT,pre-matching,extended-matching
 
 # > 央视频开头广告
-DOMAIN-WILDCARD, adstore*.file.myqcloud.com, REJECT, pre-matching,extended-matching
+DOMAIN-WILDCARD,adstore*.file.myqcloud.com,REJECT,pre-matching,extended-matching
 
 # > 央视频开屏广告
-DOMAIN-WILDCARD, adstore-index-*.file.myqcloud.com, REJECT, pre-matching,extended-matching
+DOMAIN-WILDCARD,adstore-index-*.file.myqcloud.com,REJECT,pre-matching,extended-matching
 
 # > 中新网开屏
-URL-REGEX, ^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/open_screen_ad, REJECT
+URL-REGEX,^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/open_screen_ad,REJECT
 
 # > 颇可
 # >> 其它
-DOMAIN-SUFFIX, kepler.jd.com, REJECT, pre-matching,extended-matching
-// URL-REGEX, ^https?:\/\/api-(.*)\.dutils\.com, REJECT
-DOMAIN-WILDCARD, api-*.dutils.com, REJECT, pre-matching,extended-matching
+DOMAIN-SUFFIX,kepler.jd.com,REJECT,pre-matching,extended-matching
+// URL-REGEX,^https?:\/\/api-(.*)\.dutils\.com,REJECT
+DOMAIN-WILDCARD,api-*.dutils.com,REJECT,pre-matching,extended-matching
 
 # > 咪咕阅读
-URL-REGEX, ^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService, REJECT
+URL-REGEX,^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService,REJECT
 
 # > 豆瓣
-URL-REGEX, ^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$, REJECT
-URL-REGEX, ^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$, REJECT
+URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$,REJECT
+URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$,REJECT
 
 # > 京东，去启动广告
-URL-REGEX, ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$, REJECT
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT
 
 # > 哔哩哔哩
-URL-REGEX, ^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/splash\/list, REJECT
-//DOMAIN-SUFFIX, grpc.biliapi.net, REJECT-NO-DROP, pre-matching
-// URL-REGEX, https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)), REJECT
-URL-REGEX, ^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/dm\/ad, REJECT
-URL-REGEX, ^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v\d\/splash\/, REJECT
-URL-REGEX, ^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/twirp\/comic\.v\d\.Comic\/Flash, REJECT
+URL-REGEX,^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/splash\/list,REJECT
+//DOMAIN-SUFFIX,grpc.biliapi.net,REJECT-NO-DROP,pre-matching
+// URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
+URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/dm\/ad,REJECT
+URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v\d\/splash\/,REJECT
+URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
 
 # > 知乎 去广告
-DOMAIN, appcloud2.zhihu.com, REJECT, pre-matching,extended-matching
+DOMAIN,appcloud2.zhihu.com,REJECT,pre-matching,extended-matching
 # > 知乎 登录框
-URL-REGEX, ^https?://static\.zhihu\.com/[^/]+/(main|column)\.signflow\.[^.]+.js, REJECT
+URL-REGEX,^https?://static\.zhihu\.com/[^/]+/(main|column)\.signflow\.[^.]+.js,REJECT
 
 # >> DO NOT GET CDN-BASED IP
-DOMAIN, 118.89.204.198, REJECT, pre-matching,extended-matching
+DOMAIN,118.89.204.198,REJECT,pre-matching,extended-matching
 
-USER-AGENT, AVOS*, REJECT
-URL-REGEX, https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad), REJECT
-AND, ((USER-AGENT, ZhihuHybrid*), (URL-REGEX, .*recommend)), REJECT
+USER-AGENT,AVOS*,REJECT
+URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
+AND,((USER-AGENT,ZhihuHybrid*),(URL-REGEX,.*recommend)),REJECT
 
 # > 优酷 去广告
-DOMAIN, pgw-cld-ml.alicdn.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/.+\.myalicdn\.com\/.+\.mp4, REJECT
-URL-REGEX, ^https?:\/\/.+\/youku\/.+\.mp4, REJECT
-URL-REGEX, ^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get, REJECT
+DOMAIN,pgw-cld-ml.alicdn.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/.+\.myalicdn\.com\/.+\.mp4,REJECT
+URL-REGEX,^https?:\/\/.+\/youku\/.+\.mp4,REJECT
+URL-REGEX,^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get,REJECT
 
 # > GEOIP
-URL-REGEX, ^https?:\/\/iplab\.rtbasia\.com\/api\/log$, REJECT
+URL-REGEX,^https?:\/\/iplab\.rtbasia\.com\/api\/log$,REJECT
 
 # > 讯飞输入法
-DOMAIN-SUFFIX, xfinfr.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/imeclient\.openspeech\.cn\/adservice, REJECT
+DOMAIN-SUFFIX,xfinfr.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice,REJECT
 
 # > 人人视频 去广告
-URL-REGEX, ^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_a12146ea59314861bf606f50f7c594f0\.png-w1300$, REJECT
-URL-REGEX, ^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_232d4a95cd7043b4b6898a6d5f39bb17\.jpg-w1300$, REJECT
-URL-REGEX, ^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_e009880f0ac0420794dd8bc546dc3d9a\.jpg-w1300$, REJECT
-URL-REGEX, ^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_83202fa02a2e413b91958c970546329e\.jpg-w1300$, REJECT
-URL-REGEX, ^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_1d901bd9b6cf4fdd9cec74433c857bf0\.jpg-w400$, REJECT
-URL-REGEX, ^https?:\/\/api\.rr\.tv\/user\/subscription\/redPoint\/display$, REJECT
-URL-REGEX, ^http:\/\/img\.rr\.tv\/barSelpag\/.+\.pag$, REJECT
-AND, ((USER-AGENT, PUClient*), (NOT, ((DOMAIN-SUFFIX, rr.tv)))), REJECT
-URL-REGEX, ^https?+:\/\/msspjh\.emarbox\.com\/getAdConfig, REJECT
-URL-REGEX, ^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising, REJECT
-URL-REGEX, ^https?+:\/\/api\.rr\.tv\/ad\/, REJECT
-URL-REGEX, ^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage), REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_a12146ea59314861bf606f50f7c594f0\.png-w1300$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_232d4a95cd7043b4b6898a6d5f39bb17\.jpg-w1300$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_e009880f0ac0420794dd8bc546dc3d9a\.jpg-w1300$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_83202fa02a2e413b91958c970546329e\.jpg-w1300$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/img\/img\/.+\/o_1d901bd9b6cf4fdd9cec74433c857bf0\.jpg-w400$,REJECT
+URL-REGEX,^https?:\/\/api\.rr\.tv\/user\/subscription\/redPoint\/display$,REJECT
+URL-REGEX,^http:\/\/img\.rr\.tv\/barSelpag\/.+\.pag$,REJECT
+AND,((USER-AGENT,PUClient*),(NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
+URL-REGEX,^https?+:\/\/msspjh\.emarbox\.com\/getAdConfig,REJECT
+URL-REGEX,^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising,REJECT
+URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/,REJECT
+URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
 
 # > 爱奇艺
-DOMAIN, video-ad.sm.cn, REJECT, pre-matching,extended-matching
-DOMAIN, api.cupid.dns.iqiyi.com, REJECT, pre-matching,extended-matching
-DOMAIN, cupid.iqiyi.com, REJECT, pre-matching,extended-matching
-DOMAIN, f74f7f7765f8a2f6.ngaa.net.cn, REJECT, pre-matching,extended-matching
-DOMAIN, ef-dongfeng.tanx.com, REJECT, pre-matching,extended-matching
-DOMAIN, iqiyim.adtrack.enlightent.cn, REJECT, pre-matching,extended-matching
-DOMAIN, t7z.cupid.iqiyi.com, REJECT, pre-matching,extended-matching
-DOMAIN, paopao-monitor.iqiyi.com, REJECT, pre-matching,extended-matching
-DOMAIN, puma-api.iqiyi.com, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, upqzfile.com, REJECT, pre-matching,extended-matching
-DOMAIN, mbdlog.iqiyi.com, REJECT, pre-matching,extended-matching
-DOMAIN, iqiyi-mipdx.cn.miaozhen.com, REJECT, pre-matching,extended-matching
-DOMAIN, show.ssports.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/static\.iqiyi\.com\/.+\/ad-sw\.js$, REJECT
-URL-REGEX, ^https?:\/\/pic(.*)\.iqiyipic\.com\/advertise , REJECT
-URL-REGEX, ^https?:\/\/pic(.*)\.iqiyipic\.com\/image\/.+\/pv_(.*)\.jpg, REJECT
-URL-REGEX, ^https?://paopao\w?.qiyipic.com, REJECT
-URL-REGEX, ^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo, REJECT
-URL-REGEX, ^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do, REJECT
-URL-REGEX, ^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show, REJECT
+DOMAIN,video-ad.sm.cn,REJECT,pre-matching,extended-matching
+DOMAIN,api.cupid.dns.iqiyi.com,REJECT,pre-matching,extended-matching
+DOMAIN,cupid.iqiyi.com,REJECT,pre-matching,extended-matching
+DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn,REJECT,pre-matching,extended-matching
+DOMAIN,ef-dongfeng.tanx.com,REJECT,pre-matching,extended-matching
+DOMAIN,iqiyim.adtrack.enlightent.cn,REJECT,pre-matching,extended-matching
+DOMAIN,t7z.cupid.iqiyi.com,REJECT,pre-matching,extended-matching
+DOMAIN,paopao-monitor.iqiyi.com,REJECT,pre-matching,extended-matching
+DOMAIN,puma-api.iqiyi.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,upqzfile.com,REJECT,pre-matching,extended-matching
+DOMAIN,mbdlog.iqiyi.com,REJECT,pre-matching,extended-matching
+DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT,pre-matching,extended-matching
+DOMAIN,show.ssports.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/static\.iqiyi\.com\/.+\/ad-sw\.js$,REJECT
+URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/advertise ,REJECT
+URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/image\/.+\/pv_(.*)\.jpg,REJECT
+URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT
+URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT
+URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT
+URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show,REJECT
 
 # > 腾讯QQ
-URL-REGEX, ^http:\/\/.+\/analytics\/upload, REJECT
-DOMAIN, sq.bls.mdt.qq.com, REJECT, pre-matching,extended-matching
+URL-REGEX,^http:\/\/.+\/analytics\/upload,REJECT
+DOMAIN,sq.bls.mdt.qq.com,REJECT,pre-matching,extended-matching
 
 # > 腾讯视频
 //URL-REGEX,"^https?:\/\/.*\.gtimg\.com\/.*\.mp4",REJECT
-DOMAIN, news.l.qq.com, REJECT, pre-matching,extended-matching
-DOMAIN, tetrack.qq.com, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, beacon.qq.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/wa\.gtimg\.com\/adxcdn\/?, REJECT,extended-matching
-URL-REGEX, ^https?+:\/\/vv\.video\.qq\.com\/getvmind\?, REJECT,extended-matching
-DOMAIN-SUFFIX, tetrack.qq.com, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, api.poll.video.qq.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/ilive\.qq\.com\/cgi-bin\/general\/platform_config\/pull_config, REJECT,extended-matching
-DOMAIN, appcfg.v.qq.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/tab\.video\.qq\.com\/tab\/GetTabRemoteConfig, REJECT,extended-matching
-DOMAIN, richmedia.video.qq.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/content\.rconfig\.qq\.com\/trpc\.rconfig\.task_svr\.GetConfigService\/GetConfigEncrypted, REJECT,extended-matching
-URL-REGEX, ^https?:\/\/disp-qryapi\.3g\.qq\.com\/trpc\.ias\.accessDispQuery\.DispServiceV2Http\/dispatch, REJECT,extended-matching
-DOMAIN, apd-vodp2plogin.teg.tencent-cloud.net, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/.+\/Vgrade\/txz-simple\.zip, REJECT,extended-matching
-DOMAIN, t.in-neo.cn, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/tv\.video\.qq\.com\/i-tvbin\/open\/tokenmgr, REJECT,extended-matching
-DOMAIN, test-isee.weishi.qq.com, REJECT, pre-matching,extended-matching
-DOMAIN, v6-accvideo.wns.qq.com, REJECT, pre-matching,extended-matching
-DOMAIN, shortconn.im.qcloud.com, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, file.video.qpic.cn, REJECT, pre-matching,extended-matching
+DOMAIN,news.l.qq.com,REJECT,pre-matching,extended-matching
+DOMAIN,tetrack.qq.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,beacon.qq.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/wa\.gtimg\.com\/adxcdn\/?,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/vv\.video\.qq\.com\/getvmind\?,REJECT,extended-matching
+DOMAIN-SUFFIX,tetrack.qq.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,api.poll.video.qq.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/ilive\.qq\.com\/cgi-bin\/general\/platform_config\/pull_config,REJECT,extended-matching
+DOMAIN,appcfg.v.qq.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/tab\.video\.qq\.com\/tab\/GetTabRemoteConfig,REJECT,extended-matching
+DOMAIN,richmedia.video.qq.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/content\.rconfig\.qq\.com\/trpc\.rconfig\.task_svr\.GetConfigService\/GetConfigEncrypted,REJECT,extended-matching
+URL-REGEX,^https?:\/\/disp-qryapi\.3g\.qq\.com\/trpc\.ias\.accessDispQuery\.DispServiceV2Http\/dispatch,REJECT,extended-matching
+DOMAIN,apd-vodp2plogin.teg.tencent-cloud.net,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/.+\/Vgrade\/txz-simple\.zip,REJECT,extended-matching
+DOMAIN,t.in-neo.cn,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/tv\.video\.qq\.com\/i-tvbin\/open\/tokenmgr,REJECT,extended-matching
+DOMAIN,test-isee.weishi.qq.com,REJECT,pre-matching,extended-matching
+DOMAIN,v6-accvideo.wns.qq.com,REJECT,pre-matching,extended-matching
+DOMAIN,shortconn.im.qcloud.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,file.video.qpic.cn,REJECT,pre-matching,extended-matching
 URL-REGEX,"^http:\/\/[\d\.:]*\/?(defaultts\.tc|vmind\.qqvideo\.tc|finderpdd\.video)\.qq\.com\/\w+",REJECT,extended-matching
 URL-REGEX,"^http:\/\/apd-vlive\.apdcdn\.tc\.qq\.com\/vmind\.qqvideo\.tc\.qq\.com\/\w+",REJECT,extended-matching
 URL-REGEX,"^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|vmind\.qqvideo)\.tc\.qq\.com\/\w+",REJECT,extended-matching
 URL-REGEX,^https?:\/\/ugd\.gtimg\.com\/vg\/,REJECT
 
 # > 简书
-URL-REGEX, ^https?:\/\/.+\.jianshu\.io\/shakespeare\/_next\/static\/.+\/pages\/p\/(.*)?slug(.*)?\.js$, REJECT
+URL-REGEX,^https?:\/\/.+\.jianshu\.io\/shakespeare\/_next\/static\/.+\/pages\/p\/(.*)?slug(.*)?\.js$,REJECT
 
 # > 微信
-URL-REGEX, ^https?:\/\/dlied(.*).cdntips.net, REJECT
-URL-REGEX, ^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad), REJECT
+URL-REGEX,^https?:\/\/dlied(.*).cdntips.net,REJECT
+URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad),REJECT
 
 # > 和彩云
-;URL-REGEX, ^https?:\/\/mcmm\.caiyun\.feixin\.10086\.cn:80\/mcmm\/api\/IAdvert$, REJECT
+;URL-REGEX,^https?:\/\/mcmm\.caiyun\.feixin\.10086\.cn:80\/mcmm\/api\/IAdvert$,REJECT
 
 # > 优酷
-URL-REGEX, ^https?+:\/\/.+?\.mp4\?ccode=0902, REJECT
-URL-REGEX, ^https?+:\/\/.+?\.mp4\?sid=, REJECT
-//URL-REGEX, ^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=, REJECT
+URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT
+URL-REGEX,^https?+:\/\/.+?\.mp4\?sid=,REJECT
+//URL-REGEX,^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=,REJECT
 
 # > 1688
-URL-REGEX, ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv, REJECT
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv,REJECT
 
 # > 飞猪
-URL-REGEX, ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/, REJECT
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/,REJECT
 
 # > 高德地图
-DOMAIN, optimus-ads.amap.com, REJECT, pre-matching,extended-matching
-DOMAIN, optimus-ads.amap.com.w.alikunlun.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/, REJECT
+DOMAIN,optimus-ads.amap.com,REJECT,pre-matching,extended-matching
+DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/,REJECT
 
 # > 口碑
-URL-REGEX, ^https?+:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json, REJECT
-URL-REGEX, ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/, REJECT
+URL-REGEX,^https?+:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json,REJECT
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/,REJECT
 
 # > 淘宝
-URL-REGEX, ^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_, REJECT
-URL-REGEX, ^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$, REJECT
-URL-REGEX, ^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$, REJECT
-URL-REGEX, ^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless, REJECT
+URL-REGEX,^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_,REJECT
+URL-REGEX,^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$,REJECT
+URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$,REJECT
+URL-REGEX,^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless,REJECT
 
 # > 淘票票
-URL-REGEX, ^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/, REJECT
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/,REJECT
 
 # > 天猫
-URL-REGEX, ^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4}, REJECT
+URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
 
 # > 抖音
-DOMAIN-KEYWORD, ad-sign, REJECT, pre-matching,extended-matching
-DOMAIN-KEYWORD, -adbrand, REJECT, pre-matching,extended-matching
-//DOMAIN, dig.bdurl.net, REJECT, pre-matching,extended-matching
-DOMAIN, imapi-hl.snssdk.com, REJECT, pre-matching,extended-matching
-DOMAIN, frontier-aweme-hl-ipainner.amemv.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/activity-(.*)\.awemeughun\.com, REJECT
-URL-REGEX, ^https?:\/\/p([0-9]|[0-9][0-9])-adbrand.byteimg.com, REJECT
-URL-REGEX, ^https?:\/\/p([0-9]|[0-9][0-9])-ad-sign.byteimg.com, REJECT
-URL-REGEX, ^https?:\/\/p([0-9]|[0-9][0-9])-sign\.douyinpic\.com\/large\/tos-cn-p-([0-9][0-9][0-9][0-9])\/.+\.jpeg, REJECT
-URL-REGEX, ^https?:\/\/v([0-9]|[0-9][0-9])-traffic\.douyinvod\.com\/.+\/.+\/video\/tos\/cn\/tos-cn-ve-([0-9][0-9])\/.+\/\, REJECT
-URL-REGEX, ^https?:\/\/s(.*)?\.pstatp\.com\/bytecom\/resource\/tetris\/pi\.ad(.*)?\.js$, REJECT
+DOMAIN-KEYWORD,ad-sign,REJECT,pre-matching,extended-matching
+DOMAIN-KEYWORD,-adbrand,REJECT,pre-matching,extended-matching
+//DOMAIN,dig.bdurl.net,REJECT,pre-matching,extended-matching
+DOMAIN,imapi-hl.snssdk.com,REJECT,pre-matching,extended-matching
+DOMAIN,frontier-aweme-hl-ipainner.amemv.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/activity-(.*)\.awemeughun\.com,REJECT
+URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-adbrand.byteimg.com,REJECT
+URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-ad-sign.byteimg.com,REJECT
+URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-sign\.douyinpic\.com\/large\/tos-cn-p-([0-9][0-9][0-9][0-9])\/.+\.jpeg,REJECT
+URL-REGEX,^https?:\/\/v([0-9]|[0-9][0-9])-traffic\.douyinvod\.com\/.+\/.+\/video\/tos\/cn\/tos-cn-ve-([0-9][0-9])\/.+\/\,REJECT
+URL-REGEX,^https?:\/\/s(.*)?\.pstatp\.com\/bytecom\/resource\/tetris\/pi\.ad(.*)?\.js$,REJECT
 
 # > 字节跳动
-URL-REGEX, ^https?+:\/\/.+?\.pstatp\.com\/img\/ad, REJECT
-URL-REGEX, ^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/, REJECT
-URL-REGEX, ^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/, REJECT
-URL-REGEX, ^https?+:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/, REJECT
-URL-REGEX, ^https?+:\/\/.+?\/img\/ad\.union\.api\/, REJECT
+URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad,REJECT
+URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/,REJECT
+URL-REGEX,^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/,REJECT
+URL-REGEX,^https?+:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/,REJECT
+URL-REGEX,^https?+:\/\/.+?\/img\/ad\.union\.api\/,REJECT
 
 # > 手机百度
-DOMAIN-SUFFIX, boxer.baidu.com, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, ug.baidu.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/mbd\.baidu\.com\/tcbox, REJECT
-URL-REGEX, ^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*, REJECT
+DOMAIN-SUFFIX,boxer.baidu.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,ug.baidu.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/mbd\.baidu\.com\/tcbox,REJECT
+URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT
 
 # > 百度网盘
-URL-REGEX, ^https?:\/\/pan\.baidu\.com\/ndbs\/nd_bundle(.*)\.js$, REJECT
-URL-REGEX, ^https?:\/\/pan\.baidu\.com\/api\/checkthumbnailstatus, REJECT
-URL-REGEX, ^https?:\/\/ali-ec\.static\.yximgs\.com\/kos\/.+\/hybrid\/ad-union-feed-template, REJECT
-URL-REGEX, ^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/static\/js\/chunk-vendors\.+\.js$, REJECT
-URL-REGEX, ^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js, REJECT
-URL-REGEX, ^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html, REJECT
-URL-REGEX, ^https?:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png, REJECT
-URL-REGEX, ^https?:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from), REJECT
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/ndbs\/nd_bundle(.*)\.js$,REJECT
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/checkthumbnailstatus,REJECT
+URL-REGEX,^https?:\/\/ali-ec\.static\.yximgs\.com\/kos\/.+\/hybrid\/ad-union-feed-template,REJECT
+URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/static\/js\/chunk-vendors\.+\.js$,REJECT
+URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js,REJECT
+URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html,REJECT
+URL-REGEX,^https?:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png,REJECT
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from),REJECT
 
 # > 百度贴吧
-URL-REGEX, ^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule, REJECT
-URL-REGEX, ^https?+:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo, REJECT
-URL-REGEX, ^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog), REJECT
+URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,REJECT
+URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo,REJECT
+URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog),REJECT
 
 # > 其它
-DOMAIN-WILDCARD, tnc*-aliec*.snssdk.com, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, ads.twitch.tv, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, tpns.tencent.com, REJECT, pre-matching,extended-matching
-DOMAIN, mssdk-bu.snssdk.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/m?api\(.+)?\.jd\.com\/ksdk\/updlist\.json$, REJECT
-//DOMAIN-SUFFIX, pangolin-sdk-toutiao.com, REJECT, pre-matching,extended-matching
-DOMAIN-SUFFIX, adstrategy.biz.weibo.com, REJECT, pre-matching,extended-matching
-URL-REGEX, ^https?:\/\/www\.blueskyxn\.com\/clickadilla\.js, REJECT
-URL-REGEX, ^https?:\/\/www\.blueskyxn\.com\/(cdn-cgi\/)?zaraz\/t$, REJECT
-URL-REGEX, ^https?:\/\/www\.blueskyxn\.com\/(cdn-cgi\/)?zaraz\/s\.js, REJECT
-URL-REGEX, ^https:\/\/signall-api\.nuosike\.com\/url\/message\.php, REJECT
+DOMAIN-WILDCARD,tnc*-aliec*.snssdk.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,ads.twitch.tv,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,tpns.tencent.com,REJECT,pre-matching,extended-matching
+DOMAIN,mssdk-bu.snssdk.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/m?api\(.+)?\.jd\.com\/ksdk\/updlist\.json$,REJECT
+//DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT,pre-matching,extended-matching
+DOMAIN-SUFFIX,adstrategy.biz.weibo.com,REJECT,pre-matching,extended-matching
+URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/clickadilla\.js,REJECT
+URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/(cdn-cgi\/)?zaraz\/t$,REJECT
+URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/(cdn-cgi\/)?zaraz\/s\.js,REJECT
+URL-REGEX,^https:\/\/signall-api\.nuosike\.com\/url\/message\.php,REJECT
 URL-REGEX,^https?:\/\/img\.client\.10010\.com\/homepopup\/index\.html,REJECT
 
 [Body Rewrite]
@@ -357,7 +340,10 @@ http-request ^https?:\/\/vv\.video\.qq\.com\/getvinfo '&sppreviewtype=\d(.*)' '&
 http-response ^https?:\/\/(?:\w+\.)*?(hostloc|nodeseek)\.com\/(thread|post)-(.*) '%3F' '?' '%3D' '=' '%2F' '/' '%3A' ':' '%26' '&' '&amp;' '&' '%23' '#' '<a href="/jump\?to=(.*?)"([^>]*)>(.*?)</a>' '<a href="$1"$2>$3</a>' 'aff=\d+&?' '' '[?&]affid=\d+' ''
 
 # > Ping0 移除页面广告
-http-response ^https?:\/\/ping0\.cc\/ '<div class="aditems' '<div class="aditems" style="display: none;'
+http-response ^https?:\/\/ping0\.cc\/ '<div class="aditems' '<div class="aditems" style="display: none;">'
+
+# > ITDog 移除页面广告
+http-response ^https?:\/\/www\.itdog\.cn\/ 'gg_link' 'gg_link" style="display:none;"' '<div style="display: inline-flex;" class="gg_link"' '<div style="display:none;"'
 
 # > Swiftgram
 http-response ^https?:\/\/api\.swiftgram\.app\/v0\/settings 'announcements_data' 'random_body'
@@ -1146,7 +1132,7 @@ http-response-jq ^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? '.to
 ^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user\?method=gamecenter data-type=text data="{}" status-code=200
 
 # > WPSOffice
-^https?:\/\/\w+?\.kingsoft-office-service\.com\/addata-type=text data="{}" status-code=200
+^https?:\/\/\w+?\.kingsoft-office-service\.com\/ad data-type=text data="{}" status-code=200
 ^https?:\/\/ios\.wps\.cn\/ad-statistics-service data-type=text data="{}" status-code=200
 ^https?:\/\/ovs-shopwindow-server.*\.wps\.com\/api\/v\d\/shop_window\/type\/ios data-type=text data="{}" status-code=200
 ^https?:\/\/tiance\.wps\.cn\/dce\/exec\/api\/market\/activity data-type=text data="{}" status-code=200
@@ -1161,10 +1147,10 @@ http-response-jq ^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? '.to
 
 # > 唯品会
 ^https?:\/\/b\.appsimg\.com\/upload\/momin data-type=text data="{}" status-code=200
-^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/activity\/advertisement\/getdata-type=text data="{}" status-code=200
-^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/activity\/coupon\/float_entrance\/get\?api_keydata-type=text data="{}" status-code=200
+^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/activity\/advertisement\/get data-type=text data="{}" status-code=200
+^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/activity\/coupon\/float_entrance\/get\?api_key data-type=text data="{}" status-code=200
 ^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/iosAdInfo\/report data-type=text data="{}" status-code=200
-^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/layout\/productList\/eventData\/vdata-type=text data="{}" status-code=200
+^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/layout\/productList\/eventData\/ data-type=text data="{}" status-code=200
 
 # > Talkatone
 ^https?:\/\/alt-r\.my\.com\/mobile data-type=text data="{}" status-code=200
@@ -1204,11 +1190,8 @@ http-response-jq ^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? '.to
 
 # > 腾讯视频
 ^https?:\/\/vv\.video\.qq\.com\/(diff|get)vmind data-type=text data="{}" status-code=200
-
 ^https?:\/\/.*\.gtimg\.(com|cn)\/.*\.mp4 data-type=tiny-gif status-code=200
-
 ^https?:\/\/.*\.apdcdn\.tc\.qq\.com\/.*\.mp4 data-type=tiny-gif status-code=200
-
 ^https?:\/\/.*\.qqvideo\.tc\.qq\.com\/.*\.mp4 data-type=tiny-gif status-code=200
 
 # > 哔哩哔哩
@@ -1255,7 +1238,7 @@ http-response-jq ^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? '.to
 ^https?:\/\/tiebac?\.baidu\.com\/c\/f\/video\/getLiveTab data-type=text data="{}" status-code=200
 
 # > 其它
-^https?:\/\/img\.client\.10010\.com\/homepopup\/index\.html data-type=text data="" status-code=200
+^https?:\/\/img\.client\.10010\.com\/homepopup\/index\.html data-type=text data="{}" status-code=200
 ^https?:\/\/m\.client\.10010\.com\/servicebusiness\/advertisement\/showAdverceSpace$ data-type=text data="{}" status-code=200
 ^https?:\/\/m\.client\.10010\.com\/clientIndex\/v1\/api\/queryPushMessage$ data-type=text data="{}" status-code=200
 ^https?:\/\/www\.17track\.net\/.+\/deals\/.+\.json data-type=text data="{}" status-code=200
@@ -1489,15 +1472,15 @@ http-response-jq ^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? '.to
 
 [Script]
 # > 节点过滤器
-//Sub-Store Core=type=http-request, pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))), script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-1.min.js, requires-body=true, timeout=120, ability=http-client-policy, engine=webview
+//Sub-Store Core=type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-1.min.js,requires-body=true,timeout=120,ability=http-client-policy,engine=webview
 
-//Sub-Store Simple=type=http-request, pattern=^https?:\/\/sub\.store, script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-0.min.js, requires-body=true, timeout=120, engine=webview
+//Sub-Store Simple=type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-0.min.js,requires-body=true,timeout=120,engine=webview
 
 # > 脚本盒子
-//BoxJs = type=http-request, pattern=^https?:\/\/(.+\.)?boxjs\.(com|net), script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+//BoxJs = type=http-request,pattern=^https?:\/\/(.+\.)?boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,requires-body=true,timeout=120
 
 # > Revenuecat 解锁
-//通用解锁 = type=http-response, pattern=^https?:\/\/api\.(revenuecat|rc-backup)\.com\/(.+?)\/(6D17D1D6C05B4709AC738D731FD567C2|9dK731WuxTYZeyxI2juEbsgyCa43|VArVFITxZVYsxpheN0CDhghhKD93|\$(PL|RC)AnonymousID%(3Ab267e0ca97b24724bc11cad5b764c690|3A58D7D9C0-7376-4350-BEAA-11857FC8B5AC|3Ad14eccc6542b4026bb10ad6a3f1d402f|3A1bee672041464d118724b903d4fbf0d7|9dK731WuxTYZeyxI2juEbsgyCa43)), requires-body=1, max-size=0, script-path=https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js, script-update-interval=-1
+//通用解锁 = type=http-response,pattern=^https?:\/\/api\.(revenuecat|rc-backup)\.com\/(.+?)\/(6D17D1D6C05B4709AC738D731FD567C2|9dK731WuxTYZeyxI2juEbsgyCa43|VArVFITxZVYsxpheN0CDhghhKD93|\$(PL|RC)AnonymousID%(3Ab267e0ca97b24724bc11cad5b764c690|3A58D7D9C0-7376-4350-BEAA-11857FC8B5AC|3Ad14eccc6542b4026bb10ad6a3f1d402f|3A1bee672041464d118724b903d4fbf0d7|9dK731WuxTYZeyxI2juEbsgyCa43)),requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js,script-update-interval=-1
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com:0, api.rc-backup.com:0, *.zhihu.com:0, appcloud2.zhihu.com:0, 118.89.204.198:0, captcha.weibo.com:0, weibo.cn:0, api.weibo.cn:0, mapi.weibo.com:0, *.uve.weibo.com:0, adstrategy.biz.weibo.com:0, boot.biz.weibo.com:0, card.weibo.com:0, *.sc.weibo.com:0, new.vip.weibo.cn:0, sinaurl.cn:0, shop.sc.weibo.com:0, luckly.sc.weibo.com:0, weibo.com:0, *.e.weibo.com:0, *.weibo.cn:0, tagit.hyhuo.com:0, spclient.wg.spotify.com:0, video-akpcw-cdn-spotify-com.akamaized.net:0, adeventtracker.spotify.com:0, api.alohaprofile.com:0, www.google.cn:0, *google.com.??:0, *google.com.hk:0, api.abema.io:0, app.biliintl.com:0, passport.biliintl.com:0, home.115.com:0, *.flightradar24.com:0, *hl.snssdk.com:0, *hl.zijieapi.com:0, *.inter.iqiyi.com:0, *.video.iqiyi.com:0, api.cupid.dns.iqiyi.com:0, cupid.iqiyi.com:0, f74f7f7765f8a2f6.ngaa.net.cn:0, ef-dongfeng.tanx.com:0, iqiyim.adtrack.enlightent.cn:0, t7z.cupid.iqiyi.com:0, paopao-monitor.iqiyi.com:0, puma-api.iqiyi.com:0, upqzfile.com:0, mbdlog.iqiyi.com:0, iqiyi-mipdx.cn.miaozhen.com:0, show.ssports.com:0, static.iqiyi.com:0, pic*.iqiyipic.com:0, paopao*.qiyipic.com:0, *zhujiwiki.com:0, *.poco.cn:0, app-api.poco.cn:0, mail.yandex.ru:0, an.yandex.ru:0, avatars.mds.yandex.net:0, *cloud.189.cn:0, super.sh.189.cn:0, *.googlevideo.com:0, www.youtube.com:0, s.youtube.com:0, youtubei.googleapis.com:0, *.youtube.com:0, notifications-pa.googleapis.com:0, www.googleapis.com:0, oauthaccountmanager.googleapis.com:0, *.atm.youku.com:0, un-acs.youku.com:0, acs.youku.com:0, *.com1.z0.glb.clouddn.com:0, *.k.sohu.com:0, *.kakamobi.cn:0, *.kingsoft-office-service.com:0, *.l.qq.com:0, news.l.qq.com:0, tetrack.qq.com:0, *.beacon.qq.com:0, wa.gtimg.com:0, appcfg.v.qq.com:0, tab.video.qq.com:0, richmedia.video.qq.com:0, content.rconfig.qq.com:0, disp-qryapi.3g.qq.com:0, apd-vodp2plogin.teg.tencent-cloud.net:0, t.in-neo.cn:0, tv.video.qq.com:0, test-isee.weishi.qq.com:0, v6-accvideo.wns.qq.com:0, shortconn.im.qcloud.com:0, file.video.qpic.cn:0, sq.bls.mdt.qq.com:0, *.logic.cpm.cm.kankan.com:0, *.music.126.net:0, *.music.127.net:0, *.musical.ly:0, *.tv.sohu.com:0, 3gimg.qq.com:0, 4gimg.map.qq.com:0, 58cdn.com.cn:0, a.apicloud.com:0, aarkissltrial.secure2.footprint.net:0, acs.m.taobao.com:0, act.vip.iqiyi.com:0, activity2.api.ofo.com:0, ad.api.3g.youku.com:0, ad.sina.com:0, ad.sina.com.cn:0, adse.ximalaya.com:0, aes.acfun.cn:0, afd.baidu.com:0, agent-count.pconline.com.cn:0, agn.aty.sohu.com:0, *.alicdn.com:0, *.myalicdn.com:0, heic.alicdn.com:0, gw.alicdn.com:0, als.baidu.com:0, amdc.m.taobao.com:0, api-163.biliapi.net:0, *.bilibili.com:0, *.biliapi.net:0, *.biliapi.com:0, *.live.bilibili.com:0, api-new.app.acfun.cn:0, api.douban.com:0, *.intsig.net:0, api.m.jd.com:0, *.k.jd.com:0, kepler.jd.com:0, jd.com:0, api.mh.163.com:0, api.mobile.youku.com:0, api.pinduoduo.com:0, *.pdd*.com:0, api.videozhishi.com:0, api.vuevideo.net:0, api.yangkeduo.com:0, api.youku.com:0, api2.helper.qq.com:0, apimobile.meituan.com:0, wmapi.meituan.com:0, flowplus.meituan.net:0, app.10086.cn:0, *.app.coc.10086.cn:0, client.app.coc.10086.cn:0, apm.app.coc.10086.cn:0, mcmm.caiyun.feixin.10086.cn:0, app.58.com:0, app.veryzhun.com:0, appconf.mail.163.com:0, asp.cntv.myalicdn.com:0, b-api.ins.miaopai.com:0, baichuan.baidu.com:0, bank.wo.cn:0, bbs.airav.cc:0, bdsp-x.jd.com:0, bj.bcebos.com:0, ndstatic.cdn.bcebos.com:0, staticsns.cdn.bcebos.com:0, wk.baidu.com:0, boxer.baidu.com:0, ug.baidu.com:0, mbd.baidu.com:0, s.bdstatic.com:0, ss0.bdstatic.com:0, dss0.bdstatic.com:0, *.gtimg.com:0, book.img.ireader.com:0, business-cdn.shouji.sogou.com:0, business.msstatic.com:0, c.m.163.com:0, c.tieba.baidu.com:0, cache.gclick.cn:0, capi.douyucdn.cn:0, ccsp-egmas.sf-express.com:0, cdn-1rtb.caiyunapp.com:0, cdn.kuaidi100.com:0, cdnfile1.msstatic.com:0, client.mail.163.com:0, client.qunar.com:0, clientaccess.10086.cn:0, cntv.hls.cdn.myqcloud.com:0, connect.facebook.net:0, consumer.fcbox.com:0, cover.baidu.com:0, creatives.ftimg.net:0, creditcardapp.bankcomm.com:0, cube.elemecdn.com:0, d.sinaimg.cn:0, wx*.sinaimg.cn:0, h5.sinaimg.cn:0, daoyu.sdo.com:0, dd.iask.cn:0, ddrk.me:0, dict-mobile.iciba.com:0, dimg04.c-ctrip.com:0, douyucdn.cn:0, dsp-impr2.youdao.com:0, dsp.toutiao.com:0, edit.sinaapp.com:0, elemecdn.com:0, erebor.douban.com:0, fcvbjbcebos.baidu.com:0, free.sinaimg.cn:0, fuss10.elemecdn.com:0, g.tbcdn.cn:0, g1.163.com:0, ggic.cmvideo.cn:0, ggv.cmvideo.cn:0, ggw.cmvideo.cn:0, ggx.cmvideo.cn:0, *.miguvideo.com:0, crystal.miguvideo.com:0, gorgon.youdao.com:0, gss0.bdstatic.com:0, gw.aihuishou.com:0, gw.csdn.net:0, hd.youku.com:0, hui.sohu.com:0, i.weiread.qq.com:0, i.weread.qq.com:0, i.ys7.com:0, iface.iqiyi.com:0, iface2.iqiyi.com:0, ih2.ireader.com:0, image.airav.cc:0, image.suning.cn:0, image1.chinatelecom-ec.com:0, images.client.vip.xunlei.com:0, xluser-ssl.xunlei.com:0, img*.10101111cdn.com:0, img*.360buyimg.com:0, m.360buyimg.com:0, img*.ddimg.cn:0, img.ddrk.me:0, img*.doubanio.com:0, doubanio.com:0, img.meituan.net:0, img.rr.tv:0, img1.126.net:0, *.imgcache.qq.com:0, impservice.dictapp.youdao.com:0, impservice.youdao.com:0, interfac*.music.163.com:0, ios.wps.cn:0, issuecdn.baidupcs.com:0, iyes.youku.com:0, list-app-m.i4.cn:0, log.baidu.com:0, m*.amap.com:0, *.amap.com:0, optimus-ads.amap.com:0, optimus-ads.amap.com.w.alikunlun.com:0, m.airav.cc:0, m.aty.sohu.com:0, m.china.com.cn:0, m.client.10010.com:0, m.ctrip.com:0, m.youku.com:0, m1.ad.10010.com:0, ma.ofo.com:0, mage.if.qidian.com:0, mbl.56.com:0, media.qyer.com:0, mg.meituan.net:0, mime.baidu.com:0, mimg.127.net:0, mmg.aty.sohu.com:0, mp.weixin.qq.com:0, dlied*.cdntips.net:0, mpcs.suning.com:0, mps.95508.com:0, mrobot.pcauto.com.cn:0, mrobot.pconline.com.cn:0, ms.jr.jd.com:0, msspjh.emarbox.com:0, news.ssp.qq.com:0, newsso.map.qq.com:0, nex.163.com:0, nfmovies.com:0, oimage*.ydstatic.com:0, open.qyer.com:0, oral.youdao.com:0, overseas.weico.cc:0, p*.meituan.net:0, p.c.music.126.net:0, p.du.163.com:0, p.kuaidi100.com:0, pagead2.googlesyndication.com:0, pan-api.bitqiu.com:0, pan.baidu.com:0, pb.pstatp.com:0, pcvideoyd.titan.mgtv.com:0, photocdn.sohu.com:0, pic.edaijia.cn:0, pic1cdn.cmbchina.com:0, player.hoge.cn:0, premiumyva.appspot.com:0, prom.mobile.gome.com.cn:0, qidian.qpic.cn:0, qt.qq.com:0, r.inews.qq.com:0, r.l.youku.com:0, r1.ykimg.com:0, render.alipay.com:0, res.kfc.com.cn:0, res.mall.10010.cn:0, rich.kuwo.cn:0, rtbapi.douyucdn.cn:0, s.go.sohu.com:0, s0.2mdn.net:0, s3.pstatp.com:0, s3plus.meituan.net:0, sa*.tuisong.baidu.com:0, api*.tuisong.baidu.com:0, saxw.sina.cn:0, saxw.sina.com.cn:0, service.4gtv.tv:0, service.iciba.com:0, sf*ttcdn-tos.pstatp.com:0, shp.qpic.cn:0, simg.s.weibo.com:0, sina.com:0, smusic.app.wechat.com:0, snssdk.com:0, *.pglstatp-toutiao.com:0, *.pangolin-sdk-toutiao.com:0, sso.ifanr.com:0, static.cnbetacdn.com:0, static.iask.cn:0, static.vuevideo.net:0, staticlive.douyucdn.cn:0, storage.360buyimg.com:0, storage.wax.weibo.com:0, support.you.163.com:0, supportda.ofo.com:0, szextshort.weixin.qq.com:0, tcbox.baidu.com:0, tiebac.baidu.com:0, tb1.bdstatic.com:0, tb2.bdstatic.com:0, thor.weidian.com:0, tiasdk.app.wechat.com:0, tqt.weibo.cn:0, trade-acs.m.taobao.com:0, api.m.taobao.com:0, guide-acs.m.taobao.com:0, u1.img.mobile.sina.cn:0, update.pan.baidu.com:0, ups.youku.com:0, v.cctv.com:0, v.icbc.com.cn:0, icbc.com.cn:0, vali.cp31.ott.cibntv.net:0, *.ott.cibntv.net:0, video.dispatch.tc.qq.com:0, vv.video.qq.com:0, w.cloudfront.net:0, w.ximalaya.com:0, w.youtube.com:0, wap.js.10086.cn:0, wapwenku.baidu.com:0, weicoapi.weico.cc:0, wenku.baidu.com:0, wmedia-track.uc.cn:0, iflow.uc.cn:0, www.baidu.com:0, www.cmbc.com.cn:0, www.cntv.cn:0, www.meituan.com:0, www.nfmovies.com:0, www.oschina.net:0, www.tieba.com:0, xyz.cnki.net:0, zt-app.go189.cn:0, *musical.com:0, *amemv.ly:0, lives.l.qq.com:0, msg.qy.net:0, *.iqiyipic.com:0, *.xhscdn.com:0, *.xiaohongshu.com:0, *.wtzw.com:0, client2.cmread.com:0, *.zhuishushenqi.com:0, *.myzaker.com:0, api.yky.qq.com:0, aweme.snssdk.com:0, open.camscanner.com:0, api.lynne.ink:0, *.d.meituan.net:0, *vipshop.com:0, cn-acs.m.cainiao.com:0, *mtop.cainiao.com:0, guide-acs.m.taobao.com:0, acs4miniapp-inner.m.taobao.com:0, *.dsp-creative.ubixioe.com:0, www.nodeseek.com:0, api.flowzland.com:0, *.liepin.com:0, api-wanda.liepin.com:0, www.blueskyxn.com:0, hxqapi.hiyun.tv:0, lf-cdn-tos.bytescm.com:0, *.nuosike.com:0, signall-api.nuosike.com:0, twns.p2ptun.qq.com:0, video.taobao.com:0, cloudvideocdn.taobao.com:0, adstore*.file.myqcloud.com:0, dw.chinanews.com:0, *.dutils.com:0, jianshu.io:0, xfinfr.com:0, imeclient.openspeech.cn:0, api.rr.tv:0, biz.cyapi.cn:0, biz.caiyunapp.com:0, tnc*-aliec*.snssdk.com:0, ads.twitch.tv:0, tpns.tencent.com:0, mssdk-bu.snssdk.com:0, zaraz:0, jegotrip.com.cn:0, appSyncimage:0, hpplay.cn:0, open.e.kuaishou.com:0, ali-ec.static.yximgs.com:0, rp.hpplay.cn:0, *.sigmob.cn:0, mobads-pre-config.cdn.bcebos.com:0, instagram:0, *.1302045025.vod.myqcloud.com:0, livepull.189.cn:0, api.hanju.koudaibaobao.com:0, static.hanju.koudaibaobao.com:0, ip.bijiago.com:0, ip.istatmenus.app:0, api.xiachufang.com:0, sub.store:0, boxjs.com:0, boxjs.net:0, *.boxjs.com:0, *.boxjs.net:0, user-api.smzdm.com:0, *flyert*.com:0, *flyert*.com.cn:0, 47.100.65.202:0, cdn.v2ex.com:0, i.v2ex.co:0, api.zuihuimai.com:0, feed-image.baidu.com:0, log*.baidu.com:0, www.17track.net:0, portal-njs.yun.139.com:0, ad.mcloud.139.com:0, middle.yun.139.com:0, yun.139.com:0, group.yun.139.com:0, tieba.baidu.com:0, tbcdn.bdstatic.com:0, h.139.com:0, mrp.mcloud.139.com:0, sofire.baidu.com:0, nj.t.bcsp2p.baidu.com:0, lbs.netease.im:0, panservice.mail.wo.cn:0, carrotweather.herokuapp.com:0, api.swiftgram.app:0, gql-fed.reddit.com:0, gql.reddit.com:0, alt-r.my.com:0, imgx.jampp.com:0, download.trip.com, m.trip.com:0, pages.trip.com:0, *.kingsoft-office-service.com:0, ios.wps.cn:0, ovs-shopwindow-server*.wps.com:0, tiance.wps.cn:0, m.client.10010.com:0, m1.ad.10010.com:0, res.mall.10010.cn:0, b.appsimg.com:0, mapi.appvipshop.com:0, api.hanju.koudaibaobao.com:0, gfp.veta.naver.com:0, ping0.cc:0
+hostname = %APPEND% api.revenuecat.com:0,api.rc-backup.com:0,*.zhihu.com:0,appcloud2.zhihu.com:0,118.89.204.198:0,captcha.weibo.com:0,weibo.cn:0,api.weibo.cn:0,mapi.weibo.com:0,*.uve.weibo.com:0,adstrategy.biz.weibo.com:0,boot.biz.weibo.com:0,card.weibo.com:0,*.sc.weibo.com:0,new.vip.weibo.cn:0,sinaurl.cn:0,shop.sc.weibo.com:0,luckly.sc.weibo.com:0,weibo.com:0,*.e.weibo.com:0,*.weibo.cn:0,tagit.hyhuo.com:0,spclient.wg.spotify.com:0,video-akpcw-cdn-spotify-com.akamaized.net:0,adeventtracker.spotify.com:0,api.alohaprofile.com:0,www.google.cn:0,*google.com.??:0,*google.com.hk:0,api.abema.io:0,app.biliintl.com:0,passport.biliintl.com:0,home.115.com:0,*.flightradar24.com:0,*hl.snssdk.com:0,*hl.zijieapi.com:0,*.inter.iqiyi.com:0,*.video.iqiyi.com:0,api.cupid.dns.iqiyi.com:0,cupid.iqiyi.com:0,f74f7f7765f8a2f6.ngaa.net.cn:0,ef-dongfeng.tanx.com:0,iqiyim.adtrack.enlightent.cn:0,t7z.cupid.iqiyi.com:0,paopao-monitor.iqiyi.com:0,puma-api.iqiyi.com:0,upqzfile.com:0,mbdlog.iqiyi.com:0,iqiyi-mipdx.cn.miaozhen.com:0,show.ssports.com:0,static.iqiyi.com:0,pic*.iqiyipic.com:0,paopao*.qiyipic.com:0,*zhujiwiki.com:0,*.poco.cn:0,app-api.poco.cn:0,mail.yandex.ru:0,an.yandex.ru:0,avatars.mds.yandex.net:0,*cloud.189.cn:0,super.sh.189.cn:0,*.googlevideo.com:0,www.youtube.com:0,s.youtube.com:0,youtubei.googleapis.com:0,*.youtube.com:0,notifications-pa.googleapis.com:0,www.googleapis.com:0,oauthaccountmanager.googleapis.com:0,*.atm.youku.com:0,un-acs.youku.com:0,acs.youku.com:0,*.com1.z0.glb.clouddn.com:0,*.k.sohu.com:0,*.kakamobi.cn:0,*.kingsoft-office-service.com:0,*.l.qq.com:0,news.l.qq.com:0,tetrack.qq.com:0,*.beacon.qq.com:0,wa.gtimg.com:0,appcfg.v.qq.com:0,tab.video.qq.com:0,richmedia.video.qq.com:0,content.rconfig.qq.com:0,disp-qryapi.3g.qq.com:0,apd-vodp2plogin.teg.tencent-cloud.net:0,t.in-neo.cn:0,tv.video.qq.com:0,test-isee.weishi.qq.com:0,v6-accvideo.wns.qq.com:0,shortconn.im.qcloud.com:0,file.video.qpic.cn:0,sq.bls.mdt.qq.com:0,*.logic.cpm.cm.kankan.com:0,*.music.126.net:0,*.music.127.net:0,*.musical.ly:0,*.tv.sohu.com:0,3gimg.qq.com:0,4gimg.map.qq.com:0,58cdn.com.cn:0,a.apicloud.com:0,aarkissltrial.secure2.footprint.net:0,acs.m.taobao.com:0,act.vip.iqiyi.com:0,activity2.api.ofo.com:0,ad.api.3g.youku.com:0,ad.sina.com:0,ad.sina.com.cn:0,adse.ximalaya.com:0,aes.acfun.cn:0,afd.baidu.com:0,agent-count.pconline.com.cn:0,agn.aty.sohu.com:0,*.alicdn.com:0,*.myalicdn.com:0,heic.alicdn.com:0,gw.alicdn.com:0,als.baidu.com:0,amdc.m.taobao.com:0,api-163.biliapi.net:0,*.bilibili.com:0,*.biliapi.net:0,*.biliapi.com:0,*.live.bilibili.com:0,api-new.app.acfun.cn:0,api.douban.com:0,*.intsig.net:0,api.m.jd.com:0,*.k.jd.com:0,kepler.jd.com:0,jd.com:0,api.mh.163.com:0,api.mobile.youku.com:0,api.pinduoduo.com:0,*.pdd*.com:0,api.videozhishi.com:0,api.vuevideo.net:0,api.yangkeduo.com:0,api.youku.com:0,api2.helper.qq.com:0,apimobile.meituan.com:0,wmapi.meituan.com:0,flowplus.meituan.net:0,app.10086.cn:0,*.app.coc.10086.cn:0,client.app.coc.10086.cn:0,apm.app.coc.10086.cn:0,mcmm.caiyun.feixin.10086.cn:0,app.58.com:0,app.veryzhun.com:0,appconf.mail.163.com:0,asp.cntv.myalicdn.com:0,b-api.ins.miaopai.com:0,baichuan.baidu.com:0,bank.wo.cn:0,bbs.airav.cc:0,bdsp-x.jd.com:0,bj.bcebos.com:0,ndstatic.cdn.bcebos.com:0,staticsns.cdn.bcebos.com:0,wk.baidu.com:0,boxer.baidu.com:0,ug.baidu.com:0,mbd.baidu.com:0,s.bdstatic.com:0,ss0.bdstatic.com:0,dss0.bdstatic.com:0,*.gtimg.com:0,book.img.ireader.com:0,business-cdn.shouji.sogou.com:0,business.msstatic.com:0,c.m.163.com:0,c.tieba.baidu.com:0,cache.gclick.cn:0,capi.douyucdn.cn:0,ccsp-egmas.sf-express.com:0,cdn-1rtb.caiyunapp.com:0,cdn.kuaidi100.com:0,cdnfile1.msstatic.com:0,client.mail.163.com:0,client.qunar.com:0,clientaccess.10086.cn:0,cntv.hls.cdn.myqcloud.com:0,connect.facebook.net:0,consumer.fcbox.com:0,cover.baidu.com:0,creatives.ftimg.net:0,creditcardapp.bankcomm.com:0,cube.elemecdn.com:0,d.sinaimg.cn:0,wx*.sinaimg.cn:0,h5.sinaimg.cn:0,daoyu.sdo.com:0,dd.iask.cn:0,ddrk.me:0,dict-mobile.iciba.com:0,dimg04.c-ctrip.com:0,douyucdn.cn:0,dsp-impr2.youdao.com:0,dsp.toutiao.com:0,edit.sinaapp.com:0,elemecdn.com:0,erebor.douban.com:0,fcvbjbcebos.baidu.com:0,free.sinaimg.cn:0,fuss10.elemecdn.com:0,g.tbcdn.cn:0,g1.163.com:0,ggic.cmvideo.cn:0,ggv.cmvideo.cn:0,ggw.cmvideo.cn:0,ggx.cmvideo.cn:0,*.miguvideo.com:0,crystal.miguvideo.com:0,gorgon.youdao.com:0,gss0.bdstatic.com:0,gw.aihuishou.com:0,gw.csdn.net:0,hd.youku.com:0,hui.sohu.com:0,i.weiread.qq.com:0,i.weread.qq.com:0,i.ys7.com:0,iface.iqiyi.com:0,iface2.iqiyi.com:0,ih2.ireader.com:0,image.airav.cc:0,image.suning.cn:0,image1.chinatelecom-ec.com:0,images.client.vip.xunlei.com:0,xluser-ssl.xunlei.com:0,img*.10101111cdn.com:0,img*.360buyimg.com:0,m.360buyimg.com:0,img*.ddimg.cn:0,img.ddrk.me:0,img*.doubanio.com:0,doubanio.com:0,img.meituan.net:0,img.rr.tv:0,img1.126.net:0,*.imgcache.qq.com:0,impservice.dictapp.youdao.com:0,impservice.youdao.com:0,interfac*.music.163.com:0,ios.wps.cn:0,issuecdn.baidupcs.com:0,iyes.youku.com:0,list-app-m.i4.cn:0,log.baidu.com:0,m*.amap.com:0,*.amap.com:0,optimus-ads.amap.com:0,optimus-ads.amap.com.w.alikunlun.com:0,m.airav.cc:0,m.aty.sohu.com:0,m.china.com.cn:0,m.client.10010.com:0,m.ctrip.com:0,m.youku.com:0,m1.ad.10010.com:0,ma.ofo.com:0,mage.if.qidian.com:0,mbl.56.com:0,media.qyer.com:0,mg.meituan.net:0,mime.baidu.com:0,mimg.127.net:0,mmg.aty.sohu.com:0,mp.weixin.qq.com:0,dlied*.cdntips.net:0,mpcs.suning.com:0,mps.95508.com:0,mrobot.pcauto.com.cn:0,mrobot.pconline.com.cn:0,ms.jr.jd.com:0,msspjh.emarbox.com:0,news.ssp.qq.com:0,newsso.map.qq.com:0,nex.163.com:0,nfmovies.com:0,oimage*.ydstatic.com:0,open.qyer.com:0,oral.youdao.com:0,overseas.weico.cc:0,p*.meituan.net:0,p.c.music.126.net:0,p.du.163.com:0,p.kuaidi100.com:0,pagead2.googlesyndication.com:0,pan-api.bitqiu.com:0,pan.baidu.com:0,pb.pstatp.com:0,pcvideoyd.titan.mgtv.com:0,photocdn.sohu.com:0,pic.edaijia.cn:0,pic1cdn.cmbchina.com:0,player.hoge.cn:0,premiumyva.appspot.com:0,prom.mobile.gome.com.cn:0,qidian.qpic.cn:0,qt.qq.com:0,r.inews.qq.com:0,r.l.youku.com:0,r1.ykimg.com:0,render.alipay.com:0,res.kfc.com.cn:0,res.mall.10010.cn:0,rich.kuwo.cn:0,rtbapi.douyucdn.cn:0,s.go.sohu.com:0,s0.2mdn.net:0,s3.pstatp.com:0,s3plus.meituan.net:0,sa*.tuisong.baidu.com:0,api*.tuisong.baidu.com:0,saxw.sina.cn:0,saxw.sina.com.cn:0,service.4gtv.tv:0,service.iciba.com:0,sf*ttcdn-tos.pstatp.com:0,shp.qpic.cn:0,simg.s.weibo.com:0,sina.com:0,smusic.app.wechat.com:0,snssdk.com:0,*.pglstatp-toutiao.com:0,*.pangolin-sdk-toutiao.com:0,sso.ifanr.com:0,static.cnbetacdn.com:0,static.iask.cn:0,static.vuevideo.net:0,staticlive.douyucdn.cn:0,storage.360buyimg.com:0,storage.wax.weibo.com:0,support.you.163.com:0,supportda.ofo.com:0,szextshort.weixin.qq.com:0,tcbox.baidu.com:0,tiebac.baidu.com:0,tb1.bdstatic.com:0,tb2.bdstatic.com:0,thor.weidian.com:0,tiasdk.app.wechat.com:0,tqt.weibo.cn:0,trade-acs.m.taobao.com:0,api.m.taobao.com:0,guide-acs.m.taobao.com:0,u1.img.mobile.sina.cn:0,update.pan.baidu.com:0,ups.youku.com:0,v.cctv.com:0,v.icbc.com.cn:0,icbc.com.cn:0,vali.cp31.ott.cibntv.net:0,*.ott.cibntv.net:0,video.dispatch.tc.qq.com:0,vv.video.qq.com:0,w.cloudfront.net:0,w.ximalaya.com:0,w.youtube.com:0,wap.js.10086.cn:0,wapwenku.baidu.com:0,weicoapi.weico.cc:0,wenku.baidu.com:0,wmedia-track.uc.cn:0,iflow.uc.cn:0,www.baidu.com:0,www.cmbc.com.cn:0,www.cntv.cn:0,www.meituan.com:0,www.nfmovies.com:0,www.oschina.net:0,www.tieba.com:0,xyz.cnki.net:0,zt-app.go189.cn:0,*musical.com:0,*amemv.ly:0,lives.l.qq.com:0,msg.qy.net:0,*.iqiyipic.com:0,*.xhscdn.com:0,*.xiaohongshu.com:0,*.wtzw.com:0,client2.cmread.com:0,*.zhuishushenqi.com:0,*.myzaker.com:0,api.yky.qq.com:0,aweme.snssdk.com:0,open.camscanner.com:0,api.lynne.ink:0,*.d.meituan.net:0,*vipshop.com:0,cn-acs.m.cainiao.com:0,*mtop.cainiao.com:0,guide-acs.m.taobao.com:0,acs4miniapp-inner.m.taobao.com:0,*.dsp-creative.ubixioe.com:0,www.nodeseek.com:0,api.flowzland.com:0,*.liepin.com:0,api-wanda.liepin.com:0,www.blueskyxn.com:0,hxqapi.hiyun.tv:0,lf-cdn-tos.bytescm.com:0,*.nuosike.com:0,signall-api.nuosike.com:0,twns.p2ptun.qq.com:0,video.taobao.com:0,cloudvideocdn.taobao.com:0,adstore*.file.myqcloud.com:0,dw.chinanews.com:0,*.dutils.com:0,jianshu.io:0,xfinfr.com:0,imeclient.openspeech.cn:0,api.rr.tv:0,biz.cyapi.cn:0,biz.caiyunapp.com:0,tnc*-aliec*.snssdk.com:0,ads.twitch.tv:0,tpns.tencent.com:0,mssdk-bu.snssdk.com:0,zaraz:0,jegotrip.com.cn:0,appSyncimage:0,hpplay.cn:0,open.e.kuaishou.com:0,ali-ec.static.yximgs.com:0,rp.hpplay.cn:0,*.sigmob.cn:0,mobads-pre-config.cdn.bcebos.com:0,instagram:0,*.1302045025.vod.myqcloud.com:0,livepull.189.cn:0,api.hanju.koudaibaobao.com:0,static.hanju.koudaibaobao.com:0,ip.bijiago.com:0,ip.istatmenus.app:0,api.xiachufang.com:0,sub.store:0,boxjs.com:0,boxjs.net:0,*.boxjs.com:0,*.boxjs.net:0,user-api.smzdm.com:0,*flyert*.com:0,*flyert*.com.cn:0,47.100.65.202:0,cdn.v2ex.com:0,i.v2ex.co:0,api.zuihuimai.com:0,feed-image.baidu.com:0,log*.baidu.com:0,www.17track.net:0,portal-njs.yun.139.com:0,ad.mcloud.139.com:0,middle.yun.139.com:0,yun.139.com:0,group.yun.139.com:0,tieba.baidu.com:0,tbcdn.bdstatic.com:0,h.139.com:0,mrp.mcloud.139.com:0,sofire.baidu.com:0,nj.t.bcsp2p.baidu.com:0,lbs.netease.im:0,panservice.mail.wo.cn:0,carrotweather.herokuapp.com:0,api.swiftgram.app:0,gql-fed.reddit.com:0,gql.reddit.com:0,alt-r.my.com:0,imgx.jampp.com:0,download.trip.com,m.trip.com:0,pages.trip.com:0,*.kingsoft-office-service.com:0,ios.wps.cn:0,ovs-shopwindow-server*.wps.com:0,tiance.wps.cn:0,m.client.10010.com:0,m1.ad.10010.com:0,res.mall.10010.cn:0,b.appsimg.com:0,mapi.appvipshop.com:0,api.hanju.koudaibaobao.com:0,gfp.veta.naver.com:0,ping0.cc:0,www.itdog.cn:0
