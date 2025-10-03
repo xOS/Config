@@ -216,7 +216,7 @@ if (CNNET.includes(carrier)) {
                                 if (!hasCarrierAlready && provider && !provider.startsWith('AS')) {
                                     const lower = provider.toLowerCase();
                                     let carrierCN = '';
-                                    if (lower.includes('mobile')) {
+                                    if (lower.includes('chinamobile')) {
                                         carrierCN = '中国移动';
                                     } else if (lower.includes('unicom')) {
                                         carrierCN = '中国联通';
@@ -445,7 +445,7 @@ if (CNNET.includes(carrier)) {
                                 if (!hasCarrierAlready && provider && !provider.startsWith('AS')) {
                                     const lower = provider.toLowerCase();
                                     let carrierCN = '';
-                                    if (lower.includes('mobile')) {
+                                    if (lower.includes('chinamobile')) {
                                         carrierCN = '中国移动';
                                     } else if (lower.includes('unicom')) {
                                         carrierCN = '中国联通';
