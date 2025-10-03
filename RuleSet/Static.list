@@ -922,6 +922,7 @@ irp-cdn.multiscreensite.com
 cache.hackedfreegames.com
 .girlsgogamescdn.com
 images.financemagnates.com
+ui-cdn.digitalocean-ui.com
 .customerioforms.com
 imgssl.constantcontact.com
 .cloudflare-ipfs.com
@@ -1867,6 +1868,7 @@ webstatic.chargebee.com
 js1.chargebee.com
 js.chargebee.com
 cdn.changelog.com
+sequoia.cdn-apple.com
 doppler-config.cbsivideo.com
 www-res.cablelabs.com
 badge.buildkite.com
@@ -3531,6 +3533,7 @@ web-assets.zendesk.co.jp
 cdn.rex.contents.rakuten.co.jp
 error.rakuten.co.jp
 doujin-assets.dmm.co.jp
+awsimgsrc.dmm.co.jp
 pics.dmm.co.jp
 cdn.dap.dmm.co.jp
 osint.digitalside.it
@@ -3879,6 +3882,7 @@ cdn2.turboviplay.cc
 .imagehub.cc
 media.tailfin.cc
 .postimg.cc
+pixoraa.cc
 .aayinltcs.arduino.cc
 content.arduino.cc
 cdn.arduino.cc
