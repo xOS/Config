@@ -68666,6 +68666,10 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.mon*.tiktokv.us
+.telemetry.adobe.io
+.fpt.commerce.adobe.com
+.adobecorp.data.adobedc.net
 .log-gateway.zoom.us
 .orderana*.spankbang.com
 .upsell.alphwidget.com
@@ -71851,6 +71855,7 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.mcs.tiktokv.us
 .trace.free-reels.com
 .event-portal.dailyinnovation.biz
 .api.learnings.ai
