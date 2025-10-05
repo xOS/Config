@@ -1481,6 +1481,7 @@ images3.cmp.optimizely.com
 images2.cmp.optimizely.com
 images1.cmp.optimizely.com
 .cdn.optimizely.com
+static.openreplay.com
 static-www.onlyoffice.com
 .nincontent.com
 cdn.nerdschalk.com
@@ -2468,6 +2469,7 @@ img.freepik.com
 static.foxnews.com
 a57.foxnews.com
 hp.foxnews.com
+static-cf.foxdata.com
 .fourhoi.com
 usercontent.flodesk.com
 assets.flodesk.com
@@ -2942,6 +2944,7 @@ static-assets.juksy.com
 assets.juksy.com
 static.jsbin.com
 null.jsbin.com
+speedmedia2.jfrog.com
 icdn.javxx.com
 cdn.javmg.com
 creator-image.javhd.com
@@ -3025,6 +3028,7 @@ assets.brevo.com
 safebrowsing.brave.com
 imgs.search.brave.com
 cdn.search.brave.com
+static.bodor.com
 assets.bnidx.com
 spotlightimage.biggo.com
 images.bfmtv.com
@@ -3775,6 +3779,7 @@ static-cdn.spot.im
 launcher.spot.im
 images.spot.im
 s3.c.im
+js.nagich.co.il
 .alexdav.id
 .ipfs.trusti.id
 cdn.unwire.hk
