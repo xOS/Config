@@ -24,6 +24,11 @@ DOMAIN-WILDCARD,iflv*.sooplive.co.kr
 DOMAIN-SUFFIX,videoimg.sooplive.co.kr
 DOMAIN-SUFFIX,sports.img.sooplive.co.kr
 
+# > Chzzk
+DOMAIN-WILDCARD,*-naver-vod.akamaized.net
+DOMAIN-SUFFIX,livecloud.akamaized.net
+DOMAIN-WILDCARD,*-nlive-slitvod-streaming.navercdn.com
+
 # > Instagram 
 DOMAIN-SUFFIX,cdninstagram.com
 
