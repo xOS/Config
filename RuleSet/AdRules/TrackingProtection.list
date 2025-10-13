@@ -4,6 +4,8 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.*-sdk.rum.aliyuncs.com
+.digitalcamp.co.kr
 .marathondataco.com
 .telecid.ru
 .rum.hlx.page
@@ -70713,6 +70715,7 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.uac.etnews.com
 .fuse.ubs.com
 .cdn.kmalgo.com
 .client.smartpushedm.com
