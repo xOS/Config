@@ -862,6 +862,7 @@ dl.vanadium.app
 builds.parsec.app
 dl.motrix.app
 meta.omaps.app
+fdisk.5play.app
 mirror.is.co.za
 apache.is.co.za
 ftp.is.co.za
@@ -892,6 +893,8 @@ apache.stu.edu.tw
 cpan.stu.edu.tw
 ftp.stu.edu.tw
 ftp.tc.edu.tw
+mirrors.yuntu.com.tw
+cisco.yuntu.com.tw
 mirror.twds.com.tw
 cpan.ulak.net.tr
 repository.su
@@ -1010,6 +1013,7 @@ download.ameliorated.io
 docker.cloudsmith.io
 dl.cloudsmith.io
 registry.terraform.io
+update.cyberduck.io
 release.runcloud.io
 repo.nextdns.io
 .jitpack.io
