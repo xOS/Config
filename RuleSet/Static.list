@@ -3037,7 +3037,10 @@ assets-s3-us-east-1.ceros.com
 media-s3-us-east-1.ceros.com
 ajax.cdnjs.com
 content-management-files.canva.com
+chunk-composing.canva.com
+font-public.canva.com
 static.canva.com
+media.canva.com
 cdn.cameo.com
 s1.bycsi.com
 designsystem.brevo.com
@@ -3959,6 +3962,7 @@ vetted.ai
 static.netify.ai
 r2.leadsy.ai
 cdn.fellou.ai
+tag.tvads.ai
 s3.masto.ai
 participants.evolv.ai
 media.evolv.ai
