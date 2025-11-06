@@ -51,6 +51,10 @@ DOMAIN,sdkapi.sms.mob.com
 DOMAIN,api.share.mob.com
 DOMAIN-SUFFIX,code.sms.mob.com
 
+# > 马来西亚通讯
+DOMAIN-KEYWORD,hotlink
+DOMAIN-KEYWORD,maxis
+
 # > 空气质量
 DOMAIN,api.waqi.info
 
