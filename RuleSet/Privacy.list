@@ -3,8 +3,6 @@ DOMAIN,track.tiara.daum.net
 DOMAIN,track.tiara.kakao.com
 DOMAIN,zgsdk.zhugeio.com
 DOMAIN,static.cloudflareinsights.com
-DOMAIN,graph.facebook.com
-DOMAIN,graph.instagram.com
 DOMAIN,tcbox.baidu.com
 
 # > Alibaba
@@ -28867,4 +28865,4 @@ DOMAIN-SUFFIX,smetrics.plymouthrock.com
 DOMAIN-SUFFIX,smetrics.pmis.abbott.com
 DOMAIN-SUFFIX,smetrics.podiumpodcast.com
 DOMAIN-SUFFIX,smetrics.pods.com
-DOMAIN-SUFFIX,smetrics.politico.co
+DOMAIN-SUFF
