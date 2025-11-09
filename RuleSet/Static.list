@@ -27,6 +27,7 @@ assets.chaos.social
 medias.meow.social
 cdn.bsky.social
 objects.g0v.social
+static.generated.photos
 .picsum.photos
 files.mastodon.online
 .am-cdn.online
@@ -97,6 +98,7 @@ imgfile.shop
 .codeberg.page
 .instant.page
 .kinsta.page
+statics-prod.mirrordaily.news
 assets-next.matters.news
 assets.matters.news
 web-api-cdn.ground.news
@@ -777,6 +779,7 @@ static.bangumi.moe
 static.chaika.moe
 pic.cangku.moe
 touchgal-image.moyu.moe
+zzz.wxw.moe
 ovo.wxw.moe
 objects.hit.moe
 assets-cdn.anh.moe
@@ -872,6 +875,7 @@ assets.positional-bucket.com
 .parsecusercontent.com
 .notionusercontent.com
 navismithapis-cdn.com
+tour-content-cdn.kellymadisonmedia.com
 .googleusercontent.com
 .githubusercontent.com
 .framerusercontent.com
@@ -898,6 +902,7 @@ js.braintreegateway.com
 jslibs.blackmagicdesign.com
 images.blackmagicdesign.com
 css.blackmagicdesign.com
+imgs02.aventertainments.com
 js.assemblyexchange.com
 cdn.worldvectorlogo.com
 cms.worldpokerdeals.com
@@ -992,6 +997,7 @@ isitmaintained.com
 code.ionicframework.com
 icons.internetbrands.com
 .intercomassets.com
+.images-dnxlive.com
 img.huffingtonpost.com
 images2.giant-bicycles.com
 static.giant-bicycles.com
@@ -1431,6 +1437,11 @@ cdn.verifypass.com
 cdn.userreport.com
 .typography.com
 static.typingclub.com
+cdn5.tubeteen18.com
+cdn4.tubeteen18.com
+cdn3.tubeteen18.com
+cdn2.tubeteen18.com
+cdn1.tubeteen18.com
 ecommplugins-trustboxsettings.trustpilot.com
 ecommplugins-scripts.trustpilot.com
 images-static.trustpilot.com
@@ -1570,6 +1581,8 @@ chart.googleapis.com
 ajax.googleapis.com
 sync.getpublica.com
 connect.getflowbox.com
+static-r2.gear4music.com
+r2.gear4music.com
 .gayzyimage.com
 assets.fxnetworks.com
 euc-widget.freshworks.com
@@ -1863,6 +1876,7 @@ marber-cdn.economist.com
 cmp-cdn.p.aws.economist.com
 .dummyjson.com
 .doppiocdn.com
+cdn.doofinder.com
 assets.dnsfilter.com
 .disquscdn.com
 us1-prod-images.disco-api.com
@@ -2084,6 +2098,7 @@ img.kbhgames.com
 cdn.jwplayer.com
 data.jsdelivr.com
 img.jsdelivr.com
+.javhucdn.com
 .api.instabug.com
 img.informer.com
 .cdn.imghaste.com
@@ -3120,6 +3135,7 @@ media.user.com
 assets.time.com
 .sirv.com
 cdn.sift.com
+attach.setn.com
 static.seel.com
 cdn.sedo.com
 .www.s81c.com
@@ -3259,6 +3275,7 @@ consent.dw.com
 static.dw.com
 evt.24.com
 .pixiv.cat
+a.pomf.cat
 oss.moe.cat
 ns-cdn.neustar.biz
 pics.mf8.biz
@@ -3333,12 +3350,14 @@ storage.moegirl.tw
 img.moegirl.tw
 app.moegirl.tw
 cf.shopee.tw
+statics.mnnews.tw
 socialpic.video.friday.tw
 vbmspic.video.friday.tw
 megapx-assets.dcard.tw
 .pimg.tw
 news-data.pts.org.tw
 img-fnc.ebc.net.tw
+img.news.ebc.net.tw
 cw-image-resizer.cwg.tw
 cdn.ready-market.com.tw
 avatar2.bahamut.com.tw

@@ -94,6 +94,7 @@ ftp-osl.osuosl.org
 ftp-nyc.osuosl.org
 ftp-chi.osuosl.org
 ftp.osuosl.org
+cdn.oneget.org
 mirrors.kernel.org
 mirrors.edge.kernel.org
 plugins-artifacts.gradle.org
@@ -310,6 +311,7 @@ mirrors.standaloneinstaller.com
 mirror.yannic-bonenberger.com
 .dl.dropboxusercontent.com
 .digitaloceanspaces.com
+cdn.powershellgallery.com
 release-assets.githubusercontent.com
 pkg-containers.githubusercontent.com
 objects.githubusercontent.com
