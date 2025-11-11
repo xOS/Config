@@ -125,7 +125,6 @@ image.theblockbeats.info
 lm.visualon.info
 .myvideos.info
 cdn.adguard.info
-static.javcdn.info
 busuanzi.ibruce.info
 .gdvid.info
 .ddpic.info
@@ -412,7 +411,6 @@ cdn.gatherings.franchise.minecraft-services.net
 .hscollectedforms.net
 .reasoningtheory.net
 static-r.kamihimeproject.net
-static-assets.freeanimehentai.net
 .azurestaticapps.net
 assets.visioncritical.net
 vscode-sync-insiders.trafficmanager.net
@@ -439,6 +437,7 @@ blacklist.tampermonkey.net
 cdn.sapphire.microsoftapp.net
 static.edge.microsoftapp.net
 .f.hubspotemail.net
+.directupload.net
 .coral.coralproject.net
 .blackbaudcdn.net
 .storage.yandexcloud.net
@@ -783,7 +782,6 @@ zzz.wxw.moe
 ovo.wxw.moe
 objects.hit.moe
 assets-cdn.anh.moe
-cdn.amh.moe
 .cloudflare.ltd
 static.coinall.ltd
 image.acg.lol
@@ -2278,7 +2276,7 @@ widgets.media.weather.com
 api.weather.com
 .wdfiles.com
 .vox-cdn.com
-images.voguehk.com
+img.voguehk.com
 gdb.voanews.com
 cdn.viglink.com
 assets.vidyard.com
@@ -2543,8 +2541,6 @@ player.cnevids.com
 .cmail19.com
 data.web.clickup.com
 image.civitai.com
-assets.chess24.com
-cdn.chess24.com
 w.chatlio.com
 .cf-ipfs.com
 .cdntrex.com
@@ -2606,7 +2602,6 @@ cdn.zapier.com
 static.zaobao.com
 .ypncdn.com
 rapid-cdn.yottaa.com
-content-cdn.y2mate.com
 cdn.xvidzz.com
 img.xhacgn.com
 website-prod.cache.wpscdn.com
@@ -3351,7 +3346,6 @@ storage.moegirl.tw
 img.moegirl.tw
 app.moegirl.tw
 cf.shopee.tw
-statics.mnnews.tw
 socialpic.video.friday.tw
 vbmspic.video.friday.tw
 megapx-assets.dcard.tw
@@ -3377,7 +3371,6 @@ p.udn.com.tw
 j.udn.com.tw
 imgcdn.cna.com.tw
 cloudflare.tv
-cdn.vidible.tv
 cdn1.hotmoza.tv
 clips-media-assets2.twitch.tv
 assets.twitch.tv
@@ -3530,7 +3523,6 @@ emoji-css.afeld.me
 pic.7mmtv.me
 cdn.123av.me
 rsms.me
-img.jjbb.me
 s4.itho.me
 static.fbot.me
 media.e4le.me
@@ -3664,7 +3656,6 @@ static.tokenview.io
 assets.keysquare.io
 media.hachyderm.io
 static.getbutton.io
-thingproxy.freeboard.io
 .crossbell.io
 .corsproxy.io
 sandpack-cdn-staging.blazingly.io
