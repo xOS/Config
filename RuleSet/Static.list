@@ -80,6 +80,7 @@ cdn-static.paw.cloud
 static.bit.cloud
 cdn.bigcloud.click
 turbo.build
+.lllcdn.autos
 .safebrowsing.apple
 img.itch.zone
 .ipfs.litnet.work
@@ -87,6 +88,7 @@ static.frame.work
 tn.txxx.tube
 js.txxx.tube
 ipfs.d.tube
+media.remax-prod.eng.remax.tech
 packages.jetbrains.team
 pkg-cdn.jetbrains.team
 .zenwave56.site
@@ -499,6 +501,7 @@ bundler.nice-team.net
 .line-scdn.net
 .klarnacdn.net
 .intuitcdn.net
+img.imoutomoe.net
 .image8899.net
 .futurecdn.net
 .flagpedia.net
@@ -670,6 +673,7 @@ res-geo.cdn.office.net
 shell.cdn.office.net
 .mxmcdn.net
 az700632.vo.msecnd.net
+alcdn.msauth.net
 .mjedge.net
 .mercdn.net
 images.mattel.net
@@ -686,7 +690,7 @@ lastfm.freetls.fastly.net
 brick.freetls.fastly.net
 brick.a.ssl.fastly.net
 .eroimg.net
-assets.dwncdn.net
+.dwncdn.net
 .dlunar.net
 screenshots.debian.net
 .cdn.cwinfo.net
@@ -1053,9 +1057,11 @@ pbs-prod.linustechtips.com
 cwsimages.ingramcontent.com
 media-central.indianexpress.com
 images.indianexpress.com
+.images-amazon.com
 .highwinds-cdn.com
 cdn.heapanalytics.com
 sig.grumpybumpers.com
+media-hls.growcdnssedge.com
 app.groovefunnels.com
 telemetry.individual.githubcopilot.com
 telemetry.business.githubcopilot.com
@@ -1158,6 +1164,7 @@ events.launchdarkly.com
 .jinyingimage.com
 spcdn.incartupsell.com
 .img-dpreview.com
+cdn.imago-images.com
 .images-iherb.com
 cdn1.identitymind.com
 .hubspotlinks.com
@@ -1807,6 +1814,7 @@ static.macupdate.com
 images.macrumors.com
 .lr-ingest.com
 .lowendbox.com
+cdn.lineicons.com
 scdn.line-apps.com
 cdn.lgrckt-in.com
 .kinja-img.com
@@ -2226,6 +2234,8 @@ cdn.amcharts.com
 oaos-resources.allstate.com
 .contenthub.allstate.com
 resources.allstate.com
+fastly-gce.allmovie.com
+fastly-s3.allmovie.com
 static.airtable.com
 img-5-cdn.airdroid.com
 img-4-cdn.airdroid.com
@@ -2355,6 +2365,9 @@ cdn77-t.pornoxo.com
 cdn77.pornoxo.com
 pics.pornfhd.com
 celebrities-small.porndig.com
+cdn-static-push.porndig.com
+image-cdn.porndig.com
+assets.porndig.com
 m.porn3dx.com
 pbcdn1.podbean.com
 png.pngtree.com
@@ -2399,6 +2412,7 @@ firefox.settings.services.mozilla.com
 .push.services.mozilla.com
 cdn.sso.mozilla.com
 static.moonpay.com
+cdn.moeload.com
 static.moegoat.com
 images.moegoat.com
 .mktgcdn.com
@@ -2425,6 +2439,7 @@ files.jotform.com
 js.jotform.com
 pool.jortage.com
 blob.jortage.com
+img.javynow.com
 img4.javmost.com
 img3.javmost.com
 img2.javmost.com
@@ -2709,6 +2724,9 @@ js.pusher.com
 .prppsn.com
 static.probit.com
 .prhcdn.com
+cdn-3.porn87.com
+cdn-2.porn87.com
+cdn-1.porn87.com
 assets.pixlee.com
 .pinimg.com
 .phncdn.com
@@ -2930,6 +2948,7 @@ cdn.cloud.unity.com
 media1.tenor.com
 media.tenor.com
 c.tadst.com
+.t8cdn.com
 assets.stash.com
 cdn.stash.com
 .srcdn.com
@@ -2937,6 +2956,7 @@ cdn.sprig.com
 files.slack.com
 .sb-cd.com
 .rlcdn.com
+static-images.remax.com
 s2.qwant.com
 s1.qwant.com
 js.puter.com
@@ -3996,6 +4016,7 @@ cdn.candy.ai
 .telemetry.services.yofi.ai
 cdn2.suno.ai
 cdn1.suno.ai
+cdn.roof.ai
 metrics.kapa.ai
 widget.kapa.ai
 cdn.fera.ai
