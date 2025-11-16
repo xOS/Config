@@ -1,4 +1,5 @@
 # 被大陆屏蔽或访问特慢的域名
+DOMAIN-SUFFIX,linux.do
 DOMAIN,api.waqi.info
 DOMAIN,aqi.aqicn.org
 DOMAIN,assets-priconne-redive-us.akamaized.net
