@@ -9203,7 +9203,6 @@ IP-CIDR,154.72.47.0/24,no-resolve
 IP-CIDR,154.8.128.0/17,no-resolve
 IP-CIDR,154.8.48.0/20,no-resolve
 IP-CIDR,154.89.32.0/20,no-resolve
-IP-CIDR,154.89.53.0/24,no-resolve
 IP-CIDR,154.91.158.0/23,no-resolve
 IP-CIDR,155.117.164.0/24,no-resolve
 IP-CIDR,155.117.188.0/24,no-resolve
