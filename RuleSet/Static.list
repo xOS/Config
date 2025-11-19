@@ -313,6 +313,7 @@ proxy.spigotmc.org
 .rollupjs.org
 .recharts.org
 .parceljs.org
+static.opensuse.org
 open-vsx.org
 demotiles.maplibre.org
 .lichess1.org
@@ -709,6 +710,7 @@ cdn.reimu.net
 .pximg.net
 .pixfs.net
 img.pawoo.net
+.nsimg.net
 static.monei.net
 static-cdn.jtvnw.net
 jsdelivr.ioiox.net
@@ -839,6 +841,7 @@ cdn.builderprofile.aws.dev
 .marketing.aws.dev
 cdn.us-east-1.prod.moon.dubai.aws.dev
 .ipfs.1-2.dev
+cdn.decrypt.day
 runkit-packages-static-executables.com
 .w-credentialless-staticblitz.com
 cdn-a.sonyentertainmentnetwork.com
@@ -2075,6 +2078,7 @@ static.mypikpak.com
 cdnl.moviefap.com
 img.moviefap.com
 cdn-public-apis.moonlock.com
+pp-static.monotype.com
 .sny.monosnap.com
 momentjs.com
 launcher-files.modrinth.com
@@ -2413,6 +2417,8 @@ featureflags.netlify.com
 .ndtvimg.com
 nodeassets.nbcnews.com
 iframe.nbcnews.com
+static-webfonts.myfonts.com
+cms.myfonts.com
 stubdownloader.services.mozilla.com
 firefox.settings.services.mozilla.com
 .push.services.mozilla.com
@@ -2589,6 +2595,7 @@ media.beehiiv.com
 chat-content.beanfun.com
 .bdzybf7.com
 assets.basehub.com
+hiveplayer-static.bamgrid.com
 cdn-mobile.aptoide.com
 ws2-cache.aptoide.com
 cdn6.aptoide.com
@@ -2824,6 +2831,7 @@ i.iheart.com
 img.icons8.com
 bst.icons8.com
 statici.icloud.com
+.icfcdn.com
 .hugoal.com
 static.hotjar.com
 .hommec.com
@@ -3037,6 +3045,7 @@ assets.humix.com
 .gszyi.com
 .gsuus.com
 static.gopro.com
+i.git99.com
 media4.giphy.com
 media3.giphy.com
 media2.giphy.com
@@ -3850,6 +3859,8 @@ static.ffx.io
 eep.io
 registry.api.cnn.io
 cdn.db.io
+sr-cdn-1.shiprocket.in
+sellon.shiprocket.in
 static.snaptube.in
 .cdn.imgeng.in
 object.innei.in
