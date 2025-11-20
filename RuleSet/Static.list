@@ -105,6 +105,7 @@ statics-prod.mirrordaily.news
 assets-next.matters.news
 assets.matters.news
 web-api-cdn.ground.news
+media.raven.news
 static.bad.news
 content.api.news
 pics.hentai.name
@@ -266,6 +267,7 @@ cdn.sciencecast.org
 .qbittorrent.org
 .stream.publicradio.org
 play.publicradio.org
+covers.openlibrary.org
 tiles.openfreemap.org
 media.hentaifreak.org
 .ipfs.genenetwork.org
@@ -449,6 +451,7 @@ images.wsjcommerce.net
 static.underhentai.net
 .tapecontent.net
 .staticworld.net
+.staticstack.net
 sourcemaps.squarespace.net
 static-resource.np.community.playstation.net
 akamai-origin.myanimelist.net
@@ -552,6 +555,7 @@ static.whatsapp.net
 cdn.viafoura.net
 .turboimg.net
 .tildacdn.net
+cdn.pi.spectrum.net
 .smassets.net
 .sitescdn.net
 cdn.mcauto-images-production.sendgrid.net
@@ -1036,6 +1040,7 @@ cdn.thewirecutter.com
 cdn.stellarhosted.com
 .steemitimages.com
 assets.static-upwork.com
+images.spectrumnews1.com
 .slidesharecdn.com
 cdn.sitesearch360.com
 .simplecastcdn.com
@@ -1130,6 +1135,7 @@ resource.tnlmediagene.com
 static.threatlocker.com
 .susercontent.com
 cdn.sunofbeaches.com
+.strpssts-ana.com
 .stripeassets.com
 media.steampowered.com
 .staticflickr.com
@@ -1603,6 +1609,10 @@ widget.freshworks.com
 dam.freshworks.com
 static.freeimages.com
 images.freeimages.com
+s4.freebeacon.com
+s3.freebeacon.com
+s2.freebeacon.com
+s1.freebeacon.com
 imgproxy.fourthwall.com
 themes.fourthwall.com
 cdn.fourthwall.com
@@ -1918,6 +1928,7 @@ badge.buildkite.com
 media.breitbart.com
 static.bravoporn.com
 .bnbstatic.com
+cdn.blogarama.com
 images.blockscan.com
 assets.bitwarden.com
 .bitgetimg.com
@@ -2202,6 +2213,7 @@ s1.coincarp.com
 dynamic-assets.coinbase.com
 static-assets.coinbase.com
 assets.coinbase.com
+assets.codeguru.com
 logo.clearbit.com
 assets-growth-common.circleci.com
 assets-docs.circleci.com
@@ -2483,6 +2495,12 @@ static.hosting.com
 static.heavy-r.com
 public.hare200.com
 .hardbin.com
+us3.hamreus.com
+us2.hamreus.com
+us1.hamreus.com
+eu3.hamreus.com
+eu2.hamreus.com
+eu1.hamreus.com
 us.hamreus.com
 eu.hamreus.com
 cf.hamreus.com
@@ -2632,6 +2650,7 @@ static.zaobao.com
 rapid-cdn.yottaa.com
 cdn.xvidzz.com
 img.xhacgn.com
+img.xbooru.com
 website-prod.cache.wpscdn.com
 frontend-apps.workos.com
 cdn.workos.com
@@ -2951,6 +2970,8 @@ cdn.whoer.com
 content.wepik.com
 scripts.webeo.com
 cdnstatic.w4nkr.com
+.cloudinary.vpsvc.com
+swan.prod.merch.vpsvc.com
 assets.volvo.com
 assets.vogue.com
 player.vimeo.com
@@ -3001,6 +3022,7 @@ static.music.com
 cdn.music.com
 assets.monei.com
 .mlcdn.com
+cf.mhgui.com
 static.lingq.com
 cdn.lihkg.com
 static-exp3.licdn.com
