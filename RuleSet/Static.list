@@ -444,6 +444,7 @@ cdn.sapphire.microsoftapp.net
 static.edge.microsoftapp.net
 .f.hubspotemail.net
 .directupload.net
+.dc-telemetry.net
 .coral.coralproject.net
 .blackbaudcdn.net
 .storage.yandexcloud.net
@@ -1087,6 +1088,7 @@ s3.duellinksmeta.com
 .dropboxstatic.com
 .discourse-cdn.com
 chat.digitalgenius.com
+.digikeyassets.com
 images8.design-editor.com
 images7.design-editor.com
 images.design-editor.com
@@ -1802,6 +1804,7 @@ cdn.onesignal.com
 .res.office365.com
 .oculuscdn.com
 .oaistatic.com
+cdn.nodeimage.com
 cms-assets.nodecraft.com
 .nhentaimg.com
 media.newyorker.com
