@@ -65,18 +65,18 @@ DOMAIN-WILDCARD,sdk.fra-0*.braze.eu
 DOMAIN-SUFFIX,hsbc-app.token.io
 
 # > 地区检测
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+//DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 # > 沃达丰
 DOMAIN-SUFFIX,epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org
 DOMAIN-SUFFIX,entsrv-uk.vodafone.com
 DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com
-DOMAIN-WILDCARD,*-courier.sandbox.push.apple.com
-DOMAIN,albert.apple.com
-DOMAIN-SUFFIX,idemia.io
-DOMAIN-SUFFIX,ess.apple.com
-DOMAIN-WILDCARD,init-p*md.apple.com
+//DOMAIN-WILDCARD,*-courier.sandbox.push.apple.com
+//DOMAIN,albert.apple.com
+//DOMAIN-SUFFIX,idemia.io
+//DOMAIN-SUFFIX,ess.apple.com
+//DOMAIN-WILDCARD,init-p*md.apple.com
 DOMAIN-SUFFIX,mcc234.pub.3gppnetwork.org
 
 AND,((GEOIP,GB), (AND,((PROTOCOL,UDP), (OR,((DEST-PORT,500), (DEST-PORT,4500)))))),no-resolve
