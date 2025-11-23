@@ -15,7 +15,7 @@ DOMAIN-SUFFIX,clubsim.com.hk
 DOMAIN-SUFFIX,mcc454.pub.3gppnetwork.org
 DOMAIN-SUFFIX,three.com.hk
 DOMAIN-SUFFIX,csl.prod.ondemandconnectivity.com
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+//DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 
 # > 支付宝
 #DOMAIN-SUFFIX,alipay.com
@@ -36,9 +36,9 @@ DOMAIN-SUFFIX,zaticdn.com
 DOMAIN-SUFFIX,za.group
 
 # > WeChat
-DOMAIN,wechat.com
-DOMAIN,www.wechat.com
-IP-CIDR,203.205.232.0/23,no-resolve
-IP-CIDR,203.205.234.0/23,no-resolve
-IP-CIDR,203.205.252.0/23,no-resolve
-IP-CIDR,203.205.254.0/23,no-resolve
+//DOMAIN,wechat.com
+//DOMAIN,www.wechat.com
+//IP-CIDR,203.205.232.0/23,no-resolve
+//IP-CIDR,203.205.234.0/23,no-resolve
+//IP-CIDR,203.205.252.0/23,no-resolve
+//IP-CIDR,203.205.254.0/23,no-resolve
