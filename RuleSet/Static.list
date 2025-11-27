@@ -448,6 +448,7 @@ static.edge.microsoftapp.net
 .coral.coralproject.net
 .blackbaudcdn.net
 .storage.yandexcloud.net
+images.wurstclient.net
 images.wsjcommerce.net
 static.underhentai.net
 .tapecontent.net
@@ -598,6 +599,7 @@ spoprod-a.akamaihd.net
 lumiere-a.akamaihd.net
 img.adspower.net
 cdn.yamibuy.net
+image.xmanhua.net
 cdn.writeas.net
 unlimited-cdn.waifu2x.net
 social-cdn.vivaldi.net
@@ -1970,6 +1972,9 @@ i.1password.com
 c.1password.com
 ws-assets.zoominfo.com
 .zdassets.com
+image.yymanhua.com
+cover.yymanhua.com
+css.yymanhua.com
 static.xxxshake.com
 i.xxxshake.com
 .xnxx-cdn.com
@@ -2589,6 +2594,10 @@ cdn.devdojo.com
 import-cdn.default.com
 cdn.datdota.com
 proxy.csidetm.com
+static.comicbz.com
+image.comicbz.com
+cover.comicbz.com
+css.comicbz.com
 player-frontend.cnevids.com
 player.cnevids.com
 .cmail20.com
@@ -2837,6 +2846,7 @@ staging-pubfeed.linkby.com
 ledger-wp-website-s3-prd.ledger.com
 assets-cms.kraken.com
 assets.kraken.com
+public.komiic.com
 brand-sdk.kmsmep.com
 js.klarna.com
 cdn.kinsta.com
