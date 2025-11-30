@@ -3,6 +3,7 @@ ossmirror.mycloud.services
 .nitro.download
 .kali.download
 mirror.kumi.systems
+mirror.level66.network
 mirror.hostiko.network
 mirror.nishi.network
 mirrors.esto.network
@@ -233,6 +234,7 @@ gpl.savoirfairelinux.net
 ctan.mc1.root.project-creative.net
 debian-archive.trafficmanager.net
 .mirrors.lucidnetworks.net
+fdroid.tetaneutral.net
 ctan.tetaneutral.net
 cpan.tetaneutral.net
 apt.tetaneutral.net

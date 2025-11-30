@@ -436,6 +436,8 @@ oct8neproxy.azurewebsites.net
 d4.alternativeto.net
 .vusercontent.net
 .vscode-unpkg.net
+.tiles.virtualearth.net
+ecn.dev.virtualearth.net
 static.vesselfinder.net
 map.vesselfinder.net
 cdn.tokyo-motion.net
@@ -3249,6 +3251,7 @@ zephr-templates.cnbc.com
 production-cmp.isgprivacy.cbsi.com
 at.cbsi.com
 th.bing.com
+r.bing.com
 i.bang.com
 .ax1x.com
 img.atom.com
@@ -3942,6 +3945,7 @@ cdn.european-alternatives.eu
 .1passwordusercontent.eu
 .zohostatic.eu
 cravatar.eu
+upload.movim.eu
 img.agrd.eu
 st.agrd.eu
 versionbadg.es
