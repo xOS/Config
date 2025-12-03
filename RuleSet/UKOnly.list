@@ -9,6 +9,10 @@ USER-AGENT,MyGuava*
 USER-AGENT,Mozon*
 USER-AGENT,Wise*
 USER-AGENT,wise*
+USER-AGENT,*klarna*
+DOMAIN-SUFFIX,klarnaevt.com
+DOMAIN-SUFFIX,klarna.com
+DOMAIN-SUFFIX,klarna.app
 DOMAIN-SUFFIX,creditkarma.co.uk
 DOMAIN-SUFFIX,api3.siftscience.com
 DOMAIN-SUFFIX,imaginecurve.com
@@ -28,6 +32,7 @@ DOMAIN-SUFFIX,rbs.co.uk
 DOMAIN-KEYWORD,natwest
 DOMAIN-KEYWORD,zilch
 DOMAIN-KEYWORD,curve
+DOMAIN-KEYWORD,klarna
 DOMAIN-SUFFIX,curve.app
 DOMAIN-SUFFIX,chase.co.uk
 DOMAIN-SUFFIX,co.uk
