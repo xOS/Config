@@ -13,6 +13,7 @@ mirror.eliv.digital
 mirror.jeonnam.school
 mirrors.gethosted.online
 mirror.kkg.berlin
+gotest.tools
 mirror.bgp.rodeo
 dl.thorium.rocks
 jing.rocks
@@ -141,7 +142,10 @@ mirrors.edge.kernel.org
 mirrors.us.kernel.org
 plugins-artifacts.gradle.org
 repo.gradle.org
+google.golang.org
 proxy.golang.org
+index.golang.org
+sum.golang.org
 mirror.faraso.org
 .mirrors.dotsrc.org
 .ftp-master.debian.org
@@ -1475,6 +1479,7 @@ ctan.yazd.ac.ir
 repo.iut.ac.ir
 ctan.um.ac.ir
 download.projectbluefin.io
+go.opentelemetry.io
 packagecloud.io
 assets-production.packagecloud.io
 mirror.realcompute.io
@@ -1526,6 +1531,7 @@ mirror.bom2.albony.in
 mirror.del.albony.in
 mirror.bom.albony.in
 gopkg.in
+go.yaml.in
 ctan.imsc.res.in
 ubuntu-mirror.snu.edu.in
 mirror.ietlucknow.ac.in
