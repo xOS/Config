@@ -668,6 +668,8 @@ static.vocadb.net
 images1.vinted.net
 craftassets.unraid.net
 components.trynow.net
+lzd-img-global.slatic.net
+icms-image.slatic.net
 .sftcdn.net
 .rspcdn.net
 .redcdn.net
@@ -2847,6 +2849,7 @@ cdn2.macpaw.com
 .locimg.com
 staging-pubfeed.linkby.com
 ledger-wp-website-s3-prd.ledger.com
+.lazcdn.com
 assets-cms.kraken.com
 assets.kraken.com
 public.komiic.com
