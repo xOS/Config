@@ -25,9 +25,9 @@ DOMAIN,ios.prod.cloud.netflix.com
 DOMAIN,appboot.netflix.com
 
 # > 微信热更新
-DOMAIN,dldir1.qq.com
-DOMAIN,dldir1v6.qq.com
-DOMAIN,dl.wechat.com
+ //DOMAIN,dldir1.qq.com
+ //DOMAIN,dldir1v6.qq.com
+ //DOMAIN,dl.wechat.com
 
 # > Adobe 弹窗
 DOMAIN,ic.adobe.io
