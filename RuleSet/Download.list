@@ -79,7 +79,7 @@ mirror.keystealth.org
 update.greasyfork.org
 releases.grapheneos.org
 dennou-k.gfd-dennou.org
-gnu.freemirror.org
+.freemirror.org
 repo.extreme-ix.org
 repos.del.extreme-ix.org
 artifacts.electronjs.org
@@ -1532,7 +1532,6 @@ mirror.del.albony.in
 mirror.bom.albony.in
 gopkg.in
 go.yaml.in
-ctan.imsc.res.in
 ubuntu-mirror.snu.edu.in
 mirror.ietlucknow.ac.in
 mirror.nitc.ac.in

@@ -294,9 +294,6 @@ cdn.travis-ci.org
 light.spicegems.org
 user-uploads.perchance.org
 s13.maxstream.org
-s11.maxstream.org
-s10.maxstream.org
-s9.maxstream.org
 s8.maxstream.org
 s1.maxstream.org
 cdn.freesound.org
@@ -2418,6 +2415,7 @@ cdn.plus500.com
 cdn.pixabay.com
 static.pingcap.com
 .phprcdn.com
+hawky.pcgamer.com
 c17.patreon.com
 c16.patreon.com
 c14.patreon.com
@@ -2633,7 +2631,6 @@ affportal.bhphoto.com
 .bftuvip.com
 promotions.betfair.com
 media.beehiiv.com
-chat-content.beanfun.com
 .bdzybf7.com
 assets.basehub.com
 hiveplayer-static.bamgrid.com
@@ -3481,7 +3478,6 @@ imgcn2.bgmbk.tv
 imgcn.bgmbk.tv
 cdn.18jav.tv
 static.yfsp.tv
-mcdn.tubi.tv
 s-cdnstatic.svc.litv.tv
 p-cdnstatic.svc.litv.tv
 jsmodule.svc.litv.tv
@@ -3769,6 +3765,7 @@ cdn.jetboost.io
 widget.intercom.io
 .ik.imagekit.io
 icon.icepanel.io
+cdn.hackaday.io
 .ipfs.denarius.io
 .rum.cronitor.io
 cdn.commento.io
@@ -3986,7 +3983,6 @@ static.convertio.co
 .ipfs.sloppyta.co
 assets.jolipage.co
 cdn.jolipage.co
-statics.erothots.co
 .doodcdn.co
 img.decrypt.co
 cdn.decrypt.co
