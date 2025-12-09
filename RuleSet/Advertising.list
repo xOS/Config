@@ -1,4 +1,4 @@
-# > 一般
+# > 其它
 DOMAIN-SUFFIX,global-iuni.checktrustworthiness.com
 DOMAIN-SUFFIX,webcast-open.douyin.com
 DOMAIN-WILDCARD,vod-license*.volccdn.com
@@ -52,11 +52,11 @@ DOMAIN-SUFFIX,flysleep.cn
 DOMAIN-SUFFIX,zztfly.com
 DOMAIN-SUFFIX,yunxinfw.com
 DOMAIN-SUFFIX,gepush.com
-DOMAIN, adsmind.ugdtimg.com
-DOMAIN, adx-bj.anythinktech.com
-DOMAIN, adx-os.bridgeturbo.com
-DOMAIN, da.bridgeturbo.com
-DOMAIN, pgdt.ugdtimg.com
+DOMAIN,adsmind.ugdtimg.com
+DOMAIN,adx-bj.anythinktech.com
+DOMAIN,adx-os.bridgeturbo.com
+DOMAIN,da.bridgeturbo.com
+DOMAIN,pgdt.ugdtimg.com
 DOMAIN-SUFFIX,oneadtag.com
 DOMAIN-SUFFIX,global-rtb.com
 DOMAIN-SUFFIX,s4mdsp.com
@@ -65,6 +65,14 @@ DOMAIN,datacollection.uve.weibo.com
 DOMAIN-SUFFIX,fan.twitch.tv
 DOMAIN-SUFFIX,spade.twitch.tv
 DOMAIN-SUFFIX,adbiding.com
+
+# > 韩剧 TV
+DOMAIN-KEYWORD,pangolin
+DOMAIN-WILDCARD,pangolin-sdk-toutiao-*.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,maplehaze.cn
+DOMAIN-SUFFIX,beizi.biz
+DOMAIN-SUFFIX,sink-ssdata.xiawen.tv
 
 # > 百度网盘
 DOMAIN,sofire.baidu.com
