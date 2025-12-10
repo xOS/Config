@@ -1,3 +1,4 @@
+website-cdn
 .static.microsoft
 cdn.arcade.software
 media.infosec.exchange
@@ -3826,7 +3827,7 @@ favicon.pirsch.io
 .nxedge.io
 edge.marker.io
 .jbkcdn.io
-website-cdn.ipinfo.io
+.assets.ipinfo.io
 .cdn.ipinfo.io
 .ipfs.infura.io
 assets.hackmd.io
