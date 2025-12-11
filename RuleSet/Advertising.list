@@ -65,6 +65,12 @@ DOMAIN,datacollection.uve.weibo.com
 DOMAIN-SUFFIX,fan.twitch.tv
 DOMAIN-SUFFIX,spade.twitch.tv
 DOMAIN-SUFFIX,adbiding.com
+DOMAIN-SUFFIX,openysf.cup.com.cn
+DOMAIN-SUFFIX,getui.net
+DOMAIN,open.fdep.cn
+DOMAIN-SUFFIX,open.talk.igexin.com
+DOMAIN-SUFFIX,jpush.cn
+DOMAIN-SUFFIX,ad.jiguang.cn
 
 # > 韩剧 TV
 DOMAIN-KEYWORD,pangolin
