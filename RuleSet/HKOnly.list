@@ -11,6 +11,7 @@
 DOMAIN-SUFFIX,com.hk
 
 # > Club Sim
+DOMAIN-KEYWORD,mcc454
 DOMAIN-SUFFIX,clubsim.com.hk
 DOMAIN-SUFFIX,mcc454.pub.3gppnetwork.org
 DOMAIN-SUFFIX,three.com.hk
