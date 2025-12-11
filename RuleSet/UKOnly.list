@@ -10,6 +10,7 @@ USER-AGENT,Mozon*
 USER-AGENT,Wise*
 USER-AGENT,wise*
 USER-AGENT,*klarna*
+DOMAIN-KEYWORD,mcc234
 DOMAIN-SUFFIX,klarnaevt.com
 DOMAIN-SUFFIX,klarna.com
 DOMAIN-SUFFIX,klarna.app
