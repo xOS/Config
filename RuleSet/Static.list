@@ -1,4 +1,3 @@
-website-cdn
 .static.microsoft
 cdn.arcade.software
 media.infosec.exchange
@@ -1252,6 +1251,7 @@ static.webclicks24.com
 cdn.webclicks24.com
 live.visually-io.com
 app.viral-loops.com
+vectorified.com
 static-cdn.usertesting.com
 .js.usemessages.com
 asset-cdn.uscardforum.com
@@ -1372,6 +1372,7 @@ a.kickstarter.com
 asset.jamieoliver.com
 cdn.jamieoliver.com
 media.istockphoto.com
+cdn.ip2location.com
 content.invisioncic.com
 media.invisioncic.com
 .intercomcdn.com
@@ -2690,6 +2691,7 @@ marketplace-web-assets.vinted.com
 static-assets.vinted.com
 static.vinted.com
 img.vim-cn.com
+images.vexels.com
 telemetry.vercel.com
 assets.vercel.com
 image.ship.vercel.com
@@ -2885,6 +2887,7 @@ cdn3.hextom.com
 cdn2.hextom.com
 cdn.hextom.com
 .assets.heroku.com
+nel.heroku.com
 .hembed.com
 image.gyutto.com
 android-safebrowsing.google.com
@@ -3788,6 +3791,7 @@ static.opensea.io
 favicons.nextdns.io
 cdn.logbase.io
 media.lantern.io
+cdn.ipwhois.io
 .ipfscdn.io
 cdn.icomoon.io
 assets.holopin.io
@@ -3827,6 +3831,7 @@ favicon.pirsch.io
 .nxedge.io
 edge.marker.io
 .jbkcdn.io
+website-cdn.ipinfo.io
 .assets.ipinfo.io
 .cdn.ipinfo.io
 .ipfs.infura.io
