@@ -725,6 +725,7 @@ static-cdn.jtvnw.net
 jsdelivr.ioiox.net
 static-act.imoim.net
 .imgix.net
+.hrcdn.net
 file1.hkepc.net
 i.hkepc.net
 .ftcdn.net
@@ -1610,6 +1611,9 @@ fonts.googleapis.com
 chart.googleapis.com
 ajax.googleapis.com
 sync.getpublica.com
+identity-assets.getpostman.com
+static.getpostman.com
+assets.getpostman.com
 connect.getflowbox.com
 static-r2.gear4music.com
 r2.gear4music.com
@@ -2865,6 +2869,7 @@ code.jquery.com
 cdn.jitbit.com
 .jbkcdn.com
 .javtxt.com
+cache.ip-api.com
 .imgtbl.com
 .imgbox.com
 static.inferno.iheart.com
@@ -3073,6 +3078,7 @@ icdn.javxx.com
 cdn.javmg.com
 creator-image.javhd.com
 static.javhd.com
+assets.ipapi.com
 i.ioiox.com
 pim-media.intel.com
 imgopt.infoq.com
@@ -3702,6 +3708,7 @@ cdn.simplelocalize.io
 .combinatronics.io
 edge.sitecorecloud.io
 .opentelemetry.io
+static.ipgeolocation.io
 .local.webcontainer.io
 telemetry.stepsecurity.io
 .ipfs.scalaproject.io
@@ -3766,6 +3773,7 @@ prettier.io
 .ipfs.namebase.io
 cdn.metadata.io
 cdn.jetboost.io
+static.iplocate.io
 widget.intercom.io
 .ik.imagekit.io
 icon.icepanel.io
@@ -3857,6 +3865,7 @@ js.smile.io
 js.short.io
 .senja.io
 .seadn.io
+documenter-assets.pstmn.io
 skills-assets.pstmn.io
 topbar-static.piano.io
 experience-ap.piano.io
