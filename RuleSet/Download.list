@@ -70,6 +70,8 @@ mirror.mci-1.serverforge.org
 mirror.cyberchains.org
 cpan.cpantesters.org
 dl-cdn.alpinelinux.org
+static.torproject.org
+deb.torproject.org
 mirror.team-cymru.org
 mirror.stjschools.org
 update.sleazyfork.org
@@ -125,6 +127,8 @@ mirror.freedif.org
 distcache.freebsd.org
 ftp.kr.freebsd.org
 dl.flathub.org
+f-droid.org
+cloudflare.f-droid.org
 .archive.org
 httpd-mirror.sergal.org
 ftp-osl.osuosl.org
@@ -273,6 +277,7 @@ ftp.ubuntu-tw.net
 ubuntu.pishgaman.net
 mirror.ossplanet.net
 mirror.fi.ossplanet.net
+mirror.eu.ossplanet.net
 mirror.us.oneandone.net
 mirror.eu.oneandone.net
 mirror.olnevhost.net
