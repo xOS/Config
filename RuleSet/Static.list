@@ -1751,6 +1751,7 @@ ui.trailhead.com
 hawk.tomsguide.com
 .tokyvideo.com
 .tnastatic.com
+.tinifycdn.com
 .tiktokcdn.com
 thumbsnap.com
 .thisiscdn.com
@@ -1917,6 +1918,7 @@ cdn1.epicgames.com
 talon-website-prod.ecosec.on.epicgames.com
 epic-social-social-modules-prod.ol.epicgames.com
 .ensighten.com
+assets.endorsely.com
 .embedgram.com
 .design-system.economist.com
 marber-cdn.economist.com
@@ -2062,6 +2064,7 @@ source.roboflow.com
 cdn.roboflow.com
 app.roboflow.com
 api.roboflow.com
+prod-images.rippling.com
 staticsource1.redotpay.com
 redircdn.com
 cacerts.rapidssl.com
@@ -3665,6 +3668,7 @@ img3.yna.co.kr
 img2.yna.co.kr
 img1.yna.co.kr
 img0.yna.co.kr
+img.yna.co.kr
 media.cmx.edu.kg
 .misskeyusercontent.jp
 .edge.storage-yahoo.jp
@@ -3986,6 +3990,7 @@ cdn.prod.www.spiegel.de
 www.acgpix.de
 cdn.ionos.de
 .ipfs.slang.cx
+assets.openalternative.co
 cdn.stackoverflow.co
 .cdn-lfs-us-1.huggingface.co
 .cdn-uploads.huggingface.co
