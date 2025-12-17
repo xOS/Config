@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,equifax.com
 DOMAIN-SUFFIX,transunion.com
 DOMAIN-SUFFIX,experian.com
 DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,att.com
 DOMAIN-KEYWORD,kraken
 DOMAIN-KEYWORD,stripe
 DOMAIN-KEYWORD,claude
