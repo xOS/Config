@@ -1,3 +1,4 @@
+website-media
 .static.microsoft
 cdn.arcade.software
 media.infosec.exchange
@@ -39,6 +40,7 @@ fonts1.unidays.world
 tubi.video
 img.api.video
 namedotcom-cdn.name.tools
+openreplay-new.deel.tools
 pics.javhd.today
 .eth.sucks
 vanilla-extract.style
@@ -2143,6 +2145,7 @@ img-api.mac4ever.com
 media.loom-app.com
 linkstorage.linkfire.com
 services.linkfire.com
+media.letsdeel.com
 static-lccn.leetcode.com
 assets.leetcode.com
 cdn.leandata.com
@@ -2313,6 +2316,7 @@ image.p-c2-x.abema-tv.com
 cdn.zigpoll.com
 .media.zestyio.com
 web-assets.zendesk.com
+assets.zendesk.com
 img.youtube.com
 cdne-pics.youjizz.com
 .yelpcdn.com
@@ -3266,7 +3270,6 @@ assets.goat.com
 image.goat.com
 .fsdn.com
 images.dmca.com
-website-media.deel.com
 sf-coze-web-cdn.coze.com
 zephr-templates.cnbc.com
 production-cmp.isgprivacy.cbsi.com
@@ -3379,6 +3382,7 @@ a.pomf.cat
 oss.moe.cat
 ns-cdn.neustar.biz
 pics.mf8.biz
+static.sdkassets.chime.aws
 .ipfs.kaleido.art
 disco-static.productessentials.app
 cdn.giftcardpro.app
