@@ -99,6 +99,7 @@ res2.weblium.site
 nextra.site
 p.inari.site
 imgfile.shop
+placeholder.pics
 .am-cdn.pics
 .codeberg.page
 .instant.page
@@ -823,6 +824,7 @@ i.jpg.dog
 tuf-repo-cdn.sigstore.dev
 pkg-size.dev
 cdn-web.orbstack.dev
+logos.composio.dev
 .workers.dev
 .skypack.dev
 .angular.dev
@@ -1946,6 +1948,7 @@ webstatic.chargebee.com
 js1.chargebee.com
 js.chargebee.com
 cdn.changelog.com
+.cdn-plain.com
 sequoia.cdn-apple.com
 doppler-config.cbsivideo.com
 www-res.cablelabs.com
@@ -2476,6 +2479,8 @@ images.moegoat.com
 .mktgcdn.com
 .mintcdn.com
 image.mgstage.com
+acdn.mercury.com
+cdn.mercury.com
 static.maxmind.com
 img-cos.mandaoo.com
 assets.mailgun.com
@@ -3625,6 +3630,7 @@ api.crashguard.me
 .dnvodcdn.me
 cdn.daradara.me
 cf.javfree.me
+circle-flags.zeljko.me
 cdn.picrew.me
 cdn.glitch.me
 static.start.me
@@ -3778,6 +3784,7 @@ media.hachyderm.io
 static.getbutton.io
 .crossbell.io
 .corsproxy.io
+assets.mcp.corespeed.io
 sandpack-cdn-staging.blazingly.io
 .bitbucket.io
 img.badgesize.io
