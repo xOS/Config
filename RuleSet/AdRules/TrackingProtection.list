@@ -46092,6 +46092,12 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.metrics-ingress-web.svc.vinted.com
+.metrics.vinted.lt
+.d.nordvpn.com
+.ingress.linktr.ee
+.browser-fp.production.linktr.ee
+.app-performance.music.amazon.dev
 .mp.imgur.com
 .a.apkeditor.io
 .log.goodnovel.com
@@ -49368,6 +49374,9 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.events.backtrace.io
+.kbox-analytics-prod.s*.amazonaws.com
+.logs.classdojo.com
 .api.arity.com
 .mob2.bpt.apprevork.com
 .cpatrk.net
@@ -49630,6 +49639,7 @@
 .log.documentmanagerpdfdocxlssale.live
 .stats.samsungpass.com
 .log.pdfviewerscannerstore.live
+.mon-v*-boot.capcutapi.com
 .log-sg.capcutapi.com
 .mon-sg.capcutapi.com
 .tnc-sg.capcutapi.com
@@ -50664,6 +50674,7 @@
 .controlswim.com
 .convertbatch.com
 .cooingcoal.com
+.cookiestorybook.com
 .coolestcatcare.com
 .coolguesthouse.com
 .coordinatedcoat.com
@@ -50671,6 +50682,7 @@
 .copycarpenter.com
 .copyfranchise.com
 .copyrightaccesscontrols.com
+.copytweaks.com
 .copyvibes.com
 .coralcranes.com
 .coralreverie.com

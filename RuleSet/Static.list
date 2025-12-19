@@ -1033,6 +1033,7 @@ cdn-live.foreignaffairs.com
 .customeriomail.com
 .crunchyrollcdn.com
 .colliderimages.com
+.betterstackcdn.com
 .b2c-contenthub.com
 cdn.answeroverflow.com
 .alonestreaming.com
@@ -3416,6 +3417,7 @@ e.linear.app
 .giscus.app
 .udify.app
 .tauri.app
+chat-assets.front.app
 .xlog.app
 cdn.rive.app
 web-cdn.bsky.app
@@ -3428,6 +3430,7 @@ cdn.24.co.za
 .ipfs.yt
 s.pacn.ws
 .imageshack.us
+appstatico.electronic.us
 cdn.donmai.us
 us01ccistatic.zoom.us
 eu01ccistatic.zoom.us
@@ -3784,6 +3787,7 @@ media.hachyderm.io
 static.getbutton.io
 .crossbell.io
 .corsproxy.io
+r2cdn.corespeed.io
 assets.mcp.corespeed.io
 sandpack-cdn-staging.blazingly.io
 .bitbucket.io
