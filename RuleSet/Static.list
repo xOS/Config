@@ -2725,6 +2725,7 @@ backinstock.useamp.com
 .devrum.uptime.com
 api.unisvg.com
 .assets.ubuntu.com
+i.typlog.com
 widgets.turnto.com
 .cdn.turner.com
 cdn-web.tunein.com
@@ -3240,6 +3241,7 @@ static.v2ex.com
 cdn.v2ex.com
 widget.user.com
 media.user.com
+prd-www-cdn.ubnt.com
 assets.time.com
 .sirv.com
 cdn.sift.com
@@ -3390,6 +3392,7 @@ ns-cdn.neustar.biz
 pics.mf8.biz
 static.sdkassets.chime.aws
 .ipfs.kaleido.art
+img.fzf404.art
 disco-static.productessentials.app
 cdn.giftcardpro.app
 do.featurebase.app
@@ -3782,6 +3785,7 @@ js-cdn.blockchair.io
 .wixstudio.io
 cdn.transcend.io
 static.tokenview.io
+cdn.simplesat.io
 assets.keysquare.io
 media.hachyderm.io
 static.getbutton.io
