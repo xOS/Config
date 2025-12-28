@@ -1071,7 +1071,7 @@ cdn.prowritingaid.com
 .cdn.printfriendly.com
 .pressidiumcdn.com
 media.pointandplace.com
-www.paypalobjects.com
+.paypalobjects.com
 .oreillystatic.com
 .notion-static.com
 .agechecker.northern-apps.com
@@ -1172,6 +1172,7 @@ cdn.privacy-mgmt.com
 ui.powerreviews.com
 js.partnerstack.com
 sbl.onfastspring.com
+cdn.onfastspring.com
 .onelink-edge.com
 .onekey-asset.com
 .omnisnippet1.com
@@ -1259,6 +1260,7 @@ widgets.zohosalesiq.com
 images.youracclaim.com
 bookface-static.ycombinator.com
 .xvideos-cdn.com
+image.worthepenny.com
 storage.windiscover.com
 .webpkgcache.com
 static.webclicks24.com
@@ -3424,6 +3426,7 @@ uploads.linear.app
 .cms-cdn.linear.app
 static.linear.app
 public.linear.app
+s.linear.app
 e.linear.app
 .giscus.app
 .udify.app
