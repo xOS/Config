@@ -16,7 +16,7 @@ const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{7}).+(.{7})$/, "
 
 // 配置使用的 GeoIP 接口和 IPv6 开关
 // 支持参数: GeoIPApi=xxx & EnableIPv6=1/0
-let GeoIPApi = "quic"; // 默认使用 QUIC 接口
+let GeoIPApi = "aapl"; // 默认使用 AAPL 接口
 let EnableIPv6 = true; // 默认开启 IPv6
 if (typeof $argument !== 'undefined' && $argument) {
     const args = $argument.split('&');
@@ -95,8 +95,6 @@ if (CNNET.includes(carrier)) {
 
     const ip = IPv4;
     const router = wifi.ssid ? v4.primaryRouter : '';
-
-    // 已移除：QUIC 接口连接预热函数（避免额外请求导致超时）
 
     // 获取外部 IPv4 地址的函数
     function getExternalIPv4(callback) {
@@ -288,20 +286,20 @@ if (CNNET.includes(carrier)) {
                 };
                 break;
 
-            case "quic":
+            case "aapl":
                 url = "https://api.aapls.com/v1/geoip?lang=zh";
                 parser = function (data) {
                     try {
-                        console.log(`quic 解析器收到数据: [${data.toString()}]`);
+                        console.log(`aapl 解析器收到数据: [${data.toString()}]`);
                         let json = JSON.parse(data);
                         // 兼容数组格式
                         if (Array.isArray(json)) {
                             json = json[0] || {};
                         }
-                        console.log(`quic JSON解析结果:`, JSON.stringify(json, null, 2));
+                        console.log(`aapl JSON解析结果:`, JSON.stringify(json, null, 2));
                         if (json && json.ip) {
                             const ip = json.ip;
-                            console.log(`quic 提取到IP: ${ip}`);
+                            console.log(`aapl 提取到IP: ${ip}`);
                             if (isValidIPv4(ip) || isValidIPv6(ip)) {
                                 const country = json.country || '';
                                 const region = json.region || '';
@@ -340,19 +338,19 @@ if (CNNET.includes(carrier)) {
                                 if (district) info += district;
                                 info += isp;
                                 info = info.replace(/\s+|[-/\\]/g, '') || '未知地区';
-                                console.log(`quic 地理信息: 国家=${country}, 地区=${region}, 城市=${city}, 区域=${district}, ISP=${isp}`);
-                                console.log(`quic 最终地理信息: ${info}`);
+                                console.log(`aapl 地理信息: 国家=${country}, 地区=${region}, 城市=${city}, 区域=${district}, ISP=${isp}`);
+                                console.log(`aapl 最终地理信息: ${info}`);
                                 return { ip, info };
                             } else {
-                                console.log(`quic IP地址无效: ${ip}`);
+                                console.log(`aapl IP地址无效: ${ip}`);
                             }
                         } else {
-                            console.log(`quic 数据结构不符合预期`);
+                            console.log(`aapl 数据结构不符合预期`);
                             console.log(`json.ip: ${json ? json.ip : 'undefined'}`);
                         }
                         return { ip: null, info: null };
                     } catch (e) {
-                        console.log('quic 解析器出错:', e.message);
+                        console.log('aapl 解析器出错:', e.message);
                         return { ip: null, info: null };
                     }
                 };
@@ -363,7 +361,7 @@ if (CNNET.includes(carrier)) {
                 return;
         }
 
-        // 简化：直接一次请求，不做 QUIC 特殊重试与定制超时
+        // 简化：直接一次请求，不做 AAPL 特殊重试与定制超时
         $httpClient.get(url, function (error, response, data) {
             if (error) {
                 console.log(`${GeoIPApi} 接口请求错误:`, error);
@@ -412,13 +410,13 @@ if (CNNET.includes(carrier)) {
         }
 
         // 仅对支持 IPv6 的接口发起一次请求
-        if (GeoIPApi === 'ping0' || GeoIPApi === 'pingan' || GeoIPApi === 'quic') {
+        if (GeoIPApi === 'ping0' || GeoIPApi === 'pingan' || GeoIPApi === 'aapl') {
             let ipv6Url;
             if (GeoIPApi === 'ping0') {
                 ipv6Url = "https://ipv6.ping0.cc/geo";
             } else if (GeoIPApi === 'pingan') {
                 ipv6Url = "https://rmb.pingan.com.cn/itam/mas/linden/ip/request";
-            } else { // quic
+            } else { // aapl
                 ipv6Url = "https://ipv6.aapls.com/v1/geoip?lang=zh";
             }
 
@@ -476,7 +474,7 @@ if (CNNET.includes(carrier)) {
                             callback(obfuscated, info, false);
                             return;
                         }
-                    } else { // quic
+                    } else { // aapl
                         let json = JSON.parse(data);
                         if (Array.isArray(json)) json = json[0] || {};
                         if (json && json.ip && isValidIPv6(json.ip)) {
