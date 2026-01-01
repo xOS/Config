@@ -72,6 +72,8 @@ DOMAIN-SUFFIX,open.talk.igexin.com
 DOMAIN-SUFFIX,jpush.cn
 DOMAIN-SUFFIX,ad.jiguang.cn
 DOMAIN-SUFFIX,admaru.com
+DOMAIN-SUFFIX,aem-kakao-collector.onkakao.net
+DOMAIN-SUFFIX,tr.ds.kakao.com
 
 # > 韩剧 TV
 DOMAIN-KEYWORD,pangolin
