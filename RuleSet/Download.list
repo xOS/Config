@@ -445,7 +445,6 @@ releases.arc.net
 mirror.internode.on.net
 .catbox.moe
 mirror.gsl.icu
-ftp.cc.uoc.grs
 linux-mirrors.fnal.gov
 maven.is-quite.gay
 ctan.math.washington.edu
@@ -1057,7 +1056,6 @@ dist.blizzard.com
 desktop.wifiman.com
 mirror.virtury.com
 autoupdate.termius.com
-mirrors.eze.sysarmy.com
 enterprise.proxmox.com
 ubuntu.parsvds.com
 mirrors.nxthost.com
@@ -1835,8 +1833,7 @@ mirror.unix-solutions.be
 ctan.space-pro.be
 ftp.belnet.be
 lib.ugent.be
-apache.cu.be
-kde.cu.be
+.mirrors.cu.be
 mirror.visiontech.com.bd
 mirror.amberit.com.bd
 ubuntu-mirror.bhtelecom.ba
@@ -1871,7 +1868,6 @@ debian.mur.at
 ubuntu.uni-klu.ac.at
 ftp.tu-graz.ac.at
 mirrors.sarak.as
-mirrors.dc.clear.net.ar
 debian.unnoba.edu.ar
 ubuntu.unc.edu.ar
 cpan.mmgdesigns.com.ar
