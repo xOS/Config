@@ -324,6 +324,7 @@ open-vsx.org
 demotiles.maplibre.org
 .lichess1.org
 design.keyoxide.org
+modules.kernelsu.org
 api.indexnow.org
 assets.exercism.org
 david-dm.org
@@ -920,6 +921,7 @@ conversiongorilla.com
 b5x-sentry.1passwordservices.com
 telemetry.1passwordservices.com
 cdn.virtuoussoftware.com
+.thecontentserver.com
 .superhumanstatic.com
 .superfiliate-cdn.com
 .steamusercontent.com
@@ -1720,6 +1722,7 @@ player.interactivity.brightcove.com
 app.brightback.com
 static.prd.borderfree.com
 .boomio-cdn.com
+cdn.boldmethod.com
 cdn-www.bluestacks.com
 .bestjavcdn.com
 widgets.automizely.com
@@ -1911,6 +1914,7 @@ assets.grammarly.com
 image.send.grammarly.com
 widget.gotolstoy.com
 play.gotolstoy.com
+media.glassdoor.com
 .gitmirror.com
 .assets.getpocket.com
 i.geekflare.com
@@ -2226,6 +2230,7 @@ icons.ferndocs.com
 images.fandango.com
 graph.facebook.com
 static.euronews.com
+images.euronews.com
 assets.euractiv.com
 cdn.equalweb.com
 aff.equalweb.com
@@ -2842,6 +2847,7 @@ cdn.openai.com
 static.oklink.com
 .odycdn.com
 .od-cdn.com
+assets.nypost.com
 pbc.nypost.com
 images.nvidia.com
 .npmcdn.com
@@ -2919,6 +2925,8 @@ img.icons8.com
 bst.icons8.com
 statici.icloud.com
 .icfcdn.com
+assets-v2.i-scmp.com
+cdn.i-scmp.com
 .hugoal.com
 static.hotjar.com
 .hommec.com
@@ -4127,12 +4135,14 @@ images.tg.cc
 img.tg.cc
 .1passwordusercontent.ca
 cdn.adsninja.ca
+cdn4.focus.bg
 components.cyclingfactory.be
 images.cyclingfactory.be
 .abc-cdn.net.au
 res.abc.net.au
 styleguide-assets.shannons.com.au
 .newscdn.com.au
+subscriptions.news.com.au
 tags.news.com.au
 .ipfs.greyh.at
 i.snap.as
