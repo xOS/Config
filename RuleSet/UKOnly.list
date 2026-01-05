@@ -4,7 +4,6 @@ USER-AGENT,*Curve*
 USER-AGENT,com.imaginecurve.curve*
 USER-AGENT,UnitedKingdom*
 USER-AGENT,StandaloneBMB*
-USER-AGENT,trading212*
 USER-AGENT,MyGuava*
 USER-AGENT,Mozon*
 USER-AGENT,Wise*
@@ -47,7 +46,6 @@ DOMAIN-SUFFIX,royalmail.com
 DOMAIN-SUFFIX,capitalone-ukeu.apps-imiconnect.io
 DOMAIN-SUFFIX,capitalone.co.uk
 DOMAIN-WILDCARD,mobile-collector.eu*.nr-data.net
-DOMAIN-SUFFIX,trading212.com
 DOMAIN-SUFFIX,riskified.com
 DOMAIN-SUFFIX,uphold.com
 DOMAIN-SUFFIX,siftscience.com
@@ -56,7 +54,6 @@ DOMAIN-KEYWORD,lemonade
 DOMAIN-SUFFIX,lemfi.com
 DOMAIN-SUFFIX,lemonade.finance
 DOMAIN-KEYWORD,jaja
-DOMAIN-KEYWORD,trading212
 DOMAIN-SUFFIX,csftr.com
 DOMAIN-SUFFIX,guavapay.com
 DOMAIN-SUFFIX,entsrv-uk.vodafone.com
@@ -72,22 +69,13 @@ DOMAIN-SUFFIX,hsbc-app.token.io
 
 # > 地区检测
 //DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-# > 沃达丰
-DOMAIN-SUFFIX,epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
-DOMAIN-SUFFIX,ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
-DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org
 DOMAIN-SUFFIX,entsrv-uk.vodafone.com
 DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com
-//DOMAIN-WILDCARD,*-courier.sandbox.push.apple.com
-//DOMAIN,albert.apple.com
-//DOMAIN-SUFFIX,idemia.io
-//DOMAIN-SUFFIX,ess.apple.com
-//DOMAIN-WILDCARD,init-p*md.apple.com
-DOMAIN-SUFFIX,mcc234.pub.3gppnetwork.org
 
 AND,((GEOIP,GB), (AND,((PROTOCOL,UDP), (OR,((DEST-PORT,500), (DEST-PORT,4500)))))),no-resolve
 
 IP-CIDR,88.82.0.0/19,no-resolve
+
 # > CMLinkUK EE
 IP-CIDR,46.68.0.0/17,no-resolve
 # > Giffgaff
