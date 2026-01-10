@@ -12,6 +12,7 @@ api.web3.storage
 .gateway.serph.network
 .cdnjs.network
 cdn.robinpro.gallery
+screenshot.domains
 .static.domains
 bcdn.starapps.studio
 cdn.starapps.studio
@@ -82,6 +83,7 @@ cdn-static.paw.cloud
 .dsc.cloud
 static.bit.cloud
 cdn.bigcloud.click
+cpp-content.bhn.cards
 turbo.build
 .lllcdn.autos
 .safebrowsing.apple
@@ -91,6 +93,7 @@ static.frame.work
 tn.txxx.tube
 js.txxx.tube
 media.d.tube
+docs.mrchromebox.tech
 media.remax-prod.eng.remax.tech
 static.pepy.tech
 packages.jetbrains.team
@@ -236,6 +239,7 @@ static.themebuilder.aws.arc.pub
 cms-assets.webediamovies.pro
 img.foresightnews.pro
 pics.x-n-x-x.pro
+cdn.affine.pro
 play.xfvod.pro
 assets.gcore.pro
 .bmp.ovh
@@ -940,6 +944,7 @@ js.braintreegateway.com
 jslibs.blackmagicdesign.com
 images.blackmagicdesign.com
 css.blackmagicdesign.com
+dd.blackhawknetwork.com
 imgs02.aventertainments.com
 js.assemblyexchange.com
 cdn.worldvectorlogo.com
@@ -1626,6 +1631,7 @@ firebaseinstallations.googleapis.com
 optimizationguide-pa.googleapis.com
 firebaseremoteconfig.googleapis.com
 firebaselogging-pa.googleapis.com
+.commondatastorage.googleapis.com
 .clientmetrics-pa.googleapis.com
 .firebasestorage.googleapis.com
 firebaselogging.googleapis.com
@@ -1698,6 +1704,7 @@ pplx-res.cloudinary.com
 res.cloudinary.com
 .privacy-gateway.cloudflare.com
 .csp-reporting.cloudflare.com
+report-uri.cloudflare.com
 favicons.teams.cloudflare.com
 cdnjs.cloudflare.com
 time.cloudflare.com
@@ -2106,6 +2113,7 @@ static.pornpics.com
 cdni.pornpics.com
 .porn-cdn.com
 static.politico.com
+.poki-cdn.com
 cdn.playwire.com
 .pastebin.com
 signature.overwolf.com
@@ -2503,6 +2511,8 @@ static.moegoat.com
 images.moegoat.com
 .mktgcdn.com
 .mintcdn.com
+video3.mingpao.com
+fs.mingpao.com
 image.mgstage.com
 acdn.mercury.com
 cdn.mercury.com
@@ -3037,6 +3047,7 @@ cdn-widgetsrepository.yotpo.com
 cdn-swell-assets.yotpo.com
 cdn-loyalty.yotpo.com
 staticw2.yotpo.com
+img1.yeggi.com
 yep.video.yahoo.com
 .xhcdn.com
 .wsimg.com
@@ -3103,6 +3114,7 @@ static.music.com
 cdn.music.com
 assets.monei.com
 .mlcdn.com
+imagecdn.mixlr.com
 cf.mhgui.com
 static.lingq.com
 cdn.lihkg.com
@@ -3307,6 +3319,7 @@ cms-cdn.goat.com
 assets.goat.com
 image.goat.com
 .fsdn.com
+img04.en25.com
 images.dmca.com
 website-media.deel.com
 sf-coze-web-cdn.coze.com
@@ -3683,6 +3696,7 @@ static.fboom.me
 media-cms.ayoba.me
 dynamic-cdn.cms.ayoba.me
 emoji-css.afeld.me
+assets.about.me
 pic.7mmtv.me
 cdn.123av.me
 rsms.me
@@ -3996,6 +4010,7 @@ static.snaptube.in
 .cdn.imgeng.in
 object.innei.in
 .cloudfront.net.in
+favicon.im
 .yygimg.im
 assets.monica.im
 img.majors.im
