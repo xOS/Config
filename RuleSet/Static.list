@@ -558,6 +558,7 @@ img-s-msn-com.akamaized.net
 mwf-service.akamaized.net
 viu-static.akamaized.net
 mycommerce.akamaized.net
+melonbooks.akamaized.net
 amp.akamaized.net
 mixin-images.zeromesh.net
 static.zerochan.net
@@ -901,6 +902,7 @@ cdn.cms-twdigitalassets.com
 .simpleflyingimages.com
 .pocket-image-cache.com
 .patreonusercontent.com
+im.np-payment-gateway.com
 .misskeyusercontent.com
 .firefoxusercontent.com
 media.datacenterdynamics.com
@@ -1324,6 +1326,7 @@ s3media.squarespace.com
 assets.squarespace.com
 .splunkcloud.com
 assets.speedvitals.com
+cdn.activity.smart-bdash.com
 .skypeassets.com
 .shoplineimg.com
 img.shoplineapp.com
@@ -1410,6 +1413,7 @@ media.invisioncic.com
 static.hugedomains.com
 images.hothardware.com
 themes.hibootstrap.com
+sdk.helloextend.com
 media.graphassets.com
 static.gettyimages.com
 media.gettyimages.com
@@ -1760,6 +1764,7 @@ assets.zerohedge.com
 cdn.scripts.wtwhmedia.com
 .wowmodels.com
 hhhhhhome86227170.wordpress.com
+jetpack.wordpress.com
 .files.wordpress.com
 s0.wordpress.com
 .wixstatic.com
@@ -2234,6 +2239,7 @@ cdn-teams-slug.flaticon.com
 cdn-icons-png.flaticon.com
 cdn-uicons.flaticon.com
 media.flaticon.com
+flagsapi.com
 cdn.firebase.com
 widget.finlogix.com
 images.filepuma.com
@@ -3101,6 +3107,7 @@ images.pling.com
 cdn1.plesk.com
 cdn.plaid.com
 i.pcmag.com
+apps.paidy.com
 cdn.paidy.com
 package-assets.oomol.com
 registry.oomol.com
@@ -3202,6 +3209,7 @@ cdn.drata.com
 static.deepl.com
 cdn.db-ip.com
 static.cloud.coveo.com
+cdn.corso.com
 cdn.cliqz.com
 segapi.clerk.com
 scdn.clerk.com
@@ -3449,6 +3457,7 @@ cdn.announcekit.app
 .payloadcms.app
 cdn.matterhorn.app
 weather.istatmenus.app
+cdn.accessibly.app
 .on-fleek.app
 cdn.langshop.app
 assets.airbuddy.app
@@ -3742,6 +3751,8 @@ media.yukimochi.jp
 listing-thumbnail.live.nicovideo.jp
 resource.akashic.coe.nicovideo.jp
 cdn.wikiwiki.jp
+rt.rtoaster.jp
+js.rtoaster.jp
 parts.blog.livedoor.jp
 resize.blogsys.jp
 livedoor.blogimg.jp
@@ -3850,6 +3861,7 @@ img.badgesize.io
 .events.backtrace.io
 .4everland.io
 .vsassets.io
+unavatar.io
 img.telemetr.io
 .cdn.manage.runcloud.io
 .cdn.runcloud.io
