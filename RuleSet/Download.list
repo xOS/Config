@@ -515,6 +515,7 @@ packages-cf.termux.dev
 packages.termux.dev
 ubuntu.gjolly.dev
 releases.warp.dev
+.pkg.dev
 .r2.dev
 onepluscommunityserver.com
 mirrors.standaloneinstaller.com

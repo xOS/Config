@@ -4,6 +4,12 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.analytics.vinovo.si
+.cs.media.net
+.bidder.doceree.com
+.fpcdn.io
+.fpjs.io
+.winsurbox.com
 .telemetry.tataritv.com
 .powa-ingest-prod-*.video-player.arcpublishing.com
 .cpu-api.infor.pl
@@ -47340,6 +47346,9 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.st.freedom24.com
+.rum.api.intuit.com
+.trafficmanager.anyclip.com
 .r.anime-go.cc
 .logs.collector.*.cloud.solarwinds.com
 .doppler.hulu.com
@@ -49531,6 +49540,7 @@
 .log.ecgh.dk
 .log.enuri.com
 .log.g-enews.com
+.log.go.com
 .log.iyunmai.com
 .log.krs-ix.ru
 .log.mappy.net
@@ -50674,6 +50684,10 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.events-stream-svc.cordial.io
+.events.gonative.io
+.matomo.podslink.net
+.gbxreport-*.wf.com
 .mab-mob2.websearchapp.com
 .news-events.apple.com
 .news-app-events.apple.com
@@ -53226,10 +53240,12 @@
 .shallowblade.com
 .shamerain.com
 .shapecomb.com
+.sharedswap.com
 .sheargovernor.com
 .sheideal.com
 .shesubscriptions.com
 .shinypond.com
+.shirtseasons.com
 .shirtsidewalk.com
 .shiveringspot.com
 .shiverscissors.com
