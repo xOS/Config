@@ -857,6 +857,7 @@ ah-cdn.merge.dev
 p.depot.dev
 media.daily.dev
 cdn.daily.dev
+.ingest.atoms.dev
 npm.antfu.dev
 p.sda1.dev
 .rss3.dev
@@ -2314,6 +2315,7 @@ static-2.bitchute.com
 static-1.bitchute.com
 bcmedia.bitchute.com
 .bgstatic.com
+cdn1.bambulab.com
 .badoocdn.com
 assets.awwwards.com
 cdn.accounts.autodesk.com
@@ -2899,6 +2901,8 @@ static.missav.com
 .video.missav.com
 cdn.missav.com
 .mfcimg.com
+public-frontend-cos.metadl.com
+mgx-backend-cdn.metadl.com
 static.meiguo.com
 cdn-static-1.medium.com
 cdn-images-1.medium.com
@@ -4209,6 +4213,7 @@ cdn.roof.ai
 metrics.kapa.ai
 widget.kapa.ai
 cdn.fera.ai
+assets-docs.dify.ai
 assets.dify.ai
 limitless.cmax.ai
 .cdn.s7s.ai
