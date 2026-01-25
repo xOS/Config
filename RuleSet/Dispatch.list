@@ -4,6 +4,7 @@ DOMAIN-WILDCARD,video-edge-*.pd*.abs.hls.ttvnw.net
 
 # > Twitter 
 DOMAIN-SUFFIX,video.pscp.tv
+DOMAIN,upload.twitter.com
 
 # > Github
 DOMAIN-SUFFIX,github.com
