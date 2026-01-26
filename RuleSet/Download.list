@@ -752,6 +752,7 @@ downloadr2.apkmirror.com
 .s3-website.us-gov-west-1.amazonaws.com
 .s3-accesspoint-fips.dualstack.us-gov-west-1.amazonaws.com
 .s3-accesspoint.dualstack.us-gov-west-1.amazonaws.com
+.s3-website.dualstack.us-gov-west-1.amazonaws.com
 .s3-fips.dualstack.us-gov-west-1.amazonaws.com
 .s3.dualstack.us-gov-west-1.amazonaws.com
 .s3-fips.us-gov-west-1.amazonaws.com
@@ -762,6 +763,7 @@ downloadr2.apkmirror.com
 .s3-website.us-gov-east-1.amazonaws.com
 .s3-accesspoint-fips.dualstack.us-gov-east-1.amazonaws.com
 .s3-accesspoint.dualstack.us-gov-east-1.amazonaws.com
+.s3-website.dualstack.us-gov-east-1.amazonaws.com
 .s3-fips.dualstack.us-gov-east-1.amazonaws.com
 .s3.dualstack.us-gov-east-1.amazonaws.com
 .s3-fips.us-gov-east-1.amazonaws.com
