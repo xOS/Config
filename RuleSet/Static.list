@@ -2311,6 +2311,9 @@ assets-app.circleci.com
 app.chatwoot.com
 .chasecdn.com
 js.chargify.com
+img-new.cgtrader.com
+assets.cgtrader.com
+media.cgtrader.com
 .cdnfonts.com
 cdn-stamplib.casetify.com
 cdn-image02.casetify.com
@@ -2724,9 +2727,12 @@ media.beehiiv.com
 .bdzybf7.com
 assets.basehub.com
 hiveplayer-static.bamgrid.com
+static-images.aptoide.com
 cdn-mobile.aptoide.com
 ws2-cache.aptoide.com
+cdn-en.aptoide.com
 cdn6.aptoide.com
+cdn.aptoide.com
 images.en.aptoide.com
 img.apponic.com
 cdn.apponic.com
