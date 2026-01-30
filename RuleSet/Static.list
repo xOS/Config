@@ -699,6 +699,7 @@ cdn.designerapp.osi.office.net
 res-geo.cdn.office.net
 .public.cdn.office.net
 shell.cdn.office.net
+res-3.cdn.office.net
 .mxmcdn.net
 az700632.vo.msecnd.net
 alcdn.msauth.net
@@ -851,6 +852,7 @@ biomejs.dev
 .angular.dev
 .vercel.dev
 stats.setapp.macpaw.dev
+lucide.dev
 assets.github.dev
 fiddle.fastly.dev
 plugins.dprint.dev
@@ -2006,6 +2008,7 @@ badge.buildkite.com
 media.breitbart.com
 static.bravoporn.com
 .bnbstatic.com
+sourcepointcmp.bloomberg.com
 cdn.blogarama.com
 images.blockscan.com
 assets.bitwarden.com
@@ -3854,6 +3857,7 @@ badges.greenkeeper.io
 cdn.document360.io
 prod-packager-packages.codesandbox.io
 sandpack-cdn-v2.codesandbox.io
+nodebox-runtime.codesandbox.io
 screenshots.codesandbox.io
 uploads.codesandbox.io
 stats.codesandbox.io
@@ -3890,6 +3894,7 @@ static.getbutton.io
 static.corespeed.io
 r2cdn.corespeed.io
 assets.mcp.corespeed.io
+fast.chameleon.io
 sandpack-cdn-staging.blazingly.io
 .bitbucket.io
 img.badgesize.io

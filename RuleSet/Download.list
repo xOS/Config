@@ -1507,6 +1507,7 @@ registry.terraform.io
 ubuntu.letscloud.io
 .mirror.letscloud.io
 mirror.datamossa.io
+version.cyberduck.io
 update.cyberduck.io
 release.runcloud.io
 mirror.katapult.io
@@ -1749,6 +1750,7 @@ builds.paranoidandroid.co
 mirrors.pardisco.co
 mirrors.atlas.net.co
 mirror.unimagdalena.edu.co
+cas-bridge.xethub.hf.co
 elmirror.cl
 ubuntu-mirror.puq.apoapsis.cl
 debian-mirror.puq.apoapsis.cl
