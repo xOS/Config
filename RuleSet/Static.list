@@ -340,6 +340,7 @@ static.aizanmei.org
 .ziglang.org
 tools-static.wmflabs.org
 .proxy.ustclug.org
+cdn.userway.org
 .typedoc.org
 s.slideme.org
 .reactjs.org
@@ -375,7 +376,7 @@ vuejs.org
 gdb.rferl.org
 cdn.pagic.org
 .lencr.org
-.jotai.org
+jotai.org
 .cdn.icann.org
 godoc.org
 static.gnome.org
@@ -791,6 +792,8 @@ static.plus.net
 texture.laby.net
 static1.e621.net
 .c-dn.net
+static.blip.net
+logs.blip.net
 .mm.bing.net
 .mapi.4kvm.net
 .2mdn.net
@@ -959,6 +962,7 @@ css.blackmagicdesign.com
 dd.blackhawknetwork.com
 imgs02.aventertainments.com
 js.assemblyexchange.com
+cdn.animenewsnetwork.com
 cdn.worldvectorlogo.com
 cms.worldpokerdeals.com
 analytics.welcomesoftware.com
@@ -995,6 +999,7 @@ images.financemagnates.com
 ui-cdn.digitalocean-ui.com
 .customerioforms.com
 imgssl.constantcontact.com
+conf.config-security.com
 .cloudflare-ipfs.com
 shopify.cleverecommerce.com
 thumbnails.applegamingwiki.com
@@ -1351,6 +1356,7 @@ c.s-microsoft.com
 .dataplane.rudderstack.com
 .redditmedia.com
 assets.redbullshop.com
+.rechargecdn.com
 cached.rebuyengine.com
 cdn.rebuyengine.com
 assets-www.readspeaker.com
@@ -1499,6 +1505,7 @@ f001.backblazeb2.com
 f000.backblazeb2.com
 img.applealmond.com
 .ancestrycdn.com
+cdn.amgreatness.com
 showcase.abovemarket.com
 assets.aboutamazon.com
 cdn2.abiresearch.com
@@ -1881,7 +1888,9 @@ cdn.nodeimage.com
 cms-assets.nodecraft.com
 .nhentaimg.com
 media.newyorker.com
+static.newsbreak.com
 files.namecheap.com
+jssdkcdns.mparticle.com
 images.moovitapp.com
 static.mocortech.com
 public.mocortech.com
@@ -2116,6 +2125,7 @@ embed.savvycal.com
 public.saasexch.com
 .rrcdnbf3.com
 apps-static.route4me.com
+cdn.roseperl.com
 .roseimgs.com
 media-cdn.rollcall.com
 cdnassets.roboflow.com
@@ -2858,6 +2868,7 @@ vice-prod.sdiapi.com
 .sc-cdn.com
 .sascdn.com
 embed.runkit.com
+static.rumble.com
 i.rtings.com
 .cms.replit.com
 .cdn.replit.com
@@ -4023,6 +4034,7 @@ cdn.filen.io
 .ipfs.decoo.io
 assets2.canny.io
 assets.canny.io
+cdn.bogos.io
 code.benco.io
 polyfill.bbhub.io
 assets.bbhub.io
@@ -4120,6 +4132,7 @@ cdn.stackoverflow.co
 .cdn-uploads.huggingface.co
 cdn-avatars.huggingface.co
 .cdn-lfs.huggingface.co
+js.convertflow.co
 waitlisted.co
 widgets.listenlive.co
 sdk.listenlive.co
