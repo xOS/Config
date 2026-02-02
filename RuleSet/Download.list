@@ -118,6 +118,8 @@ tukaani.org
 s3.teckids.org
 .iso.reactos.org
 downloads.openwrt.org
+s2.animeko.openani.org
+s1.animeko.openani.org
 download.mozilla.org
 versioncheck-bg.addons.mozilla.org
 versioncheck.addons.mozilla.org
@@ -198,6 +200,7 @@ repo.maven.apache.org
 static.adtidy.org
 mirror.siwoo.org
 registry.npmjs.org
+d2.myani.org
 d.myani.org
 repo1.maven.org
 repository.jboss.org
