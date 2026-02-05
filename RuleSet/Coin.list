@@ -25,6 +25,7 @@ DOMAIN-WILDCARD,*byd*.com
 DOMAIN-SUFFIX,*bycsi.com
 DOMAIN-SUFFIX,bitverse.zone
 DOMAIN-KEYWORD,bybi
+DOMAIN-SUFFIX,ng-dex.com
 
 # > OKX
 DOMAIN-SUFFIX,okex.com
