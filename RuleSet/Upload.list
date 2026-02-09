@@ -5,7 +5,7 @@ USER-AGENT,*mCloud*
 USER-AGENT,*QKCloud*
 USER-AGENT,Quark*
 USER-AGENT,LianTongYunPan*
-DOMAIN,biubiubiubiu-my.sharepoint.com
+DOMAIN-WILDCARD,*-my.sharepoint.com
 DOMAIN-SUFFIX,pds.quark.cn
 DOMAIN-SUFFIX,eos.yun.139.com
 DOMAIN-SUFFIX,pan.wo.cn
