@@ -25,20 +25,6 @@ DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
 DOMAIN,t.uc.cn
 
-# # > Google
-# DOMAIN-SUFFIX,blog.google
-# DOMAIN-SUFFIX,googletraveladservices.com
-# DOMAIN,clientservices.googleapis.com
-# DOMAIN,dl.google.com
-# DOMAIN,dl.l.google.com
-# DOMAIN,update.googleapis.com
-# DOMAIN,translate.googleapis.com
-DOMAIN-SUFFIX,app-measurement.com
-
-# > Google Fonts API
-# DOMAIN,fonts.googleapis.com
-# DOMAIN,fonts.gstatic.com
-
 # > Tencent
 DOMAIN,fairplay.l.qq.com
 DOMAIN,livew.l.qq.com
@@ -153,11 +139,6 @@ DOMAIN-SUFFIX,steamcontent.com
 # > UUBooster
 PROCESS-NAME,UUBooster
 
-# > Windows
-#DOMAIN-SUFFIX,windows.com
-#DOMAIN-SUFFIX,windows.net
-#DOMAIN-SUFFIX,windowsupdate.com
-
 # > Xunlei
 USER-AGENT,%E8%BF%85%E9%9B%B7
 DOMAIN-SUFFIX,xunlei.com
@@ -166,45 +147,3 @@ DOMAIN-SUFFIX,xunlei.com
 // DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,spartanhost.net
 DOMAIN-SUFFIX,livechatinc.com
-
-# # > Download
-# PROCESS-NAME,aria2c
-# PROCESS-NAME,fdm
-# PROCESS-NAME,Folx
-# PROCESS-NAME,NetTransport
-# PROCESS-NAME,Thunder
-# PROCESS-NAME,Transmission
-# PROCESS-NAME,uTorrent
-# PROCESS-NAME,WebTorrent
-# PROCESS-NAME,WebTorrent Helper
-
-# # > Private Tracker
-# DOMAIN-SUFFIX,awesome-hd.me
-# DOMAIN-SUFFIX,broadcasthe.net
-# DOMAIN-SUFFIX,chdbits.co
-# DOMAIN-SUFFIX,classix-unlimited.co.uk
-# DOMAIN-SUFFIX,empornium.me
-# DOMAIN-SUFFIX,gazellegames.net
-# DOMAIN-SUFFIX,hdchina.org
-# DOMAIN-SUFFIX,hdsky.me
-# DOMAIN-SUFFIX,icetorrent.org
-# DOMAIN-SUFFIX,jpopsuki.eu
-# DOMAIN-SUFFIX,keepfrds.com
-# DOMAIN-SUFFIX,madsrevolution.net
-# DOMAIN-SUFFIX,m-team.cc
-# DOMAIN-SUFFIX,nanyangpt.com
-# DOMAIN-SUFFIX,ncore.cc
-# DOMAIN-SUFFIX,open.cd
-# DOMAIN-SUFFIX,ourbits.club
-# DOMAIN-SUFFIX,passthepopcorn.me
-# DOMAIN-SUFFIX,privatehd.to
-# DOMAIN-SUFFIX,redacted.ch
-# DOMAIN-SUFFIX,springsunday.net
-# DOMAIN-SUFFIX,tjupt.org
-# DOMAIN-SUFFIX,totheglory.im
-# DOMAIN-KEYWORD,aria2
-# DOMAIN-KEYWORD,announce
-# DOMAIN-KEYWORD,torrent
-# DOMAIN-KEYWORD,tracker
-# DOMAIN-SUFFIX,smtp
-# URL-REGEX,(Subject|HELO|SMTP)
