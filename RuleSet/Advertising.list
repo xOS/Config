@@ -1,4 +1,6 @@
 # > 其它
+DOMAIN-WILDCARD,ir-sdk.dun.163*.com
+DOMAIN,spider-tracker.xiaohongshu.com
 DOMAIN-SUFFIX,global-iuni.checktrustworthiness.com
 DOMAIN-SUFFIX,webcast-open.douyin.com
 DOMAIN-WILDCARD,vod-license*.volccdn.com

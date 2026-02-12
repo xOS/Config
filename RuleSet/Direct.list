@@ -14,7 +14,7 @@ DOMAIN-SUFFIX,tagcdnsub.work
 DOMAIN-SUFFIX,tagsub.net
 DOMAIN-SUFFIX,link.nobodys.uk
 DOMAIN-SUFFIX,tagsssubscribe.com
-DOMAIN-WILDCARD,*-toutiao*.com,extended-matching
+DOMAIN-WILDCARD,*-toutiao*.com
 AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22))
 
 # > HKT
