@@ -3,7 +3,7 @@
 import path from "node:path";
 import { promises as fs, Dirent } from "node:fs";
 
-const SITE_BASE_URL = process.env.SITE_BASE_URL || "https://rule.quic.me/";
+const SITE_BASE_URL = process.env.SITE_BASE_URL || "https://rules.aapls.com/";
 
 const PAGE_DIR = path.resolve(".");
 const REPO_ROOT = path.resolve("..");

@@ -1,169 +1,266 @@
-var tlist = {
-    // 【2025年】
-    1:  ["元旦",       "2025-01-01"],
-    2:  ["小寒",       "2025-01-05"],
-    3:  ["腊八节",     "2025-01-07"],   // 旧历腊八节（农历腊月初八，提示“1.7”）
-    4:  ["大寒",       "2025-01-20"],
-    5:  ["小年",       "2025-01-22"],   // 取农历腊月廿三（北方常用）
-    6:  ["除夕",       "2025-01-28"],
-    7:  ["春节",       "2025-01-29"],   // 农历正月初一
-    8:  ["立春",       "2025-02-03"],   // 提示：2.3
-    9:  ["元宵节",     "2025-02-12"],   // 农历正月十五
-    10: ["情人节",     "2025-02-14"],
-    11: ["雨水",       "2025-02-18"],
-    12: ["龙抬头",     "2025-03-01"],
-    13: ["惊蛰",       "2025-03-05"],
-    14: ["妇女节",     "2025-03-08"],
-    15: ["春分",       "2025-03-20"],
-    16: ["愚人节",     "2025-04-01"],
-    17: ["清明节",     "2025-04-04"],
-    18: ["谷雨",       "2025-04-20"],
-    19: ["劳动节",     "2025-05-01"],
-    20: ["立夏",       "2025-05-05"],
-    21: ["母亲节",     "2025-05-11"],   // 取五月第二个星期日
-    22: ["小满",       "2025-05-21"],
-    23: ["端午节",     "2025-05-31"],   // 内地对照：农历五月初五
-    24: ["儿童节",     "2025-06-01"],
-    25: ["芒种",       "2025-06-05"],
-    26: ["父亲节",     "2025-06-15"],   // 提示：6.15
-    27: ["夏至",       "2025-06-21"],
-    28: ["小暑",       "2025-07-07"],
-    29: ["大暑",       "2025-07-22"],
-    30: ["立秋",       "2025-08-07"],
-    31: ["处暑",       "2025-08-23"],   // 提示：8.23
-    32: ["七夕节",     "2025-08-29"],   // 农历七月初七
-    33: ["中元节",     "2025-09-06"],   // 农历七月十五，提示：9月6日
-    34: ["白露",       "2025-09-07"],
-    35: ["教师节",     "2025-09-10"],
-    36: ["秋分",       "2025-09-23"],
-    37: ["国庆节",     "2025-10-01"],
-    38: ["中秋节",     "2025-10-06"],   // 农历八月十五
-    39: ["寒露",       "2025-10-08"],
-    40: ["霜降",       "2025-10-23"],
-    41: ["重阳节",     "2025-10-29"],   // 农历九月九
-    42: ["寒衣节",     "2025-11-01"],
-    43: ["立冬",       "2025-11-07"],
-    44: ["小雪",       "2025-11-22"],
-    45: ["下元节",     "2025-12-04"],   // 按提示：2025年下元节定为12月4日
-    46: ["大雪",       "2025-12-07"],
-    47: ["冬至",       "2025-12-21"],
-    // 【2026年延伸部分】（旧历乙巳蛇年尾部，直至春节）
-    48: ["元旦",       "2026-01-01"],
-    49: ["小寒",       "2026-01-05"],
-    50: ["大寒",       "2026-01-20"],
-    51: ["腊八节",     "2026-01-26"],   // 2026年腊八节（新一轮旧历尾部节日），取提示换算结果
-    52: ["小年(北)",   "2026-02-10"],   // 按北方习俗，农历腊月廿三
-    53: ["小年(南)",   "2026-02-11"],
-    54: ["情人节",      "2026-02-14"],
-    55: ["除夕",       "2026-02-16"],   // 农历腊月最后一天
-    56: ["春节",       "2026-02-17"]    // 2026年农历正月初一（丙午马年）
-};
-let tnow = new Date();
-let tnowf = tnow.getFullYear() + "-" + (tnow.getMonth() + 1) + "-" + tnow.getDate();
-
-/* 计算2个日期相差的天数，不包含今天，如：2016-12-13到2016-12-15，相差2天
- * @param startDateString
- * @param endDateString
- * @returns
+/*
+ * 节日/节气倒计时面板
+ * 信息源自 zqzess/openApiData 中国日历数据
+ * 自动获取节气与传统节日日期，无需每年手动更新
  */
-function dateDiff(startDateString, endDateString) {
-    var separator = "-"; //日期分隔符
-    var startDates = startDateString.split(separator);
-    var endDates = endDateString.split(separator);
-    var startDate = new Date(startDates[0], startDates[1] - 1, startDates[2]);
-    var endDate = new Date(endDates[0], endDates[1] - 1, endDates[2]);
-    return parseInt(
-        (endDate - startDate) / 1000 / 60 / 60 / 24
-    ).toString();
+const proxy = 'https://mirror.ghproxy.com/'
+const baseUrl = 'https://raw.githubusercontent.com/zqzess/openApiData/main/calendar/'
+const tnow = new Date()
+const currentYear = tnow.getFullYear()
+const currentMonth = tnow.getMonth() + 1
+const currentDay = tnow.getDate()
+const tnowf = currentYear + '-' + currentMonth + '-' + currentDay
+const MONTHS_AHEAD = 4
+let done = false // 防止 $done 被重复调用
+
+console.log('[Days] 脚本启动 ' + tnowf)
+
+// ========== 需要跟踪的事件 ==========
+const eventMatchers = [
+    // 24 节气
+    { key: '小寒', name: '小寒' }, { key: '大寒', name: '大寒' },
+    { key: '立春', name: '立春' }, { key: '雨水', name: '雨水' },
+    { key: '惊蛰', name: '惊蛰' }, { key: '春分', name: '春分' },
+    { key: '清明', name: '清明节' }, { key: '谷雨', name: '谷雨' },
+    { key: '立夏', name: '立夏' }, { key: '小满', name: '小满' },
+    { key: '芒种', name: '芒种' }, { key: '夏至', name: '夏至' },
+    { key: '小暑', name: '小暑' }, { key: '大暑', name: '大暑' },
+    { key: '立秋', name: '立秋' }, { key: '处暑', name: '处暑' },
+    { key: '白露', name: '白露' }, { key: '秋分', name: '秋分' },
+    { key: '寒露', name: '寒露' }, { key: '霜降', name: '霜降' },
+    { key: '立冬', name: '立冬' }, { key: '小雪', name: '小雪' },
+    { key: '大雪', name: '大雪' }, { key: '冬至', name: '冬至' },
+    // 公历节日
+    { key: '元旦', name: '元旦' }, { key: '情人节', name: '情人节' },
+    { key: '妇女节', name: '妇女节' }, { key: '愚人节', name: '愚人节' },
+    { key: '劳动节', name: '劳动节' }, { key: '母亲节', name: '母亲节' },
+    { key: '儿童节', name: '儿童节' }, { key: '父亲节', name: '父亲节' },
+    { key: '教师节', name: '教师节' }, { key: '国庆', name: '国庆节' },
+    // 传统农历节日
+    { key: '腊八', name: '腊八节' },
+    { key: '北小年', name: '小年(北)' }, { key: '南小年', name: '小年(南)' },
+    { key: '除夕', name: '除夕' }, { key: '春节', name: '春节' },
+    { key: '元宵', name: '元宵节' },
+    { key: '龙头', name: '龙抬头' }, { key: '龙抬头', name: '龙抬头' },
+    { key: '端午', name: '端午节' }, { key: '七夕', name: '七夕节' },
+    { key: '中元', name: '中元节' }, { key: '中秋', name: '中秋节' },
+    { key: '重阳', name: '重阳节' }, { key: '寒衣', name: '寒衣节' },
+    { key: '下元', name: '下元节' }
+]
+
+// ========== 工具函数 ==========
+function finish(obj) {
+    if (!done) {
+        done = true
+        console.log('[Days] finish: ' + JSON.stringify(obj))
+        $done(obj)
+    } else {
+        console.log('[Days] finish 被重复调用，已忽略')
+    }
 }
 
-//计算输入序号对应的时间与现在的天数间隔
-function tnumcount(num) {
-    let dnum = num;
-    return dateDiff(tnowf, tlist[dnum][1]);
+function dateDiff(start, end) {
+    let s = start.split('-'), e = end.split('-')
+    let sd = new Date(+s[0], +s[1] - 1, +s[2])
+    let ed = new Date(+e[0], +e[1] - 1, +e[2])
+    return Math.round((ed - sd) / 86400000)
 }
 
-//获取最接近的日期
-function now() {
-    for (var i = 1; i <= Object.getOwnPropertyNames(tlist).length; i++) {
-        if (Number(dateDiff(tnowf, tlist[i.toString()][1])) >= 0) {
-            //console.log("最近的日期是:" + tlist[i.toString()][0]);
-            //console.log("列表长度:" + Object.getOwnPropertyNames(tlist).length);
-            //console.log("时间差距:" + Number(dateDiff(tnowf, tlist[i.toString()][1])));
-            return i;
+function getMonthList() {
+    let list = []
+    for (let i = 0; i < MONTHS_AHEAD; i++) {
+        let m = currentMonth + i, y = currentYear
+        while (m > 12) { m -= 12; y++ }
+        list.push({ year: y, month: m })
+    }
+    return list
+}
+
+function buildUrl(year, month, useProxy) {
+    let ms = month < 10 ? '0' + month : '' + month
+    let u = baseUrl + year + '/' + year + ms + '.json'
+    let finalUrl = useProxy ? proxy + u : u
+    console.log('[Days] buildUrl: ' + finalUrl)
+    return finalUrl
+}
+
+// 从万年历数据中提取目标事件
+function processAlmanac(almanac) {
+    let events = [], seen = {}
+    almanac.forEach(function (d) {
+        let ds = +d.year + '-' + +d.month + '-' + +d.day
+        let combined = (d.term || '') + ' ' + (d.desc || '') + ' ' + (d.value || '')
+        for (let i = 0; i < eventMatchers.length; i++) {
+            let m = eventMatchers[i]
+            if (combined.indexOf(m.key) !== -1) {
+                let k = ds + '|' + m.name
+                if (!seen[k]) { events.push({ name: m.name, date: ds }); seen[k] = 1 }
+            }
         }
-    }
+    })
+    return events
 }
 
-//如果是0天，发送通知
-let nowlist = now();
-function today(day) {
-    let daythis = day;
-    if (daythis == "0") {
-        datenotice();
-    }
-    return daythis;
-}
-
-//提醒日当天发送通知
-function datenotice() {
-    if ($persistentStore.read("timecardpushed") != tlist[nowlist][1] && tnow.getHours() >= 6) {
-        $persistentStore.write(tlist[nowlist][1], "timecardpushed");
-        $notification.post("节日提醒", "", "今天是" + tlist[nowlist][1] + "【" + tlist[nowlist][0] + "】" + "，一个值得纪念的日子！")
-    } else if ($persistentStore.read("timecardpushed") == tlist[nowlist][1]) {
-        //console.log("当日已通知");
-        // console.log("今天是" + tlist[nowlist][1] + "日 " + tlist[nowlist][0] + "   🎉");
-    }
-}
-
-//>图标依次切换乌龟、兔子、闹钟、礼品盒
+// ========== 图标/颜色 ==========
 function icon_now(num) {
-    if (num <= 7 && num > 3) {
-        return "hare.fill"
-    } else if (num <= 3 && num > 0) {
-        return "hourglass"
-    } else if (num == 0) {
-        return "gift.fill"
-    } else {
-        return "tortoise.fill"
-    }
+    if (num <= 7 && num > 3) return 'hare.fill'
+    if (num <= 3 && num > 0) return 'hourglass'
+    if (num === 0) return 'gift.fill'
+    return 'tortoise.fill'
 }
 
-//>图标颜色
 function icon_color(num) {
-    if (num <= 7 && num > 3) {
-        return '#ff9800'
-    } else if (num <= 3 && num > 0) {
-        return '#9978FF'
-    } else if (num == 0) {
-        return '#FF0000'
-    } else {
-        return '#35C759'
-    }
+    if (num <= 7 && num > 3) return '#ff9800'
+    if (num <= 3 && num > 0) return '#9978FF'
+    if (num === 0) return '#FF0000'
+    return '#35C759'
 }
 
-$done({
-    title: title_random(tnumcount(Number(nowlist))),
-    icon: icon_now(tnumcount(Number(nowlist))),
-    "icon-color": icon_color(tnumcount(Number(nowlist))),
-    content: today(tnumcount(nowlist)) == 0 ? tlist[Number(nowlist) + Number(1)][0] + tnumcount(Number(nowlist) + Number(1)) + "天" + " | " + tlist[Number(nowlist) + Number(2)][0] + tnumcount(Number(nowlist) + Number(2)) + "天" + " | " + tlist[Number(nowlist) + Number(3)][0] + tnumcount(Number(nowlist) + Number(3)) + "天" : tlist[nowlist][0] + today(tnumcount(nowlist)) + "天" + " | " + tlist[Number(nowlist) + Number(1)][0] + tnumcount(Number(nowlist) + Number(1)) + "天" + " | " + tlist[Number(nowlist) + Number(2)][0] + tnumcount(Number(nowlist) + Number(2)) + "天"
-})
-
-function title_random(num) {
-    let r = Math.floor((Math.random() * 12) + 1);
+function title_random(num, eventName) {
+    let r = Math.floor(Math.random() * 12) + 1
     let dic = {
-        1: "距离放假，还要摸鱼多少天？🥱",
-        2: "坚持住，就快放假啦！💪",
-        3: "上班好累呀，好想放假😮‍💨",
-        4: "努力，我还能加班24小时！🧐",
-        5: "天呐，还要多久才放假呀？😭",
-        6: "躺平中，等放假(☝ ՞ਊ ՞)☝",
-        7: "只有摸鱼才是赚老板的钱🙎🤳",
-        8: "一起摸鱼吧✌(՞ټ՞ )✌",
-        9: "摸鱼中，期待下一个假日.ʕʘ‿ʘʔ.",
-        10: "小乌龟慢慢爬🐢",
-        11: "太难了！😫😩😖(´◉‿◉)",
-        12: "反正放假也不能去玩😤"
-    };
-    return num == 0 ? "今天是" + tlist[nowlist][0] + "，休息一下吧 ~" : dic[r]
+        1: '距离放假，还要摸鱼多少天？🥱',
+        2: '坚持住，就快放假啦！💪',
+        3: '上班好累呀，好想放假😮‍💨',
+        4: '努力，我还能加班24小时！🧐',
+        5: '天呐，还要多久才放假呀？😭',
+        6: '躺平中，等放假(☝ ՞ਊ ՞)☝',
+        7: '只有摸鱼才是赚老板的钱🙎🤳',
+        8: '一起摸鱼吧✌(՞ټ՞ )✌',
+        9: '摸鱼中，期待下一个假日.ʕʘ‿ʘʔ.',
+        10: '小乌龟慢慢爬🐢',
+        11: '太难了！😫😩😖(´◉‿◉)',
+        12: '反正放假也不能去玩😤'
+    }
+    return num === 0 ? '今天是' + eventName + '，休息一下吧 ~' : dic[r]
 }
+
+// ========== 分组同天事件 ==========
+function buildGroups(upcoming) {
+    let groups = [], gi = 0
+    while (gi < upcoming.length) {
+        let names = [upcoming[gi].name]
+        for (let j = gi + 1; j < upcoming.length && upcoming[j].days === upcoming[gi].days; j++) {
+            names.push(upcoming[j].name)
+        }
+        groups.push({ label: names.join('|'), days: upcoming[gi].days, count: names.length })
+        gi += names.length
+    }
+    return groups
+}
+
+// ========== 面板构建 ==========
+function displayResult(upcoming) {
+    if (!upcoming || upcoming.length === 0) {
+        finish({ title: '暂无节日数据', content: '请稍后重试', icon: 'calendar', 'icon-color': '#9978FF' })
+        return
+    }
+
+    let nearestDays = upcoming[0].days
+    let groups = buildGroups(upcoming)
+
+    // 当天有事件时推送节日通知（每天仅一次，6点后）
+    if (nearestDays === 0 && $persistentStore.read('timecardpushed') !== upcoming[0].date && tnow.getHours() >= 6) {
+        $persistentStore.write(upcoming[0].date, 'timecardpushed')
+        $notification.post('节日提醒', '', '今天是' + upcoming[0].date + '【' + groups[0].label + '】，一个值得纪念的日子！')
+    }
+
+    // 最近3组倒计时（跳过当天事件）
+    let futureGroups = groups.filter(function (g) { return g.days > 0 })
+    let displayGroups = futureGroups.slice(0, 3)
+    let content = displayGroups.map(function (g) { return g.label + g.days + '天' }).join(' | ')
+
+    // title：当天有事件显示节日名，否则随机摸鱼文案
+    let titleName = (nearestDays === 0) ? groups[0].label : ''
+
+    finish({
+        title: title_random(nearestDays, titleName),
+        icon: icon_now(nearestDays),
+        'icon-color': icon_color(nearestDays),
+        content: content
+    })
+}
+
+// ========== 数据拉取与处理 ==========
+function fetchData(useProxy) {
+    let months = getMonthList()
+    let results = new Array(months.length)
+    let count = 0
+
+    console.log('[Days] fetchData useProxy=' + useProxy + ' months=' + months.length)
+    months.forEach(function (m, i) {
+        $httpClient.get({ url: buildUrl(m.year, m.month, useProxy) }, function (err, resp, body) {
+            if (err) console.log('[Days] 请求失败 month=' + m.month + ' err=' + err)
+            console.log('[Days] 响应 month=' + m.month + ' status=' + (resp ? resp.status || resp.statusCode : 'N/A') + ' bodyLen=' + (body ? body.length : 0))
+            try { results[i] = JSON.parse(body).data[0].almanac } catch (e) { results[i] = []; console.log('[Days] 解析失败 month=' + m.month + ' error=' + e.message) }
+
+            if (++count === months.length) {
+                let allEvents = []
+                results.forEach(function (a) { if (a) allEvents = allEvents.concat(processAlmanac(a)) })
+
+                let seen = {}, unique = []
+                allEvents.forEach(function (e) {
+                    let k = e.date + '|' + e.name
+                    if (!seen[k]) { seen[k] = 1; unique.push(e) }
+                })
+
+                let upcoming = []
+                unique.forEach(function (e) {
+                    let d = dateDiff(tnowf, e.date)
+                    if (d >= 0) upcoming.push({ name: e.name, date: e.date, days: d })
+                })
+                upcoming.sort(function (a, b) { return a.days - b.days })
+                console.log('[Days] 事件总数=' + allEvents.length + ' 去重后=' + unique.length + ' 未来事件=' + upcoming.length)
+                if (upcoming.length > 0) console.log('[Days] 最近事件: ' + upcoming.slice(0, 5).map(function(e) { return e.name + '(' + e.days + '天)' }).join(', '))
+
+                if (upcoming.length === 0 && !useProxy) {
+                    // 直连全部失败，尝试代理
+                    fetchData(true)
+                    return
+                }
+
+                // 写入缓存（当日有效）
+                try {
+                    $persistentStore.write(JSON.stringify(upcoming.slice(0, 15)), 'days_cache_v2')
+                    $persistentStore.write(tnowf, 'days_cache_date_v2')
+                } catch (e) { }
+
+                displayResult(upcoming)
+            }
+        })
+    })
+}
+
+// ========== 主流程 ==========
+;(function () {
+    // 超时保护：8秒内未完成则用缓存兜底
+    setTimeout(function () {
+        if (done) return
+        console.log('[Days] 超时触发，尝试用缓存兜底')
+        try {
+            let c = JSON.parse($persistentStore.read('days_cache_v2'))
+            if (c && c.length > 0) { displayResult(c); return }
+        } catch (e) { }
+        finish({ title: '数据加载超时', content: '请稍后重试', icon: 'calendar', 'icon-color': '#9978FF' })
+    }, 8000)
+
+    // 优先使用当日缓存（v2 key，旧缓存自动失效）
+    let cacheDate = $persistentStore.read('days_cache_date_v2')
+    console.log('[Days] 缓存日期=' + cacheDate + ' 今日=' + tnowf + ' 匹配=' + (cacheDate === tnowf))
+    if (cacheDate === tnowf) {
+        try {
+            let c = JSON.parse($persistentStore.read('days_cache_v2'))
+            console.log('[Days] 缓存数据条数=' + (c ? c.length : 0))
+            if (c && c.length >= 3 && c[0].name && typeof c[0].days === 'number') {
+                console.log('[Days] 使用缓存（异步调用）')
+                setTimeout(function () { displayResult(c) }, 10)
+                return
+            }
+            console.log('[Days] 缓存数据不合格，重新拉取')
+        } catch (e) { console.log('[Days] 缓存解析失败: ' + e.message) }
+    }
+
+    // 直接拉取数据（不再先做 IP 检测，省去一次网络请求）
+    console.log('[Days] 开始拉取数据')
+    fetchData(false)
+})()

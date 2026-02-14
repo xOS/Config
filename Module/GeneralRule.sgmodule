@@ -934,7 +934,7 @@ http-response-jq ^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? '.to
 ^https:\/\/signall-api\.nuosike\.com\/url\/message\.php data-type=text data="{}" status-code=200
 
 # > Carrot Weather 会员解锁
-^https?:\/\/carrotweather.herokuapp.com\/parse\/functions\/findSubscriptionsForUserId data-type=file data="https://rule.quic.me/Mock/Carrot/Carrot.json" status-code=200
+^https?:\/\/carrotweather.herokuapp.com\/parse\/functions\/findSubscriptionsForUserId data-type=file data="https://rules.aapls.com/Mock/Carrot/Carrot.json" status-code=200
 
 # > 联通云盘弹窗
 ^https?:\/\/lbs\.netease\.im\/lbs\/conf\.jsp data-type=text data="{}" status-code=200
@@ -962,10 +962,10 @@ http-response-jq ^https?:\/\/.+\.flightradar24\.com\/mobile\/user-session\? '.to
 
 # > 微博
 ^https?:\/\/api\.weibo\.cn\/2\/push\/info data-type=text data="{}"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data-type=file data="https://rule.quic.me/Mock/Weibo/hy_dongtu.gif"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data-type=file data="https://rule.quic.me/Mock/Weibo/jiantougaocheng.png"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data-type=file data="https://rule.quic.me/Mock/Weibo/avatar_vip_golden.png"
-^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data-type=file data="https://rule.quic.me/Mock/Weibo/feed_icon_100vip_7_default.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/fhy_dongtu\.gif$ data-type=file data="https://rules.aapls.com/Mock/Weibo/hy_dongtu.gif"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/bianjijiantou\.png$ data-type=file data="https://rules.aapls.com/Mock/Weibo/jiantougaocheng.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/Vip\.png$ data-type=file data="https://rules.aapls.com/Mock/Weibo/avatar_vip_golden.png"
+^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/vip[0-9]_default\.png$ data-type=file data="https://rules.aapls.com/Mock/Weibo/feed_icon_100vip_7_default.png"
 // ^https?:\/\/bootpreload\.uve\.weibo\.com\/v1\/ad\/preload data-type=text data="{}"
 
 # > 小红书

@@ -4,8 +4,8 @@
 #!category=翠花
 
 [Script]
-防火墙(规则) = type=rule,script-path=https://rule.quic.me/Script/Tools/TimedFirewall.js
-防火墙(事件) = type=event,event-name=network-changed,script-path=https://rule.quic.me/Script/Tools/WiFiFirewall.js
+防火墙(规则) = type=rule,script-path=https://rules.aapls.com/Script/Tools/TimedFirewall.js
+防火墙(事件) = type=event,event-name=network-changed,script-path=https://rules.aapls.com/Script/Tools/WiFiFirewall.js
 
 [Rule]
-AND,((NOT,((OR,((USER-AGENT,Surge*), (RULE-SET,https://rule.quic.me/RuleSet/Apple.list))))), (SCRIPT,防火墙(规则))),REJECT-TINYGIF
+AND,((NOT,((OR,((USER-AGENT,Surge*), (RULE-SET,https://rules.aapls.com/RuleSet/Apple.list))))), (SCRIPT,防火墙(规则))),REJECT-TINYGIF

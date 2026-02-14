@@ -16,10 +16,10 @@
 
 [Script]
 # > 网络信息
-网络状态 = type=generic, script-path=https://rule.quic.me/Script/Tools/NetInfo.js,argument="GeoIPApi={{{GeoIPApi}}}&EnableIPv6={{{EnableIPv6}}}"
+网络状态 = type=generic, script-path=https://rules.aapls.com/Script/Tools/NetInfo.js,argument="GeoIPApi={{{GeoIPApi}}}&EnableIPv6={{{EnableIPv6}}}"
 
 # > 倒数日
-倒数日 = type=generic, script-path=https://rule.quic.me/Script/Tools/Days.js
+倒数日 = type=generic, script-path=https://rules.aapls.com/Script/Tools/Days.js
 
 # > 黄历
-黄历 = type = generic,script-path=https://rule.quic.me/Script/Tools/wnCalendar.js,timeout=10
+黄历 = type = generic,script-path=https://rules.aapls.com/Script/Tools/wnCalendar.js,timeout=10
