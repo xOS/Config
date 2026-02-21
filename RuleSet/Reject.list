@@ -24,11 +24,6 @@ DOMAIN,ios.ngp.prod.cloud.netflix.com
 DOMAIN,ios.prod.cloud.netflix.com
 DOMAIN,appboot.netflix.com
 
-# > 微信热更新
- //DOMAIN,dldir1.qq.com
- //DOMAIN,dldir1v6.qq.com
- //DOMAIN,dl.wechat.com
-
 # > Adobe 弹窗
 DOMAIN,ic.adobe.io
 DOMAIN-SUFFIX,adobe.io
@@ -45,12 +40,12 @@ DOMAIN,al-log.d.meituan.net
 DOMAIN,babel-statistics-android.d.meituan.net
 DOMAIN,route-stats.d.meituan.net
 DOMAIN-SUFFIX,d.meituan.net
-DOMAIN-KEYWORD,httpdns,extended-matching
-DOMAIN-SUFFIX,aedns.weixin.qq.com,extended-matching
-DOMAIN-SUFFIX,dns.wechat.com,extended-matching
-DOMAIN-KEYWORD,hdns,extended-matching  
-DOMAIN-SUFFIX,edns.ip-api.com,extended-matching
-DOMAIN-SUFFIX,surfsharkdns.com,extended-matching
-//DOMAIN-KEYWORD,pangolin,extended-matching
-//DOMAIN-WILDCARD,*.pl,extended-matching
-//DOMAIN-WILDCARD,*.in,extended-matching
+DOMAIN-KEYWORD,httpdns
+DOMAIN-SUFFIX,aedns.weixin.qq.com
+DOMAIN-SUFFIX,dns.wechat.com
+DOMAIN-KEYWORD,hdns
+DOMAIN-SUFFIX,edns.ip-api.com
+DOMAIN-SUFFIX,surfsharkdns.com
+//DOMAIN-KEYWORD,pangolin
+//DOMAIN-WILDCARD,*.pl
+//DOMAIN-WILDCARD,*.in
