@@ -1,4 +1,9 @@
 # > 其它
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,safedk.com
+DOMAIN-SUFFIX,tensquaregames.com
+DOMAIN-SUFFIX,aflink.com
+DOMAIN-SUFFIX,axon.ai
 DOMAIN-WILDCARD,ir-sdk.dun.163*.com
 DOMAIN,spider-tracker.xiaohongshu.com
 DOMAIN-SUFFIX,global-iuni.checktrustworthiness.com
