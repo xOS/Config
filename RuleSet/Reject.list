@@ -33,6 +33,30 @@ DOMAIN,cc-api-data.adobe.io
 # > 农业银行弹窗
 DOMAIN,msmp.abchina.com.cn
 
+# > 屏蔽运营商自动登录
+# >> 移动
+DOMAIN,config.cmpassport.com
+DOMAIN,www.cmpassport.com
+DOMAIN,wap.cmpassport.com
+DOMAIN,onekey1.cmpassport.com
+DOMAIN,log1.cmpassport.com
+DOMAIN,smsks1.cmpassport.com
+DOMAIN,verify.cmpassport.com
+
+# >> 电信
+DOMAIN,id6.me
+DOMAIN,open.e.189.cn
+
+# >> 联通
+DOMAIN,opencloud.wostore.cn
+DOMAIN,auth.wosms.cn
+DOMAIN,id.mail.wo.cn
+DOMAIN,mdn.open.wo.cn
+DOMAIN,hmrz.wo.cn
+DOMAIN,nishub1.10010.com
+DOMAIN,nisportal.10010.com
+DOMAIN,enrichgw.10010.com
+
 # > 其它
 DOMAIN,metrics-picture.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
