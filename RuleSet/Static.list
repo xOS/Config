@@ -1747,6 +1747,7 @@ cdn.conveythis.com
 assets.convertkit.com
 media.convertkit.com
 f.convertkit.com
+cdn.convertbox.com
 images.contentful.com
 cdn.contentful.com
 cdn.eu.contentful.com
@@ -4086,6 +4087,7 @@ data.pendo.io
 cdn.pendo.io
 .nxcli.io
 media.mstdn.io
+purehalo.logto.io
 .strapi.logto.io
 cdn-blocks.karte.io
 cdn-edge.karte.io
