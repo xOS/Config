@@ -1,0 +1,49 @@
+{
+  "ret" : "0",
+  "data" : {
+    "fax_balance" : "0",
+    "used_points" : "0",
+    "psnl_vip_property" : {
+      "group1_paid" : 1,
+      "ms_first_pay" : 0,
+      "vip_type" : "svip",
+      "in_trial" : 1,
+      "auto_renewal" : true,
+      "renew_type" : "year",
+      "pc_vip" : 0,
+      "renew_method" : "appstore",
+      "ys_first_pay" : 1,
+      "initial_tm" : "1771912627",
+      "product_id" : "com.intsig.camscanner.premiums.oneyear.autorenewable.svip.low",
+      "grade" : 2,
+      "nxt_renew_tm" : "4072680714",
+      "last_payment_method" : "appstore",
+      "level_info" : {
+
+      },
+      "svip" : 1,
+      "expiry" : 4072680714,
+      "vip_level_info" : {
+        "score" : 330,
+        "level" : 6,
+        "create_time" : 0,
+        "start_score" : 0,
+        "next_score" : 1
+      },
+      "pending" : 0,
+      "inherited_flag" : 0,
+      "is_super_vip" : 1,
+      "group2_paid" : 1
+    },
+    "login_ocr_balance" : 4,
+    "CamScanner_RoadMap_Excel" : 100000,
+    "points" : "0",
+    "pdfword_balance" : "100000",
+    "bookmode_balance" : 100000,
+    "immt_expy_points" : "0",
+    "ocr_balance" : 1000,
+    "no_login_ocr_balance" : 2,
+    "server_time" : "1771912639",
+    "CamScanner_RoadMap" : 100000
+  }
+}
