@@ -220,12 +220,19 @@ tanju.vip
 cdn.violet.vin
 assets.orz.uno
 media.orz.uno
+.hydaelyn-25x-18.top
 .filecunhua.top
 static-cdn.bytegiftia.top
 .alphafish.top
 .mobilius.top
 .apperoni.top
 .pichost.top
+.imageg.top
+.imagef.top
+.imagee.top
+.imaged.top
+.imagec.top
+.imageb.top
 .gitcdn.top
 .balley.top
 .akidoo.top
@@ -630,6 +637,7 @@ steamvideo-a.akamaihd.net
 lolstatic-a.akamaihd.net
 steamcdn-a.akamaihd.net
 eaassets-a.akamaihd.net
+bitmovin-a.akamaihd.net
 spoprod-a.akamaihd.net
 lumiere-a.akamaihd.net
 img.adspower.net
@@ -939,6 +947,7 @@ im.np-payment-gateway.com
 .misskeyusercontent.com
 .firefoxusercontent.com
 media.datacenterdynamics.com
+nextplore.vercel.zapier-deployment.com
 .yammerusercontent.com
 demo.unified-streaming.com
 media.theresanaiforthat.com
@@ -1252,7 +1261,12 @@ clientstream.launchdarkly.com
 clientsdk.launchdarkly.com
 static.launchdarkly.com
 events.launchdarkly.com
-.larksuitecdn.com
+lf16-larkversion.larksuitecdn.com
+sf19-scmcdn.larksuitecdn.com
+p16-hera-va.larksuitecdn.com
+p16-hera-sg.larksuitecdn.com
+sf-ibf-va.larksuitecdn.com
+sf-ibf-sg.larksuitecdn.com
 .kinja-static.com
 .jinyingimage.com
 spcdn.incartupsell.com
@@ -1686,6 +1700,7 @@ img.hellofresh.com
 cdn.hellofresh.com
 assets.hearstapps.com
 hips.hearstapps.com
+.hanime-cdn.com
 cdn.hackernoon.com
 assets.grooveapps.com
 .content-storage-upload.googleapis.com
@@ -2390,6 +2405,7 @@ assets.bravenet.com
 static.registration.bluehost.com
 .bp.blogspot.com
 .blogblog.com
+cdn.bitmovin.com
 static.bitfinex.com
 static-files.bitchute.com
 static-4.bitchute.com
