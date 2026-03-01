@@ -83,6 +83,10 @@ DOMAIN-SUFFIX,aem-kakao-collector.onkakao.net
 DOMAIN-SUFFIX,tr.ds.kakao.com
 DOMAIN-SUFFIX,stackadapt.com
 
+# > 电信营业厅
+DOMAIN-WILDCARD,appgoad*.189.cn
+DOMAIN-WILDCARD,*ad*.189.cn
+
 # > 韩剧 TV
 DOMAIN-KEYWORD,pangolin
 DOMAIN-WILDCARD,pangolin-sdk-toutiao-*.com
