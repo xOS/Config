@@ -1832,6 +1832,8 @@ cache.armorgames.com
 agi.armorgames.com
 .anpustream.com
 .anpoimages.com
+widget.allkeyshop.com
+cdn.allkeyshop.com
 .algolianet.com
 static.adguardvpn.com
 .adguardcdn.com
@@ -2763,6 +2765,8 @@ cdn.embedly.com
 .ebayimg.com
 comm.res.easebar.com
 static.drtuber.com
+static.driffle.com
+assets.driffle.com
 static.doujins.com
 cdn.docsbot.com
 global.divhunt.com
@@ -3379,7 +3383,6 @@ static-clst.avgle.com
 cdn2.auth0.com
 cdn.auth0.com
 events-delivery.apple.com
-lcdn-locator.apple.com
 news-assets.apple.com
 events-live.apple.com
 time.apple.com
@@ -4031,6 +4034,8 @@ cdn2.stamped.io
 cdn1.stamped.io
 .shields.io
 images.scalero.io
+widget.reviews.io
+assets.reviews.io
 js.prosopo.io
 images.prismic.io
 .cdn.prismic.io
