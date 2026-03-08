@@ -6,6 +6,7 @@ USER-AGENT,*QKCloud*
 USER-AGENT,Quark*
 USER-AGENT,LianTongYunPan*
 DOMAIN-WILDCARD,*-my.sharepoint.com
+DOMAIN-WILDCARD,*.eos.*.cmecloud.cn
 DOMAIN-SUFFIX,pds.quark.cn
 DOMAIN-SUFFIX,eos.yun.139.com
 DOMAIN-SUFFIX,pan.wo.cn
