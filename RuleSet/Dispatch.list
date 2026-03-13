@@ -7,7 +7,8 @@ DOMAIN-SUFFIX,video.pscp.tv
 DOMAIN,upload.twitter.com
 
 # > Moomoo
-DOMAIN-WILDCARD,*simg.moomoo.com
+DOMAIN-WILDCARD,*snsimg.moomoo.com
+DOMAIN-WILDCARD,*avatar.moomoo.com
 
 # > Github
 DOMAIN-SUFFIX,github.com
