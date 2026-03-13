@@ -6,6 +6,9 @@ DOMAIN-WILDCARD,video-edge-*.pd*.abs.hls.ttvnw.net
 DOMAIN-SUFFIX,video.pscp.tv
 DOMAIN,upload.twitter.com
 
+# > Moomoo
+DOMAIN-WILDCARD,*simg.moomoo.com
+
 # > Github
 DOMAIN-SUFFIX,github.com
 
