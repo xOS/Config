@@ -45,7 +45,7 @@ DOMAIN,verify.cmpassport.com
 
 # >> 电信
 DOMAIN,id6.me
-DOMAIN,open.e.189.cn
+//DOMAIN,open.e.189.cn
 
 # >> 联通
 DOMAIN,opencloud.wostore.cn
