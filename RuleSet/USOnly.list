@@ -44,5 +44,10 @@ DOMAIN-SUFFIX,crl.t-mobile.com
 DOMAIN-SUFFIX,ps.t-mobile.com
 DOMAIN-SUFFIX,mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,giftcards.com
+DOMAIN-KEYWORD,chexsystems
+DOMAIN-SUFFIX,aa.online-metrix.net
+DOMAIN-SUFFIX,content.fisglobal.com
+DOMAIN-SUFFIX,chexsystems-ds.fiscloudservices.com
+
 IP-ASN,18779,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
