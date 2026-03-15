@@ -415,6 +415,7 @@ pacdn.500px.org
 .tnmr.org
 image.tmdb.org
 o.n1mp.org
+.jspm.org
 static.ietf.org
 .hsto.org
 .ehgt.org
@@ -867,6 +868,7 @@ static.izanmei.icu
 .cthd.icu
 time-a.nist.gov
 images-assets.nasa.gov
+gibs-c.earthdata.nasa.gov
 assets.science.nasa.gov
 tile.loc.gov
 cdn.usd.fan
@@ -1336,6 +1338,7 @@ cdn77.ashemaletube.com
 server.arcgisonline.com
 .appsflyersdk.com
 photos5.appleinsider.com
+map.adsbexchange.com
 widgets.zohosalesiq.com
 images.youracclaim.com
 bookface-static.ycombinator.com
@@ -3758,6 +3761,7 @@ cdn.birdie.so
 storage.tally.so
 assets-v2.super.so
 sites.super.so
+assets.shots.so
 assets.cello.so
 cdn.mida.so
 images.spr.so
