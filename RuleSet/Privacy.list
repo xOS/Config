@@ -4,6 +4,7 @@ DOMAIN,track.tiara.kakao.com
 DOMAIN,zgsdk.zhugeio.com
 DOMAIN,static.cloudflareinsights.com
 DOMAIN,tcbox.baidu.com
+DOMAIN-SUFFIX,kuiniuca.com
 
 # > Alibaba
 USER-AGENT,Munion-SDK*
