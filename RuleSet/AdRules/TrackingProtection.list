@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.mythtracker.com
 .t-dsp.pinduoduo.com
 .elmasistatistik.com.tr
 .bapi-*.moengage.com
@@ -75179,6 +75180,9 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.analytics.morphe.software
+.a.n11.com
+.h.n11.com
 .pulse.perfmetrics.netflix.com
 .eu-south-2.alb.pulse.perfmetrics.netflix.com
 .stats.gastronom.ru
