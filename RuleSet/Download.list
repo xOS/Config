@@ -127,6 +127,7 @@ versioncheck.addons.mozilla.org
 aus5.mozilla.org
 .mirrors.ionfish.org
 mirrors.ibiblio.org
+.files.ghostty.org
 mirror.freedif.org
 distcache.freebsd.org
 ftp.kr.freebsd.org
@@ -571,6 +572,7 @@ mirror.softaculous.com
 mirror.scaleuptech.com
 ubuntu.rootlicense.com
 downloads.raspberrypi.com
+archive.raspberrypi.com
 mirrors.rackhosting.com
 mirror.nodesdirect.com
 mirrors.nepalicloud.com
@@ -1170,6 +1172,7 @@ download.xbox.com
 .mirrors.pair.com
 cpan.pair.com
 cdnorg.d.miui.com
+download01.logi.com
 cdn.kagi.com
 .mirror.iweb.com
 edgedl.me.gvt1.com
