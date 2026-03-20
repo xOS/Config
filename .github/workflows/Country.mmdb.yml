@@ -27,7 +27,7 @@ jobs:
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat
-        wget --no-if-modified-since https://github.com/xOS/geoip-all-in-one/releases/latest/download/Country.mmdb
+        wget -O Country.mmdb https://github.com/xOS/geoip-all-in-one/releases/latest/download/Country.mmdb
  
     - name: Import GPG key
       id: import_gpg
