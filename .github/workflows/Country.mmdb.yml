@@ -29,6 +29,8 @@ jobs:
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat
+        wget -N --no-check-certificate https://cdn.jsdelivr.net/npm/@ip-location-db/dbip-geo-whois-asn-country-mmdb/dbip-geo-whois-asn-country.mmdb
+        wget -N --no-check-certificate https://cdn.jsdelivr.net/npm/@ip-location-db/geolite2-geo-whois-asn-country-mmdb/geolite2-geo-whois-asn-country.mmdb
  
     - name: Import GPG key
       id: import_gpg
