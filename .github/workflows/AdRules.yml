@@ -84,7 +84,7 @@ jobs:
         with:
           add: "-A"
           author_name: 春夏
-        author_email: git@aapls.com
+          author_email: git@aapls.com
           message: "Update AdRules"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
