@@ -24,13 +24,10 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         cd GeoIP
-        wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
-        wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-asn.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
         wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat
-        wget -N --no-check-certificate https://cdn.jsdelivr.net/npm/@ip-location-db/dbip-geo-whois-asn-country-mmdb/dbip-geo-whois-asn-country.mmdb
-        wget -N --no-check-certificate https://cdn.jsdelivr.net/npm/@ip-location-db/geolite2-geo-whois-asn-country-mmdb/geolite2-geo-whois-asn-country.mmdb
+        wget -N --no-check-certificate https://github.com/xOS/geoip-all-in-one/releases/latest/download/Country.mmdb
  
     - name: Import GPG key
       id: import_gpg
