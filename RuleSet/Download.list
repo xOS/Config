@@ -10,6 +10,7 @@ mirrors.esto.network
 ubuntu.netforce.hosting
 debian.netforce.hosting
 mirror.eliv.digital
+cr.yandex
 mirror.jeonnam.school
 mirrors.gethosted.online
 mirror.kkg.berlin
@@ -654,6 +655,7 @@ cdn.winget.microsoft.com
 .update.microsoft.com
 .download.prss.microsoft.com
 msdl.microsoft.com
+mcr.microsoft.com
 .delivery.mp.microsoft.com
 mirrors.liquidweb.com
 packages.linuxmint.com
@@ -675,6 +677,7 @@ mirror.citrahost.com
 mirror.biznetgio.com
 product-downloads.atlassian.com
 gnu.askapache.com
+boot.arcboxcdn.com
 downloadr2.apkmirror.com
 .s3-website-ap-southeast-2.amazonaws.com
 .s3-website-ap-southeast-1.amazonaws.com
