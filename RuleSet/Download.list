@@ -660,6 +660,7 @@ mcr.microsoft.com
 mirrors.liquidweb.com
 packages.linuxmint.com
 download-cdn.jetbrains.com
+downloads.marketplace.jetbrains.com
 download.jetbrains.com
 cdn.hyperbeam.com
 .releases.hashicorp.com
@@ -1558,6 +1559,7 @@ dl-portal.iina.io
 dl.iina.io
 .ghcr.io
 .file.io
+dl.min.io
 .k8s.io
 npm.jsr.io
 .gcr.io
