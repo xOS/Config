@@ -15,7 +15,7 @@ DOMAIN-SUFFIX,tagsub.net
 DOMAIN-SUFFIX,link.nobodys.uk
 DOMAIN-SUFFIX,tagsssubscribe.com
 DOMAIN-WILDCARD,*-toutiao*.com
-AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22),(NOT,((RULE-SET,LAN))))
+AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22),(NOT,((RULE-SET,LAN)))),no-resolve
 
 # > HKT
 AND,((IP-ASN,4760),(DEST-PORT,60379)),no-resolve
