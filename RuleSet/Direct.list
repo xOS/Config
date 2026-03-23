@@ -1,24 +1,7 @@
 # > General
-USER-AGENT,archero*
-USER-AGENT,coffeecorp*
-USER-AGENT,Coffee%20Corp*
-USER-AGENT,restaurant-mobile*
 DOMAIN,app.adjust.com
-DOMAIN,bdtj.tagtic.cn
-DOMAIN,api.nxtlnodes.com
-DOMAIN,nqcbls.xyz
-DOMAIN,gcsbie.xyz
-DOMAIN-SUFFIX,amysecure.com
-DOMAIN-SUFFIX,ultramobile.com
-DOMAIN-SUFFIX,tagcdnsub.work
-DOMAIN-SUFFIX,tagsub.net
-DOMAIN-SUFFIX,link.nobodys.uk
-DOMAIN-SUFFIX,tagsssubscribe.com
 DOMAIN-WILDCARD,*-toutiao*.com
-AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22),(NOT,((RULE-SET,LAN)))),no-resolve
-
-# > HKT
-AND,((IP-ASN,4760),(DEST-PORT,60379)),no-resolve
+AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22),(NOT,((RULE-SET,LAN))))
 
 # > Alibaba
 DOMAIN,log.mmstat.com
@@ -48,12 +31,8 @@ DOMAIN,api.waqi.info
 DOMAIN-SUFFIX,ipip.net
 
 # > GEOIP
-DOMAIN,rtbasia.com
 DOMAIN-SUFFIX,api.grpc.fun
 DOMAIN-SUFFIX,ping0.cc
-
-# > 监控宝
-DOMAIN-SUFFIX,jiankongbao.com
 
 # > 日志收集
 DOMAIN-SUFFIX,bugsnag.com
@@ -99,18 +78,8 @@ DOMAIN-SUFFIX,v.miguvideo.com
 DOMAIN,cloudctrl.gcloud.qq.com
 USER-AGENT,smoba*
 
-# > 微信
-#USER-AGENT,MicroMessenger*
-#USER-AGENT,WeChat*
-#USER-AGENT,MicroMessenger20%Client*
-#DOMAIN-SUFFIX,weixin.qq.com
-
 # > 百度搜索
 URL-REGEX,^https?:\/\/t[0-9]\.baidu\.com\/it
-
-# > 百度网盘
-#DOMAIN-SUFFIX,bdstatic.com
-#DOMAIN-SUFFIX,baidu.com
 
 # > MaxMind
 DOMAIN-KEYWORD,maxmind
