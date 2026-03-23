@@ -80,7 +80,7 @@ jobs:
           git_commit_gpgsign: true
 
       - name: commit, push
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           add: "-A"
           author_name: 春夏
