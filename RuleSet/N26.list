@@ -1,0 +1,7 @@
+# > N26
+DOMAIN,api.tech26.de
+DOMAIN,cdn.number26.de
+DOMAIN-SUFFIX,tech26.de
+DOMAIN-SUFFIX,number26.de
+DOMAIN-SUFFIX,n26.com
+DOMAIN-WILDCARD,*26.de

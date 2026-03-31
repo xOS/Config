@@ -1,0 +1,20 @@
+# > AfreecaTV SOOP
+USER-AGENT,AfreecaTV*
+USER-AGENT,afreeca
+USER-AGENT,afreeca*
+USER-AGENT,*afreeca
+PROCESS-NAME,afreeca
+PROCESS-NAME,/Applications/AfreecaTV/MACafpackage.app/Contents/Resources/MACafstreamer.app/Contents/MacOS/MACafstreamer
+DOMAIN-SUFFIX,afreecatv.com
+DOMAIN-SUFFIX,sooplive.co.kr
+DOMAIN,ssp.meba.kr
+DOMAIN,mtag.mman.kr
+DOMAIN-SUFFIX,afreeca.co.kr
+DOMAIN-SUFFIX,afreecatv.co.kr
+DOMAIN-SUFFIX,payco.com
+DOMAIN-SUFFIX,toss.im
+DOMAIN-SUFFIX,chai.finance
+DOMAIN-SUFFIX,settlebank.co.kr
+DOMAIN-SUFFIX,cauly.co.kr
+DOMAIN-KEYWORD,sooplive
+DOMAIN-SUFFIX,shopfreeca.cdn-nhncommerce.com

@@ -1,0 +1,48 @@
+name: Update GeoIPs
+
+on:
+  workflow_dispatch:
+#   push:
+#     branches:
+#       - "Her"
+#     paths-ignore:
+#       - "LICENSE"
+#       - "*.md"
+#       - "**/*.md"
+#       - ".*"
+#       - "node_modules"
+  schedule:
+    - cron: 0 23 * * 0,2,4
+jobs:
+  Update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v6
+
+    - name: Get GeoIPs
+      run: |
+        cd $GITHUB_WORKSPACE
+        cd GeoIP
+        wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb
+        wget -N --no-check-certificate https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat
+        wget -O Country.mmdb https://github.com/xOS/geoip-all-in-one/releases/latest/download/Country.mmdb
+ 
+    - name: Import GPG key
+      id: import_gpg
+      uses: crazy-max/ghaction-import-gpg@v7
+      with:
+        gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+        passphrase: ${{ secrets.PASSPHRASE }}
+        git_user_signingkey: true
+        git_commit_gpgsign: true
+ 
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v10
+      with:
+        author_name: 春夏
+        author_email: git@aapls.com
+        message: "Update Country.mmdb"
+        add: "-A"
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}

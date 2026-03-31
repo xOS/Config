@@ -1,0 +1,490 @@
+port: 2000
+socks-port: 2345
+allow-lan: true
+mixed-port: 2020
+mode: rule
+ipv6: true
+log-level: info
+bind-address: '*'
+external-controller: :9090
+interface-name: en0
+hosts:
+  'mtalk.google.com': 108.177.125.188
+
+profile:
+  store-selected: false
+
+dns:
+  enable: false
+  #listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 119.29.29.29
+  nameserver:
+    - 119.29.29.29
+    - 223.6.6.6
+    - https://223.6.6.6/dns-query
+
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.localdomain'
+    - '*.example'
+    - '*.invalid'
+    - '*.localhost'
+    - '*.test'
+    - '*.local'
+    - '*.home.arpa'
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - '+.msftconnecttest.com'
+tun:
+  enable: false
+  stack: system
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+  dns-hijack:
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+
+proxy-providers:
+  🇭🇰 香港节点:
+    type: http
+    path: ./Proxy/HK.yaml
+    url: https://api.io/getprofile?name=Clash/HK.ini&token=XX
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  🇰🇷 韩国节点:
+    type: http
+    path: ./Proxy/KR.yaml
+    url: https://api.io/getprofile?name=Clash/KR.ini&token=XX
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  🇸🇬 狮城节点:
+    type: http
+    path: ./Proxy/SG.yaml
+    url: https://api.io/getprofile?name=Clash/SG.ini&token=XX
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  🇺🇸 美国节点:
+    type: http
+    path: ./Proxy/US.yaml
+    url: https://api.io/getprofile?name=Clash/US.ini&token=XX
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  🇺🇳 其它节点:
+    type: http
+    path: ./Proxy/Others.yaml
+    url: https://api.io/getprofile?name=Clash/Others.ini&token=XX
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  📧 解锁节点:
+    type: http
+    path: ./Proxy/NE.yaml
+    url: https://api.io/getprofile?name=Clash/NE.ini&token=XX
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  🇨🇳 大陆节点:
+    type: http
+    path: ./Proxy/CN.yaml
+    url: https://api.io/getprofile?name=Clash/CN.ini&token=XX
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+proxy-groups:
+  - name: 💌 常用服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇺🇳 其它
+      - 🇨🇳 大陆
+  - name: 🖥 我的服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇺🇳 其它
+      - 🇨🇳 大陆
+  - name: 📧 网易云村
+    type: select
+    proxies:
+      - DIRECT
+      - 📧 解锁
+  - name: 🎬 奈非影视
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇺🇳 其它
+  - name: 👒 中台媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇺🇳 其它
+      - 🇨🇳 大陆
+  - name: 📸 境外媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇺🇳 其它
+      - 🇨🇳 大陆
+  - name: 🛫 境外服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇺🇳 其它
+      - 🇨🇳 大陆
+  - name: 🔐 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🔘 黑白名单
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港
+      - 🇰🇷 韩国
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇺🇳 其它
+      - 🇨🇳 大陆
+  - name: 🇭🇰 香港
+    type: select
+    proxies:
+    use:
+      - 🇭🇰 香港节点
+  - name: 🇰🇷 韩国
+    type: select
+    proxies:
+    use:
+      - 🇰🇷 韩国节点
+  - name: 🇸🇬 新加坡
+    type: select
+    proxies:
+    use:
+      - 🇸🇬 狮城节点
+  - name: 🇺🇸 美国
+    type: select
+    proxies:
+    use:
+      - 🇺🇸 美国节点
+  - name: 🇺🇳 其它
+    type: select
+    proxies:
+    use:
+      - 🇺🇳 其它节点
+  - name: 📧 解锁
+    type: select
+    proxies:
+    use:
+      - 📧 解锁节点
+  - name: 🇨🇳 大陆
+    type: select
+    proxies:
+    use:
+      - 🇨🇳 大陆节点  
+
+rule-providers:
+  Direct:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Direct.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Direct.yml
+    interval: 86400
+  Unbreak:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Unbreak.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Unbreak.yml
+    interval: 86400
+  AdWhiteList:
+    type: http
+    behavior: classical
+    path: ./RuleSet/AdWhiteList.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/AdWhiteList.yml
+    interval: 86400
+  Advertising:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Advertising.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Advertising.yml
+    interval: 86400
+  Hijacking:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Hijacking.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Hijacking.yml
+    interval: 86400
+  Privacy:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Privacy.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Privacy.yml
+    interval: 86400
+  Custom:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Custom.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Custom.yml
+    interval: 86400
+  MySite:
+    type: http
+    behavior: classical
+    path: ./RuleSet/MySite.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/MySite.yml
+    interval: 86400
+  SpeedTest:
+    type: http
+    behavior: classical
+    path: ./RuleSet/SpeedTest.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/SpeedTest.yml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Netflix.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Netflix.yml
+    interval: 86400
+  HKMTMedia:
+    type: http
+    behavior: classical
+    path: ./RuleSet/HKMTMedia.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/HKMTMedia.yml
+    interval: 86400
+  AppleSpecial:
+    type: http
+    behavior: classical
+    path: ./RuleSet/AppleSpecial.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/AppleSpecial.yml
+    interval: 86400
+  iCloud:
+    type: http
+    behavior: classical
+    path: ./RuleSet/iCloud.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/iCloud.yml
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Apple.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Apple.yml
+    interval: 86400
+  NeteaseMusic:
+    type: http
+    behavior: classical
+    path: ./RuleSet/NeteaseMusic.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/NeteaseMusic.yml
+    interval: 86400
+  DomesticMedia:
+    type: http
+    behavior: classical
+    path: ./RuleSet/DomesticMedia.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/DomesticMedia.yml
+    interval: 86400
+  Akamai:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Akamai.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Akamai.yml
+    interval: 86400
+  Dropbox:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Dropbox.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Dropbox.yml
+    interval: 86400
+  OneDrive:
+    type: http
+    behavior: classical
+    path: ./RuleSet/OneDrive.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/OneDrive.yml
+    interval: 86400
+  Oracle:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Oracle.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Oracle.yml
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Microsoft.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Microsoft.yml
+    interval: 86400
+  TikTok:
+    type: http
+    behavior: classical
+    path: ./RuleSet/TikTok.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/TikTok.yml
+    interval: 86400
+  Twitter:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Twitter.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Twitter.yml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Telegram.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Telegram.yml
+    interval: 86400
+  Instagram:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Instagram.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Instagram.yml
+    interval: 86400
+  GoogleSearch:
+    type: http
+    behavior: classical
+    path: ./RuleSet/GoogleSearch.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/GoogleSearch.yml
+    interval: 86400
+  GooglePhotos:
+    type: http
+    behavior: classical
+    path: ./RuleSet/GooglePhotos.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/GooglePhotos.yml
+    interval: 86400
+  GoogleDrive:
+    type: http
+    behavior: classical
+    path: ./RuleSet/GoogleDrive.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/GoogleDrive.yml
+    interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Google.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Google.yml
+    interval: 86400
+  PayPal:
+    type: http
+    behavior: classical
+    path: ./RuleSet/PayPal.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/PayPal.yml
+    interval: 86400
+  ForeignMedia:
+    type: http
+    behavior: classical
+    path: ./RuleSet/ForeignMedia.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/ForeignMedia.yml
+    interval: 86400
+  China:
+    type: http
+    behavior: classical
+    path: ./RuleSet/China.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/China.yml
+    interval: 86400
+  Global:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Global.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Global.yml
+    interval: 86400
+  Proxy:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Proxy.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Proxy.yml
+    interval: 86400
+  Block:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Block.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/Block.yml
+    interval: 86400
+  LAN:
+    type: http
+    behavior: classical
+    path: ./RuleSet/LAN.yaml
+    url: https://hub.nange.cn/Clash/Ruleset/LAN.yml
+    interval: 86400
+
+rules:
+  - RULE-SET,Direct,DIRECT
+  - RULE-SET,LAN,DIRECT
+  - RULE-SET,Unbreak,🔐 广告拦截
+  - RULE-SET,AdWhiteList,🔐 广告拦截
+  - RULE-SET,Advertising,🔐 广告拦截
+  - RULE-SET,Hijacking,🔐 广告拦截
+  - RULE-SET,Privacy,🔐 广告拦截
+  - RULE-SET,Custom,DIRECT
+  - RULE-SET,MySite,🖥 我的服务
+  - RULE-SET,SpeedTest,🎬 奈非影视
+  - RULE-SET,Netflix,🎬 奈非影视
+  - RULE-SET,HKMTMedia,👒 中台媒体
+  - RULE-SET,AppleSpecial,💌 常用服务
+  - RULE-SET,iCloud,DIRECT
+  - RULE-SET,Apple,DIRECT
+  - RULE-SET,NeteaseMusic,📧 网易云村
+  - RULE-SET,DomesticMedia,DIRECT
+  - RULE-SET,Akamai,💌 常用服务
+  - RULE-SET,Dropbox,💌 常用服务
+  - RULE-SET,OneDrive,💌 常用服务
+  - RULE-SET,Oracle,DIRECT
+  - RULE-SET,Microsoft,💌 常用服务
+  - RULE-SET,TikTok,💌 常用服务
+  - RULE-SET,Twitter,💌 常用服务
+  - RULE-SET,Telegram,💌 常用服务
+  - RULE-SET,Instagram,💌 常用服务
+  - RULE-SET,GoogleSearch,🛫 境外服务
+  - RULE-SET,GooglePhotos,💌 常用服务
+  - RULE-SET,GoogleDrive,💌 常用服务
+  - RULE-SET,Google,🛫 境外服务
+  - RULE-SET,PayPal,🛫 境外服务
+  - RULE-SET,ForeignMedia,📸 境外媒体
+  - RULE-SET,Global,🛫 境外服务
+  - RULE-SET,Proxy,🛫 境外服务
+  - RULE-SET,Block,🛫 境外服务
+  - RULE-SET,China,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🔘 黑白名单

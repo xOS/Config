@@ -1,0 +1,22 @@
+{
+  "name": "update-adrules",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:xOS/Config.git",
+  "author": "翠花<git@nange.cn>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "update-adrules": "node Script/Tools/AdRules"
+  },
+  "dependencies": {
+    "@adguard/hostlist-compiler": "^1.0.39",
+    "@sindresorhus/slugify": "^3.0.0",
+    "fs-extra": "^11.3.4"
+  },
+  "resolutions": {
+    "axios": "^0.24.0",
+    "jsonpointer": "^5.0.0",
+    "better-ajv-errors": "^1.1.2"
+  }
+}

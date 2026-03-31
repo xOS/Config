@@ -1,0 +1,171 @@
+[General]
+# > 网络并发
+all-hybrid = false
+
+# > 屏蔽 QUIC 流量
+# > 屏蔽 QUIC 流量
+# - per-policy：由策略的 block-quic 参数决定，默认值，即当前版本的行为。
+# - all-proxy：覆盖代理策略的 block-quic 参数，全部阻止
+# - all：覆盖所有策略的 block-quic 参数，全部阻止，包括 DIRECT 策略
+# - always-allow：覆盖代理策略的 block-quic 参数，全部允许
+block-quic = per-policy
+
+# > 日志等级 warning, notify, info, verbose (默认值: notify)
+loglevel = warning
+
+# > 隐藏 VPN 图标
+hide-vpn-icon = true
+
+# > 禁用 GEOIP 数据库自动更新
+disable-geoip-db-auto-update = false
+
+# > GeoIP 数据库
+geoip-maxmind-url = https://rules.aapls.com/GeoIP/Country.mmdb
+
+# > 当开启时，如果在 [Host] 段有为某主机名指定 IP，在使用代理访问该主机名时，将使用该 IP 地址进行代理请求，不再依赖远端解析。
+use-local-host-item-for-proxy = true
+
+# > IPv6 支持
+ipv6 = true
+
+# > 允许 IPv6 VIF
+ipv6-vif = disabled
+
+# > Wi-Fi Assist 开启时，支持使用数据网络进行后备 DNS 查询
+wifi-assist = false
+
+# > 允许 Wi-Fi 网络下其它设备访问
+allow-wifi-access = true
+
+# > HTTP-API TLS设置
+http-api-tls = true
+
+# > HTTP API 可以让另一个 App 或者设备通过 HTTP API 控制 Surge 功能
+http-api = Cat@0.0.0.0:2222
+
+# > HTTP API 网页控制台启用
+http-api-web-dashboard = true
+
+# > 访问配置
+wifi-access-http-auth = Cat:1128
+
+# > 外部控制器，允许 Surge 请求查看器或 Surge CI 进行管理控制
+external-controller-access = Cat@0.0.0.0:5555
+
+# > iOS 端 HTTP 代理服务端口（默认为"6152"）
+wifi-access-http-port = 2000
+
+# > iOS 端 SOCKS5 代理服务端口（默认为"6153"）
+wifi-access-socks5-port = 2345
+
+# > MacOS 端 HTTP 代理服务端口（默认为"6152"）
+http-listen = 0.0.0.0
+
+# > MacOS 端 SOCKS5 代理服务端口（默认为"6153"）
+socks5-listen = 0.0.0.0
+
+# > DNS 服务地址，只用于解析 DoH 服务地址
+dns-server = 119.29.29.29, 223.6.6.6, 180.184.2.2
+
+# > 使 DoH 请求通过代理策略执行
+encrypted-dns-follow-outbound-mode = false
+
+# > 加密 DNS 服务地址
+encrypted-dns-server = quic://223.6.6.6/dns-query, h3://223.6.6.6/dns-query, https://223.6.6.6/dns-query, https://1.12.12.12/dns-query
+
+# > 跳过 DoH 证书验证
+encrypted-dns-skip-cert-verification = true
+
+# > 从 /etc/hosts 读取 DNS 记录
+read-etc-hosts = true
+
+# > 错误警告显示页
+show-error-page-for-reject = true
+
+# > 测速超时（秒）
+test-timeout = 3
+
+# > 网络测试 URL
+internet-test-url = http://g.alicdn.com
+
+# > 代理测速 URL
+proxy-test-url = http://captive.apple.com/generate_204
+
+# > Always Real IP Hosts
+always-real-ip = *.lan, cable.auth.com, dns.msftncsi.com
+
+# > Hijack DNS
+hijack-dns = 8.8.8.8:53, 8.8.4.4:53
+
+# > 排除简单主机名
+exclude-simple-hostnames = true
+
+# > UDP 代理转发测试指定
+proxy-test-udp = google.com@8.8.8.8
+
+# > 跳过代理
+skip-proxy = localhost, *.local
+
+# > Surge 会自动对发往 80 与 443 端口的 TCP 请求进行协议嗅探，以开启 HTTP/HTTPS 相关的高级功能，同时优化性能，但这可能会导致一些兼容性问题。如果你遇到了问题，可以将主机名添加到此处，Surge 将不会对这些请求进行协议嗅探。
+always-raw-tcp-hosts = *google.com, <ip-address>:0
+
+# > 在进行协议嗅探时，如果 HTTP Header 中出现特定的关键字，则将改请求回退 raw TCP 处理，可用于规避一些兼容性问题。
+// always-raw-tcp-keywords = m4s, m3u8
+
+# > TCP Force HTTP Hosts
+# 使 Surge 将 TCP 连接视为 HTTP 请求。Surge HTTP 引擎将处理请求，并且所有高级功能都将可用，如截取、重写和脚本
+# 支持通配符 * 及 ?；
+# 使用前缀 - 排除主机名；
+# 默认情况下，只对 80 端口的请求进行处理（使用 example.com:443 指定端口或 example.com:0 表示所有端口）；
+# <ip-address> 表示匹配所有主机名为 IP 地址的连接；
+# <ipv4-address> 表示匹配所有主机名为 IPv4 地址的连接；
+# <ipv6-address> 表示匹配所有主机名为 IPv6 地址的连接。
+force-http-engine-hosts = 36.99.*, <ip-address>:0
+
+# > 控制当 UDP 流量被匹配到一个不支持 UDP 转发的策略时的行为
+# - DIRECT：回退到 DIRECT 策略（默认）
+# - REJECT：回退到 REJECT 策略
+udp-policy-not-supported-behaviour = REJECT
+
+# > 默认情况下，Surge VIF 接口会声明自己是默认路由。但是，由于 Wi-Fi 接口的路由较小，有些流量可能不会通过 Surge VIF 接口。使用此选项可以添加一条较小的路由。
+// tun-included-routes = 192.168.1.12/32
+
+# > Surge VIF 只能处理 TCP 和 UDP 协议。使用此选项可以绕过特定的 IP 范围，允许所有流量通过。
+// tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+
+# > 强制接管设备本地网络
+include-local-networks = false
+
+# > 强制接管设备所有网络
+include-all-networks = false
+
+# > 代理热点共享
+allow-hotspot-access = true
+
+# > 游戏优化，开启后将在系统负载非常高，数据包处理出现延迟时，优先处理 UDP 数据包
+udp-priority = true
+
+# > 让 Surge 接管 Apple Push Notification service (APNs) 相关请求
+include-apns = true
+
+# > 让 Surge 接管 VoLTE, Wi-Fi Calling, IMS, MMS, Visual Voicemail 等相关数据网络服务的请求
+include-cellular-services = true
+
+# > 允许 Surge 转发 ICMP ping 数据包，关闭后 ping 将无法使用
+icmp-forwarding = true
+
+# > 代理接管优先
+# 0: Auto（默认，旧版本 Surge 下等于 1，新版本下等于 3）
+# 1: System Proxy + VIF
+# 2: System Proxy Only
+# 3: VIF Only
+# 4: System Proxy (via VIF) + VIF(不使用 127.0.0.1 的回环地址作为代理，使用 VIF 的虚拟代理地址，将产生额外的性能开销)
+# 5: System Proxy + VIF (No Default Route)(不声明为默认路由，但声明若干个小路由以覆盖所有地址（与 Surge Mac 增强模式行为相同）。 这种配置下由于 VIF 不是主网络设备无法配置系统代理。部分应用在该模式下会认为 VPN 未开启以解决特殊兼容性问题，如 HomeKit Security Camera)
+compatibility-mode = 0
+
+# > 限制代理和网关服务仅接受来自当前子网下的设备
+proxy-restricted-to-lan = false
+gateway-restricted-to-lan =true
+
+# > 其它
+subnet-exp-wifi-always-match = false

@@ -1,0 +1,84 @@
+name: Update Rulesets
+
+on:
+  workflow_dispatch:
+#   push:
+#     branches:
+#       - "Her"
+#     paths-ignore:
+#       - "LICENSE"
+#       - "*.md"
+#       - "**/*.md"
+#       - ".*"
+#       - "node_modules"
+  schedule:
+    - cron:  0 */24 * * *
+
+jobs:
+  Update:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [20]
+
+    steps:
+      - name: Fetch repository
+        uses: actions/checkout@v6
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache node modules
+        uses: actions/cache@v5
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - name: yarn install, update
+        run: |
+          yarn install
+          yarn update-adrules
+
+      - name: Merge and Rules and remove duplicates
+        run: |
+          curl -LR -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
+          awk 'FNR==1{print ""}{print}' RuleSet/AdRules/*.list > RuleSet/AdRules/Merge.txt
+          awk '!seen[$0]++' RuleSet/AdRules/Merge.txt > RuleSet/AdRules/Merge.list
+          grep -v -f RuleSet/AdRules/Bypass.list RuleSet/AdRules/Merge.list | sed '/^$/d; /\*/d' > RuleSet/AdRule.list
+          rm -rf RuleSet/AdRules/Merge.txt
+          rm -rf RuleSet/AdRules/Merge.list
+
+      - name: Update Static and Download list
+        run: |
+          curl -LR -o RuleSet/cdn.txt "https://ruleset.skk.moe/List/domainset/cdn.conf"
+          awk 'FNR==1{print ""}{print}' RuleSet/cdn.txt | grep -v "#" | grep -v "skk.moe" | sed '/^$/d' > RuleSet/Static.list
+          curl -LR -o RuleSet/download.txt "https://ruleset.skk.moe/List/domainset/download.conf"
+          awk 'FNR==1{print ""}{print}' RuleSet/download.txt | grep -v "#" | grep -v "skk.moe" | sed '/^$/d' > RuleSet/Download.list
+          rm -rf RuleSet/cdn.txt
+          rm -rf RuleSet/download.txt
+
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v7
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      - name: commit, push
+        uses: EndBug/add-and-commit@v10
+        with:
+          add: "-A"
+          author_name: 春夏
+          author_email: git@aapls.com
+          message: "Update Rulesets"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

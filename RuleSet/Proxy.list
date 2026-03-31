@@ -1,0 +1,4 @@
+# > 被大陆屏蔽或访问特慢的域名
+DOMAIN-SUFFIX,linux.do
+# > 腾讯游戏
+DOMAIN,cdn-1302064167.file.myqcloud.com

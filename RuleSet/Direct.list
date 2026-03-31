@@ -1,0 +1,118 @@
+# > General
+DOMAIN,app.adjust.com
+DOMAIN-WILDCARD,*-toutiao*.com
+AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22),(NOT,((RULE-SET,LAN))))
+
+# > Alibaba
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
+DOMAIN,t.uc.cn
+
+# > Tencent
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+
+# > Strava
+DOMAIN,analytics.strava.com
+DOMAIN-SUFFIX,ipip.net
+DOMAIN,sdkapi.sms.mob.com
+DOMAIN,api.share.mob.com
+DOMAIN-SUFFIX,code.sms.mob.com
+
+# > 马来西亚通讯
+DOMAIN-KEYWORD,hotlink
+DOMAIN-KEYWORD,maxis
+
+# > 空气质量
+DOMAIN,api.waqi.info
+
+# > IPIP
+DOMAIN-SUFFIX,ipip.net
+
+# > GEOIP
+DOMAIN-SUFFIX,api.grpc.fun
+DOMAIN-SUFFIX,ping0.cc
+
+# > 日志收集
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,app-measurement.com
+
+# > 搜狗联盟
+DOMAIN,union.sogou.com
+DOMAIN,theta.sogoucdn.com
+
+# > 微博企业认证
+DOMAIN,e.biz.weibo.com
+DOMAIN,verified.biz.weibo.com
+DOMAIN,future.biz.weibo.com
+DOMAIN,wbapp.uve.weibo.com
+DOMAIN,sdkapp.uve.weibo.com
+
+# > 招商银行
+DOMAIN,ccclub.cmbchina.com
+
+# > 爱奇艺
+#DOMAIN,msg.qy.net
+
+# > 网站
+DOMAIN-SUFFIX,wzfou.com
+DOMAIN-SUFFIX,bwl87.com
+
+# > VPS Providers
+DOMAIN-SUFFIX,virmach.com
+DOMAIN-SUFFIX,spartanhost.net
+DOMAIN-SUFFIX,purevoltage.com
+
+# > 网页云音乐
+DOMAIN-SUFFIX,dun.163yun.com
+
+# > 字节跳动
+DOMAIN-SUFFIX,ib.snssdk.com
+DOMAIN-SUFFIX,mon.snssdk.com
+
+# > 咪咕视频
+DOMAIN-SUFFIX,v.miguvideo.com
+
+# > 腾讯游戏
+DOMAIN,cloudctrl.gcloud.qq.com
+USER-AGENT,smoba*
+
+# > 百度搜索
+URL-REGEX,^https?:\/\/t[0-9]\.baidu\.com\/it
+
+# > MaxMind
+DOMAIN-KEYWORD,maxmind
+DOMAIN-SUFFIX,maxmind.com
+DOMAIN-SUFFIX,mmapiws.com
+
+# > SSH
+PROCESS-NAME,RoyalTSX
+PROCESS-NAME,Termius
+
+# > TeamViewer
+PROCESS-NAME,TeamViewer
+
+# > Proxy
+PROCESS-NAME,v2ray
+PROCESS-NAME,ss-local
+
+# > Microsoft
+DOMAIN-SUFFIX,msftconnecttest.com
+
+# > Steam
+USER-AGENT,Steam*
+DOMAIN-SUFFIX,pinyuncloud.com
+DOMAIN-SUFFIX,steamcontent.com
+
+# > UUBooster
+PROCESS-NAME,UUBooster
+
+# > Xunlei
+USER-AGENT,%E8%BF%85%E9%9B%B7
+DOMAIN-SUFFIX,xunlei.com
+
+# > Others
+// DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,spartanhost.net
+DOMAIN-SUFFIX,livechatinc.com

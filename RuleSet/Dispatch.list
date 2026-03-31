@@ -1,0 +1,53 @@
+# > Twitch 
+DOMAIN-SUFFIX,cloudfront.hls.ttvnw.net
+DOMAIN-WILDCARD,video-edge-*.pd*.abs.hls.ttvnw.net
+
+# > Twitter 
+DOMAIN-SUFFIX,video.pscp.tv
+DOMAIN,upload.twitter.com
+
+# > Moomoo
+DOMAIN-WILDCARD,*img.moomoo.com
+DOMAIN-WILDCARD,*avatar.moomoo.com
+
+# > Github
+DOMAIN-SUFFIX,github.com
+
+# Google Photos 
+DOMAIN-SUFFIX,photos.googleapis.com
+DOMAIN-WILDCARD,*---sn-*.googlevideo.com
+
+# > One Drive 
+DOMAIN-WILDCARD,*-my.sharepoint.com
+DOMAIN-SUFFIX,my.microsoftpersonalcontent.com
+
+# > SOOP  
+DOMAIN-WILDCARD,live-global-cdn-v*.sooplive.co.kr
+DOMAIN-WILDCARD,vod-normal-*-cdn-*.sooplive.co.kr
+DOMAIN-WILDCARD,vod-archive-global-cdn-*.sooplive.co.kr
+DOMAIN-SUFFIX,stimg.sooplive.co.kr
+DOMAIN-SUFFIX,static.file.sooplive.co.kr
+DOMAIN-SUFFIX,res.sooplive.co.kr
+DOMAIN-SUFFIX,liveimg.sooplive.co.kr
+DOMAIN-SUFFIX,static.m.sooplive.co.kr
+DOMAIN-SUFFIX,static.sooplive.co.kr
+DOMAIN-WILDCARD,iflv*.sooplive.co.kr
+DOMAIN-SUFFIX,videoimg.sooplive.co.kr
+DOMAIN-SUFFIX,sports.img.sooplive.co.kr
+
+# > Chzzk
+DOMAIN-WILDCARD,*-naver-vod.akamaized.net
+DOMAIN-SUFFIX,livecloud.akamaized.net
+DOMAIN-WILDCARD,*-nlive-slitvod-streaming.navercdn.com
+
+# > Instagram 
+DOMAIN-SUFFIX,cdninstagram.com
+
+# > 原神资源
+DOMAIN-WILDCARD,autopatch*.yuanshen.com
+
+# > PikPak
+DOMAIN-WILDCARD,dl-*.mypikpak.com
+
+# > Mail.ru
+DOMAIN-SUFFIX,cdn-vk.ru

@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "installCommand": "yarn install",
+    "buildCommand": "yarn run build",
+    "outputDirectory": "../public",
+    "routes": [
+      {
+        "src": "/(.*)\\.js",
+        "headers": {
+          "Content-Type": "application/javascript; charset=utf-8"
+        }
+      },
+      {
+        "src": "/(.*)\\.(conf|dconf|sgmodule|list|txt|yaml|yml|toml)",
+        "headers": {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Content-Disposition": "inline",
+          "X-Content-Type-Options": "nosniff"
+        }
+      },
+      {
+        "src": "/(.*)\\.json",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      },
+      { "src": "/(RuleSet|Module|Mock|MitM|IconSet|GeoIP|Script|static)/.*" },
+      { "handle": "filesystem" },
+      { "src": "/app/.*", "dest": "/index.html" },
+      { "src": "/.*", "status": 404, "dest": "/404.html" }
+    ]
+}

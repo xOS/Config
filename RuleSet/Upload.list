@@ -1,0 +1,16 @@
+# > 云盘上传
+USER-AGENT,OneDriveiOSApp*
+USER-AGENT,*Ecloud*
+USER-AGENT,*mCloud*
+USER-AGENT,*QKCloud*
+USER-AGENT,Quark*
+USER-AGENT,LianTongYunPan*
+DOMAIN-WILDCARD,*-my.sharepoint.com
+DOMAIN-WILDCARD,*.eos.*.cmecloud.cn
+DOMAIN-WILDCARD,*.obs.dualstack.*.joint.cmecloud.cn
+DOMAIN-SUFFIX,pds.quark.cn
+DOMAIN-SUFFIX,eos.yun.139.com
+DOMAIN-SUFFIX,pan.wo.cn
+DOMAIN,my.microsoftpersonalcontent.com
+DOMAIN,cloudcube.wuxi.cn
+DOMAIN-SUFFIX,icloud-content.com
