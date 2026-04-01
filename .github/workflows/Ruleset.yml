@@ -1,4 +1,4 @@
-name: Update Rulesets
+name: Update Ruleset
 
 on:
   workflow_dispatch:
@@ -79,6 +79,6 @@ jobs:
           add: "-A"
           author_name: 春夏
           author_email: git@aapls.com
-          message: "Update Rulesets"
+          message: "Update Ruleset"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
