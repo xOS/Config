@@ -2036,6 +2036,7 @@ media.glassdoor.com
 .gitmirror.com
 .assets.getpocket.com
 i.geekflare.com
+.garmincdn.com
 mosaic-blender.fxtwitter.com
 mosaic.fxtwitter.com
 webp.frostming.com
@@ -3125,6 +3126,10 @@ tuf-repo.github.com
 raw.github.com
 .pkg.github.com
 assets.genius.com
+static.garmin.com
+fonts.garmin.com
+res.garmin.com
+share-assets.fe.garmin.com
 .fw-cdn.com
 .fsvod1.com
 assets.foxdcg.com
