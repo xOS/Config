@@ -1,9 +1,11 @@
 # > Speedtest
 USER-AGENT,SpeedTest*
 PROCESS-NAME,/Applications/Speedtest.app/Contents/MacOS/Speedtest
-DOMAIN-KEYWORD,speedtest
-DOMAIN-KEYWORD,speed
+DOMAIN-KEYWORD,speedtest.
+DOMAIN-KEYWORD,speedtest-
 DOMAIN-KEYWORD,ookla
+DOMAIN-WILDCARD,*speedtest*.wiline.com
+DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,noc.vvsu.ru
 DOMAIN-SUFFIX,vvosp1.dv.rt.ru
 DOMAIN-SUFFIX,wlvpn.com
