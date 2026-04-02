@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.spindl.link
 .monitoragc.xyz
 .analytics.kelasmalam.net
 .metrics.rapidedge.io
@@ -76639,6 +76640,12 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.event.dxmdp.com
+.beacon.cdnpure.com
+.r.cdnpure.com
+.ja*.apppure.net
+.udbdf.apkpure.com
+.a.apkpures.xyz
 .c.qiandao.cn
 .logs.tourister.ru
 .wa.wawlabs.com
@@ -80078,6 +80085,14 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.mixpanel-proxy-ivbdkvonca-uc.a.run.app
+.tc.zxcvbnml.com
+.fpconfig.net
+.ingest.databuckets.com
+.report.tantanapp.com
+.pco-sm-log.tantanapp.com
+.app-log-lab.immomo.com
+.aqueduct-collector-prod.alar.my
 .mp-gb-sdklog.kurogames.net
 .telemetry.split.io
 .events.split.io
@@ -83259,6 +83274,7 @@
 .wikiwhatwhere.com
 .wildcommittee.com
 .wildwoodavenue.com
+.windbeetle.com
 .wirecomic.com
 .wiredforcoffee.com
 .wirenewsletter.com
