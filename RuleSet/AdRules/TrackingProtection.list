@@ -4,6 +4,7 @@
 .ib.snssdk.com
 .xlog.snssdk.com
 .log.snssdk.com
+.bbc-reporting-api.app
 .spindl.link
 .monitoragc.xyz
 .analytics.kelasmalam.net
@@ -76640,6 +76641,7 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.umami.syg.ma
 .event.dxmdp.com
 .beacon.cdnpure.com
 .r.cdnpure.com
@@ -80085,6 +80087,14 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.events-noneu.truecaller.com
+.profiler-collector.dalyfeds.com
+.reporttk.com
+.log-*.isnssdk.com
+.track.hily.com
+.ping*.bidease.com
+.ntus.bidease.com
+.thinkingdata.cn
 .mixpanel-proxy-ivbdkvonca-uc.a.run.app
 .tc.zxcvbnml.com
 .fpconfig.net

@@ -8,6 +8,7 @@ images.web3.storage
 api.web3.storage
 .cdn.neustar
 .mangadex.network
+assets.tangled.network
 .ipfs.eth.aragon.network
 .gateway.serph.network
 .cdnjs.network
@@ -3794,12 +3795,14 @@ images.spr.so
 .gitapp.si
 .gcr.si
 assets.vantage.sh
+avatar.tangled.sh
 cdn.cracked.sh
 api-frameworks.vercel.sh
 gitpkg-fork.vercel.sh
 openapi.vercel.sh
 s3.doujin.sh
 .surge.sh
+.gateway.scarf.sh
 static.scarf.sh
 proxy.cors.sh
 brew.sh
