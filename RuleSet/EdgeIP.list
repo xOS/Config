@@ -23,7 +23,13 @@ DOMAIN-SUFFIX,gifshow.com
 DOMAIN-SUFFIX,apissl.ksapisrv.com
 
 # > 小红书修改IP
+DOMAIN-WILDCARD,t*.xiaohongshu.com
+DOMAIN-SUFFIX,rec.xiaohongshu.com
+DOMAIN-SUFFIX,lng.xiaohongshu.com
+DOMAIN-SUFFIX,api.xiaohongshu.com
 DOMAIN-SUFFIX,edith.xiaohongshu.com
+DOMAIN-WILDCARD,a*.xiaohongshu.com
+DOMAIN-WILDCARD,f*.xiaohongshu.com
 
 # > 微信视频号
 DOMAIN,open.weixin.qq.com
@@ -103,8 +109,6 @@ DOMAIN-SUFFIX,snssdk.com
 DOMAIN-SUFFIX,toutiaoapi.com
 DOMAIN-SUFFIX,gifshow.com
 DOMAIN-SUFFIX,ksapisrv.com
-DOMAIN-SUFFIX,xiaohongshu.com
-DOMAIN-KEYWORD,xiaohongshu
 IP-CIDR,114.55.236.88/32,no-resolve
 IP-CIDR,47.97.64.97/32,no-resolve
 IP-CIDR,47.97.66.48/32,no-resolve
