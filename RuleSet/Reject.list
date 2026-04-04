@@ -18,6 +18,8 @@ DOMAIN,self.events.data.microsoft.com
 # > 拼多多视频
 DOMAIN-KEYWORD,pplay-video
 DOMAIN-KEYWORD,liveplay-edge
+# > 微信
+DOMAIN-WILDCARD,finder*.video.qq.com
 
 # > 拦截Netflix部分域名
 DOMAIN,ios.ngp.prod.cloud.netflix.com
@@ -46,6 +48,4 @@ DOMAIN-SUFFIX,dns.wechat.com
 DOMAIN-KEYWORD,hdns
 DOMAIN-SUFFIX,edns.ip-api.com
 DOMAIN-SUFFIX,surfsharkdns.com
-//DOMAIN-KEYWORD,pangolin
-//DOMAIN-WILDCARD,*.pl
-//DOMAIN-WILDCARD,*.in
+DOMAIN-KEYWORD,pangolin
