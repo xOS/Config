@@ -25303,6 +25303,7 @@ DOMAIN-WILDCARD,app.response.*.com
 DOMAIN-WILDCARD,analyticsresults.*.de
 DOMAIN-WILDCARD,acq-*.americanexpress.com
 DOMAIN-WILDCARD,aa-metrics.*.jp
+DOMAIN-WILDCARD,*-netseer-ipaddr-assoc.*.fbcdn.net
 
 URL-REGEX,^https?:\/\/.+\/squery$
 
