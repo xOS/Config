@@ -63,33 +63,33 @@ updates.cdn-apple.com = updates.cdn-apple.com.w.kunlunca.com
 
 [Rule]
 # > 超自然行动组开屏弹窗
-URL-REGEX,^https?:\/\/203\.119\.238\.194\/v2\/d,REJECT
-URL-REGEX,^https?:\/\/203\.119\.204\.226\/v2\/d,REJECT
-URL-REGEX,^https?:\/\/.+\.preternatural\.cn\/webimage\/ui_img_acti(.*)popup,REJECT
+URL-REGEX,^https?:\/\/203\.119\.238\.194\/v2\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.119\.204\.226\/v2\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/.+\.preternatural\.cn\/webimage\/ui_img_acti(.*)popup,REJECT,extended-matching
 DOMAIN,nj.cschannel.anticheatexpert.com,REJECT,pre-matching,extended-matching
 DOMAIN-WILDCARD,beacon-*.ztgame.com,REJECT,pre-matching,extended-matching
 DOMAIN-WILDCARD,*sdk.dailygn.com,REJECT,pre-matching,extended-matching
 DOMAIN,apis.sdk.mobileztgame.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/apis\.sdk\.mobileztgame\.com\/sdk-plugins\/game\/startup$,REJECT
+URL-REGEX,^https?:\/\/apis\.sdk\.mobileztgame\.com\/sdk-plugins\/game\/startup$,REJECT,extended-matching
 
 # > 微博其它
 //DOMAIN-WILDCARD,gw*.im.weibo.cn,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/.+\/wbts\.png$,REJECT
-URL-REGEX,^https?:\/\/.+\/licai\.png$,REJECT
-URL-REGEX,^https?:\/\/.+\/3fc\.png$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live_Normal\.png$,REJECT
-URL-REGEX,^https?:\/\/.+\.sinaimg\.cn\/.+\/(.*)?(fish|redicon|redpacket)(.*)?\.(png|jpg|jpeg|gif)$,REJECT
-URL-REGEX,^https?:\/\/.+\.sinaimg\.cn\/.+\/lipin_dongtu\.gif$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/0\.+\.js$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/index\.lazy\.+\.js$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT
-URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT
-URL-REGEX,^https?:\/\/captcha\.weibo\.com\/static\/js\/jigsawLock\.min\.js$,REJECT
-URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
-URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/h5\/comonitor,REJECT
+URL-REGEX,^https?:\/\/.+\/wbts\.png$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/.+\/licai\.png$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/.+\/3fc\.png$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/upload\/.+\/NavigationBar_Video_Icon_Live_Normal\.png$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/.+\.sinaimg\.cn\/.+\/(.*)?(fish|redicon|redpacket)(.*)?\.(png|jpg|jpeg|gif)$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/.+\.sinaimg\.cn\/.+\/lipin_dongtu\.gif$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter,REJECT,extended-matching
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/0\.+\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/index\.lazy\.+\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/app\.+\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/h5\.sinaimg\.cn\/m\/taskcenter\/js\/vendor\.+\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/captcha\.weibo\.com\/static\/js\/jigsawLock\.min\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/h5\/comonitor,REJECT,extended-matching
 
 # > 拦截广告下发
 DOMAIN,hc-ssp.sm.cn,REJECT,pre-matching,extended-matching
@@ -132,22 +132,22 @@ AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal-lq),(DOMAIN-SUFFIX,zijieapi.co
 AND,((DOMAIN-SUFFIX,iosapps.itunes.apple.com),(PROTOCOL,QUIC)),REJECT,pre-matching,extended-matching
 
 # > 联通营业厅
-URL-REGEX,^https?:\/\/m\.client\.10010\.com\/navigationService\/naviService\/hotRecommend,REJECT
-URL-REGEX,^https?:\/\/m\.client\.10010\.com\/video_recommend\/,REJECT
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/navigationService\/naviService\/hotRecommend,REJECT,extended-matching
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/video_recommend\/,REJECT,extended-matching
 DOMAIN,playback.newbuy.chinaunicom.cn,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/m\.client\.10010\.com\/mobileService\/activity\/homePopUpActivityNew,REJECT
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/mobileService\/activity\/homePopUpActivityNew,REJECT,extended-matching
 DOMAIN,pushservice.10010.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/m\.client\.10010\.com\/edopinterface\/service\/getMenuUrlMonitorConfig,REJECT
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/edopinterface\/service\/getMenuUrlMonitorConfig,REJECT,extended-matching
 DOMAIN-WILDCARD,m*.ad.10010.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew,REJECT
-URL-REGEX,^https?:\/\/m\.client\.10010\.com\/servicequerybusiness\/balancenew\/recommendedAdvertisingSpace,REJECT
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew,REJECT,extended-matching
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/servicequerybusiness\/balancenew\/recommendedAdvertisingSpace,REJECT,extended-matching
 
 # > 爱思助手
-URL-REGEX,^https?:\/\/d\.image\.i4\.cn\/adInfo\/,REJECT
-URL-REGEX,^https?:\/\/list-app-m\.i4\.cn\/n25\/getopfstadinfo,REJECT
-URL-REGEX,^https?:\/\/list-app-m\.i4\.cn\/getthirdpartyadkeys,REJECT
-URL-REGEX,^https?:\/\/list-app-m\.i4\.cn\/n25\/adclick,REJECT
-URL-REGEX,^https?:\/\/m\.client\.10010\.com\/servicequerybusiness\/operationservice\/theFirstToRecommendForYouHead$,REJECT
+URL-REGEX,^https?:\/\/d\.image\.i4\.cn\/adInfo\/,REJECT,extended-matching
+URL-REGEX,^https?:\/\/list-app-m\.i4\.cn\/n25\/getopfstadinfo,REJECT,extended-matching
+URL-REGEX,^https?:\/\/list-app-m\.i4\.cn\/getthirdpartyadkeys,REJECT,extended-matching
+URL-REGEX,^https?:\/\/list-app-m\.i4\.cn\/n25\/adclick,REJECT,extended-matching
+URL-REGEX,^https?:\/\/m\.client\.10010\.com\/servicequerybusiness\/operationservice\/theFirstToRecommendForYouHead$,REJECT,extended-matching
 
 //AND,((GEOIP,CN),(PROTOCOL,QUIC)),REJECT,pre-matching,extended-matching
 
@@ -158,59 +158,59 @@ URL-REGEX,^https?:\/\/m\.client\.10010\.com\/servicequerybusiness\/operationserv
 PROTOCOL,STUN,REJECT,pre-matching,extended-matching
 DOMAIN-KEYWORD,stun.,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,twns.p2ptun.qq.com,REJECT,pre-matching,extended-matching
-//URL-REGEX,^http?:\/\/(\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)\/((?!down)(d(\d*)?)|fetch|v2\/resolv|v4|v6|resolve|squery|dns),REJECT
+//URL-REGEX,^http?:\/\/(\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)\/((?!down)(d(\d*)?)|fetch|v2\/resolv|v4|v6|resolve|squery|dns),REJECT,extended-matching
 
 # > 无忧行
-URL-REGEX,^https?:\/\/.+\.jegotrip\.com\.cn(.+?)appSyncimage\/.+?\.(jpg|png|gif),REJECT
-URL-REGEX,^https?:\/\/.+\/\/appSyncimage/.+\.(jpg|png|gif),REJECT
+URL-REGEX,^https?:\/\/.+\.jegotrip\.com\.cn(.+?)appSyncimage\/.+?\.(jpg|png|gif),REJECT,extended-matching
+URL-REGEX,^https?:\/\/.+\/\/appSyncimage/.+\.(jpg|png|gif),REJECT,extended-matching
 
 # > 移动首页瀑布流
-URL-REGEX,^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/homePage\/getTopAreaList$,REJECT
+URL-REGEX,^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/homePage\/getTopAreaList$,REJECT,extended-matching
 DOMAIN,yxfk.market.chinamobile.com,REJECT,pre-matching,extended-matching
-//URL-REGEX,^https?:\/\/wx\.10086\.cn\/website\/zxkf\/h5new\/xunfei\/index\.html,REJECT
+//URL-REGEX,^https?:\/\/wx\.10086\.cn\/website\/zxkf\/h5new\/xunfei\/index\.html,REJECT,extended-matching
 //DOMAIN,10086.online-cmcc.cn,REJECT,pre-matching,extended-matching
 
-URL-REGEX,^https?:\/\/mc\.tencentmusic\.com\/sdk\/ad\/,REJECT
+URL-REGEX,^https?:\/\/mc\.tencentmusic\.com\/sdk\/ad\/,REJECT,extended-matching
 
 # > 拦截100弹窗
-URL-REGEX,^https?:\/\/tagit\.hyhuo\.com\/block100\/get_popup,REJECT
+URL-REGEX,^https?:\/\/tagit\.hyhuo\.com\/block100\/get_popup,REJECT,extended-matching
 
 # > KakaoTalk
-URL-REGEX,^https?:\/\/kaat\.ds\.kakao\.com\/ad\/,REJECT
-URL-REGEX,^https?:\/\/t(.*)\.daumcdn\.net\/kas\/static\/ads\/,REJECT
-URL-REGEX,^https?:\/\/ser(.*)\.ds\.kakao\.com\/sdk\/banner,REJECT
+URL-REGEX,^https?:\/\/kaat\.ds\.kakao\.com\/ad\/,REJECT,extended-matching
+URL-REGEX,^https?:\/\/t(.*)\.daumcdn\.net\/kas\/static\/ads\/,REJECT,extended-matching
+URL-REGEX,^https?:\/\/ser(.*)\.ds\.kakao\.com\/sdk\/banner,REJECT,extended-matching
 
 # > 菜鸟裹裹
 DOMAIN-SUFFIX,video.taobao.com,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,cloudvideocdn.taobao.com,REJECT,pre-matching,extended-matching
 
 # > 闲鱼开屏
-URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT
-URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade,REJECT
-URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.interact\.mac\.user\.launch,REJECT
-URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.device\.report,REJECT
-URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.idleadv\.scene\.restore,REJECT
-URL-REGEX,^https?:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.idle\.ad\.expose,REJECT
-URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy,REJECT
-URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy,REJECT
-URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.action\.strategy,REJECT
+URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash\.ads,REJECT,extended-matching
+URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade,REJECT,extended-matching
+URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.interact\.mac\.user\.launch,REJECT,extended-matching
+URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.device\.report,REJECT,extended-matching
+URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.idleadv\.scene\.restore,REJECT,extended-matching
+URL-REGEX,^https?:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.idle\.ad\.expose,REJECT,extended-matching
+URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy,REJECT,extended-matching
+URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy,REJECT,extended-matching
+URL-REGEX,^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.action\.strategy,REJECT,extended-matching
 
 DOMAIN,dypnsapi.aliyuncs.com,REJECT,pre-matching,extended-matching
 
-URL-REGEX,^https?:\/\/.+\/amdc\/mobileDispatch,REJECT
+URL-REGEX,^https?:\/\/.+\/amdc\/mobileDispatch,REJECT,extended-matching
 
 # > 天翼云盘弹窗
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getPageBanners,REJECT
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getHomePageSkinBanner,REJECT
-URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners,REJECT
+URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getPageBanners,REJECT,extended-matching
+URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getHomePageSkinBanner,REJECT,extended-matching
+URL-REGEX,^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners,REJECT,extended-matching
 
 # > 猎聘
-URL-REGEX,^https?:\/\/api-wanda\.liepin\.com\/api\/com\.liepin\.cbp\.baizhong\.op\.v2-show-4app$,REJECT
+URL-REGEX,^https?:\/\/api-wanda\.liepin\.com\/api\/com\.liepin\.cbp\.baizhong\.op\.v2-show-4app$,REJECT,extended-matching
 
 # > Spotify
-URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ads,REJECT
-URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/gabo-receiver-service\/v3\/events$,REJECT
-URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic,REJECT
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ads,REJECT,extended-matching
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/gabo-receiver-service\/v3\/events$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic,REJECT,extended-matching
 DOMAIN,video-akpcw-cdn-spotify-com.akamaized.net,REJECT,pre-matching,extended-matching
 DOMAIN,adeventtracker.spotify.com,REJECT,pre-matching,extended-matching
 
@@ -221,66 +221,66 @@ DOMAIN-WILDCARD,adstore*.file.myqcloud.com,REJECT,pre-matching,extended-matching
 DOMAIN-WILDCARD,adstore-index-*.file.myqcloud.com,REJECT,pre-matching,extended-matching
 
 # > 中新网开屏
-URL-REGEX,^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/open_screen_ad,REJECT
+URL-REGEX,^https?:\/\/dw\.chinanews\.com\/cns\/app\/v1\/open_screen_ad,REJECT,extended-matching
 
 # > 颇可
 DOMAIN-SUFFIX,kepler.jd.com,REJECT,pre-matching,extended-matching
 DOMAIN-WILDCARD,api-*.dutils.com,REJECT,pre-matching,extended-matching
 
 # > 咪咕阅读
-URL-REGEX,^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService,REJECT
+URL-REGEX,^https?:\/\/crystal\.miguvideo\.com\/legacy\/shm_video_interface\/dataCollectionService,REJECT,extended-matching
 
 # > 豆瓣
-URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$,REJECT
-URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$,REJECT
+URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/lib\/douban-ad-helper\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/img(.*)\.doubanio\.com\/f\/talion\/.+\/js\/card\/zepto\.min\.js$,REJECT,extended-matching
 
 # > 京东，去启动广告
-URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT,extended-matching
 
 # > 哔哩哔哩
-URL-REGEX,^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/splash\/list,REJECT
-URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/dm\/ad,REJECT
-URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v\d\/splash\/,REJECT
-URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/twirp\/comic\.v\d\.Comic\/Flash,REJECT
+URL-REGEX,^https?:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/splash\/list,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v2\/dm\/ad,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/x\/v\d\/splash\/,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/.+\.(bilibili|biliapi)\.(com|net)\/twirp\/comic\.v\d\.Comic\/Flash,REJECT,extended-matching
 
 # > 知乎 去广告
 DOMAIN,appcloud2.zhihu.com,REJECT,pre-matching,extended-matching
 # > 知乎 登录框
-URL-REGEX,^https?://static\.zhihu\.com/[^/]+/(main|column)\.signflow\.[^.]+.js,REJECT
+URL-REGEX,^https?://static\.zhihu\.com/[^/]+/(main|column)\.signflow\.[^.]+.js,REJECT,extended-matching
 
 # >> DO NOT GET CDN-BASED IP
 DOMAIN,118.89.204.198,REJECT,pre-matching,extended-matching
 
 USER-AGENT,AVOS*,REJECT
-URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
+URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT,extended-matching
 AND,((USER-AGENT,ZhihuHybrid*),(URL-REGEX,.*recommend)),REJECT
 
 # > 优酷 去广告
 DOMAIN,pgw-cld-ml.alicdn.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/.+\.myalicdn\.com\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/.+\/youku\/.+\.mp4,REJECT
-URL-REGEX,^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get,REJECT
+URL-REGEX,^https?:\/\/.+\.myalicdn\.com\/.+\.mp4,REJECT,extended-matching
+URL-REGEX,^https?:\/\/.+\/youku\/.+\.mp4,REJECT,extended-matching
+URL-REGEX,^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get,REJECT,extended-matching
 
 # > GEOIP
-URL-REGEX,^https?:\/\/iplab\.rtbasia\.com\/api\/log$,REJECT
+URL-REGEX,^https?:\/\/iplab\.rtbasia\.com\/api\/log$,REJECT,extended-matching
 
 # > 讯飞输入法
 DOMAIN-SUFFIX,xfinfr.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice,REJECT
+URL-REGEX,^https?:\/\/imeclient\.openspeech\.cn\/adservice,REJECT,extended-matching
 
 # > 人人视频 去广告
-URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_a12146ea59314861bf606f50f7c594f0\.png-w1300$,REJECT
-URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_232d4a95cd7043b4b6898a6d5f39bb17\.jpg-w1300$,REJECT
-URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_e009880f0ac0420794dd8bc546dc3d9a\.jpg-w1300$,REJECT
-URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_83202fa02a2e413b91958c970546329e\.jpg-w1300$,REJECT
-URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_1d901bd9b6cf4fdd9cec74433c857bf0\.jpg-w400$,REJECT
-URL-REGEX,^https?:\/\/api\.rr\.tv\/user\/subscription\/redPoint\/display$,REJECT
-URL-REGEX,^https?:\/\/img\.rr\.tv\/barSelpag\/.+\.pag$,REJECT
-AND,((USER-AGENT,PUClient*),(NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
-URL-REGEX,^https?+:\/\/msspjh\.emarbox\.com\/getAdConfig,REJECT
-URL-REGEX,^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising,REJECT
-URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/,REJECT
-URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
+URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_a12146ea59314861bf606f50f7c594f0\.png-w1300$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_232d4a95cd7043b4b6898a6d5f39bb17\.jpg-w1300$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_e009880f0ac0420794dd8bc546dc3d9a\.jpg-w1300$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_83202fa02a2e413b91958c970546329e\.jpg-w1300$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/img\.rr\.tv\/img\/img\/.+\/o_1d901bd9b6cf4fdd9cec74433c857bf0\.jpg-w400$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/api\.rr\.tv\/user\/subscription\/redPoint\/display$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/img\.rr\.tv\/barSelpag\/.+\.pag$,REJECT,extended-matching
+AND,((USER-AGENT,PUClient*),(NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT,pre-matching,extended-matching
+URL-REGEX,^https?+:\/\/msspjh\.emarbox\.com\/getAdConfig,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/api\.videozhishi\.com\/api\/getAdvertising,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/api\.rr\.tv\/ad\/,REJECT,extended-matching
+URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT,extended-matching
 
 # > 爱奇艺
 DOMAIN,video-ad.sm.cn,REJECT,pre-matching,extended-matching
@@ -296,16 +296,16 @@ DOMAIN-SUFFIX,upqzfile.com,REJECT,pre-matching,extended-matching
 DOMAIN,mbdlog.iqiyi.com,REJECT,pre-matching,extended-matching
 DOMAIN,iqiyi-mipdx.cn.miaozhen.com,REJECT,pre-matching,extended-matching
 DOMAIN,show.ssports.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/static\.iqiyi\.com\/.+\/ad-sw\.js$,REJECT
-URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/advertise ,REJECT
-URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/image\/.+\/pv_(.*)\.jpg,REJECT
-URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT
-URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT
-URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT
-URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show,REJECT
+URL-REGEX,^https?:\/\/static\.iqiyi\.com\/.+\/ad-sw\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/advertise ,REJECT,extended-matching
+URL-REGEX,^https?:\/\/pic(.*)\.iqiyipic\.com\/image\/.+\/pv_(.*)\.jpg,REJECT,extended-matching
+URL-REGEX,^https?://paopao\w?.qiyipic.com,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show,REJECT,extended-matching
 
 # > 腾讯QQ
-URL-REGEX,^https?:\/\/.+\/analytics\/upload,REJECT
+URL-REGEX,^https?:\/\/.+\/analytics\/upload,REJECT,extended-matching
 DOMAIN,sq.bls.mdt.qq.com,REJECT,pre-matching,extended-matching
 
 # > 腾讯视频
@@ -330,87 +330,87 @@ DOMAIN,test-isee.weishi.qq.com,REJECT,pre-matching,extended-matching
 DOMAIN,v6-accvideo.wns.qq.com,REJECT,pre-matching,extended-matching
 DOMAIN,shortconn.im.qcloud.com,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,file.video.qpic.cn,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/ugd\.gtimg\.com\/vg\/,REJECT
+URL-REGEX,^https?:\/\/ugd\.gtimg\.com\/vg\/,REJECT,extended-matching
 
 # > 简书
-URL-REGEX,^https?:\/\/.+\.jianshu\.io\/shakespeare\/_next\/static\/.+\/pages\/p\/(.*)?slug(.*)?\.js$,REJECT
+URL-REGEX,^https?:\/\/.+\.jianshu\.io\/shakespeare\/_next\/static\/.+\/pages\/p\/(.*)?slug(.*)?\.js$,REJECT,extended-matching
 
 # > 微信
-URL-REGEX,^https?:\/\/dlied(.*).cdntips.net,REJECT
-URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad),REJECT
+URL-REGEX,^https?:\/\/dlied(.*).cdntips.net,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad),REJECT,extended-matching
 
 # > 和彩云
-;URL-REGEX,^https?:\/\/mcmm\.caiyun\.feixin\.10086\.cn:80\/mcmm\/api\/IAdvert$,REJECT
+//URL-REGEX,^https?:\/\/mcmm\.caiyun\.feixin\.10086\.cn:80\/mcmm\/api\/IAdvert$,REJECT,extended-matching
 
 # > 优酷
-URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT
-URL-REGEX,^https?+:\/\/.+?\.mp4\?sid=,REJECT
-//URL-REGEX,^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=,REJECT
+URL-REGEX,^https?+:\/\/.+?\.mp4\?ccode=0902,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/.+?\.mp4\?sid=,REJECT,extended-matching
+//URL-REGEX,^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=,REJECT,extended-matching
 
 # > 1688
-URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv,REJECT
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv,REJECT,extended-matching
 
 # > 飞猪
-URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/,REJECT
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/,REJECT,extended-matching
 
 # > 高德地图
 DOMAIN,optimus-ads.amap.com,REJECT,pre-matching,extended-matching
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/,REJECT
+URL-REGEX,^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/,REJECT,extended-matching
 
 # > 口碑
-URL-REGEX,^https?+:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json,REJECT
-URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/,REJECT
+URL-REGEX,^https?+:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/,REJECT,extended-matching
 
 # > 淘宝
-URL-REGEX,^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_,REJECT
-URL-REGEX,^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$,REJECT
-URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$,REJECT
-URL-REGEX,^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless,REJECT
+URL-REGEX,^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless,REJECT,extended-matching
 
 # > 淘票票
-URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/,REJECT
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/,REJECT,extended-matching
 
 # > 天猫
-URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT
+URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4},REJECT,extended-matching
 
 # > 抖音
 DOMAIN-KEYWORD,ad-sign,REJECT,pre-matching,extended-matching
 DOMAIN-KEYWORD,-adbrand,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/activity-(.*)\.awemeughun\.com,REJECT
-URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-adbrand.byteimg.com,REJECT
-URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-ad-sign.byteimg.com,REJECT
-URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-sign\.douyinpic\.com\/large\/tos-cn-p-([0-9][0-9][0-9][0-9])\/.+\.jpeg,REJECT
-URL-REGEX,^https?:\/\/v([0-9]|[0-9][0-9])-traffic\.douyinvod\.com\/.+\/.+\/video\/tos\/cn\/tos-cn-ve-([0-9][0-9])\/.+\/\,REJECT
-URL-REGEX,^https?:\/\/s(.*)?\.pstatp\.com\/bytecom\/resource\/tetris\/pi\.ad(.*)?\.js$,REJECT
+URL-REGEX,^https?:\/\/activity-(.*)\.awemeughun\.com,REJECT,extended-matching
+URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-adbrand.byteimg.com,REJECT,extended-matching
+URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-ad-sign.byteimg.com,REJECT,extended-matching
+URL-REGEX,^https?:\/\/p([0-9]|[0-9][0-9])-sign\.douyinpic\.com\/large\/tos-cn-p-([0-9][0-9][0-9][0-9])\/.+\.jpeg,REJECT,extended-matching
+URL-REGEX,^https?:\/\/v([0-9]|[0-9][0-9])-traffic\.douyinvod\.com\/.+\/.+\/video\/tos\/cn\/tos-cn-ve-([0-9][0-9])\/.+\/\,REJECT,extended-matching
+URL-REGEX,^https?:\/\/s(.*)?\.pstatp\.com\/bytecom\/resource\/tetris\/pi\.ad(.*)?\.js$,REJECT,extended-matching
 
 # > 字节跳动
-URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad,REJECT
-URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/,REJECT
-URL-REGEX,^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/,REJECT
-URL-REGEX,^https?+:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/,REJECT
-URL-REGEX,^https?+:\/\/.+?\/img\/ad\.union\.api\/,REJECT
+URL-REGEX,^https?+:\/\/.+?\.pstatp\.com\/img\/ad,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/.+?\.(?>amemv|musical|snssdk|tiktokv)\.(?>com|ly)\/(?>api|motor)\/ad\/,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/.+?\/img\/ad\.union\.api\/,REJECT,extended-matching
 
 # > 手机百度
 DOMAIN-SUFFIX,boxer.baidu.com,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,ug.baidu.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/mbd\.baidu\.com\/tcbox,REJECT
-URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT
+URL-REGEX,^https?:\/\/mbd\.baidu\.com\/tcbox,REJECT,extended-matching
+URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT,extended-matching
 
 # > 百度网盘
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/ndbs\/nd_bundle(.*)\.js$,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/checkthumbnailstatus,REJECT
-URL-REGEX,^https?:\/\/ali-ec\.static\.yximgs\.com\/kos\/.+\/hybrid\/ad-union-feed-template,REJECT
-URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/static\/js\/chunk-vendors\.+\.js$,REJECT
-URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js,REJECT
-URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html,REJECT
-URL-REGEX,^https?:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png,REJECT
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from),REJECT
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/ndbs\/nd_bundle(.*)\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/api\/checkthumbnailstatus,REJECT,extended-matching
+URL-REGEX,^https?:\/\/ali-ec\.static\.yximgs\.com\/kos\/.+\/hybrid\/ad-union-feed-template,REJECT,extended-matching
+URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/static\/js\/chunk-vendors\.+\.js$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/js\/.+\.js,REJECT,extended-matching
+URL-REGEX,^https?:\/\/ndstatic\.cdn\.bcebos\.com\/activity\/welfare\/index\.html,REJECT,extended-matching
+URL-REGEX,^https?:\/\/staticsns\.cdn\.bcebos\.com\/amis\/.+/banner.png,REJECT,extended-matching
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/component\/view\/(1510|1130)\?(vip|from),REJECT,extended-matching
 
 # > 百度贴吧
-URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,REJECT
-URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo,REJECT
-URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog),REJECT
+URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo,REJECT,extended-matching
+URL-REGEX,^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog),REJECT,extended-matching
 
 # Alibaba
 DOMAIN,httpdns.alicdn.com,REJECT,extended-matching,pre-matching
@@ -487,8 +487,8 @@ DOMAIN,httpdnsmultiapi.meituan.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdnsmultiapivip.meituan.com,REJECT,extended-matching,pre-matching
 DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT,extended-matching,pre-matching
 DOMAIN,dnspod.meituan.httpdns.start.qcloud.com,REJECT,extended-matching,pre-matching
-IP-CIDR,202.90.108.13/32,REJECT,no-resolve
-IP-CIDR,202.90.110.46/32,REJECT,no-resolve
+IP-CIDR,202.90.108.13/32,REJECT,no-resolve,pre-matching
+IP-CIDR,202.90.110.46/32,REJECT,no-resolve,pre-matching
 
 # Momo
 DOMAIN,httpdns.immomo.com,REJECT,extended-matching,pre-matching
@@ -556,57 +556,57 @@ DOMAIN,yuyin-httpdns.gslb.yy.com,REJECT,extended-matching,pre-matching
 
 # Zhihu
 # refer: https://github.com/lwd-temp/anti-ip-attribution/issues/24
-IP-CIDR,118.89.204.198/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve,extended-matching,pre-matching
+IP-CIDR,118.89.204.198/32,REJECT,no-resolve,pre-matching
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve,pre-matching
 
-DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT,no-resolve,extended-matching,pre-matching
-DOMAIN,union-httpdns.gslb.yy.com,REJECT,no-resolve,extended-matching,pre-matching
-DOMAIN,httpdns-v6.gslb.yy.com,REJECT,no-resolve,extended-matching,pre-matching
-URL-REGEX,"^https?:\/\/103\.44\.58\.64\/md\?",REJECT
-URL-REGEX,"^https?:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns",REJECT
-DOMAIN,dns2.q2cdn.com,REJECT,no-resolve,extended-matching,pre-matching
-URL-REGEX,"^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/",REJECT
-IP-CIDR,8.134.241.67/32,REJECT,no-resolve,no-resolve,extended-matching,pre-matching
-DOMAIN,dig.bdurl.net,REJECT,no-resolve,extended-matching,pre-matching
-DOMAIN,dig.zjurl.cn,REJECT,no-resolve,extended-matching,pre-matching
+DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT,extended-matching,pre-matching
+DOMAIN,union-httpdns.gslb.yy.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdns-v6.gslb.yy.com,REJECT,extended-matching,pre-matching
+URL-REGEX,"^https?:\/\/103\.44\.58\.64\/md\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns",REJECT,extended-matching
+DOMAIN,dns2.q2cdn.com,REJECT,extended-matching,pre-matching
+URL-REGEX,"^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/",REJECT,extended-matching
+IP-CIDR,8.134.241.67/32,REJECT,no-resolve,pre-matching
+DOMAIN,dig.bdurl.net,REJECT,extended-matching,pre-matching
+DOMAIN,dig.zjurl.cn,REJECT,extended-matching,pre-matching
 AND,((DOMAIN-KEYWORD,tnc),(AND,((OR,((DOMAIN-KEYWORD,-bjlgy),(DOMAIN-KEYWORD,-alisc),(DOMAIN-KEYWORD,-aliec),(DOMAIN-KEYWORD,-alisg))),(OR,((DOMAIN-SUFFIX,snssdk.com),(DOMAIN-SUFFIX,isnssdk.com),(DOMAIN-SUFFIX,toutiaoapi.com),(DOMAIN-SUFFIX,bytedance.com),(DOMAIN-SUFFIX,zijieapi.com)))))),REJECT,no-resolve,extended-matching,pre-matching
 DOMAIN,paydns.wechatpay.cn,REJECT,extended-matching,pre-matching
-IP-CIDR,39.156.140.30/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,39.156.140.47/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,39.156.140.245/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,43.130.30.237/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,43.130.30.240/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,43.137.153.151/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,43.137.159.31/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,43.152.112.101/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,43.153.248.120/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,60.28.172.100/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,61.151.231.157/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,101.32.104.104/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,106.39.206.21/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,106.39.206.25/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,106.39.206.70/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,111.31.201.194/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,111.31.241.76/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,111.31.241.140/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,111.206.147.156/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,111.206.147.210/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,111.206.148.27/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,116.128.177.249/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,116.130.224.150/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,116.130.224.205/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,117.185.247.73/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,123.151.48.171/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,123.151.48.193/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,123.151.48.208/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,180.153.202.85/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,183.192.196.31/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,203.205.129.102/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,203.205.234.132/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR,220.196.159.73/32,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR6,2402:4e00:8030:1::17/128,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR6,2408:8711:10:10::20/128,REJECT,no-resolve,extended-matching,pre-matching
-IP-CIDR6,2409:8702:4860:10::4d/128,REJECT,no-resolve,extended-matching,pre-matching
+IP-CIDR,39.156.140.30/32,REJECT,no-resolve,pre-matching
+IP-CIDR,39.156.140.47/32,REJECT,no-resolve,pre-matching
+IP-CIDR,39.156.140.245/32,REJECT,no-resolve,pre-matching
+IP-CIDR,43.130.30.237/32,REJECT,no-resolve,pre-matching
+IP-CIDR,43.130.30.240/32,REJECT,no-resolve,pre-matching
+IP-CIDR,43.137.153.151/32,REJECT,no-resolve,pre-matching
+IP-CIDR,43.137.159.31/32,REJECT,no-resolve,pre-matching
+IP-CIDR,43.152.112.101/32,REJECT,no-resolve,pre-matching
+IP-CIDR,43.153.248.120/32,REJECT,no-resolve,pre-matching
+IP-CIDR,60.28.172.100/32,REJECT,no-resolve,pre-matching
+IP-CIDR,61.151.231.157/32,REJECT,no-resolve,pre-matching
+IP-CIDR,101.32.104.104/32,REJECT,no-resolve,pre-matching
+IP-CIDR,106.39.206.21/32,REJECT,no-resolve,pre-matching
+IP-CIDR,106.39.206.25/32,REJECT,no-resolve,pre-matching
+IP-CIDR,106.39.206.70/32,REJECT,no-resolve,pre-matching
+IP-CIDR,111.31.201.194/32,REJECT,no-resolve,pre-matching
+IP-CIDR,111.31.241.76/32,REJECT,no-resolve,pre-matching
+IP-CIDR,111.31.241.140/32,REJECT,no-resolve,pre-matching
+IP-CIDR,111.206.147.156/32,REJECT,no-resolve,pre-matching
+IP-CIDR,111.206.147.210/32,REJECT,no-resolve,pre-matching
+IP-CIDR,111.206.148.27/32,REJECT,no-resolve,pre-matching
+IP-CIDR,116.128.177.249/32,REJECT,no-resolve,pre-matching
+IP-CIDR,116.130.224.150/32,REJECT,no-resolve,pre-matching
+IP-CIDR,116.130.224.205/32,REJECT,no-resolve,pre-matching
+IP-CIDR,117.185.247.73/32,REJECT,no-resolve,pre-matching
+IP-CIDR,123.151.48.171/32,REJECT,no-resolve,pre-matching
+IP-CIDR,123.151.48.193/32,REJECT,no-resolve,pre-matching
+IP-CIDR,123.151.48.208/32,REJECT,no-resolve,pre-matching
+IP-CIDR,180.153.202.85/32,REJECT,no-resolve,pre-matching
+IP-CIDR,183.192.196.31/32,REJECT,no-resolve,pre-matching
+IP-CIDR,203.205.129.102/32,REJECT,no-resolve,pre-matching
+IP-CIDR,203.205.234.132/32,REJECT,no-resolve,pre-matching
+IP-CIDR,220.196.159.73/32,REJECT,no-resolve,pre-matching
+IP-CIDR6,2402:4e00:8030:1::17/128,REJECT,no-resolve,pre-matching
+IP-CIDR6,2408:8711:10:10::20/128,REJECT,no-resolve,pre-matching
+IP-CIDR6,2409:8702:4860:10::4d/128,REJECT,no-resolve,pre-matching
 DOMAIN,httpdns.browser.miui.com,REJECT,extended-matching,pre-matching
 DOMAIN,resolver.msg.xiaomi.net,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.danuoyi.tbcache.com,REJECT,extended-matching,pre-matching
@@ -621,540 +621,540 @@ DOMAIN,httpdns.bcelive.com,REJECT,extended-matching,pre-matching
 DOMAIN,dns.iqiyi.com,REJECT,extended-matching,pre-matching
 DOMAIN,dns.qiyipic.iqiyi.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.n.shifen.com,REJECT,extended-matching,pre-matching
-IP-CIDR,186.76.76.200/32,REJECT,no-resolve,extended-matching,pre-matching
+IP-CIDR,186.76.76.200/32,REJECT,no-resolve,pre-matching
 DOMAIN,httpdns.ocloud.heytapmobi.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.push.heytapmobi.com,REJECT,extended-matching,pre-matching
-URL-REGEX,"^https?:\/\/119\.29\.29\.98\/d\?",REJECT
+URL-REGEX,"^https?:\/\/119\.29\.29\.98\/d\?",REJECT,extended-matching
 DOMAIN,dotserver.douyucdn.cn,REJECT,extended-matching,pre-matching
 DOMAIN,hdns.ksyun.com,REJECT,extended-matching,pre-matching
-URL-REGEX,"^https?:\/\/162\.14\.3\.250\/v4",REJECT
+URL-REGEX,"^https?:\/\/162\.14\.3\.250\/v4",REJECT,extended-matching
 DOMAIN,httpdns.ocloud.oppomobile.com,REJECT,extended-matching,pre-matching
 DOMAIN,kuaishou.httpdns.pro,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.kwd.inkuai.com,REJECT,extended-matching,pre-matching
 DOMAIN,apidns.kwd.inkuai.com,REJECT,extended-matching,pre-matching
 DOMAIN,apidns-js.kwd.inkuai.com,REJECT,extended-matching,pre-matching
-URL-REGEX,"^https?:\/\/81\.69\.130\.131\/d",REJECT
-URL-REGEX,"^https?:\/\/114\.110\.96\.6\/d",REJECT
-URL-REGEX,"^https?:\/\/114\.110\.97\.30\/d",REJECT
-URL-REGEX,"^https?:\/\/121\.5\.84\.85\/d",REJECT
+URL-REGEX,"^https?:\/\/81\.69\.130\.131\/d",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/114\.110\.96\.6\/d",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/114\.110\.97\.30\/d",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/121\.5\.84\.85\/d",REJECT,extended-matching
 DOMAIN,httpdns.zybang.com,REJECT,pre-matching,extended-matching
-URL-REGEX,"^https?:\/\/api\.weibo\.cn\/2\/httpdns\/config",REJECT
-URL-REGEX,"^https?:\/\/api\.weibo\.cn\/httpdns\/config",REJECT
+URL-REGEX,"^https?:\/\/api\.weibo\.cn\/2\/httpdns\/config",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.weibo\.cn\/httpdns\/config",REJECT,extended-matching
 DOMAIN,hd.xiaojukeji.com,REJECT,pre-matching,extended-matching
-URL-REGEX,"^https?:\/\/203\.107\.1\.33\/191607\/resolve\?",REJECT
+URL-REGEX,"^https?:\/\/203\.107\.1\.33\/191607\/resolve\?",REJECT,extended-matching
 DOMAIN,serveraddr.service.kugou.com,REJECT,pre-matching,extended-matching
 DOMAIN,tp2p.kg.qq.com,REJECT,pre-matching,extended-matching
-IP-CIDR,81.71.61.216/32,REJECT,no-resolve,pre-matching,extended-matching
-URL-REGEX,"^https?:\/\/54\.222\.159\.138:8053\/httpdns\/",REJECT
-URL-REGEX,"^https?:\/\/101\.42\.130\.147:8053\/httpdns\/",REJECT
-URL-REGEX,"^https?:\/\/106\.55\.220\.18:8053\/httpdns\/",REJECT
-URL-REGEX,"^https?:\/\/139\.196\.12\.179:8053\/httpdns\/",REJECT
+IP-CIDR,81.71.61.216/32,REJECT,no-resolve,pre-matching
+URL-REGEX,"^https?:\/\/54\.222\.159\.138:8053\/httpdns\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/101\.42\.130\.147:8053\/httpdns\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/106\.55\.220\.18:8053\/httpdns\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/139\.196\.12\.179:8053\/httpdns\/",REJECT,extended-matching
 
 # Alipay
-URL-REGEX,^https?:\/\/amdc\.alipay\.com\/s?query,REJECT
-URL-REGEX,^https?:\/\/amdc-sibling\.alipay\.com\.cn\/s?query,REJECT
-URL-REGEX,^https?:\/\/110\.76\.8\.150\/squery,REJECT
-URL-REGEX,^https?:\/\/203\.209\.230\.39\/squery,REJECT
-URL-REGEX,^https?:\/\/203\.209\.245\.102\/squery,REJECT
-URL-REGEX,^https?:\/\/203\.209\.245\.158\/squery,REJECT
-URL-REGEX,^https?:\/\/203\.209\.247\.95\/squery,REJECT
-URL-REGEX,^https?:\/\/203\.209\.250\.41\/squery,REJECT
-URL-REGEX,^https?:\/\/203\.209\.250\.114\/squery,REJECT
-URL-REGEX,^https?:\/\/203\.209\.251\.147\/squery,REJECT
-URL-REGEX,^https?:\/\/2400:B180:6001::18F\/squery,REJECT
-URL-REGEX,^https?:\/\/2400:B200:1005:3000::155\/squery,REJECT
-URL-REGEX,^https?:\/\/2400:B200:1005:3000::1D3\/squery,REJECT
-URL-REGEX,^https?:\/\/2400:B200:5000:B000::C8\/squery,REJECT
+URL-REGEX,^https?:\/\/amdc\.alipay\.com\/s?query,REJECT,extended-matching
+URL-REGEX,^https?:\/\/amdc-sibling\.alipay\.com\.cn\/s?query,REJECT,extended-matching
+URL-REGEX,^https?:\/\/110\.76\.8\.150\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.209\.230\.39\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.209\.245\.102\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.209\.245\.158\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.209\.247\.95\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.209\.250\.41\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.209\.250\.114\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.209\.251\.147\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/2400:B180:6001::18F\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/2400:B200:1005:3000::155\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/2400:B200:1005:3000::1D3\/squery,REJECT,extended-matching
+URL-REGEX,^https?:\/\/2400:B200:5000:B000::C8\/squery,REJECT,extended-matching
 
 # Baidu
-URL-REGEX,^https?:\/\/180\.76\.76\.112\/v4\/resolve,REJECT
-URL-REGEX,^https?:\/\/180\.76\.76\.220\/v4\/resolve,REJECT
+URL-REGEX,^https?:\/\/180\.76\.76\.112\/v4\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/180\.76\.76\.220\/v4\/resolve,REJECT,extended-matching
 
 # Bilibili
 # KEY_EXT_P2P_HTTPDNS_BILI_IP
-URL-REGEX,^https?:\/\/47\.101\.175\.206\/resolve,REJECT
-URL-REGEX,^https?:\/\/47\.100\.123\.169\/resolve,REJECT
-URL-REGEX,^https?:\/\/120\.46\.169\.234\/resolve,REJECT
-URL-REGEX,^https?:\/\/121\.36\.72\.124\/resolve,REJECT
+URL-REGEX,^https?:\/\/47\.101\.175\.206\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/47\.100\.123\.169\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/120\.46\.169\.234\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/121\.36\.72\.124\/resolve,REJECT,extended-matching
 # KEY_EXT_P2P_BILIDNS_CMCC_IP
-URL-REGEX,^https?:\/\/116\.63\.10\.135\/resolve,REJECT
-URL-REGEX,^https?:\/\/122\.9\.7\.134\/resolve,REJECT
-URL-REGEX,^https?:\/\/117\.185\.228\.108\/resolve,REJECT
-URL-REGEX,^https?:\/\/117\.144\.238\.29\/resolve,REJECT
+URL-REGEX,^https?:\/\/116\.63\.10\.135\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/122\.9\.7\.134\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/117\.185\.228\.108\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/117\.144\.238\.29\/resolve,REJECT,extended-matching
 # KEY_EXT_P2P_BILIDNS_CT_IP
-URL-REGEX,^https?:\/\/122\.9\.13\.79\/resolve,REJECT
-URL-REGEX,^https?:\/\/122\.9\.15\.129\/resolve,REJECT
-URL-REGEX,^https?:\/\/101\.91\.140\.224\/resolve,REJECT
-URL-REGEX,^https?:\/\/101\.91\.140\.124\/resolve,REJECT
+URL-REGEX,^https?:\/\/122\.9\.13\.79\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/122\.9\.15\.129\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/101\.91\.140\.224\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/101\.91\.140\.124\/resolve,REJECT,extended-matching
 # KEY_EXT_P2P_BILIDNS_CU_IP
-URL-REGEX,^https?:\/\/114\.116\.215\.110\/resolve,REJECT
-URL-REGEX,^https?:\/\/116\.63\.10\.31\/resolve,REJECT
-URL-REGEX,^https?:\/\/112\.64\.218\.119\/resolve,REJECT
-URL-REGEX,^https?:\/\/112\.65\.200\.117\/resolve,REJECT
+URL-REGEX,^https?:\/\/114\.116\.215\.110\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/116\.63\.10\.31\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/112\.64\.218\.119\/resolve,REJECT,extended-matching
+URL-REGEX,^https?:\/\/112\.65\.200\.117\/resolve,REJECT,extended-matching
 
 # ByteDance
-URL-REGEX,^https?:\/\/.+\.zijieapi\.com\/get_domains\/,REJECT
+URL-REGEX,^https?:\/\/.+\.zijieapi\.com\/get_domains\/,REJECT,extended-matching
 
 # JD
-URL-REGEX,^https?:\/\/dns\.jd\.com\/v6\/b,REJECT
+URL-REGEX,^https?:\/\/dns\.jd\.com\/v6\/b,REJECT,extended-matching
 
 # Meituan
-URL-REGEX,^https?:\/\/103\.37\.155\.60\/fetch,REJECT
+URL-REGEX,^https?:\/\/103\.37\.155\.60\/fetch,REJECT,extended-matching
 
 # Pinduoduo
-URL-REGEX,^https?:\/\/101\.35\.204\.35\/d,REJECT
-URL-REGEX,^https?:\/\/101\.35\.212\.35\/d,REJECT
-URL-REGEX,^https?:\/\/114\.110\.96\.26\/d,REJECT
-URL-REGEX,^https?:\/\/114\.110\.97\.97\/d,REJECT
-URL-REGEX,^https?:\/\/240c:409f::3:0:163\/d,REJECT
-URL-REGEX,^https?:\/\/240c:409f::3:0:359\/d,REJECT
-URL-REGEX,^https?:\/\/2402:4e00:1411:201:0:9964:ba21:5a41\/d,REJECT
-URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)/v\d+/d(?:\?.*)?$,REJECT 
-URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\/multiDnsQuery,REJECT
+URL-REGEX,^https?:\/\/101\.35\.204\.35\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/101\.35\.212\.35\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/114\.110\.96\.26\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/114\.110\.97\.97\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/240c:409f::3:0:163\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/240c:409f::3:0:359\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/2402:4e00:1411:201:0:9964:ba21:5a41\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)/v\d+/d(?:\?.*)?$,REJECT,extended-matching 
+URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\/multiDnsQuery,REJECT,extended-matching
 
 # QCloud
 # refer: https://mc.qcloudimg.com/static/qc_doc/d39d48b733835af8a2e223115ac67da7/doc-HttpDNS-Getting+Started.pdf
 # refer: https://main.qcloudimg.com/raw/document/product/pdf/379_3513_cn.pdf
 # refer: https://cloud.tencent.com/document/product/379/61200
-URL-REGEX,^https?:\/\/119\.29\.29\.29\/d,REJECT
+URL-REGEX,^https?:\/\/119\.29\.29\.29\/d,REJECT,extended-matching
 
 # QQmusic
-URL-REGEX,^https?:\/\/182\.256\.116\.116\/d,REJECT
+URL-REGEX,^https?:\/\/182\.256\.116\.116\/d,REJECT,extended-matching
 
 # Weibo
 # refer: https://github.com/CNSRE/HTTPDNSLib-for-iOS
-URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/httpdns\/config,REJECT
-URL-REGEX,^https?:\/\/api\.weibo\.cn\/httpdns\/config,REJECT
+URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/httpdns\/config,REJECT,extended-matching
+URL-REGEX,^https?:\/\/api\.weibo\.cn\/httpdns\/config,REJECT,extended-matching
 
 # Weixin
 # 注意: 以下域名HTTPS无法MitM，如通过此链接查询，无法处理
-URL-REGEX,^https?:\/\/dns\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/newgetdns,REJECT
-URL-REGEX,^https?:\/\/dns\.weixin\.qq\.com\.cn\/cgi-bin\/micromsg-bin\/newgetdns,REJECT
-URL-REGEX,^https?:\/\/short\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/getcdndns,REJECT
-URL-REGEX,^https?:\/\/hkextshort\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/getcdndns,REJECT
+URL-REGEX,^https?:\/\/dns\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/newgetdns,REJECT,extended-matching
+URL-REGEX,^https?:\/\/dns\.weixin\.qq\.com\.cn\/cgi-bin\/micromsg-bin\/newgetdns,REJECT,extended-matching
+URL-REGEX,^https?:\/\/short\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/getcdndns,REJECT,extended-matching
+URL-REGEX,^https?:\/\/hkextshort\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/getcdndns,REJECT,extended-matching
 
 # Wework
 # refer: https://res.mail.qq.com/zh_CN/wework_ip/latest.html
-URL-REGEX,^https?:\/\/182\.254\.116\.117\/d,REJECT
-URL-REGEX,^https?:\/\/182\.254\.118\.119\/d,REJECT
-URL-REGEX,^https?:\/\/182\.254\.116\.116\/d,REJECT
+URL-REGEX,^https?:\/\/182\.254\.116\.117\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/182\.254\.118\.119\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/182\.254\.116\.116\/d,REJECT,extended-matching
 # Zhihu
 # refer: https://github.com/lwd-temp/anti-ip-attribution/issues/24
-URL-REGEX,^https?:\/\/103\.41\.167\.237\/v2\/resolv,REJECT
+URL-REGEX,^https?:\/\/103\.41\.167\.237\/v2\/resolv,REJECT,extended-matching
 
-URL-REGEX,^https?:\/\/203\.107\.1\.1/\d+/ss,REJECT
-URL-REGEX,^https?:\/\/203\.107\.1\.33/\d+/ss,REJECT
-URL-REGEX,^https?:\/\/203\.107\.1\.66/\d+/ss,REJECT
-URL-REGEX,^https?:\/\/203\.107\.1\.67/\d+/ss,REJECT
-URL-REGEX,^https?:\/\/203\.107\.1\.97/\d+/ss,REJECT
-URL-REGEX,^https?:\/\/2401:b180:2000:30::1c\/\d+\/d,REJECT
-URL-REGEX,^https?:\/\/2401:b180:2000:20::10\/\d+\/d,REJECT
-URL-REGEX,^https?:\/\/cdn\.wup\.huya\.com\/monitor\/monitor\.jsp,REJECT
-URL-REGEX,^https?:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/,REJECT
+URL-REGEX,^https?:\/\/203\.107\.1\.1/\d+/ss,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.107\.1\.33/\d+/ss,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.107\.1\.66/\d+/ss,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.107\.1\.67/\d+/ss,REJECT,extended-matching
+URL-REGEX,^https?:\/\/203\.107\.1\.97/\d+/ss,REJECT,extended-matching
+URL-REGEX,^https?:\/\/2401:b180:2000:30::1c\/\d+\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/2401:b180:2000:20::10\/\d+\/d,REJECT,extended-matching
+URL-REGEX,^https?:\/\/cdn\.wup\.huya\.com\/monitor\/monitor\.jsp,REJECT,extended-matching
+URL-REGEX,^https?:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/,REJECT,extended-matching
 
 # > Trip
-URL-REGEX,^https?:\/\/download\.trip\.com\/html5,REJECT
-URL-REGEX,^https?:\/\/m\.trip\.com\/quic,REJECT
-URL-REGEX,^https?:\/\/m\.trip\.com\/restapi\/.*\/(queryAdsDisplayData|queryBadge|isPopUp|(G|g)etAppConfig|getRecommendResource|appWelcomeImage|uploadConfigContent|appData|appAttributionLog|heartBeat|GetUserUpgradeNoticeInfo|incrQueryTrans|getTopPic|getABTestData),REJECT
-URL-REGEX,^https?:\/\/pages\.trip\.com\/js\/market,REJECT
+URL-REGEX,^https?:\/\/download\.trip\.com\/html5,REJECT,extended-matching
+URL-REGEX,^https?:\/\/m\.trip\.com\/quic,REJECT,extended-matching
+URL-REGEX,^https?:\/\/m\.trip\.com\/restapi\/.*\/(queryAdsDisplayData|queryBadge|isPopUp|(G|g)etAppConfig|getRecommendResource|appWelcomeImage|uploadConfigContent|appData|appAttributionLog|heartBeat|GetUserUpgradeNoticeInfo|incrQueryTrans|getTopPic|getABTestData),REJECT,extended-matching
+URL-REGEX,^https?:\/\/pages\.trip\.com\/js\/market,REJECT,extended-matching
 
 # > 菜鸟裹裹_通用广告请求
-URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(?!.*_home),REJECT
+URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(?!.*_home),REJECT,extended-matching
 # > 菜鸟裹裹_首页底部商品推广
-URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.cainiao\.com\/gw\/mtop\.cainiao\.nbcps\.presentation\.fetch\.cn,REJECT
+URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.cainiao\.com\/gw\/mtop\.cainiao\.nbcps\.presentation\.fetch\.cn,REJECT,extended-matching
 # > 菜鸟裹裹_支付宝小程序_通用广告请求
-URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.,REJECT
+URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.,REJECT,extended-matching
 # > 菜鸟裹裹_支付宝小程序_底部商品推广新
-URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,REJECT
+URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get,REJECT,extended-matching
 # > 菜鸟裹裹_支付宝小程序_底部商品推广旧
-URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad,REJECT
+URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad,REJECT,extended-matching
 # > 菜鸟裹裹_支付宝小程序
-URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.taobao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.consultmerge,REJECT
-URL-REGEX,^https?:\/\/netflow-reply-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.ads,REJECT
-URL-REGEX,^https?:\/\/guoguo-cdn\.cainiao\.com\/cnn_guide_ads,REJECT
+URL-REGEX,^https?:\/\/[a-zA-Z0-9_.-]+\.taobao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.consultmerge,REJECT,extended-matching
+URL-REGEX,^https?:\/\/netflow-reply-mtop\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.ads,REJECT,extended-matching
+URL-REGEX,^https?:\/\/guoguo-cdn\.cainiao\.com\/cnn_guide_ads,REJECT,extended-matching
 
 # > 韩剧TV
-URL-REGEX,^https?:\/\/api\.hanju\.koudaibaobao\.com\/api\/carp\/kp\?,REJECT
-URL-REGEX,^https?:\/\/gfp\.veta\.naver\.com\/adcall\?,REJECT
+URL-REGEX,^https?:\/\/api\.hanju\.koudaibaobao\.com\/api\/carp\/kp\?,REJECT,extended-matching
+URL-REGEX,^https?:\/\/gfp\.veta\.naver\.com\/adcall\?,REJECT,extended-matching
 
 # > 百度地图
-URL-REGEX,"^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg",REJECT
-URL-REGEX,"^https?:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg",REJECT
+URL-REGEX,"^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg",REJECT,extended-matching
 
 # > 新浪
-# URL-REGEX,"^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua",REJECT
-URL-REGEX,"^https?+:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads",REJECT
+# URL-REGEX,"^https?+:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua",REJECT,extended-matching
+URL-REGEX,"^https?+:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads",REJECT,extended-matching
 
 # > 移除 YouTube 页面广告和视频贴片广告
-URL-REGEX,"^https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost",REJECT
-URL-REGEX,"^https?:\/\/.+.youtube.com\/api\/stats\/ads",REJECT
-URL-REGEX,"^https?:\/\/.+.youtube.com\/get_midroll_",REJECT
-URL-REGEX,"^https?:\/\/.+.youtube.com\/pagead\/",REJECT
-URL-REGEX,"^https?:\/\/.+.youtube.com\/ptracking\?",REJECT
-URL-REGEX,"^https?:\/\/.+.youtube.com\/_get_ads",REJECT
-URL-REGEX,"^https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite",REJECT
-URL-REGEX,"^https?:\/\/s0.2mdn.net\/ads\/",REJECT
-URL-REGEX,"^https?:\/\/youtubei.googleapis.com\/.+ad_break",REJECT
-URL-REGEX,"^https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log)",REJECT
-URL-REGEX,"^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat",REJECT
-URL-REGEX,"^https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad",REJECT
-//URL-REGEX,"^https?:\/\/notifications-pa\.googleapis\.com\/v1\/fetchlatestthreads$",REJECT
-URL-REGEX,"^https?:\/\/www\.youtube\.com\/pagead\/adview\?",REJECT
-URL-REGEX,"^https?:\/\/www\.googleapis\.com\/adsmeasurement",REJECT
+URL-REGEX,"^https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+.youtube.com\/api\/stats\/ads",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+.youtube.com\/get_midroll_",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+.youtube.com\/pagead\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+.youtube.com\/ptracking\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+.youtube.com\/_get_ads",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/s0.2mdn.net\/ads\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/youtubei.googleapis.com\/.+ad_break",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/notifications-pa\.googleapis\.com\/v1\/fetchlatestthreads$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.youtube\.com\/pagead\/adview\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.googleapis\.com\/adsmeasurement",REJECT,extended-matching
 
 # > 拼多多视频
-URL-REGEX,"^https?:\/\/.+?\.pdd(.*?)\.com\/.+\.mp4",REJECT
+URL-REGEX,"^https?:\/\/.+?\.pdd(.*?)\.com\/.+\.mp4",REJECT,extended-matching
 # > 首页弹窗
-URL-REGEX,"^https?:\/\/.+\/promo\/promo\/cart\/.+\.png",REJECT
-URL-REGEX,"^https?:\/\/.+\/oms_img_ng\/.+\.png",REJECT
+URL-REGEX,"^https?:\/\/.+\/promo\/promo\/cart\/.+\.png",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/.+\/oms_img_ng\/.+\.png",REJECT,extended-matching
 
 # > AbeamTV
-URL-REGEX,"^https?:\/\/api\.abema\.io\/v\d\/ip\/check",REJECT
+URL-REGEX,"^https?:\/\/api\.abema\.io\/v\d\/ip\/check",REJECT,extended-matching
 
 # > 视频广告
-//URL-REGEX,"^https?:\/\/m?.+\.cp31\.ott\.cibntv\.net",REJECT
+//URL-REGEX,"^https?:\/\/m?.+\.cp31\.ott\.cibntv\.net",REJECT,extended-matching
 
 # > 韩剧TV去除开屏广告
-URL-REGEX,"^https?:\/\/api\.hanju\.koudaibaobao\.com\/api\/carp\/kp.*?",REJECT
+URL-REGEX,"^https?:\/\/api\.hanju\.koudaibaobao\.com\/api\/carp\/kp.*?",REJECT,extended-matching
 
 # > 韩剧TV片头广告
-URL-REGEX,"^https?:\/\/static\.hanju\.koudaibaobao\.com\/img\/pub\/.*?.mp4",REJECT
-URL-REGEX,"^https?:\/\/hxqapi\.hiyun\.tv\/adx\/rtb\/bidding",REJECT
-URL-REGEX,"^https?:\/\/hxqapi\.hiyun\.tv\/api\/advert",REJECT
+URL-REGEX,"^https?:\/\/static\.hanju\.koudaibaobao\.com\/img\/pub\/.*?.mp4",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/hxqapi\.hiyun\.tv\/adx\/rtb\/bidding",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/hxqapi\.hiyun\.tv\/api\/advert",REJECT,extended-matching
 
 # > YouTube
-URL-REGEX,"^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad",REJECT
-URL-REGEX,"^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break",REJECT
-URL-REGEX,"^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads",REJECT
-URL-REGEX,"^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking)",REJECT
-URL-REGEX,"^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext",REJECT
+URL-REGEX,"^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext",REJECT,extended-matching
 
 # > 飞客茶馆
-URL-REGEX,"^https?+:\/\/www\.(flyertea|flyert)\.(com|cn)\/source\/plugin\/mobile\/mobile\.php\?module=advis",REJECT
-URL-REGEX,"^https?:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=advis",REJECT
-URL-REGEX,"^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis",REJECT
-//URL-REGEX,"^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg",REJECT
-URL-REGEX,"^https?:\/\/ptf\.flyertrip\.com\/.+\.mp4",REJECT
+URL-REGEX,"^https?+:\/\/www\.(flyertea|flyert)\.(com|cn)\/source\/plugin\/mobile\/mobile\.php\?module=advis",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=advis",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ptf\.flyertrip\.com\/.+\.mp4",REJECT,extended-matching
 
 # > QQ音乐
-URL-REGEX,"^https?:\/\/.+?\/music\/common\/upload\/t_splash_info\/",REJECT
+URL-REGEX,"^https?:\/\/.+?\/music\/common\/upload\/t_splash_info\/",REJECT,extended-matching
 
 # > 微博国际
-URL-REGEX,"^https?:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads",REJECT
+URL-REGEX,"^https?:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads",REJECT,extended-matching
 
 # > 美团
-URL-REGEX,"^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture",REJECT
-URL-REGEX,"^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4)",REJECT
+URL-REGEX,"^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4)",REJECT,extended-matching
 
 # > 爱思
-URL-REGEX,"^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml",REJECT
+URL-REGEX,"^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml",REJECT,extended-matching
 
 # > 百度贴吧(TributePaulWalker搬运)->*.tieba.baidu.com, feed-image.baidu.com
-URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule",REJECT
-URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo",REJECT
-URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog)",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog)",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/c\/s\/splashSchedule",REJECT
-URL-REGEX,"^https?:\/\/pn\.baidu\.com\/iad\/.+\.json",REJECT
-URL-REGEX,"^https?:\/\/feed-image\.baidu\.com\/0\/pic\/",REJECT
-URL-REGEX,"^https?:\/\/.+\/c\/s\/(trackConfig|dashengVideo|splashSchedule)",REJECT
+URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/c\/s\/splashSchedule",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pn\.baidu\.com\/iad\/.+\.json",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/feed-image\.baidu\.com\/0\/pic\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+\/c\/s\/(trackConfig|dashengVideo|splashSchedule)",REJECT,extended-matching
 
 # > 高德地图广告
-URL-REGEX,"^https?:\/\/ems\.youku\.com\/imp\?",REJECT
-URL-REGEX,"^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/.+",REJECT
+URL-REGEX,"^https?:\/\/ems\.youku\.com\/imp\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/.+",REJECT,extended-matching
 
 # > 携程广告->ma-adx.ctrip.com, m.ctrip.com
-URL-REGEX,"^https?:\/\/ma-adx\.ctrip\.com\/_ma\.gif",REJECT
-URL-REGEX,"^https?:\/\/m\.ctrip\.com\/restapi\/.+\/json\/tripAds",REJECT
-URL-REGEX,"^https?:\/\/m\.ctrip\.com\/html5\/webresource\/js\/iscroll\.js$",REJECT
-URL-REGEX,"^https?:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare",REJECT
+URL-REGEX,"^https?:\/\/ma-adx\.ctrip\.com\/_ma\.gif",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/m\.ctrip\.com\/restapi\/.+\/json\/tripAds",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/m\.ctrip\.com\/html5\/webresource\/js\/iscroll\.js$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mbd\.baidu\.com\/newspage\/api\/getmobads\?page\=landingshare",REJECT,extended-matching
 
 # > 爱奇艺广告屏蔽
-URL-REGEX,"^https?:\/\/.+\.iqiyipic\.com\/image\/.+\/ad\/.+\.jpg",REJECT
-URL-REGEX,"^https?:\/\/static-s\.iqiyi\.com\/common\/.+\/Small_video/a2/af/.+\.png",REJECT
-URL-REGEX,"^https?://msga/.cupid/.iqiyi/.com\/scp2\.gif",REJECT
-URL-REGEX,"^https?:\/\/ssports\.iqiyi\.com\/app\/",REJECT
-URL-REGEX,"^https?:\/\/ssports\.iqiyi\.com\/json\/shop\/shopInfo",REJECT
-URL-REGEX,"^https?:\/\/.+\.iqiyi\.com\/videos\/other\/20$",REJECT
-URL-REGEX,"^https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000",REJECT
-URL-REGEX,"^https?:\/\/t7z\.cupid\.iqiyi\.com\/show",REJECT
+URL-REGEX,"^https?:\/\/.+\.iqiyipic\.com\/image\/.+\/ad\/.+\.jpg",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/static-s\.iqiyi\.com\/common\/.+\/Small_video/a2/af/.+\.png",REJECT,extended-matching
+URL-REGEX,"^https?://msga/.cupid/.iqiyi/.com\/scp2\.gif",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ssports\.iqiyi\.com\/app\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ssports\.iqiyi\.com\/json\/shop\/shopInfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+\.iqiyi\.com\/videos\/other\/20$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+\.iqiyipic\.com\/image\/20*_100000",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/t7z\.cupid\.iqiyi\.com\/show",REJECT,extended-matching
 
 # > 搬运爱奇艺(by gitee-木剑)->act.vip.iqiyi.com
-URL-REGEX,"^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo",REJECT
-URL-REGEX,"^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do",REJECT
-URL-REGEX,"^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show",REJECT
+URL-REGEX,"^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v\d\/show",REJECT,extended-matching
 
 # > Yandex Mail
-URL-REGEX,"^https?:\/\/mail\.yandex\.ru\/u2709\/?",REJECT
-URL-REGEX,"^https?:\/\/an\.yandex\.ru\/?",REJECT
-URL-REGEX,"^https?:\/\/avatars\.mds\.yandex\.net\/get-direct-picture\/?",REJECT
+URL-REGEX,"^https?:\/\/mail\.yandex\.ru\/u2709\/?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/an\.yandex\.ru\/?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/avatars\.mds\.yandex\.net\/get-direct-picture\/?",REJECT,extended-matching
 
-URL-REGEX,"^https?:\/\/(a?d|sax)\d.sina.com",REJECT
-URL-REGEX,"^https?:\/\/(api|api-bk\d+)\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap",REJECT
-URL-REGEX,"^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert",REJECT
-URL-REGEX,"^https?:\/\/(e|m).+/((uu|oo).php.+|\d+.x?html\?$)",REJECT
-//URL-REGEX,"^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4})",REJECT
-//URL-REGEX,"^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4})",REJECT
-//URL-REGEX,"^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_9\d{2}",REJECT
-URL-REGEX,"^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4)",REJECT
-URL-REGEX,"^https?:\/\/.+?/V\d\/splash\/getSplashV\d\.action",REJECT
-URL-REGEX,"^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad",REJECT
-URL-REGEX,"^https?:\/\/.+?\.58cdn\.com\.cn\/brandads\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\.atm\.youku\.com",REJECT
-//URL-REGEX,"^https?:\/\/.+?\.beacon\.qq\.com",REJECT
-URL-REGEX,"^https?:\/\/.+?\.mp4\?ccode=0902",REJECT
-URL-REGEX,"^https?:\/\/.+?\.mp4\?sid=",REJECT
-URL-REGEX,"^https?:\/\/.+?\.pstatp\.com\/img\/ad",REJECT
-URL-REGEX,"^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\/(mixer|track2)\?",REJECT
-URL-REGEX,"^https?:\/\/.+?\/allOne\.php\?ad_name",REJECT
-URL-REGEX,"^https?:\/\/.+?\/api\/v\d\/adRealTime",REJECT
-URL-REGEX,"^https?:\/\/.+?\/cdn-adn\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\/eapi\/(ad|log)\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\/img\/ad\.union\.api\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\/letv-gug\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\/omts.tc.qq.com\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\/resource\/m\/promo\/adsense",REJECT
-URL-REGEX,"^https?:\/\/.+?\/resource\/m\/sys\/app\/adpos",REJECT
-URL-REGEX,"^https?:\/\/.+?\/v1\/iflyad\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\/v2\/app_ads\/",REJECT
-URL-REGEX,"^https?:\/\/.+?\/v\d\/iflyad\/",REJECT
-URL-REGEX,"^https?:\/\/101\.201\.175\.228\/ads\/display",REJECT
-URL-REGEX,"^https?:\/\/119\.18\.193\.135\/(adgateway|adv)\/",REJECT
-URL-REGEX,"^https?:\/\/122\.14\.246\.33\/MobileAdServer\/",REJECT
-URL-REGEX,"^https?:\/\/123\.59\.31\.1\/(adgateway|adv)\/",REJECT
-URL-REGEX,"^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/",REJECT
-URL-REGEX,"^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/",REJECT
-URL-REGEX,"^https?:\/\/47\.97\.20\.12\/ad\/",REJECT
-URL-REGEX,"^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/",REJECT
-URL-REGEX,"^https?:\/\/9377\w{2}\.com",REJECT
-URL-REGEX,"^https?:\/\/[\s\s]*baidu\.com/.*ad[xs]\.php",REJECT
-URL-REGEX,"^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/",REJECT
-URL-REGEX,"^https?:\/\/[^(apple|10010)]+\.(com|cn)\/(a|A)d(s|v)?(/|\.js)",REJECT
-URL-REGEX,"^https?:\/\/[^bbs].tianya\.cn",REJECT
-URL-REGEX,"^https?:\/\/\w+?\.ximalaya\.com\/api\/v\d\/adRealTime",REJECT
-//URL-REGEX,"^https?:\/\/\w+\.beacon\.qq\.com",REJECT
-URL-REGEX,"^https?:\/\/\w+\.cloudfront\.net\/banner",REJECT
-URL-REGEX,"^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/",REJECT
-URL-REGEX,"^https?:\/\/\w+\.kingsoft-office-service\.com\/ad",REJECT
-URL-REGEX,"^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking)",REJECT
-URL-REGEX,"^https?:\/\/\w{6}.com1.z0.glb.clouddn.com",REJECT
-URL-REGEX,"^https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com",REJECT
-URL-REGEX,"^https?:\/\/a0b\w{2}\.com",REJECT
-URL-REGEX,"^https?:\/\/a\.apicloud\.com\/start_page\/",REJECT
-URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv",REJECT
-URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/",REJECT
-URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/",REJECT
-URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/",REJECT
-URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/",REJECT
-URL-REGEX,"^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do",REJECT
-URL-REGEX,"^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show",REJECT
-URL-REGEX,"^https?:\/\/activity2\.api\.ofo\.com\/ofo\/Api\/v2\/ads",REJECT
-URL-REGEX,"^https?:\/\/ad\d\.sina\.com",REJECT
-URL-REGEX,"^https?:\/\/ad\d\.sina\.com.cn",REJECT
-URL-REGEX,"^https?:\/\/aes\.acfun\.cn\/s\?adzones",REJECT
-URL-REGEX,"^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/",REJECT
-URL-REGEX,"^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/",REJECT
-URL-REGEX,"^https?:\/\/api-release\.wuta-cam\.com\/ad_tree",REJECT
-URL-REGEX,"^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash",REJECT
-URL-REGEX,"^https?:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/",REJECT
-URL-REGEX,"^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start",REJECT
-URL-REGEX,"^https?:\/\/api\.rr\.tv\/.*?(getAll|Version)",REJECT
-URL-REGEX,"^https?:\/\/api\.rr\.tv\/ad\/",REJECT
-URL-REGEX,"^https?:\/\/api\.vuevideo\.net\/api\/v\d\/ad\/",REJECT
-//URL-REGEX,"^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/extend\?gsid=",REJECT
-URL-REGEX,"^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad",REJECT
-URL-REGEX,"^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations",REJECT
-URL-REGEX,"^https?:\/\/api\.zhihu\.com\/commercial_api\/",REJECT
-URL-REGEX,"^https?:\/\/api\.zhihu\.com\/fringe\/ad",REJECT
-URL-REGEX,"^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage",REJECT
-URL-REGEX,"^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios",REJECT
-URL-REGEX,"^https?:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated",REJECT
-URL-REGEX,"^https?:\/\/apimobile\.meituan\.com\/appupdate\/mach\/checkUpdate?",REJECT
-URL-REGEX,"^https?:\/\/app\.10086\.cn\/biz-orange\/DN\/(findSale|homeSale)\/getsaleAdver",REJECT
-URL-REGEX,"^https?:\/\/app\.58\.com/api/log",REJECT
-URL-REGEX,"^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv)\/",REJECT
-URL-REGEX,"^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv",REJECT
-URL-REGEX,"^https?:\/\/app\.58\.com\/api\/log\/",REJECT
-URL-REGEX,"^https?:\/\/appconf\.mail\.163\.com\/mmad\/",REJECT
-URL-REGEX,"^https?:\/\/asp\.cntv\.myalicdn\.com\/.+?\?maxbr=850",REJECT
-URL-REGEX,"^https?:\/\/b-api\.ins\.miaopai\.com\/\d\/ad/",REJECT
-URL-REGEX,"^https?:\/\/bdsp-x\.jd\.com\/adx\/",REJECT
-URL-REGEX,"^https?:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg",REJECT
-URL-REGEX,"^https?:\/\/business\.msstatic\.com\/advertiser\/",REJECT
-URL-REGEX,"^https?:\/\/c\.m\.163\.com\/nc\/gl\/",REJECT
-URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|newlog|mlog)",REJECT
-URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo",REJECT
-URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule",REJECT
-URL-REGEX,"^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/",REJECT
-URL-REGEX,"^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/queryAdImages",REJECT
-URL-REGEX,"^https?:\/\/cdn-1rtb\.caiyunapp\.com/creative/.*$",REJECT
-URL-REGEX,"^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds",REJECT
-URL-REGEX,"^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit",REJECT
-URL-REGEX,"^https?:\/\/cloud\.189\.cn\/include\/splash\/",REJECT
-URL-REGEX,"^https?:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+?\?maxbr=850",REJECT
-URL-REGEX,"^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/",REJECT
-URL-REGEX,"^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/getPopAds\.do$",REJECT
-URL-REGEX,"^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do",REJECT
-URL-REGEX,"^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\?",REJECT
-URL-REGEX,"^https?:\/\/d\d.sinaimg.cn",REJECT
-URL-REGEX,"^https?:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd",REJECT
-URL-REGEX,"^https?:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+?(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController)",REJECT
-URL-REGEX,"^https?:\/\/dsp-impr2\.youdao\.com\/adload",REJECT
-URL-REGEX,"^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/",REJECT
-URL-REGEX,"^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv",REJECT
-URL-REGEX,"^https?:\/\/erebor\.douban\.com\/count\/\?ad=",REJECT
-URL-REGEX,"^https?:\/\/free\.sinaimg\.cn\/u1\.img\.mobile\.sina\.cn",REJECT
-URL-REGEX,"^https?:\/\/gg\w+?\.cmvideo\.cn\/v\d\/iflyad\/",REJECT
-URL-REGEX,"^https?:\/\/ggic\d?\.cmvideo\.cn\/ad\/",REJECT
-URL-REGEX,"^https?:\/\/ggx\.cmvideo\.cn\/request\/",REJECT
-URL-REGEX,"^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless",REJECT
-URL-REGEX,"^https?:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement",REJECT
-//URL-REGEX,"^https?:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$",REJECT
-//URL-REGEX,"^https?:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4}",REJECT
-URL-REGEX,"^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement",REJECT
-URL-REGEX,"^https?:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$",REJECT
-URL-REGEX,"^https?:\/\/iad.*mat\.[a-z]*\.12[67]\.net/\w+\.(jpg|mp4)$",REJECT
-URL-REGEX,"^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo",REJECT
-URL-REGEX,"^https?:\/\/image\.suning\.cn\/uimg\/ma\/ad\/",REJECT
-URL-REGEX,"^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/",REJECT
-URL-REGEX,"^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$",REJECT
-URL-REGEX,"^https?:\/\/img\.meituan\.net\/(display|midas)\/.+?\.(gif|jpg)",REJECT
-URL-REGEX,"^https?:\/\/img\.meituan\.net\/midas\/",REJECT
-URL-REGEX,"^https?:\/\/img\d+\.10101111cdn\.com\/adpos\/",REJECT
-URL-REGEX,"^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/",REJECT
-URL-REGEX,"^https?:\/\/img\d\.doubanio\.com\/view\/dale-online\/dale_ad\/",REJECT
-URL-REGEX,"^https?:\/\/img\w\.g\.pptv\.com",REJECT
-URL-REGEX,"^https?:\/\/impservice.+?youdao.com",REJECT
-URL-REGEX,"^https?:\/\/interface(\d)?\.music\.163\.com/eapi/(ad|abtest|sp|hot|store|search/(specialkeyword|defaultkeyword|hot))",REJECT
-URL-REGEX,"^https?:\/\/ios\.lantouzi\.com\/api\/startpage",REJECT
-URL-REGEX,"^https?:\/\/ios\.wps\.cn\/ad-statistics-service",REJECT
-URL-REGEX,"^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/(guanggao)\/",REJECT
-URL-REGEX,"^https?:\/\/itunes\.apple\.com\/lookup\?id=575826903",REJECT
-URL-REGEX,"^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml",REJECT
-URL-REGEX,"^https?:\/\/log(?!in).*\.baidu\.com",REJECT
-URL-REGEX,"^https?:\/\/m5\.amap\.com\/ws\/valueadded\/",REJECT
-URL-REGEX,"^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv)",REJECT
-URL-REGEX,"^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd)",REJECT
-URL-REGEX,"^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/json\/getAdsList",REJECT
-URL-REGEX,"^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/",REJECT
-URL-REGEX,"^https?:\/\/ma\.ofo\.com\/adImage\/",REJECT
-URL-REGEX,"^https?:\/\/ma\.ofo\.com\/ads",REJECT
-URL-REGEX,"^https?:\/\/mage\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen",REJECT
-URL-REGEX,"^https?:\/\/media\.qyer\.com\/ad\/",REJECT
-URL-REGEX,"^https?:\/\/mime\.baidu\.com\/v\d\/IosStart\/getStartInfo$",REJECT
-URL-REGEX,"^https?:\/\/mime\.baidu\.com\/v\d\/activity\/advertisement",REJECT
-URL-REGEX,"^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint",REJECT
-URL-REGEX,"^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video",REJECT
-URL-REGEX,"^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report",REJECT
-URL-REGEX,"^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport)",REJECT
-URL-REGEX,"^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo",REJECT
-URL-REGEX,"^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg)",REJECT
-URL-REGEX,"^https?:\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p",REJECT
-URL-REGEX,"^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp",REJECT
-URL-REGEX,"^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/",REJECT
-URL-REGEX,"^https?:\/\/mrobot\.pconline\.com\.cn\/v\d\/ad2p",REJECT
-URL-REGEX,"^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture",REJECT
-URL-REGEX,"^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/(new)?na\/m\/adInfo",REJECT
-URL-REGEX,"^https?:\/\/news\.ssp\.qq\.com\/app",REJECT
-URL-REGEX,"^https?:\/\/open\.qyer\.com\/qyer\/config\/get",REJECT
-URL-REGEX,"^https?:\/\/open\.qyer\.com\/qyer\/startpage\/",REJECT
-URL-REGEX,"^https?:\/\/overseas\.weico\.cc\/portal\.php\?a=get_coopen_ads",REJECT
-URL-REGEX,"^https?:\/\/p\.c\.music\.126.net\/.*?jpg$",REJECT
-URL-REGEX,"^https?:\/\/p\.du\.163\.com\/ad\/",REJECT
-URL-REGEX,"^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do",REJECT
-URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg",REJECT
-URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+\.jpg\?may_covertWebp",REJECT
-URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp",REJECT
-URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg",REJECT
-URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp",REJECT
-URL-REGEX,"^https?:\/\/p\d\.music\.126\.net\/\w+==\/\d+\.jpg$",REJECT
-URL-REGEX,"^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|linglong|mmc|wmbanner)\/",REJECT
-URL-REGEX,"^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry",REJECT
-URL-REGEX,"^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx",REJECT
-URL-REGEX,"^https?:\/\/paopao\w?.qiyipic.com",REJECT
-URL-REGEX,"^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/",REJECT
-URL-REGEX,"^https?:\/\/pic\.edaijia\.cn\/adsplash\/",REJECT
-URL-REGEX,"^https?:\/\/pic\.k\.sohu\.com\/img\d\/wb\/tj\/",REJECT
-URL-REGEX,"^https?:\/\/pic\.xiami\.net\/images\/common\/uploadpic[\s\S]*?\.jpg$",REJECT
-URL-REGEX,"^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info",REJECT
-URL-REGEX,"^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getBannerAds|getFullScreenPic|getNewsRemoteConfig|getQQNewsRemoteConfig|searchHotCatList|upLoadLoc)",REJECT
-URL-REGEX,"^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json",REJECT
-URL-REGEX,"^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/",REJECT
-URL-REGEX,"^https?:\/\/s\.go\.sohu\.com\/adgtr\/\?gbcode=(ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map)?\.(baidu|n\.shifen)\.com",REJECT
-URL-REGEX,"^https?:\/\/sax\w?\.sina\.cn",REJECT
-URL-REGEX,"^https?:\/\/sax\w?\.sina\.com\.cn",REJECT
-URL-REGEX,"^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/(GetAD|ADLog)",REJECT
-URL-REGEX,"^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson",REJECT
-URL-REGEX,"^https?:\/\/smusic\.app\.wechat\.com\/commonCgi\/advertisement\/get_orint_egg$",REJECT
-URL-REGEX,"^https?:\/\/static\.vuevideo\.net\/styleAssets\/.+?\/splash_ad",REJECT
-URL-REGEX,"^https?:\/\/static\.vuevideo\.net\/styleAssets\/advertisement\/",REJECT
-URL-REGEX,"^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json",REJECT
-URL-REGEX,"^https?:\/\/supportda\.ofo\.com\/adaction\?",REJECT
-URL-REGEX,"^https?:\/\/thor\.weidian\.com\/ares\/home\.splash\/",REJECT
-URL-REGEX,"^https?:\/\/tiasdk\.app\.wechat\.com\/retrieval\/getAdInfo$",REJECT
-URL-REGEX,"^https?:\/\/tqt\.weibo\.cn\/.+?advert\.index",REJECT
-URL-REGEX,"^https?:\/\/tqt\.weibo\.cn\/[\w=?&%.-]+advert\.index",REJECT
-URL-REGEX,"^https?:\/\/tqt\.weibo\.cn\/api\/advert\/",REJECT
-URL-REGEX,"^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=(tqt_sdkad|tqtad)",REJECT
-URL-REGEX,"^https?:\/\/tracker-download\.oss-cn-beijing\.aliyuncs\.com\/SIMPlus\/ad_",REJECT
-URL-REGEX,"^https?:\/\/ups\.youku\.com\/.*?needad=1&",REJECT
-URL-REGEX,"^https?:\/\/v\.cctv\.com\/.+?850",REJECT
-URL-REGEX,"^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/",REJECT
-//URL-REGEX,"^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku",REJECT
-URL-REGEX,"^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=",REJECT
-URL-REGEX,"^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4",REJECT
-URL-REGEX,"^https?:\/\/vv\.video\.qq\.com\/getvmind\?",REJECT
-URL-REGEX,"^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query",REJECT
-URL-REGEX,"^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua",REJECT
-URL-REGEX,"^https?:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads",REJECT
-URL-REGEX,"^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*?",REJECT
-URL-REGEX,"^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/",REJECT
-URL-REGEX,"^https?:\/\/www\.cntv\.cn\/nettv\/adp\/",REJECT
-URL-REGEX,"^https?:\/\/www\.meituan\.com\/api\/v\d\/appstatus\?",REJECT
-URL-REGEX,"^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config",REJECT
-URL-REGEX,"^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations",REJECT
-URL-REGEX,"^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad",REJECT
-URL-REGEX,"^https?:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$",REJECT
-URL-REGEX,"^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/",REJECT
-URL-REGEX,"^https?:\/\/iadmusicmat\.music.126.net\/.*?jpg$",REJECT
-URL-REGEX,"^https?:\/\/p\.c\.music\.126.net\/.*?jpg$",REJECT
-URL-REGEX,"^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*?",REJECT
-URL-REGEX,"^https?:\/\/api\.zuihuimai\.com",REJECT
-URL-REGEX,"^https?:\/\/super\.sh\.189\.cn\/kong\/app\/config\/v2\/start\/ad",REJECT
-URL-REGEX,"^https?:\/\/super\.sh\.189\.cn\/kong\/app\/config\/adBannerList",REJECT
-URL-REGEX,"^https?:\/\/tbm-auth\.alicdn\.com\/.+\.mp4",REJECT
-URL-REGEX,"^https?:\/\/cdn\.v2ex\.com\/assets\/sidebar\/.+\.png",REJECT
-URL-REGEX,"^https?:\/\/i\.v2ex\.co\/70opo0Ru\.gif",REJECT
-URL-REGEX,"^https?:\/\/app\.10086\.cn\/biz-orange\/SA\/advertising",REJECT
-URL-REGEX,"^https?:\/\/api\.lynne\.ink\/wechat\/readTopMessage",REJECT
-URL-REGEX,"^https?:\/\/.+\/d\?dn=",REJECT
-//URL-REGEX,"^https?:\/\/tnc(.*)-aliec(.*)\.snssdk\.com",REJECT
-URL-REGEX,"^https?:\/\/.+\/ForbiddenDebug\.min\.js",REJECT
-URL-REGEX,"^https?:\/\/static\.vecteezy\.com\/packs\/js\/application~collections\/collection-show-(.*)\.chunk\.js",REJECT
-URL-REGEX,"^https?:\/\/static\.vecteezy\.com\/packs\/js\/application-(.*)\.chunk\.js$",REJECT
-URL-REGEX,"^https?:\/\/static\.vecteezy\.com\/packs\/js\/application~rebrand-landing-(.*)\.chunk\.js",REJECT
-URL-REGEX,"^https?:\/\/static\.vecteezy\.com\/packs\/js\/collections\/collection-show~resources-show-(.*)\.chunk\.js",REJECT
-URL-REGEX,"^https?:\/\/.+\/disable-devtool(\.(.*))?\.js",REJECT
-URL-REGEX,"^https?:\/\/open\.web\.meitu\.com\/sources\/xiuxiu\.js$",REJECT
-URL-REGEX,"^https?:\/\/geek-share\.com\/public\/geekshare\/js\/geek\.js$",REJECT
-URL-REGEX,"^https?:\/\/geek-share\.com\/public\/com\/js\/jquery\.searchableSelect\.js$",REJECT
-URL-REGEX,"^https?:\/\/geek-share\.com\/public\/geekshare\/js\/namedavatar\.\min\.js$",REJECT
-URL-REGEX,"^https?:\/\/geek-share\.com\/public\/geekshare\/js\/jquery\.ThinkBox\.min\.js$",REJECT
-URL-REGEX,"^https?:\/\/hostloc\.com\/data\/attachment\/common\/cf",REJECT
-URL-REGEX,"^https?:\/\/zhujiwiki\.com\/ad",REJECT
-URL-REGEX,"^https?://ad\d\.sina\.com",REJECT
-URL-REGEX,"^https?://ad\d\.sina\.com.cn",REJECT
-URL-REGEX,"^https?:\/\/app\.58\.com/api/log",REJECT
-URL-REGEX,"^https?://d\d\.sina\.com\.cn",REJECT
-URL-REGEX,"^https?://d\d\.sinaimg\.cn",REJECT
-URL-REGEX,"^https?://sax\d\.sina\.com\.cn",REJECT
-URL-REGEX,"^https?://api\d\.tuisong\.baidu\.com",REJECT
-URL-REGEX,"^https?://sa\d\.tuisong\.baidu\.com",REJECT
-URL-REGEX,"^https?:\/\/pic\.xjpik\.com\/\/202011\/2f\/15fa682a84fe3a82d080d22e45c5e42f\.jpg$",REJECT
-URL-REGEX,"^https?:\/\/pic\.xjpik\.com\/\/201905\/49\/95cd459ee198f292732f6e90940d1149\.jpg$",REJECT
-URL-REGEX,"^https?:\/\/pic\.xjpik\.com\/\/201911\/4f\/25dbb0cf8b26f14134469761ffa14e4f\.jpg$",REJECT
-URL-REGEX,"^https?:\/\/pic\.xjpik\.com\/\/201904\/7e\/55cb2240159a222065ffc2fcfd010b7e\.jpg$",REJECT
+URL-REGEX,"^https?:\/\/(a?d|sax)\d.sina.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(api|api-bk\d+)\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(e|m).+/((uu|oo).php.+|\d+.x?html\?$)",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4})",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4})",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_9\d{2}",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?/V\d\/splash\/getSplashV\d\.action",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\.58cdn\.com\.cn\/brandads\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\.atm\.youku\.com",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/.+?\.beacon\.qq\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\.mp4\?ccode=0902",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\.mp4\?sid=",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\.pstatp\.com\/img\/ad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/(mixer|track2)\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/allOne\.php\?ad_name",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/api\/v\d\/adRealTime",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/cdn-adn\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/eapi\/(ad|log)\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/img\/ad\.union\.api\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/letv-gug\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/omts.tc.qq.com\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/resource\/m\/promo\/adsense",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/resource\/m\/sys\/app\/adpos",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/v1\/iflyad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/v2\/app_ads\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+?\/v\d\/iflyad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/101\.201\.175\.228\/ads\/display",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/119\.18\.193\.135\/(adgateway|adv)\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/122\.14\.246\.33\/MobileAdServer\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/123\.59\.31\.1\/(adgateway|adv)\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/47\.97\.20\.12\/ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/9377\w{2}\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/[\s\s]*baidu\.com/.*ad[xs]\.php",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/[^(apple|10010)]+\.(com|cn)\/(a|A)d(s|v)?(/|\.js)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/[^bbs].tianya\.cn",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/\w+?\.ximalaya\.com\/api\/v\d\/adRealTime",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/\w+\.beacon\.qq\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/\w+\.cloudfront\.net\/banner",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/\w+\.kingsoft-office-service\.com\/ad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/\w+\.youtube\.com\/(pagead|ptracking)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/\w{6}.com1.z0.glb.clouddn.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/a0b\w{2}\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/a\.apicloud\.com\/start_page\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/activity2\.api\.ofo\.com\/ofo\/Api\/v2\/ads",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ad\d\.sina\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ad\d\.sina\.com.cn",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/aes\.acfun\.cn\/s\?adzones",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api-release\.wuta-cam\.com\/ad_tree",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.rr\.tv\/.*?(getAll|Version)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.rr\.tv\/ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.vuevideo\.net\/api\/v\d\/ad\/",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/m?api\.weibo\.c(n|om)\/2\/statuses\/extend\?gsid=",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.zhihu\.com\/\w+\/\d+\/comments\/featured-comment-ad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.zhihu\.com\/appview\/api\/v\d\/answers\/\d+\/recommendations",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.zhihu\.com\/commercial_api\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.zhihu\.com\/fringe\/ad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/apimobile\.meituan\.com\/appupdate\/mach\/checkUpdate?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/app\.10086\.cn\/biz-orange\/DN\/(findSale|homeSale)\/getsaleAdver",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/app\.58\.com/api/log",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv)\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/app\.58\.com\/api\/log\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/appconf\.mail\.163\.com\/mmad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/asp\.cntv\.myalicdn\.com\/.+?\?maxbr=850",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/b-api\.ins\.miaopai\.com\/\d\/ad/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/bdsp-x\.jd\.com\/adx\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/business\.msstatic\.com\/advertiser\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/c\.m\.163\.com\/nc\/gl\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|newlog|mlog)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/queryAdImages",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/cdn-1rtb\.caiyunapp\.com/creative/.*$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/cloud\.189\.cn\/include\/splash\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+?\?maxbr=850",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/getPopAds\.do$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/d\d.sinaimg.cn",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+?(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/dsp-impr2\.youdao\.com\/adload",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/erebor\.douban\.com\/count\/\?ad=",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/free\.sinaimg\.cn\/u1\.img\.mobile\.sina\.cn",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/gg\w+?\.cmvideo\.cn\/v\d\/iflyad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ggic\d?\.cmvideo\.cn\/ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ggx\.cmvideo\.cn\/request\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4}",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/iad.*mat\.[a-z]*\.12[67]\.net/\w+\.(jpg|mp4)$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/image\.suning\.cn\/uimg\/ma\/ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/img\.meituan\.net\/(display|midas)\/.+?\.(gif|jpg)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/img\.meituan\.net\/midas\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/img\d+\.10101111cdn\.com\/adpos\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/img\d\.doubanio\.com\/view\/dale-online\/dale_ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/img\w\.g\.pptv\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/impservice.+?youdao.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/interface(\d)?\.music\.163\.com/eapi/(ad|abtest|sp|hot|store|search/(specialkeyword|defaultkeyword|hot))",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ios\.lantouzi\.com\/api\/startpage",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ios\.wps\.cn\/ad-statistics-service",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/(guanggao)\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/itunes\.apple\.com\/lookup\?id=575826903",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/log(?!in).*\.baidu\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/m5\.amap\.com\/ws\/valueadded\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/json\/getAdsList",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ma\.ofo\.com\/adImage\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ma\.ofo\.com\/ads",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mage\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/media\.qyer\.com\/ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mime\.baidu\.com\/v\d\/IosStart\/getStartInfo$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mime\.baidu\.com\/v\d\/activity\/advertisement",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/mrobot\.pconline\.com\.cn\/v\d\/ad2p",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/(new)?na\/m\/adInfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/news\.ssp\.qq\.com\/app",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/open\.qyer\.com\/qyer\/config\/get",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/open\.qyer\.com\/qyer\/startpage\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/overseas\.weico\.cc\/portal\.php\?a=get_coopen_ads",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\.c\.music\.126.net\/.*?jpg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\.du\.163\.com\/ad\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\.kuaidi100\.com\/mobile\/(mainapi|mobileapi)\.do",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+\.jpg\?may_covertWebp",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\d\.music\.126\.net\/\w+==\/\d+\.jpg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|linglong|mmc|wmbanner)\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/paopao\w?.qiyipic.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pic\.edaijia\.cn\/adsplash\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pic\.k\.sohu\.com\/img\d\/wb\/tj\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pic\.xiami\.net\/images\/common\/uploadpic[\s\S]*?\.jpg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getBannerAds|getFullScreenPic|getNewsRemoteConfig|getQQNewsRemoteConfig|searchHotCatList|upLoadLoc)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/s\.go\.sohu\.com\/adgtr\/\?gbcode=(ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map)?\.(baidu|n\.shifen)\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/sax\w?\.sina\.cn",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/sax\w?\.sina\.com\.cn",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/(GetAD|ADLog)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/smusic\.app\.wechat\.com\/commonCgi\/advertisement\/get_orint_egg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/static\.vuevideo\.net\/styleAssets\/.+?\/splash_ad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/static\.vuevideo\.net\/styleAssets\/advertisement\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/supportda\.ofo\.com\/adaction\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/thor\.weidian\.com\/ares\/home\.splash\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/tiasdk\.app\.wechat\.com\/retrieval\/getAdInfo$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/tqt\.weibo\.cn\/.+?advert\.index",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/tqt\.weibo\.cn\/[\w=?&%.-]+advert\.index",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/tqt\.weibo\.cn\/api\/advert\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=(tqt_sdkad|tqtad)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/tracker-download\.oss-cn-beijing\.aliyuncs\.com\/SIMPlus\/ad_",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/ups\.youku\.com\/.*?needad=1&",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/v\.cctv\.com\/.+?850",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid=",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/vv\.video\.qq\.com\/getvmind\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/weibointl\.m?api\.weibo\.c(n|om)\/portal\.php\?a=get_coopen_ads",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.cntv\.cn\/nettv\/adp\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.meituan\.com\/api\/v\d\/appstatus\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www\.zhihu\.com\/api\/v4\/community-ad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/iadmusicmat\.music.126.net\/.*?jpg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/p\.c\.music\.126.net\/.*?jpg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.zuihuimai\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/super\.sh\.189\.cn\/kong\/app\/config\/v2\/start\/ad",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/super\.sh\.189\.cn\/kong\/app\/config\/adBannerList",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/tbm-auth\.alicdn\.com\/.+\.mp4",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/cdn\.v2ex\.com\/assets\/sidebar\/.+\.png",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/i\.v2ex\.co\/70opo0Ru\.gif",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/app\.10086\.cn\/biz-orange\/SA\/advertising",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.lynne\.ink\/wechat\/readTopMessage",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+\/d\?dn=",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/tnc(.*)-aliec(.*)\.snssdk\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+\/ForbiddenDebug\.min\.js",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/static\.vecteezy\.com\/packs\/js\/application~collections\/collection-show-(.*)\.chunk\.js",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/static\.vecteezy\.com\/packs\/js\/application-(.*)\.chunk\.js$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/static\.vecteezy\.com\/packs\/js\/application~rebrand-landing-(.*)\.chunk\.js",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/static\.vecteezy\.com\/packs\/js\/collections\/collection-show~resources-show-(.*)\.chunk\.js",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/.+\/disable-devtool(\.(.*))?\.js",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/open\.web\.meitu\.com\/sources\/xiuxiu\.js$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/geek-share\.com\/public\/geekshare\/js\/geek\.js$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/geek-share\.com\/public\/com\/js\/jquery\.searchableSelect\.js$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/geek-share\.com\/public\/geekshare\/js\/namedavatar\.\min\.js$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/geek-share\.com\/public\/geekshare\/js\/jquery\.ThinkBox\.min\.js$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/hostloc\.com\/data\/attachment\/common\/cf",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/zhujiwiki\.com\/ad",REJECT,extended-matching
+URL-REGEX,"^https?://ad\d\.sina\.com",REJECT,extended-matching
+URL-REGEX,"^https?://ad\d\.sina\.com.cn",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/app\.58\.com/api/log",REJECT,extended-matching
+URL-REGEX,"^https?://d\d\.sina\.com\.cn",REJECT,extended-matching
+URL-REGEX,"^https?://d\d\.sinaimg\.cn",REJECT,extended-matching
+URL-REGEX,"^https?://sax\d\.sina\.com\.cn",REJECT,extended-matching
+URL-REGEX,"^https?://api\d\.tuisong\.baidu\.com",REJECT,extended-matching
+URL-REGEX,"^https?://sa\d\.tuisong\.baidu\.com",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pic\.xjpik\.com\/\/202011\/2f\/15fa682a84fe3a82d080d22e45c5e42f\.jpg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pic\.xjpik\.com\/\/201905\/49\/95cd459ee198f292732f6e90940d1149\.jpg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pic\.xjpik\.com\/\/201911\/4f\/25dbb0cf8b26f14134469761ffa14e4f\.jpg$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/pic\.xjpik\.com\/\/201904\/7e\/55cb2240159a222065ffc2fcfd010b7e\.jpg$",REJECT,extended-matching
 
 # > 其它
 DOMAIN-WILDCARD,tnc*-aliec*.snssdk.com,REJECT,pre-matching,extended-matching
@@ -1162,39 +1162,39 @@ DOMAIN-WILDCARD,tnc*-aliec*.zijieapi.com,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,ads.twitch.tv,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,tpns.tencent.com,REJECT,pre-matching,extended-matching
 DOMAIN,mssdk-bu.snssdk.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/m?api\(.+)?\.jd\.com\/ksdk\/updlist\.json$,REJECT
+URL-REGEX,^https?:\/\/m?api\(.+)?\.jd\.com\/ksdk\/updlist\.json$,REJECT,extended-matching
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,adstrategy.biz.weibo.com,REJECT,pre-matching,extended-matching
-URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/clickadilla\.js,REJECT
-URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/(cdn-cgi\/)?zaraz\/t$,REJECT
-URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/(cdn-cgi\/)?zaraz\/s\.js,REJECT
-URL-REGEX,^https?:\/\/signall-api\.nuosike\.com\/url\/message\.php,REJECT
-URL-REGEX,^https?:\/\/img\.client\.10010\.com\/homepopup\/index\.html,REJECT
-URL-REGEX,^https?:\/\/mapi-app\.bestpay\.com\.cn\/gapi\/appClient\/noEnc\/unionOpenAds,REJECT
-URL-REGEX,^https?:\/\/intellicc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.adrender,REJECT
-URL-REGEX,^https?:\/\/mbasecc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/,REJECT
-URL-REGEX,"^https?:\/\/vv\.video\.qq\.com\/getvmind\?",REJECT
-URL-REGEX,"^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/monitor\/receive\.action$",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)(:\d+)?\/V\d\/splash\/getSplashV\d\.action$",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d):\d+/xygj-config-api\/queryData",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d):\d+\/allOne\.php\?ad_name",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(outadservice|ting\/preload)\/",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/EcomResourceServer/AdPlayPage/adinfo",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/MobileAdServer\/",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog)",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/api\/v\d\/app_square\/start_up_with_ad$",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/brand\/search\/v1\.json",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/c\/s\/splashSchedule",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/",REJECT
-URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/promotion\/(display_cache|display_ad|feed_display|search_ad)",REJECT
-URL-REGEX,"^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})(\.(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})){3}\/(adgateway|adv)\/",REJECT
-URL-REGEX,"^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})(\.(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})){3}\/EcomResourceServer/AdPlayPage/adinfo",REJECT
-URL-REGEX,"^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})(\.(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})){3}\/MobileAdServer\/",REJECT
-//URL-REGEX,"^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?",REJECT
-URL-REGEX,"^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/ting\/preload\/",REJECT
+URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/clickadilla\.js,REJECT,extended-matching
+URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/(cdn-cgi\/)?zaraz\/t$,REJECT,extended-matching
+URL-REGEX,^https?:\/\/www\.blueskyxn\.com\/(cdn-cgi\/)?zaraz\/s\.js,REJECT,extended-matching
+URL-REGEX,^https?:\/\/signall-api\.nuosike\.com\/url\/message\.php,REJECT,extended-matching
+URL-REGEX,^https?:\/\/img\.client\.10010\.com\/homepopup\/index\.html,REJECT,extended-matching
+URL-REGEX,^https?:\/\/mapi-app\.bestpay\.com\.cn\/gapi\/appClient\/noEnc\/unionOpenAds,REJECT,extended-matching
+URL-REGEX,^https?:\/\/intellicc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.adrender,REJECT,extended-matching
+URL-REGEX,^https?:\/\/mbasecc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/,REJECT,extended-matching
+URL-REGEX,"^https?:\/\/vv\.video\.qq\.com\/getvmind\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/monitor\/receive\.action$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)(:\d+)?\/V\d\/splash\/getSplashV\d\.action$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d):\d+/xygj-config-api\/queryData",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d):\d+\/allOne\.php\?ad_name",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(outadservice|ting\/preload)\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/EcomResourceServer/AdPlayPage/adinfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/MobileAdServer\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/api\/v\d\/app_square\/start_up_with_ad$",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/brand\/search\/v1\.json",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/c\/s\/splashSchedule",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/promotion\/(display_cache|display_ad|feed_display|search_ad)",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})(\.(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})){3}\/(adgateway|adv)\/",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})(\.(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})){3}\/EcomResourceServer/AdPlayPage/adinfo",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})(\.(2(5[0-5]{1}|[0-4]\d{1}|[0-1]?\d{1, 2})){3}\/MobileAdServer\/",REJECT,extended-matching
+//URL-REGEX,"^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+?\.tc\.qq\.com\/.+?p201\.1\.mp4\?",REJECT,extended-matching
+URL-REGEX,"^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/ting\/preload\/",REJECT,extended-matching
 
 
 [Body Rewrite]
