@@ -20,10 +20,10 @@
     axios "1.6.2"
     crypto-js "^4.2.0"
 
-"@adguard/hostlist-compiler@^1.0.39":
-  version "1.0.39"
-  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-1.0.39.tgz#3182385a65f8be591887041931aec09be32e4dc1"
-  integrity sha512-UC3Tpn8k9/KhNVostajPoTFceTqqq1lHVInFv1eGBI/v/r8ydhulOzhxRERClzZ0F23Cl6+DPEqUbtGwzbvnMQ==
+"@adguard/hostlist-compiler@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-2.0.0.tgz#350b13e48989e1aa82cfd256a74670ddc2980587"
+  integrity sha512-pxaqiR9PLG1QAN0J2iB7yVYT3+XR+0HBStkqUmX/yUQ41OfN3RziFm781TIGC8UJZ/Skxkm8zC2mGkKAWeoaVg==
   dependencies:
     "@adguard/filters-downloader" "^2.3.1"
     ajv "^6.12.0"
