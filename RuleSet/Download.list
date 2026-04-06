@@ -1210,6 +1210,7 @@ apache.cbox.biz
 .public.ecr.aws
 su.virtualbuddy.app
 cdn.organicmaps.app
+dl.vibeisland.app
 updates.istatmenus.app
 dl.vanadium.app
 releases.landrop.app
@@ -1902,5 +1903,6 @@ mirrors.asnet.am
 updates.64gr.am
 .mirror.gnc.am
 .mirror.homacloud.ai
+downloads.claude.ai
 mirror.host.ag
 mirror.bg.host.ag
