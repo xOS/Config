@@ -47,22 +47,15 @@ jobs:
           yarn update-adrules
 
       - name: Merge and Rules and remove duplicates
-        run: |
-          curl -LR -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
-          awk 'FNR==1{print ""}{print}' RuleSet/AdRules/*.list > RuleSet/AdRules/Merge.txt
-          awk '!seen[$0]++' RuleSet/AdRules/Merge.txt > RuleSet/AdRules/Merge.list
-          grep -v -f RuleSet/AdRules/Bypass.list RuleSet/AdRules/Merge.list | sed '/^$/d; /\*/d' > RuleSet/AdRule.list
-          rm -rf RuleSet/AdRules/Merge.txt
-          rm -rf RuleSet/AdRules/Merge.list
+        run: | 
+          curl -sL -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
+          awk '/\*/ || /^$/ {next}; !seen[$0]++' RuleSet/AdRules/*.list | grep -v -f RuleSet/AdRules/Bypass.list > RuleSet/AdRule.list
 
-      - name: Update Static and Download list
+      - name: Update Static.list, Download.list and DomesticIP.list
         run: |
-          curl -LR -o RuleSet/cdn.txt "https://ruleset.skk.moe/List/domainset/cdn.conf"
-          awk 'FNR==1{print ""}{print}' RuleSet/cdn.txt | grep -v "#" | grep -v "skk.moe" | sed '/^$/d' > RuleSet/Static.list
-          curl -LR -o RuleSet/download.txt "https://ruleset.skk.moe/List/domainset/download.conf"
-          awk 'FNR==1{print ""}{print}' RuleSet/download.txt | grep -v "#" | grep -v "skk.moe" | sed '/^$/d' > RuleSet/Download.list
-          rm -rf RuleSet/cdn.txt
-          rm -rf RuleSet/download.txt
+          curl -sL "https://ruleset.skk.moe/List/domainset/cdn.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/Static.list
+          curl -sL "https://ruleset.skk.moe/List/domainset/download.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/Download.list
+          curl -sL "https://ruleset.skk.moe/List/ip/china_ip.conf" "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/DomesticIP.list
 
       - name: Import GPG key
         id: import_gpg
