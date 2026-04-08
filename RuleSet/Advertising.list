@@ -25304,6 +25304,7 @@ DOMAIN-WILDCARD,analyticsresults.*.de
 DOMAIN-WILDCARD,acq-*.americanexpress.com
 DOMAIN-WILDCARD,aa-metrics.*.jp
 DOMAIN-WILDCARD,*-netseer-ipaddr-assoc.*.fbcdn.net
+DOMAIN-WILDCARD,*ad*.189.cn
 
 URL-REGEX,^https?:\/\/.+\/squery$
 
