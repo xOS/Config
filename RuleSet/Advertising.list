@@ -1,6 +1,8 @@
 # > Advertising
 USER-AGENT,Munion-SDK*
 
+DOMAIN,ad.shunchangzhixing.com
+DOMAIN-SUFFIX,baihemob.com
 DOMAIN,config.ab.qq.com
 DOMAIN,data.mistat.xiaomi.com
 DOMAIN,geo2.adobe.com
