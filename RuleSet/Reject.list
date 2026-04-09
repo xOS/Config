@@ -1,4 +1,9 @@
 # > 屏蔽服务
+# > Apple 内部域名
+DOMAIN,gdmf-staging-int.apple.com
+DOMAIN,basejumper.apple.com
+DOMAIN,sequoia-test.cdn-apple.com
+
 # > Parallels
 DOMAIN,update.parallels.com
 
@@ -18,6 +23,7 @@ DOMAIN,self.events.data.microsoft.com
 # > 拼多多视频
 DOMAIN-KEYWORD,pplay-video
 DOMAIN-KEYWORD,liveplay-edge
+
 # > 微信
 DOMAIN-WILDCARD,finder*.video.qq.com
 
