@@ -8,6 +8,9 @@ DOMAIN-SUFFIX,adtrafficquality.google
 DOMAIN-SUFFIX,adnxs.com
 DOMAIN-SUFFIX,admaster.cc
 DOMAIN,dg.k.jd.com
+DOMAIN-WILDCARD,*goadpro.189.cn
+DOMAIN-WILDCARD,*goadhd.189.cn
+DOMAIN-WILDCARD,*goad*.189.cn
 DOMAIN,ad.shunchangzhixing.com
 DOMAIN-SUFFIX,baihemob.com
 DOMAIN,config.ab.qq.com
@@ -25314,7 +25317,6 @@ DOMAIN-WILDCARD,analyticsresults.*.de
 DOMAIN-WILDCARD,acq-*.americanexpress.com
 DOMAIN-WILDCARD,aa-metrics.*.jp
 DOMAIN-WILDCARD,*-netseer-ipaddr-assoc.*.fbcdn.net
-DOMAIN-WILDCARD,*ad*.189.cn
 
 URL-REGEX,^https?:\/\/.+\/squery$
 
