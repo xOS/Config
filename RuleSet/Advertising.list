@@ -1,5 +1,12 @@
 # > Advertising
 USER-AGENT,Munion-SDK*
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-WILDCARD,pagead*.googlesyndication.com
+DOMAIN-SUFFIX,adtrafficquality.google
+DOMAIN-SUFFIX,adnxs.com
+DOMAIN-SUFFIX,admaster.cc
 DOMAIN,dg.k.jd.com
 DOMAIN,ad.shunchangzhixing.com
 DOMAIN-SUFFIX,baihemob.com
