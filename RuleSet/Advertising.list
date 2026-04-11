@@ -1,5 +1,9 @@
 # > Advertising
 USER-AGENT,Munion-SDK*
+DOMAIN,mssdk.volces.com
+DOMAIN,apmplus.volces.com
+DOMAIN,mssdk.volces.com
+DOMAIN,webcast-open.douyin.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagmanager.com
