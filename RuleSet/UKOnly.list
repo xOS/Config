@@ -72,7 +72,7 @@ DOMAIN-SUFFIX,hsbc-app.token.io
 DOMAIN-SUFFIX,entsrv-uk.vodafone.com
 DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com
 
-AND,((GEOIP,GB), (AND,((PROTOCOL,UDP), (OR,((DEST-PORT,500), (DEST-PORT,4500)))))),no-resolve
+AND,((GEOIP,GB), (AND,((PROTOCOL,UDP), (OR,((DEST-PORT,500), (DEST-PORT,4500))))))
 
 IP-CIDR,88.82.0.0/19,no-resolve
 

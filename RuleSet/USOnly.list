@@ -50,5 +50,5 @@ DOMAIN-SUFFIX,aa.online-metrix.net
 DOMAIN-SUFFIX,content.fisglobal.com
 DOMAIN-SUFFIX,chexsystems-ds.fiscloudservices.com
 DOMAIN-KEYWORD,schwab
-IP-ASN,18779,no-resolve
-IP-CIDR,208.54.0.0/16,no-resolve
+IP-ASN,18779
+IP-CIDR,208.54.0.0/16
