@@ -2,6 +2,7 @@
 
 const compile = require('@adguard/hostlist-compiler')
 const { join } = require('path')
+const https = require('https')
 const fs = require('fs-extra')
 //const slugify = require('@sindresorhus/slugify')
 
@@ -194,43 +195,190 @@ const configurations = [{
 },
 ]
 
+const cosmeticMarkers = ['##', '#@#', '#?#', '#$#', '#%#']
+
+function fetchText(sourceUrl) {
+    return new Promise((resolve, reject) => {
+        https
+            .get(sourceUrl, (res) => {
+                const { statusCode, headers } = res
+
+                if (statusCode >= 300 && statusCode < 400 && headers.location) {
+                    const redirectUrl = new URL(headers.location, sourceUrl).href
+
+                    res.resume()
+                    resolve(fetchText(redirectUrl))
+                    return
+                }
+
+                if (statusCode !== 200) {
+                    res.resume()
+                    reject(new Error(`Failed to fetch ${sourceUrl}: ${statusCode}`))
+                    return
+                }
+
+                res.setEncoding('utf8')
+
+                let body = ''
+
+                res.on('data', (chunk) => {
+                    body += chunk
+                })
+
+                res.on('end', () => {
+                    resolve(body)
+                })
+            })
+            .on('error', reject)
+    })
+}
+
+function normalizeDomain(domain) {
+    return domain.trim().replace(/^\.+/, '').replace(/\.+$/, '').toLowerCase()
+}
+
+function isIpAddress(value) {
+    return /^\d{1,3}(?:\.\d{1,3}){3}$/.test(value) || value.includes(':')
+}
+
+function extractRuleDomain(rule) {
+    if (!rule.startsWith('||')) {
+        return null
+    }
+
+    const match = rule.slice(2).match(/^[^/^$*|?]+/)
+
+    if (!match) {
+        return null
+    }
+
+    const domain = normalizeDomain(match[0])
+
+    if (!domain) {
+        return null
+    }
+
+    return domain
+}
+
+function collectDomainsFromHosts(text) {
+    const domains = new Set()
+
+    for (const rawLine of text.split(/\r?\n/)) {
+        const line = rawLine.split('#')[0].trim()
+
+        if (!line) {
+            continue
+        }
+
+        const parts = line.split(/\s+/).filter(Boolean)
+
+        if (parts.length < 2) {
+            const host = normalizeDomain(parts[0])
+
+            if (host && !isIpAddress(host)) {
+                domains.add(host)
+            }
+
+            continue
+        }
+
+        for (const host of parts.slice(1)) {
+            const normalized = normalizeDomain(host)
+
+            if (normalized && !isIpAddress(normalized)) {
+                domains.add(normalized)
+            }
+        }
+    }
+
+    return domains
+}
+
+function collectDomainsFromFilters(text) {
+    const domains = new Set()
+
+    for (const rawLine of text.split(/\r?\n/)) {
+        const line = rawLine.trim()
+
+        if (
+            !line ||
+            line.startsWith('!') ||
+            line.startsWith('#') ||
+            line.startsWith('[') ||
+            line.startsWith('@@') ||
+            cosmeticMarkers.some((marker) => line.includes(marker))
+        ) {
+            continue
+        }
+
+        const domain = extractRuleDomain(line)
+
+        if (domain) {
+            domains.add(domain)
+        }
+    }
+
+    return domains
+}
+
+async function collectAllowedDomains(config) {
+    const domains = new Set()
+    const sourceTexts = await Promise.all(
+        config.sources.map((source) => fetchText(source.source)),
+    )
+
+    for (let index = 0; index < config.sources.length; index += 1) {
+        const source = config.sources[index]
+        const text = sourceTexts[index]
+        const sourceDomains = source.type === 'hosts'
+            ? collectDomainsFromHosts(text)
+            : collectDomainsFromFilters(text)
+
+        for (const domain of sourceDomains) {
+            domains.add(domain)
+        }
+    }
+
+    return domains
+}
+
 function formatRule(rule) {
-    const reg = /^\|\|(.*)\^$/
+    const reg = /^\|\|([^/^$*|?]+)\^$/
 
     if (!reg.test(rule)) {
         return
     }
 
-    const domain = rule.match(reg)[1]
+    const domain = normalizeDomain(rule.match(reg)[1])
 
     return '.' + domain
 }
 
-async function outputCompiled(config, compiled) {
+async function outputCompiled(config, compiled, allowedDomains) {
     const fileName = `${config.name}.list`
     const dest = join(distDir, fileName)
-
-    if (fs.existsSync(dest)) {
-        await fs.remove(dest)
-    }
-
-    const stream = fs.createWriteStream(dest)
+    const lines = []
 
     for (const rule of compiled) {
         const formatted = formatRule(rule)
 
-        if (formatted) {
-            stream.write(formatted + '\n')
+        if (formatted && allowedDomains.has(formatted.slice(1))) {
+            lines.push(formatted)
         }
     }
 
-    stream.end()
+    await fs.outputFile(dest, lines.length ? `${lines.join('\n')}\n` : '')
 }
 
 async function main() {
     for (const config of configurations) {
-        const compiled = await compile(config)
-        await outputCompiled(config, compiled)
+        const [compiled, allowedDomains] = await Promise.all([
+            compile(config),
+            collectAllowedDomains(config),
+        ])
+
+        await outputCompiled(config, compiled, allowedDomains)
     }
 }
 

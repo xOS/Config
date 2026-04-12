@@ -48,7 +48,6 @@ jobs:
 
       - name: Merge and Rules and remove duplicates
         run: | 
-          curl -sL -o RuleSet/AdRules/uBlack.list "https://raw.githubusercontent.com/dallaslu/penzai-list/main/Surge.txt"
           awk '/\*/ || /^$/ {next}; !seen[$0]++' RuleSet/AdRules/*.list | grep -v -f RuleSet/AdRules/Bypass.list > RuleSet/AdRule.list
 
       - name: Update Static.list, Download.list and DomesticIP.list
