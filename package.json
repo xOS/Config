@@ -15,7 +15,7 @@
     "fs-extra": "^11.3.4"
   },
   "resolutions": {
-    "axios": "^0.24.0",
+    "axios": "^1.15.0",
     "jsonpointer": "^5.0.0",
     "better-ajv-errors": "^1.1.2"
   }
