@@ -81,7 +81,6 @@
 .noterium.com
 .cdn.privacy-mgmt.com
 .cmp.osano.com
-.cookie-sl.s3.*.amazonaws.com
 .cookiefirst.com
 .hs-banner.com
 .fumblingform.com
@@ -109,7 +108,6 @@
 .consent.dumont.de
 .metomic.io
 .privacy-center.org
-.policy*.cookieinformation.com
 .consent.truste.com
 .r42tag.com
 .cookieq.com
@@ -210,7 +208,6 @@
 .api.cazamba.com
 .api.sorunapp.com
 .borgan.ru
-.cdn*.pdmntn.com
 .cdn.pn.vg
 .cdn.swellrewards.com
 .chatinator.com
@@ -229,7 +226,6 @@
 .popcard.unibuddy.co
 .popup.wisepops.com
 .popupmaker.com
-.sdk.*.braze.com
 .server.connecto.io
 .socialsend.ru
 .splash-screen.net
@@ -270,7 +266,6 @@
 .dpns-notifications.com
 .cdn-server.live
 .potisni.me
-.widgets.*.webengage.com
 .cdn.larapush.com
 .pushbaza.com
 .nadajotum.com
@@ -583,7 +578,6 @@
 .paywall.forbes.ua
 .u939.colgate.com
 .egoi.page
-.btn.createsend*.com
 .joinsubtext.com
 .activehosted.com
 .app.mailjet.com
@@ -637,7 +631,6 @@
 .tariffuxx.de
 .web-client.moveo.ai
 .affilizz.com
-.chat*-ce.chatdealer.jp
 .chat.quickcep.com
 .webchat-ui.citibot.net
 .webchat.bebot.io
@@ -742,7 +735,6 @@
 .whatya.solairo-api.com
 .whisbi.com
 .whitesaas.com
-.widget-v*.tidiochat.com
 .widget.beesender.com
 .widget.cloud-cdn.ru
 .widget.contactleader.pl

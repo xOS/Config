@@ -26,7 +26,6 @@
 .mythtracker.com
 .t-dsp.pinduoduo.com
 .elmasistatistik.com.tr
-.bapi-*.moengage.com
 .analystic.365av.net
 .mollyflow.com
 .citiservi.es
@@ -38,7 +37,6 @@
 .convertiser.com
 .bidr.io
 .s.opensend.com
-.cdn-*.gravityfield.ai
 .location.dynabic.com
 .byoviral.com
 .sigmob.cn
@@ -82,7 +80,6 @@
 .fpjs.io
 .winsurbox.com
 .telemetry.tataritv.com
-.powa-ingest-prod-*.video-player.arcpublishing.com
 .cpu-api.infor.pl
 .cse.rakanto.com
 .repo.rakanto.com
@@ -114,7 +111,6 @@
 .elitebidder.com
 .adstk.io
 .s.pxltgr.com
-.collector-*.pxchk.net
 .adfenix.com
 .boldmetrics.io
 .cdn.trakkr.ai
@@ -178,12 +174,10 @@
 .pirsch.io
 .d2g2u2795e3fzw.cloudfront.net
 .mobiexchange.com
-.matomo-demo-*.amazonaws.com
 .tryzens-analytics.com
 .turbotargeting.io
 .inetstats.org
 .analysis.chatglm.cn
-.*-default-cn.rum.aliyuncs.com
 .ping.pdst.fm
 .api.sae.systems
 .analytics.metriko.app
@@ -191,7 +185,6 @@
 .wurflcloud.com
 .tvspix.com
 .events.stylux.io
-.*-sdk.rum.aliyuncs.com
 .digitalcamp.co.kr
 .marathondataco.com
 .telecid.ru
@@ -317,7 +310,6 @@
 .stapecdn.com
 .jollyoutdoorjogger.com
 .ob.esnlocco.com
-.ecommerce-events*.adscale.com
 .adbeacon.com
 .transaction-watcher-2.littledata.io
 .mirabelanalytics.com
@@ -428,7 +420,6 @@
 .zineone.com
 .data.emb-api.com
 .config.emb-api.com
-.install*.zonastat.com
 .tags.pw.adn.cloud
 .api-notify.markarch.com
 .venatusmedia.com
@@ -540,18 +531,14 @@
 .accessv.org
 .applog.zijieapi.com
 .feedback-c.zijieapi.com
-.log*.zijieapi.com
 .minigame5-normal-hl.zijieapi.com
 .minigame5-normal-lq.zijieapi.com
-.mssdk*.zijieapi.com
 .os-mon.zijieapi.com
 .pc-mon.zijieapi.com
 .polaris.zijieapi.com
-.polaris*-normal-*.zijieapi.com
 .saveu5-normal-lq.zijieapi.com
 .starkgame.zijieapi.com
 .timon.zijieapi.com
-.tnc*.zijieapi.com
 .view.zijieapi.com
 .mcs.zijieapi.com
 .pa-cd.com
@@ -591,7 +578,6 @@
 .engagements.appsflyer.com
 .pageview.click
 .viaklera.com
-.pixel-*.convertagain.net
 .app.kuvio.io
 .data.media-lab.ai
 .kapetracking.com
@@ -673,7 +659,6 @@
 .prodalet.ru
 .zdw.w8.com.cn
 .pbjs-stream.bydata.com
-.collector*.ex.co
 .cdn.sov.stream
 .programmatica.com
 .stats.rip
@@ -837,7 +822,6 @@
 .analytics.gtflixtv.com
 .colossusssp.com
 .consentag.eu
-.collect-v*.51.la
 .ip.momentummedia.com.au
 .adrange.net
 .dmtag.jp
@@ -935,7 +919,6 @@
 .fpnpmcdn.net
 .offer-go.com
 .d2ezz24t9nm0vu.cloudfront.net
-.px*.mediahills.ru
 .sdk.conscent.in
 .tpstelemetry.tencent.com
 .crossees.com
@@ -998,7 +981,6 @@
 .analytics.growthphysics.com
 .sp.tinymce.com
 .wazimo.com
-.srmdata-*.com
 .doppler-beacons.cbsivideo.com
 .events.askjdhaa.com
 .smart.idmnet.pl
@@ -1166,7 +1148,6 @@
 .wurfl.io
 .t.trsbf.com
 .t.powerreviews.com
-.analytics*.prezly.com
 .gapp1.com
 .stlog.d.dmkt-sp.jp
 .dynatrace-managed.com
@@ -1201,9 +1182,7 @@
 .analytics2.awsli.com.br
 .pgs.io
 .script-sh.d2cdm.jp
-.browser-intake-*-datadoghq.com
 .browser-intake-datadoghq.com
-.cl*.k5a.io
 .analytics.superstructure.ai
 .cdn.raekdata.com
 .gae.karte.io
@@ -1276,7 +1255,6 @@
 .logevt.pubfinity.com
 .ast.red.asp.appirits.com
 .pagesense.io
-.livetracker.*.pangea-cms.com
 .t.irtyc.com
 .adgocoo.com
 .leadrebel.io
@@ -1382,14 +1360,11 @@
 .tracking.affiliateclub.cz
 .p.altergeo.ru
 .analytics.mlstatic.com
-.collector-*.tvsquared.com
 .collectorj.tvsquared.com
-.pixelapi-*.cs.mysamba.tv
 .etop.ro
 .ct2.kyarame.com
 .x8.cho-chin.com
 .sibulla.com
-.logs*.smithsonian.museum
 .pixel.convertize.io
 .uz-analysis.akamaized.net
 .kissmetrics.io
@@ -1403,10 +1378,8 @@
 .facil-iti.com
 .api.all-internet.jp
 .p-analytics.life
-.snowplow-collector-*.amazonaws.com
 .analytics.getshogun.com
 .log.gobankingrates.com
-.v*.sitecounter.site
 .macromill.com
 .fh-main.measure.agilemeasure.com
 .analytics.cdn.live
@@ -1555,7 +1528,6 @@
 .statcollector.sidearmsports.com
 .hktracker.hankookilbo.com
 .ibeat-analytics.com
-.tag-based.s3.*.amazonaws.com
 .cbdatatracker.com
 .user-stats.rbl.ms
 .pages-stats.rbl.ms
@@ -1566,7 +1538,6 @@
 .sitescout.com
 .ad-log.dable.io
 .pensebig.com.br
-.suite*.linximpulse.net
 .retargeter.com.br
 .shopback.net
 .shopconvert.com.br
@@ -1638,7 +1609,6 @@
 .4sqt6jq.de
 .sprocket-ping.s3.amazonaws.com
 .events.launchdarkly.com
-.eclog*-*.cafe24.com
 .tag.goadopt.io
 .tag.hariken.co
 .tracker.cauly.co.kr
@@ -1648,8 +1618,6 @@
 .jtracking.lulusoft.com
 .traceprof.com
 .trackerhqu.com
-.rum*.cdnvideo.ru
-.rum*.a.trbcdn.net
 .tracker.metricool.com
 .counter.daara.kr
 .log22.makeshop.co.kr
@@ -1737,7 +1705,6 @@
 .code.acstat.com
 .intelligenceretarget.com
 .stpmgo.com
-.stats*.videonow.ru
 .tracker.durasite.net
 .growthrx.in
 .clickcease.com
@@ -1798,10 +1765,8 @@
 .track.mp3vizor.com
 .track.mp3bars.com
 .hs-scripts.com
-.parkdomainreal*.site
 .sjsmartcontent.org
 .telemetry.swe.quicinc.com
-.i-*.ci360.sas.com
 .st.onlygip.tech
 .analysis.fi
 .a.plerdy.com
@@ -1956,7 +1921,6 @@
 .log-ird.outbrain.com
 .sb.voicefive.com
 .mrb.upapi.net
-.analytics*.clickdimensions.com
 .pngme.ru
 .qoopler.ru
 .s.clicktex.ru
@@ -1977,7 +1941,6 @@
 .mateti.net
 .digitru.st
 .s-onetag.com
-.counter*.freecounter.ovh
 .analytics.logsss.com
 .tnative.ru
 .cinarra.com
@@ -2681,7 +2644,6 @@
 .find-ip-address.org
 .finderlocator.com
 .fishhoo.com
-.metrics*.fitanalytics.com
 .fixcounter.com
 .fixwap.net
 .flagcounter.com
@@ -3277,7 +3239,6 @@
 .persianstat.com
 .persianstat.ir
 .personyze.com
-.query*.petametrics.com
 .phonalytics.com
 .phone-analytics.com
 .photorank.me
@@ -3995,7 +3956,6 @@
 .sakura.goguardian.com
 .screenshots.goguardian.com
 .snat.goguardian.com
-.sock*-goguardian.pusher.com
 .sockjs-goguardian.pusher.com
 .ws-goguardian.pusher.com
 .x3-policy-maker.goguardian.com
@@ -78445,7 +78405,6 @@
 .event.dxmdp.com
 .beacon.cdnpure.com
 .r.cdnpure.com
-.ja*.apppure.net
 .udbdf.apkpure.com
 .a.apkpures.xyz
 .c.qiandao.cn
@@ -78529,7 +78488,6 @@
 .analytics.everythingstream.com
 .frontier.capcutw.us
 .mssdk16-normal-us-ttp.capcutapi.us
-.log-v*-boot.capcutapi.com
 .analytics.itbox.ua
 .stats.insighttimer.com
 .trackinglibrary.prodperfect.com
@@ -78554,10 +78512,8 @@
 .rum.api.intuit.com
 .trafficmanager.anyclip.com
 .r.anime-go.cc
-.logs.collector.*.cloud.solarwinds.com
 .doppler.hulu.com
 .events.insiad.com
-.agatha-log-service-*.a.run.app
 .hw-t.hypers.com.cn
 .prd-collect-llm.xverse.cn
 .securemetrics.apple.com
@@ -78583,7 +78539,6 @@
 .app-analysislog.sto.cn
 .pftk.temu.com
 .thtk.temu.com
-.spa-tracker*.spapi.io
 .apistats.rg.ru
 .analytics.t-mobile.com
 .raw.vidyard.com
@@ -78640,7 +78595,6 @@
 .i.go.sohu.com
 .tagbridge.vlp.cz
 .advancedanalytics-websocket-pri-001.hexaglobe.net
-.htm*.hepsiburada.com
 .valencia-beacons.xumo.com
 .sync.getpublica.com
 .events-tracker.deliveroo.net
@@ -78684,7 +78638,6 @@
 .tad.tygem.com
 .uac.heraldcorp.com
 .applytics.my1337jog.run
-.data-track*.yingxiong.com
 .applytics.os4work.com
 .applytics.napps-1.com
 .z.cdn.protect-ad.com
@@ -78712,12 +78665,10 @@
 .p.eneba.com
 .cookiemon-analytics.azurewebsites.net
 .k203.adn.com
-.mon*.tiktokv.us
 .telemetry.adobe.io
 .fpt.commerce.adobe.com
 .adobecorp.data.adobedc.net
 .log-gateway.zoom.us
-.orderana*.spankbang.com
 .upsell.alphwidget.com
 .4hfvbao1ea.execute-api.ap-northeast-2.amazonaws.com
 .error-analytics-sessions-production.shopifysvc.com
@@ -78740,7 +78691,6 @@
 .ad-bls-tracking.lemino.docomo.ne.jp
 .bdvmetricas.banvenez.com.ve
 .ek-tracker.ekitan.com
-.logstash-*.radio-canada.ca
 .leo.hepsiburada.com
 .usage.trackjs.com
 .rainbow-prod-jdlog.ldoverseas.com
@@ -78800,7 +78750,6 @@
 .analytics-cdn.prensaiberica.es
 .dsp.newsbreak.com
 .a.wb.ru
-.beehiiv-adnetwork-production.s*.amazonaws.com
 .stats.vidalytics.com
 .ts-analysis.shoalter.com
 .wphlvzycf5.execute-api.eu-west-2.amazonaws.com
@@ -78809,12 +78758,10 @@
 .log-api.sooplive.com
 .telemetry.proton.me
 .analytics.tempmail100.com
-.telemetry.*.pvp.net
 .copilot-telemetry.githubusercontent.com
 .metrics.kapa.ai
 .analytics.org.coveo.com
 .analytics.zdassets.com
-.analyzer*.fc2.com
 .analytics.flexclip.com
 .iws2.io.naver.com
 .clog.tanshudata.com
@@ -78831,7 +78778,6 @@
 .lg3.media.net
 .navvy.media.net
 .app-tracking-gfa-collector.naver.com
-.hba*.hepsiburada.com
 .windsurf-telemetry.codeium.com
 .uxlog.next.koapp.com
 .affiliate.kinguin.net
@@ -78913,10 +78859,8 @@
 .tms.abconsent.com
 .ap.attainplatform.io
 .views-dual.hulu.com
-.apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-*.amazonaws.com
 .ichnaea.dradis.netflix.com
 .customerevents.dradis.netflix.com
-.customerevents.us-east-*.internal.dradis.netflix.com
 .config.sdk.kochava.dewrain.life
 .log.cookieyes.com
 .pl.elements.video
@@ -78998,7 +78942,6 @@
 .log.kroffle.net
 .web-sdk-cdn.singular.net
 .tracking.ringieraxelspringer.tech
-.event.*.shoplive.cloud
 .aidsvc.netflix.com
 .kloggyr-service.kyruus.com
 .geo.justwatch.com
@@ -79017,7 +78960,6 @@
 .pixel.vreview.tv
 .d3aicbrzoy14kh.cloudfront.net
 .metrics.motoblouz.com
-.beacon-*.helpscout.net
 .fxgate.baidu.com
 .p.controld.com
 .collector.bsg.brave.com
@@ -79030,7 +78972,6 @@
 .events-collector-dataplatform.action-media.ru
 .track-events.membrana.media
 .log.strawpoll.com
-.client.rum.*.amazonaws.com
 .tempo-client-metric-prod.s3.amazonaws.com
 .analytics.viture.dev
 .pixel.thoughtmetric.io
@@ -79063,14 +79004,12 @@
 .px-intl.ucweb.com
 .telemetry.vaultdcr.com
 .lighthouse.edoinc.com
-.staging-*.ispot.tv
 .tag.researchnow.com
 .log-auth.flysleep.cn
 .telemetry.nbcuott.com
 .log.onmas.kt.com
 .logapi.kt.com
 .clog.lghv.net
-.stlog*-local.kakao.com
 .matomo.mobilism.org
 .66hao.cc
 .event.playground.ru
@@ -79081,7 +79020,6 @@
 .sofire.terabox.com
 .inf.miui.com
 .q.quora.com
-.mssdk*.capcutapi.com
 .evts.ecocart.io
 .e.fomo.com
 .iq.afterpay.com
@@ -79092,10 +79030,6 @@
 .fourier.aliexpress.com
 .sofire.1024tera.com
 .market-click-baobab.yandex.ru
-.mon-*.lemon8-app.com
-.mon-*.lemon8-app.us
-.mcs-*.lemon8-app.com
-.mcs-*.lemon8-app.us
 .mssdk.tiktokw.us
 .gc.newsweek.com
 .events.onet.pl
@@ -79117,12 +79051,9 @@
 .logging.g.sst.secureserver.net
 .metricreceiver.cellrebel.com
 .events.app-performance.music.amazon.dev
-.collector-*.px-client.net
-.collector-*.px-cdn.net
 .metrics-a.wbx2.com
 .event.msi.com
 .dco.coupang.com
-.clickstream-*.homedepot.com
 .mr.homedepot.com
 .frontend-logger.flippback.com
 .analytics.nike.com
@@ -79130,7 +79061,6 @@
 .s.c-ctrip.com
 .ma-adx.ctrip.com
 .logs.mezmo.com
-.acr-*-prd.samsungcloud.tv
 .publictelemetry.tophat.com
 .dynatrace.att.com
 .csp-report.marketing.aws.dev
@@ -79148,7 +79078,6 @@
 .gtm.temu.com
 .log.shortbread.analytics.console.aws.a2z.com
 .log.shortbread.aws.dev
-.trck.*.prod-na.turntable.sonic.advertising.amazon.dev
 .minerva.devices.a2z.com
 .s.pie.org
 .t.pie.org
@@ -79194,7 +79123,6 @@
 .stats.bunkr.ru
 .logs.netflix.com
 .mst.rnd.de
-.cza*.crazygames.com
 .event-dot-procolor-backend.appspot.com
 .prod.event.mwm-asset-manager.mwmwebapis.com
 .api.amplitudeexperiment.com
@@ -79208,7 +79136,6 @@
 .tianji.flowgpt.com
 .analytics-ingestion-production.tubitv.com
 .retail-client-events-service.internal.salsify.com
-.servo-report.keepstreams.*
 .metrics.imdb.com
 .ldpsh.fashionnova.com
 .tag.aftvnews.com
@@ -79330,7 +79257,6 @@
 .c.webp2p.letv.com
 .s-webp2p.letv.com
 .banana.le.com
-.apple-*.le.com
 .sst.thebanker.com
 .cllctr.roistat.com
 .analytics.mailmunch.co
@@ -79380,7 +79306,6 @@
 .api.ad-platform.jmty.jp
 .events.tryamped.com
 .track.sendlane.com
-.tracking-v*.a.run.app
 .m1tm.motor1.com
 .ctr.po-kaki-to.com
 .analytics.sonjj.com
@@ -79514,7 +79439,6 @@
 .reports.tunein.com
 .event.platform.tunein.com
 .data.r.pl
-.faro-collector-prod-*.grafana.net
 .affiliates.audiobooks.com
 .events.caffeine.tv
 .analytics.totalprosports.com
@@ -79590,7 +79514,6 @@
 .log.pipeline.datarize.io
 .analyticswritenew.xerevo.com
 .tracking.staff-start.com
-.*adapt-beacon.awsprodops.movetv.com
 .p-cg64-slinganalytics.movetv.com
 .pdsssl.gmarket.co.kr
 .pds.gmarket.co.kr
@@ -79613,7 +79536,6 @@
 .analytics.msk1.ru
 .metrics.viqeo.tv
 .rtb.videonow.ru
-.hn-ping*.hashnode.com
 .ping.hashnode.com
 .t.la-croix.com
 .trk.tirto.id
@@ -79665,7 +79587,6 @@
 .tracking.tving.com
 .c.statcounter.com
 .a.mts.ru
-.ana*.inews24.com
 .m.1gr.cz
 .a.1gr.cz
 .pvnwap.zol.com.cn
@@ -79691,7 +79612,6 @@
 .a.brack.ch
 .go.bidfluence.com
 .stracker.rmg.ru
-.mcs-*.tiktok.com
 .mssdk.bytedance.com
 .mssdk-sg.byteoversea.com
 .tracker.smartseminar.jp
@@ -79777,7 +79697,6 @@
 .stat.gc.my.games
 .1l-hit.vkplay.ru
 .1l-view.my.games
-.a*.smlog.co.kr
 .cdn.smlog.co.kr
 .collector-statistics.nhn-commerce.com
 .insight.danawa.com
@@ -79801,7 +79720,6 @@
 .track.parentmood.com
 .track.shrinkplus.com
 .track.thefunpost.com
-.pixel*.production-public.tubi.io
 .analytics-ingestion-v3.main-production-custom.production.k8s.tubi.io
 .wayfinderanalytics.servicebus.windows.net
 .adtima-media.zascdn.me
@@ -79830,7 +79748,6 @@
 .tracker.samplicio.us
 .visit.xchina.pics
 .analytics.bauermedia.sk
-.ads-dmp-collect.*.karrotmarket.com
 .uplog.inews.qq.com
 .log1.wtlogin.qq.com
 .tp.content-score.com
@@ -79840,7 +79757,6 @@
 .analytics.karakuri.ai
 .cdn-redirector.glopal.com
 .storelog.kode.co.kr
-.telemetry*.transcend.io
 .ampltd2.medal.tv
 .analytics.dugun.com
 .report2.iciba.com
@@ -79875,7 +79791,6 @@
 .analytics.dashboard.fingerprint.com
 .tracking.ensonhaber.com
 .l.traxmag.com
-.pixel-*.rubiconproject.com
 .pixel.rubiconproject.com
 .smarttag.rubiconproject.com
 .stat.arzamas.academy
@@ -79926,7 +79841,6 @@
 .web-device-id.banggood.com
 .dotcounter.douyucdn.cn
 .dotserver.douyucdn.cn
-.sensorsdata*.read.duokan.com
 .tracking.shopstyle.co.uk
 .recv-jnn.tbs.co.jp
 .recv-entry.tbs.co.jp
@@ -79935,7 +79849,6 @@
 .d.tv-asahi.co.jp
 .d-log.tv-asahi.co.jp
 .view.fujitv.co.jp
-.analytics.*.sky.com
 .tracking.immobilienscout24.de
 .kinesis.eu-west-1.amazonaws.com
 .pclog.3u.com
@@ -79952,7 +79865,6 @@
 .analytics.zoomit.ir
 .prd-collector-platform.ex.co
 .pixel.ex.co
-.ad*.ettoday.net
 .static.affiliatly.com
 .client-analytics.mts.ru
 .analytics-wcms.joins.net
@@ -80076,7 +79988,6 @@
 .t.hypers.com.cn
 .log.ycapp.yiche.com
 .stats.videoseyred.in
-.log*.vietnamplus.vn
 .matomo.unicaf.org
 .matomo.aksorn.com
 .analytics.wrc.nic.in
@@ -80122,7 +80033,6 @@
 .adc.nine.com.au
 .adc.xxxlshop.de
 .adclear.baur.de
-.adcounter*.uptolike.ru
 .ads-trk.vidible.tv
 .adstat.4u.pl
 .adstax-cdn.adrtx.net
@@ -80153,7 +80063,6 @@
 .analytics-ingress-global.bitmovin.com
 .analytics-ingress.bitmovin.com
 .analytics-production.hapyak.com
-.analytics-rollout-*.amazonaws.com
 .analytics-sdk.yle.fi
 .analytics-sg.tiktok.com
 .analytics-static.ugc.bazaarvoice.com
@@ -80235,7 +80144,6 @@
 .analytics.webgains.io
 .analytics.wondershare.cc
 .analytics.yahoo.com
-.analytics*.carambo.la
 .analytics2.tvreport.co.kr
 .analyticsnew.overwolf.com
 .anon-stats.eff.org
@@ -80245,7 +80153,6 @@
 .api.exc.mob.com
 .api.flocktory.com
 .apollo.plein.nl
-.app-analytics-*.snapchat.com
 .app-analytics.snapchat.com
 .app.adjust.io
 .app.adjust.net.in
@@ -80299,7 +80206,6 @@
 .beam.remp.impresa.pt
 .behave.noen.at
 .beta.simpel.nl
-.bi-eventtracker-*.amazonaws.com
 .bia.brightinfo.com
 .bonfire.spklw.com
 .boomerang.dell.com
@@ -80318,7 +80224,6 @@
 .c.tbex.ru
 .c.wort-suche.com
 .c.x.oanda.com
-.c*hit.zerkalo.io
 .c0.adalyser.com
 .c00.adobe.com
 .c1.wfinterface.com
@@ -80332,7 +80237,6 @@
 .cdn.usefathom.com
 .cdn-eu.usefathom.com
 .cdnstats-a.akamaihd.net
-.ce-global-track-*.amazonaws.com
 .cfg.imtt.qq.com
 .check.tadapi.info
 .cl.canva.com
@@ -80349,7 +80253,6 @@
 .clk.onet.pl
 .clkstat.china.cn
 .clog.go.com
-.clog*.yuanfudao.com
 .clvk.viki.io
 .cmap.alibaba.com
 .cmp-cdn.ghostery.com
@@ -80363,7 +80266,6 @@
 .cnt.ramlife.ru
 .cnt.xhamster.com
 .codes.royalad.pl
-.collect-elb-*.amazonaws.com
 .collect.igodigital.com
 .collect.usefathom.com
 .audience.acpm.fr
@@ -80419,13 +80321,11 @@
 .counter.ukr.net
 .counter.web.money
 .counter.zerohedge.com
-.counter*-yadro*-ru.unblocked.lol
 .counter1.fc2.com
 .counter24.luxnet.ua
 .cpxl.golem.de
 .crta.dailymail.co.uk
 .crta.metro.co.uk
-.cs*.mp3bars.com
 .csi.gstatic.com
 .csm.cxpublic.com
 .csr.onet.pl
@@ -80495,7 +80395,6 @@
 .daq0d0aotgq0f.cloudfront.net
 .data-collector.wefi.com
 .data.mob.com
-.datacollect*.abtasty.com
 .dc8xl0ndzn2cb.cloudfront.net
 .dcs.maxthon.com
 .dct.mango-office.ru
@@ -80504,7 +80403,6 @@
 .dejavu.mlapps.com
 .deliver.oztam.com.au
 .delog.sooplive.com
-.device-metrics-us*.amazon.com
 .df.tanx.com
 .discovery-script.newspic.kr
 .discovery.newspic.kr
@@ -80550,7 +80448,6 @@
 .er.search.naver.com
 .estat.zum.com
 .et.nytimes.com
-.eum*.instana.io
 .ev2.api.bdg.com
 .ev.api.bdg.com
 .ev.kck.st
@@ -80567,7 +80464,6 @@
 .eventlog.jackpot.de
 .eventlog.outbrain.com
 .eventlogger.soundcloud.com
-.events-api*.outfit7.com
 .events-collector.spot.im
 .events.apester.com
 .events.cardsmobile.ru
@@ -80584,7 +80480,6 @@
 .events.turbosquid.com
 .events.virtusize.jp
 .events.whisk.com
-.events*.cre.ma
 .eventstream.dodopizza.com
 .evs.data.ciceksepeti.com
 .evt.houzz.com
@@ -80628,17 +80523,12 @@
 .geoip.silive.com
 .geoip.syracuse.com
 .geoip.viamichelin.com
-.geoloc*.9cd47096ab1495d8d3b18667f6a52b9c.com
-.geoloc*.geo20120530.com
-.geoloc*.geostats.ovh
-.geoloc*.geovisite.ovh
 .geoservice.curse.com
 .geosvc.globalmailer.com
 .gfn1.ugap.fr
 .gjtrack.uc.cn
 .gocp.stroeermediabrands.de
 .grow.powerstep.com
-.gscounters.*.gigya.com
 .gscounters.gigya.com
 .gtm.beiersdorf.com
 .gtm.udemy.com
@@ -80661,13 +80551,6 @@
 .hodor-collect.arabam.com
 .horizon-track.globo.com
 .horizon.globo.com
-.host*.carl-ras.dk
-.host*.ncoi.nl
-.host*.nti.nl
-.host*.polaroid.com
-.host*.rvshare.com
-.host*.rigbyandpeller.com
-.hstats*.hepsiburada.com
 .htrace.wetvinfo.com
 .hummingbird.mavencoalition.io
 .hwa.his.huawei.com
@@ -80686,7 +80569,6 @@
 .insight.bellmetric.net
 .intake-logging.wikimedia.org
 .intent.cbsi.com
-.iptracker-lb-*.amazonaws.com
 .irqs.ioam.de
 .ish.tumedia.no
 .istatistik.arabam.com
@@ -80730,7 +80612,6 @@
 .librato-collector.genius.com
 .live.rezync.com
 .livecounter.theyosh.nl
-.lively-collect-elb-*.amazonaws.com
 .log-player.arte.tv
 .log-stats.weathercn.com
 .log.adap.tv
@@ -80769,14 +80650,12 @@
 .log.zdnet.co.kr
 .log.zepeto.io
 .log.zingnews.vn
-.log*.aliyuncs.com
 .log000.goo.ne.jp
 .log2.radiko.jp
 .logapi.tv.naver.com
 .logcol.kyobobook.co.kr
 .logcollect.totalcms.ncloud.or.kr
 .logconfig.polarisoffice.com
-.logger-*.dailymotion.com
 .logger.applovefrom.com
 .logger.bzu.kr
 .logger.goeuro.com
@@ -80799,7 +80678,6 @@
 .loxodo-analytics.ext.nile.works
 .loxodo-ct.ext.nile.works
 .ls.srvcs.tumblr.com
-.lt*.tritondigital.com
 .m.addthisedge.com
 .m.adtiming.com
 .m.trb.com
@@ -80823,7 +80701,6 @@
 .metric.inetcore.com
 .metric.nimo.tv
 .metric.timewarnercable.com
-.metric*.rediff.com
 .metrics-api.librato.com
 .metrics-broker.prod.p.tf1.fr
 .metrics.apartments.com
@@ -80992,7 +80869,6 @@
 .pw.gigazine.net
 .px.dynamicyield.com
 .px.gfycat.com
-.pxl-*.ozone.ru
 .pxlctl.elpais.com
 .pzd.rakuten.co.jp
 .qlog.adap.tv
@@ -81170,8 +81046,6 @@
 .spt.performgroup.com
 .spxl.socy.es
 .ss.musthird.com
-.ssp*.rtb.beeline.ru
-.st-*.dynamicyield.com
 .st.avsplow.com
 .st.dynamicyield.com
 .st.top100.ru
@@ -81202,7 +81076,6 @@
 .stat.thestartmagazine.com
 .stat.tvigle.ru
 .stat.videonow.ru
-.stat*.1internet.tv
 .stat24.meta.ua
 .statetc.nate.com
 .static-ads.zaloapp.com
@@ -81310,7 +81183,6 @@
 .t.wayfair.com
 .t.webjavaskript.net
 .t.wizards.com
-.t*.zcvh.net
 .t2.hulu.com
 .t2.huluim.com
 .ta.trs.cn
@@ -81506,7 +81378,6 @@
 .tracking.ukwm.co.uk
 .tracking.unrealengine.com
 .tracking.yourfilehost.com
-.tracking*.euroads.fi
 .tracking2.channeladvisor.com
 .trackingapi.kaufda.de
 .trackingapi.meinprospekt.de
@@ -81520,7 +81391,6 @@
 .trk.storyly.io
 .trk.stroeermediabrands.de
 .trk.vidible.tv
-.trk*.vidible.tv
 .truehits1.gits.net.th
 .truehits3.gits.net.th
 .ts.delfi.lt
@@ -81648,8 +81518,6 @@
 .e664.theoaklandpress.com
 .t133.sun-sentinel.com
 .x446.orlandosentinel.com
-.api-*.hismarttv.com
-.auth-*.hismarttv.com
 .msg-na.hismarttv.com
 .unified-ter-na.hismarttv.com
 .sp1.baidu.com
@@ -81780,7 +81648,6 @@
 .web-t.9gag.com
 .webmetrics.nintendo-europe.com
 .webstat.freaks4u.com
-.mkto-*.com
 .https-filtering-check.adtidy.org
 .adeventtracker.spotify.com
 .do-not-tracker.org
@@ -81793,7 +81660,6 @@
 .api.setting.intl.miui.com
 .data.sec.intl.miui.com
 .log.avlyun.sec.intl.miui.com
-.tracking.*.miui.com
 .metok.sys.miui.com
 .mazu.sec.miui.com
 .auth.be.sec.miui.com
@@ -81816,7 +81682,6 @@
 .data.mistat.rus.xiaomi.com
 .data.mistat.xiaomi.com
 .sdkconfig.ad.xiaomi.com
-.datacollector-*.dt.hicloud.com
 .app-analytics-ru.huami.com
 .metrics.spbtv.com
 .android-stat.acestream.net
@@ -81833,10 +81698,6 @@
 .skadsdk.appsflyersdk.com
 .attr.appsflyersdk.com
 .privacy-sandbox.appsflyersdk.com
-.*cdn-settings.appsflyersdk.com
-.*launches.appsflyersdk.com
-.*conversions.appsflyersdk.com
-.*register.appsflyersdk.com
 .adrevenue.appsflyer.com
 .api.appsflyer.com
 .api2.appsflyer.com
@@ -81906,9 +81767,7 @@
 .events-noneu.truecaller.com
 .profiler-collector.dalyfeds.com
 .reporttk.com
-.log-*.isnssdk.com
 .track.hily.com
-.ping*.bidease.com
 .ntus.bidease.com
 .thinkingdata.cn
 .mixpanel-proxy-ivbdkvonca-uc.a.run.app
@@ -81943,7 +81802,6 @@
 .log.photorecoverypicturerecovery.com
 .log.scanqrcodedesign.live
 .log.cleanerwish.live
-.trace-*.free-reels.com
 .tracking.twelveapp.sh
 .trkcliq.com
 .stats.norton.com
@@ -81977,20 +81835,15 @@
 .events-stream-svc.cordial.io
 .events.gonative.io
 .matomo.podslink.net
-.gbxreport-*.wf.com
 .mab-mob2.websearchapp.com
 .news-events.apple.com
 .news-app-events.apple.com
 .news-sports-events.apple.com
 .track.applicaster.com
 .hb-mob2.optiword.com
-.tracking.geo.*.amazonaws.com
 .telemetry.doxo.com
 .sensorsdata-datasink.stardust-tv.com
 .event-api-cs.stardust-tv.com
-.logreport-global-dual.cool*cloud.com
-.wslog-global-dual.cool*cloud.com
-.weblogger-wss.cool*cloud.com
 .mebed.dm-event.net
 .bstream.kzhi.tech
 .lklfwu-inapps.appsflyersdk.com
@@ -82008,12 +81861,9 @@
 .perf.bblmw.com
 .event.bblmw.com
 .vsn-analytics.aparentmedia.com
-.track-*.hungrypanda.co
-.trace-*.hungrypanda.co
 .ihmonitor.luckincoffee.us
 .use-trk.monetune.com
 .telemetry.sdk.inmobi.com
-.collector-*.perimeterx.net
 .unisdk.proxima.nie.easebar.com
 .ingest.m2catalyst.com
 .tnc-v2-boot.capcutapi.com
@@ -82022,7 +81872,6 @@
 .analytics.artworkout.net
 .event.mwm-bs.com
 .events.backtrace.io
-.kbox-analytics-prod.s*.amazonaws.com
 .logs.classdojo.com
 .api.arity.com
 .mob2.bpt.apprevork.com
@@ -82049,7 +81898,6 @@
 .dualstack-collection.rong-edge.com
 .logdata.hatspotlight.asia
 .datarangers-event.myrightone.com
-.stats.*.ronghub.com
 .stats.rong-edge.com
 .config.toto.zipoapps.com
 .tracking.ksztone.com
@@ -82066,7 +81914,6 @@
 .app-monitor.spacecape.com
 .hlog.hiido.com
 .logcollection.ronghub.com
-.stats.*.rongnav.com
 .log.wigoliv.work
 .tracking.affattr.com
 .log.suddenclean.com
@@ -82083,7 +81930,6 @@
 .collect.wehearfm.com
 .itracking.ikameglobal.com
 .client-events-ingress.bookbub.com
-.sdk.fra-*.braze.eu
 .sdk.out.usbla.net
 .xz.fbcdn.net
 .xy.fbcdn.net
@@ -82145,8 +81991,6 @@
 .analytics-stg.samsungknox.com
 .event.flareflow.tv
 .api.deeplink.dev
-.attr-logs.*.amazonaws.com
-.event.*.karrotmarket.com
 .beacons.ads.fubo.tv
 .s3-ca-liveops.easybrain.com
 .trackers.fubo.tv
@@ -82170,7 +82014,6 @@
 .usstat.icocofun.com
 .usdiagnosis.icocofun.com
 .eats-ads-event-capture.coupang.com
-.mon*-misc.fqnovel.com
 .clientlog.perfectworldgames.com
 .log1.perfectworldgames.com
 .log2.perfectworldgames.com
@@ -82184,16 +82027,11 @@
 .gpm-mon-va.byteoversea.com
 .logs-sg.rebxgame.com
 .talog-eu.rebxgame.com
-.logs-*.rebxgame.com
-.*-datareceiver.aki-game.net
 .data-detect.nie.easebar.com
-.mgbsdk*.matrix.easebar.com
-.applog*.matrix.easebar.com
 .hz-telemetry.adobe.io
 .smartcard.apps.coloros.com
 .fp-it.fengkongcloud.com
 .api-fp-retry-bj.fengkongcloud.com
-.tnc16-*.hypic.com
 .app-tracking.hlogo.de
 .px.wpk.quark.cn
 .applog.lc.quark.cn
@@ -82202,7 +82040,6 @@
 .track.adflow-prod.minionplatform.com
 .t-odx.op-mobile.opera.com
 .stat-analytics.mediavitrina.ru
-.discovery-ios-*.ertelecom.ru
 .mob2.mymusic2025.com
 .mosspf.net
 .event-us.ssp.taxssp.com
@@ -82224,7 +82061,6 @@
 .report-edge.agora.io
 .pangolin-sdk-toutiao-b.com
 .ulog-sdk.gifshow.com
-.ulog*.gifshow.com
 .logapi-and.zhipin.com
 .hilton.data.adobedc.net
 .asanalytics.booking.com
@@ -82246,12 +82082,8 @@
 .track.aieic.com
 .tracker.str-nrg.com
 .ced-ns.sascdn.com
-.use-trk*.bluevoox.com
 .pixel.magentamarketing.com
 .bisrtb.vidazoo.com
-.t*.playdigo.live
-.tnc*.tiktokv.us
-.tnc*.tiktokv.com
 .aws.userlogsanalytics.com
 .atb-stats-api.imolive.tv
 .i.mxplayer.j2inter.com
@@ -82264,7 +82096,6 @@
 .log.jackpotmasterslots.com
 .jpush.io
 .datacollector-drru.dt.dbankcloud.ru
-.ulog*.kwai-pro.com
 .spider-tracker.xiaohongshu.com
 .tp2p.kg.qq.com
 .twns.p2ptun.qq.com
@@ -82284,23 +82115,17 @@
 .log.documentmanagerpdfdocxlssale.live
 .stats.samsungpass.com
 .log.pdfviewerscannerstore.live
-.mon-v*-boot.capcutapi.com
 .log-sg.capcutapi.com
 .mon-sg.capcutapi.com
 .tnc-sg.capcutapi.com
 .tnc-boot.capcutapi.com
-.tnc-va*.capcutapi.com
-.mon-va*.capcutapi.com
-.log-va*.capcutapi.com
 .metrics-prod.suno.com
-.ulog*.kwaipros.com
 .logs-ingress.svc.vinted.com
 .analytics.baliusuperapp.xyz
 .analytics.hardlightgames.com
 .plankton-gtm.a.autoscout24.com
 .pangle-b.io
 .receiver.habby.mobi
-.track.*.roku.com
 .traces.sr.roku.com
 .analytics.kidoz.net
 .track.tenjin.com
@@ -82310,20 +82135,15 @@
 .analysys.cn
 .logs.supersonic.com
 .mssdk-va.byteoversea.com
-.log*-normal-useast1a.lemon8-app.com
 .events.bsky.app
 .caerulus.io
 .log.heartratepros.com
-.hw-sh-pcdn-*.biliapi.net
-.ali-bj-pcdn-*.biliapi.net
 .tatrack.thinkyeah.com
-.mon*-misc-lf.fqnovel.com
 .vcs.zijieapi.com
 .monsetting.toutiao.com
 .atsod.launch.liveramp.com
 .ads-image.production-public.tubi.io
 .user-signals.production-public.tubi.io
-.sonar*.xy.fbcdn.net
 .mob2.healthtrackergroup.com
 .insights-categorizer-noneu.truecaller.com
 .event-dot-learning-piano.appspot.com
@@ -82342,7 +82162,6 @@
 .analysis.vesync.com
 .insights.zennioptical.com
 .proxy.telemetry.us-ashburn-1.oci.oraclecloud.com
-.admob-app-id-*.firebaseio.com
 .stats.rustore.ru
 .vk-analytics.ru
 .tracking.iwhop.cn
@@ -82375,7 +82194,6 @@
 .iemiq.com
 .yun-hl.3g.qq.com
 .up-hl.3g.qq.com
-.analytics-*-nfl.yinzcam.com
 .prod.report.nacustomerexperience.citi.com
 .mon.byteoversea.com
 .fraud.adjoe.zone
@@ -82425,7 +82243,6 @@
 .cws-hulu.conviva.com
 .vik-analytics.moonactive.net
 .report.apkpure.net
-.report.*.gbqofs.io
 .grs.hicloud.com
 .logbak.hicloud.com
 .iot-eu-logser.realme.com
@@ -82472,9 +82289,6 @@
 .logs.ironsrc.mobi
 .events.mz.unity3d.com
 .r-log.dable.io
-.logservice-*.platform.dbankcloud.cn
-.ubacollect-*.cloud.dbankcloud.cn
-.datacollector-*.dt.dbankcloud.cn
 .mobile-events.eservice.emarsys.net
 .stat.gspaceteam.com
 .alexa-mobile-analytics-configuration-prod.s3.amazonaws.com
@@ -82500,7 +82314,6 @@
 .tracker.neodatagroup.com
 .stats.sxp.smartclip.net
 .static.fengkongcloud.com
-.fp-*it*.fengkongcloud.com
 .cloudconf.fengkongcloud.com
 .tracker.fengkongcloud.com
 .dm.pstatp.com
@@ -82511,7 +82324,6 @@
 .webmetrics.mayoclinic.org
 .tagdelivery.mayoclinic.org
 .tagdelivery.mayoclinic.org.pc-mc.greylabeldelivery.com
-.maas-*.phunware.com
 .events-stream-svc.cordial.com
 .events-stream-svc.usw2.cordial.com
 .message-hub-svc.usw2.cordial.com
@@ -82525,7 +82337,6 @@
 .g.analytics.versa-ai.com
 .analytics.rayjump.com
 .events.ifunny.co
-.imp-*.jampp.com
 .telemetry.navigatorapp.net
 .pathfinder.analytics.komoot.net
 .evt.mxplay.com
@@ -82561,7 +82372,6 @@
 .hit.gemius.pl
 .click.oneplus.com
 .click.oneplus.cn
-.mapi-log.qoo*.jp
 .events.api.red.wemesh.ca
 .logend.cookpad.com
 .viva.api.xiaoying.co
@@ -82575,8 +82385,6 @@
 .aff-policy.lbesecapi.com
 .psi.lbesecapi.com
 .report-ps.meettech.net
-.f-log-*.grammarly.io
-.log*-misc-lf.amemv.com
 .msg.umengcloud.com
 .ulogs.umengcloud.com
 .analytics.liveact-vault.com
@@ -82605,9 +82413,7 @@
 .ali-stats.jpush.cn
 .msg.simeji.me
 .msg.simeji.baidu.jp
-.beacons*.gvt3.com
 .post-log.pushwoosh.com
-.appanalysis*.banggood.com
 .line1-log.biligame.net
 .log-upload-eur.mihoyo.com
 .log-upload.mihoyo.com
@@ -82615,7 +82421,6 @@
 .s3-analytics-events.easybrain.com
 .mgs123.com
 .metrics.sp0n.io
-.liveme-sensors-collect2-*.amazonaws.com
 .adtracker.jpchd.veraxen.com
 .adtracker.oilpainting.colorbynumber.veraxen.com
 .adtracker.mkjigsaw.com
@@ -82623,7 +82428,6 @@
 .qa-events-schema.viacom.tech
 .dns-clientinfo.cbsivideo.com
 .trace.qq.com
-.report.*.qq.com
 .events.tvtime.com
 .smetrics.discover.com
 .geico.com.ssl.sc.omtrdc.net
@@ -82637,10 +82441,8 @@
 .analytics-server.gimbal.com
 .log-tb.sgsnssdk.com
 .rtlog.byteoversea.com
-.tnc16-*.byteoversea.com
 .xlog.byteoversea.com
 .ug-sg.byteoversea.com
-.log*.byteoversea.com
 .tracking.aldi-international.com
 .direct-collect.dy-api.com
 .direct-collect.dy-api.eu
@@ -82672,7 +82474,6 @@
 .analytics-api.liveapp.com
 .telemetry.voxeet.com
 .usertrack.appcpi.net
-.api*.amplitude.com
 .conversions.appsflyer.com
 .collect.serious.li
 .analytics.jodelapis.com
@@ -82713,8 +82514,6 @@
 .nbsdk-baichuan.taobao.com
 .amdc.m.taobao.com
 .amdcopen.m.taobao.com
-.batchlogging*-eu.truecaller.com
-.batchlogging*-noneu.truecaller.com
 .logsink.zedge.net
 .consent-manager-events.ogury.io
 .api.share.mob.com
@@ -82784,7 +82583,6 @@
 .android.bugly.qq.com
 .astat.bugly.qq.com
 .ios.bugly.qq.com
-.tracking-*.trnox.com
 .tracking.trnox.com
 .rts.mobula.sdk.duapps.com
 .aftonbladetnya.sc.omtrdc.net
@@ -82798,11 +82596,8 @@
 .tracker.adotmob.com
 .analytics-tracker.thescore.com
 .rosenberg.appmetrica.webvisor.com
-.report*.appmetrica.webvisor.com
 .d.applvn.com
 .rt.applvn.com
-.api*.moengage.com
-.sdk-*.moengage.com
 .rt.applovin.com
 .patriot.cs.pp.cn
 .sdk-orion.appboy.com
@@ -82812,7 +82607,6 @@
 .api.segment.io
 .tracking.directservices.it
 .metrics.timewarnercable.com
-.flurry.agentportal-*.yahoodns.net
 .amptrack-dailymail-co-uk.cdn.ampproject.org
 .metrics-cbslocal-com.cdn.ampproject.org
 .tracking-server-prod-1.zenmxapps.com
@@ -82821,8 +82615,6 @@
 .resolver.gslb.mi-idc.com
 .geoip.ifunny.co
 .alogs.umengcloud.com
-.device-metrics-*.amazon.com
-.flurry.agentportal.*.yahoodns.net
 .4seeresults.com
 .adash.m.taobao.com
 .adfuture.cn
@@ -82873,7 +82665,6 @@
 .metrics.sdkbox.com
 .mlb.did.ijinshan.com
 .mobile-collector.newrelic.com
-.mobileanalytics.*.amazonaws.com
 .mobilelog.upqzfile.com
 .ms.cmcm.com
 .nativesdks.mparticle.com
@@ -82904,9 +82695,6 @@
 .csplog.kwai-pro.com
 .log-sdk.ksapisrv.com
 .logsdk.kwai-pro.com
-.ulog-*.ksapisrv.com
-.ulog.*.ksapisrv.com
-.ulog.*.kwai-pro.com
 .ulog.ksapisrv.com
 .ulog.kwai-pro.com
 .ulog.kwaipros.com
@@ -82917,27 +82705,16 @@
 .ulogs2.ksapisrv.com
 .wlog.ksapisrv.com
 .log-va.tiktokv.com
-.mcs.*.tiktok.com
 .mcs.tiktokw.us
-.mcs.*.tiktokv.com
-.log*-normal-*.tiktokv.us
 .sf16-telemetry-proxy-oci.tiktokcdn-us.com
-.mon*-*.tiktokv.com
-.log*-*.tiktokv.com
-.rtlog*.tiktokv.us
-.rtlog*.tiktokv.com
 .log.tiktokv.com
 .rtc-logger-va.tiktokv.com
 .rtlog.tiktokv.com
-.mon*-*.tiktokv.us
 .mon.us.tiktokv.com
-.mon-*.tiktokv.com
 .mon.tiktokv.com
 .xlog.tiktokv.com
 .xlog-va.tiktokv.com
-.xlog*-*.tiktokv.com
 .mcs-va.tiktokv.com
-.mcs-va-*.tiktokv.com
 .analytics.tiktok.com
 .woodpecker.uc.cn
 .applog.uc.cn
