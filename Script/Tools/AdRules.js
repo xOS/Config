@@ -7,6 +7,9 @@ const fs = require('fs-extra')
 //const slugify = require('@sindresorhus/slugify')
 
 const distDir = join(__dirname, '../../RuleSet/AdRules')
+const advertisingListPath = join(__dirname, '../../RuleSet/Advertising.list')
+const wildcardSectionStart = '# === AUTO-GENERATED: ADRULES WILDCARD START ==='
+const wildcardSectionEnd = '# === AUTO-GENERATED: ADRULES WILDCARD END ==='
 const configurations = [{
     name: 'Adaway',
     homepage: 'https://adaway.org',
@@ -355,12 +358,64 @@ function formatRule(rule) {
     return '.' + domain
 }
 
-async function outputCompiled(config, compiled, allowedDomains) {
+function formatWildcardRule(rule) {
+    const reg = /^\|\|([^/^$|?]*\*[^/^$|?]*)\^$/
+
+    if (!reg.test(rule)) {
+        return
+    }
+
+    const domain = normalizeDomain(rule.match(reg)[1])
+
+    return domain || undefined
+}
+
+async function updateAdvertisingWildcardRules(wildcardDomains) {
+    const wildcardLines = [...wildcardDomains]
+        .sort((a, b) => a.localeCompare(b))
+        .map((domain) => `DOMAIN-WILDCARD,${domain}`)
+
+    const sectionBody = wildcardLines.join('\n')
+    const section = [
+        wildcardSectionStart,
+        sectionBody,
+        wildcardSectionEnd,
+    ]
+        .filter(Boolean)
+        .join('\n')
+
+    const current = await fs.readFile(advertisingListPath, 'utf8')
+    const escapedStart = wildcardSectionStart.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    const escapedEnd = wildcardSectionEnd.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    const sectionReg = new RegExp(`${escapedStart}[\\s\\S]*?${escapedEnd}`, 'm')
+
+    let next
+
+    if (sectionReg.test(current)) {
+        next = current.replace(sectionReg, section)
+    }
+    else {
+        const lines = current.split(/\r?\n/)
+
+        lines.splice(1, 0, section, '')
+        next = lines.join('\n').replace(/\n*$/, '\n')
+    }
+
+    await fs.writeFile(advertisingListPath, next)
+}
+
+async function outputCompiled(config, compiled, allowedDomains, wildcardDomains) {
     const fileName = `${config.name}.list`
     const dest = join(distDir, fileName)
     const lines = []
 
     for (const rule of compiled) {
+        const wildcardDomain = formatWildcardRule(rule)
+
+        if (wildcardDomain) {
+            wildcardDomains.add(wildcardDomain)
+        }
+
         const formatted = formatRule(rule)
 
         if (formatted && allowedDomains.has(formatted.slice(1))) {
@@ -372,14 +427,18 @@ async function outputCompiled(config, compiled, allowedDomains) {
 }
 
 async function main() {
+    const wildcardDomains = new Set()
+
     for (const config of configurations) {
         const [compiled, allowedDomains] = await Promise.all([
             compile(config),
             collectAllowedDomains(config),
         ])
 
-        await outputCompiled(config, compiled, allowedDomains)
+        await outputCompiled(config, compiled, allowedDomains, wildcardDomains)
     }
+
+    await updateAdvertisingWildcardRules(wildcardDomains)
 }
 
 main().catch((err) => {
