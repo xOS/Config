@@ -389,17 +389,24 @@ async function updateAdvertisingWildcardRules(wildcardDomains) {
     const escapedEnd = wildcardSectionEnd.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
     const sectionReg = new RegExp(`${escapedStart}[\\s\\S]*?${escapedEnd}`, 'm')
 
-    let next
+    // Always relocate the auto-generated wildcard block before URL/IP sections,
+    // so IP-CIDR rules stay at the very bottom of Advertising.list.
+    const contentWithoutSection = current
+        .replace(sectionReg, '')
+        .replace(/\n{3,}/g, '\n\n')
 
-    if (sectionReg.test(current)) {
-        next = current.replace(sectionReg, section)
-    }
-    else {
-        const lines = current.split(/\r?\n/)
+    const lines = contentWithoutSection.split(/\r?\n/)
+    const insertionIndex = lines.findIndex((line) =>
+        line.startsWith('URL-REGEX,') ||
+        line.startsWith('IP-CIDR,') ||
+        line.startsWith('IP-CIDR6,'),
+    )
 
-        lines.splice(1, 0, section, '')
-        next = lines.join('\n').replace(/\n*$/, '\n')
-    }
+    const targetIndex = insertionIndex >= 0 ? insertionIndex : lines.length
+
+    lines.splice(targetIndex, 0, section, '')
+
+    const next = lines.join('\n').replace(/\n*$/, '\n')
 
     await fs.writeFile(advertisingListPath, next)
 }
