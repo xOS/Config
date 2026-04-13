@@ -42,7 +42,7 @@ DOMAIN,cc-api-data.adobe.io
 DOMAIN,msmp.abchina.com.cn
 
 # > 其它
-DOMAIN-WILDCARD,umeng*.com
+DOMAIN-WILDCARD,*.umeng*.com
 DOMAIN,wanproxy.127.net
 DOMAIN-WILDCARD,wanproxy-*.127.net
 DOMAIN,collect.moomoo.com
