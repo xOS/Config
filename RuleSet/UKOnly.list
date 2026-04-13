@@ -72,11 +72,11 @@ DOMAIN-SUFFIX,hsbc-app.token.io
 DOMAIN-SUFFIX,entsrv-uk.vodafone.com
 DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com
 
-AND,((GEOIP,GB), (AND,((PROTOCOL,UDP), (OR,((DEST-PORT,500), (DEST-PORT,4500))))))
+//AND,((GEOIP,GB), (AND,((PROTOCOL,UDP), (OR,((DEST-PORT,500), (DEST-PORT,4500))))))
 
-IP-CIDR,88.82.0.0/19,no-resolve
+//IP-CIDR,88.82.0.0/19,no-resolve
 
 # > CMLinkUK EE
-IP-CIDR,46.68.0.0/17,no-resolve
+//IP-CIDR,46.68.0.0/17,no-resolve
 # > Giffgaff
-IP-CIDR,87.194.0.0/16,no-resolve
+//IP-CIDR,87.194.0.0/16,no-resolve
