@@ -1,7 +1,4 @@
 # > Apple Special
-IP-ASN,714
-IP-ASN,6185
-IP-ASN,2709
 USER-AGENT,TestFlight*
 USER-AGENT,com.apple.trustd*
 PROCESS-NAME,lookupviewservice

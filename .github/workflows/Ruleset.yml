@@ -68,11 +68,37 @@ jobs:
             }
           ' RuleSet/AdRules/Bypass.list RuleSet/AdRules/*.list > RuleSet/AdRule.list
 
-      - name: Update Static.list, Download.list and DomesticIP.list
+      - name: Update Static.list, Download.list, DomesticIP.list and AdIPRule.list
         run: |
           curl -sL "https://ruleset.skk.moe/List/domainset/cdn.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/Static.list
           curl -sL "https://ruleset.skk.moe/List/domainset/download.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/Download.list
           curl -sL "https://ruleset.skk.moe/List/ip/china_ip.conf" "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/DomesticIP.list
+          curl -sL "https://ruleset.skk.moe/List/ip/reject.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/AdIPRule.list
+
+      - name: Update Global.list
+        run: |
+          tmp_dir="$(mktemp -d)"
+          trap 'rm -rf "$tmp_dir"' EXIT
+
+          curl -fsSL "https://ruleset.skk.moe/List/non_ip/global.conf" -o "$tmp_dir/global.conf"
+
+          cat RuleSet/Global.list "$tmp_dir/global.conf" \
+            | sed 's/\r$//' \
+            | awk '
+                {
+                  line = $0
+                  sub(/^[[:space:]]+/, "", line)
+                  sub(/[[:space:]]+$/, "", line)
+                  if (line == "" || line ~ /^#/ || tolower(line) ~ /skk\.moe/) next
+                  print line
+                }
+              ' \
+            | LC_ALL=C sort -u > "$tmp_dir/merged.txt"
+
+          grep -E '^IP-CIDR6?,' "$tmp_dir/merged.txt" | LC_ALL=C sort -u > "$tmp_dir/ip.txt" || true
+          grep -Ev '^IP-CIDR6?,' "$tmp_dir/merged.txt" | LC_ALL=C sort -u > "$tmp_dir/non_ip.txt" || true
+
+          cat "$tmp_dir/non_ip.txt" "$tmp_dir/ip.txt" > RuleSet/Global.list
 
       - name: Import GPG key
         id: import_gpg

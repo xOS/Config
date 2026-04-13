@@ -200,6 +200,118 @@ const configurations = [{
 
 const cosmeticMarkers = ['##', '#@#', '#?#', '#$#', '#%#']
 
+const unsupportedConversionModifiers = new Set([
+    'popup',
+    'cname',
+    'third-party',
+    'domain=',
+])
+
+function splitRule(rule) {
+    const trimmed = rule.trim()
+    const dollarIndex = trimmed.indexOf('$')
+
+    if (dollarIndex === -1) {
+        return {
+            body: trimmed,
+            options: '',
+        }
+    }
+
+    return {
+        body: trimmed.slice(0, dollarIndex),
+        options: trimmed.slice(dollarIndex + 1),
+    }
+}
+
+function hasUnsupportedConversionModifiers(options) {
+    if (!options) {
+        return false
+    }
+
+    return options
+        .split(',')
+        .map((option) => option.trim().toLowerCase())
+        .some((option) =>
+            unsupportedConversionModifiers.has(option) ||
+            option.startsWith('domain='),
+        )
+}
+
+function canUseWhitelistAsDomainBlock(options) {
+    if (!options) {
+        return true
+    }
+
+    return options
+        .split(',')
+        .map((option) => option.trim().toLowerCase())
+        .every((option) => option === 'document')
+}
+
+function extractRuleTarget(rule) {
+    const { body } = splitRule(rule)
+
+    if (body.startsWith('||')) {
+        const match = body.slice(2).match(/^[^/^$*|?]+/)
+
+        if (!match) {
+            return null
+        }
+
+        const domain = normalizeDomain(match[0])
+        const rest = body.slice(2 + match[0].length)
+
+        if (!domain || domain.includes('*') || (rest && rest !== '^')) {
+            return null
+        }
+
+        return {
+            domain,
+            type: 'suffix',
+        }
+    }
+
+    const schemeIndex = body.indexOf('://')
+
+    if (schemeIndex === -1) {
+        return null
+    }
+
+    const hostPart = body.slice(schemeIndex + 3)
+    const match = hostPart.match(/^[^/^$*|?]+/)
+
+    if (!match) {
+        return null
+    }
+
+    const domain = normalizeDomain(match[0])
+    const rest = hostPart.slice(match[0].length)
+
+    if (!domain || domain.includes('*') || rest) {
+        return null
+    }
+
+    return {
+        domain,
+        type: 'host',
+    }
+}
+
+function isBlockedByWhitelist(domain, blockedDomains) {
+    for (const blockedDomain of blockedDomains) {
+        if (domain === blockedDomain || domain.endsWith(`.${blockedDomain}`)) {
+            return true
+        }
+    }
+
+    return false
+}
+
+function isWhitelistRule(rule) {
+    return rule.trim().startsWith('@@')
+}
+
 function fetchText(sourceUrl) {
     return new Promise((resolve, reject) => {
         https
@@ -264,7 +376,7 @@ function extractRuleDomain(rule) {
     return domain
 }
 
-function collectDomainsFromHosts(text) {
+function collectDomainsFromHosts(text, blockedDomains) {
     const domains = new Set()
 
     for (const rawLine of text.split(/\r?\n/)) {
@@ -289,7 +401,7 @@ function collectDomainsFromHosts(text) {
         for (const host of parts.slice(1)) {
             const normalized = normalizeDomain(host)
 
-            if (normalized && !isIpAddress(normalized)) {
+            if (normalized && !isIpAddress(normalized) && !isBlockedByWhitelist(normalized, blockedDomains)) {
                 domains.add(normalized)
             }
         }
@@ -298,28 +410,43 @@ function collectDomainsFromHosts(text) {
     return domains
 }
 
-function collectDomainsFromFilters(text) {
+function collectDomainsFromFilters(text, blockedDomains) {
     const domains = new Set()
 
     for (const rawLine of text.split(/\r?\n/)) {
         const line = rawLine.trim()
+        const rule = line.startsWith('@@') ? line.slice(2) : line
+        const { options } = splitRule(rule)
 
         if (
             !line ||
             line.startsWith('!') ||
             line.startsWith('#') ||
             line.startsWith('[') ||
-            line.startsWith('@@') ||
             cosmeticMarkers.some((marker) => line.includes(marker))
         ) {
             continue
         }
 
-        const domain = extractRuleDomain(line)
+        const target = extractRuleTarget(rule)
 
-        if (domain) {
-            domains.add(domain)
+        if (!target) {
+            continue
         }
+
+        if (isWhitelistRule(line)) {
+            if (canUseWhitelistAsDomainBlock(options)) {
+                blockedDomains.add(target.domain)
+            }
+
+            continue
+        }
+
+        if (hasUnsupportedConversionModifiers(options) || isBlockedByWhitelist(target.domain, blockedDomains)) {
+            continue
+        }
+
+        domains.add(target.domain)
     }
 
     return domains
@@ -327,6 +454,7 @@ function collectDomainsFromFilters(text) {
 
 async function collectAllowedDomains(config) {
     const domains = new Set()
+    const blockedDomains = new Set()
     const sourceTexts = await Promise.all(
         config.sources.map((source) => fetchText(source.source)),
     )
@@ -335,8 +463,8 @@ async function collectAllowedDomains(config) {
         const source = config.sources[index]
         const text = sourceTexts[index]
         const sourceDomains = source.type === 'hosts'
-            ? collectDomainsFromHosts(text)
-            : collectDomainsFromFilters(text)
+            ? collectDomainsFromHosts(text, blockedDomains)
+            : collectDomainsFromFilters(text, blockedDomains)
 
         for (const domain of sourceDomains) {
             domains.add(domain)
@@ -347,15 +475,29 @@ async function collectAllowedDomains(config) {
 }
 
 function formatRule(rule) {
-    const reg = /^\|\|([^/^$*|?]+)\^$/
+    const suffixReg = /^\|\|([^/^$*|?]+)\^?$/
 
-    if (!reg.test(rule)) {
+    if (suffixReg.test(rule)) {
+        const domain = normalizeDomain(rule.match(suffixReg)[1])
+
+        return {
+            domain,
+            output: `.${domain}`,
+        }
+    }
+
+    const exactReg = /:\/\/([^/^$*|?]+)$/
+
+    if (!exactReg.test(rule)) {
         return
     }
 
-    const domain = normalizeDomain(rule.match(reg)[1])
+    const domain = normalizeDomain(rule.match(exactReg)[1])
 
-    return '.' + domain
+    return {
+        domain,
+        output: domain,
+    }
 }
 
 function formatWildcardRule(rule) {
@@ -425,8 +567,8 @@ async function outputCompiled(config, compiled, allowedDomains, wildcardDomains)
 
         const formatted = formatRule(rule)
 
-        if (formatted && allowedDomains.has(formatted.slice(1))) {
-            lines.push(formatted)
+        if (formatted && allowedDomains.has(formatted.domain)) {
+            lines.push(formatted.output)
         }
     }
 
