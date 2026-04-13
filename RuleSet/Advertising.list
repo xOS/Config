@@ -1,5 +1,19 @@
 # > Advertising
 USER-AGENT,Munion-SDK*
+DOMAIN-SUFFIX,gravity-engine.com
+DOMAIN-KEYWORD,pangolin-sdk
+DOMAIN-SUFFIX,ubixioe.com
+DOMAIN-SUFFIX,aiclk.com
+DOMAIN-SUFFIX,yutoons.com
+DOMAIN-SUFFIX,qttunion.com
+DOMAIN-WILDCARD,show-api.*sapp.com
+DOMAIN-WILDCARD,md-data-u*.ubixioe.com
+DOMAIN-SUFFIX,zhangyuyidong.cn
+DOMAIN-SUFFIX,adintl.cn
+DOMAIN,sdklog.zhangyuyidong.cn
+DOMAIN,sdk.1rtb.net
+DOMAIN,ssp.maplehaze.cn
+DOMAIN-SUFFIX,hxjtrack.yutoons.com
 DOMAIN,mssdk.volces.com
 DOMAIN,apmplus.volces.com
 DOMAIN,mssdk.volces.com

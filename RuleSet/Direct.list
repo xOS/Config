@@ -1,6 +1,5 @@
 # > General
 DOMAIN,app.adjust.com
-DOMAIN-WILDCARD,*-toutiao*.com
 AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22),(NOT,((RULE-SET,LAN))))
 
 # > Alibaba
