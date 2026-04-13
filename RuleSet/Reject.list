@@ -42,6 +42,16 @@ DOMAIN,cc-api-data.adobe.io
 DOMAIN,msmp.abchina.com.cn
 
 # > 其它
+DOMAIN-WILDCARD,loggw-*.alipay.com
+DOMAIN,h-adashx.ut.taobao.com
+DOMAIN,adashx.m.taobao.com
+DOMAIN-SUFFIX,volces.com
+DOMAIN,mssdk.volces.com
+DOMAIN-WILDCARD,*goad*.189.cn
+DOMAIN-WILDCARD,mssdk*.zijieapi.com
+DOMAIN-WILDCARD,polaris*-normal-*.zijieapi.com
+DOMAIN-WILDCARD,minigame*-normal-hl.zijieapi.com
+DOMAIN,timon.zijieapi.com
 DOMAIN,tracker-api.vk-analytics.ru
 DOMAIN-WILDCARD,*.umeng*.com
 DOMAIN,wanproxy.127.net
