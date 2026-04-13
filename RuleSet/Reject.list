@@ -42,6 +42,14 @@ DOMAIN,cc-api-data.adobe.io
 DOMAIN,msmp.abchina.com.cn
 
 # > 其它
+DOMAIN,dig.bdurl.net
+DOMAIN,sdk.e.qq.com
+DOMAIN,mi.gdt.qq.com
+DOMAIN,rmonitor.qq.com
+DOMAIN-WILDCARD,ipv*.gdt.qq.com
+DOMAIN-WILDCARD,log-*.snssdk.com
+DOMAIN-WILDCARD,log*-misc-*.amemv.com
+DOMAIN-WILDCARD,mssdk*-normal-*.zijieapi.com
 DOMAIN,metrics-picture.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
 DOMAIN,al-log.d.meituan.net
@@ -55,3 +63,26 @@ DOMAIN-KEYWORD,hdns
 DOMAIN-SUFFIX,edns.ip-api.com
 DOMAIN-SUFFIX,surfsharkdns.com
 DOMAIN-KEYWORD,pangolin
+DOMAIN-SUFFIX,telemetry.mozilla.org
+DOMAIN,stats.grafana.org
+DOMAIN-SUFFIX,getui.net
+DOMAIN,nom.telemetrydeck.com
+DOMAIN-SUFFIX,easytomessage.com
+DOMAIN-SUFFIX,data.grammarly.com
+DOMAIN-SUFFIX,slackb.com
+DOMAIN-SUFFIX,gepush.com
+DOMAIN-SUFFIX,getui.com
+DOMAIN-SUFFIX,in.applicationinsights.azure.com
+DOMAIN-SUFFIX,geo2.adobe.com
+DOMAIN-SUFFIX,tracking.miui.com
+DOMAIN-SUFFIX,tracking.intl.miui.com
+DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,trace.qq.com
+DOMAIN,stat.youpin.mi.com
+DOMAIN-SUFFIX,f-log-extension.grammarly.io
+DOMAIN-SUFFIX,f-log-assistant.grammarly.io
+DOMAIN-SUFFIX,femetrics.grammarly.io
+DOMAIN-SUFFIX,jpush.io
+DOMAIN-SUFFIX,femetrics.qagr.io
+DOMAIN-SUFFIX,jpush.cn
+DOMAIN-WILDCARD,f-log*.grammarly.io
