@@ -42,6 +42,7 @@ DOMAIN,cc-api-data.adobe.io
 DOMAIN,msmp.abchina.com.cn
 
 # > 其它
+DOMAIN,collector.github.com
 DOMAIN-WILDCARD,gsp*.baidu.com
 DOMAIN,observe-tcp.mintegral.net
 DOMAIN,prod-mediate-events.applovin.com
