@@ -2,9 +2,9 @@
 USER-AGENT,Munion-SDK*
 DOMAIN-SUFFIX,gravity-engine.com
 DOMAIN-KEYWORD,pangolin-sdk
+DOMAIN-SUFFIX,uyunad.com
 DOMAIN-SUFFIX,ubixioe.com
 DOMAIN-SUFFIX,aiclk.com
-DOMAIN-SUFFIX,yutoons.com
 DOMAIN-SUFFIX,qttunion.com
 DOMAIN-WILDCARD,show-api.*sapp.com
 DOMAIN-WILDCARD,md-data-u*.ubixioe.com
