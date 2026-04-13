@@ -352,6 +352,22 @@ function normalizeDomain(domain) {
     return domain.trim().replace(/^\.+/, '').replace(/\.+$/, '').toLowerCase()
 }
 
+function isRealDomainLike(value) {
+    const domain = normalizeDomain(value)
+
+    if (!domain || !domain.includes('.')) {
+        return false
+    }
+
+    return domain.split('.').every((label) => (
+        label.length > 0 &&
+        label.length <= 63 &&
+        /^[a-z0-9-]+$/.test(label) &&
+        !label.startsWith('-') &&
+        !label.endsWith('-')
+    ))
+}
+
 function isIpAddress(value) {
     return /^\d{1,3}(?:\.\d{1,3}){3}$/.test(value) || value.includes(':')
 }
@@ -480,6 +496,10 @@ function formatRule(rule) {
     if (suffixReg.test(rule)) {
         const domain = normalizeDomain(rule.match(suffixReg)[1])
 
+        if (!isRealDomainLike(domain)) {
+            return
+        }
+
         return {
             domain,
             output: `.${domain}`,
@@ -492,11 +512,15 @@ function formatRule(rule) {
         return
     }
 
-    const domain = normalizeDomain(rule.match(exactReg)[1])
+    const domain = rule.match(exactReg)[1]
+
+    if (!isRealDomainLike(domain)) {
+        return
+    }
 
     return {
-        domain,
-        output: domain,
+        domain: normalizeDomain(domain),
+        output: normalizeDomain(domain),
     }
 }
 
