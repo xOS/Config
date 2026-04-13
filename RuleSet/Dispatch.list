@@ -51,3 +51,6 @@ DOMAIN-WILDCARD,dl-*.mypikpak.com
 
 # > Mail.ru
 DOMAIN-SUFFIX,cdn-vk.ru
+
+# > 其它
+DOMAIN-SUFFIX,assets.chapturist.com
