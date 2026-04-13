@@ -11,7 +11,10 @@ DOMAIN-WILDCARD,md-data-u*.ubixioe.com
 DOMAIN-SUFFIX,zhangyuyidong.cn
 DOMAIN-SUFFIX,adintl.cn
 DOMAIN,sdklog.zhangyuyidong.cn
-DOMAIN,sdk.1rtb.net
+DOMAIN-WILDCARD,sdk.*rtb.net
+DOMAIN-WILDCARD,s.*rtb.net
+DOMAIN-WILDCARD,usr-api.*sapp.com:
+DOMAIN,bgg.baidu.com
 DOMAIN,ssp.maplehaze.cn
 DOMAIN-SUFFIX,hxjtrack.yutoons.com
 DOMAIN,mssdk.volces.com
