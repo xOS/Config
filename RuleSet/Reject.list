@@ -42,10 +42,22 @@ DOMAIN,cc-api-data.adobe.io
 DOMAIN,msmp.abchina.com.cn
 
 # > 其它
+DOMAIN-WILDCARD,gsp*.baidu.com
+DOMAIN,observe-tcp.mintegral.net
+DOMAIN,prod-mediate-events.applovin.com
+DOMAIN,ms.applovin.com
+DOMAIN-SUFFIX,unityads.unity3d.com
+DOMAIN,mon.zijieapi.com
+DOMAIN-WILDCARD,log*.zijieapi.com
+DOMAIN,ca.iadsdk.apple.com
 DOMAIN,dig.bdurl.net
 DOMAIN,sdk.e.qq.com
 DOMAIN,mi.gdt.qq.com
-DOMAIN,rmonitor.qq.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN,beacon.ztgame.com
+DOMAIN,analytics.oceanengine.com
+DOMAIN-SUFFIX,volceapplog.com
+DOMAIN-WILDCARD,*monitor.qq.com
 DOMAIN-WILDCARD,ipv*.gdt.qq.com
 DOMAIN-WILDCARD,log-*.snssdk.com
 DOMAIN-WILDCARD,log*-misc-*.amemv.com
