@@ -1,19 +1,8 @@
-analytics-beacon
-analytics-cdn
 backstory.ebay
 client.rum
-cmpworker
-elqtrk
-insights-collector
-internal-matomo
-metrics-collector
 rum.collector
-segment-api
-segment-cdn
-ssgtm
 t.targito
 .adservice.google
-openedlog
 .00px.net
 .18wosx.ru
 .1bliq.io
@@ -5811,7 +5800,6 @@ track.opentable
 .z492.ctinsider.com
 .z680.beaumontenterprise.com
 .zion.qbo.intuit.com
-a02342
 .cb-mms.carbuyer.co.uk
 .cmp.courrierinternational.com
 .cmp.finn.no
