@@ -103,7 +103,7 @@ DOMAIN,abt-online.netease.im
 DOMAIN,cfgc.zztfly.com
 DOMAIN,upc.zztfly.com
 DOMAIN-SUFFIX,share.mob.com
-DOMAIN-WILDCARD,link*-bgp.yunxinfw.com:443
+DOMAIN-WILDCARD,link*-bgp.yunxinfw.com
 DOMAIN,ir-sdk.dun.163.com
 DOMAIN,link.netease.im
 DOMAIN,hd.xiaojukeji.com
