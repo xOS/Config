@@ -25375,6 +25375,7 @@ DOMAIN-WILDCARD,ad*.thisisgame.com
 DOMAIN-WILDCARD,ad*.tmgrup.com.tr
 DOMAIN-WILDCARD,ad*.wisenut.co.kr
 DOMAIN-WILDCARD,ad*.zonaplus.tv
+DOMAIN-WILDCARD,adapi*.boomplaymusic.com
 DOMAIN-WILDCARD,adcounter*.uptolike.ru
 DOMAIN-WILDCARD,adcs-*.myappsget.com
 DOMAIN-WILDCARD,adi*.cnool.net
@@ -25564,6 +25565,7 @@ DOMAIN-WILDCARD,log*-misc-lf.amemv.com
 DOMAIN-WILDCARD,log*-normal-*.tiktokv.us
 DOMAIN-WILDCARD,log*-normal-useast1a.lemon8-app.com
 DOMAIN-WILDCARD,log*.aliyuncs.com
+DOMAIN-WILDCARD,log*.boomplaymusic.com
 DOMAIN-WILDCARD,log*.byteoversea.com
 DOMAIN-WILDCARD,log*.vietnamplus.vn
 DOMAIN-WILDCARD,log*.zijieapi.com

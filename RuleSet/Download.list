@@ -99,6 +99,7 @@ mirror2.tuxinator.org
 static.rust-lang.org
 mirrors.rpmfusion.org
 .packagist.org
+.ossplanet.org
 mirrorbits.lineageos.org
 ftp.harukasan.org
 cdn.cocoapods.org
@@ -287,6 +288,7 @@ mirror.steadfast.net
 .mirrors.spacedump.net
 .mirror.shastacoe.net
 mirror.ossplanet.net
+mirror.tw.ossplanet.net
 mirror.fi.ossplanet.net
 mirror.eu.ossplanet.net
 mirror.us.oneandone.net
@@ -1106,6 +1108,7 @@ ubuntu.vpsttt.com
 mirror.vpsnet.com
 download.umbrel.com
 security.ubuntu.com
+cdimage.ubuntu.com
 .archive.ubuntu.com
 .ports.ubuntu.com
 ubuntu.tuxuri.com
