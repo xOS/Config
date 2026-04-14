@@ -1,5 +1,115 @@
 # > Advertising
 USER-AGENT,Munion-SDK*
+
+# > 超自然行动组开屏弹窗
+DOMAIN,nj.cschannel.anticheatexpert.com
+DOMAIN-WILDCARD,beacon-*.ztgame.com
+DOMAIN-WILDCARD,*sdk.dailygn.com
+DOMAIN,apis.sdk.mobileztgame.com
+
+# > 联通营业厅
+DOMAIN,playback.newbuy.chinaunicom.cn
+DOMAIN,pushservice.10010.com
+DOMAIN-WILDCARD,m*.ad.10010.com
+
+# > 移动首页瀑布流
+DOMAIN,yxfk.market.chinamobile.com
+
+# > 菜鸟裹裹
+DOMAIN-SUFFIX,video.taobao.com
+DOMAIN-SUFFIX,cloudvideocdn.taobao.com
+
+# > 闲鱼开屏
+DOMAIN,dypnsapi.aliyuncs.com
+
+# > Spotify
+DOMAIN,video-akpcw-cdn-spotify-com.akamaized.net
+DOMAIN,adeventtracker.spotify.com
+
+# > 央视频开头广告
+DOMAIN-WILDCARD,adstore*.file.myqcloud.com
+
+# > 央视频开屏广告
+DOMAIN-WILDCARD,adstore-index-*.file.myqcloud.com
+
+# > 颇可
+DOMAIN-SUFFIX,kepler.jd.com
+DOMAIN-WILDCARD,api-*.dutils.com
+
+# > 知乎 去广告
+DOMAIN,appcloud2.zhihu.com
+
+# >> DO NOT GET CDN-BASED IP
+DOMAIN,118.89.204.198
+USER-AGENT,AVOS*
+AND,((USER-AGENT,ZhihuHybrid*),(URL-REGEX,.*recommend))
+
+# > 优酷 去广告
+DOMAIN,pgw-cld-ml.alicdn.com
+
+# > 讯飞输入法
+DOMAIN-SUFFIX,xfinfr.com
+
+# > 人人视频 去广告
+AND,((USER-AGENT,PUClient*),(NOT,((DOMAIN-SUFFIX,rr.tv))))
+
+# > 爱奇艺
+DOMAIN,video-ad.sm.cn
+DOMAIN,api.cupid.dns.iqiyi.com
+DOMAIN,cupid.iqiyi.com
+DOMAIN,f74f7f7765f8a2f6.ngaa.net.cn
+DOMAIN,ef-dongfeng.tanx.com
+DOMAIN,iqiyim.adtrack.enlightent.cn
+DOMAIN,t7z.cupid.iqiyi.com
+DOMAIN,paopao-monitor.iqiyi.com
+DOMAIN,puma-api.iqiyi.com
+DOMAIN-SUFFIX,upqzfile.com
+DOMAIN,mbdlog.iqiyi.com
+DOMAIN,iqiyi-mipdx.cn.miaozhen.com
+DOMAIN,show.ssports.com
+
+# > 腾讯QQ
+DOMAIN,sq.bls.mdt.qq.com
+
+# > 腾讯视频
+DOMAIN,news.l.qq.com
+DOMAIN,tetrack.qq.com
+DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,tetrack.qq.com
+DOMAIN-SUFFIX,api.poll.video.qq.com
+DOMAIN,appcfg.v.qq.com
+DOMAIN,richmedia.video.qq.com
+DOMAIN,apd-vodp2plogin.teg.tencent-cloud.net
+DOMAIN,t.in-neo.cn
+DOMAIN,test-isee.weishi.qq.com
+DOMAIN,v6-accvideo.wns.qq.com
+DOMAIN,shortconn.im.qcloud.com
+DOMAIN-SUFFIX,file.video.qpic.cn
+
+# > 高德地图
+DOMAIN,optimus-ads.amap.com
+DOMAIN,optimus-ads.amap.com.w.alikunlun.com
+
+# > 抖音
+DOMAIN-KEYWORD,ad-sign
+DOMAIN-KEYWORD,-adbrand
+
+# > 手机百度
+DOMAIN-SUFFIX,boxer.baidu.com
+DOMAIN-SUFFIX,ug.baidu.com
+
+# > 其它
+DOMAIN,hd.xiaojukeji.com
+DOMAIN,serveraddr.service.kugou.com
+DOMAIN,tp2p.kg.qq.com
+IP-CIDR,81.71.61.216/32,no-resolve
+DOMAIN-WILDCARD,tnc*-aliec*.snssdk.com
+DOMAIN-WILDCARD,tnc*-aliec*.zijieapi.com
+DOMAIN-SUFFIX,ads.twitch.tv
+DOMAIN-SUFFIX,tpns.tencent.com
+DOMAIN,mssdk-bu.snssdk.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,adstrategy.biz.weibo.com
 DOMAIN,knicks.jd.com
 DOMAIN,xlog.jd.com
 DOMAIN,mum.hzchengdun.com
@@ -76,7 +186,6 @@ DOMAIN,tracklog.58.com
 DOMAIN,wc.51.la
 DOMAIN,xlog.snssdk.com
 DOMAIN,zgsdk.zhugeio.com
-
 DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,0.myikas.com
 DOMAIN-SUFFIX,0.net.easyjet.com
