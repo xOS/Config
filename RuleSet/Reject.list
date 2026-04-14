@@ -42,6 +42,18 @@ DOMAIN,cc-api-data.adobe.io
 DOMAIN,msmp.abchina.com.cn
 
 # > 其它
+DOMAIN,mobads.baidu.com
+DOMAIN,open.e.kuaishou.com
+DOMAIN,log.mgtv.com
+DOMAIN,da.mgtv.com
+DOMAIN-SUFFIX,adservices.apple.com
+DOMAIN,mssdk.bytedance.com
+DOMAIN-WILDCARD,mssdk*.tiktokv.com
+DOMAIN,spade.twitch.tv
+DOMAIN,dataflow.biliapi.com
+DOMAIN,httpdns.bilivideo.com
+DOMAIN,mazu.m.qq.com
+DOMAIN-SUFFIX,mdt.qq.com
 DOMAIN-WILDCARD,loggw-*.alipay.com
 DOMAIN,h-adashx.ut.taobao.com
 DOMAIN,adashx.m.taobao.com

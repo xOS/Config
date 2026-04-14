@@ -1,5 +1,12 @@
 # > Advertising
 USER-AGENT,Munion-SDK*
+DOMAIN,knicks.jd.com
+DOMAIN,xlog.jd.com
+DOMAIN,mum.hzchengdun.com
+DOMAIN,content-open.douyin.com
+DOMAIN,imc.ugsdk.cn
+DOMAIN,webcast-open.douyin.com
+DOMAIN-WILDCARD,*p2p*.qq.com
 DOMAIN-SUFFIX,gravity-engine.com
 DOMAIN-KEYWORD,pangolin-sdk
 DOMAIN-SUFFIX,uyunad.com
@@ -14,6 +21,9 @@ DOMAIN,sdklog.zhangyuyidong.cn
 DOMAIN-WILDCARD,sdk.*rtb.net
 DOMAIN-WILDCARD,s.*rtb.net
 DOMAIN-WILDCARD,usr-api.*sapp.com
+DOMAIN-SUFFIX,adfunlink.com
+DOMAIN,ssp-api.dmrtb.com
+DOMAIN,sink-ssdata.xiawen.tv
 DOMAIN,bgg.baidu.com
 DOMAIN,ssp.maplehaze.cn
 DOMAIN-SUFFIX,hxjtrack.yutoons.com
