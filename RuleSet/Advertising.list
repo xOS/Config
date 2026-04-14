@@ -99,6 +99,13 @@ DOMAIN-SUFFIX,boxer.baidu.com
 DOMAIN-SUFFIX,ug.baidu.com
 
 # > 其它
+DOMAIN,abt-online.netease.im
+DOMAIN,cfgc.zztfly.com
+DOMAIN,upc.zztfly.com
+DOMAIN-SUFFIX,share.mob.com
+DOMAIN-WILDCARD,link*-bgp.yunxinfw.com:443
+DOMAIN,ir-sdk.dun.163.com
+DOMAIN,link.netease.im
 DOMAIN,hd.xiaojukeji.com
 DOMAIN,serveraddr.service.kugou.com
 DOMAIN,tp2p.kg.qq.com
