@@ -4,8 +4,9 @@ USER-AGENT,Munion-SDK*
 # > 超自然行动组开屏弹窗
 DOMAIN-WILDCARD,beacon-*.ztgame.com
 DOMAIN-WILDCARD,*sdk.dailygn.com
-DOMAIN,observe-tcp.mintegral.net
 DOMAIN,prod-mediate-events.applovin.com
+DOMAIN,ms.applovin.com
+DOMAIN-SUFFIX,unityads.unity3d.com
 
 # > 联通营业厅
 DOMAIN-WILDCARD,m*.ad.10010.com

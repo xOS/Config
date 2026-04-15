@@ -11,6 +11,10 @@ const advertisingListPath = join(__dirname, '../../RuleSet/Advertising.list')
 const adRuleListPath = join(__dirname, '../../RuleSet/AdRule.list')
 const wildcardSectionStart = '# === AUTO-GENERATED: ADRULES WILDCARD START ==='
 const wildcardSectionEnd = '# === AUTO-GENERATED: ADRULES WILDCARD END ==='
+const advertisingSectionStart = '# === AUTO-GENERATED: ADVERTISING MIGRATED START ==='
+const advertisingSectionEnd = '# === AUTO-GENERATED: ADVERTISING MIGRATED END ==='
+const upstreamSectionStart = '# === AUTO-GENERATED: UPSTREAM RULES START ==='
+const upstreamSectionEnd = '# === AUTO-GENERATED: UPSTREAM RULES END ==='
 const configurations = [{
     name: 'Adaway',
     homepage: 'https://adaway.org',
@@ -572,7 +576,193 @@ function collectAdvertisingRules(text) {
     return [...rules].sort((left, right) => left.localeCompare(right))
 }
 
-function extractLeadingCommentBlock(text) {
+function collectAndPruneAdvertisingRules(text) {
+    const migratedRules = []
+    const nextLines = []
+    let removedCount = 0
+
+    for (const rawLine of text.split(/\r?\n/)) {
+        const line = rawLine.split('#')[0].trim()
+        const match = line.match(/^(DOMAIN|DOMAIN-SUFFIX),(.+)$/)
+
+        if (!match) {
+            nextLines.push(rawLine)
+            continue
+        }
+
+        const domain = normalizeDomain(match[2])
+
+        if (!isRealDomainLike(domain) || isIpAddress(domain)) {
+            nextLines.push(rawLine)
+            continue
+        }
+
+        migratedRules.push(match[1] === 'DOMAIN' ? domain : `.${domain}`)
+        removedCount += 1
+    }
+
+    return {
+        migratedRules: sortAndDedupeAdRuleLines(migratedRules),
+        cleanedText: removedCount > 0 ? normalizeWhitespace(nextLines.join('\n')) : text,
+        removedCount,
+    }
+}
+
+function normalizeRuleKey(line) {
+    return line.replace(/^\./, '')
+}
+
+function collectRuleLines(text) {
+    const rules = []
+
+    for (const rawLine of text.split(/\r?\n/)) {
+        const line = rawLine.trim()
+
+        if (!line || line.startsWith('#')) {
+            continue
+        }
+
+        rules.push(line)
+    }
+
+    return rules
+}
+
+function escapeRegExp(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function extractRulesBetweenMarkers(text, startMarker, endMarker) {
+    const markerReg = new RegExp(
+        `${escapeRegExp(startMarker)}[\\s\\S]*?${escapeRegExp(endMarker)}`,
+        'm',
+    )
+    const match = text.match(markerReg)
+
+    if (!match) {
+        return {
+            found: false,
+            rules: [],
+        }
+    }
+
+    const section = match[0]
+        .replace(startMarker, '')
+        .replace(endMarker, '')
+
+    return {
+        found: true,
+        rules: collectRuleLines(section),
+    }
+}
+
+function removeSection(text, startMarker, endMarker) {
+    const sectionReg = new RegExp(
+        `${escapeRegExp(startMarker)}[\\s\\S]*?${escapeRegExp(endMarker)}\\n?`,
+        'g',
+    )
+
+    return text.replace(sectionReg, '')
+}
+
+function collectLegacyBodyRules(text, customBlock) {
+    let bodyText = text
+
+    if (customBlock) {
+        bodyText = bodyText.replace(customBlock, '')
+    }
+
+    bodyText = removeSection(bodyText, advertisingSectionStart, advertisingSectionEnd)
+    bodyText = removeSection(bodyText, upstreamSectionStart, upstreamSectionEnd)
+
+    return collectRuleLines(bodyText)
+}
+
+function dedupeUpstreamRules(lines, blockedKeys) {
+    const result = []
+    const keyIndexMap = new Map()
+
+    for (const rawLine of lines) {
+        const line = rawLine.trim()
+
+        if (!line) {
+            continue
+        }
+
+        const key = normalizeRuleKey(line)
+
+        if (blockedKeys.has(key)) {
+            continue
+        }
+
+        const existingIndex = keyIndexMap.get(key)
+
+        if (existingIndex === undefined) {
+            keyIndexMap.set(key, result.length)
+            result.push(line)
+            continue
+        }
+
+        const existing = result[existingIndex]
+
+        if (!existing.startsWith('.') && line.startsWith('.')) {
+            result[existingIndex] = line
+        }
+    }
+
+    return result
+}
+
+function sortAndDedupeAdRuleLines(lines) {
+    const selected = new Map()
+
+    for (const rawLine of lines) {
+        const line = rawLine.trim()
+
+        if (!line) {
+            continue
+        }
+
+        const key = normalizeRuleKey(line)
+        const existing = selected.get(key)
+
+        if (!existing) {
+            selected.set(key, line)
+            continue
+        }
+
+        const existingPrefers = existing.startsWith('.')
+        const nextPrefers = line.startsWith('.')
+
+        if (!existingPrefers && nextPrefers) {
+            selected.set(key, line)
+        }
+    }
+
+    return [...selected.values()].sort((left, right) => {
+        const leftKey = normalizeRuleKey(left)
+        const rightKey = normalizeRuleKey(right)
+
+        if (leftKey !== rightKey) {
+            return leftKey.localeCompare(rightKey)
+        }
+
+        if (left.startsWith('.') !== right.startsWith('.')) {
+            return left.startsWith('.') ? -1 : 1
+        }
+
+        return left.localeCompare(right)
+    })
+}
+
+function extractCustomEditBlock(text) {
+    const markerReg = /# === Custom Edit Area Start ===[\s\S]*?# === Custom Edit Area End ===/
+    const match = text.match(markerReg)
+
+    if (match) {
+        return match[0].replace(/\n*$/, '\n')
+    }
+
     const lines = text.split(/\r?\n/)
     const headerLines = []
     let hasComment = false
@@ -602,22 +792,48 @@ function extractLeadingCommentBlock(text) {
 }
 
 function buildAdRuleListContent(existingContent, rules) {
-    const header = extractLeadingCommentBlock(existingContent)
-    const body = rules.length ? rules.join('\n') : ''
+    if (Array.isArray(rules)) {
+        const header = extractCustomEditBlock(existingContent)
+        const body = rules.length ? rules.join('\n') : ''
 
-    if (header && body) {
-        return `${header}\n\n${body}\n`
+        if (header && body) {
+            return `${header}\n\n${body}\n`
+        }
+
+        if (header) {
+            return `${header}\n`
+        }
+
+        if (body) {
+            return `${body}\n`
+        }
+
+        return ''
     }
+
+    const header = extractCustomEditBlock(existingContent)
+    const sections = rules || {}
+    const advertisingRules = sections.advertisingRules || []
+    const upstreamRules = sections.upstreamRules || []
+    const blocks = []
 
     if (header) {
-        return `${header}\n`
+        blocks.push(header.replace(/\n*$/, ''))
     }
 
-    if (body) {
-        return `${body}\n`
-    }
+    blocks.push([
+        advertisingSectionStart,
+        ...advertisingRules,
+        advertisingSectionEnd,
+    ].join('\n'))
 
-    return ''
+    blocks.push([
+        upstreamSectionStart,
+        ...upstreamRules,
+        upstreamSectionEnd,
+    ].join('\n'))
+
+    return `${blocks.join('\n\n')}\n`
 }
 
 async function collectMergedAdRuleLines() {
@@ -749,13 +965,57 @@ async function updateAdvertisingWildcardRules(wildcardDomains) {
 }
 
 async function outputAdvertisingRules() {
-    const rules = await collectMergedAdRuleLines()
+    const advertisingText = await fs.readFile(advertisingListPath, 'utf8')
+    const {
+        migratedRules,
+        cleanedText,
+        removedCount,
+    } = collectAndPruneAdvertisingRules(advertisingText)
+
+    if (removedCount > 0) {
+        await fs.writeFile(advertisingListPath, cleanedText)
+    }
+
+    const mergedRules = await collectMergedAdRuleLines()
+
     const existingAdRule = await fs.pathExists(adRuleListPath)
         ? await fs.readFile(adRuleListPath, 'utf8')
         : ''
-    const content = buildAdRuleListContent(existingAdRule, rules)
+    const header = extractCustomEditBlock(existingAdRule)
+    const manualKeys = new Set(collectRuleLines(header).map((line) => normalizeRuleKey(line)))
+    const mergedKeys = new Set(mergedRules.map((line) => normalizeRuleKey(line)))
+    const advertisingSection = extractRulesBetweenMarkers(
+        existingAdRule,
+        advertisingSectionStart,
+        advertisingSectionEnd,
+    )
+    const upstreamSection = extractRulesBetweenMarkers(
+        existingAdRule,
+        upstreamSectionStart,
+        upstreamSectionEnd,
+    )
+    const bootstrapAdvertisingRules = (!advertisingSection.found && !upstreamSection.found)
+        ? collectLegacyBodyRules(existingAdRule, header)
+            .filter((line) => !mergedKeys.has(normalizeRuleKey(line)))
+        : []
+    const advertisingRules = sortAndDedupeAdRuleLines(
+        advertisingSection.rules
+            .concat(bootstrapAdvertisingRules)
+            .concat(migratedRules),
+    ).filter((line) => !manualKeys.has(normalizeRuleKey(line)))
+    const blockedKeys = new Set([
+        ...manualKeys,
+        ...advertisingRules.map((line) => normalizeRuleKey(line)),
+    ])
+    const upstreamRules = dedupeUpstreamRules(mergedRules, blockedKeys)
+    const content = buildAdRuleListContent(existingAdRule, {
+        advertisingRules,
+        upstreamRules,
+    })
 
-    await fs.outputFile(adRuleListPath, content)
+    if (content !== existingAdRule) {
+        await fs.outputFile(adRuleListPath, content)
+    }
 }
 
 async function outputCompiled(config, compiled, allowedDomains, wildcardDomains) {
@@ -807,5 +1067,6 @@ if (require.main === module) {
 module.exports = {
     buildAdRuleListContent,
     collectAdvertisingRules,
+    sortAndDedupeAdRuleLines,
     formatRule,
 }
