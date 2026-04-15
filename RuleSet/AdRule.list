@@ -1,9 +1,6 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
-ad.aapls.com
-.ad.nange.cn
-# === Custom Edit Area End ===
 
 analytics.163.com
 crash.163.com
