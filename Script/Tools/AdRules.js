@@ -8,6 +8,7 @@ const fs = require('fs-extra')
 
 const distDir = join(__dirname, '../../RuleSet/AdRules')
 const advertisingListPath = join(__dirname, '../../RuleSet/Advertising.list')
+const adRuleListPath = join(__dirname, '../../RuleSet/AdRule.list')
 const wildcardSectionStart = '# === AUTO-GENERATED: ADRULES WILDCARD START ==='
 const wildcardSectionEnd = '# === AUTO-GENERATED: ADRULES WILDCARD END ==='
 const configurations = [{
@@ -490,7 +491,7 @@ async function collectAllowedDomains(config) {
     return domains
 }
 
-function formatRule(rule) {
+function formatRule(rule, sourceType) {
     const suffixReg = /^\|\|([^/^$*|?]+)\^?$/
 
     if (suffixReg.test(rule)) {
@@ -500,13 +501,20 @@ function formatRule(rule) {
             return
         }
 
+        if (sourceType === 'hosts') {
+            return {
+                domain,
+                output: domain,
+            }
+        }
+
         return {
             domain,
             output: `.${domain}`,
         }
     }
 
-    const exactReg = /:\/\/([^/^$*|?]+)$/
+    const exactReg = /:\/\/([^/^$*|?]+)\/?$/
 
     if (!exactReg.test(rule)) {
         return
@@ -534,6 +542,134 @@ function formatWildcardRule(rule) {
     const domain = normalizeDomain(rule.match(reg)[1])
 
     return domain || undefined
+}
+
+function collectAdvertisingRules(text) {
+    const rules = new Set()
+
+    for (const rawLine of text.split(/\r?\n/)) {
+        const line = rawLine.split('#')[0].trim()
+
+        if (!line) {
+            continue
+        }
+
+        const match = line.match(/^(DOMAIN|DOMAIN-SUFFIX),(.+)$/)
+
+        if (!match) {
+            continue
+        }
+
+        const domain = normalizeDomain(match[2])
+
+        if (!isRealDomainLike(domain) || isIpAddress(domain)) {
+            continue
+        }
+
+        rules.add(match[1] === 'DOMAIN' ? domain : `.${domain}`)
+    }
+
+    return [...rules].sort((left, right) => left.localeCompare(right))
+}
+
+function extractLeadingCommentBlock(text) {
+    const lines = text.split(/\r?\n/)
+    const headerLines = []
+    let hasComment = false
+
+    for (const line of lines) {
+        const trimmed = line.trim()
+
+        if (trimmed.startsWith('#')) {
+            headerLines.push(line)
+            hasComment = true
+            continue
+        }
+
+        if (trimmed === '' && hasComment) {
+            headerLines.push(line)
+            continue
+        }
+
+        break
+    }
+
+    while (headerLines.length > 0 && headerLines[headerLines.length - 1].trim() === '') {
+        headerLines.pop()
+    }
+
+    return headerLines.join('\n')
+}
+
+function buildAdRuleListContent(existingContent, rules) {
+    const header = extractLeadingCommentBlock(existingContent)
+    const body = rules.length ? rules.join('\n') : ''
+
+    if (header && body) {
+        return `${header}\n\n${body}\n`
+    }
+
+    if (header) {
+        return `${header}\n`
+    }
+
+    if (body) {
+        return `${body}\n`
+    }
+
+    return ''
+}
+
+async function collectMergedAdRuleLines() {
+    const entries = await fs.readdir(distDir)
+    const listFiles = entries
+        .filter((entry) => entry.endsWith('.list'))
+        .filter((entry) => entry !== 'AdRule.list' && entry !== 'Bypass.list')
+        .sort((left, right) => left.localeCompare(right))
+    const bypassPath = join(distDir, 'Bypass.list')
+    const bypassKeys = new Set()
+
+    if (await fs.pathExists(bypassPath)) {
+        const bypassText = await fs.readFile(bypassPath, 'utf8')
+
+        for (const rawLine of bypassText.split(/\r?\n/)) {
+            const line = rawLine.trim()
+
+            if (!line || line.startsWith('#')) {
+                continue
+            }
+
+            const key = line.replace(/^\./, '')
+            bypassKeys.add(key)
+        }
+    }
+
+    const seen = new Set()
+    const rules = []
+
+    for (const fileName of listFiles) {
+        const filePath = join(distDir, fileName)
+        const text = await fs.readFile(filePath, 'utf8')
+
+        for (const rawLine of text.split(/\r?\n/)) {
+            const line = rawLine.trim()
+
+            if (!line || line.startsWith('#') || line.includes('*')) {
+                continue
+            }
+
+            const key = line.replace(/^\./, '')
+
+            if (bypassKeys.has(key) || seen.has(line)) {
+                continue
+            }
+
+            seen.add(line)
+            rules.push(line)
+        }
+    }
+
+    return rules
 }
 
 function normalizeWhitespace(content) {
@@ -612,10 +748,21 @@ async function updateAdvertisingWildcardRules(wildcardDomains) {
     await fs.writeFile(advertisingListPath, next)
 }
 
+async function outputAdvertisingRules() {
+    const rules = await collectMergedAdRuleLines()
+    const existingAdRule = await fs.pathExists(adRuleListPath)
+        ? await fs.readFile(adRuleListPath, 'utf8')
+        : ''
+    const content = buildAdRuleListContent(existingAdRule, rules)
+
+    await fs.outputFile(adRuleListPath, content)
+}
+
 async function outputCompiled(config, compiled, allowedDomains, wildcardDomains) {
     const fileName = `${config.name}.list`
     const dest = join(distDir, fileName)
     const lines = []
+    const sourceType = config.sources[0] && config.sources[0].type
 
     for (const rule of compiled) {
         const wildcardDomain = formatWildcardRule(rule)
@@ -624,7 +771,7 @@ async function outputCompiled(config, compiled, allowedDomains, wildcardDomains)
             wildcardDomains.add(wildcardDomain)
         }
 
-        const formatted = formatRule(rule)
+        const formatted = formatRule(rule, sourceType)
 
         if (formatted && allowedDomains.has(formatted.domain)) {
             lines.push(formatted.output)
@@ -647,9 +794,18 @@ async function main() {
     }
 
     await updateAdvertisingWildcardRules(wildcardDomains)
+    await outputAdvertisingRules()
 }
 
-main().catch((err) => {
-    console.error(err)
-    process.exit(1)
-})
+if (require.main === module) {
+    main().catch((err) => {
+        console.error(err)
+        process.exit(1)
+    })
+}
+
+module.exports = {
+    buildAdRuleListContent,
+    collectAdvertisingRules,
+    formatRule,
+}

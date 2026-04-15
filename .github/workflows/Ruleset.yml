@@ -46,28 +46,6 @@ jobs:
           yarn install
           yarn update-adrules
 
-      - name: Merge and Rules and remove duplicates
-        run: | 
-          awk '
-            FNR==NR {
-              gsub(/^[[:space:]]+|[[:space:]]+$/, "", $0)
-              if ($0 == "" || $0 ~ /^#/) next
-              key = $0
-              sub(/^\./, "", key)
-              bypass[key] = 1
-              next
-            }
-            /\*/ || /^$/ { next }
-            {
-              line = $0
-              key = line
-              sub(/^\./, "", key)
-              if (!(key in bypass) && !seen[line]++) {
-                print line
-              }
-            }
-          ' RuleSet/AdRules/Bypass.list RuleSet/AdRules/*.list > RuleSet/AdRule.list
-
       - name: Update Static.list, Download.list, DomesticIP.list and AdIPRule.list
         run: |
           curl -sL "https://ruleset.skk.moe/List/domainset/cdn.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/Static.list

@@ -4,6 +4,8 @@ USER-AGENT,Munion-SDK*
 # > 超自然行动组开屏弹窗
 DOMAIN-WILDCARD,beacon-*.ztgame.com
 DOMAIN-WILDCARD,*sdk.dailygn.com
+DOMAIN,observe-tcp.mintegral.net
+DOMAIN,prod-mediate-events.applovin.com
 
 # > 联通营业厅
 DOMAIN-WILDCARD,m*.ad.10010.com
@@ -714,7 +716,6 @@ DOMAIN-WILDCARD,ysdm*.ys137.com.cn
 DOMAIN-WILDCARD,zbb.bbb.*.pics
 DOMAIN-WILDCARD,zhizhizhizhi.oss-*.aliyuncs.com
 # === AUTO-GENERATED: ADRULES WILDCARD END ===
-
 IP-CIDR,81.71.61.216/32,no-resolve
 IP-CIDR,39.107.15.115/32,no-resolve
 IP-CIDR,47.89.59.182/32,no-resolve
