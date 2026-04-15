@@ -536,6 +536,35 @@ function formatWildcardRule(rule) {
     return domain || undefined
 }
 
+function normalizeWhitespace(content) {
+    const lines = content.split(/\r?\n/)
+    const result = []
+    let lastWasEmpty = false
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i]
+        const trimmed = line.trim()
+        const nextLine = i + 1 < lines.length ? lines[i + 1].trim() : ''
+        const nextIsComment = nextLine.startsWith('#')
+
+        if (trimmed === '') {
+            // Current line is empty
+            if (nextIsComment && !lastWasEmpty) {
+                // Next line is a comment, keep one blank line
+                result.push('')
+                lastWasEmpty = true
+            }
+            // Skip other blank lines
+        } else {
+            // Current line is not empty
+            result.push(line)
+            lastWasEmpty = false
+        }
+    }
+
+    return result.join('\n').replace(/\n*$/, '\n')
+}
+
 async function updateAdvertisingWildcardRules(wildcardDomains) {
     const wildcardLines = [...wildcardDomains]
         .sort((a, b) => a.localeCompare(b))
@@ -562,17 +591,23 @@ async function updateAdvertisingWildcardRules(wildcardDomains) {
         .replace(/\n{3,}/g, '\n\n')
 
     const lines = contentWithoutSection.split(/\r?\n/)
-    const insertionIndex = lines.findIndex((line) =>
-        line.startsWith('URL-REGEX,') ||
-        line.startsWith('IP-CIDR,') ||
-        line.startsWith('IP-CIDR6,'),
-    )
+    
+    // Find the first line that STARTS with IP-CIDR (excluding DOMAIN-WILDCARD lines that may appear after IP-CIDR)
+    let insertionIndex = -1
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim()
+        if (line.startsWith('IP-CIDR,') || line.startsWith('IP-CIDR6,')) {
+            insertionIndex = i
+            break
+        }
+    }
 
     const targetIndex = insertionIndex >= 0 ? insertionIndex : lines.length
 
     lines.splice(targetIndex, 0, section, '')
 
-    const next = lines.join('\n').replace(/\n*$/, '\n')
+    const unformatted = lines.join('\n').replace(/\n*$/, '\n')
+    const next = normalizeWhitespace(unformatted)
 
     await fs.writeFile(advertisingListPath, next)
 }
