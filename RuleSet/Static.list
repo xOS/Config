@@ -1372,6 +1372,8 @@ tag.unifyintent.com
 fastly-cloud.typenetwork.com
 cloud.typenetwork.com
 cms.typenetwork.com
+static.tryprofound.com
+ph.tryprofound.com
 static-assets-1.truthsocial.com
 cdn.trustedsite.com
 widgets.tree-nation.com
@@ -1886,6 +1888,7 @@ hawk.tomsguide.com
 .tokyvideo.com
 .tnastatic.com
 .tinifycdn.com
+telemetry.timescale.com
 .tiktokcdn.com
 assets.tigerdata.com
 thumbsnap.com
@@ -2567,6 +2570,7 @@ cdn.sheetjs.com
 i.servimg.com
 videos2-h.sendvid.com
 thumbs2.sendvid.com
+static.semrush.com
 cdn.segment.com
 ocsp.sectigo.com
 crt.sectigo.com
@@ -2804,6 +2808,7 @@ cdn.devdojo.com
 .denopkg.com
 .dellcdn.com
 import-cdn.default.com
+pixel-cdn.default.com
 cdn.datdota.com
 proxy.csidetm.com
 static.comicbz.com
@@ -3202,6 +3207,7 @@ i.anysex.com
 code.buywithprime.amazon.com
 d2c.aws.amazon.com
 time.akamai.com
+static-app.ahrefs.com
 static.ahrefs.com
 cdn1.affirm.com
 .assets.adidas.com
@@ -3297,6 +3303,7 @@ static-exp2.licdn.com
 static-exp1.licdn.com
 static.licdn.com
 media.licdn.com
+ahrefscomscreenshot-3b70.kxcdn.com
 wikiwandv2-19431.kxcdn.com
 searchanise-ef84.kxcdn.com
 wandi-6402.kxcdn.com
@@ -4421,6 +4428,7 @@ s3.masto.ai
 participants.evolv.ai
 media.evolv.ai
 cdn.candy.ai
+cdn.candu.ai
 .telemetry.services.yofi.ai
 cdn2.suno.ai
 cdn1.suno.ai
