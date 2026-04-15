@@ -713,6 +713,29 @@ function dedupeUpstreamRules(lines, blockedKeys) {
     return result
 }
 
+async function collectBypassKeys() {
+    const bypassPath = join(distDir, 'Bypass.list')
+    const bypassKeys = new Set()
+
+    if (!(await fs.pathExists(bypassPath))) {
+        return bypassKeys
+    }
+
+    const bypassText = await fs.readFile(bypassPath, 'utf8')
+
+    for (const rawLine of bypassText.split(/\r?\n/)) {
+        const line = rawLine.trim()
+
+        if (!line || line.startsWith('#')) {
+            continue
+        }
+
+        bypassKeys.add(normalizeRuleKey(line))
+    }
+
+    return bypassKeys
+}
+
 function sortAndDedupeAdRuleLines(lines) {
     const selected = new Map()
 
@@ -842,23 +865,7 @@ async function collectMergedAdRuleLines() {
         .filter((entry) => entry.endsWith('.list'))
         .filter((entry) => entry !== 'AdRule.list' && entry !== 'Bypass.list')
         .sort((left, right) => left.localeCompare(right))
-    const bypassPath = join(distDir, 'Bypass.list')
-    const bypassKeys = new Set()
-
-    if (await fs.pathExists(bypassPath)) {
-        const bypassText = await fs.readFile(bypassPath, 'utf8')
-
-        for (const rawLine of bypassText.split(/\r?\n/)) {
-            const line = rawLine.trim()
-
-            if (!line || line.startsWith('#')) {
-                continue
-            }
-
-            const key = line.replace(/^\./, '')
-            bypassKeys.add(key)
-        }
-    }
+    const bypassKeys = await collectBypassKeys()
 
     const seen = new Set()
     const rules = []
@@ -874,7 +881,7 @@ async function collectMergedAdRuleLines() {
                 continue
             }
 
-            const key = line.replace(/^\./, '')
+            const key = normalizeRuleKey(line)
 
             if (bypassKeys.has(key) || seen.has(line)) {
                 continue
@@ -977,6 +984,7 @@ async function outputAdvertisingRules() {
     }
 
     const mergedRules = await collectMergedAdRuleLines()
+    const bypassKeys = await collectBypassKeys()
 
     const existingAdRule = await fs.pathExists(adRuleListPath)
         ? await fs.readFile(adRuleListPath, 'utf8')
@@ -1002,9 +1010,14 @@ async function outputAdvertisingRules() {
         advertisingSection.rules
             .concat(bootstrapAdvertisingRules)
             .concat(migratedRules),
-    ).filter((line) => !manualKeys.has(normalizeRuleKey(line)))
+    ).filter((line) => {
+        const key = normalizeRuleKey(line)
+
+        return !manualKeys.has(key) && !bypassKeys.has(key)
+    })
     const blockedKeys = new Set([
         ...manualKeys,
+        ...bypassKeys,
         ...advertisingRules.map((line) => normalizeRuleKey(line)),
     ])
     const upstreamRules = dedupeUpstreamRules(mergedRules, blockedKeys)
