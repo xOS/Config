@@ -9,12 +9,14 @@
 
 [![Star History Chart](https://api.star-history.com/svg?repos=xOS/Config&type=Date)](https://www.star-history.com/#xOS/Config&Date)
 
-## 鸣谢
+## 致谢
 
 - [@AdguardTeam](https://github.com/AdguardTeam/FiltersRegistry)
 - [@Koolson](https://github.com/Koolson/Qure)
-- [@neoFelhz](https://github.com/neoFelhz/neohosts)
-- [@Adaway](https://adaway.org)
+- [@Loyalsoldier](https://github.com/Loyalsoldier)
 - [@SukkaW](https://github.com/SukkaW/Surge)
 - [@xOS](https://github.com/xOS/geoip-all-in-one)
-- [@Loyalsoldier](https://github.com/Loyalsoldier/geoip)
+- [@Adaway](https://adaway.org)
+- [@AdblockPlus](https://adblockplus.org)
+- [@yoyo.org](https://pgl.yoyo.org/adservers/serverlist.php?showintro=0;hostformat=hosts)
+- [@SomeOneWhoCares](https://someonewhocares.org/hosts/hosts)

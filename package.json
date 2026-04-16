@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "update-adrules": "node Script/Tools/AdRules"
+    "update-adrules": "node Script/Tools/AdRules",
+    "update-globalrules": "node Script/Tools/GlobalRules"
   },
   "dependencies": {
     "@adguard/hostlist-compiler": "^2.0.0",
