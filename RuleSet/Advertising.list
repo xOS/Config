@@ -320,11 +320,13 @@ DOMAIN-WILDCARD,*-default-cn.rum.aliyuncs.com
 DOMAIN-WILDCARD,*-sdk.rum.aliyuncs.com
 DOMAIN-WILDCARD,*.exaapi.com
 DOMAIN-WILDCARD,*.libaishuo.com
+DOMAIN-WILDCARD,*.wap.xsbiquge.com
 DOMAIN-WILDCARD,*adapt-beacon.awsprodops.movetv.com
 DOMAIN-WILDCARD,*cdn-settings.appsflyersdk.com
 DOMAIN-WILDCARD,*conversions.appsflyersdk.com
 DOMAIN-WILDCARD,*launches.appsflyersdk.com
 DOMAIN-WILDCARD,*register.appsflyersdk.com
+DOMAIN-WILDCARD,*serror*.wo.com.cn
 DOMAIN-WILDCARD,*two-gun-volley.pages.dev
 DOMAIN-WILDCARD,201*.myhard.com
 DOMAIN-WILDCARD,8*.tianya.cn
@@ -361,6 +363,7 @@ DOMAIN-WILDCARD,ads-*.v.ssp.yahoo.com
 DOMAIN-WILDCARD,ads-dmp-collect.*.karrotmarket.com
 DOMAIN-WILDCARD,ads.livetv*.me
 DOMAIN-WILDCARD,ads*-normal-*.zijieapi.com
+DOMAIN-WILDCARD,ads*-normal-hl.zijieapi.com
 DOMAIN-WILDCARD,ads*-normal-lq.zijieapi.com
 DOMAIN-WILDCARD,ads*-normal*.zijieapi.com
 DOMAIN-WILDCARD,ads*.bojijulebu.com
@@ -390,6 +393,8 @@ DOMAIN-WILDCARD,analytics*.carambo.la
 DOMAIN-WILDCARD,analytics*.clickdimensions.com
 DOMAIN-WILDCARD,analytics*.prezly.com
 DOMAIN-WILDCARD,analyzer*.fc2.com
+DOMAIN-WILDCARD,ap*.jj20.com
+DOMAIN-WILDCARD,ap*.pl520.com
 DOMAIN-WILDCARD,api-*.hismarttv.com
 DOMAIN-WILDCARD,api*.amplitude.com
 DOMAIN-WILDCARD,api*.batmobi.net
@@ -422,6 +427,8 @@ DOMAIN-WILDCARD,beacon-*.helpscout.net
 DOMAIN-WILDCARD,beacons*.gvt3.com
 DOMAIN-WILDCARD,beehiiv-adnetwork-production.s*.amazonaws.com
 DOMAIN-WILDCARD,bi-eventtracker-*.amazonaws.com
+DOMAIN-WILDCARD,bj*.9669.cn
+DOMAIN-WILDCARD,bjsvp*.space
 DOMAIN-WILDCARD,block.s*block.com
 DOMAIN-WILDCARD,broredir*s.site
 DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
@@ -457,6 +464,7 @@ DOMAIN-WILDCARD,cs*.mp3bars.com
 DOMAIN-WILDCARD,customerevents.us-east-*.internal.dradis.netflix.com
 DOMAIN-WILDCARD,cza*.crazygames.com
 DOMAIN-WILDCARD,d*.ruiwen.com
+DOMAIN-WILDCARD,d*.wanzhuang.com
 DOMAIN-WILDCARD,d*.xinshipu.com
 DOMAIN-WILDCARD,data-track*.yingxiong.com
 DOMAIN-WILDCARD,datacollect*.abtasty.com
@@ -465,6 +473,7 @@ DOMAIN-WILDCARD,datacollector-*.dt.hicloud.com
 DOMAIN-WILDCARD,device-metrics-*.amazon.com
 DOMAIN-WILDCARD,device-metrics-us*.amazon.com
 DOMAIN-WILDCARD,discovery-ios-*.ertelecom.ru
+DOMAIN-WILDCARD,dm-*.toutiao.com
 DOMAIN-WILDCARD,dm*.ppzuowen.com
 DOMAIN-WILDCARD,dm*.yxlady.com
 DOMAIN-WILDCARD,dn*.ixinwei.com
@@ -495,6 +504,7 @@ DOMAIN-WILDCARD,geoloc*.geostats.ovh
 DOMAIN-WILDCARD,geoloc*.geovisite.ovh
 DOMAIN-WILDCARD,geotargetly-api-*.com
 DOMAIN-WILDCARD,get*bannerads-6egeg2u34q-du.a.run.app
+DOMAIN-WILDCARD,gg*.miguvideo.com
 DOMAIN-WILDCARD,gonews*.net
 DOMAIN-WILDCARD,gscounters.*.gigya.com
 DOMAIN-WILDCARD,h3v9p8x2q1r7-agckaeh6g2ehcaes.*.azurewebsites.net
@@ -513,6 +523,7 @@ DOMAIN-WILDCARD,hw-sh-pcdn-*.biliapi.net
 DOMAIN-WILDCARD,i-*.ci360.sas.com
 DOMAIN-WILDCARD,iad-*.appboy.com
 DOMAIN-WILDCARD,iad-*.braze.com
+DOMAIN-WILDCARD,ifengad.*.ifeng.com
 DOMAIN-WILDCARD,imp-*.jampp.com
 DOMAIN-WILDCARD,impservice*.yodao.com
 DOMAIN-WILDCARD,impservice*.youdao.com
@@ -592,10 +603,12 @@ DOMAIN-WILDCARD,my-redirect-bucket-unique-*.s3.ap-northeast-1.amazonaws.com
 DOMAIN-WILDCARD,nelonenmedia-pmd-ads-*.nm-stream.nelonenmedia.fi
 DOMAIN-WILDCARD,orbit*.lun.ua
 DOMAIN-WILDCARD,orderana*.spankbang.com
+DOMAIN-WILDCARD,p*-ad-sign.byteimg.com
 DOMAIN-WILDCARD,pangolin*.sgsnssdk.com
 DOMAIN-WILDCARD,parkdomainreal*.site
 DOMAIN-WILDCARD,partner.superbahisaffiliates*.com
 DOMAIN-WILDCARD,pijama.*.elasticbeanstalk.com
+DOMAIN-WILDCARD,ping.*.sogou.com
 DOMAIN-WILDCARD,ping*.bidease.com
 DOMAIN-WILDCARD,piwik.*.vn
 DOMAIN-WILDCARD,pixel-*.convertagain.net
@@ -635,6 +648,8 @@ DOMAIN-WILDCARD,same*.stockstar.com
 DOMAIN-WILDCARD,sdk-*.moengage.com
 DOMAIN-WILDCARD,sdk.*.braze.com
 DOMAIN-WILDCARD,sdk.fra-*.braze.eu
+DOMAIN-WILDCARD,sell*.etlong.com
+DOMAIN-WILDCARD,sense-*.tapdb.net
 DOMAIN-WILDCARD,sensorsdata*.read.duokan.com
 DOMAIN-WILDCARD,servo-report.keepstreams.*
 DOMAIN-WILDCARD,sher.*.hu
@@ -662,6 +677,7 @@ DOMAIN-WILDCARD,suite*.linximpulse.net
 DOMAIN-WILDCARD,t*.playdigo.live
 DOMAIN-WILDCARD,t*.zcvh.net
 DOMAIN-WILDCARD,tag-based.s3.*.amazonaws.com
+DOMAIN-WILDCARD,tamuvip.*
 DOMAIN-WILDCARD,telemetry.*.pvp.net
 DOMAIN-WILDCARD,telemetry*.transcend.io
 DOMAIN-WILDCARD,teleriumads-*.netdna-ssl.com
@@ -671,10 +687,12 @@ DOMAIN-WILDCARD,tnc*.tiktokv.us
 DOMAIN-WILDCARD,tnc*.zijieapi.com
 DOMAIN-WILDCARD,tnc16-*.byteoversea.com
 DOMAIN-WILDCARD,tnc16-*.hypic.com
+DOMAIN-WILDCARD,toujing*.top
 DOMAIN-WILDCARD,trace-*.free-reels.com
 DOMAIN-WILDCARD,trace-*.hungrypanda.co
 DOMAIN-WILDCARD,track-*.hungrypanda.co
 DOMAIN-WILDCARD,track.*.roku.com
+DOMAIN-WILDCARD,tracker*.qcloud.com
 DOMAIN-WILDCARD,tracking-*.trnox.com
 DOMAIN-WILDCARD,tracking-v*.a.run.app
 DOMAIN-WILDCARD,tracking.*.miui.com
@@ -693,7 +711,9 @@ DOMAIN-WILDCARD,ulog.*.kwai-pro.com
 DOMAIN-WILDCARD,ulog*.gifshow.com
 DOMAIN-WILDCARD,ulog*.kwai-pro.com
 DOMAIN-WILDCARD,ulog*.kwaipros.com
+DOMAIN-WILDCARD,um*.com
 DOMAIN-WILDCARD,union*.365inews.com
+DOMAIN-WILDCARD,us.*.qwadro.com
 DOMAIN-WILDCARD,use-trk*.bluevoox.com
 DOMAIN-WILDCARD,util-*.simply-hentai.com
 DOMAIN-WILDCARD,v.newsportal*.ru

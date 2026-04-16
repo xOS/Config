@@ -31,96 +31,9 @@ const configurations = [{
     ],
 },
 {
-    name: 'neohosts',
-    homepage: 'https://github.com/neoFelhz/neohosts',
-    sources: [{
-        source: 'https://cdn.jsdelivr.net/gh/neoFelhz/neohosts@gh-pages/basic/hosts',
-        type: 'hosts',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Compress',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'TrackingProtection',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'Chinese',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'Annoyances',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'Base',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'SocialMedia',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_4_Social/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'DNS',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
     name: 'EasyList',
     sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_101_EasyList/filter.txt',
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_101_EasyList/filter.txt',
     },],
     transformations: [
         'RemoveComments',
@@ -132,31 +45,7 @@ const configurations = [{
 {
     name: 'EasyListChina',
     sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_104_EasyListChina/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'EasyPrivacy',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_118_EasyPrivacy/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'AdBlockID',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_120_AdBlockID/filter.txt',
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_104_EasyListChina/filter.txt',
     },],
     transformations: [
         'RemoveComments',
@@ -168,7 +57,7 @@ const configurations = [{
 {
     name: 'ChinaListAndEasyList',
     sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_219_ChinaListAndEasyList/filter.txt',
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_219_ChinaListAndEasyList/filter.txt',
     },],
     transformations: [
         'RemoveComments',
@@ -178,9 +67,9 @@ const configurations = [{
     ],
 },
 {
-    name: 'FanboysAnnoyances',
+    name: 'ABPindo',
     sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_122_FanboysAnnoyances/filter.txt',
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_102_ABPindo/filter.txt',
     },],
     transformations: [
         'RemoveComments',
@@ -190,9 +79,153 @@ const configurations = [{
     ],
 },
 {
-    name: 'CJXsAnnoyanceList',
+    name: 'AdBlockID',
     sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/ThirdParty/filter_220_CJXsAnnoyanceList/filter.txt',
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_120_AdBlockID/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'EasyPrivacy',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_118_EasyPrivacy/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'ADgkMobileChinalist',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_209_ADgkMobileChinalist/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'Mobile',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_11_Mobile/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'Annoyances',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_14_Annoyances/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'DNS',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_15_DnsFilter/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'AnnoyancesMobileApp',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_20_Annoyances_MobileApp/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'AnnoyancesOther',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_21_Annoyances_Other/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'Chinese',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_224_Chinese/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'Base',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_2_Base/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'Spyware',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_3_Spyware/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'SocialMedia',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_4_Social/filter.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'TrackParam',
+    sources: [{
+        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_17_TrackParam/filter.txt',
     },],
     transformations: [
         'RemoveComments',
@@ -202,6 +235,128 @@ const configurations = [{
     ],
 },
 ]
+
+function sanitizeListBaseName(value) {
+    if (!value) {
+        return null
+    }
+
+    const withoutPrefix = value.trim().replace(/^filter_\d+_/i, '')
+    const cleaned = withoutPrefix.replace(/[\\/:*?"<>|]/g, '_')
+
+    return cleaned || null
+}
+
+function extractFilterNameFromUrl(sourceUrl) {
+    let pathname = ''
+
+    try {
+        pathname = new URL(sourceUrl).pathname
+    } catch (error) {
+        return null
+    }
+
+    const match = pathname.match(/\/filter_\d+_([^/]+)\/filter\.txt$/i)
+
+    if (!match) {
+        return null
+    }
+
+    try {
+        return sanitizeListBaseName(decodeURIComponent(match[1]))
+    } catch (error) {
+        return sanitizeListBaseName(match[1])
+    }
+}
+
+function resolveListBaseName(configName, sourceUrl) {
+    const upstreamName = extractFilterNameFromUrl(sourceUrl)
+
+    if (upstreamName) {
+        return upstreamName
+    }
+
+    const fromConfig = sanitizeListBaseName(configName)
+
+    if (fromConfig) {
+        return fromConfig
+    }
+
+    let pathname = ''
+
+    try {
+        pathname = new URL(sourceUrl).pathname
+    } catch (error) {
+        return null
+    }
+
+    const segments = pathname.split('/').filter(Boolean)
+
+    if (segments.length === 0) {
+        return null
+    }
+
+    const lastSegment = segments[segments.length - 1]
+
+    if (/\.txt$/i.test(lastSegment)) {
+        return sanitizeListBaseName(lastSegment.replace(/\.txt$/i, ''))
+    }
+
+    return sanitizeListBaseName(lastSegment)
+}
+
+function buildCompilationConfigs() {
+    const listNameToSource = new Map()
+    const expandedConfigs = []
+
+    for (const config of configurations) {
+        const sourceEntries = Array.isArray(config.sources) ? config.sources : []
+
+        for (const source of sourceEntries) {
+            const listName = resolveListBaseName(config.name, source.source)
+
+            if (!listName) {
+                throw new Error(`Unable to derive list file name from source: ${source.source}`)
+            }
+
+            const existingSource = listNameToSource.get(listName)
+
+            if (existingSource) {
+                throw new Error(
+                    `Duplicate output list name "${listName}" detected for sources:\n- ${existingSource}\n- ${source.source}`,
+                )
+            }
+
+            listNameToSource.set(listName, source.source)
+
+            expandedConfigs.push({
+                ...config,
+                name: listName,
+                sources: [source],
+            })
+        }
+    }
+
+    return expandedConfigs
+}
+
+async function pruneGeneratedListFiles(compilationConfigs) {
+    const expectedListFiles = new Set(
+        compilationConfigs.map((config) => `${config.name}.list`),
+    )
+
+    expectedListFiles.add('Bypass.list')
+
+    const entries = await fs.readdir(distDir)
+    const staleFiles = entries.filter((entry) => (
+        entry.endsWith('.list') &&
+        !expectedListFiles.has(entry)
+    ))
+
+    await Promise.all(
+        staleFiles.map((fileName) => fs.remove(join(distDir, fileName))),
+    )
+}
 
 const cosmeticMarkers = ['##', '#@#', '#?#', '#$#', '#%#']
 
@@ -859,11 +1014,13 @@ function buildAdRuleListContent(existingContent, rules) {
     return `${blocks.join('\n\n')}\n`
 }
 
-async function collectMergedAdRuleLines() {
+async function collectMergedAdRuleLines(compilationConfigs = buildCompilationConfigs()) {
     const entries = await fs.readdir(distDir)
+    const expectedListFiles = new Set(
+        compilationConfigs.map((config) => `${config.name}.list`),
+    )
     const listFiles = entries
-        .filter((entry) => entry.endsWith('.list'))
-        .filter((entry) => entry !== 'AdRule.list' && entry !== 'Bypass.list')
+        .filter((entry) => expectedListFiles.has(entry))
         .sort((left, right) => left.localeCompare(right))
     const bypassKeys = await collectBypassKeys()
 
@@ -971,7 +1128,7 @@ async function updateAdvertisingWildcardRules(wildcardDomains) {
     await fs.writeFile(advertisingListPath, next)
 }
 
-async function outputAdvertisingRules() {
+async function outputAdvertisingRules(compilationConfigs = buildCompilationConfigs()) {
     const advertisingText = await fs.readFile(advertisingListPath, 'utf8')
     const {
         migratedRules,
@@ -983,7 +1140,7 @@ async function outputAdvertisingRules() {
         await fs.writeFile(advertisingListPath, cleanedText)
     }
 
-    const mergedRules = await collectMergedAdRuleLines()
+    const mergedRules = await collectMergedAdRuleLines(compilationConfigs)
     const bypassKeys = await collectBypassKeys()
 
     const existingAdRule = await fs.pathExists(adRuleListPath)
@@ -1056,8 +1213,12 @@ async function outputCompiled(config, compiled, allowedDomains, wildcardDomains)
 
 async function main() {
     const wildcardDomains = new Set()
+    const compilationConfigs = buildCompilationConfigs()
 
-    for (const config of configurations) {
+    await fs.ensureDir(distDir)
+    await pruneGeneratedListFiles(compilationConfigs)
+
+    for (const config of compilationConfigs) {
         const [compiled, allowedDomains] = await Promise.all([
             compile(config),
             collectAllowedDomains(config),
@@ -1067,7 +1228,7 @@ async function main() {
     }
 
     await updateAdvertisingWildcardRules(wildcardDomains)
-    await outputAdvertisingRules()
+    await outputAdvertisingRules(compilationConfigs)
 }
 
 if (require.main === module) {
