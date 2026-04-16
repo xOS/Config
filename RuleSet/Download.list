@@ -257,7 +257,6 @@ debian-archive.trafficmanager.net
 .mirrors.lucidnetworks.net
 fdroid.tetaneutral.net
 ctan.tetaneutral.net
-cpan.tetaneutral.net
 apt.tetaneutral.net
 downloads.sourceforge.net
 .dl.sourceforge.net
@@ -512,7 +511,6 @@ mirror.cc.vt.edu
 ftp.ussg.iu.edu
 mirror.digitaloceans.dev
 download.clashverge.dev
-drive.massgrave.dev
 dl.getaurora.dev
 cdn-updates.orbstack.dev
 api-updates.orbstack.dev
@@ -620,8 +618,6 @@ update.googleapis.com
 mirror.downloadvn.com
 linux.domainesia.com
 cpan.develooper.com
-mirror.datapacket.com
-mirror.nl.datapacket.com
 pkg.cloudflare.com
 .swupdate.chaosgroup.com
 .mirror.cdnetworks.com
@@ -1085,8 +1081,8 @@ mirror.ams.macarne.com
 .ks3-cn-hk-1.ksyuncs.com
 .ks3-sgp.ksyuncs.com
 .ks3-rus.ksyuncs.com
+fw.gl-inet.com
 mirrors.gigenet.com
-mirror.ghproxy.com
 download.fosshub.com
 mirror.fjordos.com
 rsync.fjordos.com
@@ -1158,7 +1154,6 @@ download.dlsite.com
 .dl.dlsite.com
 downloads.cursor.com
 download.beeper.com
-mirror.anigil.com
 mirrors.aliyun.com
 mirror.0x626b.com
 downloads.xrite.com
@@ -1248,7 +1243,6 @@ espejito.fder.edu.uy
 ubuntu.repo.cure.edu.uy
 debian.repo.cure.edu.uy
 cdn.electronic.us
-mirror.timkevin.us
 cdn.zoom.us
 mirrors.xtom.us
 mirror.xtom.us
@@ -1291,6 +1285,8 @@ debian.csie.ntu.edu.tw
 ftp.tc.edu.tw
 mirrors.yuntu.com.tw
 cisco.yuntu.com.tw
+mirror6.twds.com.tw
+mirror4.twds.com.tw
 mirror.twds.com.tw
 ftp.linux.org.tr
 .mirror.guzel.net.tr
@@ -1323,7 +1319,6 @@ mirrors.xtom.sg
 mirror.xtom.sg
 mirror.djvg.sg
 download.nus.edu.sg
-mirror.nus.edu.sg
 kambing.uu.sg
 mirror.0x.sg
 mirror.accum.se
@@ -1478,7 +1473,6 @@ repo.morgan.kr
 ftp.lanet.kr
 mirror.techlabs.co.kr
 blizzard.gcdn.cloudn.co.kr
-apache.tt.co.kr
 ftp.kaist.ac.kr
 mirror.sabay.com.kh
 mir.linux.kg
@@ -1492,7 +1486,7 @@ mirrors.xtom.jp
 mirror.xtom.jp
 debian-mirror.sakura.ne.jp
 download.hikarifield.co.jp
-client.hikarifield.co.jp
+static.hikarifield.co.jp
 ftp.kddlabs.co.jp
 ftp.sakura.ad.jp
 ftp.tsukuba.wide.ad.jp
@@ -1770,8 +1764,13 @@ mirror.it4i.cz
 ftp.cvut.cz
 ftp.sh.cvut.cz
 ftp.zcu.cz
-mirrors.nic.cz
+archlinux.nic.cz
+opensuse.nic.cz
+ubuntu.nic.cz
+fedora.nic.cz
 debian.nic.cz
+centos.nic.cz
+cran.nic.cz
 mirror.dkm.cz
 mirror.library.ucy.ac.cy
 mirrors.ucr.ac.cr
