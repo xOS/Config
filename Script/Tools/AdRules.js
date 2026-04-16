@@ -274,6 +274,42 @@ const configurations = [{
         'Deduplicate',
     ],
 },
+{
+    name: 'AntiAdBlock',
+    sources: [{
+        source: 'https://easylist-downloads.adblockplus.org/antiadblockfilters.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'uBlockOrigin',
+    sources: [{
+        source: 'https://ublockorigin.github.io/uAssetsCDN/filters/filters.min.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'uBlockOriginEasylistAnnoyances',
+    sources: [{
+        source: 'https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-annoyances.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
 ]
 
 function sanitizeListBaseName(value) {

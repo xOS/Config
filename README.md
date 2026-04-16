@@ -16,6 +16,7 @@
 - [@Loyalsoldier](https://github.com/Loyalsoldier)
 - [@SukkaW](https://github.com/SukkaW/Surge)
 - [@xOS](https://github.com/xOS/geoip-all-in-one)
+- [@uBlockOrigin](https://github.com/uBlockOrigin/uAssets)
 - [@Adaway](https://adaway.org)
 - [@AdblockPlus](https://adblockplus.org)
 - [@yoyo.org](https://pgl.yoyo.org/adservers/serverlist.php?showintro=0;hostformat=hosts)
