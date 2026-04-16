@@ -31,6 +31,46 @@ const configurations = [{
     ],
 },
 {
+    name: 'AdblockPlusEasylistChina',
+    sources: [{
+        source: 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'AdServers',
+    sources: [{
+        source: 'https://pgl.yoyo.org/adservers/serverlist.php?showintro=0;hostformat=hosts',
+        type: 'hosts',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Compress',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
+    name: 'SomeoneWhoCares',
+    sources: [{
+        source: 'https://someonewhocares.org/hosts/hosts',
+        type: 'hosts',
+    },],
+    transformations: [
+        'RemoveComments',
+        'RemoveModifiers',
+        'Compress',
+        'Validate',
+        'Deduplicate',
+    ],
+},
+{
     name: 'EasyList',
     sources: [{
         source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_101_EasyList/filter.txt',
