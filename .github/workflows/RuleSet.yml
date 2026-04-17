@@ -1,4 +1,4 @@
-name: Update Ruleset
+name: Update RuleSet
 
 on:
   workflow_dispatch:
