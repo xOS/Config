@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "update-adrules": "node Script/Tools/AdRules",
-    "update-globalrules": "node Script/Tools/GlobalRules"
+    "update-rulesets": "node Script/Tools/RuleSets",
+    "test": "node --test"
   },
   "dependencies": {
     "@adguard/hostlist-compiler": "^2.0.0",

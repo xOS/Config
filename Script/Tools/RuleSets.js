@@ -4,6 +4,8 @@ const { join } = require('path')
 const https = require('https')
 const fs = require('fs-extra')
 
+const { jobs } = require('./SyncRuleSets.config')
+
 const globalListPath = join(__dirname, '../../RuleSet/Global.list')
 const globalRuleListPath = join(__dirname, '../../RuleSet/GlobalRule.list')
 
@@ -20,6 +22,80 @@ const globalMigratedSectionStart = '# === AUTO-GENERATED: GLOBAL MIGRATED START 
 const globalMigratedSectionEnd = '# === AUTO-GENERATED: GLOBAL MIGRATED END ==='
 const globalRuleUpstreamSectionStart = '# === AUTO-GENERATED: GLOBALRULE UPSTREAM START ==='
 const globalRuleUpstreamSectionEnd = '# === AUTO-GENERATED: GLOBALRULE UPSTREAM END ==='
+
+const supportedTransforms = {
+    NormalizeNewlines: (text) => text.replace(/\r\n/g, '\n'),
+    ExcludeMatchingLines: (text, options = {}) => {
+        const patterns = Array.isArray(options.patterns) ? options.patterns : []
+        const regexes = patterns.map((pattern) => new RegExp(pattern))
+
+        return text
+            .split(/\r?\n/)
+            .filter((line) => !regexes.some((regex) => regex.test(line)))
+            .join('\n')
+    },
+    RemoveComments: (text) => text
+        .split(/\r?\n/)
+        .filter((line) => !line.trim().startsWith('#'))
+        .join('\n'),
+    RemoveBlankLines: (text) => text
+        .split(/\r?\n/)
+        .filter((line) => line.trim() !== '')
+        .join('\n'),
+    Deduplicate: (text) => {
+        const seen = new Set()
+
+        return text
+            .split(/\r?\n/)
+            .filter((line) => {
+                const key = line.trim()
+
+                if (!key) {
+                    return false
+                }
+
+                if (seen.has(key)) {
+                    return false
+                }
+
+                seen.add(key)
+                return true
+            })
+            .join('\n')
+    },
+    Sort: (text) => text
+        .split(/\r?\n/)
+        .filter((line) => line.trim() !== '')
+        .sort((left, right) => left.localeCompare(right))
+        .join('\n'),
+    EnsureTrailingNewline: (text) => {
+        const trimmed = text.replace(/\n*$/, '')
+
+        return trimmed ? `${trimmed}\n` : ''
+    },
+}
+
+function normalizeTransformSpec(transformSpec) {
+    if (typeof transformSpec === 'string') {
+        return {
+            name: transformSpec,
+            options: {},
+        }
+    }
+
+    if (
+        transformSpec &&
+        typeof transformSpec === 'object' &&
+        typeof transformSpec.name === 'string'
+    ) {
+        return {
+            name: transformSpec.name,
+            options: transformSpec.options || {},
+        }
+    }
+
+    throw new Error(`Invalid transform spec: ${JSON.stringify(transformSpec)}`)
+}
 
 function normalizeDomain(domain) {
     return domain.trim().replace(/^\.+/, '').replace(/\.+$/, '').toLowerCase()
@@ -490,7 +566,81 @@ function fetchText(sourceUrl) {
     })
 }
 
-async function main() {
+function applyTransforms(text, transforms) {
+    let next = text
+
+    for (const transformSpec of transforms || []) {
+        const { name, options } = normalizeTransformSpec(transformSpec)
+        const transform = supportedTransforms[name]
+
+        if (!transform) {
+            throw new Error(`Unsupported transform: ${name}`)
+        }
+
+        next = transform(next, options)
+    }
+
+    return next
+}
+
+function concatSources(chunks, separator = '\n') {
+    if (chunks.length === 0) {
+        return ''
+    }
+
+    if (chunks.length === 1) {
+        return chunks[0]
+    }
+
+    const normalized = chunks.map((chunk) => chunk.replace(/\n*$/, ''))
+
+    return `${normalized.join(separator)}\n`
+}
+
+async function buildJobContent(job, fetcher = fetchText) {
+    const sources = Array.isArray(job.sources) ? job.sources : []
+
+    if (sources.length === 0) {
+        throw new Error(`Job "${job.name}" has no sources configured`)
+    }
+
+    const chunks = []
+
+    for (const source of sources) {
+        const sourceConfig = typeof source === 'string'
+            ? { url: source }
+            : source
+        const sourceUrl = sourceConfig.url
+
+        if (!sourceUrl) {
+            throw new Error(`Job "${job.name}" has a source without url`)
+        }
+
+        const sourceText = await fetcher(sourceUrl)
+        const transforms = sourceConfig.transforms || job.transforms || []
+        const transformedText = applyTransforms(sourceText, transforms)
+
+        chunks.push(transformedText)
+    }
+
+    return concatSources(chunks, job.separator || '\n')
+}
+
+async function syncJob(job) {
+    const nextContent = await buildJobContent(job)
+    const currentContent = await fs.pathExists(job.output)
+        ? await fs.readFile(job.output, 'utf8')
+        : null
+
+    if (currentContent === nextContent) {
+        return false
+    }
+
+    await fs.outputFile(job.output, nextContent)
+    return true
+}
+
+async function updateGlobalRuleLists() {
     const [globalUpstreamText, globalRuleUpstreamText] = await Promise.all([
         fetchText(globalUpstreamUrl),
         fetchText(globalRuleUpstreamUrl),
@@ -624,6 +774,26 @@ async function main() {
     }
 }
 
+async function syncConfiguredRuleSets() {
+    let updatedCount = 0
+
+    for (const job of jobs) {
+        const changed = await syncJob(job)
+
+        if (changed) {
+            updatedCount += 1
+            console.log(`[update-rulesets] updated ${job.name}`)
+        }
+    }
+
+    console.log(`[update-rulesets] synced ${updatedCount}/${jobs.length} configured ruleset files`)
+}
+
+async function main() {
+    await updateGlobalRuleLists()
+    await syncConfiguredRuleSets()
+}
+
 if (require.main === module) {
     main().catch((err) => {
         console.error(err)
@@ -632,7 +802,11 @@ if (require.main === module) {
 }
 
 module.exports = {
+    applyTransforms,
+    buildJobContent,
+    concatSources,
     extractDomainMigration,
+    jobs,
     sortAndDedupeGlobalLines,
     sortAndDedupeDomainRules,
 }

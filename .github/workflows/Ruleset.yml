@@ -45,14 +45,7 @@ jobs:
         run: |
           yarn install
           yarn update-adrules
-          yarn update-globalrules
-
-      - name: Update Static.list, Download.list, DomesticIP.list and AdIPRule.list
-        run: |
-          curl -sL "https://ruleset.skk.moe/List/domainset/cdn.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/Static.list
-          curl -sL "https://ruleset.skk.moe/List/domainset/download.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/Download.list
-          curl -sL "https://ruleset.skk.moe/List/ip/china_ip.conf" "https://ruleset.skk.moe/List/ip/china_ip_ipv6.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/DomesticIP.list
-          curl -sL "https://ruleset.skk.moe/List/ip/reject.conf" | sed '/#/d; /skk\.moe/d; /^$/d' > RuleSet/AdIPRule.list
+          yarn update-rulesets
 
       - name: Import GPG key
         id: import_gpg

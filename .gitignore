@@ -1,4 +1,4 @@
 .DS_Store
 node_modules
 !Script/Tools/
-!Script/Tools/GlobalRules.js
+!Script/Tools/*.js
