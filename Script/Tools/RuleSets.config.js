@@ -111,6 +111,25 @@ const jobs = [
         writeMode: 'replace',
     },
     {
+        name: 'Domestic',
+        output: join(__dirname, '../../RuleSet/Domestic.list'),
+        sources: [
+            'https://ruleset.skk.moe/List/non_ip/domestic.conf',
+        ],
+        // Keep upstream content as-is.
+        transforms: [],
+        writeMode: 'sectioned',
+        sectionMarkers: {
+            upstream: {
+                start: '# === AUTO-GENERATED: DOMESTIC UPSTREAM START ===',
+                end: '# === AUTO-GENERATED: DOMESTIC UPSTREAM END ===',
+            },
+        },
+        customCommentLines: [
+            '# Add or edit manual rules here.',
+        ],
+    },
+    {
         name: 'DomesticIP',
         output: join(__dirname, '../../RuleSet/DomesticIP.list'),
         sources: [

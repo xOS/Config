@@ -664,17 +664,21 @@ function formatRuleLines(lines) {
 
 function resolveSectionedMarkersForJob(job) {
     const markers = job.sectionMarkers || getDefaultSectionedMarkers()
+    const hasMigratedStart = Boolean(markers?.migrated?.start)
+    const hasMigratedEnd = Boolean(markers?.migrated?.end)
 
-    if (
-        !markers?.migrated?.start ||
-        !markers?.migrated?.end ||
-        !markers?.upstream?.start ||
-        !markers?.upstream?.end
-    ) {
+    if (!markers?.upstream?.start || !markers?.upstream?.end) {
         throw new Error(`Job "${job.name}" is sectioned but has invalid sectionMarkers`)
     }
 
-    return markers
+    if (hasMigratedStart !== hasMigratedEnd) {
+        throw new Error(`Job "${job.name}" has invalid migrated markers in sectionMarkers`)
+    }
+
+    return {
+        migrated: hasMigratedStart ? markers.migrated : null,
+        upstream: markers.upstream,
+    }
 }
 
 function buildSectionedJobContent(job, existingContent, upstreamRules) {
@@ -692,14 +696,21 @@ function buildSectionedJobContent(job, existingContent, upstreamRules) {
         manualRules,
         job.customCommentLines || [
             '# Add or edit manual rules here.',
-            '# DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com',
         ],
     )
 
-    return buildGlobalRuleListContent(nextCustomBlock, {
-        migratedRules: [],
-        upstreamRules: visibleUpstreamRules,
-    }, sectionMarkers)
+    if (sectionMarkers.migrated) {
+        return buildGlobalRuleListContent(nextCustomBlock, {
+            migratedRules: [],
+            upstreamRules: visibleUpstreamRules,
+        }, sectionMarkers)
+    }
+
+    return buildGlobalListContent(
+        nextCustomBlock,
+        visibleUpstreamRules,
+        sectionMarkers.upstream,
+    )
 }
 
 async function syncJob(job) {
@@ -714,9 +725,11 @@ async function syncJob(job) {
         throw new Error(`Job "${job.name}" has unsupported writeMode: ${writeMode}`)
     }
 
-    const nextContent = writeMode === 'sectioned'
-        ? buildSectionedJobContent(job, currentContent, sortedRules)
-        : formatRuleLines(sortedRules)
+    let nextContent = formatRuleLines(sortedRules)
+
+    if (writeMode === 'sectioned') {
+        nextContent = buildSectionedJobContent(job, currentContent, sortedRules)
+    }
 
     if (currentContent === nextContent) {
         return false
