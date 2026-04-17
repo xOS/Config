@@ -70,6 +70,8 @@ AND,((DOMAIN-KEYWORD,instagram),(PROTOCOL,QUIC))
 
 AND,((DOMAIN-SUFFIX,googleapis.com),(PROTOCOL,QUIC))
 
+AND,((OR,((DOMAIN-WILDCARD,*-my.sharepoint.com),(DOMAIN,my.microsoftpersonalcontent.com))),(PROTOCOL,QUIC))
+
 AND,((OR,((DOMAIN-SUFFIX,iosapps.itunes.apple.com),(DOMAIN-SUFFIX,updates.cdn-apple.com),(DOMAIN-KEYWORD,icloud-content))),(PROTOCOL,QUIC))
 
 # > 屏蔽 HTTP DNS
