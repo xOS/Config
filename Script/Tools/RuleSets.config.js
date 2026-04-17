@@ -62,19 +62,12 @@ const coreTasks = [
         globalKey: 'global',
         globalRuleKey: 'globalRule',
         steps: [
-            {
-                name: 'fetchSources',
-            },
+            'fetchSources',
             'loadExisting',
             'buildGlobalOutput',
             'buildGlobalRuleOutput',
             'writeOutputs',
         ],
-        stepOptions: {
-            writeOutputs: {
-                dryRun: false,
-            },
-        },
     },
 ]
 
