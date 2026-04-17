@@ -62,6 +62,6 @@ jobs:
           add: "-A"
           author_name: 春夏
           author_email: git@aapls.com
-          message: "Update Ruleset"
+          message: "Update RuleSet"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
