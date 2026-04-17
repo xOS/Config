@@ -68,13 +68,13 @@ const coreTasks = [
             'loadExisting',
             'buildGlobalOutput',
             'buildGlobalRuleOutput',
-            {
-                name: 'writeOutputs',
-                options: {
-                    dryRun: false,
-                },
-            },
+            'writeOutputs',
         ],
+        stepOptions: {
+            writeOutputs: {
+                dryRun: false,
+            },
+        },
     },
 ]
 

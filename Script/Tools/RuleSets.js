@@ -774,7 +774,35 @@ function normalizeTaskSteps(taskName, steps, defaultSteps) {
     })
 }
 
-async function runTaskStepPipeline(taskName, context, steps, stepHandlers) {
+function normalizeTaskStepOptions(taskName, stepOptions) {
+    if (stepOptions === undefined) {
+        return {}
+    }
+
+    if (!stepOptions || typeof stepOptions !== 'object' || Array.isArray(stepOptions)) {
+        throw new Error(`Core task "${taskName}" has invalid stepOptions config`)
+    }
+
+    const normalized = {}
+
+    for (const [rawStepName, options] of Object.entries(stepOptions)) {
+        const stepName = rawStepName.trim()
+
+        if (!stepName) {
+            throw new Error(`Core task "${taskName}" has invalid stepOptions key`)
+        }
+
+        if (!options || typeof options !== 'object' || Array.isArray(options)) {
+            throw new Error(`Core task "${taskName}" has invalid stepOptions for "${stepName}"`)
+        }
+
+        normalized[stepName] = options
+    }
+
+    return normalized
+}
+
+async function runTaskStepPipeline(taskName, context, steps, stepHandlers, stepOptionsMap = {}) {
     for (const step of steps) {
         const stepHandler = stepHandlers[step.name]
 
@@ -782,7 +810,13 @@ async function runTaskStepPipeline(taskName, context, steps, stepHandlers) {
             throw new Error(`Core task "${taskName}" has unsupported step: ${step.name}`)
         }
 
-        await stepHandler(context, step.options)
+        const inheritedOptions = stepOptionsMap[step.name] || {}
+        const mergedOptions = {
+            ...inheritedOptions,
+            ...step.options,
+        }
+
+        await stepHandler(context, mergedOptions)
     }
 }
 
@@ -956,18 +990,20 @@ async function globalPairStepWriteOutputs(context, options = {}) {
 
     const dryRun = options.dryRun === true
 
+    const hasGlobalChanges = context.nextGlobalContent !== context.existingGlobal
+    const hasGlobalRuleChanges = context.nextGlobalRuleContent !== context.existingGlobalRule
+
     if (dryRun) {
-        context.changed = context.nextGlobalContent !== context.existingGlobal ||
-            context.nextGlobalRuleContent !== context.existingGlobalRule
+        context.changed = context.changed || hasGlobalChanges || hasGlobalRuleChanges
         return
     }
 
-    if (context.nextGlobalContent !== context.existingGlobal) {
+    if (hasGlobalChanges) {
         await fs.outputFile(context.globalConfig.output, context.nextGlobalContent)
         context.changed = true
     }
 
-    if (context.nextGlobalRuleContent !== context.existingGlobalRule) {
+    if (hasGlobalRuleChanges) {
         await fs.outputFile(context.globalRuleConfig.output, context.nextGlobalRuleContent)
         context.changed = true
     }
@@ -1012,8 +1048,9 @@ async function runGlobalPairMigrationTask(task) {
         taskName,
     }
     const steps = normalizeTaskSteps(taskName, task.steps, defaultGlobalPairSteps)
+    const stepOptionsMap = normalizeTaskStepOptions(taskName, task.stepOptions)
 
-    await runTaskStepPipeline(taskName, context, steps, globalPairStepHandlers)
+    await runTaskStepPipeline(taskName, context, steps, globalPairStepHandlers, stepOptionsMap)
 
     return context.changed
 }
@@ -1074,6 +1111,12 @@ if (require.main === module) {
 }
 
 module.exports = {
+    __internal: {
+        globalPairStepWriteOutputs,
+        normalizeTaskStepOptions,
+        normalizeTaskSteps,
+        runTaskStepPipeline,
+    },
     applyTransforms,
     buildJobContent,
     concatSources,
