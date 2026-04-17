@@ -1,27 +1,21 @@
 'use strict'
 
-const { join } = require('path')
 const https = require('https')
 const fs = require('fs-extra')
 
-const { jobs } = require('./SyncRuleSets.config')
+const {
+    coreRuleSets,
+    coreTasks,
+    customSection,
+    jobs,
+} = require('./RuleSets.config')
 
-const globalListPath = join(__dirname, '../../RuleSet/Global.list')
-const globalRuleListPath = join(__dirname, '../../RuleSet/GlobalRule.list')
+const customSectionStart = customSection?.start
+const customSectionEnd = customSection?.end
 
-const globalUpstreamUrl = 'https://ruleset.skk.moe/List/non_ip/global.conf'
-const globalRuleUpstreamUrl = 'https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt'
-
-const customSectionStart = '# === Custom Edit Area Start ==='
-const customSectionEnd = '# === Custom Edit Area End ==='
-
-const globalUpstreamSectionStart = '# === AUTO-GENERATED: GLOBAL UPSTREAM START ==='
-const globalUpstreamSectionEnd = '# === AUTO-GENERATED: GLOBAL UPSTREAM END ==='
-
-const globalMigratedSectionStart = '# === AUTO-GENERATED: GLOBAL MIGRATED START ==='
-const globalMigratedSectionEnd = '# === AUTO-GENERATED: GLOBAL MIGRATED END ==='
-const globalRuleUpstreamSectionStart = '# === AUTO-GENERATED: GLOBALRULE UPSTREAM START ==='
-const globalRuleUpstreamSectionEnd = '# === AUTO-GENERATED: GLOBALRULE UPSTREAM END ==='
+if (!customSectionStart || !customSectionEnd) {
+    throw new Error('Invalid RuleSets config: missing custom section markers')
+}
 
 const supportedTransforms = {
     NormalizeNewlines: (text) => text.replace(/\r\n/g, '\n'),
@@ -237,7 +231,14 @@ function buildCustomEditBlock(existingBlock, rules, defaultCommentLines) {
     return `${lines.join('\n')}\n`
 }
 
-function buildGlobalListContent(customBlock, upstreamRules) {
+function buildGlobalListContent(customBlock, upstreamRules, upstreamSection) {
+    const upstreamStart = upstreamSection?.start
+    const upstreamEnd = upstreamSection?.end
+
+    if (!upstreamStart || !upstreamEnd) {
+        throw new Error('Missing upstream section markers')
+    }
+
     const blocks = []
 
     if (customBlock) {
@@ -245,17 +246,26 @@ function buildGlobalListContent(customBlock, upstreamRules) {
     }
 
     blocks.push([
-        globalUpstreamSectionStart,
+        upstreamStart,
         ...upstreamRules,
-        globalUpstreamSectionEnd,
+        upstreamEnd,
     ].join('\n'))
 
     return `${blocks.join('\n\n')}\n`
 }
 
-function buildGlobalRuleListContent(customBlock, sections) {
+function buildGlobalRuleListContent(customBlock, sections, sectionMarkers) {
     const migratedRules = sections.migratedRules || []
     const upstreamRules = sections.upstreamRules || []
+    const migratedStart = sectionMarkers?.migrated?.start
+    const migratedEnd = sectionMarkers?.migrated?.end
+    const upstreamStart = sectionMarkers?.upstream?.start
+    const upstreamEnd = sectionMarkers?.upstream?.end
+
+    if (!migratedStart || !migratedEnd || !upstreamStart || !upstreamEnd) {
+        throw new Error('Missing migrated/upstream section markers')
+    }
+
     const blocks = []
 
     if (customBlock) {
@@ -263,15 +273,15 @@ function buildGlobalRuleListContent(customBlock, sections) {
     }
 
     blocks.push([
-        globalMigratedSectionStart,
+        migratedStart,
         ...migratedRules,
-        globalMigratedSectionEnd,
+        migratedEnd,
     ].join('\n'))
 
     blocks.push([
-        globalRuleUpstreamSectionStart,
+        upstreamStart,
         ...upstreamRules,
-        globalRuleUpstreamSectionEnd,
+        upstreamEnd,
     ].join('\n'))
 
     return `${blocks.join('\n\n')}\n`
@@ -384,36 +394,56 @@ function collectDomainRulesFromUpstream(text) {
     return rules
 }
 
-function sortAndDedupeGlobalLines(lines) {
-    const seen = new Set()
-    const unique = []
+const sourceParsers = {
+    domainRules: collectDomainRulesFromUpstream,
+    globalLines: parseGlobalSourceLines,
+}
 
-    for (const rawLine of lines) {
-        const line = rawLine.trim()
+function parseSourceWithConfig(text, parserName, ruleSetName) {
+    const parser = sourceParsers[parserName]
 
-        if (!line || line.startsWith('#') || seen.has(line)) {
-            continue
-        }
-
-        seen.add(line)
-        unique.push(line)
+    if (!parser) {
+        throw new Error(`Unsupported source parser "${parserName}" for ${ruleSetName}`)
     }
 
-    const nonIp = []
-    const ip = []
+    return parser(text)
+}
 
-    for (const line of unique) {
-        if (/^IP-CIDR6?,/i.test(line)) {
-            ip.push(line)
-        } else {
-            nonIp.push(line)
-        }
+function getCoreRuleSetConfigOrThrow(ruleSetKey, taskName) {
+    const ruleSetConfig = coreRuleSets?.[ruleSetKey]
+
+    if (!ruleSetConfig) {
+        throw new Error(`Core task "${taskName}" references missing coreRuleSets.${ruleSetKey}`)
     }
 
-    nonIp.sort((left, right) => left.localeCompare(right))
-    ip.sort((left, right) => left.localeCompare(right))
+    if (!ruleSetConfig.output || !ruleSetConfig.sourceUrl || !ruleSetConfig.sourceParser) {
+        throw new Error(
+            `Core task "${taskName}" has invalid coreRuleSets.${ruleSetKey} config: missing output/sourceUrl/sourceParser`,
+        )
+    }
 
-    return nonIp.concat(ip)
+    return ruleSetConfig
+}
+
+function getSectionOrThrow(ruleSetConfig, ruleSetKey, sectionKey, taskName) {
+    const section = ruleSetConfig?.sections?.[sectionKey]
+
+    if (!section?.start || !section?.end) {
+        throw new Error(
+            `Core task "${taskName}" has invalid section markers: coreRuleSets.${ruleSetKey}.sections.${sectionKey}`,
+        )
+    }
+
+    return section
+}
+
+function getDefaultSectionedMarkers() {
+    const defaultRuleSet = coreRuleSets?.globalRule
+
+    return {
+        migrated: defaultRuleSet?.sections?.migrated,
+        upstream: defaultRuleSet?.sections?.upstream,
+    }
 }
 
 function extractDomainMigration(lines) {
@@ -626,11 +656,67 @@ async function buildJobContent(job, fetcher = fetchText) {
     return concatSources(chunks, job.separator || '\n')
 }
 
+function formatRuleLines(lines) {
+    return lines.length > 0
+        ? `${lines.join('\n')}\n`
+        : ''
+}
+
+function resolveSectionedMarkersForJob(job) {
+    const markers = job.sectionMarkers || getDefaultSectionedMarkers()
+
+    if (
+        !markers?.migrated?.start ||
+        !markers?.migrated?.end ||
+        !markers?.upstream?.start ||
+        !markers?.upstream?.end
+    ) {
+        throw new Error(`Job "${job.name}" is sectioned but has invalid sectionMarkers`)
+    }
+
+    return markers
+}
+
+function buildSectionedJobContent(job, existingContent, upstreamRules) {
+    const sectionMarkers = resolveSectionedMarkersForJob(job)
+    const existingCustomBlock = extractCustomEditBlock(existingContent)
+    const manualRules = sortAndDedupeDomainRules(
+        collectRuleLines(existingCustomBlock),
+    )
+    const manualRuleKeys = new Set(
+        manualRules.map((line) => normalizeRuleKey(line)),
+    )
+    const visibleUpstreamRules = dedupeUpstreamRules(upstreamRules, manualRuleKeys)
+    const nextCustomBlock = buildCustomEditBlock(
+        existingCustomBlock,
+        manualRules,
+        job.customCommentLines || [
+            '# Add or edit manual rules here.',
+            '# DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com',
+        ],
+    )
+
+    return buildGlobalRuleListContent(nextCustomBlock, {
+        migratedRules: [],
+        upstreamRules: visibleUpstreamRules,
+    }, sectionMarkers)
+}
+
 async function syncJob(job) {
-    const nextContent = await buildJobContent(job)
+    const rawContent = await buildJobContent(job)
     const currentContent = await fs.pathExists(job.output)
         ? await fs.readFile(job.output, 'utf8')
-        : null
+        : ''
+    const sortedRules = sortAndDedupeDomainRules(collectRuleLines(rawContent))
+    const writeMode = job.writeMode || 'replace'
+
+    if (writeMode !== 'replace' && writeMode !== 'sectioned') {
+        throw new Error(`Job "${job.name}" has unsupported writeMode: ${writeMode}`)
+    }
+
+    const nextContent = writeMode === 'sectioned'
+        ? buildSectionedJobContent(job, currentContent, sortedRules)
+        : formatRuleLines(sortedRules)
 
     if (currentContent === nextContent) {
         return false
@@ -640,106 +726,192 @@ async function syncJob(job) {
     return true
 }
 
-async function updateGlobalRuleLists() {
+function normalizeTaskSteps(taskName, steps, defaultSteps) {
+    const configured = Array.isArray(steps) && steps.length > 0
+        ? steps
+        : defaultSteps
+
+    if (!Array.isArray(configured) || configured.length === 0) {
+        throw new Error(`Core task "${taskName}" has invalid steps config`)
+    }
+
+    return configured.map((stepSpec) => {
+        if (typeof stepSpec === 'string') {
+            const stepName = stepSpec.trim()
+
+            if (!stepName) {
+                throw new Error(`Core task "${taskName}" has invalid step name`)
+            }
+
+            return {
+                name: stepName,
+                options: {},
+            }
+        }
+
+        if (
+            !stepSpec ||
+            typeof stepSpec !== 'object' ||
+            Array.isArray(stepSpec) ||
+            typeof stepSpec.name !== 'string' ||
+            stepSpec.name.trim() === ''
+        ) {
+            throw new Error(`Core task "${taskName}" has invalid step spec`)
+        }
+
+        const options = stepSpec.options === undefined ? {} : stepSpec.options
+
+        if (!options || typeof options !== 'object' || Array.isArray(options)) {
+            throw new Error(
+                `Core task "${taskName}" has invalid options for step "${stepSpec.name}"`,
+            )
+        }
+
+        return {
+            name: stepSpec.name.trim(),
+            options,
+        }
+    })
+}
+
+async function runTaskStepPipeline(taskName, context, steps, stepHandlers) {
+    for (const step of steps) {
+        const stepHandler = stepHandlers[step.name]
+
+        if (!stepHandler) {
+            throw new Error(`Core task "${taskName}" has unsupported step: ${step.name}`)
+        }
+
+        await stepHandler(context, step.options)
+    }
+}
+
+async function globalPairStepFetchSources(context) {
     const [globalUpstreamText, globalRuleUpstreamText] = await Promise.all([
-        fetchText(globalUpstreamUrl),
-        fetchText(globalRuleUpstreamUrl),
+        fetchText(context.globalConfig.sourceUrl),
+        fetchText(context.globalRuleConfig.sourceUrl),
     ])
 
-    const fetchedGlobalLines = parseGlobalSourceLines(globalUpstreamText)
-    const fetchedGlobalRuleRules = sortAndDedupeDomainRules(
-        collectDomainRulesFromUpstream(globalRuleUpstreamText),
+    context.fetchedGlobalLines = parseSourceWithConfig(
+        globalUpstreamText,
+        context.globalConfig.sourceParser,
+        context.globalKey,
     )
-
-    const existingGlobal = await fs.pathExists(globalListPath)
-        ? await fs.readFile(globalListPath, 'utf8')
-        : ''
-    const existingGlobalRule = await fs.pathExists(globalRuleListPath)
-        ? await fs.readFile(globalRuleListPath, 'utf8')
-        : ''
-
-    const existingGlobalCustomBlock = extractCustomEditBlock(existingGlobal)
-    const existingGlobalManualRules = collectRuleLines(existingGlobalCustomBlock)
-    const globalUpstreamSection = extractRulesBetweenMarkers(
-        existingGlobal,
-        globalUpstreamSectionStart,
-        globalUpstreamSectionEnd,
+    context.fetchedGlobalRuleRules = sortAndDedupeDomainRules(
+        parseSourceWithConfig(
+            globalRuleUpstreamText,
+            context.globalRuleConfig.sourceParser,
+            context.globalRuleKey,
+        ),
     )
-    const globalLegacyBodyRules = !globalUpstreamSection.found
-        ? collectLegacyBodyRules(existingGlobal, existingGlobalCustomBlock, [
-            [globalUpstreamSectionStart, globalUpstreamSectionEnd],
+}
+
+async function globalPairStepLoadExisting(context) {
+    context.existingGlobal = await fs.pathExists(context.globalConfig.output)
+        ? await fs.readFile(context.globalConfig.output, 'utf8')
+        : ''
+    context.existingGlobalRule = await fs.pathExists(context.globalRuleConfig.output)
+        ? await fs.readFile(context.globalRuleConfig.output, 'utf8')
+        : ''
+}
+
+async function globalPairStepBuildGlobalOutput(context) {
+    if (!Array.isArray(context.fetchedGlobalLines) || typeof context.existingGlobal !== 'string') {
+        throw new Error(`Core task "${context.taskName}" step "buildGlobalOutput" requires fetched and loaded state`)
+    }
+
+    const existingGlobalCustomBlock = extractCustomEditBlock(context.existingGlobal)
+    const existingGlobalManualRules = sortAndDedupeDomainRules(
+        collectRuleLines(existingGlobalCustomBlock),
+    )
+    const globalUpstreamSectionData = extractRulesBetweenMarkers(
+        context.existingGlobal,
+        context.globalUpstreamMarkers.start,
+        context.globalUpstreamMarkers.end,
+    )
+    const globalLegacyBodyRules = !globalUpstreamSectionData.found
+        ? collectLegacyBodyRules(context.existingGlobal, existingGlobalCustomBlock, [
+            [context.globalUpstreamMarkers.start, context.globalUpstreamMarkers.end],
         ])
         : []
 
-    const globalUpstreamCandidates = globalUpstreamSection.rules
+    const globalUpstreamCandidates = globalUpstreamSectionData.rules
         .concat(globalLegacyBodyRules)
-        .concat(fetchedGlobalLines)
+        .concat(context.fetchedGlobalLines)
 
     const manualMigration = extractDomainMigration(existingGlobalManualRules)
     const upstreamMigration = extractDomainMigration(globalUpstreamCandidates)
-
-    const globalManualRules = sortAndDedupeGlobalLines(manualMigration.remainingLines)
-    const manualGlobalSet = new Set(globalManualRules)
-    const globalUpstreamRules = sortAndDedupeGlobalLines(
-        upstreamMigration.remainingLines,
-    ).filter((line) => !manualGlobalSet.has(line))
-
+    const globalManualRules = sortAndDedupeDomainRules(manualMigration.remainingLines)
+    const manualGlobalKeys = new Set(
+        globalManualRules.map((line) => normalizeRuleKey(line)),
+    )
+    const globalUpstreamRules = dedupeUpstreamRules(
+        sortAndDedupeDomainRules(upstreamMigration.remainingLines),
+        manualGlobalKeys,
+    )
     const nextGlobalCustomBlock = buildCustomEditBlock(
         existingGlobalCustomBlock,
         globalManualRules,
-        [
+        context.globalConfig.customCommentLines || [
             '# Add or edit manual rules here.',
             '# DOMAIN / DOMAIN-SUFFIX rules in this block are migrated to GlobalRule.list.',
         ],
     )
-    const nextGlobalContent = buildGlobalListContent(
+
+    context.nextGlobalContent = buildGlobalListContent(
         nextGlobalCustomBlock,
         globalUpstreamRules,
+        context.globalUpstreamMarkers,
     )
-
-    if (nextGlobalContent !== existingGlobal) {
-        await fs.outputFile(globalListPath, nextGlobalContent)
-    }
-
-    const migratedFromGlobal = sortAndDedupeDomainRules(
+    context.migratedFromGlobal = sortAndDedupeDomainRules(
         manualMigration.migratedRules.concat(upstreamMigration.migratedRules),
     )
+}
 
-    const existingGlobalRuleCustomBlock = extractCustomEditBlock(existingGlobalRule)
-    const existingGlobalRuleManualRules = collectRuleLines(existingGlobalRuleCustomBlock)
+async function globalPairStepBuildGlobalRuleOutput(context) {
+    if (
+        !Array.isArray(context.fetchedGlobalRuleRules) ||
+        !Array.isArray(context.migratedFromGlobal) ||
+        typeof context.existingGlobalRule !== 'string'
+    ) {
+        throw new Error(`Core task "${context.taskName}" step "buildGlobalRuleOutput" requires fetched/migrated state`)
+    }
+
+    const existingGlobalRuleCustomBlock = extractCustomEditBlock(context.existingGlobalRule)
+    const existingGlobalRuleManualRules = sortAndDedupeDomainRules(
+        collectRuleLines(existingGlobalRuleCustomBlock),
+    )
     const manualGlobalRuleKeys = new Set(
         existingGlobalRuleManualRules.map((line) => normalizeRuleKey(line)),
     )
-
-    const globalMigratedSection = extractRulesBetweenMarkers(
-        existingGlobalRule,
-        globalMigratedSectionStart,
-        globalMigratedSectionEnd,
+    const globalMigratedSectionData = extractRulesBetweenMarkers(
+        context.existingGlobalRule,
+        context.globalMigratedMarkers.start,
+        context.globalMigratedMarkers.end,
     )
-    const globalRuleUpstreamSection = extractRulesBetweenMarkers(
-        existingGlobalRule,
-        globalRuleUpstreamSectionStart,
-        globalRuleUpstreamSectionEnd,
+    const globalRuleUpstreamSectionData = extractRulesBetweenMarkers(
+        context.existingGlobalRule,
+        context.globalRuleUpstreamMarkers.start,
+        context.globalRuleUpstreamMarkers.end,
     )
-
-    const globalRuleLegacyBodyRules = (!globalMigratedSection.found && !globalRuleUpstreamSection.found)
-        ? collectLegacyBodyRules(existingGlobalRule, existingGlobalRuleCustomBlock, [
-            [globalMigratedSectionStart, globalMigratedSectionEnd],
-            [globalRuleUpstreamSectionStart, globalRuleUpstreamSectionEnd],
+    const globalRuleLegacyBodyRules = (!globalMigratedSectionData.found && !globalRuleUpstreamSectionData.found)
+        ? collectLegacyBodyRules(context.existingGlobalRule, existingGlobalRuleCustomBlock, [
+            [context.globalMigratedMarkers.start, context.globalMigratedMarkers.end],
+            [context.globalRuleUpstreamMarkers.start, context.globalRuleUpstreamMarkers.end],
         ])
         : []
 
     const fetchedGlobalRuleKeys = new Set(
-        fetchedGlobalRuleRules.map((line) => normalizeRuleKey(line)),
+        context.fetchedGlobalRuleRules.map((line) => normalizeRuleKey(line)),
     )
-    const bootstrapMigratedRules = (!globalMigratedSection.found && !globalRuleUpstreamSection.found)
+    const bootstrapMigratedRules = (!globalMigratedSectionData.found && !globalRuleUpstreamSectionData.found)
         ? globalRuleLegacyBodyRules.filter((line) => !fetchedGlobalRuleKeys.has(normalizeRuleKey(line)))
         : []
 
     // Keep upstream section visible by giving it higher priority than migrated rules:
     // manual > upstream > migrated.
     const upstreamRules = dedupeUpstreamRules(
-        fetchedGlobalRuleRules,
+        context.fetchedGlobalRuleRules,
         manualGlobalRuleKeys,
     )
     const upstreamKeys = new Set(upstreamRules.map((line) => normalizeRuleKey(line)))
@@ -748,30 +920,130 @@ async function updateGlobalRuleLists() {
         ...upstreamKeys,
     ])
     const migratedRules = sortAndDedupeDomainRules(
-        globalMigratedSection.rules
+        globalMigratedSectionData.rules
             .concat(bootstrapMigratedRules)
-            .concat(migratedFromGlobal),
+            .concat(context.migratedFromGlobal),
     ).filter((line) => !blockedMigratedKeys.has(normalizeRuleKey(line)))
-
     const nextGlobalRuleCustomBlock = buildCustomEditBlock(
         existingGlobalRuleCustomBlock,
         existingGlobalRuleManualRules,
-        [
+        context.globalRuleConfig.customCommentLines || [
             '# Add or edit manual rules here.',
             '# DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com',
         ],
     )
-    const nextGlobalRuleContent = buildGlobalRuleListContent(
+
+    context.nextGlobalRuleContent = buildGlobalRuleListContent(
         nextGlobalRuleCustomBlock,
         {
             migratedRules,
             upstreamRules,
         },
+        {
+            migrated: context.globalMigratedMarkers,
+            upstream: context.globalRuleUpstreamMarkers,
+        },
     )
+}
 
-    if (nextGlobalRuleContent !== existingGlobalRule) {
-        await fs.outputFile(globalRuleListPath, nextGlobalRuleContent)
+async function globalPairStepWriteOutputs(context, options = {}) {
+    if (
+        typeof context.nextGlobalContent !== 'string' ||
+        typeof context.nextGlobalRuleContent !== 'string'
+    ) {
+        throw new Error(`Core task "${context.taskName}" step "writeOutputs" requires built output content`)
     }
+
+    const dryRun = options.dryRun === true
+
+    if (dryRun) {
+        context.changed = context.nextGlobalContent !== context.existingGlobal ||
+            context.nextGlobalRuleContent !== context.existingGlobalRule
+        return
+    }
+
+    if (context.nextGlobalContent !== context.existingGlobal) {
+        await fs.outputFile(context.globalConfig.output, context.nextGlobalContent)
+        context.changed = true
+    }
+
+    if (context.nextGlobalRuleContent !== context.existingGlobalRule) {
+        await fs.outputFile(context.globalRuleConfig.output, context.nextGlobalRuleContent)
+        context.changed = true
+    }
+}
+
+const globalPairStepHandlers = {
+    buildGlobalOutput: globalPairStepBuildGlobalOutput,
+    buildGlobalRuleOutput: globalPairStepBuildGlobalRuleOutput,
+    fetchSources: globalPairStepFetchSources,
+    loadExisting: globalPairStepLoadExisting,
+    writeOutputs: globalPairStepWriteOutputs,
+}
+
+const defaultGlobalPairSteps = [
+    'fetchSources',
+    'loadExisting',
+    'buildGlobalOutput',
+    'buildGlobalRuleOutput',
+    'writeOutputs',
+]
+
+async function runGlobalPairMigrationTask(task) {
+    const taskName = task.name || task.processor
+    const globalKey = task.globalKey
+    const globalRuleKey = task.globalRuleKey
+
+    if (!globalKey || !globalRuleKey) {
+        throw new Error(`Core task "${taskName}" requires globalKey and globalRuleKey`)
+    }
+
+    const globalConfig = getCoreRuleSetConfigOrThrow(globalKey, taskName)
+    const globalRuleConfig = getCoreRuleSetConfigOrThrow(globalRuleKey, taskName)
+    const context = {
+        changed: false,
+        globalConfig,
+        globalKey,
+        globalMigratedMarkers: getSectionOrThrow(globalRuleConfig, globalRuleKey, 'migrated', taskName),
+        globalRuleConfig,
+        globalRuleKey,
+        globalRuleUpstreamMarkers: getSectionOrThrow(globalRuleConfig, globalRuleKey, 'upstream', taskName),
+        globalUpstreamMarkers: getSectionOrThrow(globalConfig, globalKey, 'upstream', taskName),
+        taskName,
+    }
+    const steps = normalizeTaskSteps(taskName, task.steps, defaultGlobalPairSteps)
+
+    await runTaskStepPipeline(taskName, context, steps, globalPairStepHandlers)
+
+    return context.changed
+}
+
+const coreTaskProcessors = {
+    globalPairMigration: runGlobalPairMigrationTask,
+}
+
+async function syncCoreRuleSets() {
+    const tasks = Array.isArray(coreTasks) ? coreTasks : []
+    let updatedCount = 0
+
+    for (const task of tasks) {
+        const taskName = task?.name || task?.processor || 'unnamed-core-task'
+        const processorName = task?.processor
+        const processor = coreTaskProcessors[processorName]
+
+        if (!processor) {
+            throw new Error(`Core task "${taskName}" has unsupported processor: ${processorName}`)
+        }
+
+        const changed = await processor(task)
+
+        if (changed) {
+            updatedCount += 1
+            console.log(`[update-rulesets] updated core task ${taskName}`)
+        }
+    }
+
+    console.log(`[update-rulesets] synced ${updatedCount}/${tasks.length} core tasks`)
 }
 
 async function syncConfiguredRuleSets() {
@@ -790,7 +1062,7 @@ async function syncConfiguredRuleSets() {
 }
 
 async function main() {
-    await updateGlobalRuleLists()
+    await syncCoreRuleSets()
     await syncConfiguredRuleSets()
 }
 
@@ -807,6 +1079,5 @@ module.exports = {
     concatSources,
     extractDomainMigration,
     jobs,
-    sortAndDedupeGlobalLines,
     sortAndDedupeDomainRules,
 }

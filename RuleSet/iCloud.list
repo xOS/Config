@@ -1,10 +1,14 @@
-DOMAIN,www-cdn.icloud.com.akadns.net
+DOMAIN-SUFFIX,apple-icloud.cn
+DOMAIN-SUFFIX,appleicloud.cn
 DOMAIN-SUFFIX,applemx-icloud.com
+DOMAIN-SUFFIX,icloud-apple.cn
 DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,icloud-isupport.com
 DOMAIN-SUFFIX,icloud-sandbox.com
 DOMAIN-SUFFIX,icloud.ch
+DOMAIN-SUFFIX,icloud.cn
 DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud.de
 DOMAIN-SUFFIX,icloud.ee
 DOMAIN-SUFFIX,icloud.fi
@@ -14,6 +18,7 @@ DOMAIN-SUFFIX,icloud.ie
 DOMAIN-SUFFIX,icloud.is
 DOMAIN-SUFFIX,icloud.jp
 DOMAIN-SUFFIX,icloud.lv
+DOMAIN-SUFFIX,icloud.net.cn
 DOMAIN-SUFFIX,icloud.om
 DOMAIN-SUFFIX,icloud.org
 DOMAIN-SUFFIX,icloud.pt
@@ -23,6 +28,7 @@ DOMAIN-SUFFIX,icloud.si
 DOMAIN-SUFFIX,icloud.sk
 DOMAIN-SUFFIX,icloud.vn
 DOMAIN-SUFFIX,icloudads.net
+DOMAIN-SUFFIX,icloudapple.cn
 DOMAIN-SUFFIX,icloudbox.net
 DOMAIN-SUFFIX,icloudbrowser.net
 DOMAIN-SUFFIX,icloude.com
@@ -30,12 +36,12 @@ DOMAIN-SUFFIX,icloudhome.com
 DOMAIN-SUFFIX,icloudmail.net
 DOMAIN-SUFFIX,icloudmusic.net
 DOMAIN-SUFFIX,icloudnet.net
-DOMAIN-SUFFIX,icloudpay.net
 DOMAIN-SUFFIX,icloudo.com
 DOMAIN-SUFFIX,icloudo.de
 DOMAIN-SUFFIX,icloudo.net
 DOMAIN-SUFFIX,icloudos.de
 DOMAIN-SUFFIX,icloudos.net
+DOMAIN-SUFFIX,icloudpay.net
 DOMAIN-SUFFIX,icloudsecure.net
 DOMAIN-SUFFIX,icloudsetup.com
 DOMAIN-SUFFIX,ios-icloud.com
@@ -43,10 +49,4 @@ DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,myicloud.net
 DOMAIN-SUFFIX,mylcloud.net
 DOMAIN-SUFFIX,wwwicloud.com
-DOMAIN-SUFFIX,apple-icloud.cn
-DOMAIN-SUFFIX,appleicloud.cn
-DOMAIN-SUFFIX,icloud-apple.cn
-DOMAIN-SUFFIX,icloud.cn
-DOMAIN-SUFFIX,icloud.com.cn
-DOMAIN-SUFFIX,icloud.net.cn
-DOMAIN-SUFFIX,icloudapple.cn
+DOMAIN,www-cdn.icloud.com.akadns.net
