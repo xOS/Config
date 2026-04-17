@@ -4,7 +4,51 @@ const compile = require('@adguard/hostlist-compiler')
 const { join } = require('path')
 const https = require('https')
 const fs = require('fs-extra')
-//const slugify = require('@sindresorhus/slugify')
+
+function normalizeGeneratedRuleExcludeKeywords(keywords) {
+    if (!Array.isArray(keywords)) {
+        return []
+    }
+
+    return [...new Set(keywords
+        .filter((keyword) => typeof keyword === 'string')
+        .map((keyword) => keyword.trim().toLowerCase())
+        .filter((keyword) => keyword !== ''))]
+}
+
+function normalizeGeneratedRuleExcludeValue(value) {
+    if (typeof value !== 'string') {
+        return ''
+    }
+
+    return value.trim().toLowerCase()
+}
+
+function buildGeneratedRuleExcludeMatcher(pattern) {
+    const escaped = pattern.replace(/[.+^${}()|[\]\\]/g, '\\$&')
+    const wildcardAsRegex = escaped
+        .replace(/\*/g, '.*')
+        .replace(/\?/g, '.')
+
+    return new RegExp(wildcardAsRegex)
+}
+
+function buildGeneratedRuleExcludeMatchers(keywords) {
+    return normalizeGeneratedRuleExcludeKeywords(keywords)
+        .map((pattern) => buildGeneratedRuleExcludeMatcher(pattern))
+}
+
+function shouldExcludeGeneratedRuleByMatchers(value, matchers) {
+    const normalized = normalizeGeneratedRuleExcludeValue(value)
+
+    if (!normalized) {
+        return false
+    }
+
+    const safeMatchers = Array.isArray(matchers) ? matchers : []
+
+    return safeMatchers.some((matcher) => matcher.test(normalized))
+}
 
 const distDir = join(__dirname, '../../RuleSet/AdRules')
 const advertisingListPath = join(__dirname, '../../RuleSet/Advertising.list')
@@ -15,301 +59,128 @@ const advertisingSectionStart = '# === AUTO-GENERATED: ADVERTISING MIGRATED STAR
 const advertisingSectionEnd = '# === AUTO-GENERATED: ADVERTISING MIGRATED END ==='
 const upstreamSectionStart = '# === AUTO-GENERATED: UPSTREAM RULES START ==='
 const upstreamSectionEnd = '# === AUTO-GENERATED: UPSTREAM RULES END ==='
-const configurations = [{
-    name: 'Adaway',
-    homepage: 'https://adaway.org',
-    sources: [{
+
+const generatedRuleExcludeKeywords = [
+    '*by_*-*.skk.moe',
+]
+
+const standardTransformations = [
+    'RemoveComments',
+    'RemoveModifiers',
+    'Validate',
+    'Deduplicate',
+]
+
+const hostsTransformations = [
+    'RemoveComments',
+    'RemoveModifiers',
+    'Compress',
+    'Validate',
+    'Deduplicate',
+]
+
+const adguardFiltersBaseUrl =
+    'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters'
+
+function buildAdguardFilterSource(filterId, filterName, isThirdParty = false) {
+    const thirdPartyPath = isThirdParty ? 'ThirdParty/' : ''
+
+    return `${adguardFiltersBaseUrl}/${thirdPartyPath}filter_${filterId}_${filterName}/filter.txt`
+}
+
+function createConfiguration({
+    name,
+    source,
+    type,
+    homepage,
+    transformations = standardTransformations,
+}) {
+    const sourceEntry = { source }
+
+    if (type) {
+        sourceEntry.type = type
+    }
+
+    const config = {
+        name,
+        sources: [sourceEntry],
+        transformations: [...transformations],
+    }
+
+    if (homepage) {
+        config.homepage = homepage
+    }
+
+    return config
+}
+
+const thirdPartyAdguardFilterDefs = [
+    { filterId: 101, filterName: 'EasyList', name: 'EasyList' },
+    { filterId: 104, filterName: 'EasyListChina', name: 'EasyListChina' },
+    { filterId: 219, filterName: 'ChinaListAndEasyList', name: 'ChinaListAndEasyList' },
+    { filterId: 102, filterName: 'ABPindo', name: 'ABPindo' },
+    { filterId: 120, filterName: 'AdBlockID', name: 'AdBlockID' },
+    { filterId: 118, filterName: 'EasyPrivacy', name: 'EasyPrivacy' },
+    { filterId: 209, filterName: 'ADgkMobileChinalist', name: 'ADgkMobileChinalist' },
+]
+
+const coreAdguardFilterDefs = [
+    { filterId: 11, filterName: 'Mobile', name: 'Mobile' },
+    { filterId: 14, filterName: 'Annoyances', name: 'Annoyances' },
+    { filterId: 15, filterName: 'DnsFilter', name: 'DNS' },
+    { filterId: 20, filterName: 'Annoyances_MobileApp', name: 'AnnoyancesMobileApp' },
+    { filterId: 21, filterName: 'Annoyances_Other', name: 'AnnoyancesOther' },
+    { filterId: 224, filterName: 'Chinese', name: 'Chinese' },
+    { filterId: 2, filterName: 'Base', name: 'Base' },
+    { filterId: 3, filterName: 'Spyware', name: 'Spyware' },
+    { filterId: 4, filterName: 'Social', name: 'SocialMedia' },
+    { filterId: 17, filterName: 'TrackParam', name: 'TrackParam' },
+]
+
+const configurations = [
+    createConfiguration({
+        name: 'Adaway',
+        homepage: 'https://adaway.org',
         source: 'https://adaway.org/hosts.txt',
         type: 'hosts',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Compress',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'AdblockPlusEasylistChina',
-    sources: [{
+        transformations: hostsTransformations,
+    }),
+    createConfiguration({
+        name: 'AdblockPlusEasylistChina',
         source: 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'AdServers',
-    sources: [{
+    }),
+    createConfiguration({
+        name: 'AdServers',
         source: 'https://pgl.yoyo.org/adservers/serverlist.php?showintro=0;hostformat=hosts',
         type: 'hosts',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Compress',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'SomeoneWhoCares',
-    sources: [{
+        transformations: hostsTransformations,
+    }),
+    createConfiguration({
+        name: 'SomeoneWhoCares',
         source: 'https://someonewhocares.org/hosts/hosts',
         type: 'hosts',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Compress',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'EasyList',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_101_EasyList/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'EasyListChina',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_104_EasyListChina/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'ChinaListAndEasyList',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_219_ChinaListAndEasyList/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'ABPindo',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_102_ABPindo/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'AdBlockID',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_120_AdBlockID/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'EasyPrivacy',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_118_EasyPrivacy/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'ADgkMobileChinalist',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/ThirdParty/filter_209_ADgkMobileChinalist/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'Mobile',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_11_Mobile/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'Annoyances',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_14_Annoyances/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'DNS',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_15_DnsFilter/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'AnnoyancesMobileApp',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_20_Annoyances_MobileApp/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'AnnoyancesOther',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_21_Annoyances_Other/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'Chinese',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_224_Chinese/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'Base',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_2_Base/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'Spyware',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_3_Spyware/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'SocialMedia',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_4_Social/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'TrackParam',
-    sources: [{
-        source: 'https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/refs/heads/master/filters/filter_17_TrackParam/filter.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'AntiAdBlock',
-    sources: [{
+        transformations: hostsTransformations,
+    }),
+    ...thirdPartyAdguardFilterDefs.map((def) => createConfiguration({
+        name: def.name,
+        source: buildAdguardFilterSource(def.filterId, def.filterName, true),
+    })),
+    ...coreAdguardFilterDefs.map((def) => createConfiguration({
+        name: def.name,
+        source: buildAdguardFilterSource(def.filterId, def.filterName),
+    })),
+    createConfiguration({
+        name: 'AntiAdBlock',
         source: 'https://easylist-downloads.adblockplus.org/antiadblockfilters.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'uBlockOrigin',
-    sources: [{
+    }),
+    createConfiguration({
+        name: 'uBlockOrigin',
         source: 'https://ublockorigin.github.io/uAssetsCDN/filters/filters.min.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
-{
-    name: 'uBlockOriginEasylistAnnoyances',
-    sources: [{
+    }),
+    createConfiguration({
+        name: 'uBlockOriginEasylistAnnoyances',
         source: 'https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-annoyances.txt',
-    },],
-    transformations: [
-        'RemoveComments',
-        'RemoveModifiers',
-        'Validate',
-        'Deduplicate',
-    ],
-},
+    }),
 ]
 
 function sanitizeListBaseName(value) {
@@ -588,6 +459,18 @@ function normalizeDomain(domain) {
     return domain.trim().replace(/^\.+/, '').replace(/\.+$/, '').toLowerCase()
 }
 
+function stripInlineCommentAndTrim(rawLine) {
+    return rawLine.split('#')[0].trim()
+}
+
+const normalizedGeneratedRuleExcludeMatchers = buildGeneratedRuleExcludeMatchers(
+    generatedRuleExcludeKeywords,
+)
+
+function shouldExcludeGeneratedRule(value) {
+    return shouldExcludeGeneratedRuleByMatchers(value, normalizedGeneratedRuleExcludeMatchers)
+}
+
 function isRealDomainLike(value) {
     const domain = normalizeDomain(value)
 
@@ -632,9 +515,13 @@ function collectDomainsFromHosts(text, blockedDomains) {
     const domains = new Set()
 
     for (const rawLine of text.split(/\r?\n/)) {
-        const line = rawLine.split('#')[0].trim()
+        const line = stripInlineCommentAndTrim(rawLine)
 
         if (!line) {
+            continue
+        }
+
+        if (shouldExcludeGeneratedRule(line)) {
             continue
         }
 
@@ -643,7 +530,7 @@ function collectDomainsFromHosts(text, blockedDomains) {
         if (parts.length < 2) {
             const host = normalizeDomain(parts[0])
 
-            if (host && !isIpAddress(host)) {
+            if (host && !isIpAddress(host) && !shouldExcludeGeneratedRule(host)) {
                 domains.add(host)
             }
 
@@ -653,7 +540,12 @@ function collectDomainsFromHosts(text, blockedDomains) {
         for (const host of parts.slice(1)) {
             const normalized = normalizeDomain(host)
 
-            if (normalized && !isIpAddress(normalized) && !isBlockedByWhitelist(normalized, blockedDomains)) {
+            if (
+                normalized &&
+                !isIpAddress(normalized) &&
+                !isBlockedByWhitelist(normalized, blockedDomains) &&
+                !shouldExcludeGeneratedRule(normalized)
+            ) {
                 domains.add(normalized)
             }
         }
@@ -680,6 +572,10 @@ function collectDomainsFromFilters(text, blockedDomains) {
             continue
         }
 
+        if (shouldExcludeGeneratedRule(line)) {
+            continue
+        }
+
         const target = extractRuleTarget(rule)
 
         if (!target) {
@@ -687,14 +583,18 @@ function collectDomainsFromFilters(text, blockedDomains) {
         }
 
         if (isWhitelistRule(line)) {
-            if (canUseWhitelistAsDomainBlock(options)) {
+            if (canUseWhitelistAsDomainBlock(options) && !shouldExcludeGeneratedRule(target.domain)) {
                 blockedDomains.add(target.domain)
             }
 
             continue
         }
 
-        if (hasUnsupportedConversionModifiers(options) || isBlockedByWhitelist(target.domain, blockedDomains)) {
+        if (
+            hasUnsupportedConversionModifiers(options) ||
+            isBlockedByWhitelist(target.domain, blockedDomains) ||
+            shouldExcludeGeneratedRule(target.domain)
+        ) {
             continue
         }
 
@@ -736,6 +636,10 @@ function formatRule(rule, sourceType) {
             return
         }
 
+        if (shouldExcludeGeneratedRule(domain)) {
+            return
+        }
+
         if (sourceType === 'hosts') {
             return {
                 domain,
@@ -761,6 +665,10 @@ function formatRule(rule, sourceType) {
         return
     }
 
+    if (shouldExcludeGeneratedRule(domain)) {
+        return
+    }
+
     return {
         domain: normalizeDomain(domain),
         output: normalizeDomain(domain),
@@ -776,16 +684,24 @@ function formatWildcardRule(rule) {
 
     const domain = normalizeDomain(rule.match(reg)[1])
 
-    return domain || undefined
+    if (!domain || shouldExcludeGeneratedRule(domain)) {
+        return undefined
+    }
+
+    return domain
 }
 
 function collectAdvertisingRules(text) {
     const rules = new Set()
 
     for (const rawLine of text.split(/\r?\n/)) {
-        const line = rawLine.split('#')[0].trim()
+        const line = stripInlineCommentAndTrim(rawLine)
 
         if (!line) {
+            continue
+        }
+
+        if (shouldExcludeGeneratedRule(line)) {
             continue
         }
 
@@ -798,6 +714,10 @@ function collectAdvertisingRules(text) {
         const domain = normalizeDomain(match[2])
 
         if (!isRealDomainLike(domain) || isIpAddress(domain)) {
+            continue
+        }
+
+        if (shouldExcludeGeneratedRule(domain)) {
             continue
         }
 
@@ -813,7 +733,7 @@ function collectAndPruneAdvertisingRules(text) {
     let removedCount = 0
 
     for (const rawLine of text.split(/\r?\n/)) {
-        const line = rawLine.split('#')[0].trim()
+        const line = stripInlineCommentAndTrim(rawLine)
         const match = line.match(/^(DOMAIN|DOMAIN-SUFFIX),(.+)$/)
 
         if (!match) {
@@ -821,10 +741,20 @@ function collectAndPruneAdvertisingRules(text) {
             continue
         }
 
+        if (shouldExcludeGeneratedRule(line)) {
+            removedCount += 1
+            continue
+        }
+
         const domain = normalizeDomain(match[2])
 
         if (!isRealDomainLike(domain) || isIpAddress(domain)) {
             nextLines.push(rawLine)
+            continue
+        }
+
+        if (shouldExcludeGeneratedRule(domain)) {
+            removedCount += 1
             continue
         }
 
@@ -850,6 +780,10 @@ function collectRuleLines(text) {
         const line = rawLine.trim()
 
         if (!line || line.startsWith('#')) {
+            continue
+        }
+
+        if (shouldExcludeGeneratedRule(line)) {
             continue
         }
 
@@ -1114,6 +1048,10 @@ async function collectMergedAdRuleLines(compilationConfigs = buildCompilationCon
                 continue
             }
 
+            if (shouldExcludeGeneratedRule(line)) {
+                continue
+            }
+
             const key = normalizeRuleKey(line)
 
             if (bypassKeys.has(key) || seen.has(line)) {
@@ -1315,6 +1253,10 @@ if (require.main === module) {
 }
 
 module.exports = {
+    __internal: {
+        buildGeneratedRuleExcludeMatcher,
+        shouldExcludeGeneratedRule,
+    },
     buildAdRuleListContent,
     collectAdvertisingRules,
     sortAndDedupeAdRuleLines,
