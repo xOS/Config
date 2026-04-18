@@ -1,6 +1,36 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
+.freegeoip.app
+.geojs.io
+.nekudo.com
+.geoiplookup.io
+.ipstack.com
+.db-ip.com
+.ipify.org
+.ipapi.co
+.ipinfo.io
+.ipgeolocation.io
+.abstractapi.com
+.ipdata.co
+.whoisxmlapi.com
+.whatsmyip.com
+.geoapify.com
+.ifconfig.co
+.ip.gs
+.ipaddress.com
+.ipworld.info
+.ipapi.com
+.ip-api.com
+.my-ip.io
+.ip125.com
+.extreme-ip-lookup.com
+.ip.nf
+.seeip.org
+.ipwhois.app
+.ipstack.com
+.rtbasia.com
+.ip2location.com
 .macwk.com
 .buzzvil.com
 .mobilesuica.com
