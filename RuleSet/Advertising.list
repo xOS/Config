@@ -535,6 +535,7 @@ DOMAIN-WILDCARD,ifengad.*.ifeng.com
 DOMAIN-WILDCARD,imp-*.jampp.com
 DOMAIN-WILDCARD,impservice*.yodao.com
 DOMAIN-WILDCARD,impservice*.youdao.com
+DOMAIN-WILDCARD,increase-rev*.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,increaserev*.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,install*.zonastat.com
 DOMAIN-WILDCARD,iptracker-lb-*.amazonaws.com
