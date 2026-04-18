@@ -1,5 +1,15 @@
 # === Custom Edit Area Start ===
 # > 中国大陆
+DOMAIN-SUFFIX,91ajs.com
+DOMAIN-SUFFIX,300hu.com
+DOMAIN-SUFFIX,dingtalk.cn
+DOMAIN-SUFFIX,ajs-app.com
+DOMAIN-WILDCARD,*-cn-static.com
+DOMAIN-SUFFIX,nuomi.com
+DOMAIN-WILDCARD,*cn-*.jdcloud-oss.com
+DOMAIN-SUFFIX,imdada.cn
+DOMAIN-SUFFIX,fengkongcloud.cn
+DOMAIN-SUFFIX,wuchuyun.net
 DOMAIN-SUFFIX,wuchucloud.net
 DOMAIN-SUFFIX,afdiancdn.com
 DOMAIN-SUFFIX,ifdian.net

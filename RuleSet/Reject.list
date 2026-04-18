@@ -202,6 +202,31 @@ IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
 # > 其它
+DOMAIN-SUFFIX,ssp.maplehaze.cn
+DOMAIN-WILDCARD,*log.ctobsnssdk.com
+DOMAIN,sgm-w.jd.com
+DOMAIN,s-gm.mmstat.com
+DOMAIN,nsclick.baidu.com
+DOMAIN-SUFFIX,mars.jd.com
+DOMAIN-SUFFIX,knicks.jd.com
+DOMAIN-SUFFIX,kepler.jd.com
+DOMAIN-SUFFIX,ir-sdk.dun.163.com
+DOMAIN,erebor.douban.com
+DOMAIN-WILDCARD,apm-*.xiaohongshu.com
+DOMAIN,gia.jd.com
+DOMAIN-WILDCARD,feedback-*.zijieapi.com
+DOMAIN-WILDCARD,*log.baidu.com
+DOMAIN,eco.taobao.com
+DOMAIN,conf.hpplay.cn
+DOMAIN,beacon-api.aliyuncs.com
+DOMAIN-SUFFIX,id6.me
+DOMAIN-SUFFIX,lc-cn-n1-shared.com
+DOMAIN-SUFFIX,tdum.alibaba.com
+DOMAIN-SUFFIX,sdk.beizi.biz
+DOMAIN-SUFFIX,zhangyuyidong.cn
+DOMAIN-SUFFIX,adfunlink.com
+DOMAIN-SUFFIX,da.hunantv.com
+DOMAIN-WILDCARD,fp-*it*.fengkongcloud.com
 DOMAIN-WILDCARD,beacon-*.ztgame.com
 DOMAIN-WILDCARD,*sdk.dailygn.com
 DOMAIN,firebaselogging-pa.googleapis.com

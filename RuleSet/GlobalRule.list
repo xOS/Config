@@ -1,6 +1,7 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
+.jddebug.com
 .afdian.com
 .ifdian.com
 .freegeoip.app
