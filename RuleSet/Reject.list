@@ -361,7 +361,7 @@ DOMAIN,umerp.umetrip.com
 DOMAIN,umdc.alibabachengdun.com
 DOMAIN,mum.hzchengdun.com
 DOMAIN,mum.alibabachengdun.com
-.DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-WILDCARD,*launches.appsflyersdk.com
 DOMAIN-WILDCARD,*settings.appsflyersdk.com
 DOMAIN,umdcv4.taobao.com
