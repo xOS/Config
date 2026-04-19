@@ -1,62 +1,36 @@
 # === Custom Edit Area Start ===
 # > 中国大陆
-DOMAIN-SUFFIX,91ajs.com
-DOMAIN-SUFFIX,300hu.com
-DOMAIN-SUFFIX,dingtalk.cn
-DOMAIN-SUFFIX,ajs-app.com
-DOMAIN-WILDCARD,*-cn-static.com
-DOMAIN-SUFFIX,nuomi.com
-DOMAIN-WILDCARD,*cn-*.jdcloud-oss.com
-DOMAIN-SUFFIX,imdada.cn
-DOMAIN-SUFFIX,fengkongcloud.cn
-DOMAIN-SUFFIX,wuchuyun.net
-DOMAIN-SUFFIX,wuchucloud.net
-DOMAIN-SUFFIX,afdiancdn.com
-DOMAIN-SUFFIX,ifdian.net
-DOMAIN-SUFFIX,hbbz.top
-DOMAIN-SUFFIX,baixingyllh.com
-DOMAIN-SUFFIX,itdog.cn
-DOMAIN-SUFFIX,qiezibenpao.com
-DOMAIN-SUFFIX,tianwenca.com
-DOMAIN-SUFFIX,xinqiucc.com
-DOMAIN-SUFFIX,cmicapm.com
-DOMAIN-SUFFIX,floatingislandapps.com
-DOMAIN-SUFFIX,flowzland.com
-DOMAIN-SUFFIX,smartont.net
-DOMAIN-SUFFIX,woobx.cn
-DOMAIN,immersivetranslate.cn
-DOMAIN,bestpay.cn
-DOMAIN-SUFFIX,jpush-ipv6.cn
-DOMAIN-SUFFIX,askdiandian.com
-DOMAIN-SUFFIX,xdplt.com
-DOMAIN-SUFFIX,litangkj.com
-DOMAIN-SUFFIX,bigda.com
-DOMAIN-SUFFIX,vvebo.vip
-DOMAIN-SUFFIX,wechatpay.cn
 DOMAIN-SUFFIX,0kkkkkt.com
 DOMAIN-SUFFIX,10010.cn
 DOMAIN-SUFFIX,11222.cn
 DOMAIN-SUFFIX,12315.cn
 DOMAIN-SUFFIX,17track.net
 DOMAIN-SUFFIX,189smarthome.com
+DOMAIN-SUFFIX,300hu.com
 DOMAIN-SUFFIX,365yg.com
 DOMAIN-SUFFIX,51jobapp.com
 DOMAIN-SUFFIX,51jobcdn.com
 DOMAIN-SUFFIX,51touxiang.com
 DOMAIN-SUFFIX,66mobi.com
 DOMAIN-SUFFIX,88cdn.com
+DOMAIN-SUFFIX,91ajs.com
 DOMAIN-SUFFIX,9xsecndns.cn
 DOMAIN-SUFFIX,adwangmai.com
+DOMAIN-SUFFIX,afdiancdn.com
 DOMAIN-SUFFIX,ahdohpiechei.com
+DOMAIN-SUFFIX,ajs-app.com
 DOMAIN-SUFFIX,alibabachengdun.net
 DOMAIN-SUFFIX,alisports.com
 DOMAIN-SUFFIX,and-home.cn
 DOMAIN-SUFFIX,andfx.cn
 DOMAIN-SUFFIX,appvipshop.com
+DOMAIN-SUFFIX,askdiandian.com
+DOMAIN-SUFFIX,baixingyllh.com
 DOMAIN-SUFFIX,bdgp.cc
 DOMAIN-SUFFIX,beingfine.cn
 DOMAIN-SUFFIX,benlailife.com
 DOMAIN-SUFFIX,bestpay.cn
+DOMAIN-SUFFIX,bigda.com
 DOMAIN-SUFFIX,bytecdn.com
 DOMAIN-SUFFIX,bytefae.com
 DOMAIN-SUFFIX,bytegecko.com
@@ -74,6 +48,7 @@ DOMAIN-SUFFIX,cl2m.cn
 DOMAIN-SUFFIX,cmcc-cs.cn
 DOMAIN-SUFFIX,cmecloud.cn
 DOMAIN-SUFFIX,cmic.site
+DOMAIN-SUFFIX,cmicapm.com
 DOMAIN-SUFFIX,cmpay.com
 DOMAIN-SUFFIX,cmread.com
 DOMAIN-SUFFIX,csjdeveloper.com
@@ -82,6 +57,7 @@ DOMAIN-SUFFIX,cuopen.net
 DOMAIN-SUFFIX,dailygn.com
 DOMAIN-SUFFIX,deepseek.com
 DOMAIN-SUFFIX,digitalcnzz.com
+DOMAIN-SUFFIX,dingtalk.cn
 DOMAIN-SUFFIX,dizgslb.com
 DOMAIN-SUFFIX,dlife.cn
 DOMAIN-SUFFIX,doupay.com
@@ -97,6 +73,9 @@ DOMAIN-SUFFIX,faceu.com
 DOMAIN-SUFFIX,faceu.mobi
 DOMAIN-SUFFIX,fdep.cn
 DOMAIN-SUFFIX,feedcoopapi.com
+DOMAIN-SUFFIX,fengkongcloud.cn
+DOMAIN-SUFFIX,floatingislandapps.com
+DOMAIN-SUFFIX,flowzland.com
 DOMAIN-SUFFIX,flydigi.com
 DOMAIN-SUFFIX,flyertrip.com
 DOMAIN-SUFFIX,flysleep.cn
@@ -107,6 +86,7 @@ DOMAIN-SUFFIX,futustatic.com
 DOMAIN-SUFFIX,gaoyong2021.com
 DOMAIN-SUFFIX,gcloudgbs.com
 DOMAIN-SUFFIX,gongkaoleida.com
+DOMAIN-SUFFIX,hbbz.top
 DOMAIN-SUFFIX,hc-cdn.cn
 DOMAIN-SUFFIX,hiaiabc.com
 DOMAIN-SUFFIX,hpplay.cn
@@ -117,10 +97,13 @@ DOMAIN-SUFFIX,huoshanimg.com
 DOMAIN-SUFFIX,hzchengdun.net
 DOMAIN-SUFFIX,hzshudian.cn
 DOMAIN-SUFFIX,idouyinvod.com
+DOMAIN-SUFFIX,ifdian.net
 DOMAIN-SUFFIX,igexin.com
+DOMAIN-SUFFIX,imdada.cn
 DOMAIN-SUFFIX,innnets.com
 DOMAIN-SUFFIX,inrice.cn
 DOMAIN-SUFFIX,intsig.net
+DOMAIN-SUFFIX,itdog.cn
 DOMAIN-SUFFIX,itslaw.com
 DOMAIN-SUFFIX,ituchong.com
 DOMAIN-SUFFIX,ixiaochuan.cn
@@ -128,6 +111,7 @@ DOMAIN-SUFFIX,izuiyou.com
 DOMAIN-SUFFIX,jegotrip.com
 DOMAIN-SUFFIX,jinritemai.com
 DOMAIN-SUFFIX,jishitailai.com
+DOMAIN-SUFFIX,jpush-ipv6.cn
 DOMAIN-SUFFIX,komect.com
 DOMAIN-SUFFIX,lanlanlife.com
 DOMAIN-SUFFIX,ldhy.click
@@ -135,6 +119,7 @@ DOMAIN-SUFFIX,leagcard.com
 DOMAIN-SUFFIX,lgstatic.com
 DOMAIN-SUFFIX,liepin.com
 DOMAIN-SUFFIX,lietou-static.com
+DOMAIN-SUFFIX,litangkj.com
 DOMAIN-SUFFIX,livehwc3.cn
 DOMAIN-SUFFIX,lkme.cc
 DOMAIN-SUFFIX,lmfasting.cn
@@ -154,6 +139,7 @@ DOMAIN-SUFFIX,myquark.cn
 DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,ndcppx.com
 DOMAIN-SUFFIX,nowcoder.com
+DOMAIN-SUFFIX,nuomi.com
 DOMAIN-SUFFIX,online-cmcc.cn
 DOMAIN-SUFFIX,openinstall.com
 DOMAIN-SUFFIX,ott4china.com
@@ -161,6 +147,7 @@ DOMAIN-SUFFIX,phone580.com
 DOMAIN-SUFFIX,pipi.cn
 DOMAIN-SUFFIX,preternatural.cn
 DOMAIN-SUFFIX,qianwen.com
+DOMAIN-SUFFIX,qiezibenpao.com
 DOMAIN-SUFFIX,qishui.com
 DOMAIN-SUFFIX,qiyukf.com
 DOMAIN-SUFFIX,qtaeixd.com
@@ -175,6 +162,7 @@ DOMAIN-SUFFIX,sf-express.com
 DOMAIN-SUFFIX,shuqireader.com
 DOMAIN-SUFFIX,shuziwenbo.cn
 DOMAIN-SUFFIX,sjxydc.com
+DOMAIN-SUFFIX,smartont.net
 DOMAIN-SUFFIX,sobot.com
 DOMAIN-SUFFIX,sogaha.cn
 DOMAIN-SUFFIX,spdbccc.cn
@@ -184,6 +172,7 @@ DOMAIN-SUFFIX,tec73.com
 DOMAIN-SUFFIX,tencentcs.com
 DOMAIN-SUFFIX,tfryb.com
 DOMAIN-SUFFIX,tiamaes.com
+DOMAIN-SUFFIX,tianwenca.com
 DOMAIN-SUFFIX,tlivesource.com
 DOMAIN-SUFFIX,tratao.com
 DOMAIN-SUFFIX,tuchong.com
@@ -203,14 +192,19 @@ DOMAIN-SUFFIX,volcimagex.net
 DOMAIN-SUFFIX,volcsirius.com
 DOMAIN-SUFFIX,volcvod.com
 DOMAIN-SUFFIX,vpal.com
+DOMAIN-SUFFIX,vvebo.vip
 DOMAIN-SUFFIX,vzuu.com
 DOMAIN-SUFFIX,wechatpay.cn
 DOMAIN-SUFFIX,weiyoutong.cn
 DOMAIN-SUFFIX,wellcee.com
 DOMAIN-SUFFIX,wfjec.com
+DOMAIN-SUFFIX,woobx.cn
 DOMAIN-SUFFIX,wuchucloud.cn
+DOMAIN-SUFFIX,wuchucloud.net
+DOMAIN-SUFFIX,wuchuyun.net
 DOMAIN-SUFFIX,wusong.com
 DOMAIN-SUFFIX,xbase.cloud
+DOMAIN-SUFFIX,xdplt.com
 DOMAIN-SUFFIX,xed.plus
 DOMAIN-SUFFIX,xeknow.com
 DOMAIN-SUFFIX,xet.tech
@@ -220,6 +214,7 @@ DOMAIN-SUFFIX,xiaoecloud.com
 DOMAIN-SUFFIX,xiaoeknow.com
 DOMAIN-SUFFIX,xiaolachuxing.com
 DOMAIN-SUFFIX,xiawen.tv
+DOMAIN-SUFFIX,xinqiucc.com
 DOMAIN-SUFFIX,xinstall.top
 DOMAIN-SUFFIX,xlcx.cn
 DOMAIN-SUFFIX,xuanyouwang.net
@@ -239,6 +234,10 @@ DOMAIN-SUFFIX,zhengzhoubus.com
 DOMAIN-SUFFIX,zimgs.cn
 DOMAIN-SUFFIX,zmdao.cn
 DOMAIN-SUFFIX,zztfly.com
+DOMAIN-WILDCARD,*-cn-static.com
+DOMAIN-WILDCARD,*cn-*.jdcloud-oss.com
+DOMAIN,bestpay.cn
+DOMAIN,immersivetranslate.cn
 # === Custom Edit Area End ===
 
 # === AUTO-GENERATED: DOMESTIC UPSTREAM START ===
