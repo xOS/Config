@@ -1,6 +1,8 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
+.uploadcare.com
+.yiandrive.com
 .pawwalls.com
 .f.pz.al
 .zerossl.com
