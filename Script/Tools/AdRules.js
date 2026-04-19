@@ -150,12 +150,6 @@ const configurations = [
         source: 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt',
     }),
     createConfiguration({
-        name: 'AdServers',
-        source: 'https://pgl.yoyo.org/adservers/serverlist.php?showintro=0;hostformat=hosts',
-        type: 'hosts',
-        transformations: hostsTransformations,
-    }),
-    createConfiguration({
         name: 'SomeoneWhoCares',
         source: 'https://someonewhocares.org/hosts/hosts',
         type: 'hosts',

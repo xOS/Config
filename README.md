@@ -19,5 +19,4 @@
 - [@uBlockOrigin](https://github.com/uBlockOrigin/uAssets)
 - [@Adaway](https://adaway.org)
 - [@AdblockPlus](https://adblockplus.org)
-- [@yoyo.org](https://pgl.yoyo.org/adservers/serverlist.php?showintro=0;hostformat=hosts)
 - [@SomeOneWhoCares](https://someonewhocares.org/hosts/hosts)
