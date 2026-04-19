@@ -2,6 +2,9 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .day.app
+.soficdn.net
+.transmitsecurity.io
+.revolut.com
 .eascdn.net
 .examprep.help
 .getcino.com
