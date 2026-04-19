@@ -202,6 +202,10 @@ IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
 # > 其它
+DOMAIN,collection.decibelinsight.net
+DOMAIN,cdn.braze.eu
+DOMAIN-SUFFIX,wonderpush.com
+DOMAIN-WILDCARD,api*.amplitude.com
 DOMAIN-WILDCARD,ms*.applvn.com
 DOMAIN-SUFFIX,rayjump.com
 DOMAIN-SUFFIX,gameanalytics.com

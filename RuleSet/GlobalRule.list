@@ -1,6 +1,16 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
+.day.app
+.eascdn.net
+.examprep.help
+.getcino.com
+.instabug.com
+.wonderpush.com
+.checkout.com
+.hyperjar.com
+.hyperjardev.com
+.stripocdn.email
 .uploadcare.com
 .yiandrive.com
 .pawwalls.com
