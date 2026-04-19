@@ -1,5 +1,4 @@
 # > 币安
-DOMAIN-SUFFIX,appsflayer.com
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.me
@@ -22,7 +21,7 @@ DOMAIN-WILDCARD,*46d.de
 DOMAIN-WILDCARD,*byabc*.com
 USER-AGENT,bybit*
 DOMAIN-WILDCARD,*byd*.com
-DOMAIN-SUFFIX,*bycsi.com
+DOMAIN-WILDCARD,*bycsi.com
 DOMAIN-SUFFIX,bitverse.zone
 DOMAIN-KEYWORD,bybi
 DOMAIN-SUFFIX,ng-dex.com

@@ -1,6 +1,39 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN / DOMAIN-SUFFIX rules in this block are migrated to GlobalRule.list.
+# > KOCOWA
+USER-AGENT,KOCOWA*
+DOMAIN-KEYWORD,kocowa
+
+# > AfreecaTV SOOP
+USER-AGENT,AfreecaTV*
+USER-AGENT,afreeca
+USER-AGENT,afreeca*
+USER-AGENT,*afreeca
+DOMAIN-KEYWORD,sooplive
+PROCESS-NAME,afreeca
+PROCESS-NAME,/Applications/AfreecaTV/MACafpackage.app/Contents/Resources/MACafstreamer.app/Contents/MacOS/MACafstreamer
+
+# > Dropbox
+USER-AGENT,Dropbox*
+DOMAIN-KEYWORD,dropbox
+
+# > Bybit
+USER-AGENT,*bybit*
+DOMAIN-WILDCARD,*744cd.com
+DOMAIN-WILDCARD,*bybd*.com
+DOMAIN-WILDCARD,*46d.de
+DOMAIN-WILDCARD,*byabc*.com
+USER-AGENT,bybit*
+DOMAIN-WILDCARD,*byd*.com
+DOMAIN-WILDCARD,*bycsi.com
+DOMAIN-KEYWORD,bybi
+
+# > OKX
+DOMAIN-KEYWORD,okx.com
+
+# > Redotpay
+DOMAIN-KEYWORD,redotpay
 # === Custom Edit Area End ===
 
 # === AUTO-GENERATED: GLOBAL UPSTREAM START ===
