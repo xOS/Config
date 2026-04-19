@@ -24,6 +24,7 @@ DOMAIN-WILDCARD,*744cd.com
 DOMAIN-WILDCARD,*bybd*.com
 DOMAIN-WILDCARD,*46d.de
 DOMAIN-WILDCARD,*byabc*.com
+DOMAIN-WILDCARD,*bycsi.com
 USER-AGENT,bybit*
 DOMAIN-WILDCARD,*byd*.com
 DOMAIN-WILDCARD,*bycsi.com
@@ -50,6 +51,234 @@ DOMAIN-KEYWORD,tmobile
 DOMAIN-KEYWORD,capitalone
 DOMAIN-KEYWORD,mcc310
 DOMAIN-KEYWORD,chexsystems
+
+# > Apple
+DOMAIN-KEYWORD,apple-support.akadns.net
+DOMAIN-KEYWORD,apple.com.akadns.net
+DOMAIN-KEYWORD,apple.com.edgekey.net
+DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-KEYWORD,icloud.com.akadns.net
+DOMAIN-KEYWORD,smp-device
+DOMAIN-KEYWORD,testflight
+IP-CIDR,139.178.128.0/18,no-resolve
+IP-CIDR,144.178.0.0/19,no-resolve
+IP-CIDR,144.178.36.0/22,no-resolve
+IP-CIDR,144.178.48.0/20,no-resolve
+IP-CIDR,17.0.0.0/8,no-resolve
+IP-CIDR,192.35.50.0/24,no-resolve
+IP-CIDR,198.183.17.0/24,no-resolve
+IP-CIDR,205.180.175.0/24,no-resolve
+IP-CIDR,63.92.224.0/19,no-resolve
+IP-CIDR,65.199.22.0/23,no-resolve
+PROCESS-NAME,apsd
+PROCESS-NAME,com.apple.geod
+PROCESS-NAME,com.apple.Maps
+PROCESS-NAME,CoreLocationAgent
+PROCESS-NAME,findmydevice-user-agent
+PROCESS-NAME,fmfd
+PROCESS-NAME,LookupViewService
+PROCESS-NAME,mapspushd
+PROCESS-NAME,Music
+PROCESS-NAME,netbiosd
+PROCESS-NAME,trustd
+PROCESS-NAME,TV
+PROCESS-NAME,WeatherWidget
+USER-AGENT,*com.apple.Maps?
+USER-AGENT,*com.apple.mobileme.fmip1
+USER-AGENT,*FindMyiPhone?
+USER-AGENT,*Music?
+USER-AGENT,*WeatherFoundation*
+USER-AGENT,AppleNews*
+USER-AGENT,AppleTV*
+USER-AGENT,com.apple.appstored*
+USER-AGENT,com.apple.Maps
+USER-AGENT,com.apple.news*
+USER-AGENT,com.apple.trustd*
+USER-AGENT,com.apple.tv*
+USER-AGENT,FindMyFriends*
+USER-AGENT,FindMyiPhone*
+USER-AGENT,FMDClient*
+USER-AGENT,FMFD*
+USER-AGENT,fmflocatord*
+USER-AGENT,geod*
+USER-AGENT,locationd*
+USER-AGENT,Maps*
+USER-AGENT,Music*
+USER-AGENT,passd*
+USER-AGENT,Wallet*
+
+# > CloudFlare
+IP-ASN,132892,no-resolve
+IP-ASN,13335,no-resolve
+IP-ASN,133877,no-resolve
+IP-ASN,139242,no-resolve
+IP-ASN,14789,no-resolve
+IP-ASN,202623,no-resolve
+IP-ASN,203898,no-resolve
+IP-ASN,209242,no-resolve
+IP-ASN,394536,no-resolve
+IP-ASN,395747,no-resolve
+IP-CIDR,103.21.244.0/22,no-resolve
+IP-CIDR,103.22.200.0/22,no-resolve
+IP-CIDR,103.31.4.0/22,no-resolve
+IP-CIDR,104.16.0.0/13,no-resolve
+IP-CIDR,104.24.0.0/14,no-resolve
+IP-CIDR,108.162.192.0/18,no-resolve
+IP-CIDR,131.0.72.0/22,no-resolve
+IP-CIDR,141.101.64.0/18,no-resolve
+IP-CIDR,162.158.0.0/15,no-resolve
+IP-CIDR,172.64.0.0/13,no-resolve
+IP-CIDR,173.245.48.0/20,no-resolve
+IP-CIDR,188.114.96.0/20,no-resolve
+IP-CIDR,190.93.240.0/20,no-resolve
+IP-CIDR,197.234.240.0/22,no-resolve
+IP-CIDR,198.41.128.0/17,no-resolve
+
+# > 德国服务
+DOMAIN-KEYWORD,bbva
+DOMAIN-KEYWORD,mcc262
+IP-CIDR,139.7.117.0/24,no-resolve
+
+# > Twitch
+DOMAIN-WILDCARD,video-edge-*.pd*.abs.hls.ttvnw.net
+
+# > Moomoo
+DOMAIN-WILDCARD,*avatar.moomoo.com
+DOMAIN-WILDCARD,*img.moomoo.com
+
+# Google Photos
+DOMAIN-WILDCARD,*---sn-*.googlevideo.com
+
+# > One Drive
+DOMAIN-WILDCARD,*-my.sharepoint.com
+
+# > SOOP
+DOMAIN-WILDCARD,iflv*.sooplive.co.kr
+DOMAIN-WILDCARD,live-global-cdn-v*.sooplive.co.kr
+DOMAIN-WILDCARD,vod-archive-global-cdn-*.sooplive.co.kr
+DOMAIN-WILDCARD,vod-normal-*-cdn-*.sooplive.co.kr
+
+# > Chzzk
+DOMAIN-WILDCARD,*-naver-vod.akamaized.net
+DOMAIN-WILDCARD,*-nlive-slitvod-streaming.navercdn.com
+
+# > 原神资源
+DOMAIN-WILDCARD,autopatch*.yuanshen.com
+
+# > PikPak
+DOMAIN-WILDCARD,dl-*.mypikpak.com
+
+# > ForeignMedia
+# > TikTok
+DOMAIN-KEYWORD,musical.ly
+DOMAIN-KEYWORD,tiktok
+PROCESS-NAME,com.zhiliaoapp.musically
+USER-AGENT,TikTok*
+
+# > Spotify
+DOMAIN-KEYWORD,-spotify-com
+DOMAIN-KEYWORD,-tiktokcdn-com
+DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
+DOMAIN-KEYWORD,avoddashs
+DOMAIN-KEYWORD,bbcfmt
+DOMAIN-KEYWORD,dualstack.apiproxy-
+DOMAIN-KEYWORD,dualstack.ichnaea-web-
+DOMAIN-KEYWORD,jooxweb-api
+DOMAIN-KEYWORD,netflixdnstest
+DOMAIN-KEYWORD,nowtv100
+DOMAIN-KEYWORD,rthklive
+DOMAIN-KEYWORD,spotify
+DOMAIN-KEYWORD,tvbanywhere
+DOMAIN-KEYWORD,uk-live
+DOMAIN-KEYWORD,voddazn
+IP-CIDR,104.154.127.126/32,no-resolve
+IP-CIDR,35.186.224.47/32,no-resolve
+PROCESS-NAME,com.amazon.avod.thirdpartyclient
+PROCESS-NAME,com.bstar.intl
+PROCESS-NAME,com.hktve.viutv
+PROCESS-NAME,com.hulu.plus
+PROCESS-NAME,com.linecorp.linetv
+PROCESS-NAME,com.netflix.mediaclient
+PROCESS-NAME,com.spotify.music
+PROCESS-NAME,com.tencent.ibg.joox
+PROCESS-NAME,com.twgood.android
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
+PROCESS-NAME,tv.twitch.android.app
+USER-AGENT,*Spotify*
+USER-AGENT,AbemaTV*
+USER-AGENT,All4*
+USER-AGENT,Anime*
+USER-AGENT,Argo*
+USER-AGENT,BBCiPlayer*
+USER-AGENT,com.google.ios.youtube*
+USER-AGENT,com.google.ios.youtubemusic*
+USER-AGENT,com.kktv.ios.kktv*
+USER-AGENT,DAZN*
+USER-AGENT,Deezer*
+USER-AGENT,discovery+*
+USER-AGENT,Disney+*
+USER-AGENT,DPlus*
+USER-AGENT,encoreTVB*
+USER-AGENT,FOX NOW*
+USER-AGENT,FOXPlus*
+USER-AGENT,HBO NOW*
+USER-AGENT,HBOMAX*
+USER-AGENT,Himalaya*
+USER-AGENT,Hulu*
+USER-AGENT,HWTVMobile*
+USER-AGENT,InstantVideo.US*
+USER-AGENT,ITV_Player*
+USER-AGENT,JOOX*
+USER-AGENT,KKTV*
+USER-AGENT,LINE TV*
+USER-AGENT,My5*
+USER-AGENT,mytv*
+USER-AGENT,Naver TV*
+USER-AGENT,Niconico*
+USER-AGENT,Overcast*
+USER-AGENT,Pandora*
+USER-AGENT,PBS*
+USER-AGENT,PeacockMobile*
+USER-AGENT,PPlus*
+USER-AGENT,Prime Video*
+USER-AGENT,SoundCloud*
+USER-AGENT,Spotify*
+USER-AGENT,TaiwanGood*
+USER-AGENT,TIDAL*
+USER-AGENT,TVer-Release*
+USER-AGENT,Viu*
+USER-AGENT,WeMusic*
+USER-AGENT,WeTV*
+USER-AGENT,YouTube*
+USER-AGENT,YouTubeMusic*
+
+# > Instagram
+DOMAIN-KEYWORD,instagram
+
+# > Microsoft
+DOMAIN-KEYWORD,1drv
+DOMAIN-KEYWORD,hotmail
+DOMAIN-KEYWORD,microsoft
+
+# > PayPal
+DOMAIN-KEYWORD,paypal
+USER-AGENT,PayPal*
+
+# > Speedtest
+DOMAIN-KEYWORD,ookla
+DOMAIN-KEYWORD,speedtest-
+DOMAIN-KEYWORD,speedtest.
+DOMAIN-WILDCARD,*speedtest*.wiline.com
+PROCESS-NAME,/Applications/Speedtest.app/Contents/MacOS/Speedtest
+USER-AGENT,SpeedTest*
+
+# > V2EX
+DOMAIN-KEYWORD,v2ex
+
+# > WildRift
+USER-AGENT,wildrift*
 # === Custom Edit Area End ===
 
 # === AUTO-GENERATED: GLOBAL UPSTREAM START ===
