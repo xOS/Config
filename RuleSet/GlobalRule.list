@@ -2,6 +2,7 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .pawwalls.com
+.f.pz.al
 .zerossl.com
 .simpletexting.com
 .referralrock.com
