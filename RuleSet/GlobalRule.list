@@ -1,7 +1,39 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
+.id.me
+.irs.gov
+.fax.plus
+.hifiona.com
+.evenfinancial.com
+.fiona.com
+.equifax.com
+.transunion.com
+.experian.com
+.usefathom.com
+.tktn.be
+.bankofamerica.com
+.cashappapi.com
+.t-mobile.com
+.capitalone.com
+.chase.com
+.mytrueidentity.com
+.acxiom.com
+.americanexpress.com
+.securetheorem.com
+.sofi.com
+.paze.com
+.kvaedit.site
+.crl.t-mobile.com
+.ps.t-mobile.com
+.mcc310.pub.3gppnetwork.org
+.giftcards.com
+.fisglobal.com
+.aa.online-metrix.net
+.content.fisglobal.com
+.fiscloudservices.com
 .day.app
+.singtel.com
 .soficdn.net
 .transmitsecurity.io
 .revolut.com

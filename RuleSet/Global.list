@@ -34,6 +34,22 @@ DOMAIN-KEYWORD,okx.com
 
 # > Redotpay
 DOMAIN-KEYWORD,redotpay
+
+# > US
+DOMAIN-KEYWORD,schwab
+DOMAIN-KEYWORD,americanexpress
+DOMAIN-KEYWORD,kraken
+DOMAIN-KEYWORD,stripe
+DOMAIN-KEYWORD,claude
+DOMAIN-KEYWORD,citi
+DOMAIN-KEYWORD,varo
+DOMAIN-KEYWORD,equifax
+DOMAIN-KEYWORD,stripe
+DOMAIN-KEYWORD,t-mobile
+DOMAIN-KEYWORD,tmobile
+DOMAIN-KEYWORD,capitalone
+DOMAIN-KEYWORD,mcc310
+DOMAIN-KEYWORD,chexsystems
 # === Custom Edit Area End ===
 
 # === AUTO-GENERATED: GLOBAL UPSTREAM START ===
