@@ -1,58 +1,6 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN / DOMAIN-SUFFIX rules in this block are migrated to GlobalRule.list.
-# > KOCOWA
-
-# > AfreecaTV SOOP
-
-# > Dropbox
-
-# > Bybit
-
-# > OKX
-
-# > Redotpay
-
-# > US
-
-# > Apple
-
-# > CloudFlare
-
-# > 德国服务
-
-# > Twitch
-
-# > Moomoo
-
-# Google Photos
-
-# > One Drive
-
-# > SOOP
-
-# > Chzzk
-
-# > 原神资源
-
-# > PikPak
-
-# > ForeignMedia
-# > TikTok
-
-# > Spotify
-
-# > Instagram
-
-# > Microsoft
-
-# > PayPal
-
-# > Speedtest
-
-# > V2EX
-
-# > WildRift
 DOMAIN-KEYWORD,-spotify-com
 DOMAIN-KEYWORD,-tiktokcdn-com
 DOMAIN-KEYWORD,1drv
