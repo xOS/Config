@@ -19,4 +19,3 @@
 - [@uBlockOrigin](https://github.com/uBlockOrigin/uAssets)
 - [@Adaway](https://adaway.org)
 - [@AdblockPlus](https://adblockplus.org)
-- [@SomeOneWhoCares](https://someonewhocares.org/hosts/hosts)

@@ -149,12 +149,6 @@ const configurations = [
         name: 'AdblockPlusEasylistChina',
         source: 'https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt',
     }),
-    createConfiguration({
-        name: 'SomeoneWhoCares',
-        source: 'https://someonewhocares.org/hosts/hosts',
-        type: 'hosts',
-        transformations: hostsTransformations,
-    }),
     ...thirdPartyAdguardFilterDefs.map((def) => createConfiguration({
         name: def.name,
         source: buildAdguardFilterSource(def.filterId, def.filterName, true),
