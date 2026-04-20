@@ -202,6 +202,9 @@ IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
 # > 其它
+DOMAIN-SUFFIX,collect.alipay.com
+DOMAIN-SUFFIX,detailroi.com
+DOMAIN-SUFFIX,ad.mail.ru
 DOMAIN-SUFFIX,d3g.qq.com
 DOMAIN-SUFFIX,ac.dun.163yun.com
 DOMAIN-SUFFIX,aiclk.com
