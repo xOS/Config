@@ -1,6 +1,8 @@
 # === Custom Edit Area Start ===
 # > 中国大陆
 DOMAIN-SUFFIX,0kkkkkt.com
+DOMAIN-SUFFIX,cl2009.com
+DOMAIN-SUFFIX,51job.com
 DOMAIN-SUFFIX,10010.cn
 DOMAIN-SUFFIX,11222.cn
 DOMAIN-SUFFIX,12315.cn
@@ -15,6 +17,7 @@ DOMAIN-SUFFIX,666pool.cn
 DOMAIN-SUFFIX,66mobi.com
 DOMAIN-SUFFIX,88cdn.com
 DOMAIN-SUFFIX,91ajs.com
+DOMAIN-SUFFIX,marmot-cloud.com
 DOMAIN-SUFFIX,9xsecndns.cn
 DOMAIN-SUFFIX,a1.mzstatic.com
 DOMAIN-SUFFIX,a2.mzstatic.com
