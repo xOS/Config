@@ -52,6 +52,16 @@ DOMAIN-SUFFIX,common-api.smzdm.comextended-matching
 # > 飞客茶馆
 DOMAIN-SUFFIX,flyert.com.cn
 
+# > Boss 直聘
+DOMAIN-WILDCARD,*-ios.zhipin.com
+DOMAIN-WILDCARD,api-*.zhipin.com
+DOMAIN-WILDCARD,api.zhipin.com
+
+# > 猎聘
+DOMAIN-WILDCARD,api-ac.liepin.com
+DOMAIN-WILDCARD,api-*.liepin.com
+DOMAIN-WILDCARD,api.liepin.com
+
 # > 其它
 DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,biliapi.com
