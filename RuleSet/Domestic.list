@@ -1,11 +1,6 @@
 # === Custom Edit Area Start ===
 # > 中国大陆
-DOMAIN-WILDCARD,*-cn-static.com
-DOMAIN-WILDCARD,*cn-*.jdcloud-oss.com
 DOMAIN-SUFFIX,0kkkkkt.com
-DOMAIN-SUFFIX,acgf.vip
-DOMAIN-SUFFIX,smogflycloud.com
-DOMAIN-SUFFIX,cn.cravatar.com
 DOMAIN-SUFFIX,10010.cn
 DOMAIN-SUFFIX,11222.cn
 DOMAIN-SUFFIX,12315.cn
@@ -26,13 +21,13 @@ DOMAIN-SUFFIX,a2.mzstatic.com
 DOMAIN-SUFFIX,a3.mzstatic.com
 DOMAIN-SUFFIX,a4.mzstatic.com
 DOMAIN-SUFFIX,a5.mzstatic.com
+DOMAIN-SUFFIX,acgf.vip
 DOMAIN-SUFFIX,adcdownload.apple.com
 DOMAIN-SUFFIX,adcdownload.apple.com.akadns.net
 DOMAIN-SUFFIX,adwangmai.com
 DOMAIN-SUFFIX,afdiancdn.com
 DOMAIN-SUFFIX,ahdohpiechei.com
 DOMAIN-SUFFIX,airbnb.cn
-DOMAIN-SUFFIX,mobilebj.cn
 DOMAIN-SUFFIX,ajs-app.com
 DOMAIN-SUFFIX,alibabachengdun.net
 DOMAIN-SUFFIX,alisports.com
@@ -43,7 +38,6 @@ DOMAIN-SUFFIX,and-home.cn
 DOMAIN-SUFFIX,andfx.cn
 DOMAIN-SUFFIX,anfutong.cn
 DOMAIN-SUFFIX,anfutong.com.cn
-DOMAIN,api.smoot.apple.cn
 DOMAIN-SUFFIX,app-site-association.cdn-apple.com
 DOMAIN-SUFFIX,appldnld.apple.com
 DOMAIN-SUFFIX,appldnld.g.aaplimg.com
@@ -66,7 +60,6 @@ DOMAIN-SUFFIX,appledns.cn
 DOMAIN-SUFFIX,appledns.com.cn
 DOMAIN-SUFFIX,appleicloud.cn
 DOMAIN-SUFFIX,appleid.cdn-apple.com
-DOMAIN,appleintelligencefeedback.care.apple.com
 DOMAIN-SUFFIX,applepaycash.cn
 DOMAIN-SUFFIX,applepaycash.com.cn
 DOMAIN-SUFFIX,applepaysupplies.cn
@@ -96,7 +89,6 @@ DOMAIN-SUFFIX,beibao.com.cn
 DOMAIN-SUFFIX,beingfine.cn
 DOMAIN-SUFFIX,benlailife.com
 DOMAIN-SUFFIX,bestpay.cn
-DOMAIN,bestpay.cn
 DOMAIN-SUFFIX,bigda.com
 DOMAIN-SUFFIX,bloomberg.cn
 DOMAIN-SUFFIX,bytecdn.com
@@ -154,6 +146,7 @@ DOMAIN-SUFFIX,cmread.com
 DOMAIN-SUFFIX,cn-smp-paymentservices.apple.com
 DOMAIN-SUFFIX,cn-ssl.ls.apple.com
 DOMAIN-SUFFIX,cn.apple.com
+DOMAIN-SUFFIX,cn.cravatar.com
 DOMAIN-SUFFIX,cn.ls.apple.com
 DOMAIN-SUFFIX,comfylink.com
 DOMAIN-SUFFIX,configuration.apple.com
@@ -219,7 +212,6 @@ DOMAIN-SUFFIX,google.cn
 DOMAIN-SUFFIX,googleapis.cn
 DOMAIN-SUFFIX,googlecnapps.cn
 DOMAIN-SUFFIX,gs-loc-cn.apple.com
-DOMAIN,gs-loc-cn.apple.com
 DOMAIN-SUFFIX,gs-loc.apple.com
 DOMAIN-SUFFIX,gsp10-ssl-cn.ls.apple.com
 DOMAIN-SUFFIX,gsp12-cn.ls.apple.com
@@ -351,6 +343,7 @@ DOMAIN-SUFFIX,migufun.com
 DOMAIN-SUFFIX,miguplus.cn
 DOMAIN-SUFFIX,miinsurtech.com
 DOMAIN-SUFFIX,ml.cdn-apple.com
+DOMAIN-SUFFIX,mobilebj.cn
 DOMAIN-SUFFIX,msi.cn
 DOMAIN-SUFFIX,mucinex.cn
 DOMAIN-SUFFIX,mucinex.com.cn
@@ -421,6 +414,7 @@ DOMAIN-SUFFIX,shuqireader.com
 DOMAIN-SUFFIX,shuziwenbo.cn
 DOMAIN-SUFFIX,sjxydc.com
 DOMAIN-SUFFIX,smartont.net
+DOMAIN-SUFFIX,smogflycloud.com
 DOMAIN-SUFFIX,smp-device-content.apple.com
 DOMAIN-SUFFIX,snapdragon.cn
 DOMAIN-SUFFIX,snowballtech.com
@@ -438,7 +432,6 @@ DOMAIN-SUFFIX,store.apple.com.edgekey.net
 DOMAIN-SUFFIX,store.apple.com.edgekey.net.globalredir.akadns.net
 DOMAIN-SUFFIX,store.storeimages.apple.com.akadns.net
 DOMAIN-SUFFIX,store.storeimages.cdn-apple.com
-DOMAIN,store.ui.com.cn
 DOMAIN-SUFFIX,support-china.apple-support.akadns.net
 DOMAIN-SUFFIX,support.apple.com
 DOMAIN-SUFFIX,swallow-apple-com.v.aaplimg.com
@@ -547,6 +540,13 @@ DOMAIN-SUFFIX,zmw.cn
 DOMAIN-SUFFIX,zoom.com.cn
 DOMAIN-SUFFIX,zstatic.net
 DOMAIN-SUFFIX,zztfly.com
+DOMAIN-WILDCARD,*-cn-static.com
+DOMAIN-WILDCARD,*cn-*.jdcloud-oss.com
+DOMAIN,api.smoot.apple.cn
+DOMAIN,appleintelligencefeedback.care.apple.com
+DOMAIN,bestpay.cn
+DOMAIN,gs-loc-cn.apple.com
+DOMAIN,store.ui.com.cn
 # === Custom Edit Area End ===
 
 # === AUTO-GENERATED: DOMESTIC UPSTREAM START ===
