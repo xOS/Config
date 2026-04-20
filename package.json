@@ -12,7 +12,7 @@
     "test": "node --test"
   },
   "dependencies": {
-    "@adguard/hostlist-compiler": "^2.0.0",
+    "@adguard/hostlist-compiler": "^2.1.0",
     "@sindresorhus/slugify": "^3.0.0",
     "fs-extra": "^11.3.4"
   },

@@ -20,19 +20,19 @@
     axios "1.6.2"
     crypto-js "^4.2.0"
 
-"@adguard/hostlist-compiler@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-2.0.0.tgz#350b13e48989e1aa82cfd256a74670ddc2980587"
-  integrity sha512-pxaqiR9PLG1QAN0J2iB7yVYT3+XR+0HBStkqUmX/yUQ41OfN3RziFm781TIGC8UJZ/Skxkm8zC2mGkKAWeoaVg==
+"@adguard/hostlist-compiler@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-2.1.0.tgz#75d528ba267531652fde8c1c542c0fc5480e3b49"
+  integrity sha512-b7nrrRclMb5Zy7TeTpe4ULupAf+bsS3l1fmBQW2TOHzddr+Q412uCeMtP3LF1fkrgzwn3RvZz+IOc9sK08/YnQ==
   dependencies:
     "@adguard/filters-downloader" "^2.3.1"
     ajv "^6.12.0"
     ajv-errors "^1.0.1"
-    axios "^0.19.2"
+    axios "^1.15.0"
     better-ajv-errors "^0.6.7"
     consola "^2.11.3"
     lodash "^4.17.15"
-    tldts "^5.6.10"
+    tldts "7.0.28"
     yargs "^15.3.0"
 
 "@babel/code-frame@^7.16.0":
@@ -113,7 +113,7 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
 
-axios@1.6.2, axios@^0.19.2, axios@^1.15.0:
+axios@1.6.2, axios@^1.15.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.15.0.tgz#0fcee91ef03d386514474904b27863b2c683bf4f"
   integrity sha512-wWyJDlAatxk30ZJer+GeCWS209sA42X+N5jU2jy6oHTp7ufw8uzUTVFBX9+wTfAlhiJXGS0Bq7X6efruWjuK9Q==
@@ -541,17 +541,17 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tldts-core@^5.7.56:
-  version "5.7.56"
-  resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-5.7.56.tgz#4e09730b54068bb2989137c6d5f72f6f9df0cefe"
-  integrity sha512-uGxR0RetJUmkYVtCBfKpH5iYecb3vN9fomssmwHDIgqgZQl+sZcJAyDAjaoVphSEfsT53x0Sw+lVCafxexDW8g==
+tldts-core@^7.0.28:
+  version "7.0.28"
+  resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-7.0.28.tgz#28c256edae2ed177b2a8338a51caf81d41580ecf"
+  integrity sha512-7W5Efjhsc3chVdFhqtaU0KtK32J37Zcr9RKtID54nG+tIpcY79CQK/veYPODxtD/LJ4Lue66jvrQzIX2Z2/pUQ==
 
-tldts@^5.6.10:
-  version "5.7.56"
-  resolved "https://registry.yarnpkg.com/tldts/-/tldts-5.7.56.tgz#db7cecb81886ecf98ec9febb95223267bb9df683"
-  integrity sha512-Of3P/57Cekc3Xh4mBx1Kvkxin71fXsLw0yjutP6aAGD1zwt1GuHy/FB0gUpy4/fYdTZE7KRBJqnQuaywVZ/65A==
+tldts@7.0.28:
+  version "7.0.28"
+  resolved "https://registry.yarnpkg.com/tldts/-/tldts-7.0.28.tgz#5a5bb26ef3f70008d88c6e53ff58cd59ed8d4c68"
+  integrity sha512-+Zg3vWhRUv8B1maGSTFdev9mjoo8Etn2Ayfs4cnjlD3CsGkxXX4QyW3j2WJ0wdjYcYmy7Lx2RDsZMhgCWafKIw==
   dependencies:
-    tldts-core "^5.7.56"
+    tldts-core "^7.0.28"
 
 universalify@^2.0.0:
   version "2.0.0"
