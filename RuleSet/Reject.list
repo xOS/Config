@@ -202,6 +202,12 @@ IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
 # > 其它
+DOMAIN,click.baijiayun.com
+DOMAIN,brtc-data-collection.baijiayun.com
+DOMAIN-SUFFIX,data.tianwenca.com
+DOMAIN-SUFFIX,cnzz.com
+DOMAIN,pingjs.qq.com
+DOMAIN-SUFFIX,mradx.net
 DOMAIN-SUFFIX,scdata.51job.com
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,shuzilm.cn
