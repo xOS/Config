@@ -202,6 +202,12 @@ IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
 # > 其它
+DOMAIN,netapm.music.163.com
+DOMAIN,bda.umetrip.com
+DOMAIN,analytics.umetrip.com
+DOMAIN,startup.umetrip.com
+DOMAIN,bkclient.umetrip.com.cn
+DOMAIN,opactivity.umetrip.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 DOMAIN-SUFFIX,nr-data.net
 DOMAIN-WILDCARD,api*.branch.io
