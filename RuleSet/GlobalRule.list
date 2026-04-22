@@ -2,58 +2,12 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .1and1.com
-.nektony.com
-.macbartender.com
-.royalapps.com
-.zeroonetwenty.com
-.rocket-apps.co
-.pdfreaderpro.com
-.nightbirdsevolve.com
-.findanyfile.app
-.intuitibits.com
-.devmate.com
-.example.com
-.imazing.com
-.fork.dev
-.macitbetter.com
-.apphousekitchen.com
-.keka.io
-.go-esim.com
-.ondemandconnectivity.com
-.magiskcn.com
-.isufe.me
-.sufe.pro
-.848999.xyz
-.webshare.io
-.anyrouter.top
-.tlo.xyz
-.pq.hosting
-.netdepot.com
-.leveloneservers.com
-.isplevel.com
-.gein.cn
-.gcorelabs.com
-.exabytes.com
-.cloudns.net
-.ccspump.com
-.bigchick.xyz
-.bigchick.io
-.bestvm.cloud
-.bcy123.ren
-.bbb.org
-.basecert.com
-.baotas.tech
-.baifubao.com
-.bagevm.com
-.azonnalifizetes.hu
-.applytexas.org
-.anynode.net
-.naodai.org
 20000170l4s.my-imcloud.com
 .428048.xyz
 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 4gtvfreepcvod-cds.cdn.hinet.net
 .580tanlu.com
+.848999.xyz
 .88-f.net
 .a-mo.net
 .a0n.cc
@@ -86,6 +40,8 @@ akmcdnoversea-tw.inter.ptqy.gitv.tv
 .ampaeservices.com
 ana.video.friday.tw
 .ani.gamer.com.tw
+.anynode.net
+.anyrouter.top
 .apepine.com
 api-iam.intercom.io
 .api-o2de.mytelco.io
@@ -96,6 +52,7 @@ api.jetbrains.ai
 .api3.siftscience.com
 .apis.google.com
 apm-misaka.biliapi.net
+.apphousekitchen.com
 appldnld.apple.com.edgesuite.net
 apple-events.akamaized.net
 apple-relay.apple.com
@@ -108,6 +65,7 @@ apple-relay.fastly-edge.com
 .appleschoolcontent.com
 .appletvapp.apple
 .applex.net
+.applytexas.org
 .appstore.com
 .apzones.com
 .assets-yammer.com
@@ -116,18 +74,28 @@ assets.immersivetranslate.cn
 athome.fandango.com
 .atv-ps.amazon.com
 .avodmp4s3ww-a.akamaihd.net
+.azonnalifizetes.hu
 .azurerms.com
+.bagevm.com
+.baifubao.com
 .bankofamerica.com
+.baotas.tech
 .barclays.co.uk
 .barclays.com
 .bard.google.com
+.basecert.com
+.bbb.org
 bcbolt446c5271-a.akamaihd.net
 .bcbolthboa-a.akamaihd.net
+.bcy123.ren
 .beacons.gvt2.com
 .beacons2.gvt2.com
 .beacons3.gvt2.com
 .beatsbydre.com
+.bestvm.cloud
 .betaprofiles.com
+.bigchick.io
+.bigchick.xyz
 .bilibili.tv
 .biliintl.com
 .binancefuture.com
@@ -150,6 +118,7 @@ cache.video.iqiyi.com
 .capitalone.com
 .cashappapi.com
 .cauly.co.kr
+.ccspump.com
 .cdn-apple-mapkit.com
 cdn.registerdisney.go.com
 .certificate-transparency.dev
@@ -179,6 +148,7 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .cloudflarestaging.com
 .cloudflarestoragegw.com
 .cloudfront.hls.ttvnw.net
+.cloudns.net
 .clubsim.com.hk
 .co.uk
 .collect.tealiumiq.com
@@ -212,6 +182,7 @@ dashasiafox.akamaized.net
 .decagames.com
 .deepmind.google
 .deepseek.com
+.devmate.com
 .digitalattackmap.com
 .discoveryplus.co.uk
 .discoveryplus.in
@@ -240,6 +211,8 @@ edge.apple
 .etheric.net
 .evenfinancial.com
 .events.statsigapi.net
+.exabytes.com
+.example.com
 .examprep.help
 .execute-api.ap-southeast-1.amazonaws.com
 .execute-api.us-east-1.amazonaws.com
@@ -253,6 +226,7 @@ fast.rockisland.net
 .fax.plus
 .featuregates.org
 .felo.me
+.findanyfile.app
 .fiona.com
 .fiscloudservices.com
 .fisglobal.com
@@ -261,12 +235,15 @@ fast.rockisland.net
 .flumeapp.com
 .flxvpn.net
 .forestapp.cc
+.fork.dev
 .freegeoip.app
 .g.ai
 gateway.ai.cloudflare.com
 .gc.onl
+.gcorelabs.com
 .gcp.gvt2.com
 .gcpsmapi.vodafone.com
+.gein.cn
 .geller-pa.googleapis.com
 .gemini.google.com
 .generativeai.google
@@ -280,6 +257,7 @@ gateway.ai.cloudflare.com
 .giftcards.com
 .github-atom-io-herokuapp-com.freetls.fastly.net
 .github-avatars.oss-cn-hongkong.aliyuncs.com
+.go-esim.com
 .goodnet.su
 .gpgtools.com
 .gslb.me
@@ -317,6 +295,7 @@ icons.axm-usercontent-apple.com
 .ifdian.com
 imagine.meta.com
 .imaginecurve.com
+.imazing.com
 img.css.sd
 .imtintl.com
 .incognia.com
@@ -325,6 +304,7 @@ img.css.sd
 .intl-rcd.iqiyi.com
 .intl-subscription.iqiyi.com
 .intl.iqiyi.com
+.intuitibits.com
 .ionos.com
 .ip-api.com
 .ip.gs
@@ -345,6 +325,8 @@ img.css.sd
 .iq.com
 .irs.gov
 .isnssdk.com
+.isplevel.com
+.isufe.me
 .itunes.com.edgekey.net
 itvpnpmobile-a.akamaihd.net
 .jddebug.com
@@ -352,6 +334,7 @@ itvpnpmobile-a.akamaihd.net
 jules.google.com
 .kalhlspd-a.akamaihd.net
 .kaltura.com
+.keka.io
 .kkbox-prime.com
 .klarna.app
 .klarna.com
@@ -360,6 +343,7 @@ jules.google.com
 .kvaedit.site
 .lemfi.com
 .lemonade.finance
+.leveloneservers.com
 lf16-effectcdn.byteeffecttos-g.com
 lf16-pkgcdn.pitaya-clientai.com
 .licelus.com
@@ -377,8 +361,11 @@ lookup-api.apple.com.edgekey.net
 .luminous.dev
 .lync.com
 .m-content-viki.s.llnwi.net
+.macbartender.com
+.macitbetter.com
 .macwk.com
 .magictag.biz
+.magiskcn.com
 .mail-tester.com
 .makersuite.google.com
 .manifest.prod.boltdns.net
@@ -401,12 +388,16 @@ lookup-api.apple.com.edgekey.net
 .my.microsoftpersonalcontent.com
 .mytrueidentity.com
 .naiyous.com
+.naodai.org
+.nektony.com
 .nekudo.com
+.netdepot.com
 .netflix.com.au
 .netflixstudios.com
 .neverware.com
 .nezha.wiki
 .ng-dex.com
+.nightbirdsevolve.com
 .noc.vvsu.ru
 .notability.com
 .nr-data.net
@@ -424,6 +415,7 @@ o33249.ingest.sentry.io
 ocvideo.apple.com
 .officeppe.net
 .ok.gle
+.ondemandconnectivity.com
 .onecubic.com
 .onesignal.com
 .ooklaserver.net
@@ -437,6 +429,7 @@ openai-api.arkoselabs.com
 .paypal-mktg.com
 .payzilch.com
 .paze.com
+.pdfreaderpro.com
 .phonefactor.net
 .photoroom.com
 .photos.googleapis.com
@@ -445,6 +438,7 @@ openai-api.arkoselabs.com
 .players.brightcove.net
 .postman.com
 .potplayer.tv
+.pq.hosting
 .prestoprod.net
 .privadovpn.com
 .proactivebackend-pa.googleapis.com
@@ -477,8 +471,10 @@ prod-api.crackle.com
 .revolut.com
 .rewe.de
 .riskified.com
+.rocket-apps.co
 .rocketapps.com
 .rortoscdn.com
+.royalapps.com
 .royalmail.com
 .rtbasia.com
 .rudderlabs.com
@@ -535,6 +531,7 @@ staticasiafox.akamaized.net
 .store.apple.com.edgekey.net
 .stripocdn.email
 .ststandard.com
+.sufe.pro
 .superwall.com
 .superwall.me
 .swalk.co
@@ -548,6 +545,7 @@ sydney.bing.com
 .tiktokmusic.app
 .tiktokw.com
 .tktn.be
+.tlo.xyz
 .tokbox.com
 .toss.im
 .transmitsecurity.io
@@ -586,6 +584,7 @@ vudu.com
 .vuk-gto.prod.ondemandconnectivity.com
 .vvosp1.dv.rt.ru
 .wasu.tv
+.webshare.io
 .wetv.vip
 .wetvinfo.com
 .whatsmyip.com
@@ -616,6 +615,7 @@ youtubei.googleapis.com
 .zafinsvc.com
 .zajourney.com
 .zaticdn.com
+.zeroonetwenty.com
 .zerossl.com
 # === Custom Edit Area End ===
 

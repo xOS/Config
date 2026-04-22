@@ -75436,6 +75436,9 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.android-beacons.xumo.com
+.roku-beacons.xumo.com
+.samsung-beacons.xumo.com
 .stats.zincdrive.com
 .nid.the-sun.com
 .log.api-maps.yandex
@@ -78823,6 +78826,9 @@
 .int.vlancaa.site
 .int.vlancaa.fun
 .tok.vaicore.xyz
+.mobileconfig.sascdn.com
+.cirrus-full-snapshots-track-csv-v1-0-na-prod.s3.amazonaws.com
+.analytics.pocketfm.com
 .otel-collector.reliability.smartnews.net
 .report-edge.rtesvc.com
 .rakam-api.aptoide.com
@@ -80406,6 +80412,7 @@
 .endurablebulb.com
 .energeticexample.com
 .energeticladybug.com
+.energyfools.com
 .engineertrick.com
 .enigmaprint.com
 .enigmaticcanyon.com
