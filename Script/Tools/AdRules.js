@@ -476,7 +476,7 @@ async function retryWithBackoff(taskName, action, attempts = networkRetryAttempt
             }
 
             console.warn(
-                `[warn] ${taskName} failed with retriable network error (${error.message}), retrying (attempt ${attempt + 1}/${attempts})...`,
+                `[warn] ${taskName} attempt ${attempt}/${attempts} failed with retriable network error (${error.message}); retrying...`,
             )
             await sleep(networkRetryDelayMs * attempt)
         }
