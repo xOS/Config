@@ -2,17 +2,13 @@ name: Update RuleSet
 
 on:
   workflow_dispatch:
-   push:
-     branches:
-       - "Her"
-     paths-ignore:
-       - "LICENSE"
-       - "*.md"
-       - "**/*.md"
-       - ".*"
-       - "node_modules"
+  push:
+    branches:
+      - "Her"
+    paths:
+      - "**/*.list"
   schedule:
-    - cron:  0 */24 * * *
+    - cron: "0 */24 * * *"
 
 jobs:
   Update:
