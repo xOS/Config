@@ -59,6 +59,8 @@ const advertisingSectionStart = '# === AUTO-GENERATED: ADVERTISING MIGRATED STAR
 const advertisingSectionEnd = '# === AUTO-GENERATED: ADVERTISING MIGRATED END ==='
 const upstreamSectionStart = '# === AUTO-GENERATED: UPSTREAM RULES START ==='
 const upstreamSectionEnd = '# === AUTO-GENERATED: UPSTREAM RULES END ==='
+const networkRetryAttempts = 3
+const networkRetryDelayMs = 1500
 
 const generatedRuleExcludeKeywords = [
     '*by_*-*.skk.moe',
@@ -441,6 +443,43 @@ function fetchText(sourceUrl) {
             })
             .on('error', reject)
     })
+}
+
+function sleep(ms) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms)
+    })
+}
+
+function isRetriableNetworkError(err) {
+    const message = typeof err?.message === 'string' ? err.message.toLowerCase() : ''
+
+    return err?.code === 'ECONNRESET'
+        || message.includes('socket hang up')
+        || message.includes('timed out')
+}
+
+async function retryWithBackoff(taskName, action, attempts = networkRetryAttempts) {
+    let lastError
+
+    for (let attempt = 1; attempt <= attempts; attempt += 1) {
+        try {
+            return await action()
+        } catch (error) {
+            lastError = error
+
+            if (attempt >= attempts || !isRetriableNetworkError(error)) {
+                throw error
+            }
+
+            console.warn(
+                `[warn] ${taskName} failed with retriable network error (${error.message}), retrying (${attempt}/${attempts})...`,
+            )
+            await sleep(networkRetryDelayMs * attempt)
+        }
+    }
+
+    throw lastError
 }
 
 function normalizeDomain(domain) {
@@ -1222,7 +1261,10 @@ async function main() {
 
     for (const config of compilationConfigs) {
         const [compiled, allowedDomains] = await Promise.all([
-            compile(config),
+            retryWithBackoff(
+                `Compile ${config.name}`,
+                () => compile(config),
+            ),
             collectAllowedDomains(config),
         ])
 
