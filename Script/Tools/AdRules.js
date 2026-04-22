@@ -53,6 +53,8 @@ function shouldExcludeGeneratedRuleByMatchers(value, matchers) {
 const distDir = join(__dirname, '../../RuleSet/AdRules')
 const advertisingListPath = join(__dirname, '../../RuleSet/Advertising.list')
 const adRuleListPath = join(__dirname, '../../RuleSet/AdRule.list')
+const customSectionStart = '# === Custom Edit Area Start ==='
+const customSectionEnd = '# === Custom Edit Area End ==='
 const wildcardSectionStart = '# === AUTO-GENERATED: ADRULES WILDCARD START ==='
 const wildcardSectionEnd = '# === AUTO-GENERATED: ADRULES WILDCARD END ==='
 const advertisingSectionStart = '# === AUTO-GENERATED: ADVERTISING MIGRATED START ==='
@@ -974,7 +976,10 @@ function sortAndDedupeAdRuleLines(lines) {
 }
 
 function extractCustomEditBlock(text) {
-    const markerReg = /# === Custom Edit Area Start ===[\s\S]*?# === Custom Edit Area End ===/
+    const markerReg = new RegExp(
+        `${escapeRegExp(customSectionStart)}[\\s\\S]*?${escapeRegExp(customSectionEnd)}`,
+        'm',
+    )
     const match = text.match(markerReg)
 
     if (match) {
@@ -1009,6 +1014,63 @@ function extractCustomEditBlock(text) {
     return headerLines.join('\n')
 }
 
+function trimTrailingEmptyLines(lines) {
+    const next = [...lines]
+
+    while (next.length > 0 && next[next.length - 1].trim() === '') {
+        next.pop()
+    }
+
+    return next
+}
+
+function extractCustomCommentLines(block) {
+    if (!block) {
+        return []
+    }
+
+    const lines = block.split(/\r?\n/)
+    const startIndex = lines.findIndex((line) => line.trim() === customSectionStart)
+    const endIndex = lines.findIndex((line) => line.trim() === customSectionEnd)
+    const commentLines = []
+
+    if (startIndex !== -1 && endIndex > startIndex) {
+        const innerLines = lines.slice(startIndex + 1, endIndex)
+
+        for (const line of innerLines) {
+            const trimmed = line.trim()
+
+            if (trimmed === '' || trimmed.startsWith('#')) {
+                commentLines.push(line)
+            }
+        }
+
+        return trimTrailingEmptyLines(commentLines)
+    }
+
+    for (const line of lines) {
+        const trimmed = line.trim()
+
+        if (trimmed === '' || trimmed.startsWith('#')) {
+            commentLines.push(line)
+        }
+    }
+
+    return trimTrailingEmptyLines(commentLines)
+}
+
+function buildCustomEditBlock(existingBlock, rules, defaultCommentLines) {
+    const commentLines = extractCustomCommentLines(existingBlock)
+    const lines = [
+        customSectionStart,
+        ...(commentLines.length > 0 ? commentLines : defaultCommentLines),
+        ...(Array.isArray(rules) ? rules : []),
+        customSectionEnd,
+    ]
+
+    return `${lines.join('\n')}\n`
+}
+
 function buildAdRuleListContent(existingContent, rules) {
     if (Array.isArray(rules)) {
         const header = extractCustomEditBlock(existingContent)
@@ -1029,14 +1091,16 @@ function buildAdRuleListContent(existingContent, rules) {
         return ''
     }
 
-    const header = extractCustomEditBlock(existingContent)
     const sections = rules || {}
+    const customBlock = typeof sections.customBlock === 'string'
+        ? sections.customBlock
+        : extractCustomEditBlock(existingContent)
     const advertisingRules = sections.advertisingRules || []
     const upstreamRules = sections.upstreamRules || []
     const blocks = []
 
-    if (header) {
-        blocks.push(header.replace(/\n*$/, ''))
+    if (customBlock) {
+        blocks.push(customBlock.replace(/\n*$/, ''))
     }
 
     blocks.push([
@@ -1191,7 +1255,8 @@ async function outputAdvertisingRules(compilationConfigs = buildCompilationConfi
         ? await fs.readFile(adRuleListPath, 'utf8')
         : ''
     const header = extractCustomEditBlock(existingAdRule)
-    const manualKeys = new Set(collectRuleLines(header).map((line) => normalizeRuleKey(line)))
+    const manualRules = sortAndDedupeAdRuleLines(collectRuleLines(header))
+    const manualKeys = new Set(manualRules.map((line) => normalizeRuleKey(line)))
     const mergedKeys = new Set(mergedRules.map((line) => normalizeRuleKey(line)))
     const advertisingSection = extractRulesBetweenMarkers(
         existingAdRule,
@@ -1222,7 +1287,16 @@ async function outputAdvertisingRules(compilationConfigs = buildCompilationConfi
         ...advertisingRules.map((line) => normalizeRuleKey(line)),
     ])
     const upstreamRules = dedupeUpstreamRules(mergedRules, blockedKeys)
+    const nextCustomBlock = buildCustomEditBlock(
+        header,
+        manualRules,
+        [
+            '# Add or edit manual rules here.',
+            '# DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com',
+        ],
+    )
     const content = buildAdRuleListContent(existingAdRule, {
+        customBlock: nextCustomBlock,
         advertisingRules,
         upstreamRules,
     })

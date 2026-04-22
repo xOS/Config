@@ -2,13 +2,13 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .72.chat
-click.baijiayun.com
-brtc-data-collection.baijiayun.com
-.data.tianwenca.com
-collect.gmcc.net
-.tfogc.com
-dlied5sdk.myapp.com
 adcdn6.tencentmusic.com
+brtc-data-collection.baijiayun.com
+click.baijiayun.com
+collect.gmcc.net
+.data.tianwenca.com
+dlied5sdk.myapp.com
+.tfogc.com
 # === Custom Edit Area End ===
 
 # === AUTO-GENERATED: ADVERTISING MIGRATED START ===
