@@ -2,7 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .1and1.com
-.adaway.org
 20000170l4s.my-imcloud.com
 .428048.xyz
 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -20,6 +19,7 @@
 .acompli.com
 .acompli.net
 .acxiom.com
+.adaway.org
 .addthis.com.edgekey.net
 .adoberesources.net
 .afdian.com

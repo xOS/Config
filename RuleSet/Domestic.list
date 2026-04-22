@@ -1,7 +1,5 @@
 # === Custom Edit Area Start ===
 # > 中国大陆
-DOMAIN-SUFFIX,ziyuan.wang
-DOMAIN-SUFFIX,videocc.net
 DOMAIN-SUFFIX,0kkkkkt.com
 DOMAIN-SUFFIX,10010.cn
 DOMAIN-SUFFIX,11222.cn
@@ -496,6 +494,7 @@ DOMAIN-SUFFIX,valid.apple.com
 DOMAIN-SUFFIX,valid.origin-apple.com.akadns.net
 DOMAIN-SUFFIX,vegslb.com
 DOMAIN-SUFFIX,verisign.com.cn
+DOMAIN-SUFFIX,videocc.net
 DOMAIN-SUFFIX,vipshop.com
 DOMAIN-SUFFIX,vipstatic.com
 DOMAIN-SUFFIX,vlabstatic.com
@@ -559,6 +558,7 @@ DOMAIN-SUFFIX,yutoons.com
 DOMAIN-SUFFIX,z1cdn.com
 DOMAIN-SUFFIX,zhengzhoubus.com
 DOMAIN-SUFFIX,zimgs.cn
+DOMAIN-SUFFIX,ziyuan.wang
 DOMAIN-SUFFIX,zmdao.cn
 DOMAIN-SUFFIX,zmw.cn
 DOMAIN-SUFFIX,zoom.com.cn
