@@ -2,10 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .1and1.com
-.ippure.com
-.ping0.cc
-.ping0.co
-.iplark.com
 20000170l4s.my-imcloud.com
 .428048.xyz
 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -323,7 +319,9 @@ img.css.sd
 .ipgeolocation.io
 .ipify.org
 .ipinfo.io
+.iplark.com
 .ipostalmail.net
+.ippure.com
 .ipstack.com
 .ipwhois.app
 .ipworld.info
@@ -440,6 +438,8 @@ openai-api.arkoselabs.com
 .photos.googleapis.com
 .picseed.com
 .picsew.app
+.ping0.cc
+.ping0.co
 .players.brightcove.net
 .postman.com
 .potplayer.tv
@@ -6897,7 +6897,6 @@ news.ycombinator.com
 .pilgrimageandcathedrals.ac.uk
 .pilgrimagestudies.ac.uk
 .pinboard.in
-.ping0.cc
 .pinkrod.com
 .pinkteentube.net
 .pion.ac.uk
