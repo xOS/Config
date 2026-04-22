@@ -38,10 +38,34 @@ jobs:
             ${{ runner.OS }}-
 
       - name: yarn install, update
+        shell: bash
         run: |
+          set -euo pipefail
+
+          retry() {
+            local max_attempts="$1"
+            local delay_seconds="$2"
+            shift 2
+
+            local attempt=1
+            until "$@"; do
+              local exit_code=$?
+
+              if [[ "$attempt" -ge "$max_attempts" ]]; then
+                echo "[error] Command failed after ${attempt} attempts: $*"
+                return "$exit_code"
+              fi
+
+              echo "[warn] Attempt ${attempt}/${max_attempts} failed (exit ${exit_code}): $*"
+              echo "[info] Retrying in ${delay_seconds}s..."
+              sleep "$delay_seconds"
+              attempt=$((attempt + 1))
+            done
+          }
+
           yarn install
-          yarn update-adrules
-          yarn update-rulesets
+          retry 3 20 yarn update-adrules
+          retry 3 10 yarn update-rulesets
 
       - name: Import GPG key
         id: import_gpg

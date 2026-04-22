@@ -454,9 +454,16 @@ function sleep(ms) {
 }
 
 function isRetriableNetworkError(err) {
+    const retriableNetworkCodes = new Set([
+        'ECONNRESET',
+        'ECONNABORTED',
+        'ETIMEDOUT',
+        'EAI_AGAIN',
+        'ENOTFOUND',
+    ])
     const message = typeof err?.message === 'string' ? err.message.toLowerCase() : ''
 
-    return err?.code === 'ECONNRESET'
+    return retriableNetworkCodes.has(err?.code)
         || message.includes('socket hang up')
         || message.includes('timed out')
 }
@@ -1342,7 +1349,10 @@ async function main() {
                 `Compile ${config.name}`,
                 () => compile(config),
             ),
-            collectAllowedDomains(config),
+            retryWithBackoff(
+                `Collect allowed domains ${config.name}`,
+                () => collectAllowedDomains(config),
+            ),
         ])
 
         await outputCompiled(config, compiled, allowedDomains, wildcardDomains)
