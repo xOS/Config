@@ -1,8 +1,5 @@
 # === Custom Edit Area Start ===
 # > 中国大陆
-DOMAIN-SUFFIX,itellyou.cn
-DOMAIN-SUFFIX,bootcss.com
-DOMAIN-SUFFIX,bejson.com
 DOMAIN-KEYWORD,bilibili
 DOMAIN-KEYWORD,qiyi
 DOMAIN-SUFFIX,0kkkkkt.com
@@ -121,6 +118,7 @@ DOMAIN-SUFFIX,begowx.com
 DOMAIN-SUFFIX,beibao.cn
 DOMAIN-SUFFIX,beibao.com.cn
 DOMAIN-SUFFIX,beingfine.cn
+DOMAIN-SUFFIX,bejson.com
 DOMAIN-SUFFIX,benlailife.com
 DOMAIN-SUFFIX,bestpay.cn
 DOMAIN-SUFFIX,bigda.com
@@ -153,6 +151,7 @@ DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,bilivideo.net
 DOMAIN-SUFFIX,bjmxy.net
 DOMAIN-SUFFIX,bloomberg.cn
+DOMAIN-SUFFIX,bootcss.com
 DOMAIN-SUFFIX,bt.cn
 DOMAIN-SUFFIX,bytecdn.com
 DOMAIN-SUFFIX,bytedancevod.com
@@ -412,6 +411,7 @@ DOMAIN-SUFFIX,is5-ssl.mzstatic.com
 DOMAIN-SUFFIX,is5.mzstatic.com
 DOMAIN-SUFFIX,itc.cn
 DOMAIN-SUFFIX,itdog.cn
+DOMAIN-SUFFIX,itellyou.cn
 DOMAIN-SUFFIX,itslaw.com
 DOMAIN-SUFFIX,ituchong.com
 DOMAIN-SUFFIX,itunes-apple.cn

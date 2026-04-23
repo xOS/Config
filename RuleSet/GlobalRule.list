@@ -2,10 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .123169.xyz
-.honey.io
-.honey-images.com
-.dyneti.com
-.clearhello.com
 .1and1.com
 20000170l4s.my-imcloud.com
 .2345.tn
@@ -218,6 +214,7 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .ckzcc.com
 .cl
 .clarity.ms
+.clearhello.com
 .clearscore.com
 .client-api.arkoselabs.com
 .cloudaccess.net
@@ -292,6 +289,7 @@ dashasiafox.akamaized.net
 .duangks.com
 .dukascopy.online
 .dusays.com
+.dyneti.com
 .dz
 e13252.dscg.akamaiedge.net
 e16991.b.akamaiedge.net
@@ -425,6 +423,8 @@ hbounify-prod.evergent.com
 .hm
 .hn
 .home.barclays
+.honey-images.com
+.honey.io
 .hr
 .hsbc-app.token.io
 .ht
