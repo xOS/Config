@@ -202,6 +202,9 @@ IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
 # > 其它
+DOMAIN-SUFFIX,vk-analytics.ru
+DOMAIN-SUFFIX,apptracer.ru
+DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN,geolocation.onetrust.com
 DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,prodregistryv2.org
