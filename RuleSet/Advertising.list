@@ -394,6 +394,7 @@ DOMAIN-WILDCARD,altadefinizone.*
 DOMAIN-WILDCARD,ana*.inews24.com
 DOMAIN-WILDCARD,analytics-*-nfl.yinzcam.com
 DOMAIN-WILDCARD,analytics-rollout-*.amazonaws.com
+DOMAIN-WILDCARD,analytics-v*.eip.telegraph.co.uk
 DOMAIN-WILDCARD,analytics.*.sky.com
 DOMAIN-WILDCARD,analytics*.carambo.la
 DOMAIN-WILDCARD,analytics*.clickdimensions.com
