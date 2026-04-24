@@ -52,9 +52,9 @@ DOMAIN-SUFFIX,common-api.smzdm.comextended-matching
 DOMAIN-SUFFIX,flyert.com.cn
 
 # > Boss 直聘
-DOMAIN-WILDCARD,*-ios.zhipin.com
-DOMAIN-WILDCARD,api-*.zhipin.com
-DOMAIN-WILDCARD,api.zhipin.com
+//DOMAIN-WILDCARD,*-ios.zhipin.com
+//DOMAIN-WILDCARD,api-*.zhipin.com
+//DOMAIN-WILDCARD,api.zhipin.com
 
 # > 猎聘
 DOMAIN-WILDCARD,api-ac.liepin.com
