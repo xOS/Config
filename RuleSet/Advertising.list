@@ -2,7 +2,7 @@
 USER-AGENT,Munion-SDK*
 USER-AGENT,AVOS*
 
-# > 超自然行动组开屏弹窗
+# > 超自然行动组
 DOMAIN-WILDCARD,beacon-*.ztgame.com
 DOMAIN-WILDCARD,*sdk.dailygn.com
 
