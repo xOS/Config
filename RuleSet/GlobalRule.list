@@ -1,11 +1,6 @@
 # === Custom Edit Area Start ===
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
-.opera.software
-.opera-api.com
-.feednews.com
-.affinity.net
-.siteplug.com
 .123169.xyz
 .1and1.com
 20000170l4s.my-imcloud.com
@@ -37,6 +32,7 @@
 .aero
 .af
 .afdian.com
+.affinity.net
 .afreeca.co.kr
 .afreecatv.co.kr
 .ag
@@ -331,6 +327,7 @@ edge.apple
 fast.rockisland.net
 .fax.plus
 .featuregates.org
+.feednews.com
 .felo.me
 .fi
 .findanyfile.app
@@ -646,6 +643,8 @@ ocvideo.apple.com
 .ooklaserver.net
 openai-api.arkoselabs.com
 .openexchangerates.org
+.opera-api.com
+.opera.software
 .organicfruitapps.com
 .outlookmobile.com
 .pa
@@ -755,6 +754,7 @@ prod-api.crackle.com
 .simpletexting.com
 .singtel.com
 .singular.net
+.siteplug.com
 .sj
 .sk
 .skypeforbusiness.com
