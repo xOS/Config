@@ -56,5 +56,11 @@ DOMAIN-SUFFIX,app-act.ztehome.com.cn
 DOMAIN-SUFFIX,emc.ztehome.com.cn
 DOMAIN-SUFFIX,apipricenter.zte.com.cn
 DOMAIN-WILDCARD,smart*.ztems.com
+DOMAIN-SUFFIX,ztehome.com.cn
+DOMAIN,app-act.ztehome.com.cn
+DOMAIN,app-diag-link.ztehome.com.cn
 DOMAIN-WILDCARD,ossx*.ztehome.com.cn.c.yundunwaf3.com
+DOMAIN-WILDCARD,*.yundunwaf*.com
 IP-CIDR,36.112.120.71/32,no-resolve
+IP-CIDR,139.196.209.3/32,no-resolve
+IP-CIDR,139.196.221.99/32,no-resolve
