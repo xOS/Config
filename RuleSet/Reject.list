@@ -596,3 +596,4 @@ DOMAIN-WILDCARD,sdk.*.braze.com
 DOMAIN-WILDCARD,tnc*.tiktokv.com
 DOMAIN-WILDCARD,api-*.dutils.com
 DOMAIN-WILDCARD,mon*-*.tiktokv.com
+DOMAIN-SUFFIX,bugsnag.com
