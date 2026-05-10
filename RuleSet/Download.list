@@ -46,6 +46,7 @@ api-updates.orbstack.dev
 app-updates.agilebits.com
 apt.tetaneutral.net
 apt.xpipe.io
+archive-4.kali.org
 archive.cs.uu.nl
 .archive.debian.org
 archive.g4t1.pro
@@ -427,6 +428,7 @@ drmirror.physi.uni-heidelberg.de
 dw.uptodown.net
 .dyn.riotcdn.net
 eclats.crans.org
+.edge.kernel.org
 edge.steam-dns.top.comcast.net
 edgedl.me.gvt1.com
 edgeupdates.microsoft.com
@@ -436,7 +438,6 @@ enterprise.proxmox.com
 epicgames-download1.akamaized.net
 .epicgamescdn.com
 espejito.fder.edu.uy
-eu.edge.kernel.org
 extensionupdater.brave.com
 f-droid.org
 fastly-download.epicgames.com
@@ -461,6 +462,7 @@ fr2.rpmfind.net
 free.hands.com
 free.nchc.org.tw
 .freemirror.org
+.fsmg.org.nz
 ftp-chi.osuosl.org
 ftp-gnu-org.ip-connect.vn.ua
 .ftp-master.debian.org
@@ -518,6 +520,7 @@ ftp.fi.debian.org
 ftp.fi.muni.cz
 ftp.forthnet.gr
 ftp.fr.debian.org
+ftp.free.fr
 ftp.fu-berlin.de
 ftp.funet.fi
 ftp.gnome.org
@@ -693,7 +696,10 @@ jing.rocks
 .jitpack.io
 .k8s.io
 kali.cs.nycu.edu.tw
+kali.darklab.sh
 .kali.download
+kali.itsec.am
+kali.koyanet.lv
 kambing.uu.sg
 kartolo.sby.datautama.net.id
 kde.c3sl.ufpr.br
@@ -754,6 +760,7 @@ mirror.aarnet.edu.au
 .mirror.ac.ke
 .mirror.ac.za
 mirror.accum.se
+mirror.africloud.com
 mirror.aktkn.sg
 mirror.alastyr.com
 mirror.alwyzon.net
@@ -818,6 +825,7 @@ mirror.cs.jmu.edu
 mirror.cs.odu.edu
 mirror.csclub.uwaterloo.ca
 mirror.cse.iitk.ac.in
+mirror.cspacehostings.com
 mirror.cyberbits.asia
 mirror.cyberbits.eu
 mirror.cyberchains.org
@@ -855,6 +863,7 @@ mirror.ekiphost.com
 mirror.elice.io
 mirror.eliv.digital
 mirror.enzu.com
+mirror.es.cdn-perfprod.com
 mirror.esecuredata.com
 mirror.estone.ca
 mirror.ethz.ch
@@ -873,10 +882,10 @@ mirror.fi.ossplanet.net
 mirror.fjordos.com
 mirror.flo.c-f.ro
 .mirror.flokinet.net
+mirror.fr.cdn-perfprod.com
 mirror.freedif.org
 mirror.freethought-internet.co.uk
 .mirror.frontiernet.net
-mirror.fsmg.org.nz
 mirror.fst.kz
 .mirror.ftn.uns.ac.rs
 mirror.funkfreundelandshut.de
@@ -893,6 +902,7 @@ mirror.gsl.icu
 .mirror.gtcomm.net
 .mirror.guzel.net.tr
 mirror.hashy0917.net
+mirror.hemino.net
 mirror.hep.gg
 mirror.hnd.cl
 .mirror.homacloud.ai
@@ -928,6 +938,7 @@ mirror.intergrid.com.au
 .mirror.intermax.nl
 mirror.internet.asn.au
 mirror.internode.on.net
+.mirror.ionos.com
 mirror.ipb.de
 .mirror.iphh.net
 mirror.iranserver.com
@@ -1040,7 +1051,9 @@ mirror.pop-sc.rnp.br
 mirror.positive-internet.com
 mirror.pregi.net
 mirror.previder.nl
+mirror.primelink.net.id
 mirror.ps.kz
+mirror.pyratelan.org
 mirror.quickhost.uk
 .mirror.rackspace.com
 .mirror.rafal.ca
@@ -1128,6 +1141,7 @@ mirror.us-midwest-1.nexcess.net
 mirror.us-ny2.kamatera.com
 mirror.us-sc.kamatera.com
 mirror.us-tx.kamatera.com
+mirror.us.cdn-perfprod.com
 mirror.us.leaseweb.net
 mirror.us.mirhosting.net
 mirror.us.oneandone.net
@@ -1148,10 +1162,12 @@ mirror.vorboss.net
 mirror.vpgrp.io
 mirror.vpsnet.com
 .mirror.vu.lt
+mirror.wane.kr
 .mirror.wearetriple.com
 .mirror.web4u.cz
 mirror.webtastix.net
 mirror.webworld.ie
+mirror.wonchan.net
 mirror.wtnet.de
 mirror.xenyth.net
 mirror.xeonbd.com
@@ -1173,13 +1189,17 @@ mirror.yuki.net.uk
 mirror.za.abantu.cloud
 mirror.za.web4africa.net
 .mirror.zzunipark.com
+.mirror1.gnc.am
 mirror1.hs-esslingen.de
 mirror1.infomaniak.com
 mirror1.ku.ac.th
 mirror1.sox.rs
 mirror1.totbb.net
 mirror2.evolution-host.com
+.mirror2.gnc.am
 mirror2.infomaniak.com
+mirror2.keiminem.com
+mirror2.krfoss.org
 mirror2.tuxinator.org
 mirror4.twds.com.tw
 mirror6.twds.com.tw
@@ -1214,7 +1234,6 @@ mirrors.coreix.net
 mirrors.datapark.ro
 mirrors.de.sahilister.net
 .mirrors.dotsrc.org
-mirrors.edge.kernel.org
 mirrors.egr.msu.edu
 mirrors.esto.network
 mirrors.evoluso.com
@@ -1913,6 +1932,7 @@ www.gtlib.gatech.edu
 www.gutscheinrausch.de
 www2.aomeisoftware.com
 xenia.sote.hu
+xsrv.moratelindo.io
 xvcf1.xboxlive.com
 xvcf2.xboxlive.com
 .yarnpkg.com
