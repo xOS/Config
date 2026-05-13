@@ -1102,6 +1102,7 @@ cdn.v2ex.com
 cdn.vector.co
 cdn.verifypass.com
 cdn.viafoura.net
+cdn.videy.co
 cdn.vidyard.com
 cdn.viglink.com
 cdn.violet.vin
@@ -2637,6 +2638,7 @@ maps.geoapify.com
 maps.gstatic.com
 maps.wikimedia.org
 maps.wplace.live
+mapserver.mapy.cz
 maptile.osmand.net
 marber-cdn.economist.com
 marfeelexperimentsexperienceengine.mrf.io
@@ -4049,7 +4051,7 @@ tile.nextzen.org
 .tile.openstreetmap.de
 .tile.openstreetmap.fr
 .tile.openstreetmap.org
-tile.opentopomap.org
+.tile.opentopomap.org
 tile.openweathermap.org
 tile.osm.be
 .tile.osm.ch
@@ -4072,6 +4074,7 @@ tiles-a.koordinates.com
 tiles-eu.stadiamaps.com
 tiles.arcgis.com
 tiles.arcticconnect.ca
+.tiles.freemap.sk
 tiles.gsj.jp
 tiles.immich.cloud
 .tiles.mapbox.com
@@ -4087,6 +4090,7 @@ tiles.openseamap.org
 tiles.openskimap.org
 tiles.planet.com
 tiles.stadiamaps.com
+tiles.strava.com
 tiles.terria.io
 tiles.versatiles.org
 .tiles.virtualearth.net
