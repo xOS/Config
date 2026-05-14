@@ -80,6 +80,7 @@ DOMAIN,sydney.bing.com
 DOMAIN,www.bing.com
 # >> GitHub Copilot
 DOMAIN,api.github.com
+DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,githubcopilot.com
 
 # > Perplexity
