@@ -13,8 +13,10 @@ DOMAIN,dig.zjurl.cn
 DOMAIN,nsclick.baidu.com
 DOMAIN,s-gm.mmstat.com
 DOMAIN,monitor.music.qq.com
+DOMAIN,app-site-association.cdn-apple.com
 DOMAIN-SUFFIX,undefined
 DOMAIN-SUFFIX,null
+DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,telemetry.mozilla.org
 DOMAIN-SUFFIX,vk-analytics.ru
 DOMAIN-SUFFIX,apptracer.ru
