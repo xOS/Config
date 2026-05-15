@@ -396,7 +396,6 @@ DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN,mon.zijieapi.com
 DOMAIN-WILDCARD,log*.zijieapi.com
 DOMAIN,ca.iadsdk.apple.com
-DOMAIN,dig.bdurl.net
 DOMAIN,analytics.oceanengine.com
 DOMAIN-SUFFIX,volceapplog.com
 DOMAIN-WILDCARD,*monitor.qq.com
