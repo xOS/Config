@@ -129,6 +129,7 @@ app-cdn.logo.com
 app-spm.com
 app-static-prod.posthog.com
 app-static.eu.posthog.com
+app-static.sendsafely.com
 app-static.turtl.co
 app.1password.com
 app.backinstock.org
@@ -784,6 +785,7 @@ cdn.drata.com
 cdn.dribbble.com
 cdn.dynamicyield.com
 cdn.earthroulette.com
+.cdn.easyling.com
 cdn.ecomm.ui.com
 cdn.embed.ly
 cdn.embedly.com
@@ -794,6 +796,7 @@ cdn.equinix.com
 cdn.eu.contentful.com
 cdn.european-alternatives.eu
 cdn.evbstatic.com
+cdn.f5.com
 cdn.faire.com
 cdn.fastcomments.com
 cdn.fasterthanli.me
@@ -1059,6 +1062,7 @@ cdn.staticswin.com
 cdn.stellarhosted.com
 cdn.stonly.com
 cdn.streamlabs.com
+cdn.studio.f5.com
 cdn.substack.com
 cdn.sunofbeaches.com
 cdn.super.com
@@ -4000,6 +4004,7 @@ t4.picb.cc
 tag.trovo-tag.com
 tag.tvads.ai
 tag.unifyintent.com
+.tags.f5.com
 tags.nationwide.com
 tags.nba.com
 tags.news.com.au
