@@ -60,7 +60,10 @@ DOMAIN-KEYWORD,-adbrand
 # > 其它
 USER-AGENT,Munion-SDK*
 USER-AGENT,AVOS*
+DOMAIN-KEYWORD,invalid
 DOMAIN-KEYWORD,pangolin
+DOMAIN-KEYWORD,undefined
+DOMAIN-KEYWORD,this-url-does-not-exist-
 DOMAIN-WILDCARD,f-log*.grammarly.io
 DOMAIN-WILDCARD,*launches.appsflyersdk.com
 DOMAIN-WILDCARD,*settings.appsflyersdk.com
