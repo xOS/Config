@@ -62,3 +62,4 @@ DOMAIN-WILDCARD,ms*.applvn.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,beacon.*.com
 URL-REGEX,^https?:\/\/\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b\/(v\d+\/d(?:\?.*)?$|(?!(down|data|develop))d\d*|fetch|v2\/resolv|eapi\/lbs|v[46]|resolve|squery|dns|conf|trace|lbs|httpdns|(ad|init)\d*|multiDnsQuery)
+IP-CIDR,8.134.241.67/32,no-resolve

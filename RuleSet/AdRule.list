@@ -2,6 +2,8 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .72.chat
+.tanx.com
+.checktrustworthiness.com:
 .ad.12306.cn
 adcdn6.tencentmusic.com
 analytics.umetrip.com
