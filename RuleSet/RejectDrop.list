@@ -1,4 +1,6 @@
 # > Reject Drop
+PROTOCOL,STUN
+DOMAIN-KEYWORD,stun.
 DOMAIN,stats.grafana.org
 DOMAIN,nom.telemetrydeck.com
 DOMAIN,dataflow.biliapi.com
@@ -61,6 +63,7 @@ DOMAIN-WILDCARD,api*.amplitude.com
 DOMAIN-WILDCARD,ms*.applvn.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,beacon.*.com
+DOMAIN-WILDCARD,finder*.video.qq.com
 URL-REGEX,^https?:\/\/\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b\/(v\d+\/d(?:\?.*)?$|(?!(down|data|develop))d\d*|fetch|v2\/resolv|eapi\/lbs|v[46]|resolve|squery|dns|conf|trace|lbs|httpdns|(ad|init)\d*|multiDnsQuery)
 IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,180.76.76.200/32,no-resolve
