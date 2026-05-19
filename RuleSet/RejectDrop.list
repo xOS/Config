@@ -6,6 +6,8 @@ DOMAIN,tp2p.kg.qq.com
 DOMAIN,doh.iqiyi.com
 DOMAIN,adashxgc.ut.taobao.com
 DOMAIN,jiguang.coc.10086.cn
+DOMAIN,loggw-ex.alipay.com
+DOMAIN,loggw-exsdk.alipay.com
 DOMAIN,analytics.oceanengine.com
 DOMAIN,apm-native.xiaohongshu.com
 DOMAIN,stats.grafana.org
@@ -22,6 +24,9 @@ DOMAIN,dig.zjurl.cn
 DOMAIN,nsclick.baidu.com
 DOMAIN,s-gm.mmstat.com
 DOMAIN,monitor.music.qq.com
+DOMAIN,applog.uc.cn
+DOMAIN,metrics.icloud.com
+DOMAIN,h-adashx.ut.taobao.com
 DOMAIN,app-site-association.cdn-apple.com
 DOMAIN-SUFFIX,undefined
 DOMAIN-SUFFIX,null
@@ -72,6 +77,8 @@ DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,beacon.*.com
 DOMAIN-WILDCARD,finder*.video.qq.com
 DOMAIN-WILDCARD,api-access.pangolin-sdk-toutiao*.com
+DOMAIN-WILDCARD,loggw-*.alipay.com
+DOMAIN-WILDCARD,tnc*-*.zijieapi.com
 URL-REGEX,^https?:\/\/\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b\/(v\d+\/d(?:\?.*)?$|(?!(down|data|develop))d\d*|fetch|v2\/resolv|eapi\/lbs|v[46]|resolve|squery|dns|conf|trace|lbs|httpdns|(ad|init)\d*|multiDnsQuery)
 IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,180.76.76.200/32,no-resolve
