@@ -560,6 +560,7 @@ DOMAIN-WILDCARD,easyads28.*
 DOMAIN-WILDCARD,easyads29.*
 DOMAIN-WILDCARD,eclog*-*.cafe24.com
 DOMAIN-WILDCARD,ecommerce-events*.adscale.com
+DOMAIN-WILDCARD,eflbundles.*.com.tr
 DOMAIN-WILDCARD,etargetnet.*.hu
 DOMAIN-WILDCARD,eum*.instana.io
 DOMAIN-WILDCARD,event.*.karrotmarket.com
@@ -610,6 +611,7 @@ DOMAIN-WILDCARD,inc*-rev.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,increase-rev*.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,increase*-rev.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,increase*rev.static-cloudflare.workers.dev
+DOMAIN-WILDCARD,increv*.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,install*.zonastat.com
 DOMAIN-WILDCARD,iptracker-lb-*.amazonaws.com
 DOMAIN-WILDCARD,ir-new-cdn-eu-west-*-hb.rayjump.com
