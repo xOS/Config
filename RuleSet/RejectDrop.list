@@ -3,6 +3,7 @@ PROTOCOL,STUN
 DOMAIN-KEYWORD,stun.
 DOMAIN,httpdns.kg.qq.com
 DOMAIN,tp2p.kg.qq.com
+DOMAIN,doh.iqiyi.com
 DOMAIN,adashxgc.ut.taobao.com
 DOMAIN,jiguang.coc.10086.cn
 DOMAIN,analytics.oceanengine.com
