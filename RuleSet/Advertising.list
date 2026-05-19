@@ -608,6 +608,7 @@ DOMAIN-WILDCARD,imp-*.jampp.com
 DOMAIN-WILDCARD,impservice*.yodao.com
 DOMAIN-WILDCARD,impservice*.youdao.com
 DOMAIN-WILDCARD,inc*-rev.static-cloudflare.workers.dev
+DOMAIN-WILDCARD,inccrev*.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,increase-rev*.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,increase*-rev.static-cloudflare.workers.dev
 DOMAIN-WILDCARD,increase*rev.static-cloudflare.workers.dev
