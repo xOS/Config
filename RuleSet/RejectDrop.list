@@ -1,12 +1,16 @@
 # > Reject Drop
 PROTOCOL,STUN
 DOMAIN-KEYWORD,stun.
+DOMAIN-KEYWORD,alibabachengdun
 DOMAIN,httpdns.kg.qq.com
+DOMAIN,smartad.10010.com
 DOMAIN,tp2p.kg.qq.com
 DOMAIN,doh.iqiyi.com
+DOMAIN,mazu.m.qq.com
 DOMAIN,dlswbr.baidu.com
 DOMAIN,adashxgc.ut.taobao.com
 DOMAIN,playback.newbuy.chinaunicom.cn
+DOMAIN,px.wpk.quark.cn
 DOMAIN,sdk.e.qq.com
 DOMAIN,mi.gdt.qq.com
 DOMAIN,cloud.video.taobao.com
@@ -84,6 +88,7 @@ DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,beacon.*.com
 DOMAIN-WILDCARD,finder*.video.qq.com
 DOMAIN-WILDCARD,api-access.pangolin-sdk-toutiao*.com
+DOMAIN-WILDCARD,*log-upload-os.hoyoverse.com
 DOMAIN-WILDCARD,loggw-*.alipay.com
 DOMAIN-WILDCARD,tnc*-*.zijieapi.com
 DOMAIN-WILDCARD,wanproxy-*.127.net
