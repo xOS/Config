@@ -13,4 +13,7 @@ DOMAIN-SUFFIX,idnow.de
 DOMAIN-SUFFIX,o9.de
 DOMAIN-SUFFIX,o2online.de
 DOMAIN-SUFFIX,api-o2de.mytelco.io
+DOMAIN-SUFFIX,eu.getblueshift.com
+DOMAIN-SUFFIX,smava.de
+DOMAIN-SUFFIX,finx-p.qwist.cloud
 IP-CIDR,139.7.117.0/24,no-resolve
