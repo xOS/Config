@@ -1,14 +1,24 @@
 # > Reject Drop
 PROTOCOL,STUN
 DOMAIN-KEYWORD,stun.
+DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,alibabachengdun
 DOMAIN,httpdns.kg.qq.com
 DOMAIN,smartad.10010.com
+DOMAIN,umc.danuoyi.alicdn.com
+DOMAIN,livephoto.cloudvideocdn.taobao.com
 DOMAIN,tp2p.kg.qq.com
+DOMAIN,sp1.baidu.com
+DOMAIN,sofire.baidu.com
+DOMAIN,galileotelemetry.tencent.com
+DOMAIN,sgm-w.jd.com
+DOMAIN,mllog.jd.com
+DOMAIN,log.zijieapi.com
 DOMAIN,ad.tencentmusic.com
 DOMAIN,p.tencentmusic.com
 DOMAIN,tmead.y.qq.com
 DOMAIN,mazu.m.qq.com
+DOMAIN,hm.baidu.com
 DOMAIN,dlswbr.baidu.com
 DOMAIN,adashxgc.ut.taobao.com
 DOMAIN,playback.newbuy.chinaunicom.cn
@@ -122,6 +132,7 @@ DOMAIN-WILDCARD,*log-upload-os.hoyoverse.com
 DOMAIN-WILDCARD,loggw-*.alipay.com
 DOMAIN-WILDCARD,tnc*-*.zijieapi.com
 DOMAIN-WILDCARD,wanproxy-*.127.net
+DOMAIN-WILDCARD,*qojio.*.appsflyersdk.com
 URL-REGEX,^https?:\/\/\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b\/(v\d+\/d(?:\?.*)?$|(?!(down|data|develop))d\d*|fetch|v2\/resolv|eapi\/lbs|v[46]|resolve|squery|dns|conf|trace|lbs|httpdns|(ad|init)\d*|multiDnsQuery)
 IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,180.76.76.200/32,no-resolve

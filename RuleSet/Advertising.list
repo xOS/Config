@@ -81,7 +81,6 @@ DOMAIN-WILDCARD,*goad*.189.cn
 DOMAIN-WILDCARD,mssdk*.zijieapi.com
 DOMAIN-WILDCARD,polaris*-normal-*.zijieapi.com
 DOMAIN-WILDCARD,minigame*-normal-hl.zijieapi.com
-DOMAIN-WILDCARD,*.umeng*.com
 DOMAIN-WILDCARD,wanproxy-*.127.net
 DOMAIN-WILDCARD,gsp*.baidu.com
 DOMAIN-WILDCARD,log*.zijieapi.com
