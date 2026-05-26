@@ -57,6 +57,10 @@ AND,((USER-AGENT,PUClient*),(NOT,((DOMAIN-SUFFIX,rr.tv))))
 DOMAIN-KEYWORD,ad-sign
 DOMAIN-KEYWORD,-adbrand
 
+# > 京东 APP 短视频 & 直播
+DOMAIN-WILDCARD,live*.jd.com
+DOMAIN-WILDCARD,*vod.300hu.com
+
 # > 其它
 USER-AGENT,Munion-SDK*
 USER-AGENT,AVOS*

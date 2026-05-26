@@ -109,6 +109,7 @@ DOMAIN-SUFFIX,geo2.adobe.com
 DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,data.grammarly.com
 DOMAIN-WILDCARD,*-ad.mail.ru
+DOMAIN-WILDCARD,sdk.*rtb.net
 DOMAIN-WILDCARD,api*.amplitude.com
 DOMAIN-WILDCARD,ms*.applvn.com
 DOMAIN-WILDCARD,*log.baidu.com
