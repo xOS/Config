@@ -3,6 +3,7 @@ PROTOCOL,STUN
 DOMAIN-KEYWORD,stun.
 DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,alibabachengdun
+DOMAIN,mssdk.bytedance.com drop
 DOMAIN,httpdns.kg.qq.com
 DOMAIN,smartad.10010.com
 DOMAIN,umc.danuoyi.alicdn.com
@@ -77,6 +78,7 @@ DOMAIN-SUFFIX,iadsdk.apple.com
 DOMAIN-SUFFIX,px.ucweb.com
 DOMAIN-SUFFIX,usercentrics.eu
 DOMAIN-SUFFIX,tpns.tencent.com
+DOMAIN-SUFFIX,html-load.com
 DOMAIN-SUFFIX,telemetry.mozilla.org
 DOMAIN-SUFFIX,vk-analytics.ru
 DOMAIN-SUFFIX,apptracer.ru

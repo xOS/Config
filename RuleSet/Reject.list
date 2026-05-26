@@ -151,9 +151,9 @@ IP-CIDR,39.97.128.148/32,no-resolve
 IP-CIDR,39.97.130.51/32,no-resolve
 
 # > 微信
-DOMAIN,aedns.weixin.qq.com
-DOMAIN,dns.weixin.qq.com
-DOMAIN,dns.weixin.qq.com.cn
+//DOMAIN,aedns.weixin.qq.com
+//DOMAIN,dns.weixin.qq.com
+//DOMAIN,dns.weixin.qq.com.cn
 IP-CIDR,42.81.232.18/32,no-resolve
 IP-CIDR,42.187.182.106/32,no-resolve
 IP-CIDR,42.187.182.123/32,no-resolve
