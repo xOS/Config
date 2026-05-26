@@ -5,6 +5,7 @@ DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,alibabachengdun
 DOMAIN,mssdk.bytedance.com drop
 DOMAIN,httpdns.kg.qq.com
+DOMAIN,motion.bestpay.cn
 DOMAIN,smartad.10010.com
 DOMAIN,umc.danuoyi.alicdn.com
 DOMAIN,livephoto.cloudvideocdn.taobao.com
@@ -129,6 +130,9 @@ DOMAIN-WILDCARD,beacon.*.com
 DOMAIN-WILDCARD,sdk.*.braze.com
 DOMAIN-WILDCARD,finder*.video.qq.com
 DOMAIN-WILDCARD,api-access.pangolin-sdk-toutiao*.com
+DOMAIN-WILDCARD,p*-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-WILDCARD,*vod.300hu.com
+DOMAIN-WILDCARD,apm-*.xiaohongshu.com
 DOMAIN-WILDCARD,mssdk*.zijieapi.com
 DOMAIN-WILDCARD,polaris*-normal-*.zijieapi.com
 DOMAIN-WILDCARD,*log-upload-os.hoyoverse.com
