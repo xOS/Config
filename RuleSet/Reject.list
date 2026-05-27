@@ -61,12 +61,18 @@ DOMAIN,resolvers-cn.httpdns.aliyuncs.com
 IP-CIDR,203.107.1.0/24,no-resolve
 
 # > 百度
+DOMAIN,180.76.76.200
 DOMAIN,httpsdns.baidu.com
 DOMAIN,httpdns.baidu.com
 DOMAIN,httpdns.baidubce.com
 IP-CIDR,180.76.76.200/32,no-resolve
 
 # > 哔哩哔哩
+AND,((DOMAIN-SUFFIX,chat.bilibili.com), (OR,((DOMAIN-KEYWORD,stun), (DOMAIN-KEYWORD,tracker))))
+DOMAIN,api.biliapi.com
+DOMAIN,app.biliapi.com
+DOMAIN,api.biliapi.net
+DOMAIN,app.biliapi.net
 DOMAIN,httpdns.bilivideo.com
 # KEY_EXT_P2P_HTTPDNS_BILI_IP
 IP-CIDR,47.101.175.206/32,no-resolve
@@ -183,6 +189,7 @@ DOMAIN,dns2.q2cdn.com
 DOMAIN,httpdns.bilivideo.com
 DOMAIN,dig.bdurl.net
 DOMAIN,dig.zjurl.cn
+DOMAIN,api.iqiyi.com
 DOMAIN,paydns.wechatpay.cn
 DOMAIN,httpdns.ocloud.heytapmobi.com
 DOMAIN,dotserver.douyucdn.cn

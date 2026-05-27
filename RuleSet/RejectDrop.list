@@ -2,13 +2,16 @@
 PROTOCOL,STUN
 DOMAIN-KEYWORD,stun.
 DOMAIN-KEYWORD,pangolin
+DOMAIN-KEYWORD,undefined
 DOMAIN-KEYWORD,mobileDispatch
 DOMAIN-KEYWORD,alibabachengdun
+DOMAIN,tether.edge.apple
 DOMAIN,mssdk.bytedance.com
 DOMAIN,httpdns.kg.qq.com
 DOMAIN,motion.bestpay.cn
 DOMAIN,smartad.10010.com
 DOMAIN,umc.danuoyi.alicdn.com
+DOMAIN,weather-analytics-events.apple.com
 DOMAIN,livephoto.cloudvideocdn.taobao.com
 DOMAIN,tp2p.kg.qq.com
 DOMAIN,sp1.baidu.com
@@ -74,6 +77,7 @@ DOMAIN-SUFFIX,undefined
 DOMAIN-SUFFIX,null
 DOMAIN-SUFFIX,tanx.com
 DOMAIN-SUFFIX,sigmob.cn
+DOMAIN-SUFFIX,tthr.apple.com
 DOMAIN-SUFFIX,siftscience.com
 DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,iadsdk.apple.com
