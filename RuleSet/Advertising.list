@@ -390,7 +390,7 @@ DOMAIN-WILDCARD,analyticsresults.*.de
 DOMAIN-WILDCARD,acq-*.americanexpress.com
 DOMAIN-WILDCARD,aa-metrics.*.jp
 DOMAIN-WILDCARD,*-netseer-ipaddr-assoc.*.fbcdn.net
-^https?:\/\/.+\/amdc\/mobileDispatch
+URL-REGEX,^https?:\/\/.+\/amdc\/mobileDispatch
 
 # === AUTO-GENERATED: ADRULES WILDCARD START ===
 DOMAIN-WILDCARD,*-datareceiver.aki-game.net
