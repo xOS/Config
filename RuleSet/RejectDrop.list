@@ -119,6 +119,7 @@ DOMAIN-SUFFIX,data.grammarly.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
 DOMAIN-WILDCARD,*adash*.*.taobao.com
+DOMAIN-WILDCARD,*amdc*.*.taobao.com
 DOMAIN-WILDCARD,api*.amplitude.com
 DOMAIN-WILDCARD,ms*.applvn.com
 DOMAIN-WILDCARD,*log.baidu.com

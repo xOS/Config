@@ -70,6 +70,7 @@ DOMAIN-KEYWORD,undefined
 DOMAIN-KEYWORD,mobileDispatch
 DOMAIN-KEYWORD,this-url-does-not-exist-
 DOMAIN-WILDCARD,*adash*.*.taobao.com
+DOMAIN-WILDCARD,*amdc*.*.taobao.com
 DOMAIN-WILDCARD,f-log*.grammarly.io
 DOMAIN-WILDCARD,*launches.appsflyersdk.com
 DOMAIN-WILDCARD,*settings.appsflyersdk.com
@@ -389,6 +390,7 @@ DOMAIN-WILDCARD,analyticsresults.*.de
 DOMAIN-WILDCARD,acq-*.americanexpress.com
 DOMAIN-WILDCARD,aa-metrics.*.jp
 DOMAIN-WILDCARD,*-netseer-ipaddr-assoc.*.fbcdn.net
+^https?:\/\/.+\/amdc\/mobileDispatch
 
 # === AUTO-GENERATED: ADRULES WILDCARD START ===
 DOMAIN-WILDCARD,*-datareceiver.aki-game.net

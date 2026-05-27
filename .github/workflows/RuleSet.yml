@@ -6,7 +6,12 @@ on:
     branches:
       - "Her"
     paths:
-      - "**/*.list"
+      - "RuleSet/AdRules/**"
+      - "RuleSet/Advertising.list"
+      - "RuleSet/AdRule.list"
+      - "RuleSet/GlobalRule.list"
+      - "RuleSet/Global.list"
+      - "RuleSet/Domestic.list"
   schedule:
     - cron: "0 */24 * * *"
 
