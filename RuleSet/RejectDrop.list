@@ -2,8 +2,9 @@
 PROTOCOL,STUN
 DOMAIN-KEYWORD,stun.
 DOMAIN-KEYWORD,pangolin
+DOMAIN-KEYWORD,mobileDispatch
 DOMAIN-KEYWORD,alibabachengdun
-DOMAIN,mssdk.bytedance.com drop
+DOMAIN,mssdk.bytedance.com
 DOMAIN,httpdns.kg.qq.com
 DOMAIN,motion.bestpay.cn
 DOMAIN,smartad.10010.com
@@ -24,10 +25,10 @@ DOMAIN,hm.baidu.com
 DOMAIN,dlswbr.baidu.com
 DOMAIN,adashxgc.ut.taobao.com
 DOMAIN,playback.newbuy.chinaunicom.cn
+DOMAIN,zconfig.alibabausercontent.com
 DOMAIN,px.wpk.quark.cn
 DOMAIN,unet.ucweb.com
 DOMAIN,ucus.ucweb.com
-DOMAIN,px.effirst.com
 DOMAIN,mars.jd.com
 DOMAIN,tdid.m.qq.com
 DOMAIN,snowflake.qq.com
@@ -113,6 +114,7 @@ DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,data.grammarly.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
+DOMAIN-WILDCARD,*adash*.*.taobao.com
 DOMAIN-WILDCARD,api*.amplitude.com
 DOMAIN-WILDCARD,ms*.applvn.com
 DOMAIN-WILDCARD,*log.baidu.com
