@@ -3,32 +3,6 @@
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .72.chat
 .ad.12306.cn
-blackhole.m.jd.com
-sdkfp.jd.com
-anti-sdk-report.m.jd.com
-heracles.jd.com
-gias.jd.com
-cactus.jd.com
-dsap.jd.com
-ccflbs.m.jd.com
-ccfjma.m.jd.com
-anti-sdk-ccs-pre.m.jd.com
-second-floor-pro.pf.jd.com
-plogin.m.jd.com
-squnit-api.m.jd.com
-in.m.jd.com
-un.m.jd.com
-ap-dd1.jd.com
-jpushsc.m.jd.com
-.jddebug.com
-wl.jd.com
-perf.m.jd.com
-ex.m.jd.com
-im-x.jd.com
-waapdg.jd.com
-uranus.jd.com
-sh.jd.com
-h5speed.m.jd.com
 .ad.m.iqiyi.com
 adcdn6.tencentmusic.com
 .adimg.uve.weibo.com
@@ -38,11 +12,18 @@ adpinpai.video.weibocdn.com
 .afp.iqiyi.com
 .alitui.weibo.com.cn
 analytics.umetrip.com
+anti-sdk-ccs-pre.m.jd.com
+anti-sdk-report.m.jd.com
+ap-dd1.jd.com
 api.qttunion.com
 bda.umetrip.com
 bkclient.umetrip.com.cn
+blackhole.m.jd.com
 bootpreload.uve.weibo.com
 brtc-data-collection.baijiayun.com
+cactus.jd.com
+ccfjma.m.jd.com
+ccflbs.m.jd.com
 .checktrustworthiness.com
 click.baijiayun.com
 .click.uve.weibo.com
@@ -57,20 +38,29 @@ dc.sigmob.cn
 dig.bdurl.net
 dlied5sdk.myapp.com
 .dp.im.weibo.cn
+dsap.jd.com
 .dsp.edm.weibo.cn
 .emoticon.sns.iqiyi.com
 events.eu1.segmentapis.com
+ex.m.jd.com
 .fastimage.uve.weibo.com
 .financeads.net
 .game.weibo.cn
 .game.weibo.com
+gias.jd.com
 .gw5.push.mcp.weibo.cn
 .gw6.push.mcp.weibo.cn
+h5speed.m.jd.com
+heracles.jd.com
 .html-load.com
 huodong.caiyun.feixin.10086.cn
 huodong.weibo.cn
 hxjtrack.yutoons.com
+im-x.jd.com
+in.m.jd.com
+.jddebug.com
 jiguang.coc.10086.cn
+jpushsc.m.jd.com
 .kg.qq.com
 .ltmsphrcl.net
 .msg.iqiyi.com
@@ -79,11 +69,17 @@ nexus-websocket-a.intercom.io
 opactivity.umetrip.com
 p.tencentmusic.com
 .partner.uc.cn
+perf.m.jd.com
 .ping0.co
+plogin.m.jd.com
 .promote.biz.weibo.cn
 sdk-log.partner.sm.cn
 .sdkapp.uve.weibo.com
+sdkfp.jd.com
+second-floor-pro.pf.jd.com
+sh.jd.com
 splash.ztehome.com.cn
+squnit-api.m.jd.com
 startup.umetrip.com
 .static-s.iqiyi.com
 .store.iqiyi.com
@@ -92,12 +88,16 @@ tether.edge.apple
 .tfogc.com
 .tthr.apple.com
 .tui.weibo.com
+un.m.jd.com
+uranus.jd.com
 .verify-for-creators.com
+waapdg.jd.com
 .wax.weibo.com
 .wax.weibo.com.cn
 .wbapp.uve.weibo.com
 .weibomingzi.com
 .widget.weibo.com
+wl.jd.com
 .zymo.mps.weibo.com
 # === Custom Edit Area End ===
 
@@ -35372,6 +35372,7 @@ a.ads
 .0vtx1gfc.xyz
 .0x01n2ptpuz3.com
 .0zj2a0bg.xyz
+.1000replicas.com
 .100kia.xyz
 .101m3.com
 .103092804.com
@@ -35573,6 +35574,7 @@ a.ads
 .21hn4b64m.de
 .21sexturycash.com
 .21wiz.com
+.220fromplatforms.com
 .222764f169.com
 .2250c8daae.com
 .22523e8ad1.com
@@ -35894,6 +35896,7 @@ a.ads
 .3vynh4rw9vnr8z.cfd
 .3wr110.net
 .3y1v1k7ki6mvmc5f57.rest
+.3zji9h143hr1w15yv.cfd
 .3znoji162fuxp71whii.cfd
 .4058e46800.com
 .40ceexln7929.com
@@ -36260,6 +36263,7 @@ a.ads
 .6x6iyrnym5uqpi.rest
 .6xmwet6m572yi1.rest
 .6yfjlm4lcmvrxkrlux1p.rest
+.6yz3ctzomy3u9gqi4wu.rest
 .6yzfub9hhkgq2v.rest
 .6znvp3ntipfwknn4r.cfd
 .6zr116wrcjmcy3g86.cfd
@@ -40227,6 +40231,7 @@ a.ads
 .bemoltconopid.shop
 .bemottoincord.com
 .bemptdhubuizyg.com
+.bemwvhrwmxofq.online
 .benamednidulus.cyou
 .benatrogon.qpon
 .benbenbezetta.com
@@ -40903,6 +40908,7 @@ a.ads
 .bmgzspzuahkgq.online
 .bmhftxazibaxo.site
 .bminnfgtuyrbv.com
+.bmjzndlp.com
 .bmkhxvvneovqi.space
 .bmknmzsaiscwk.online
 .bmkz57b79pxk.com
@@ -40944,6 +40950,7 @@ a.ads
 .bnhlpsmhvodae.online
 .bnhtml.com
 .bniqoljokknzm.website
+.bnjexcsyrwari.site
 .bnjhfltfknjghui.com
 .bnmfsuzhytosg.website
 .bnmqtggqjoqic.buzz
@@ -43007,6 +43014,7 @@ a.ads
 .choricpitting.qpon
 .chorionkayaker.cfd
 .chorisobantinfurnace.qpon
+.chorotichokies.cfd
 .chorousdeafly.cfd
 .chouftak.net
 .choulepanful.cyou
@@ -44470,6 +44478,7 @@ a.ads
 .crumberoffal.qpon
 .crumblefilchactive.com
 .crumbtypewriterhome.com
+.crummerqasidas.cyou
 .crumpetprankerstench.com
 .crumpygodsons.cfd
 .cruncherpatiencestoreroom.com
@@ -44857,6 +44866,7 @@ a.ads
 .cyaninslanguorfeudal.cfd
 .cyansknuth.com
 .cyberfluxer.com
+.cyclanebinal.cfd
 .cycrtitiqxykp.space
 .cycuratedhi.com
 .cyeitxjzgsmef.online
@@ -45014,6 +45024,7 @@ a.ads
 .dairiathold.cfd
 .dairyakasa.cyou
 .daivendtzsbws.space
+.dajbbmpmathfq.space
 .dajlkipw.in
 .dajwaqcwyov.in
 .dakafxgnqcpmm.website
@@ -45736,6 +45747,7 @@ a.ads
 .dfhmamhindaz.com
 .dfizzpfojfgtj.website
 .dfkkffjulbnec.space
+.dfmvchdifowgk.online
 .dfndwfcwp.com
 .dfotrqlairxzv.site
 .dfqbktlcmmcca.space
@@ -45818,6 +45830,7 @@ a.ads
 .diagnosisscript.com
 .diagramwrangleupdate.com
 .dialling-abutory.com
+.diamattinny.shop
 .dianomioffers.co.uk
 .diapirsmooths.cyou
 .diaplexlagenae.qpon
@@ -46093,6 +46106,7 @@ a.ads
 .disqvhdpmpoxy.website
 .disreputableagrarianyourself.com
 .disrespectsuffer.com
+.disringcarf.cyou
 .dissatisfactionfloodingdefiant.com
 .dissatisfactionpublicity.com
 .dissavadipperlairds.cfd
@@ -47631,6 +47645,7 @@ a.ads
 .ejgsjmhnuwhws.website
 .ejibgrotomytx.site
 .ejihhtgvjeglq.online
+.ejk6fzpkxir92koj3xrz6q.rest
 .ejlqdcyrjsakh.site
 .ejmidntfgqwfh.site
 .ejnhzgcgazhjl.site
@@ -48472,6 +48487,7 @@ a.ads
 .eszdvidrksqop.site
 .esznfqrpeivdr.website
 .etacismbaroccoteachy.qpon
+.etazhozlsqaoi.space
 .etbbvbulyhyyo.space
 .etbtomrowbmji.website
 .etcbdcjzjfwt.com
@@ -48595,6 +48611,7 @@ a.ads
 .eveabberantprovide.com
 .eveflngczfnkm.site
 .evejarjoelpetcock.cfd
+.evelinajimp.shop
 .evendeprivation.com
 .evendisciplineseedlings.com
 .evenincompleteremarried.com
@@ -48904,6 +48921,7 @@ a.ads
 .eyhmhohuflljt.website
 .eyiccxilrwhpm.site
 .eyidtfpkxbbsl.website
+.eyirvdltgwnlxj.com
 .eykcjdmmtsoykl.com
 .eyknbgdtgsecp.com
 .eyktegqgbtujq.space
@@ -51010,6 +51028,7 @@ a.ads
 .galybgqqxjhil.space
 .gam3ah.com
 .gambar123.com
+.gambiaeaffingairings.qpon
 .gambianvanirgeikia.cfd
 .gamblescripee.qpon
 .gamdiamistify.cyou
@@ -51252,6 +51271,7 @@ a.ads
 .generosityreekweigh.com
 .generous-snow.com
 .generousworry.com
+.geneseetoyon.shop
 .genesisceorl.com
 .genesismedia.com
 .geneticallydetection.com
@@ -52051,6 +52071,7 @@ a.ads
 .gqbkxohbonzxt.online
 .gqbpkzehdkjur.site
 .gqbzbszzbqsdi.online
+.gqdvqntpuvfwq.space
 .gqgqdkfcylzqz.store
 .gqhjdzkwwllur.space
 .gqihdorufksiq.online
@@ -53869,6 +53890,7 @@ a.ads
 .hpadjptcyyafh.space
 .hpbfaafpo.com
 .hpdjwvrkacvvv.online
+.hpdtcrvwqzcec.website
 .hpfchmjsfkhjt.site
 .hpflagqlisnli.space
 .hpgaqdq.shop
@@ -54323,6 +54345,7 @@ a.ads
 .hznenxxzupeym.site
 .hznlphxxszxpk.site
 .hzptibajffxdw.website
+.hzpvkm5nzmtpqcc8u4tyxnwe9.cfd
 .hzqqldqfjsyjn.site
 .hzr0dm28m17c.com
 .hzskcsmxnzmcz.website
@@ -54780,6 +54803,7 @@ a.ads
 .ileuadlrdnpow.space
 .ileumoctant.com
 .ilexesbaldly.cfd
+.ilexestituschry.qpon
 .ilgpscfvwohwr.space
 .ilhangrnyaubr.site
 .ilhtossuwjwcg.online
@@ -55826,6 +55850,7 @@ a.ads
 .ivxwdikrmtzfc.online
 .ivynjtsidwnqh.online
 .ivyprolonginstalment.com
+.ivywoodwonnedweakest.qpon
 .ivywortcacajao.qpon
 .iwalujwa.com
 .iwantuonly.com
@@ -55887,6 +55912,7 @@ a.ads
 .ixsgksvcnjqvo.online
 .ixtzexgnofhym.space
 .ixubgeuvxzgle.online
+.ixyddqihfwpor.com
 .ixyekfsvtphlz.website
 .ixziesbzjdfda.space
 .iyaxioaifbrvt.site
@@ -57204,6 +57230,7 @@ a.ads
 .kailsfrot.com
 .kaira18.com
 .kaiu-marketing.com
+.kajawahroovingjobbers.cfd
 .kajfjxjrcn.com
 .kajyqgfjhohks.website
 .kakaposbalaksettima.qpon
@@ -58143,6 +58170,7 @@ a.ads
 .kuosqjyasoh.com
 .kuoxgfkgnw.com
 .kurcyslwlfahi.online
+.kurdconking.shop
 .kureedsnbcuuj.space
 .kurrhlwywpswg.site
 .kursatarak.com
@@ -62146,6 +62174,7 @@ a.ads
 .mz8h4gohvc8iouk.cfd
 .mzaecupkjfnxx.online
 .mzcgpmpygdoer.site
+.mzdfxgkptzelb.online
 .mzdhejfvuankc.global
 .mzdlrglckxifp.space
 .mzdpqntxabgiz.website
@@ -62788,6 +62817,7 @@ a.ads
 .nigysbnjwqdou.online
 .nihbdkkmhavyu.space
 .nihilscurlilyeddy.cfd
+.niibfoaeymxqe.com
 .niimrloquvkhj.site
 .niimtlaqdakoma.com
 .niizcmfjrykzm.space
@@ -64351,6 +64381,7 @@ a.ads
 .omxpiremgszzv.space
 .omyxpqiy.com
 .omzbksdojksnt.online
+.omzjtizavva.in
 .omzkdhbltgcyi.website
 .omzwmjdqihtxs.website
 .omzylhvhwp.com
@@ -64606,6 +64637,7 @@ a.ads
 .oqdwehdhhswex.online
 .oqezuyyzxggyx.site
 .oqezwhyvtyduh.click
+.oqgnkkepymcdj.site
 .oqhvfroyxr1gh5b.rest
 .oqisfnvewbcaz.online
 .oqiuuznwfdqbb.website
@@ -64626,6 +64658,7 @@ a.ads
 .oraculairicizereverie.cfd
 .oralismyelloch.com
 .orallycundy.cfd
+.oralxibaxshyq.space
 .orangeads.fr
 .orangeapproach.com
 .orangeassistant.pro
@@ -65107,6 +65140,7 @@ a.ads
 .ownthmorningb.org
 .owonchghcurdw.website
 .owrelayzanzakermis.cyou
+.owrpgfaueaivx.space
 .owslnuzidiugg.store
 .owssalylvzcox.site
 .owsuhntty.com
@@ -67653,6 +67687,7 @@ a.ads
 .pulsemgr.com
 .pulsesphanicminimum.qpon
 .pulverizefighting.com
+.pulyxlgvrlqco.space
 .pumaqmqix.com
 .pumeloricing.com
 .pumexlibridrupel.qpon
@@ -68171,6 +68206,7 @@ a.ads
 .qgrramsw.com
 .qgthiomylmdvo.online
 .qgtlndbjewjxa.website
+.qgtrjcxkuetnm.online
 .qgtyiikopjaiy.space
 .qguusmmvndeor.website
 .qguwsuivlnmxr.site
@@ -70917,6 +70953,7 @@ a.ads
 .ryeweaver.com
 .rygdzlvrladuc.store
 .ryiklaawtjuus.online
+.ryiqmiitdw.com
 .ryknsblynbifq.store
 .ryln9b9ut4btv4vp3ex68e46g.rest
 .ryminos.com
@@ -71346,6 +71383,7 @@ a.ads
 .scattyyrbkagrito.cfd
 .scavelbuntine.life
 .scawdcimex.qpon
+.scawllanner.shop
 .scawtepee.com
 .sccotxcyhkpsm.site
 .scdjkqlknm.com
@@ -74765,6 +74803,7 @@ a.ads
 .tbmoxtvskajqz.space
 .tbpot.com
 .tbpwwpoiztpgu.online
+.tbqejttfch.com
 .tbscgaxb.xyz
 .tbsxkmwsmksjj.buzz
 .tburybrcvclih.online
@@ -75034,6 +75073,7 @@ a.ads
 .tewingclours.shop
 .texasdrool.shop
 .texhbnxw.com
+.texijoahuzlqs.site
 .teximbbsfojck.online
 .texsxhprkkljb.rocks
 .textbookenvious.com
@@ -77351,6 +77391,7 @@ a.ads
 .unhappyweakness.com
 .unhatedprotei.com
 .unhatsmoiledpalpi.cfd
+.unhaveuparnacarpel.cyou
 .unhealthydepth.pro
 .unhealthyirreparable.com
 .unhealthystickevents.com
@@ -77977,6 +78018,7 @@ a.ads
 .uuhnjutdqxnac.space
 .uuidksinc.net
 .uukxgdst.com
+.uumajrfleejqfr.com
 .uumbahniwkyki.space
 .uumkcycj.com
 .uuomedmlqscpa.store
@@ -77996,6 +78038,7 @@ a.ads
 .uvblwqztcvnro.online
 .uveitisabaffingine.cyou
 .uvfckyovekkqh.space
+.uvhimjedwfnru.website
 .uvhmsovvhfdzo.site
 .uvhrjgnstmxxz.space
 .uviekpvrstlwu.site
@@ -82177,6 +82220,7 @@ a.ads
 .xgakvourhdtxk.space
 .xgaxtbrifshmc.website
 .xgbetzbmmdqbv.space
+.xgbmuxkupngbn.website
 .xgbzhyoeitomd.website
 .xgefwokzxvuzx.space
 .xgfgfumw.com
@@ -84185,6 +84229,7 @@ a.ads
 .ytzihf.com
 .ytzisjouiwwsg.site
 .yu0123456.com
+.yuanwitting.shop
 .yuastejdigmex.site
 .yuatxgdsuyevx.online
 .yuauqdgmehwrov.com
@@ -84371,6 +84416,7 @@ a.ads
 .yyijihjtdjsdp.online
 .yyilgvgquvggs.online
 .yyipxzmxpedf.com
+.yyjjkxsilesk.com
 .yyjvimo.com
 .yypkjxtumgofe.site
 .yypqvjzprpsfm.online
@@ -179554,11 +179600,13 @@ a.ads
 .verify.safesigned.com
 .websecurity.norton.com
 .widgets.trustedshops.com
+.ampscamp.net
 .digitalblend.net
 .naturebeans.com
 .sourcecodeapp.com
 .spoonballoon.com
 .stadiumzoo.net
+.strandedgame.com
 .sustaindenim.com
 .topicalcartel.com
 .tuplebar.com
@@ -196577,7 +196625,6 @@ track.opentable
 .cdn-x.net
 .cdn-z.net
 .clickcandy2.com
-.stay22.com
 .weforads.com
 .d15r06k2ko210l.cloudfront.net
 .d2yyd1h5u9mauk.cloudfront.net
