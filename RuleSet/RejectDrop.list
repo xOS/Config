@@ -11,6 +11,8 @@ DOMAIN,httpdns.kg.qq.com
 DOMAIN,motion.bestpay.cn
 DOMAIN,smartad.10010.com
 DOMAIN,umc.danuoyi.alicdn.com
+DOMAIN,livelottery.jd.com
+DOMAIN,live-retention-popup-pro.pf.jd.com
 DOMAIN,weather-analytics-events.apple.com
 DOMAIN,livephoto.cloudvideocdn.taobao.com
 DOMAIN,tp2p.kg.qq.com
@@ -26,6 +28,7 @@ DOMAIN,im-x.jd.com
 DOMAIN,waapdg.jd.com
 DOMAIN,uranus.jd.com
 DOMAIN,sh.jd.com
+DOMAIN,discover.300hu.com
 DOMAIN,h5speed.m.jd.com
 DOMAIN,data.tianwenca.com
 DOMAIN,gravity-engine.com
@@ -42,12 +45,18 @@ DOMAIN,mazu.m.qq.com
 DOMAIN,hm.baidu.com
 DOMAIN,dlswbr.baidu.com
 DOMAIN,adashxgc.ut.taobao.com
+DOMAIN,t2.xiaohongshu.com
 DOMAIN,playback.newbuy.chinaunicom.cn
 DOMAIN,zconfig.alibabausercontent.com
 DOMAIN,px.wpk.quark.cn
 DOMAIN,unet.ucweb.com
 DOMAIN,ucus.ucweb.com
 DOMAIN,mars.jd.com
+DOMAIN,sdkfp.jd.com
+DOMAIN,cactus.jd.com
+DOMAIN,log.jd.com
+DOMAIN,second-floor-pro.pf.jd.com
+DOMAIN,blackhole.m.jd.com
 DOMAIN,tdid.m.qq.com
 DOMAIN,snowflake.qq.com
 DOMAIN,sdk.e.qq.com
@@ -55,6 +64,7 @@ DOMAIN,th.pinduoduo.com
 DOMAIN,sessions.bugsnag.com
 DOMAIN,pushservice.10010.com
 DOMAIN,timon.zijieapi.com
+DOMAIN,applog.zijieapi.com
 DOMAIN,umdcv4.taobao.com
 DOMAIN,cloud.video.taobao.com
 DOMAIN,fourier.taobao.com
@@ -86,6 +96,7 @@ DOMAIN,cfgc.zztfly.com
 DOMAIN,collect.gmcc.net
 DOMAIN,metrics.icloud.com
 DOMAIN,h-adashx.ut.taobao.com
+DOMAIN,webcast-open.douyin.com
 DOMAIN,firebaselogging-pa.googleapis.com
 DOMAIN,app-site-association.cdn-apple.com
 DOMAIN-SUFFIX,undefined
@@ -133,6 +144,10 @@ DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,data.grammarly.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
+DOMAIN-WILDCARD,ap-dd*.jd.com
+DOMAIN-WILDCARD,ccf*.m.jd.com
+DOMAIN-WILDCARD,live*.jd.com
+DOMAIN-WILDCARD,live-ws*.jd.com
 DOMAIN-WILDCARD,*adash*.*.taobao.com
 DOMAIN-WILDCARD,*amdc*.*.taobao.com
 DOMAIN-WILDCARD,api*.amplitude.com
