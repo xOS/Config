@@ -160,13 +160,13 @@ IP-CIDR,39.97.130.51/32,no-resolve
 //DOMAIN,aedns.weixin.qq.com
 //DOMAIN,dns.weixin.qq.com
 //DOMAIN,dns.weixin.qq.com.cn
-IP-CIDR,42.81.232.18/32,no-resolve
-IP-CIDR,42.187.182.106/32,no-resolve
-IP-CIDR,42.187.182.123/32,no-resolve
-IP-CIDR,42.187.184.154/32,no-resolve
-IP-CIDR,123.151.54.50/32,no-resolve
-IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
-IP-CIDR6,240e:928:1400:10::25/128,no-resolve
+//IP-CIDR,42.81.232.18/32,no-resolve
+//IP-CIDR,42.187.182.106/32,no-resolve
+//IP-CIDR,42.187.182.123/32,no-resolve
+//IP-CIDR,42.187.184.154/32,no-resolve
+//IP-CIDR,123.151.54.50/32,no-resolve
+//IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
+//IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 
 # > Wework
 IP-CIDR,182.254.116.117/32,no-resolve
@@ -215,8 +215,6 @@ DOMAIN,dns.iqiyi.com
 DOMAIN,dns.qiyipic.iqiyi.com
 DOMAIN,httpdns.n.shifen.com
 DOMAIN-SUFFIX,bcsp2p.baidu.com
-DOMAIN-SUFFIX,aedns.weixin.qq.com
-DOMAIN-SUFFIX,dns.wechat.com
 DOMAIN-SUFFIX,edns.ip-api.com
 DOMAIN-SUFFIX,surfsharkdns.com
 IP-CIDR,8.134.241.67/32,no-resolve
