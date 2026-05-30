@@ -52,6 +52,10 @@ DOMAIN-WILDCARD,dl-*.mypikpak.com
 # > Mail.ru
 DOMAIN-SUFFIX,cdn-vk.ru
 
+# > Patreon
+DOMAIN-WILDCARD,s*.podbean.com
+DOMAIN-WILDCARD,*vop*.fastly.mux.com
+
 # > 其它
 DOMAIN-SUFFIX,assets.chapturist.com
 DOMAIN,img.css.sd
