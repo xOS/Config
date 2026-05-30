@@ -43,11 +43,20 @@ DOMAIN,sdk.beizi.biz
 DOMAIN,dlswbr.baidu.com
 DOMAIN,ac.dun.163yun.com
 DOMAIN,adashxgc.ut.taobao.com
+DOMAIN,h-adashx.ut.cainiao.com
+DOMAIN,vcs.zijieapi.com
+DOMAIN,report.meituan.com
+DOMAIN,w3-reporting.reddit.com
+DOMAIN,improving.duckduckgo.com
+DOMAIN,wns6.kg.qq.com
+DOMAIN,johjeanlv1k6mvj73mqjntbhj.litix.io
+DOMAIN,polaris.zijieapi.com
 DOMAIN,t2.xiaohongshu.com
 DOMAIN,fourier.alibaba.com
 DOMAIN,playback.newbuy.chinaunicom.cn
 DOMAIN,zconfig.alibabausercontent.com
 DOMAIN,px.wpk.quark.cn
+DOMAIN,px.effirst.com
 DOMAIN,unet.ucweb.com
 DOMAIN,ucus.ucweb.com
 DOMAIN,tdid.m.qq.com
@@ -118,6 +127,7 @@ DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN-SUFFIX,tracking.intl.miui.com
 DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,trace.qq.com
+DOMAIN-SUFFIX,tdum.alibaba.com
 DOMAIN-SUFFIX,gm.mmstat.com
 DOMAIN-SUFFIX,log.aliyuncs.com
 DOMAIN-SUFFIX,log.mmstat.com
@@ -153,6 +163,7 @@ DOMAIN-WILDCARD,th-*.pinduoduo.com
 DOMAIN-WILDCARD,dlied*sdk.myapp.com
 DOMAIN-WILDCARD,log-*.snssdk.com
 DOMAIN-WILDCARD,log*-misc-*.amemv.com
+DOMAIN-WILDCARD,rtlog*-applog-*.amemv.com
 DOMAIN-WILDCARD,gsp*.baidu.com
 DOMAIN-WILDCARD,*.umeng*.com
 DOMAIN-WILDCARD,*log.baidu.com
