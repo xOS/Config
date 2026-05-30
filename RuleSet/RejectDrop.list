@@ -1,10 +1,11 @@
 # > Reject Drop
 PROTOCOL,STUN
 DOMAIN-KEYWORD,stun.
+DOMAIN-KEYWORD,pglstatp
 DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,undefined
 DOMAIN-KEYWORD,mobileDispatch
-DOMAIN-KEYWORD,alibabachengdun
+DOMAIN-KEYWORD,chengdun
 DOMAIN,tether.edge.apple
 DOMAIN,mssdk.bytedance.com
 DOMAIN,httpdns.kg.qq.com
@@ -18,9 +19,15 @@ DOMAIN,tp2p.kg.qq.com
 DOMAIN,a.gdt.qq.com
 DOMAIN,sp1.baidu.com
 DOMAIN,sofire.baidu.com
+DOMAIN,rumt-zh.com
+DOMAIN,mars.jd.com
+DOMAIN,mllog.jd.com
+DOMAIN,sgm-w.jd.com
+DOMAIN,perf.m.jd.com
+DOMAIN,gia.jd.com
+DOMAIN,ipv4.gdt.qq.com
 DOMAIN,galileotelemetry.tencent.com
 DOMAIN,data.tianwenca.com
-DOMAIN,gravity-engine.com
 DOMAIN,adstats.tencentmusic.com
 DOMAIN,featureassets.org
 DOMAIN,api.mixpanel.com
@@ -99,6 +106,7 @@ DOMAIN-SUFFIX,px.ucweb.com
 DOMAIN-SUFFIX,usercentrics.eu
 DOMAIN-SUFFIX,tpns.tencent.com
 DOMAIN-SUFFIX,html-load.com
+DOMAIN-SUFFIX,gravity-engine.com
 DOMAIN-SUFFIX,telemetry.mozilla.org
 DOMAIN-SUFFIX,vk-analytics.ru
 DOMAIN-SUFFIX,apptracer.ru
@@ -132,6 +140,7 @@ DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,data.grammarly.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
+DOMAIN-WILDCARD,api-*.dutils.com
 DOMAIN-WILDCARD,*adash*.*.taobao.com
 DOMAIN-WILDCARD,*amdc*.*.taobao.com
 DOMAIN-WILDCARD,api*.amplitude.com
@@ -159,6 +168,7 @@ DOMAIN-WILDCARD,*sdk.dailygn.com
 DOMAIN-WILDCARD,ad*-normal-hj.zijieapi.com
 DOMAIN-WILDCARD,api-access.pangolin-sdk-toutiao*.com
 DOMAIN-WILDCARD,p*-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-WILDCARD,mobile-sdk-lib-ap-*.brilliantcollector.com
 DOMAIN-WILDCARD,apm-*.xiaohongshu.com
 DOMAIN-WILDCARD,mssdk*.zijieapi.com
 DOMAIN-WILDCARD,polaris*-normal-*.zijieapi.com

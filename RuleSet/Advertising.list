@@ -1,7 +1,3 @@
-# > 拼多多视频
-DOMAIN-KEYWORD,pplay-video
-DOMAIN-KEYWORD,liveplay-edge
-
 # > 微信
 DOMAIN-WILDCARD,finder*.video.qq.com
 
@@ -61,8 +57,24 @@ DOMAIN-KEYWORD,-adbrand
 USER-AGENT,Munion-SDK*
 USER-AGENT,AVOS*
 DOMAIN-KEYWORD,invalid
+DOMAIN-KEYWORD,pglstatp
 DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,undefined
+DOMAIN-KEYWORD,pcdn
+DOMAIN-KEYWORD,p2p
+DOMAIN-KEYWORD,msdk
+DOMAIN-KEYWORD,umeng
+DOMAIN-KEYWORD,adash
+DOMAIN-KEYWORD,amdc
+DOMAIN-KEYWORD,applog
+DOMAIN-KEYWORD,collector
+DOMAIN-KEYWORD,analytics
+DOMAIN-KEYWORD,baichuan
+DOMAIN-KEYWORD,monitor
+DOMAIN-KEYWORD,beacon
+DOMAIN-KEYWORD,mobilesdk
+DOMAIN-KEYWORD,chengdun
+DOMAIN-KEYWORD,volces
 DOMAIN-KEYWORD,mobileDispatch
 DOMAIN-KEYWORD,this-url-does-not-exist-
 DOMAIN-WILDCARD,*adash*.*.taobao.com
