@@ -6,7 +6,10 @@ DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,undefined
 DOMAIN-KEYWORD,mobileDispatch
 DOMAIN-KEYWORD,chengdun
+DOMAIN,analytics.95516.com
+DOMAIN,umini.shujupie.com
 DOMAIN,px.effirst.com
+DOMAIN,da.mmarket.com
 DOMAIN,app-monitor.ele.me
 DOMAIN,klink.volceapplog.com
 DOMAIN,sdktt.data.tianwenca.com
@@ -24,6 +27,7 @@ DOMAIN,umc.danuoyi.alicdn.com
 DOMAIN,lng.xiaohongshu.com
 DOMAIN,spider-tracker.xiaohongshu.com
 DOMAIN,weather-analytics-events.apple.com
+DOMAIN,mdap.mpaas.cn-hangzhou.aliyuncs.com
 DOMAIN,tp2p.kg.qq.com
 DOMAIN,a.gdt.qq.com
 DOMAIN,sp1.baidu.com
@@ -34,6 +38,7 @@ DOMAIN,mllog.jd.com
 DOMAIN,sgm-w.jd.com
 DOMAIN,perf.m.jd.com
 DOMAIN,gia.jd.com
+DOMAIN,ex.m.jd.com
 DOMAIN,ipv4.gdt.qq.com
 DOMAIN,galileotelemetry.tencent.com
 DOMAIN,data.tianwenca.com
@@ -161,6 +166,7 @@ DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,data.grammarly.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
+DOMAIN-WILDCARD,s*.cnzz.com
 DOMAIN-WILDCARD,api-*.dutils.com
 DOMAIN-WILDCARD,*adash*.*.taobao.com
 DOMAIN-WILDCARD,*amdc*.*.taobao.com

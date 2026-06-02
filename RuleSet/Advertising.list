@@ -95,7 +95,7 @@ DOMAIN-WILDCARD,api-*.dutils.com
 DOMAIN-WILDCARD,mon*-*.tiktokv.com
 DOMAIN-WILDCARD,mssdk*.tiktokv.com
 DOMAIN-WILDCARD,loggw-*.alipay.com
-DOMAIN-WILDCARD,*goad*.189.cn
+//DOMAIN-WILDCARD,*goad*.189.cn
 DOMAIN-WILDCARD,mssdk*.zijieapi.com
 DOMAIN-WILDCARD,polaris*-normal-*.zijieapi.com
 DOMAIN-WILDCARD,minigame*-normal-hl.zijieapi.com
