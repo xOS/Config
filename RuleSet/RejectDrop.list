@@ -11,6 +11,7 @@ DOMAIN,umini.shujupie.com
 DOMAIN,px.effirst.com
 DOMAIN,da.mmarket.com
 DOMAIN,app-monitor.ele.me
+DOMAIN,audid-api.taobao.com
 DOMAIN,klink.volceapplog.com
 DOMAIN,sdktt.data.tianwenca.com
 DOMAIN,adashx.ut.cainiao.com
@@ -206,6 +207,7 @@ DOMAIN-WILDCARD,tnc*-*.zijieapi.com
 DOMAIN-WILDCARD,wanproxy-*.127.net
 DOMAIN-WILDCARD,*qojio.*.appsflyersdk.com
 URL-REGEX,^https?:\/\/.+\/amdc\/mobileDispatch
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adv
 URL-REGEX,^https?:\/\/\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b\/(v\d+\/d(?:\?.*)?$|(?!(down|data|develop))d\d*|fetch|v2\/resolv|eapi\/lbs|v[46]|resolve|squery|dns|conf|trace|lbs|httpdns|(ad|init)\d*|multiDnsQuery)
 IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,180.76.76.200/32,no-resolve
