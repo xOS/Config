@@ -199,7 +199,6 @@ DOMAIN-WILDCARD,*sdk.dailygn.com
 DOMAIN-WILDCARD,ad*-normal-*.zijieapi.com
 DOMAIN-WILDCARD,api-access.pangolin-sdk-toutiao*.com
 DOMAIN-WILDCARD,p*-be-pack-sign.pglstatp-toutiao.com
-DOMAIN-WILDCARD,*-*.antpcdn.com
 DOMAIN-WILDCARD,browser-intake-*-datadoghq.com
 DOMAIN-WILDCARD,mobile-sdk-lib-ap-*.brilliantcollector.com
 DOMAIN-WILDCARD,apm-*.xiaohongshu.com
