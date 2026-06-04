@@ -6,6 +6,8 @@ DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,undefined
 DOMAIN-KEYWORD,mobileDispatch
 DOMAIN-KEYWORD,chengdun
+DOMAIN,yunxish.com
+DOMAIN,h2tcbox.baidu.com
 DOMAIN,analytics.95516.com
 DOMAIN,umini.shujupie.com
 DOMAIN,px.effirst.com
@@ -194,7 +196,7 @@ DOMAIN-WILDCARD,*log.ctobsnssdk.com
 DOMAIN-WILDCARD,finder*.video.qq.com
 DOMAIN-WILDCARD,beacon-*.ztgame.com
 DOMAIN-WILDCARD,*sdk.dailygn.com
-DOMAIN-WILDCARD,ad*-normal-hj.zijieapi.com
+DOMAIN-WILDCARD,ad*-normal-*.zijieapi.com
 DOMAIN-WILDCARD,api-access.pangolin-sdk-toutiao*.com
 DOMAIN-WILDCARD,p*-be-pack-sign.pglstatp-toutiao.com
 DOMAIN-WILDCARD,*-*.antpcdn.com
