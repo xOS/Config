@@ -104,6 +104,7 @@ DOMAIN-WILDCARD,log*.zijieapi.com
 DOMAIN-WILDCARD,*monitor.qq.com
 DOMAIN-WILDCARD,log-*.snssdk.com
 DOMAIN-WILDCARD,log*-misc-*.amemv.com
+DOMAIN-WILDCARD,*-pcdn-*.biliapi.net
 DOMAIN-WILDCARD,mssdk*-normal-*.zijieapi.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,api*.branch.io
