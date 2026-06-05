@@ -129,9 +129,6 @@ DOMAIN-WILDCARD,sdk.*rtb.net
 DOMAIN-WILDCARD,s.*rtb.net
 DOMAIN-WILDCARD,usr-api.*sapp.com
 DOMAIN-WILDCARD,pagead*.googlesyndication.com
-DOMAIN-WILDCARD,*goadpro.189.cn
-DOMAIN-WILDCARD,*goadhd.189.cn
-DOMAIN-WILDCARD,*goad*.189.cn
 DOMAIN-KEYWORD,a.munters.
 DOMAIN-KEYWORD,a.perfumesclub.
 DOMAIN-KEYWORD,a.weareknitters.
