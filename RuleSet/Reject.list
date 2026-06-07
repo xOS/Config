@@ -23,7 +23,7 @@ DOMAIN-SUFFIX,adobe.io
 DOMAIN-SUFFIX,adobestats.io
 DOMAIN,cc-api-data.adobe.io
 
-# > 禁止网页跳转APP 
+# > 禁止网页跳转APP
 DOMAIN,app-site-association.cdn-apple.com
 
 # > 拦截Netflix部分域名
@@ -182,6 +182,7 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 # > 其它
 DOMAIN-KEYWORD,httpdns
 DOMAIN-KEYWORD,hdns
+DOMAIN-KEYWORD,nationalfraudcenterhicore
 DOMAIN,yyapp-httpdns.gslb.yy.com
 DOMAIN,union-httpdns.gslb.yy.com
 DOMAIN,httpdns-v6.gslb.yy.com
@@ -204,6 +205,7 @@ DOMAIN,httpdns.browser.miui.com
 DOMAIN,resolver.msg.xiaomi.net
 DOMAIN,httpdns.danuoyi.tbcache.com
 DOMAIN,httpdns.cctv.com
+DOMAIN,appstore.nationalfraudcenterhicore
 DOMAIN,httpdns-browser.platform.dbankcloud.cn
 DOMAIN,httpdns.huaweicloud.com
 DOMAIN,httpdns.platform.dbankcloud.cn

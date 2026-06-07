@@ -1,21 +1,37 @@
 # > 发微博触发IP识别
 # >> APP 端
-URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?,extended-matching
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/statuses\/send\?
 # >> 网页端
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update,extended-matching
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/2\/client\/publisher_primary,extended-matching
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/statuses\/update
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/2\/client\/publisher_primary
 
 # > 评论触发IP识别
 # >> APP 端
-URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?,extended-matching
+URL-REGEX,^https?:\/\/api\.weibo\.c(n|om)\/2\/comments\/create\?
 # >> 网页端
-URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create,extended-matching
-
-# > 微信公众平台
-DOMAIN-SUFFIX,mp.weixin.qq.com
+URL-REGEX,^https?:\/\/weibo\.c(n|om)\/ajax\/comments\/create
 
 # > 抖音
+DOMAIN-KEYWORD,core-c-lq
+DOMAIN-KEYWORD,core-lq
+DOMAIN-KEYWORD,normal-c-lq
+DOMAIN-KEYWORD,normal-lq
+DOMAIN-KEYWORD,search-quic-lq
+DOMAIN-KEYWORD,search-lq
+DOMAIN-KEYWORD,-normal-hl
+DOMAIN-KEYWORD,-normal-c-hl
+DOMAIN-KEYWORD,-core-c-hl
+DOMAIN-KEYWORD,-normal-lf
+DOMAIN-KEYWORD,-normal-c-lf
+DOMAIN-KEYWORD,-core-c-lf
+DOMAIN,sso.douyin.com
+DOMAIN,www.douyin.com
 DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,ecombdapi.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiaoapi.com
+DOMAIN-SUFFIX,ixigua.com
 
 # > 快手
 DOMAIN-SUFFIX,gifshow.com
@@ -29,24 +45,22 @@ DOMAIN-SUFFIX,edith.xiaohongshu.com
 DOMAIN-WILDCARD,t*.xiaohongshu.com
 DOMAIN-WILDCARD,a*.xiaohongshu.com
 DOMAIN-WILDCARD,f*.xiaohongshu.com
+DOMAIN-SUFFIX,xiaohongshu.com
 
 # > 微信视频号
 DOMAIN,open.weixin.qq.com
 DOMAIN-SUFFIX,findermp.video.qq.com
 DOMAIN-SUFFIX,channels.weixin.qq.com
 
-# > 颇可
-DOMAIN-SUFFIX,app-api.poco.cn,extended-matching
-
-# > 什么值得买   
-DOMAIN-SUFFIX,s-api.smzdm.com,extended-matching    
-DOMAIN-SUFFIX,homepage-api.smzdm.com,extended-matching
-DOMAIN-SUFFIX,qny.smzdm.com,extended-matching
-DOMAIN-SUFFIX,qna.smzdm.com,extended-matching
+# > 什么值得买
+DOMAIN-SUFFIX,s-api.smzdm.com
+DOMAIN-SUFFIX,homepage-api.smzdm.com
+DOMAIN-SUFFIX,qny.smzdm.com
+DOMAIN-SUFFIX,qna.smzdm.com
 DOMAIN-SUFFIX,haojia-api.smzdm.com
-DOMAIN-SUFFIX,app-api.smzdm.com,extended-matching
-DOMAIN-SUFFIX,user-api.smzdm.com,extended-matching
-DOMAIN-SUFFIX,common-api.smzdm.comextended-matching
+DOMAIN-SUFFIX,app-api.smzdm.com
+DOMAIN-SUFFIX,user-api.smzdm.com
+DOMAIN-SUFFIX,common-api.smzdm.com
 
 # > 飞客茶馆
 DOMAIN-SUFFIX,flyert.com.cn
@@ -61,49 +75,8 @@ DOMAIN-WILDCARD,api-ac.liepin.com
 DOMAIN-WILDCARD,api-*.liepin.com
 DOMAIN-WILDCARD,api.liepin.com
 
-# > 其它
-DOMAIN-KEYWORD,core-c-lq
-DOMAIN-KEYWORD,core-lq
-DOMAIN-KEYWORD,normal-c-lq
-DOMAIN-KEYWORD,normal-lq
-DOMAIN-KEYWORD,search-quic-lq
-DOMAIN-KEYWORD,search-lq
-DOMAIN-KEYWORD,-normal-hl
-DOMAIN-KEYWORD,-normal-c-hl
-DOMAIN-KEYWORD,-core-c-hl
-DOMAIN-KEYWORD,-normal-lf
-DOMAIN-KEYWORD,-normal-c-lf
-DOMAIN-KEYWORD,-core-c-lf
-DOMAIN,tieba.baidu.com
-DOMAIN,tbmsg.baidu.com
-DOMAIN,tb5.bdstatic.com
-DOMAIN,fclog.baidu.com
-DOMAIN,gsp0.baidu.com
-DOMAIN,hm.baidu.com
-DOMAIN,www.baidu.com
-DOMAIN,tiebac.baidu.com
-DOMAIN,httpsdns.baidu.com
-DOMAIN,c.tieba.baidu.com
-DOMAIN,httpdns.baidu.com
-DOMAIN,httpdns.baidubce.com
-DOMAIN,szshort.weixin.qq.com
-DOMAIN,szextshort.weixin.qq.com
-DOMAIN,szminorshort.weixin.qq.com
-DOMAIN,mp.weixin.qq.com
-DOMAIN,sso.douyin.com
-DOMAIN,www.douyin.com
-DOMAIN,keylol.com
-DOMAIN,www.wenshushu.cn
-DOMAIN,frodo.douban.com
-DOMAIN,www.douban.com
-DOMAIN,api.coolapk.com
-DOMAIN,api2.coolapk.com
-DOMAIN,api.taptapdada.com
-DOMAIN,god.gameyw.netease.com
-DOMAIN,ngabbs.com
-DOMAIN,bbs.nga.cn
-DOMAIN,nga.178.com
-DOMAIN,api.vip.miui.com
+# > 网易云音乐
+DOMAIN-SUFFIX,music.163.com
 DOMAIN,nstool.netease.com
 DOMAIN,wanproxy.127.net
 DOMAIN,mam.netease.com
@@ -113,53 +86,10 @@ DOMAIN,api.k.163.com
 DOMAIN,lbs.netease.im
 DOMAIN,wannos.127.net
 DOMAIN,ac.dun.163.com
-DOMAIN,yaolu.yuedu.163.com
-DOMAIN,bbs-api.mihoyo.com
-DOMAIN,bbs-api.miyoushe.com
-DOMAIN,api.xiaoheihe.cn
-DOMAIN,y.qq.com
-DOMAIN,zonai.skland.com
-DOMAIN,druidv6.if.qidian.com
-DOMAIN,ptlogin6.qidian.com
-DOMAIN,api.wmpvp.com
-DOMAIN-SUFFIX,zijieapi.com
-DOMAIN-SUFFIX,ecombdapi.com
-DOMAIN-SUFFIX,huya.com
-DOMAIN-SUFFIX,dongqiudi.com
-DOMAIN-SUFFIX,music.163.com
-DOMAIN-SUFFIX,snssdk.com
-DOMAIN-SUFFIX,zhihu.com
-DOMAIN-SUFFIX,biliapi.net
-DOMAIN-SUFFIX,biliapi.com
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN-SUFFIX,hdslb.com
-DOMAIN-SUFFIX,szbdyd.com
-DOMAIN-SUFFIX,ixigua.com
-DOMAIN-SUFFIX,toutiaoapi.com
-DOMAIN-SUFFIX,gifshow.com
-DOMAIN-SUFFIX,ksapisrv.com
 DOMAIN-SUFFIX,music.126.net
 DOMAIN-SUFFIX,laiqukankan.com
-DOMAIN-SUFFIX,douyucdn.cn
-DOMAIN-SUFFIX,douyu.com
 DOMAIN-SUFFIX,music.ntes53.netease.com
 DOMAIN-SUFFIX,music.163.com.163jiasu.com
-DOMAIN-SUFFIX,lofter.com
-DOMAIN-SUFFIX,douban.com
-DOMAIN-SUFFIX,soulapp.cn
-DOMAIN-SUFFIX,y.qq.com
-DOMAIN-SUFFIX,goofish.com
-IP-CIDR,180.76.76.0/24,no-resolve
-IP-CIDR,120.53.130.158/32,no-resolve
-IP-CIDR,203.107.1.0/24,no-resolve
-IP-CIDR,49.233.242.15/32,no-resolve
-IP-CIDR,81.70.124.99/32,no-resolve
-IP-CIDR,81.70.125.19/32,no-resolve
-IP-CIDR,140.143.177.206/32,no-resolve
-IP-CIDR,119.36.90.80/32,no-resolve
-IP-CIDR,111.48.137.146/32,no-resolve
-IP-CIDR,1.95.21.35/32,no-resolve
-IP-CIDR,47.100.127.239/32,no-resolve
 IP-CIDR,101.71.154.241/32,no-resolve
 IP-CIDR,103.126.92.132/32,no-resolve
 IP-CIDR,103.126.92.133/32,no-resolve
@@ -171,6 +101,115 @@ IP-CIDR,45.254.48.1/32,no-resolve
 IP-CIDR,59.111.160.195/32,no-resolve
 IP-CIDR,59.111.19.33/32,no-resolve
 IP-CIDR,59.111.19.53/32,no-resolve
+
+# > 哔哩哔哩
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,biliapi.net
+# 评论区
+DOMAIN,api.bilibili.com
+DOMAIN,api.bilibili.tv
+DOMAIN,app.bilibili.com
+DOMAIN-SUFFIX,biliapi.com
+DOMAIN,api.live.bilibili.com
+DOMAIN,api.vc.bilibili.com
+# 登录
+DOMAIN,passport.bilibili.com
+DOMAIN,live-trace.bilibili.com
+DOMAIN,message.bilibili.com
+DOMAIN,cm.bilibili.com
+# 动态区 @Atri
+DOMAIN,grpc.biliapi.net
+# biliDNS @Atri
+IP-CIDR,203.107.1.0/24,no-resolve
+
+# > 百度贴吧
+DOMAIN,tbmsg.baidu.com
+DOMAIN,tb5.bdstatic.com
+DOMAIN,fclog.baidu.com
+DOMAIN,gsp0.baidu.com
+DOMAIN,hm.baidu.com
+DOMAIN,www.baidu.com
+DOMAIN,tiebac.baidu.com
+DOMAIN,httpsdns.baidu.com
+DOMAIN,c.tieba.baidu.com
+DOMAIN,httpdns.baidu.com
+DOMAIN,httpdns.baidubce.com
+DOMAIN,tieba.baidu.com
+DOMAIN,tbmsg.baidu.com
+DOMAIN,tb5.bdstatic.com
+DOMAIN,fclog.baidu.com
+DOMAIN,gsp0.baidu.com
+DOMAIN,hm.baidu.com
+DOMAIN,www.baidu.com
+
+# > 知乎
+DOMAIN,zhihu-web-analytics.zhihu.com
+DOMAIN,www.zhihu.com
+DOMAIN,api.zhihu.com
+DOMAIN-SUFFIX,zhihu.com
+IP-CIDR,103.41.167.0/24,no-resolve
+
+# > 微信
+DOMAIN,szshort.weixin.qq.com
+DOMAIN,szextshort.weixin.qq.com
+DOMAIN,szminorshort.weixin.qq.com
+DOMAIN,mp.weixin.qq.com
+
+# > 酷安
+DOMAIN,api.coolapk.com
+DOMAIN,api2.coolapk.com
+
+# > 豆瓣
+DOMAIN,frodo.douban.com
+DOMAIN,www.douban.com
+DOMAIN-SUFFIX,douban.com
+P-CIDR,49.233.242.15/32,no-resolve
+P-CIDR,81.70.124.99/32,no-resolve
+P-CIDR,81.70.125.19/32,no-resolve
+P-CIDR,140.143.177.206/32,no-resolve
+
+# > QQ 音乐
+DOMAIN-WILDCARD,u*.y.qq.com
+DOMAIN-SUFFIX,y.qq.com
+
+# > 其它
+DOMAIN,www.wenshushu.cn
+DOMAIN,api.taptapdada.com
+DOMAIN,god.gameyw.netease.com
+DOMAIN,ngabbs.com
+DOMAIN,bbs.nga.cn
+DOMAIN,nga.178.com
+DOMAIN,api.vip.miui.com
+DOMAIN,bbs-api.mihoyo.com
+DOMAIN,bbs-api.miyoushe.com
+DOMAIN,api.xiaoheihe.cn
+DOMAIN,zonai.skland.com
+DOMAIN,druidv6.if.qidian.com
+DOMAIN,ptlogin6.qidian.com
+DOMAIN,api.wmpvp.com
+DOMAIN,keylol.com
+DOMAIN-SUFFIX,huya.com
+DOMAIN-SUFFIX,dongqiudi.com
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,szbdyd.com
+DOMAIN-SUFFIX,gifshow.com
+DOMAIN-SUFFIX,ksapisrv.com
+DOMAIN-SUFFIX,laiqukankan.com
+DOMAIN-SUFFIX,douyucdn.cn
+DOMAIN-SUFFIX,douyu.com
+DOMAIN-SUFFIX,lofter.com
+DOMAIN-SUFFIX,soulapp.cn
+DOMAIN-SUFFIX,goofish.com
+IP-CIDR,180.76.76.0/24,no-resolve
+IP-CIDR,120.53.130.158/32,no-resolve
+IP-CIDR,49.233.242.15/32,no-resolve
+IP-CIDR,81.70.124.99/32,no-resolve
+IP-CIDR,81.70.125.19/32,no-resolve
+IP-CIDR,140.143.177.206/32,no-resolve
+IP-CIDR,119.36.90.80/32,no-resolve
+IP-CIDR,111.48.137.146/32,no-resolve
+IP-CIDR,1.95.21.35/32,no-resolve
+IP-CIDR,47.100.127.239/32,no-resolve
 IP-CIDR,114.55.236.88/32,no-resolve
 IP-CIDR,47.97.64.97/32,no-resolve
 IP-CIDR,47.97.66.48/32,no-resolve
@@ -245,6 +284,5 @@ IP-CIDR,150.109.222.103/32,no-resolve
 IP-CIDR,150.109.222.99/32,no-resolve
 IP-CIDR,150.109.222.110/32,no-resolve
 IP-CIDR,203.205.220.62/32,no-resolve
-IP-CIDR,103.41.167.0/24,no-resolve
 IP-CIDR,118.89.204.198/23,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,no-resolve
