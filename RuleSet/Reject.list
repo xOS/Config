@@ -45,7 +45,7 @@ PROTOCOL,STUN
 DOMAIN-KEYWORD,stun.
 DOMAIN-WILDCARD,*.p2p*.qq.com
 # > 屏蔽 HTTPDNS
-URL-REGEX,^https?:\/\/(\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)\/((?!(down|data|develop))(d(\d*)?)|fetch|(v2\/resolv)|(eapi\/lbs)|v4|v6|resolve|squery|dns|conf|trace|lbs|httpdns|ad|init|multiDnsQuery|g\?|b\?)
+URL-REGEX,^https?:\/\/\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b\/(v\d+\/d(?:\?.*)?$|(?!(down|data|develop))d\d*|fetch|v2\/resolv|eapi\/lbs|v[46]|resolve|squery|dns|conf|trace|lbs|httpdns|(ad|init)\d*|multiDnsQuery|svc_meta)
 URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)/v\d+/d(?:\?.*)?$
 URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\/multiDnsQuery
 URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\/(ad|init)\d+
