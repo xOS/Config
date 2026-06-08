@@ -4,8 +4,6 @@ DOMAIN-KEYWORD,stun.
 DOMAIN-KEYWORD,pglstatp
 DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,undefined
-DOMAIN-KEYWORD,mobileDispatch
-DOMAIN-KEYWORD,chengdun
 DOMAIN,h2tcbox.baidu.com
 DOMAIN,analytics.95516.com
 DOMAIN,umini.shujupie.com
@@ -14,10 +12,8 @@ DOMAIN,da.mmarket.com
 DOMAIN,app-monitor.ele.me
 DOMAIN,collector.github.com
 DOMAIN,cappmonitor.spdbccc.com.cn
-DOMAIN,audid-api.taobao.com
 DOMAIN,klink.volceapplog.com
 DOMAIN,sdktt.data.tianwenca.com
-DOMAIN,adashx.ut.cainiao.com
 DOMAIN,ump.sf-express.com
 DOMAIN,aegis.qq.com
 DOMAIN,events.launchdarkly.com
@@ -61,8 +57,6 @@ DOMAIN,hm.baidu.com
 DOMAIN,sdk.beizi.biz
 DOMAIN,dlswbr.baidu.com
 DOMAIN,ac.dun.163yun.com
-DOMAIN,adashxgc.ut.taobao.com
-DOMAIN,h-adashx.ut.cainiao.com
 DOMAIN,vcs.zijieapi.com
 DOMAIN,report.meituan.com
 DOMAIN,w3-reporting.reddit.com
@@ -88,9 +82,6 @@ DOMAIN,sessions.bugsnag.com
 DOMAIN,pushservice.10010.com
 DOMAIN,timon.zijieapi.com
 DOMAIN,applog.zijieapi.com
-DOMAIN,umdcv4.taobao.com
-DOMAIN,cloud.video.taobao.com
-DOMAIN,fourier.taobao.com
 DOMAIN,metrics.doppiostreams.com
 DOMAIN,jiguang.coc.10086.cn
 DOMAIN,loggw-ex.alipay.com
@@ -118,7 +109,6 @@ DOMAIN,upc.zztfly.com
 DOMAIN,cfgc.zztfly.com
 DOMAIN,collect.gmcc.net
 DOMAIN,metrics.icloud.com
-DOMAIN,h-adashx.ut.taobao.com
 DOMAIN,webcast-open.douyin.com
 DOMAIN,firebaselogging-pa.googleapis.com
 DOMAIN,app-site-association.cdn-apple.com
@@ -175,8 +165,6 @@ DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
 DOMAIN-WILDCARD,s*.cnzz.com
 DOMAIN-WILDCARD,api-*.dutils.com
-DOMAIN-WILDCARD,*adash*.*.taobao.com
-DOMAIN-WILDCARD,*amdc*.*.taobao.com
 DOMAIN-WILDCARD,api*.amplitude.com
 DOMAIN-WILDCARD,ms*.applvn.com
 DOMAIN-WILDCARD,*log.baidu.com
@@ -213,8 +201,6 @@ DOMAIN-WILDCARD,loggw-*.alipay.com
 DOMAIN-WILDCARD,tnc*-*.zijieapi.com
 DOMAIN-WILDCARD,wanproxy-*.127.net
 DOMAIN-WILDCARD,*qojio.*.appsflyersdk.com
-URL-REGEX,^https?:\/\/.+\/amdc\/mobileDispatch
-URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adv
 URL-REGEX,^https?:\/\/\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b\/(v\d+\/d(?:\?.*)?$|(?!(down|data|develop))d\d*|fetch|v2\/resolv|eapi\/lbs|v[46]|resolve|squery|dns|conf|trace|lbs|httpdns|(ad|init)\d*|multiDnsQuery)
 IP-CIDR,203.107.1.0/24,no-resolve
 IP-CIDR,180.76.76.200/32,no-resolve

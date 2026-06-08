@@ -399,6 +399,7 @@ DOMAIN-WILDCARD,acq-*.americanexpress.com
 DOMAIN-WILDCARD,aa-metrics.*.jp
 DOMAIN-WILDCARD,*-netseer-ipaddr-assoc.*.fbcdn.net
 URL-REGEX,^https?:\/\/.+\/amdc\/mobileDispatch
+URL-REGEX,^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adv
 
 # === AUTO-GENERATED: ADRULES WILDCARD START ===
 DOMAIN-WILDCARD,*-datareceiver.aki-game.net
