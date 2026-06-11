@@ -170,6 +170,7 @@ DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,data.grammarly.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
+DOMAIN-WILDCARD,*msg*.qy.net
 DOMAIN-WILDCARD,s*.cnzz.com
 DOMAIN-WILDCARD,api-*.dutils.com
 DOMAIN-WILDCARD,api*.amplitude.com

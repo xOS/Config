@@ -102,6 +102,7 @@ IP-CIDR,112.65.200.117/32,no-resolve
 DOMAIN,httpdns.c.cdnhwc2.com
 
 # > 爱奇艺
+DOMAIN-WILDCARD,*msg*.qy.net
 //DOMAIN,doh.iqiyi.com
 
 # > 京东

@@ -75,6 +75,7 @@ DOMAIN-KEYWORD,mobilesdk
 DOMAIN-KEYWORD,chengdun
 DOMAIN-KEYWORD,volces
 DOMAIN-KEYWORD,mobileDispatch
+DOMAIN-WILDCARD,*msg*.qy.net
 DOMAIN-KEYWORD,this-url-does-not-exist-
 DOMAIN-WILDCARD,*adash*.*.taobao.com
 DOMAIN-WILDCARD,*amdc*.*.taobao.com
