@@ -61,6 +61,9 @@ DOMAIN,resolvers-cn.httpdns.aliyuncs.com
 IP-CIDR,203.107.1.0/24,no-resolve
 
 # > 百度
+DOMAIN-KEYWORD,180.76.76.
+DOMAIN,180.76.76.112
+DOMAIN,111.206.208.127
 DOMAIN,180.76.76.200
 DOMAIN,httpsdns.baidu.com
 DOMAIN,httpdns.baidu.com

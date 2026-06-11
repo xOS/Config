@@ -79,6 +79,10 @@ DOMAIN-KEYWORD,this-url-does-not-exist-
 DOMAIN-WILDCARD,*adash*.*.taobao.com
 DOMAIN-WILDCARD,*amdc*.*.taobao.com
 DOMAIN-WILDCARD,f-log*.grammarly.io
+DOMAIN-WILDCARD,gss*.bdstatic.com
+DOMAIN-WILDCARD,gsp*.bdstatic.com
+DOMAIN-WILDCARD,gss*.baidu.com
+DOMAIN-WILDCARD,gsp*.baidu.com
 DOMAIN-WILDCARD,rtlog*-applog-*.amemv.com
 DOMAIN-WILDCARD,*launches.appsflyersdk.com
 DOMAIN-WILDCARD,*settings.appsflyersdk.com

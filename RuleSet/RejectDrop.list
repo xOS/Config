@@ -5,6 +5,7 @@ DOMAIN-KEYWORD,pglstatp
 DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,undefined
 DOMAIN-KEYWORD,chengdun
+DOMAIN-KEYWORD,180.76.76.
 DOMAIN,h2tcbox.baidu.com
 DOMAIN,analytics.95516.com
 DOMAIN,umini.shujupie.com
@@ -182,6 +183,9 @@ DOMAIN-WILDCARD,dlied*sdk.myapp.com
 DOMAIN-WILDCARD,log-*.snssdk.com
 DOMAIN-WILDCARD,log*-misc-*.amemv.com
 DOMAIN-WILDCARD,rtlog*-applog-*.amemv.com
+DOMAIN-WILDCARD,gss*.bdstatic.com
+DOMAIN-WILDCARD,gsp*.bdstatic.com
+DOMAIN-WILDCARD,gss*.baidu.com
 DOMAIN-WILDCARD,gsp*.baidu.com
 DOMAIN-WILDCARD,*.umeng*.com
 DOMAIN-WILDCARD,*log.baidu.com
