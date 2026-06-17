@@ -45,7 +45,7 @@ DOMAIN-SUFFIX,edith.xiaohongshu.com
 DOMAIN-WILDCARD,t*.xiaohongshu.com
 DOMAIN-WILDCARD,a*.xiaohongshu.com
 DOMAIN-WILDCARD,f*.xiaohongshu.com
-DOMAIN-SUFFIX,xiaohongshu.com
+//DOMAIN-SUFFIX,xiaohongshu.com
 
 # > 微信视频号
 DOMAIN,open.weixin.qq.com
