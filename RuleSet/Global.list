@@ -55,6 +55,9 @@ DOMAIN-KEYWORD,uk-live
 DOMAIN-KEYWORD,v2ex
 DOMAIN-KEYWORD,varo
 DOMAIN-KEYWORD,voddazn
+DOMAIN-WILDCARD,*peer-*.com
+DOMAIN-WILDCARD,*copper*.com
+DOMAIN-WILDCARD,*loc*.com
 DOMAIN-WILDCARD,*---sn-*.googlevideo.com
 DOMAIN-WILDCARD,*-my.sharepoint.com
 DOMAIN-WILDCARD,*-naver-vod.akamaized.net

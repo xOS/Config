@@ -1,8 +1,8 @@
-# > Twitch 
+# > Twitch
 DOMAIN-SUFFIX,cloudfront.hls.ttvnw.net
 DOMAIN-WILDCARD,video-edge-*.pd*.abs.hls.ttvnw.net
 
-# > Twitter 
+# > Twitter
 DOMAIN-SUFFIX,video.pscp.tv
 DOMAIN,upload.twitter.com
 
@@ -13,15 +13,15 @@ DOMAIN-WILDCARD,*avatar.moomoo.com
 # > Github
 DOMAIN-SUFFIX,github.com
 
-# Google Photos 
+# Google Photos
 DOMAIN-SUFFIX,photos.googleapis.com
 DOMAIN-WILDCARD,*---sn-*.googlevideo.com
 
-# > One Drive 
+# > One Drive
 DOMAIN-WILDCARD,*-my.sharepoint.com
 DOMAIN-SUFFIX,my.microsoftpersonalcontent.com
 
-# > SOOP  
+# > SOOP
 DOMAIN-WILDCARD,live-global-cdn-v*.sooplive.co.kr
 DOMAIN-WILDCARD,vod-normal-*-cdn-*.sooplive.co.kr
 DOMAIN-WILDCARD,vod-archive-global-cdn-*.sooplive.co.kr
@@ -40,7 +40,7 @@ DOMAIN-WILDCARD,*-naver-vod.akamaized.net
 DOMAIN-SUFFIX,livecloud.akamaized.net
 DOMAIN-WILDCARD,*-nlive-slitvod-streaming.navercdn.com
 
-# > Instagram 
+# > Instagram
 DOMAIN-SUFFIX,cdninstagram.com
 
 # > 原神资源
@@ -57,5 +57,10 @@ DOMAIN-WILDCARD,s*.podbean.com
 DOMAIN-WILDCARD,*vop*.fastly.mux.com
 
 # > 其它
-DOMAIN-SUFFIX,assets.chapturist.com
+DOMAIN,assets.chapturist.com
 DOMAIN,img.css.sd
+DOMAIN,static.superwallassets.com
+DOMAIN,cdn.adva-soft.com
+DOMAIN,models.adva-soft.com
+DOMAIN,assets.rallyuxr.com
+DOMAIN,assets-mobile.grab.com
