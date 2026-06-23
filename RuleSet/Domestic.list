@@ -1618,6 +1618,7 @@ DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,zybang.com
 DOMAIN-WILDCARD,*.qhimgs?.com
 DOMAIN,acg.tv
+DOMAIN,app.viayoo.com
 DOMAIN,assets1.xboxlive.cn
 DOMAIN,assets2.xboxlive.cn
 DOMAIN,b23.tv
@@ -1635,9 +1636,12 @@ DOMAIN,lv.queniujq.cn
 DOMAIN,media.cdn.queniuqe.com
 DOMAIN,ocsp.globalsign.com
 DOMAIN,ocsp2.globalsign.com
+DOMAIN,res.viayoo.com
 DOMAIN,url.cn
+DOMAIN,viayoo.com
 DOMAIN,www.intel.cn
 DOMAIN,www.layuicdn.com
+DOMAIN,www.viayoo.com
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
 USER-AGENT,TeslaMap
 # === AUTO-GENERATED: DOMESTIC UPSTREAM END ===
