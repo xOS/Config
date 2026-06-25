@@ -520,7 +520,6 @@ DOMAIN-WILDCARD,batchlogging*-noneu.truecaller.com
 DOMAIN-WILDCARD,bd*-ys.km.com
 DOMAIN-WILDCARD,bdcpro*.techweb.com.cn
 DOMAIN-WILDCARD,bdlm*.hc360.com
-DOMAIN-WILDCARD,beacon-*.helpscout.net
 DOMAIN-WILDCARD,beacons*.gvt3.com
 DOMAIN-WILDCARD,beehiiv-adnetwork-production.s*.amazonaws.com
 DOMAIN-WILDCARD,bi-eventtracker-*.amazonaws.com
@@ -740,6 +739,7 @@ DOMAIN-WILDCARD,report.*.gbqofs.io
 DOMAIN-WILDCARD,report.*.qq.com
 DOMAIN-WILDCARD,report*.appmetrica.webvisor.com
 DOMAIN-WILDCARD,res*.pinpai8.cn
+DOMAIN-WILDCARD,rtb-*.anysex.com
 DOMAIN-WILDCARD,rtbimp-loadbalancer-*.amazonaws.com
 DOMAIN-WILDCARD,rtlog*.tiktokv.com
 DOMAIN-WILDCARD,rtlog*.tiktokv.us
