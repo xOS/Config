@@ -2,16 +2,10 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .4dvertible.com
-.72.chat
-.ad.12306.cn
-.huiduapi.nuomi.com
-socket.pan.baidu.com
-pop.pcsnetwork.netdisk.baidu.com
-.axtun.fun
 .58iclick.com
-dbsgp.femfits.com
-.mentamob.com
+.72.chat
 .ad-scope.com.cn
+.ad.12306.cn
 .ad.m.iqiyi.com
 adcdn6.tencentmusic.com
 .adimg.uve.weibo.com
@@ -29,6 +23,7 @@ analytics.umetrip.com
 api.qttunion.com
 .appstore.nationalfraudcenterhicore
 audid.taobao.com
+.axtun.fun
 bda.umetrip.com
 bdbus-turbonet.baidu.com
 bkclient.umetrip.com.cn
@@ -47,6 +42,7 @@ cr-status.iqiyi.com
 .data.kuiniuca.com
 .data.tianwenca.com
 datacollection.uve.weibo.com
+dbsgp.femfits.com
 dc.sigmob.cn
 dig.bdurl.net
 dlied5sdk.myapp.com
@@ -65,6 +61,7 @@ gungnir.xiaojukeji.com
 .h2tcbox.baidu.com
 .hpplay.cn
 .html-load.com
+.huiduapi.nuomi.com
 huodong.caiyun.feixin.10086.cn
 huodong.weibo.cn
 hxjtrack.yutoons.com
@@ -75,6 +72,7 @@ jiguang.coc.10086.cn
 .kg.qq.com
 .ltmsphrcl.net
 mdap.mpaas.cn-hangzhou.aliyuncs.com
+.mentamob.com
 miao.baidu.com
 mkt-advertisement.tuhu.cn
 mlog.bigda.com
@@ -89,10 +87,12 @@ ossapi.baidu.com
 p.tencentmusic.com
 .partner.uc.cn
 .ping0.co
+pop.pcsnetwork.netdisk.baidu.com
 .promote.biz.weibo.cn
 qtieba.baidu.com
 sdk-log.partner.sm.cn
 .sdkapp.uve.weibo.com
+socket.pan.baidu.com
 splash.ztehome.com.cn
 startup.umetrip.com
 .static-s.iqiyi.com
