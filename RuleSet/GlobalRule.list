@@ -2,20 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
-.art
-.truste.com
-.rugia.cn
-.pvaeshop.com
-.clawcloudrun.com
-.queue-it.net
-.we-stats.com
-.imtedge.com
-.bd2020.com
-.kubilayerdogan.net
-.btbuluo.net
-.iloveapi.com
-.keyboardingonline.net
-.fatcattech.cn
 .06055.com
 .123114.xyz
 .123169.xyz
@@ -161,6 +147,7 @@ apple-relay.fastly-edge.com
 .aq
 .ar
 .arpa
+.art
 .as
 .asia
 .assets-yammer.com
@@ -204,6 +191,7 @@ bcbolt446c5271-a.akamaihd.net
 .bcbolthboa-a.akamaihd.net
 .bcy123.ren
 .bd
+.bd2020.com
 .be
 .beacons.gvt2.com
 .beacons2.gvt2.com
@@ -254,6 +242,7 @@ browser-intake-datadoghq.com
 .bs
 .bt
 bt.sh.cn
+.btbuluo.net
 .btmv.cn
 .btnull.org
 .budgetnode.com
@@ -326,6 +315,7 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .cl
 .clarity.ms
 .claw.cloud
+.clawcloudrun.com
 .clearhello.com
 .clearscore.com
 .client-api.arkoselabs.com
@@ -514,6 +504,7 @@ edge.apple
 .fakajun.com
 .family4k.com
 fast.rockisland.net
+.fatcattech.cn
 .fateqq.com
 .fax.plus
 .featuregates.org
@@ -717,6 +708,7 @@ icons.axm-usercontent-apple.com
 .ikoula.cn
 .ikoula.com
 .il
+.iloveapi.com
 .ilovepdf.com
 .im
 imagine.meta.com
@@ -729,6 +721,7 @@ img.css.sd
 .imgdd.cc
 .imidc.com
 .imput.net
+.imtedge.com
 .imtintl.com
 .imxpn.com
 .in
@@ -824,6 +817,7 @@ jules.google.com
 .kekecdn.net
 .kentdigital.net
 .kevsrv.com
+.keyboardingonline.net
 .kg
 .kh
 .khoatoantin.com
@@ -841,6 +835,7 @@ jules.google.com
 .kr
 .kroo.com
 .kuaim99.com
+.kubilayerdogan.net
 .kurun.com
 .kvaedit.site
 .kw
@@ -1184,6 +1179,7 @@ prod-api.crackle.com
 .purchasely.io
 .puresys.net
 .purevoltage.com
+.pvaeshop.com
 .pvaverify.com
 .pw
 .py
@@ -1199,6 +1195,7 @@ prod-api.crackle.com
 .qsimg26515.com
 .qste.com
 .quansucloud.com
+.queue-it.net
 .quic.cloud
 .quic.me
 .quiche.industries
@@ -1252,6 +1249,7 @@ prod-api.crackle.com
 .ru
 .rudderlabs.com
 .rugarciap.com
+.rugia.cn
 .ruvds.com
 .rw
 .rwby.site
@@ -1457,6 +1455,7 @@ sydney.bing.com
 .triple.app
 .trustarc.com
 .trustauth.cn
+.truste.com
 .trustocean.com
 .trygrowapp.com
 .tt
@@ -1539,6 +1538,7 @@ vudu.com
 .wallpaperswide.com
 .wasu.tv
 .wawo.wiki
+.we-stats.com
 .webhorizon.net
 .webhostbox.net
 .webhosting1st.com
