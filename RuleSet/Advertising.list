@@ -681,7 +681,6 @@ DOMAIN-WILDCARD,mediate-ios-*.hyprmx.com
 DOMAIN-WILDCARD,metric*.rediff.com
 DOMAIN-WILDCARD,metrics*.fitanalytics.com
 DOMAIN-WILDCARD,mf*.advantage.as
-DOMAIN-WILDCARD,mgbsdk*.matrix.easebar.com
 DOMAIN-WILDCARD,minero-proxy-*.sh
 DOMAIN-WILDCARD,minitds-*.info
 DOMAIN-WILDCARD,mkto-*.com
