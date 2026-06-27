@@ -11,6 +11,8 @@ DOMAIN,analytics.95516.com
 DOMAIN,umini.shujupie.com
 DOMAIN,px.effirst.com
 DOMAIN,p2.l.qq.com
+DOMAIN,rpe.xdplt.com
+DOMAIN,hd2.3g.qq.com
 DOMAIN,xs.gdt.qq.com
 DOMAIN,da.mmarket.com
 DOMAIN,applog-perf.lc.quark.cn
@@ -176,6 +178,7 @@ DOMAIN-SUFFIX,data.grammarly.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
 DOMAIN-WILDCARD,*msg*.qy.net
+DOMAIN-WILDCARD,hd*.3g.qq.com
 DOMAIN-WILDCARD,s*.cnzz.com
 DOMAIN-WILDCARD,api-*.dutils.com
 DOMAIN-WILDCARD,api*.amplitude.com
