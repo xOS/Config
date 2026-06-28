@@ -17,7 +17,7 @@ const allowedExtensions = [
 const allowedDirectories = ["RuleSet", "Module", "Mock", "MitM", "IconSet", "GeoIP", "Script"];
 
 // --- 新增：定义要隐藏的文件名列表 ---
-const hiddenFiles = ["package.json", "README.md", "vercel.json"];
+const hiddenFiles = ["package.json", "README.md", "vercel.json", "edgeone.json", "wrangler.toml", "_headers"];
 // --- 结束新增 ---
 
 const prioritySorter = (a: Dirent, b: Dirent) => {
@@ -308,6 +308,65 @@ async function writeHtmlFile(html: string) {
     await fs.writeFile(htmlFilePath, html, "utf8");
 }
 
+async function writeCloudflareHeaders() {
+    const headersContent = `
+/*
+  Access-Control-Allow-Origin: *
+
+/*.js
+  Content-Type: application/javascript; charset=utf-8
+
+/*.conf
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.dconf
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.sgmodule
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.list
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.txt
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.yaml
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.yml
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.toml
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: inline
+  X-Content-Type-Options: nosniff
+
+/*.json
+  Content-Type: application/json; charset=utf-8
+
+/static/*
+  Cache-Control: max-age=31536000
+`.trim();
+
+    const headersFilePath = path.join(OUTPUT_DIR, "_headers");
+    await fs.writeFile(headersFilePath, headersContent, "utf8");
+}
+
 async function copyRequiredFilesFs() {
     for (const dirName of allowedDirectories) {
         const sourceDir = path.join(REPO_ROOT, dirName);
@@ -380,6 +439,7 @@ async function build() {
         const html = generateHtml(tree);
         await writeHtmlFile(html);
         await copyRequiredFilesFs();
+        await writeCloudflareHeaders();
 
     } catch (error: any) {
         console.error("Error during build process:", error); // Keep top-level build error log
