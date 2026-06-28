@@ -7,7 +7,7 @@ const SITE_BASE_URL = process.env.SITE_BASE_URL || "https://rules.aapls.com/";
 
 const PAGE_DIR = path.resolve(".");
 const REPO_ROOT = path.resolve("..");
-const OUTPUT_DIR = path.join(REPO_ROOT, "public");
+const OUTPUT_DIR = path.join(PAGE_DIR, "public");
 
 const allowedExtensions = [
     ".sgmodule", ".list", ".txt", ".js", ".json", ".gif", ".md",

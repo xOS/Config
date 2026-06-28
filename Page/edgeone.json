@@ -1,7 +1,7 @@
 {
     "buildCommand": "npm install -g typescript && npm install && tsc && node --loader ts-node/esm build.ts",
     "installCommand": "npm install",
-    "outputDirectory": "../public",
+    "outputDirectory": "public",
     "nodeVersion": "22.11.0",
     "headers": [
         {

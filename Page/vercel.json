@@ -2,7 +2,7 @@
   "version": 2,
   "installCommand": "yarn install",
     "buildCommand": "yarn run build",
-    "outputDirectory": "../public",
+    "outputDirectory": "public",
     "routes": [
       {
         "src": "/(.*)\\.js",
