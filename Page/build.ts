@@ -134,7 +134,7 @@ function generateHtml(tree: string) {
             <meta name="msapplication-TileColor" content="#0F7D00">
             <meta name="theme-color" content="#0F7D00">
             <meta property="og:image" content="https://static.nange.cn/image/others/bingo.jpeg">
-            <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
+            <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
             <title>Surge 规则</title>
             <link rel="stylesheet" href="./static/style.css" />
             <style>
@@ -255,7 +255,7 @@ function generate404Html() {
             <meta name="msapplication-TileColor" content="#0F7D00">
             <meta name="theme-color" content="#0F7D00">
             <meta property="og:image" content="https://static.nange.cn/image/others/bingo.jpeg">
-            <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
+            <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
             <title>404 - 页面未找到</title>
             <link rel="stylesheet" href="./static/style.css" />
             <style>
