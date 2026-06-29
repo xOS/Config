@@ -45,6 +45,7 @@ DOMAIN-SUFFIX,cdninstagram.com
 
 # > 原神资源
 DOMAIN-WILDCARD,autopatch*.yuanshen.com
+DOMAIN-WILDCARD,*dispatch.yuanshen.com
 
 # > PikPak
 DOMAIN-WILDCARD,dl-*.mypikpak.com
