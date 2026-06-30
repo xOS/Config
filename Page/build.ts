@@ -162,7 +162,7 @@ function generateHtml(tree: string) {
                     margin: 20px 0;
                     font-size: 1rem;
                     border: 1px solid #ddd;
-                    border-radius: 8px;
+                    border-radius: 30px;
                     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
                     transition: all 0.3s ease;
                 }
@@ -422,7 +422,7 @@ async function copyRequiredFilesFs() {
             throw err;
         }
     }
-    
+
     // 生成并写入404页面
     const notFoundHtml = generate404Html();
     const notFoundFilePath = path.join(OUTPUT_DIR, "404.html");
