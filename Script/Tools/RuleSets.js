@@ -213,6 +213,50 @@ function trimTrailingEmptyLines(lines) {
     return next
 }
 
+function extractBypassRules(text) {
+    const bypasses = new Set()
+    let inBypassArea = false
+
+    for (const rawLine of text.split(/\r?\n/)) {
+        const trimmed = rawLine.trim()
+
+        if (trimmed === '# === Bypass Area Start ===') {
+            inBypassArea = true
+            continue
+        }
+
+        if (trimmed === '# === Bypass Area End ===') {
+            inBypassArea = false
+            continue
+        }
+
+        if (inBypassArea && trimmed.startsWith('#')) {
+            if (trimmed.startsWith('# ') || trimmed.startsWith('##')) {
+                continue
+            }
+
+            const val = trimmed.substring(1)
+            if (!val || val.includes(' ') || val.includes(',')) {
+                continue
+            }
+
+            if (val.startsWith('.')) {
+                const domain = val.substring(1)
+                if (isConvertibleDomainToken(domain)) {
+                    bypasses.add(`DOMAIN-SUFFIX,${domain}`)
+                    bypasses.add(`.${domain}`)
+                }
+            } else {
+                if (isConvertibleDomainToken(val)) {
+                    bypasses.add(`DOMAIN,${val}`)
+                    bypasses.add(val)
+                }
+            }
+        }
+    }
+    return bypasses
+}
+
 function extractCustomEditBlock(text) {
     const markerReg = new RegExp(
         `${escapeRegExp(customSectionStart)}[\\s\\S]*?${escapeRegExp(customSectionEnd)}`,
@@ -772,8 +816,10 @@ async function runRulesetSyncTask(task) {
     const currentContent = await fs.pathExists(task.output)
         ? await fs.readFile(task.output, 'utf8')
         : ''
+    const bypasses = extractBypassRules(currentContent)
+    const rawLines = collectRuleLines(rawContent).filter(line => !bypasses.has(line))
     const sortedRules = sortAndDedupeDomainRules(
-        filterGeneratedRules(collectRuleLines(rawContent)),
+        filterGeneratedRules(rawLines),
     )
     const writeMode = task.writeMode || 'replace'
 
@@ -863,6 +909,7 @@ async function pairMigrationStepBuildPrimaryOutput(context) {
         throw new Error(`Task "${context.taskName}" step "buildPrimaryOutput" requires fetched and loaded state`)
     }
 
+    const primaryBypasses = extractBypassRules(context.existingPrimary)
     const existingPrimaryCustomBlock = extractCustomEditBlock(context.existingPrimary)
     const existingPrimaryManualRules = sortAndDedupeDomainRules(
         collectRuleLines(existingPrimaryCustomBlock),
@@ -881,6 +928,7 @@ async function pairMigrationStepBuildPrimaryOutput(context) {
     const primaryUpstreamCandidates = primaryUpstreamSectionData.rules
         .concat(primaryLegacyBodyRules)
         .concat(context.fetchedPrimaryLines)
+        .filter(line => !primaryBypasses.has(line))
     const filteredPrimaryUpstreamCandidates = filterGeneratedRules(primaryUpstreamCandidates)
 
     const manualMigration = extractDomainMigration(existingPrimaryManualRules)
@@ -921,6 +969,7 @@ async function pairMigrationStepBuildSecondaryOutput(context) {
         throw new Error(`Task "${context.taskName}" step "buildSecondaryOutput" requires fetched/migrated state`)
     }
 
+    const secondaryBypasses = extractBypassRules(context.existingSecondary)
     const existingSecondaryCustomBlock = extractCustomEditBlock(context.existingSecondary)
     const existingSecondaryManualRules = sortAndDedupeDomainRules(
         collectRuleLines(existingSecondaryCustomBlock),
@@ -946,8 +995,9 @@ async function pairMigrationStepBuildSecondaryOutput(context) {
         : []
     const filteredSecondaryLegacyBodyRules = filterGeneratedRules(secondaryLegacyBodyRules)
 
+    const fetchedRules = context.fetchedSecondaryRules.filter(line => !secondaryBypasses.has(line))
     const fetchedSecondaryKeys = new Set(
-        context.fetchedSecondaryRules.map((line) => normalizeRuleKey(line)),
+        fetchedRules.map((line) => normalizeRuleKey(line)),
     )
     const bootstrapMigratedRules = (!secondaryMigratedSectionData.found && !secondaryUpstreamSectionData.found)
         ? filteredSecondaryLegacyBodyRules.filter((line) => !fetchedSecondaryKeys.has(normalizeRuleKey(line)))
@@ -956,7 +1006,7 @@ async function pairMigrationStepBuildSecondaryOutput(context) {
     // Keep upstream section visible by giving it higher priority than migrated rules:
     // manual > upstream > migrated.
     const upstreamRules = dedupeUpstreamRules(
-        context.fetchedSecondaryRules,
+        fetchedRules,
         manualSecondaryKeys,
     )
     const upstreamKeys = new Set(upstreamRules.map((line) => normalizeRuleKey(line)))
