@@ -1,7 +1,3 @@
-# === Bypass Area Start ===
-#.yuanshen.com
-# === Bypass Area End ===
-
 # === Custom Edit Area Start ===
 # > 中国大陆
 DOMAIN-KEYWORD,bilibili
@@ -1595,7 +1591,6 @@ DOMAIN-SUFFIX,youdao.com
 DOMAIN-SUFFIX,youzanyun.com
 DOMAIN-SUFFIX,yqkk.link
 DOMAIN-SUFFIX,ys7.com
-DOMAIN-SUFFIX,yuanshen.com
 DOMAIN-SUFFIX,yuewen.com
 DOMAIN-SUFFIX,yumchina.com
 DOMAIN-SUFFIX,yunjiasu-cdn.net
