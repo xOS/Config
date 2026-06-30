@@ -257,6 +257,18 @@ function extractBypassRules(text) {
     return bypasses
 }
 
+function extractBypassBlockText(text) {
+    const markerReg = new RegExp(
+        '# === Bypass Area Start ===[\\s\\S]*?# === Bypass Area End ===',
+        'm',
+    )
+    const match = text.match(markerReg)
+    if (match) {
+        return match[0]
+    }
+    return ''
+}
+
 function extractCustomEditBlock(text) {
     const markerReg = new RegExp(
         `${escapeRegExp(customSectionStart)}[\\s\\S]*?${escapeRegExp(customSectionEnd)}`,
@@ -343,7 +355,7 @@ function buildCustomEditBlock(existingBlock, rules, defaultCommentLines) {
     return `${lines.join('\n')}\n`
 }
 
-function buildUpstreamListContent(customBlock, upstreamRules, upstreamSection) {
+function buildUpstreamListContent(bypassBlock, customBlock, upstreamRules, upstreamSection) {
     const upstreamStart = upstreamSection?.start
     const upstreamEnd = upstreamSection?.end
 
@@ -352,6 +364,10 @@ function buildUpstreamListContent(customBlock, upstreamRules, upstreamSection) {
     }
 
     const blocks = []
+
+    if (bypassBlock) {
+        blocks.push(bypassBlock.replace(/\n*$/, ''))
+    }
 
     if (customBlock) {
         blocks.push(customBlock.replace(/\n*$/, ''))
@@ -366,7 +382,7 @@ function buildUpstreamListContent(customBlock, upstreamRules, upstreamSection) {
     return `${blocks.join('\n\n')}\n`
 }
 
-function buildMigratedUpstreamListContent(customBlock, sections, sectionMarkers) {
+function buildMigratedUpstreamListContent(bypassBlock, customBlock, sections, sectionMarkers) {
     const migratedRules = sections.migratedRules || []
     const upstreamRules = sections.upstreamRules || []
     const migratedStart = sectionMarkers?.migrated?.start
@@ -379,6 +395,10 @@ function buildMigratedUpstreamListContent(customBlock, sections, sectionMarkers)
     }
 
     const blocks = []
+
+    if (bypassBlock) {
+        blocks.push(bypassBlock.replace(/\n*$/, ''))
+    }
 
     if (customBlock) {
         blocks.push(customBlock.replace(/\n*$/, ''))
@@ -781,6 +801,7 @@ function resolveSectionedMarkersForTask(task) {
 
 function buildSectionedJobContent(task, existingContent, upstreamRules) {
     const sectionMarkers = resolveSectionedMarkersForTask(task)
+    const bypassBlock = extractBypassBlockText(existingContent)
     const existingCustomBlock = extractCustomEditBlock(existingContent)
     const manualRules = sortAndDedupeDomainRules(
         collectRuleLines(existingCustomBlock),
@@ -798,13 +819,14 @@ function buildSectionedJobContent(task, existingContent, upstreamRules) {
     )
 
     if (sectionMarkers.migrated) {
-        return buildMigratedUpstreamListContent(nextCustomBlock, {
+        return buildMigratedUpstreamListContent(bypassBlock, nextCustomBlock, {
             migratedRules: [],
             upstreamRules: visibleUpstreamRules,
         }, sectionMarkers)
     }
 
     return buildUpstreamListContent(
+        bypassBlock,
         nextCustomBlock,
         visibleUpstreamRules,
         sectionMarkers.upstream,
@@ -831,6 +853,11 @@ async function runRulesetSyncTask(task) {
 
     if (writeMode === 'sectioned') {
         nextContent = buildSectionedJobContent(task, currentContent, sortedRules)
+    } else {
+        const bypassBlock = extractBypassBlockText(currentContent)
+        if (bypassBlock) {
+            nextContent = `${bypassBlock}\n\n${nextContent}`
+        }
     }
 
     if (currentContent === nextContent) {
@@ -950,7 +977,9 @@ async function pairMigrationStepBuildPrimaryOutput(context) {
         ],
     )
 
+    const bypassBlock = extractBypassBlockText(context.existingPrimary)
     context.nextPrimaryContent = buildUpstreamListContent(
+        bypassBlock,
         nextPrimaryCustomBlock,
         primaryUpstreamRules,
         context.primaryUpstreamMarkers,
@@ -1030,7 +1059,9 @@ async function pairMigrationStepBuildSecondaryOutput(context) {
         ],
     )
 
+    const bypassBlock = extractBypassBlockText(context.existingSecondary)
     context.nextSecondaryContent = buildMigratedUpstreamListContent(
+        bypassBlock,
         nextSecondaryCustomBlock,
         {
             migratedRules,
