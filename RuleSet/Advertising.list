@@ -433,6 +433,7 @@ DOMAIN-WILDCARD,acortalo.*
 DOMAIN-WILDCARD,acr-*-prd.samsungcloud.tv
 DOMAIN-WILDCARD,ad-*.amazonaws.com
 DOMAIN-WILDCARD,ad-*.appacc.dbankedge.cn
+DOMAIN-WILDCARD,ad-blocker-*.workers.dev
 DOMAIN-WILDCARD,ad-host-backup-*.aliyuncs.com
 DOMAIN-WILDCARD,ad.*.doubleclick.net
 DOMAIN-WILDCARD,ad.kisstvshow.*
@@ -772,6 +773,7 @@ DOMAIN-WILDCARD,static*.365inews.com
 DOMAIN-WILDCARD,stats-*.p2pnow.ru
 DOMAIN-WILDCARD,stats.*.ronghub.com
 DOMAIN-WILDCARD,stats.*.rongnav.com
+DOMAIN-WILDCARD,stats.mapple.*
 DOMAIN-WILDCARD,stats*.credit-cooperatif.coop
 DOMAIN-WILDCARD,stats*.videonow.ru
 DOMAIN-WILDCARD,stats2.*.fdnames.com
