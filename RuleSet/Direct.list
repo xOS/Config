@@ -5,6 +5,9 @@ AND,((NOT,((DOMAIN-SUFFIX,github.com))),(DEST-PORT,22),(NOT,((RULE-SET,LAN))))
 DOMAIN-SUFFIX,nange.cn
 DOMAIN-SUFFIX,aapls.com
 
+# > 无忧行
+URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d):10801\/data\b
+
 # > Tencent
 DOMAIN,fairplay.l.qq.com
 
