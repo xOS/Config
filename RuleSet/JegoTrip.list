@@ -2,3 +2,4 @@
 DOMAIN-SUFFIX,cmpassport.com
 DOMAIN-SUFFIX,jegotrip.com.cn
 DOMAIN-SUFFIX,wannos.127.net
+URL-REGEX,^https?:\/\/(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d):10801\/data\b
