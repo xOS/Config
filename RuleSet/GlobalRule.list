@@ -3,19 +3,6 @@
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
 .06055.com
-.iytcdn.com
-osuspider.yuanshen.com
-.cloudcachetci.com
-cn-exstatic-vivofs.iqoo.com
-.amzzz.com
-.usvps24.com
-.51xueai.org
-.eu.cc
-visatokenservices-b2c-apis-cn.visa.cn
-.botcf.com
-.freecarrierlookup.com
-dispatchosglobal.yuanshen.com
-.iytcdn.com
 .123114.xyz
 .123169.xyz
 .188187.xyz
@@ -37,6 +24,7 @@ dispatchosglobal.yuanshen.com
 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 4gtvfreepcvod-cds.cdn.hinet.net
 .51honest.org
+.51xueai.org
 .52chuhai.com
 .52dfg.com
 .52ka.cn
@@ -115,6 +103,7 @@ akmcdnoversea-tw.inter.ptqy.gitv.tv
 .americanexpress.com
 .ampaeservices.com
 .amysecure.com
+.amzzz.com
 .an
 ana.video.friday.tw
 .anancdn.com
@@ -251,6 +240,7 @@ bcbolt446c5271-a.akamaihd.net
 .bo
 .bonify.de
 .boomer.host
+.botcf.com
 .br
 .branch.io
 .bravebrowserstats.com
@@ -339,6 +329,7 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .client-api.arkoselabs.com
 .cloud-wing.net
 .cloudaccess.net
+.cloudcachetci.com
 .cloudflare-cn.com
 .cloudflarecn.net
 .cloudflareinsights-cn.com
@@ -444,6 +435,7 @@ dashasiafox.akamaized.net
 .discoveryplus.co.uk
 .discoveryplus.in
 .dispatcher.is.autonavi.com
+dispatchosglobal.yuanshen.com
 .divido.org
 .divineengine.net
 .diylink.net
@@ -507,6 +499,7 @@ edge.apple
 .et
 .etheric.net
 .eu
+.eu.cc
 .euicc.info
 .euserv.com
 .evenfinancial.com
@@ -560,6 +553,7 @@ fast.rockisland.net
 .fr
 .fraudlabspro.com
 .free.ac.cn
+.freecarrierlookup.com
 .freecreditscore.com
 .freegeoip.app
 .freehosting.com
@@ -819,6 +813,7 @@ img.css.sd
 .itsnicethat.com
 .itunes.com.edgekey.net
 itvpnpmobile-a.akamaihd.net
+.iytcdn.com
 .iyzipay.com
 .jcksb
 .jddebug.com
@@ -1138,6 +1133,7 @@ openai-api.arkoselabs.com
 .oran.me
 .organicfruitapps.com
 .orz2.com
+osuspider.yuanshen.com
 .outlookmobile.com
 .ovh.com
 .ovhcloud.com
@@ -1549,6 +1545,7 @@ upos-bstar1-mirrorakam.akamaized.net
 .uspeedo.com
 .usps.com
 .ussms.cyou
+.usvps24.com
 .uuu.glass
 .uy
 .uz
@@ -1581,6 +1578,7 @@ video.friday.tw
 .virginconnect.com
 .virmach.com
 .virtono.com
+visatokenservices-b2c-apis-cn.visa.cn
 .viu.now.com
 .vivaldi.net
 .vmgirls.com
