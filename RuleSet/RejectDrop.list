@@ -15,6 +15,10 @@ DOMAIN,rpe.xdplt.com
 DOMAIN,hd2.3g.qq.com
 DOMAIN,xs.gdt.qq.com
 DOMAIN,da.mmarket.com
+DOMAIN,vi.bls.mdt.qq.com
+DOMAIN,sensors.cloud.tencent.com
+DOMAIN,metrics.icloud.com
+DOMAIN,firebaselogging-pa.googleapis.com
 DOMAIN,audid-api.taobao.com
 DOMAIN,applog-perf.lc.quark.cn
 DOMAIN,rmonitor.qq.com
@@ -222,6 +226,7 @@ DOMAIN-WILDCARD,polaris*-normal-*.zijieapi.com
 DOMAIN-WILDCARD,*log-upload-os.hoyoverse.com
 DOMAIN-WILDCARD,loggw-*.alipay.com
 DOMAIN-WILDCARD,tnc*-*.zijieapi.com
+DOMAIN-WILDCARD,tnc*-alisc*.zijieapi.com
 DOMAIN-WILDCARD,wanproxy-*.127.net
 DOMAIN-WILDCARD,*qojio.*.appsflyersdk.com
 URL-REGEX,^https?:\/\/\b(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\b\/(v\d+\/d(?:\?.*)?$|(?!(down|data|develop))d\d*|fetch|v2\/resolv|eapi\/lbs|v[46]|resolve|squery|dns|conf|trace|lbs|httpdns|(ad|init)\d*|multiDnsQuery|svc_meta)

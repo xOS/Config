@@ -75,6 +75,10 @@ DOMAIN-WILDCARD,*speedtest*.wiline.com
 DOMAIN-WILDCARD,autopatch*.yuanshen.com
 DOMAIN-WILDCARD,dl-*.mypikpak.com
 DOMAIN-WILDCARD,iflv*.sooplive.co.kr
+DOMAIN-WILDCARD,dispatch*.yuanshen.com
+DOMAIN-WILDCARD,*-announcement-api.hoyoverse.com
+DOMAIN-WILDCARD,*spider.yuanshen.com
+DOMAIN-WILDCARD,*global.yuanshen.com
 DOMAIN-WILDCARD,live-global-cdn-v*.sooplive.co.kr
 DOMAIN-WILDCARD,video-edge-*.pd*.abs.hls.ttvnw.net
 DOMAIN-WILDCARD,vod-archive-global-cdn-*.sooplive.co.kr

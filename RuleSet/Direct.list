@@ -68,5 +68,8 @@ PROCESS-NAME,ss-local
 # > Microsoft
 DOMAIN-SUFFIX,msftconnecttest.com
 
+# > 原神
+DOMAIN-KEYWORD,8.211.
+
 # > Others
 DOMAIN,app.adjust.com
