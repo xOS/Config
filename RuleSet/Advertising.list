@@ -663,6 +663,7 @@ DOMAIN-WILDCARD,logs.collector.*.cloud.solarwinds.com
 DOMAIN-WILDCARD,logs*.smithsonian.museum
 DOMAIN-WILDCARD,logservice-*.platform.dbankcloud.cn
 DOMAIN-WILDCARD,logstash-*.radio-canada.ca
+DOMAIN-WILDCARD,logws*.ati-host.net
 DOMAIN-WILDCARD,lt*.tritondigital.com
 DOMAIN-WILDCARD,maas-*.phunware.com
 DOMAIN-WILDCARD,mapi-log.qoo*.jp
