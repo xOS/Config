@@ -70,6 +70,7 @@ DOMAIN-SUFFIX,msftconnecttest.com
 
 # > 原神
 DOMAIN-KEYWORD,8.211.
+DOMAIN-KEYWORD,8.216.
 
 # > Others
 DOMAIN,app.adjust.com
