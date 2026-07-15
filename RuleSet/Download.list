@@ -95,10 +95,15 @@ cas-bridge.xethub.hf.co
 cdimage.kali.org
 cdimage.ubuntu.com
 cdn-builds.paw.cloud
+cdn-fi-1.comaps.app
 cdn-images.orbstack.dev
+cdn-nl1.organicmaps.app
 cdn-ota.azureedge.net
 cdn-patch.swtor.com
+cdn-uk1.organicmaps.app
 cdn-updates.orbstack.dev
+cdn-us-1.comaps.app
+cdn-us-2.comaps.tech
 cdn.affonso.io
 cdn.azul.com
 .cdn.blizzard.com
@@ -145,6 +150,9 @@ cloudflare.f-droid.org
 .cloudflarestorage.com
 cloudfront.debian.net
 codeload.github.com
+comaps-it1.unfoxo.it
+comaps.firewall-gateway.de
+comaps.openstreetmap.fr
 componentupdater.brave.com
 content-origin.steampowered.com
 .content.cdp.bethesda.net
@@ -742,6 +750,7 @@ linuxsoft.cern.ch
 lug.mines.edu
 lzip.nongnu.org
 mac-release-static.stash.ws
+mapgen-fi-1.comaps.app
 maven.fabricmc.net
 maven.google.com
 maven.is-quite.gay
@@ -1677,6 +1686,7 @@ s2.animeko.openani.org
 .s3-website.ap-southeast-5.amazonaws.com
 .s3-website.ca-central-1.amazonaws.com
 .s3-website.ca-west-1.amazonaws.com
+.s3-website.cloud.ru
 .s3-website.dualstack.af-south-1.amazonaws.com
 .s3-website.dualstack.ap-northeast-1.amazonaws.com
 .s3-website.dualstack.ap-northeast-2.amazonaws.com
