@@ -47,7 +47,7 @@ async function walk(dir: string, baseUrl: string): Promise<string> {
     }
     entries.sort(prioritySorter);
 
-    const excludedDirs = ['.git', 'node_modules', 'build', 'public', 'Page'];
+    const excludedDirs = ['.git', 'node_modules', 'build', 'public', 'Page', 'test', 'Test'];
 
     for (const entry of entries) {
         if (entry.name.startsWith('.')) {
@@ -139,307 +139,497 @@ function generateHtml(tree: string) {
     <title>Surge 规则库</title>
     <style>
         :root {
-            --bg-color: #f5f5f7;
-            --text-primary: #1d1d1f;
-            --text-secondary: #86868b;
-            --accent: #0071e3;
-            --accent-hover: #0077ed;
-            --card-bg: #ffffff;
-            --card-border: rgba(0, 0, 0, 0.04);
-            --item-hover: rgba(0, 0, 0, 0.03);
-            --divider: rgba(0, 0, 0, 0.06);
-            --icon-filter: none;
+            --bg: #e2e8f0;
+            --island-bg: #ffffff;
+            --island-border: rgba(255, 255, 255, 0.4);
+            --text: #333333;
+            --text-muted: #777777;
+            --border: rgba(0, 0, 0, 0.06);
+            --primary: #f97316;
+            --active-bg: rgba(249, 115, 22, 0.1);
+            --element-bg: rgba(0, 0, 0, 0.03);
         }
         @media (prefers-color-scheme: dark) {
             :root {
-                --bg-color: #000000;
-                --text-primary: #f5f5f7;
-                --text-secondary: #86868b;
-                --accent: #2997ff;
-                --accent-hover: #42a1ff;
-                --card-bg: #1c1c1e;
-                --card-border: rgba(255, 255, 255, 0.05);
-                --item-hover: rgba(255, 255, 255, 0.06);
-                --divider: rgba(255, 255, 255, 0.08);
-                --icon-filter: invert(1);
+                --bg: #0f172a;
+                --island-bg: #1e293b;
+                --island-border: rgba(255, 255, 255, 0.1);
+                --text: #eeeeee;
+                --text-muted: #94a3b8;
+                --border: rgba(255, 255, 255, 0.08);
+                --primary: #f97316;
+                --active-bg: rgba(249, 115, 22, 0.15);
+                --element-bg: rgba(255, 255, 255, 0.06);
             }
         }
-        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-            background: var(--bg-color);
-            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             margin: 0;
-            padding: 40px 20px;
-            min-height: 100vh;
+            padding: 12px;
+            box-sizing: border-box;
+            height: 100vh;
             display: flex;
-            justify-content: center;
+            gap: 12px;
+            background: var(--bg);
+            color: var(--text);
+            overflow: hidden;
+            font-size: 13px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Islands */
+        .island {
+            background: var(--island-bg);
+            background-clip: padding-box;
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 2px solid var(--island-border);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        .sidebar-header {
+            padding: 16px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .sidebar-header h1 {
+            font-size: 14px;
+            margin: 0 0 4px 0;
+            font-weight: 600;
+        }
+        .sidebar-header .meta {
+            font-size: 11px;
+            color: var(--text-muted);
             line-height: 1.5;
+            margin-top: 6px;
         }
-        .container {
-            width: 100%;
-            max-width: 760px;
-        }
-        header {
-            margin-bottom: 30px;
-            padding: 0 10px;
-        }
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin: 0 0 8px 0;
-            color: var(--text-primary);
-        }
-        .subtitle {
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-            margin-bottom: 16px;
-        }
-        .meta {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-        .meta a {
-            color: var(--accent);
+        .sidebar-header .meta a {
+            color: var(--text);
+            font-weight: 600;
             text-decoration: none;
         }
-        .search-section {
+        .sidebar-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px;
+        }
+        
+        /* Main Wrapper */
+        .main-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            min-width: 0;
+        }
+        
+        /* Main Header */
+        .main-header {
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            flex-shrink: 0;
+        }
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+        .breadcrumbs::-webkit-scrollbar { display: none; }
+        
+        .crumb {
+            cursor: pointer;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+        }
+        .crumb.active { color: var(--text); font-weight: 600; cursor: default; }
+        .sep { color: var(--border); margin: 0 2px; }
+        
+        .search-box {
             position: relative;
-            margin-bottom: 24px;
+            width: 220px;
         }
-        #search {
+        .search-box input {
             width: 100%;
-            padding: 14px 16px 14px 44px;
-            font-size: 1.05rem;
-            font-family: inherit;
-            color: var(--text-primary);
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 14px;
+            padding: 6px 10px 6px 28px;
+            border-radius: 9999px;
+            border: 1px solid var(--border);
+            background: var(--element-bg);
+            color: var(--text);
             outline: none;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-            transition: box-shadow 0.2s, border-color 0.2s;
+            font-size: 12px;
+            box-sizing: border-box;
         }
-        #search::placeholder {
-            color: var(--text-secondary);
-        }
-        #search:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
-        }
-        .search-icon {
+        .search-box input:focus { border-color: var(--primary); }
+        .search-box svg {
             position: absolute;
-            left: 16px;
+            left: 10px;
             top: 50%;
             transform: translateY(-50%);
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            pointer-events: none;
+            width: 13px;
+            height: 13px;
+            color: var(--text-muted);
         }
-        .search-hint {
-            display: block;
-            margin-top: 12px;
-            padding: 0 10px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-        .search-hint img {
-            vertical-align: middle;
-            margin: 0 4px;
-            filter: var(--icon-filter);
+
+        /* Main Body */
+        .main-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
         }
         
-        .directory-list {
-            background: var(--card-bg);
-            border-radius: 16px;
-            padding: 8px 0;
-            border: 1px solid var(--card-border);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-            list-style: none;
-            margin: 0;
-        }
-        .directory-list ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .directory-list li {
-            margin: 0;
-            position: relative;
-        }
-        
-        /* Folders */
-        .folder {
+        /* Sidebar Tree */
+        .tree-item {
+            display: flex;
+            align-items: center;
+            padding: 6px 8px;
+            border-radius: 6px;
             cursor: pointer;
             user-select: none;
-            padding: 12px 20px;
-            font-weight: 600;
-            color: var(--text-primary);
-            transition: background-color 0.2s;
-            display: block;
-            border-bottom: 1px solid var(--divider);
+            color: var(--text);
+            margin-bottom: 2px;
+            gap: 6px;
         }
-        .folder:hover {
-            background-color: var(--item-hover);
+        .tree-item.active { background: var(--active-bg); color: var(--primary); font-weight: 600; }
+        .tree-children { padding-left: 20px; display: none; }
+        .tree-children.open { display: block; }
+        .tree-icon { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+        .tree-chevron { width: 14px; height: 14px; opacity: 0.5; display: flex; align-items: center; justify-content: center; padding: 2px; border-radius: 3px; }
+        .tree-chevron:hover { background: var(--element-bg); }
+        .tree-chevron svg { width: 12px; height: 12px; transition: transform 0.15s; }
+        .tree-chevron.open svg { transform: rotate(90deg); }
+        .tree-chevron.hidden { visibility: hidden; }
+
+        /* Grid */
+        .grid-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+            gap: 8px;
         }
-        .directory-list > li:last-child > .folder {
-            border-bottom: none;
-        }
-        .folder::before {
-            content: '';
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            margin-right: 12px;
-            vertical-align: -3px;
-            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="%230071e3" xmlns="http://www.w3.org/2000/svg"><path d="M10 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6H12L10 4Z"/></svg>');
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .folder.collapsed::before {
-            opacity: 0.7;
-        }
-        .folder::after {
-            content: '';
-            position: absolute;
-            right: 20px;
-            top: 18px;
-            width: 8px;
-            height: 8px;
-            border-right: 2px solid var(--text-secondary);
-            border-bottom: 2px solid var(--text-secondary);
-            transform: rotate(45deg);
-            transition: transform 0.2s;
-        }
-        .folder.collapsed::after {
-            transform: rotate(-45deg);
-        }
-        
-        .folder ul {
-            background: var(--bg-color);
-            padding: 4px 10px 4px 30px;
-            border-bottom: 1px solid var(--divider);
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.01);
-        }
-        .folder.collapsed ul {
-            display: none;
-        }
-        .folder ul > li {
-            border-bottom: 1px solid var(--divider);
-        }
-        .folder ul > li:last-child {
-            border-bottom: none;
-        }
-        
-        /* Files */
-        li > a.file {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: var(--text-primary);
+        .card {
+            border: 1px solid var(--border);
+            background: var(--element-bg);
+            border-radius: 6px;
             padding: 12px 10px;
-            font-weight: 400;
-            transition: color 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
         }
-        li > a.file::before {
-            content: '';
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            margin-right: 12px;
-            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="%2386868b" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z"/></svg>');
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0.7;
+        .card .icon { width: 22px; height: 22px; margin-bottom: 8px; }
+        .card .icon .thumbnail { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+        .card .name {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text);
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.3;
         }
-        li > a.file:hover {
-            color: var(--accent);
-        }
-        
-        /* Surge Icon */
-        li > a:not(.file) {
+        .action-btn {
             position: absolute;
-            right: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-            padding: 6px;
-            border-radius: 8px;
-            background: var(--item-hover);
-            transition: background 0.2s;
+            top: 4px;
+            right: 4px;
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            background: var(--element-bg);
             display: flex;
             align-items: center;
             justify-content: center;
+            border: 1px solid var(--border);
         }
-        li > a:not(.file):hover {
-            background: var(--divider);
+        .action-btn img { width: 11px; height: 11px; filter: brightness(0) saturate(100%) invert(43%) sepia(85%) saturate(1636%) hue-rotate(193deg) brightness(98%) contrast(92%); }
+        
+        .empty {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+            border: 1px dashed var(--border);
+            border-radius: 6px;
         }
-        
-        .hidden { display: none !important; }
-        
+
         @media (max-width: 600px) {
-            body { padding: 20px 16px; }
-            h1 { font-size: 1.8rem; }
+            body { padding: 8px; gap: 8px; }
+            .sidebar { display: none; }
+            .main-header { flex-direction: column-reverse; height: auto; padding: 12px; gap: 8px; align-items: flex-start; }
+            .search-box { width: 100%; }
+            .main-body { padding: 12px; }
+            .grid-view { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
+            .card { padding: 12px 8px; }
         }
     </style>
 </head>
 <body>
-    <main class="container">
-        <header>
+    <aside class="sidebar island">
+        <div class="sidebar-header">
             <h1>Surge 规则库</h1>
-            <div class="subtitle">优质规则收集与分发</div>
-            <div class="meta">
-                最后构建: ${new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })} 
-                | 由 <a href="https://github.com/xOS/Config" target="_blank">xOS</a> 提供
+            <div class="meta">最后构建: ${new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })}<br>由 <a href="https://github.com/xOS/Config" target="_blank">xOS</a> 提供</div>
+        </div>
+        <div class="sidebar-content" id="sidebar-tree"></div>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="main-header island">
+            <div class="breadcrumbs" id="breadcrumbs"></div>
+            <div class="search-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="search" placeholder="全局搜索..." autocomplete="off"/>
             </div>
         </header>
+        <main class="main-body island">
+            <div class="grid-view" id="grid-view"></div>
+        </main>
+    </div>
 
-        <div class="search-section">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="search" placeholder="搜索文件或文件夹..."/>
-            <div class="search-hint">
-                提示: 模块点击后缀 <img alt="导入 Surge" style="height: 16px" src="./static/surge-transparent.png"> 一键导入 Surge
-            </div>
-        </div>
+    <ul id="raw-tree" style="display: none;">
+        ${tree}
+    </ul>
 
-        <ul class="directory-list">
-            ${tree}
-        </ul>
-    </main>
     <script>
+        const FOLDER_SVG = '<svg viewBox="0 0 24 24" fill="var(--primary)" xmlns="http://www.w3.org/2000/svg"><path d="M4 4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V9C22 7.89543 21.1046 7 20 7H11.5858L9.58579 5H4Z"/></svg>';
+        const FILE_SVG = '<svg viewBox="0 0 24 24" fill="#888888" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2ZM13 3.5L18.5 9H14C13.4477 9 13 8.55228 13 8V3.5Z"/></svg>';
+        const CHEVRON_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>';
+        const HOME_SVG = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>';
+
         document.addEventListener("DOMContentLoaded", () => {
-            const searchInput = document.getElementById('search');
-            searchInput.addEventListener('input', (event) => {
-                const searchTerm = event.target.value.toLowerCase();
-                const items = document.querySelectorAll('.directory-list li');
-                const foldersToExpand = new Set();
+            const rawTree = document.getElementById('raw-tree');
+            const treeData = parseNode(rawTree);
+            let currentPath = [];
+            let currentFolder = treeData;
+
+            function parseNode(ul) {
+                const items = [];
+                for (let li of ul.children) {
+                    if (li.classList.contains('folder')) {
+                        const name = li.childNodes[0].textContent.trim();
+                        const childUl = li.querySelector('ul');
+                        items.push({ type: 'folder', name, children: parseNode(childUl), isOpen: false });
+                    } else {
+                        const fileLink = li.querySelector('a.file');
+                        if (!fileLink) continue;
+                        const name = fileLink.textContent.trim();
+                        const url = fileLink.getAttribute('href');
+                        let surgeUrl = null;
+                        const surgeLink = li.querySelector('a:not(.file)');
+                        if (surgeLink) {
+                            surgeUrl = surgeLink.getAttribute('href');
+                        }
+                        items.push({ type: 'file', name, url, surgeUrl });
+                    }
+                }
+                items.sort((a, b) => {
+                    if (a.type === 'folder' && b.type === 'file') return -1;
+                    if (a.type === 'file' && b.type === 'folder') return 1;
+                    return a.name.localeCompare(b.name);
+                });
+                return items;
+            }
+
+            function renderSidebar(items, container, path = []) {
+                items.forEach(item => {
+                    if (item.type !== 'folder') return;
+                    
+                    const hasChildFolders = item.children.some(c => c.type === 'folder');
+                    
+                    const row = document.createElement('div');
+                    row.className = 'tree-item';
+                    row.innerHTML = \`
+                        <div class="tree-chevron \${hasChildFolders ? '' : 'hidden'}">\${CHEVRON_SVG}</div>
+                        <div class="tree-icon">\${FOLDER_SVG}</div>
+                        <div>\${item.name}</div>
+                    \`;
+                    
+                    const childrenContainer = document.createElement('div');
+                    childrenContainer.className = 'tree-children';
+                    if (hasChildFolders) {
+                        renderSidebar(item.children, childrenContainer, [...path, item]);
+                    }
+
+                    const inPath = currentPath.some((p, i) => p.name === item.name && i === path.length);
+                    if (inPath) item.isOpen = true;
+
+                    if (item.isOpen && hasChildFolders) {
+                        row.querySelector('.tree-chevron').classList.add('open');
+                        childrenContainer.classList.add('open');
+                    }
+
+                    const chevron = row.querySelector('.tree-chevron');
+                    if (hasChildFolders && chevron) {
+                        chevron.onclick = (e) => {
+                            e.stopPropagation();
+                            item.isOpen = !item.isOpen;
+                            chevron.classList.toggle('open', item.isOpen);
+                            childrenContainer.classList.toggle('open', item.isOpen);
+                        };
+                    }
+
+                    row.onclick = (e) => {
+                        e.stopPropagation();
+                        item.isOpen = true;
+                        currentPath = [...path, item];
+                        currentFolder = item.children;
+                        renderApp();
+                    };
+
+                    const isActive = currentPath.length > 0 && currentPath[currentPath.length - 1].name === item.name && currentPath.length === path.length + 1;
+                    if (isActive) {
+                        row.classList.add('active');
+                    }
+                    
+                    container.appendChild(row);
+                    if (hasChildFolders) {
+                        container.appendChild(childrenContainer);
+                    }
+                });
+            }
+
+            function renderGrid(items, isSearchResult = false) {
+                const grid = document.getElementById('grid-view');
+                grid.innerHTML = '';
+                
+                if (items.length === 0) {
+                    grid.innerHTML = '<div class="empty">这个目录下什么都没有哦</div>';
+                    return;
+                }
 
                 items.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    if (text.includes(searchTerm)) {
-                        item.classList.remove('hidden');
-                        let currentItem = item.closest('ul')?.parentElement;
-                        while (currentItem && currentItem.classList.contains('folder')) {
-                            foldersToExpand.add(currentItem);
-                            currentItem.classList.remove('hidden');
-                            currentItem = currentItem.closest('ul')?.parentElement;
-                        }
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    
+                    if (item.type === 'folder') {
+                        card.innerHTML = \`
+                            <div class="icon">\${FOLDER_SVG}</div>
+                            <div class="name">\${item.name}</div>
+                        \`;
+                        card.onclick = () => {
+                            if(isSearchResult) return;
+                            item.isOpen = true;
+                            currentPath.push(item);
+                            currentFolder = item.children;
+                            renderApp();
+                        };
                     } else {
-                        item.classList.add('hidden');
+                        const isImage = /\\.(jpg|jpeg|png|gif|webp|svg)$/i.test(item.name);
+                        const iconHtml = isImage ? \`<img class="thumbnail" src="\${item.url}" loading="lazy" />\` : FILE_SVG;
+                        card.innerHTML = \`
+                            <div class="icon">\${iconHtml}</div>
+                            <div class="name" title="\${item.name}">\${item.name}</div>
+                            \${item.surgeUrl ? \`<div class="action-btn" title="一键导入 Surge" data-url="\${item.surgeUrl}"><img src="./static/surge-transparent.png"></div>\` : ''}
+                        \`;
+                        card.onclick = (e) => {
+                            const btn = e.target.closest('.action-btn');
+                            if (btn) {
+                                window.open(btn.getAttribute('data-url'), '_blank');
+                            } else {
+                                window.open(item.url, '_blank');
+                            }
+                        };
+                    }
+                    grid.appendChild(card);
+                });
+            }
+
+            function renderBreadcrumbs() {
+                const bc = document.getElementById('breadcrumbs');
+                bc.innerHTML = '';
+                
+                const home = document.createElement('div');
+                home.className = 'crumb';
+                home.innerHTML = HOME_SVG + '&nbsp;首页';
+                home.onclick = () => {
+                    currentPath = [];
+                    currentFolder = treeData;
+                    renderApp();
+                };
+                if (currentPath.length === 0) home.classList.add('active');
+                bc.appendChild(home);
+                
+                currentPath.forEach((folder, index) => {
+                    const sep = document.createElement('span');
+                    sep.className = 'sep';
+                    sep.innerText = '/';
+                    bc.appendChild(sep);
+                    
+                    const crumb = document.createElement('div');
+                    crumb.className = 'crumb';
+                    crumb.innerText = folder.name;
+                    if (index === currentPath.length - 1) {
+                        crumb.classList.add('active');
+                    } else {
+                        crumb.onclick = () => {
+                            currentPath = currentPath.slice(0, index + 1);
+                            currentFolder = currentPath[currentPath.length - 1].children;
+                            renderApp();
+                        };
+                    }
+                    bc.appendChild(crumb);
+                });
+            }
+
+            function renderApp() {
+                renderBreadcrumbs();
+                renderGrid(currentFolder);
+                const sidebarContainer = document.getElementById('sidebar-tree');
+                sidebarContainer.innerHTML = '';
+                renderSidebar(treeData, sidebarContainer);
+            }
+
+            renderApp();
+
+            function getAllItems(items, path = '') {
+                let result = [];
+                items.forEach(item => {
+                    const fullPath = path ? \`\${path}/\${item.name}\` : item.name;
+                    if (item.type === 'folder') {
+                        result = result.concat(getAllItems(item.children, fullPath));
+                    } else {
+                        result.push({ ...item, displayName: fullPath });
                     }
                 });
+                return result;
+            }
+            const allItems = getAllItems(treeData);
 
-                foldersToExpand.forEach(folder => {
-                    folder.classList.remove('collapsed');
-                });
-            });
-
-            document.querySelectorAll('.folder').forEach(folder => {
-                folder.addEventListener('click', (event) => {
-                    if (event.target === folder) {
-                        folder.classList.toggle('collapsed');
-                    }
-                });
+            document.getElementById('search').addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase().trim();
+                if (term === '') {
+                    renderApp();
+                } else {
+                    const matches = allItems.filter(item => item.name.toLowerCase().includes(term) || item.displayName.toLowerCase().includes(term));
+                    const bc = document.getElementById('breadcrumbs');
+                    bc.innerHTML = \`<div class="crumb active">搜索结果: "\${term}"</div>\`;
+                    
+                    const searchResults = matches.map(m => ({
+                        ...m,
+                        name: m.displayName
+                    }));
+                    renderGrid(searchResults, true);
+                    
+                    document.querySelectorAll('.tree-item.active').forEach(el => el.classList.remove('active'));
+                }
             });
         });
     </script>
