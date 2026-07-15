@@ -134,228 +134,252 @@ function generateHtml(tree: string) {
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
     <title>Surge 规则库</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0f172a;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent: #3b82f6;
-            --accent-hover: #60a5fa;
-            --card-bg: rgba(30, 41, 59, 0.6);
-            --card-border: rgba(255, 255, 255, 0.08);
+            --bg-color: #f5f5f7;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --accent: #0071e3;
+            --accent-hover: #0077ed;
+            --card-bg: #ffffff;
+            --card-border: rgba(0, 0, 0, 0.04);
+            --item-hover: rgba(0, 0, 0, 0.03);
+            --divider: rgba(0, 0, 0, 0.06);
+            --icon-filter: none;
         }
-        * { box-sizing: border-box; }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000000;
+                --text-primary: #f5f5f7;
+                --text-secondary: #86868b;
+                --accent: #2997ff;
+                --accent-hover: #42a1ff;
+                --card-bg: #1c1c1e;
+                --card-border: rgba(255, 255, 255, 0.05);
+                --item-hover: rgba(255, 255, 255, 0.06);
+                --divider: rgba(255, 255, 255, 0.08);
+                --icon-filter: invert(1);
+            }
+        }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e1b4b);
-            background-attachment: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg-color);
             color: var(--text-primary);
             margin: 0;
-            padding: 0;
+            padding: 40px 20px;
             min-height: 100vh;
             display: flex;
             justify-content: center;
+            line-height: 1.5;
         }
         .container {
             width: 100%;
-            max-width: 860px;
-            margin: 40px 20px;
-            padding: 40px;
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--card-border);
-            border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 0.5s ease;
+            max-width: 760px;
         }
         header {
-            text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            padding: 0 10px;
         }
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            margin: 0 0 12px 0;
-            background: linear-gradient(to right, #60a5fa, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.02em;
+            margin: 0 0 8px 0;
+            color: var(--text-primary);
         }
         .subtitle {
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             color: var(--text-secondary);
-            margin-bottom: 24px;
-            font-weight: 300;
+            margin-bottom: 16px;
         }
         .meta {
             font-size: 0.85rem;
             color: var(--text-secondary);
-            opacity: 0.8;
         }
         .meta a {
             color: var(--accent);
             text-decoration: none;
-            transition: color 0.2s;
-        }
-        .meta a:hover {
-            color: var(--accent-hover);
         }
         .search-section {
             position: relative;
-            margin-bottom: 35px;
+            margin-bottom: 24px;
         }
         #search {
             width: 100%;
-            padding: 16px 20px 16px 48px;
+            padding: 14px 16px 14px 44px;
             font-size: 1.05rem;
+            font-family: inherit;
             color: var(--text-primary);
-            background: rgba(15, 23, 42, 0.5);
+            background: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 16px;
+            border-radius: 14px;
             outline: none;
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            transition: box-shadow 0.2s, border-color 0.2s;
         }
         #search::placeholder {
-            color: #64748b;
+            color: var(--text-secondary);
         }
         #search:focus {
             border-color: var(--accent);
-            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
-            background: rgba(15, 23, 42, 0.8);
+            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
         }
         .search-icon {
             position: absolute;
-            left: 18px;
-            top: 25px;
+            left: 16px;
+            top: 50%;
             transform: translateY(-50%);
             color: var(--text-secondary);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             pointer-events: none;
         }
         .search-hint {
             display: block;
-            margin-top: 14px;
-            font-size: 0.9rem;
+            margin-top: 12px;
+            padding: 0 10px;
+            font-size: 0.85rem;
             color: var(--text-secondary);
-            text-align: center;
         }
         .search-hint img {
             vertical-align: middle;
             margin: 0 4px;
+            filter: var(--icon-filter);
         }
         
-        .directory-list, .directory-list ul {
+        .directory-list {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 8px 0;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            list-style: none;
+            margin: 0;
+        }
+        .directory-list ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        .directory-list {
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 16px;
-            padding: 16px;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
         .directory-list li {
-            margin: 4px 0;
+            margin: 0;
+            position: relative;
         }
+        
+        /* Folders */
         .folder {
             cursor: pointer;
             user-select: none;
-            padding: 12px 16px;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid transparent;
-            transition: all 0.2s ease;
+            padding: 12px 20px;
             font-weight: 600;
-            color: #e2e8f0;
+            color: var(--text-primary);
+            transition: background-color 0.2s;
+            display: block;
+            border-bottom: 1px solid var(--divider);
         }
         .folder:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(255, 255, 255, 0.1);
+            background-color: var(--item-hover);
+        }
+        .directory-list > li:last-child > .folder {
+            border-bottom: none;
         }
         .folder::before {
-            content: '📂';
-            margin-right: 10px;
-            font-size: 1.1em;
+            content: '';
             display: inline-block;
-            transition: transform 0.2s ease;
+            width: 18px;
+            height: 18px;
+            margin-right: 12px;
+            vertical-align: -3px;
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="%230071e3" xmlns="http://www.w3.org/2000/svg"><path d="M10 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6H12L10 4Z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
         }
         .folder.collapsed::before {
-            content: '📁';
+            opacity: 0.7;
         }
+        .folder::after {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 18px;
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid var(--text-secondary);
+            border-bottom: 2px solid var(--text-secondary);
+            transform: rotate(45deg);
+            transition: transform 0.2s;
+        }
+        .folder.collapsed::after {
+            transform: rotate(-45deg);
+        }
+        
         .folder ul {
-            margin-top: 10px;
-            margin-left: 26px;
-            padding-left: 14px;
-            border-left: 2px solid rgba(255, 255, 255, 0.08);
-            animation: slideDown 0.3s ease;
+            background: var(--bg-color);
+            padding: 4px 10px 4px 30px;
+            border-bottom: 1px solid var(--divider);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.01);
         }
         .folder.collapsed ul {
             display: none;
         }
+        .folder ul > li {
+            border-bottom: 1px solid var(--divider);
+        }
+        .folder ul > li:last-child {
+            border-bottom: none;
+        }
         
+        /* Files */
         li > a.file {
-            display: inline-flex;
+            display: flex;
             align-items: center;
             text-decoration: none;
-            color: var(--text-secondary);
-            padding: 10px 14px;
-            border-radius: 10px;
-            transition: all 0.2s ease;
+            color: var(--text-primary);
+            padding: 12px 10px;
             font-weight: 400;
-            width: auto;
+            transition: color 0.2s;
         }
         li > a.file::before {
-            content: '📄';
-            margin-right: 10px;
-            font-size: 1.1em;
-            opacity: 0.8;
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 12px;
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="%2386868b" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.7;
         }
         li > a.file:hover {
-            background: rgba(59, 130, 246, 0.1);
-            color: var(--text-primary);
-            transform: translateX(4px);
+            color: var(--accent);
         }
         
-        /* Surge Import Icon Link Styling */
+        /* Surge Icon */
         li > a:not(.file) {
-            display: inline-flex;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 6px;
+            border-radius: 8px;
+            background: var(--item-hover);
+            transition: background 0.2s;
+            display: flex;
             align-items: center;
             justify-content: center;
-            padding: 6px;
-            margin-left: 8px;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.05);
-            transition: all 0.2s ease;
-            vertical-align: middle;
         }
         li > a:not(.file):hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: scale(1.05);
+            background: var(--divider);
         }
         
-        .hidden {
-            display: none !important;
-        }
+        .hidden { display: none !important; }
         
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-5px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @media (max-width: 768px) {
-            .container { margin: 0; border-radius: 0; padding: 25px 20px; min-height: 100vh; }
-            h1 { font-size: 2.2rem; }
+        @media (max-width: 600px) {
+            body { padding: 20px 16px; }
+            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
@@ -372,9 +396,9 @@ function generateHtml(tree: string) {
 
         <div class="search-section">
             <span class="search-icon">🔍</span>
-            <input type="text" id="search" placeholder="搜索文件或文件夹名称..."/>
+            <input type="text" id="search" placeholder="搜索文件或文件夹..."/>
             <div class="search-hint">
-                提示: 模块内容可点击后缀 <img alt="导入 Surge" style="height: 18px" src="./static/surge-transparent.png"> 图标一键导入 Surge
+                提示: 模块点击后缀 <img alt="导入 Surge" style="height: 16px" src="./static/surge-transparent.png"> 一键导入 Surge
             </div>
         </div>
 
@@ -430,25 +454,27 @@ function generate404Html() {
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
     <title>404 - 页面未找到</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0f172a;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent: #3b82f6;
-            --card-bg: rgba(30, 41, 59, 0.6);
-            --card-border: rgba(255, 255, 255, 0.08);
+            --bg-color: #f5f5f7;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --accent: #0071e3;
         }
-        * { box-sizing: border-box; }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #000000;
+                --text-primary: #f5f5f7;
+                --text-secondary: #86868b;
+                --accent: #2997ff;
+            }
+        }
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e1b4b);
-            background-attachment: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg-color);
             color: var(--text-primary);
             margin: 0;
             padding: 0;
@@ -456,66 +482,40 @@ function generate404Html() {
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
         .container {
-            text-align: center;
-            padding: 60px 40px;
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--card-border);
-            border-radius: 24px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            max-width: 500px;
-            width: 90%;
-            animation: popIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            padding: 40px;
         }
         .error-code {
-            font-size: 7.5rem;
-            font-weight: 900;
+            font-size: 6rem;
+            font-weight: 700;
             margin: 0;
-            background: linear-gradient(to right, #60a5fa, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            line-height: 1;
-            letter-spacing: -2px;
+            letter-spacing: -0.04em;
         }
         .error-message {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: var(--text-secondary);
-            margin: 20px 0 40px;
+            margin: 16px 0 32px;
         }
         .home-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 14px 32px;
-            background: linear-gradient(135deg, var(--accent), #8b5cf6);
-            color: white;
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--accent);
+            color: #ffffff;
             text-decoration: none;
-            border-radius: 12px;
+            border-radius: 20px;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+            font-size: 1rem;
+            transition: opacity 0.2s;
         }
         .home-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px -5px rgba(59, 130, 246, 0.6);
+            opacity: 0.9;
         }
         .meta {
-            margin-top: 45px;
+            margin-top: 40px;
             font-size: 0.85rem;
             color: var(--text-secondary);
-            opacity: 0.8;
-            line-height: 1.6;
-        }
-        .meta a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
-        .meta a:hover { color: #60a5fa; }
-        
-        @keyframes popIn {
-            0% { opacity: 0; transform: scale(0.9) translateY(20px); }
-            100% { opacity: 1; transform: scale(1) translateY(0); }
         }
     </style>
 </head>
@@ -524,10 +524,8 @@ function generate404Html() {
         <h1 class="error-code">404</h1>
         <p class="error-message">很抱歉，您访问的页面不存在</p>
         <a href="/" class="home-link">返回首页</a>
-        
         <div class="meta">
-            最后更新: ${new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })}<br>
-            由 <a href="https://github.com/xOS/Config" target="_blank">xOS</a> 提供
+            由 <a href="https://github.com/xOS/Config" style="color:var(--accent);text-decoration:none;" target="_blank">xOS</a> 提供
         </div>
     </main>
 </body>
