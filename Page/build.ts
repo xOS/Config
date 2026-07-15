@@ -323,18 +323,19 @@ function generateHtml(tree: string) {
             gap: 8px;
         }
         .card {
-            border: 1px solid var(--border);
             background: var(--element-bg);
             border-radius: 6px;
-            padding: 12px 10px;
+            padding: 6px 4px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             text-align: center;
             cursor: pointer;
             position: relative;
+            aspect-ratio: 1 / 1;
         }
-        .card .icon { width: 22px; height: 22px; margin-bottom: 8px; }
+        .card .icon { width: 22px; height: 22px; margin-bottom: 2px; }
         .card .icon .thumbnail { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
         .card .name {
             font-size: 12px;
@@ -372,13 +373,15 @@ function generateHtml(tree: string) {
         }
 
         @media (max-width: 600px) {
-            body { padding: 8px; gap: 8px; }
-            .sidebar { display: none; }
+            body { padding: 8px; gap: 8px; flex-direction: column; }
+            .sidebar { width: 100%; height: auto; }
+            .sidebar-content { display: none; }
+            .sidebar-header { border-bottom: none; }
             .main-header { flex-direction: column-reverse; height: auto; padding: 12px; gap: 8px; align-items: flex-start; }
             .search-box { width: 100%; }
             .main-body { padding: 12px; }
             .grid-view { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
-            .card { padding: 12px 8px; }
+            .card { padding: 6px 4px; }
         }
     </style>
 </head>
