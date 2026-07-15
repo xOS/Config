@@ -8,29 +8,7 @@
 .188187.xyz
 .1and1.com
 .1gservers.com
-.geosn0w.com
 .1poa.net
-.revved.com
-.spaceship-cdn.com
-.smallpdf.com
-.ares-x.com
-.meiguodizhi.com
-.oois.net
-.arebz.com
-.applebyme.cn
-.anytimemailbox.com
-.kanokano.cn
-.imgs.ovh
-.guguex.com
-.global-mail.cn
-.cloudtaro.com
-.cloudimg.net
-.clashcloud.net
-.cdnbest.com
-.chickfrp.com
-.cdn.net
-.interpark.com
-.hyperwallet.com
 .20000170l4s.my-imcloud.com
 .2345.tn
 .2kz.net
@@ -136,6 +114,7 @@ ana.video.friday.tw
 .anyipa.me
 .anynode.net
 .anyrouter.top
+.anytimemailbox.com
 .ao
 .aotol.com
 .apepine.com
@@ -162,6 +141,7 @@ apple-relay.fastly-edge.com
 .apple.com.cdn20.com
 .apple.com.mwcloudcdn.com
 .apple.com.mwcname.com
+.applebyme.cn
 .appleimg.com
 .appleschoolcontent.com
 .appletvapp.apple
@@ -172,6 +152,8 @@ apple-relay.fastly-edge.com
 .apzones.com
 .aq
 .ar
+.arebz.com
+.ares-x.com
 .arpa
 .art
 .as
@@ -305,8 +287,10 @@ cache.video.iqiyi.com
 .cdmcaac.com
 .cdn-apple-mapkit.com
 .cdn.ink
+.cdn.net
 cdn.registerdisney.go.com
 .cdn199.com
+.cdnbest.com
 .cdnlion.com
 .cdnplus.cn
 .cdnsun.com
@@ -336,6 +320,7 @@ chat.openai.com.cdn.cloudflare.net
 .check.place
 .checkout.com
 .checktrustworthiness.com
+.chickfrp.com
 .china-internet-exchange.com
 chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .ci
@@ -345,6 +330,7 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .ckzcc.com
 .cl
 .clarity.ms
+.clashcloud.net
 .claw.cloud
 .clawcloudrun.com
 .clearhello.com
@@ -360,8 +346,10 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .cloudflarestaging.com
 .cloudflarestoragegw.com
 .cloudfront.hls.ttvnw.net
+.cloudimg.net
 .cloudns.net
 .cloudss.org
+.cloudtaro.com
 .clubsim.com.hk
 .cm
 .cmlink.com
@@ -610,6 +598,7 @@ gateway.ai.cloudflare.com
 .geocerts.com
 .geoiplookup.io
 .geojs.io
+.geosn0w.com
 .getblueshift.com
 .getcino.com
 .getlikesfree.com
@@ -626,6 +615,7 @@ gateway.ai.cloudflare.com
 .gl
 .glass
 .global
+.global-mail.cn
 .gm
 .gn
 .go-esim.com
@@ -654,6 +644,7 @@ gspe1-ssl.ls.apple.com
 .gtmetrix.com
 .gu
 .guavapay.com
+.guguex.com
 .gullo.me
 .guolic.com
 guzzoni.apple.com
@@ -734,6 +725,7 @@ hbounify-prod.evergent.com
 .hyperjardev.com
 .hyperliquid.xyz
 .hypernat.com
+.hyperwallet.com
 .ibytebox.com
 .icanhazip.com
 .icestr.com
@@ -763,6 +755,7 @@ imagine.meta.com
 img.css.sd
 .img.pub
 .imgdd.cc
+.imgs.ovh
 .imidc.com
 .imput.net
 .imtedge.com
@@ -782,6 +775,7 @@ img.css.sd
 .instabug.com
 .int
 .intercom.help
+.interpark.com
 .intl-rcd.iqiyi.com
 .intl-subscription.iqiyi.com
 .intl.iqiyi.com
@@ -855,6 +849,7 @@ jules.google.com
 .kahaoquan.com
 .kalhlspd-a.akamaihd.net
 .kaltura.com
+.kanokano.cn
 .kaolay.com
 .kaptcha.com
 .ke
@@ -982,6 +977,7 @@ lookup-api.apple.com.edgekey.net
 .md
 .meakle.com
 .meetcarrot.com
+.meiguodizhi.com
 .melost.cn
 .meowvps.com
 .mereith.com
@@ -1140,6 +1136,7 @@ ocvideo.apple.com
 .onfido.com
 .online
 .online.net
+.oois.net
 .ooklaserver.net
 .ooo
 .oopj.com
@@ -1296,6 +1293,7 @@ restricted.sdk.kochava.com
 .revealname.com
 .revenuecat.com
 .revolut.com
+.revved.com
 .rewe.de
 .riskified.com
 .rjsos.com
@@ -1381,6 +1379,7 @@ rtcg-access.volcvideos.com
 .slinpic.com
 .sm
 .sm-one.com
+.smallpdf.com
 .smartmediarep.com
 .smarty.com
 .smone.me
@@ -1405,6 +1404,7 @@ sms-verification-number.com
 .sooplive.co.kr
 .soosym.com
 .space
+.spaceship-cdn.com
 .spartanhost.org
 .speed.cloudflare.com
 .sports.img.sooplive.co.kr
