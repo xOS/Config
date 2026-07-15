@@ -71,6 +71,16 @@ DOMAIN-SUFFIX,msftconnecttest.com
 # > 原神
 DOMAIN-KEYWORD,8.211.
 DOMAIN-KEYWORD,8.216.
+IP-CIDR,8.208.0.0/16,no-resolve
+IP-CIDR,8.209.0.0/16,no-resolve
+IP-CIDR,8.210.0.0/16,no-resolve
+IP-CIDR,8.211.0.0/16,no-resolve
+IP-CIDR,8.212.0.0/16,no-resolve
+IP-CIDR,8.213.0.0/17,no-resolve
+IP-CIDR,8.216.0.0/16,no-resolve
+IP-CIDR,8.219.0.0/16,no-resolve
+IP-CIDR,8.220.0.0/18,no-resolve
+IP-CIDR,8.221.0.0/17,no-resolve
 
 # > Others
 DOMAIN,app.adjust.com
