@@ -140,8 +140,10 @@ function generateHtml(tree: string) {
     <style>
         :root {
             --bg: #e2e8f0;
-            --island-bg: #ffffff;
-            --island-border: rgba(255, 255, 255, 0.4);
+            --island-bg: linear-gradient(135deg, #ffffff 0%, #f8fafc 52%, #eef2f7 100%);
+            --island-border: rgba(255, 255, 255, 0.5);
+            --island-border-top: rgba(255, 255, 255, 0.5);
+            --island-shadow: 0 10px 28px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.95), inset 0 -1px 0 rgba(15, 23, 42, 0.04);
             --text: #333333;
             --text-muted: #777777;
             --border: rgba(0, 0, 0, 0.06);
@@ -152,8 +154,10 @@ function generateHtml(tree: string) {
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg: #0f172a;
-                --island-bg: #1e293b;
-                --island-border: rgba(255, 255, 255, 0.1);
+                --island-bg: linear-gradient(135deg, #24314f 0%, #1e2a45 54%, #172039 100%);
+                --island-border: rgba(255, 255, 255, 0.15);
+                --island-border-top: rgba(255, 255, 255, 0.25);
+                --island-shadow: 0 10px 28px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.14), inset 0 -1px 0 rgba(0, 0, 0, 0.22);
                 --text: #eeeeee;
                 --text-muted: #94a3b8;
                 --border: rgba(255, 255, 255, 0.08);
@@ -181,11 +185,12 @@ function generateHtml(tree: string) {
         .island {
             background: var(--island-bg);
             background-clip: padding-box;
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border: 2px solid var(--island-border);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--island-border);
+            border-top: 1px solid var(--island-border-top);
             border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            box-shadow: var(--island-shadow);
         }
         
         /* Sidebar */
