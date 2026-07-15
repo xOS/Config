@@ -2,11 +2,15 @@
 
 import path from "node:path";
 import { promises as fs, Dirent } from "node:fs";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const SITE_BASE_URL = process.env.SITE_BASE_URL || "https://rules.aapls.com/";
 
-const PAGE_DIR = path.resolve(".");
-const REPO_ROOT = path.resolve("..");
+const PAGE_DIR = __dirname;
+const REPO_ROOT = path.resolve(__dirname, "..");
 const OUTPUT_DIR = path.join(PAGE_DIR, "public");
 
 const allowedExtensions = [
@@ -126,179 +130,408 @@ async function walk(dir: string, baseUrl: string): Promise<string> {
 
 function generateHtml(tree: string) {
     return `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="msapplication-TileColor" content="#0F7D00">
-            <meta name="theme-color" content="#0F7D00">
-            <meta property="og:image" content="https://static.nange.cn/image/others/bingo.jpeg">
-            <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
-            <title>Surge 规则</title>
-            <link rel="stylesheet" href="./static/style.css" />
-            <style>
-                .folder {
-                    cursor: pointer;
-                    font-weight: bold;
-                    list-style-type: none;
-                    padding-left: 0
-                }
-                .folder ul {
-                    display: block;
-                    border-left: 1px dashed #ddd;
-                    margin-left: 10px;
-                    padding-left: 20px
-                }
-                .folder.collapsed ul {
-                    display: none;
-                }
-                .hidden {
-                    display: none;
-                }
-                #search {
-                    width: 100%;
-                    padding: 10px 15px;
-                    margin: 20px 0;
-                    font-size: 1rem;
-                    border: 1px solid #ddd;
-                    border-radius: 30px;
-                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-                    transition: all 0.3s ease;
-                }
-                #search:focus {
-                    border-color: #007bff;
-                    outline: none;
-                    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.4);
-                }
-                .container {
-                    padding: 20px;
-                }
-                .search-section {
-                    margin-bottom: 30px;
-                }
-                .directory-list {
-                    margin-top: 20px;
-                    padding-left: 0;
-                }
-            </style>
-        </head>
-        <body>
-        <main class="container">
-            <h1> Surge 规则 </h1>
-            <span>日用夜用</span>
-            <br>
-            <small>Last Build: ${new Date().toLocaleString("zh-CN", {
-                timeZone: "Asia/Shanghai",
-            })}  | Made by  <a href="https://github.com/xOS/Config">xOS</a></small>
-
-            <div class="search-section">
-                <input type="text" id="search" placeholder="🔍 搜索文件和文件夹..."/>
-                <small>ℹ️ 模块内容点击此<img alt="导入 Surge(远程模块)" title="导入 Surge(远程模块)" style="height: 22px" src="./static/surge-transparent.png">图标一键导入 Surge</small>
-                <br>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
+    <title>Surge 规则库</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #60a5fa;
+            --card-bg: rgba(30, 41, 59, 0.6);
+            --card-border: rgba(255, 255, 255, 0.08);
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 860px;
+            margin: 40px 20px;
+            padding: 40px;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.5s ease;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            background: linear-gradient(to right, #60a5fa, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            font-weight: 300;
+        }
+        .meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            opacity: 0.8;
+        }
+        .meta a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .meta a:hover {
+            color: var(--accent-hover);
+        }
+        .search-section {
+            position: relative;
+            margin-bottom: 35px;
+        }
+        #search {
+            width: 100%;
+            padding: 16px 20px 16px 48px;
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        #search::placeholder {
+            color: #64748b;
+        }
+        #search:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+            background: rgba(15, 23, 42, 0.8);
+        }
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 25px;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
+        .search-hint {
+            display: block;
+            margin-top: 14px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+        .search-hint img {
+            vertical-align: middle;
+            margin: 0 4px;
+        }
+        
+        .directory-list, .directory-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .directory-list {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 16px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .directory-list li {
+            margin: 4px 0;
+        }
+        .folder {
+            cursor: pointer;
+            user-select: none;
+            padding: 12px 16px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+        .folder:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .folder::before {
+            content: '📂';
+            margin-right: 10px;
+            font-size: 1.1em;
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        .folder.collapsed::before {
+            content: '📁';
+        }
+        .folder ul {
+            margin-top: 10px;
+            margin-left: 26px;
+            padding-left: 14px;
+            border-left: 2px solid rgba(255, 255, 255, 0.08);
+            animation: slideDown 0.3s ease;
+        }
+        .folder.collapsed ul {
+            display: none;
+        }
+        
+        li > a.file {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-secondary);
+            padding: 10px 14px;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            font-weight: 400;
+            width: auto;
+        }
+        li > a.file::before {
+            content: '📄';
+            margin-right: 10px;
+            font-size: 1.1em;
+            opacity: 0.8;
+        }
+        li > a.file:hover {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--text-primary);
+            transform: translateX(4px);
+        }
+        
+        /* Surge Import Icon Link Styling */
+        li > a:not(.file) {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+            margin-left: 8px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.2s ease;
+            vertical-align: middle;
+        }
+        li > a:not(.file):hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.05);
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            .container { margin: 0; border-radius: 0; padding: 25px 20px; min-height: 100vh; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Surge 规则库</h1>
+            <div class="subtitle">优质规则收集与分发</div>
+            <div class="meta">
+                最后构建: ${new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })} 
+                | 由 <a href="https://github.com/xOS/Config" target="_blank">xOS</a> 提供
             </div>
+        </header>
 
-            <ul class="directory-list">
-                ${tree}
-            </ul>
-        </main>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const searchInput = document.getElementById('search');
-                searchInput.addEventListener('input', (event) => {
-                    const searchTerm = event.target.value.toLowerCase();
-                    const items = document.querySelectorAll('.directory-list li');
-                    const foldersToExpand = new Set();
+        <div class="search-section">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search" placeholder="搜索文件或文件夹名称..."/>
+            <div class="search-hint">
+                提示: 模块内容可点击后缀 <img alt="导入 Surge" style="height: 18px" src="./static/surge-transparent.png"> 图标一键导入 Surge
+            </div>
+        </div>
 
-                    items.forEach(item => {
-                        const text = item.textContent.toLowerCase();
-                        if (text.includes(searchTerm)) {
-                            item.classList.remove('hidden');
-                            let currentItem = item.closest('ul').parentElement;
-                            while (currentItem && currentItem.classList.contains('folder')) {
-                                foldersToExpand.add(currentItem);
-                                currentItem = currentItem.closest('ul').parentElement;
-                            }
-                        } else {
-                            item.classList.add('hidden');
+        <ul class="directory-list">
+            ${tree}
+        </ul>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchInput = document.getElementById('search');
+            searchInput.addEventListener('input', (event) => {
+                const searchTerm = event.target.value.toLowerCase();
+                const items = document.querySelectorAll('.directory-list li');
+                const foldersToExpand = new Set();
+
+                items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        item.classList.remove('hidden');
+                        let currentItem = item.closest('ul')?.parentElement;
+                        while (currentItem && currentItem.classList.contains('folder')) {
+                            foldersToExpand.add(currentItem);
+                            currentItem.classList.remove('hidden');
+                            currentItem = currentItem.closest('ul')?.parentElement;
                         }
-                    });
-
-                    foldersToExpand.forEach(folder => {
-                        folder.classList.remove('collapsed');
-                    });
+                    } else {
+                        item.classList.add('hidden');
+                    }
                 });
 
-                document.querySelectorAll('.folder').forEach(folder => {
-                    folder.addEventListener('click', (event) => {
-                        if (event.target.tagName === 'A' && event.target.classList.contains('file')) {
-                                return;
-                                }
-                        event.stopPropagation();
-                        folder.classList.toggle('collapsed');
-                    });
+                foldersToExpand.forEach(folder => {
+                    folder.classList.remove('collapsed');
                 });
             });
-        </script>
-        </body>
-        </html>
+
+            document.querySelectorAll('.folder').forEach(folder => {
+                folder.addEventListener('click', (event) => {
+                    if (event.target === folder) {
+                        folder.classList.toggle('collapsed');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
     `;
 }
 
 function generate404Html() {
     return `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="msapplication-TileColor" content="#0F7D00">
-            <meta name="theme-color" content="#0F7D00">
-            <meta property="og:image" content="https://static.nange.cn/image/others/bingo.jpeg">
-            <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
-            <title>404 - 页面未找到</title>
-            <link rel="stylesheet" href="./static/style.css" />
-            <style>
-                .container {
-                    text-align: center;
-                    padding: 50px 20px;
-                    max-width: 800px;
-                    margin: 0 auto;
-                }
-                .error-code {
-                    font-size: 120px;
-                    margin: 0;
-                    color: #ff9800;
-                    font-weight: bold;
-                }
-                .error-message {
-                    font-size: 24px;
-                    margin: 20px 0 40px;
-                }
-                .home-link {
-                    display: inline-block;
-                    padding: 10px 25px;
-                    background-color: #ff9800;
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 5px;
-                    font-weight: bold;
-                    transition: background-color 0.3s ease;
-                }
-            </style>
-        </head>
-        <body>
-        <main class="container">
-            <h1 class="error-code">404</h1>
-            <p class="error-message">很抱歉，您访问的页面不存在</p>
-            <a href="/" class="home-link" style="text-decoration: none;">返回首页</a>
-            <br><br>
-            <small>Last Updated: ${new Date().toLocaleString("zh-CN", {
-                timeZone: "Asia/Shanghai",
-            })} | Made by <a href="https://github.com/xOS/Config">xOS</a></small>
-        </main>
-        </body>
-        </html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
+    <title>404 - 页面未找到</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #3b82f6;
+            --card-bg: rgba(30, 41, 59, 0.6);
+            --card-border: rgba(255, 255, 255, 0.08);
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            padding: 60px 40px;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 90%;
+            animation: popIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .error-code {
+            font-size: 7.5rem;
+            font-weight: 900;
+            margin: 0;
+            background: linear-gradient(to right, #60a5fa, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+        .error-message {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            margin: 20px 0 40px;
+        }
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, var(--accent), #8b5cf6);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+        }
+        .home-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -5px rgba(59, 130, 246, 0.6);
+        }
+        .meta {
+            margin-top: 45px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        .meta a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        .meta a:hover { color: #60a5fa; }
+        
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.9) translateY(20px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">很抱歉，您访问的页面不存在</p>
+        <a href="/" class="home-link">返回首页</a>
+        
+        <div class="meta">
+            最后更新: ${new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })}<br>
+            由 <a href="https://github.com/xOS/Config" target="_blank">xOS</a> 提供
+        </div>
+    </main>
+</body>
+</html>
     `;
 }
 
