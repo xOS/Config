@@ -1042,7 +1042,6 @@ cdn.scaleflex.it
 cdn.schemaapp.com
 cdn.sciencecast.org
 cdn.scpwiki.com
-cdn.scripts.wtwhmedia.com
 cdn.search.brave.com
 cdn.sedo.com
 cdn.segment.com
@@ -1160,7 +1159,6 @@ cdn.you.com
 cdn.ywxi.net
 cdn.zapier.com
 cdn.zeabur.com
-cdn.zhujiwiki.com
 cdn.zigpoll.com
 cdn.zolplay.com
 cdn0-i.techbang.com
@@ -1199,6 +1197,7 @@ cdn2.abiresearch.com
 cdn2.airdroid.com
 cdn2.auth0.com
 cdn2.bigcommerce.com
+cdn2.cameo.com
 cdn2.dan.com
 cdn2.downdetector.com
 cdn2.edgedatg.com
@@ -1321,7 +1320,6 @@ chart.googleapis.com
 .chasecdn.com
 chat-assets.front.app
 chat.digitalgenius.com
-chatwidgetmetrics-proxy.usepylon.com
 .chcdn.xyz
 checkout-sdk.bigcommerce.com
 checkout.stripe.com
@@ -2180,7 +2178,6 @@ images.filepuma.com
 images.financemagnates.com
 images.findagrave.com
 images.flightradar24.com
-images.freeimages.com
 images.g2crowd.com
 images.github.media
 .images.hentaicity.com
@@ -2287,7 +2284,6 @@ img.atom.com
 img.atwiki.jp
 img.badgesize.io
 img.biguz.net
-img.bttimg.com
 img.catwvod.xyz
 img.clerk.com
 img.community.ui.com
@@ -2322,7 +2318,6 @@ img.kemono.cr
 img.logokit.com
 img.ltyears.com
 img.lvv2.com
-img.m.mw
 img.majors.im
 img.manyse.com
 img.ml0987.com
@@ -2340,7 +2335,6 @@ img.picacomic.com
 img.redbull.com
 img.reg.ru
 img.reimu.net
-img.represent.com
 img.riskified.com
 img.sflix.to
 img.shoplineapp.com
@@ -2375,7 +2369,6 @@ img1.yeggi.com
 img1.yna.co.kr
 .img2.acsta.net
 img2.gelbooru.com
-img2.javdove.com
 img2.javmost.com
 img2.socialshopwave.com
 img2.tnaflix.com
@@ -3317,6 +3310,9 @@ rsms.me
 .rspcdn.net
 .rss3.dev
 rt.rtoaster.jp
+rt1.maphub.net
+rt2.maphub.net
+rt3.maphub.net
 rtcg-access.bytevcloud.com
 rts-static-prod.freshworksapi.com
 rules.ac
@@ -3377,7 +3373,6 @@ s3.c.im
 s3.coinmarketcap.com
 s3.cointelegraph.com
 s3.documentcloud.org
-s3.doujin.sh
 s3.duellinksmeta.com
 s3.dzeninfra.ru
 s3.envato.com
@@ -3624,7 +3619,6 @@ static-ca-cdn.eporner.com
 static-cache.fboom.me
 static-cache.k2s.cc
 static-cdn.123rf.com
-static-cdn.bytegiftia.top
 static-cdn.jtvnw.net
 static-cdn.spot.im
 static-cdn.usertesting.com
@@ -3762,7 +3756,6 @@ static.foxbusiness.com
 static.foxnews.com
 static.frame.work
 static.freedownloadmanager.org
-static.freeimages.com
 static.fundraiseup.com
 static.garmin.com
 .static.gartner.com
@@ -3799,6 +3792,7 @@ static.ipgeolocation.io
 static.iplocate.io
 static.iris.informa.com
 static.isitetv.com
+static.istockphoto.com
 static.itch.io
 static.iyf.tv
 static.izanmei.icu
@@ -3815,6 +3809,7 @@ static.linear.app
 static.lingq.com
 static.lwn.net
 static.macupdate.com
+static.maphub.net
 static.maxmind.com
 static.mediafire.com
 .static.mega.co.nz
@@ -4165,6 +4160,7 @@ tiles.openfreemap.org
 tiles.openrailwaymap.org
 tiles.openseamap.org
 tiles.openskimap.org
+.tiles.openstreetmap.us
 tiles.planet.com
 tiles.stadiamaps.com
 tiles.strava.com
