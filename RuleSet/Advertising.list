@@ -702,6 +702,7 @@ DOMAIN-WILDCARD,mon*.tiktokv.us
 DOMAIN-WILDCARD,ms*.applvn.com
 DOMAIN-WILDCARD,mssdk*.capcutapi.com
 DOMAIN-WILDCARD,mssdk*.zijieapi.com
+DOMAIN-WILDCARD,mtag-*.wedevs.com
 DOMAIN-WILDCARD,my-redirect-bucket-unique-*.s3.ap-northeast-1.amazonaws.com
 DOMAIN-WILDCARD,nelonenmedia-pmd-ads-*.nm-stream.nelonenmedia.fi
 DOMAIN-WILDCARD,orbit*.lun.ua
