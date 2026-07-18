@@ -57,6 +57,10 @@ DOMAIN-SUFFIX,cdn-vk.ru
 DOMAIN-WILDCARD,s*.podbean.com
 DOMAIN-WILDCARD,*vop*.fastly.mux.com
 
+# > 抖音
+DOMAIN-WILDCARD,*-ov*.zjcdn.com
+DOMAIN-WILDCARD,*-zenl-ov.zjcdn.com
+
 # > 其它
 DOMAIN,assets.chapturist.com
 DOMAIN,img.css.sd
