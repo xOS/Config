@@ -192,7 +192,7 @@ function generateHtml(tree: string) {
             border-radius: 10px;
             box-shadow: var(--island-shadow);
         }
-        
+
         /* Sidebar */
         .sidebar {
             width: 220px;
@@ -226,7 +226,7 @@ function generateHtml(tree: string) {
             overflow-y: auto;
             padding: 8px;
         }
-        
+
         /* Main Wrapper */
         .main-wrapper {
             flex: 1;
@@ -235,7 +235,7 @@ function generateHtml(tree: string) {
             gap: 12px;
             min-width: 0;
         }
-        
+
         /* Main Header */
         .main-header {
             height: 52px;
@@ -256,7 +256,7 @@ function generateHtml(tree: string) {
             scrollbar-width: none;
         }
         .breadcrumbs::-webkit-scrollbar { display: none; }
-        
+
         .crumb {
             cursor: pointer;
             color: var(--text-muted);
@@ -265,7 +265,7 @@ function generateHtml(tree: string) {
         }
         .crumb.active { color: var(--text); font-weight: 600; cursor: default; }
         .sep { color: var(--border); margin: 0 2px; }
-        
+
         .search-box {
             position: relative;
             width: 220px;
@@ -298,13 +298,13 @@ function generateHtml(tree: string) {
             overflow-y: auto;
             padding: 20px;
         }
-        
+
         /* Sidebar Tree */
         .tree-item {
             display: flex;
             align-items: center;
             padding: 6px 8px;
-            border-radius: 6px;
+            border-radius: 15px;
             cursor: pointer;
             user-select: none;
             color: var(--text);
@@ -367,7 +367,7 @@ function generateHtml(tree: string) {
             border: 1px solid var(--border);
         }
         .action-btn img { width: 11px; height: 11px; filter: brightness(0) saturate(100%) invert(43%) sepia(85%) saturate(1636%) hue-rotate(193deg) brightness(98%) contrast(92%); }
-        
+
         .empty {
             grid-column: 1 / -1;
             text-align: center;
@@ -460,9 +460,9 @@ function generateHtml(tree: string) {
             function renderSidebar(items, container, path = []) {
                 items.forEach(item => {
                     if (item.type !== 'folder') return;
-                    
+
                     const hasChildFolders = item.children.some(c => c.type === 'folder');
-                    
+
                     const row = document.createElement('div');
                     row.className = 'tree-item';
                     row.innerHTML = \`
@@ -470,7 +470,7 @@ function generateHtml(tree: string) {
                         <div class="tree-icon">\${FOLDER_SVG}</div>
                         <div>\${item.name}</div>
                     \`;
-                    
+
                     const childrenContainer = document.createElement('div');
                     childrenContainer.className = 'tree-children';
                     if (hasChildFolders) {
@@ -507,7 +507,7 @@ function generateHtml(tree: string) {
                     if (isActive) {
                         row.classList.add('active');
                     }
-                    
+
                     container.appendChild(row);
                     if (hasChildFolders) {
                         container.appendChild(childrenContainer);
@@ -518,7 +518,7 @@ function generateHtml(tree: string) {
             function renderGrid(items, isSearchResult = false) {
                 const grid = document.getElementById('grid-view');
                 grid.innerHTML = '';
-                
+
                 if (items.length === 0) {
                     grid.innerHTML = '<div class="empty">这个目录下什么都没有哦</div>';
                     return;
@@ -527,7 +527,7 @@ function generateHtml(tree: string) {
                 items.forEach(item => {
                     const card = document.createElement('div');
                     card.className = 'card';
-                    
+
                     if (item.type === 'folder') {
                         card.innerHTML = \`
                             <div class="icon">\${FOLDER_SVG}</div>
@@ -564,7 +564,7 @@ function generateHtml(tree: string) {
             function renderBreadcrumbs() {
                 const bc = document.getElementById('breadcrumbs');
                 bc.innerHTML = '';
-                
+
                 const home = document.createElement('div');
                 home.className = 'crumb';
                 home.innerHTML = HOME_SVG + '&nbsp;首页';
@@ -575,13 +575,13 @@ function generateHtml(tree: string) {
                 };
                 if (currentPath.length === 0) home.classList.add('active');
                 bc.appendChild(home);
-                
+
                 currentPath.forEach((folder, index) => {
                     const sep = document.createElement('span');
                     sep.className = 'sep';
                     sep.innerText = '/';
                     bc.appendChild(sep);
-                    
+
                     const crumb = document.createElement('div');
                     crumb.className = 'crumb';
                     crumb.innerText = folder.name;
@@ -630,13 +630,13 @@ function generateHtml(tree: string) {
                     const matches = allItems.filter(item => item.name.toLowerCase().includes(term) || item.displayName.toLowerCase().includes(term));
                     const bc = document.getElementById('breadcrumbs');
                     bc.innerHTML = \`<div class="crumb active">搜索结果: "\${term}"</div>\`;
-                    
+
                     const searchResults = matches.map(m => ({
                         ...m,
                         name: m.displayName
                     }));
                     renderGrid(searchResults, true);
-                    
+
                     document.querySelectorAll('.tree-item.active').forEach(el => el.classList.remove('active'));
                 }
             });
