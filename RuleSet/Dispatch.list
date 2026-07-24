@@ -62,6 +62,8 @@ DOMAIN-WILDCARD,*-ov*.zjcdn.com
 DOMAIN-WILDCARD,*-zenl-ov.zjcdn.com
 
 # > 其它
+USER-AGENT,LiveIO*
+USER-AGENT,ttplayer*
 DOMAIN,assets.chapturist.com
 DOMAIN,img.css.sd
 DOMAIN,static.superwallassets.com
