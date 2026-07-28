@@ -183,6 +183,10 @@ DOMAIN,yuyin-httpdns.gslb.yy.com
 IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
+# > Telegram
+DOMAIN,mozilla.cloudflare-dns.com
+DOMAIN,dns.google.com
+
 # > 其它
 DOMAIN-KEYWORD,httpdns
 DOMAIN-KEYWORD,hdns
