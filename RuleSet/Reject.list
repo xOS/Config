@@ -227,6 +227,8 @@ DOMAIN,httpdns.n.shifen.com
 DOMAIN-SUFFIX,bcsp2p.baidu.com
 DOMAIN-SUFFIX,edns.ip-api.com
 DOMAIN-SUFFIX,surfsharkdns.com
+DOMAIN-WILDCARD,stun-*.qq.com
+DOMAIN-WILDCARD,*p2p.baidu.com
 IP-CIDR,8.134.241.67/32,no-resolve
 IP-CIDR,186.76.76.200/32,no-resolve
 IP-CIDR,39.156.140.30/32,no-resolve
