@@ -383,7 +383,7 @@ function generateHtml(tree: string) {
             .sidebar-content { display: none; }
             .sidebar-header { border-bottom: none; }
             .main-wrapper { min-height: 0; display: flex; flex-direction: column; }
-            .main-header { flex-direction: column-reverse; height: auto; padding: 12px; gap: 8px; align-items: flex-start; }
+            .main-header { flex-direction: column; height: auto; padding: 12px; gap: 8px; align-items: flex-start; }
             .search-box { width: 100%; }
             .main-body { padding: 12px; overflow: visible; }
             .grid-view { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
