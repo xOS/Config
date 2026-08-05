@@ -114,7 +114,7 @@ async function walk(dir: string, baseUrl: string): Promise<string> {
                             alt="导入 Surge(远程模块)"
                             title="导入 Surge(远程模块)"
                             style="height: 22px"
-                            src="./static/surge-transparent.png"
+                            src="/static/surge-transparent.png"
                             />
                         </a>
                     `;
@@ -135,7 +135,7 @@ function generateHtml(tree: string) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
     <title>Surge 规则库</title>
     <style>
         :root {
@@ -400,11 +400,11 @@ function generateHtml(tree: string) {
         }
 
         @media (max-width: 600px) {
-            body { padding: 8px; gap: 8px; flex-direction: column; height: auto; overflow: auto; }
+            body { padding: 10px; gap: 10px; flex-direction: column; height: auto; overflow: auto; }
             .sidebar { width: 100%; height: auto; }
             .sidebar-content { display: none; }
             .sidebar-header { border-bottom: none; }
-            .main-wrapper { min-height: 0; display: flex; flex-direction: column; }
+            .main-wrapper { min-height: 0; display: flex; flex-direction: column; gap: 10px; }
             .main-header { flex-direction: column; height: auto; padding: 12px; gap: 8px; align-items: flex-start; }
             .search-box { width: 100%; }
             .main-body { padding: 12px; overflow: visible; }
@@ -569,7 +569,7 @@ function generateHtml(tree: string) {
                             <div class="icon">\${iconHtml}</div>
                             <div class="name" title="\${item.name}">\${item.name}</div>
                             <div class="copy-btn" title="复制链接" data-url="\${item.url}">\${COPY_SVG}</div>
-                            \${item.surgeUrl ? \`<div class="action-btn" title="一键导入 Surge" data-url="\${item.surgeUrl}"><img src="./static/surge-transparent.png"></div>\` : ''}
+                            \${item.surgeUrl ? \`<div class="action-btn" title="一键导入 Surge" data-url="\${item.surgeUrl}"><img src="/static/surge-transparent.png"></div>\` : ''}
                         \`;
                         card.onclick = (e) => {
                             const actionBtn = e.target.closest('.action-btn');
@@ -732,7 +732,7 @@ function generate404Html() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/svg+xml" href="./static/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
     <title>404 - 页面未找到</title>
     <style>
         :root {
