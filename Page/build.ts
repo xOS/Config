@@ -874,10 +874,24 @@ async function writeCloudflareHeaders() {
     const headersFilePath = path.join(OUTPUT_DIR, "_headers");
     await fs.writeFile(headersFilePath, headersContent, "utf8");
 
-    // SPA fallback: serve index.html for any path that doesn't match a static file
-    const redirectsContent = `/* /index.html 200`;
-    const redirectsFilePath = path.join(OUTPUT_DIR, "_redirects");
-    await fs.writeFile(redirectsFilePath, redirectsContent, "utf8");
+    // SPA fallback: _worker.js intercepts 404 and serves index.html with 200
+    const workerContent = `export default {
+  async fetch(request, env) {
+    const response = await env.ASSETS.fetch(request);
+    if (response.status !== 404) return response;
+    const url = new URL(request.url);
+    const ext = url.pathname.split('.').pop();
+    const fileExts = ['list','txt','js','json','gif','md','png','jpg','html','mov','mp4','mobileconfig','conf','dconf','mmdb','dat','sgmodule','svg','css','ico','webp'];
+    if (fileExts.includes(ext)) return response;
+    const indexResponse = await env.ASSETS.fetch(new URL('/', request.url));
+    return new Response(indexResponse.body, {
+      status: 200,
+      headers: indexResponse.headers
+    });
+  }
+};`;
+    const workerFilePath = path.join(OUTPUT_DIR, "_worker.js");
+    await fs.writeFile(workerFilePath, workerContent, "utf8");
 }
 
 async function copyRequiredFilesFs() {
