@@ -524,7 +524,7 @@ function generateHtml(tree: string) {
                     row.onclick = (e) => {
                         e.stopPropagation();
                         const newPath = [...path, item];
-                        location.hash = '/' + newPath.map(p => encodeURIComponent(p.name)).join('/');
+                        navigateTo('/' + newPath.map(p => encodeURIComponent(p.name)).join('/'));
                     };
 
                     const isActive = currentPath.length > 0 && currentPath[currentPath.length - 1].name === item.name && currentPath.length === path.length + 1;
@@ -560,7 +560,7 @@ function generateHtml(tree: string) {
                         card.onclick = () => {
                             if(isSearchResult) return;
                             const newPath = [...currentPath, item];
-                            location.hash = '/' + newPath.map(p => encodeURIComponent(p.name)).join('/');
+                            navigateTo('/' + newPath.map(p => encodeURIComponent(p.name)).join('/'));
                         };
                     } else {
                         const isImage = /\\.(jpg|jpeg|png|gif|webp|svg)$/i.test(item.name);
@@ -579,7 +579,8 @@ function generateHtml(tree: string) {
                                 window.open(actionBtn.getAttribute('data-url'), '_blank');
                             } else if (copyBtn) {
                                 e.stopPropagation();
-                                navigator.clipboard.writeText(item.url).then(() => {
+                                const fullUrl = new URL(item.url, location.origin).href;
+                                navigator.clipboard.writeText(fullUrl).then(() => {
                                     copyBtn.innerHTML = CHECK_SVG;
                                     setTimeout(() => {
                                         copyBtn.innerHTML = COPY_SVG;
@@ -602,7 +603,7 @@ function generateHtml(tree: string) {
                 home.className = 'crumb';
                 home.innerHTML = HOME_SVG + '&nbsp;首页';
                 home.onclick = () => {
-                    location.hash = '/';
+                    navigateTo('/');
                 };
                 if (currentPath.length === 0) home.classList.add('active');
                 bc.appendChild(home);
@@ -621,7 +622,7 @@ function generateHtml(tree: string) {
                     } else {
                         crumb.onclick = () => {
                             const newPath = currentPath.slice(0, index + 1);
-                            location.hash = '/' + newPath.map(p => encodeURIComponent(p.name)).join('/');
+                            navigateTo('/' + newPath.map(p => encodeURIComponent(p.name)).join('/'));
                         };
                     }
                     bc.appendChild(crumb);
@@ -636,14 +637,14 @@ function generateHtml(tree: string) {
                 renderSidebar(treeData, sidebarContainer);
             }
 
-            function resolvePathFromHash() {
-                const hash = decodeURIComponent(location.hash.replace(/^#\\/?/, ''));
-                if (!hash) {
+            function resolvePathFromUrl() {
+                const pathStr = decodeURIComponent(location.pathname.replace(/^\/+/, '').replace(/\/+$/, ''));
+                if (!pathStr) {
                     currentPath = [];
                     currentFolder = treeData;
                     return;
                 }
-                const parts = hash.split('/').filter(p => p);
+                const parts = pathStr.split('/').filter(p => p);
                 let current = treeData;
                 let pathArr = [];
                 for (const part of parts) {
@@ -660,16 +661,26 @@ function generateHtml(tree: string) {
                 currentFolder = current;
             }
 
-            window.addEventListener('hashchange', () => {
+            function navigateTo(path) {
+                history.pushState(null, '', path);
                 const searchInput = document.getElementById('search');
                 if (searchInput.value) {
                     searchInput.value = '';
                 }
-                resolvePathFromHash();
+                resolvePathFromUrl();
+                renderApp();
+            }
+
+            window.addEventListener('popstate', () => {
+                const searchInput = document.getElementById('search');
+                if (searchInput.value) {
+                    searchInput.value = '';
+                }
+                resolvePathFromUrl();
                 renderApp();
             });
 
-            resolvePathFromHash();
+            resolvePathFromUrl();
             renderApp();
 
             function getAllItems(items, path = '') {
@@ -859,6 +870,11 @@ async function writeCloudflareHeaders() {
 
     const headersFilePath = path.join(OUTPUT_DIR, "_headers");
     await fs.writeFile(headersFilePath, headersContent, "utf8");
+
+    // SPA fallback: serve index.html for any path that doesn't match a static file
+    const redirectsContent = `/* /index.html 200`;
+    const redirectsFilePath = path.join(OUTPUT_DIR, "_redirects");
+    await fs.writeFile(redirectsFilePath, redirectsContent, "utf8");
 }
 
 async function copyRequiredFilesFs() {
