@@ -367,6 +367,28 @@ function generateHtml(tree: string) {
             border: 1px solid var(--border);
         }
         .action-btn img { width: 11px; height: 11px; filter: brightness(0) saturate(100%) invert(43%) sepia(85%) saturate(1636%) hue-rotate(193deg) brightness(98%) contrast(92%); }
+        
+        .copy-btn {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            background: var(--element-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+            opacity: 0;
+            transition: opacity 0.2s;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+        .card:hover .copy-btn { opacity: 1; }
+        .copy-btn svg { width: 11px; height: 11px; stroke: var(--text-muted); }
+        .copy-btn:hover svg { stroke: var(--primary); }
 
         .empty {
             grid-column: 1 / -1;
@@ -388,6 +410,7 @@ function generateHtml(tree: string) {
             .main-body { padding: 12px; overflow: visible; }
             .grid-view { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
             .card { padding: 6px 4px; }
+            .copy-btn { opacity: 1; }
         }
     </style>
 </head>
@@ -422,6 +445,8 @@ function generateHtml(tree: string) {
         const FILE_SVG = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 2C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8.82843C20 8.29799 19.7893 7.78929 19.4142 7.41421L14.5858 2.58579C14.2107 2.21071 13.702 2 13.1716 2H6Z" fill="#818CF8"/><path d="M14 2V6C14 7.10457 14.8954 8 16 8H20L14 2Z" fill="#A5B4FC"/><path d="M8 13H16" stroke="#C7D2FE" stroke-width="2" stroke-linecap="round"/><path d="M8 17H13" stroke="#C7D2FE" stroke-width="2" stroke-linecap="round"/></svg>';
         const CHEVRON_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>';
         const HOME_SVG = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>';
+        const COPY_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+        const CHECK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
 
         document.addEventListener("DOMContentLoaded", () => {
             const rawTree = document.getElementById('raw-tree');
@@ -546,12 +571,23 @@ function generateHtml(tree: string) {
                         card.innerHTML = \`
                             <div class="icon">\${iconHtml}</div>
                             <div class="name" title="\${item.name}">\${item.name}</div>
+                            <div class="copy-btn" title="复制链接" data-url="\${item.url}">\${COPY_SVG}</div>
                             \${item.surgeUrl ? \`<div class="action-btn" title="一键导入 Surge" data-url="\${item.surgeUrl}"><img src="./static/surge-transparent.png"></div>\` : ''}
                         \`;
                         card.onclick = (e) => {
-                            const btn = e.target.closest('.action-btn');
-                            if (btn) {
-                                window.open(btn.getAttribute('data-url'), '_blank');
+                            const actionBtn = e.target.closest('.action-btn');
+                            const copyBtn = e.target.closest('.copy-btn');
+                            if (actionBtn) {
+                                e.stopPropagation();
+                                window.open(actionBtn.getAttribute('data-url'), '_blank');
+                            } else if (copyBtn) {
+                                e.stopPropagation();
+                                navigator.clipboard.writeText(item.url).then(() => {
+                                    copyBtn.innerHTML = CHECK_SVG;
+                                    setTimeout(() => {
+                                        copyBtn.innerHTML = COPY_SVG;
+                                    }, 2000);
+                                });
                             } else {
                                 window.open(item.url, '_blank');
                             }
