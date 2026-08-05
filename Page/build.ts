@@ -455,6 +455,7 @@ function generateHtml(tree: string) {
             let currentFolder = treeData;
 
             function parseNode(ul) {
+                if (!ul) return [];
                 const items = [];
                 for (let li of ul.children) {
                     if (li.classList.contains('folder')) {
@@ -636,7 +637,7 @@ function generateHtml(tree: string) {
             }
 
             function resolvePathFromHash() {
-                const hash = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
+                const hash = decodeURIComponent(location.hash.replace(/^#\\/?/, ''));
                 if (!hash) {
                     currentPath = [];
                     currentFolder = treeData;

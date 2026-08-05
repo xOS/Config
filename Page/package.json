@@ -15,7 +15,8 @@
     },
     "keywords": [],
     "dependencies": {
-        "fs-extra": "^11.3.0"
+        "fs-extra": "^11.3.0",
+        "jsdom": "^30.0.1"
     },
     "packageManager": "yarn@4.17.0"
 }
