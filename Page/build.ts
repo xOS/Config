@@ -522,10 +522,8 @@ function generateHtml(tree: string) {
 
                     row.onclick = (e) => {
                         e.stopPropagation();
-                        item.isOpen = true;
-                        currentPath = [...path, item];
-                        currentFolder = item.children;
-                        renderApp();
+                        const newPath = [...path, item];
+                        location.hash = '/' + newPath.map(p => encodeURIComponent(p.name)).join('/');
                     };
 
                     const isActive = currentPath.length > 0 && currentPath[currentPath.length - 1].name === item.name && currentPath.length === path.length + 1;
@@ -560,10 +558,8 @@ function generateHtml(tree: string) {
                         \`;
                         card.onclick = () => {
                             if(isSearchResult) return;
-                            item.isOpen = true;
-                            currentPath.push(item);
-                            currentFolder = item.children;
-                            renderApp();
+                            const newPath = [...currentPath, item];
+                            location.hash = '/' + newPath.map(p => encodeURIComponent(p.name)).join('/');
                         };
                     } else {
                         const isImage = /\\.(jpg|jpeg|png|gif|webp|svg)$/i.test(item.name);
@@ -605,9 +601,7 @@ function generateHtml(tree: string) {
                 home.className = 'crumb';
                 home.innerHTML = HOME_SVG + '&nbsp;首页';
                 home.onclick = () => {
-                    currentPath = [];
-                    currentFolder = treeData;
-                    renderApp();
+                    location.hash = '/';
                 };
                 if (currentPath.length === 0) home.classList.add('active');
                 bc.appendChild(home);
@@ -625,9 +619,8 @@ function generateHtml(tree: string) {
                         crumb.classList.add('active');
                     } else {
                         crumb.onclick = () => {
-                            currentPath = currentPath.slice(0, index + 1);
-                            currentFolder = currentPath[currentPath.length - 1].children;
-                            renderApp();
+                            const newPath = currentPath.slice(0, index + 1);
+                            location.hash = '/' + newPath.map(p => encodeURIComponent(p.name)).join('/');
                         };
                     }
                     bc.appendChild(crumb);
@@ -642,6 +635,40 @@ function generateHtml(tree: string) {
                 renderSidebar(treeData, sidebarContainer);
             }
 
+            function resolvePathFromHash() {
+                const hash = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
+                if (!hash) {
+                    currentPath = [];
+                    currentFolder = treeData;
+                    return;
+                }
+                const parts = hash.split('/').filter(p => p);
+                let current = treeData;
+                let pathArr = [];
+                for (const part of parts) {
+                    const folder = current.find(c => c.name === part && c.type === 'folder');
+                    if (folder) {
+                        folder.isOpen = true;
+                        pathArr.push(folder);
+                        current = folder.children;
+                    } else {
+                        break;
+                    }
+                }
+                currentPath = pathArr;
+                currentFolder = current;
+            }
+
+            window.addEventListener('hashchange', () => {
+                const searchInput = document.getElementById('search');
+                if (searchInput.value) {
+                    searchInput.value = '';
+                }
+                resolvePathFromHash();
+                renderApp();
+            });
+
+            resolvePathFromHash();
             renderApp();
 
             function getAllItems(items, path = '') {
