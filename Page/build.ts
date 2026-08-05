@@ -873,25 +873,6 @@ async function writeCloudflareHeaders() {
 
     const headersFilePath = path.join(OUTPUT_DIR, "_headers");
     await fs.writeFile(headersFilePath, headersContent, "utf8");
-
-    // SPA fallback: _worker.js intercepts 404 and serves index.html with 200
-    const workerContent = `export default {
-  async fetch(request, env) {
-    const response = await env.ASSETS.fetch(request);
-    if (response.status !== 404) return response;
-    const url = new URL(request.url);
-    const ext = url.pathname.split('.').pop();
-    const fileExts = ['list','txt','js','json','gif','md','png','jpg','html','mov','mp4','mobileconfig','conf','dconf','mmdb','dat','sgmodule','svg','css','ico','webp'];
-    if (fileExts.includes(ext)) return response;
-    const indexResponse = await env.ASSETS.fetch(new URL('/', request.url));
-    return new Response(indexResponse.body, {
-      status: 200,
-      headers: indexResponse.headers
-    });
-  }
-};`;
-    const workerFilePath = path.join(OUTPUT_DIR, "_worker.js");
-    await fs.writeFile(workerFilePath, workerContent, "utf8");
 }
 
 async function copyRequiredFilesFs() {
@@ -958,6 +939,27 @@ async function copyRequiredFilesFs() {
 }
 
 
+// 递归将 index.html 复制到 public/ 下所有子目录，实现通用 SPA 路由回退
+async function distributeIndexHtml() {
+    const indexHtmlPath = path.join(OUTPUT_DIR, "index.html");
+    async function walkAndCopy(dir: string) {
+        const entries = await fs.readdir(dir, { withFileTypes: true });
+        for (const entry of entries) {
+            if (entry.isDirectory() && entry.name !== 'static') {
+                const subDir = path.join(dir, entry.name);
+                const target = path.join(subDir, "index.html");
+                try {
+                    await fs.access(target);
+                } catch {
+                    await fs.copyFile(indexHtmlPath, target);
+                }
+                await walkAndCopy(subDir);
+            }
+        }
+    }
+    await walkAndCopy(OUTPUT_DIR);
+}
+
 async function build() {
     try {
         await fs.rm(OUTPUT_DIR, { recursive: true, force: true });
@@ -968,9 +970,10 @@ async function build() {
         await writeHtmlFile(html);
         await copyRequiredFilesFs();
         await writeCloudflareHeaders();
+        await distributeIndexHtml();
 
     } catch (error: any) {
-        console.error("Error during build process:", error); // Keep top-level build error log
+        console.error("Error during build process:", error);
         process.exit(1);
     }
 }
