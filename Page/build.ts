@@ -638,7 +638,10 @@ function generateHtml(tree: string) {
             }
 
             function resolvePathFromUrl() {
-                const pathStr = decodeURIComponent(location.pathname.replace(/^\/+/, '').replace(/\/+$/, ''));
+                var p = decodeURIComponent(location.pathname);
+                while (p.charAt(0) === '/') p = p.substring(1);
+                while (p.charAt(p.length - 1) === '/') p = p.substring(0, p.length - 1);
+                const pathStr = p;
                 if (!pathStr) {
                     currentPath = [];
                     currentFolder = treeData;
