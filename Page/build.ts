@@ -21,7 +21,7 @@ const allowedExtensions = [
 const allowedDirectories = ["RuleSet", "Module", "Mock", "MitM", "IconSet", "GeoIP", "Script"];
 
 // --- 新增：定义要隐藏的文件名列表 ---
-const hiddenFiles = ["package.json", "README.md", "vercel.json", "edgeone.json", "wrangler.toml", "_headers"];
+const hiddenFiles = ["package.json", "package-lock.json", "README.md", "vercel.json", "edgeone.json", "wrangler.toml", "_headers"];
 // --- 结束新增 ---
 
 const prioritySorter = (a: Dirent, b: Dirent) => {
@@ -936,10 +936,11 @@ async function copyRequiredFilesFs() {
         }
     }
 
-    // 生成并写入404页面
-    const notFoundHtml = generate404Html();
+    // 将 index.html 复制为 404.html，实现 SPA 路由回退
+    // Cloudflare Pages 在路径匹配到真实目录但无 index.html 时会返回 404.html
+    const indexHtmlPath = path.join(OUTPUT_DIR, "index.html");
     const notFoundFilePath = path.join(OUTPUT_DIR, "404.html");
-    await fs.writeFile(notFoundFilePath, notFoundHtml, "utf8");
+    await fs.copyFile(indexHtmlPath, notFoundFilePath);
 }
 
 
