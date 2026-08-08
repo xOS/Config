@@ -785,6 +785,7 @@ DOMAIN-WILDCARD,suite*.linximpulse.net
 DOMAIN-WILDCARD,t*.playdigo.live
 DOMAIN-WILDCARD,t*.zcvh.net
 DOMAIN-WILDCARD,tag-based.s3.*.amazonaws.com
+DOMAIN-WILDCARD,tag-v*.kuzen.io
 DOMAIN-WILDCARD,tamuvip.*
 DOMAIN-WILDCARD,telemetry.*.pvp.net
 DOMAIN-WILDCARD,telemetry*.transcend.io

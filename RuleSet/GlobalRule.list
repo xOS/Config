@@ -2,23 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
-.host
-.kolet.com
-.listdl.com
-.exp.host
-.i8qiu.com
-.9esim.com
-.lazy-boy-acmer.cn
-.travellings.cn
-.pinpe.top
-.ebaydesc.com
-.indurock.com
-.byteurl.cn
-.fillout.com
-.claydar.com
-.fillout.com
-.geonode.com
-.lamhosting.com
 .06055.com
 .123114.xyz
 .123169.xyz
@@ -58,6 +41,7 @@
 .89868.xyz
 .91jpg2.com
 .999831.xyz
+.9esim.com
 .9sep.org
 .a-bly.com
 .a-mo.net
@@ -293,6 +277,7 @@ bt.sh.cn
 .bytegecko-i18n.com
 .byteintlapi.com
 .byteiota.com
+.byteurl.cn
 .bz
 .ca
 .ca.com
@@ -357,6 +342,7 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .clashcloud.net
 .claw.cloud
 .clawcloudrun.com
+.claydar.com
 .clearhello.com
 .clearscore.com
 .client-api.arkoselabs.com
@@ -506,6 +492,7 @@ dispatchosglobal.yuanshen.com
 e13252.dscg.akamaiedge.net
 e16991.b.akamaiedge.net
 .eascdn.net
+.ebaydesc.com
 .ec
 edge.api.brightcove.com
 edge.apple
@@ -546,6 +533,7 @@ edge.apple
 .execute-api.ap-southeast-1.amazonaws.com
 .execute-api.us-east-1.amazonaws.com
 .exoscale.com
+.exp.host
 .experian.co.uk
 .experian.com
 .expireddomains.net
@@ -565,6 +553,7 @@ fast.rockisland.net
 .felo.me
 .femfits.com
 .fi
+.fillout.com
 .financeads.net
 .findanyfile.app
 .fiona.com
@@ -624,6 +613,7 @@ gateway.ai.cloudflare.com
 .geocerts.com
 .geoiplookup.io
 .geojs.io
+.geonode.com
 .geosn0w.com
 .getblueshift.com
 .getcino.com
@@ -724,6 +714,7 @@ hbounify-prod.evergent.com
 .homefei.net
 .honey-images.com
 .honey.io
+.host
 .hostballs.com
 .hostbuf.com
 .hostcram.com
@@ -752,6 +743,7 @@ hbounify-prod.evergent.com
 .hyperliquid.xyz
 .hypernat.com
 .hyperwallet.com
+.i8qiu.com
 .ibytebox.com
 .icanhazip.com
 .icestr.com
@@ -791,6 +783,7 @@ img.css.sd
 .incapsula.com
 .incognia.com
 .incudal.com
+.indurock.com
 .industries
 .info
 .infomaniak.com
@@ -900,6 +893,7 @@ jules.google.com
 .knowlink-assets.com
 .kochava.com
 .kocowa.com
+.kolet.com
 .kp
 .kr
 .kroo.com
@@ -913,10 +907,12 @@ jules.google.com
 .ky
 .kz
 .la
+.lamhosting.com
 .landian.news
 .lanzou.com
 .laomoe.com
 .lat
+.lazy-boy-acmer.cn
 .lb
 .lc
 .lcn.com
@@ -940,6 +936,7 @@ lily.lat
 linear.tv.apple.com
 .links.cn
 .linveo.com
+.listdl.com
 .liuliangbao.cn
 .liupan.net
 .livechat-support.com
@@ -1227,6 +1224,7 @@ osuspider.yuanshen.com
 .piidc.net
 .ping0.cc
 .ping0.co
+.pinpe.top
 .pixabay.com
 .pk
 .pl
@@ -1556,6 +1554,7 @@ sydney.bing.com
 .transunion.co.uk
 .transunion.com
 .travel
+.travellings.cn
 .trip.com
 .triple.app
 .trustarc.com
@@ -1858,6 +1857,7 @@ youtubei.googleapis.com
 .67id.com
 .6asianporn.com
 .7cow.com
+7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 .7mmtv.me
 .85cc.net
 .85st.com
@@ -11192,6 +11192,7 @@ ztedevices.com
 .2047.name
 .2047.one
 .2049bbs.xyz
+.20thcenturystudios.com
 .20thcenturystudios.com.au
 .20thcenturystudios.com.br
 .20thcenturystudios.jp
@@ -11221,10 +11222,14 @@ ztedevices.com
 .2bit8.com
 .2buybeatsbydre.com
 .2ch.hk
+.2ch.life
 .2ch.net
+.2ch.org
+.2ch.su
 .2chav.com
 .2dgen.com
 .2drdrebeats.com
+.2dust.link
 .2gayboys.com
 .2gis.ae
 .2gis.am
@@ -11621,6 +11626,7 @@ ztedevices.com
 .abc.xyz
 .abcheadphones.com
 .abclider.com
+.abcnews.com
 .abeatsbydrdre.com
 .abebooks.co.uk
 .abebooks.com
@@ -12655,6 +12661,7 @@ ztedevices.com
 .amnesty.org
 .amnesty.org.hk
 .amnestyusa.org
+.amnezia.org
 .amodoll.com
 .amourangels.com
 .amp.akamaized.net
@@ -13927,6 +13934,7 @@ ztedevices.com
 .baltnews.com
 .baltnews.lt
 .bamgrid.com
+.bamtech.net
 .bamtoki.com
 .banan.tv
 .banana-vpn.com
@@ -15800,7 +15808,6 @@ ztedevices.com
 .byspotify.com
 .bystys.tech
 .bytedapm.com
-.byteoversea.com
 .bytick.com
 .c-est-simple.com
 .c-ij.com
@@ -16573,10 +16580,13 @@ ztedevices.com
 .claravenger.com
 .clarivate.com
 .clash.com
+.clashmi.app
 .clashmini.com
 .clashofclans.com
+.clashparty.org
 .clashroyale.com
 .clashroyaleapp.com
+.clashverge.dev
 .clashyun.com
 .clasporno.org
 .classicalguitarblog.net
@@ -16643,9 +16653,11 @@ ztedevices.com
 .cloudflare-ipfs.com
 .cloudflare-quic.com
 .cloudflare-terms-of-service-abuse.com
+.cloudflare.app
 .cloudflare.com
 .cloudflare.dev
 .cloudflare.net
+.cloudflare.pay
 .cloudflare.tv
 .cloudflareaccess.com
 .cloudflareapps.com
@@ -17628,7 +17640,6 @@ ztedevices.com
 .deluxe.com.hk
 .delvenetworks.com
 .demandware.com
-.demdex.net
 .demo.unlock-music.dev
 .democracy.earth
 .demonoid.is
@@ -17680,6 +17691,7 @@ ztedevices.com
 .detaliczny.com
 .detentiongirls.com
 .detodosparatodos.org
+.detpress.com
 .dettol-prize.com
 .dettol.at
 .dettol.be
@@ -17960,7 +17972,9 @@ ztedevices.com
 .disney.ru
 .disney.se
 .disney.sg
+.disneyaccount.com
 .disneyadsales.com
+.disneyanimation.com
 .disneyarena.com
 .disneyaulani.com
 .disneybaby.com
@@ -17976,6 +17990,7 @@ ztedevices.com
 .disneyinternationalhd.com
 .disneyjunior.com
 .disneyjuniortreataday.com
+.disneylandparis.com
 .disneylatino.com
 .disneymagicmoments.co.il
 .disneymagicmoments.co.uk
@@ -17997,11 +18012,14 @@ ztedevices.com
 .disneypeoplesurveys.com
 .disneyplus.bn5x.net
 .disneyplus.com
+.disneyplus.com.ssl.sc.omtrdc.net
+.disneyprivacycenter.com
 .disneyredirects.com
 .disneysrivieraresort.com
 .disneystore.com
 .disneystreaming.com
 .disneysubscription.com
+.disneytermsofuse.com
 .disneytickets.co.uk
 .disneyturkiye.com.tr
 .disneytvajobs.com
@@ -20051,6 +20069,7 @@ ztedevices.com
 .flatmates.com.au
 .flatpak.org
 .flatt.tech
+.flclashx.app
 .fldz8.buzz
 .flecheinthepeche.fr
 .fleshbot.com
@@ -20088,6 +20107,7 @@ ztedevices.com
 .flowgpt.com
 .flowhongkong.net
 .flowtype.org
+.flowvy.io
 .flowwow-images.com
 .flowwow.com
 .fluffychat.im
@@ -20424,6 +20444,7 @@ ztedevices.com
 .freefacebookads.net
 .freefblikes.com
 .freefbx.com
+.freeform.com
 .freegao.com
 .freegaypornhdtube.com
 .freegaysexgames.com
@@ -22445,6 +22466,7 @@ ztedevices.com
 .honestpornreviews.com
 .hongjie10.xyz
 .hongjie11.xyz
+.hongkongdisneyland.com
 .hongkongdoll.tv
 .hongkongdollvideo.org
 .hongkongfp.com
@@ -23410,6 +23432,7 @@ ztedevices.com
 .inclusivegrowthscore.com
 .incommon-rsa.org
 .incredibox.fr
+.incy.cc
 .ind.sh
 .indazn.com
 .indaznlab.com
@@ -24638,6 +24661,7 @@ ztedevices.com
 .karechat.ai
 .karger.com
 .karinahart.com
+.karing.app
 .karlajames.com
 .karmahelp.ru
 .karta-banka-rf.ru
@@ -25458,6 +25482,7 @@ ztedevices.com
 .lubetube.com
 .lucahmelayu.club
 .lucasentertainment.com
+.lucasfilm.com
 .luckydesigner.space
 .luckyissue.com
 .luckymobile.ca
@@ -25872,6 +25897,7 @@ ztedevices.com
 .matome-plus.net
 .matrix.org
 .matrix.to
+.matsuridayo.github.io
 .matters.news
 .matters.one
 .matters.town
@@ -26102,6 +26128,7 @@ ztedevices.com
 .metacloud.com
 .metacpan.org
 .metacritic.com
+.metacubex.github.io
 .metacubex.one
 .metafilter.com
 .metalpha.finance
@@ -27355,7 +27382,6 @@ ztedevices.com
 .naacoalition.org
 .naaktevrouwenporno.com
 .nab.com.au
-.nab.demdex.net
 .nabtravellercard.com.au
 .naiadsystems.com
 .naihenda.shop
@@ -27403,7 +27429,6 @@ ztedevices.com
 .natgeokidsbooks.co.uk
 .natgeomaps.com
 .national-lottery.co.uk
-.nationalaustraliaban.tt.omtrdc.net
 .nationalawakening.org
 .nationalgeographic.com
 .nationalgeographicpartners.com
@@ -27455,6 +27480,7 @@ ztedevices.com
 .nbys.tv
 .nbys1.tv
 .nbyy.tv
+.ncbi.nlm.nih.gov
 .nchrd.org
 .ncl.edu.tw
 .ncloud.com
@@ -27484,6 +27510,7 @@ ztedevices.com
 .neicad.com
 .neiexplicit.com
 .neifea.com
+.neigbuy.com
 .neimotion.com
 .neinastranincad.com
 .neisoftware.com
@@ -28075,6 +28102,7 @@ ztedevices.com
 .nsfw247.to
 .nsfwmemes.com
 .nsimg.net
+.nsloon.com
 .nspk.ru
 .ntc.party
 .ntd.com
@@ -28537,6 +28565,7 @@ ztedevices.com
 .onetrust.com
 .onevps.com
 .oneworldmanystories.com
+.onexray.com
 .onfinality.io
 .onindiansex.com
 .oninstagram.com
@@ -29387,6 +29416,7 @@ ztedevices.com
 .piwheels.org
 .pixanalytics.com
 .pixapp.net
+.pixar.com
 .pixate.com
 .pixeldrain.com
 .pixelqi.com
@@ -30075,6 +30105,7 @@ ztedevices.com
 .privilege.hk
 .privilege.tw
 .privoxy.org
+.prizrak.app
 .procopytips.com
 .proctoscopeexam.com
 .prod-my.games
@@ -30415,6 +30446,7 @@ ztedevices.com
 .r18lu.com
 .r2.dev
 .r34porn.net
+.rabbit-hole-1.gitbook.io
 .rabbitcounter.com
 .rabbitscams.com
 .rabbitscams.sex
@@ -31448,6 +31480,7 @@ ztedevices.com
 .search.aol.com
 .search.com
 .search.xxx
+.searchlightpictures.com
 .searx.me
 .seasidestory.tokyo
 .seattlefdc.com
@@ -31769,6 +31802,7 @@ ztedevices.com
 .shadbase.com
 .shadeyouvpn.com
 .shadowcomplex.com
+.shadowlaunch.com
 .shadowslaves.com
 .shadowsocks.be
 .shadowsocks.com
@@ -32706,6 +32740,8 @@ ztedevices.com
 .starwarsjedifallenorder.com
 .starwarskids.com
 .starwarstheoldrepublic.com
+.stash.wiki
+.stash.ws
 .stateofthemap.com
 .stateofthemap.org
 .static-cisco.com
@@ -33563,6 +33599,7 @@ ztedevices.com
 .theuab.net
 .theverge.com
 .thevirtualsexreview.com
+.thewaltdisneycompany.com
 .theweek.com
 .theweek.in
 .thewgo.org
@@ -33624,6 +33661,7 @@ ztedevices.com
 .threatlabz.com
 .thri.xxx
 .thrixxx.com
+.throneproj.github.io
 .throughnightsfire.com
 .thtmod1.com
 .thuhole.com
@@ -33858,6 +33896,7 @@ ztedevices.com
 .tokyo-sports.co.jp
 .tokyo-tosho.net
 .tokyocn.com
+.tokyodisneyresort.jp
 .tokyomotion.com
 .tokyomotion.net
 .tokyonightstyle.com
@@ -35687,6 +35726,7 @@ ztedevices.com
 .walmart.com
 .walmart.pharmacy
 .walmartimages.com
+.waltdisneystudios.com
 .waltermartin.com
 .waltermartin.org
 .wana-tv.sbs
@@ -35917,6 +35957,7 @@ ztedevices.com
 .wforum.com
 .wgcdn.co
 .wgcrowd.io
+.wgtunnel.com
 .whasil.xyz
 .what-fan.net
 .whatblocked.com
@@ -36138,6 +36179,7 @@ ztedevices.com
 .wirelessreach.com
 .wiremoneytoirelandwithxoomeasierandcheaper.com
 .wireshark.org
+.wiresock.net
 .wise-research.com
 .wise.com
 .wisecoin.com
