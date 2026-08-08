@@ -65,7 +65,7 @@ const networkRetryAttempts = 3
 const networkRetryDelayMs = 1500
 
 const generatedRuleExcludeKeywords = [
-    '*by_*-*.skk.moe',
+    '*.skk.moe',
 ]
 
 const standardTransformations = [

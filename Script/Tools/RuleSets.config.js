@@ -3,7 +3,7 @@
 const { join } = require('path')
 
 const generatedRuleExcludeKeywords = [
-    '*by_*-*.skk.moe',
+    '*.skk.moe',
 ]
 
 const customSection = {
