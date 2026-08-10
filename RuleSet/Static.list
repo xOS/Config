@@ -450,6 +450,7 @@ avts.wmlabs.net
 .avximg.com
 .aweber-static.com
 awsimgsrc.dmm.co.jp
+awsimgsrc.dmm.com
 .awsstatic.com
 .awxcdn.com
 .ax1x.com
@@ -534,6 +535,8 @@ bst.icons8.com
 bucket.noy.asia
 bucket1.notaku.so
 .bugly.qcloud.com
+.buildkiteassets.com
+.buildkiteusercontent.com
 bulletin.svc.litv.tv
 bundle.5gtb.com
 bundle.9gtb.com
@@ -573,7 +576,6 @@ c11.patreon.com
 c13.patreon.com
 c14.patreon.com
 c16.patreon.com
-c17.patreon.com
 c4.patreon.com
 c5.patreon.com
 c6.patreon.com
@@ -730,7 +732,6 @@ cdn.babylonjs.com
 cdn.beacondb.net
 cdn.bfe.dev
 cdn.bfldr.com
-cdn.bigcloud.click
 cdn.birdie.so
 cdn.bitmovin.com
 cdn.blogarama.com
@@ -757,7 +758,9 @@ cdn.candu.ai
 cdn.candy.ai
 cdn.casestudies.svc.ui.com
 cdn.casetify.com
+cdn.catch.dmm.co.jp
 cdn.cbd.int
+cdn.cds.dmm.co.jp
 cdn.cfr.org
 cdn.changelog.com
 cdn.channel.io
@@ -792,7 +795,6 @@ cdn.cuty.io
 .cdn.cwinfo.net
 cdn.cxense.com
 cdn.daily.dev
-cdn.dap.dmm.co.jp
 cdn.daradara.me
 cdn.datacamp.com
 cdn.datatables.net
@@ -924,7 +926,6 @@ cdn.jwplayer.com
 cdn.kinopio.club
 cdn.kinsta.com
 cdn.ko-fi.com
-cdn.koala.live
 cdn.kobo.com
 cdn.langshop.app
 cdn.leandata.com
@@ -1037,7 +1038,6 @@ cdn.readme.io
 cdn.readmoo.com
 cdn.ready-market.com.tw
 cdn.rebuyengine.com
-cdn.recovermycart.com
 cdn.redhat.com
 cdn.redoc.ly
 cdn.redwap.xyz
@@ -1114,7 +1114,6 @@ cdn.super.com
 cdn.svgator.com
 cdn.svgporn.com
 cdn.syftdata.com
-cdn.tabarn.ap
 cdn.tailwindcss.com
 cdn.tatlerasia.com
 cdn.techcommunity.microsoft.com
@@ -1138,7 +1137,6 @@ cdn.trustedsite.com
 cdn.trustpilot.net
 cdn.ttgtmedia.com
 cdn.ttloli.com
-cdn.tuk.dev
 .cdn.turner.com
 cdn.tvpagewidgets.com
 .cdn.ubi.com
@@ -1179,6 +1177,7 @@ cdn.xgroovy.com
 cdn.xvidzz.com
 cdn.yamibuy.com
 cdn.yamibuy.net
+.cdn.yandex.net
 cdn.yinghuazy.xyz
 cdn.you.com
 cdn.ywxi.net
@@ -1585,6 +1584,7 @@ dlstats.izzyondroid.org
 .dlunar.net
 .dm-static.com
 .dmcdn.net
+dmm-extension.com
 .dnvodcdn.me
 do.featurebase.app
 .docker.io
@@ -1595,7 +1595,6 @@ docs.rs
 documenter-assets.pstmn.io
 .dogehls.xyz
 .dolphin-anty-cdn.com
-domain.expiring-soon.xyz
 .doodcdn.co
 .doppiocdn.com
 .doppiocdn.live
@@ -1634,6 +1633,7 @@ easylist-downloads.adblockplus.org
 .easylist.to
 .ebayimg.com
 .ebaystatic.com
+ebook-assets.dmm.co.jp
 .eclipsecontent.org
 ecn.dev.virtualearth.net
 ecommplugins-scripts.trustpilot.com
@@ -2324,7 +2324,6 @@ img.atom.com
 img.atwiki.jp
 img.badgesize.io
 img.biguz.net
-img.catwvod.xyz
 img.clerk.com
 img.community.ui.com
 img.connatix.com
@@ -2360,7 +2359,6 @@ img.ltyears.com
 img.lvv2.com
 img.majors.im
 img.manyse.com
-img.ml0987.com
 img.moedog.org
 img.moegirl.tw
 img.moviefap.com
@@ -2390,13 +2388,11 @@ img.skk.moe
 img.sparemin.com
 img.sparknotes.com
 img.supjav.com
-img.telemetr.io
 img.tg.cc
 img.thingiverse.com
 img.timero.xyz
 img.toto.im
 img.utdstc.com
-img.vim-cn.com
 img.voguehk.com
 img.washingtonpost.com
 img.wikiwand.com
@@ -2470,6 +2466,7 @@ imgs.xkcd.com
 imgs02.aventertainments.com
 imgs3.hcaptcha.com
 .imgsmail.ru
+imgsrc.dmm.com
 imgsrv.crunchyroll.com
 imgssl.constantcontact.com
 .imgtbl.com
@@ -2794,6 +2791,7 @@ media.fidoalliance.org
 media.flaticon.com
 media.formula1.com
 media.fs.com
+media.games.dmm.co.jp
 media.gamestop.com
 media.geeksforgeeks.org
 media.gettr.com
@@ -2931,7 +2929,7 @@ na-library.klarnaservices.com
 namedotcom-cdn.name.tools
 nas2.d.tube
 nav.yumenosora.co.jp
-navismithapis-cdn.com
+.navismithapis-cdn.com
 nbcnewsdigital-static.nbcuni.com
 .nc-img.com
 .ndtvimg.com
@@ -3041,7 +3039,9 @@ ovo.wxw.moe
 ovp.itv.com
 p-cdnstatic.svc.litv.tv
 p-smith.com
+p.book.dmm.co.jp
 p.depot.dev
+p.dmm.co.jp
 p.inari.site
 p.sda1.dev
 p.typekit.net
@@ -3055,6 +3055,7 @@ packages.jetbrains.team
 .packd.liuxingbaoyu.xyz
 .pagecdn.io
 .pages.dev
+panda.dmm.com
 panel-production-libs.b-cdn.net
 .parastorage.com
 .parceljs.org
@@ -3120,6 +3121,7 @@ pim-media.intel.com
 .pimg.tw
 .pinimg.com
 .pipedriveassets.com
+pix.cds.dmm.co.jp
 pixel-cdn.default.com
 .pixelcdn.net
 .pixfs.net
@@ -3414,7 +3416,6 @@ s3-alpha.figma.com
 s3-figma-force-client-reloads-production.figma.com
 s3-figma-plugin-images-production-sig.figma.com
 s3-symbol-logo.tradingview.com
-s3-zen.mds.yandex.net
 s3.2233778.xyz
 s3.aaaaa.io
 s3.acg.mn
@@ -4201,7 +4202,6 @@ tiles-a.koordinates.com
 .tiles-api.maps.komoot.net
 tiles-eu.stadiamaps.com
 tiles.arcgis.com
-tiles.arcticconnect.ca
 .tiles.freemap.sk
 tiles.gsj.jp
 tiles.immich.cloud

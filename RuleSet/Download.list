@@ -323,6 +323,7 @@ dl.motrix.app
 dl.nssurge.com
 dl.nwjs.io
 dl.orangefox.download
+dl.pikpak.io
 dl.pikpak.site
 .dl.playstation.net
 dl.pstmn.io
@@ -377,6 +378,7 @@ download.docker.com
 download.eassos.com
 download.edovia.com
 .download.epicgames.com
+download.fcitx-im.org
 download.fydeos.io
 download.garmin.com
 download.geofabrik.de
@@ -396,7 +398,6 @@ download.mozilla.org
 download.mxfast.com
 download.nektony.com
 download.nodecdn.net
-download.nus.edu.sg
 download.nust.na
 .download.nvidia.com
 download.onlyoffice.com
@@ -447,7 +448,6 @@ dw.uptodown.net
 eclats.crans.org
 .edge.kernel.org
 edge.steam-dns.top.comcast.net
-edge.zerofs.link
 edgedl.me.gvt1.com
 edgeupdates.microsoft.com
 .egdownload.fastly-edge.com
@@ -932,7 +932,6 @@ mirror.hostiko.network
 mirror.hosting90.cz
 mirror.hostnet.nl
 mirror.hs-esslingen.de
-mirror.hyperdedic.ru
 mirror.i3d.net
 mirror.ibcp.fr
 mirror.ietlucknow.ac.in
@@ -1207,7 +1206,6 @@ mirror.za.abantu.cloud
 mirror.za.web4africa.net
 .mirror.zzunipark.com
 .mirror1.gnc.am
-mirror1.hcgen.de
 mirror1.infomaniak.com
 mirror1.ku.ac.th
 mirror1.sox.rs
@@ -1332,7 +1330,6 @@ mirrors.usinternet.com
 mirrors.vcea.wsu.edu
 mirrors.webhs.pt
 mirrors.whoishostingthis.com
-mirrors.wikimedia.org
 mirrors.xmission.com
 mirrors.xmissions.com
 mirrors.xservers.ro
@@ -1804,6 +1801,7 @@ s3.teckids.org
 .s3.us-west-002.backblazeb2.com
 .s3.us-west-1.amazonaws.com
 .s3.us-west-2.amazonaws.com
+.s3.yandex.net
 searchcpan.org
 security.debian.org
 security.ubuntu.com
@@ -1905,7 +1903,6 @@ ubuntu.repo.cure.edu.uy
 ubuntu.rootlicense.com
 ubuntu.securedservers.com
 ubuntu.servering.info
-ubuntu.syxpi.fr
 ubuntu.task.gda.pl
 ubuntu.tuxuri.com
 ubuntu.ucr.ac.cr
