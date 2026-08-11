@@ -385,6 +385,7 @@ assets.unicorn.studio
 assets.unifi-ai.com
 assets.unredacted.org
 assets.upload.io
+assets.userstyles.org
 assets.vantage.sh
 assets.vercel.com
 assets.video.yahoo.net
@@ -593,6 +594,7 @@ cache.industry.siemens.com
 cache.ip-api.com
 cache.mapcomplete.org
 cache.omnicalculator.com
+cache.sgvafs.com
 cached.rebuyengine.com
 cafe.github.com
 canny-assets.io
@@ -1372,6 +1374,7 @@ cloud.typenetwork.com
 .cloudflare-ipfs.com
 .cloudflare.ltd
 cloudflare.tv
+.cloudflarestatus.com
 .cloudflarestream.com
 .cloudforfun.vip
 cloudfront.barilliance.com
@@ -1857,6 +1860,7 @@ fonts.sony.net
 fonts.svc.ui.com
 fonts.twitter.com
 fonts.upset.dev
+fonts.wd40.info
 fonts.zapier.com
 fonts1.unidays.world
 .forbesimg.com
@@ -1927,6 +1931,7 @@ gis.pinkbike.org
 .githack.com
 .github.io
 .githubassets.com
+.githubstatus.com
 .githubusercontent.com
 .gitlab-static.net
 .gitlab.io
@@ -2439,6 +2444,7 @@ img9.yna.co.kr
 .imgair.net
 .imgbox.com
 imgcdn.cna.com.tw
+.imgcdn8.com
 imgcn.bgmbk.tv
 imgcn2.bgmbk.tv
 imgcn3.bgmbk.tv
@@ -2458,6 +2464,7 @@ imgopt.infoq.com
 imgproxy.flathub.org
 imgproxy.fourthwall.com
 .imgproxy.org
+imgproxy.windy.com
 imgrs.apkcombo.com
 imgs.plurk.com
 imgs.search.brave.com
@@ -2846,6 +2853,7 @@ media.theresanaiforthat.com
 media.trakt.tv
 .media.tumblr.com
 media.user.com
+media.wd40.asia
 media.webtoo.ls
 media.wired.com
 media.yukimochi.jp
@@ -2967,6 +2975,7 @@ nightly.link
 .nitrocdn.com
 no-cache.hubspot.com
 node.green
+node.windy.com
 nodeassets.nbcnews.com
 nodebox-runtime.codesandbox.io
 .nodecdn.net
@@ -4030,6 +4039,8 @@ stats.codesandbox.io
 stats.setapp.com
 stats.setapp.macpaw.dev
 status.canarymail.io
+status.claude.com
+status.openai.com
 status.ui.com
 .statuspage.io
 stbff.newfold.com
