@@ -224,6 +224,7 @@ DOMAIN,httpdns.bcelive.com
 DOMAIN,dns.iqiyi.com
 DOMAIN,dns.qiyipic.iqiyi.com
 DOMAIN,httpdns.n.shifen.com
+DOMAIN-SUFFIX,antpcdn.com
 DOMAIN-SUFFIX,bcsp2p.baidu.com
 DOMAIN-SUFFIX,edns.ip-api.com
 DOMAIN-SUFFIX,surfsharkdns.com
