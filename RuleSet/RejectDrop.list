@@ -6,6 +6,7 @@ DOMAIN-KEYWORD,pangolin
 DOMAIN-KEYWORD,undefined
 DOMAIN-KEYWORD,chengdun
 DOMAIN-KEYWORD,180.76.76.
+DOMAIN,googleads.g.doubleclick.net
 DOMAIN,adashx.ut.cainiao.com
 DOMAIN,event-portal.dailyinnovation.biz
 DOMAIN,h2tcbox.baidu.com
@@ -185,6 +186,7 @@ DOMAIN-SUFFIX,in.applicationinsights.azure.com
 DOMAIN-SUFFIX,geo2.adobe.com
 DOMAIN-SUFFIX,easytomessage.com
 DOMAIN-SUFFIX,data.grammarly.com
+DOMAIN-SUFFIX,skadsdkless.appsflyersdk.com
 DOMAIN-WILDCARD,*-ad.mail.ru
 DOMAIN-WILDCARD,sdk.*rtb.net
 DOMAIN-WILDCARD,*msg*.qy.net

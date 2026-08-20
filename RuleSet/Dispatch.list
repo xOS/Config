@@ -64,6 +64,8 @@ DOMAIN-WILDCARD,*-zenl-ov.zjcdn.com
 # > 其它
 //USER-AGENT,LiveIO*
 //USER-AGENT,ttplayer*
+DOMAIN,lf3-ips.zstaticcdn.com
+DOMAIN,assets.piliapp.com
 DOMAIN,assets.chapturist.com
 DOMAIN,img.css.sd
 DOMAIN,static.superwallassets.com
@@ -77,4 +79,7 @@ DOMAIN,ccmdls.adobe.com
 DOMAIN,dl.listdl.com
 DOMAIN,static.kolet.com
 DOMAIN,cdn.claydar.com
+DOMAIN,download.mimestream.com
+DOMAIN,down.nigx.cn
+DOMAIN,image.signature.email
 DOMAIN-SUFFIX,imgs.lazy-boy-acmer.cn
