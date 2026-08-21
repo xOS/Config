@@ -319,7 +319,6 @@ assets.nintendo.com
 assets.northflank.com
 assets.nxtrace.org
 assets.nypost.com
-assets.onestore.ms
 assets.ontrack.com
 assets.openalternative.co
 assets.openlogi.org
@@ -779,7 +778,6 @@ cdn.cms-twdigitalassets.com
 cdn.cnn.com
 cdn.cnx-software.com
 cdn.codeblackbelt.com
-cdn.commandbar.com
 cdn.comparitech.com
 cdn.concert.io
 cdn.configcat.com
@@ -866,6 +864,7 @@ cdn.geekzone.co.nz
 .cdn.getfeedback.com
 cdn.gethypervisual.com
 cdn.getkoala.com
+cdn.getmerlin.in
 cdn.gettr.com
 cdn.ghostery.com
 cdn.giftcardpro.app
@@ -934,6 +933,7 @@ cdn.kobo.com
 cdn.langshop.app
 cdn.leandata.com
 cdn.lemonsqueezy.com
+cdn.leonardo.ai
 cdn.lgrckt-in.com
 cdn.libravatar.org
 cdn.lihkg.com
@@ -1858,6 +1858,7 @@ fonts.gstatic.com
 fonts.loox.io
 fonts.mailerlite.com
 .fonts.net
+fonts.reown.com
 fonts.sony.net
 fonts.svc.ui.com
 fonts.twitter.com
@@ -1873,7 +1874,6 @@ form-assets.mailchimp.com
 .framercdn.com
 .framerstatic.com
 .framerusercontent.com
-frames-commandbar-prod.commandbar.com
 freeshippingbar.herokuapp.com
 front-resource.fs.com
 .frontapp.com
@@ -3432,10 +3432,10 @@ s3-figma-force-client-reloads-production.figma.com
 s3-figma-plugin-images-production-sig.figma.com
 s3-symbol-logo.tradingview.com
 s3.2233778.xyz
-s3.aaaaa.io
 s3.acg.mn
 s3.anilist.co
 s3.arkjp.net
+s3.beta.coinmarketcap.com
 s3.c.im
 s3.coinmarketcap.com
 s3.cointelegraph.com
@@ -3751,7 +3751,6 @@ static.arxiv.org
 static.assetlab.io
 static.assets-stash.eet-china.com
 static.axios.com
-static.bad.news
 static.bangumi.moe
 static.bbc.co.uk
 static.bbci.co.uk
