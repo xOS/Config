@@ -9,12 +9,6 @@
 .1and1.com
 .1gservers.com
 .1poa.net
-.sb.sb
-.sa.net
-.capjs.net
-.seecdn.net
-.proxypurity.com
-.freeipapi.com
 .20000170l4s.my-imcloud.com
 .2345.tn
 .2kz.net
@@ -294,6 +288,7 @@ cache.video.iqiyi.com
 .capitalone-ukeu.apps-imiconnect.io
 .capitalone.co.uk
 .capitalone.com
+.capjs.net
 .cashappapi.com
 .cat
 .cauly.co.kr
@@ -592,6 +587,7 @@ fast.rockisland.net
 .freecreditscore.com
 .freegeoip.app
 .freehosting.com
+.freeipapi.com
 .freenom.com
 .freesound.org
 .freessl.org
@@ -1268,6 +1264,7 @@ prod-api.crackle.com
 .prod-databe.floonet.goog
 .prod.databe.floonet.goog
 .production-public.tubi.io
+.proxypurity.com
 .ps
 .ps.t-mobile.com
 .psg.cdn.hgc.com.hk
@@ -1359,6 +1356,7 @@ rtcg-access.volcvideos.com
 .rwby.site
 .s3-ap-southeast-1.amazonaws.com
 .sa
+.sa.net
 .safebrowsing.apple
 .sakurasj.com
 .saled.cn
@@ -1366,6 +1364,7 @@ rtcg-access.volcvideos.com
 .santisify.top
 .sav.com
 .sb
+.sb.sb
 .sc
 .sc-apps.com
 .scaleway.com
@@ -1376,6 +1375,7 @@ rtcg-access.volcvideos.com
 .securetheorem.com
 .securitytrails.com
 .sedo.com
+.seecdn.net
 .seeip.org
 .seekrtech.com
 .segment.io
@@ -31337,7 +31337,6 @@ ztedevices.com
 .sb-cd.com
 .sb-mobile.jp
 .sb-telecom.net
-.sb.sb
 .sb24.com
 .sbank.ir
 .sber-bank.by
