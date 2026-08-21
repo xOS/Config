@@ -82,4 +82,7 @@ DOMAIN,cdn.claydar.com
 DOMAIN,download.mimestream.com
 DOMAIN,down.nigx.cn
 DOMAIN,image.signature.email
+DOMAIN,static.proxypurity.com
+DOMAIN-SUFFIX,seecdn.net
+DOMAIN-SUFFIX,capjs.net
 DOMAIN-SUFFIX,imgs.lazy-boy-acmer.cn
