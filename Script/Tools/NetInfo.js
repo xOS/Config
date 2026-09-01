@@ -692,7 +692,7 @@ if (CNNET.includes(carrier)) {
                         let baseInfo = locationStr;
                         const isp = json.scamalytics && json.scamalytics.scamalytics_isp;
                         if (isp && isp !== "0" && isp !== "") {
-                            baseInfo += ` ${isp}`; // 保持英文 ISP 名称前有一个空格，视觉更清爽
+                            baseInfo += ` | ${isp}`;
                         }
 
                         let extraParts = [];
