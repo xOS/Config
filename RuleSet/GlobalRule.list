@@ -9,28 +9,6 @@
 .1and1.com
 .1gservers.com
 .1poa.net
-.scamalytics.com
-.nextpls.com
-.rnote.com
-.starryblu.com
-.wpon.cn
-.prodinfra.com
-.cellrebel.com
-.swissuplabs.com
-.kumkoniak.com
-.raku.land
-.land
-.dick.plus
-.plus
-.ogmua.cn
-.skyimg.net
-.searchatlas.com
-.hejustinsun.com
-.qrstuvwxyzab.com
-.sbcloud.com
-.vortexfast.com
-.lvwzhen.com
-.zimperium.com
 .20000170l4s.my-imcloud.com
 .2345.tn
 .2kz.net
@@ -329,6 +307,7 @@ cdn.registerdisney.go.com
 .cdnsun.com
 .cdntip.top
 .cdnway.com
+.cellrebel.com
 .censys.com
 .censys.io
 .centrobill.com
@@ -475,6 +454,7 @@ dashasiafox.akamaized.net
 .dewrain.life
 .dgchost.net
 .dgshen.com
+.dick.plus
 .digital-vm.com
 .digitalattackmap.com
 .dinamicx..com
@@ -714,6 +694,7 @@ hbounify-prod.evergent.com
 .hbr.org
 .hdhome.org
 .hdker.com
+.hejustinsun.com
 .helium.computer
 .heliummobile.com
 .hellohelium.com
@@ -929,6 +910,7 @@ jules.google.com
 .kroo.com
 .kuaim99.com
 .kubilayerdogan.net
+.kumkoniak.com
 .kurun.com
 .kvaedit.site
 .kw
@@ -939,6 +921,7 @@ jules.google.com
 .la
 .ladesk.com
 .lamhosting.com
+.land
 .landian.news
 .lanmajiapp.com
 .lanzou.com
@@ -1005,6 +988,7 @@ lookup-api.apple.com.edgekey.net
 .luminous.dev
 .luxikex.com
 .lv
+.lvwzhen.com
 .ly
 .lync.com
 .lyssna.com
@@ -1134,6 +1118,7 @@ lookup-api.apple.com.edgekey.net
 .newdefend.com
 .news
 .nextlevel.net
+.nextpls.com
 .nezha.wiki
 .nf
 .ng
@@ -1180,6 +1165,7 @@ o33249.ingest.sentry.io
 .octopuscards.com
 ocvideo.apple.com
 .officeppe.net
+.ogmua.cn
 .ohday.cn
 .oilgasmall.com
 .ok.gle
@@ -1270,6 +1256,7 @@ osuspider.yuanshen.com
 .plainmagazine.com
 .players.brightcove.net
 .playerup.com
+.plus
 .pm
 .pn
 .pndsn.com
@@ -1290,6 +1277,7 @@ prod-api.crackle.com
 .prod-controlbe.floonet.goog
 .prod-databe.floonet.goog
 .prod.databe.floonet.goog
+.prodinfra.com
 .production-public.tubi.io
 .proxypurity.com
 .ps
@@ -1312,6 +1300,7 @@ prod-api.crackle.com
 .qm6mq.com
 .qmtao.com
 .qq.pw
+.qrstuvwxyzab.com
 .qscnd.com
 .qsimg26515.com
 .qste.com
@@ -1329,6 +1318,7 @@ prod-api.crackle.com
 .raidforums.com
 .raidrive.com
 .railway.com
+.raku.land
 .rallyuxr.com
 .rapidapi.com
 .raspiweb.com
@@ -1363,6 +1353,7 @@ restricted.sdk.kochava.com
 .rewe.de
 .riskified.com
 .rjsos.com
+.rnote.com
 .ro
 .rocket-apps.co
 .rocketapps.com
@@ -1393,12 +1384,15 @@ rtcg-access.volcvideos.com
 .sav.com
 .sb
 .sb.sb
+.sbcloud.com
 .sc
 .sc-apps.com
 .scaleway.com
+.scamalytics.com
 .scrintal.com
 .sd
 .se
+.searchatlas.com
 .secureserver.net
 .securetheorem.com
 .securitytrails.com
@@ -1445,6 +1439,7 @@ rtcg-access.volcvideos.com
 .sj
 .sk
 .skool.com
+.skyimg.net
 .skypeforbusiness.com
 .skyscanner.net
 .skyscnr.com
@@ -1504,6 +1499,7 @@ st.pautina-telecom.ru
 .staging.databe.floonet.goog
 .star-history.com
 starling-public.byteintlapi.com
+.starryblu.com
 .starwalk.space
 .stash-activation.com
 static.cloudflareinsights.com
@@ -1540,6 +1536,7 @@ staticasiafox.akamaized.net
 .swarmify.com
 .sway-extensions.com
 .swcportal.org
+.swissuplabs.com
 .swrve.com
 .sx
 .sy
@@ -1693,6 +1690,7 @@ visatokenservices-b2c-apis-cn.visa.cn
 .vn
 .vodglcdn.com
 .volcvideos.com
+.vortexfast.com
 .voyagerapis.com
 .voyracloud.com
 .vps-console.com
@@ -1746,6 +1744,7 @@ vudu.com
 .worldvectorlogo.com
 .wplist.org
 .wplocker.com
+.wpon.cn
 .ws
 .wugroansaghadry.com
 .wunderlist.com
@@ -1818,6 +1817,7 @@ youtubei.googleapis.com
 .zfbzhan188.com
 .zhinin.com
 .zhiqubz.com
+.zimperium.com
 .zisp.com
 .zlkb.net
 .zm
