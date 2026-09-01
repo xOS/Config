@@ -23,6 +23,11 @@ const isLikelyCellular = !isLikelyWifi && hasCellularMeta;
 // 支持参数: GeoIPApi=xxx & EnableIPv6=1/0
 let GeoIPApi = "aapl"; // 默认使用 AAPL 接口
 let EnableIPv6 = true; // 默认开启 IPv6
+let ScamalyUser = ""; // Scamalytics User
+let ScamalyKey = ""; // Scamalytics Key
+let ScamalyPolicy = ""; // Scamalytics 自定义请求策略组
+if (typeof $argument !== 'undefined') console.log(`[Script] 参数原始值: ${$argument}`);
+
 if (typeof $argument !== 'undefined' && $argument) {
     const args = $argument.split('&');
     for (const arg of args) {
@@ -32,6 +37,15 @@ if (typeof $argument !== 'undefined' && $argument) {
         }
         if (key === 'EnableIPv6') {
             EnableIPv6 = value === '1' || value === 'true';
+        }
+        if (key === 'ScamalyUser') {
+            ScamalyUser = value;
+        }
+        if (key === 'ScamalyKey') {
+            ScamalyKey = value;
+        }
+        if (key === 'ScamalyPolicy') {
+            ScamalyPolicy = value;
         }
     }
 }
@@ -50,9 +64,40 @@ function isValidIPv6(ip) {
 var CNNET = ['460-03', '460-05', '460-11'];
 var Unicom = ['460-01', '460-06', '460-09'];
 var Mobile = ['460-00', '460-02', '460-04', '460-07', '460-08'];
-var THK = ['454-03', '454-04', '454-05', '454-14']; //和记电讯
 var CBN = ['460-15']; //广电
 var CSR = ['460-20']; //铁路
+
+// 香港
+var CSL = ['454-00', '454-02', '454-10', '454-18'];
+var THK = ['454-03', '454-04', '454-05', '454-14']; //和记电讯
+var SmarTone = ['454-06', '454-15', '454-17'];
+var CMHK = ['454-12', '454-13'];
+var HKT = ['454-19', '454-20'];
+
+// 台湾
+var CHT = ['466-92']; //中华电信
+var TWM = ['466-97']; //台湾大哥大
+var FET = ['466-01']; //远传电信
+var TStar = ['466-89']; //台湾之星
+var APT = ['466-05']; //亚太电信
+
+// 新加坡
+var Singtel = ['525-01', '525-02', '525-07'];
+var M1 = ['525-03'];
+var StarHub = ['525-05'];
+var Simba = ['525-08']; //TPG
+
+// 英国
+var EE = ['234-30', '234-33', '234-34'];
+var O2UK = ['234-02', '234-10', '234-11'];
+var VodaUK = ['234-15'];
+var ThreeUK = ['234-20'];
+
+// 德国
+var TelekomDE = ['262-01', '262-06'];
+var VodaDE = ['262-02', '262-04', '262-09'];
+var O2DE = ['262-03', '262-07', '262-08', '262-11'];
+
 const radioGeneration = {
     'GPRS': '2.5G',
     'CDMA1x': '2.5G',
@@ -81,10 +126,54 @@ if (CNNET.includes(carrier)) {
     server = "中国广电";
 } else if (CSR.includes(carrier)) {
     server = "中国铁路";
+} else if (CSL.includes(carrier)) {
+    server = "csl.";
 } else if (THK.includes(carrier)) {
-    server = "和记电讯";
+    server = "3 HK";
+} else if (SmarTone.includes(carrier)) {
+    server = "SmarTone";
+} else if (CMHK.includes(carrier)) {
+    server = "CMHK";
+} else if (HKT.includes(carrier)) {
+    server = "HKT";
+} else if (CHT.includes(carrier)) {
+    server = "中华电信";
+} else if (TWM.includes(carrier)) {
+    server = "台湾大哥大";
+} else if (FET.includes(carrier)) {
+    server = "远传电信";
+} else if (TStar.includes(carrier)) {
+    server = "台湾之星";
+} else if (APT.includes(carrier)) {
+    server = "亚太电信";
+} else if (Singtel.includes(carrier)) {
+    server = "Singtel";
+} else if (M1.includes(carrier)) {
+    server = "M1";
+} else if (StarHub.includes(carrier)) {
+    server = "StarHub";
+} else if (Simba.includes(carrier)) {
+    server = "SIMBA";
+} else if (EE.includes(carrier)) {
+    server = "EE";
+} else if (O2UK.includes(carrier)) {
+    server = "O2 (UK)";
+} else if (VodaUK.includes(carrier)) {
+    server = "Vodafone (UK)";
+} else if (ThreeUK.includes(carrier)) {
+    server = "Three (UK)";
+} else if (TelekomDE.includes(carrier)) {
+    server = "Telekom (DE)";
+} else if (VodaDE.includes(carrier)) {
+    server = "Vodafone (DE)";
+} else if (O2DE.includes(carrier)) {
+    server = "O2 (DE)";
 } else {
-    server = "蜂窝网络";
+    if (carrier && !/^\d{3}-\d{2,3}$/.test(carrier)) {
+        server = carrier; // 如果 Surge 返回了直接的字符串名称而非代码
+    } else {
+        server = "蜂窝网络";
+    }
 }
 
 (async () => {
@@ -526,10 +615,144 @@ if (CNNET.includes(carrier)) {
             }
         }
     }
+    // 获取 Scamalytics 境外落地 IP 风险信息
+    function getScamalyticsInfo(callback) {
+        console.log('[Scamaly] 启动落地 IP 查询...');
+        $httpClient.get("http://ip-api.com/json?lang=zh-CN", function (err, res, data) {
+            if (err || !data) {
+                console.log('[Scamaly] ip-api 请求失败');
+                callback(null, null);
+                return;
+            }
+            try {
+                const ipJson = JSON.parse(data);
+                const landingIp = ipJson.query;
+                if (!landingIp) {
+                    callback(null, null);
+                    return;
+                }
+                const landingCountry = ipJson.country || '';
+                const landingRegion = ipJson.regionName || '';
+                const landingCity = ipJson.city || '';
+                let locationParts = [landingCountry, landingRegion, landingCity].filter(function (s) { return s && s !== ''; });
+                let locationStr = locationParts.join('').replace(/\s+/g, ''); // 仅包含纯地理位置：美国俄亥俄州哥伦布
 
-    // 直接获取外部 IPv4 信息
-    getExternalIPv4(function (externalIP, info) {
-        if (!externalIP) {
+                // 动态计算对齐的前缀：根据是否包含冒号判定 v6/v4
+                const ipLabel = landingIp.includes(':') ? '落地 IPv6' : '落地 IPv4';
+                const infoLabel = '落地 信息'; // 中间留空格，强行对齐9个半角字符宽度
+                
+                // 即使未配置 Scamalytics 密钥，也要始终显示从 ip-api 获取的落地 IP 和基础地理信息
+                if (!ScamalyUser || !ScamalyKey) {
+                    console.log('[Scamaly] 未配置 Scamalytics 参数，仅返回 ip-api 落地信息');
+                    callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr}`);
+                    return;
+                }
+
+                const scamUrl = `https://api11.scamalytics.com/v3/${ScamalyUser}/?key=${ScamalyKey}&ip=${landingIp}`;
+                console.log(`[Scamaly] 准备请求 Scamalytics, IP: ${landingIp}`);
+
+                
+                let scamDone = false;
+                const scamTimeout = setTimeout(function() {
+                    if (!scamDone) {
+                        scamDone = true;
+                        console.log('[Scamaly] API 触发 3 秒软超时，提前返回');
+                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr} | API连接超时(节点阻断)`);
+                    }
+                }, 3000);
+
+                let opts = {
+                    url: scamUrl,
+                    headers: {
+                        'User-Agent': 'curl/8.7.1',
+                        'Accept': '*/*'
+                    }
+                };
+                if (ScamalyPolicy) {
+                    opts.policy = ScamalyPolicy;
+                    console.log(`[Scamaly] 尝试强行路由至策略组: ${ScamalyPolicy}`);
+                }
+
+                $httpClient.get(opts, function (err2, res2, scamData) {
+                    if (scamDone) return;
+                    clearTimeout(scamTimeout);
+                    scamDone = true;
+
+                    if (err2 || !scamData) {
+                        console.log(`[Scamaly] Scamalytics API 报错/无数据, err: ${err2}`);
+                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr} | 请求失败(路由异常)`);
+                        return;
+                    }
+
+                    try {
+                        const scamStr = scamData.toString();
+                        console.log('[Scamaly] Scamalytics 原始返回长度:', scamStr.length);
+                        const json = JSON.parse(scamStr);
+                        
+                        let baseInfo = locationStr;
+                        const isp = json.scamalytics && json.scamalytics.scamalytics_isp;
+                        if (isp && isp !== "0" && isp !== "") {
+                            baseInfo += ` ${isp}`; // 保持英文 ISP 名称前有一个空格，视觉更清爽
+                        }
+
+                        let extraParts = [];
+                        const proxyType = json.external_datasources && json.external_datasources.ip2proxy && json.external_datasources.ip2proxy.proxy_type;
+                        if (proxyType && proxyType !== "0" && proxyType !== "") {
+                            extraParts.push(`类型: ${proxyType}`);
+                        } else {
+                            extraParts.push(`类型: 家宽`);
+                        }
+                        
+                        const score = json.scamalytics && json.scamalytics.scamalytics_score;
+                        const risk = json.scamalytics && json.scamalytics.scamalytics_risk;
+                        if (score !== undefined && score !== null && score !== "") {
+                            let scoreStr = `风险: ${score}`;
+                            if (risk) {
+                                let riskZH = risk.toLowerCase();
+                                if (riskZH === 'low') riskZH = '低';
+                                else if (riskZH === 'medium') riskZH = '中';
+                                else if (riskZH === 'high') riskZH = '高';
+                                else if (riskZH === 'very high') riskZH = '极高';
+                                scoreStr += `[${riskZH}]`;
+                            }
+                            extraParts.push(scoreStr);
+                        }
+                        
+                        const extraStr = extraParts.length > 0 ? ` | ${extraParts.join(' | ')}` : '';
+                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo}${extraStr}`);
+                    } catch (e) {
+                        console.log('[Scamaly] 解析报错:', e.message);
+                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr}`);
+                    }
+                });
+            } catch (e) {
+                console.log('[Scamaly] ip-api 解析报错');
+                callback(null, null);
+            }
+        });
+    }
+
+    // 三个查询全部并行发起，全部完成后组装面板
+    let tasksDone = 0;
+    const totalTasks = 3;
+    let _externalIP = null, _info = null;
+    let _externalIPv6 = null, _ipv6Info = null, _isIPv6Same = false;
+    let _scamIpStr = null, _scamInfoStr = null;
+
+    // IPv6 掩码函数，缩短过长的 IPv6 地址
+    function maskIPv6(ip) {
+        if (!ip) return ip;
+        if (ip.includes(':')) {
+            return ip.replace(/^(.{7}).+(.{7})$/, "$1****$2");
+        }
+        return ip;
+    }
+
+    function tryFinish() {
+        tasksDone++;
+        if (tasksDone < totalTasks) return;
+
+        if (!_externalIP) {
             $done({
                 title: "外网信息获取失败",
                 content: `无法通过 ${GeoIPApi} 接口获取外部 IP 信息`,
@@ -539,21 +762,78 @@ if (CNNET.includes(carrier)) {
             return;
         }
 
-        // 获取外部 IPv6 地址（简化版）
-        getExternalIPv6(function (externalIPv6, ipv6Info, isIPv6Same) {
-            const body = {
-                title: isLikelyWifi
-                    ? `WiFi 网络${wifiSSID ? ` | ${wifiSSID}` : ''}`
-                    : isLikelyCellular
-                        ? `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`
-                        : '当前网络',
-                content: isLikelyWifi
-                    ? `路由 IPv4：${router}\n内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6}\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`
-                    : `内部 IPv4：${ip}\n外部 IPv4：${externalIP}\n${IPv6 ? (isIPv6Same ? `IPv6 地址：${IPv6}\n` : `内部 IPv6：${IPv6}\n`) : ""}${externalIPv6 && !isIPv6Same ? `外部 IPv6：${externalIPv6}\n` : ""}IPv4 信息：${info}${ipv6Info && ipv6Info !== '公网直连' ? `\nIPv6 信息：${ipv6Info}` : ""}`,
-                icon: isLikelyWifi ? "wifi" : (isLikelyCellular ? "antenna.radiowaves.left.and.right" : "network"),
-                "icon-color": isLikelyWifi ? "#007AFE" : (isLikelyCellular ? "#35C759" : "#8E8E93")
-            };
-            $done(body);
-        });
+        const maskedExtIPv6 = maskIPv6(_externalIPv6);
+
+        const buildContent = (isWifi) => {
+            let lines = [];
+            if (isWifi) lines.push(`路由 IPv4：${router}`);
+            lines.push(`内部 IPv4：${ip}`);
+            lines.push(`外部 IPv4：${_externalIP}`);
+            
+            if (IPv6) {
+                if (_isIPv6Same) {
+                    lines.push(`IPv6 地址：${IPv6}`);
+                } else {
+                    lines.push(`内部 IPv6：${IPv6}`);
+                }
+            }
+            if (maskedExtIPv6 && !_isIPv6Same) {
+                lines.push(`外部 IPv6：${maskedExtIPv6}`);
+            }
+            
+            // 落地 IP 调整到 IPv4 信息之上
+            if (_scamIpStr) {
+                lines.push(_scamIpStr);
+            }
+            
+            lines.push(`IPv4 信息：${_info}`);
+            if (_ipv6Info && _ipv6Info !== '公网直连') {
+                lines.push(`IPv6 信息：${_ipv6Info}`);
+            }
+            
+            // 落地 信息 放在最后一行
+            if (_scamInfoStr) {
+                lines.push(_scamInfoStr);
+            }
+            
+            if (isWifi && !wifiSSID) {
+                lines.push('⚠️ Surge Mac 版 JS 引擎不支持读取 WiFi 名称');
+            }
+            return lines.join('\n');
+        };
+
+        const body = {
+            title: isLikelyWifi
+                ? `WiFi 网络${wifiSSID ? ` | ${wifiSSID}` : (v4.primaryInterface ? ` | ${v4.primaryInterface}` : '')}`
+                : isLikelyCellular
+                    ? `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`
+                    : '当前网络',
+            content: buildContent(isLikelyWifi),
+            icon: isLikelyWifi ? "wifi" : (isLikelyCellular ? "antenna.radiowaves.left.and.right" : "network"),
+            "icon-color": isLikelyWifi ? "#007AFE" : (isLikelyCellular ? "#35C759" : "#8E8E93")
+        };
+        $done(body);
+    }
+
+    // 并行任务 1: 外部 IPv4
+    getExternalIPv4(function (externalIP, info) {
+        _externalIP = externalIP;
+        _info = info;
+        tryFinish();
+    });
+
+    // 并行任务 2: IPv6
+    getExternalIPv6(function (externalIPv6, ipv6Info, isIPv6Same) {
+        _externalIPv6 = externalIPv6;
+        _ipv6Info = ipv6Info;
+        _isIPv6Same = isIPv6Same;
+        tryFinish();
+    });
+
+    // 并行任务 3: Scamalytics 落地 IP
+    getScamalyticsInfo(function (scamIpStr, scamInfoStr) {
+        _scamIpStr = scamIpStr;
+        _scamInfoStr = scamInfoStr;
+        tryFinish();
     });
 })();
