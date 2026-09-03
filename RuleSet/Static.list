@@ -983,7 +983,6 @@ cdn.neverbounce.com
 cdn.nfcube.com
 .cdn.nimg.jp
 .cdn.nintendo.net
-cdn.nodeimage.com
 cdn.nolt.io
 cdn.northropgrumman.com
 cdn.now.gg
@@ -1119,6 +1118,7 @@ cdn.super.com
 cdn.svgator.com
 cdn.svgporn.com
 cdn.syftdata.com
+cdn.system1.com
 cdn.tailwindcss.com
 cdn.tatlerasia.com
 cdn.techcommunity.microsoft.com
@@ -2677,6 +2677,7 @@ latency-test.skk.moe
 launcher-files.modrinth.com
 launcher.spot.im
 launchercontent.mojang.com
+layers.mapq.st
 .lazcdn.com
 .lbpicpic.com
 .lbpictupian.com
@@ -2931,6 +2932,7 @@ mosaic.fxtwitter.com
 .motherlessmedia.com
 mozilla-ohttp.fastly-edge.com
 mparticle.weather.com
+.mqcdn.com
 .msftauthimages.net
 .msftconnecttest.com
 .msftncsi.com
@@ -3000,6 +3002,7 @@ nodeassets.nbcnews.com
 nodebox-runtime.codesandbox.io
 .nodecdn.net
 nodei.co
+.nodeimage.com
 .nodejs.org
 .nordcdn.com
 .notify.bugsnag.com
@@ -4417,6 +4420,7 @@ variations.brave.com
 vbmspic.video.friday.tw
 vcdn.anysex.com
 .vcmdiawe.com
+vector.hereapi.com
 vectorified.com
 .vercel.app
 .vercel.dev
