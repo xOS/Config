@@ -394,7 +394,7 @@ if (CNNET.includes(carrier)) {
                         if (json && json.ip) {
                             const ip = json.ip;
                             console.log(`aapl 提取到IP: ${ip}`);
-                            if (isValidIPv4(ip) || isValidIPv6(ip)) {
+                            if (isValidIPv4(ip)) {
                                 const country = json.country || '';
                                 const region = json.region || '';
                                 const city = json.city || '';
@@ -483,9 +483,8 @@ if (CNNET.includes(carrier)) {
 
             const result = parser(data);
 
-            if (!result.ip || !(isValidIPv4(result.ip) || isValidIPv6(result.ip))) {
-                console.log(`${GeoIPApi} 接口解析失败，解析结果:`, JSON.stringify(result));
-                console.log(`${GeoIPApi} 是否有效IP:`, result.ip ? (isValidIPv4(result.ip) || isValidIPv6(result.ip)) : false);
+            if (!result.ip || !isValidIPv4(result.ip)) {
+                console.log(`${GeoIPApi} 接口解析失败或返回非 IPv4 地址，解析结果:`, JSON.stringify(result));
                 callback(null, null);
                 return;
             }
@@ -616,9 +615,25 @@ if (CNNET.includes(carrier)) {
         }
     }
     // 获取 Scamalytics 境外落地 IP 风险信息
+    // 总预算：ip-api 软超时 1500ms + Scamalytics 软超时 1500ms = 最坏 3s，安全余量 2s
     function getScamalyticsInfo(callback) {
         console.log('[Scamaly] 启动落地 IP 查询...');
+
+        // ip-api 独立 1500ms 软超时，防止冷连接拖垮整体预算
+        let ipApiDone = false;
+        const ipApiTimeout = setTimeout(function() {
+            if (!ipApiDone) {
+                ipApiDone = true;
+                console.log('[Scamaly] ip-api 触发 1.5 秒软超时，跳过落地 IP 查询');
+                callback(null, null);
+            }
+        }, 1500);
+
         $httpClient.get("http://ip-api.com/json?lang=zh-CN", function (err, res, data) {
+            if (ipApiDone) return; // 已超时，忽略回调
+            clearTimeout(ipApiTimeout);
+            ipApiDone = true;
+
             if (err || !data) {
                 console.log('[Scamaly] ip-api 请求失败');
                 callback(null, null);
@@ -651,15 +666,15 @@ if (CNNET.includes(carrier)) {
                 const scamUrl = `https://api11.scamalytics.com/v3/${ScamalyUser}/?key=${ScamalyKey}&ip=${landingIp}`;
                 console.log(`[Scamaly] 准备请求 Scamalytics, IP: ${landingIp}`);
 
-                
+                // Scamalytics 软超时从 3000ms 降至 1500ms，配合 ip-api 的 1500ms，总预算控制在 3s 内
                 let scamDone = false;
                 const scamTimeout = setTimeout(function() {
                     if (!scamDone) {
                         scamDone = true;
-                        console.log('[Scamaly] API 触发 3 秒软超时，提前返回');
+                        console.log('[Scamaly] API 触发 1.5 秒软超时，提前返回');
                         callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr} | API连接超时(节点阻断)`);
                     }
-                }, 3000);
+                }, 1500);
 
                 let opts = {
                     url: scamUrl,
@@ -732,9 +747,9 @@ if (CNNET.includes(carrier)) {
         });
     }
 
-    // 三个查询全部并行发起，全部完成后组装面板
-    let tasksDone = 0;
-    const totalTasks = 3;
+    // Task 1 和 Task 2 完成即渲染，Task 3（落地 IP）抢到就带上，抢不到本次忽略
+    let _task1Done = false, _task2Done = false;
+    let _panelRendered = false;
     let _externalIP = null, _info = null;
     let _externalIPv6 = null, _ipv6Info = null, _isIPv6Same = false;
     let _scamIpStr = null, _scamInfoStr = null;
@@ -748,9 +763,11 @@ if (CNNET.includes(carrier)) {
         return ip;
     }
 
-    function tryFinish() {
-        tasksDone++;
-        if (tasksDone < totalTasks) return;
+    function tryRender() {
+        // 只有 Task 1 和 Task 2 都完成才渲染，且只渲染一次
+        if (!_task1Done || !_task2Done) return;
+        if (_panelRendered) return;
+        _panelRendered = true;
 
         if (!_externalIP) {
             $done({
@@ -815,25 +832,27 @@ if (CNNET.includes(carrier)) {
         $done(body);
     }
 
-    // 并行任务 1: 外部 IPv4
+    // 并行任务 1: 外部 IPv4（核心，必须完成才渲染）
     getExternalIPv4(function (externalIP, info) {
         _externalIP = externalIP;
         _info = info;
-        tryFinish();
+        _task1Done = true;
+        tryRender();
     });
 
-    // 并行任务 2: IPv6
+    // 并行任务 2: IPv6（核心，必须完成才渲染）
     getExternalIPv6(function (externalIPv6, ipv6Info, isIPv6Same) {
         _externalIPv6 = externalIPv6;
         _ipv6Info = ipv6Info;
         _isIPv6Same = isIPv6Same;
-        tryFinish();
+        _task2Done = true;
+        tryRender();
     });
 
-    // 并行任务 3: Scamalytics 落地 IP
+    // 并行任务 3: 落地 IP（非阻塞，抢到就带上，抢不到本次忽略）
     getScamalyticsInfo(function (scamIpStr, scamInfoStr) {
         _scamIpStr = scamIpStr;
         _scamInfoStr = scamInfoStr;
-        tryFinish();
+        tryRender(); // 若 Task 1&2 已完成，本次调用会被 _panelRendered 拦截；若未完成，数据已写入变量，等 Task 1&2 完成时自然带入
     });
 })();
