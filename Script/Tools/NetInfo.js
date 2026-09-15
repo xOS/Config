@@ -1,6 +1,6 @@
 /**
  * Surge 网络信息面板
- * 
+ *
  * IPv6 说明：
  * - IPv6 设计为端到端连接，不需要 NAT（网络地址转换）
  * - 因此内部和外部 IPv6 地址可能相同，这是正常现象
@@ -655,7 +655,7 @@ if (CNNET.includes(carrier)) {
                 // 动态计算对齐的前缀：根据是否包含冒号判定 v6/v4
                 const ipLabel = landingIp.includes(':') ? '落地 IPv6' : '落地 IPv4';
                 const infoLabel = '落地 信息'; // 中间留空格，强行对齐9个半角字符宽度
-                
+
                 // 即使未配置 Scamalytics 密钥，也要始终显示从 ip-api 获取的落地 IP 和基础地理信息
                 if (!ScamalyUser || !ScamalyKey) {
                     console.log('[Scamaly] 未配置 Scamalytics 参数，仅返回 ip-api 落地信息');
@@ -703,7 +703,7 @@ if (CNNET.includes(carrier)) {
                         const scamStr = scamData.toString();
                         console.log('[Scamaly] Scamalytics 原始返回长度:', scamStr.length);
                         const json = JSON.parse(scamStr);
-                        
+
                         let baseInfo = locationStr;
                         const isp = json.scamalytics && json.scamalytics.scamalytics_isp;
                         if (isp && isp !== "0" && isp !== "") {
@@ -717,7 +717,7 @@ if (CNNET.includes(carrier)) {
                         } else {
                             extraParts.push(`类型: 家宽`);
                         }
-                        
+
                         const score = json.scamalytics && json.scamalytics.scamalytics_score;
                         const risk = json.scamalytics && json.scamalytics.scamalytics_risk;
                         if (score !== undefined && score !== null && score !== "") {
@@ -732,7 +732,7 @@ if (CNNET.includes(carrier)) {
                             }
                             extraParts.push(scoreStr);
                         }
-                        
+
                         const extraStr = extraParts.length > 0 ? ` | ${extraParts.join(' | ')}` : '';
                         callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo}${extraStr}`);
                     } catch (e) {
@@ -747,8 +747,8 @@ if (CNNET.includes(carrier)) {
         });
     }
 
-    // Task 1 和 Task 2 完成即渲染，Task 3（落地 IP）抢到就带上，抢不到本次忽略
-    let _task1Done = false, _task2Done = false;
+    // 必须三个任务都完成才渲染
+    let _task1Done = false, _task2Done = false, _task3Done = false;
     let _panelRendered = false;
     let _externalIP = null, _info = null;
     let _externalIPv6 = null, _ipv6Info = null, _isIPv6Same = false;
@@ -764,8 +764,8 @@ if (CNNET.includes(carrier)) {
     }
 
     function tryRender() {
-        // 只有 Task 1 和 Task 2 都完成才渲染，且只渲染一次
-        if (!_task1Done || !_task2Done) return;
+        // 必须三个任务都完成才渲染
+        if (!_task1Done || !_task2Done || !_task3Done) return;
         if (_panelRendered) return;
         _panelRendered = true;
 
@@ -786,7 +786,7 @@ if (CNNET.includes(carrier)) {
             if (isWifi) lines.push(`路由 IPv4：${router}`);
             lines.push(`内部 IPv4：${ip}`);
             lines.push(`外部 IPv4：${_externalIP}`);
-            
+
             if (IPv6) {
                 if (_isIPv6Same) {
                     lines.push(`IPv6 地址：${IPv6}`);
@@ -797,22 +797,22 @@ if (CNNET.includes(carrier)) {
             if (maskedExtIPv6 && !_isIPv6Same) {
                 lines.push(`外部 IPv6：${maskedExtIPv6}`);
             }
-            
+
             // 落地 IP 调整到 IPv4 信息之上
             if (_scamIpStr) {
                 lines.push(_scamIpStr);
             }
-            
+
             lines.push(`IPv4 信息：${_info}`);
             if (_ipv6Info && _ipv6Info !== '公网直连') {
                 lines.push(`IPv6 信息：${_ipv6Info}`);
             }
-            
+
             // 落地 信息 放在最后一行
             if (_scamInfoStr) {
                 lines.push(_scamInfoStr);
             }
-            
+
             if (isWifi && !wifiSSID) {
                 lines.push('⚠️ Surge Mac 版 JS 引擎不支持读取 WiFi 名称');
             }
@@ -849,10 +849,11 @@ if (CNNET.includes(carrier)) {
         tryRender();
     });
 
-    // 并行任务 3: 落地 IP（非阻塞，抢到就带上，抢不到本次忽略）
+    // 并行任务 3: 落地 IP
     getScamalyticsInfo(function (scamIpStr, scamInfoStr) {
         _scamIpStr = scamIpStr;
         _scamInfoStr = scamInfoStr;
-        tryRender(); // 若 Task 1&2 已完成，本次调用会被 _panelRendered 拦截；若未完成，数据已写入变量，等 Task 1&2 完成时自然带入
+        _task3Done = true;
+        tryRender();
     });
 })();
