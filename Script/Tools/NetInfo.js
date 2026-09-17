@@ -7,6 +7,25 @@
  * - 当内外部 IPv6 相同时，显示为"IPv6 地址"
  */
 
+// 兼容 Surge JS 引擎：Surge 原生 console.log 仅输出首个参数，多参数会导致后续值空白丢失
+const _origConsoleLog = console.log;
+console.log = function (...args) {
+    if (!args.length) return _origConsoleLog('');
+    const str = args.map(arg => {
+        if (arg === null) return 'null';
+        if (arg === undefined) return 'undefined';
+        if (typeof arg === 'object') {
+            try {
+                return JSON.stringify(arg, null, 2);
+            } catch (e) {
+                return String(arg);
+            }
+        }
+        return String(arg);
+    }).join(' ');
+    _origConsoleLog(str);
+};
+
 const { wifi, v4, v6 } = $network;
 const IPv4 = v4.primaryAddress;
 const cellularData = $network["cellular-data"];
@@ -241,7 +260,7 @@ if (CNNET.includes(carrier)) {
                     try {
                         console.log(`bilibili 解析器收到数据: [${data.toString()}]`);
                         const json = JSON.parse(data);
-                        console.log(`bilibili JSON解析结果:`, JSON.stringify(json, null, 2));
+                        console.log(`bilibili JSON解析结果: ${JSON.stringify(json, null, 2)}`);
 
                         if (json && json.code === 0 && json.data && json.data.addr) {
                             const ip = json.data.addr;
@@ -267,7 +286,7 @@ if (CNNET.includes(carrier)) {
                         }
                         return { ip: null, info: null };
                     } catch (e) {
-                        console.log('bilibili 解析器出错:', e.message);
+                        console.log(`bilibili 解析器出错: ${e.message}`);
                         return { ip: null, info: null };
                     }
                 };
@@ -286,7 +305,7 @@ if (CNNET.includes(carrier)) {
                         // 第三行：AS号码
                         // 第四行：商家名称
                         const lines = dataStr.split('\n').map(line => line.trim()).filter(line => line);
-                        console.log(`ping0 按行分割结果:`, lines);
+                        console.log(`ping0 按行分割结果: ${JSON.stringify(lines)}`);
 
                         if (lines.length >= 2) {
                             const ip = lines[0]; // 第一行是IPv4地址
@@ -334,7 +353,7 @@ if (CNNET.includes(carrier)) {
 
                         return { ip: null, info: null };
                     } catch (e) {
-                        console.log('ping0 解析器出错:', e.message);
+                        console.log(`ping0 解析器出错: ${e.message}`);
                         return { ip: null, info: null };
                     }
                 };
@@ -346,7 +365,7 @@ if (CNNET.includes(carrier)) {
                     try {
                         console.log(`pingan 解析器收到数据: [${data.toString()}]`);
                         const json = JSON.parse(data);
-                        console.log(`pingan JSON解析结果:`, JSON.stringify(json, null, 2));
+                        console.log(`pingan JSON解析结果: ${JSON.stringify(json, null, 2)}`);
 
                         if (json && json.code === 0 && json.data && json.data.ip) {
                             const ip = json.data.ip;
@@ -374,7 +393,7 @@ if (CNNET.includes(carrier)) {
                         }
                         return { ip: null, info: null };
                     } catch (e) {
-                        console.log('pingan 解析器出错:', e.message);
+                        console.log(`pingan 解析器出错: ${e.message}`);
                         return { ip: null, info: null };
                     }
                 };
@@ -390,7 +409,7 @@ if (CNNET.includes(carrier)) {
                         if (Array.isArray(json)) {
                             json = json[0] || {};
                         }
-                        console.log(`aapl JSON解析结果:`, JSON.stringify(json, null, 2));
+                        console.log(`aapl JSON解析结果: ${JSON.stringify(json, null, 2)}`);
                         if (json && json.ip) {
                             const ip = json.ip;
                             console.log(`aapl 提取到IP: ${ip}`);
@@ -444,7 +463,7 @@ if (CNNET.includes(carrier)) {
                         }
                         return { ip: null, info: null };
                     } catch (e) {
-                        console.log('aapl 解析器出错:', e.message);
+                        console.log(`aapl 解析器出错: ${e.message}`);
                         return { ip: null, info: null };
                     }
                 };
@@ -471,15 +490,15 @@ if (CNNET.includes(carrier)) {
             ipv4Done = true;
 
             if (error) {
-                console.log(`${GeoIPApi} 接口请求错误:`, error);
+                console.log(`${GeoIPApi} 接口请求错误: ${error}`);
                 console.log(`${GeoIPApi} 请求URL: ${url}`);
                 callback(null, null);
                 return;
             }
 
-            console.log(`${GeoIPApi} 响应状态码:`, response ? response.status : 'no response');
+            console.log(`${GeoIPApi} 响应状态码: ${response ? response.status : 'no response'}`);
             if (response && response.headers) {
-                console.log(`${GeoIPApi} 响应头:`, JSON.stringify(response.headers, null, 2));
+                console.log(`${GeoIPApi} 响应头:\n${JSON.stringify(response.headers, null, 2)}`);
             }
 
             if (!data) {
@@ -492,17 +511,17 @@ if (CNNET.includes(carrier)) {
             const dataStr = data ? data.toString() : 'null';
             console.log(`${GeoIPApi} 接口返回完整数据: [${dataStr}]`);
             console.log(`${GeoIPApi} 接口数据长度: ${dataStr.length}`);
-            console.log(`${GeoIPApi} 接口数据类型:`, typeof data);
+            console.log(`${GeoIPApi} 接口数据类型: ${typeof data}`);
 
             const result = parser(data);
 
             if (!result.ip || !isValidIPv4(result.ip)) {
-                console.log(`${GeoIPApi} 接口解析失败或返回非 IPv4 地址，解析结果:`, JSON.stringify(result));
+                console.log(`${GeoIPApi} 接口解析失败或返回非 IPv4 地址，解析结果: ${JSON.stringify(result)}`);
                 callback(null, null);
                 return;
             }
 
-            console.log(`${GeoIPApi} 接口解析成功:`, JSON.stringify(result));
+            console.log(`${GeoIPApi} 接口解析成功: ${JSON.stringify(result)}`);
             callback(result.ip, result.info || '未知地区');
         });
     }
@@ -740,7 +759,7 @@ if (CNNET.includes(carrier)) {
 
                     try {
                         const scamStr = scamData.toString();
-                        console.log('[Scamaly] Scamalytics 原始返回长度:', scamStr.length);
+                        console.log(`[Scamaly] Scamalytics 原始返回长度: ${scamStr.length}`);
                         const json = JSON.parse(scamStr);
 
                         // 风险中文翻译辅助函数
@@ -795,7 +814,7 @@ if (CNNET.includes(carrier)) {
                         const extraStr = extraParts.length > 0 ? ` | ${extraParts.join(' | ')}` : '';
                         callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo}${extraStr}`);
                     } catch (e) {
-                        console.log('[Scamaly] 解析报错:', e.message);
+                        console.log(`[Scamaly] 解析报错: ${e.message}`);
                         callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo}`);
                     }
                 });
