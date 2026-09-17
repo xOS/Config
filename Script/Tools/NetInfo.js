@@ -652,14 +652,27 @@ if (CNNET.includes(carrier)) {
                 let locationParts = [landingCountry, landingRegion, landingCity].filter(function (s) { return s && s !== ''; });
                 let locationStr = locationParts.join('').replace(/\s+/g, ''); // 仅包含纯地理位置：美国俄亥俄州哥伦布
 
+                // 从 ip-api.com 获取 isp 和 org
+                const landingIsp = ipJson.isp || '';
+                const landingOrg = ipJson.org || '';
+                let ispParts = [];
+                if (landingIsp) ispParts.push(landingIsp);
+                if (landingOrg && landingOrg !== landingIsp) ispParts.push(landingOrg);
+                const landingIspOrg = ispParts.join(' ');
+
+                let baseInfo = locationStr;
+                if (landingIspOrg) {
+                    baseInfo += ` | ${landingIspOrg}`;
+                }
+
                 // 动态计算对齐的前缀：根据是否包含冒号判定 v6/v4
                 const ipLabel = landingIp.includes(':') ? '落地 IPv6' : '落地 IPv4';
                 const infoLabel = '落地 信息'; // 中间留空格，强行对齐9个半角字符宽度
 
-                // 即使未配置 Scamalytics 密钥，也要始终显示从 ip-api 获取的落地 IP 和基础地理信息
+                // 即使未配置 Scamalytics 密钥，也要始终显示从 ip-api 获取的落地 IP 和基础地理/运营商信息
                 if (!ScamalyUser || !ScamalyKey) {
                     console.log('[Scamaly] 未配置 Scamalytics 参数，仅返回 ip-api 落地信息');
-                    callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr}`);
+                    callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo}`);
                     return;
                 }
 
@@ -672,7 +685,7 @@ if (CNNET.includes(carrier)) {
                     if (!scamDone) {
                         scamDone = true;
                         console.log('[Scamaly] API 触发 1.5 秒软超时，提前返回');
-                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr} | API连接超时(节点阻断)`);
+                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo} | API连接超时(节点阻断)`);
                     }
                 }, 1500);
 
@@ -695,7 +708,7 @@ if (CNNET.includes(carrier)) {
 
                     if (err2 || !scamData) {
                         console.log(`[Scamaly] Scamalytics API 报错/无数据, err: ${err2}`);
-                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr} | 请求失败(路由异常)`);
+                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo} | 请求失败(路由异常)`);
                         return;
                     }
 
@@ -704,40 +717,60 @@ if (CNNET.includes(carrier)) {
                         console.log('[Scamaly] Scamalytics 原始返回长度:', scamStr.length);
                         const json = JSON.parse(scamStr);
 
-                        let baseInfo = locationStr;
-                        const isp = json.scamalytics && json.scamalytics.scamalytics_isp;
-                        if (isp && isp !== "0" && isp !== "") {
-                            baseInfo += ` | ${isp}`;
+                        // 风险中文翻译辅助函数
+                        function formatRiskZH(r) {
+                            if (!r) return '';
+                            const lower = r.toString().toLowerCase().replace(/_/g, ' ');
+                            if (lower === 'low') return '低';
+                            if (lower === 'medium') return '中';
+                            if (lower === 'high') return '高';
+                            if (lower === 'very high') return '极高';
+                            return r;
                         }
 
                         let extraParts = [];
-                        const proxyType = json.external_datasources && json.external_datasources.ip2proxy && json.external_datasources.ip2proxy.proxy_type;
-                        if (proxyType && proxyType !== "0" && proxyType !== "") {
-                            extraParts.push(`类型: ${proxyType}`);
-                        } else {
-                            extraParts.push(`类型: 家宽`);
+
+                        // 替代 ip2proxy.proxy_type：读取 scamalytics_proxy 中为 true 的字段
+                        const proxyObj = json.scamalytics && json.scamalytics.scamalytics_proxy;
+                        if (proxyObj && typeof proxyObj === 'object') {
+                            let proxyTypes = [];
+                            if (proxyObj.is_datacenter === true || proxyObj.is_datacenter === 'true') proxyTypes.push('数据中心');
+                            if (proxyObj.is_vpn === true || proxyObj.is_vpn === 'true') proxyTypes.push('代理');
+                            if (proxyObj.is_apple_icloud_private_relay === true || proxyObj.is_apple_icloud_private_relay === 'true') proxyTypes.push('苹果代理');
+                            if (proxyObj.is_amazon_aws === true || proxyObj.is_amazon_aws === 'true') proxyTypes.push('亚马逊');
+                            if (proxyObj.is_google === true || proxyObj.is_google === 'true') proxyTypes.push('谷歌');
+                            if (proxyTypes.length > 0) {
+                                extraParts.push(`类型: ${proxyTypes.join('|')}`);
+                            }
                         }
 
+                        // IP 风险与等级
                         const score = json.scamalytics && json.scamalytics.scamalytics_score;
                         const risk = json.scamalytics && json.scamalytics.scamalytics_risk;
                         if (score !== undefined && score !== null && score !== "") {
                             let scoreStr = `风险: ${score}`;
                             if (risk) {
-                                let riskZH = risk.toLowerCase();
-                                if (riskZH === 'low') riskZH = '低';
-                                else if (riskZH === 'medium') riskZH = '中';
-                                else if (riskZH === 'high') riskZH = '高';
-                                else if (riskZH === 'very high') riskZH = '极高';
-                                scoreStr += `[${riskZH}]`;
+                                scoreStr += `[${formatRiskZH(risk)}]`;
                             }
                             extraParts.push(scoreStr);
+                        }
+
+                        // ISP 风险与等级
+                        const ispScore = json.scamalytics && json.scamalytics.scamalytics_isp_score;
+                        const ispRisk = json.scamalytics && json.scamalytics.scamalytics_isp_risk;
+                        if (ispScore !== undefined && ispScore !== null && ispScore !== "") {
+                            let ispScoreStr = `ISP风险: ${ispScore}`;
+                            if (ispRisk) {
+                                ispScoreStr += `[${formatRiskZH(ispRisk)}]`;
+                            }
+                            extraParts.push(ispScoreStr);
                         }
 
                         const extraStr = extraParts.length > 0 ? ` | ${extraParts.join(' | ')}` : '';
                         callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo}${extraStr}`);
                     } catch (e) {
                         console.log('[Scamaly] 解析报错:', e.message);
-                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${locationStr}`);
+                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo}`);
                     }
                 });
             } catch (e) {
