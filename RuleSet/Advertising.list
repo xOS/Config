@@ -807,7 +807,6 @@ DOMAIN-WILDCARD,tracker*.qcloud.com
 DOMAIN-WILDCARD,tracking-*.trnox.com
 DOMAIN-WILDCARD,tracking-v*.a.run.app
 DOMAIN-WILDCARD,tracking.*.miui.com
-DOMAIN-WILDCARD,tracking.geo.*.amazonaws.com
 DOMAIN-WILDCARD,tracking*.euroads.fi
 DOMAIN-WILDCARD,trck.*.prod-na.turntable.sonic.advertising.amazon.dev
 DOMAIN-WILDCARD,trk*.vidible.tv
@@ -831,6 +830,7 @@ DOMAIN-WILDCARD,v.newsportal*.ru
 DOMAIN-WILDCARD,v.tzbox*.xyz
 DOMAIN-WILDCARD,v*-ad.video.yximgs.com
 DOMAIN-WILDCARD,v*.sitecounter.site
+DOMAIN-WILDCARD,valentine.xhamster.*
 DOMAIN-WILDCARD,vns86.oss-*.aliyuncs.com
 DOMAIN-WILDCARD,w*statistics.info
 DOMAIN-WILDCARD,weblogger-wss.cool*cloud.com
