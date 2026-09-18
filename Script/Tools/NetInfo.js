@@ -793,7 +793,7 @@ if (CNNET.includes(carrier)) {
                         const score = json.scamalytics && json.scamalytics.scamalytics_score;
                         const risk = json.scamalytics && json.scamalytics.scamalytics_risk;
                         if (score !== undefined && score !== null && score !== "") {
-                            let scoreStr = `风险: ${score}`;
+                            let scoreStr = `IP 风险: ${score}`;
                             if (risk) {
                                 scoreStr += `[${formatRiskZH(risk)}]`;
                             }
