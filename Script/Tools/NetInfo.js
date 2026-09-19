@@ -51,19 +51,20 @@ if (typeof $argument !== 'undefined' && $argument) {
     const args = $argument.split('&');
     for (const arg of args) {
         const [key, value] = arg.split('=');
-        if (key === 'GeoIPApi') {
+        const trimmedKey = key ? key.trim() : '';
+        if (trimmedKey === 'GeoIPApi') {
             GeoIPApi = value;
         }
-        if (key === 'EnableIPv6') {
+        if (trimmedKey === 'EnableIPv6' || trimmedKey.endsWith('EnableIPv6')) {
             EnableIPv6 = value === '1' || value === 'true';
         }
-        if (key === 'ScamalyUser') {
+        if (trimmedKey === 'ScamalyUser') {
             ScamalyUser = value;
         }
-        if (key === 'ScamalyKey') {
+        if (trimmedKey === 'ScamalyKey') {
             ScamalyKey = value;
         }
-        if (key === 'ScamalyPolicy') {
+        if (trimmedKey === 'ScamalyPolicy') {
             ScamalyPolicy = value;
         }
     }
@@ -79,6 +80,14 @@ function isValidIPv4(ip) {
 function isValidIPv6(ip) {
     const ipv6Regex = /^([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$|^::1$|^::$|^([0-9a-fA-F]{1,4}:){1,7}:$|^([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}$|^([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}$|^([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}$|^([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}$|^([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}$|^[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})$|^:((:[0-9a-fA-F]{1,4}){1,7}|:)$/;
     return ipv6Regex.test(ip);
+}
+
+// 判定是否为全球可路由的公网 IPv6 地址（2000::/3，即以 2 或 3 开头）
+// 过滤掉链路本地 (fe80::)、唯一本地私网 (fc00::/fd00::)、回环 (::1) 等非公网地址
+function isPublicIPv6(ip) {
+    if (!ip || typeof ip !== 'string') return false;
+    const trimmed = ip.trim();
+    return /^[23][0-9a-fA-F]{3}:/i.test(trimmed) && isValidIPv6(trimmed);
 }
 var CNNET = ['460-03', '460-05', '460-11'];
 var Unicom = ['460-01', '460-06', '460-09'];
@@ -513,10 +522,13 @@ if (CNNET.includes(carrier)) {
         });
     }
 
-    // 获取外部 IPv6 地址的函数（恢复对支持接口的一次外部查询）
+    // 获取外部 IPv6 地址的函数（针对仅有 IPv6 环境的接口专项优化）
     function getExternalIPv6(callback) {
-        // 未开启或本机无 IPv6，直接返回
-        if (!EnableIPv6 || !IPv6) {
+        const rawIPv6 = v6 && v6.primaryAddress ? v6.primaryAddress.trim() : '';
+
+        // 未开启或本机无公网 IPv6 环境，直接 0 延迟返回，避免拖慢其它 API
+        // 注意：ipv6.aapls.com 仅存在于纯 IPv6 环境，若当前无公网 IPv6（如链路本地 fe80:: 或局域网私网），发起请求必会握手挂死
+        if (!EnableIPv6 || !rawIPv6 || !isPublicIPv6(rawIPv6)) {
             callback(null, null, false);
             return;
         }
