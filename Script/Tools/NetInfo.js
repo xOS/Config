@@ -34,8 +34,23 @@ const primaryRouter = (v4 && v4.primaryRouter) || '';
 const cellularData = $network["cellular-data"];
 const radio = (cellularData && cellularData.radio) ? String(cellularData.radio).trim() : '';
 const carrier = (cellularData && cellularData.carrier) ? String(cellularData.carrier).trim() : '';
-const wifiSSID = (wifi && typeof wifi.ssid === 'string') ? wifi.ssid.trim() : '';
-const wifiBSSID = (wifi && typeof wifi.bssid === 'string') ? wifi.bssid.trim() : '';
+
+// 动态提取 Wi-Fi SSID 与 BSSID（兼容大小写属性、非字符串及不同平台暴露位置）
+function getWifiSSID() {
+    const net = (typeof $network !== 'undefined' && $network) ? $network : {};
+    const w = net.wifi || {};
+    const raw = (w.ssid != null ? w.ssid : w.SSID) ?? (net.ssid != null ? net.ssid : net.SSID);
+    return (raw != null && raw !== '') ? String(raw).trim() : '';
+}
+function getWifiBSSID() {
+    const net = (typeof $network !== 'undefined' && $network) ? $network : {};
+    const w = net.wifi || {};
+    const raw = (w.bssid != null ? w.bssid : w.BSSID) ?? (net.bssid != null ? net.bssid : net.BSSID);
+    return (raw != null && raw !== '') ? String(raw).trim() : '';
+}
+
+const wifiSSID = getWifiSSID();
+const wifiBSSID = getWifiBSSID();
 
 // 运行平台与设备机型智能识别
 const envSystem = (typeof $environment !== 'undefined' && $environment && $environment.system) ? $environment.system : '';
@@ -945,8 +960,15 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
             return lines.join('\n');
         };
 
+        // 渲染时重新尝试读取一次最新的 Wi-Fi 名称（避免脚本启动瞬态系统尚未完成 CoreWLAN 异步回调）
+        let effectiveTitle = panelTitle;
+        if (networkType === 'WIFI') {
+            const latestSSID = getWifiSSID() || wifiSSID;
+            effectiveTitle = latestSSID ? `WiFi 网络 | ${latestSSID}` : 'WiFi 网络';
+        }
+
         const body = {
-            title: panelTitle,
+            title: effectiveTitle,
             content: buildContent(),
             icon: panelIcon,
             "icon-color": panelColor
