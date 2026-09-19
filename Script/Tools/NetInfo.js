@@ -474,21 +474,8 @@ if (CNNET.includes(carrier)) {
                 return;
         }
 
-        // 增加 3.5 秒独立超时保护，防止接口偶发挂起拖死整个面板
-        let ipv4Done = false;
-        const ipv4Timeout = setTimeout(function () {
-            if (!ipv4Done) {
-                ipv4Done = true;
-                console.log(`[IPv4] ${GeoIPApi} 接口请求超时 (3.5s)`);
-                callback(null, null);
-            }
-        }, 3500);
-
+        // 直接一次请求，不做特殊重试与定制超时（与 aapl 策略一致）
         $httpClient.get(url, function (error, response, data) {
-            if (ipv4Done) return;
-            clearTimeout(ipv4Timeout);
-            ipv4Done = true;
-
             if (error) {
                 console.log(`${GeoIPApi} 接口请求错误: ${error}`);
                 console.log(`${GeoIPApi} 请求URL: ${url}`);
@@ -545,20 +532,7 @@ if (CNNET.includes(carrier)) {
                 ipv6Url = "https://ipv6.aapls.com/v1/geoip?lang=zh";
             }
 
-            let ipv6Done = false;
-            const ipv6Timeout = setTimeout(function () {
-                if (!ipv6Done) {
-                    ipv6Done = true;
-                    console.log(`[IPv6] ${GeoIPApi} 接口请求超时 (3.0s)`);
-                    callback(null, null, false);
-                }
-            }, 3000);
-
             $httpClient.get(ipv6Url, function (error, response, data) {
-                if (ipv6Done) return;
-                clearTimeout(ipv6Timeout);
-                ipv6Done = true;
-
                 if (error || !data) {
                     callback(null, null, false);
                     return;
@@ -664,21 +638,7 @@ if (CNNET.includes(carrier)) {
     function getScamalyticsInfo(callback) {
         console.log('[Scamaly] 启动落地 IP 查询...');
 
-        // ip-api 提高至 2500ms 超时，确保代理节点冷启动连接充分建立
-        let ipApiDone = false;
-        const ipApiTimeout = setTimeout(function() {
-            if (!ipApiDone) {
-                ipApiDone = true;
-                console.log('[Scamaly] ip-api 触发 2.5 秒软超时，跳过落地 IP 查询');
-                callback(null, null);
-            }
-        }, 2500);
-
         $httpClient.get("http://ip-api.com/json?lang=zh-CN", function (err, res, data) {
-            if (ipApiDone) return; // 已超时，忽略回调
-            clearTimeout(ipApiTimeout);
-            ipApiDone = true;
-
             if (err || !data) {
                 console.log('[Scamaly] ip-api 请求失败');
                 callback(null, null);
@@ -724,16 +684,6 @@ if (CNNET.includes(carrier)) {
                 const scamUrl = `https://api11.scamalytics.com/v3/${ScamalyUser}/?key=${ScamalyKey}&ip=${landingIp}`;
                 console.log(`[Scamaly] 准备请求 Scamalytics, IP: ${landingIp}`);
 
-                // Scamalytics 软超时提高至 2000ms，为外网查询留足时间
-                let scamDone = false;
-                const scamTimeout = setTimeout(function() {
-                    if (!scamDone) {
-                        scamDone = true;
-                        console.log('[Scamaly] API 触发 2.0 秒软超时，提前返回');
-                        callback(`${ipLabel}：${maskIPv6(landingIp)}`, `${infoLabel}：${baseInfo} | API连接超时(节点阻断)`);
-                    }
-                }, 2000);
-
                 let opts = {
                     url: scamUrl,
                     headers: {
@@ -747,9 +697,6 @@ if (CNNET.includes(carrier)) {
                 }
 
                 $httpClient.get(opts, function (err2, res2, scamData) {
-                    if (scamDone) return;
-                    clearTimeout(scamTimeout);
-                    scamDone = true;
 
                     if (err2 || !scamData) {
                         console.log(`[Scamaly] Scamalytics API 报错/无数据, err: ${err2}`);
@@ -841,21 +788,11 @@ if (CNNET.includes(carrier)) {
         return ip;
     }
 
-    // 全局兜底定时器：4.2 秒强行保护，确保绝不触发 Surge 5 秒硬强杀，并合并输出所有已获取信息
-    const globalGuardTimer = setTimeout(function () {
-        console.log('[Script] 触发 4.2 秒全局保护机制，合并当前已获取信息统一渲染');
-        _task1Done = true;
-        _task2Done = true;
-        _task3Done = true;
-        tryRender();
-    }, 4200);
-
     function tryRender() {
         // 必须三个任务都完成才渲染
         if (!_task1Done || !_task2Done || !_task3Done) return;
         if (_panelRendered) return;
         _panelRendered = true;
-        clearTimeout(globalGuardTimer);
 
         if (!_externalIP) {
             $done({
