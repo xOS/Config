@@ -2,10 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
-.metaaivm.com
-.emdashcms.com
-.ciallonetworks.com
-.allaboutberlin.com
 .06055.com
 .123114.xyz
 .123169.xyz
@@ -99,6 +95,7 @@ akmcdnoversea-tw.inter.ptqy.gitv.tv
 .algolia.net
 .alipay-eco.com
 .alipayplus.com
+.allaboutberlin.com
 .allinssl.com
 .alpharacks.com
 .alternative.link
@@ -342,6 +339,7 @@ chat.openai.com.cdn.cloudflare.net
 .china-internet-exchange.com
 chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .ci
+.ciallonetworks.com
 .circleboom.com
 .cj.com
 .ck
@@ -519,6 +517,7 @@ edge.apple
 .eloquapreview.com
 .email
 .emb-api.com
+.emdashcms.com
 .en25.com
 .enlightapp.com
 .entsrv-uk.vodafone.com
@@ -1028,6 +1027,7 @@ lookup-api.apple.com.edgekey.net
 .mereith.com
 .merkl.xyz
 .messagehero.com
+.metaaivm.com
 .metafloor.com
 .metric-api.newrelic.com
 .mfan8.com
