@@ -27,16 +27,24 @@ console.log = function (...args) {
 };
 
 const { wifi, v4, v6 } = $network;
-const IPv4 = v4.primaryAddress;
+const IPv4 = (v4 && v4.primaryAddress) || '';
+const IPv6 = (v6 && v6.primaryAddress) ? v6.primaryAddress.replace(/^(.{7}).+(.{7})$/, "$1****$2") : '';
+const primaryInterface = (v4 && v4.primaryInterface) || (v6 && v6.primaryInterface) || '';
+const primaryRouter = (v4 && v4.primaryRouter) || '';
 const cellularData = $network["cellular-data"];
-const radio = cellularData ? cellularData.radio : '';
-const carrier = cellularData ? cellularData.carrier : '';
-const IPv6 = v6.primaryAddress ? v6.primaryAddress.replace(/^(.{7}).+(.{7})$/, "$1****$2") : '';
-const wifiSSID = wifi && typeof wifi.ssid === 'string' ? wifi.ssid.trim() : '';
-const wifiRouter = v4.primaryRouter || '';
-const hasCellularMeta = !!(carrier || radio);
-const isLikelyWifi = !!(wifiSSID || wifiRouter);
-const isLikelyCellular = !isLikelyWifi && hasCellularMeta;
+const radio = (cellularData && cellularData.radio) ? String(cellularData.radio).trim() : '';
+const carrier = (cellularData && cellularData.carrier) ? String(cellularData.carrier).trim() : '';
+const wifiSSID = (wifi && typeof wifi.ssid === 'string') ? wifi.ssid.trim() : '';
+const wifiBSSID = (wifi && typeof wifi.bssid === 'string') ? wifi.bssid.trim() : '';
+
+// 运行平台与设备机型智能识别
+const envSystem = (typeof $environment !== 'undefined' && $environment && $environment.system) ? $environment.system : '';
+const deviceModel = (typeof $environment !== 'undefined' && $environment && $environment["device-model"]) ? $environment["device-model"] : '';
+const isIOS = /iOS/i.test(envSystem) || primaryInterface.startsWith('pdp_ip') || (!!cellularData && !/macOS|Darwin/i.test(envSystem));
+const isMac = /macOS|Darwin/i.test(envSystem);
+const isMacDesktop = /Macmini|MacStudio|MacPro|iMac/i.test(deviceModel);
+const isMacBook = /MacBook/i.test(deviceModel);
+
 
 // 配置使用的 GeoIP 接口和 IPv6 开关
 // 支持参数: GeoIPApi=xxx & EnableIPv6=1/0
@@ -129,80 +137,163 @@ var O2DE = ['262-03', '262-07', '262-08', '262-11'];
 const radioGeneration = {
     'GPRS': '2.5G',
     'CDMA1x': '2.5G',
+    'CDMA': '2.5G',
     'EDGE': '2.75G',
     'WCDMA': '3G',
     'HSDPA': '3.5G',
+    'HSUPA': '3.75G',
+    'HSPA': '3.5G',
     'CDMAEVDORev0': '3.5G',
     'CDMAEVDORevA': '3.5G',
     'CDMAEVDORevB': '3.75G',
-    'HSUPA': '3.75G',
     'eHRPD': '3.9G',
     'LTE': '4G',
+    'LTE-A': '4G+',
     'NRNSA': '5G',
+    'NR-NSA': '5G',
     'NR': '5G',
+    '5G': '5G',
 };
-const radios = radioGeneration[radio];
+const radios = radioGeneration[radio] || (radio && radio.toUpperCase().includes('NR') ? '5G' : (radio && radio.toUpperCase().includes('LTE') ? '4G' : ''));
+const normalizedCarrier = /^\d{5,6}$/.test(carrier) ? carrier.replace(/^(\d{3})(\d{2,3})$/, '$1-$2') : carrier;
 let server;
 
-if (CNNET.includes(carrier)) {
+if (CNNET.includes(normalizedCarrier) || /China Telecom|电信/i.test(normalizedCarrier)) {
     server = "中国电信";
-} else if (Unicom.includes(carrier)) {
+} else if (Unicom.includes(normalizedCarrier) || /China Unicom|联通/i.test(normalizedCarrier)) {
     server = "中国联通";
-} else if (Mobile.includes(carrier)) {
+} else if (Mobile.includes(normalizedCarrier) || /China Mobile|移动/i.test(normalizedCarrier)) {
     server = "中国移动";
-} else if (CBN.includes(carrier)) {
+} else if (CBN.includes(normalizedCarrier) || /China Broadnet|广电/i.test(normalizedCarrier)) {
     server = "中国广电";
-} else if (CSR.includes(carrier)) {
+} else if (CSR.includes(normalizedCarrier) || /铁通|铁路/i.test(normalizedCarrier)) {
     server = "中国铁路";
-} else if (CSL.includes(carrier)) {
+} else if (CSL.includes(normalizedCarrier)) {
     server = "csl.";
-} else if (THK.includes(carrier)) {
+} else if (THK.includes(normalizedCarrier)) {
     server = "3 HK";
-} else if (SmarTone.includes(carrier)) {
+} else if (SmarTone.includes(normalizedCarrier)) {
     server = "SmarTone";
-} else if (CMHK.includes(carrier)) {
+} else if (CMHK.includes(normalizedCarrier)) {
     server = "CMHK";
-} else if (HKT.includes(carrier)) {
+} else if (HKT.includes(normalizedCarrier)) {
     server = "HKT";
-} else if (CHT.includes(carrier)) {
+} else if (CHT.includes(normalizedCarrier)) {
     server = "中华电信";
-} else if (TWM.includes(carrier)) {
+} else if (TWM.includes(normalizedCarrier)) {
     server = "台湾大哥大";
-} else if (FET.includes(carrier)) {
+} else if (FET.includes(normalizedCarrier)) {
     server = "远传电信";
-} else if (TStar.includes(carrier)) {
+} else if (TStar.includes(normalizedCarrier)) {
     server = "台湾之星";
-} else if (APT.includes(carrier)) {
+} else if (APT.includes(normalizedCarrier)) {
     server = "亚太电信";
-} else if (Singtel.includes(carrier)) {
+} else if (Singtel.includes(normalizedCarrier)) {
     server = "Singtel";
-} else if (M1.includes(carrier)) {
+} else if (M1.includes(normalizedCarrier)) {
     server = "M1";
-} else if (StarHub.includes(carrier)) {
+} else if (StarHub.includes(normalizedCarrier)) {
     server = "StarHub";
-} else if (Simba.includes(carrier)) {
+} else if (Simba.includes(normalizedCarrier)) {
     server = "SIMBA";
-} else if (EE.includes(carrier)) {
+} else if (EE.includes(normalizedCarrier)) {
     server = "EE";
-} else if (O2UK.includes(carrier)) {
+} else if (O2UK.includes(normalizedCarrier)) {
     server = "O2 (UK)";
-} else if (VodaUK.includes(carrier)) {
+} else if (VodaUK.includes(normalizedCarrier)) {
     server = "Vodafone (UK)";
-} else if (ThreeUK.includes(carrier)) {
+} else if (ThreeUK.includes(normalizedCarrier)) {
     server = "Three (UK)";
-} else if (TelekomDE.includes(carrier)) {
+} else if (TelekomDE.includes(normalizedCarrier)) {
     server = "Telekom (DE)";
-} else if (VodaDE.includes(carrier)) {
+} else if (VodaDE.includes(normalizedCarrier)) {
     server = "Vodafone (DE)";
-} else if (O2DE.includes(carrier)) {
+} else if (O2DE.includes(normalizedCarrier)) {
     server = "O2 (DE)";
 } else {
-    if (carrier && !/^\d{3}-\d{2,3}$/.test(carrier)) {
-        server = carrier; // 如果 Surge 返回了直接的字符串名称而非代码
+    if (normalizedCarrier && !/^\d{3}-\d{2,3}$/.test(normalizedCarrier)) {
+        server = normalizedCarrier; // 如果 Surge 返回了直接的字符串名称而非代码
     } else {
         server = "蜂窝网络";
     }
 }
+
+// 智能识别网络类型：iOS 区分 [蜂窝 / WiFi / 有线]，Mac 区分 [WiFi / 有线]
+let networkType = 'UNKNOWN';
+
+if (isIOS) {
+    // iOS 智能识别：
+    // 1. 蜂窝网络：底层数据接口恒以 pdp_ip 开头，或在未连 WiFi/且接口非 en0 时存在蜂窝数据
+    const isCellular = primaryInterface.startsWith('pdp_ip') ||
+        (!wifiSSID && !wifiBSSID && primaryInterface !== 'en0' && (!!carrier || !!radio));
+
+    if (isCellular) {
+        networkType = 'CELLULAR';
+    } else if (wifiSSID || wifiBSSID || primaryInterface === 'en0') {
+        // 2. WiFi：iOS 设备内置无线芯片恒定绑定 en0
+        networkType = 'WIFI';
+    } else if (primaryInterface.startsWith('en') || primaryInterface.startsWith('eth') || primaryInterface.startsWith('bridge')) {
+        // 3. 有线网络：通过 Lightning/USB-C 拓展坞转接 RJ45 网线（通常分配 en1/en2/en3 等）
+        networkType = 'ETHERNET';
+    } else {
+        networkType = (carrier || radio) ? 'CELLULAR' : (wifiSSID ? 'WIFI' : 'ETHERNET');
+    }
+} else {
+    // Mac 智能识别：
+    if (wifiSSID || wifiBSSID) {
+        // 1. WiFi：有明确 SSID/BSSID
+        networkType = 'WIFI';
+    } else if (primaryInterface.startsWith('bridge')) {
+        // 雷雳网桥 / 虚拟网桥 -> 有线
+        networkType = 'ETHERNET';
+    } else if (isMacDesktop) {
+        // 桌面 Mac（Mac mini / Mac Studio / Mac Pro / iMac）：板载 RJ45 网口为 en0，无线为 en1
+        networkType = (primaryInterface === 'en1') ? 'WIFI' : 'ETHERNET';
+    } else if (isMacBook) {
+        // MacBook 笔记本系列：无板载 RJ45 网口，en0 恒为内置 Wi-Fi，拓展坞/外接网卡为 en1/en2/en4 等
+        networkType = (primaryInterface === 'en0') ? 'WIFI' : 'ETHERNET';
+    } else {
+        // 未知机型兜底：非 en0 多为外接有线网卡，en0 通常为默认网卡（笔记本 Wi-Fi）
+        networkType = (primaryInterface && primaryInterface !== 'en0') ? 'ETHERNET' : 'WIFI';
+    }
+}
+
+// 准备面板标题与图标样式（智能识别，绝不显示内部网卡接口）
+let panelTitle = '当前网络';
+let panelIcon = 'network';
+let panelColor = '#007AFE';
+
+if (networkType === 'CELLULAR') {
+    let cellularParts = [];
+    if (server && server !== '蜂窝网络' && server !== 'unknown') {
+        cellularParts.push(server);
+    }
+    let techParts = [];
+    if (radios && radios !== 'unknown') {
+        techParts.push(radios);
+    }
+    if (radio && radio !== 'unknown') {
+        techParts.push(`[${radio}]`);
+    }
+    if (techParts.length > 0) {
+        cellularParts.push(techParts.join(' '));
+    }
+
+    panelTitle = cellularParts.length > 0 ? `蜂窝数据 | ${cellularParts.join(' ')}` : '蜂窝数据';
+    panelIcon = 'antenna.radiowaves.left.and.right';
+    panelColor = '#35C759';
+} else if (networkType === 'ETHERNET') {
+    panelTitle = '有线网络';
+    panelIcon = 'cable.connector';
+    panelColor = '#5856D6';
+} else {
+    // 默认为 WiFi
+    panelTitle = wifiSSID ? `WiFi 网络 | ${wifiSSID}` : 'WiFi 网络';
+    panelIcon = 'wifi';
+    panelColor = '#007AFE';
+}
+
+console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel || '未知'}, 接口: ${primaryInterface || '未知'}, 判定网络: ${networkType}, 标题: ${panelTitle}`);
 
 (async () => {
     if (!IPv4) {
@@ -216,7 +307,6 @@ if (CNNET.includes(carrier)) {
     }
 
     const ip = IPv4;
-    const router = isLikelyWifi ? wifiRouter : '';
 
     // 获取外部 IPv4 地址的函数
     function getExternalIPv4(callback) {
@@ -818,9 +908,11 @@ if (CNNET.includes(carrier)) {
 
         const maskedExtIPv6 = maskIPv6(_externalIPv6);
 
-        const buildContent = (isWifi) => {
+        const showRouter = (networkType === 'WIFI' || networkType === 'ETHERNET') && !!primaryRouter;
+
+        const buildContent = () => {
             let lines = [];
-            if (isWifi) lines.push(`路由 IPv4：${router}`);
+            if (showRouter) lines.push(`路由 IPv4：${primaryRouter}`);
             lines.push(`内部 IPv4：${ip}`);
             lines.push(`外部 IPv4：${_externalIP}`);
 
@@ -850,21 +942,14 @@ if (CNNET.includes(carrier)) {
                 lines.push(_scamInfoStr);
             }
 
-            if (isWifi && !wifiSSID) {
-                lines.push('⚠️ Surge Mac 版 JS 引擎不支持读取 WiFi 名称');
-            }
             return lines.join('\n');
         };
 
         const body = {
-            title: isLikelyWifi
-                ? `WiFi 网络${wifiSSID ? ` | ${wifiSSID}` : (v4.primaryInterface ? ` | ${v4.primaryInterface}` : '')}`
-                : isLikelyCellular
-                    ? `蜂窝数据${server && server !== 'unknown' ? ` | ${server}` : ''}${radios && radios !== 'unknown' ? ` ${radios}` : ''}${radio && radio !== 'unknown' ? ` [${radio}]` : ''}`
-                    : '当前网络',
-            content: buildContent(isLikelyWifi),
-            icon: isLikelyWifi ? "wifi" : (isLikelyCellular ? "antenna.radiowaves.left.and.right" : "network"),
-            "icon-color": isLikelyWifi ? "#007AFE" : (isLikelyCellular ? "#35C759" : "#8E8E93")
+            title: panelTitle,
+            content: buildContent(),
+            icon: panelIcon,
+            "icon-color": panelColor
         };
         $done(body);
     }
