@@ -106,7 +106,7 @@ function extractToday(results) {
             let i = almanac[j]
             if (i.year === dateArray[0] && i.month === dateArray[1] && i.day === dateArray[2]) {
                 let lnDate = i.lMonth + '月' + i.lDate
-                let nlDate = dateStr + ' ' + i.lMonth + '月' + i.lDate
+                let nlDate = dateStr + '|' + i.lMonth + '月' + i.lDate
                 let desc = ''
                 desc += i.desc ? i.desc : ''
                 desc += (i.term || i.value)
