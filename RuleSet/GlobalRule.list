@@ -2,13 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
-.adyen.com
-.pcapredict.com
-.usims.com
-.omnara.com
-.arkoselabs.com
-.pub.3gppnetwork.org
-.3gppnetwork.org
 .06055.com
 .123114.xyz
 .123169.xyz
@@ -27,6 +20,7 @@
 .365novel.com
 .396663.xyz
 .3gateway.net
+.3gppnetwork.org
 .3interfaces.net
 .428048.xyz
 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -73,6 +67,7 @@
 .admissions.cn
 .adoberesources.net
 .adva-soft.com
+.adyen.com
 .ae
 .aero
 .af
@@ -169,6 +164,7 @@ apple-relay.fastly-edge.com
 .ar
 .arebz.com
 .ares-x.com
+.arkoselabs.com
 .arpa
 .art
 .as
@@ -1185,6 +1181,7 @@ ocvideo.apple.com
 .okta.com
 .olt.com
 .om
+.omnara.com
 .ondato.net
 .ondemandconnectivity.com
 .onecubic.com
@@ -1233,6 +1230,7 @@ osuspider.yuanshen.com
 .payssion.com
 .payzilch.com
 .paze.com
+.pcapredict.com
 .pdfreaderpro.com
 .pdscrb.com
 .pe
@@ -1296,6 +1294,7 @@ prod-api.crackle.com
 .psg.cdn.hgc.com.hk
 .psychz.net
 .pt
+.pub.3gppnetwork.org
 .purchasely.io
 .puresys.net
 .purevoltage.com
@@ -1656,6 +1655,7 @@ upos-bstar1-mirrorakam.akamaized.net
 .us-west-2.amazonaws.com
 .usefathom.com
 .uservoice.com
+.usims.com
 .usmobile.com
 .uspeedo.com
 .usps.com
