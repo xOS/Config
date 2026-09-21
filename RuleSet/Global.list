@@ -93,33 +93,8 @@ IP-ASN,203898,no-resolve
 IP-ASN,209242,no-resolve
 IP-ASN,394536,no-resolve
 IP-ASN,395747,no-resolve
-
-# Google DNS
-IP-CIDR,8.8.8.8/32,no-resolve
-IP-CIDR,8.8.4.4/32,no-resolve
-
-# Cloudflare DNS
-IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,1.0.0.1/32,no-resolve
-
-# Quad9 DNS (高频用于海外安全相关的 App)
-IP-CIDR,9.9.9.9/32,no-resolve
-IP-CIDR,149.112.112.112/32,no-resolve
-
-# OpenDNS (Cisco)
-IP-CIDR,208.67.222.222/32,no-resolve
-IP-CIDR,208.67.220.220/32,no-resolve
-
-# AdGuard DNS (部分去广告工具默认使用)
-IP-CIDR,94.140.14.14/32,no-resolve
-IP-CIDR,94.140.15.15/32,no-resolve
-
-# NextDNS & Control D
-IP-CIDR,45.90.28.0/32,no-resolve
-IP-CIDR,45.90.30.0/32,no-resolve
-IP-CIDR,76.76.2.0/32,no-resolve
-IP-CIDR,76.76.10.0/32,no-resolve
-
+IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,103.21.244.0/22,no-resolve
 IP-CIDR,103.22.200.0/22,no-resolve
 IP-CIDR,103.31.4.0/22,no-resolve
@@ -134,6 +109,7 @@ IP-CIDR,141.101.64.0/18,no-resolve
 IP-CIDR,144.178.0.0/19,no-resolve
 IP-CIDR,144.178.36.0/22,no-resolve
 IP-CIDR,144.178.48.0/20,no-resolve
+IP-CIDR,149.112.112.112/32,no-resolve
 IP-CIDR,162.158.0.0/15,no-resolve
 IP-CIDR,17.0.0.0/8,no-resolve
 IP-CIDR,172.64.0.0/13,no-resolve
@@ -145,9 +121,20 @@ IP-CIDR,197.234.240.0/22,no-resolve
 IP-CIDR,198.183.17.0/24,no-resolve
 IP-CIDR,198.41.128.0/17,no-resolve
 IP-CIDR,205.180.175.0/24,no-resolve
+IP-CIDR,208.67.220.220/32,no-resolve
+IP-CIDR,208.67.222.222/32,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
+IP-CIDR,45.90.28.0/32,no-resolve
+IP-CIDR,45.90.30.0/32,no-resolve
 IP-CIDR,63.92.224.0/19,no-resolve
 IP-CIDR,65.199.22.0/23,no-resolve
+IP-CIDR,76.76.10.0/32,no-resolve
+IP-CIDR,76.76.2.0/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,9.9.9.9/32,no-resolve
+IP-CIDR,94.140.14.14/32,no-resolve
+IP-CIDR,94.140.15.15/32,no-resolve
 PROCESS-NAME,/Applications/AfreecaTV/MACafpackage.app/Contents/Resources/MACafstreamer.app/Contents/MacOS/MACafstreamer
 PROCESS-NAME,/Applications/Speedtest.app/Contents/MacOS/Speedtest
 PROCESS-NAME,afreeca
