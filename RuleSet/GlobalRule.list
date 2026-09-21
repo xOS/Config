@@ -2,6 +2,13 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
+.adyen.com
+.pcapredict.com
+.usims.com
+.omnara.com
+.arkoselabs.com
+.pub.3gppnetwork.org
+.3gppnetwork.org
 .06055.com
 .123114.xyz
 .123169.xyz

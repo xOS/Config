@@ -754,6 +754,7 @@ DOMAIN-SUFFIX,国家广播电视总台.中国
 DOMAIN-WILDCARD,*-cn-static.com
 DOMAIN-WILDCARD,*cn-*.jdcloud-oss.com
 DOMAIN-WILDCARD,pull-flv-*.douyincdn.com
+DOMAIN-WILDCARD,pull-*.douyincdn.com
 DOMAIN,api.smoot.apple.cn
 DOMAIN,apm.music.163.com
 DOMAIN,apm3.music.163.com
