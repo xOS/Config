@@ -1436,6 +1436,7 @@ DOMAIN-SUFFIX,realme.com
 DOMAIN-SUFFIX,realmebbs.com
 DOMAIN-SUFFIX,realmemobile.com
 DOMAIN-SUFFIX,rednotecdn.com
+DOMAIN-SUFFIX,rnote.com
 DOMAIN-SUFFIX,roblox.cn
 DOMAIN-SUFFIX,robloxdev.cn
 DOMAIN-SUFFIX,ronghub.com
@@ -1625,7 +1626,7 @@ DOMAIN-SUFFIX,zui.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,zybang.com
-DOMAIN-WILDCARD,*.qhimgs?.com
+DOMAIN-WILDCARD,qhimgs?.com
 DOMAIN,acg.tv
 DOMAIN,app.viayoo.com
 DOMAIN,assets1.xboxlive.cn
