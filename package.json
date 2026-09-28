@@ -15,7 +15,7 @@
     "@adguard/hostlist-compiler": "^2.1.1",
     "@sindresorhus/slugify": "^3.0.1",
     "axios": "1.20.0",
-    "fs-extra": "^11.3.6"
+    "fs-extra": "^11.4.1"
   },
   "resolutions": {
     "axios": "^1.15.0",
