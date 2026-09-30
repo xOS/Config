@@ -13,6 +13,8 @@ DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.com
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,claudeusercontent.com
 
 # > OpenAI
 # >> ChatGPT
@@ -23,10 +25,15 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,imgix.net
 DOMAIN,api.statsig.com
 DOMAIN,api-iam.intercom.io
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN-KEYWORD,openaiapi
 DOMAIN-KEYWORD,openaicom
 
@@ -39,6 +46,7 @@ DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursorvm.com
 
 # > Google
 # >> AI Studio
@@ -73,6 +81,16 @@ DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metaaivm.com
 DOMAIN,imagine.meta.com
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,atmeta.com
+DOMAIN-SUFFIX,llamameta.net
+DOMAIN-SUFFIX,llama.com
+
+# > Muse AI
+DOMAIN-SUFFIX,muse.ai
+DOMAIN,production.museai.com
+DOMAIN,meta-ohttp-config-prod.fastly-edge.com
+DOMAIN,meta-ohttp-relay-prod.fastly-edge.com
 
 # > Microsoft
 # >> Copilot
@@ -99,7 +117,9 @@ DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN,openrouter.ai
 DOMAIN,api.jetbrains.ai
+DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,openart.ai
 DOMAIN-SUFFIX,jasper.ai
 DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,g.ai
+DOMAIN-SUFFIX,manus.im
