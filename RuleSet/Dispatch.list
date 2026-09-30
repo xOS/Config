@@ -89,7 +89,11 @@ DOMAIN,cdn.skyimg.net
 DOMAIN,img.vortexfast.com
 DOMAIN,static-assets.searchatlas.com
 DOMAIN,mpiprod-cdn.zimperium.com
-tDOMAIN,ucdn.wpon.cn
+DOMAIN,tucdn.wpon.cn
+DOMAIN,cdn.acquired.com
+DOMAIN,usp.tcb-cdn.com
+DOMAIN,cdn.veriff.me
+DOMAIN,cdn.idrlabs.com
 DOMAIN-SUFFIX,seecdn.net
 DOMAIN-SUFFIX,capjs.net
 DOMAIN-SUFFIX,imgs.lazy-boy-acmer.cn
