@@ -2,33 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
-.browser-intake-us5-datadoghq.com
-.acquired.com
-.arin.net
-.corporatetools.com
-.northwestregisteredagent.com
-.starchart.cc
-.withplum.com
-.tcb-cdn.com
-.topcashback.com
-.usebutton.com
-.pkfun.com
-.bynder.com
-.veriff.me
-.knowsex.net
-.idrlabs.com
-.esim.cc
-.apexkey.store
-.naixi.org
-.turingfraud.net
-.nsureapi.com
-.arweave.net
-.datasprite-cdn.com
-.royalmail.net
-.synteq.com
-.flyert.com
-.cardart.cc
-.perimeterx.net
 .06055.com
 .123114.xyz
 .123169.xyz
@@ -85,6 +58,7 @@
 .acgycy.com
 .acompli.com
 .acompli.net
+.acquired.com
 .acxiom.com
 .ad
 .adaway.org
@@ -154,6 +128,7 @@ ankerpower-api.anker.com
 .ao
 .aotol.com
 .apepine.com
+.apexkey.store
 api-iam.intercom.io
 .api-o2de.mytelco.io
 .api.gamer.com.tw
@@ -191,9 +166,11 @@ apple-relay.fastly-edge.com
 .ar
 .arebz.com
 .ares-x.com
+.arin.net
 .arkoselabs.com
 .arpa
 .art
+.arweave.net
 .as
 .asia
 .aside.com
@@ -290,6 +267,7 @@ bcbolt446c5271-a.akamaihd.net
 .braze-images.com
 .braze.com
 browser-intake-datadoghq.com
+.browser-intake-us5-datadoghq.com
 .browserstack.com
 .bs
 .bt
@@ -305,6 +283,7 @@ bt.sh.cn
 .bv
 .bw
 .by
+.bynder.com
 .byted.org
 .bytedance.net
 .bytegecko-i18n.com
@@ -321,6 +300,7 @@ cache.video.iqiyi.com
 .capitalone.co.uk
 .capitalone.com
 .capjs.net
+.cardart.cc
 .cashappapi.com
 .cat
 .cauly.co.kr
@@ -420,6 +400,7 @@ config.sdk.kochava.dewrain.life
 .copilot.com
 copilot.microsoft.com
 .copper6.com
+.corporatetools.com
 .courier.com
 cp4.cloudflare.com
 .cpanel.net
@@ -465,6 +446,7 @@ d3c7rimkq79yfu.cloudfront.net
 .darksky.net
 .dartnode.com
 dashasiafox.akamaized.net
+.datasprite-cdn.com
 .datocms.com
 .daumpotplayer.com
 .day.app
@@ -558,6 +540,7 @@ edge.apple
 .er-api.com
 .es
 .eshiyun.info
+.esim.cc
 .estk.me
 .et
 .etheric.net
@@ -607,6 +590,7 @@ fast.rockisland.net
 .flumeapp.com
 .flvcdn.net
 .flxvpn.net
+.flyert.com
 .fm
 .fo
 .forestapp.cc
@@ -798,6 +782,7 @@ icons.axm-usercontent-apple.com
 .idcxuan.com
 .identity.tm
 .idnow.de
+.idrlabs.com
 .ie
 .iesnare.com
 .ifconfig.co
@@ -935,6 +920,7 @@ jules.google.com
 .km
 .kn
 .knowlink-assets.com
+.knowsex.net
 .kochava.com
 .kocowa.com
 .kolet.com
@@ -1126,6 +1112,7 @@ lookup-api.apple.com.edgekey.net
 .n3ro.pro
 .na
 .nais.me
+.naixi.org
 .naiyous.com
 .namecheap.com
 .namesilo.com
@@ -1173,6 +1160,7 @@ lookup-api.apple.com.edgekey.net
 .nodepanels.com
 .nodeseek.org
 .nooc.me
+.northwestregisteredagent.com
 .notability.com
 .novproxy.com
 .np
@@ -1180,6 +1168,7 @@ lookup-api.apple.com.edgekey.net
 .nr-data.net
 .nsone.net
 .nspops.com
+.nsureapi.com
 .ntt-co-jp.club
 .nu
 .numberbarn.com
@@ -1265,6 +1254,7 @@ osuspider.yuanshen.com
 .peer-39.com
 .peer2profit.com
 .peinor.com
+.perimeterx.net
 .pexels.com
 .pf
 .pg
@@ -1287,6 +1277,7 @@ osuspider.yuanshen.com
 .pinpe.top
 .pixabay.com
 .pk
+.pkfun.com
 .pl
 .plaid.com
 .plainmagazine.com
@@ -1399,6 +1390,7 @@ restricted.sdk.kochava.com
 .rortoscdn.com
 .royalapps.com
 .royalmail.com
+.royalmail.net
 .rs
 .rtbasia.com
 rtcg-access.volcvideos.com
@@ -1536,6 +1528,7 @@ st.pautina-telecom.ru
 .staging-databe.floonet.goog
 .staging.databe.floonet.goog
 .star-history.com
+.starchart.cc
 starling-public.byteintlapi.com
 .starryblu.com
 .starwalk.space
@@ -1580,6 +1573,7 @@ staticasiafox.akamaized.net
 .sy
 sydney.bing.com
 .symbolab.com
+.synteq.com
 .syqtk.com
 .sysin.org
 .sz
@@ -1595,6 +1589,7 @@ sydney.bing.com
 .tb58.net
 .tbyuantu.com
 .tc
+.tcb-cdn.com
 .td
 .teachable.com
 .tel
@@ -1628,6 +1623,7 @@ sydney.bing.com
 .to
 .tokbox.com
 .tokenex.com
+.topcashback.com
 .topide.com
 .toss.im
 .tp
@@ -1651,6 +1647,7 @@ sydney.bing.com
 .ttwebview.com
 .tungstencloud.cn
 .tunnelbroker.net
+.turingfraud.net
 .tutu-studio.com
 .tuyaeu.com
 .tv
@@ -1680,6 +1677,7 @@ upos-bstar1-mirrorakam.akamaized.net
 .urenkz.com
 .us
 .us-west-2.amazonaws.com
+.usebutton.com
 .usefathom.com
 .uservoice.com
 .usims.com
@@ -1703,6 +1701,7 @@ upos-bstar1-mirrorakam.akamaized.net
 .ve
 .vecteezy.com
 .veepn.com
+.veriff.me
 .vertexsmb.com
 .verve.net
 .vg
@@ -1770,6 +1769,7 @@ vudu.com
 .windows-ppe.net
 .winwinkit.com
 .wirexapp.com
+.withplum.com
 .withyulovehome.com
 .wlvpn.com
 .woaichuhai.com
