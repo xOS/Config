@@ -68,6 +68,7 @@ let EnableIPv6 = true; // 默认开启 IPv6
 let ScamalyUser = ""; // Scamalytics User
 let ScamalyKey = ""; // Scamalytics Key
 let ScamalyPolicy = ""; // Scamalytics 自定义请求策略组
+let IpApiPolicy = ""; // ip-api.com 自定义请求策略组
 if (typeof $argument !== 'undefined') console.log(`[Script] 参数原始值: ${$argument}`);
 
 if (typeof $argument !== 'undefined' && $argument) {
@@ -89,6 +90,9 @@ if (typeof $argument !== 'undefined' && $argument) {
         }
         if (trimmedKey === 'ScamalyPolicy') {
             ScamalyPolicy = value;
+        }
+        if (trimmedKey === 'IpApiPolicy' || trimmedKey === 'IPApiPolicy' || trimmedKey === 'LandingPolicy') {
+            IpApiPolicy = value;
         }
     }
 }
@@ -753,11 +757,21 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
     // 获取 Scamalytics 境外落地 IP 风险信息
     // 总预算：ip-api 软超时 1500ms + Scamalytics 软超时 1500ms = 最坏 3s，安全余量 2s
     function getScamalyticsInfo(callback) {
-        console.log('[Scamaly] 启动落地 IP 查询...');
+        let ipApiOpts = {
+            url: "http://ip-api.com/json?lang=zh-CN",
+            headers: {
+                'User-Agent': 'curl/8.7.1',
+                'Accept': '*/*'
+            }
+        };
+        if (IpApiPolicy) {
+            ipApiOpts.policy = IpApiPolicy;
+            console.log(`[Scamaly] ip-api 尝试强行路由至策略组: ${IpApiPolicy}`);
+        }
 
-        $httpClient.get("http://ip-api.com/json?lang=zh-CN", function (err, res, data) {
+        $httpClient.get(ipApiOpts, function (err, res, data) {
             if (err || !data) {
-                console.log('[Scamaly] ip-api 请求失败');
+                console.log(`[Scamaly] ip-api 请求失败${err ? `: ${err}` : ''}`);
                 callback(null, null);
                 return;
             }
