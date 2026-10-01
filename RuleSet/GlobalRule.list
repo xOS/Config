@@ -2,12 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
-.worldremit.com
-.sinch.com
-.zamcs.com
-.apxor.com
-.otasim.com
-.ndow.cn
 .06055.com
 .123114.xyz
 .123169.xyz
@@ -167,6 +161,7 @@ apple-relay.fastly-edge.com
 .applytexas.org
 .apponfly.com
 .appstore.com
+.apxor.com
 .apzones.com
 .aq
 .ar
@@ -1129,6 +1124,7 @@ lookup-api.apple.com.edgekey.net
 .naodai.org
 .nc
 .nc.me
+.ndow.cn
 .ne
 .neko-cloud.com
 .nekoneko.cloud
@@ -1231,6 +1227,7 @@ openai-api.arkoselabs.com
 .organicfruitapps.com
 .orz2.com
 osuspider.yuanshen.com
+.otasim.com
 .outlookmobile.com
 .ovh.com
 .ovhcloud.com
@@ -1469,6 +1466,7 @@ rtcg-access.volcvideos.com
 .simlocal.com
 .simperium.com
 .simpletexting.com
+.sinch.com
 .singtel.com
 .singular.net
 .siteplug.com
@@ -1785,6 +1783,7 @@ vudu.com
 .woothosting.com
 .workingcopyapp.com
 .workinno.com
+.worldremit.com
 .worldtimeapi.org
 .worldvectorlogo.com
 .wplist.org
@@ -1856,6 +1855,7 @@ youtubei.googleapis.com
 .zafinsvc.com
 .zaius.com
 .zajourney.com
+.zamcs.com
 .zaticdn.com
 .zeroonetwenty.com
 .zerossl.com
