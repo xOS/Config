@@ -592,6 +592,7 @@ DOMAIN-WILDCARD,events-api*.outfit7.com
 DOMAIN-WILDCARD,events*.cre.ma
 DOMAIN-WILDCARD,f-log-*.grammarly.io
 DOMAIN-WILDCARD,fanpingbi*.gaokao.com
+DOMAIN-WILDCARD,faro-collector-*.grafana-ops.net
 DOMAIN-WILDCARD,faro-collector-prod-*.grafana.net
 DOMAIN-WILDCARD,flurry.agentportal-*.yahoodns.net
 DOMAIN-WILDCARD,flurry.agentportal.*.yahoodns.net
