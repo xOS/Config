@@ -72,26 +72,44 @@ let IpApiPolicy = ""; // ip-api.com 自定义请求策略组
 if (typeof $argument !== 'undefined') console.log(`[Script] 参数原始值: ${$argument}`);
 
 if (typeof $argument !== 'undefined' && $argument) {
-    const args = $argument.split('&');
+    const rawArg = typeof $argument === 'string' ? $argument.trim().replace(/^["']|["']$/g, '') : '';
+    const args = rawArg.split('&');
     for (const arg of args) {
-        const [key, value] = arg.split('=');
-        const trimmedKey = key ? key.trim() : '';
-        if (trimmedKey === 'GeoIPApi') {
+        const eqIdx = arg.indexOf('=');
+        if (eqIdx === -1) continue;
+        const key = arg.slice(0, eqIdx).trim();
+        let value = arg.slice(eqIdx + 1).trim();
+        try {
+            value = decodeURIComponent(value);
+        } catch (e) {}
+        value = value.replace(/^["']|["']$/g, '').trim();
+
+        const lowerKey = key.toLowerCase().replace(/[-_]/g, '');
+
+        if (key === 'GeoIPApi') {
             GeoIPApi = value;
         }
-        if (trimmedKey === 'EnableIPv6' || trimmedKey.endsWith('EnableIPv6')) {
+        if (key === 'EnableIPv6' || key.endsWith('EnableIPv6') || lowerKey === 'enableipv6') {
             EnableIPv6 = value === '1' || value === 'true';
         }
-        if (trimmedKey === 'ScamalyUser') {
+        if (key === 'ScamalyUser' || lowerKey === 'scamalyuser') {
             ScamalyUser = value;
         }
-        if (trimmedKey === 'ScamalyKey') {
+        if (key === 'ScamalyKey' || lowerKey === 'scamalykey') {
             ScamalyKey = value;
         }
-        if (trimmedKey === 'ScamalyPolicy') {
+        if (key === 'ScamalyPolicy' || lowerKey === 'scamalypolicy') {
             ScamalyPolicy = value;
         }
-        if (trimmedKey === 'IpApiPolicy' || trimmedKey === 'IPApiPolicy' || trimmedKey === 'LandingPolicy') {
+        if (
+            key === 'IpApiPolicy' ||
+            key === 'IPApiPolicy' ||
+            key === 'LandingPolicy' ||
+            lowerKey === 'ipapipolicy' ||
+            lowerKey === 'ipapi' ||
+            lowerKey === 'ippolicy' ||
+            lowerKey === 'landingpolicy'
+        ) {
             IpApiPolicy = value;
         }
     }
@@ -757,6 +775,8 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
     // 获取 Scamalytics 境外落地 IP 风险信息
     // 总预算：ip-api 软超时 1500ms + Scamalytics 软超时 1500ms = 最坏 3s，安全余量 2s
     function getScamalyticsInfo(callback) {
+        console.log('[Scamaly] 启动落地 IP 查询...');
+
         let ipApiOpts = {
             url: "http://ip-api.com/json?lang=zh-CN",
             headers: {
