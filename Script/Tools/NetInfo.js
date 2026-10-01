@@ -113,6 +113,8 @@ if (typeof $argument !== 'undefined' && $argument) {
             IpApiPolicy = value;
         }
     }
+    if (ScamalyPolicy) console.log(`[Script] 解析到 ScamalyPolicy: "${ScamalyPolicy}"`);
+    if (IpApiPolicy) console.log(`[Script] 解析到 IpApiPolicy: "${IpApiPolicy}"`);
 }
 
 // IPv4 地址验证函数
@@ -781,15 +783,27 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
             url: "http://ip-api.com/json?lang=zh-CN",
             headers: {
                 'User-Agent': 'curl/8.7.1',
-                'Accept': '*/*'
+                'Accept': '*/*',
+                'Connection': 'close'
             }
         };
         if (IpApiPolicy) {
             ipApiOpts.policy = IpApiPolicy;
-            console.log(`[Scamaly] ip-api 尝试强行路由至策略组: ${IpApiPolicy}`);
+            console.log(`[Scamaly] ip-api 尝试强行路由至策略组: "${IpApiPolicy}"`);
         }
 
         $httpClient.get(ipApiOpts, function (err, res, data) {
+            if (typeof $httpAPI !== 'undefined' && IpApiPolicy) {
+                try {
+                    $httpAPI('GET', 'v1/requests/recent', {}, function (result) {
+                        const requests = result && result.requests ? result.requests : [];
+                        const matched = requests.slice(0, 10).find(i => /ip-api\.com/.test(i.URL));
+                        if (matched && matched.policyName) {
+                            console.log(`[Scamaly] ip-api 实际出站策略组: "${matched.policyName}"`);
+                        }
+                    });
+                } catch (e) {}
+            }
             if (err || !data) {
                 console.log(`[Scamaly] ip-api 请求失败${err ? `: ${err}` : ''}`);
                 callback(null, null);
@@ -839,12 +853,13 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
                     url: scamUrl,
                     headers: {
                         'User-Agent': 'curl/8.7.1',
-                        'Accept': '*/*'
+                        'Accept': '*/*',
+                        'Connection': 'close'
                     }
                 };
                 if (ScamalyPolicy) {
                     opts.policy = ScamalyPolicy;
-                    console.log(`[Scamaly] 尝试强行路由至策略组: ${ScamalyPolicy}`);
+                    console.log(`[Scamaly] 尝试强行路由至策略组: "${ScamalyPolicy}"`);
                 }
 
                 $httpClient.get(opts, function (err2, res2, scamData) {
