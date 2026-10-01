@@ -86,25 +86,22 @@ if (typeof $argument !== 'undefined' && $argument) {
 
         const lowerKey = key.toLowerCase().replace(/[-_]/g, '');
 
-        if (key === 'GeoIPApi') {
+        if (lowerKey === 'geoipapi') {
             GeoIPApi = value;
         }
-        if (key === 'EnableIPv6' || key.endsWith('EnableIPv6') || lowerKey === 'enableipv6') {
+        if (lowerKey === 'enableipv6' || key.endsWith('EnableIPv6')) {
             EnableIPv6 = value === '1' || value === 'true';
         }
-        if (key === 'ScamalyUser' || lowerKey === 'scamalyuser') {
+        if (lowerKey === 'scamalyuser') {
             ScamalyUser = value;
         }
-        if (key === 'ScamalyKey' || lowerKey === 'scamalykey') {
+        if (lowerKey === 'scamalykey') {
             ScamalyKey = value;
         }
-        if (key === 'ScamalyPolicy' || lowerKey === 'scamalypolicy') {
+        if (lowerKey === 'scamalypolicy') {
             ScamalyPolicy = value;
         }
         if (
-            key === 'IpApiPolicy' ||
-            key === 'IPApiPolicy' ||
-            key === 'LandingPolicy' ||
             lowerKey === 'ipapipolicy' ||
             lowerKey === 'ipapi' ||
             lowerKey === 'ippolicy' ||
@@ -793,17 +790,6 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
         }
 
         $httpClient.get(ipApiOpts, function (err, res, data) {
-            if (typeof $httpAPI !== 'undefined' && IpApiPolicy) {
-                try {
-                    $httpAPI('GET', 'v1/requests/recent', {}, function (result) {
-                        const requests = result && result.requests ? result.requests : [];
-                        const matched = requests.slice(0, 10).find(i => /ip-api\.com/.test(i.URL));
-                        if (matched && matched.policyName) {
-                            console.log(`[Scamaly] ip-api 实际出站策略组: "${matched.policyName}"`);
-                        }
-                    });
-                } catch (e) {}
-            }
             if (err || !data) {
                 console.log(`[Scamaly] ip-api 请求失败${err ? `: ${err}` : ''}`);
                 callback(null, null);
