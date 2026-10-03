@@ -12,6 +12,7 @@ on:
       - "RuleSet/GlobalRule.list"
       - "RuleSet/Global.list"
       - "RuleSet/Domestic.list"
+      - "RuleSet/AdRules/ByPass.list"
   schedule:
     - cron: "0 */24 * * *"
 
