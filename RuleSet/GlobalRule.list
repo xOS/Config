@@ -2320,6 +2320,7 @@ api.waqi.info
 .apollocrewe.ac.uk
 .app-measurement.net
 .appdownloader.net
+.approveit.today
 .apr.ac.uk
 .apt.ac.uk
 .apts.ac.uk
@@ -9539,6 +9540,7 @@ store.ui.com.cn
 .surreyadultlearning.ac.uk
 .surreyibc.ac.uk
 .surreyspace.ac.uk
+.surveymonkey.com
 .surveynet.ac.uk
 .suschem-nottingham-cdt.ac.uk
 .sushi.com
@@ -10437,6 +10439,7 @@ translomatic.foxfortmobile.com
 .vanilla-jp.com
 .vanityfair.com
 .vanpeople.com
+.vanta.com
 .varndean.ac.uk
 .vast.ac.uk
 .vaughan.ac.uk
@@ -17060,6 +17063,8 @@ ztedevices.com
 .coova.org
 .copilot-proxy.githubusercontent.com
 .copilot-stg.com
+.copilot-telemetry-service.githubusercontent.com
+.copilot-telemetry.githubusercontent.com
 .copilot-workspace.githubnext.com
 .copilotprodattachments.blob.core.windows.net
 .copro.pw
@@ -23583,6 +23588,8 @@ ztedevices.com
 .incezt.net
 .incloak.com
 .inclusivegrowthscore.com
+.incoming-telemetry.thunderbird.net
+.incoming.telemetry.mozilla.org
 .incommon-rsa.org
 .incredibox.fr
 .incy.cc
