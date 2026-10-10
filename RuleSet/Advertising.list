@@ -506,7 +506,6 @@ DOMAIN-WILDCARD,appanalysis*.banggood.com
 DOMAIN-WILDCARD,apple-*.le.com
 DOMAIN-WILDCARD,applog*.matrix.easebar.com
 DOMAIN-WILDCARD,as*.prog.hu
-DOMAIN-WILDCARD,asd8900.oss-*.aliyuncs.com
 DOMAIN-WILDCARD,at*.doubanio.com
 DOMAIN-WILDCARD,attr-logs.*.amazonaws.com
 DOMAIN-WILDCARD,auth-*.hismarttv.com
@@ -639,7 +638,6 @@ DOMAIN-WILDCARD,ja*.gamersky.com
 DOMAIN-WILDCARD,js*.abolezi.com
 DOMAIN-WILDCARD,jtbo*.nqxvevk.cn
 DOMAIN-WILDCARD,kbox-analytics-prod.s*.amazonaws.com
-DOMAIN-WILDCARD,ky891.oss-*.aliyuncs.com
 DOMAIN-WILDCARD,lively-collect-elb-*.amazonaws.com
 DOMAIN-WILDCARD,liveme-sensors-collect2-*.amazonaws.com
 DOMAIN-WILDCARD,livetracker.*.pangea-cms.com
@@ -811,7 +809,6 @@ DOMAIN-WILDCARD,tracking.*.miui.com
 DOMAIN-WILDCARD,tracking*.euroads.fi
 DOMAIN-WILDCARD,trck.*.prod-na.turntable.sonic.advertising.amazon.dev
 DOMAIN-WILDCARD,trk*.vidible.tv
-DOMAIN-WILDCARD,tupian888.*.bcebos.com
 DOMAIN-WILDCARD,tw-726620180914.*.run.app
 DOMAIN-WILDCARD,u*.takru.com
 DOMAIN-WILDCARD,ubacollect-*.cloud.dbankcloud.cn
@@ -832,7 +829,6 @@ DOMAIN-WILDCARD,v.tzbox*.xyz
 DOMAIN-WILDCARD,v*-ad.video.yximgs.com
 DOMAIN-WILDCARD,v*.sitecounter.site
 DOMAIN-WILDCARD,valentine.xhamster.*
-DOMAIN-WILDCARD,vns86.oss-*.aliyuncs.com
 DOMAIN-WILDCARD,w*statistics.info
 DOMAIN-WILDCARD,weblogger-wss.cool*cloud.com
 DOMAIN-WILDCARD,widget-v*.tidiochat.com
