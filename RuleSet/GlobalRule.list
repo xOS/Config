@@ -2,28 +2,8 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
-.riamoneytransfer.com
-.inauth.com
-.tripcdn.com
-.donniy.com
-.fedex.com
-.v2core.com
-.somlar.com
-.readthedoc.net
-.xrenblog.com
-.coalcloud.net
-.nranote.com
-.ext.fourthline.com
-.cardinaltrusted.com
-.vmiss.com
-.nutmeg.com
-.korearisk.com
-.kcnawatch.org
-.0xkev.com
-.codicefiscale.com
-.jotformpro.com
-.singteldigital.com
 .06055.com
+.0xkev.com
 .123114.xyz
 .123169.xyz
 .188187.xyz
@@ -323,6 +303,7 @@ cache.video.iqiyi.com
 .capitalone.com
 .capjs.net
 .cardart.cc
+.cardinaltrusted.com
 .cashappapi.com
 .cat
 .cauly.co.kr
@@ -405,8 +386,10 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 cn-exstatic-vivofs.iqoo.com
 .co
 .co.uk
+.coalcloud.net
 .coalcloud.xyz
 .coconts.com
+.codicefiscale.com
 .coffee
 .coidc.com
 .collect.tealiumiq.com
@@ -516,6 +499,7 @@ dispatchosglobal.yuanshen.com
 .domain.com
 .domainagents.com
 .domains
+.donniy.com
 .doubleclick.com
 .dpdns.org
 .dreamhost.com
@@ -583,6 +567,7 @@ edge.apple
 .experian.com
 .expireddomains.net
 .expo.dev
+.ext.fourthline.com
 .extreme-ip-lookup.com
 .f.pz.al
 .f5.com
@@ -593,6 +578,7 @@ fast.rockisland.net
 .fateqq.com
 .fax.plus
 .featuregates.org
+.fedex.com
 .feednews.com
 .feimaojiasu.com
 .felo.me
@@ -831,6 +817,7 @@ img.css.sd
 .imtintl.com
 .imxpn.com
 .in
+.inauth.com
 .incapsula.com
 .incognia.com
 .incudal.com
@@ -913,6 +900,7 @@ itvpnpmobile-a.akamaihd.net
 .jm
 .jo
 .jobs
+.jotformpro.com
 .joyk.com
 .jp
 jules.google.com
@@ -923,6 +911,7 @@ jules.google.com
 .kanokano.cn
 .kaolay.com
 .kaptcha.com
+.kcnawatch.org
 .ke
 .keka.io
 .kekecdn.net
@@ -946,6 +935,7 @@ jules.google.com
 .kochava.com
 .kocowa.com
 .kolet.com
+.korearisk.com
 .kp
 .kr
 .kroo.com
@@ -1189,12 +1179,14 @@ lookup-api.apple.com.edgekey.net
 .np
 .nr
 .nr-data.net
+.nranote.com
 .nsone.net
 .nspops.com
 .nsureapi.com
 .ntt-co-jp.club
 .nu
 .numberbarn.com
+.nutmeg.com
 .nxboom.com
 .nz
 .o2online.de
@@ -1379,6 +1371,7 @@ prod-api.crackle.com
 .rcp.net
 .re
 .readid.com
+.readthedoc.net
 .rebtel.com
 .receive-sms.com
 .red-3t5nvttg.com
@@ -1403,6 +1396,7 @@ restricted.sdk.kochava.com
 .revolut.com
 .revved.com
 .rewe.de
+.riamoneytransfer.com
 .riskified.com
 .rjsos.com
 .rnote.com
@@ -1489,6 +1483,7 @@ rtcg-access.volcvideos.com
 .simpletexting.com
 .sinch.com
 .singtel.com
+.singteldigital.com
 .singular.net
 .siteplug.com
 .sj
@@ -1522,6 +1517,7 @@ sms-verification-number.com
 .softfully.com
 .softshellhosting.com
 .softshellweb.com
+.somlar.com
 .sonetel.com
 .sonicss.site
 .sooele.com
@@ -1662,6 +1658,7 @@ sydney.bing.com
 .travel
 .travellings.cn
 .trip.com
+.tripcdn.com
 .triple.app
 .trustarc.com
 .trustauth.cn
@@ -1716,6 +1713,7 @@ upos-bstar1-mirrorakam.akamaized.net
 .uy
 .uz
 .v2board.com
+.v2core.com
 .v2ex.io
 .v8cdn.cc
 .va
@@ -1750,6 +1748,7 @@ visatokenservices-b2c-apis-cn.visa.cn
 .viu.now.com
 .vivaldi.net
 .vmgirls.com
+.vmiss.com
 .vn
 .vodglcdn.com
 .volcvideos.com
@@ -1836,6 +1835,7 @@ xai.chronosphere.io
 .xn--4gq62f52gdss.click
 .xn--4gq62f52gdss.com
 .xn--4gq62f52gdss.xyz
+.xrenblog.com
 .xsx.net
 .xueqiu360.com
 .xupeinan.com
