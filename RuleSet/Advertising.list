@@ -411,7 +411,6 @@ DOMAIN-WILDCARD,*-datareceiver.aki-game.net
 DOMAIN-WILDCARD,*-default-cn.rum.aliyuncs.com
 DOMAIN-WILDCARD,*-sdk.rum.aliyuncs.com
 DOMAIN-WILDCARD,*.exaapi.com
-DOMAIN-WILDCARD,*.libaishuo.com
 DOMAIN-WILDCARD,*.wap.xsbiquge.com
 DOMAIN-WILDCARD,*adapt-beacon.awsprodops.movetv.com
 DOMAIN-WILDCARD,*cdn-settings.appsflyersdk.com
