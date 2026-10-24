@@ -189,7 +189,9 @@ assets-next.mattersprotocol.io
 assets-proxy.anthropic.com
 assets-s3-us-east-1.ceros.com
 .assets-servd.host
+assets-static.99.co
 assets-themes.chess.com
+assets-v2.99.co
 assets-v2.i-scmp.com
 assets-v2.super.so
 assets-www.readspeaker.com
@@ -277,6 +279,7 @@ assets.getpostman.com
 assets.github.dev
 assets.goat.com
 assets.gorgias.help
+assets.grab.com
 assets.grammarly.com
 assets.grooveapps.com
 assets.guim.co.uk
@@ -1345,6 +1348,7 @@ celebrities-small.porndig.com
 certificates.godaddy.com
 cf-assets.www.cloudflare.com
 cf-images.ap-northeast-1.prod.boltdns.net
+cf-images.ap-southeast-1.prod.boltdns.net
 cf-images.us-east-1.prod.boltdns.net
 .cf-ipfs.com
 cf.channel.io
@@ -3163,6 +3167,7 @@ pic.imge.cc
 pic.macked.app
 pic.onlinewebfonts.com
 pic.skk.moe
+pic2.99.co
 piccdn.7mmtv.sx
 .pichost.top
 .picjs.xyz
@@ -3546,6 +3551,7 @@ screenshots.debian.net
 screenshots.downloadtorrentfile.com
 screenshots.webflow.com
 .scribdassets.com
+scribe-web-sdk.grab.com
 script.custobar.com
 scripts.dailymail.co.uk
 .scripts.gatorapi.com
@@ -4072,6 +4078,7 @@ static1.e621.net
 static1.lottiefiles.com
 static1.smartbear.co
 static1.squarespace.com
+static1.straitstimes.com.sg
 static10.lottiefiles.com
 static2.avg.com
 static2.giroditalia.it
