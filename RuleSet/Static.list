@@ -452,7 +452,6 @@ avatars.hubspot.net
 avatars.mds.yandex.net
 avatars.micro.blog
 avatars.plurk.com
-avts.wmlabs.net
 .avximg.com
 .aweber-static.com
 awsimgsrc.dmm.co.jp
@@ -577,7 +576,6 @@ c.start.me
 c.tadst.com
 c.tenor.com
 c1.newegg.com
-c1.patreon.com
 c10.patreon.com
 c11.patreon.com
 c13.patreon.com
@@ -600,7 +598,6 @@ cache.industry.siemens.com
 cache.ip-api.com
 cache.mapcomplete.org
 cache.omnicalculator.com
-cache.sgvafs.com
 cached.rebuyengine.com
 cafe.github.com
 canny-assets.io
@@ -766,6 +763,7 @@ cdn.candid.org
 cdn.candu.ai
 cdn.candy.ai
 cdn.candycode.com
+cdn.capcom-unity.com
 cdn.casestudies.svc.ui.com
 cdn.casetify.com
 cdn.catch.dmm.co.jp
@@ -828,7 +826,6 @@ cdn.document360.io
 cdn.donmai.us
 cdn.doofinder.com
 cdn.dotaoutpost.com
-cdn.downdetector.com
 cdn.download.it
 cdn.drata.com
 cdn.dribbble.com
@@ -1043,6 +1040,7 @@ cdn.privacy.paramount.com
 .cdn.prod.atlassian-dev.net
 cdn.prod.ext.web.purview.azure.com
 cdn.prod.www.spiegel.de
+cdn.promo.capcomusa.com
 cdn.promotekit.com
 cdn.prowritingaid.com
 .cdn.pubnub.com
@@ -1082,7 +1080,6 @@ cdn.sciencecast.org
 cdn.scpwiki.com
 cdn.search.brave.com
 cdn.sedo.com
-cdn.seedance2.ai
 cdn.segment.com
 cdn.seline.so
 cdn.seondf.com
@@ -1263,6 +1260,7 @@ cdn2.unrealengine.com
 .cdn2020.com
 cdn3.bigcommerce.com
 cdn3.dan.com
+cdn3.downdetector.com
 cdn3.edgedatg.com
 cdn3.hextom.com
 cdn3.iconfinder.com
@@ -1274,6 +1272,7 @@ cdn3.telesco.pe
 cdn3.tubeteen18.com
 cdn3.unrealengine.com
 cdn4.bigcommerce.com
+cdn4.downdetector.com
 cdn4.edgedatg.com
 cdn4.focus.bg
 cdn4.iconfinder.com
@@ -1525,7 +1524,6 @@ crt.usertrust.com
 csp.microsoft.com
 .csp.withgoogle.com
 css-1-cdn.airdroid.com
-css.4jpg.top
 css.blackmagicdesign.com
 css.comicbz.com
 css.createsend1.com
@@ -2181,6 +2179,7 @@ image.gyutto.com
 image.gyutto.jp
 image.hkhl.hk
 image.ibb.co
+image.icon-gen.svc.ui.com
 image.jnislniv.xyz
 image.mgstage.com
 image.mux.com
@@ -2508,7 +2507,6 @@ imgproxy.flathub.org
 imgproxy.fourthwall.com
 .imgproxy.org
 imgproxy.windy.com
-imgrs.apkcombo.com
 imgs.plurk.com
 imgs.search.brave.com
 imgs.socialinsider.io
@@ -2782,6 +2780,7 @@ makerworld.bblmw.com
 .mangadex.network
 mangaz-books.j-comi.jp
 mangaz-static.j-comi.jp
+manifest.prod.boltdns.net
 mantisloader.mantis-awx.com
 .manuscdn.com
 map.adsbexchange.com
@@ -2840,7 +2839,6 @@ media.discordapp.net
 media.dlsite.com
 media.e4le.me
 media.ettoday.net
-media.evolv.ai
 media.fc2.com
 media.fidoalliance.org
 media.flaticon.com
@@ -3124,7 +3122,6 @@ panel-production-libs.b-cdn.net
 .parastorage.com
 .parceljs.org
 .parsecusercontent.com
-participants.evolv.ai
 parts.blog.livedoor.jp
 .pastebin.com
 .patientpop.com
@@ -3287,7 +3284,6 @@ profile-images.xing.com
 .project1content.com
 promotions.betfair.com
 proxy.beyondwords.io
-proxy.cors.sh
 proxy.csidetm.com
 proxy.joinmastodon.org
 proxy.spigotmc.org
@@ -3829,6 +3825,7 @@ static.buydomains.com
 static.bytepan.com
 static.c-spanvideo.org
 static.canva.com
+static.capcom.com
 static.captcha-delivery.com
 static.captcha.awswaf.com
 static.carfax.com
@@ -4145,13 +4142,11 @@ storage.gra.cloud.ovh.net
 storage.ko-fi.com
 storage.moegirl.tw
 storage.sciencecast.org
-storage.synctrack.io
 storage.tally.so
 storage.windiscover.com
 storage.withfabric.xyz
 .storage.yandexcloud.net
 storageapi.fleek.co
-storageapi.fleek.one
 storageapi2.fleek.co
 store-images.microsoft.com
 store-images.s-microsoft.com
@@ -4214,7 +4209,6 @@ tag.trovo-tag.com
 tag.tvads.ai
 tag.unifyintent.com
 .tags.f5.com
-tags.nationwide.com
 tags.nba.com
 tags.news.com.au
 talk.hyvor.com
@@ -4461,9 +4455,6 @@ useruploads.visualwebsiteoptimizer.com
 utteranc.es
 .uvcdn.com
 .v-cdn.net
-v-tiles1.downdetector.com
-v-tiles2.downdetector.com
-v-tiles3.downdetector.com
 v.w-x.co
 v2.listenloop.com
 .v2ex.co
@@ -4529,7 +4520,6 @@ vz-c0fe498e-5ab.b-cdn.net
 .w-credentialless-staticblitz.com
 w.chatlio.com
 w.soundcloud.com
-w2.influxdata.com
 w3-reporting.reddit.com
 .w3s.link
 wa.arounddeal.com
@@ -4538,7 +4528,6 @@ wac-cdn.atlassian.com
 waitlisted.co
 wall-ui-cdn.p.aws.economist.com
 .walmartimages.com
-walter-r2.trakt.tv
 wandi-6402.kxcdn.com
 .warnermediacdn.com
 .watchlycdn.com
@@ -4648,7 +4637,6 @@ www-cdn.anthropic.com
 www-cdn.uscardforum.com
 www-res.cablelabs.com
 www-static.ripe.net
-www.10086.win
 www.acgpix.de
 www.bbthat.com
 www.envoyproxy.io

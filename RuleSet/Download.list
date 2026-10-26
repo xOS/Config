@@ -632,7 +632,6 @@ ftp.task.gda.pl
 ftp.tc.edu.tw
 ftp.ticklers.org
 ftp.tku.edu.tw
-ftp.tsukuba.wide.ad.jp
 ftp.tu-chemnitz.de
 ftp.tu-graz.ac.at
 ftp.tu-ilmenau.de
@@ -771,7 +770,6 @@ mirror-gw.elastis.id
 mirror-hk.koddos.net
 mirror-mk.interspace.com
 mirror.01link.hk
-mirror.0x.sg
 mirror.0x626b.com
 mirror.23m.com
 mirror.23media.de
@@ -1014,7 +1012,6 @@ mirror.lyrahosting.com
 mirror.macomnet.net
 mirror.maeen.sa
 mirror.mangohost.net
-mirror.marcusn.net
 mirror.marwan.ma
 mirror.math.princeton.edu
 mirror.math.ucdavis.edu
@@ -1448,6 +1445,7 @@ registry-1.docker.io
 registry-cdn.wapm.io
 registry.bower.io
 registry.fedoraproject.org
+registry.gitlab.com
 registry.npmjs.com
 registry.npmjs.org
 registry.terraform.io
@@ -1963,7 +1961,6 @@ www.gnu.org
 www.gnupg.org
 www.gtlib.gatech.edu
 www.gutscheinrausch.de
-www2.aomeisoftware.com
 xenia.sote.hu
 xsrv.moratelindo.io
 xvcf1.xboxlive.com
