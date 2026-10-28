@@ -2,49 +2,6 @@
 # Add or edit manual rules here.
 # DOMAIN => example.com ; DOMAIN-SUFFIX => .example.com
 .000sq.cn
-.qvdt3feo.com
-.kfc.com
-.zetaglobal.net
-.glancecdn.net
-.aimap.com
-.sugarforex.com
-.51ping.com
-.niceincontact.com
-.krebsonsecurity.com
-.gcash.com
-.lfgofam.com
-.useinsider.com
-.pisano.com
-.ketchjs.com
-.cnouyi.pizza
-.pizza
-.byteplusvod.com
-.bytepluscdn.com
-.digitalcardservice.com
-.azmsoft.com
-.vibescm.com
-.ddns.net
-.freeutilitybills.net
-.swiss.com
-.mgmresorts.com
-.mgmresorts.com
-.cardinalcommerce.com
-.grabpay.com
-.myteksi.net
-.dtcpayment.net
-.globalcharge.cn
-.haiwaihuafei.com
-.agoda.net
-.xunihao.net
-.ugoearn.com
-.simcardhome.com
-.ding.com
-.acesheep.com
-.cybersource.com
-.qualtrics.com
-.customerfeedback.jpmorganchase.com
-.zable.com
-.jpmorganchase.com
 .06055.com
 .0xkev.com
 .123114.xyz
@@ -70,6 +27,7 @@
 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 4gtvfreepcvod-cds.cdn.hinet.net
 .51honest.org
+.51ping.com
 .51xueai.org
 .52chuhai.com
 .52dfg.com
@@ -97,6 +55,7 @@
 .acck.io
 .acclyo.com
 .accsmarket.com
+.acesheep.com
 .acg.vip
 .acgf.vip
 .acgycy.com
@@ -123,9 +82,11 @@
 .afreecatv.co.kr
 .afternic.com
 .ag
+.agoda.net
 .ai
 .ai.com
 .aicqy.cn
+.aimap.com
 aiot-mqtt-us.anker.com
 .airalo.com
 .airdroid.com
@@ -239,6 +200,7 @@ athome.fandango.com
 .axtun.fun
 .axvps.com
 .az
+.azmsoft.com
 .azonnalifizetes.hu
 .azpanel.net
 .azurerms.com
@@ -334,6 +296,8 @@ bt.sh.cn
 .bytegecko-i18n.com
 .byteintlapi.com
 .byteiota.com
+.bytepluscdn.com
+.byteplusvod.com
 .byteurl.cn
 .bz
 .ca
@@ -346,6 +310,7 @@ cache.video.iqiyi.com
 .capitalone.com
 .capjs.net
 .cardart.cc
+.cardinalcommerce.com
 .cardinaltrusted.com
 .cashappapi.com
 .cat
@@ -427,6 +392,7 @@ chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 .cm
 .cmlink.com
 cn-exstatic-vivofs.iqoo.com
+.cnouyi.pizza
 .co
 .co.uk
 .coalcloud.net
@@ -470,6 +436,7 @@ cp4.cloudflare.com
 .cubecloud.net
 .cuniq.com
 .curve.app
+.customerfeedback.jpmorganchase.com
 .cutecloud.club
 .cutecloud.info
 .cutecloud.space
@@ -477,6 +444,7 @@ cp4.cloudflare.com
 .cw
 .cx
 .cy
+.cybersource.com
 .cyou
 .cz
 d151l6v8er5bdm.cloudfront.net
@@ -503,6 +471,7 @@ dashasiafox.akamaized.net
 .dcalivedazn.akamaized.net
 .dcblivedazn.akamaized.net
 .ddgksf2013.top
+.ddns.net
 .de
 .de5.net
 .decagames.com
@@ -519,8 +488,10 @@ dashasiafox.akamaized.net
 .dick.plus
 .digital-vm.com
 .digitalattackmap.com
+.digitalcardservice.com
 .dinamicx..com
 .dinamicx.com
+.ding.com
 .discoveryplus.co.uk
 .discoveryplus.in
 .dispatcher.is.autonavi.com
@@ -549,6 +520,7 @@ dispatchosglobal.yuanshen.com
 .dropcatch.com
 .drserver.net
 .dtcpay.com
+.dtcpayment.net
 .duangks.com
 .dukascopy.online
 .dummyapi.online
@@ -663,6 +635,7 @@ fast.rockisland.net
 .freenom.com
 .freesound.org
 .freessl.org
+.freeutilitybills.net
 .fuck.domains
 .fuckip.me
 .fuliba.mobi
@@ -672,6 +645,7 @@ fast.rockisland.net
 gateway.ai.cloudflare.com
 .gb
 .gc.onl
+.gcash.com
 .gcorelabs.com
 .gcp.gvt2.com
 .gcpsmapi.vodafone.com
@@ -706,9 +680,11 @@ gateway.ai.cloudflare.com
 .github-atom-io-herokuapp-com.freetls.fastly.net
 .github-avatars.oss-cn-hongkong.aliyuncs.com
 .gl
+.glancecdn.net
 .glass
 .global
 .global-mail.cn
+.globalcharge.cn
 .gm
 .gn
 .go-esim.com
@@ -726,6 +702,7 @@ gateway.ai.cloudflare.com
 .gq
 .gr
 .grab.com
+.grabpay.com
 .grabtaxi.com
 .greencloudvps.com
 .groovl.com
@@ -749,6 +726,7 @@ guzzoni.smoot.apple.com
 .gyteng.com
 h-netflix.online-metrix.net
 .h3dns.net
+.haiwaihuafei.com
 hamifans.emome.net
 .haoweichi.com
 .hboasia1-i.akamaihd.net
@@ -946,6 +924,7 @@ itvpnpmobile-a.akamaihd.net
 .jotformpro.com
 .joyk.com
 .jp
+.jpmorganchase.com
 jules.google.com
 .jxtxzzw.com
 .kahaoquan.com
@@ -959,8 +938,10 @@ jules.google.com
 .keka.io
 .kekecdn.net
 .kentdigital.net
+.ketchjs.com
 .kevsrv.com
 .keyboardingonline.net
+.kfc.com
 .kg
 .kh
 .khoatoantin.com
@@ -981,6 +962,7 @@ jules.google.com
 .korearisk.com
 .kp
 .kr
+.krebsonsecurity.com
 .kroo.com
 .kuaim99.com
 .kubilayerdogan.net
@@ -1015,6 +997,7 @@ jules.google.com
 .lexingtonthemes.com
 lf16-effectcdn.byteeffecttos-g.com
 lf16-pkgcdn.pitaya-clientai.com
+.lfgofam.com
 .li
 .licelus.com
 .life
@@ -1104,6 +1087,7 @@ lookup-api.apple.com.edgekey.net
 .mfan8.com
 .mfpad.com
 .mg
+.mgmresorts.com
 .mh
 .miantiao.me
 .miaomiao.moe
@@ -1160,6 +1144,7 @@ lookup-api.apple.com.edgekey.net
 .my-ip.io
 .my.microsoftpersonalcontent.com
 .my3w.com
+.myteksi.net
 .mytrueidentity.com
 .myunidays.com
 .myworkdaycdn.com
@@ -1201,6 +1186,7 @@ lookup-api.apple.com.edgekey.net
 .ng
 .ng-dex.com
 .ni
+.niceincontact.com
 .nightbirdsevolve.com
 .nigx.cn
 .nitroflare.com
@@ -1334,7 +1320,9 @@ osuspider.yuanshen.com
 .ping0.cc
 .ping0.co
 .pinpe.top
+.pisano.com
 .pixabay.com
+.pizza
 .pk
 .pkfun.com
 .pl
@@ -1391,6 +1379,7 @@ prod-api.crackle.com
 .qscnd.com
 .qsimg26515.com
 .qste.com
+.qualtrics.com
 .quansucloud.com
 .quantamagazine.org
 .queue-it.net
@@ -1398,6 +1387,7 @@ prod-api.crackle.com
 .quic.me
 .quiche.industries
 .quppy.com
+.qvdt3feo.com
 .qweather.net
 .qwist.cloud
 .qylsp7.com
@@ -1521,6 +1511,7 @@ rtcg-access.volcvideos.com
 .siftscience.com
 .signalfx.com
 .signature.email
+.simcardhome.com
 .simlocal.com
 .simperium.com
 .simpletexting.com
@@ -1617,6 +1608,7 @@ staticasiafox.akamaized.net
 .sudatech.store
 .sufe.me
 .sufe.pro
+.sugarforex.com
 .sumsub.com
 .superbed.cc
 .superwall.com
@@ -1631,6 +1623,7 @@ staticasiafox.akamaized.net
 .swarmify.com
 .sway-extensions.com
 .swcportal.org
+.swiss.com
 .swissuplabs.com
 .swrve.com
 .sx
@@ -1728,6 +1721,7 @@ sydney.bing.com
 .u8m6.cn
 .ua
 .ug
+.ugoearn.com
 .uk
 .ultramobile.com
 uniapp-api-pr.anker.com
@@ -1744,6 +1738,7 @@ upos-bstar1-mirrorakam.akamaized.net
 .us-west-2.amazonaws.com
 .usebutton.com
 .usefathom.com
+.useinsider.com
 .uservoice.com
 .usims.com
 .usmobile.com
@@ -1772,6 +1767,7 @@ upos-bstar1-mirrorakam.akamaized.net
 .verve.net
 .vg
 .vi
+.vibescm.com
 .viblast.com
 .viciky.com
 video.friday.tw
@@ -1881,6 +1877,7 @@ xai.chronosphere.io
 .xrenblog.com
 .xsx.net
 .xueqiu360.com
+.xunihao.net
 .xupeinan.com
 .xxmac.com
 .xxx
@@ -1916,6 +1913,7 @@ youtubei.googleapis.com
 .z2u.com
 .za
 .za.group
+.zable.com
 .zafinsvc.com
 .zaius.com
 .zajourney.com
@@ -1923,6 +1921,7 @@ youtubei.googleapis.com
 .zaticdn.com
 .zeroonetwenty.com
 .zerossl.com
+.zetaglobal.net
 .zfbzhan188.com
 .zhinin.com
 .zhiqubz.com
