@@ -10,6 +10,7 @@ USER-AGENT,Wise*
 USER-AGENT,wise*
 USER-AGENT,*klarna*
 DOMAIN-KEYWORD,mcc234
+DOMAIN-SUFFIX,tktn.be
 DOMAIN-SUFFIX,klarnaevt.com
 DOMAIN-SUFFIX,klarna.com
 DOMAIN-SUFFIX,klarna.app
@@ -37,7 +38,7 @@ DOMAIN-SUFFIX,curve.app
 DOMAIN-SUFFIX,chase.co.uk
 DOMAIN-SUFFIX,co.uk
 DOMAIN-SUFFIX,creditkarma.co.uk
-DOMAIN-SUFFIX,branch.io 
+DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,clearscore.com
 DOMAIN-SUFFIX,payzilch.com
 DOMAIN-SUFFIX,authy.com

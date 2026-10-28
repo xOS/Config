@@ -24,7 +24,7 @@ DOMAIN-KEYWORD,mcc310
 DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,tktn.be
+# DOMAIN-SUFFIX,tktn.be
 DOMAIN-SUFFIX,bankofamerica.com
 DOMAIN-SUFFIX,cashappapi.com
 DOMAIN-SUFFIX,squarecdn.com
