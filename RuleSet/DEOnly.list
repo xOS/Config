@@ -1,12 +1,15 @@
 # > 德国服务
 DOMAIN-KEYWORD,mcc262
 DOMAIN-KEYWORD,bbva
+DOMAIN-KEYWORD,bunq
 DOMAIN,api.tech26.de
 DOMAIN,cdn.number26.de
+DOMAIN-SUFFIX,bunq.com
+DOMAIN-SUFFIX,bunq.me
+DOMAIN-SUFFIX,bunq.to
 DOMAIN-SUFFIX,tech26.de
 DOMAIN-SUFFIX,number26.de
 DOMAIN-SUFFIX,n26.com
-DOMAIN-WILDCARD,*26.de
 DOMAIN-SUFFIX,rewe.de
 DOMAIN-SUFFIX,bonify.de
 DOMAIN-SUFFIX,idnow.de
@@ -16,4 +19,5 @@ DOMAIN-SUFFIX,api-o2de.mytelco.io
 DOMAIN-SUFFIX,eu.getblueshift.com
 DOMAIN-SUFFIX,smava.de
 DOMAIN-SUFFIX,finx-p.qwist.cloud
+DOMAIN-WILDCARD,*26.de
 IP-CIDR,139.7.117.0/24,no-resolve
