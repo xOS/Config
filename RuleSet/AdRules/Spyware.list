@@ -106903,6 +106903,9 @@
 .tagman.britishairways.com
 .ct.pinterest.com
 .incoming.telemetry.mozilla.org
+.api-node.corvexa.cloud
+.collector.wawlabs.com
+.telemetry.ecosoft.group
 .stats.cleanip.io
 .s.igen.fr
 .op.fintables.com
@@ -108225,7 +108228,6 @@
 .cs.avito.ru
 .logsk.glomancloud.gr
 .insights-tag.convertkit.com
-.b.trueanthem.com
 .matomo.eduwill.net
 .telemetry.eyeo.com
 .analytics.everythingstream.com
