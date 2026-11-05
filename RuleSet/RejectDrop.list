@@ -128,7 +128,6 @@ DOMAIN,collect.gmcc.net
 DOMAIN,metrics.icloud.com
 DOMAIN,webcast-open.douyin.com
 DOMAIN,firebaselogging-pa.googleapis.com
-DOMAIN,app-site-association.cdn-apple.com
 DOMAIN-SUFFIX,undefined
 DOMAIN-SUFFIX,null
 DOMAIN-SUFFIX,dutils.com
