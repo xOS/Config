@@ -1630,12 +1630,14 @@ DOMAIN-SUFFIX,zuoyebang.com
 DOMAIN-SUFFIX,zybang.com
 DOMAIN-WILDCARD,qhimgs?.com
 DOMAIN,acg.tv
+DOMAIN,app.jianguoyun.com
 DOMAIN,app.viayoo.com
 DOMAIN,assets1.xboxlive.cn
 DOMAIN,assets2.xboxlive.cn
 DOMAIN,b23.tv
 DOMAIN,cdnstatic.tencentcs.com
 DOMAIN,cn.download.nvidia.com
+DOMAIN,comet.jianguoyun.com
 DOMAIN,config.ubnt.com
 DOMAIN,dl.ubnt.com
 DOMAIN,dns.pub
