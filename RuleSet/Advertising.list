@@ -705,6 +705,7 @@ DOMAIN-WILDCARD,mssdk*.zijieapi.com
 DOMAIN-WILDCARD,mtag-*.wedevs.com
 DOMAIN-WILDCARD,my-redirect-bucket-unique-*.s3.ap-northeast-1.amazonaws.com
 DOMAIN-WILDCARD,nelonenmedia-pmd-ads-*.nm-stream.nelonenmedia.fi
+DOMAIN-WILDCARD,orbit-tile.river-pine-cdn-*.workers.dev
 DOMAIN-WILDCARD,orbit*.lun.ua
 DOMAIN-WILDCARD,orderana*.spankbang.com
 DOMAIN-WILDCARD,p*-ad-sign.byteimg.com
