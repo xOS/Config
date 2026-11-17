@@ -201,6 +201,7 @@ DOMAIN-SUFFIX,douyu.com
 DOMAIN-SUFFIX,lofter.com
 DOMAIN-SUFFIX,soulapp.cn
 DOMAIN-SUFFIX,goofish.com
+DOMAIN-SUFFIX,taobao.com
 IP-CIDR,180.76.76.0/24,no-resolve
 IP-CIDR,120.53.130.158/32,no-resolve
 IP-CIDR,49.233.242.15/32,no-resolve
