@@ -6,8 +6,6 @@ USER-AGENT,UnitedKingdom*
 USER-AGENT,StandaloneBMB*
 USER-AGENT,MyGuava*
 USER-AGENT,Mozon*
-USER-AGENT,Wise*
-USER-AGENT,wise*
 USER-AGENT,*klarna*
 DOMAIN-KEYWORD,mcc234
 DOMAIN-SUFFIX,tktn.be
@@ -42,7 +40,6 @@ DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,clearscore.com
 DOMAIN-SUFFIX,payzilch.com
 DOMAIN-SUFFIX,authy.com
-DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,royalmail.com
 DOMAIN-SUFFIX,capitalone-ukeu.apps-imiconnect.io
 DOMAIN-SUFFIX,capitalone.co.uk

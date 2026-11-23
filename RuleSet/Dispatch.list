@@ -104,6 +104,19 @@ DOMAIN,static.dtcpayment.net
 DOMAIN,imagerepo.ding.com
 DOMAIN,resources.gcash.com
 DOMAIN,storage.glancecdn.net
+DOMAIN,image.mrl.metamail.com
+DOMAIN,offer-sys-assets.acorns.com
+DOMAIN,images.angelstudios.com
+DOMAIN,video.lakecoloring.com
+DOMAIN,cdn.lakecoloring.com
+DOMAIN,saaseu-api.incodesmile.com
+DOMAIN,cdn.recent.design
+DOMAIN,cdn-api-weglot.com
+DOMAIN,appsumo2next-cdn.appsumo.com
+DOMAIN,cms-cdn.yo-digital.com
+DOMAIN,appsumo2-cdn.appsumo.com
+DOMAIN,downloads.mitmproxy.org
+DOMAIN,images.vialoops.com
 DOMAIN,storage-public-geo-tools.myteksi.net
 DOMAIN-SUFFIX,seecdn.net
 DOMAIN-SUFFIX,capjs.net
@@ -111,4 +124,6 @@ DOMAIN-SUFFIX,imgs.lazy-boy-acmer.cn
 DOMAIN-SUFFIX,rednotecdn.com
 DOMAIN-SUFFIX,braze-images.com
 DOMAIN-SUFFIX,tripcdn.com
+DOMAIN-WILDCARD,image.*.ihg.com
+DOMAIN-WILDCARD,*revenuecat-static.com
 DOMAIN-WILDCARD,cdn*.singteldigital.com
