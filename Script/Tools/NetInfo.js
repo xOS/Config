@@ -940,6 +940,11 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
         return ip;
     }
 
+    // 网络名称和接口返回的文本可能含换行，每个字段只占一个逻辑行。
+    function normalizePanelLine(text) {
+        return text.replace(/[\r\n\v\f\u0085\u2028\u2029][\s\u0085]*/g, ' ').trim();
+    }
+
     function tryRender() {
         // 必须三个任务都完成才渲染
         if (!_task1Done || !_task2Done || !_task3Done) return;
@@ -949,7 +954,7 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
         if (!_externalIP) {
             $done({
                 title: "外网信息获取失败",
-                content: `无法通过 ${GeoIPApi} 接口获取外部 IP 信息`,
+                content: `无法通过 ${normalizePanelLine(GeoIPApi)} 接口获取外部 IP 信息`,
                 icon: "exclamationmark.triangle",
                 "icon-color": "#ff9800"
             });
@@ -992,7 +997,7 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
                 lines.push(_scamInfoStr);
             }
 
-            return lines.join('\n');
+            return lines.map(normalizePanelLine).filter(Boolean).join('\n');
         };
 
         // 渲染时重新尝试读取一次最新的 Wi-Fi 名称（避免脚本启动瞬态系统尚未完成 CoreWLAN 异步回调）
@@ -1003,7 +1008,7 @@ console.log(`[Script] 系统: ${envSystem || '未知'}, 机型: ${deviceModel ||
         }
 
         const body = {
-            title: effectiveTitle,
+            title: normalizePanelLine(effectiveTitle),
             content: buildContent(),
             icon: panelIcon,
             "icon-color": panelColor

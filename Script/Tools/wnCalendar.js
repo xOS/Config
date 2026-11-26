@@ -57,6 +57,10 @@ const eventMatchers = [
 ]
 
 // ========== 工具函数 ==========
+function normalizePanelLine(text) {
+    return text.replace(/[\r\n\v\f\u0085\u2028\u2029][\s\u0085]*/g, ' ').trim()
+}
+
 function dateDiff(start, end) {
     let s = start.split('-'), e = end.split('-')
     let sd = new Date(+s[0], +s[1] - 1, +s[2])
@@ -118,9 +122,12 @@ function extractToday(results) {
                     }
                 })
                 let desc = festivalList.join('|')
-                let notifyContent = '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日'
-                    + '\n禁忌：' + i.avoid + '\n适宜：' + i.suit
-                return { lnDate, nlDate, desc, notifyContent }
+                let detailLines = [
+                    '干支：' + i.gzYear + '年 ' + i.gzMonth + '月 ' + i.gzDate + '日',
+                    '禁忌：' + i.avoid,
+                    '适宜：' + i.suit
+                ]
+                return { lnDate, nlDate, desc, detailLines }
             }
         }
     }
@@ -159,7 +166,7 @@ function buildGroups(upcoming) {
 // ========== 面板构建 ==========
 function buildPanel(today, upcoming) {
     let nearestDays = 999
-    let countdownLine = '暂无倒计时数据'
+    let countdownLine = ''
 
     if (upcoming && upcoming.length > 0) {
         nearestDays = upcoming[0].days
@@ -180,7 +187,7 @@ function buildPanel(today, upcoming) {
     // 黄历通知推送（每天仅一次）
     if (today && $persistentStore.read('wnCalendarPushed') !== tnowf) {
         $persistentStore.write(tnowf, 'wnCalendarPushed')
-        $notification.post('今日黄历', today.nlDate, today.notifyContent)
+        $notification.post('今日黄历', today.nlDate, today.detailLines.join('\n'))
     }
 
     // 构建 title：农历日期 [节日]
@@ -190,14 +197,14 @@ function buildPanel(today, upcoming) {
     }
 
     // 构建 content：倒计时(首行) + 干支/禁忌/适宜
-    let content = countdownLine
+    const contentLines = [countdownLine || '暂无倒计时数据']
     if (today) {
-        content = countdownLine + '\n' + today.notifyContent
+        contentLines.push(...today.detailLines)
     }
 
     finish({
-        title: title,
-        content: content,
+        title: normalizePanelLine(title),
+        content: contentLines.map(normalizePanelLine).join('\n'),
         icon: icon_now(nearestDays),
         'icon-color': icon_color(nearestDays)
     })
