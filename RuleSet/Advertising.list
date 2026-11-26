@@ -788,6 +788,7 @@ DOMAIN-WILDCARD,t*.zcvh.net
 DOMAIN-WILDCARD,tag-based.s3.*.amazonaws.com
 DOMAIN-WILDCARD,tag-v*.kuzen.io
 DOMAIN-WILDCARD,tamuvip.*
+DOMAIN-WILDCARD,telemetry.*.oci.oraclecloud.com
 DOMAIN-WILDCARD,telemetry.*.pvp.net
 DOMAIN-WILDCARD,telemetry*.transcend.io
 DOMAIN-WILDCARD,teleriumads-*.netdna-ssl.com
