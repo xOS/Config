@@ -311,7 +311,6 @@ assets.mastercard.com
 assets.matters.news
 assets.maxon.net
 assets.mayoclinic.org
-assets.mcp.corespeed.io
 assets.media-platform.com
 assets.monei.com
 assets.monetizationos.com
@@ -675,6 +674,7 @@ cdn-public-apis.moonlock.com
 cdn-public.sociabble.com
 cdn-raw.modrinth.com
 cdn-rdstaticassets.readdle.com
+cdn-resize-prod-com.500px.cloud
 cdn-seo.airdroid.com
 cdn-service.jp.sumologic.com
 cdn-share-sprites.flaticon.com
@@ -1046,6 +1046,7 @@ cdn.prod.ext.web.purview.azure.com
 cdn.prod.www.spiegel.de
 cdn.promo.capcomusa.com
 cdn.promotekit.com
+cdn.protect.clerk.com
 cdn.prowritingaid.com
 .cdn.pubnub.com
 cdn.quadpay.com
@@ -1638,7 +1639,6 @@ downloads.coindesk.com
 .drivecdn.com
 drop.ndtv.com
 .dropboxstatic.com
-drscdn.500px.org
 .drtst.com
 .dsc.cloud
 .dtci-pe-vp-image-resizer.platform.edgedatg.com
@@ -2859,7 +2859,6 @@ media.giphy.com
 media.glassdoor.com
 media.graphassets.com
 media.hachyderm.io
-media.hentaifreak.org
 media.identity.ui.com
 media.infosec.exchange
 media.inhumanity.com
@@ -3118,7 +3117,6 @@ p16-hera-sg.larksuitecdn.com
 p16-hera-va.larksuitecdn.com
 p2.bahamut.com.tw
 pa1.aninoapps.com
-pacdn.500px.org
 packages.jetbrains.team
 .packd.liuxingbaoyu.xyz
 .pagecdn.io
@@ -3346,8 +3344,6 @@ r2.1hanime.com
 r2.dejavu.moe
 r2.gear4music.com
 r2.leadsy.ai
-r2cdn.c7d.dev
-r2cdn.corespeed.io
 r2cdn.myshopline.com
 r2cdn.perplexity.ai
 r34xyz.b-cdn.net
@@ -3541,7 +3537,6 @@ sbl.onfastspring.com
 scache.vzw.com
 scache1.vzw.com
 scache2.vzw.com
-scdn.clerk.com
 scdn.line-apps.com
 .scene7.com
 schema-cf.bc0a.com
@@ -3591,7 +3586,6 @@ secure.telegraph.co.uk
 .seecdn.com
 .seecdn.net
 .seeusercontent.com
-segapi.clerk.com
 segment.digitalocean.com
 sellon.shiprocket.in
 .sendspace.com
@@ -3627,7 +3621,6 @@ shields.rbtlog.dev
 .shoppulse88.store
 .shortpixel.ai
 shots.codepen.io
-showcase.abovemarket.com
 sig.grumpybumpers.com
 sigma9.scpwikicn.com
 signal.cdnbye.com
@@ -3691,7 +3684,6 @@ spcdn.incartupsell.com
 speedmedia2.jfrog.com
 .splunkcloud.com
 spoprod-a.akamaihd.net
-spotlightimage.biggo.com
 .spreadshirtmedia.com
 sprig.figma.com
 .sqspcdn.com
@@ -4074,7 +4066,6 @@ static.wwto.net
 static.xgroovy.com
 static.xns.one
 static.xxxshake.com
-static.yfsp.tv
 static.zanmei.ai
 static.zaobao.com
 static.zaobao.com.sg
@@ -4416,7 +4407,6 @@ unavatar.io
 .ungh.cc
 .ungrounded.net
 unleash.codeium.com
-unlimited-cdn.waifu2x.net
 .unpkg.co
 .unpkg.com
 .unsplash.it

@@ -588,6 +588,7 @@ DOMAIN-WILDCARD,event.*.karrotmarket.com
 DOMAIN-WILDCARD,event.*.shoplive.cloud
 DOMAIN-WILDCARD,events-*.op.hicloud.com
 DOMAIN-WILDCARD,events-api*.outfit7.com
+DOMAIN-WILDCARD,events.*.oci.oraclecloud.com
 DOMAIN-WILDCARD,events*.cre.ma
 DOMAIN-WILDCARD,f-log-*.grammarly.io
 DOMAIN-WILDCARD,fanpingbi*.gaokao.com
@@ -657,6 +658,7 @@ DOMAIN-WILDCARD,log*.byteoversea.com
 DOMAIN-WILDCARD,log*.vietnamplus.vn
 DOMAIN-WILDCARD,log*.zijieapi.com
 DOMAIN-WILDCARD,logger-*.dailymotion.com
+DOMAIN-WILDCARD,logging.*.oci.oraclecloud.com
 DOMAIN-WILDCARD,logreport-global-dual.cool*cloud.com
 DOMAIN-WILDCARD,logs-*.rebxgame.com
 DOMAIN-WILDCARD,logs.collector.*.cloud.solarwinds.com
@@ -789,6 +791,7 @@ DOMAIN-WILDCARD,tag-based.s3.*.amazonaws.com
 DOMAIN-WILDCARD,tag-v*.kuzen.io
 DOMAIN-WILDCARD,tamuvip.*
 DOMAIN-WILDCARD,telemetry.*.oci.oraclecloud.com
+DOMAIN-WILDCARD,telemetry.*.oraclecloud.com
 DOMAIN-WILDCARD,telemetry.*.pvp.net
 DOMAIN-WILDCARD,telemetry*.transcend.io
 DOMAIN-WILDCARD,teleriumads-*.netdna-ssl.com
